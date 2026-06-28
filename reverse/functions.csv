@@ -97,6 +97,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?zero@Region3D@@QAEXXZ,0x0003652F,0x000BEC60,20,src/math/region.cpp,matched,sets bounds to zero
 ?depth@IRegion3D@@QBEHXZ,0x00040E53,0x007E6F20,7,src/math/region.cpp,matched,returns integer depth
 ?depth@Region3D@@QBEMXZ,0x0001DB24,0x007E6E30,7,src/math/region.cpp,matched,returns float depth
+?expandBy@IRegion2D@@QAEXABUICoord2D@@@Z,0x000466E6,0x007E82F0,47,src/math/region.cpp,matched,expands integer x/y bounds to include point
+?expandBy@IRegion3D@@QAEXABUICoord3D@@@Z,0x00001091,0x007E83C0,68,src/math/region.cpp,matched,expands integer x/y/z bounds to include point
+?expandBy@Region2D@@QAEXABVCoord2D@@@Z,0x00034207,0x007E8290,76,src/math/region.cpp,matched,expands float x/y bounds to include point
+?expandBy@Region3D@@QAEXABVCoord3D@@@Z,0x00022F75,0x007E8330,111,src/math/region.cpp,matched,expands float x/y/z bounds to include point
 ?equals@Coord3D@@QBE_NABUCoord3DBase@@@Z,0x00001334,0x0016A110,60,src/math/coord3d.cpp,matched,compares x/y/z with Coord3DBase
 ?GetLength@Coord2D@@QBEMXZ,0x00022FA2,0x0016E3A0,22,src/math/coord2d.cpp,matched,returns vector length
 ?GetLength2D@Coord3D@@QBEMXZ,0x00036D95,0x001A5D70,22,src/math/coord3d.cpp,matched,returns x/y vector length

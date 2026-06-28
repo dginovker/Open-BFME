@@ -3,10 +3,14 @@
 #include "coord2d.h"
 #include "coord3d.h"
 
+struct ICoord2D;
+struct ICoord3D;
+
 struct IRegion2D {
     bool operator==(const IRegion2D &that) const;
     bool operator!=(const IRegion2D &that) const;
 
+    void expandBy(const ICoord2D &point);
     int width() const;
     int height() const;
 
@@ -19,6 +23,7 @@ struct IRegion2D {
 struct IRegion3D {
     IRegion3D();
 
+    void expandBy(const ICoord3D &point);
     int width() const;
     int height() const;
     int depth() const;
@@ -38,6 +43,7 @@ struct Region2D {
     ~Region2D();
 
     bool IsExactlyEqualTo(const Region2D &that) const;
+    void expandBy(const Coord2D &point);
     bool isInside(const Coord2D &point) const;
     float width() const;
     float height() const;
@@ -56,6 +62,7 @@ struct Region3D {
     float width() const;
     float height() const;
     float depth() const;
+    void expandBy(const Coord3D &point);
     bool isInRegionNoZ(const Coord3D *point) const;
     bool isInRegionWithZ(const Coord3D *point) const;
     void zero();

@@ -21,6 +21,8 @@ public:
     Coord3D &GetYVector(Coord3D &out) const;
     Coord3D &GetZVector(Coord3D &out) const;
     Coord3D &GetTranslationVector(Coord3D &out) const;
+    Coord3D &RotateCoord(const Coord3D &coord, Coord3D &out);
+    Coord3D &TransformCoord(const Coord3D &coord, Coord3D &out);
     Matrix4D &Set(
         float m00, float m01, float m02, float m03,
         float m10, float m11, float m12, float m13,

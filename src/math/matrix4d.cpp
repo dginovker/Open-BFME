@@ -194,6 +194,49 @@ Coord3D &Matrix4D::GetTranslationVector(Coord3D &out) const
     return out;
 }
 
+Coord3D &Matrix4D::RotateCoord(const Coord3D &coord, Coord3D &out)
+{
+    float y = values[4] * coord.x;
+    y += values[6] * coord.z;
+    y += values[5] * coord.y;
+
+    float z = values[8] * coord.x;
+    z += values[10] * coord.z;
+    z += values[9] * coord.y;
+
+    float x = values[2] * coord.z;
+    x += values[1] * coord.y;
+    x += values[0] * coord.x;
+
+    out.x = x;
+    out.y = y;
+    out.z = z;
+    return out;
+}
+
+Coord3D &Matrix4D::TransformCoord(const Coord3D &coord, Coord3D &out)
+{
+    float y = values[4] * coord.x;
+    y += values[6] * coord.z;
+    y += values[5] * coord.y;
+    y += values[7];
+
+    float z = values[8] * coord.x;
+    z += values[10] * coord.z;
+    z += values[9] * coord.y;
+    z += values[11];
+
+    float x = values[2] * coord.z;
+    x += values[1] * coord.y;
+    x += values[0] * coord.x;
+    x += values[3];
+
+    out.x = x;
+    out.y = y;
+    out.z = z;
+    return out;
+}
+
 Matrix4D &Matrix4D::Set(
     float m00, float m01, float m02, float m03,
     float m10, float m11, float m12, float m13,

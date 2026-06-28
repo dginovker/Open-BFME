@@ -76,6 +76,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GetXVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x00042F00,0x007E6C80,23,src/math/matrix4d.cpp,matched,copies x basis vector
 ?GetYVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x00024280,0x007E6CA0,24,src/math/matrix4d.cpp,matched,copies y basis vector
 ?GetZVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x0003021F,0x007E6CC0,24,src/math/matrix4d.cpp,matched,copies z basis vector
+?RotateCoord@Matrix4D@@QAEAAVCoord3D@@ABV2@AAV2@@Z,0x0001C887,0x007E68E0,83,src/math/matrix4d.cpp,matched,rotates coordinate without translation
+?TransformCoord@Matrix4D@@QAEAAVCoord3D@@ABV2@AAV2@@Z,0x000085A8,0x007E6860,92,src/math/matrix4d.cpp,matched,transforms coordinate with translation
 ?Add@Coord2D@@QAEAAV1@ABUCoord3DBase@@@Z,0x00016EEB,0x007E5AE0,24,src/math/coord2d.cpp,matched,adds Coord3DBase x/y
 ?Add@Coord2D@@QAEAAV1@ABV1@@Z,0x0000FA2E,0x0022F7C0,24,src/math/coord2d.cpp,matched,adds Coord2D
 ?Add2D@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x000263B4,0x007E5DE0,28,src/math/coord3d.cpp,matched,adds two Coord3DBase x/y values

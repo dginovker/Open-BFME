@@ -1,4 +1,39 @@
 name,export_rva,target_rva,target_size,source,status,notes
+??0Coord2D@@QAE@ABUCoord2DBase@@@Z,0x00007824,0x007E59E0,19,src/math/coord2d.cpp,matched,copies x/y from Coord2DBase
+??0Coord2D@@QAE@ABUCoord3DBase@@@Z,0x0001D034,0x003BB840,19,src/math/coord2d.cpp,matched,copies x/y from Coord3DBase
+??0Coord2D@@QAE@ABV0@@Z,0x00011455,0x0005BD70,19,src/math/coord2d.cpp,matched,copies x/y from Coord2D
+??0Coord2D@@QAE@HH@Z,0x0003D8B6,0x0018F180,18,src/math/coord2d.cpp,matched,converts ints to floats
+??0Coord2D@@QAE@MM@Z,0x0003D988,0x0016A160,18,src/math/coord2d.cpp,matched,sets x/y from floats
+??0Coord2D@@QAE@XZ,0x00021710,0x00083350,3,src/math/coord2d.cpp,matched,empty constructor returns self
+??0Coord3D@@QAE@ABUCoord3DBase@@@Z,0x00049837,0x0008A410,25,src/math/coord3d.cpp,matched,copies x/y/z from Coord3DBase
+??0Coord3D@@QAE@ABV0@@Z,0x00036B6A,0x0005BC20,25,src/math/coord3d.cpp,matched,copies x/y/z from Coord3D
+??0Coord3D@@QAE@ABVCoord2D@@@Z,0x00049567,0x000B2180,26,src/math/coord3d.cpp,matched,copies x/y and clears z
+??0Coord3D@@QAE@HHH@Z,0x0003AE04,0x00064310,25,src/math/coord3d.cpp,matched,converts ints to floats
+??0Coord3D@@QAE@MMM@Z,0x000156C7,0x000642F0,25,src/math/coord3d.cpp,matched,sets x/y/z from floats
+??0Coord3D@@QAE@XZ,0x00016C93,0x00083330,3,src/math/coord3d.cpp,matched,empty constructor returns self
+??1Coord2D@@QAE@XZ,0x0003EAB8,0x0005BD90,1,src/math/coord2d.cpp,matched,empty destructor emits ret
 ??1Coord3D@@QAE@XZ,0x0001364C,0x0005BC40,1,src/math/coord3d.cpp,matched,empty destructor emits ret
+??4Coord2D@@QAEAAV0@ABUCoord2DBase@@@Z,0x00038AC3,0x007E5A20,19,src/math/coord2d.cpp,matched,copies x/y from Coord2DBase
+??4Coord2D@@QAEAAV0@ABUCoord3DBase@@@Z,0x00017706,0x007E5A60,19,src/math/coord2d.cpp,matched,copies x/y from Coord3DBase
+??4Coord2D@@QAEAAV0@ABV0@@Z,0x0004592B,0x007E5A00,19,src/math/coord2d.cpp,matched,copies x/y from Coord2D
+??4Coord2DBase@@QAEAAU0@ABU0@@Z,0x00029929,0x007E59C0,19,src/math/coord2d.cpp,matched,copies x/y from Coord2DBase
+??4Coord3D@@QAEAAV0@ABUCoord2DBase@@@Z,0x0002B4F4,0x007E5C90,26,src/math/coord3d.cpp,matched,copies x/y and clears z
+??4Coord3D@@QAEAAV0@ABUCoord3DBase@@@Z,0x000199BB,0x00396880,25,src/math/coord3d.cpp,matched,copies x/y/z from Coord3DBase
+??4Coord3D@@QAEAAV0@ABVCoord2D@@@Z,0x000412EA,0x003A3EF0,26,src/math/coord3d.cpp,matched,copies x/y and clears z
 ?zero@Coord3D@@QAEXXZ,0x00029226,0x00083340,11,src/math/coord3d.cpp,matched,sets x/y/z to zero
+?Set2D@Coord3D@@QAEAAV1@MM@Z,0x0003D00A,0x007E5FB0,18,src/math/coord3d.cpp,matched,sets x/y from floats
+?Set@Coord2D@@QAEAAV1@MM@Z,0x00037DA8,0x000FBA00,18,src/math/coord2d.cpp,matched,sets x/y from floats
+?Set@Coord3D@@QAEAAV1@MMM@Z,0x00041C77,0x000C8D50,25,src/math/coord3d.cpp,matched,sets x/y/z from floats
+?SetMaxVect@Coord2D@@QAEAAV1@XZ,0x00047442,0x007E5C70,16,src/math/coord2d.cpp,matched,sets x/y to maximum float bit pattern
+?SetMaxVect@Coord3D@@QAEAAV1@XZ,0x000437E8,0x007E6030,16,src/math/coord3d.cpp,matched,sets x/y/z to maximum float bit pattern
+?SetMinVect@Coord2D@@QAEAAV1@XZ,0x000481B7,0x007E5C50,16,src/math/coord2d.cpp,matched,sets x/y to minimum float bit pattern
+?SetMinVect@Coord3D@@QAEAAV1@XZ,0x0003053A,0x007E6010,16,src/math/coord3d.cpp,matched,sets x/y/z to minimum float bit pattern
+?SetXAxis@Coord2D@@QAEAAV1@XZ,0x00038933,0x007E5C10,16,src/math/coord2d.cpp,matched,sets unit x axis
+?SetXAxis@Coord3D@@QAEAAV1@XZ,0x00025770,0x007E5FD0,17,src/math/coord3d.cpp,matched,sets unit x axis
+?SetYAxis@Coord2D@@QAEAAV1@XZ,0x00048B62,0x007E5C30,16,src/math/coord2d.cpp,matched,sets unit y axis
+?SetYAxis@Coord3D@@QAEAAV1@XZ,0x00048856,0x007E5FF0,23,src/math/coord3d.cpp,matched,sets unit y axis
+?SetZAxis@Coord3D@@QAEAAV1@XZ,0x0001C06C,0x001BD760,23,src/math/coord3d.cpp,matched,sets unit z axis
+?SetZero@Coord2D@@QAEAAV1@XZ,0x00022D0E,0x003FD390,16,src/math/coord2d.cpp,matched,sets x/y to zero and returns self
 ?SetZero@Coord3D@@QAEAAV1@XZ,0x000495CB,0x00148760,13,src/math/coord3d.cpp,matched,sets x/y/z to zero and returns self
+?set@Coord3D@@QAEXMMM@Z,0x00005F0B,0x000FB9C0,23,src/math/coord3d.cpp,matched,sets x/y/z from floats
+?set@Coord3D@@QAEXPBUCoord3DBase@@@Z,0x000491F2,0x000FB9A0,23,src/math/coord3d.cpp,matched,copies x/y/z from pointer

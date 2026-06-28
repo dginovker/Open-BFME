@@ -217,7 +217,7 @@ def compiler_command(source, output):
         str(compiler),
         "/nologo",
         "/c",
-        "/O1",
+        "/O2",
         "/GR-",
         "/EHsc-",
         f"/Fo{output_arg}",

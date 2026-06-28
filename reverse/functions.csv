@@ -162,3 +162,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?width@IRegion3D@@QBEHXZ,0x0000D37D,0x007E6F00,6,src/math/region.cpp,matched,returns integer width
 ?width@Region2D@@QBEMXZ,0x00011CB1,0x00160B20,6,src/math/region.cpp,matched,returns float width
 ?width@Region3D@@QBEMXZ,0x00012EA4,0x001066B0,6,src/math/region.cpp,matched,returns float width
+?Sin@@YAMM@Z,0x00873910,0x00873910,7,src/math/trig.cpp,matched,returns sine of radians
+?Cos@@YAMM@Z,0x00873920,0x00873920,7,src/math/trig.cpp,matched,returns cosine of radians
+?Tan@@YAMM@Z,0x00873930,0x00873930,9,src/math/trig.cpp,matched,returns tangent of radians
+?_GetBlockSize@MemoryPool@@YAIPAX@Z,0x00882D40,0x00882D40,13,src/game/memory_pool.cpp,matched,returns block size or zero for null
+?debugIgnoreLeaks@?$StringBase@D@@QAEXXZ,0x00887080,0x00887080,1,src/game/string_base.cpp,matched,no-op leak ignore

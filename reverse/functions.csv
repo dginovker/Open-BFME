@@ -17,8 +17,16 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ICoord2D@@QAE@XZ,0x00039130,0x00083360,3,src/math/icoord.cpp,matched,empty constructor returns self
 ??0ICoord3D@@QAE@HHH@Z,0x0001E85D,0x0015B8E0,25,src/math/icoord.cpp,matched,sets x/y/z from ints
 ??0ICoord3D@@QAE@XZ,0x0000DEAE,0x00148770,3,src/math/icoord.cpp,matched,empty constructor returns self
+??0IRegion3D@@QAE@XZ,0x0002F270,0x007E6F30,3,src/math/region.cpp,matched,empty constructor returns self
+??0Region2D@@QAE@ABU0@@Z,0x000173CD,0x0005C320,31,src/math/region.cpp,matched,copies bounds
+??0Region2D@@QAE@ABVCoord2D@@0@Z,0x000277EB,0x0061BA60,34,src/math/region.cpp,matched,copies lower and upper coordinates
+??0Region2D@@QAE@XZ,0x0001DFB1,0x00160B10,3,src/math/region.cpp,matched,empty constructor returns self
+??0Region3D@@QAE@ABU0@@Z,0x00032E02,0x000BEC90,43,src/math/region.cpp,matched,copies bounds
+??0Region3D@@QAE@XZ,0x00024573,0x000BEC80,3,src/math/region.cpp,matched,empty constructor returns self
 ??1Coord2D@@QAE@XZ,0x0003EAB8,0x0005BD90,1,src/math/coord2d.cpp,matched,empty destructor emits ret
 ??1Coord3D@@QAE@XZ,0x0001364C,0x0005BC40,1,src/math/coord3d.cpp,matched,empty destructor emits ret
+??1Region2D@@QAE@XZ,0x000071DF,0x0005C310,1,src/math/region.cpp,matched,empty destructor emits ret
+??1Region3D@@QAE@XZ,0x00045746,0x0006B0C0,1,src/math/region.cpp,matched,empty destructor emits ret
 ??4Coord2D@@QAEAAV0@ABUCoord2DBase@@@Z,0x00038AC3,0x007E5A20,19,src/math/coord2d.cpp,matched,copies x/y from Coord2DBase
 ??4Coord2D@@QAEAAV0@ABUCoord3DBase@@@Z,0x00017706,0x007E5A60,19,src/math/coord2d.cpp,matched,copies x/y from Coord3DBase
 ??4Coord2D@@QAEAAV0@ABV0@@Z,0x0004592B,0x007E5A00,19,src/math/coord2d.cpp,matched,copies x/y from Coord2D
@@ -31,10 +39,16 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4ICoord2DBase@@QAEAAU0@ABU0@@Z,0x00017071,0x007E6D50,19,src/math/icoord.cpp,matched,copies x/y from ICoord2DBase
 ??8ICoord2D@@QBE_NABUICoord2DBase@@@Z,0x00010AA5,0x003D5220,31,src/math/icoord.cpp,matched,compares x/y
 ??8@YA_NABVGameClientRandomVariable@@0@Z,0x0002BEF9,0x007E7750,53,src/game/game_client_random_variable.cpp,matched,compares distribution/minimum/maximum
+??8IRegion2D@@QBE_NABU0@@Z,0x00007338,0x00403AC0,47,src/math/region.cpp,matched,compares bounds
 ??9ICoord2D@@QBE_NABUICoord2DBase@@@Z,0x0000FEDE,0x003D5250,31,src/math/icoord.cpp,matched,compares x/y
 ??9@YA_NABVGameClientRandomVariable@@0@Z,0x00016775,0x007E77A0,71,src/game/game_client_random_variable.cpp,matched,compares distribution/minimum/maximum
+??9IRegion2D@@QBE_NABU0@@Z,0x0003E9BE,0x00403B00,65,src/math/region.cpp,matched,compares bounds
+?IsExactlyEqualTo@Region2D@@QBE_NABU1@@Z,0x00007C66,0x0061BAF0,75,src/math/region.cpp,matched,compares exact float bounds
 ?zero@Coord3D@@QAEXXZ,0x00029226,0x00083340,11,src/math/coord3d.cpp,matched,sets x/y/z to zero
 ?zero@ICoord3D@@QAEXXZ,0x000268C3,0x0045B890,11,src/math/icoord.cpp,matched,sets x/y/z to zero
+?zero@Region3D@@QAEXXZ,0x0003652F,0x000BEC60,20,src/math/region.cpp,matched,sets bounds to zero
+?depth@IRegion3D@@QBEHXZ,0x00040E53,0x007E6F20,7,src/math/region.cpp,matched,returns integer depth
+?depth@Region3D@@QBEMXZ,0x0001DB24,0x007E6E30,7,src/math/region.cpp,matched,returns float depth
 ?Set2D@Coord3D@@QAEAAV1@MM@Z,0x0003D00A,0x007E5FB0,18,src/math/coord3d.cpp,matched,sets x/y from floats
 ?Set@Coord2D@@QAEAAV1@MM@Z,0x00037DA8,0x000FBA00,18,src/math/coord2d.cpp,matched,sets x/y from floats
 ?Set@Coord3D@@QAEAAV1@MMM@Z,0x00041C77,0x000C8D50,25,src/math/coord3d.cpp,matched,sets x/y/z from floats
@@ -52,6 +66,14 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ,0x0000E4C1,0x0010BDB0,3,src/game/game_client_random_variable.cpp,matched,returns distribution type
 ?getMaximumValue@GameClientRandomVariable@@QBEMXZ,0x0002E532,0x0010BDA0,4,src/game/game_client_random_variable.cpp,matched,returns maximum value
 ?getMinimumValue@GameClientRandomVariable@@QBEMXZ,0x00013822,0x0010BD90,4,src/game/game_client_random_variable.cpp,matched,returns minimum value
+?height@IRegion2D@@QBEHXZ,0x00011B49,0x001A19B0,7,src/math/region.cpp,matched,returns integer height
+?height@IRegion3D@@QBEHXZ,0x00005B5A,0x007E6F10,7,src/math/region.cpp,matched,returns integer height
+?height@Region2D@@QBEMXZ,0x00035053,0x00160B30,7,src/math/region.cpp,matched,returns float height
+?height@Region3D@@QBEMXZ,0x00039225,0x001066C0,7,src/math/region.cpp,matched,returns float height
 ?set@Coord3D@@QAEXMMM@Z,0x00005F0B,0x000FB9C0,23,src/math/coord3d.cpp,matched,sets x/y/z from floats
 ?set@Coord3D@@QAEXPBUCoord3DBase@@@Z,0x000491F2,0x000FB9A0,23,src/math/coord3d.cpp,matched,copies x/y/z from pointer
 ?setRange@GameClientRandomVariable@@QAEXMMW4DistributionType@1@@Z,0x00006C58,0x00096F40,23,src/game/game_client_random_variable.cpp,matched,sets distribution/minimum/maximum
+?width@IRegion2D@@QBEHXZ,0x00029299,0x001A19A0,6,src/math/region.cpp,matched,returns integer width
+?width@IRegion3D@@QBEHXZ,0x0000D37D,0x007E6F00,6,src/math/region.cpp,matched,returns integer width
+?width@Region2D@@QBEMXZ,0x00011CB1,0x00160B20,6,src/math/region.cpp,matched,returns float width
+?width@Region3D@@QBEMXZ,0x00012EA4,0x001066B0,6,src/math/region.cpp,matched,returns float width

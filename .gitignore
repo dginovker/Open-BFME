@@ -6,3 +6,4 @@ build/toolchains/*
 .venv/
 __pycache__/
 *.pyc
+reverse/exports.csv

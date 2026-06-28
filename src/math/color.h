@@ -4,10 +4,30 @@ struct RGBColor {
     float red;
     float green;
     float blue;
+
+    RGBColor &operator=(const RGBColor &that);
 };
 
 bool operator==(const RGBColor &left, const RGBColor &right);
 bool operator!=(const RGBColor &left, const RGBColor &right);
+
+struct RGBAColorInt {
+    int red;
+    int green;
+    int blue;
+    int alpha;
+
+    RGBAColorInt &operator=(const RGBAColorInt &that);
+};
+
+struct RGBAColorReal {
+    float red;
+    float green;
+    float blue;
+    float alpha;
+
+    RGBAColorReal &operator=(const RGBAColorReal &that);
+};
 
 namespace FXParticleSystem {
 

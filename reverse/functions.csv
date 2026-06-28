@@ -66,6 +66,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??8Coord3D@@QBE_NABV0@@Z,0x00008FF8,0x00131C40,60,src/math/coord3d.cpp,matched,compares x/y/z
 ??8IRegion2D@@QBE_NABU0@@Z,0x00007338,0x00403AC0,47,src/math/region.cpp,matched,compares bounds
 ??8@YA_NABURGBColor@@0@Z,0x000136D8,0x007E6FB0,60,src/math/color.cpp,matched,compares RGB channels
+??4RGBColor@@QAEAAU0@ABU0@@Z,0x00020770,0x007E6F80,26,src/math/color.cpp,matched,copies RGB channels
+??4RGBAColorInt@@QAEAAU0@ABU0@@Z,0x0004868A,0x007E70A0,35,src/math/color.cpp,matched,copies RGBA channels
+??4RGBAColorReal@@QAEAAU0@ABU0@@Z,0x0000CD83,0x007E7070,35,src/math/color.cpp,matched,copies RGBA channels
+??4Snapshot@@QAEAAV0@ABV0@@Z,0x0001E150,0x0005C540,5,src/game/snapshot.cpp,matched,no-op assignment
 ??9ICoord2D@@QBE_NABUICoord2DBase@@@Z,0x0000FEDE,0x003D5250,31,src/math/icoord.cpp,matched,compares x/y
 ??9@YA_NABVGameClientRandomVariable@@0@Z,0x00016775,0x007E77A0,71,src/game/game_client_random_variable.cpp,matched,compares distribution/minimum/maximum
 ??9IRegion2D@@QBE_NABU0@@Z,0x0003E9BE,0x00403B00,65,src/math/region.cpp,matched,compares bounds

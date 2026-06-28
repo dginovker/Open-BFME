@@ -86,6 +86,14 @@ Coord2D &Coord2D::operator*=(float scale)
     return *this;
 }
 
+Coord2D &Coord2D::operator/=(float divisor)
+{
+    float scale = 1.0f / divisor;
+    x *= scale;
+    y *= scale;
+    return *this;
+}
+
 Coord2D &Coord2D::operator+=(const Coord2D &that)
 {
     x += that.x;

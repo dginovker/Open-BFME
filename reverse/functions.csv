@@ -122,6 +122,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GetLengthEstimate2D@Coord3D@@QBEMXZ,0x00043464,0x000C3D10,31,src/math/coord3d.cpp,matched,returns approximate x/y length
 ?GetLengthSqrd2D@Coord3D@@QBEMXZ,0x000185D9,0x001DD2C0,20,src/math/coord3d.cpp,matched,returns squared x/y length
 ?GetLengthSqrd@Coord2D@@QBEMXZ,0x00013976,0x00233D00,20,src/math/coord2d.cpp,matched,returns squared x/y length
+??_0Coord2D@@QAEAAV0@M@Z,0x0001067C,0x0043A5C0,26,src/math/coord2d.cpp,matched,divides x/y by scalar
 ?GetLengthSqrd@Coord3D@@QBEMXZ,0x0002E339,0x0015BEF0,31,src/math/coord3d.cpp,matched,returns squared x/y/z length
 ?Set2D@Coord3D@@QAEAAV1@MM@Z,0x0003D00A,0x007E5FB0,18,src/math/coord3d.cpp,matched,sets x/y from floats
 ?Set@Coord2D@@QAEAAV1@MM@Z,0x00037DA8,0x000FBA00,18,src/math/coord2d.cpp,matched,sets x/y from floats

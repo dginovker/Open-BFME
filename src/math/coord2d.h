@@ -25,6 +25,7 @@ public:
     float operator*(const Coord2D &that) const;
     float operator*(const Coord3DBase &that) const;
     Coord2D &operator*=(float scale);
+    Coord2D &operator/=(float divisor);
     Coord2D &operator+=(const Coord2D &that);
     Coord2D &operator+=(const Coord3DBase &that);
     Coord2D &operator-=(const Coord2D &that);

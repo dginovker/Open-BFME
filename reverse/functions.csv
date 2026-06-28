@@ -178,3 +178,20 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?_GetBlockSize@MemoryPool@@YAIPAX@Z,0x00882D40,0x00882D40,13,src/game/memory_pool.cpp,matched,returns block size or zero for null
 ?_Exit@MemoryPool@@YAXXZ,0x00882950,0x00882950,6,src/game/memory_pool.cpp,matched,decrements reference count
 ?debugIgnoreLeaks@?$StringBase@D@@QAEXXZ,0x00887080,0x00887080,1,src/game/string_base.cpp,matched,no-op leak ignore
+?GetSnapshotName@LifeEventModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00001E8D,0x005D4660,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@DefaultPhysicsModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00003BB1,0x005D4620,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@WindModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00003CA1,0x005BD950,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@DefaultUpdateModuleInfo@FXParticleSystem@@UAEPBDXZ,0x0000A894,0x005D4640,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@ParticleSystemInfo@FXParticleSystem@@UAEPBDXZ,0x0000D896,0x0005C990,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@DefaultDrawModuleInfo@FXParticleSystem@@UAEPBDXZ,0x000145C4,0x005D4580,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@TerrainCollisionModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00018D36,0x005D4790,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@DefaultColorModuleInfo@FXParticleSystem@@UAEPBDXZ,0x0001B3CE,0x005D4560,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@RenderObjectUpdateModuleInfo@FXParticleSystem@@UAEPBDXZ,0x0001C837,0x005D4770,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@EmissionVelocityInfo@FXParticleSystem@@UAEPBDXZ,0x0001DA43,0x005BD7B0,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@ButterflyDrawModuleInfo@FXParticleSystem@@UAEPBDXZ,0x000204E1,0x005D46E0,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@QuadDrawModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00024839,0x005D46B0,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@LightningDrawModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00026323,0x005D4740,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@RenderObjectDrawModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00026F99,0x005D4710,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@EmissionVolumeInfo@FXParticleSystem@@UAEPBDXZ,0x00035198,0x005BD660,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@DefaultAlphaModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00035CA6,0x005D4540,6,src/game/fx_particle_system.cpp,matched,returns class name
+?GetSnapshotName@StreakDrawModuleInfo@FXParticleSystem@@UAEPBDXZ,0x0004009D,0x005D4680,6,src/game/fx_particle_system.cpp,matched,returns class name

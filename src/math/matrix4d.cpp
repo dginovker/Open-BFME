@@ -99,6 +99,27 @@ Matrix4D &Matrix4D::operator=(const Matrix4D &that)
     return *this;
 }
 
+Matrix4D &Matrix4D::operator*=(float scale)
+{
+    values[0] *= scale;
+    values[1] *= scale;
+    values[2] *= scale;
+    values[3] *= scale;
+    values[4] *= scale;
+    values[5] *= scale;
+    values[6] *= scale;
+    values[7] *= scale;
+    values[8] *= scale;
+    values[9] *= scale;
+    values[10] *= scale;
+    values[11] *= scale;
+    values[12] *= scale;
+    values[13] *= scale;
+    values[14] *= scale;
+    values[15] *= scale;
+    return *this;
+}
+
 Matrix4D &Matrix4D::operator+=(const Matrix4D &that)
 {
     values[0] += that.values[0];

@@ -67,6 +67,11 @@ Coord3D &Coord3D::operator=(const Coord3DBase &that)
     return *this;
 }
 
+bool Coord3D::operator==(const Coord3D &that) const
+{
+    return x == that.x && y == that.y && z == that.z;
+}
+
 float Coord3D::operator*(const Coord2D &that) const
 {
     return x * that.x + y * that.y;
@@ -166,6 +171,16 @@ Coord3D &Coord3D::Add2D(const Coord3DBase &left, const Coord3DBase &right)
     x = left.x + right.x;
     y = left.y + right.y;
     return *this;
+}
+
+bool Coord3D::equals(const Coord3DBase &that) const
+{
+    return x == that.x && y == that.y && z == that.z;
+}
+
+bool Coord3D::IsExactlyEqualTo(const Coord3D &that) const
+{
+    return x == that.x && y == that.y && z == that.z;
 }
 
 float Coord3D::lengthSqr() const

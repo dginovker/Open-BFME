@@ -21,6 +21,7 @@ public:
     Coord3D &operator=(const Coord2D &that);
     Coord3D &operator=(const Coord2DBase &that);
     Coord3D &operator=(const Coord3DBase &that);
+    bool operator==(const Coord3D &that) const;
     float operator*(const Coord2D &that) const;
     float operator*(const Coord3DBase &that) const;
     Coord3D &operator*=(float scale);
@@ -36,6 +37,8 @@ public:
     Coord3D &Add(const Coord3DBase &left, const Coord3DBase &right);
     Coord3D &Add2D(const Coord3DBase &that);
     Coord3D &Add2D(const Coord3DBase &left, const Coord3DBase &right);
+    bool equals(const Coord3DBase &that) const;
+    bool IsExactlyEqualTo(const Coord3D &that) const;
     float lengthSqr() const;
     Coord3D &Negate();
     Coord3D &Scale(float scale);

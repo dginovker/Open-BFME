@@ -32,6 +32,7 @@ public:
 
     Coord2D &Add(const Coord2D &that);
     Coord2D &Add(const Coord3DBase &that);
+    bool IsExactlyEqualTo(const Coord2D &that) const;
     Coord2D &Negate();
     Coord2D &Scale(float scale);
     Coord2D &Set(float x, float y);

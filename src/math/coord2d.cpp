@@ -126,6 +126,11 @@ Coord2D &Coord2D::Add(const Coord3DBase &that)
     return *this;
 }
 
+bool Coord2D::IsExactlyEqualTo(const Coord2D &that) const
+{
+    return x == that.x && y == that.y;
+}
+
 Coord2D &Coord2D::Negate()
 {
     x = -x;

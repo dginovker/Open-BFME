@@ -54,6 +54,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??ZCoord3D@@QAEAAV0@ABVCoord2D@@@Z,0x000296FE,0x007E5CD0,24,src/math/coord3d.cpp,matched,subtracts Coord2D x/y
 ??8ICoord2D@@QBE_NABUICoord2DBase@@@Z,0x00010AA5,0x003D5220,31,src/math/icoord.cpp,matched,compares x/y
 ??8@YA_NABVGameClientRandomVariable@@0@Z,0x0002BEF9,0x007E7750,53,src/game/game_client_random_variable.cpp,matched,compares distribution/minimum/maximum
+??8Coord3D@@QBE_NABV0@@Z,0x00008FF8,0x00131C40,60,src/math/coord3d.cpp,matched,compares x/y/z
 ??8IRegion2D@@QBE_NABU0@@Z,0x00007338,0x00403AC0,47,src/math/region.cpp,matched,compares bounds
 ??8@YA_NABURGBColor@@0@Z,0x000136D8,0x007E6FB0,60,src/math/color.cpp,matched,compares RGB channels
 ??9ICoord2D@@QBE_NABUICoord2DBase@@@Z,0x0000FEDE,0x003D5250,31,src/math/icoord.cpp,matched,compares x/y
@@ -61,6 +62,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??9IRegion2D@@QBE_NABU0@@Z,0x0003E9BE,0x00403B00,65,src/math/region.cpp,matched,compares bounds
 ??9@YA_NABURGBColor@@0@Z,0x00049ED1,0x007E7000,78,src/math/color.cpp,matched,compares RGB channels
 ?IsExactlyEqualTo@Region2D@@QBE_NABU1@@Z,0x00007C66,0x0061BAF0,75,src/math/region.cpp,matched,compares exact float bounds
+?IsExactlyEqualTo@Coord2D@@QBE_NABV1@@Z,0x0003012A,0x003BC910,45,src/math/coord2d.cpp,matched,compares exact x/y
+?IsExactlyEqualTo@Coord3D@@QBE_NABV1@@Z,0x0001DD72,0x001B2C20,60,src/math/coord3d.cpp,matched,compares exact x/y/z
 ?GetTranslationVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x00017210,0x007E6CE0,24,src/math/matrix4d.cpp,matched,copies translation vector
 ?GetXVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x00042F00,0x007E6C80,23,src/math/matrix4d.cpp,matched,copies x basis vector
 ?GetYVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x00024280,0x007E6CA0,24,src/math/matrix4d.cpp,matched,copies y basis vector
@@ -86,6 +89,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?zero@Region3D@@QAEXXZ,0x0003652F,0x000BEC60,20,src/math/region.cpp,matched,sets bounds to zero
 ?depth@IRegion3D@@QBEHXZ,0x00040E53,0x007E6F20,7,src/math/region.cpp,matched,returns integer depth
 ?depth@Region3D@@QBEMXZ,0x0001DB24,0x007E6E30,7,src/math/region.cpp,matched,returns float depth
+?equals@Coord3D@@QBE_NABUCoord3DBase@@@Z,0x00001334,0x0016A110,60,src/math/coord3d.cpp,matched,compares x/y/z with Coord3DBase
 ?Set2D@Coord3D@@QAEAAV1@MM@Z,0x0003D00A,0x007E5FB0,18,src/math/coord3d.cpp,matched,sets x/y from floats
 ?Set@Coord2D@@QAEAAV1@MM@Z,0x00037DA8,0x000FBA00,18,src/math/coord2d.cpp,matched,sets x/y from floats
 ?Set@Coord3D@@QAEAAV1@MMM@Z,0x00041C77,0x000C8D50,25,src/math/coord3d.cpp,matched,sets x/y/z from floats

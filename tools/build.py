@@ -43,7 +43,7 @@ def main():
 
         print(f"  OK {entry['path']}")
 
-    print("No reconstructed source target is configured yet.")
+    print("Source candidates are not compiled by this script yet.")
 
 
 if __name__ == "__main__":

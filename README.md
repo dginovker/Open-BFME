@@ -51,7 +51,21 @@ git lfs pull
 
 `build.sh` / `build.ps1` currently verifies the checked-in executable baseline.
 
-A compiler is not wired up yet because there is no reconstructed source target yet. As soon as the first function is added, the build should require a pinned compiler/toolchain. The likely long-term target is MSVC 7.1 / Visual Studio .NET 2003, because the baseline executable was linked with MSVC linker 7.10.
+A compiler is not wired into the build yet. The likely long-term target is MSVC 7.1 / Visual Studio .NET 2003, because the baseline executable was linked with MSVC linker 7.10.
+
+Current source candidate:
+
+```text
+src/math/coord3d.cpp
+```
+
+It is tracked as `candidate` until compiled bytes are matched against the target RVA in `reverse/functions.csv`.
+
+Regenerate the export inventory:
+
+```bash
+tools/export_symbols.py
+```
 
 ## Layout
 
@@ -66,4 +80,3 @@ tools/      Build/verification scripts
 
 * https://bfmeladder.com/
 * https://the3rdage.net/
-

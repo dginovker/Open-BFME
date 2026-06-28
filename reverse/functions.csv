@@ -1,0 +1,3 @@
+name,export_rva,target_rva,source,status,notes
+?zero@Coord3D@@QAEXXZ,0x00029226,0x00083340,src/math/coord3d.cpp,candidate,implementation zeroes three 32-bit fields and returns
+

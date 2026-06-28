@@ -55,10 +55,12 @@ def main():
     )
     args = parser.parse_args()
 
+    symbol_map = build_tool.load_symbol_map()
+
     patches = []
     changed = 0
     for row in selected_rows(args.functions):
-        patch = build_tool.compile_function(row)
+        patch = build_tool.compile_function(row, symbol_map)
         if len(patch["bytes"]) != len(patch["target"]):
             raise SystemExit(
                 f"{patch['name']}: compiled size {len(patch['bytes'])} != "

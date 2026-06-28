@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "bfme1.workshop-vanilla-1.03",
+  "name": "BFME1 Workshop Vanilla 1.03 executable baseline",
+  "files": [
+    {
+      "path": "files/lotrbfme.exe",
+      "role": "primary_reverse_engineering_target",
+      "size": 16433152,
+      "md5": "34af1cded478f6f48b333db0b8d5f6d9",
+      "sha256": "c1a907c44b84df129c1f18dc7365ea25ba438f9b8f39a374b86ed852936ff0a9",
+      "pe": {
+        "machine": "i386",
+        "linker_version": "7.10",
+        "timestamp_utc": "2005-11-29T01:15:52Z",
+        "entry_point_rva": "0x009F72C4",
+        "image_base": "0x00400000",
+        "section_alignment": 4096,
+        "file_alignment": 4096,
+        "sections": 7
+      }
+    },
+    {
+      "path": "files/worldbuilder.exe",
+      "role": "secondary_executable_target",
+      "size": 18300928,
+      "md5": "e25baf75dd813e8b922ebb56fc269eb4",
+      "sha256": "5be8adf1807f7ba38acd598d89685e231eb90b8808b0650770557191a3b8192f",
+      "pe": {
+        "machine": "i386",
+        "linker_version": "7.10",
+        "timestamp_utc": "2005-03-21T23:51:34Z",
+        "entry_point_rva": "0x007E2418",
+        "image_base": "0x00400000",
+        "section_alignment": 4096,
+        "file_alignment": 4096,
+        "sections": 8
+      }
+    }
+  ]
+}

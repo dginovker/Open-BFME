@@ -38,6 +38,7 @@ struct Region2D {
     ~Region2D();
 
     bool IsExactlyEqualTo(const Region2D &that) const;
+    bool isInside(const Coord2D &point) const;
     float width() const;
     float height() const;
 

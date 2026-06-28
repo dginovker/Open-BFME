@@ -74,6 +74,14 @@ bool Region2D::IsExactlyEqualTo(const Region2D &that) const
         that.y_max == y_max;
 }
 
+bool Region2D::isInside(const Coord2D &point) const
+{
+    return point.x > x_min &&
+        point.x < x_max &&
+        point.y > y_min &&
+        point.y < y_max;
+}
+
 float Region2D::width() const
 {
     return x_max - x_min;

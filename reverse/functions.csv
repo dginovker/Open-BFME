@@ -18,6 +18,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ICoord3D@@QAE@HHH@Z,0x0001E85D,0x0015B8E0,25,src/math/icoord.cpp,matched,sets x/y/z from ints
 ??0ICoord3D@@QAE@XZ,0x0000DEAE,0x00148770,3,src/math/icoord.cpp,matched,empty constructor returns self
 ??0IRegion3D@@QAE@XZ,0x0002F270,0x007E6F30,3,src/math/region.cpp,matched,empty constructor returns self
+??0Matrix4D@@QAE@ABV0@@Z,0x00014FB0,0x007E7B70,107,src/math/matrix4d.cpp,matched,copies values
 ??0Matrix4D@@QAE@XZ,0x000218D7,0x007E6050,3,src/math/matrix4d.cpp,matched,empty constructor returns self
 ??0Matrix4D@@QAE@_N@Z,0x0000F5F1,0x007E79D0,67,src/math/matrix4d.cpp,matched,optionally initializes identity
 ??0Matrix4D@@QAE@MMMMMMMMMMMMMMMM@Z,0x00017D28,0x007E7C70,116,src/math/matrix4d.cpp,matched,sets values from 16 floats
@@ -41,6 +42,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4ICoord2D@@QAEAAU0@ABU0@@Z,0x00009011,0x007E6D70,19,src/math/icoord.cpp,matched,copies x/y from ICoord2D
 ??4ICoord2D@@QAEAAU0@ABUICoord2DBase@@@Z,0x00001C21,0x00477BA0,19,src/math/icoord.cpp,matched,copies x/y from ICoord2DBase
 ??4ICoord2DBase@@QAEAAU0@ABU0@@Z,0x00017071,0x007E6D50,19,src/math/icoord.cpp,matched,copies x/y from ICoord2DBase
+??4Matrix4D@@QAEAAV0@ABV0@@Z,0x0001EA0B,0x007E64D0,107,src/math/matrix4d.cpp,matched,copies values
 ??DCoord2D@@QBEMABUCoord3DBase@@@Z,0x0000DAF8,0x007E5AC0,19,src/math/coord2d.cpp,matched,dot product with Coord3DBase x/y
 ??DCoord2D@@QBEMABV0@@Z,0x0004A4BC,0x007E5A40,19,src/math/coord2d.cpp,matched,dot product with Coord2D
 ??DCoord3D@@QBEMABUCoord3DBase@@@Z,0x00011F09,0x0018F1C0,27,src/math/coord3d.cpp,matched,dot product with Coord3DBase

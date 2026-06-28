@@ -50,7 +50,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??DCoord3D@@QBEMABVCoord2D@@@Z,0x00044FE4,0x007E5CF0,19,src/math/coord3d.cpp,matched,dot product with Coord2D
 ??XCoord2D@@QAEAAV0@M@Z,0x00019C31,0x0014FF90,23,src/math/coord2d.cpp,matched,scales x/y in place
 ??XCoord3D@@QAEAAV0@M@Z,0x00002A13,0x0016A290,33,src/math/coord3d.cpp,matched,scales x/y/z in place
+??_0Coord3D@@QAEAAV0@M@Z,0x0002EB1D,0x000EC6C0,33,src/math/coord3d.cpp,matched,divides x/y/z by scalar
 ??XMatrix4D@@QAEAAV0@M@Z,0x0002C7EB,0x007E66E0,163,src/math/matrix4d.cpp,matched,scales matrix values in place
+??_0Matrix4D@@QAEAAV0@M@Z,0x00025BC6,0x007E67B0,139,src/math/matrix4d.cpp,matched,divides matrix values by scalar
 ??YCoord2D@@QAEAAV0@ABUCoord3DBase@@@Z,0x0003521A,0x007E5A80,24,src/math/coord2d.cpp,matched,adds Coord3DBase x/y
 ??YCoord2D@@QAEAAV0@ABV0@@Z,0x0001945C,0x002320C0,24,src/math/coord2d.cpp,matched,adds Coord2D
 ??YCoord3D@@QAEAAV0@ABUCoord3DBase@@@Z,0x000233EE,0x00148730,33,src/math/coord3d.cpp,matched,adds Coord3DBase

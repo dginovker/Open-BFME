@@ -99,11 +99,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Add@Coord3D@@QAEAAV1@ABVCoord2D@@ABUCoord3DBase@@@Z,0x0001F802,0x007E5EF0,34,src/math/coord3d.cpp,matched,adds Coord2D and Coord3DBase
 ?Negate@Coord2D@@QAEAAV1@XZ,0x0000848B,0x007E5B20,17,src/math/coord2d.cpp,matched,negates x/y
 ?Negate@Coord3D@@QAEAAV1@XZ,0x0002C3CC,0x007E5DA0,25,src/math/coord3d.cpp,matched,negates x/y/z
-?Normalize@Coord3D@@QAEMXZ,0x0001E0BA,0x000FE9E0,61,src/math/coord3d.cpp,matched,normalizes 3D vector and returns length
-?Normalize2D@Coord3D@@QAEMXZ,0x0001C661,0x007E7990,42,src/math/coord3d.cpp,matched,normalizes x/y and returns length
-?normalize@Coord3D@@QAEXXZ,0x0002BD82,0x000FB930,76,src/math/coord3d.cpp,matched,normalizes 3D vector in place with zero check
 ?Normalize@Coord2D@@QAEMXZ,0x0002C548,0x003A4140,42,src/math/coord2d.cpp,matched,normalizes vector and returns length
-?normalize@Coord2D@@QAEXXZ,0x0000650F,0x0014FF40,60,src/math/coord2d.cpp,matched,normalizes vector in place with zero check
 ?Rotate@Coord2D@@QAEAAV1@AAV1@MM@Z,0x00023772,0x007E5BD0,44,src/math/coord2d.cpp,matched,rotates source by sine/cosine into this
 ?Rotate@Coord2D@@QAEAAV1@MM@Z,0x0001251C,0x007E5B40,40,src/math/coord2d.cpp,matched,rotates vector in place by sine/cosine
 ?Scale@Coord2D@@QAEAAV1@M@Z,0x000444EF,0x0014FFB0,23,src/math/coord2d.cpp,matched,scales x/y in place

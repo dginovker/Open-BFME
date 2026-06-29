@@ -171,7 +171,6 @@ Coord2D &Coord2D::Negate()
 
 static const float one = 1.0f;
 static const float length_estimate_factor = 0.25f;
-static const float normalize_threshold = 1.0e-37f;
 
 float Coord2D::Normalize()
 {
@@ -193,38 +192,6 @@ float Coord2D::Normalize()
         fstp dword ptr [ecx]
         fmul dword ptr [ecx + 4]
         fstp dword ptr [ecx + 4]
-    }
-}
-
-void Coord2D::normalize()
-{
-    __asm {
-        fld dword ptr [ecx + 4]
-        fld dword ptr [ecx]
-        fld ST(0)
-        fmul ST(0), ST(1)
-        fld ST(2)
-        fmul ST(0), ST(3)
-        faddp ST(1), ST(0)
-        fsqrt
-        fstp ST(2)
-        fstp ST(0)
-        fld normalize_threshold
-        fld ST(1)
-        fucompp
-        fnstsw ax
-        test ah, 0x44
-        jnp skip
-        fdivr one
-        fld ST(0)
-        fmul dword ptr [ecx]
-        fstp dword ptr [ecx]
-        fmul dword ptr [ecx + 4]
-        fstp dword ptr [ecx + 4]
-        ret
-    skip:
-        fstp ST(0)
-        ret
     }
 }
 

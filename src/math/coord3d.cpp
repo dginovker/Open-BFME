@@ -207,8 +207,6 @@ float Coord3D::GetLength2D() const
 }
 
 static const float length_estimate_factor = 0.25f;
-static const float one = 1.0f;
-static const float normalize_threshold = 1.0e-37f;
 
 float Coord3D::GetLengthEstimate2D() const
 {
@@ -267,100 +265,6 @@ Coord3D &Coord3D::Negate()
     y = -y;
     z = -z;
     return *this;
-}
-
-void Coord3D::normalize()
-{
-    __asm {
-        fld dword ptr [ecx + 8]
-        fld dword ptr [ecx + 4]
-        fld dword ptr [ecx]
-        fld ST(0)
-        fmul ST(0), ST(1)
-        fld ST(2)
-        fmul ST(0), ST(3)
-        faddp ST(1), ST(0)
-        fld ST(3)
-        fmul ST(0), ST(4)
-        faddp ST(1), ST(0)
-        fsqrt
-        fstp ST(3)
-        fstp ST(0)
-        fstp ST(0)
-        fld normalize_threshold
-        fld ST(1)
-        fucompp
-        fnstsw ax
-        test ah, 0x44
-        jnp skip
-        fdivr one
-        fld ST(0)
-        fmul dword ptr [ecx]
-        fstp dword ptr [ecx]
-        fld ST(0)
-        fmul dword ptr [ecx + 4]
-        fstp dword ptr [ecx + 4]
-        fmul dword ptr [ecx + 8]
-        fstp dword ptr [ecx + 8]
-        ret
-    skip:
-        fstp ST(0)
-        ret
-    }
-}
-
-float Coord3D::Normalize()
-{
-    __asm {
-        fld dword ptr [ecx]
-        fld dword ptr [ecx + 4]
-        fld dword ptr [ecx + 8]
-        fld ST(0)
-        fmul ST(0), ST(1)
-        fld ST(2)
-        fmul ST(0), ST(3)
-        faddp ST(1), ST(0)
-        fld ST(3)
-        fmul ST(0), ST(4)
-        faddp ST(1), ST(0)
-        fsqrt
-        fstp ST(3)
-        fstp ST(0)
-        fstp ST(0)
-        fld one
-        fdiv ST(0), ST(1)
-        fld ST(0)
-        fmul dword ptr [ecx]
-        fstp dword ptr [ecx]
-        fld ST(0)
-        fmul dword ptr [ecx + 4]
-        fstp dword ptr [ecx + 4]
-        fmul dword ptr [ecx + 8]
-        fstp dword ptr [ecx + 8]
-    }
-}
-
-float Coord3D::Normalize2D()
-{
-    __asm {
-        fld dword ptr [ecx]
-        fld dword ptr [ecx + 4]
-        fld ST(0)
-        fmul ST(0), ST(1)
-        fld ST(2)
-        fmul ST(0), ST(3)
-        faddp ST(1), ST(0)
-        fsqrt
-        fstp ST(2)
-        fstp ST(0)
-        fld one
-        fdiv ST(0), ST(1)
-        fld ST(0)
-        fmul dword ptr [ecx]
-        fstp dword ptr [ecx]
-        fmul dword ptr [ecx + 4]
-        fstp dword ptr [ecx + 4]
-    }
 }
 
 Coord3D &Coord3D::Scale(float scale)

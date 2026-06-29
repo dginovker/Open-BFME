@@ -256,6 +256,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?DoXfer@EmissionVelocityInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x00003C5B,0x005BD7C0,3,src/game/fx_particle_system.cpp,matched,no-op
 ?DoXfer@EmissionVolumeInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x0003D924,0x005BD670,3,src/game/fx_particle_system.cpp,matched,no-op
 ?Normalize@Coord3D@@QAEMXZ,0x0001E0BA,0x000FE9E0,60,src/math/coord3d.cpp,matched,normalizes and returns length
+?Normalize2D@Coord3D@@QAEMXZ,0x0001C661,0x007E7990,42,src/math/coord3d.cpp,matched,normalizes x/y and returns 2D length
 ?IsStoring@Xfer@@UBE_NXZ,0x0003C286,0x007E7680,3,src/game/xfer.cpp,matched,returns false
 ?IsCRC@Xfer@@UBE_NXZ,0x0001BE7D,0x007E7690,3,src/game/xfer.cpp,matched,returns false
 ?IsLightCRC@Xfer@@UBE_NXZ,0x00028B78,0x007E76A0,3,src/game/xfer.cpp,matched,returns false

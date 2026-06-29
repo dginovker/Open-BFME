@@ -53,6 +53,7 @@ public:
     Coord3D &Negate();
     void normalize();
     float Normalize();
+    float Normalize2D();
     Coord3D &Scale(float scale);
     Coord3D &Scale(const Coord3DBase &that, float scale);
     Coord3D &Scale2D(float scale);

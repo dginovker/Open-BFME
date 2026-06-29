@@ -249,6 +249,15 @@ float Coord3D::Normalize()
     return len;
 }
 
+float Coord3D::Normalize2D()
+{
+    float len = GetLength2D();
+    float scale = one / len;
+    x *= scale;
+    y *= scale;
+    return len;
+}
+
 float Coord3D::GetLengthEstimate2D() const
 {
     float ax = fabs(x);

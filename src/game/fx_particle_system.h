@@ -36,12 +36,18 @@ public:
 
 class EmissionVelocityInfo {
 public:
+    EmissionVelocityInfo();
+    virtual ~EmissionVelocityInfo();
     virtual const char *GetSnapshotName();
 };
 
 class EmissionVolumeInfo {
 public:
+    EmissionVolumeInfo();
+    virtual ~EmissionVolumeInfo();
     virtual const char *GetSnapshotName();
+
+    bool m_flag;
 };
 
 class LifeEventModuleInfo {

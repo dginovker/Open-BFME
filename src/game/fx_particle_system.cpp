@@ -40,9 +40,26 @@ const char *DefaultUpdateModuleInfo::GetSnapshotName()
     return "DefaultUpdateModuleInfo";
 }
 
+EmissionVelocityInfo::EmissionVelocityInfo()
+{
+}
+
+EmissionVelocityInfo::~EmissionVelocityInfo()
+{
+}
+
 const char *EmissionVelocityInfo::GetSnapshotName()
 {
     return "EmissionVelocityInfo";
+}
+
+EmissionVolumeInfo::EmissionVolumeInfo()
+{
+    m_flag = false;
+}
+
+EmissionVolumeInfo::~EmissionVolumeInfo()
+{
 }
 
 const char *EmissionVolumeInfo::GetSnapshotName()

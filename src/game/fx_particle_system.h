@@ -159,6 +159,9 @@ public:
 
 class ModuleTemplate {
 public:
+    ModuleTemplate();
+    ModuleTemplate(const ModuleTemplate &that);
+    virtual ~ModuleTemplate();
     ModuleTemplate &operator=(const ModuleTemplate &that);
 };
 

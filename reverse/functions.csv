@@ -374,3 +374,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getTextureFilename@ParticleSystemTemplate@FXParticleSystem@@QBE?AVAsciiString@@XZ,0x00018755,0x0005F240,32,src/game/fx_particle_system.cpp,matched,return texture filename
 ??4Keyframe@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x0001C38C,0x0005C6E0,19,src/game/fx_particle_system.cpp,matched,copy Keyframe frame and value
 ?getValue@GameClientRandomVariable@@QBEMXZ,0x0000D7B5,0x00096F60,123,src/game/game_client_random_variable.cpp,matched,evaluate distribution value
+??0ModuleTemplate@FXParticleSystem@@QAE@XZ,0x00028E3E,0x0005C7C0,9,src/game/fx_particle_system.cpp,matched,default constructor sets vtable
+??0ModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00029B81,0x0005C7E0,9,src/game/fx_particle_system.cpp,matched,copy constructor sets vtable
+??1ModuleTemplate@FXParticleSystem@@UAE@XZ,0x00015A14,0x0005C7D0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable

@@ -160,6 +160,18 @@ ModuleTemplate &ModuleTemplate::operator=(const ModuleTemplate &that)
     return *this;
 }
 
+ModuleTemplate::ModuleTemplate()
+{
+}
+
+ModuleTemplate::ModuleTemplate(const ModuleTemplate &that)
+{
+}
+
+ModuleTemplate::~ModuleTemplate()
+{
+}
+
 ButterflyDrawModuleInfo::~ButterflyDrawModuleInfo()
 {
 }

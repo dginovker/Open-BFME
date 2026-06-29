@@ -225,6 +225,19 @@ float Coord3D::GetLength2D() const
 }
 
 static const float length_estimate_factor = 0.25f;
+static const float one = 1.0f;
+static const float zero_value = 0.0f;
+
+void Coord3D::normalize()
+{
+    float len = (float)sqrt(x * x + y * y + z * z);
+    if (len != zero_value) {
+        float scale = one / len;
+        x *= scale;
+        y *= scale;
+        z *= scale;
+    }
+}
 
 float Coord3D::GetLengthEstimate2D() const
 {

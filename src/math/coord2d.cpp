@@ -170,7 +170,18 @@ Coord2D &Coord2D::Negate()
 }
 
 static const float one = 1.0f;
+static const float zero_value = 0.0f;
 static const float length_estimate_factor = 0.25f;
+
+void Coord2D::normalize()
+{
+    float len = (float)sqrt(x * x + y * y);
+    if (len != zero_value) {
+        float scale = one / len;
+        x *= scale;
+        y *= scale;
+    }
+}
 
 float Coord2D::Normalize()
 {

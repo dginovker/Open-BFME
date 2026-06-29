@@ -51,6 +51,7 @@ public:
     float length() const;
     float lengthSqr() const;
     Coord3D &Negate();
+    void normalize();
     Coord3D &Scale(float scale);
     Coord3D &Scale(const Coord3DBase &that, float scale);
     Coord3D &Scale2D(float scale);

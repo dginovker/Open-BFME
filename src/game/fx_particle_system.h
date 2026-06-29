@@ -156,4 +156,9 @@ public:
     virtual void LoadPostProcess();
 };
 
+class ModuleTemplate {
+public:
+    ModuleTemplate &operator=(const ModuleTemplate &that);
+};
+
 }

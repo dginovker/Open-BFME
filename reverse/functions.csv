@@ -91,6 +91,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4StreakDrawModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0001013B,0x005D87E0,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4OrthoEmissionVelocityModuleTag@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x0001A645,0x005D4600,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4PointEmissionVolumeModuleTag@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x0002E9CE,0x005D45E0,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4ModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00041A3D,0x0005C7F0,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4?$CategoryModuleInfo@$0A@@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00025E6E,0x0005C970,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4?$CategoryModuleInfo@$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0000681B,0x005BD600,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4?$CategoryModuleInfo@$01@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00012E27,0x005BD930,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this

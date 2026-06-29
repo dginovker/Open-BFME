@@ -155,6 +155,11 @@ PointEmissionVolumeModuleTag &PointEmissionVolumeModuleTag::operator=(const Poin
     return *this;
 }
 
+ModuleTemplate &ModuleTemplate::operator=(const ModuleTemplate &that)
+{
+    return *this;
+}
+
 ButterflyDrawModuleInfo::~ButterflyDrawModuleInfo()
 {
 }

@@ -45,6 +45,14 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1RenderObjectUpdateModuleInfo@FXParticleSystem@@UAE@XZ,0x000095F7,0x005D92B0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1StreakDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x00049CA1,0x005D85F0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1WindModuleInfo@FXParticleSystem@@UAE@XZ,0x0001B31F,0x005BD960,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
+??4?$CategoryModuleClassBase@$0A@$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0000540C,0x005C10D0,5,src/game/fx_particle_system.cpp,matched,empty base assignment returns this
+??4?$CategoryModuleClassBase@$02$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0003E8FB,0x005C1490,5,src/game/fx_particle_system.cpp,matched,empty base assignment returns this
+?getKey@?$CategoryModuleClass@$0A@@FXParticleSystem@@QBEPBDXZ,0x0000631B,0x005C1210,4,src/game/fx_particle_system.cpp,matched,returns module key string
+?getKey@?$CategoryModuleClass@$04@FXParticleSystem@@QBEPBDXZ,0x00005D7B,0x005C16B0,4,src/game/fx_particle_system.cpp,matched,returns module key string
+?getName@?$CategoryModuleClass@$07@FXParticleSystem@@QBEPBDXZ,0x000014E2,0x005D4AE0,4,src/game/fx_particle_system.cpp,matched,returns module name string
+??4?$CategoryModuleTemplateBase@$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00004B7E,0x005BF150,5,src/game/fx_particle_system.cpp,matched,empty base assignment returns this
+??4?$CategoryModuleTemplate@$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00006933,0x005BF280,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4?$CategoryModuleTemplate@$02@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00008765,0x005BF720,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??0?$StringBase@D@@AAE@XZ,0x00032718,0x00061D90,9,src/game/string_base.cpp,matched,initializes string data pointer to null
 ??0?$StringBase@G@@AAE@XZ,0x0001431C,0x000834C0,9,src/game/string_base.cpp,matched,initializes string data pointer to null
 ?isEmpty@?$StringBase@D@@QBE_NXZ,0x0000C752,0x0005E4C0,22,src/game/string_base.cpp,matched,returns true if string has no data or zero length

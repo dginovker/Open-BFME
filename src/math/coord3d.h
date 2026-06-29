@@ -50,6 +50,7 @@ public:
     float GetLengthSqrd2D() const;
     bool IsExactlyEqualTo(const Coord3D &that) const;
     float length() const;
+    float lengthEstimate() const;
     float lengthSqr() const;
     Coord3D &Negate();
     void normalize();

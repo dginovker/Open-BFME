@@ -152,4 +152,80 @@ const char *WindModuleInfo::GetSnapshotName()
     return "WindModuleInfo";
 }
 
+void ButterflyDrawModuleInfo::LoadPostProcess()
+{
+}
+
+void DefaultAlphaModuleInfo::LoadPostProcess()
+{
+}
+
+void DefaultColorModuleInfo::LoadPostProcess()
+{
+}
+
+void DefaultDrawModuleInfo::LoadPostProcess()
+{
+}
+
+void DefaultPhysicsModuleInfo::LoadPostProcess()
+{
+}
+
+void DefaultUpdateModuleInfo::LoadPostProcess()
+{
+}
+
+void EmissionVelocityInfo::LoadPostProcess()
+{
+}
+
+void EmissionVolumeInfo::LoadPostProcess()
+{
+}
+
+void LifeEventModuleInfo::LoadPostProcess()
+{
+}
+
+void LightningDrawModuleInfo::LoadPostProcess()
+{
+}
+
+void ParticleSystemInfo::LoadPostProcess()
+{
+}
+
+void QuadDrawModuleInfo::LoadPostProcess()
+{
+}
+
+void RenderObjectDrawModuleInfo::LoadPostProcess()
+{
+}
+
+void RenderObjectUpdateModuleInfo::LoadPostProcess()
+{
+}
+
+void StreakDrawModuleInfo::LoadPostProcess()
+{
+}
+
+void TerrainCollisionModuleInfo::LoadPostProcess()
+{
+}
+
+void WindModuleInfo::LoadPostProcess()
+{
+}
+
+void EmissionVelocityInfo::DoXfer(Xfer &xfer)
+{
+}
+
+void EmissionVolumeInfo::DoXfer(Xfer &xfer)
+{
+}
+
 }

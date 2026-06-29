@@ -230,3 +230,23 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4Region3D@@QAEAAU0@ABU0@@Z,0x00023A5B,0x007E6EC0,46,src/math/region.cpp,matched,copies bounds
 ?setFromInt@RGBColor@@QAEXH@Z,0x0002CDC7,0x00083370,84,src/math/color.cpp,matched,sets RGB channels from packed int
 ?Rotate@Coord2D@@QAEAAV1@ABV1@M@Z,0x0002F1E9,0x007E5B80,61,src/math/coord2d.cpp,matched,rotates source by angle
+?IsLoading@Xfer@@UBE_NXZ,0x0004A7FA,0x0006B1C0,3,src/game/xfer.cpp,matched,returns false
+?LoadPostProcess@ButterflyDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x000073FB,0x005D46D0,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@DefaultAlphaModuleInfo@FXParticleSystem@@UAEXXZ,0x0002379F,0x005D4530,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@DefaultColorModuleInfo@FXParticleSystem@@UAEXXZ,0x0004B65A,0x005D4550,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@DefaultDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x0002EB90,0x005D4570,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@DefaultPhysicsModuleInfo@FXParticleSystem@@UAEXXZ,0x00048F27,0x005D4610,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@DefaultUpdateModuleInfo@FXParticleSystem@@UAEXXZ,0x00024E9C,0x005D4630,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@EmissionVelocityInfo@FXParticleSystem@@UAEXXZ,0x0001EDC1,0x005BD7A0,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@EmissionVolumeInfo@FXParticleSystem@@UAEXXZ,0x0003AED1,0x005BD650,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@LifeEventModuleInfo@FXParticleSystem@@UAEXXZ,0x0001FBD6,0x005D4650,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@LightningDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x0002997E,0x005D4730,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@ParticleSystemInfo@FXParticleSystem@@UAEXXZ,0x0001464B,0x0005C980,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@QuadDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x000205E5,0x005D46A0,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@RenderObjectDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x0004615F,0x005D4700,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@RenderObjectUpdateModuleInfo@FXParticleSystem@@UAEXXZ,0x0001271F,0x005D4760,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@StreakDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x0003D88E,0x005D4670,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@TerrainCollisionModuleInfo@FXParticleSystem@@UAEXXZ,0x0003D208,0x005D4780,1,src/game/fx_particle_system.cpp,matched,no-op
+?LoadPostProcess@WindModuleInfo@FXParticleSystem@@UAEXXZ,0x0001B518,0x005BD940,1,src/game/fx_particle_system.cpp,matched,no-op
+?DoXfer@EmissionVelocityInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x00003C5B,0x005BD7C0,3,src/game/fx_particle_system.cpp,matched,no-op
+?DoXfer@EmissionVolumeInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x0003D924,0x005BD670,3,src/game/fx_particle_system.cpp,matched,no-op

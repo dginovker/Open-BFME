@@ -19,6 +19,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ICoord3D@@QAE@XZ,0x0000DEAE,0x00148770,3,src/math/icoord.cpp,matched,empty constructor returns self
 ??0IRegion3D@@QAE@XZ,0x0002F270,0x007E6F30,3,src/math/region.cpp,matched,empty constructor returns self
 ??4RealRange@@QAEAAU0@ABU0@@Z,0x00015537,0x007E6D00,13,src/math/region.cpp,matched,copies min and max
+?combine@RealRange@@QAEXAAU1@@Z,0x0003A332,0x007E8240,45,src/math/region.cpp,matched,updates min/max to include another range
 ??0Matrix4D@@QAE@ABV0@@Z,0x00014FB0,0x007E7B70,107,src/math/matrix4d.cpp,matched,copies values
 ??0Matrix4D@@QAE@XZ,0x000218D7,0x007E6050,3,src/math/matrix4d.cpp,matched,empty constructor returns self
 ??0Matrix4D@@QAE@_N@Z,0x0000F5F1,0x007E79D0,67,src/math/matrix4d.cpp,matched,optionally initializes identity

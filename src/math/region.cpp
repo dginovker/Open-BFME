@@ -9,6 +9,35 @@ RealRange &RealRange::operator=(const RealRange &that)
     return *this;
 }
 
+__declspec(naked) void RealRange::combine(RealRange &that)
+{
+    __asm {
+        fld dword ptr [ecx]
+        mov edx, [esp + 4]
+        fcomp dword ptr [edx]
+        fnstsw ax
+        test ah, 5
+        mov eax, ecx
+        jnp update_min
+        mov eax, edx
+    update_min:
+        mov eax, [eax]
+        mov [ecx], eax
+        fld dword ptr [ecx + 4]
+        fcomp dword ptr [edx + 4]
+        fnstsw ax
+        test ah, 0x41
+        jne update_max
+        mov edx, [ecx + 4]
+        mov [ecx + 4], edx
+        ret 4
+    update_max:
+        mov eax, [edx + 4]
+        mov [ecx + 4], eax
+        ret 4
+    }
+}
+
 bool IRegion2D::operator==(const IRegion2D &that) const
 {
     return x_min == that.x_min &&

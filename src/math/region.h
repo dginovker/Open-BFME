@@ -8,6 +8,7 @@ struct ICoord3D;
 
 struct RealRange {
     RealRange &operator=(const RealRange &that);
+    void combine(RealRange &that);
 
     float min;
     float max;

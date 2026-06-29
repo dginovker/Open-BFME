@@ -62,6 +62,12 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4?$CategoryModuleInfo@$05@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00027917,0x005BD630,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4?$CategoryModuleInfo@$06@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00005146,0x005BDB60,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4?$CategoryModuleInfo@$07@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0000CF1D,0x0005C900,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4?$DefaultModuleKey@$0A@@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x0003526A,0x005D4860,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4?$DefaultModuleKey@$00@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x0003C330,0x005D4830,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4?$DefaultModuleKey@$01@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x000062E4,0x005D48C0,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4?$DefaultModuleKey@$02@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x000061FE,0x005D4890,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4?$DefaultModuleKey@$05@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x0002D2A9,0x005D4590,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
+??4?$DefaultModuleKey@$06@FXParticleSystem@@QAEAAU01@ABU01@@Z,0x0001BB99,0x005D48F0,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??0?$StringBase@D@@AAE@XZ,0x00032718,0x00061D90,9,src/game/string_base.cpp,matched,initializes string data pointer to null
 ??0?$StringBase@G@@AAE@XZ,0x0001431C,0x000834C0,9,src/game/string_base.cpp,matched,initializes string data pointer to null
 ?isEmpty@?$StringBase@D@@QBE_NXZ,0x0000C752,0x0005E4C0,22,src/game/string_base.cpp,matched,returns true if string has no data or zero length

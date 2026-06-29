@@ -237,9 +237,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?SetZAxis@Coord3D@@QAEAAV1@XZ,0x0001C06C,0x001BD760,23,src/math/coord3d.cpp,matched,sets unit z axis
 ?SetZero@Coord2D@@QAEAAV1@XZ,0x00022D0E,0x003FD390,16,src/math/coord2d.cpp,matched,sets x/y to zero and returns self
 ?SetZero@Coord3D@@QAEAAV1@XZ,0x000495CB,0x00148760,13,src/math/coord3d.cpp,matched,sets x/y/z to zero and returns self
-?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ,0x0000E4C1,0x0010BDB0,3,src/game/game_client_random_variable.cpp,matched,returns distribution type
-?getMaximumValue@GameClientRandomVariable@@QBEMXZ,0x0002E532,0x0010BDA0,4,src/game/game_client_random_variable.cpp,matched,returns maximum value
-?getMinimumValue@GameClientRandomVariable@@QBEMXZ,0x00013822,0x0010BD90,4,src/game/game_client_random_variable.cpp,matched,returns minimum value
 ?height@IRegion2D@@QBEHXZ,0x00011B49,0x001A19B0,7,src/math/region.cpp,matched,returns integer height
 ?height@IRegion3D@@QBEHXZ,0x00005B5A,0x007E6F10,7,src/math/region.cpp,matched,returns integer height
 ?height@Region2D@@QBEMXZ,0x00035053,0x00160B30,7,src/math/region.cpp,matched,returns float height
@@ -364,3 +361,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??8Xfer@@UAEAAV0@AAURGBColor@@@Z,0x009D6720,0x009D6720,45,src/game/xfer.cpp,matched,stream RGBColor
 ??8Xfer@@UAEAAV0@AAURGBAColorReal@@@Z,0x009D6750,0x009D6750,45,src/game/xfer.cpp,matched,stream RGBAColorReal
 ??8Xfer@@UAEAAV0@AAURGBAColorInt@@@Z,0x009D6780,0x009D6780,45,src/game/xfer.cpp,matched,stream RGBAColorInt
+?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ,0x0010BDB0,0x0010BDB0,3,src/game/game_client_random_variable.cpp,matched,get distribution type
+?getMinimumValue@GameClientRandomVariable@@QBEMXZ,0x0010BD90,0x0010BD90,4,src/game/game_client_random_variable.cpp,matched,get minimum value
+?getMaximumValue@GameClientRandomVariable@@QBEMXZ,0x0010BDA0,0x0010BDA0,4,src/game/game_client_random_variable.cpp,matched,get maximum value

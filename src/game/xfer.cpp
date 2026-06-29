@@ -193,3 +193,18 @@ __declspec(naked) Xfer &Xfer::operator==(bool &b)
         ret 4
     }
 }
+
+__declspec(naked) Xfer &Xfer::operator==(Snapshot &snapshot)
+{
+    __asm {
+        push esi
+        mov esi, ecx
+        mov ecx, [esp + 8]
+        mov eax, [ecx]
+        push esi
+        call dword ptr [eax + 0x0c]
+        mov eax, esi
+        pop esi
+        ret 4
+    }
+}

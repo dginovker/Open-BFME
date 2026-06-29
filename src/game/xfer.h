@@ -22,4 +22,5 @@ public:
     virtual Xfer &operator==(float &f);
     virtual Xfer &operator==(__int64 &i);
     virtual Xfer &operator==(bool &b);
+    virtual Xfer &operator==(Snapshot &snapshot);
 };

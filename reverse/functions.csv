@@ -290,8 +290,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?str@?$StringBase@G@@QBEPBGXZ,0x0002287C,0x0005F290,16,src/game/string_base.cpp,matched,returns c-string
 ??0Xfer@@QAE@XZ,0x00041BAF,0x007E7660,9,src/game/xfer.cpp,matched,constructor sets vtable
 ??1Xfer@@UAE@XZ,0x00038D2A,0x007E7670,7,src/game/xfer.cpp,matched,destructor
-?validate@?$StringBase@G@@ABEXXZ,0x000390A9,0x0005D7A0,1,src/game/string_base.cpp,matched,no-op
-??4IRegion3D@@QAEAAU0@ABU0@@Z,0x000327FE,0x007E6F40,47,src/math/region.cpp,matched,copy assignment
 ?find@?$StringBase@D@@QBEPBDD@Z,0x0001CA8A,0x000628B0,45,src/game/string_base.cpp,matched,find character in string
 ??0EmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00038D4D,0x005BD820,11,src/game/fx_particle_system.cpp,matched,copy constructor
 ??0EmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x000376DC,0x005BD6C0,21,src/game/fx_particle_system.cpp,matched,copy constructor
@@ -305,3 +303,4 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??8Xfer@@UAEAAV0@AAM@Z,0x0002A4D2,0x0006B360,31,src/game/xfer.cpp,matched,stream float
 ??8Xfer@@UAEAAV0@AA_J@Z,0x0002A086,0x0006B2A0,31,src/game/xfer.cpp,matched,stream __int64
 ??8Xfer@@UAEAAV0@AA_N@Z,0x00038866,0x0006B240,31,src/game/xfer.cpp,matched,stream bool
+??8Xfer@@UAEAAV0@AAVSnapshot@@@Z,0x000429C9,0x009D6410,19,src/game/xfer.cpp,matched,stream Snapshot

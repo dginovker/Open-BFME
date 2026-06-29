@@ -205,3 +205,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GetSnapshotName@DefaultAlphaModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00035CA6,0x005D4540,6,src/game/fx_particle_system.cpp,matched,returns class name
 ?GetSnapshotName@StreakDrawModuleInfo@FXParticleSystem@@UAEPBDXZ,0x0004009D,0x005D4680,6,src/game/fx_particle_system.cpp,matched,returns class name
 ??4Coord3D@@QAEAAV0@ABV0@@Z,0x000040CA,0x007E5990,28,src/math/coord3d.cpp,matched,copies x/y/z from Coord3D
+??4Region2D@@QAEAAU0@ABU0@@Z,0x000068C5,0x007E6D20,34,src/math/region.cpp,matched,copies bounds
+??4IRegion2D@@QAEAAU0@ABU0@@Z,0x00022C28,0x007E6D90,34,src/math/region.cpp,matched,copies bounds
+??4Region3D@@QAEAAU0@ABU0@@Z,0x00023A5B,0x007E6EC0,46,src/math/region.cpp,matched,copies bounds

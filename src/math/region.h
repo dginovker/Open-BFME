@@ -10,6 +10,7 @@ struct IRegion2D {
     bool operator==(const IRegion2D &that) const;
     bool operator!=(const IRegion2D &that) const;
 
+    IRegion2D &operator=(const IRegion2D &that);
     void expandBy(const ICoord2D &point);
     int width() const;
     int height() const;
@@ -42,6 +43,7 @@ struct Region2D {
     Region2D(const Coord2D &lower_left, const Coord2D &upper_right);
     ~Region2D();
 
+    Region2D &operator=(const Region2D &that);
     bool IsExactlyEqualTo(const Region2D &that) const;
     void expandBy(const Coord2D &point);
     bool isInside(const Coord2D &point) const;
@@ -59,6 +61,7 @@ struct Region3D {
     Region3D(const Region3D &that);
     ~Region3D();
 
+    Region3D &operator=(const Region3D &that);
     float width() const;
     float height() const;
     float depth() const;

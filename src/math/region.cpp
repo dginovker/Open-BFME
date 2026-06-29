@@ -15,6 +15,16 @@ bool IRegion2D::operator!=(const IRegion2D &that) const
     return !(*this == that);
 }
 
+IRegion2D &IRegion2D::operator=(const IRegion2D &that)
+{
+    struct IRegion2DBase {
+        int x_min, y_min, x_max, y_max;
+    };
+    IRegion2DBase *base = (IRegion2DBase *)this;
+    *base = *(IRegion2DBase *)&that;
+    return *this;
+}
+
 void IRegion2D::expandBy(const ICoord2D &point)
 {
     if (point.x < x_min) {
@@ -104,6 +114,16 @@ Region2D::~Region2D()
 {
 }
 
+Region2D &Region2D::operator=(const Region2D &that)
+{
+    struct Region2DBase {
+        float x_min, y_min, x_max, y_max;
+    };
+    Region2DBase *base = (Region2DBase *)this;
+    *base = *(Region2DBase *)&that;
+    return *this;
+}
+
 bool Region2D::IsExactlyEqualTo(const Region2D &that) const
 {
     return that.x_min == x_min &&
@@ -165,6 +185,16 @@ Region3D::Region3D(const Region3D &that)
 
 Region3D::~Region3D()
 {
+}
+
+Region3D &Region3D::operator=(const Region3D &that)
+{
+    struct Region3DBase {
+        float x_min, y_min, z_min, x_max, y_max, z_max;
+    };
+    Region3DBase *base = (Region3DBase *)this;
+    *base = *(Region3DBase *)&that;
+    return *this;
 }
 
 float Region3D::width() const

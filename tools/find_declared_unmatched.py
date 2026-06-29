@@ -39,28 +39,73 @@ def mangle_method(class_name: str, method_name: str) -> str:
     """Return a rough MSVC mangled-name substring to search for.
 
     Constructors use ??0, destructors use ??1, operator= uses ??4,
-    and ordinary methods use ?name@class@@.
+    and ordinary methods use ?name@Class@Namespace@@.
+    class_name may be qualified (e.g. "FXParticleSystem::ButterflyDrawModuleInfo").
     """
-    if method_name == class_name:
-        return f"??0{class_name}@@"
-    if method_name == f"~{class_name}":
-        return f"??1{class_name}@@"
-    if method_name in OPERATOR_CODES:
-        return f"{OPERATOR_CODES[method_name]}{class_name}@@"
-    return f"?{method_name}@{class_name}@@"
+    parts = class_name.split("::")
+    if method_name == parts[-1]:
+        prefix = "??0"
+    elif method_name == f"~{parts[-1]}":
+        prefix = "??1"
+    elif method_name in OPERATOR_CODES:
+        prefix = OPERATOR_CODES[method_name]
+    else:
+        prefix = f"?{method_name}"
+    mangled_class = "@".join(reversed(parts))
+    # Constructors, destructors and operators attach directly to the class name;
+    # ordinary methods are separated from the class by an @.
+    if prefix.startswith("?") and not prefix.startswith("??"):
+        return f"{prefix}@{mangled_class}@@"
+    return f"{prefix}{mangled_class}@@"
 
 
 def find_defined_functions(source_path: Path):
     text = source_path.read_text(encoding="utf-8")
     # Match definitions like:
     #   ReturnType ClassName::methodName(
+    #   Namespace::ClassName::methodName(
     #   ClassName::ClassName(
     #   ClassName::~ClassName(
-    pattern = re.compile(
-        r"^[\w:&*~\s]+?(\w+)::(operator[\s=\+\-\*/\[\]\(\)<>!]+|\~?\w+)\s*\(",
+    definition_pattern = re.compile(
+        r"^[\w:&*~\s]*?((?:\w+::)*\w+)::(operator[\s=\+\-\*/\[\]\(\)<>!]+|\~?\w+)\s*\(",
         re.MULTILINE,
     )
-    return set(pattern.findall(text))
+    namespace_pattern = re.compile(r"\bnamespace\s+(\w+)\s*\{")
+
+    results = set()
+    # Stack of (namespace_name, brace_depth_at_open). Anonymous namespaces use "".
+    namespace_stack = []
+    brace_depth = 0
+
+    for line in text.splitlines():
+        stripped = line.strip()
+        is_namespace_line = stripped.startswith("namespace ") or stripped.startswith("namespace\t") or stripped.startswith("namespace {")
+
+        open_count = line.count("{")
+        close_count = line.count("}")
+
+        if is_namespace_line:
+            match = namespace_pattern.search(line)
+            ns_name = match.group(1) if match else ""
+            # The namespace opens at the next unmatched brace depth.
+            namespace_stack.append((ns_name, brace_depth + 1))
+
+        brace_depth += open_count - close_count
+
+        # Close any namespaces whose opening brace has now been matched.
+        while namespace_stack and namespace_stack[-1][1] > brace_depth:
+            namespace_stack.pop()
+
+        match = definition_pattern.match(line)
+        if match:
+            class_name = match.group(1)
+            method_name = match.group(2)
+            if namespace_stack and "::" not in class_name:
+                # Filter out anonymous namespace entries.
+                ns_parts = [ns for ns, _ in namespace_stack if ns]
+                class_name = "::".join(ns_parts + [class_name])
+            results.add((class_name, method_name))
+    return results
 
 
 def main():

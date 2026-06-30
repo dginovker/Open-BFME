@@ -434,6 +434,38 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1?$CategoryModuleInfo@$06@FXParticleSystem@@IAE@XZ,0x00042389,0x005BF040,7,src/game/fx_particle_system.cpp,matched,CategoryModuleInfo ctor/dtor
 ??1?$CategoryModuleInfo@$07@FXParticleSystem@@IAE@XZ,0x0001B473,0x0005D810,7,src/game/fx_particle_system.cpp,matched,CategoryModuleInfo ctor/dtor
 ??1?$CategoryModuleInfo@$0A@@FXParticleSystem@@IAE@XZ,0x0000D67F,0x0005D820,7,src/game/fx_particle_system.cpp,matched,CategoryModuleInfo ctor/dtor
+??0?$CategoryModuleTemplateBase@$00@FXParticleSystem@@QAE@XZ,0x00015C53,0x005BF0E0,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$00@FXParticleSystem@@QAE@ABV01@@Z,0x00046DE9,0x005BF130,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$01@FXParticleSystem@@QAE@XZ,0x0000A7C2,0x005BF330,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$01@FXParticleSystem@@QAE@ABV01@@Z,0x000192A4,0x005BF380,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$02@FXParticleSystem@@QAE@XZ,0x000314C1,0x005BF580,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$02@FXParticleSystem@@QAE@ABV01@@Z,0x0000C6E9,0x005BF5D0,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$03@FXParticleSystem@@QAE@XZ,0x0000B55A,0x005BF7D0,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$03@FXParticleSystem@@QAE@ABV01@@Z,0x0002AA4A,0x005BF820,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$04@FXParticleSystem@@QAE@XZ,0x000136E7,0x005BFA40,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$04@FXParticleSystem@@QAE@ABV01@@Z,0x0001D8AE,0x005BFA90,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$05@FXParticleSystem@@QAE@XZ,0x0002F95F,0x005BFC90,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$05@FXParticleSystem@@QAE@ABV01@@Z,0x0003B0B6,0x005BFCE0,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$06@FXParticleSystem@@QAE@XZ,0x00040BD3,0x005C1920,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$06@FXParticleSystem@@QAE@ABV01@@Z,0x00026CC9,0x005C1970,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$07@FXParticleSystem@@QAE@XZ,0x00044729,0x0005E230,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$07@FXParticleSystem@@QAE@ABV01@@Z,0x0003C84E,0x0005E280,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$0A@@FXParticleSystem@@QAE@XZ,0x00045B33,0x0005D830,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplateBase@$0A@@FXParticleSystem@@QAE@ABV01@@Z,0x0003FB61,0x0005D880,25,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$00@FXParticleSystem@@QAE@XZ,0x000028EC,0x005BF200,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$00@FXParticleSystem@@QAE@ABV01@@Z,0x000428A7,0x005BF250,32,src/game/fx_particle_system.cpp,matched,calls TemplateBase copy ctor then sets derived vtables
+??0?$CategoryModuleTemplate@$01@FXParticleSystem@@QAE@XZ,0x0003E374,0x005BF450,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$01@FXParticleSystem@@QAE@ABV01@@Z,0x0001D435,0x005BF4A0,32,src/game/fx_particle_system.cpp,matched,calls TemplateBase copy ctor then sets derived vtables
+??0?$CategoryModuleTemplate@$02@FXParticleSystem@@QAE@XZ,0x000037A1,0x005BF6A0,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$02@FXParticleSystem@@QAE@ABV01@@Z,0x00035698,0x005BF6F0,32,src/game/fx_particle_system.cpp,matched,calls TemplateBase copy ctor then sets derived vtables
+??0?$CategoryModuleTemplate@$03@FXParticleSystem@@QAE@XZ,0x0001BA8B,0x005BF8F0,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$03@FXParticleSystem@@QAE@ABV01@@Z,0x00004534,0x005BF940,32,src/game/fx_particle_system.cpp,matched,calls TemplateBase copy ctor then sets derived vtables
+??0?$CategoryModuleTemplate@$04@FXParticleSystem@@QAE@XZ,0x0002E587,0x005BFB60,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$04@FXParticleSystem@@QAE@ABV01@@Z,0x00037A29,0x005BFBB0,32,src/game/fx_particle_system.cpp,matched,calls TemplateBase copy ctor then sets derived vtables
+??0?$CategoryModuleTemplate@$05@FXParticleSystem@@QAE@XZ,0x000458C7,0x005BFDB0,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$05@FXParticleSystem@@QAE@ABV01@@Z,0x00029FF0,0x005BFE00,32,src/game/fx_particle_system.cpp,matched,calls TemplateBase copy ctor then sets derived vtables
+??0?$CategoryModuleTemplate@$0A@@FXParticleSystem@@QAE@XZ,0x00007252,0x0005D950,23,src/game/fx_particle_system.cpp,matched,vtable setup for two bases
+??0?$CategoryModuleTemplate@$0A@@FXParticleSystem@@QAE@ABV01@@Z,0x00025CA7,0x0005D9A0,32,src/game/fx_particle_system.cpp,matched,calls TemplateBase copy ctor then sets derived vtables
 ?getFirst@?$CategoryModuleClass@$00@FXParticleSystem@@SAPBV12@XZ,0x00001EA1,0x005C12D0,6,src/game/fx_particle_system_category_accessors.cpp,matched,returns first module in category list
 ?getKey@?$CategoryModuleClass@$00@FXParticleSystem@@QBEPBDXZ,0x0004A539,0x005C12E0,4,src/game/fx_particle_system_category_accessors.cpp,matched,returns module key string
 ?getName@?$CategoryModuleClass@$00@FXParticleSystem@@QBEPBDXZ,0x0003A689,0x005D4A40,4,src/game/fx_particle_system_category_accessors.cpp,matched,returns module name string

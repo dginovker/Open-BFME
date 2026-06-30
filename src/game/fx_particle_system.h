@@ -713,9 +713,22 @@ public:
     virtual void writeINI(File &file, unsigned int flags) const;
 };
 
+// CategoryModuleInfo<N> - base for CategoryModuleTemplateBase, split across header/cpp
+template <int Category>
+class CategoryModuleInfo {
+public:
+    CategoryModuleInfo();
+    CategoryModuleInfo(const CategoryModuleInfo<Category> &that);
+    virtual void unusedVirtual();
+    CategoryModuleInfo<Category> &operator=(const CategoryModuleInfo<Category> &that) { return *this; }
+
+protected:
+    ~CategoryModuleInfo() { }
+};
+
 // CategoryModuleTemplateBase<N>
 template <int Category>
-class CategoryModuleTemplateBase {
+class CategoryModuleTemplateBase : public ModuleTemplate, public CategoryModuleInfo<Category> {
 public:
     CategoryModuleTemplateBase();
     CategoryModuleTemplateBase(const CategoryModuleTemplateBase<Category> &that);

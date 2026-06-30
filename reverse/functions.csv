@@ -461,3 +461,4 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getNext@?$CategoryModuleClass@$0A@@FXParticleSystem@@QBEPBV12@XZ,0x00014579,0x005C1220,4,src/game/fx_particle_system_category_accessors.cpp,matched,returns next module in category list
 ??4AsciiString@@QAEAAV0@PBD@Z,0x00028BB9,0x00062040,59,src/game/ascii_string.cpp,matched,AsciiString operator=(const char *)
 ??8@YA_NABV?$StringBase@D@@PBD@Z,0x0002A71B,0x000AA230,20,src/game/string_base.cpp,matched,StringBase<char> equals C string
+??8@YA_NABV?$StringBase@D@@0@Z,0x000259B9,0x0007FFF0,20,src/game/string_base.cpp,matched,StringBase<char> equals StringBase<char>

@@ -274,18 +274,6 @@ private:
     const char *m_name;
 };
 template <int Category>
-class CategoryModuleTemplateBase {
-public:
-    CategoryModuleTemplateBase &operator=(const CategoryModuleTemplateBase &that) { return *this; }
-};
-
-template <int Category>
-class CategoryModuleTemplate : public CategoryModuleTemplateBase<Category> {
-public:
-    CategoryModuleTemplate &operator=(const CategoryModuleTemplate &that) { return *this; }
-};
-
-template <int Category>
 class CategoryModuleInfo {
 public:
     CategoryModuleInfo();
@@ -311,12 +299,6 @@ template <int Category>
 CategoryModuleInfo<Category>::CategoryModuleInfo(const CategoryModuleInfo<Category> &that)
 {
 }
-
-template <int Category>
-class DefaultModuleTemplate {
-public:
-    DefaultModuleTemplate &operator=(const DefaultModuleTemplate &that) { return *this; }
-};
 
 template CategoryModuleClassBase<0, 1> &CategoryModuleClassBase<0, 1>::operator=(const CategoryModuleClassBase<0, 1> &);
 template CategoryModuleClassBase<1, 1> &CategoryModuleClassBase<1, 1>::operator=(const CategoryModuleClassBase<1, 1> &);

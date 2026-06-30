@@ -9243,3 +9243,9 @@ __declspec(naked) void StringBase<wchar_t>::clear()
         __emit 0xcc
     }
 }
+
+template <>
+bool operator!=<char>(const char *left, const StringBase<char> &right)
+{
+    return right.compare(left) != 0;
+}

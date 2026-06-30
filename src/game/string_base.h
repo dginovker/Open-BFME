@@ -91,3 +91,6 @@ bool operator!=(const StringBase<T> &left, const T *right);
 
 class Debug;
 Debug &operator<<(Debug &debug, const StringBase<char> &str);
+
+template <typename T>
+bool operator!=(const T *left, const StringBase<T> &right);

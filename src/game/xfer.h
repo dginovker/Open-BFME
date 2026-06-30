@@ -1,5 +1,7 @@
 #pragma once
 
+class AsciiString;
+class UnicodeString;
 class Snapshot;
 struct Coord3DBase;
 struct ICoord3D;
@@ -16,6 +18,11 @@ struct RGBAColorInt;
 
 class Xfer {
 public:
+    class Version {
+    public:
+        unsigned char data[2];
+    };
+
     Xfer();
     virtual ~Xfer();
     void Version1();
@@ -49,4 +56,10 @@ public:
     virtual Xfer &operator==(RGBColor &v);
     virtual Xfer &operator==(RGBAColorReal &v);
     virtual Xfer &operator==(RGBAColorInt &v);
+
+    virtual Xfer &operator==(AsciiString &as);
+    virtual Xfer &operator==(UnicodeString &us);
+    virtual Xfer &operator==(Version &v);
+    virtual Xfer &XferRawBytes(void *data, unsigned int size);
+    virtual Xfer &XferEnum(const char *name, void *data, unsigned int size);
 };

@@ -509,3 +509,12 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??YUnicodeString@@QAEAAV0@ABV0@@Z,0x00035229,0x0048F040,63,src/game/unicode_string.cpp,matched,UnicodeString operator+=(const UnicodeString&)
 ??YAsciiString@@QAEAAV0@D@Z,0x00013B83,0x00192A60,31,src/game/ascii_string.cpp,matched,AsciiString operator+=(char)
 ??YAsciiString@@QAEAAV0@PBD@Z,0x000326D2,0x000CBBD0,59,src/game/ascii_string.cpp,matched,AsciiString operator+=(const char *)
+??1?$CategoryModuleClass@$05@FXParticleSystem@@MAE@XZ,0x00034a04,0x005d47d0,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$00@FXParticleSystem@@MAE@XZ,0x0000a916,0x005d4a50,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$0A@@FXParticleSystem@@MAE@XZ,0x0000f010,0x005d4a70,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$02@FXParticleSystem@@MAE@XZ,0x000177d8,0x005d4a90,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$01@FXParticleSystem@@MAE@XZ,0x0001bdfb,0x005d4ab0,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$06@FXParticleSystem@@MAE@XZ,0x0000da3a,0x005d4ad0,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$07@FXParticleSystem@@MAE@XZ,0x00006d3e,0x005d4af0,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$03@FXParticleSystem@@MAE@XZ,0x0002c872,0x005d4b10,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??1?$CategoryModuleClass@$04@FXParticleSystem@@MAE@XZ,0x000247b7,0x005d4b30,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset

@@ -13,7 +13,7 @@ public:
 
     static const CategoryModuleClass<Category> &getDefault();
 
-private:
+protected:
     static CategoryModuleClass<Category> *s_defaultModule;
 };
 
@@ -26,7 +26,10 @@ public:
 
     static const CategoryModuleClass *getFirst() { return s_firstList; }
 
-private:
+protected:
+    ~CategoryModuleClass();
+    CategoryModuleClass(bool setDefault, const char *key, const char *name);
+
     const char *m_key;
     const char *m_name;
     CategoryModuleClass *m_next;

@@ -532,3 +532,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??6@YAAAVDebug@@AAV0@ABUICoord3D@@@Z,0x0003B732,0x007E7370,95,src/math/icoord.cpp,matched,Debug output for ICoord3D
 ??6@YAAAVDebug@@AAV0@ABUIRegion3D@@@Z,0x000235EC,0x007E7430,50,src/math/region.cpp,matched,Debug output for IRegion3D
 ??4LineEmissionVolumeInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0000709f,0x005d5ae0,60,src/game/fx_particle_system.cpp,matched,copies m_flag and two Coord3D endpoints
+??6@YAAAVDebug@@AAV0@ABURegion2D@@@Z,0x0004AC2D,0x007E71F0,142,src/math/region.cpp,matched,Debug output for Region2D
+??6@YAAAVDebug@@AAV0@ABUIRegion2D@@@Z,0x000361BF,0x007E72B0,142,src/math/region.cpp,matched,Debug output for IRegion2D
+??6@YAAAVDebug@@AAV0@ABURealRange@@@Z,0x0000D2AB,0x007E70D0,72,src/math/region.cpp,matched,Debug output for RealRange

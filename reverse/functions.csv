@@ -579,3 +579,5 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?ASin@@YAMM@Z,0x00873950,0x00873950,10,src/math/trig.cpp,matched,wraps internal asin helper
 ?isNone@?$StringBase@D@@QBE_NXZ,0x008881A0,0x008881A0,16,src/game/string_base.cpp,matched,returns true if string equals the global none string
 ?isNone@?$StringBase@G@@QBE_NXZ,0x00888A80,0x00888A80,16,src/game/string_base.cpp,matched,returns true if wide string equals the global none string
+?isNotNone@?$StringBase@D@@QBE_NXZ,0x00888AE0,0x00888AE0,32,src/game/string_base.cpp,matched,returns true if string is not the global none string
+?isNotNone@?$StringBase@G@@QBE_NXZ,0x00888B30,0x00888B30,32,src/game/string_base.cpp,matched,returns true if wide string is not the global none string

@@ -4,3 +4,5 @@ _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
 __stringbase_isnone_cmp_char,0x00405E8,internal char string none-comparison helper
 __stringbase_isnone_cmp_wchar,0x0041F3D,internal wide-char string none-comparison helper
+__stringbase_isnotnone_cmp_char,0x00405E8,internal char string not-none comparison helper
+__stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none comparison helper

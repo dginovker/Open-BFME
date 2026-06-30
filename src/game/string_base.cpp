@@ -64,6 +64,63 @@ __declspec(naked) bool StringBase<wchar_t>::isNone() const
     }
 }
 
+extern "C" void _stringbase_isnotnone_cmp_char();
+extern "C" void _stringbase_isnotnone_cmp_wchar();
+
+__declspec(naked) bool StringBase<char>::isNotNone() const
+{
+    __asm {
+        push 0x01133008
+        call _stringbase_isnotnone_cmp_char
+        neg eax
+        sbb eax, eax
+        neg eax
+        ret
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+    }
+}
+
+__declspec(naked) bool StringBase<wchar_t>::isNotNone() const
+{
+    __asm {
+        push 0x0113301c
+        call _stringbase_isnotnone_cmp_wchar
+        neg eax
+        sbb eax, eax
+        neg eax
+        ret
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+        __emit 0xcc
+    }
+}
+
 template <typename T>
 const T *StringBase<T>::find(T c) const
 {

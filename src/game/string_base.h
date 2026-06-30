@@ -7,6 +7,7 @@ public:
     bool isEmpty() const;
     bool isNotEmpty() const;
     bool isNone() const;
+    bool isNotNone() const;
     int getLength() const;
     const T *str() const;
     const T *find(T c) const;

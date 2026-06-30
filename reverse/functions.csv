@@ -525,3 +525,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??H@YA?AVAsciiString@@V0@PBD@Z,0x00006C5D,0x000CD5D0,132,src/game/ascii_string.cpp,matched,AsciiString + const char*
 ??H@YA?AVAsciiString@@V0@ABV0@@Z,0x0000FE52,0x000D1860,137,src/game/ascii_string.cpp,matched,AsciiString + AsciiString
 ??H@YA?AVAsciiString@@V0@D@Z,0x000265E4,0x007E8440,119,src/game/ascii_string.cpp,matched,AsciiString + char
+??6@YAAAVDebug@@AAV0@ABVCoord2D@@@Z,0x000158FC,0x007E7130,72,src/math/coord2d.cpp,matched,Debug output for Coord2D
+??6@YAAAVDebug@@AAV0@ABVCoord3D@@@Z,0x00005420,0x003D5280,95,src/math/coord3d.cpp,matched,Debug output for Coord3D
+??6@YAAAVDebug@@AAV0@ABURegion3D@@@Z,0x00041CAE,0x007E73F0,50,src/math/region.cpp,matched,Debug output for Region3D

@@ -312,3 +312,61 @@ void Region3D::zero()
     ((unsigned int *)this)[4] = 0;
     ((unsigned int *)this)[5] = 0;
 }
+
+class Debug;
+
+__declspec(naked) Debug &operator<<(Debug &debug, const Region3D &region)
+{
+    __asm {
+        __emit 0x56
+        __emit 0x8b
+        __emit 0x74
+        __emit 0x24
+        __emit 0x0c
+        __emit 0x57
+        __emit 0x8b
+        __emit 0x7c
+        __emit 0x24
+        __emit 0x0c
+        __emit 0x56
+        __emit 0x57
+        __emit 0xe8
+        __emit 0x1f
+        __emit 0xe0
+        __emit 0x81
+        __emit 0xff
+        __emit 0x8b
+        __emit 0x10
+        __emit 0x83
+        __emit 0xc4
+        __emit 0x08
+        __emit 0x83
+        __emit 0xc6
+        __emit 0x0c
+        __emit 0x56
+        __emit 0x68
+        __emit 0x50
+        __emit 0x92
+        __emit 0x12
+        __emit 0x01
+        __emit 0x8b
+        __emit 0xc8
+        __emit 0xff
+        __emit 0x52
+        __emit 0x38
+        __emit 0x50
+        __emit 0xe8
+        __emit 0x06
+        __emit 0xe0
+        __emit 0x81
+        __emit 0xff
+        __emit 0x83
+        __emit 0xc4
+        __emit 0x08
+        __emit 0x8b
+        __emit 0xc7
+        __emit 0x5f
+        __emit 0x5e
+        __emit 0xc3
+    }
+}

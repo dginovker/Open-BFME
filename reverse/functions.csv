@@ -522,3 +522,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1?$CategoryModuleClass@$03@FXParticleSystem@@MAE@XZ,0x0002c872,0x005d4b10,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
 ??1?$CategoryModuleClass@$04@FXParticleSystem@@MAE@XZ,0x000247b7,0x005d4b30,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
 ??0StreakDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00007fea,0x005d8600,11,src/game/fx_particle_system.cpp,matched,copy constructor sets vtable pointer
+??H@YA?AVAsciiString@@V0@PBD@Z,0x00006C5D,0x000CD5D0,132,src/game/ascii_string.cpp,matched,AsciiString + const char*
+??H@YA?AVAsciiString@@V0@ABV0@@Z,0x0000FE52,0x000D1860,137,src/game/ascii_string.cpp,matched,AsciiString + AsciiString
+??H@YA?AVAsciiString@@V0@D@Z,0x000265E4,0x007E8440,119,src/game/ascii_string.cpp,matched,AsciiString + char

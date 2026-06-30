@@ -16,6 +16,10 @@ public:
     AsciiString &operator+=(char c);
     AsciiString &operator+=(const char *str);
 
+    friend AsciiString operator+(AsciiString left, const char *right);
+    friend AsciiString operator+(AsciiString left, const AsciiString &right);
+    friend AsciiString operator+(AsciiString left, char right);
+
 private:
     char *m_text;
 };

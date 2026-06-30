@@ -4,7 +4,14 @@
 #include "ascii_string.h"
 #include "xfer.h"
 
+struct Region2D;
+class AssetList;
+
 namespace FXParticleSystem {
+
+enum ParticleType {
+    PARTICLE_TYPE_DEFAULT,
+};
 
 enum ModuleCategory {
     MODULE_CATEGORY_DRAW = 0,
@@ -202,6 +209,10 @@ public:
     AsciiString getTextureFilename() const;
     void setTextureFilename(AsciiString &filename);
     void setSlaveSystemName(const AsciiString &name);
+    ParticleType getParticleType() const;
+    const Region2D *getUV() const;
+    void setUV(const Region2D *uv);
+    void GetAssetList(AssetList &list) const;
 };
 
 }

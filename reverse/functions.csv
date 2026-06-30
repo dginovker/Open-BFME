@@ -383,3 +383,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GetKey@FXParticleSystem@@YAPBDW4ModuleCategory@1@@Z,0x0000971E,0x005D4520,12,src/game/fx_particle_system.cpp,matched,lookup category key string
 ?setTextureFilename@ParticleSystemTemplate@FXParticleSystem@@QAEXAAVAsciiString@@@Z,0x000163FB,0x0005CB50,8,src/game/fx_particle_system.cpp,matched,adjusts this pointer and assigns texture filename
 ?setSlaveSystemName@ParticleSystemTemplate@FXParticleSystem@@QAEXABVAsciiString@@@Z,0x00041F47,0x005BE690,28,src/game/fx_particle_system.cpp,matched,assigns slave system name and clears flag
+?getParticleType@ParticleSystemTemplate@FXParticleSystem@@QBE?AW4ParticleType@2@XZ,0x0003CC31,0x0005CB60,4,src/game/fx_particle_system.cpp,matched,returns particle type field
+?getUV@ParticleSystemTemplate@FXParticleSystem@@QBEPBURegion2D@@XZ,0x0002D6E6,0x0005CBA0,7,src/game/fx_particle_system.cpp,matched,returns UV region pointer
+?setUV@ParticleSystemTemplate@FXParticleSystem@@QAEXPBURegion2D@@@Z,0x00036D5E,0x0005CB70,39,src/game/fx_particle_system.cpp,matched,copies UV region if non-null
+?GetAssetList@ParticleSystemTemplate@FXParticleSystem@@QBEXAAVAssetList@@@Z,0x0004B330,0x0005CBB0,3,src/game/fx_particle_system.cpp,matched,no-op asset list stub

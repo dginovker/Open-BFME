@@ -12,6 +12,8 @@ public:
     UnicodeString &operator=(const UnicodeString &that);
     UnicodeString &operator=(wchar_t c);
     UnicodeString &operator=(const wchar_t *str);
+    UnicodeString &operator+=(wchar_t c);
+    UnicodeString &operator+=(const wchar_t *str);
 
 private:
     wchar_t *m_text;

@@ -499,3 +499,5 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4UnicodeString@@QAEAAV0@G@Z,0x0003C218,0x00564FD0,31,src/game/unicode_string.cpp,matched,UnicodeString operator=(wchar_t)
 ??4UnicodeString@@QAEAAV0@PBG@Z,0x0002C56B,0x00083D20,53,src/game/unicode_string.cpp,matched,UnicodeString operator=(const wchar_t *)
 ??0UnicodeString@@QAE@PBG@Z,0x00036953,0x00065410,19,src/game/unicode_string.cpp,matched,UnicodeString(const wchar_t *)
+??YUnicodeString@@QAEAAV0@G@Z,0x0001CC6A,0x0043CC80,31,src/game/unicode_string.cpp,matched,UnicodeString operator+=(wchar_t)
+??YUnicodeString@@QAEAAV0@PBG@Z,0x0002D790,0x0049A020,53,src/game/unicode_string.cpp,matched,UnicodeString operator+=(const wchar_t *)

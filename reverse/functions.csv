@@ -202,6 +202,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Scale@Coord3D@@QAEAAV1@M@Z,0x0000E1C4,0x0014FFD0,33,src/math/coord3d.cpp,matched,scales x/y/z in place
 ?zero@Coord3D@@QAEXXZ,0x00029226,0x00083340,11,src/math/coord3d.cpp,matched,sets x/y/z to zero
 ?zero@ICoord3D@@QAEXXZ,0x000268C3,0x0045B890,11,src/math/icoord.cpp,matched,sets x/y/z to zero
+?length@ICoord3D@@QBEHXZ,0x0002E83E,0x007E6DC0,47,src/math/icoord.cpp,matched,returns integer vector length
 ?zero@Region3D@@QAEXXZ,0x0003652F,0x000BEC60,20,src/math/region.cpp,matched,sets bounds to zero
 ?depth@IRegion3D@@QBEHXZ,0x00040E53,0x007E6F20,7,src/math/region.cpp,matched,returns integer depth
 ?depth@Region3D@@QBEMXZ,0x0001DB24,0x007E6E30,7,src/math/region.cpp,matched,returns float depth
@@ -276,6 +277,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?_GetBlockSize@MemoryPool@@YAIPAX@Z,0x00882D40,0x00882D40,13,src/game/memory_pool.cpp,matched,returns block size or zero for null
 ?_Exit@MemoryPool@@YAXXZ,0x00882950,0x00882950,6,src/game/memory_pool.cpp,matched,decrements reference count
 ?debugIgnoreLeaks@?$StringBase@D@@QAEXXZ,0x00887080,0x00887080,1,src/game/string_base.cpp,matched,no-op leak ignore
+?debugIgnoreLeaks@?$StringBase@G@@QAEXXZ,0x00887230,0x00887230,1,src/game/string_base.cpp,matched,no-op leak ignore
 ?GetSnapshotName@LifeEventModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00001E8D,0x005D4660,6,src/game/fx_particle_system.cpp,matched,returns class name
 ?GetSnapshotName@DefaultPhysicsModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00003BB1,0x005D4620,6,src/game/fx_particle_system.cpp,matched,returns class name
 ?GetSnapshotName@WindModuleInfo@FXParticleSystem@@UAEPBDXZ,0x00003CA1,0x005BD950,6,src/game/fx_particle_system.cpp,matched,returns class name
@@ -298,6 +300,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4IRegion2D@@QAEAAU0@ABU0@@Z,0x00022C28,0x007E6D90,34,src/math/region.cpp,matched,copies bounds
 ??4Region3D@@QAEAAU0@ABU0@@Z,0x00023A5B,0x007E6EC0,46,src/math/region.cpp,matched,copies bounds
 ?setFromInt@RGBColor@@QAEXH@Z,0x0002CDC7,0x00083370,84,src/math/color.cpp,matched,sets RGB channels from packed int
+?getAsInt@RGBColor@@QBEHXZ,0x0002D989,0x0008E050,60,src/math/color.cpp,matched,packs RGB channels into a hex int
 ?Rotate@Coord2D@@QAEAAV1@ABV1@M@Z,0x0002F1E9,0x007E5B80,61,src/math/coord2d.cpp,matched,rotates source by angle
 ?IsLoading@Xfer@@UBE_NXZ,0x0004A7FA,0x0006B1C0,3,src/game/xfer.cpp,matched,returns false
 ?LoadPostProcess@ButterflyDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x000073FB,0x005D46D0,1,src/game/fx_particle_system.cpp,matched,no-op

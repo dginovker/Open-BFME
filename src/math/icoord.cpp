@@ -1,5 +1,7 @@
 #include "icoord.h"
 
+#include <math.h>
+
 ICoord2DBase &ICoord2DBase::operator=(const ICoord2DBase &that)
 {
     x = that.x;
@@ -67,6 +69,11 @@ ICoord3D &ICoord3D::operator=(const ICoord3D &that)
     };
     *(Raw *)this = *(const Raw *)&that;
     return *this;
+}
+
+int ICoord3D::length() const
+{
+    return (int)sqrt((double)(x * x + y * y + z * z));
 }
 
 void ICoord3D::zero()

@@ -6,6 +6,7 @@ struct RGBColor {
     float blue;
 
     RGBColor &operator=(const RGBColor &that);
+    int getAsInt() const;
     void setFromInt(int color);
 };
 

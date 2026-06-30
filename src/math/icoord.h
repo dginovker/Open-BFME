@@ -24,6 +24,7 @@ struct ICoord3D {
 
     ICoord3D &operator=(const ICoord3D &that);
 
+    int length() const;
     void zero();
 
     int x;

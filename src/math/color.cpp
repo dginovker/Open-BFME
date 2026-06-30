@@ -12,6 +12,11 @@ RGBColor &RGBColor::operator=(const RGBColor &that)
     return *this;
 }
 
+int RGBColor::getAsInt() const
+{
+    return ((int)(red * 255.0) << 16) | ((int)(green * 255.0) << 8) | ((int)(blue * 255.0) << 0);
+}
+
 void RGBColor::setFromInt(int color)
 {
     static const float scale = 1.0f / 255.0f;

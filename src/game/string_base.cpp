@@ -158,3 +158,29 @@ __declspec(naked) bool operator!=(const StringBase<char> &left, const char *righ
         __emit 0xc3
     }
 }
+
+__declspec(naked) bool operator==(const StringBase<char> &left, const char *right)
+{
+    __asm {
+        __emit 0x8b
+        __emit 0x44
+        __emit 0x24
+        __emit 0x08
+        __emit 0x8b
+        __emit 0x4c
+        __emit 0x24
+        __emit 0x04
+        __emit 0x50
+        __emit 0xe8
+        __emit 0xdc
+        __emit 0x0d
+        __emit 0xfa
+        __emit 0xff
+        __emit 0xf7
+        __emit 0xd8
+        __emit 0x1b
+        __emit 0xc0
+        __emit 0x40
+        __emit 0xc3
+    }
+}

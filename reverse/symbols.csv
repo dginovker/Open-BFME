@@ -1,0 +1,2 @@
+name,address,notes
+__ftol2,0x009F6E38,MSVC float-to-int conversion helper (statically linked CRT)

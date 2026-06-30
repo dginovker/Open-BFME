@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "baselines" / "bfme1" / "workshop-vanilla-1.03" / "manifest.json"
 EXE = ROOT / "baselines" / "bfme1" / "workshop-vanilla-1.03" / "files" / "lotrbfme.exe"
 FUNCTIONS = ROOT / "reverse" / "functions.csv"
+SYMBOLS = ROOT / "reverse" / "symbols.csv"
 BUILD_DIR = ROOT / "build" / "match"
 PATCH_DIR = ROOT / "build" / "patch"
 NOOP_EXE = PATCH_DIR / "lotrbfme.noop.exe"
@@ -264,9 +265,16 @@ def load_function_rows():
 
 
 def load_symbol_map():
+    # Addresses for resolving relative calls (REL32). Matched functions live at
+    # their target_rva; reverse/symbols.csv holds callees we do not own source
+    # for yet (CRT helpers like __ftol2, not-yet-matched exports).
     symbol_map = {}
     for row in load_function_rows():
         symbol_map[row["name"]] = int(row["target_rva"], 16)
+    if SYMBOLS.exists():
+        with SYMBOLS.open("r", encoding="utf-8", newline="") as handle:
+            for row in csv.DictReader(handle):
+                symbol_map[row["name"]] = int(row["address"], 16)
     return symbol_map
 
 
@@ -293,15 +301,20 @@ def compile_function(row, symbol_map, output):
     compiled, relocs = read_object_symbol_bytes(output, row["name"])
 
     resolved = bytearray(compiled[:target_size])
+    unresolved = []
     for offset, rtype, sym_name in relocs:
+        if offset >= target_size:
+            continue  # reloc belongs to a later function sharing the COMDAT section
         if rtype == 0x0006:  # IMAGE_REL_I386_DIR32
             resolved[offset : offset + 4] = target[offset : offset + 4]
-        elif rtype == 0x0009:  # IMAGE_REL_I386_REL32
+        elif rtype == 0x0014:  # IMAGE_REL_I386_REL32
             if sym_name in symbol_map:
                 target_address = symbol_map[sym_name]
                 next_address = target_rva + offset + 4
                 displacement = struct.pack("<i", target_address - next_address)
                 resolved[offset : offset + 4] = displacement
+            else:
+                unresolved.append(sym_name)
 
     return {
         "name": row["name"],
@@ -309,6 +322,7 @@ def compile_function(row, symbol_map, output):
         "target": target,
         "bytes": bytes(resolved),
         "source": row["source"],
+        "unresolved": unresolved,
     }
 
 
@@ -338,6 +352,9 @@ def verify_functions():
 
         failures += 1
         print(f"  FAIL {row['name']} ({row['source']})")
+        if patch["unresolved"]:
+            calls = ", ".join(sorted(set(patch["unresolved"])))
+            print(f"    unresolved call(s): {calls} (add to reverse/symbols.csv)")
         print(f"    target:   {format_bytes(target)}")
         print(f"    compiled: {format_bytes(compiled)}")
 

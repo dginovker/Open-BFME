@@ -396,3 +396,4 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1CylinderEmissionVolumeInfo@FXParticleSystem@@UAE@XZ,0x0001ADB6,0x005D6420,7,src/game/fx_particle_system.cpp,matched,resets vtable pointer
 ??1LineEmissionVolumeInfo@FXParticleSystem@@UAE@XZ,0x0002F03B,0x005D5A80,7,src/game/fx_particle_system.cpp,matched,resets vtable pointer
 ??4UnicodeString@@QAEAAV0@ABV0@@Z,0x0003E95F,0x000680A0,19,src/game/unicode_string.cpp,matched,copy assignment
+??0?$CategoryModuleInfo@$0A@@FXParticleSystem@@QAE@ABV01@@Z,0x00019C9F,0x0005C960,9,src/game/fx_particle_system.cpp,matched,copy constructor sets vtable

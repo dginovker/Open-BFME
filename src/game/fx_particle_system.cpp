@@ -55,8 +55,15 @@ public:
 template <int Category>
 class CategoryModuleInfo {
 public:
+    CategoryModuleInfo(const CategoryModuleInfo &that);
+    virtual ~CategoryModuleInfo() { }
     CategoryModuleInfo &operator=(const CategoryModuleInfo &that) { return *this; }
 };
+
+template <int Category>
+CategoryModuleInfo<Category>::CategoryModuleInfo(const CategoryModuleInfo<Category> &that)
+{
+}
 
 template <int Category>
 struct DefaultModuleKey {
@@ -102,6 +109,7 @@ template CategoryModuleTemplate<3> &CategoryModuleTemplate<3>::operator=(const C
 template CategoryModuleTemplate<4> &CategoryModuleTemplate<4>::operator=(const CategoryModuleTemplate<4> &);
 template CategoryModuleTemplate<5> &CategoryModuleTemplate<5>::operator=(const CategoryModuleTemplate<5> &);
 template CategoryModuleTemplate<6> &CategoryModuleTemplate<6>::operator=(const CategoryModuleTemplate<6> &);
+template class CategoryModuleInfo<0>;
 template CategoryModuleInfo<0> &CategoryModuleInfo<0>::operator=(const CategoryModuleInfo<0> &);
 template CategoryModuleInfo<1> &CategoryModuleInfo<1>::operator=(const CategoryModuleInfo<1> &);
 template CategoryModuleInfo<2> &CategoryModuleInfo<2>::operator=(const CategoryModuleInfo<2> &);

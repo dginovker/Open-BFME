@@ -31,4 +31,13 @@ template <typename T>
 bool operator<(const StringBase<T> &left, const StringBase<T> &right);
 
 template <typename T>
+bool operator==(const StringBase<T> &left, const StringBase<T> &right);
+
+template <typename T>
+bool operator!=(const StringBase<T> &left, const StringBase<T> &right);
+
+template <typename T>
 bool operator!=(const StringBase<T> &left, const T *right);
+
+class Debug;
+Debug &operator<<(Debug &debug, const StringBase<char> &str);

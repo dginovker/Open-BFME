@@ -1,5 +1,10 @@
 #include "unicode_string.h"
 
+UnicodeString::UnicodeString()
+{
+    m_text = 0;
+}
+
 __declspec(naked) UnicodeString &UnicodeString::operator=(const UnicodeString &that)
 {
     __asm {

@@ -464,3 +464,4 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??8@YA_NABV?$StringBase@D@@0@Z,0x000259B9,0x0007FFF0,20,src/game/string_base.cpp,matched,StringBase<char> equals StringBase<char>
 ??8@YA_NABV?$StringBase@G@@0@Z,0x000447DD,0x000607A0,20,src/game/string_base.cpp,matched,StringBase<wchar_t> equals StringBase<wchar_t>
 ??9@YA_NABV?$StringBase@G@@0@Z,0x0001EAA1,0x0009B530,20,src/game/string_base.cpp,matched,StringBase<wchar_t> not-equals StringBase<wchar_t>
+??0UnicodeString@@QAE@XZ,0x00041C95,0x00083D10,9,src/game/unicode_string.cpp,matched,default constructor

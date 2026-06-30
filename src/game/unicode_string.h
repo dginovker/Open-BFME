@@ -4,6 +4,7 @@
 
 class UnicodeString {
 public:
+    UnicodeString();
     UnicodeString &operator=(const UnicodeString &that);
 
 private:

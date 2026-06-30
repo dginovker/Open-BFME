@@ -87,6 +87,17 @@ __declspec(naked) AsciiString::AsciiString(const char *str, int len)
     }
 }
 
+__declspec(naked) AsciiString::~AsciiString()
+{
+    __asm {
+        __emit 0xe9
+        __emit 0xab
+        __emit 0x8a
+        __emit 0x82
+        __emit 0x00
+    }
+}
+
 __declspec(naked) AsciiString &AsciiString::operator=(const AsciiString &that)
 {
     __asm {

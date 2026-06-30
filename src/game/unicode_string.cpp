@@ -416,6 +416,17 @@ __declspec(naked) UnicodeString &UnicodeString::operator+=(const UnicodeString &
     }
 }
 
+__declspec(naked) UnicodeString::~UnicodeString()
+{
+    __asm {
+        __emit 0xe9
+        __emit 0x2b
+        __emit 0x93
+        __emit 0x82
+        __emit 0x00
+    }
+}
+
 __declspec(naked) UnicodeString &UnicodeString::operator=(const UnicodeString &that)
 {
     __asm {

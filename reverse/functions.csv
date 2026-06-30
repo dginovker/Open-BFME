@@ -492,6 +492,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4?$ModuleTag@$0A@$E?VALUE@?$DefaultModuleKey@$0A@@FXParticleSystem@@2QBDB$E?VALUE@?$DefaultModuleName@$0A@@FXParticleSystem@@2QBDBV?$DefaultModule@$0A@@FXParticleSystem@@V?$DefaultModuleTemplate@$0A@@2@V?$DefaultParticleModule@$0A@@2@V?$DefaultParticleModuleTemplate@$0A@@2@@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00033BD6,0x005D4880,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??0AsciiString@@QAE@PBDH@Z,0x0002B832,0x000AFF00,24,src/game/ascii_string.cpp,matched,AsciiString(const char *,int)
 ??0AsciiString@@QAE@ABV0@@Z,0x000416AF,0x0005EE50,19,src/game/ascii_string.cpp,matched,AsciiString copy constructor
+??1AsciiString@@QAE@XZ,0x0000D828,0x0005EE90,5,src/game/ascii_string.cpp,matched,AsciiString destructor
 ??0UnicodeString@@QAE@G@Z,0x0002C769,0x007E84E0,18,src/game/unicode_string.cpp,matched,UnicodeString(wchar_t)
 ??9@YA_NABV?$StringBase@D@@0@Z,0x000418C6,0x000A3D50,20,src/game/string_base.cpp,matched,StringBase<char> inequality
 ??6@YAAAVDebug@@AAV0@ABV?$StringBase@D@@@Z,0x00016F86,0x0005F590,52,src/game/string_base.cpp,matched,Debug output for StringBase<char>
@@ -501,6 +502,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4UnicodeString@@QAEAAV0@PBG@Z,0x0002C56B,0x00083D20,53,src/game/unicode_string.cpp,matched,UnicodeString operator=(const wchar_t *)
 ??0UnicodeString@@QAE@PBG@Z,0x00036953,0x00065410,19,src/game/unicode_string.cpp,matched,UnicodeString(const wchar_t *)
 ??0UnicodeString@@QAE@ABV0@@Z,0x00025E28,0x000682C0,19,src/game/unicode_string.cpp,matched,UnicodeString copy constructor
+??1UnicodeString@@QAE@XZ,0x0003B304,0x0005EEA0,5,src/game/unicode_string.cpp,matched,UnicodeString destructor
 ??YUnicodeString@@QAEAAV0@G@Z,0x0001CC6A,0x0043CC80,31,src/game/unicode_string.cpp,matched,UnicodeString operator+=(wchar_t)
 ??YUnicodeString@@QAEAAV0@PBG@Z,0x0002D790,0x0049A020,53,src/game/unicode_string.cpp,matched,UnicodeString operator+=(const wchar_t *)
 ??YUnicodeString@@QAEAAV0@ABV0@@Z,0x00035229,0x0048F040,63,src/game/unicode_string.cpp,matched,UnicodeString operator+=(const UnicodeString&)

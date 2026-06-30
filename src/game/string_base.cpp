@@ -153,6 +153,22 @@ void StringBase<T>::validate() const
 {
 }
 
+__declspec(naked) int StringBase<char>::compare(const char *str) const
+{
+    __asm {
+        __emit 0xe9
+        __emit 0x91
+        __emit 0x7b
+        __emit 0x05
+        __emit 0x00
+        __emit 0xe9
+        __emit 0x8c
+        __emit 0x9a
+        __emit 0x0f
+        __emit 0x00
+    }
+}
+
 template class StringBase<char>;
 template class StringBase<wchar_t>;
 

@@ -12,6 +12,7 @@ public:
     const T *str() const;
     const T *find(T c) const;
     T getCharAt(int index) const;
+    int compare(const T *str) const;
     void clear();
 
 private:

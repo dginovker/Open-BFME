@@ -581,3 +581,4 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?isNone@?$StringBase@G@@QBE_NXZ,0x00888A80,0x00888A80,16,src/game/string_base.cpp,matched,returns true if wide string equals the global none string
 ?isNotNone@?$StringBase@D@@QBE_NXZ,0x00888AE0,0x00888AE0,32,src/game/string_base.cpp,matched,returns true if string is not the global none string
 ?isNotNone@?$StringBase@G@@QBE_NXZ,0x00888B30,0x00888B30,32,src/game/string_base.cpp,matched,returns true if wide string is not the global none string
+?compare@?$StringBase@D@@QBEHPBD@Z,0x0004B01A,0x0004B01A,10,src/game/string_base.cpp,matched,compare with C string via internal helper

@@ -766,25 +766,3 @@ __declspec(naked) void StringBase<wchar_t>::clear()
         __emit 0xcc
     }
 }
-
-__declspec(naked) StringBase<char>::~StringBase()
-{
-    __asm {
-        __emit 0xe9
-        __emit 0xab
-        __emit 0x94
-        __emit 0x82
-        __emit 0x00
-    }
-}
-
-__declspec(naked) StringBase<wchar_t>::~StringBase()
-{
-    __asm {
-        __emit 0xe9
-        __emit 0xeb
-        __emit 0x9c
-        __emit 0x82
-        __emit 0x00
-    }
-}

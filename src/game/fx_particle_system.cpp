@@ -177,6 +177,10 @@ StreakDrawModuleInfo &StreakDrawModuleInfo::operator=(const StreakDrawModuleInfo
     return *this;
 }
 
+StreakDrawModuleInfo::StreakDrawModuleInfo(const StreakDrawModuleInfo &that)
+{
+}
+
 StreakDrawModuleTemplate &StreakDrawModuleTemplate::operator=(const StreakDrawModuleTemplate &that)
 {
     return *this;

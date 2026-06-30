@@ -31,7 +31,7 @@ public:
         float m30, float m31, float m32, float m33);
     Matrix4D &SetIdentity();
 
-    bool IsExactlyEqualTo(const Matrix4D &that) const;
+    bool IsExactlyEqualTo(const Matrix4D &that);
 
     float values[16];
 };

@@ -228,7 +228,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set@Coord3D@@QAEAAV1@MMM@Z,0x00041C77,0x000C8D50,25,src/math/coord3d.cpp,matched,sets x/y/z from floats
 ?Set@Matrix4D@@QAEAAV1@MMMMMMMMMMMMMMMM@Z,0x0000D7CE,0x007E60B0,116,src/math/matrix4d.cpp,matched,sets values from 16 floats
 ?SetIdentity@Matrix4D@@QAEAAV1@XZ,0x00018345,0x007E6060,57,src/math/matrix4d.cpp,matched,sets identity matrix
-?IsExactlyEqualTo@Matrix4D@@QBE_NABV1@@Z,0x000080F8,0x007E6BF0,104,src/math/matrix4d.cpp,matched,compares 16 float values bit-for-bit
+?IsExactlyEqualTo@Matrix4D@@QAE_NABV1@@Z,0x000080F8,0x007E6BF0,101,src/math/matrix4d.cpp,matched,compares 16 float values bit-for-bit
 ?SetMaxVect@Coord2D@@QAEAAV1@XZ,0x00047442,0x007E5C70,16,src/math/coord2d.cpp,matched,sets x/y to maximum float bit pattern
 ?SetMaxVect@Coord3D@@QAEAAV1@XZ,0x000437E8,0x007E6030,16,src/math/coord3d.cpp,matched,sets x/y/z to maximum float bit pattern
 ?SetMinVect@Coord2D@@QAEAAV1@XZ,0x000481B7,0x007E5C50,16,src/math/coord2d.cpp,matched,sets x/y to minimum float bit pattern
@@ -521,3 +521,4 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1?$CategoryModuleClass@$07@FXParticleSystem@@MAE@XZ,0x00006d3e,0x005d4af0,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
 ??1?$CategoryModuleClass@$03@FXParticleSystem@@MAE@XZ,0x0002c872,0x005d4b10,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
 ??1?$CategoryModuleClass@$04@FXParticleSystem@@MAE@XZ,0x000247b7,0x005d4b30,7,src/game/fx_particle_system_category_accessors.cpp,matched,virtual dtor vtable reset
+??0StreakDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00007fea,0x005d8600,11,src/game/fx_particle_system.cpp,matched,copy constructor sets vtable pointer

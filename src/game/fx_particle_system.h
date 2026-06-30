@@ -311,6 +311,7 @@ public:
 
 class StreakDrawModuleInfo {
 public:
+    StreakDrawModuleInfo(const StreakDrawModuleInfo &that);
     virtual ~StreakDrawModuleInfo();
     virtual const char *GetSnapshotName();
     virtual void LoadPostProcess();

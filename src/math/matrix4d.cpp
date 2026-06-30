@@ -310,7 +310,7 @@ Matrix4D &Matrix4D::SetIdentity()
     return *this;
 }
 
-__declspec(naked) bool Matrix4D::IsExactlyEqualTo(const Matrix4D &that) const
+__declspec(naked) bool Matrix4D::IsExactlyEqualTo(const Matrix4D &that)
 {
     __asm {
         mov eax, [esp + 4]

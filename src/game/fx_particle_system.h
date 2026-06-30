@@ -200,6 +200,7 @@ class ParticleSystemTemplate {
 public:
     AsciiString getName() const;
     AsciiString getTextureFilename() const;
+    void setTextureFilename(AsciiString &filename);
 };
 
 }

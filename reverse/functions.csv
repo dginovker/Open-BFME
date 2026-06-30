@@ -381,3 +381,4 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??6@YAAAVDebug@@AAV0@ABURGBColor@@@Z,0x0001DC9B,0x007E7470,95,src/math/color.cpp,matched,stream RGBColor to Debug
 ??4DefaultAlphaModuleInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0001EC36,0x005D4F90,237,src/game/fx_particle_system.cpp,matched,copy assignment of alpha module data
 ?GetKey@FXParticleSystem@@YAPBDW4ModuleCategory@1@@Z,0x0000971E,0x005D4520,12,src/game/fx_particle_system.cpp,matched,lookup category key string
+?setTextureFilename@ParticleSystemTemplate@FXParticleSystem@@QAEXAAVAsciiString@@@Z,0x000163FB,0x0005CB50,8,src/game/fx_particle_system.cpp,matched,adjusts this pointer and assigns texture filename

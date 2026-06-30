@@ -943,6 +943,22 @@ EmissionVelocityInfo::~EmissionVelocityInfo()
 {
 }
 
+CylindricalEmissionVelocityInfo::~CylindricalEmissionVelocityInfo()
+{
+}
+
+OrthoEmissionVelocityInfo::~OrthoEmissionVelocityInfo()
+{
+}
+
+OutwardEmissionVelocityInfo::~OutwardEmissionVelocityInfo()
+{
+}
+
+SphericalEmissionVelocityInfo::~SphericalEmissionVelocityInfo()
+{
+}
+
 const char *EmissionVelocityInfo::GetSnapshotName()
 {
     return "EmissionVelocityInfo";

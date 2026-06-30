@@ -987,3 +987,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?writeINI@SphericalEmissionVelocityModuleTemplate@FXParticleSystem@@UBEXAAVFile@@I@Z,0x000160FE,0x5fa710,322,src/game/fx_particle_system_bulk.cpp,matched,
 ?writeINI@StreakDrawModuleTemplate@FXParticleSystem@@UBEXAAVFile@@I@Z,0x00042465,0x5f85c0,35,src/game/fx_particle_system_bulk.cpp,matched,
 ?writeINI@TerrainCollisionModuleTemplate@FXParticleSystem@@UBEXAAVFile@@I@Z,0x00027DD6,0x5fd790,397,src/game/fx_particle_system_bulk.cpp,matched,
+??1CylindricalEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x00038C94,0x005D7700,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable
+??1OrthoEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x000346BC,0x005D6D90,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable
+??1OutwardEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x000206CB,0x005D7B10,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable
+??1SphericalEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x0001BFDB,0x005D71D0,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable

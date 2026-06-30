@@ -26451,20 +26451,6 @@ __declspec(naked) CylinderEmissionVolumeModuleTemplate::~CylinderEmissionVolumeM
     }
 }
 
-// ??1CylindricalEmissionVelocityInfo@FXParticleSystem@@UAE@XZ
-__declspec(naked) CylindricalEmissionVelocityInfo::~CylindricalEmissionVelocityInfo()
-{
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x44
-        __emit 0x37
-        __emit 0x07
-        __emit 0x01
-        __emit 0xc3
-    }
-}
-
 // ??1CylindricalEmissionVelocityModuleTemplate@FXParticleSystem@@UAE@XZ
 __declspec(naked) CylindricalEmissionVelocityModuleTemplate::~CylindricalEmissionVelocityModuleTemplate()
 {
@@ -26949,20 +26935,6 @@ __declspec(naked) LineEmissionVolumeModuleTemplate::~LineEmissionVolumeModuleTem
     }
 }
 
-// ??1OrthoEmissionVelocityInfo@FXParticleSystem@@UAE@XZ
-__declspec(naked) OrthoEmissionVelocityInfo::~OrthoEmissionVelocityInfo()
-{
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x44
-        __emit 0x37
-        __emit 0x07
-        __emit 0x01
-        __emit 0xc3
-    }
-}
-
 // ??1OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@UAE@XZ
 __declspec(naked) OrthoEmissionVelocityModuleTemplate::~OrthoEmissionVelocityModuleTemplate()
 {
@@ -27013,20 +26985,6 @@ __declspec(naked) OrthoEmissionVelocityModuleTemplate::~OrthoEmissionVelocityMod
         __emit 0xc7
         __emit 0x01
         __emit 0x58
-        __emit 0x37
-        __emit 0x07
-        __emit 0x01
-        __emit 0xc3
-    }
-}
-
-// ??1OutwardEmissionVelocityInfo@FXParticleSystem@@UAE@XZ
-__declspec(naked) OutwardEmissionVelocityInfo::~OutwardEmissionVelocityInfo()
-{
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x44
         __emit 0x37
         __emit 0x07
         __emit 0x01
@@ -27723,20 +27681,6 @@ __declspec(naked) SphereEmissionVolumeModuleTemplate::~SphereEmissionVolumeModul
         __emit 0xc7
         __emit 0x01
         __emit 0x58
-        __emit 0x37
-        __emit 0x07
-        __emit 0x01
-        __emit 0xc3
-    }
-}
-
-// ??1SphericalEmissionVelocityInfo@FXParticleSystem@@UAE@XZ
-__declspec(naked) SphericalEmissionVelocityInfo::~SphericalEmissionVelocityInfo()
-{
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x44
         __emit 0x37
         __emit 0x07
         __emit 0x01

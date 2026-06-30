@@ -535,3 +535,20 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??6@YAAAVDebug@@AAV0@ABURegion2D@@@Z,0x0004AC2D,0x007E71F0,142,src/math/region.cpp,matched,Debug output for Region2D
 ??6@YAAAVDebug@@AAV0@ABUIRegion2D@@@Z,0x000361BF,0x007E72B0,142,src/math/region.cpp,matched,Debug output for IRegion2D
 ??6@YAAAVDebug@@AAV0@ABURealRange@@@Z,0x0000D2AB,0x007E70D0,72,src/math/region.cpp,matched,Debug output for RealRange
+??0?$CategoryModuleClass@$0A@@FXParticleSystem@@IAE@_NPBD1@Z,0x0002A6E9,0x005DA710,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$00@FXParticleSystem@@IAE@_NPBD1@Z,0x00035355,0x005DA6B0,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$01@FXParticleSystem@@IAE@_NPBD1@Z,0x00012EF4,0x005DA7D0,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$02@FXParticleSystem@@IAE@_NPBD1@Z,0x00008161,0x005DA770,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$03@FXParticleSystem@@IAE@_NPBD1@Z,0x0001A613,0x005DA970,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$04@FXParticleSystem@@IAE@_NPBD1@Z,0x00011EFF,0x005DAB10,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$05@FXParticleSystem@@IAE@_NPBD1@Z,0x0003F729,0x005D9950,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$06@FXParticleSystem@@IAE@_NPBD1@Z,0x000214C2,0x005DA830,52,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClass@$07@FXParticleSystem@@IAE@_NPBD1@Z,0x0000E3B8,0x005DA890,39,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClass constructor
+??0?$CategoryModuleClassBase@$0A@$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$0A@@1@_N@Z,0x00002397,0x005C1240,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor
+??0?$CategoryModuleClassBase@$00$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$00@1@_N@Z,0x0003FE2C,0x005C1310,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor
+??0?$CategoryModuleClassBase@$01$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$01@1@_N@Z,0x00028781,0x005C13D0,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor
+??0?$CategoryModuleClassBase@$02$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$02@1@_N@Z,0x0000EEC6,0x005C14E0,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor
+??0?$CategoryModuleClassBase@$03$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$03@1@_N@Z,0x000354CC,0x005C1640,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor
+??0?$CategoryModuleClassBase@$04$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$04@1@_N@Z,0x00017DB4,0x005C16E0,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor
+??0?$CategoryModuleClassBase@$05$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$05@1@_N@Z,0x00010AC8,0x005C1780,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor
+??0?$CategoryModuleClassBase@$06$00@FXParticleSystem@@IAE@ABV?$CategoryModuleClass@$06@1@_N@Z,0x0002DD7B,0x005C1820,23,src/game/fx_particle_system_category_accessors.cpp,matched,CategoryModuleClassBase default-module constructor

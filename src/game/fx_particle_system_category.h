@@ -8,12 +8,14 @@ class CategoryModuleClass;
 template <int Category, int SubCategory = 1>
 class CategoryModuleClassBase {
 public:
-    virtual ~CategoryModuleClassBase() {}
+    CategoryModuleClassBase() {}
+    ~CategoryModuleClassBase() {}
     CategoryModuleClassBase &operator=(const CategoryModuleClassBase &that) { return *this; }
 
     static const CategoryModuleClass<Category> &getDefault();
 
 protected:
+    CategoryModuleClassBase(const CategoryModuleClass<Category> &module, bool setDefault);
     static CategoryModuleClass<Category> *s_defaultModule;
 };
 
@@ -27,7 +29,7 @@ public:
     static const CategoryModuleClass *getFirst() { return s_firstList; }
 
 protected:
-    ~CategoryModuleClass();
+    virtual ~CategoryModuleClass();
     CategoryModuleClass(bool setDefault, const char *key, const char *name);
 
     const char *m_key;

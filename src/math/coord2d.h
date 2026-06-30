@@ -36,6 +36,8 @@ public:
     float GetLength() const;
     float GetLengthEstimate() const;
     float GetLengthSqrd() const;
+    float toAngle() const;
+    Coord2D &Rotate(float angle);
     bool IsExactlyEqualTo(const Coord2D &that) const;
     float length() const;
     Coord2D &Negate();

@@ -7,6 +7,8 @@ public:
     Matrix4D();
     Matrix4D(const Matrix4D &that);
     Matrix4D(bool identity);
+    Matrix4D(const Coord3D &v);
+    Matrix4D(const Coord3D &v, float w);
     Matrix4D(
         float m00, float m01, float m02, float m03,
         float m10, float m11, float m12, float m13,
@@ -24,13 +26,18 @@ public:
     Coord3D &GetTranslationVector(Coord3D &out) const;
     Coord3D &RotateCoord(const Coord3D &coord, Coord3D &out);
     Coord3D &TransformCoord(const Coord3D &coord, Coord3D &out);
+    Matrix4D &Set(const Coord3D &v);
+    Matrix4D &Set(const Coord3D &v, float w);
     Matrix4D &Set(
         float m00, float m01, float m02, float m03,
         float m10, float m11, float m12, float m13,
         float m20, float m21, float m22, float m23,
         float m30, float m31, float m32, float m33);
     Matrix4D &SetIdentity();
-    Matrix4D &Set(const Coord3D &translation);
+    Matrix4D &Transpose();
+    Matrix4D &Multiply(const Matrix4D &left, const Matrix4D &right);
+    float Determinant() const;
+    float Inverse();
 
     bool IsExactlyEqualTo(const Matrix4D &that);
 

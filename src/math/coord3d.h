@@ -74,6 +74,7 @@ public:
     void set(const Coord3DBase *that);
     void sub(const Coord3DBase *that);
     static void crossProduct(const Coord3D *left, const Coord3D *right, Coord3D *result);
+    Coord3D &CrossProduct(const Coord3DBase &left, const Coord3DBase &right);
     Coord3D &SetZero();
     Coord3D &Sub(const Coord2D &that);
     Coord3D &Sub(const Coord2D &left, const Coord3DBase &right);

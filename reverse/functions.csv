@@ -593,3 +593,13 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?set@?$StringBase@G@@QAEXG@Z,0x0000434F,0x00564FB0,16,src/game/string_base.cpp,matched,set wide string from single wchar_t
 ?set@?$StringBase@D@@QAEXPBD@Z,0x0000AD53,0x00061BF0,50,src/game/string_base.cpp,matched,set from C string
 ?set@?$StringBase@G@@QAEXPBG@Z,0x0003517A,0x00083470,52,src/game/string_base.cpp,matched,set from wide C string
+?toAngle@Coord2D@@QBEMXZ,0x00046e52,0x001a5cb0,148,src/math/coord2d.cpp,matched,
+?Rotate@Coord2D@@QAEAAV1@M@Z,0x0001ac94,0x004afaa0,76,src/math/coord2d.cpp,matched,
+?CrossProduct@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x00022557,0x00232100,61,src/math/coord3d.cpp,matched,
+?Set@Matrix4D@@QAEAAV1@ABVCoord3D@@M@Z,0x0000be51,0x007e61c0,247,src/math/matrix4d.cpp,matched,
+?Transpose@Matrix4D@@QAEAAV1@XZ,0x00008396,0x007e6300,169,src/math/matrix4d.cpp,matched,
+?Determinant@Matrix4D@@QBEMXZ,0x0002912c,0x007e63e0,188,src/math/matrix4d.cpp,matched,
+?Multiply@Matrix4D@@QAEAAV1@ABV1@0@Z,0x00019bfa,0x007e6950,534,src/math/matrix4d.cpp,matched,
+?Inverse@Matrix4D@@QAEMXZ,0x00023f47,0x007e7d10,1060,src/math/matrix4d.cpp,matched,
+??0Matrix4D@@QAE@ABVCoord3D@@M@Z,0x000204aa,0x007e7a30,247,src/math/matrix4d.cpp,matched,
+??0Matrix4D@@QAE@ABVCoord3D@@@Z,0x000230ba,0x007e7c00,80,src/math/matrix4d.cpp,matched,

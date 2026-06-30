@@ -264,13 +264,37 @@ def load_function_rows():
         return list(csv.DictReader(handle))
 
 
+def build_call_thunks():
+    # Intra-module calls don't target a function's body directly -- they go through
+    # the incremental-link thunk table, a block of 5-byte `jmp body` entries near the
+    # start of .text. Map each body to its (lowest-addressed = ILT) thunk so that a
+    # call to a matched function resolves to the address the original code called.
+    data = EXE.read_bytes()
+    text = next(section for section in pe_sections(data) if section["name"] == ".text")
+    lo, size, raw = text["rva"], text["size"], text["raw_pointer"]
+    body_to_thunk = {}
+    pos, end = raw, raw + size - 5
+    while True:
+        pos = data.find(b"\xe9", pos, end)
+        if pos == -1:
+            break
+        thunk_rva = (pos - raw) + lo
+        target = thunk_rva + 5 + struct.unpack_from("<i", data, pos + 1)[0]
+        if lo <= target < lo + size:
+            body_to_thunk.setdefault(target, thunk_rva)
+        pos += 1
+    return body_to_thunk
+
+
 def load_symbol_map():
-    # Addresses for resolving relative calls (REL32). Matched functions live at
-    # their target_rva; reverse/symbols.csv holds callees we do not own source
-    # for yet (CRT helpers like __ftol2, not-yet-matched exports).
+    # Addresses for resolving relative calls (REL32). A call to a matched function
+    # goes through its incremental-link thunk, not its body; reverse/symbols.csv
+    # holds callees we do not own source for yet (CRT helpers like __ftol2).
+    thunks = build_call_thunks()
     symbol_map = {}
     for row in load_function_rows():
-        symbol_map[row["name"]] = int(row["target_rva"], 16)
+        body = int(row["target_rva"], 16)
+        symbol_map[row["name"]] = thunks.get(body, body)
     if SYMBOLS.exists():
         with SYMBOLS.open("r", encoding="utf-8", newline="") as handle:
             for row in csv.DictReader(handle):
@@ -326,8 +350,12 @@ def compile_function(row, symbol_map, output):
     }
 
 
-def verify_functions():
+def verify_functions(only=None):
     rows = load_function_rows()
+    if only:
+        rows = [row for row in rows if any(sel in row["source"] or sel in row["name"] for sel in only)]
+        if not rows:
+            raise SystemExit("no functions match: " + ", ".join(only))
     symbol_map = load_symbol_map()
 
     print("Functions:")
@@ -400,13 +428,17 @@ def verify_noop_patch(patches):
     print(f"  OK {NOOP_EXE.relative_to(ROOT)}")
 
 
-def main():
+def main(only=None):
+    if only:
+        # Fast path: compile and byte-compare only the matching sources/functions
+        # (a few seconds), skipping the baseline hash and no-op patch. Use this to
+        # iterate; run with no arguments for the full check before committing.
+        verify_functions(only)
+        return
     verify_baseline()
     patches = verify_functions()
     verify_noop_patch(patches)
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 1:
-        raise SystemExit("tools/build.py does not take arguments yet.")
-    main()
+    main(sys.argv[1:])

@@ -1,7 +1,11 @@
 # Matching a function
 
-1. Write the C++ in `src/`, add a row to `reverse/functions.csv`, run `./build.sh`.
-   It compiles with MSVC 7.1 and byte-compares against the binary, failing loudly on any mismatch.
+1. Write the C++ in `src/`, add a row to `reverse/functions.csv`, then verify.
+   - Iterate fast: `./build.sh src/your_file.cpp` (or a function name) compiles+byte-compares
+     just that source in a few seconds.
+   - Before committing: `./build.sh` (no args) runs the full check — every function, plus the
+     baseline hash and the no-op patch that confirms the rebuilt exe is identical.
+   It compiles with MSVC 7.1 and fails loudly on any mismatch.
 
 2. Relocations the patcher fills in for you (so don't worry about matching these bytes):
    - **DIR32** (constants, vtables, string literals): copied from the target binary. The

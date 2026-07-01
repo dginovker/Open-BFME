@@ -173,6 +173,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ButterflyDrawModuleInfo@FXParticleSystem@@QAE@XZ,0x000116C6,0x005F0C60,9,src/game/fx_particle_system.cpp,matched,default constructor sets vtable pointer
 ??0ButterflyDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00019CB3,0x005D8CF0,62,src/game/fx_particle_system_bulk.cpp,matched,
 ??0ButterflyDrawModuleTemplate@FXParticleSystem@@QAE@XZ,0x0003E8F1,0x005D8C20,106,src/game/fx_particle_system_bulk.cpp,matched,
+??0ChunkSaveClass@@QAE@PAVFileClass@@@Z,,0x009E1690,91,src/w3d/chunkio.cpp,matched,
 ??0Coord2D@@QAE@ABUCoord2DBase@@@Z,0x00007824,0x007E59E0,19,src/math/coord2d.cpp,matched,copies x/y from Coord2DBase
 ??0Coord2D@@QAE@ABUCoord3DBase@@@Z,0x0001D034,0x003BB840,19,src/math/coord2d.cpp,matched,copies x/y from Coord3DBase
 ??0Coord2D@@QAE@ABV0@@Z,0x00011455,0x0005BD70,19,src/math/coord2d.cpp,matched,copies x/y from Coord2D
@@ -633,6 +634,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??_0Coord3D@@QAEAAV0@M@Z,0x0002EB1D,0x000EC6C0,33,src/math/coord3d.cpp,matched,divides x/y/z by scalar
 ??_0Matrix4D@@QAEAAV0@M@Z,0x00025BC6,0x007E67B0,139,src/math/matrix4d.cpp,matched,divides matrix values by scalar
 ??_GWindowLayout@@UAEPAXI@Z,,0x004706F0,30,src/game/window_layout.cpp,matched,compiler-generated deleting dtor
+??_H@YGXPAXIHP6EPAX0@Z@Z,,0x0005C600,48,src/w3d/chunkio.cpp,matched,
 ?ACos@@YAMM@Z,0x00873940,0x00873940,10,src/math/trig.cpp,matched,wraps internal acos helper
 ?ASin@@YAMM@Z,0x00873950,0x00873950,10,src/math/trig.cpp,matched,wraps internal asin helper
 ?Add2D@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x000263B4,0x007E5DE0,28,src/math/coord3d.cpp,matched,adds two Coord3DBase x/y values
@@ -644,6 +646,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Add@Coord3D@@QAEAAV1@ABUCoord3DBase@@ABVCoord2D@@@Z,0x0001AE3D,0x007E5F20,34,src/math/coord3d.cpp,matched,adds Coord3DBase and Coord2D
 ?Add@Coord3D@@QAEAAV1@ABVCoord2D@@@Z,0x00023452,0x007E5EB0,24,src/math/coord3d.cpp,matched,adds Coord2D x/y
 ?Add@Coord3D@@QAEAAV1@ABVCoord2D@@ABUCoord3DBase@@@Z,0x0001F802,0x007E5EF0,34,src/math/coord3d.cpp,matched,adds Coord2D and Coord3DBase
+?Add_Size@ChunkHeader@@QAEXK@Z,,0x009E1780,36,src/w3d/chunkio.cpp,matched,
+?Add_Size@MicroChunkHeader@@QAEXE@Z,,0x009E17B0,15,src/w3d/chunkio.cpp,matched,
+?Begin_Chunk@ChunkSaveClass@@QAE_NK@Z,,0x009E16F0,138,src/w3d/chunkio.cpp,matched,
+?Begin_Micro_Chunk@ChunkSaveClass@@QAE_NK@Z,,0x009E1950,76,src/w3d/chunkio.cpp,matched,
 ?Cos@@YAMM@Z,0x00873920,0x00873920,7,src/math/trig.cpp,matched,returns cosine of radians
 ?CrossProduct@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x00022557,0x00232100,61,src/math/coord3d.cpp,matched,
 ?Determinant@Matrix4D@@QBEMXZ,0x0002912c,0x007e63e0,188,src/math/matrix4d.cpp,matched,
@@ -664,6 +670,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?DoXfer@StreakDrawModuleInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x0001B1A3,0x5f7f00,27,src/game/fx_particle_system_bulk.cpp,matched,
 ?DoXfer@TerrainCollisionModuleInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x000320A1,0x5fcf10,75,src/game/fx_particle_system_bulk.cpp,matched,
 ?DoXfer@WindModuleInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x0000B235,0x5fe750,242,src/game/fx_particle_system_bulk.cpp,matched,
+?End_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E17F0,162,src/w3d/chunkio.cpp,matched,
+?End_Micro_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E1180,81,src/w3d/chunkio.cpp,matched,
 ?GetAssetList@ParticleSystemTemplate@FXParticleSystem@@QBEXAAVAssetList@@@Z,0x0004B330,0x0005CBB0,3,src/game/fx_particle_system.cpp,matched,no-op asset list stub
 ?GetKey@FXParticleSystem@@YAPBDW4ModuleCategory@1@@Z,0x0000971E,0x005D4520,12,src/game/fx_particle_system.cpp,matched,lookup category key string
 ?GetLength2D@Coord3D@@QBEMXZ,0x00036D95,0x001A5D70,22,src/math/coord3d.cpp,matched,returns x/y vector length
@@ -698,6 +706,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GetYVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x00024280,0x007E6CA0,24,src/math/matrix4d.cpp,matched,copies y basis vector
 ?GetZVector@Matrix4D@@QBEAAVCoord3D@@AAV2@@Z,0x0003021F,0x007E6CC0,24,src/math/matrix4d.cpp,matched,copies z basis vector
 ?Get_Float@Random4Class@@QAEMXZ,,0x009E6120,30,src/w3d/random.cpp,matched,verbatim Generals WWLib
+?Get_Size@ChunkHeader@@QAEKXZ,,0x009E1210,9,src/w3d/chunkio.cpp,matched,
 ?Inverse@Matrix4D@@QAEMXZ,0x00023f47,0x007e7d10,1060,src/math/matrix4d.cpp,matched,
 ?IsCRC@Xfer@@UBE_NXZ,0x0001BE7D,0x007E7690,3,src/game/xfer.cpp,matched,returns false
 ?IsExactlyEqualTo@Coord2D@@QBE_NABV1@@Z,0x0003012A,0x003BC910,45,src/math/coord2d.cpp,matched,compares exact x/y
@@ -759,6 +768,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?SetZAxis@Coord3D@@QAEAAV1@XZ,0x0001C06C,0x001BD760,23,src/math/coord3d.cpp,matched,sets unit z axis
 ?SetZero@Coord2D@@QAEAAV1@XZ,0x00022D0E,0x003FD390,16,src/math/coord2d.cpp,matched,sets x/y to zero and returns self
 ?SetZero@Coord3D@@QAEAAV1@XZ,0x000495CB,0x00148760,13,src/math/coord3d.cpp,matched,sets x/y/z to zero and returns self
+?Set_Size@ChunkHeader@@QAEXK@Z,,0x009E11F0,23,src/w3d/chunkio.cpp,matched,
+?Set_Sub_Chunk_Flag@ChunkHeader@@QAEX_N@Z,,0x009E1220,33,src/w3d/chunkio.cpp,matched,
 ?Sin@@YAMM@Z,0x00873910,0x00873910,7,src/math/trig.cpp,matched,returns sine of radians
 ?SkipBadBlock@Xfer@@UAEXAAVSnapshot@@I@Z,0x00048B44,0x0006B1D0,3,src/game/xfer.cpp,matched,no-op
 ?Sub2D@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x0000F1A5,0x007E5E30,28,src/math/coord3d.cpp,matched,subtracts two Coord3DBase x/y values
@@ -774,6 +785,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?TransformCoord@Matrix4D@@QAEAAVCoord3D@@ABV2@AAV2@@Z,0x000085A8,0x007E6860,92,src/math/matrix4d.cpp,matched,transforms coordinate with translation
 ?Transpose@Matrix4D@@QAEAAV1@XZ,0x00008396,0x007e6300,169,src/math/matrix4d.cpp,matched,
 ?Version1@Xfer@@QAEXXZ,0x000429C9,0x000C7E90,21,src/game/xfer.cpp,matched,xfer version 1 marker
+?Write@ChunkSaveClass@@QAEKABUIOVector2Struct@@@Z,,0x009E1910,15,src/w3d/chunkio.cpp,matched,
+?Write@ChunkSaveClass@@QAEKABUIOVector3Struct@@@Z,,0x009E1920,15,src/w3d/chunkio.cpp,matched,
+?Write@ChunkSaveClass@@QAEKPBXK@Z,,0x009E18A0,98,src/w3d/chunkio.cpp,matched,
 ?XferEnum@Xfer@@UAEAAV1@PBDPAXI@Z,0x009D67B0,0x009D67B0,196,src/game/xfer.cpp,matched,xfer enum
 ?XferRawBytes@Xfer@@UAEAAV1@PAXI@Z,0x009D63C0,0x009D63C0,67,src/game/xfer.cpp,matched,xfer raw bytes
 ?_Allocate@MemoryPool@@YAPAXIW4AllocType@1@@Z,0x00882960,0x00882960,433,src/game/memory_pool.cpp,matched,allocate block from pool

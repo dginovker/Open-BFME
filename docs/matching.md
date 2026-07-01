@@ -22,8 +22,9 @@ Useful iteration tools:
 
 - `python3 tools/explain_mismatch.py <decorated-symbol>` compiles that function's source and prints
   the first byte difference, byte windows, and side-by-side target/compiled disassembly.
-- `python3 tools/list_naked_candidates.py src --limit 30` ranks small naked asm blocks that are
-  likely good C++ conversion candidates.
+- `python3 tools/list_naked_candidates.py src --limit 30` ranks tracked naked asm blocks that are
+  likely good C++ conversion candidates and prints the exact `./build.sh '<symbol>'` command.
+  Add `--groups` to find repeated byte patterns, or `--all` to include untracked naked functions.
 
 ## MSVC 7.1 shaping notes
 

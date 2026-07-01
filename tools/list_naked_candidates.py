@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Rank naked asm functions that look like good C++ decompilation candidates."""
 import argparse
+from collections import defaultdict
 import re
 
 import build
@@ -12,9 +13,22 @@ EMIT_RE = re.compile(r"__emit\s+0x([0-9a-fA-F]{1,2})")
 
 def collect_rows():
     rows = {}
+    by_name = {}
     for row in build.load_all_function_rows():
         rows.setdefault(row["source"], []).append(row)
-    return rows
+        by_name[row["name"]] = row
+    return rows, by_name
+
+
+def symbol_comment(lines, index):
+    for cursor in range(index - 1, max(-1, index - 5), -1):
+        text = lines[cursor].strip()
+        if not text:
+            continue
+        if text.startswith("// "):
+            return text[3:].strip()
+        break
+    return None
 
 
 def signature(lines, index):
@@ -100,11 +114,13 @@ def score_candidate(data, sig):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("paths", nargs="*", default=["src"], help="source files or directories to scan")
+    parser.add_argument("--all", action="store_true", help="include untracked naked functions")
+    parser.add_argument("--groups", action="store_true", help="show repeated naked byte patterns instead of individual functions")
     parser.add_argument("--limit", type=int, default=30)
     parser.add_argument("--max-bytes", type=int, default=160)
     args = parser.parse_args()
 
-    row_by_source = collect_rows()
+    row_by_source, row_by_name = collect_rows()
     files = []
     for raw in args.paths:
         path = build.ROOT / raw
@@ -129,6 +145,12 @@ def main():
             if not data or len(data) > args.max_bytes:
                 continue
             sig = signature(lines, index)
+            symbol = symbol_comment(lines, index)
+            row = row_by_name.get(symbol) if symbol else None
+            if row and row["source"] != rel:
+                row = None
+            if not row and not args.all:
+                continue
             score, reasons = score_candidate(data, sig)
             candidates.append(
                 {
@@ -137,6 +159,10 @@ def main():
                     "line": index + 1,
                     "end": end + 1,
                     "size": len(data),
+                    "bytes": data,
+                    "symbol": symbol,
+                    "tracked": row is not None,
+                    "status": row["status"] if row else "untracked",
                     "signature": sig,
                     "reasons": reasons,
                     "unmatched_count": unmatched_count,
@@ -144,11 +170,36 @@ def main():
             )
 
     candidates.sort(key=lambda item: (-item["score"], item["size"], item["path"], item["line"]))
+    if args.groups:
+        groups = defaultdict(list)
+        for item in candidates:
+            groups[item["bytes"]].append(item)
+        grouped = sorted(groups.items(), key=lambda entry: (-len(entry[1]), -entry[1][0]["score"], len(entry[0])))
+        for data, items in grouped[: args.limit]:
+            tracked = sum(1 for item in items if item["tracked"])
+            sample = items[0]
+            reasons = ", ".join(sample["reasons"])
+            print(f"{len(items):4d} function(s), {tracked:4d} tracked, {len(data):4d} bytes, score {sample['score']:4d}")
+            print(f"      bytes: {' '.join(f'{byte:02x}' for byte in data)}")
+            print(f"      {reasons}")
+            for item in items[:5]:
+                location = f"{item['path']}:{item['line']}"
+                print(f"      {location}  {item['status']}  {item['signature']}")
+                if item["tracked"]:
+                    print(f"        ./build.sh '{item['symbol']}'")
+            if len(items) > 5:
+                print(f"      ... {len(items) - 5} more")
+        return
+
     for item in candidates[: args.limit]:
         location = f"{item['path']}:{item['line']}"
         reasons = ", ".join(item["reasons"])
-        print(f"{item['score']:4d}  {item['size']:4d} bytes  {location}")
+        print(f"{item['score']:4d}  {item['size']:4d} bytes  {location}  {item['status']}")
         print(f"      {item['signature']}")
+        if item["symbol"]:
+            print(f"      symbol: {item['symbol']}")
+        if item["tracked"]:
+            print(f"      verify: ./build.sh '{item['symbol']}'")
         print(f"      {reasons}; file has {item['unmatched_count']} unmatched csv row(s)")
 
 

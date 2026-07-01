@@ -840,15 +840,36 @@ const char *DefaultUpdateModuleInfo::GetSnapshotName()
     return "DefaultUpdateModuleInfo";
 }
 
-EmissionVelocityInfo::EmissionVelocityInfo(const EmissionVelocityInfo &that)
-{
-}
-
 EmissionVelocityInfo::~EmissionVelocityInfo()
 {
 }
 
+// ??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
+OrthoEmissionVelocityInfo::OrthoEmissionVelocityInfo(const OrthoEmissionVelocityInfo &that)
+    : EmissionVelocityInfo(that)
+    , m_var0(that.m_var0)
+    , m_var1(that.m_var1)
+    , m_var2(that.m_var2)
+{
+}
+
+// ??0CylindricalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
+CylindricalEmissionVelocityInfo::CylindricalEmissionVelocityInfo(const CylindricalEmissionVelocityInfo &that)
+    : EmissionVelocityInfo(that)
+    , m_var0(that.m_var0)
+    , m_var1(that.m_var1)
+{
+}
+
 CylindricalEmissionVelocityInfo::~CylindricalEmissionVelocityInfo()
+{
+}
+
+// ??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
+OutwardEmissionVelocityInfo::OutwardEmissionVelocityInfo(const OutwardEmissionVelocityInfo &that)
+    : EmissionVelocityInfo(that)
+    , m_var0(that.m_var0)
+    , m_var1(that.m_var1)
 {
 }
 
@@ -860,9 +881,26 @@ OutwardEmissionVelocityInfo::~OutwardEmissionVelocityInfo()
 {
 }
 
+// ??0SphericalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
+SphericalEmissionVelocityInfo::SphericalEmissionVelocityInfo(const SphericalEmissionVelocityInfo &that)
+    : EmissionVelocityInfo(that)
+    , m_var0(that.m_var0)
+{
+}
+
 SphericalEmissionVelocityInfo::~SphericalEmissionVelocityInfo()
 {
 }
+
+// ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
+HemisphericalEmissionVelocityModuleTemplate::HemisphericalEmissionVelocityModuleTemplate(const HemisphericalEmissionVelocityModuleTemplate &that)
+    : SphericalEmissionVelocityModuleTemplate(that)
+{}
+
+// ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ
+HemisphericalEmissionVelocityModuleTemplate::HemisphericalEmissionVelocityModuleTemplate()
+    : SphericalEmissionVelocityModuleTemplate()
+{}
 
 const char *EmissionVelocityInfo::GetSnapshotName()
 {

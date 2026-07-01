@@ -352,11 +352,11 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?reverseFind@?$StringBase@G@@QBEPBGG@Z,0x00887090,0x00887090,49,src/game/string_base.cpp,matched,reverse find wchar_t in string
 ?swap@?$StringBase@D@@QAEXAAV1@@Z,0x0002E4E7,0x0006F4E0,17,src/game/string_base.cpp,matched,swap m_data pointers
 ?swap@?$StringBase@G@@QAEXAAV1@@Z,0x000325F1,0x004B22E0,17,src/game/string_base.cpp,matched,swap m_data pointers
-??0EmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00038D4D,0x005BD820,11,src/game/fx_particle_system.cpp,matched,copy constructor
-??0CylindricalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00021A85,0x005D7710,71,src/game/fx_particle_system_bulk.cpp,matched,
-??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00003FB2,0x005D6DA0,93,src/game/fx_particle_system_bulk.cpp,matched,
-??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0000AEE8,0x005D7B20,71,src/game/fx_particle_system_bulk.cpp,matched,
-??0SphericalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0001B2D4,0x005D71E0,49,src/game/fx_particle_system_bulk.cpp,matched,
+??0EmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00038D4D,0x005BD820,11,src/game/fx_particle_system_bulk.cpp,matched,copy constructor
+??0CylindricalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00021A85,0x005D7710,71,src/game/fx_particle_system.cpp,matched,
+??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00003FB2,0x005D6DA0,93,src/game/fx_particle_system.cpp,matched,
+??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0000AEE8,0x005D7B20,71,src/game/fx_particle_system.cpp,matched,
+??0SphericalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0001B2D4,0x005D71E0,49,src/game/fx_particle_system.cpp,matched,
 ??0CylindricalEmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x00016383,0x005D7670,105,src/game/fx_particle_system_bulk.cpp,matched,
 ??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x00046E75,0x005D6CE0,130,src/game/fx_particle_system_bulk.cpp,matched,
 ??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x000051C3,0x005D7A80,105,src/game/fx_particle_system_bulk.cpp,matched,
@@ -625,7 +625,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0QuadDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00048AE5,0x005D88B0,11,src/game/fx_particle_system.cpp,matched,copy constructor sets vtable pointer
 ??0BoxEmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00036417,0x005D5E30,45,src/game/fx_particle_system.cpp,matched,
 ??0CylinderEmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0004556B,0x005D6430,57,src/game/fx_particle_system.cpp,matched,
-??0SphereEmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00032CD1,0x005D6150,33,src/game/fx_particle_system_bulk.cpp,matched,
+??0SphereEmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00032CD1,0x005D6150,33,src/game/fx_particle_system.cpp,matched,
 ??0ButterflyDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00019CB3,0x005D8CF0,62,src/game/fx_particle_system_bulk.cpp,matched,
 ??0ButterflyDrawModuleTemplate@FXParticleSystem@@QAE@XZ,0x0003E8F1,0x005D8C20,106,src/game/fx_particle_system_bulk.cpp,matched,
 ??0QuadDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00005222,0x005D8A40,62,src/game/fx_particle_system_bulk.cpp,matched,
@@ -1021,3 +1021,13 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0SphereEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@XZ,0x0003A4D1,0x005D6240,45,src/game/fx_particle_system_bulk.cpp,matched,
 ??0PointEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0000FECA,0x005D5930,62,src/game/fx_particle_system_bulk.cpp,matched,
 ??0SphereEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0001598D,0x005D62C0,62,src/game/fx_particle_system_bulk.cpp,matched,
+??0CylindricalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0004AEB7,0x005D7860,106,src/game/fx_particle_system_bulk.cpp,matched,
+??0OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0000FAD3,0x005D6F30,106,src/game/fx_particle_system_bulk.cpp,matched,
+??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x00048DB0,0x005D7C70,106,src/game/fx_particle_system_bulk.cpp,matched,
+??0SphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0001BF86,0x005D72F0,106,src/game/fx_particle_system_bulk.cpp,matched,
+??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0002BF67,0x005D74F0,32,src/game/fx_particle_system.cpp,matched,
+??0SphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00003DF5,0x005D73C0,62,src/game/fx_particle_system_bulk.cpp,matched,
+??0CylindricalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002B79C,0x005D7930,62,src/game/fx_particle_system_bulk.cpp,matched,
+??0OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0000ADDA,0x005D7000,62,src/game/fx_particle_system_bulk.cpp,matched,
+??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0003C6DC,0x005D7D40,62,src/game/fx_particle_system_bulk.cpp,matched,
+??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002DB50,0x005D7560,39,src/game/fx_particle_system.cpp,matched,

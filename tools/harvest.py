@@ -133,7 +133,7 @@ def main():
     if unresolved:
         print("  add to reverse/symbols.csv (address from Ghidra) to unblock: " + ", ".join(sorted(unresolved)))
     if drift:
-        print("  source drift, reconcile against the binary: " + ", ".join(drift[:10]))
+        print("  source drift, reconcile against the binary: " + ", ".join(drift))
 
 
 if __name__ == "__main__":

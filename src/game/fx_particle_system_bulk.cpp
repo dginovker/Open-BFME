@@ -17625,11 +17625,8 @@ CylinderEmissionVolumeModuleTemplate::CylinderEmissionVolumeModuleTemplate()
 {}
 
 
-// ??0CylindricalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
-CylindricalEmissionVelocityInfo::CylindricalEmissionVelocityInfo(const CylindricalEmissionVelocityInfo &that)
-    : EmissionVelocityInfo(that)
-    , m_var0(that.m_var0)
-    , m_var1(that.m_var1)
+// ??0EmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
+EmissionVelocityInfo::EmissionVelocityInfo(const EmissionVelocityInfo &that)
 {
 }
 
@@ -17644,186 +17641,15 @@ CylindricalEmissionVelocityInfo::CylindricalEmissionVelocityInfo()
 }
 
 // ??0CylindricalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) CylindricalEmissionVelocityModuleTemplate::CylindricalEmissionVelocityModuleTemplate(const CylindricalEmissionVelocityModuleTemplate &that)
-{
-    __asm {
-        __emit 0x56
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x7c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x57
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0xf6
-        __emit 0xcb
-        __emit 0xa2
-        __emit 0xff
-        __emit 0x85
-        __emit 0xff
-        __emit 0x74
-        __emit 0x05
-        __emit 0x8d
-        __emit 0x47
-        __emit 0x08
-        __emit 0xeb
-        __emit 0x02
-        __emit 0x33
-        __emit 0xc0
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xe8
-        __emit 0x31
-        __emit 0xa1
-        __emit 0xa4
-        __emit 0xff
-        __emit 0xc7
-        __emit 0x07
-        __emit 0xa4
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0xc7
-        __emit 0x06
-        __emit 0x90
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0x8c
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
+CylindricalEmissionVelocityModuleTemplate::CylindricalEmissionVelocityModuleTemplate(const CylindricalEmissionVelocityModuleTemplate &that)
+    : CategoryModuleTemplate<4>(that), CylindricalEmissionVelocityInfo(that)
+{}
 
 // ??0CylindricalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ
-__declspec(naked) CylindricalEmissionVelocityModuleTemplate::CylindricalEmissionVelocityModuleTemplate()
-{
-    __asm {
-        __emit 0x6a
-        __emit 0xff
-        __emit 0x68
-        __emit 0x38
-        __emit 0xab
-        __emit 0x03
-        __emit 0x01
-        __emit 0x64
-        __emit 0xa1
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x50
-        __emit 0x64
-        __emit 0x89
-        __emit 0x25
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x51
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xcc
-        __emit 0xf9
-        __emit 0x10
-        __emit 0x01
-        __emit 0x57
-        __emit 0x89
-        __emit 0x74
-        __emit 0x24
-        __emit 0x08
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xf0
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xec
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xc7
-        __emit 0x44
-        __emit 0x24
-        __emit 0x14
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0xe8
-        __emit 0xdf
-        __emit 0xea
-        __emit 0xa3
-        __emit 0xff
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0xc7
-        __emit 0x07
-        __emit 0xa4
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x06
-        __emit 0x90
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0x8c
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0x64
-        __emit 0x89
-        __emit 0x0d
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x83
-        __emit 0xc4
-        __emit 0x10
-        __emit 0xc3
-    }
-}
+CylindricalEmissionVelocityModuleTemplate::CylindricalEmissionVelocityModuleTemplate()
+    : CategoryModuleTemplate<4>(), CylindricalEmissionVelocityInfo()
+{}
+
 
 // ??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@ABV01@@Z
 // compiler-generated: set vtable, rep movsd m_alphaKey[8]
@@ -18344,90 +18170,6 @@ __declspec(naked) DefaultUpdateModuleInfo::DefaultUpdateModuleInfo()
     }
 }
 
-// ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) HemisphericalEmissionVelocityModuleTemplate::HemisphericalEmissionVelocityModuleTemplate(const HemisphericalEmissionVelocityModuleTemplate &that)
-{
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x88
-        __emit 0xc8
-        __emit 0xa2
-        __emit 0xff
-        __emit 0xc7
-        __emit 0x06
-        __emit 0x64
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0x60
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x08
-        __emit 0x4c
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
-
-// ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ
-__declspec(naked) HemisphericalEmissionVelocityModuleTemplate::HemisphericalEmissionVelocityModuleTemplate()
-{
-    __asm {
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x8e
-        __emit 0x4a
-        __emit 0xa4
-        __emit 0xff
-        __emit 0xc7
-        __emit 0x06
-        __emit 0x64
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0x60
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x08
-        __emit 0x4c
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc3
-    }
-}
 
 // ??0LifeEventModuleInfo@FXParticleSystem@@QAE@ABV01@@Z
 __declspec(naked) LifeEventModuleInfo::LifeEventModuleInfo(const LifeEventModuleInfo &that)
@@ -20133,14 +19875,6 @@ LineEmissionVolumeModuleTemplate::LineEmissionVolumeModuleTemplate()
 {}
 
 
-// ??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
-OrthoEmissionVelocityInfo::OrthoEmissionVelocityInfo(const OrthoEmissionVelocityInfo &that)
-    : EmissionVelocityInfo(that)
-    , m_var0(that.m_var0)
-    , m_var1(that.m_var1)
-    , m_var2(that.m_var2)
-{
-}
 
 // ??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@XZ
 OrthoEmissionVelocityInfo::OrthoEmissionVelocityInfo()
@@ -20155,194 +19889,14 @@ OrthoEmissionVelocityInfo::OrthoEmissionVelocityInfo()
 }
 
 // ??0OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) OrthoEmissionVelocityModuleTemplate::OrthoEmissionVelocityModuleTemplate(const OrthoEmissionVelocityModuleTemplate &that)
-{
-    __asm {
-        __emit 0x56
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x7c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x57
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x26
-        __emit 0xd5
-        __emit 0xa2
-        __emit 0xff
-        __emit 0x85
-        __emit 0xff
-        __emit 0x74
-        __emit 0x05
-        __emit 0x8d
-        __emit 0x47
-        __emit 0x08
-        __emit 0xeb
-        __emit 0x02
-        __emit 0x33
-        __emit 0xc0
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xe8
-        __emit 0x8e
-        __emit 0xcf
-        __emit 0xa2
-        __emit 0xff
-        __emit 0xc7
-        __emit 0x07
-        __emit 0xf8
-        __emit 0x0a
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xe4
-        __emit 0x0a
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xe0
-        __emit 0x0a
-        __emit 0x11
-        __emit 0x01
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
+OrthoEmissionVelocityModuleTemplate::OrthoEmissionVelocityModuleTemplate(const OrthoEmissionVelocityModuleTemplate &that)
+    : CategoryModuleTemplate<4>(that), OrthoEmissionVelocityInfo(that)
+{}
 
 // ??0OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ
-__declspec(naked) OrthoEmissionVelocityModuleTemplate::OrthoEmissionVelocityModuleTemplate()
-{
-    __asm {
-        __emit 0x6a
-        __emit 0xff
-        __emit 0x68
-        __emit 0xb8
-        __emit 0xaa
-        __emit 0x03
-        __emit 0x01
-        __emit 0x64
-        __emit 0xa1
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x50
-        __emit 0x64
-        __emit 0x89
-        __emit 0x25
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x51
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xcc
-        __emit 0xf9
-        __emit 0x10
-        __emit 0x01
-        __emit 0x57
-        __emit 0x89
-        __emit 0x74
-        __emit 0x24
-        __emit 0x08
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xf0
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xec
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xc7
-        __emit 0x44
-        __emit 0x24
-        __emit 0x14
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0xe8
-        __emit 0x01
-        __emit 0xff
-        __emit 0xa6
-        __emit 0xff
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0xc7
-        __emit 0x07
-        __emit 0xf8
-        __emit 0x0a
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xe4
-        __emit 0x0a
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xe0
-        __emit 0x0a
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0x64
-        __emit 0x89
-        __emit 0x0d
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x83
-        __emit 0xc4
-        __emit 0x10
-        __emit 0xc3
-    }
-}
-
-// ??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
-OutwardEmissionVelocityInfo::OutwardEmissionVelocityInfo(const OutwardEmissionVelocityInfo &that)
-    : EmissionVelocityInfo(that)
-    , m_var0(that.m_var0)
-    , m_var1(that.m_var1)
-{
-}
+OrthoEmissionVelocityModuleTemplate::OrthoEmissionVelocityModuleTemplate()
+    : CategoryModuleTemplate<4>(), OrthoEmissionVelocityInfo()
+{}
 
 // ??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@XZ
 OutwardEmissionVelocityInfo::OutwardEmissionVelocityInfo()
@@ -20355,186 +19909,15 @@ OutwardEmissionVelocityInfo::OutwardEmissionVelocityInfo()
 }
 
 // ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) OutwardEmissionVelocityModuleTemplate::OutwardEmissionVelocityModuleTemplate(const OutwardEmissionVelocityModuleTemplate &that)
-{
-    __asm {
-        __emit 0x56
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x7c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x57
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0xe6
-        __emit 0xc7
-        __emit 0xa2
-        __emit 0xff
-        __emit 0x85
-        __emit 0xff
-        __emit 0x74
-        __emit 0x05
-        __emit 0x8d
-        __emit 0x47
-        __emit 0x08
-        __emit 0xeb
-        __emit 0x02
-        __emit 0x33
-        __emit 0xc0
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xe8
-        __emit 0x84
-        __emit 0x31
-        __emit 0xa3
-        __emit 0xff
-        __emit 0xc7
-        __emit 0x07
-        __emit 0xe4
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xd0
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xcc
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
+OutwardEmissionVelocityModuleTemplate::OutwardEmissionVelocityModuleTemplate(const OutwardEmissionVelocityModuleTemplate &that)
+    : CategoryModuleTemplate<4>(that), OutwardEmissionVelocityInfo(that)
+{}
 
 // ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ
-__declspec(naked) OutwardEmissionVelocityModuleTemplate::OutwardEmissionVelocityModuleTemplate()
-{
-    __asm {
-        __emit 0x6a
-        __emit 0xff
-        __emit 0x68
-        __emit 0x78
-        __emit 0xab
-        __emit 0x03
-        __emit 0x01
-        __emit 0x64
-        __emit 0xa1
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x50
-        __emit 0x64
-        __emit 0x89
-        __emit 0x25
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x51
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xcc
-        __emit 0xf9
-        __emit 0x10
-        __emit 0x01
-        __emit 0x57
-        __emit 0x89
-        __emit 0x74
-        __emit 0x24
-        __emit 0x08
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xf0
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xec
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xc7
-        __emit 0x44
-        __emit 0x24
-        __emit 0x14
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0xe8
-        __emit 0x0f
-        __emit 0xd5
-        __emit 0xa2
-        __emit 0xff
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0xc7
-        __emit 0x07
-        __emit 0xe4
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xd0
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xcc
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0x64
-        __emit 0x89
-        __emit 0x0d
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x83
-        __emit 0xc4
-        __emit 0x10
-        __emit 0xc3
-    }
-}
+OutwardEmissionVelocityModuleTemplate::OutwardEmissionVelocityModuleTemplate()
+    : CategoryModuleTemplate<4>(), OutwardEmissionVelocityInfo()
+{}
+
 
 // ??0ParticleSystemInfo@FXParticleSystem@@QAE@ABV01@@Z
 __declspec(naked) ParticleSystemInfo::ParticleSystemInfo(const ParticleSystemInfo &that)
@@ -22812,13 +22195,6 @@ SphereEmissionVolumeModuleTemplate::SphereEmissionVolumeModuleTemplate()
 {}
 
 
-// ??0SphericalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z
-SphericalEmissionVelocityInfo::SphericalEmissionVelocityInfo(const SphericalEmissionVelocityInfo &that)
-    : EmissionVelocityInfo(that)
-    , m_var0(that.m_var0)
-{
-}
-
 // ??0SphericalEmissionVelocityInfo@FXParticleSystem@@QAE@XZ
 SphericalEmissionVelocityInfo::SphericalEmissionVelocityInfo()
     : EmissionVelocityInfo()
@@ -22828,186 +22204,15 @@ SphericalEmissionVelocityInfo::SphericalEmissionVelocityInfo()
 }
 
 // ??0SphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) SphericalEmissionVelocityModuleTemplate::SphericalEmissionVelocityModuleTemplate(const SphericalEmissionVelocityModuleTemplate &that)
-{
-    __asm {
-        __emit 0x56
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x7c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x57
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x66
-        __emit 0xd1
-        __emit 0xa2
-        __emit 0xff
-        __emit 0x85
-        __emit 0xff
-        __emit 0x74
-        __emit 0x05
-        __emit 0x8d
-        __emit 0x47
-        __emit 0x08
-        __emit 0xeb
-        __emit 0x02
-        __emit 0x33
-        __emit 0xc0
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xe8
-        __emit 0xf0
-        __emit 0x3e
-        __emit 0xa4
-        __emit 0xff
-        __emit 0xc7
-        __emit 0x07
-        __emit 0x38
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0xc7
-        __emit 0x06
-        __emit 0x24
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0x20
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
+SphericalEmissionVelocityModuleTemplate::SphericalEmissionVelocityModuleTemplate(const SphericalEmissionVelocityModuleTemplate &that)
+    : CategoryModuleTemplate<4>(that), SphericalEmissionVelocityInfo(that)
+{}
 
 // ??0SphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ
-__declspec(naked) SphericalEmissionVelocityModuleTemplate::SphericalEmissionVelocityModuleTemplate()
-{
-    __asm {
-        __emit 0x6a
-        __emit 0xff
-        __emit 0x68
-        __emit 0xf8
-        __emit 0xaa
-        __emit 0x03
-        __emit 0x01
-        __emit 0x64
-        __emit 0xa1
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x50
-        __emit 0x64
-        __emit 0x89
-        __emit 0x25
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x51
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xcc
-        __emit 0xf9
-        __emit 0x10
-        __emit 0x01
-        __emit 0x57
-        __emit 0x89
-        __emit 0x74
-        __emit 0x24
-        __emit 0x08
-        __emit 0xc7
-        __emit 0x06
-        __emit 0xf0
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0xec
-        __emit 0xfb
-        __emit 0x10
-        __emit 0x01
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xc7
-        __emit 0x44
-        __emit 0x24
-        __emit 0x14
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0xe8
-        __emit 0xea
-        __emit 0x35
-        __emit 0xa5
-        __emit 0xff
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0xc7
-        __emit 0x07
-        __emit 0x38
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x06
-        __emit 0x24
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0x20
-        __emit 0x0b
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0x64
-        __emit 0x89
-        __emit 0x0d
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x83
-        __emit 0xc4
-        __emit 0x10
-        __emit 0xc3
-    }
-}
+SphericalEmissionVelocityModuleTemplate::SphericalEmissionVelocityModuleTemplate()
+    : CategoryModuleTemplate<4>(), SphericalEmissionVelocityInfo()
+{}
+
 
 // ??0StreakDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
 __declspec(naked) StreakDrawModuleTemplate::StreakDrawModuleTemplate(const StreakDrawModuleTemplate &that)

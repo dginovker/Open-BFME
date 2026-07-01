@@ -34,7 +34,13 @@ struct RGBAColorReal {
 namespace FXParticleSystem {
 
 struct RGBColorKeyframe {
-    RGBColorKeyframe();
+    RGBColorKeyframe()
+    {
+        ((unsigned int *)this)[2] = 0;
+        ((unsigned int *)this)[1] = 0;
+        ((unsigned int *)this)[0] = 0;
+        ((unsigned int *)this)[3] = 0;
+    }
     RGBColorKeyframe &operator=(const RGBColorKeyframe &that);
 
     float red;

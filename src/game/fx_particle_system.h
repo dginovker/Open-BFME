@@ -262,7 +262,7 @@ public:
 class CylindricalEmissionVelocityInfo : public EmissionVelocityInfo {
 public:
     CylindricalEmissionVelocityInfo();
-    CylindricalEmissionVelocityInfo(const CylindricalEmissionVelocityInfo &that);
+    __declspec(nothrow) CylindricalEmissionVelocityInfo(const CylindricalEmissionVelocityInfo &that);
     virtual ~CylindricalEmissionVelocityInfo();
     CylindricalEmissionVelocityInfo &operator=(const CylindricalEmissionVelocityInfo &that);
     GameClientRandomVariable m_var0;
@@ -272,7 +272,7 @@ public:
 class OrthoEmissionVelocityInfo : public EmissionVelocityInfo {
 public:
     OrthoEmissionVelocityInfo();
-    OrthoEmissionVelocityInfo(const OrthoEmissionVelocityInfo &that);
+    __declspec(nothrow) OrthoEmissionVelocityInfo(const OrthoEmissionVelocityInfo &that);
     virtual ~OrthoEmissionVelocityInfo();
     OrthoEmissionVelocityInfo &operator=(const OrthoEmissionVelocityInfo &that);
     GameClientRandomVariable m_var0;
@@ -283,7 +283,7 @@ public:
 class OutwardEmissionVelocityInfo : public EmissionVelocityInfo {
 public:
     OutwardEmissionVelocityInfo();
-    OutwardEmissionVelocityInfo(const OutwardEmissionVelocityInfo &that);
+    __declspec(nothrow) OutwardEmissionVelocityInfo(const OutwardEmissionVelocityInfo &that);
     virtual ~OutwardEmissionVelocityInfo();
     OutwardEmissionVelocityInfo &operator=(const OutwardEmissionVelocityInfo &that);
     GameClientRandomVariable m_var0;
@@ -293,7 +293,7 @@ public:
 class SphericalEmissionVelocityInfo : public EmissionVelocityInfo {
 public:
     SphericalEmissionVelocityInfo();
-    SphericalEmissionVelocityInfo(const SphericalEmissionVelocityInfo &that);
+    __declspec(nothrow) SphericalEmissionVelocityInfo(const SphericalEmissionVelocityInfo &that);
     virtual ~SphericalEmissionVelocityInfo();
     SphericalEmissionVelocityInfo &operator=(const SphericalEmissionVelocityInfo &that);
     GameClientRandomVariable m_var0;
@@ -579,7 +579,7 @@ public:
     virtual void writeINI(File &file, unsigned int flags) const;
 };
 
-class CylindricalEmissionVelocityModuleTemplate {
+class CylindricalEmissionVelocityModuleTemplate : public CategoryModuleTemplate<4>, public CylindricalEmissionVelocityInfo {
 public:
     CylindricalEmissionVelocityModuleTemplate();
     CylindricalEmissionVelocityModuleTemplate(const CylindricalEmissionVelocityModuleTemplate &that);
@@ -589,7 +589,17 @@ public:
     virtual void writeINI(File &file, unsigned int flags) const;
 };
 
-class HemisphericalEmissionVelocityModuleTemplate {
+class SphericalEmissionVelocityModuleTemplate : public CategoryModuleTemplate<4>, public SphericalEmissionVelocityInfo {
+public:
+    SphericalEmissionVelocityModuleTemplate();
+    SphericalEmissionVelocityModuleTemplate(const SphericalEmissionVelocityModuleTemplate &that);
+    virtual ~SphericalEmissionVelocityModuleTemplate();
+    SphericalEmissionVelocityModuleTemplate &operator=(const SphericalEmissionVelocityModuleTemplate &that);
+    void parse(INI *ini);
+    virtual void writeINI(File &file, unsigned int flags) const;
+};
+
+class HemisphericalEmissionVelocityModuleTemplate : public SphericalEmissionVelocityModuleTemplate {
 public:
     HemisphericalEmissionVelocityModuleTemplate();
     HemisphericalEmissionVelocityModuleTemplate(const HemisphericalEmissionVelocityModuleTemplate &that);
@@ -640,7 +650,7 @@ public:
     virtual void writeINI(File &file, unsigned int flags) const;
 };
 
-class OrthoEmissionVelocityModuleTemplate {
+class OrthoEmissionVelocityModuleTemplate : public CategoryModuleTemplate<4>, public OrthoEmissionVelocityInfo {
 public:
     OrthoEmissionVelocityModuleTemplate();
     OrthoEmissionVelocityModuleTemplate(const OrthoEmissionVelocityModuleTemplate &that);
@@ -650,7 +660,7 @@ public:
     virtual void writeINI(File &file, unsigned int flags) const;
 };
 
-class OutwardEmissionVelocityModuleTemplate {
+class OutwardEmissionVelocityModuleTemplate : public CategoryModuleTemplate<4>, public OutwardEmissionVelocityInfo {
 public:
     OutwardEmissionVelocityModuleTemplate();
     OutwardEmissionVelocityModuleTemplate(const OutwardEmissionVelocityModuleTemplate &that);
@@ -696,16 +706,6 @@ public:
     SphereEmissionVolumeModuleTemplate(const SphereEmissionVolumeModuleTemplate &that);
     virtual ~SphereEmissionVolumeModuleTemplate();
     SphereEmissionVolumeModuleTemplate &operator=(const SphereEmissionVolumeModuleTemplate &that);
-    void parse(INI *ini);
-    virtual void writeINI(File &file, unsigned int flags) const;
-};
-
-class SphericalEmissionVelocityModuleTemplate {
-public:
-    SphericalEmissionVelocityModuleTemplate();
-    SphericalEmissionVelocityModuleTemplate(const SphericalEmissionVelocityModuleTemplate &that);
-    virtual ~SphericalEmissionVelocityModuleTemplate();
-    SphericalEmissionVelocityModuleTemplate &operator=(const SphericalEmissionVelocityModuleTemplate &that);
     void parse(INI *ini);
     virtual void writeINI(File &file, unsigned int flags) const;
 };

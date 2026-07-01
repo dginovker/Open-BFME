@@ -416,14 +416,6 @@ __declspec(naked) Debug &operator<<(Debug &debug, const RGBAColorInt &color)
 
 namespace FXParticleSystem {
 
-RGBColorKeyframe::RGBColorKeyframe()
-{
-    ((unsigned int *)this)[2] = 0;
-    ((unsigned int *)this)[1] = 0;
-    ((unsigned int *)this)[0] = 0;
-    ((unsigned int *)this)[3] = 0;
-}
-
 RGBColorKeyframe &RGBColorKeyframe::operator=(const RGBColorKeyframe &that)
 {
     struct Raw {

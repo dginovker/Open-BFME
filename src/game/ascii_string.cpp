@@ -7,148 +7,29 @@ AsciiString::AsciiString()
     m_text = 0;
 }
 
-__declspec(naked) AsciiString::AsciiString(char c)
+AsciiString::AsciiString(char c)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x23
-        __emit 0x07
-        __emit 0x0a
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    ((StringBase<char> *)this)->StringBase<char>::StringBase(c);
 }
 
-__declspec(naked) AsciiString::AsciiString(const char *str)
+AsciiString::AsciiString(const char *str)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x43
-        __emit 0x9d
-        __emit 0x82
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    ((StringBase<char> *)this)->StringBase<char>::StringBase(str);
 }
 
-__declspec(naked) AsciiString::AsciiString(const AsciiString &that)
+AsciiString::AsciiString(const AsciiString &that)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x03
-        __emit 0x8d
-        __emit 0x82
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    ((StringBase<char> *)this)->StringBase<char>::StringBase(*(const StringBase<char> *)&that);
 }
 
-__declspec(naked) AsciiString::AsciiString(const AsciiString &that, int start, int len)
+AsciiString::AsciiString(const AsciiString &that, int start, int len)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x8b
-        __emit 0x54
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x50
-        __emit 0x51
-        __emit 0x52
-        __emit 0x8b
-        __emit 0xce
-        __emit 0xe8
-        __emit 0x07
-        __emit 0x96
-        __emit 0x7a
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x0c
-        __emit 0x00
-    }
+    ((StringBase<char> *)this)->StringBase<char>::StringBase(*(const StringBase<char> *)&that, start, len);
 }
 
-__declspec(naked) AsciiString::AsciiString(const char *str, int len)
+AsciiString::AsciiString(const char *str, int len)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x08
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x08
-        __emit 0x50
-        __emit 0x51
-        __emit 0x8b
-        __emit 0xce
-        __emit 0xe8
-        __emit 0x6c
-        __emit 0x8c
-        __emit 0x7d
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x08
-        __emit 0x00
-    }
+    ((StringBase<char> *)this)->StringBase<char>::StringBase(str, len);
 }
 
 AsciiString::~AsciiString()

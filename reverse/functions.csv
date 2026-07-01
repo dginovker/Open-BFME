@@ -38,6 +38,12 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@XZ,0x00045D04,0x005EE4C0,102,src/game/fx_particle_system_bulk.cpp,unmatched,needs SEH array-construction wrapper
 ??0DefaultColorModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x000354F4,0x005D52E0,60,src/game/fx_particle_system_bulk.cpp,matched,
 ??0DefaultColorModuleInfo@FXParticleSystem@@QAE@XZ,0x0003832F,0x005EF600,147,src/game/fx_particle_system_bulk.cpp,matched,
+??0DefaultPhysicsModuleInfo@FXParticleSystem@@QAE@XZ,0x0000AB23,0x005FD9E0,2096,src/game/fx_particle_system_bulk.cpp,unmatched,needs SEH constructor wrapper
+??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@XZ,0x0004506B,0x005FF750,2400,src/game/fx_particle_system_bulk.cpp,unmatched,needs SEH constructor wrapper
+??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0001FDF7,0x005D6BA0,1056,src/game/fx_particle_system_bulk.cpp,unmatched,needs copy-constructor wrapper reconciliation
+??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@XZ,0x0000CC39,0x005D6AD0,144,src/game/fx_particle_system_bulk.cpp,unmatched,needs constructor wrapper reconciliation
+??1ButterflyDrawModuleTemplate@FXParticleSystem@@UAE@XZ,0x0003BE8A,0x005D8CB0,1008,src/game/fx_particle_system_bulk.cpp,unmatched,needs destructor wrapper reconciliation
+??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ,0x000459F8,0x005D8A00,688,src/game/fx_particle_system_bulk.cpp,unmatched,needs destructor wrapper reconciliation
 ??1QuadDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x0001C5CB,0x005D88A0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??0EmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x00012468,0x005BD800,9,src/game/fx_particle_system_bulk.cpp,matched,default constructor sets vtable pointer
 ??1EmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x0003CF47,0x005BD810,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer

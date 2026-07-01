@@ -3,6 +3,8 @@
 
 namespace FXParticleSystem {
 
+extern const char STREAK_DRAW_MODULE_TEMPLATE_PARSE_TABLE[];
+
 // ??0?$ConcreteModuleClass@V?$DefaultModuleTag@$0A@@FXParticleSystem@@@FXParticleSystem@@AAE@XZ
 __declspec(naked) ConcreteModuleClass<DefaultModuleTag<0> >::ConcreteModuleClass()
 {
@@ -30099,28 +30101,9 @@ __declspec(naked) void SphericalEmissionVelocityModuleTemplate::parse(INI *ini)
 }
 
 // ?parse@StreakDrawModuleTemplate@FXParticleSystem@@QAEXPAVINI@@@Z
-__declspec(naked) void StreakDrawModuleTemplate::parse(INI *ini)
+void StreakDrawModuleTemplate::parse(INI *ini)
 {
-    __asm {
-        __emit 0x68
-        __emit 0x20
-        __emit 0x3a
-        __emit 0x11
-        __emit 0x01
-        __emit 0x51
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0xe8
-        __emit 0xe1
-        __emit 0xa1
-        __emit 0x25
-        __emit 0x00
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    ini->initFromINI(this, STREAK_DRAW_MODULE_TEMPLATE_PARSE_TABLE);
 }
 
 // ?parse@TerrainCollisionModuleTemplate@FXParticleSystem@@QAEXPAVINI@@@Z

@@ -46,11 +46,17 @@ def git_show(path: Path):
     return result.stdout
 
 
-def read_matched_names(path: Path, staged: bool) -> set:
+def read_function_names(path: Path, staged: bool):
     text = git_show(path.relative_to(ROOT)) if staged else None
     if text is None:
         text = path.read_text(encoding="utf-8")
-    return {row["name"] for row in csv.DictReader(text.splitlines()) if row["status"] == "matched"}
+    declared = set()
+    matched = set()
+    for row in csv.DictReader(text.splitlines()):
+        declared.add(row["name"])
+        if row["status"] == "matched":
+            matched.add(row["name"])
+    return declared, matched
 
 
 def mangle_method(class_name: str, method_name: str) -> str:
@@ -137,7 +143,7 @@ def main():
     parser.add_argument("--staged", action="store_true", help="read paths from the git index")
     args = parser.parse_args()
 
-    matched = read_matched_names(FUNCTIONS_CSV, args.staged)
+    declared, matched = read_function_names(FUNCTIONS_CSV, args.staged)
 
     unmatched = []
     source_paths = [ROOT / path for path in args.paths] if args.paths else sorted(SRC_DIR.rglob("*.cpp"))
@@ -153,7 +159,7 @@ def main():
             text = source_path.read_text(encoding="utf-8")
         for class_name, method_name, symbol_name in find_defined_functions(text):
             if symbol_name:
-                if symbol_name in matched:
+                if symbol_name in declared:
                     continue
                 unmatched.append((rel_path, class_name, method_name))
                 continue

@@ -8,7 +8,10 @@
 
 struct Region2D;
 class AssetList;
-class INI;
+class INI {
+public:
+    void initFromINI(void *data, const void *parseTable);
+};
 class File;
 class FXList;
 template <class T>

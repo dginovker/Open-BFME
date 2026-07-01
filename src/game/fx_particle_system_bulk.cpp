@@ -15336,41 +15336,9 @@ ConcreteModuleTemplate<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME,
 }
 
 // ?clone@?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVQuadDrawModuleTemplate@2@XZ
-__declspec(naked) QuadDrawModuleTemplate *ConcreteModuleTemplate<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, QuadDrawModule, QuadDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::clone() const
+QuadDrawModuleTemplate *ConcreteModuleTemplate<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, QuadDrawModule, QuadDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::clone() const
 {
-    __asm {
-        __emit 0x56
-        __emit 0x6a
-        __emit 0x0c
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0xd6
-        __emit 0x71
-        __emit 0x2a
-        __emit 0x00
-        __emit 0x83
-        __emit 0xc4
-        __emit 0x04
-        __emit 0x85
-        __emit 0xc0
-        __emit 0x74
-        __emit 0x0a
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xc8
-        __emit 0xe8
-        __emit 0x24
-        __emit 0x74
-        __emit 0xa4
-        __emit 0xff
-        __emit 0x5e
-        __emit 0xc3
-        __emit 0x33
-        __emit 0xc0
-        __emit 0x5e
-        __emit 0xc3
-    }
+    return (QuadDrawModuleTemplate *)new ConcreteModuleTemplate<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, QuadDrawModule, QuadDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >(*this);
 }
 
 // ?createModule@?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UAEPAVQuadDrawModule@2@AAV?$TrackingPtr@VParticleSystem@FXParticleSystem@@@@@Z

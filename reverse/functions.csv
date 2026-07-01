@@ -250,6 +250,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0QuadDrawModuleInfo@FXParticleSystem@@QAE@XZ,0x00015C4E,0x005F5450,9,src/game/fx_particle_system.cpp,matched,default constructor sets vtable pointer
 ??0QuadDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00005222,0x005D8A40,62,src/game/fx_particle_system_bulk.cpp,matched,
 ??0QuadDrawModuleTemplate@FXParticleSystem@@QAE@XZ,0x0001D278,0x005D8970,106,src/game/fx_particle_system_bulk.cpp,matched,
+??0Quaternion@@QAE@ABVVector3@@M@Z,,0x008DB600,92,src/w3d/quat.cpp,matched,
 ??0RGBColorKeyframe@FXParticleSystem@@QAE@XZ,0x00029677,0x0005C700,16,src/game/fx_particle_system_bulk.cpp,matched,sets channels and frame to zero
 ??0Random2Class@@QAE@I@Z,,0x009E63C0,76,src/w3d/random.cpp,matched,verbatim Generals WWLib
 ??0Random4Class@@QAE@I@Z,,0x009E5FD0,77,src/w3d/random.cpp,matched,verbatim Generals WWLib
@@ -597,6 +598,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??9@YA_NABVGameClientRandomVariable@@0@Z,0x00016775,0x007E77A0,71,src/game/game_client_random_variable.cpp,matched,compares distribution/minimum/maximum
 ??9ICoord2D@@QBE_NABUICoord2DBase@@@Z,0x0000FEDE,0x003D5250,31,src/math/icoord.cpp,matched,compares x/y
 ??9IRegion2D@@QBE_NABU0@@Z,0x0003E9BE,0x00403B00,65,src/math/region.cpp,matched,compares bounds
+??D@YA?AVQuaternion@@ABV0@0@Z,,0x008DB550,136,src/w3d/quat.cpp,matched,
 ??DCoord2D@@QBEMABUCoord3DBase@@@Z,0x0000DAF8,0x007E5AC0,19,src/math/coord2d.cpp,matched,dot product with Coord3DBase x/y
 ??DCoord2D@@QBEMABV0@@Z,0x0004A4BC,0x007E5A40,19,src/math/coord2d.cpp,matched,dot product with Coord2D
 ??DCoord3D@@QBEMABUCoord3DBase@@@Z,0x00011F09,0x0018F1C0,27,src/math/coord3d.cpp,matched,dot product with Coord3DBase
@@ -648,10 +650,17 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Add@Coord3D@@QAEAAV1@ABVCoord2D@@ABUCoord3DBase@@@Z,0x0001F802,0x007E5EF0,34,src/math/coord3d.cpp,matched,adds Coord2D and Coord3DBase
 ?Add_Size@ChunkHeader@@QAEXK@Z,,0x009E1780,36,src/w3d/chunkio.cpp,matched,
 ?Add_Size@MicroChunkHeader@@QAEXE@Z,,0x009E17B0,15,src/w3d/chunkio.cpp,matched,
+?Axis_To_Quat@@YA?AVQuaternion@@ABVVector3@@M@Z,,0x008DC3C0,245,src/w3d/quat.cpp,matched,
 ?Base64_Decode@@YAHPBXHPAXH@Z,,0x009EB670,286,src/w3d/base64.cpp,matched,
 ?Base64_Encode@@YAHPBXHPAXH@Z,,0x009EB560,264,src/w3d/base64.cpp,matched,
 ?Begin_Chunk@ChunkSaveClass@@QAE_NK@Z,,0x009E16F0,138,src/w3d/chunkio.cpp,matched,
 ?Begin_Micro_Chunk@ChunkSaveClass@@QAE_NK@Z,,0x009E1950,76,src/w3d/chunkio.cpp,matched,
+?Build_Matrix3@@YA?AVMatrix3@@ABVQuaternion@@@Z,,0x008DC870,259,src/w3d/quat.cpp,matched,
+?Build_Matrix4@@YA?AVMatrix4@@ABVQuaternion@@@Z,,0x008DBE10,286,src/w3d/quat.cpp,matched,
+?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3@@@Z,,0x008DBB80,330,src/w3d/quat.cpp,matched,
+?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix4@@@Z,,0x008DBCD0,311,src/w3d/quat.cpp,matched,
+?Cached_Slerp@@YA?AVQuaternion@@ABV1@0MPAUSlerpInfoStruct@@@Z,,0x008DB8A0,224,src/w3d/quat.cpp,matched,
+?Cached_Slerp@@YAXABVQuaternion@@0MPAUSlerpInfoStruct@@PAV1@@Z,,0x008DB980,190,src/w3d/quat.cpp,matched,
 ?Cos@@YAMM@Z,0x00873920,0x00873920,7,src/math/trig.cpp,matched,returns cosine of radians
 ?CrossProduct@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x00022557,0x00232100,61,src/math/coord3d.cpp,matched,
 ?Determinant@Matrix4D@@QBEMXZ,0x0002912c,0x007e63e0,188,src/math/matrix4d.cpp,matched,
@@ -735,23 +744,29 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?LoadPostProcess@StreakDrawModuleInfo@FXParticleSystem@@UAEXXZ,0x0003D88E,0x005D4670,1,src/game/fx_particle_system.cpp,matched,no-op
 ?LoadPostProcess@TerrainCollisionModuleInfo@FXParticleSystem@@UAEXXZ,0x0003D208,0x005D4780,1,src/game/fx_particle_system.cpp,matched,no-op
 ?LoadPostProcess@WindModuleInfo@FXParticleSystem@@UAEXXZ,0x0001B518,0x005BD940,1,src/game/fx_particle_system.cpp,matched,no-op
+?Make_Closest@Quaternion@@QAEAAV1@ABV1@@Z,,0x008DB490,80,src/w3d/quat.cpp,matched,
 ?Multiply@Matrix4D@@QAEAAV1@ABV1@0@Z,0x00019bfa,0x007e6950,534,src/math/matrix4d.cpp,matched,
 ?Negate@Coord2D@@QAEAAV1@XZ,0x0000848B,0x007E5B20,17,src/math/coord2d.cpp,matched,negates x/y
 ?Negate@Coord3D@@QAEAAV1@XZ,0x0002C3CC,0x007E5DA0,25,src/math/coord3d.cpp,matched,negates x/y/z
 ?Normalize2D@Coord3D@@QAEMXZ,0x0001C661,0x007E7990,42,src/math/coord3d.cpp,matched,normalizes x/y and returns 2D length
 ?Normalize@Coord2D@@QAEMXZ,0x0002C548,0x003A4140,42,src/math/coord2d.cpp,matched,normalizes vector and returns length
 ?Normalize@Coord3D@@QAEMXZ,0x0001E0BA,0x000FE9E0,60,src/math/coord3d.cpp,matched,normalizes and returns length
+?Normalize@Quaternion@@QAEXXZ,,0x008DB660,109,src/w3d/quat.cpp,matched,
 ?PreStaticInit@Debug@@CAPAV1@XZ,0x00889500,0x00889500,114,src/game/debug.cpp,matched,Debug PreStaticInit singleton allocator
 ?Rotate@Coord2D@@QAEAAV1@AAV1@MM@Z,0x00023772,0x007E5BD0,44,src/math/coord2d.cpp,matched,rotates source by sine/cosine into this
 ?Rotate@Coord2D@@QAEAAV1@ABV1@M@Z,0x0002F1E9,0x007E5B80,61,src/math/coord2d.cpp,matched,rotates source by angle
 ?Rotate@Coord2D@@QAEAAV1@M@Z,0x0001ac94,0x004afaa0,76,src/math/coord2d.cpp,matched,
 ?Rotate@Coord2D@@QAEAAV1@MM@Z,0x0001251C,0x007E5B40,40,src/math/coord2d.cpp,matched,rotates vector in place by sine/cosine
 ?RotateCoord@Matrix4D@@QAEAAVCoord3D@@ABV2@AAV2@@Z,0x0001C887,0x007E68E0,83,src/math/matrix4d.cpp,matched,rotates coordinate without translation
+?Rotate_X@Quaternion@@QAEXM@Z,,0x008DBF30,225,src/w3d/quat.cpp,matched,
+?Rotate_Y@Quaternion@@QAEXM@Z,,0x008DC020,229,src/w3d/quat.cpp,matched,
+?Rotate_Z@Quaternion@@QAEXM@Z,,0x008DC110,227,src/w3d/quat.cpp,matched,
 ?Scale2D@Coord3D@@QAEAAV1@ABUCoord3DBase@@M@Z,0x0000D4C7,0x007E5E80,27,src/math/coord3d.cpp,matched,scales Coord3DBase x/y
 ?Scale2D@Coord3D@@QAEAAV1@M@Z,0x00035918,0x007E5E60,23,src/math/coord3d.cpp,matched,scales x/y in place
 ?Scale@Coord2D@@QAEAAV1@M@Z,0x000444EF,0x0014FFB0,23,src/math/coord2d.cpp,matched,scales x/y in place
 ?Scale@Coord3D@@QAEAAV1@ABUCoord3DBase@@M@Z,0x00034C98,0x007E5D70,37,src/math/coord3d.cpp,matched,scales Coord3DBase
 ?Scale@Coord3D@@QAEAAV1@M@Z,0x0000E1C4,0x0014FFD0,33,src/math/coord3d.cpp,matched,scales x/y/z in place
+?Scale@Quaternion@@QAEXM@Z,,0x008DB510,41,src/w3d/quat.cpp,matched,
 ?Set2D@Coord3D@@QAEAAV1@MM@Z,0x0003D00A,0x007E5FB0,18,src/math/coord3d.cpp,matched,sets x/y from floats
 ?Set@Coord2D@@QAEAAV1@MM@Z,0x00037DA8,0x000FBA00,18,src/math/coord2d.cpp,matched,sets x/y from floats
 ?Set@Coord3D@@QAEAAV1@MMM@Z,0x00041C77,0x000C8D50,25,src/math/coord3d.cpp,matched,sets x/y/z from floats
@@ -774,6 +789,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Sub_Chunk_Flag@ChunkHeader@@QAEX_N@Z,,0x009E1220,33,src/w3d/chunkio.cpp,matched,
 ?Sin@@YAMM@Z,0x00873910,0x00873910,7,src/math/trig.cpp,matched,returns sine of radians
 ?SkipBadBlock@Xfer@@UAEXAAVSnapshot@@I@Z,0x00048B44,0x0006B1D0,3,src/game/xfer.cpp,matched,no-op
+?Slerp@@YAXAAVQuaternion@@ABV1@1M@Z,,0x008DB6D0,302,src/w3d/quat.cpp,matched,
+?Slerp_Setup@@YAXABVQuaternion@@0PAUSlerpInfoStruct@@@Z,,0x008DB800,150,src/w3d/quat.cpp,matched,
 ?Sub2D@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x0000F1A5,0x007E5E30,28,src/math/coord3d.cpp,matched,subtracts two Coord3DBase x/y values
 ?Sub2D@Coord3D@@QAEAAV1@ABUCoord3DBase@@@Z,0x0004651A,0x007E5E10,24,src/math/coord3d.cpp,matched,subtracts Coord3DBase x/y
 ?Sub@Coord2D@@QAEAAV1@ABUCoord3DBase@@@Z,0x0002DEB6,0x007E5B00,24,src/math/coord2d.cpp,matched,subtracts Coord3DBase x/y
@@ -1002,6 +1019,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?parseEventFXListName@TerrainCollisionModuleTemplate@FXParticleSystem@@SAXPAVINI@@PAX1PBX@Z,0x0002F74D,0x5fcee0,13,src/game/fx_particle_system_bulk.cpp,matched,
 ?peek@?$StringBase@D@@ABEPADXZ,0x0002B26A,0x0005E5B0,6,src/game/string_base.cpp,matched,returns pointer to data
 ?peek@?$StringBase@G@@ABEPAGXZ,0x0002264C,0x0005E5C0,6,src/game/string_base.cpp,matched,returns pointer to data
+?project_to_sphere@@YAMMMM@Z,,0x008DC200,105,src/w3d/quat.cpp,matched,
 ?rad2deg@@YAMM@Z,0x00008BF2,0x007E5950,11,src/math/trig.cpp,matched,converts radians to degrees
 ?readArgument@RecorderClass@@IAEXW4GameMessageArgumentDataType@@PAVGameMessage@@@Z,0x0000139D,0x97500,520,src/game/recorder_strings.cpp,matched,
 ?readAsciiString@RecorderClass@@IAE?AVAsciiString@@XZ,0x0003C1D2,0x98610,220,src/game/recorder_strings.cpp,matched,

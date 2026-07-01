@@ -8,6 +8,7 @@ name,address,notes
 ?HideInGameChat@@YAXXZ,0x00019583
 ?HideQuitMenu@@YAXXZ,0x0001BF36
 ?HideSaveLoadMenu@@YAXXZ,0x0000A416
+?Inv_Sqrt@WWMath@@SIMM@Z,0x00027A43,WWMath::Inv_Sqrt (naked __fastcall) incremental-link thunk (body 0x00131C90); called by Quaternion::Normalize and Axis_To_Quat, owned by wwmath.cpp
 ?ReleaseWindowLayout@@YAXPAVWindowLayout@@@Z,0x00049AD0
 ?ResetInGameChat@@YAXXZ,0x00033A6E
 ?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z,0x0000B569,GameMessageParser::addArgType thunk
@@ -41,6 +42,7 @@ name,address,notes
 ?winSetLayout@GameWindow@@QAEHPAVWindowLayout@@@Z,0x00031881
 ?winSetNextInLayout@GameWindow@@QAEHPAV1@@Z,0x00035CF6
 ?winSetPrevInLayout@GameWindow@@QAEHPAV1@@Z,0x00015FB4
+__CIacos,0x009F7256
 __ftol2,0x009F6E38,MSVC float-to-int conversion helper (statically linked CRT)
 __stringbase_isnone_cmp_char,0x00405E8,internal char string none-comparison helper
 __stringbase_isnone_cmp_wchar,0x0041F3D,internal wide-char string none-comparison helper

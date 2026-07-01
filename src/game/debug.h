@@ -13,7 +13,7 @@ public:
     virtual void v7();
     virtual Debug &operator<<(const char *value);
     virtual Debug &operator<<(int value);
-    virtual Debug &operator<<(char value);
+    virtual Debug &operator<<(unsigned int value);
     virtual Debug &operator<<(unsigned char value);
     virtual Debug &operator<<(short value);
     virtual Debug &operator<<(unsigned short value);

@@ -14,10 +14,10 @@ bool operator==(const RGBColor &left, const RGBColor &right);
 bool operator!=(const RGBColor &left, const RGBColor &right);
 
 struct RGBAColorInt {
-    int red;
-    int green;
-    int blue;
-    int alpha;
+    unsigned int red;
+    unsigned int green;
+    unsigned int blue;
+    unsigned int alpha;
 
     RGBAColorInt &operator=(const RGBAColorInt &that);
 };

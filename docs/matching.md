@@ -41,7 +41,8 @@ or first find a source pattern that proves the exact instruction shape in a targ
 
 One positive pattern: MSVC 7.1 groups overloaded virtual operators at the first overload slot and
 emits them in reverse declaration order. The `Debug` shim intentionally declares stream overloads
-so `float`, `int`, and `const char *` land at the target vtable slots `0x20`, `0x34`, and `0x38`.
+so `float`, `unsigned int`, `int`, and `const char *` land at the target vtable slots `0x20`,
+`0x30`, `0x34`, and `0x38`.
 
 ## Reference source
 

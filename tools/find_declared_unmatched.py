@@ -90,12 +90,16 @@ def find_defined_functions(text: str):
     namespace_pattern = re.compile(r"\bnamespace\s+(\w+)\s*\{")
 
     results = set()
+    symbol_comment = None
     # Stack of (namespace_name, brace_depth_at_open). Anonymous namespaces use "".
     namespace_stack = []
     brace_depth = 0
 
     for line in text.splitlines():
         stripped = line.strip()
+        if stripped.startswith("// ?"):
+            symbol_comment = stripped[3:].strip()
+            continue
         is_namespace_line = stripped.startswith("namespace ") or stripped.startswith("namespace\t") or stripped.startswith("namespace {")
 
         open_count = line.count("{")
@@ -121,7 +125,8 @@ def find_defined_functions(text: str):
                 # Filter out anonymous namespace entries.
                 ns_parts = [ns for ns, _ in namespace_stack if ns]
                 class_name = "::".join(ns_parts + [class_name])
-            results.add((class_name, method_name))
+            results.add((class_name, method_name, symbol_comment))
+            symbol_comment = None
     return results
 
 
@@ -146,7 +151,13 @@ def main():
                 continue
         else:
             text = source_path.read_text(encoding="utf-8")
-        for class_name, method_name in find_defined_functions(text):
+        for class_name, method_name, symbol_name in find_defined_functions(text):
+            if symbol_name:
+                if symbol_name in matched:
+                    continue
+                unmatched.append((rel_path, class_name, method_name))
+                continue
+
             needle = mangle_method(class_name, method_name)
             # Constructors/destructors match a prefix; ordinary methods match a substring.
             if needle.startswith("??0") or needle.startswith("??1"):

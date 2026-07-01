@@ -6157,17 +6157,9 @@ __declspec(naked) ConcreteModuleClass<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DR
 }
 
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
-__declspec(naked) ConcreteModuleClass<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, QuadDrawModule, QuadDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleClass()
+ConcreteModuleClass<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, QuadDrawModule, QuadDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleClass()
 {
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x20
-        __emit 0x08
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc3
-    }
+    *(const void **)this = (const void *)0x01110820;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVQuadDrawModuleTemplate@2@PAVINI@@@Z

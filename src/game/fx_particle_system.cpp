@@ -962,48 +962,17 @@ const Region2D *ParticleSystemTemplate::getUV() const
     return reinterpret_cast<const Region2D *>(reinterpret_cast<const char *>(this) + 0x84);
 }
 
-__declspec(naked) void ParticleSystemTemplate::setUV(const Region2D *uv)
+void ParticleSystemTemplate::setUV(const Region2D *uv)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x85
-        __emit 0xc0
-        __emit 0x74
-        __emit 0x1c
-        __emit 0x8b
-        __emit 0x10
-        __emit 0x81
-        __emit 0xc1
-        __emit 0x84
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x89
-        __emit 0x11
-        __emit 0x8b
-        __emit 0x50
-        __emit 0x04
-        __emit 0x89
-        __emit 0x51
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x50
-        __emit 0x08
-        __emit 0x89
-        __emit 0x51
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x40
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x41
-        __emit 0x0c
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
+    struct RegionBlock {
+        unsigned int value0;
+        unsigned int value1;
+        unsigned int value2;
+        unsigned int value3;
+    };
+
+    if (uv) {
+        *(RegionBlock *)(reinterpret_cast<char *>(this) + 0x84) = *(const RegionBlock *)uv;
     }
 }
 

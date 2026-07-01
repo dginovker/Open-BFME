@@ -50,7 +50,7 @@ def read_matched_names(path: Path, staged: bool) -> set:
     text = git_show(path.relative_to(ROOT)) if staged else None
     if text is None:
         text = path.read_text(encoding="utf-8")
-    return {row["name"] for row in csv.DictReader(text.splitlines())}
+    return {row["name"] for row in csv.DictReader(text.splitlines()) if row["status"] == "matched"}
 
 
 def mangle_method(class_name: str, method_name: str) -> str:

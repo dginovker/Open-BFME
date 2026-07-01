@@ -35,7 +35,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0RandomAlphaKeyframe@FXParticleSystem@@QAE@XZ,0x0003F107,0x0005C750,45,src/game/fx_particle_system_bulk.cpp,matched,constructs keyframe and calls setRange on its random variable
 ??1DefaultAlphaModuleInfo@FXParticleSystem@@UAE@XZ,0x0001AFAF,0x005D4F50,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0001E04C,0x005D4F60,32,src/game/fx_particle_system_bulk.cpp,matched,
-??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@XZ,0x00045D04,0x005EE4C0,102,src/game/fx_particle_system_bulk.cpp,matched,
+??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@XZ,0x00045D04,0x005EE4C0,102,src/game/fx_particle_system_bulk.cpp,unmatched,needs SEH array-construction wrapper
 ??0DefaultColorModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x000354F4,0x005D52E0,60,src/game/fx_particle_system_bulk.cpp,matched,
 ??0DefaultColorModuleInfo@FXParticleSystem@@QAE@XZ,0x0003832F,0x005EF600,147,src/game/fx_particle_system_bulk.cpp,matched,
 ??1QuadDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x0001C5CB,0x005D88A0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer

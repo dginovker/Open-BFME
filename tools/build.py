@@ -259,9 +259,13 @@ def format_bytes(data):
     return " ".join(f"{byte:02x}" for byte in data)
 
 
-def load_function_rows():
+def load_all_function_rows():
     with FUNCTIONS.open("r", encoding="utf-8", newline="") as handle:
         return list(csv.DictReader(handle))
+
+
+def load_function_rows():
+    return [row for row in load_all_function_rows() if row["status"] == "matched"]
 
 
 def build_call_thunks():
@@ -292,7 +296,7 @@ def load_symbol_map():
     # holds callees we do not own source for yet (CRT helpers like __ftol2).
     thunks = build_call_thunks()
     symbol_map = {}
-    for row in load_function_rows():
+    for row in load_all_function_rows():
         body = int(row["target_rva"], 16)
         symbol_map[row["name"]] = thunks.get(body, body)
     if SYMBOLS.exists():

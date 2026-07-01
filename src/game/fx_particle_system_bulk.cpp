@@ -26395,44 +26395,16 @@ __declspec(naked) SphereEmissionVolumeModuleTemplate &SphereEmissionVolumeModule
     }
 }
 
-// ??4SphericalEmissionVelocityInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z
-__declspec(naked) SphericalEmissionVelocityInfo &SphericalEmissionVelocityInfo::operator=(const SphericalEmissionVelocityInfo &that)
+SphericalEmissionVelocityInfo &SphericalEmissionVelocityInfo::operator=(const SphericalEmissionVelocityInfo &that)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x04
-        __emit 0x83
-        __emit 0xc1
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8b
-        __emit 0x31
-        __emit 0x8d
-        __emit 0x50
-        __emit 0x04
-        __emit 0x89
-        __emit 0x32
-        __emit 0x8b
-        __emit 0x71
-        __emit 0x04
-        __emit 0x89
-        __emit 0x72
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x49
-        __emit 0x08
-        __emit 0x89
-        __emit 0x4a
-        __emit 0x08
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    struct VariableBlock {
+        unsigned int value0;
+        unsigned int value1;
+        unsigned int value2;
+    };
+
+    *(VariableBlock *)&m_var0 = *(const VariableBlock *)&that.m_var0;
+    return *this;
 }
 
 // ??4SphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z

@@ -461,32 +461,20 @@ LightningEmissionInfo::~LightningEmissionInfo()
     *(void **)this = (void *)0x01073744;
 }
 
-__declspec(naked) EventModuleInfo::EventModuleInfo()
+EventModuleInfo::EventModuleInfo()
 {
-    __asm {
-        mov eax, ecx
-        mov byte ptr [eax], 1
-        mov byte ptr [eax + 1], 1
-        ret
-    }
+    m_unk0 = true;
+    m_unk1 = true;
 }
 
-__declspec(naked) EventModuleInfo::~EventModuleInfo()
+EventModuleInfo::~EventModuleInfo()
 {
-    __asm {
-        ret
-    }
 }
 
-__declspec(naked) EventModuleInfo &EventModuleInfo::operator=(const EventModuleInfo &that)
+EventModuleInfo &EventModuleInfo::operator=(const EventModuleInfo &that)
 {
-    __asm {
-        mov eax, ecx
-        mov ecx, [esp + 4]
-        mov dx, [ecx]
-        mov [eax], dx
-        ret 4
-    }
+    *(unsigned short *)this = *(const unsigned short *)&that;
+    return *this;
 }
 
 BoxEmissionVolumeInfo::~BoxEmissionVolumeInfo()

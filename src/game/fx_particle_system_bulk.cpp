@@ -26090,121 +26090,26 @@ __declspec(naked) TerrainCollisionModuleTemplate &TerrainCollisionModuleTemplate
 }
 
 // ??4WindModuleInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z
-__declspec(naked) WindModuleInfo &WindModuleInfo::operator=(const WindModuleInfo &that)
+WindModuleInfo &WindModuleInfo::operator=(const WindModuleInfo &that)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x04
-        __emit 0x89
-        __emit 0x50
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x08
-        __emit 0x89
-        __emit 0x50
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x50
-        __emit 0x0c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x10
-        __emit 0x89
-        __emit 0x50
-        __emit 0x10
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x14
-        __emit 0x89
-        __emit 0x50
-        __emit 0x14
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x18
-        __emit 0x89
-        __emit 0x50
-        __emit 0x18
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x1c
-        __emit 0x89
-        __emit 0x50
-        __emit 0x1c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x20
-        __emit 0x89
-        __emit 0x50
-        __emit 0x20
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x24
-        __emit 0x89
-        __emit 0x50
-        __emit 0x24
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x28
-        __emit 0x89
-        __emit 0x50
-        __emit 0x28
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x2c
-        __emit 0x89
-        __emit 0x50
-        __emit 0x2c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x30
-        __emit 0x89
-        __emit 0x50
-        __emit 0x30
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x34
-        __emit 0x89
-        __emit 0x50
-        __emit 0x34
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x38
-        __emit 0x89
-        __emit 0x50
-        __emit 0x38
-        __emit 0x8a
-        __emit 0x51
-        __emit 0x3c
-        __emit 0x88
-        __emit 0x50
-        __emit 0x3c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x40
-        __emit 0x89
-        __emit 0x50
-        __emit 0x40
-        __emit 0x8b
-        __emit 0x49
-        __emit 0x44
-        __emit 0x89
-        __emit 0x48
-        __emit 0x44
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    m_type = that.m_type;
+    m_f0 = that.m_f0;
+    m_f1 = that.m_f1;
+    m_f2 = that.m_f2;
+    m_f3 = that.m_f3;
+    m_f4 = that.m_f4;
+    m_f5 = that.m_f5;
+    m_f6 = that.m_f6;
+    m_f7 = that.m_f7;
+    m_f8 = that.m_f8;
+    m_f9 = that.m_f9;
+    m_f10 = that.m_f10;
+    m_f11 = that.m_f11;
+    m_f12 = that.m_f12;
+    m_flag = that.m_flag;
+    m_i0 = that.m_i0;
+    m_i1 = that.m_i1;
+    return *this;
 }
 
 // ?DoXfer@ButterflyDrawModuleInfo@FXParticleSystem@@UAEXAAVXfer@@@Z

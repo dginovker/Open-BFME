@@ -18,6 +18,13 @@
 
 Leaf functions (no calls) are easiest; `reverse/symbols.csv` is what makes call-using functions matchable.
 
+Useful iteration tools:
+
+- `python3 tools/explain_mismatch.py <decorated-symbol>` compiles that function's source and prints
+  the first byte difference, byte windows, and side-by-side target/compiled disassembly.
+- `python3 tools/list_naked_candidates.py src --limit 30` ranks small naked asm blocks that are
+  likely good C++ conversion candidates.
+
 ## MSVC 7.1 shaping notes
 
 Near-matches are still failures. If a candidate differs only by register choice, branch layout, or

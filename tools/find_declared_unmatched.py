@@ -127,6 +127,9 @@ def find_defined_functions(text: str):
         if match:
             class_name = match.group(1)
             method_name = match.group(2)
+            if method_name.startswith("operator"):
+                # normalize "operator ()" / "operator() " to "operator()"
+                method_name = "operator" + re.sub(r"\s+", "", method_name[len("operator"):])
             if namespace_stack and "::" not in class_name:
                 # Filter out anonymous namespace entries.
                 ns_parts = [ns for ns, _ in namespace_stack if ns]

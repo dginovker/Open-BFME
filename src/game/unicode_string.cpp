@@ -241,6 +241,7 @@ __declspec(naked) UnicodeString &UnicodeString::operator+=(const UnicodeString &
 
 __declspec(naked) UnicodeString::~UnicodeString()
 {
+    // Tail-jump to StringBase<wchar_t>::releaseBuffer at 0x008881D0.
     __asm {
         __emit 0xe9
         __emit 0x2b
@@ -433,4 +434,3 @@ __declspec(naked) void UnicodeString::translate(const AsciiString &that)
         __emit 0x00
     }
 }
-

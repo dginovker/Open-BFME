@@ -1660,17 +1660,9 @@ __declspec(naked) ConcreteModuleClass<ModuleTag<4, CYLINDRICAL_EMISSION_VELOCITY
 }
 
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$03$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVCylindricalEmissionVelocityModule@2@VCylindricalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
-__declspec(naked) ConcreteModuleClass<ModuleTag<4, CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY, CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME, CylindricalEmissionVelocityModule, CylindricalEmissionVelocityModuleTemplate, DefaultParticleModule<4>, DefaultParticleModuleTemplate<4> > >::~ConcreteModuleClass()
+ConcreteModuleClass<ModuleTag<4, CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY, CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME, CylindricalEmissionVelocityModule, CylindricalEmissionVelocityModuleTemplate, DefaultParticleModule<4>, DefaultParticleModuleTemplate<4> > >::~ConcreteModuleClass()
 {
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x80
-        __emit 0x08
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc3
-    }
+    *(const void **)this = (const void *)0x01110880;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$03$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVCylindricalEmissionVelocityModule@2@VCylindricalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVCylindricalEmissionVelocityModuleTemplate@2@PAVINI@@@Z

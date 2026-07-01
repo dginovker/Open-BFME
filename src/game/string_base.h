@@ -3,6 +3,7 @@
 template <typename T>
 class StringBase {
     friend class AsciiString;
+    friend class UnicodeString;
 
 public:
     void debugIgnoreLeaks();

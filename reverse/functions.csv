@@ -977,6 +977,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getReplayExtention@RecorderClass@@SA?AVAsciiString@@XZ,0x000427F8,0x98b10,31,src/game/recorder.cpp,matched,
 ?getLastReplayFileName@RecorderClass@@QAE?AVAsciiString@@XZ,0x0001E3C6,0x98b40,33,src/game/recorder.cpp,matched,
 ?readAsciiString@RecorderClass@@IAE?AVAsciiString@@XZ,0x0003C1D2,0x98610,220,src/game/recorder_strings.cpp,matched,
+?readUnicodeString@RecorderClass@@IAE?AVUnicodeString@@XZ,0x000383D4,0x991f0,34,src/game/recorder_strings.cpp,matched,
 ?tintAllColors@DefaultColorModuleInfo@FXParticleSystem@@QAEXH@Z,0x0002C228,0x5ef6c0,283,src/game/fx_particle_system_bulk.cpp,matched,
 ?writeINI@ParticleSystemTemplate@FXParticleSystem@@QBEXAAVFile@@I@Z,0x0003ACB5,0x5ccab0,1568,src/game/fx_particle_system_bulk.cpp,matched,
 ?DoXfer@ButterflyDrawModuleInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x0003967B,0x5f0c70,27,src/game/fx_particle_system_bulk.cpp,matched,

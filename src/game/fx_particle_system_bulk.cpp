@@ -23867,275 +23867,30 @@ __declspec(naked) CylindricalEmissionVelocityModuleTemplate &CylindricalEmission
 }
 
 // ??4DefaultColorModuleInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z
-__declspec(naked) DefaultColorModuleInfo &DefaultColorModuleInfo::operator=(const DefaultColorModuleInfo &that)
+DefaultColorModuleInfo &DefaultColorModuleInfo::operator=(const DefaultColorModuleInfo &that)
 {
-    __asm {
-        __emit 0x56
-        __emit 0x57
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x04
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x14
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x14
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x24
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x24
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x34
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x34
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x44
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x44
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x54
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x54
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x64
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x64
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x74
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x74
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x08
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x56
-        __emit 0x0c
-        __emit 0x81
-        __emit 0xc1
-        __emit 0x84
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x8b
-        __emit 0x31
-        __emit 0x8d
-        __emit 0x90
-        __emit 0x84
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x89
-        __emit 0x32
-        __emit 0x8b
-        __emit 0x71
-        __emit 0x04
-        __emit 0x89
-        __emit 0x72
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x49
-        __emit 0x08
-        __emit 0x5f
-        __emit 0x89
-        __emit 0x4a
-        __emit 0x08
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    struct ColorKeyBlock {
+        unsigned int value0;
+        unsigned int value1;
+        unsigned int value2;
+        unsigned int value3;
+    };
+    struct VariableBlock {
+        unsigned int value0;
+        unsigned int value1;
+        unsigned int value2;
+    };
+
+    *(ColorKeyBlock *)&m_colorKey[0] = *(const ColorKeyBlock *)&that.m_colorKey[0];
+    *(ColorKeyBlock *)&m_colorKey[1] = *(const ColorKeyBlock *)&that.m_colorKey[1];
+    *(ColorKeyBlock *)&m_colorKey[2] = *(const ColorKeyBlock *)&that.m_colorKey[2];
+    *(ColorKeyBlock *)&m_colorKey[3] = *(const ColorKeyBlock *)&that.m_colorKey[3];
+    *(ColorKeyBlock *)&m_colorKey[4] = *(const ColorKeyBlock *)&that.m_colorKey[4];
+    *(ColorKeyBlock *)&m_colorKey[5] = *(const ColorKeyBlock *)&that.m_colorKey[5];
+    *(ColorKeyBlock *)&m_colorKey[6] = *(const ColorKeyBlock *)&that.m_colorKey[6];
+    *(ColorKeyBlock *)&m_colorKey[7] = *(const ColorKeyBlock *)&that.m_colorKey[7];
+    *(VariableBlock *)&m_colorScale = *(const VariableBlock *)&that.m_colorScale;
+    return *this;
 }
 
 // ??4DefaultPhysicsModuleInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z

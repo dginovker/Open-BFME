@@ -32,41 +32,11 @@ UnicodeString::UnicodeString(const UnicodeString &that, int start, int len)
     ((StringBase<wchar_t> *)this)->StringBase<wchar_t>::StringBase(*(const StringBase<wchar_t> *)&that, start, len);
 }
 
-__declspec(naked) UnicodeString &UnicodeString::operator=(wchar_t c)
+UnicodeString &UnicodeString::operator=(wchar_t c)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0x6a
-        __emit 0x01
-        __emit 0x8d
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x51
-        __emit 0x8b
-        __emit 0xce
-        __emit 0x89
-        __emit 0x44
-        __emit 0x24
-        __emit 0x10
-        __emit 0xe8
-        __emit 0xd7
-        __emit 0x35
-        __emit 0x32
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    wchar_t ch = c;
+    ((StringBase<wchar_t> *)this)->set(&ch, 1);
+    return *this;
 }
 
 __declspec(naked) UnicodeString &UnicodeString::operator=(const wchar_t *str)
@@ -131,41 +101,11 @@ __declspec(naked) UnicodeString &UnicodeString::operator=(const wchar_t *str)
     }
 }
 
-__declspec(naked) UnicodeString &UnicodeString::operator+=(wchar_t c)
+UnicodeString &UnicodeString::operator+=(wchar_t c)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0x6a
-        __emit 0x01
-        __emit 0x8d
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x51
-        __emit 0x8b
-        __emit 0xce
-        __emit 0x89
-        __emit 0x44
-        __emit 0x24
-        __emit 0x10
-        __emit 0xe8
-        __emit 0x67
-        __emit 0xb9
-        __emit 0x44
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    wchar_t ch = c;
+    ((StringBase<wchar_t> *)this)->concat(&ch, 1);
+    return *this;
 }
 
 __declspec(naked) UnicodeString &UnicodeString::operator+=(const wchar_t *str)

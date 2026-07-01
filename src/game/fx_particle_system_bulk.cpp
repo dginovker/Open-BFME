@@ -8664,17 +8664,9 @@ __declspec(naked) ConcreteModuleClass<PointEmissionVolumeModuleTag>::ConcreteMod
 }
 
 // ??1?$ConcreteModuleClass@UPointEmissionVolumeModuleTag@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
-__declspec(naked) ConcreteModuleClass<PointEmissionVolumeModuleTag>::~ConcreteModuleClass()
+ConcreteModuleClass<PointEmissionVolumeModuleTag>::~ConcreteModuleClass()
 {
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x8c
-        __emit 0x08
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc3
-    }
+    *(const void **)this = (const void *)0x0111088c;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@UPointEmissionVolumeModuleTag@FXParticleSystem@@@FXParticleSystem@@UBEPAVPointEmissionVolumeModuleTemplate@2@PAVINI@@@Z

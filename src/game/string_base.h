@@ -2,6 +2,8 @@
 
 template <typename T>
 class StringBase {
+    friend class AsciiString;
+
 public:
     void debugIgnoreLeaks();
     bool isEmpty() const;

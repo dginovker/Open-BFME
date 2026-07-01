@@ -1,3 +1,4 @@
+#define FX_PARTICLE_SYSTEM_CPP
 #include "fx_particle_system.h"
 
 #include "../math/region.h"

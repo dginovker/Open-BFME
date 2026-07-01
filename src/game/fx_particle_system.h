@@ -327,7 +327,11 @@ private:
 
 class EmissionVolumeInfo : public Snapshot {
 public:
+#ifdef FX_PARTICLE_SYSTEM_CPP
     EmissionVolumeInfo();
+#else
+    EmissionVolumeInfo() : m_flag(false) {}
+#endif
     __declspec(nothrow) EmissionVolumeInfo(const EmissionVolumeInfo &that);
     virtual ~EmissionVolumeInfo();
     virtual const char *GetSnapshotName();
@@ -351,7 +355,15 @@ public:
 
 class BoxEmissionVolumeInfo : public EmissionVolumeInfo {
 public:
+#ifdef FX_PARTICLE_SYSTEM_CPP
     BoxEmissionVolumeInfo();
+#else
+    BoxEmissionVolumeInfo() : EmissionVolumeInfo() {
+        m_unk[0] = 0.0f;
+        m_unk[1] = 0.0f;
+        m_unk[2] = 0.0f;
+    }
+#endif
     BoxEmissionVolumeInfo(const BoxEmissionVolumeInfo &that);
     virtual ~BoxEmissionVolumeInfo();
     BoxEmissionVolumeInfo &operator=(const BoxEmissionVolumeInfo &that);
@@ -362,7 +374,11 @@ private:
 
 class SphereEmissionVolumeInfo : public EmissionVolumeInfo {
 public:
+#ifdef FX_PARTICLE_SYSTEM_CPP
     SphereEmissionVolumeInfo();
+#else
+    SphereEmissionVolumeInfo() : EmissionVolumeInfo(), m_radius(0.0f) {}
+#endif
     __declspec(nothrow) SphereEmissionVolumeInfo(const SphereEmissionVolumeInfo &that);
     virtual ~SphereEmissionVolumeInfo();
     SphereEmissionVolumeInfo &operator=(const SphereEmissionVolumeInfo &that);
@@ -373,7 +389,17 @@ private:
 
 class CylinderEmissionVolumeInfo : public EmissionVolumeInfo {
 public:
+#ifdef FX_PARTICLE_SYSTEM_CPP
     CylinderEmissionVolumeInfo();
+#else
+    CylinderEmissionVolumeInfo() : EmissionVolumeInfo() {
+        m_unk[0] = 0.0f;
+        m_unk[1] = 0.0f;
+        m_unk[2] = 0.0f;
+        m_unk[3] = 0.0f;
+        m_unk[4] = 0.0f;
+    }
+#endif
     CylinderEmissionVolumeInfo(const CylinderEmissionVolumeInfo &that);
     virtual ~CylinderEmissionVolumeInfo();
     CylinderEmissionVolumeInfo &operator=(const CylinderEmissionVolumeInfo &that);
@@ -384,7 +410,18 @@ private:
 
 class LineEmissionVolumeInfo : public EmissionVolumeInfo {
 public:
+#ifdef FX_PARTICLE_SYSTEM_CPP
     LineEmissionVolumeInfo();
+#else
+    LineEmissionVolumeInfo() : EmissionVolumeInfo() {
+        m_unk[0] = 0.0f;
+        m_unk[1] = 0.0f;
+        m_unk[2] = 0.0f;
+        m_unk[3] = 0.0f;
+        m_unk[4] = 0.0f;
+        m_unk[5] = 0.0f;
+    }
+#endif
     LineEmissionVolumeInfo(const LineEmissionVolumeInfo &that);
     LineEmissionVolumeInfo &operator=(const LineEmissionVolumeInfo &that);
     virtual ~LineEmissionVolumeInfo();

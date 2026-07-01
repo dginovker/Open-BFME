@@ -279,17 +279,9 @@ __declspec(naked) ConcreteModuleClass<DefaultModuleTag<1> >::ConcreteModuleClass
 }
 
 // ??1?$ConcreteModuleClass@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
-__declspec(naked) ConcreteModuleClass<DefaultModuleTag<1> >::~ConcreteModuleClass()
+ConcreteModuleClass<DefaultModuleTag<1> >::~ConcreteModuleClass()
 {
-    __asm {
-        __emit 0xc7
-        __emit 0x01
-        __emit 0x38
-        __emit 0x08
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc3
-    }
+    *(const void **)this = (const void *)0x01110838;
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$00@FXParticleSystem@@@2@XZ

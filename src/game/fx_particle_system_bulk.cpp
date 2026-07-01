@@ -23852,68 +23852,17 @@ __declspec(naked) CylinderEmissionVolumeModuleTemplate &CylinderEmissionVolumeMo
     }
 }
 
-// ??4CylindricalEmissionVelocityInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z
-__declspec(naked) CylindricalEmissionVelocityInfo &CylindricalEmissionVelocityInfo::operator=(const CylindricalEmissionVelocityInfo &that)
+CylindricalEmissionVelocityInfo &CylindricalEmissionVelocityInfo::operator=(const CylindricalEmissionVelocityInfo &that)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x04
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x04
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x08
-        __emit 0x89
-        __emit 0x56
-        __emit 0x08
-        __emit 0x83
-        __emit 0xc1
-        __emit 0x10
-        __emit 0x8b
-        __emit 0x31
-        __emit 0x8d
-        __emit 0x50
-        __emit 0x10
-        __emit 0x89
-        __emit 0x32
-        __emit 0x8b
-        __emit 0x71
-        __emit 0x04
-        __emit 0x89
-        __emit 0x72
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x49
-        __emit 0x08
-        __emit 0x5f
-        __emit 0x89
-        __emit 0x4a
-        __emit 0x08
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    struct VariableBlock {
+        unsigned int value0;
+        unsigned int value1;
+        unsigned int value2;
+    };
+
+    *(VariableBlock *)&m_var0 = *(const VariableBlock *)&that.m_var0;
+    *(VariableBlock *)&m_var1 = *(const VariableBlock *)&that.m_var1;
+    return *this;
 }
 
 // ??4CylindricalEmissionVelocityModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z
@@ -24964,90 +24913,18 @@ __declspec(naked) LineEmissionVolumeModuleTemplate &LineEmissionVolumeModuleTemp
     }
 }
 
-// ??4OrthoEmissionVelocityInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z
-__declspec(naked) OrthoEmissionVelocityInfo &OrthoEmissionVelocityInfo::operator=(const OrthoEmissionVelocityInfo &that)
+OrthoEmissionVelocityInfo &OrthoEmissionVelocityInfo::operator=(const OrthoEmissionVelocityInfo &that)
 {
-    __asm {
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x08
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x04
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x04
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x08
-        __emit 0x89
-        __emit 0x56
-        __emit 0x08
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x10
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x10
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x08
-        __emit 0x89
-        __emit 0x56
-        __emit 0x08
-        __emit 0x83
-        __emit 0xc1
-        __emit 0x1c
-        __emit 0x8b
-        __emit 0x31
-        __emit 0x8d
-        __emit 0x50
-        __emit 0x1c
-        __emit 0x89
-        __emit 0x32
-        __emit 0x8b
-        __emit 0x71
-        __emit 0x04
-        __emit 0x89
-        __emit 0x72
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x49
-        __emit 0x08
-        __emit 0x5f
-        __emit 0x89
-        __emit 0x4a
-        __emit 0x08
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    struct VariableBlock {
+        unsigned int value0;
+        unsigned int value1;
+        unsigned int value2;
+    };
+
+    *(VariableBlock *)&m_var0 = *(const VariableBlock *)&that.m_var0;
+    *(VariableBlock *)&m_var1 = *(const VariableBlock *)&that.m_var1;
+    *(VariableBlock *)&m_var2 = *(const VariableBlock *)&that.m_var2;
+    return *this;
 }
 
 // ??4OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z
@@ -25147,68 +25024,17 @@ __declspec(naked) OrthoEmissionVelocityModuleTemplate &OrthoEmissionVelocityModu
     }
 }
 
-// ??4OutwardEmissionVelocityInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z
-__declspec(naked) OutwardEmissionVelocityInfo &OutwardEmissionVelocityInfo::operator=(const OutwardEmissionVelocityInfo &that)
+OutwardEmissionVelocityInfo &OutwardEmissionVelocityInfo::operator=(const OutwardEmissionVelocityInfo &that)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x04
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x04
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x08
-        __emit 0x89
-        __emit 0x56
-        __emit 0x08
-        __emit 0x83
-        __emit 0xc1
-        __emit 0x10
-        __emit 0x8b
-        __emit 0x31
-        __emit 0x8d
-        __emit 0x50
-        __emit 0x10
-        __emit 0x89
-        __emit 0x32
-        __emit 0x8b
-        __emit 0x71
-        __emit 0x04
-        __emit 0x89
-        __emit 0x72
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x49
-        __emit 0x08
-        __emit 0x5f
-        __emit 0x89
-        __emit 0x4a
-        __emit 0x08
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    struct VariableBlock {
+        unsigned int value0;
+        unsigned int value1;
+        unsigned int value2;
+    };
+
+    *(VariableBlock *)&m_var0 = *(const VariableBlock *)&that.m_var0;
+    *(VariableBlock *)&m_var1 = *(const VariableBlock *)&that.m_var1;
+    return *this;
 }
 
 // ??4OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z

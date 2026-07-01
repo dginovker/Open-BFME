@@ -2,7 +2,10 @@
 """List functions defined in source files that are not yet in functions.csv."""
 
 import csv
+import argparse
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,9 +33,24 @@ OPERATOR_CODES = {
 }
 
 
-def read_matched_names(path: Path) -> set:
-    with path.open("r", encoding="utf-8", newline="") as handle:
-        return {row["name"] for row in csv.DictReader(handle)}
+def git_show(path: Path):
+    result = subprocess.run(
+        ["git", "show", f":{path.as_posix()}"],
+        cwd=ROOT,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL,
+        text=True,
+    )
+    if result.returncode != 0:
+        return None
+    return result.stdout
+
+
+def read_matched_names(path: Path, staged: bool) -> set:
+    text = git_show(path.relative_to(ROOT)) if staged else None
+    if text is None:
+        text = path.read_text(encoding="utf-8")
+    return {row["name"] for row in csv.DictReader(text.splitlines())}
 
 
 def mangle_method(class_name: str, method_name: str) -> str:
@@ -59,8 +77,7 @@ def mangle_method(class_name: str, method_name: str) -> str:
     return f"{prefix}{mangled_class}@@"
 
 
-def find_defined_functions(source_path: Path):
-    text = source_path.read_text(encoding="utf-8")
+def find_defined_functions(text: str):
     # Match definitions like:
     #   ReturnType ClassName::methodName(
     #   Namespace::ClassName::methodName(
@@ -109,11 +126,27 @@ def find_defined_functions(source_path: Path):
 
 
 def main():
-    matched = read_matched_names(FUNCTIONS_CSV)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("paths", nargs="*", help="source files to inspect; defaults to every src/*.cpp")
+    parser.add_argument("--fail", action="store_true", help="exit non-zero when unmatched functions are found")
+    parser.add_argument("--staged", action="store_true", help="read paths from the git index")
+    args = parser.parse_args()
+
+    matched = read_matched_names(FUNCTIONS_CSV, args.staged)
 
     unmatched = []
-    for source_path in sorted(SRC_DIR.rglob("*.cpp")):
-        for class_name, method_name in find_defined_functions(source_path):
+    source_paths = [ROOT / path for path in args.paths] if args.paths else sorted(SRC_DIR.rglob("*.cpp"))
+    for source_path in source_paths:
+        if source_path.suffix != ".cpp":
+            continue
+        rel_path = source_path.relative_to(ROOT)
+        if args.staged:
+            text = git_show(rel_path)
+            if text is None:
+                continue
+        else:
+            text = source_path.read_text(encoding="utf-8")
+        for class_name, method_name in find_defined_functions(text):
             needle = mangle_method(class_name, method_name)
             # Constructors/destructors match a prefix; ordinary methods match a substring.
             if needle.startswith("??0") or needle.startswith("??1"):
@@ -122,7 +155,7 @@ def main():
             else:
                 if any(needle in name for name in matched):
                     continue
-            unmatched.append((source_path.relative_to(ROOT), class_name, method_name))
+            unmatched.append((rel_path, class_name, method_name))
 
     if not unmatched:
         print("All defined functions are already matched.")
@@ -130,6 +163,8 @@ def main():
 
     for rel_path, class_name, method_name in unmatched:
         print(f"{rel_path}: {class_name}::{method_name}")
+    if args.fail:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

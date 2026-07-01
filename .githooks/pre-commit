@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+staged_sources=()
+while IFS= read -r path; do
+    case "$path" in
+        src/*.cpp) staged_sources+=("$path") ;;
+    esac
+done < <(git diff --cached --name-only --diff-filter=ACMRT)
+
+if [ "${#staged_sources[@]}" -eq 0 ]; then
+    exit 0
+fi
+
+dirty_sources=()
+for path in "${staged_sources[@]}"; do
+    if ! git diff --quiet -- "$path"; then
+        dirty_sources+=("$path")
+    fi
+done
+
+if [ "${#dirty_sources[@]}" -ne 0 ]; then
+    echo "pre-commit: staged source files also have unstaged edits; build would not verify the staged content:" >&2
+    printf '  %s\n' "${dirty_sources[@]}" >&2
+    exit 1
+fi
+
+python3 tools/find_declared_unmatched.py --fail --staged "${staged_sources[@]}"
+./build.sh "${staged_sources[@]}"

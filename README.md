@@ -27,7 +27,12 @@ Baseline executables and the MSVC 7.1 toolchain are stored with Git LFS. After c
 
 ```bash
 git lfs pull
+./tools/setup_hooks.sh
 ```
+
+Git does not auto-enable versioned hooks from a clone. `setup_hooks.sh` points this checkout at the
+tracked pre-commit hook, which rejects new source functions unless they are listed in
+`reverse/functions.csv` and pass the byte comparison.
 
 ```bash
 ./build.sh

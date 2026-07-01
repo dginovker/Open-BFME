@@ -92,15 +92,9 @@ ConcreteModuleClass<DefaultModuleTag<0> >::~ConcreteModuleClass()
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$0A@@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$0A@@FXParticleSystem@@@2@XZ
-__declspec(naked) const ConcreteModuleClass<DefaultModuleTag<0> > &ConcreteModuleTemplate<DefaultModuleTag<0> >::getClass() const
+const ConcreteModuleClass<DefaultModuleTag<0> > &ConcreteModuleTemplate<DefaultModuleTag<0> >::getClass() const
 {
-    __asm {
-        __emit 0xe9
-        __emit 0x6a
-        __emit 0x76
-        __emit 0xa4
-        __emit 0xff
-    }
+    return ConcreteModuleClass<DefaultModuleTag<0> >::getInstance();
 }
 
 // ?getInstance@?$ConcreteModuleClass@V?$DefaultModuleTag@$0A@@FXParticleSystem@@@FXParticleSystem@@SAABV12@XZ
@@ -299,15 +293,9 @@ __declspec(naked) ConcreteModuleClass<DefaultModuleTag<1> >::~ConcreteModuleClas
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$00@FXParticleSystem@@@2@XZ
-__declspec(naked) const ConcreteModuleClass<DefaultModuleTag<1> > &ConcreteModuleTemplate<DefaultModuleTag<1> >::getClass() const
+const ConcreteModuleClass<DefaultModuleTag<1> > &ConcreteModuleTemplate<DefaultModuleTag<1> >::getClass() const
 {
-    __asm {
-        __emit 0xe9
-        __emit 0x94
-        __emit 0x3f
-        __emit 0xa3
-        __emit 0xff
-    }
+    return ConcreteModuleClass<DefaultModuleTag<1> >::getInstance();
 }
 
 // ?getInstance@?$ConcreteModuleClass@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@SAABV12@XZ
@@ -506,15 +494,9 @@ __declspec(naked) ConcreteModuleClass<DefaultModuleTag<2> >::~ConcreteModuleClas
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$01@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$01@FXParticleSystem@@@2@XZ
-__declspec(naked) const ConcreteModuleClass<DefaultModuleTag<2> > &ConcreteModuleTemplate<DefaultModuleTag<2> >::getClass() const
+const ConcreteModuleClass<DefaultModuleTag<2> > &ConcreteModuleTemplate<DefaultModuleTag<2> >::getClass() const
 {
-    __asm {
-        __emit 0xe9
-        __emit 0xc8
-        __emit 0xfe
-        __emit 0xa2
-        __emit 0xff
-    }
+    return ConcreteModuleClass<DefaultModuleTag<2> >::getInstance();
 }
 
 // ?getInstance@?$ConcreteModuleClass@V?$DefaultModuleTag@$01@FXParticleSystem@@@FXParticleSystem@@SAABV12@XZ
@@ -713,15 +695,9 @@ __declspec(naked) ConcreteModuleClass<DefaultModuleTag<3> >::~ConcreteModuleClas
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$02@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$02@FXParticleSystem@@@2@XZ
-__declspec(naked) const ConcreteModuleClass<DefaultModuleTag<3> > &ConcreteModuleTemplate<DefaultModuleTag<3> >::getClass() const
+const ConcreteModuleClass<DefaultModuleTag<3> > &ConcreteModuleTemplate<DefaultModuleTag<3> >::getClass() const
 {
-    __asm {
-        __emit 0xe9
-        __emit 0x43
-        __emit 0x20
-        __emit 0xa3
-        __emit 0xff
-    }
+    return ConcreteModuleClass<DefaultModuleTag<3> >::getInstance();
 }
 
 // ?getInstance@?$ConcreteModuleClass@V?$DefaultModuleTag@$02@FXParticleSystem@@@FXParticleSystem@@SAABV12@XZ
@@ -920,15 +896,9 @@ __declspec(naked) ConcreteModuleClass<DefaultModuleTag<6> >::~ConcreteModuleClas
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$05@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$05@FXParticleSystem@@@2@XZ
-__declspec(naked) const ConcreteModuleClass<DefaultModuleTag<6> > &ConcreteModuleTemplate<DefaultModuleTag<6> >::getClass() const
+const ConcreteModuleClass<DefaultModuleTag<6> > &ConcreteModuleTemplate<DefaultModuleTag<6> >::getClass() const
 {
-    __asm {
-        __emit 0xe9
-        __emit 0xda
-        __emit 0xc8
-        __emit 0xa4
-        __emit 0xff
-    }
+    return ConcreteModuleClass<DefaultModuleTag<6> >::getInstance();
 }
 
 // ?getInstance@?$ConcreteModuleClass@V?$DefaultModuleTag@$05@FXParticleSystem@@@FXParticleSystem@@SAABV12@XZ
@@ -1127,15 +1097,9 @@ __declspec(naked) ConcreteModuleClass<DefaultModuleTag<7> >::~ConcreteModuleClas
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$06@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$06@FXParticleSystem@@@2@XZ
-__declspec(naked) const ConcreteModuleClass<DefaultModuleTag<7> > &ConcreteModuleTemplate<DefaultModuleTag<7> >::getClass() const
+const ConcreteModuleClass<DefaultModuleTag<7> > &ConcreteModuleTemplate<DefaultModuleTag<7> >::getClass() const
 {
-    __asm {
-        __emit 0xe9
-        __emit 0x02
-        __emit 0x08
-        __emit 0xa5
-        __emit 0xff
-    }
+    return ConcreteModuleClass<DefaultModuleTag<7> >::getInstance();
 }
 
 // ?getInstance@?$ConcreteModuleClass@V?$DefaultModuleTag@$06@FXParticleSystem@@@FXParticleSystem@@SAABV12@XZ

@@ -8943,64 +8943,14 @@ __declspec(naked) void StringBase<wchar_t>::trim()
 template class StringBase<char>;
 template class StringBase<wchar_t>;
 
-__declspec(naked) bool operator<(const StringBase<char> &left, const StringBase<char> &right)
+bool operator<(const StringBase<char> &left, const StringBase<char> &right)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x04
-        __emit 0x50
-        __emit 0xe8
-        __emit 0xe7
-        __emit 0xf1
-        __emit 0xfb
-        __emit 0xff
-        __emit 0x33
-        __emit 0xc9
-        __emit 0x85
-        __emit 0xc0
-        __emit 0x0f
-        __emit 0x9c
-        __emit 0xc1
-        __emit 0x8a
-        __emit 0xc1
-        __emit 0xc3
-    }
+    return left.compare(right) < 0;
 }
 
-__declspec(naked) bool operator<(const StringBase<wchar_t> &left, const StringBase<wchar_t> &right)
+bool operator<(const StringBase<wchar_t> &left, const StringBase<wchar_t> &right)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x04
-        __emit 0x50
-        __emit 0xe8
-        __emit 0x8e
-        __emit 0x3b
-        __emit 0xad
-        __emit 0xff
-        __emit 0x33
-        __emit 0xc9
-        __emit 0x85
-        __emit 0xc0
-        __emit 0x0f
-        __emit 0x9c
-        __emit 0xc1
-        __emit 0x8a
-        __emit 0xc1
-        __emit 0xc3
-    }
+    return left.compare(right) < 0;
 }
 
 __declspec(naked) bool operator!=(const StringBase<char> &left, const char *right)

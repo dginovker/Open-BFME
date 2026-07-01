@@ -432,6 +432,11 @@ public:
     virtual void LoadPostProcess();
     virtual void DoXfer(Xfer &xfer);
     LightningDrawModuleInfo &operator=(const LightningDrawModuleInfo &that);
+    GameClientRandomVariable m_gcrv1;
+    GameClientRandomVariable m_gcrv2;
+    GameClientRandomVariable m_gcrv3;
+    int m_field28;
+    bool m_flag;
 };
 
 class ParticleSystemInfo {
@@ -490,16 +495,6 @@ public:
     StreakDrawModuleInfo &operator=(const StreakDrawModuleInfo &that);
 };
 
-class StreakDrawModuleTemplate {
-public:
-    StreakDrawModuleTemplate();
-    StreakDrawModuleTemplate(const StreakDrawModuleTemplate &that);
-    virtual ~StreakDrawModuleTemplate();
-    StreakDrawModuleTemplate &operator=(const StreakDrawModuleTemplate &that);
-    void parse(INI *ini);
-    virtual void writeINI(File &file, unsigned int flags) const;
-};
-
 struct OrthoEmissionVelocityModuleTag {
     OrthoEmissionVelocityModuleTag &operator=(const OrthoEmissionVelocityModuleTag &that);
 };
@@ -529,6 +524,10 @@ public:
     virtual void LoadPostProcess();
     virtual void DoXfer(Xfer &xfer);
     WindModuleInfo &operator=(const WindModuleInfo &that);
+    int m_type;
+    float m_f0, m_f1, m_f2, m_f3, m_f4, m_f5, m_f6, m_f7, m_f8, m_f9, m_f10, m_f11, m_f12;
+    bool m_flag;
+    int m_i0, m_i1;
 };
 
 class ModuleTemplate {
@@ -719,6 +718,16 @@ public:
     SphereEmissionVolumeModuleTemplate(const SphereEmissionVolumeModuleTemplate &that);
     virtual ~SphereEmissionVolumeModuleTemplate();
     SphereEmissionVolumeModuleTemplate &operator=(const SphereEmissionVolumeModuleTemplate &that);
+    void parse(INI *ini);
+    virtual void writeINI(File &file, unsigned int flags) const;
+};
+
+class StreakDrawModuleTemplate : public CategoryModuleTemplate<6>, public StreakDrawModuleInfo {
+public:
+    StreakDrawModuleTemplate();
+    __declspec(nothrow) StreakDrawModuleTemplate(const StreakDrawModuleTemplate &that);
+    virtual ~StreakDrawModuleTemplate();
+    StreakDrawModuleTemplate &operator=(const StreakDrawModuleTemplate &that);
     void parse(INI *ini);
     virtual void writeINI(File &file, unsigned int flags) const;
 };

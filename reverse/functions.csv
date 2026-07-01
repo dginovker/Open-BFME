@@ -1033,3 +1033,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002DB50,0x005D7560,39,src/game/fx_particle_system.cpp,matched,
 ??0DefaultPhysicsModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00005DC6,0x005D7EA0,63,src/game/fx_particle_system_bulk.cpp,matched,
 ??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x000052AE,0x005D81C0,135,src/game/fx_particle_system_bulk.cpp,matched,
+??0StreakDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00033B59,0x005D8790,62,src/game/fx_particle_system_bulk.cpp,matched,
+??0LightningDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0002AD4C,0x005D8F00,97,src/game/fx_particle_system_bulk.cpp,matched,
+??0WindModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00047410,0x005BD970,117,src/game/fx_particle_system_bulk.cpp,matched,

@@ -18211,108 +18211,9 @@ __declspec(naked) LifeEventModuleTemplate::LifeEventModuleTemplate()
 }
 
 // ??0LightningDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) LightningDrawModuleInfo::LightningDrawModuleInfo(const LightningDrawModuleInfo &that)
-{
-    __asm {
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x08
-        __emit 0xc7
-        __emit 0x00
-        __emit 0x38
-        __emit 0x0d
-        __emit 0x11
-        __emit 0x01
-        __emit 0x57
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x04
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x08
-        __emit 0x89
-        __emit 0x56
-        __emit 0x08
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x10
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x10
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x08
-        __emit 0x89
-        __emit 0x56
-        __emit 0x08
-        __emit 0x8d
-        __emit 0x51
-        __emit 0x1c
-        __emit 0x8b
-        __emit 0x3a
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x1c
-        __emit 0x89
-        __emit 0x3e
-        __emit 0x8b
-        __emit 0x7a
-        __emit 0x04
-        __emit 0x89
-        __emit 0x7e
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x52
-        __emit 0x08
-        __emit 0x89
-        __emit 0x56
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x28
-        __emit 0x89
-        __emit 0x50
-        __emit 0x28
-        __emit 0x8a
-        __emit 0x49
-        __emit 0x2c
-        __emit 0x5f
-        __emit 0x88
-        __emit 0x48
-        __emit 0x2c
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
+LightningDrawModuleInfo::LightningDrawModuleInfo(const LightningDrawModuleInfo &that)
+    : m_gcrv1(that.m_gcrv1), m_gcrv2(that.m_gcrv2), m_gcrv3(that.m_gcrv3), m_field28(that.m_field28), m_flag(that.m_flag)
+{}
 
 // ??0LightningDrawModuleInfo@FXParticleSystem@@QAE@XZ
 __declspec(naked) LightningDrawModuleInfo::LightningDrawModuleInfo()
@@ -21758,73 +21659,9 @@ SphericalEmissionVelocityModuleTemplate::SphericalEmissionVelocityModuleTemplate
 
 
 // ??0StreakDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) StreakDrawModuleTemplate::StreakDrawModuleTemplate(const StreakDrawModuleTemplate &that)
-{
-    __asm {
-        __emit 0x56
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x7c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x57
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x52
-        __emit 0x18
-        __emit 0xa5
-        __emit 0xff
-        __emit 0x85
-        __emit 0xff
-        __emit 0x74
-        __emit 0x05
-        __emit 0x8d
-        __emit 0x47
-        __emit 0x08
-        __emit 0xeb
-        __emit 0x02
-        __emit 0x33
-        __emit 0xc0
-        __emit 0x8d
-        __emit 0x7e
-        __emit 0x08
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xcf
-        __emit 0xe8
-        __emit 0x36
-        __emit 0xf8
-        __emit 0xa2
-        __emit 0xff
-        __emit 0xc7
-        __emit 0x07
-        __emit 0xa4
-        __emit 0x0c
-        __emit 0x11
-        __emit 0x01
-        __emit 0x5f
-        __emit 0xc7
-        __emit 0x06
-        __emit 0x90
-        __emit 0x0c
-        __emit 0x11
-        __emit 0x01
-        __emit 0xc7
-        __emit 0x46
-        __emit 0x04
-        __emit 0x8c
-        __emit 0x0c
-        __emit 0x11
-        __emit 0x01
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
+StreakDrawModuleTemplate::StreakDrawModuleTemplate(const StreakDrawModuleTemplate &that)
+    : CategoryModuleTemplate<6>(that), StreakDrawModuleInfo(that)
+{}
 
 // ??0StreakDrawModuleTemplate@FXParticleSystem@@QAE@XZ
 __declspec(naked) StreakDrawModuleTemplate::StreakDrawModuleTemplate()
@@ -22447,128 +22284,12 @@ __declspec(naked) TerrainCollisionModuleTemplate::TerrainCollisionModuleTemplate
 }
 
 // ??0WindModuleInfo@FXParticleSystem@@QAE@ABV01@@Z
-__declspec(naked) WindModuleInfo::WindModuleInfo(const WindModuleInfo &that)
-{
-    __asm {
-        __emit 0x8b
-        __emit 0xc1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x04
-        __emit 0xc7
-        __emit 0x00
-        __emit 0x00
-        __emit 0xfa
-        __emit 0x10
-        __emit 0x01
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x04
-        __emit 0x89
-        __emit 0x50
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x08
-        __emit 0x89
-        __emit 0x50
-        __emit 0x08
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x0c
-        __emit 0x89
-        __emit 0x50
-        __emit 0x0c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x10
-        __emit 0x89
-        __emit 0x50
-        __emit 0x10
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x14
-        __emit 0x89
-        __emit 0x50
-        __emit 0x14
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x18
-        __emit 0x89
-        __emit 0x50
-        __emit 0x18
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x1c
-        __emit 0x89
-        __emit 0x50
-        __emit 0x1c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x20
-        __emit 0x89
-        __emit 0x50
-        __emit 0x20
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x24
-        __emit 0x89
-        __emit 0x50
-        __emit 0x24
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x28
-        __emit 0x89
-        __emit 0x50
-        __emit 0x28
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x2c
-        __emit 0x89
-        __emit 0x50
-        __emit 0x2c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x30
-        __emit 0x89
-        __emit 0x50
-        __emit 0x30
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x34
-        __emit 0x89
-        __emit 0x50
-        __emit 0x34
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x38
-        __emit 0x89
-        __emit 0x50
-        __emit 0x38
-        __emit 0x8a
-        __emit 0x51
-        __emit 0x3c
-        __emit 0x88
-        __emit 0x50
-        __emit 0x3c
-        __emit 0x8b
-        __emit 0x51
-        __emit 0x40
-        __emit 0x89
-        __emit 0x50
-        __emit 0x40
-        __emit 0x8b
-        __emit 0x49
-        __emit 0x44
-        __emit 0x89
-        __emit 0x48
-        __emit 0x44
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
+WindModuleInfo::WindModuleInfo(const WindModuleInfo &that)
+    : m_type(that.m_type), m_f0(that.m_f0), m_f1(that.m_f1), m_f2(that.m_f2),
+      m_f3(that.m_f3), m_f4(that.m_f4), m_f5(that.m_f5), m_f6(that.m_f6),
+      m_f7(that.m_f7), m_f8(that.m_f8), m_f9(that.m_f9), m_f10(that.m_f10),
+      m_f11(that.m_f11), m_f12(that.m_f12), m_flag(that.m_flag), m_i0(that.m_i0), m_i1(that.m_i1)
+{}
 
 // ??0WindModuleInfo@FXParticleSystem@@QAE@XZ
 __declspec(naked) WindModuleInfo::WindModuleInfo()

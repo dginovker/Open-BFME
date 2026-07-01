@@ -30,6 +30,7 @@ def main():
     code = [row for row in exports if row["kind"] == "code" and row["name"] not in matched]
     code.sort(key=lambda row: int(row["rva"], 16))
 
+    entries = []
     for i, row in enumerate(code):
         rva = int(row["rva"], 16)
         if i + 1 < len(code):
@@ -37,6 +38,11 @@ def main():
             size = next_rva - rva
         else:
             size = 0
+        entries.append((size, row))
+
+    entries.sort(key=lambda entry: (entry[0] == 0, entry[0], int(entry[1]["rva"], 16)))
+
+    for size, row in entries:
         target = row["target_rva"] or row["rva"]
         size_note = f"size~{size:4d}" if size else "size~   ?"
         print(f"{row['rva']} -> {target} {size_note} {row['name']}")

@@ -1,153 +1,35 @@
 #include "ascii_string.h"
 #include "unicode_string.h"
+#include "string_base.h"
 
 UnicodeString::UnicodeString()
 {
     m_text = 0;
 }
 
-__declspec(naked) UnicodeString::UnicodeString(wchar_t c)
+UnicodeString::UnicodeString(wchar_t c)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x83
-        __emit 0x08
-        __emit 0x0a
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    ((StringBase<wchar_t> *)this)->StringBase<wchar_t>::StringBase(c);
 }
 
-__declspec(naked) UnicodeString::UnicodeString(const wchar_t *str)
+UnicodeString::UnicodeString(const wchar_t *str)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0xc3
-        __emit 0x39
-        __emit 0x82
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    ((StringBase<wchar_t> *)this)->StringBase<wchar_t>::StringBase(str);
 }
 
-__declspec(naked) UnicodeString::UnicodeString(const wchar_t *str, int len)
+UnicodeString::UnicodeString(const wchar_t *str, int len)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x08
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x08
-        __emit 0x50
-        __emit 0x51
-        __emit 0x8b
-        __emit 0xce
-        __emit 0xe8
-        __emit 0x7c
-        __emit 0x47
-        __emit 0x45
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x08
-        __emit 0x00
-    }
+    ((StringBase<wchar_t> *)this)->StringBase<wchar_t>::StringBase(str, len);
 }
 
-__declspec(naked) UnicodeString::UnicodeString(const UnicodeString &that)
+UnicodeString::UnicodeString(const UnicodeString &that)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x33
-        __emit 0x01
-        __emit 0x82
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    ((StringBase<wchar_t> *)this)->StringBase<wchar_t>::StringBase(*(const StringBase<wchar_t> *)&that);
 }
 
-__declspec(naked) UnicodeString::UnicodeString(const UnicodeString &that, int start, int len)
+UnicodeString::UnicodeString(const UnicodeString &that, int start, int len)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x8b
-        __emit 0x54
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x50
-        __emit 0x51
-        __emit 0x52
-        __emit 0x8b
-        __emit 0xce
-        __emit 0xe8
-        __emit 0x77
-        __emit 0x49
-        __emit 0x45
-        __emit 0x00
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x0c
-        __emit 0x00
-    }
+    ((StringBase<wchar_t> *)this)->StringBase<wchar_t>::StringBase(*(const StringBase<wchar_t> *)&that, start, len);
 }
 
 __declspec(naked) UnicodeString &UnicodeString::operator=(wchar_t c)

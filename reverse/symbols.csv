@@ -4,6 +4,8 @@ name,address,notes
 ??1LayoutFilename@@QAE@XZ,0x00887940
 ??2@YAPAXI@Z,0x00881F30,operator new body
 ??3@YAXPAX@Z,0x00881EB0
+?Collide@CollisionMath@@SA_NABVAABoxClass@@ABVVector3@@ABVTriClass@@PAUCastResultStruct@@@Z,0x008E0C30
+?Contains_Point@TriClass@@QBE_NABVVector3@@@Z,0x008E1900
 ?HideDiplomacy@@YAXXZ,0x000067BC
 ?HideInGameChat@@YAXXZ,0x00019583
 ?HideQuitMenu@@YAXXZ,0x0001BF36

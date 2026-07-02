@@ -177,6 +177,11 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0BoxEmissionVolumeInfo@FXParticleSystem@@QAE@XZ,0x0001A78F,0x005D5E00,23,src/game/fx_particle_system.cpp,matched,default constructor sets vtable and zeros box half-extents
 ??0BoxEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002D402,0x005D5FC0,98,src/game/fx_particle_system.cpp,matched,
 ??0BoxEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@XZ,0x00048A72,0x005D5F40,51,src/game/fx_particle_system_bulk.cpp,matched,
+??0Buffer@@QAE@ABV0@@Z,,0x009E1DD0,23,src/w3d/buff.cpp,matched,
+??0Buffer@@QAE@J@Z,,0x009E1DA0,45,src/w3d/buff.cpp,matched,
+??0Buffer@@QAE@PADJ@Z,,0x009E1D20,49,src/w3d/buff.cpp,matched,
+??0Buffer@@QAE@PAXJ@Z,,0x009E1CE0,49,src/w3d/buff.cpp,matched,
+??0Buffer@@QAE@PBXJ@Z,,0x009E1D60,49,src/w3d/buff.cpp,matched,
 ??0BufferPipe@@QAE@PAXH@Z,,0x009E2010,90,src/w3d/ini.cpp,matched,definite (call-site resolved)
 ??0BufferStraw@@QAE@PBXH@Z,,0x00921730,90,src/w3d/ini.cpp,matched,definite (call-site resolved)
 ??0BufferedFileClass@@QAE@PBD@Z,,0x009E7600,39,src/w3d/bufffile.cpp,matched,
@@ -371,6 +376,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1?$StringBase@G@@AAE@XZ,0x000160F9,0x0005E4E0,6,src/game/string_base.cpp,matched,destroy wide string base
 ??1AsciiString@@QAE@XZ,0x0000D828,0x0005EE90,5,src/game/ascii_string.cpp,matched,AsciiString destructor
 ??1BoxEmissionVolumeInfo@FXParticleSystem@@UAE@XZ,0x0002BFF3,0x005D5E20,7,src/game/fx_particle_system.cpp,matched,resets vtable pointer
+??1Buffer@@QAE@XZ,,0x009E1E30,40,src/w3d/buff.cpp,matched,
 ??1BufferPipe@@UAE@XZ,,0x009E2070,76,src/w3d/ini.cpp,matched,
 ??1BufferStraw@@UAE@XZ,,0x00921790,76,src/w3d/ini.cpp,matched,definite (call-site resolved)
 ??1BufferedFileClass@@UAE@XZ,,0x009E7780,102,src/w3d/bufffile.cpp,matched,
@@ -391,6 +397,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1EmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x0003CF47,0x005BD810,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1EmissionVolumeInfo@FXParticleSystem@@UAE@XZ,0x0004AA61,0x005BD6B0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1EventModuleInfo@FXParticleSystem@@IAE@XZ,0x0002A298,0x0005C8B0,1,src/game/fx_particle_system.cpp,matched,empty protected destructor
+??1FilePipe@@UAE@XZ,,0x009E7DC0,104,src/w3d/xpipe.cpp,matched,
+??1FileStraw@@UAE@XZ,,0x009E1C50,104,src/w3d/xstraw.cpp,matched,
 ??1GenericList@@UAE@XZ,,0x009E2F30,148,src/w3d/ini.cpp,matched,
 ??1GenericNode@@UAE@XZ,,0x009E2DE0,47,src/w3d/ini.cpp,matched,sibling
 ??1GridCullSystemClass@@UAE@XZ,,0x008DCAD0,97,src/w3d/gridcull.cpp,matched,
@@ -402,6 +410,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1ModuleTemplate@FXParticleSystem@@UAE@XZ,0x00015A14,0x0005C7D0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable
 ??1OrthoEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x000346BC,0x005D6D90,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable
 ??1OutwardEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x000206CB,0x005D7B10,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable
+??1Pipe@@UAE@XZ,,0x009E78C0,50,src/w3d/pipe.cpp,matched,
 ??1QuadDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x0001C5CB,0x005D88A0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ,0x000459F8,0x005D8A00,688,src/game/fx_particle_system_bulk.cpp,unmatched,needs destructor wrapper reconciliation
 ??1RawFileClass@@UAE@XZ,,0x009E7080,123,src/w3d/rawfile.cpp,matched,
@@ -411,6 +420,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1Snapshot@@UAE@XZ,0x00001C80,0x0005C520,7,src/game/snapshot.cpp,matched,sets vtable pointer
 ??1SphereEmissionVolumeInfo@FXParticleSystem@@UAE@XZ,0x00028E9D,0x005D6140,7,src/game/fx_particle_system.cpp,matched,resets vtable pointer
 ??1SphericalEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x0001BFDB,0x005D71D0,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable
+??1Straw@@UAE@XZ,,0x009E1A90,50,src/w3d/straw.cpp,matched,
 ??1StreakDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x00049CA1,0x005D85F0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1UnicodeString@@QAE@XZ,0x0003B304,0x0005EEA0,5,src/game/unicode_string.cpp,matched,UnicodeString destructor
 ??1WindModuleInfo@FXParticleSystem@@UAE@XZ,0x0001B31F,0x005BD960,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
@@ -521,6 +531,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4AsciiString@@QAEAAV0@PBD@Z,0x00028BB9,0x00062040,59,src/game/ascii_string.cpp,matched,AsciiString operator=(const char *)
 ??4BoxEmissionVolumeInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0003CD6C,0x5d5e70,39,src/game/fx_particle_system_bulk.cpp,matched,
 ??4BoxEmissionVolumeModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00009A02,0x5d6040,50,src/game/fx_particle_system_bulk.cpp,matched,
+??4Buffer@@QAEAAV0@ABV0@@Z,,0x009E1DF0,51,src/w3d/buff.cpp,matched,
 ??4ButterflyDrawModuleInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0001B6DF,0x005D8B70,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4ButterflyDrawModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00029898,0x005D8D40,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4Coord2D@@QAEAAV0@ABUCoord2DBase@@@Z,0x00038AC3,0x007E5A20,19,src/math/coord2d.cpp,matched,copies x/y from Coord2DBase
@@ -753,10 +764,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Build_Matrix4@@YA?AVMatrix4@@ABVQuaternion@@@Z,,0x008DBE10,286,src/w3d/quat.cpp,matched,
 ?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3@@@Z,,0x008DBB80,330,src/w3d/quat.cpp,matched,
 ?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix4@@@Z,,0x008DBCD0,311,src/w3d/quat.cpp,matched,
-?CRC_Memory@@YAKPBEKK@Z,,0x009E19C0,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_Memory@@YAKPBEKK@Z,,0x009E7F90,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
-?CRC_String@@YAKPBDK@Z,,0x009E1A00,64,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
+?CRC_Memory@@YAKPBEKK@Z,,0x009E19C0,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_String@@YAKPBDK@Z,,0x009E7FD0,64,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
+?CRC_String@@YAKPBDK@Z,,0x009E1A00,64,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_Stringi@@YAKPBDK@Z,,0x009E1A40,76,src/w3d/realcrc.cpp,matched,
 ?Cached_Slerp@@YA?AVQuaternion@@ABV1@0MPAUSlerpInfoStruct@@@Z,,0x008DB8A0,224,src/w3d/quat.cpp,matched,
 ?Cached_Slerp@@YAXABVQuaternion@@0MPAUSlerpInfoStruct@@PAV1@@Z,,0x008DB980,190,src/w3d/quat.cpp,matched,
@@ -830,6 +841,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?DotProduct@VectorProcessorClass@@SAXPAMABVVector3@@PBV2@H@Z,,0x00B008F0,213,src/w3d/vp.cpp,matched,
 ?Dot_Product@Vector3@@SAMABV1@0@Z,,0x001A1C20,29,src/w3d/lineseg.cpp,matched,
 ?DuplicateCRCError@INIClass@@QAEXPBD00@Z,,0x009E2160,90,src/w3d/ini.cpp,matched,
+?End@FilePipe@@UAEHXZ,,0x009E7E30,39,src/w3d/xpipe.cpp,matched,
 ?End_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E17F0,162,src/w3d/chunkio.cpp,matched,
 ?End_Micro_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E1180,81,src/w3d/chunkio.cpp,matched,
 ?Entry_Count@INIClass@@QBEHPBD@Z,,0x009E3790,25,src/w3d/ini.cpp,matched,
@@ -847,9 +859,14 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Find_Point_Closest_To@LineSegClass@@QBE?AVVector3@@ABV2@@Z,,0x008D8990,185,src/w3d/lineseg.cpp,matched,
 ?Find_Section@INIClass@@QBEPAUINISection@@PBD@Z,,0x009E3720,103,src/w3d/ini.cpp,matched,
 ?First@GridListIterator@@QAEXPAVCullableClass@@@Z,,0x008DCE20,12,src/w3d/gridcull.cpp,matched,
+?Flush@Pipe@@UAEHXZ,,0x009E7970,17,src/w3d/pipe.cpp,matched,
 ?Format@StringClass@@QAAHPBDZZ,,0x009DBB90,151,src/w3d/wwstring.cpp,matched,
 ?Format_Args@StringClass@@QAAHPBDABQAD@Z,,0x009DBAF0,151,src/w3d/wwstring.cpp,matched,
 ?Free_String@StringClass@@AAEXXZ,,0x009DB7A0,117,src/w3d/wwstring.cpp,matched,
+?Get@BufferStraw@@UAEHPAXH@Z,,0x009E1B90,82,src/w3d/xstraw.cpp,matched,
+?Get@CacheStraw@@UAEHPAXH@Z,,0x009E7CA0,148,src/w3d/cstraw.cpp,matched,
+?Get@FileStraw@@UAEHPAXH@Z,,0x009E1BF0,93,src/w3d/xstraw.cpp,matched,
+?Get@Straw@@UAEHPAXH@Z,,0x009E1B20,19,src/w3d/straw.cpp,matched,
 ?GetAssetList@ParticleSystemTemplate@FXParticleSystem@@QBEXAAVAssetList@@@Z,0x0004B330,0x0005CBB0,3,src/game/fx_particle_system.cpp,matched,no-op asset list stub
 ?GetKey@FXParticleSystem@@YAPBDW4ModuleCategory@1@@Z,0x0000971E,0x005D4520,12,src/game/fx_particle_system.cpp,matched,lookup category key string
 ?GetLength2D@Coord3D@@QBEMXZ,0x00036D95,0x001A5D70,22,src/math/coord3d.cpp,matched,returns x/y vector length
@@ -899,6 +916,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,,0x008E2160,4,src/w3d/cullsys.cpp,matched,
 ?Get_Float@INIClass@@QBEMPBD0M@Z,,0x009E3AB0,130,src/w3d/ini.cpp,matched,
 ?Get_Float@Random4Class@@QAEMXZ,,0x009E6120,30,src/w3d/random.cpp,matched,verbatim Generals WWLib
+?Get_From@Straw@@UAEXPAV1@@Z,,0x009E1AD0,67,src/w3d/straw.cpp,matched,
 ?Get_Hex@INIClass@@QBEHPBD0H@Z,,0x009E3A60,74,src/w3d/ini.cpp,matched,
 ?Get_Int@INIClass@@QBEHPBD0H@Z,,0x009E39A0,185,src/w3d/ini.cpp,matched,
 ?Get_Int_Bitfield@INIClass@@QAEHPBD0HQAPAD@Z,,0x009E3F50,211,src/w3d/ini.cpp,matched,
@@ -1045,6 +1063,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?PreStaticInit@Debug@@CAPAV1@XZ,0x00889500,0x00889500,114,src/game/debug.cpp,matched,Debug PreStaticInit singleton allocator
 ?Project_To_Axis@AABoxClass@@QBEMABVVector3@@@Z,,0x008D9900,84,src/w3d/colmathaabox.cpp,matched,
 ?Project_To_Axis@OBBoxClass@@QBEMABVVector3@@@Z,,0x008E2330,190,src/w3d/obbox.cpp,matched,
+?Put@BufferPipe@@UAEHPBXH@Z,,0x009E7D60,82,src/w3d/xpipe.cpp,matched,
+?Put@FilePipe@@UAEHPBXH@Z,,0x009E7E60,75,src/w3d/xpipe.cpp,matched,
+?Put@Pipe@@UAEHPBXH@Z,,0x009E7950,21,src/w3d/pipe.cpp,matched,
 ?Put_Bool@INIClass@@QAE_NPBD0_N@Z,,0x009E4120,29,src/w3d/ini.cpp,matched,
 ?Put_Double@INIClass@@QAE_NPBD0N@Z,,0x009E5AD0,64,src/w3d/ini.cpp,matched,
 ?Put_Float@INIClass@@QAE_NPBD0M@Z,,0x009E5A90,64,src/w3d/ini.cpp,matched,
@@ -1055,6 +1076,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Put_Point@INIClass@@QAE_NPBD0ABV?$TPoint3D@M@@@Z,,0x009E4410,80,src/w3d/ini.cpp,matched,
 ?Put_Rect@INIClass@@QAE_NPBD0ABV?$TRect@H@@@Z,,0x009E58F0,73,src/w3d/ini.cpp,matched,
 ?Put_String@INIClass@@QAE_NPBD00@Z,,0x009E3BD0,0,src/w3d/ini.cpp,unmatched,present; MSVC new-expression EH cleanup frame divergence blocks byte match
+?Put_To@Pipe@@UAEXPAV1@@Z,,0x009E7900,75,src/w3d/pipe.cpp,matched,
 ?Put_UUBlock@INIClass@@QAE_NPBD0PBXH@Z,,0x009E54E0,221,src/w3d/ini.cpp,matched,
 ?Quick_Distance@Vector3@@SAMABV1@0@Z,,0x003D53F0,190,src/w3d/vector3.cpp,matched,
 ?Quick_Length@Vector3@@QBEMXZ,,0x003D5320,161,src/w3d/vector3.cpp,matched,
@@ -1068,6 +1090,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,,0x009E26A0,111,src/w3d/ini.cpp,matched,IndexClass sibling (byte-identical to INISection instantiation)
 ?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,,0x009E2730,111,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Reset@BTCollisionStruct@@QAEXXZ,,0x008E5BE0,443,src/w3d/colmathobbtri.cpp,matched,
+?Reset@Buffer@@QAEXXZ,,0x009E1E60,40,src/w3d/buff.cpp,matched,
 ?Reset@CastResultStruct@@QAEXXZ,,0x006098A0,36,src/w3d/colmathaabox.cpp,matched,
 ?Reset@RawFileClass@@IAEXXZ,,0x009E6AB0,49,src/w3d/rawfile.cpp,matched,
 ?Reset_Buffer@BufferedFileClass@@IAEXXZ,,0x009E7750,37,src/w3d/bufffile.cpp,matched,

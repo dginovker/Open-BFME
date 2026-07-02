@@ -81,6 +81,7 @@ name,address,notes
 ?nstrdup@@YAPADPBD@Z,0x009E6410
 ?readUnicodeString@@YA?AVUnicodeString@@PAU_iobuf@@@Z,0x000322F4,shared replay Unicode string reader thunk
 ?set@LayoutFilename@@QAEXPBDH@Z,0x00887D20
+?spin@LockClass@FastCriticalSectionClass@@CIXPAI@Z,0x00026FA8,FastCriticalSectionClass::LockClass spin-acquire (shared out-of-line body reached via ILT thunk); StringClass locks resolve here
 ?strtrim@@YAPADPAD@Z,0x009E7EB0
 ?winBringToTop@GameWindow@@QAEHXZ,0x0000FE66
 ?winGetNextInLayout@GameWindow@@QAEPAV1@XZ,0x0002A414
@@ -99,5 +100,6 @@ __stringbase_isnone_cmp_char,0x00405E8,internal char string none-comparison help
 __stringbase_isnone_cmp_wchar,0x0041F3D,internal wide-char string none-comparison helper
 __stringbase_isnotnone_cmp_char,0x00405E8,internal char string not-none comparison helper
 __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none comparison helper
+_atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin

@@ -60,3 +60,16 @@ void Do_Force_Links(void)
 	FORCE_LINK(tcbspline);
 }
 
+
+/*
+** The table-driven WWMath::Fast_Sin/Fast_Cos/Fast_Acos helpers are declared inline in
+** wwmath.h, but the retail image carries them as standalone out-of-line functions.
+** Taking their addresses here forces MSVC to emit those COMDAT bodies in this translation
+** unit so the byte-matcher can anchor them to WWMath (their natural home). This forcing
+** table itself is not present in the shipped binary -- it exists only to pin the emission.
+*/
+float (* _WWMath_Forced_Fast_Trig[])(float) = {
+	&WWMath::Fast_Sin,
+	&WWMath::Fast_Cos,
+	&WWMath::Fast_Acos,
+};

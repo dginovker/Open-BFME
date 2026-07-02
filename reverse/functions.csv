@@ -378,6 +378,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1?$IndexClass@HPAUINISection@@@@QAE@XZ,,0x009E2D60,32,src/w3d/ini.cpp,matched,IndexClass sibling
 ??1?$Node@PAUINIEntry@@@@UAE@XZ,,0x009E3070,47,src/w3d/ini.cpp,matched,sibling
 ??1?$Node@PAUINISection@@@@UAE@XZ,,0x009E30E0,47,src/w3d/ini.cpp,matched,sibling
+??1?$ObjectPoolClass@VMultiListNodeClass@@$0BAA@@@QAE@XZ,,0x009DBD30,42,src/w3d/multilist.cpp,matched,
 ??1?$StringBase@D@@AAE@XZ,0x00004A34,0x0005E490,5,src/game/string_base.cpp,matched,destroy char string base; size trimmed: trailing int3 padding
 ??1?$StringBase@G@@AAE@XZ,0x000160F9,0x0005E4E0,5,src/game/string_base.cpp,matched,destroy wide string base; size trimmed: trailing int3 padding
 ??1AsciiString@@QAE@XZ,0x0000D828,0x0005EE90,5,src/game/ascii_string.cpp,matched,AsciiString destructor

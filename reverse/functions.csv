@@ -781,8 +781,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Build_Matrix4@@YA?AVMatrix4@@ABVQuaternion@@@Z,,0x008DBE10,286,src/w3d/quat.cpp,matched,
 ?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3@@@Z,,0x008DBB80,330,src/w3d/quat.cpp,matched,
 ?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix4@@@Z,,0x008DBCD0,311,src/w3d/quat.cpp,matched,
-?CRC_Memory@@YAKPBEKK@Z,,0x009E19C0,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_Memory@@YAKPBEKK@Z,,0x009E7F90,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
+?CRC_Memory@@YAKPBEKK@Z,,0x009E19C0,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_String@@YAKPBDK@Z,,0x009E1A00,64,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_String@@YAKPBDK@Z,,0x009E7FD0,64,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_Stringi@@YAKPBDK@Z,,0x009E1A40,76,src/w3d/realcrc.cpp,matched,
@@ -889,11 +889,13 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?First@GenericMultiListIterator@@QAEXPAVGenericMultiListClass@@@Z,,0x006C51C0,15,src/w3d/multilist.cpp,matched,
 ?First@GenericMultiListIterator@@QAEXXZ,,0x006C51E0,9,src/w3d/multilist.cpp,matched,
 ?First@GridListIterator@@QAEXPAVCullableClass@@@Z,,0x008DCE20,12,src/w3d/gridcull.cpp,matched,
+?Flush@Base64Pipe@@UAEHXZ,,0x009E7B20,87,src/w3d/b64pipe.cpp,matched,
 ?Flush@Pipe@@UAEHXZ,,0x009E7970,17,src/w3d/pipe.cpp,matched,
 ?Format@StringClass@@QAAHPBDZZ,,0x009DBB90,151,src/w3d/wwstring.cpp,matched,
 ?Format_Args@StringClass@@QAAHPBDABQAD@Z,,0x009DBAF0,151,src/w3d/wwstring.cpp,matched,
 ?Free_String@StringClass@@AAEXXZ,,0x009DB7A0,117,src/w3d/wwstring.cpp,matched,
 ?Generate@PKey@@SAXAAVStraw@@HAAV1@1@Z,,0x009EB290,715,src/w3d/pk.cpp,matched,
+?Get@Base64Straw@@UAEHPAXH@Z,,0x009E7B80,253,src/w3d/b64straw.cpp,matched,
 ?Get@BufferStraw@@UAEHPAXH@Z,,0x009E1B90,82,src/w3d/xstraw.cpp,matched,
 ?Get@CacheStraw@@UAEHPAXH@Z,,0x009E7CA0,148,src/w3d/cstraw.cpp,matched,
 ?Get@FileStraw@@UAEHPAXH@Z,,0x009E1BF0,93,src/w3d/xstraw.cpp,matched,
@@ -1105,6 +1107,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?PreStaticInit@Debug@@CAPAV1@XZ,0x00889500,0x00889500,114,src/game/debug.cpp,matched,Debug PreStaticInit singleton allocator
 ?Project_To_Axis@AABoxClass@@QBEMABVVector3@@@Z,,0x008D9900,84,src/w3d/colmathaabox.cpp,matched,
 ?Project_To_Axis@OBBoxClass@@QBEMABVVector3@@@Z,,0x008E2330,190,src/w3d/obbox.cpp,matched,
+?Put@Base64Pipe@@UAEHPBXH@Z,,0x009E7990,395,src/w3d/b64pipe.cpp,matched,
 ?Put@BufferPipe@@UAEHPBXH@Z,,0x009E7D60,82,src/w3d/xpipe.cpp,matched,
 ?Put@FilePipe@@UAEHPBXH@Z,,0x009E7E60,75,src/w3d/xpipe.cpp,matched,
 ?Put@Pipe@@UAEHPBXH@Z,,0x009E7950,21,src/w3d/pipe.cpp,matched,
@@ -1130,6 +1133,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Re_Partition@GridCullSystemClass@@UAEXABVVector3@@0M@Z,,0x008DEDA0,575,src/w3d/gridcull.cpp,matched,
 ?Read@BufferedFileClass@@UAEHPAXH@Z,,0x009E7630,272,src/w3d/bufffile.cpp,matched,
 ?Read@RawFileClass@@UAEHPAXH@Z,,0x009E6760,205,src/w3d/rawfile.cpp,matched,
+?Read_Line@@YAHAAVFileClass@@PADHAA_N@Z,,0x009EA6A0,124,src/w3d/readline.cpp,matched,
+?Read_Line@@YAHAAVStraw@@PADHAA_N@Z,,0x009EA560,151,src/w3d/readline.cpp,matched,
+?Read_Line@@YAHAAVStraw@@PAGHAA_N@Z,,0x009EA600,159,src/w3d/readline.cpp,matched,
 ?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,,0x009E26A0,111,src/w3d/ini.cpp,matched,IndexClass sibling (byte-identical to INISection instantiation)
 ?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,,0x009E2730,111,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Reset@BTCollisionStruct@@QAEXXZ,,0x008E5BE0,443,src/w3d/colmathobbtri.cpp,matched,
@@ -1580,6 +1586,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?staticInitModules@FXParticleSystem@@YAXXZ,0x0000261C,0x005EB400,125,src/game/fx_particle_system.cpp,matched,initializes all module category static data
 ?str@?$StringBase@D@@QBEPBDXZ,0x00037F3D,0x0005F270,16,src/game/string_base.cpp,matched,returns pointer to C string data
 ?str@?$StringBase@G@@QBEPBGXZ,0x0002287C,0x0005F290,16,src/game/string_base.cpp,matched,returns c-string
+?strtrim@@YAPADPAD@Z,,0x009E7EB0,102,src/w3d/trim.cpp,matched,
 ?sub@Coord3D@@QAEXPBUCoord3DBase@@@Z,0x00045084,0x000C3CE0,31,src/math/coord3d.cpp,matched,subtracts Coord3DBase pointer
 ?swap@?$StringBase@D@@QAEXAAV1@@Z,0x0002E4E7,0x0006F4E0,17,src/game/string_base.cpp,matched,swap m_data pointers
 ?swap@?$StringBase@G@@QAEXAAV1@@Z,0x000325F1,0x004B22E0,17,src/game/string_base.cpp,matched,swap m_data pointers
@@ -1598,6 +1605,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?unlink_object_from_list@GridCullSystemClass@@IAEXPAPAVCullableClass@@PAV2@@Z,,0x008DD900,65,src/w3d/gridcull.cpp,matched,
 ?validate@?$StringBase@D@@ABEXXZ,0x0001D4A3,0x0005D790,1,src/game/string_base.cpp,matched,no-op string validation
 ?validate@?$StringBase@G@@ABEXXZ,0x000390A9,0x0005D7A0,1,src/game/string_base.cpp,matched,no-op
+?wcstrim@@YAPAGPAG@Z,,0x009E7F20,100,src/w3d/trim.cpp,matched,
 ?width@IRegion2D@@QBEHXZ,0x00029299,0x001A19A0,6,src/math/region.cpp,matched,returns integer width
 ?width@IRegion3D@@QBEHXZ,0x0000D37D,0x007E6F00,6,src/math/region.cpp,matched,returns integer width
 ?width@Region2D@@QBEMXZ,0x00011CB1,0x00160B20,6,src/math/region.cpp,matched,returns float width

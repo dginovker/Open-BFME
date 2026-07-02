@@ -1,26 +1,65 @@
 name,address,notes
+??0Buffer@@QAE@J@Z,0x009E1DA0
+??0Buffer@@QAE@PAXJ@Z,0x009E1CE0,Buffer::Buffer(void*, long)
+??0BufferPipe@@QAE@PAXH@Z,0x009E2010
+??0BufferStraw@@QAE@PBXH@Z,0x00921730
+??0CullSystemClass@@QAE@XZ,0x008E2140
 ??0GameMessage@@QAE@W4Type@0@@Z,0x000359E5,GameMessage::GameMessage(Type) thunk
 ??0GameMessageParser@@QAE@XZ,0x00013FCA,GameMessageParser::GameMessageParser() thunk
+??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
+??1Buffer@@QAE@XZ,0x009E1E60
+??1BufferStraw@@UAE@XZ,0x00921790
+??1CullSystemClass@@UAE@XZ,0x008E2150
+??1FilePipe@@UAE@XZ,0x009E7DC0
+??1FileStraw@@UAE@XZ,0x009E1C50
 ??1LayoutFilename@@QAE@XZ,0x00887940
+??1Pipe@@UAE@XZ,0x009E78C0
+??1Straw@@UAE@XZ,0x009E1A90
+??1file_auto_ptr@@QAE@XZ,0x009DD560
 ??2@YAPAXI@Z,0x00881F30,operator new body
 ??3@YAXPAX@Z,0x00881EB0
 ??AModuleTemplateMap@ModuleFactory@@QAEAAVModuleTemplate@1@ABH@Z,0x0002047D,ModuleFactory::ModuleTemplateMap::operator[] thunk (body 0x001296E0)
 ??_U@YAPAXI@Z,0x00881F30
 ??_V@YAXPAX@Z,0x00881EB0
+?Add_To_Collection@CullSystemClass@@IAEXPAVCullableClass@@@Z,0x008E21D0
 ?Allocate_Object_Memory@?$ObjectPoolClass@VGridLinkClass@@$0BAA@@@QAEPAVGridLinkClass@@XZ,0x008DD970
+?Begin_Chunk@ChunkSaveClass@@QAE_NK@Z,0x009E16F0
 ?Close_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E13E0
+?Collide@CollisionMath@@SA_NABVAABoxClass@@ABVVector3@@ABVTriClass@@PAUCastResultStruct@@@Z,0x008E0C30
+?Contains_Point@TriClass@@QBE_NABVVector3@@@Z,0x008E1900
+?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
+?End_Chunk@ChunkSaveClass@@QAE_NXZ,0x009E17F0
 ?Free_String@StringClass@@AAEXXZ,0x009DB7A0
+?Get@Base64Straw@@UAEHPAXH@Z,0x009E7B80
+?Get_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,0x008E2160
+?Get_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,0x008E2170
+?Get_String@INIClass@@QBEHPBD00PADH@Z,0x009E3DA0
 ?Get_String@StringClass@@AAEXH_N@Z,0x009DB890
 ?HideDiplomacy@@YAXXZ,0x000067BC
 ?HideInGameChat@@YAXXZ,0x00019583
 ?HideQuitMenu@@YAXXZ,0x0001BF36
 ?HideSaveLoadMenu@@YAXXZ,0x0000A416
+?Inv_Sqrt@WWMath@@SIMM@Z,0x00027A43,WWMath::Inv_Sqrt (naked __fastcall) incremental-link thunk (body 0x00131C90); called by Quaternion::Normalize and Axis_To_Quat, owned by wwmath.cpp
+?Load@INIClass@@QAEHAAVStraw@@@Z,0x009E4680
 ?Open_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1380
+?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVFrustumClass@@ABVAABoxClass@@@Z,0x008DB380
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVOBBoxClass@@ABVAABoxClass@@@Z,0x008E2310
+?Put@Base64Pipe@@UAEHPBXH@Z,0x009E7990
+?Put_String@INIClass@@QAE_NPBD00@Z,0x009E3BD0
+?Put_To@Pipe@@UAEXPAV1@@Z,0x009E7900
+?Random_Float@WWMath@@SAMXZ,0x008D8E00
+?Raw_Seek@RawFileClass@@IAEHHH@Z,0x009E6910
 ?Read@ChunkLoadClass@@QAEKPAXK@Z,0x009E15C0
 ?ReleaseWindowLayout@@YAXPAVWindowLayout@@@Z,0x00049AD0
+?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,0x009E26A0
+?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,0x009E2730
 ?ResetInGameChat@@YAXXZ,0x00033A6E
+?Reset_Collection@CullSystemClass@@QAEXXZ,0x008E21C0
+?Search_For_Node@?$IndexClass@HPAUINIEntry@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2E60
+?Search_For_Node@?$IndexClass@HPAUINISection@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2FD0
+?String@CRC@@SAKPBDK@Z,0x009E7FD0
 ?Uninitialised_Grow@StringClass@@AAEXH@Z,0x009DBA70
+?Write@ChunkSaveClass@@QAEKPBXK@Z,0x009E18A0
 ?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z,0x0000B569,GameMessageParser::addArgType thunk
 ?appendBooleanArgument@GameMessage@@QAEX_N@Z,0x000032AB,GameMessage::appendBooleanArgument thunk
 ?appendDrawableIDArgument@GameMessage@@QAEXI@Z,0x000154BF,GameMessage::appendDrawableIDArgument thunk
@@ -39,8 +78,10 @@ name,address,notes
 ?initFromINI@INI@@QAEXPAXPBX@Z,0x008520A0,INI::initFromINI(void*, const void*) body
 ?makeDecoratedNameKey@ModuleFactory@@KAHABVAsciiString@@H@Z,0x0004B439,ModuleFactory::makeDecoratedNameKey thunk (body 0x00126260)
 ?nameToKey@NameKeyGenerator@@QAE?AW4NameKeyType@@PBD@Z,0x0003ADD7
+?nstrdup@@YAPADPBD@Z,0x009E6410
 ?readUnicodeString@@YA?AVUnicodeString@@PAU_iobuf@@@Z,0x000322F4,shared replay Unicode string reader thunk
 ?set@LayoutFilename@@QAEXPBDH@Z,0x00887D20
+?strtrim@@YAPADPAD@Z,0x009E7EB0
 ?winBringToTop@GameWindow@@QAEHXZ,0x0000FE66
 ?winGetNextInLayout@GameWindow@@QAEPAV1@XZ,0x0002A414
 ?winGetPrevInLayout@GameWindow@@QAEPAV1@XZ,0x00005399
@@ -51,6 +92,7 @@ name,address,notes
 _D3DXMatrixInverse@12,0x009FB321
 __CIacos,0x009F7256
 __CIasin,0x009F7D86
+__alloca_probe,0x009F6C60
 __ftol2,0x009F6E38,MSVC float-to-int conversion helper (statically linked CRT)
 __stringbase_isnone_cmp_char,0x00405E8,internal char string none-comparison helper
 __stringbase_isnone_cmp_wchar,0x0041F3D,internal wide-char string none-comparison helper

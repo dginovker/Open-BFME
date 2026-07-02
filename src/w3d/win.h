@@ -22,6 +22,8 @@ typedef long			LONG;
 typedef DWORD *			LPDWORD;
 typedef LONG *			PLONG;
 typedef WORD *			LPWORD;
+typedef unsigned int	UINT;
+typedef void *			HWND;
 
 typedef struct _FILETIME {
 	DWORD dwLowDateTime;
@@ -65,7 +67,15 @@ typedef struct _OVERLAPPED *			LPOVERLAPPED;
 #define FILE_CURRENT			1
 #define FILE_END				2
 
+#define MB_OK					0x00000000L
+#define MB_ICONHAND				0x00000010L
+#define MB_ICONSTOP				MB_ICONHAND
+
 extern "C" {
+
+__declspec(dllimport) void __stdcall OutputDebugStringA(LPCSTR lpOutputString);
+__declspec(dllimport) int __stdcall MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCaption, UINT uType);
+
 
 __declspec(dllimport) HANDLE __stdcall CreateFileA(LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile);
 __declspec(dllimport) BOOL __stdcall CloseHandle(HANDLE hObject);
@@ -83,5 +93,7 @@ __declspec(dllimport) BOOL __stdcall SetFileTime(HANDLE hFile, const FILETIME *l
 }
 
 #define DeleteFile	DeleteFileA
+#define OutputDebugString	OutputDebugStringA
+#define MessageBox			MessageBoxA
 
 #endif // WIN_H

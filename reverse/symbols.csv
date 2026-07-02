@@ -91,10 +91,14 @@ name,address,notes
 ?winSetNextInLayout@GameWindow@@QAEHPAV1@@Z,0x00035CF6
 ?winSetPrevInLayout@GameWindow@@QAEHPAV1@@Z,0x00015FB4
 _D3DXMatrixInverse@12,0x009FB321
+_XMP_Fetch_Prime_Size,0x009E8140
+_XMP_Fetch_Prime_Table,0x009E8130
+_XMP_Is_Small_Prime,0x009E8CA0
 __CIacos,0x009F7256
 __CIasin,0x009F7D86
 __CIpow,0x009F6FB2
 __alloca_probe,0x009F6C60
+__chkstk,0x009F6C60
 __ftol2,0x009F6E38,MSVC float-to-int conversion helper (statically linked CRT)
 __stringbase_isnone_cmp_char,0x00405E8,internal char string none-comparison helper
 __stringbase_isnone_cmp_wchar,0x0041F3D,internal wide-char string none-comparison helper

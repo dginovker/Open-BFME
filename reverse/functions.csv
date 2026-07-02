@@ -2,6 +2,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??$?9D@@YA_NPBDABV?$StringBase@D@@@Z,0x0087F570,0x0087F570,21,src/game/string_base.cpp,matched,operator!= reversed args char
 ??$Binary_Search@UNodeElement@?$IndexClass@HPAUINIEntry@@@@@@YAPAUNodeElement@?$IndexClass@HPAUINIEntry@@@@PAU01@HABU01@@Z,,0x009E2A80,70,src/w3d/ini.cpp,matched,Binary_Search sibling
 ??$Binary_Search@UNodeElement@?$IndexClass@HPAUINISection@@@@@@YAPAUNodeElement@?$IndexClass@HPAUINISection@@@@PAU01@HABU01@@Z,,0x009E2AD0,70,src/w3d/ini.cpp,matched,Binary_Search sibling
+??$Generate_Prime@V?$Int@$0EA@@@@@YA?AV?$Int@$0EA@@@AAVStraw@@HPBV0@@Z,,0x009EAF70,793,src/w3d/pk.cpp,matched,
 ??$Pick_Random_Number@VRandom2Class@@@@YAHAAVRandom2Class@@HH@Z,,0x009E61C0,159,src/w3d/random.cpp,matched,
 ??$Pick_Random_Number@VRandom3Class@@@@YAHAAVRandom3Class@@HH@Z,,0x009E6260,100,src/w3d/random.cpp,matched,
 ??$Pick_Random_Number@VRandom4Class@@@@YAHAAVRandom4Class@@HH@Z,,0x009E62D0,100,src/w3d/random.cpp,matched,
@@ -149,6 +150,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?LIFE_EVENT_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIFE_EVENT_MODULE_NAME@2@3QBDBVLifeEventModule@2@VLifeEventModuleTemplate@2@VParticleLifeEventModule@2@VParticleLifeEventModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,0x0002B1B6,0x5e1e00,32,src/game/fx_particle_system_bulk.cpp,matched,
 ??0?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VParticleTerrainCollisionModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@ABV01@@Z,0x0000B195,0x5e1f50,39,src/game/fx_particle_system_bulk.cpp,matched,
 ??0?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VParticleTerrainCollisionModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,0x00020E23,0x5e1f10,32,src/game/fx_particle_system_bulk.cpp,matched,
+??0?$Int@$0EA@@@QAE@K@Z,,0x009E21D0,25,src/w3d/pk.cpp,matched,
+??0?$Int@$0EA@@@QAE@XZ,,0x009EA760,20,src/w3d/int.cpp,matched,
+??0?$RemainderTable@V?$Int@$0EA@@@@@QAE@ABV?$Int@$0EA@@@@Z,,0x009EAC70,98,src/w3d/pk.cpp,matched,
 ??0?$StringBase@D@@AAE@ABV0@@Z,0x00887B60,0x887b60,121,src/game/string_base.cpp,matched,
 ??0?$StringBase@D@@AAE@ABV0@HH@Z,0x00888F90,0x888f90,37,src/game/string_base.cpp,matched,
 ??0?$StringBase@D@@AAE@D@Z,0x00888B50,0x888b50,35,src/game/string_base.cpp,matched,
@@ -283,6 +287,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x000051C3,0x005D7A80,105,src/game/fx_particle_system_bulk.cpp,matched,
 ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0003C6DC,0x005D7D40,62,src/game/fx_particle_system_bulk.cpp,matched,
 ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x00048DB0,0x005D7C70,106,src/game/fx_particle_system_bulk.cpp,matched,
+??0PKey@@QAE@PBX0@Z,,0x009EAA10,81,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
 ??0PlaneClass@@QAE@ABVVector3@@0@Z,,0x008DAA60,52,src/w3d/colmathline.cpp,matched,
 ??0PlaneClass@@QAE@XZ,,0x00931400,20,src/w3d/frustum.cpp,matched,
 ??0PointEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0000FECA,0x005D5930,62,src/game/fx_particle_system_bulk.cpp,matched,
@@ -611,6 +616,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4UnicodeString@@QAEAAV0@G@Z,0x0003C218,0x00564FD0,31,src/game/unicode_string.cpp,matched,UnicodeString operator=(wchar_t)
 ??4UnicodeString@@QAEAAV0@PBG@Z,0x0002C56B,0x00083D20,53,src/game/unicode_string.cpp,matched,UnicodeString operator=(const wchar_t *)
 ??4WindModuleInfo@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00017F53,0x5bda10,111,src/game/fx_particle_system_bulk.cpp,matched,
+??6?$Int@$0EA@@@QBE?AV0@H@Z,,0x009EA900,70,src/w3d/pk.cpp,matched,
 ??6@YAAAVDebug@@AAV0@ABUICoord2DBase@@@Z,0x0000C82E,0x007E7190,72,src/math/icoord.cpp,matched,Debug output for ICoord2DBase
 ??6@YAAAVDebug@@AAV0@ABUICoord3D@@@Z,0x0003B732,0x007E7370,95,src/math/icoord.cpp,matched,Debug output for ICoord3D
 ??6@YAAAVDebug@@AAV0@ABUIRegion2D@@@Z,0x000361BF,0x007E72B0,142,src/math/region.cpp,matched,Debug output for IRegion2D
@@ -668,6 +674,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??9IRegion2D@@QBE_NABU0@@Z,0x0003E9BE,0x00403B00,65,src/math/region.cpp,matched,compares bounds
 ??A?$IndexClass@HPAUINIEntry@@@@QBEABQAUINIEntry@@ABH@Z,,0x009E34C0,61,src/w3d/ini.cpp,matched,
 ??A?$IndexClass@HPAUINISection@@@@QBEABQAUINISection@@ABH@Z,,0x009E3540,61,src/w3d/ini.cpp,matched,
+??D?$Int@$0EA@@@QBE?AV0@ABV0@@Z,,0x009EAB60,84,src/w3d/pk.cpp,matched,
+??D?$Int@$0EA@@@QBE?AV0@G@Z,,0x009EA8A0,84,src/w3d/pk.cpp,matched,
 ??D@YA?AVQuaternion@@ABV0@0@Z,,0x008DB550,136,src/w3d/quat.cpp,matched,
 ??D@YA?AVVector3@@ABV0@M@Z,,0x001A1B90,37,src/w3d/lineseg.cpp,matched,
 ??D@YA?AVVector3@@MABV0@@Z,,0x003A13B0,37,src/w3d/lineseg.cpp,matched,
@@ -678,15 +686,19 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??DCoord2D@@QBEMABV0@@Z,0x0004A4BC,0x007E5A40,19,src/math/coord2d.cpp,matched,dot product with Coord2D
 ??DCoord3D@@QBEMABUCoord3DBase@@@Z,0x00011F09,0x0018F1C0,27,src/math/coord3d.cpp,matched,dot product with Coord3DBase
 ??DCoord3D@@QBEMABVCoord2D@@@Z,0x00044FE4,0x007E5CF0,19,src/math/coord3d.cpp,matched,dot product with Coord2D
+??G?$Int@$0EA@@@QBE?AV0@G@Z,,0x009EAB00,86,src/w3d/pk.cpp,matched,
 ??G@YA?AVVector3@@ABV0@0@Z,,0x001A1BF0,37,src/w3d/gridcull.cpp,matched,
 ??GVector3@@QBE?AV0@XZ,,0x0020DD70,29,src/w3d/colmathplane.cpp,matched,
+??H?$Int@$0EA@@@QBE?AV0@G@Z,,0x009EA840,87,src/w3d/pk.cpp,matched,
 ??H@YA?AVAsciiString@@V0@ABV0@@Z,0x0000FE52,0x000D1860,137,src/game/ascii_string.cpp,matched,AsciiString + AsciiString
 ??H@YA?AVAsciiString@@V0@D@Z,0x000265E4,0x007E8440,119,src/game/ascii_string.cpp,matched,AsciiString + char
 ??H@YA?AVAsciiString@@V0@PBD@Z,0x00006C5D,0x000CD5D0,132,src/game/ascii_string.cpp,matched,AsciiString + const char*
 ??H@YA?AVVector3@@ABV0@0@Z,,0x001A1BC0,37,src/w3d/gridcull.cpp,matched,
 ??K@YA?AVVector3@@ABV0@M@Z,,0x00710D80,47,src/w3d/vector3.cpp,matched,
+??L?$Int@$0EA@@@QBEGG@Z,,0x009EA9F0,24,src/w3d/pk.cpp,matched,
 ??M@YA_NABV?$StringBase@D@@0@Z,0x0000FAAB,0x00062ED0,24,src/game/string_base.cpp,matched,StringBase<char> less-than
 ??M@YA_NABV?$StringBase@G@@0@Z,0x00005D94,0x0054EB50,24,src/game/string_base.cpp,matched,StringBase<wchar_t> less-than
+??O?$Int@$0EA@@@QBEHABV0@@Z,,0x009EA950,28,src/w3d/pk.cpp,matched,
 ??RRandom2Class@@QAEHXZ,,0x009E5E60,69,src/w3d/random.cpp,matched,
 ??RRandom3Class@@QAEHXZ,,0x009E5ED0,244,src/w3d/random.cpp,matched,verbatim Generals WWLib
 ??RRandom4Class@@QAEHXZ,,0x009E6020,253,src/w3d/random.cpp,matched,verbatim Generals WWLib (Mersenne twister)
@@ -694,6 +706,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??XCoord2D@@QAEAAV0@M@Z,0x00019C31,0x0014FF90,23,src/math/coord2d.cpp,matched,scales x/y in place
 ??XCoord3D@@QAEAAV0@M@Z,0x00002A13,0x0016A290,33,src/math/coord3d.cpp,matched,scales x/y/z in place
 ??XMatrix4D@@QAEAAV0@M@Z,0x0002C7EB,0x007E66E0,163,src/math/matrix4d.cpp,matched,scales matrix values in place
+??Y?$Int@$0EA@@@QAEAAV0@ABV0@@Z,,0x009EA810,33,src/w3d/pk.cpp,matched,
 ??YAsciiString@@QAEAAV0@ABV0@@Z,0x000125E4,0x000D1810,63,src/game/ascii_string.cpp,matched,append AsciiString
 ??YAsciiString@@QAEAAV0@ABVUnicodeString@@@Z,0x00889140,0x00889140,73,src/game/ascii_string.cpp,matched,AsciiString operator+=(const UnicodeString&)
 ??YAsciiString@@QAEAAV0@D@Z,0x00013B83,0x00192A60,31,src/game/ascii_string.cpp,matched,AsciiString operator+=(char)
@@ -815,6 +828,12 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Create@RawFileClass@@UAEHXZ,,0x009E65A0,56,src/w3d/rawfile.cpp,matched,
 ?CrossProduct@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x00022557,0x00232100,61,src/math/coord3d.cpp,matched,
 ?Cross_Product@Vector3@@SAXABV1@0PAV1@@Z,,0x001A1CA0,59,src/w3d/colmathobbobb.cpp,matched,
+?Crypt_Block_Size@PKey@@QBEHXZ,,0x009EA740,18,src/w3d/pk.cpp,matched,
+?DERDecode@?$Int@$0EA@@@QAEXPBE@Z,,0x009EA790,19,src/w3d/pk.cpp,matched,ghidra-unknown callee + identical DEREncode wrapper; disambiguated by call target; build.sh exact
+?DEREncode@?$Int@$0EA@@@QBEHPAE@Z,,0x009E21F0,19,src/w3d/pk.cpp,matched,ghidra-unknown callee + identical DERDecode wrapper; disambiguated by call target; build.sh exact
+?Decode_Exponent@PKey@@QAEXPAX@Z,,0x009EAAE0,25,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
+?Decode_Modulus@PKey@@QAEXPAX@Z,,0x009EAAB0,38,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
+?Decrypt@PKey@@QBEHPBXHPAX@Z,,0x009EAE10,339,src/w3d/pk.cpp,matched,
 ?Delete@?$List@PAUINIEntry@@@@QAEXXZ,,0x009E2600,38,src/w3d/ini.cpp,matched,List sibling
 ?Delete@?$List@PAUINISection@@@@QAEXXZ,,0x009E2630,38,src/w3d/ini.cpp,matched,List sibling
 ?Delete@RawFileClass@@UAEHXZ,,0x009E68B0,92,src/w3d/rawfile.cpp,matched,
@@ -841,6 +860,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?DotProduct@VectorProcessorClass@@SAXPAMABVVector3@@PBV2@H@Z,,0x00B008F0,213,src/w3d/vp.cpp,matched,
 ?Dot_Product@Vector3@@SAMABV1@0@Z,,0x001A1C20,29,src/w3d/lineseg.cpp,matched,
 ?DuplicateCRCError@INIClass@@QAEXPBD00@Z,,0x009E2160,90,src/w3d/ini.cpp,matched,
+?Encode_Exponent@PKey@@QBEHPAX@Z,,0x009EAA90,32,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
+?Encode_Modulus@PKey@@QBEHPAX@Z,,0x009EAA70,26,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
+?Encrypt@PKey@@QBEHPBXHPAX@Z,,0x009EACE0,299,src/w3d/pk.cpp,matched,
 ?End@FilePipe@@UAEHXZ,,0x009E7E30,39,src/w3d/xpipe.cpp,matched,
 ?End_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E17F0,162,src/w3d/chunkio.cpp,matched,
 ?End_Micro_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E1180,81,src/w3d/chunkio.cpp,matched,
@@ -863,6 +885,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Format@StringClass@@QAAHPBDZZ,,0x009DBB90,151,src/w3d/wwstring.cpp,matched,
 ?Format_Args@StringClass@@QAAHPBDABQAD@Z,,0x009DBAF0,151,src/w3d/wwstring.cpp,matched,
 ?Free_String@StringClass@@AAEXXZ,,0x009DB7A0,117,src/w3d/wwstring.cpp,matched,
+?Generate@PKey@@SAXAAVStraw@@HAAV1@1@Z,,0x009EB290,715,src/w3d/pk.cpp,matched,
 ?Get@BufferStraw@@UAEHPAXH@Z,,0x009E1B90,82,src/w3d/xstraw.cpp,matched,
 ?Get@CacheStraw@@UAEHPAXH@Z,,0x009E7CA0,148,src/w3d/cstraw.cpp,matched,
 ?Get@FileStraw@@UAEHPAXH@Z,,0x009E1BF0,93,src/w3d/xstraw.cpp,matched,
@@ -945,6 +968,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Z_Rotation@Matrix3D@@QBEMXZ,,0x008D68A0,8,src/w3d/matrix3d.cpp,matched,
 ?Increase_Table_Size@?$IndexClass@HPAUINIEntry@@@@AAE_NH@Z,,0x009E2820,217,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Increase_Table_Size@?$IndexClass@HPAUINISection@@@@AAE_NH@Z,,0x009E2950,217,src/w3d/ini.cpp,matched,IndexClass sibling
+?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z,,0x009EA980,104,src/w3d/pk.cpp,matched,
 ?Init@AABTIntersectStruct@@QAEXABVAABoxClass@@ABVTriClass@@@Z,,0x008DF420,282,src/w3d/colmathaabtri.cpp,matched,
 ?Init@AABoxClass@@QAEXABVMinMaxAABoxClass@@@Z,,0x006CA330,152,src/w3d/aabox.cpp,matched,
 ?Init@AABoxClass@@QAEXABVVector3@@0@Z,,0x00725F00,44,src/w3d/cullsys.cpp,matched,
@@ -964,6 +988,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Intersection_Test@CollisionMath@@SA_NABVOBBoxClass@@ABVAABoxClass@@@Z,,0x008E3600,164,src/w3d/colmathobbobb.cpp,matched,
 ?Intersection_Test@CollisionMath@@SA_NABVOBBoxClass@@ABVTriClass@@@Z,,0x008E85F0,3495,src/w3d/colmathobbtri.cpp,matched,
 ?Inv_Sqrt@WWMath@@SIMM@Z,,0x00131C90,82,src/w3d/colmathaabox.cpp,matched,
+?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z,,0x009EAC20,79,src/w3d/pk.cpp,matched,
 ?Inverse@Matrix4D@@QAEMXZ,0x00023f47,0x007e7d10,1060,src/math/matrix4d.cpp,matched,
 ?Inverse_Rotate_Vector@Matrix3D@@QBE?AVVector3@@ABV2@@Z,,0x008D6910,81,src/w3d/matrix3d.cpp,matched,
 ?IsCRC@Xfer@@UBE_NXZ,0x0001BE7D,0x007E7690,3,src/game/xfer.cpp,matched,returns false
@@ -1059,6 +1084,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVPlaneClass@@ABVVector3@@@Z,,0x008DB1F0,82,src/w3d/colmathplane.cpp,matched,
 ?Peek_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,,0x008E2190,4,src/w3d/cullsys.cpp,matched,
 ?Peek_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,,0x008E21A0,19,src/w3d/cullsys.cpp,matched,
+?Plain_Block_Size@PKey@@QBEHXZ,,0x009EA720,17,src/w3d/pk.cpp,matched,
 ?Power@VectorProcessorClass@@SAXPAM0MH@Z,,0x00B00190,56,src/w3d/vp.cpp,matched,
 ?PreStaticInit@Debug@@CAPAV1@XZ,0x00889500,0x00889500,114,src/game/debug.cpp,matched,Debug PreStaticInit singleton allocator
 ?Project_To_Axis@AABoxClass@@QBEMABVVector3@@@Z,,0x008D9900,84,src/w3d/colmathaabox.cpp,matched,
@@ -1081,6 +1107,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Quick_Distance@Vector3@@SAMABV1@0@Z,,0x003D53F0,190,src/w3d/vector3.cpp,matched,
 ?Quick_Length@Vector3@@QBEMXZ,,0x003D5320,161,src/w3d/vector3.cpp,matched,
 ?Random_Float@WWMath@@SAMXZ,,0x008D8E00,26,src/w3d/wwmath.cpp,matched,
+?Randomize@?$Int@$0EA@@@QAEXAAVStraw@@ABV1@1@Z,,0x009EA7D0,40,src/w3d/pk.cpp,matched,
 ?Raw_Seek@RawFileClass@@IAEHHH@Z,,0x009E6910,115,src/w3d/rawfile.cpp,matched,
 ?Re_Orthogonalize@Matrix3@@QAEXXZ,,0x008D96B0,525,src/w3d/matrix3.cpp,matched,
 ?Re_Orthogonalize@Matrix3D@@QAEXXZ,,0x008D8260,534,src/w3d/matrix3d.cpp,matched,
@@ -1208,9 +1235,11 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Write@ChunkSaveClass@@QAEKABUIOVector3Struct@@@Z,,0x009E1920,15,src/w3d/chunkio.cpp,matched,
 ?Write@ChunkSaveClass@@QAEKPBXK@Z,,0x009E18A0,98,src/w3d/chunkio.cpp,matched,
 ?Write@RawFileClass@@UAEHPBXH@Z,,0x009E6CA0,302,src/w3d/rawfile.cpp,matched,
+?XMP_Hybrid_Mul@@YAXPAG0GH@Z,,0x009E8A70,76,src/w3d/mpmath.cpp,matched,
 ?XferEnum@Xfer@@UAEAAV1@PBDPAXI@Z,0x009D67B0,0x009D67B0,196,src/game/xfer.cpp,matched,xfer enum
 ?XferRawBytes@Xfer@@UAEAAV1@PAXI@Z,0x009D63C0,0x009D63C0,67,src/game/xfer.cpp,matched,xfer raw bytes
 ?_Allocate@MemoryPool@@YAPAXIW4AllocType@1@@Z,0x00882960,0x00882960,433,src/game/memory_pool.cpp,matched,allocate block from pool
+?_Byte_Precision@@YAHK@Z,,0x009E8150,34,src/w3d/mpmath.cpp,matched,
 ?_Exit@MemoryPool@@YAXXZ,0x00882950,0x00882950,6,src/game/memory_pool.cpp,matched,decrements reference count
 ?_Free@MemoryPool@@YAXPAXW4AllocType@1@@Z,0x00882BA0,0x00882BA0,358,src/game/memory_pool.cpp,matched,free pool block
 ?_GetBlockSize@MemoryPool@@YAIPAX@Z,0x00882D40,0x00882D40,13,src/game/memory_pool.cpp,matched,returns block size or zero for null
@@ -1294,6 +1323,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?eval_overlap_mask@CollisionMath@@CA?AW4OverlapType@1@H@Z,,0x008E1A40,37,src/w3d/colmathplane.cpp,matched,
 ?eval_side@@YAMMH@Z,,0x008E5BA0,61,src/w3d/colmathobbtri.cpp,matched,
 ?eval_side@@YAMMM@Z,,0x008E2920,53,src/w3d/colmathobbobb.cpp,matched,
+?exp_b_mod_c@?$Int@$0EA@@@QBE?AV1@ABV1@0@Z,,0x009EABC0,92,src/w3d/pk.cpp,matched,
 ?expandBy@IRegion2D@@QAEXABUICoord2D@@@Z,0x000466E6,0x007E82F0,47,src/math/region.cpp,matched,expands integer x/y bounds to include point
 ?expandBy@IRegion3D@@QAEXABUICoord3D@@@Z,0x00001091,0x007E83C0,68,src/math/region.cpp,matched,expands integer x/y/z bounds to include point
 ?expandBy@Region2D@@QAEXABVCoord2D@@@Z,0x00034207,0x007E8290,76,src/math/region.cpp,matched,expands float x/y bounds to include point
@@ -1433,6 +1463,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?map_indices_to_address@GridCullSystemClass@@IAEHHHH@Z,,0x008DCF80,23,src/w3d/gridcull.cpp,matched,
 ?map_point_to_address@GridCullSystemClass@@IAE_NABVVector3@@AAH@Z,,0x008DDB20,184,src/w3d/gridcull.cpp,matched,
 ?map_point_to_cell@GridCullSystemClass@@IAE_NABVVector3@@AAH11@Z,,0x008DCED0,173,src/w3d/gridcull.cpp,matched,
+?memrev@@YAXPADI@Z,,0x009E8C50,33,src/w3d/mpmath.cpp,matched,
+?mp_quo_digit@@YAGPAG@Z,,0x009E8BC0,129,src/w3d/mpmath.cpp,matched,
 ?mulVector3Array@Matrix3D@@QBEXPBVVector3@@PAV2@H@Z,,0x00918680,112,src/w3d/vp.cpp,matched,
 ?nextToken@?$StringBase@D@@QAE_NPAV1@PBD@Z,0x008880E0,0x8880e0,186,src/game/string_base.cpp,matched,
 ?nextToken@?$StringBase@G@@QAE_NPAV1@PBG@Z,0x008889B0,0x8889b0,197,src/game/string_base.cpp,matched,
@@ -1480,6 +1512,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?parseEventFXListName@TerrainCollisionModuleTemplate@FXParticleSystem@@SAXPAVINI@@PAX1PBX@Z,0x0002F74D,0x5fcee0,13,src/game/fx_particle_system_bulk.cpp,matched,
 ?peek@?$StringBase@D@@ABEPADXZ,0x0002B26A,0x0005E5B0,6,src/game/string_base.cpp,matched,returns pointer to data
 ?peek@?$StringBase@G@@ABEPAGXZ,0x0002264C,0x0005E5C0,6,src/game/string_base.cpp,matched,returns pointer to data
+?pfunc@@YAHPBX0@Z,,0x009E8C80,30,src/w3d/mpmath.cpp,matched,
 ?project_to_sphere@@YAMMMM@Z,,0x008DC200,105,src/w3d/quat.cpp,matched,
 ?rad2deg@@YAMM@Z,0x00008BF2,0x007E5950,11,src/math/trig.cpp,matched,converts radians to degrees
 ?readArgument@RecorderClass@@IAEXW4GameMessageArgumentDataType@@PAVGameMessage@@@Z,0x0000139D,0x97500,520,src/game/recorder_strings.cpp,matched,
@@ -1575,4 +1608,57 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?zero@Coord3D@@QAEXXZ,0x00029226,0x00083340,11,src/math/coord3d.cpp,matched,sets x/y/z to zero
 ?zero@ICoord3D@@QAEXXZ,0x000268C3,0x0045B890,11,src/math/icoord.cpp,matched,sets x/y/z to zero
 ?zero@Region3D@@QAEXXZ,0x0003652F,0x000BEC60,20,src/math/region.cpp,matched,sets bounds to zero
+_XMP_Abs,,0x009E90C0,60,src/w3d/mpmath.cpp,matched,
+_XMP_Add,,0x009E8820,94,src/w3d/mpmath.cpp,matched,
+_XMP_Add_Int,,0x009E8880,82,src/w3d/mpmath.cpp,matched,
+_XMP_Bits_To_Digits,,0x009E8220,17,src/w3d/mpmath.cpp,matched,
+_XMP_Bits_To_Mask,,0x009E8240,33,src/w3d/mpmath.cpp,matched,
+_XMP_Compare,,0x009E87E0,60,src/w3d/mpmath.cpp,matched,
+_XMP_Count_Bits,,0x009E8740,70,src/w3d/mpmath.cpp,matched,
+_XMP_Count_Bytes,,0x009E8790,34,src/w3d/mpmath.cpp,matched,
+_XMP_DER_Decode,,0x009E8FA0,84,src/w3d/mpmath.cpp,matched,
+_XMP_DER_Encode,,0x009E8F40,89,src/w3d/mpmath.cpp,matched,
+_XMP_DER_Length_Encode,,0x009E8180,131,src/w3d/mpmath.cpp,matched,
+_XMP_Dec,,0x009E8440,25,src/w3d/mpmath.cpp,matched,
+_XMP_Decode_ASCII,,0x009E9B30,338,src/w3d/mpmath.cpp,matched,
+_XMP_Digits_To_Bits,,0x009E8210,8,src/w3d/mpmath.cpp,matched,
+_XMP_Double_Mul,,0x009E8AC0,73,src/w3d/mpmath.cpp,matched,
+_XMP_Encode,,0x009E82E0,132,src/w3d/mpmath.cpp,matched,
+_XMP_Encode_Bounded,,0x009E9000,141,src/w3d/mpmath.cpp,matched,
+_XMP_Exponent_Mod,,0x009E9F60,627,src/w3d/mpmath.cpp,matched,
+_XMP_Fermat_Test,,0x009EA1E0,233,src/w3d/mpmath.cpp,matched,
+_XMP_Inc,,0x009E8420,19,src/w3d/mpmath.cpp,matched,
+_XMP_Init,,0x009E8720,23,src/w3d/mpmath.cpp,matched,
+_XMP_Inverse_A_Mod_B,,0x009E9740,508,src/w3d/mpmath.cpp,matched,
+_XMP_Is_Negative,,0x009E8270,22,src/w3d/mpmath.cpp,matched,
+_XMP_Is_Prime,,0x009EA510,75,src/w3d/mpmath.cpp,matched,
+_XMP_Is_Small_Prime,,0x009E8CA0,87,src/w3d/mpmath.cpp,matched,
+_XMP_Mod_Mult,,0x009E9E00,347,src/w3d/mpmath.cpp,matched,
+_XMP_Mod_Mult_Clear,,0x009E8B10,162,src/w3d/mpmath.cpp,matched,
+_XMP_Move,,0x009E87C0,19,src/w3d/mpmath.cpp,matched,
+_XMP_Neg,,0x009E9090,45,src/w3d/mpmath.cpp,matched,
+_XMP_Not,,0x009E8700,29,src/w3d/mpmath.cpp,matched,
+_XMP_Prepare_Modulus,,0x009E9C90,355,src/w3d/mpmath.cpp,matched,
+_XMP_Rabin_Miller_Test,,0x009EA2D0,562,src/w3d/mpmath.cpp,matched,
+_XMP_Randomize,,0x009E8D70,97,src/w3d/mpmath.cpp,matched,
+_XMP_Randomize_Bounded,,0x009E8DE0,297,src/w3d/mpmath.cpp,matched,
+_XMP_Reciprocal,,0x009E9940,485,src/w3d/mpmath.cpp,matched,
+_XMP_Rotate_Left,,0x009E86C0,57,src/w3d/mpmath.cpp,matched,
+_XMP_Set_Bit,,0x009E8290,29,src/w3d/mpmath.cpp,matched,
+_XMP_Shift_Left_Bits,,0x009E8580,320,src/w3d/mpmath.cpp,matched,
+_XMP_Shift_Right_Bits,,0x009E8460,280,src/w3d/mpmath.cpp,matched,
+_XMP_Signed_Decode,,0x009E8370,77,src/w3d/mpmath.cpp,matched,
+_XMP_Signed_Div,,0x009E95D0,360,src/w3d/mpmath.cpp,matched,
+_XMP_Signed_Mult,,0x009E9300,324,src/w3d/mpmath.cpp,matched,
+_XMP_Signed_Mult_Int,,0x009E9230,202,src/w3d/mpmath.cpp,matched,
+_XMP_Significance,,0x009E8400,27,src/w3d/mpmath.cpp,matched,
+_XMP_Small_Divisors_Test,,0x009E8D00,97,src/w3d/mpmath.cpp,matched,
+_XMP_Sub,,0x009E88E0,69,src/w3d/mpmath.cpp,matched,
+_XMP_Sub_Int,,0x009E8930,68,src/w3d/mpmath.cpp,matched,
+_XMP_Test_Eq_Int,,0x009E8F10,48,src/w3d/mpmath.cpp,matched,
+_XMP_Unsigned_Decode,,0x009E83C0,59,src/w3d/mpmath.cpp,matched,
+_XMP_Unsigned_Div,,0x009E9450,382,src/w3d/mpmath.cpp,matched,
+_XMP_Unsigned_Div_Int,,0x009E89C0,176,src/w3d/mpmath.cpp,matched,
+_XMP_Unsigned_Mult,,0x009E9100,298,src/w3d/mpmath.cpp,matched,
+_XMP_Unsigned_Mult_Int,,0x009E8980,61,src/w3d/mpmath.cpp,matched,
 _powf,,0x00097070,14,src/w3d/vp.cpp,matched,

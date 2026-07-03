@@ -357,6 +357,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0StringClass@@QAE@ABV0@_N@Z,,0x008FF470,132,src/w3d/ffactory.cpp,matched,
 ??0StringClass@@QAE@H_N@Z,,0x0013A010,43,src/w3d/ffactory.cpp,matched,
 ??0StringClass@@QAE@_N@Z,,0x00972B50,42,src/w3d/ffactory.cpp,matched,
+??0SysTimeClass@@QAE@XZ,,0x009E64B0,28,src/w3d/systimer.cpp,matched,
 ??0TextureMapperClass@@QAE@ABV0@@Z,,0x00964490,28,src/w3d/mapper.cpp,matched,
 ??0TextureMapperClass@@QAE@I@Z,,0x009645D0,34,src/w3d/mapper.cpp,matched,
 ??0UnicodeString@@QAE@ABV0@@Z,0x00025E28,0x000682C0,19,src/game/unicode_string.cpp,matched,UnicodeString copy constructor
@@ -475,6 +476,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1SphericalEmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x0001BFDB,0x005D71D0,7,src/game/fx_particle_system.cpp,matched,empty dtor resets to EmissionVelocityInfo vtable
 ??1Straw@@UAE@XZ,,0x009E1A90,50,src/w3d/straw.cpp,matched,
 ??1StreakDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x00049CA1,0x005D85F0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
+??1SysTimeClass@@QAE@XZ,,0x009E64D0,9,src/w3d/systimer.cpp,matched,weak needle (dllimport call dominates); dtor at cluster addr; build.sh exact
 ??1UnicodeString@@QAE@XZ,0x0003B304,0x0005EEA0,5,src/game/unicode_string.cpp,matched,UnicodeString destructor
 ??1WindModuleInfo@FXParticleSystem@@UAE@XZ,0x0001B31F,0x005BD960,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1WindowLayout@@UAE@XZ,,0x00497CC0,14,src/game/window_layout.cpp,matched,virtual dtor; tail-jmps member string dtor
@@ -1093,6 +1095,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Is_Empty@StringClass@@QBE_NXZ,,0x0090C6D0,19,src/w3d/ffactory.cpp,matched,
 ?Is_Empty@VolumeStruct@GridCullSystemClass@@QBE_NXZ,,0x008DD710,38,src/w3d/gridcull.cpp,matched,
 ?Is_Full_Path@@YA_NPBD@Z,,0x009DD5F0,40,src/w3d/ffactory.cpp,matched,
+?Is_Getting_Late@SysTimeClass@@QAE_NXZ,,0x009E6500,76,src/w3d/systimer.cpp,matched,
 ?Is_In_List@GenericMultiListClass@@QAE_NPAVMultiListObjectClass@@@Z,,0x009DBD80,38,src/w3d/multilist.cpp,matched,
 ?Is_Loaded@INIClass@@QBE_NXZ,,0x009E24C0,51,src/w3d/ini.cpp,matched,
 ?Is_Open@RawFileClass@@UBE_NXZ,,0x009E6550,12,src/w3d/rawfile.cpp,matched,
@@ -1226,6 +1229,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Reset@RotateTextureMapperClass@@UAEXXZ,,0x00964C10,16,src/w3d/mapper.cpp,matched,
 ?Reset@SineLinearOffsetTextureMapperClass@@UAEXXZ,,0x00964F30,16,src/w3d/mapper.cpp,matched,
 ?Reset@StepLinearOffsetTextureMapperClass@@UAEXXZ,,0x009651C0,20,src/w3d/mapper.cpp,matched,
+?Reset@SysTimeClass@@QAEXXZ,,0x009E64E0,18,src/w3d/systimer.cpp,matched,
 ?Reset@ZigZagLinearOffsetTextureMapperClass@@UAEXXZ,,0x00965560,16,src/w3d/mapper.cpp,matched,
 ?Reset_Buffer@BufferedFileClass@@IAEXXZ,,0x009E7750,37,src/w3d/bufffile.cpp,matched,
 ?Reset_Collection@CullSystemClass@@QAEXXZ,,0x008E21C0,8,src/w3d/cullsys.cpp,matched,

@@ -252,6 +252,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0GridWSEnvMapperClass@@QAE@ABV0@@Z,,0x00969710,33,src/w3d/mapper.cpp,matched,
 ??0GridWSEnvMapperClass@@QAE@ABVINIClass@@PBDI@Z,,0x00969740,171,src/w3d/mapper.cpp,matched,
 ??0GridWSEnvMapperClass@@QAE@MIIIW4AxisType@0@I@Z,,0x00969680,88,src/w3d/mapper.cpp,matched,
+??0HashTableClass@@QAE@H@Z,,0x009E0060,55,src/w3d/hash.cpp,matched,
 ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002DB50,0x005D7560,39,src/game/fx_particle_system.cpp,matched,
 ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0002BF67,0x005D74F0,32,src/game/fx_particle_system.cpp,matched,
 ??0ICoord2D@@QAE@ABUICoord2DBase@@@Z,0x00001EB0,0x0008AA60,19,src/math/icoord.cpp,matched,copies x/y from ICoord2DBase
@@ -451,6 +452,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1GenericMultiListClass@@UAE@XZ,,0x009DBD20,7,src/w3d/multilist.cpp,matched,
 ??1GenericNode@@UAE@XZ,,0x009E2DE0,47,src/w3d/ini.cpp,matched,sibling
 ??1GridCullSystemClass@@UAE@XZ,,0x008DCAD0,97,src/w3d/gridcull.cpp,matched,
+??1HashTableClass@@QAE@XZ,,0x009DFFC0,28,src/w3d/hash.cpp,matched,
 ??1INIClass@@UAE@XZ,,0x009E45F0,138,src/w3d/ini.cpp,matched,
 ??1INISection@@UAE@XZ,,0x009E3220,190,src/w3d/ini.cpp,matched,
 ??1LightningDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x000121B1,0x005D8EF0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
@@ -810,6 +812,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Add@Coord3D@@QAEAAV1@ABUCoord3DBase@@ABVCoord2D@@@Z,0x0001AE3D,0x007E5F20,34,src/math/coord3d.cpp,matched,adds Coord3DBase and Coord2D
 ?Add@Coord3D@@QAEAAV1@ABVCoord2D@@@Z,0x00023452,0x007E5EB0,24,src/math/coord3d.cpp,matched,adds Coord2D x/y
 ?Add@Coord3D@@QAEAAV1@ABVCoord2D@@ABUCoord3DBase@@@Z,0x0001F802,0x007E5EF0,34,src/math/coord3d.cpp,matched,adds Coord2D and Coord3DBase
+?Add@HashTableClass@@QAEXPAVHashableClass@@@Z,,0x009E00A0,51,src/w3d/hash.cpp,matched,
 ?Add@Vector3@@SAXABV1@0PAV1@@Z,,0x004106B0,37,src/w3d/colmathobbobb.cpp,matched,
 ?Add_Box@MinMaxAABoxClass@@QAEXABVAABoxClass@@@Z,,0x00979230,237,src/w3d/aabox.cpp,matched,
 ?Add_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABHABQAUINIEntry@@@Z,,0x009E2D00,81,src/w3d/ini.cpp,matched,IndexClass sibling
@@ -819,6 +822,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Add_Size@MicroChunkHeader@@QAEXE@Z,,0x009E17B0,15,src/w3d/chunkio.cpp,matched,
 ?Add_Tail@GenericList@@QAEXPAVGenericNode@@@Z,,0x009E2A30,78,src/w3d/ini.cpp,matched,
 ?Add_To_Collection@CullSystemClass@@IAEXPAVCullableClass@@@Z,,0x008E21D0,16,src/w3d/cullsys.cpp,matched,
+?Advance_Next@HashTableIteratorClass@@AAEXXZ,,0x009E0030,42,src/w3d/hash.cpp,matched,
 ?Allocate_Buffer@StringClass@@AAEPADH@Z,,0x009DB750,33,src/w3d/wwstring.cpp,matched,
 ?Append_Sub_Directory@SimpleFileFactoryClass@@QAEXPBD@Z,,0x009DDA50,249,src/w3d/ffactory.cpp,matched,
 ?Attach@RawFileClass@@UAEXPAXH@Z,,0x009E7020,84,src/w3d/rawfile.cpp,matched,
@@ -832,8 +836,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Build_Matrix4@@YA?AVMatrix4@@ABVQuaternion@@@Z,,0x008DBE10,286,src/w3d/quat.cpp,matched,
 ?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3@@@Z,,0x008DBB80,330,src/w3d/quat.cpp,matched,
 ?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix4@@@Z,,0x008DBCD0,311,src/w3d/quat.cpp,matched,
-?CRC_Memory@@YAKPBEKK@Z,,0x009E7F90,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_Memory@@YAKPBEKK@Z,,0x009E19C0,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
+?CRC_Memory@@YAKPBEKK@Z,,0x009E7F90,53,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_String@@YAKPBDK@Z,,0x009E1A00,64,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_String@@YAKPBDK@Z,,0x009E7FD0,64,src/w3d/realcrc.cpp,matched,realcrc TU linked twice
 ?CRC_Stringi@@YAKPBDK@Z,,0x009E1A40,76,src/w3d/realcrc.cpp,matched,
@@ -941,6 +945,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Fast_Cos@WWMath@@SAMM@Z,,0x007A6380,174,src/w3d/wwmath.cpp,matched,force-emit anchor
 ?Fast_Is_Float_Positive@WWMath@@SA_NABM@Z,,0x008DB180,15,src/w3d/colmathfrustum.cpp,matched,
 ?Fast_Sin@WWMath@@SAMM@Z,,0x00723E50,168,src/w3d/wwmath.cpp,matched,force-emit anchor
+?Find@HashTableClass@@QAEPAVHashableClass@@PBD@Z,,0x009E0150,89,src/w3d/hash.cpp,matched,
 ?Find_Dominant_Plane@TriClass@@QBEXPAH0@Z,,0x008E1830,195,src/w3d/tri.cpp,matched,
 ?Find_Entry@INIClass@@QBEPAUINIEntry@@PBD0@Z,,0x009E3970,34,src/w3d/ini.cpp,matched,
 ?Find_Entry@INISection@@QBEPAUINIEntry@@PBD@Z,,0x009E3800,90,src/w3d/ini.cpp,matched,
@@ -950,6 +955,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?First@GenericMultiListIterator@@QAEXPAVGenericMultiListClass@@@Z,,0x006C51C0,15,src/w3d/multilist.cpp,matched,
 ?First@GenericMultiListIterator@@QAEXXZ,,0x006C51E0,9,src/w3d/multilist.cpp,matched,
 ?First@GridListIterator@@QAEXPAVCullableClass@@@Z,,0x008DCE20,12,src/w3d/gridcull.cpp,matched,
+?First@HashTableIteratorClass@@QAEXXZ,,0x009E01F0,93,src/w3d/hash.cpp,matched,
 ?Flush@Base64Pipe@@UAEHXZ,,0x009E7B20,87,src/w3d/b64pipe.cpp,matched,
 ?Flush@Pipe@@UAEHXZ,,0x009E7970,17,src/w3d/pipe.cpp,matched,
 ?Format@StringClass@@QAAHPBDZZ,,0x009DBB90,151,src/w3d/wwstring.cpp,matched,
@@ -1040,6 +1046,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Y_Rotation@Matrix3D@@QBEMXZ,,0x008D6890,9,src/w3d/matrix3d.cpp,matched,
 ?Get_Y_Vector@Matrix3D@@QBE?AVVector3@@XZ,,0x001BD810,24,src/w3d/frustum.cpp,matched,
 ?Get_Z_Rotation@Matrix3D@@QBEMXZ,,0x008D68A0,8,src/w3d/matrix3d.cpp,matched,
+?Hash@HashTableClass@@AAEHPBD@Z,,0x009E0010,27,src/w3d/hash.cpp,matched,
 ?Increase_Table_Size@?$IndexClass@HPAUINIEntry@@@@AAE_NH@Z,,0x009E2820,217,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Increase_Table_Size@?$IndexClass@HPAUINISection@@@@AAE_NH@Z,,0x009E2950,217,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Increment@?$RemainderTable@V?$Int@$0EA@@@@@QAEXG@Z,,0x009EA980,104,src/w3d/pk.cpp,matched,
@@ -1134,6 +1141,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Negate@Coord3D@@QAEAAV1@XZ,0x0002C3CC,0x007E5DA0,25,src/math/coord3d.cpp,matched,negates x/y/z
 ?Next@GenericMultiListIterator@@QAEXXZ,,0x006C51F0,10,src/w3d/multilist.cpp,matched,
 ?Next@GridListIterator@@QAEXXZ,,0x008DCE30,17,src/w3d/gridcull.cpp,matched,
+?Next@HashTableIteratorClass@@QAEXXZ,,0x009E01B0,50,src/w3d/hash.cpp,matched,
 ?Normalize2D@Coord3D@@QAEMXZ,0x0001C661,0x007E7990,42,src/math/coord3d.cpp,matched,normalizes x/y and returns 2D length
 ?Normalize@Coord2D@@QAEMXZ,0x0002C548,0x003A4140,42,src/math/coord2d.cpp,matched,normalizes vector and returns length
 ?Normalize@Coord3D@@QAEMXZ,0x0001E0BA,0x000FE9E0,60,src/math/coord3d.cpp,matched,normalizes and returns length
@@ -1203,6 +1211,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Read_Line@@YAHAAVFileClass@@PADHAA_N@Z,,0x009EA6A0,124,src/w3d/readline.cpp,matched,
 ?Read_Line@@YAHAAVStraw@@PADHAA_N@Z,,0x009EA560,151,src/w3d/readline.cpp,matched,
 ?Read_Line@@YAHAAVStraw@@PAGHAA_N@Z,,0x009EA600,159,src/w3d/readline.cpp,matched,
+?Remove@HashTableClass@@QAE_NPAVHashableClass@@@Z,,0x009E00E0,102,src/w3d/hash.cpp,matched,
 ?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,,0x009E26A0,111,src/w3d/ini.cpp,matched,IndexClass sibling (byte-identical to INISection instantiation)
 ?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,,0x009E2730,111,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Reset@BTCollisionStruct@@QAEXXZ,,0x008E5BE0,443,src/w3d/colmathobbtri.cpp,matched,
@@ -1210,6 +1219,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Reset@CastResultStruct@@QAEXXZ,,0x006098A0,36,src/w3d/colmathaabox.cpp,matched,
 ?Reset@EdgeMapperClass@@UAEXXZ,,0x00965880,16,src/w3d/mapper.cpp,matched,
 ?Reset@GridTextureMapperClass@@UAEXXZ,,0x009648F0,52,src/w3d/mapper.cpp,matched,
+?Reset@HashTableClass@@QAEXXZ,,0x009DFFE0,28,src/w3d/hash.cpp,matched,
 ?Reset@LinearOffsetTextureMapperClass@@UAEXXZ,,0x00966A10,17,src/w3d/mapper.cpp,matched,
 ?Reset@RandomTextureMapperClass@@UAEXXZ,,0x00965E70,16,src/w3d/mapper.cpp,matched,
 ?Reset@RawFileClass@@IAEXXZ,,0x009E6AB0,49,src/w3d/rawfile.cpp,matched,

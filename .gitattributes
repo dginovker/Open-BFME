@@ -1,2 +1,10 @@
 baselines/**/*.exe filter=lfs diff=lfs merge=lfs -text
 build/toolchains/vs2003/** filter=lfs diff=lfs merge=lfs -text
+
+# Append-mostly ledgers written concurrently by many agents. The built-in union
+# merge driver combines both sides' added lines instead of emitting conflict
+# markers, so parallel row appends never conflict. Run tools/dedup_csv.py after
+# a merge if the full build reports a duplicate/overlap (two agents claimed one
+# shared COMDAT address).
+reverse/functions.csv merge=union
+reverse/symbols.csv merge=union

@@ -1,4 +1,8 @@
 name,address,notes
+??0?$ShareBufferClass@E@@QAE@HPBDH@Z,0x0004B4A7,derived from part_buf matched-caller call sites
+??0?$ShareBufferClass@VVector3@@@@QAE@HPBDH@Z,0x00049832,ILT thunk; body 0x5F3BE0
+??0?$ShareBufferClass@VVector3@@@@QAE@HPBDH@Z,0x005F3BE0,3-arg aligned-buffer ctor
+??0?$ShareBufferClass@VVector4@@@@QAE@HPBDH@Z,0x000281EB
 ??0Buffer@@QAE@J@Z,0x009E1DA0
 ??0Buffer@@QAE@PAXJ@Z,0x009E1CE0,Buffer::Buffer(void*, long)
 ??0BufferPipe@@QAE@PAXH@Z,0x009E2010
@@ -8,6 +12,7 @@ name,address,notes
 ??0GameMessage@@QAE@W4Type@0@@Z,0x000359E5,GameMessage::GameMessage(Type) thunk
 ??0GameMessageParser@@QAE@XZ,0x00013FCA,GameMessageParser::GameMessageParser() thunk
 ??0LockClass@CriticalSectionClass@@QAE@AAV1@@Z,0x009DB4B0
+??0ParticleBufferClass@@QAE@ABV0@@Z,0x00989A20
 ??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
 ??1Buffer@@QAE@XZ,0x009E1E60
 ??1BufferStraw@@UAE@XZ,0x00921790
@@ -31,20 +36,28 @@ name,address,notes
 ??_V@YAXPAX@Z,0x00881EB0
 ??_V@YAXPAX@Z,0x00881EF0,array operator delete flag-2 variant (W3D containers); flag-1 at 0x881EB0
 ?Add_To_Collection@CullSystemClass@@IAEXPAVCullableClass@@@Z,0x008E21D0
+?Add_To_Static_Sort_List@WW3D@@SAXPAVRenderObjClass@@I@Z,0x008FD4C0
 ?Allocate_Object_Memory@?$ObjectPoolClass@VGridLinkClass@@$0BAA@@@QAEPAVGridLinkClass@@XZ,0x008DD970
 ?Allocate_Object_Memory@?$ObjectPoolClass@VMultiListNodeClass@@$0BAA@@@QAEPAVMultiListNodeClass@@XZ,0x009DBDD0
 ?Begin_Chunk@ChunkSaveClass@@QAE_NK@Z,0x009E16F0
 ?Close_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E13E0
 ?Collide@CollisionMath@@SA_NABVAABoxClass@@ABVVector3@@ABVTriClass@@PAUCastResultStruct@@@Z,0x008E0C30
+?Combine_Color_And_Alpha@ParticleBufferClass@@IAEXXZ,0x00984CB0,derived from Render_Particles call sites
 ?Contains_Point@TriClass@@QBE_NABVVector3@@@Z,0x008E1900
 ?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
+?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,0x0098B750
 ?End_Chunk@ChunkSaveClass@@QAE_NXZ,0x009E17F0
+?Find_POT@@YAHH@Z,0x00AFFAB0
 ?Free_String@StringClass@@AAEXXZ,0x009DB7A0
 ?Get@Base64Straw@@UAEHPAXH@Z,0x009E7B80
 ?Get_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,0x008E2160
+?Get_New_Particles@ParticleBufferClass@@IAEXXZ,0x00987C60
 ?Get_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,0x008E2170
+?Get_Shader@LineGroupClass@@QAE?AVShaderClass@@XZ,0x0098ED00
+?Get_Shader@PointGroupClass@@QAE?AVShaderClass@@XZ,0x00912870
 ?Get_String@INIClass@@QBEHPBD00PADH@Z,0x009E3DA0
 ?Get_String@StringClass@@AAEXH_N@Z,0x009DB890
+?Guess_Sort_Level@ShaderClass@@QBEHXZ,0x00910E90
 ?HideDiplomacy@@YAXXZ,0x000067BC
 ?HideInGameChat@@YAXXZ,0x00019583
 ?HideQuitMenu@@YAXXZ,0x0001BF36
@@ -64,12 +77,36 @@ name,address,notes
 ?ReleaseWindowLayout@@YAXPAVWindowLayout@@@Z,0x00049AD0
 ?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,0x009E26A0
 ?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,0x009E2730
+?Render@LineGroupClass@@QAEXAAVRenderInfoClass@@@Z,0x0098ED30
+?Render@PointGroupClass@@QAEXAAVRenderInfoClass@@H@Z,0x00917B70,derived from Render_Particles call sites; BFME added the int param
+?Render_Line@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098AD00
+?Render_Line_Group@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B950
+?Render_Particles@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B800
 ?ResetInGameChat@@YAXXZ,0x00033A6E
 ?Reset_Collection@CullSystemClass@@QAEXXZ,0x008E21C0
+?Scale@SegLineRendererClass@@QAEXM@Z,0x0095FF30
 ?Search_For_Node@?$IndexClass@HPAUINIEntry@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2E60
 ?Search_For_Node@?$IndexClass@HPAUINISection@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2FD0
+?Set_Arrays@LineGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@0PAV?$ShareBufferClass@VVector4@@@@1PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@3H@Z,0x0098EB00
+?Set_Arrays@PointGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@PAV?$ShareBufferClass@VVector4@@@@PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@PAV?$ShareBufferClass@E@@4HMMMM@Z,0x009126B0,derived from Render_Particles call sites
+?Set_Line_Alpha@LineGroupClass@@QAEXM@Z,0x0098E8C0
+?Set_Line_Color@LineGroupClass@@QAEXABVVector3@@@Z,0x0098EC00
+?Set_Line_Size@LineGroupClass@@QAEXM@Z,0x0098E8A0
+?Set_Line_UCoord@LineGroupClass@@QAEXM@Z,0x0098E8E0
+?Set_Point_Alpha@PointGroupClass@@QAEXM@Z,0x00912020,derived from Render_Particles call sites
+?Set_Point_Color@PointGroupClass@@QAEXVVector3@@@Z,0x009127B0,derived from Render_Particles call sites
+?Set_Point_Frame@PointGroupClass@@QAEXE@Z,0x00912060,derived from Render_Particles call sites
+?Set_Point_Orientation@PointGroupClass@@QAEXE@Z,0x00912040,derived from Render_Particles call sites
+?Set_Point_Size@PointGroupClass@@QAEXM@Z,0x00912000,derived from Render_Particles call sites
+?Set_Tail_Diffuse@LineGroupClass@@QAEXABVVector4@@@Z,0x0098EC40
+?Set_Texture@LineGroupClass@@QAEXPAVTextureClass@@@Z,0x0098EC80
+?Set_Texture@PointGroupClass@@QAEXPAVTextureClass@@@Z,0x009127F0
+?Set_Texture@SegLineRendererClass@@QAEXPAVTextureClass@@@Z,0x00960050
 ?String@CRC@@SAKPBDK@Z,0x009E7FD0
 ?Uninitialised_Grow@StringClass@@AAEXH@Z,0x009DBA70
+?Update_Bounding_Box@ParticleBufferClass@@IAEXXZ,0x0098B460
+?Update_Non_New_Particles@ParticleBufferClass@@IAEXI@Z,0x00988060
+?Update_Visual_Particle_State@ParticleBufferClass@@IAEXXZ,0x00986FC0
 ?Write@ChunkSaveClass@@QAEKPBXK@Z,0x009E18A0
 ?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z,0x0000B569,GameMessageParser::addArgType thunk
 ?appendBooleanArgument@GameMessage@@QAEX_N@Z,0x000032AB,GameMessage::appendBooleanArgument thunk
@@ -119,20 +156,3 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
-??0ParticleBufferClass@@QAE@ABV0@@Z,0x00989A20
-?Add_To_Static_Sort_List@WW3D@@SAXPAVRenderObjClass@@I@Z,0x008FD4C0
-?Find_POT@@YAHH@Z,0x00AFFAB0
-?Get_New_Particles@ParticleBufferClass@@IAEXXZ,0x00987C60
-?Get_Shader@LineGroupClass@@QAE?AVShaderClass@@XZ,0x0098ED00
-?Get_Shader@PointGroupClass@@QAE?AVShaderClass@@XZ,0x00912870
-?Guess_Sort_Level@ShaderClass@@QBEHXZ,0x00910E90
-?Render_Line@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098AD00
-?Render_Line_Group@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B950
-?Render_Particles@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B800
-?Scale@SegLineRendererClass@@QAEXM@Z,0x0095FF30
-?Set_Texture@LineGroupClass@@QAEXPAVTextureClass@@@Z,0x0098EC80
-?Set_Texture@PointGroupClass@@QAEXPAVTextureClass@@@Z,0x009127F0
-?Set_Texture@SegLineRendererClass@@QAEXPAVTextureClass@@@Z,0x00960050
-?Update_Bounding_Box@ParticleBufferClass@@IAEXXZ,0x0098B460
-?Update_Non_New_Particles@ParticleBufferClass@@IAEXI@Z,0x00988060
-?Update_Visual_Particle_State@ParticleBufferClass@@IAEXXZ,0x00986FC0

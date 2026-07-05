@@ -122,7 +122,9 @@ public:
 
 	int						Get_Polygon_Count(void);
 
-	void						Render(RenderInfoClass &rinfo);
+	// BFME drift: Render grew a second parameter (Render_Particles at 0x98B800
+	// pushes an extra 0 before rinfo).
+	void						Render(RenderInfoClass &rinfo, int unknown);
 	void						RenderVolumeParticle(RenderInfoClass &rinfo, unsigned int depth);
 
 protected:

@@ -274,7 +274,7 @@ ParticleBufferClass::ParticleBufferClass
 			LineGroup->Set_Texture(tex);
 			LineGroup->Set_Shader(shader);
 			LineGroup->Set_Line_Mode(LineGroupClass::TETRAHEDRON);
-			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition" ) );
+			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition", 0 ) );
 			// TODO: Change TailPosition to Kinematic state and add
 			// tail positions to bounding box
 			Set_Force_Visible(1);
@@ -287,7 +287,7 @@ ParticleBufferClass::ParticleBufferClass
 			LineGroup->Set_Texture(tex);
 			LineGroup->Set_Shader(shader);
 			LineGroup->Set_Line_Mode(LineGroupClass::PRISM);
-			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition" ) );
+			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition", 0 ) );
 			// TODO: Change TailPosition to Kinematic state and add
 			// tail positions to bounding box
 			Set_Force_Visible(1);
@@ -300,12 +300,12 @@ ParticleBufferClass::ParticleBufferClass
 
 	// Set up circular buffer. Contents are not initialized because the
 	// start/end indices currently indicate the buffer is empty.
-	Position[0] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position") );
+	Position[0] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position", 0) );
 	if (PingPongPosition) {
-		Position[1] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position") );
+		Position[1] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position", 0) );
 	}
-	APT = NEW_REF( ShareBufferClass<unsigned int> , (MaxNum, "ParticleBufferClass::APT") );
-	GroupID = NEW_REF( ShareBufferClass<unsigned char> , (MaxNum, "ParticleBufferClass::GroupID") );
+	APT = NEW_REF( ShareBufferClass<unsigned int> , (MaxNum, "ParticleBufferClass::APT", 0) );
+	GroupID = NEW_REF( ShareBufferClass<unsigned char> , (MaxNum, "ParticleBufferClass::GroupID", 0) );
 	Velocity = W3DNEWARRAY Vector3[MaxNum]; 
 	TimeStamp = W3DNEWARRAY unsigned int[MaxNum];
 
@@ -439,7 +439,7 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 	NumRandomColorEntriesMinus1 = src.NumRandomColorEntriesMinus1;
 	if (src.Color) {
 		// Create color array
-		Color = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Color") );
+		Color = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Color", 0) );
 
 		// Copy color keyframes
 		ColorKeyFrameTimes = W3DNEWARRAY unsigned int [NumColorKeyFrames];
@@ -466,7 +466,7 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 	NumRandomAlphaEntriesMinus1 = src.NumRandomAlphaEntriesMinus1;
 	if (src.Alpha) {
 		// Create alpha array
-		Alpha = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Alpha") );
+		Alpha = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Alpha", 0) );
 
 		// Copy alpha keyframes
 		AlphaKeyFrameTimes = W3DNEWARRAY unsigned int [NumAlphaKeyFrames];
@@ -493,7 +493,7 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 	NumRandomSizeEntriesMinus1 = src.NumRandomSizeEntriesMinus1;
 	if (src.Size) {
 		// Create size array
-		Size = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Size") );
+		Size = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Size", 0) );
 
 		// Copy size keyframes
 		SizeKeyFrameTimes = W3DNEWARRAY unsigned int [NumSizeKeyFrames];
@@ -522,7 +522,7 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 	NumRandomOrientationEntriesMinus1 = src.NumRandomOrientationEntriesMinus1;
 	if (src.Orientation) {
 		// Create orientation array
-		Orientation = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Orientation") );
+		Orientation = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Orientation", 0) );
 
 		// Copy rotation / orientation keyframes
 		RotationKeyFrameTimes = W3DNEWARRAY unsigned int [NumRotationKeyFrames];
@@ -564,9 +564,9 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 	if (src.Frame || src.UCoord) {
 		// Create frame array
 		if (src.Frame) {
-			Frame = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Frame") );
+			Frame = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Frame", 0) );
 		} else {
-			UCoord = NEW_REF( ShareBufferClass<float>, (MaxNum, "ParticleBufferClass::UCoord") );
+			UCoord = NEW_REF( ShareBufferClass<float>, (MaxNum, "ParticleBufferClass::UCoord", 0) );
 		}
 
 		// Copy frame keyframes
@@ -667,7 +667,7 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 			LineGroup->Set_Texture(src.LineGroup->Peek_Texture());
 			LineGroup->Set_Shader(src.LineGroup->Get_Shader());
 			LineGroup->Set_Line_Mode(LineGroupClass::TETRAHEDRON);
-			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition") );
+			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition", 0) );
 			// TODO: Change TailPosition to Kinematic state and add
 			// tail positions to bounding box
 			Set_Force_Visible(1);
@@ -681,7 +681,7 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 			LineGroup->Set_Texture(src.LineGroup->Peek_Texture());
 			LineGroup->Set_Shader(src.LineGroup->Get_Shader());
 			LineGroup->Set_Line_Mode(LineGroupClass::PRISM);
-			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition") );
+			TailPosition = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::TailPosition", 0) );
 			// TODO: Change TailPosition to Kinematic state and add
 			// tail positions to bounding box
 			Set_Force_Visible(1);
@@ -694,12 +694,12 @@ ParticleBufferClass::ParticleBufferClass(const ParticleBufferClass & src) :
 
 	// Set up circular buffer. Contents are not initialized because the
 	// start/end indices currently indicate the buffer is empty.
-	Position[0] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position") );
+	Position[0] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position", 0) );
 	if (PingPongPosition) {
-		Position[1] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position") );
+		Position[1] = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Position", 0) );
 	}
-	APT = NEW_REF( ShareBufferClass<unsigned int> , (MaxNum, "ParticleBufferClass::APT") );
-	GroupID = NEW_REF( ShareBufferClass<unsigned char> , (MaxNum, "ParticleBufferClass::GroupID") );
+	APT = NEW_REF( ShareBufferClass<unsigned int> , (MaxNum, "ParticleBufferClass::APT", 0) );
+	GroupID = NEW_REF( ShareBufferClass<unsigned char> , (MaxNum, "ParticleBufferClass::GroupID", 0) );
 	Velocity = W3DNEWARRAY Vector3[MaxNum]; 
 	TimeStamp = W3DNEWARRAY unsigned int[MaxNum];
 
@@ -906,7 +906,7 @@ void ParticleBufferClass::Combine_Color_And_Alpha()
 	if (Color || Alpha) {
 		unsigned cnt=MaxNum;
 		if (!Diffuse) {
-			Diffuse = NEW_REF( ShareBufferClass<Vector4> , (MaxNum, "ParticleBufferClass::Diffuse") );
+			Diffuse = NEW_REF( ShareBufferClass<Vector4> , (MaxNum, "ParticleBufferClass::Diffuse", 0) );
 		}
 		if (Color && Alpha) {
 			VectorProcessorClass::Copy(
@@ -985,7 +985,7 @@ void ParticleBufferClass::Render_Particles(RenderInfoClass & rinfo)
 
 	PointGroup->Set_Arrays(Position[pingpong], Diffuse, apt, Size, Orientation, Frame, active_point_count);
 	Update_Bounding_Box();	
-	PointGroup->Render(rinfo);	
+	PointGroup->Render(rinfo, 0);	
 }
 
 
@@ -1149,7 +1149,7 @@ void ParticleBufferClass::Render_Line_Group(RenderInfoClass & rinfo)
 			DefaultTailDiffuse.Set(ColorKeyFrameValues[0].X,ColorKeyFrameValues[0].Y,ColorKeyFrameValues[0].Z,0);
 		} else {
 			// otherwise allocate and copy tail diffuse
-			if (!TailDiffuse) TailDiffuse=NEW_REF(ShareBufferClass<Vector4>,(MaxNum, "ParticleBufferClass::TailDiffuse"));
+			if (!TailDiffuse) TailDiffuse=NEW_REF(ShareBufferClass<Vector4>,(MaxNum, "ParticleBufferClass::TailDiffuse", 0));
 			for (unsigned int i=0; i<MaxNum; i++) {
 				Vector4 elt=Diffuse->Get_Element(i);				
 				elt.W=0;
@@ -1164,7 +1164,7 @@ void ParticleBufferClass::Render_Line_Group(RenderInfoClass & rinfo)
 			DefaultTailDiffuse.Set(ColorKeyFrameValues[0].X,ColorKeyFrameValues[0].Y,ColorKeyFrameValues[0].Z,AlphaKeyFrameValues[0]);
 		} else {
 			// otherwise allocate and copy tail diffuse
-			if (!TailDiffuse) TailDiffuse=NEW_REF(ShareBufferClass<Vector4>,(MaxNum, "ParticleBufferClass::TailDiffuse"));
+			if (!TailDiffuse) TailDiffuse=NEW_REF(ShareBufferClass<Vector4>,(MaxNum, "ParticleBufferClass::TailDiffuse", 0));
 			VectorProcessorClass::Copy(TailDiffuse->Get_Array(),Diffuse->Get_Array(),MaxNum);
 		}
 		break;
@@ -1489,7 +1489,7 @@ void ParticleBufferClass::Reset_Colors(ParticlePropertyStruct<Vector3> &new_prop
 
 		// Create the color array if not present
 		if (!Color) {
-			Color = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Color") );
+			Color = NEW_REF( ShareBufferClass<Vector3> , (MaxNum, "ParticleBufferClass::Color", 0) );
 		}
 
 		// Check times of color keyframes (each keytime must be larger than the
@@ -1649,7 +1649,7 @@ void ParticleBufferClass::Reset_Opacity(ParticlePropertyStruct<float> &new_props
 
 		// Create the alpha array if not present
 		if (!Alpha) {
-			Alpha = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Alpha") );
+			Alpha = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Alpha", 0) );
 		}
 
 		// Check times of opacity keyframes (each keytime must be larger than the
@@ -1806,7 +1806,7 @@ void ParticleBufferClass::Reset_Size(ParticlePropertyStruct<float> &new_props)
 
 		// Create the size array if not present
 		if (!Size) {
-			Size = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Size") );
+			Size = NEW_REF( ShareBufferClass<float> , (MaxNum, "ParticleBufferClass::Size", 0) );
 		}
 
 		// Check times of size keyframes (each keytime must be larger than the
@@ -1976,7 +1976,7 @@ void ParticleBufferClass::Reset_Rotations(ParticlePropertyStruct<float> &new_pro
 
 		// Create the array if not present
 		if (!Orientation) {
-			Orientation = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Orientation") );
+			Orientation = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Orientation", 0) );
 		}
 
 		// Check times of the keyframes (each keytime must be larger than the
@@ -2186,11 +2186,11 @@ void ParticleBufferClass::Reset_Frames(ParticlePropertyStruct<float> &new_props)
 		if ((RenderMode==W3D_EMITTER_RENDER_MODE_LINEGRP_TETRA) ||
 			(RenderMode==W3D_EMITTER_RENDER_MODE_LINEGRP_PRISM)) {
 			if (!UCoord) {
-				UCoord = NEW_REF( ShareBufferClass<float>, (MaxNum, "ParticleBufferClass::UCoord") );
+				UCoord = NEW_REF( ShareBufferClass<float>, (MaxNum, "ParticleBufferClass::UCoord", 0) );
 			}
 		} else {
 			if (!Frame) {
-				Frame = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Frame") );
+				Frame = NEW_REF( ShareBufferClass<uint8> , (MaxNum, "ParticleBufferClass::Frame", 0) );
 			}
 		}
 

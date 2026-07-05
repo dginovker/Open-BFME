@@ -51,7 +51,7 @@ template <class T>
 class ShareBufferClass : public RefCountClass
 {
 	public:
-		ShareBufferClass(int count, const char* msg);
+		ShareBufferClass(int count, const char* msg, int alignment);
 		ShareBufferClass(const ShareBufferClass & that);
 		~ShareBufferClass(void);
 
@@ -76,25 +76,32 @@ class ShareBufferClass : public RefCountClass
 
 	protected:
 
-		// BFME drift: retail keeps the Msg member in release builds too — the
-		// buffer pointer reads at [this+0xC] in Get_New_Particles at 0x987C60.
-		const char* Msg;
+		// BFME drift (ctor at 0x5F3BE0): the class supports aligned buffers.
+		// RawBuffer is the actual allocation (freed on destruction); Array is the
+		// aligned view handed out; Alignment is the ctor's third argument (0 = none,
+		// Array == RawBuffer). The msg ctor parameter is dead in retail (never stored).
+		T *			RawBuffer;
 		T *			Array;
 		int			Count;
+		int			Alignment;
 
 		// not implemented!
 		ShareBufferClass & operator = (const ShareBufferClass &);
 };
 
 template <class T>
-ShareBufferClass<T>::ShareBufferClass(int count, const char* msg) :
-	Count(count)
-#if (defined(_DEBUG) || defined(_INTERNAL)) 
-	, Msg(msg)
-#endif
+ShareBufferClass<T>::ShareBufferClass(int count, const char* msg, int alignment) :
+	Count(count),
+	Alignment(alignment)
 {
 	assert(Count > 0);
-	Array = MSGW3DNEWARRAY(msg) T[Count];
+	if (Alignment == 0) {
+		RawBuffer = MSGW3DNEWARRAY(msg) T[Count];
+		Array = RawBuffer;
+	} else {
+		RawBuffer = (T *)MSGW3DNEWARRAY(msg) char[Count * sizeof(T) + Alignment];
+		Array = (T *)(((unsigned int)RawBuffer + Alignment - 1) & ~(Alignment - 1));
+	}
 }
 
 template <class T> 
@@ -102,10 +109,9 @@ ShareBufferClass<T>::ShareBufferClass(const ShareBufferClass<T> & that) :
 	Count(that.Count)
 {
 	assert(Count > 0);
-#if (defined(_DEBUG) || defined(_INTERNAL)) 
-	Msg = that.Msg;
-#endif
-	Array = MSGW3DNEWARRAY(Msg) T[Count];
+	Alignment = that.Alignment;
+	Array = MSGW3DNEWARRAY(msg) T[Count];
+	RawBuffer = Array;
 	for (int i=0; i<Count; i++) {
 		Array[i] = that.Array[i];
 	}
@@ -114,8 +120,9 @@ ShareBufferClass<T>::ShareBufferClass(const ShareBufferClass<T> & that) :
 template <class T>
 ShareBufferClass<T>::~ShareBufferClass(void)
 {
-	if (Array) {
-		delete[] Array;
+	if (RawBuffer) {
+		delete[] RawBuffer;
+		RawBuffer = NULL;
 		Array = NULL;
 	}
 }

@@ -889,6 +889,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVTriClass@@PAUCastResultStruct@@@Z,,0x008DAAA0,390,src/w3d/colmathline.cpp,matched,
 ?Collide@CollisionMath@@SA_NABVOBBoxClass@@ABVVector3@@01PAUCastResultStruct@@@Z,,0x008E59E0,63,src/w3d/colmathobbobb.cpp,matched,
 ?Collide@CollisionMath@@SA_NABVOBBoxClass@@ABVVector3@@ABVAABoxClass@@1PAUCastResultStruct@@@Z,,0x008E5A20,189,src/w3d/colmathobbobb.cpp,matched,
+?Combine_Color_And_Alpha@ParticleBufferClass@@IAEXXZ,,0x00984CB0,357,src/w3d/part_buf.cpp,matched,
 ?Compute_Axis_Aligned_Extent@OBBoxClass@@QBEXPAVVector3@@@Z,,0x008DCD20,225,src/w3d/gridcull.cpp,matched,
 ?Compute_Point@OBBoxClass@@QBEXQAMPAVVector3@@@Z,,0x008E2960,189,src/w3d/colmathobbobb.cpp,matched,
 ?Contains@AABoxClass@@QBE_NABVVector3@@@Z,,0x008DDA80,139,src/w3d/gridcull.cpp,matched,
@@ -924,6 +925,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Delete@RawFileClass@@UAEHXZ,,0x009E68B0,92,src/w3d/rawfile.cpp,matched,
 ?Detach@RawFileClass@@UAEXXZ,,0x009E6700,26,src/w3d/rawfile.cpp,matched,
 ?Determinant@Matrix4D@@QBEMXZ,0x0002912c,0x007e63e0,188,src/math/matrix4d.cpp,matched,
+?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,,0x0098B750,170,src/w3d/part_buf.cpp,unmatched,pairing suspect: mismatch at +0x0
 ?Distance@Vector3@@SAMABV1@0@Z,,0x006DFAD0,65,src/w3d/vector3.cpp,matched,
 ?DoXfer@ButterflyDrawModuleInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x0003967B,0x5f0c70,27,src/game/fx_particle_system_bulk.cpp,matched,
 ?DoXfer@DefaultAlphaModuleInfo@FXParticleSystem@@UAEXAAVXfer@@@Z,0x0002EE88,0x5ee540,74,src/game/fx_particle_system_bulk.cpp,matched,
@@ -1208,6 +1210,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Plain_Block_Size@PKey@@QBEHXZ,,0x009EA720,17,src/w3d/pk.cpp,matched,
 ?Power@VectorProcessorClass@@SAXPAM0MH@Z,,0x00B00190,56,src/w3d/vp.cpp,matched,
 ?PreStaticInit@Debug@@CAPAV1@XZ,0x00889500,0x00889500,114,src/game/debug.cpp,matched,Debug PreStaticInit singleton allocator
+?Prepare_LOD@ParticleBufferClass@@UAEXAAVCameraClass@@@Z,,0x00984E60,437,src/w3d/part_buf.cpp,unmatched,needs Get_Position/Get_View_Plane/Add_Object pins; diff +0xA
 ?Prepend_Sub_Directory@SimpleFileFactoryClass@@QAEXPBD@Z,,0x009DD960,239,src/w3d/ffactory.cpp,matched,
 ?Project_To_Axis@AABoxClass@@QBEMABVVector3@@@Z,,0x008D9900,84,src/w3d/colmathaabox.cpp,matched,
 ?Project_To_Axis@OBBoxClass@@QBEMABVVector3@@@Z,,0x008E2330,190,src/w3d/obbox.cpp,matched,
@@ -1244,6 +1247,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,,0x009E26A0,111,src/w3d/ini.cpp,matched,IndexClass sibling (byte-identical to INISection instantiation)
 ?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,,0x009E2730,111,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Render@ParticleBufferClass@@UAEXAAVRenderInfoClass@@@Z,,0x0098BE50,184,src/w3d/part_buf.cpp,matched,
+?Render_Line@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,,0x0098AD00,1763,src/w3d/part_buf.cpp,unmatched,SegLineRenderer setter drift suspected
+?Render_Line_Group@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,,0x0098B950,350,src/w3d/part_buf.cpp,matched,
+?Render_Particles@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,,0x0098B800,332,src/w3d/part_buf.cpp,matched,
 ?Reset@BTCollisionStruct@@QAEXXZ,,0x008E5BE0,443,src/w3d/colmathobbtri.cpp,matched,
 ?Reset@Buffer@@QAEXXZ,,0x009E1E60,40,src/w3d/buff.cpp,matched,
 ?Reset@CastResultStruct@@QAEXXZ,,0x006098A0,36,src/w3d/colmathaabox.cpp,matched,
@@ -1261,6 +1267,11 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Reset_Blur_Times@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x00986BD0,987,src/w3d/part_buf.cpp,matched,
 ?Reset_Buffer@BufferedFileClass@@IAEXXZ,,0x009E7750,37,src/w3d/bufffile.cpp,matched,
 ?Reset_Collection@CullSystemClass@@QAEXXZ,,0x008E21C0,8,src/w3d/cullsys.cpp,matched,
+?Reset_Colors@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@VVector3@@@@@Z,,0x00985050,1569,src/w3d/part_buf.cpp,matched,
+?Reset_Frames@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x009866E0,1250,src/w3d/part_buf.cpp,matched,
+?Reset_Opacity@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x00985680,1155,src/w3d/part_buf.cpp,matched,
+?Reset_Rotations@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@M@Z,,0x00986050,1656,src/w3d/part_buf.cpp,matched,
+?Reset_Size@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x00985B10,1328,src/w3d/part_buf.cpp,matched,
 ?Reset_Statistics@GridCullSystemClass@@QAEXXZ,,0x008DCC10,30,src/w3d/gridcull.cpp,matched,
 ?Resize@?$SimpleDynVecClass@E@@UAE_NH@Z,,0x00989070,40,src/w3d/part_buf.cpp,matched,
 ?Resize@?$SimpleVecClass@E@@UAE_NH@Z,,0x009844D0,136,src/w3d/part_buf.cpp,matched,

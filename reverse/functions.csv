@@ -1261,7 +1261,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,,0x009E26A0,111,src/w3d/ini.cpp,matched,IndexClass sibling (byte-identical to INISection instantiation)
 ?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,,0x009E2730,111,src/w3d/ini.cpp,matched,IndexClass sibling
 ?Render@ParticleBufferClass@@UAEXAAVRenderInfoClass@@@Z,,0x0098BE50,184,src/w3d/part_buf.cpp,matched,
-?Render_Line@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,,0x0098AD00,1763,src/w3d/part_buf.cpp,unmatched,"close: 1763 vs 1779; needs Is_Stopped + SegLineRenderer::Render pins; one member +4 drift ([eax+0x44] vs +0x40, obj TBD) + reg-coloring (ebx/edx swap, mov ebx,2 hoist) at +0x23"
+?Render_Line@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,,0x0098AD00,1763,src/w3d/part_buf.cpp,unmatched,"reg-coloring wall: retail holds this in ebp, mine esi; member drift RESOLVED; pins pending Is_Stopped + SegLine Render"
 ?Render_Line_Group@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,,0x0098B950,350,src/w3d/part_buf.cpp,matched,
 ?Render_Particles@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,,0x0098B800,332,src/w3d/part_buf.cpp,matched,
 ?Reset@BTCollisionStruct@@QAEXXZ,,0x008E5BE0,443,src/w3d/colmathobbtri.cpp,matched,

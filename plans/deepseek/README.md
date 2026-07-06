@@ -166,3 +166,40 @@ work it describes.
 BFME is the SAGE engine; EA's GPL C&C Generals source is vendored under
 `reference/CnC_Generals_Zero_Hour/`. **Use the `GeneralsMD/` (Zero Hour) variant
 first** — BFME's libraries track it. Match against the binary, which is truth.
+
+## Advanced harvest techniques (2026-07 overnight findings)
+
+These were discovered running the harvest at scale; use them to go faster.
+
+- **Bulk-probe over a file LIST, not one at a time.** Sequential one-file probing
+  missed big wins (part_emt +25, segline +22 were found only by sweeping a list).
+  Copy a batch of untracked reference `.cpp`, apply the full recipe to each, keep
+  the ones that locate >=2, harvest them together.
+- **The full renderer recipe** (for WW3D2 files that hit `Matrix4x4`/DX8/Win32):
+  line 2 `#define Matrix4x4 Matrix4` (BFME renamed it; 0 matched fns mangle
+  Matrix4x4); `class CameraClass;` before `#include "rinfo.h"`; `#include
+  "winbase_shim.h"` (declares lstrcpy/lstrlen/lstrcmpi/lstrcpyn + TRUE/FALSE);
+  empty-guard shims for `dx8*.h`/`d3d*.h`; **stub the DX8 `Render`/`Create_Decal`/
+  `Render_Material_Pass` bodies** (slice `lines[:open]+stub+lines[close+1:]` — the
+  +1 skips the original `}`); add WW3D shim methods (`Get_Frame_Time`,
+  `Get_Default_Native_Screen_Size`, N-Patch accessors) as C3861 errors demand;
+  redirect angle-includes of local headers (`<tri.h>`) to quotes.
+- **Re-locate cascade — run `tools/relocate_cascade.py` after EVERY harvest and
+  after pulling.** New matches unlock previously callee-gated functions (their
+  callees are now known starts). One pass after a merged PR cascaded +93. Free,
+  safe, converges in a few passes.
+- **Game files (`src/game/`): use the `prerts.h` shim** (see memory
+  game-file-recipe). `#include "PreRTS.h"` -> `"prerts.h"`; flatten `Common/X.h`
+  -> `x.h`; `Lib/BaseType.h` -> a `base_type.h` that includes prerts.h. Only files
+  needing just AsciiString/UnicodeString (+ inline accessors you add safely) bring
+  up; anything using `TheXxx` globals or extending a shared vtable (Xfer) is a wall
+  or a bigger job. Extend AsciiString/UnicodeString inline, then FULL BUILD to
+  confirm the existing matched fx-parser/module-factory fns survive.
+- **Register-coloring / source-drift are the hard wall.** Functions that lack a
+  clean locate-needle are disproportionately the ones whose retail bytes differ by
+  register allocation (this-in-EDI-vs-EBP), frame-pointer retention (source-driven,
+  `/EHsc` does NOT flip it), or genuine BFME-vs-GeneralsMD source rewrites (e.g.
+  MeshGeometryClass::Compute_Vertex_Normals: retail 1236-byte frame vs GeneralsMD's
+  8). `tools/anchor_by_string.py` and size-pairing FIND these (correct addresses)
+  but they can't byte-match without the BFME source or a register technique — don't
+  sink time into them; leave the address in a note and move on.

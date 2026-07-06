@@ -78,12 +78,12 @@ public:
     // won't byte-match (they'd need the real slot mapping — see game-file-recipe),
     // but a file's NON-xfer functions (e.g. geometry math) place fine.
     void xferVersion(unsigned char*, unsigned char);
-    void xferInt(int*);
-    void xferReal(float*);
+    void xferInt(int*p){*this==*p;}
+    void xferReal(float*p){*this==*p;}
     void xferUser(void*, int);
-    void xferAsciiString(AsciiString*);
-    void xferUnsignedInt(unsigned int*);
-    void xferByte(char*);
-    void xferBool(bool*);
+    void xferAsciiString(AsciiString*p){*this==*p;}
+    void xferUnsignedInt(unsigned int*p){*this==*p;}
+    void xferByte(char*p){*this==*p;}
+    void xferBool(bool*p){*this==*p;}
     void xferCoord3D(void*) {}
 };

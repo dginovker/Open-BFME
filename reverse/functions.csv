@@ -378,6 +378,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0UnicodeString@@QAE@PBG@Z,0x00036953,0x00065410,19,src/game/unicode_string.cpp,matched,UnicodeString(const wchar_t *)
 ??0UnicodeString@@QAE@PBGH@Z,0x0003CB05,0x00434610,26,src/game/unicode_string.cpp,matched,UnicodeString(const wchar_t *
 ??0UnicodeString@@QAE@XZ,0x00041C95,0x00083D10,9,src/game/unicode_string.cpp,matched,default constructor
+??0Vector3SolidBoxRandomizer@@QAE@ABVVector3@@@Z,,0x00B02150,109,src/w3d/v3_rnd.cpp,matched,
+??0Vector3SolidCylinderRandomizer@@QAE@MM@Z,,0x00B02480,81,src/w3d/v3_rnd.cpp,matched,
 ??0WSEnvMapperClass@@QAE@ABVINIClass@@PBDI@Z,,0x00965920,167,src/w3d/mapper.cpp,matched,
 ??0WindModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00047410,0x005BD970,117,src/game/fx_particle_system_bulk.cpp,matched,
 ??0WindowLayout@@QAE@XZ,,0x00497C40,99,src/game/window_layout.cpp,matched,EH function (cl: /EHsc); BFME added vtable vs Generals
@@ -888,6 +890,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Clone@ScaleTextureMapperClass@@UBEPAVTextureMapperClass@@XZ,,0x00966350,60,src/w3d/mapper.cpp,matched,
 ?Clone@SineLinearOffsetTextureMapperClass@@UBEPAVTextureMapperClass@@XZ,,0x009663B0,31,src/w3d/mapper.cpp,matched,
 ?Clone@StepLinearOffsetTextureMapperClass@@UBEPAVTextureMapperClass@@XZ,,0x009663D0,31,src/w3d/mapper.cpp,matched,
+?Clone@Vector3SolidBoxRandomizer@@UBEPAVVector3Randomizer@@XZ,,0x00B026F0,47,src/w3d/v3_rnd.cpp,matched,
+?Clone@Vector3SolidCylinderRandomizer@@UBEPAVVector3Randomizer@@XZ,,0x00B02690,41,src/w3d/v3_rnd.cpp,matched,
 ?Clone@ZigZagLinearOffsetTextureMapperClass@@UBEPAVTextureMapperClass@@XZ,,0x009663F0,31,src/w3d/mapper.cpp,matched,
 ?Close@BufferedFileClass@@UAEXXZ,,0x009E77F0,42,src/w3d/bufffile.cpp,matched,
 ?Close@RawFileClass@@UAEXXZ,,0x009E6720,57,src/w3d/rawfile.cpp,matched,
@@ -1066,6 +1070,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Length@StringClass@@QBEHXZ,,0x0013B660,43,src/w3d/rawfile.cpp,matched,
 ?Get_Line_Color@LineGroupClass@@QAE?AVVector3@@XZ,,0x0098EC20,24,src/w3d/linegrp.cpp,matched,
 ?Get_List_Index@INIClass@@QAEHPBD0HQAPAD@Z,,0x009E3EC0,135,src/w3d/ini.cpp,matched,
+?Get_Maximum_Extent@Vector3SolidBoxRandomizer@@UAEMXZ,,0x00B01FE0,37,src/w3d/v3_rnd.cpp,matched,
 ?Get_Merge_Abort_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EC0,21,src/w3d/part_buf.cpp,unmatched,"stale-header build artifact: part_buf.cpp was compiled against the pre-extra-member SegLineRenderer layout (MergeAbortFactor@0x24), while seglinerenderer.cpp uses the +0x1c-member layout (MergeAbortFactor@0x28). Cannot satisfy both with one shared header; seglinerenderer side chosen (10 fns vs 2)."
 ?Get_New_Particles@ParticleBufferClass@@IAEXXZ,,0x00987C60,827,src/w3d/part_buf.cpp,matched,
 ?Get_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,,0x008E2170,19,src/w3d/cullsys.cpp,matched,
@@ -1081,6 +1086,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Polygon_Count@LineGroupClass@@QAEHXZ,,0x0098E970,28,src/w3d/linegrp.cpp,matched,
 ?Get_Polygon_Count@PointGroupClass@@QAEHXZ,,0x00912150,27,src/w3d/pointgr.cpp,matched,
 ?Get_Post_Increment_Value@ParticleBufferClass@@UBEMXZ,,0x00983810,20,src/w3d/part_buf.cpp,matched,
+?Get_Random_Float_Minus1_To_1@Vector3Randomizer@@IAEMXZ,,0x00B02120,25,src/w3d/v3_rnd.cpp,matched,
 ?Get_Rect@INIClass@@QBE?BV?$TRect@H@@PBD0ABV2@@Z,,0x009E5940,258,src/w3d/ini.cpp,matched,
 ?Get_Rotation_Key_Frames@ParticleBufferClass@@QBEXAAU?$ParticlePropertyStruct@M@@@Z,,0x00983FE0,360,src/w3d/part_buf.cpp,matched,
 ?Get_Shader@ParticleBufferClass@@QBE?AVShaderClass@@XZ,,0x00988FD0,94,src/w3d/part_buf.cpp,matched,
@@ -1099,6 +1105,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_UV_Offset_Rate@ParticleBufferClass@@QBE?AVVector2@@XZ,,0x00988F20,60,src/w3d/part_buf.cpp,matched,
 ?Get_UV_Offset_Rate@SegLineRendererClass@@QBE?AVVector2@@XZ,,0x00918990,30,src/w3d/part_buf.cpp,matched,
 ?Get_Value@ParticleBufferClass@@UBEMXZ,,0x009837F0,20,src/w3d/part_buf.cpp,matched,
+?Get_Vector@Vector3HollowSphereRandomizer@@UAEXAAVVector3@@@Z,,0x00B023B0,197,src/w3d/v3_rnd.cpp,matched,
+?Get_Vector@Vector3SolidBoxRandomizer@@UAEXAAVVector3@@@Z,,0x00B021E0,104,src/w3d/v3_rnd.cpp,matched,
+?Get_Vector@Vector3SolidCylinderRandomizer@@UAEXAAVVector3@@@Z,,0x00B02510,154,src/w3d/v3_rnd.cpp,matched,
+?Get_Vector@Vector3SolidSphereRandomizer@@UAEXAAVVector3@@@Z,,0x00B022B0,155,src/w3d/v3_rnd.cpp,matched,
 ?Get_X_Rotation@Matrix3D@@QBEMXZ,,0x008D6880,9,src/w3d/matrix3d.cpp,matched,
 ?Get_X_Vector@Matrix3D@@QBE?AVVector3@@XZ,,0x00131DC0,23,src/w3d/frustum.cpp,matched,
 ?Get_Y_Rotation@Matrix3D@@QBEMXZ,,0x008D6890,9,src/w3d/matrix3d.cpp,matched,
@@ -1347,6 +1357,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Scale@ParticleBufferClass@@UAEXM@Z,,0x00983660,229,src/w3d/part_buf.cpp,matched,
 ?Scale@Quaternion@@QAEXM@Z,,0x008DB510,41,src/w3d/quat.cpp,matched,
 ?Scale@Vector3@@QAEXABV1@@Z,,0x00410710,31,src/w3d/vector3.cpp,matched,
+?Scale@Vector3SolidBoxRandomizer@@UAEXM@Z,,0x00B02010,58,src/w3d/v3_rnd.cpp,matched,
+?Scale@Vector3SolidCylinderRandomizer@@UAEXM@Z,,0x00B020F0,48,src/w3d/v3_rnd.cpp,matched,
 ?Search_For_Node@?$IndexClass@HPAUINIEntry@@@@ABEPBUNodeElement@1@ABH@Z,,0x009E2E60,95,src/w3d/ini.cpp,matched,
 ?Search_For_Node@?$IndexClass@HPAUINISection@@@@ABEPBUNodeElement@1@ABH@Z,,0x009E2FD0,95,src/w3d/ini.cpp,matched,
 ?Seek@BufferedFileClass@@UAEHHH@Z,,0x009E7820,120,src/w3d/bufffile.cpp,matched,

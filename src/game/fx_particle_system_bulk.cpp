@@ -26454,43 +26454,15 @@ void TerrainCollisionModuleTemplate::parse(INI *ini)
 }
 
 // ?parseEventFXListName@LifeEventModuleTemplate@FXParticleSystem@@SAXPAVINI@@PAX1PBX@Z
-__declspec(naked) void LifeEventModuleTemplate::parseEventFXListName(INI *ini, void *data, void *store, const void *userData)
+void LifeEventModuleTemplate::parseEventFXListName(INI *ini, void *data, void *store, const void *userData)
 {
-    __asm {
-        __emit 0xc7
-        __emit 0x44
-        __emit 0x24
-        __emit 0x10
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0xe9
-        __emit 0xe3
-        __emit 0x5b
-        __emit 0x25
-        __emit 0x00
-    }
+    INI::parseFXList(ini, data, store, 0);
 }
 
 // ?parseEventFXListName@TerrainCollisionModuleTemplate@FXParticleSystem@@SAXPAVINI@@PAX1PBX@Z
-__declspec(naked) void TerrainCollisionModuleTemplate::parseEventFXListName(INI *ini, void *data, void *store, const void *userData)
+void TerrainCollisionModuleTemplate::parseEventFXListName(INI *ini, void *data, void *store, const void *userData)
 {
-    __asm {
-        __emit 0xc7
-        __emit 0x44
-        __emit 0x24
-        __emit 0x10
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0xe9
-        __emit 0xf3
-        __emit 0x4f
-        __emit 0x25
-        __emit 0x00
-    }
+    INI::parseFXList(ini, data, store, 0);
 }
 
 // ?tintAllColors@DefaultColorModuleInfo@FXParticleSystem@@QAEXH@Z

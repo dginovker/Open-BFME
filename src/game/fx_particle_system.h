@@ -11,6 +11,7 @@ class AssetList;
 class INI {
 public:
     void initFromINI(void *data, const void *parseTable);
+    static void parseFXList(INI *ini, void *data, void *store, const void *userData);
 };
 class File;
 class FXList;

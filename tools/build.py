@@ -518,6 +518,7 @@ def verify_string_refs(rows):
     pe = pe_sections(exe)
     mismatches = []
     checked = 0
+    empty_ok = 0
     for row in rows:
         obj = BUILD_DIR / ((ROOT / row["source"]).stem + ".obj")
         if not obj.exists():
@@ -532,25 +533,34 @@ def verify_string_refs(rows):
         for offset, rtype, sym in relocs:
             if rtype != 0x0006 or offset + 4 > target_size or not sym.startswith("??_C@"):
                 continue
+            # No silent skip: a string reference we cannot verify is a hole in the guarantee, so a
+            # genuine extraction/RVA failure is surfaced as a mismatch (fail loudly), not swallowed.
             try:
                 cs, _ = read_object_symbol_bytes(obj, sym)
-                content = cs.rstrip(b"\x00")
-                if not content:
-                    continue
                 str_rva = struct.unpack_from("<I", target, offset)[0] - 0x400000
                 file_off = rva_to_file_offset(pe, str_rva)
-                if exe[file_off : file_off + len(content)] != content:
-                    mismatches.append((row["name"], content, exe[file_off : file_off + len(content)]))
+            except (ValueError, struct.error) as exc:
+                mismatches.append((row["name"], f"<unverifiable {sym[:24]}: {exc}>".encode(), b""))
+                continue
+            content = cs.rstrip(b"\x00")
+            if not content:
+                # empty string literal "": no content to match, but confirm the referenced location
+                # really is an empty string (a null byte) and not a stale/wrong pointer.
+                if exe[file_off] != 0:
+                    mismatches.append((row["name"], b'"" (empty)', exe[file_off : file_off + 4]))
                 else:
-                    checked += 1
-            except Exception:
-                pass  # extraction edge case (wide-string alignment etc.) — skip, don't false-fail
+                    empty_ok += 1
+                continue
+            if exe[file_off : file_off + len(content)] != content:
+                mismatches.append((row["name"], content, exe[file_off : file_off + len(content)]))
+            else:
+                checked += 1
     if mismatches:
         print(f"String-ref verify: FAIL {len(mismatches)} mismatch(es) (source string != binary string)")
         for name, src_s, bin_s in mismatches[:12]:
             print(f"    {name}: source={src_s!r} binary={bin_s!r}")
         raise SystemExit(1)
-    print(f"String-ref verify: OK ({checked} DIR32 string literals independently self-verified)")
+    print(f"String-ref verify: OK ({checked} literals + {empty_ok} empty-string refs verified, 0 unverified/skipped)")
 
 
 def verify_dir32_consistency(rows):

@@ -25,3 +25,16 @@ regalloc + drift make it a dedicated run (like [[scriptengine-whale]], multi-day
 2. Reconstruct GameMessage + exact Type enum (BFME values), generate the fn.
 3. Fix the prologue: two AsciiString slots 0-init (default-construct commandName + RVO), match the
    interleaved `mov [esp+d],ebx`. Then the independent switch cases should fall out (local regalloc).
+
+## Enum extraction COMPLETE-ish + 2nd measurement (2026-07-06)
+BFME's Type enum is SECTIONED (explicit boundaries): UI/input 2-180, then a gap, then
+network/game 1002-1121 (`MSG_BEGIN_*_MESSAGES = 1000`-style). TWO jump tables:
+0x48d1e8 (lo=33,N=114) + 0x48d3b0 (lo=1002,N=120). Extracted **296 unique** value->name
+(enum.json). Regenerated fn with the correct sectioned enum: **8328B vs 7143B, 39%** (up from
+32% with the Generals enum — the correct values help). STILL not landing because: (a) a few
+extraction value-errors (dup names -> some jump-table cases fall through to a shared string, so
+their value is wrong -> MSVC won't regenerate the exact jump table); (b) the AsciiString
+local/RVO prologue diverges; (c) generated is LARGER, so some CHECK_IFs stay if-cascade instead
+of folding into the jump tables. To land: fix the ~few dup/fallthrough cases (decode each 2nd-table
+case past the first push to the ACTUAL return string), match the prologue two-slot 0-init, verify
+the two dense ranges fold to jump tables. Still multi-day but closer + independent-cases.

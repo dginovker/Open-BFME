@@ -3474,6 +3474,7 @@ float ParticleBufferClass::Get_Noise_Amplitude(void) const
 	return 0.0f;
 }
 
+// ?ParticleBufferClass::Get_Merge_Abort_Factor present-unmatched
 float ParticleBufferClass::Get_Merge_Abort_Factor(void) const
 {
 	if (LineRenderer != NULL) {
@@ -3482,6 +3483,7 @@ float ParticleBufferClass::Get_Merge_Abort_Factor(void) const
 	return 0.0f;
 }
 
+// ?ParticleBufferClass::Get_Texture_Tile_Factor present-unmatched
 float ParticleBufferClass::Get_Texture_Tile_Factor(void) const
 {
 	if (LineRenderer != NULL) {

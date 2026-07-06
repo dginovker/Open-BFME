@@ -140,9 +140,15 @@ private:
 	float								Width;
 	Vector3							Color;
 	float								Opacity;
-	
+
+	// BFME drift: retail SegLineRendererClass has one extra 4-byte member here at
+	// +0x1c (the ctor at 0x95FFD0 zeroes it; Init at 0x960190 writes SubdivisionLevel
+	// at +0x20 and NoiseAmplitude at +0x24), which shifts everything below by 4 and
+	// makes the class 0x50 bytes. Identity unknown.
+	float								_BFME_Unknown_Member;
+
 	// Subdivision properties
-	unsigned int					SubdivisionLevel;	
+	unsigned int					SubdivisionLevel;
 	float								NoiseAmplitude;
 
 	// If >0, will abort a merge which causes an intersection to move
@@ -154,10 +160,6 @@ private:
 	// possibly visual) problems will result from excessive tiling over a single polygon, over
 	// the entire line, or both.
 	float								TextureTileFactor;
-	// BFME drift: retail inserts one float here - its ctor (0x95FFD0) writes 1.0f
-	// at +0x2C between TextureTileFactor and the SyncTime copy, making the class
-	// 0x50 bytes. Identity unknown.
-	float								_BFME_Unknown_Factor;
 
 	// Used for texture coordinate animation
 	unsigned int					LastUsedSyncTime;		// Last sync time used	

@@ -340,6 +340,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ScaleTextureMapperClass@@QAE@ABV0@@Z,,0x00964710,46,src/w3d/mapper.cpp,matched,
 ??0ScaleTextureMapperClass@@QAE@ABVINIClass@@PBDI@Z,,0x00964670,146,src/w3d/mapper.cpp,matched,
 ??0ScaleTextureMapperClass@@QAE@ABVVector2@@I@Z,,0x00964600,55,src/w3d/mapper.cpp,matched,
+??0SegLineRendererClass@@QAE@XZ,,0x0095FFD0,86,src/w3d/seglinerenderer.cpp,matched,
 ??0SimpleFileFactoryClass@@QAE@XZ,,0x009DD6C0,111,src/w3d/ffactory.cpp,matched,
 ??0SineLinearOffsetTextureMapperClass@@QAE@ABV0@@Z,,0x00964EC0,104,src/w3d/mapper.cpp,matched,
 ??0SineLinearOffsetTextureMapperClass@@QAE@ABVINIClass@@PBDI@Z,,0x00964DE0,223,src/w3d/mapper.cpp,matched,
@@ -477,6 +478,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1Region2D@@QAE@XZ,0x000071DF,0x0005C310,1,src/math/region.cpp,matched,empty destructor emits ret
 ??1Region3D@@QAE@XZ,0x00045746,0x0006B0C0,1,src/math/region.cpp,matched,empty destructor emits ret
 ??1RenderObjectUpdateModuleInfo@FXParticleSystem@@UAE@XZ,0x000095F7,0x005D92B0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
+??1SegLineRendererClass@@QAE@XZ,,0x00960030,28,src/w3d/seglinerenderer.cpp,matched,
 ??1SimpleFileFactoryClass@@UAE@XZ,,0x009DD640,86,src/w3d/ffactory.cpp,matched,
 ??1Snapshot@@UAE@XZ,0x00001C80,0x0005C520,7,src/game/snapshot.cpp,matched,sets vtable pointer
 ??1SphereEmissionVolumeInfo@FXParticleSystem@@UAE@XZ,0x00028E9D,0x005D6140,7,src/game/fx_particle_system.cpp,matched,resets vtable pointer
@@ -754,6 +756,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??H@YA?AVAsciiString@@V0@PBD@Z,0x00006C5D,0x000CD5D0,132,src/game/ascii_string.cpp,matched,AsciiString + const char*
 ??H@YA?AVStringClass@@PBDABV0@@Z,,0x009DD800,241,src/w3d/ffactory.cpp,matched,
 ??H@YA?AVVector3@@ABV0@0@Z,,0x001A1BC0,37,src/w3d/gridcull.cpp,matched,
+??H@YA?AVVector4@@ABV0@0@Z,,0x0095FFA0,46,src/w3d/seglinerenderer.cpp,matched,
 ??K@YA?AVVector2@@ABV0@M@Z,,0x00703D80,33,src/w3d/mapper.cpp,matched,
 ??K@YA?AVVector3@@ABV0@M@Z,,0x00710D80,47,src/w3d/vector3.cpp,matched,
 ??L?$Int@$0EA@@@QBEGG@Z,,0x009EA9F0,24,src/w3d/pk.cpp,matched,
@@ -1053,7 +1056,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_LOD_Max_Screen_Size@ParticleBufferClass@@SAMH@Z,,0x009843F0,28,src/w3d/part_buf.cpp,matched,
 ?Get_Length@StringClass@@QBEHXZ,,0x0013B660,43,src/w3d/rawfile.cpp,matched,
 ?Get_List_Index@INIClass@@QAEHPBD0HQAPAD@Z,,0x009E3EC0,135,src/w3d/ini.cpp,matched,
-?Get_Merge_Abort_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EC0,21,src/w3d/part_buf.cpp,matched,
+?Get_Merge_Abort_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EC0,21,src/w3d/part_buf.cpp,unmatched,"stale-header build artifact: part_buf.cpp was compiled against the pre-extra-member SegLineRenderer layout (MergeAbortFactor@0x24), while seglinerenderer.cpp uses the +0x1c-member layout (MergeAbortFactor@0x28). Cannot satisfy both with one shared header; seglinerenderer side chosen (10 fns vs 2)."
 ?Get_New_Particles@ParticleBufferClass@@IAEXXZ,,0x00987C60,827,src/w3d/part_buf.cpp,matched,
 ?Get_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,,0x008E2170,19,src/w3d/cullsys.cpp,matched,
 ?Get_Obj_Space_Bounding_Box@ParticleBufferClass@@UBEXAAVAABoxClass@@@Z,,0x0098BD50,69,src/w3d/part_buf.cpp,matched,
@@ -1075,7 +1078,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_String@StringClass@@AAEXH_N@Z,,0x009DB890,352,src/w3d/wwstring.cpp,matched,
 ?Get_Sub_Directory@SimpleFileFactoryClass@@QBEXAAVStringClass@@@Z,,0x009DD900,94,src/w3d/ffactory.cpp,matched,
 ?Get_TextBlock@INIClass@@QBEHPBDPADH@Z,,0x009E57C0,192,src/w3d/ini.cpp,matched,
-?Get_Texture_Tile_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EE0,21,src/w3d/part_buf.cpp,matched,
+?Get_Texture_Tile_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EE0,21,src/w3d/part_buf.cpp,unmatched,"stale-header build artifact: part_buf.cpp was compiled against the pre-extra-member SegLineRenderer layout (MergeAbortFactor@0x24), while seglinerenderer.cpp uses the +0x1c-member layout (MergeAbortFactor@0x28). Cannot satisfy both with one shared header; seglinerenderer side chosen (10 fns vs 2)."
 ?Get_Translation@Matrix3D@@QBE?AVVector3@@XZ,,0x001B4770,24,src/w3d/matrix3d.cpp,matched,
 ?Get_UUBlock@INIClass@@QBEHPBD0PAXH@Z,,0x009E55C0,228,src/w3d/ini.cpp,matched,
 ?Get_UUBlock@INIClass@@QBEHPBDPAXH@Z,,0x009E5070,455,src/w3d/ini.cpp,matched,
@@ -1099,6 +1102,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Init@FrustumClass@@QAEXABVMatrix3D@@ABVVector2@@1MM@Z,,0x00B00B00,3661,src/w3d/frustum.cpp,matched,
 ?Init@Matrix4@@QAEXABVMatrix3D@@@Z,,0x006CA420,95,src/w3d/matrix3d.cpp,matched,
 ?Init@MinMaxAABoxClass@@QAEXABVAABoxClass@@@Z,,0x009791A0,84,src/w3d/aabox.cpp,matched,
+?Init@SegLineRendererClass@@QAEXABUW3dEmitterLinePropertiesStruct@@@Z,,0x00960190,237,src/w3d/seglinerenderer.cpp,matched,
 ?Init@WWMath@@SAXXZ,,0x008D8E90,157,src/w3d/wwmath.cpp,matched,BFME drift: no LookupTableMgrClass::Init() call
 ?Init_Empty@MinMaxAABoxClass@@QAEXXZ,,0x008DB470,28,src/w3d/aabox.cpp,matched,
 ?Init_Min_Max@AABoxClass@@QAEXABVVector3@@0@Z,,0x009186F0,156,src/w3d/aabox.cpp,matched,
@@ -1355,12 +1359,16 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Cull_Box@CullableClass@@QAEXABVAABoxClass@@_N@Z,,0x008E22A0,72,src/w3d/cullsys.cpp,matched,
 ?Set_Culling_System@CullableClass@@QAEXPAVCullSystemClass@@@Z,,0x008E2230,17,src/w3d/cullsys.cpp,matched,
 ?Set_Date_Time@RawFileClass@@UAE_NK@Z,,0x009E6690,99,src/w3d/rawfile.cpp,matched,
+?Set_Disable_Sorting@SegLineRendererClass@@QAEXH@Z,,0x00918920,29,src/w3d/seglinerenderer.cpp,matched,
 ?Set_Element@?$ShareBufferClass@VVector4@@@@QAEXHABVVector4@@@Z,,0x00984460,41,src/w3d/part_buf.cpp,matched,
 ?Set_Emitter@ParticleBufferClass@@QAEXPAVParticleEmitterClass@@@Z,,0x00983A60,46,src/w3d/part_buf.cpp,matched,
+?Set_End_Caps@SegLineRendererClass@@QAEXH@Z,,0x00918940,29,src/w3d/seglinerenderer.cpp,matched,
 ?Set_Frame_Per_Second@GridTextureMapperClass@@QAEXM@Z,,0x00967040,17,src/w3d/mapper.cpp,matched,
+?Set_Freeze_Random@SegLineRendererClass@@QAEXH@Z,,0x00918900,29,src/w3d/seglinerenderer.cpp,matched,
 ?Set_LOD_Bias@ParticleBufferClass@@UAEXM@Z,,0x00984B70,43,src/w3d/part_buf.cpp,matched,
 ?Set_LOD_Level@ParticleBufferClass@@UAEXH@Z,,0x00985020,46,src/w3d/part_buf.cpp,matched,
 ?Set_LOD_Max_Screen_Size@ParticleBufferClass@@SAXHM@Z,,0x009843D0,25,src/w3d/part_buf.cpp,matched,
+?Set_Merge_Intersections@SegLineRendererClass@@QAEXH@Z,,0x009188E0,29,src/w3d/seglinerenderer.cpp,matched,
 ?Set_Name@RawFileClass@@UAEPBDPBD@Z,,0x009E6AF0,33,src/w3d/rawfile.cpp,matched,
 ?Set_Random@LineSegClass@@QAEXABVVector3@@0@Z,,0x008D8CA0,336,src/w3d/lineseg.cpp,matched,
 ?Set_Rotation@Matrix3D@@QAEXABVMatrix3@@@Z,,0x008D6770,59,src/w3d/matrix3d.cpp,matched,
@@ -1369,7 +1377,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Sub_Chunk_Flag@ChunkHeader@@QAEX_N@Z,,0x009E1220,33,src/w3d/chunkio.cpp,matched,
 ?Set_Sub_Directory@SimpleFileFactoryClass@@QAEXPBD@Z,,0x009DD730,94,src/w3d/ffactory.cpp,matched,
 ?Set_Texture@ParticleBufferClass@@QAEXPAVTextureClass@@@Z,,0x00984410,52,src/w3d/part_buf.cpp,matched,
+?Set_Texture_Tile_Factor@SegLineRendererClass@@QAEXM@Z,,0x0095FEF0,64,src/w3d/seglinerenderer.cpp,matched,
 ?Set_Translation@Matrix3D@@QAEXABVVector3@@@Z,,0x001B47B0,24,src/w3d/matrix3d.cpp,matched,
+?Set_UV_Offset_Rate@SegLineRendererClass@@QAEXABVVector2@@@Z,,0x00919F20,32,src/w3d/seglinerenderer.cpp,matched,
 ?Shutdown@INIClass@@AAEXXZ,,0x009E36B0,74,src/w3d/ini.cpp,matched,
 ?Shutdown@WWMath@@SAXXZ,,0x008D8DF0,1,src/w3d/wwmath.cpp,matched,BFME drift: empty body (LookupTableMgr call dropped) -> lone ret; addr inferred from WWMath cluster adjacency to Random_Float/Init
 ?Sin@@YAMM@Z,0x00873910,0x00873910,7,src/math/trig.cpp,matched,returns sine of radians
@@ -1617,6 +1627,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getTextureFilename@ParticleSystemTemplate@FXParticleSystem@@QBE?AVAsciiString@@XZ,0x00018755,0x0005F240,32,src/game/fx_particle_system.cpp,matched,return texture filename
 ?getUV@ParticleSystemTemplate@FXParticleSystem@@QBEPBURegion2D@@XZ,0x0002D6E6,0x0005CBA0,7,src/game/fx_particle_system.cpp,matched,returns UV region pointer
 ?getValue@GameClientRandomVariable@@QBEMXZ,0x0000D7B5,0x00096F60,123,src/game/game_client_random_variable.cpp,matched,evaluate distribution value
+?getVertexBuffer@SegLineRendererClass@@AAEPAUVertexFormatXYZDUV1@@I@Z,,0x0095FF60,57,src/w3d/seglinerenderer.cpp,matched,
 ?get_far_extent@@YAXABVVector3@@0PAV1@@Z,,0x008DB190,95,src/w3d/colmathplane.cpp,matched,
 ?height@IRegion2D@@QBEHXZ,0x00011B49,0x001A19B0,7,src/math/region.cpp,matched,returns integer height
 ?height@IRegion3D@@QBEHXZ,0x00005B5A,0x007E6F10,7,src/math/region.cpp,matched,returns integer height

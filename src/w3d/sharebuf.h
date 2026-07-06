@@ -51,7 +51,10 @@ template <class T>
 class ShareBufferClass : public RefCountClass
 {
 	public:
-		ShareBufferClass(int count, const char* msg, int alignment);
+		// BFME: 3-arg aligned-buffer ctor. alignment defaults to 0 (unaligned) so
+		// GeneralsMD-era 2-arg call sites in other headers still compile; part_buf's
+		// call sites pass an explicit 0 and are unaffected.
+		ShareBufferClass(int count, const char* msg, int alignment = 0);
 		ShareBufferClass(const ShareBufferClass & that);
 		~ShareBufferClass(void);
 

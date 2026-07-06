@@ -24,6 +24,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??$__unguarded_insertion_sort_aux@PAU?$pair@W4ObjectID@@I@_STL@@U12@P6A_NU12@0@Z@_STL@@YAXPAU?$pair@W4ObjectID@@I@0@00P6A_NU10@1@Z@Z,,0x00095450,55,src/game/partition_solver.cpp,matched,
 ??$__unguarded_linear_insert@PAU?$pair@W4ObjectID@@I@_STL@@U12@P6A_NU12@0@Z@_STL@@YAXPAU?$pair@W4ObjectID@@I@0@U10@P6A_N11@Z@Z,,0x00094FA0,84,src/game/partition_solver.cpp,matched,
 ??$__unguarded_partition@PAU?$pair@W4ObjectID@@I@_STL@@U12@P6A_NU12@0@Z@_STL@@YAPAU?$pair@W4ObjectID@@I@0@PAU10@0U10@P6A_N11@Z@Z,,0x00095800,141,src/game/partition_solver.cpp,matched,
+??$clamp@M@@YAMMMM@Z,,0x0006C410,45,src/game/geometry.cpp,matched,
 ??$make_heap@PAU?$pair@W4ObjectID@@I@_STL@@P6A_NU12@0@Z@_STL@@YAXPAU?$pair@W4ObjectID@@I@0@0P6A_NU10@1@Z@Z,,0x00095B40,28,src/game/partition_solver.cpp,matched,
 ??$max@I@_STL@@YAABIABI0@Z,,0x00061DA0,17,src/game/discrete_circle.cpp,matched,
 ??$min@H@@YAHHH@Z,,0x0094A8C0,15,src/w3d/bufffile.cpp,matched,
@@ -217,6 +218,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0BTIntersectStruct@@QAE@ABVOBBoxClass@@ABVTriClass@@@Z,,0x008E6760,367,src/w3d/colmathobbtri.cpp,matched,
 ??0Base64Pipe@@QAE@W4CodeControl@0@@Z,,0x009E1EE0,29,src/w3d/ini.cpp,matched,sibling (vtable ptr copied from target)
 ??0Base64Straw@@QAE@W4CodeControl@0@@Z,,0x009E1F20,29,src/w3d/ini.cpp,matched,sibling
+??0BezFwdIterator@@QAE@XZ,,0x000B6880,60,src/game/bez_fwd_iterator.cpp,matched,
 ??0BoxEmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00036417,0x005D5E30,45,src/game/fx_particle_system.cpp,matched,
 ??0BoxEmissionVolumeInfo@FXParticleSystem@@QAE@XZ,0x0001A78F,0x005D5E00,23,src/game/fx_particle_system.cpp,matched,default constructor sets vtable and zeros box half-extents
 ??0BoxEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002D402,0x005D5FC0,98,src/game/fx_particle_system.cpp,matched,
@@ -945,6 +947,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??_GStraw@@UAEPAXI@Z,,0x00921710,30,src/w3d/ini.cpp,matched,
 ??_GWindModuleInfo@FXParticleSystem@@UAEPAXI@Z,,0x005BDAA0,30,src/game/fx_particle_system_bulk.cpp,matched,
 ??_GWindowLayout@@UAEPAXI@Z,,0x004706F0,30,src/game/window_layout.cpp,matched,compiler-generated deleting dtor
+??_GWindowVideo@@QAEPAXI@Z,,0x004982F0,30,src/game/window_video_manager.cpp,matched,
 ??_H@YGXPAXIHP6EPAX0@Z@Z,,0x0005C600,48,src/w3d/gridcull.cpp,matched,
 ??_U@YAPAXI@Z,,0x00881F70,17,src/game/mem_ops.cpp,matched,operator new[]
 ??_V@YAXPAX@Z,,0x00881EF0,21,src/game/mem_ops.cpp,matched,operator delete[]
@@ -1091,6 +1094,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Crypt_Block_Size@PKey@@QBEHXZ,,0x009EA740,18,src/w3d/pk.cpp,matched,
 ?Cull@OBBoxIntersectionTestClass@@QAE_NABVVector3@@0@Z,,0x0096A700,159,src/w3d/aabtree.cpp,matched,
 ?Cull@RayCollisionTestClass@@QAE_NABVVector3@@0@Z,,0x0096AC80,31,src/w3d/aabtree.cpp,matched,
+?D3DXVec4Dot@@YAMPBUD3DXVECTOR4@@0@Z,,0x000B6970,37,src/game/bezier_segment.cpp,matched,
 ?DERDecode@?$Int@$0EA@@@QAEXPBE@Z,,0x009EA790,19,src/w3d/pk.cpp,matched,ghidra-unknown callee + identical DEREncode wrapper; disambiguated by call target; build.sh exact
 ?DEREncode@?$Int@$0EA@@@QBEHPAE@Z,,0x009E21F0,19,src/w3d/pk.cpp,matched,ghidra-unknown callee + identical DERDecode wrapper; disambiguated by call target; build.sh exact
 ?Decode@@YAXPAKPAEI@Z,,0x0086A470,57,src/w3d/md5.cpp,matched,
@@ -1164,6 +1168,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Format@StringClass@@QAAHPBDZZ,,0x009DBB90,151,src/w3d/wwstring.cpp,matched,
 ?Format_Args@StringClass@@QAAHPBDABQAD@Z,,0x009DBAF0,151,src/w3d/wwstring.cpp,matched,
 ?Free_String@StringClass@@AAEXXZ,,0x009DB7A0,117,src/w3d/wwstring.cpp,matched,
+?GameDarkenColor@@YAHHH@Z,,0x0040BEE0,161,src/game/color_ops.cpp,matched,
+?GameGetColorComponents@@YAXHPAE000@Z,,0x0040BD20,44,src/game/color_ops.cpp,matched,
+?GameGetColorComponentsReal@@YAXHPAM000@Z,,0x0040BD60,127,src/game/color_ops.cpp,matched,
 ?Generate@PKey@@SAXAAVStraw@@HAAV1@1@Z,,0x009EB290,715,src/w3d/pk.cpp,matched,
 ?Generate_APT@ParticleBufferClass@@IAEXPAPAV?$ShareBufferClass@I@@AAI@Z,,0x00984BD0,205,src/w3d/part_buf.cpp,matched,
 ?Get@Base64Straw@@UAEHPAXH@Z,,0x009E7B80,253,src/w3d/b64straw.cpp,matched,
@@ -1350,6 +1357,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Init@ProxyRecordClass@@QAEXABUW3dHLodSubObjectStruct@@@Z,,0x00978900,30,src/w3d/hlod.cpp,matched,
 ?Init@SegLineRendererClass@@QAEXABUW3dEmitterLinePropertiesStruct@@@Z,,0x00960190,237,src/w3d/seglinerenderer.cpp,matched,
 ?Init@WWMath@@SAXXZ,,0x008D8E90,157,src/w3d/wwmath.cpp,matched,BFME drift: no LookupTableMgrClass::Init() call
+?InitGameLogicRandom@@YAXI@Z,,0x00096C90,72,src/game/random_value.cpp,matched,
+?InitRandom@@YAXI@Z,,0x00096BA0,188,src/game/random_value.cpp,matched,
+?InitRandom@@YAXXZ,,0x00096A80,227,src/game/random_value.cpp,matched,
 ?Init_Empty@MinMaxAABoxClass@@QAEXXZ,,0x008DB470,28,src/w3d/aabox.cpp,matched,
 ?Init_Min_Max@AABoxClass@@QAEXABVVector3@@0@Z,,0x009186F0,156,src/w3d/aabox.cpp,matched,
 ?Init_Random@AABoxClass@@QAEXMMMM@Z,,0x008DB3D0,126,src/w3d/aabox.cpp,matched,
@@ -1770,16 +1780,22 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?aabtri_intersect_cross_axis@@YA_NAAVVector3@@MM@Z,,0x008DF540,155,src/w3d/colmathaabtri.cpp,matched,
 ?aabtri_intersect_normal_axis@@YA_NAAVVector3@@@Z,,0x008DF6A0,192,src/w3d/colmathaabtri.cpp,matched,
 ?aabtri_separation_test@@YA_NMMM@Z,,0x008E0100,285,src/w3d/colmathaabtri.cpp,matched,
+?add@Coord3D@@QAEXPBU1@@Z,,0x007AF300,31,src/game/bezier_segment.cpp,matched,
 ?add@Coord3D@@QAEXPBUCoord3DBase@@@Z,0x00022688,0x000B6570,31,src/math/coord3d.cpp,matched,adds Coord3DBase pointer
 ?add@LList@@QAEXPAVLListNode@@@Z,,0x00105A90,180,src/game/list.cpp,matched,
 ?addItem@LList@@QAEXHPAX@Z,,0x00105B80,63,src/game/list.cpp,matched,
 ?addItemToHead@LList@@QAEXPAX@Z,,0x00105BD0,62,src/game/list.cpp,matched,
 ?addItemToTail@LList@@QAEXPAX@Z,,0x00105C20,64,src/game/list.cpp,matched,
 ?addModuleInternal@ModuleFactory@@IAEXPBX00HABVAsciiString@@H@Z,,0x00129AC0,69,src/game/module_factory.cpp,matched,ModuleFactory::addModuleInternal shared body
+?addRayEffect@RayEffectSystem@@QAEXPBVDrawable@@PBUCoord3D@@1@Z,,0x005D3510,111,src/game/ray_effect.cpp,matched,
 ?addWindow@WindowLayout@@UAEXPAVGameWindow@@@Z,,0x00497B00,99,src/game/window_layout.cpp,matched,
 ?appendNextCommand@RecorderClass@@IAEXXZ,0x0003D0F0,0x987b0,533,src/game/recorder_strings.cpp,matched,
+?begin@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAE?AU?$_Ht_iterator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@U?$_Nonconst_traits@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@2@XZ,,0x00498480,78,src/game/window_video_manager.cpp,matched,caller-derived
 ?bringForward@WindowLayout@@UAEXXZ,,0x00497A90,41,src/game/window_layout.cpp,matched,
 ?buildTransformMatrix@Matrix3D@@QAEXABVVector3@@0@Z,,0x008D6BC0,401,src/w3d/matrix3d.cpp,matched,
+?calcDistSquared@@YAMABUCoord3D@@0@Z,,0x0087DE90,39,src/game/geometry.cpp,matched,
+?calcDotProduct@@YAMABUCoord3D@@0@Z,,0x0087DAF0,21,src/game/geometry.cpp,matched,
+?calcPointToLineDistSquared@@YAMABUCoord3D@@00@Z,,0x0087DEC0,248,src/game/geometry.cpp,matched,
 ?calculate_uv_offset@GridTextureMapperClass@@IAEXPAM0@Z,,0x009643F0,88,src/w3d/mapper.cpp,matched,
 ?clamp_indices_to_grid@GridCullSystemClass@@IAEXPAH00@Z,,0x008DCE70,82,src/w3d/gridcull.cpp,matched,
 ?clear@?$StringBase@D@@QAEXXZ,0x00041A38,0x000680C0,5,src/game/string_base.cpp,matched,clears string by releasing buffer; size trimmed: trailing int3 padding
@@ -1882,10 +1898,13 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?debugIgnoreLeaks@?$StringBase@D@@QAEXXZ,0x00887080,0x00887080,1,src/game/string_base.cpp,matched,no-op leak ignore
 ?debugIgnoreLeaks@?$StringBase@G@@QAEXXZ,0x00887230,0x00887230,1,src/game/string_base.cpp,matched,no-op leak ignore
 ?deg2rad@@YAMM@Z,0x00018A7F,0x00069780,11,src/math/trig.cpp,matched,converts degrees to radians
+?deleteRayEffect@RayEffectSystem@@QAEXPBVDrawable@@@Z,,0x005D35A0,56,src/game/ray_effect.cpp,matched,
 ?depth@IRegion3D@@QBEHXZ,0x00040E53,0x007E6F20,7,src/math/region.cpp,matched,returns integer depth
 ?depth@Region3D@@QBEMXZ,0x0001DB24,0x007E6E30,7,src/math/region.cpp,matched,returns float depth
 ?destroy@LListNode@@QAEXXZ,,0x001059F0,15,src/game/list.cpp,matched,
 ?destroyWindows@WindowLayout@@UAEXXZ,,0x00497A50,40,src/game/window_layout.cpp,matched,BFME rewrote: direct m_windowList loop
+?do_encrypt@@YAPADPAD@Z,,0x00104760,278,src/game/encrypt.cpp,matched,
+?done@BezFwdIterator@@QAE_NXZ,,0x000B6540,17,src/game/bez_fwd_iterator.cpp,matched,
 ?drawCircle@DiscreteCircle@@QAEXP6AXHHHPAX@Z0@Z,,0x00068AF0,84,src/game/discrete_circle.cpp,matched,
 ?endsWith@?$StringBase@D@@QBE_NABV1@@Z,0x00887870,0x887870,111,src/game/string_base.cpp,matched,
 ?endsWith@?$StringBase@D@@QBE_NPBD@Z,0x000109C9,0x00061E30,50,src/game/string_base.cpp,matched,
@@ -1902,6 +1921,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?ensureUniqueBufferOfSize@?$StringBase@D@@AAEXH_NPBDH1H@Z,0x008879D0,0x8879d0,388,src/game/string_base.cpp,matched,
 ?ensureUniqueBufferOfSize@?$StringBase@G@@AAEXH_NPBGH1H@Z,0x00888260,0x888260,401,src/game/string_base.cpp,matched,
 ?equals@Coord3D@@QBE_NABUCoord3DBase@@@Z,0x00001334,0x0016A110,60,src/math/coord3d.cpp,matched,compares x/y/z with Coord3DBase
+?erase@?$hash_map@PBVGameWindow@@PAVWindowVideo@@UhashConstGameWindowPtr@WindowVideoManager@@U?$equal_to@PBVGameWindow@@@_STL@@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@6@@_STL@@QAEXU?$_Ht_iterator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@U?$_Nonconst_traits@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@2@@Z,,0x00498CC0,33,src/game/window_video_manager.cpp,matched,
 ?erase@?$vector@UHorzLine@@V?$allocator@UHorzLine@@@_STL@@@_STL@@QAEPAUHorzLine@@PAU3@@Z,,0x00068D70,47,src/game/discrete_circle.cpp,matched,
 ?eval_A0_point@@YAXABUBTCollisionStruct@@PAMH@Z,,0x008E5DA0,520,src/w3d/colmathobbtri.cpp,matched,
 ?eval_A1_point@@YAXABUBTCollisionStruct@@PAMH@Z,,0x008E5FB0,524,src/w3d/colmathobbtri.cpp,matched,
@@ -1917,6 +1937,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?expandBy@Region3D@@QAEXABVCoord3D@@@Z,0x00022F75,0x007E8330,111,src/math/region.cpp,matched,expands float x/y/z bounds to include point
 ?find@?$StringBase@D@@QBEPBDD@Z,0x0001CA8A,0x000628B0,45,src/game/string_base.cpp,matched,find character in string
 ?find@?$StringBase@G@@QBEPBGG@Z,0x00046623,0x00450B30,48,src/game/string_base.cpp,matched,find wchar_t character in string
+?findEntry@RayEffectSystem@@IAEPAURayEffectData@@PBVDrawable@@@Z,,0x005D34C0,49,src/game/ray_effect.cpp,matched,
 ?findItem@LList@@QAEPAVLListNode@@PAX@Z,,0x00105D60,51,src/game/list.cpp,matched,
 ?findWindow@WindowLayout@@AAEPAVGameWindow@@PAV2@@Z,,0x00497AD0,37,src/game/window_layout.cpp,matched,
 ?find_dominant_plane@@YAXABVTriClass@@PAH11@Z,,0x008E1770,185,src/w3d/tri.cpp,matched,
@@ -2014,6 +2035,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getNext@?$CategoryModuleClass@$0A@@FXParticleSystem@@QBEPBV12@XZ,0x00014579,0x005C1220,4,src/game/fx_particle_system_category_accessors.cpp,matched,returns next module in category list
 ?getNode@LList@@QAEPAVLListNode@@H@Z,,0x00105D10,57,src/game/list.cpp,matched,
 ?getParticleType@ParticleSystemTemplate@FXParticleSystem@@QBE?AW4ParticleType@2@XZ,0x0003CC31,0x0005CB60,4,src/game/fx_particle_system.cpp,matched,returns particle type field
+?getRayEffectData@RayEffectSystem@@QAEXPBVDrawable@@PAURayEffectData@@@Z,,0x005D35F0,42,src/game/ray_effect.cpp,matched,
 ?getReplayDir@RecorderClass@@SA?AVAsciiString@@XZ,0x00023F74,0x98a50,145,src/game/recorder.cpp,matched,
 ?getReplayExtention@RecorderClass@@SA?AVAsciiString@@XZ,0x000427F8,0x98b10,31,src/game/recorder.cpp,matched,
 ?getTextureFilename@ParticleSystemTemplate@FXParticleSystem@@QBE?AVAsciiString@@XZ,0x00018755,0x0005F240,32,src/game/fx_particle_system.cpp,matched,return texture filename
@@ -2031,6 +2053,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?hide@WindowLayout@@UAEXH@Z,,0x00497A00,58,src/game/window_layout.cpp,matched,
 ?inList@LListNode@@QAE_NXZ,,0x00105820,11,src/game/list.cpp,matched,
 ?init@ModuleFactory@@UAEXXZ,,0x0012C2E0,18040,src/game/module_factory.cpp,matched,
+?init@RayEffectSystem@@UAEXXZ,,0x005D36E0,43,src/game/ray_effect.cpp,matched,
+?init@WindowVideoManager@@UAEXXZ,,0x00498C20,21,src/game/window_video_manager.cpp,matched,
 ?init_volume@GridCullSystemClass@@IAEXABVAABoxClass@@PAUVolumeStruct@1@@Z,,0x008DD170,463,src/w3d/gridcull.cpp,matched,
 ?init_volume@GridCullSystemClass@@IAEXABVFrustumClass@@PAUVolumeStruct@1@@Z,,0x008DD530,457,src/w3d/gridcull.cpp,matched,
 ?init_volume@GridCullSystemClass@@IAEXABVOBBoxClass@@PAUVolumeStruct@1@@Z,,0x008DD340,483,src/w3d/gridcull.cpp,matched,
@@ -2072,6 +2096,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?mulVector3@Matrix3D@@QBEXAAVVector3@@@Z,,0x001C0D10,88,src/w3d/rendobj.cpp,matched,
 ?mulVector3@Matrix3D@@QBEXABVVector3@@AAV2@@Z,,0x001BD8B0,92,src/w3d/rendobj.cpp,matched,
 ?mulVector3Array@Matrix3D@@QBEXPBVVector3@@PAV2@H@Z,,0x00918680,112,src/w3d/vp.cpp,matched,
+?next@BezFwdIterator@@QAEXXZ,,0x000B6810,87,src/game/bez_fwd_iterator.cpp,matched,
 ?next@LListNode@@QAEPAV1@XZ,,0x00105950,20,src/game/list.cpp,matched,
 ?nextToken@?$StringBase@D@@QAE_NPAV1@PBD@Z,0x008880E0,0x8880e0,186,src/game/string_base.cpp,matched,
 ?nextToken@?$StringBase@G@@QAE_NPAV1@PBG@Z,0x008889B0,0x8889b0,197,src/game/string_base.cpp,matched,
@@ -2127,6 +2152,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?project_to_sphere@@YAMMMM@Z,,0x008DC200,105,src/w3d/quat.cpp,matched,
 ?push_back@?$vector@UHorzLine@@V?$allocator@UHorzLine@@@_STL@@@_STL@@QAEXABUHorzLine@@@Z,,0x00069200,64,src/game/discrete_circle.cpp,matched,
 ?rad2deg@@YAMM@Z,0x00008BF2,0x007E5950,11,src/math/trig.cpp,matched,converts radians to degrees
+?randomValue@@YAIPAI@Z,,0x00096970,125,src/game/random_value.cpp,matched,
 ?readArgument@RecorderClass@@IAEXW4GameMessageArgumentDataType@@PAVGameMessage@@@Z,0x0000139D,0x97500,520,src/game/recorder_strings.cpp,matched,
 ?readAsciiString@RecorderClass@@IAE?AVAsciiString@@XZ,0x0003C1D2,0x98610,220,src/game/recorder_strings.cpp,matched,
 ?readNextFrame@RecorderClass@@IAEXXZ,0x0000A2D1,0x98730,97,src/game/recorder_strings.cpp,matched,
@@ -2139,6 +2165,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?removeLastChar@?$StringBase@D@@QAEXXZ,0x00887F80,0x887f80,224,src/game/string_base.cpp,matched,
 ?removeLastChar@?$StringBase@G@@QAEXXZ,0x00888840,0x888840,237,src/game/string_base.cpp,matched,
 ?removeWindow@WindowLayout@@UAEXPAVGameWindow@@@Z,,0x00497B80,136,src/game/window_layout.cpp,matched,
+?reset@WindowVideoManager@@UAEXXZ,,0x00498F90,149,src/game/window_video_manager.cpp,matched,
 ?reverseFind@?$StringBase@D@@QBEPBDD@Z,0x0000C342,0x00072C40,49,src/game/string_base.cpp,matched,reverse find char in string
 ?reverseFind@?$StringBase@G@@QBEPBGG@Z,0x00887090,0x00887090,49,src/game/string_base.cpp,matched,reverse find wchar_t in string
 ?runInit@WindowLayout@@UAEXPAX@Z,,0x00470690,21,src/game/window_layout.cpp,matched,header-inline virtual (COMDAT)
@@ -2147,6 +2174,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?scale@Coord3D@@QAEXM@Z,0x000236AF,0x000B6CD0,31,src/math/coord3d.cpp,matched,scales x/y/z in place
 ?search_compfunc@?$IndexClass@HPAUINIEntry@@@@CAHPBX0@Z,,0x009E2390,33,src/w3d/ini.cpp,matched,IndexClass sibling
 ?search_compfunc@?$IndexClass@HPAUINISection@@@@CAHPBX0@Z,,0x009E23C0,33,src/w3d/ini.cpp,matched,IndexClass sibling
+?seedRandom@@YAXIPAI@Z,,0x00096A10,48,src/game/random_value.cpp,matched,
 ?set@?$StringBase@D@@QAEXABV1@@Z,0x00887C90,0x887c90,135,src/game/string_base.cpp,matched,
 ?set@?$StringBase@D@@QAEXABV1@HH@Z,0x00888C10,0x888c10,143,src/game/string_base.cpp,matched,
 ?set@?$StringBase@D@@QAEXD@Z,0x000462CC,0x00570860,15,src/game/string_base.cpp,matched,set from single char; size trimmed: trailing int3 padding
@@ -2161,9 +2189,11 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?set@Coord3D@@QAEXPBUCoord3DBase@@@Z,0x000491F2,0x000FB9A0,23,src/math/coord3d.cpp,matched,copies x/y/z from pointer
 ?setFromInt@RGBColor@@QAEXH@Z,0x0002CDC7,0x00083370,84,src/math/color.cpp,matched,sets RGB channels from packed int
 ?setRange@GameClientRandomVariable@@QAEXMMW4DistributionType@1@@Z,0x00006C58,0x00096F40,23,src/game/game_client_random_variable.cpp,matched,sets distribution/minimum/maximum
+?setRange@GameLogicRandomVariable@@QAEXMMW4DistributionType@1@@Z,,0x00097000,23,src/game/random_value.cpp,matched,
 ?setSlaveSystemName@ParticleSystemTemplate@FXParticleSystem@@QAEXABVAsciiString@@@Z,0x00041F47,0x005BE690,28,src/game/fx_particle_system.cpp,matched,assigns slave system name and clears flag
 ?setTextureFilename@ParticleSystemTemplate@FXParticleSystem@@QAEXAAVAsciiString@@@Z,0x000163FB,0x0005CB50,8,src/game/fx_particle_system.cpp,matched,adjusts this pointer and assigns texture filename
 ?setUV@ParticleSystemTemplate@FXParticleSystem@@QAEXPBURegion2D@@@Z,0x00036D5E,0x0005CB70,39,src/game/fx_particle_system.cpp,matched,copies UV region if non-null
+?splitSegmentAtT@BezierSegment@@QBEXMAAV1@0@Z,,0x000B6FA0,627,src/game/bezier_segment.cpp,matched,
 ?startsWith@?$StringBase@D@@QBE_NABV1@@Z,0x0004B6A0,0x0033CB50,50,src/game/string_base.cpp,matched,
 ?startsWith@?$StringBase@D@@QBE_NPBD@Z,0x0001702B,0x00061DF0,50,src/game/string_base.cpp,matched,
 ?startsWith@?$StringBase@D@@QBE_NPBDH@Z,0x008875A0,0x8875a0,60,src/game/string_base.cpp,matched,
@@ -2177,6 +2207,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?startsWithNoCase@?$StringBase@G@@QBE_NPBG@Z,0x008873E0,0x8873e0,90,src/game/string_base.cpp,matched,
 ?startsWithNoCase@?$StringBase@G@@QBE_NPBGH@Z,0x00887120,0x887120,69,src/game/string_base.cpp,matched,
 ?staticInitModules@FXParticleSystem@@YAXXZ,0x0000261C,0x005EB400,125,src/game/fx_particle_system.cpp,matched,initializes all module category static data
+?stopAndRemoveMovie@WindowVideoManager@@QAEXPAVGameWindow@@@Z,,0x00498D10,107,src/game/window_video_manager.cpp,matched,
 ?str@?$StringBase@D@@QBEPBDXZ,0x00037F3D,0x0005F270,16,src/game/string_base.cpp,matched,returns pointer to C string data
 ?str@?$StringBase@G@@QBEPBGXZ,0x0002287C,0x0005F290,16,src/game/string_base.cpp,matched,returns c-string
 ?strtrim@@YAPADPAD@Z,,0x009E7EB0,102,src/w3d/trim.cpp,matched,
@@ -2283,28 +2314,3 @@ _XMP_Unsigned_Div_Int,,0x009E89C0,176,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult,,0x009E9100,298,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult_Int,,0x009E8980,61,src/w3d/mpmath.cpp,matched,
 _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
-??$clamp@M@@YAMMMM@Z,,0x0006C410,45,src/game/geometry.cpp,matched,
-?calcDotProduct@@YAMABUCoord3D@@0@Z,,0x0087DAF0,21,src/game/geometry.cpp,matched,
-?calcDistSquared@@YAMABUCoord3D@@0@Z,,0x0087DE90,39,src/game/geometry.cpp,matched,
-?calcPointToLineDistSquared@@YAMABUCoord3D@@00@Z,,0x0087DEC0,248,src/game/geometry.cpp,matched,
-?findEntry@RayEffectSystem@@IAEPAURayEffectData@@PBVDrawable@@@Z,,0x005D34C0,49,src/game/ray_effect.cpp,matched,
-?addRayEffect@RayEffectSystem@@QAEXPBVDrawable@@PBUCoord3D@@1@Z,,0x005D3510,111,src/game/ray_effect.cpp,matched,
-?deleteRayEffect@RayEffectSystem@@QAEXPBVDrawable@@@Z,,0x005D35A0,56,src/game/ray_effect.cpp,matched,
-?getRayEffectData@RayEffectSystem@@QAEXPBVDrawable@@PAURayEffectData@@@Z,,0x005D35F0,42,src/game/ray_effect.cpp,matched,
-?init@RayEffectSystem@@UAEXXZ,,0x005D36E0,43,src/game/ray_effect.cpp,matched,
-?D3DXVec4Dot@@YAMPBUD3DXVECTOR4@@0@Z,,0x000B6970,37,src/game/bezier_segment.cpp,matched,
-?splitSegmentAtT@BezierSegment@@QBEXMAAV1@0@Z,,0x000B6FA0,627,src/game/bezier_segment.cpp,matched,
-?add@Coord3D@@QAEXPBU1@@Z,,0x007AF300,31,src/game/bezier_segment.cpp,matched,
-?done@BezFwdIterator@@QAE_NXZ,,0x000B6540,17,src/game/bez_fwd_iterator.cpp,matched,
-?next@BezFwdIterator@@QAEXXZ,,0x000B6810,87,src/game/bez_fwd_iterator.cpp,matched,
-??0BezFwdIterator@@QAE@XZ,,0x000B6880,60,src/game/bez_fwd_iterator.cpp,matched,
-?randomValue@@YAIPAI@Z,,0x00096970,125,src/game/random_value.cpp,matched,
-?seedRandom@@YAXIPAI@Z,,0x00096A10,48,src/game/random_value.cpp,matched,
-?InitRandom@@YAXXZ,,0x00096A80,227,src/game/random_value.cpp,matched,
-?InitRandom@@YAXI@Z,,0x00096BA0,188,src/game/random_value.cpp,matched,
-?InitGameLogicRandom@@YAXI@Z,,0x00096C90,72,src/game/random_value.cpp,matched,
-?setRange@GameLogicRandomVariable@@QAEXMMW4DistributionType@1@@Z,,0x00097000,23,src/game/random_value.cpp,matched,
-?do_encrypt@@YAPADPAD@Z,,0x00104760,278,src/game/encrypt.cpp,matched,
-?GameGetColorComponents@@YAXHPAE000@Z,,0x0040BD20,44,src/game/color_ops.cpp,matched,
-?GameGetColorComponentsReal@@YAXHPAM000@Z,,0x0040BD60,127,src/game/color_ops.cpp,matched,
-?GameDarkenColor@@YAHHH@Z,,0x0040BEE0,161,src/game/color_ops.cpp,matched,

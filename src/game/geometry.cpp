@@ -38,6 +38,7 @@
 #include "geometry.h"
 #include "ini.h"
 #include "random_value.h"
+#include "logic_random_value.h"
 #include "xfer.h"
 
 #ifdef _INTERNAL

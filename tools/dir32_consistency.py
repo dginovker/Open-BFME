@@ -2,11 +2,15 @@
 # INVESTIGATION 2026-07-06: the 11 flagged candidates are all LEGITIMATE patterns, not bugs:
 #   - CRC32_Table, _COLLISION_EPSILON: their translation units are LINKED TWICE in lotrbfme.exe
 #     (see realcrc.cpp comment) -> two byte-identical copies at two addresses. Expected.
-#   - 8 FX module ??_7Class ctor-vs-dtor: same vtable symbol resolves to different addresses in
-#     ctor (real fn-ptr vtable) vs dtor -> MSVC construction/destruction-vtable variants. Expected.
-# NET: zero real bugs beyond the two strings verify_string_refs already fixed; existing globals/
-# vtables are consistent. To make this a build GATE, whitelist doubly-linked TUs + the ctor/dtor
-# vtable-variant pairs, then any NEW inconsistency (a real masked bug) fails.
+#   - 8 FX module ??_7Class ctor-vs-dtor: same vtable symbol resolves to DIFFERENT addresses with
+#     DIFFERENT content in ctor (0x1110920, real fn-ptr vtable) vs dtor (0x1073744). This is NOT
+#     double-linking (contents differ) and NOT a normal construction vtable (those have a different
+#     ??_8/??_R symbol). UNEXPLAINED — a genuine candidate byte-fidelity gap the masking hides: the
+#     empty `~Class(){}` source compiles a reference to the class's regular vtable, but the binary
+#     dtor sets a different vtable, so a full rebuild would NOT reproduce the binary here. Needs
+#     deeper vtable-layout analysis (or it IS a real defect like the two strings). DO NOT assume benign.
+# NET: 2 confirmed real string bugs fixed; CRC/COLLISION confirmed legitimate (double-link); the 8 FX
+# vtable diffs are OPEN — real candidate defects to resolve before this can be a clean build gate.
 """Consistency verifier for the NON-string DIR32 relocations that build.py masks (globals, vtables,
 function-address references). Strings are handled by verify_string_refs (content self-verification);
 these have no content signature, but they DO have a consistency signature: a given symbol has exactly

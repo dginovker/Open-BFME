@@ -481,7 +481,9 @@ public:
 	virtual int						Is_Animation_Hidden(void) const											{ return !(Bits & IS_NOT_ANIMATION_HIDDEN); }
 	virtual void					Set_Animation_Hidden(int onoff)											{ if (onoff) { Bits &= ~IS_NOT_ANIMATION_HIDDEN; } else { Bits |= IS_NOT_ANIMATION_HIDDEN; } }
 	virtual int						Is_Force_Visible(void) const												{ return Bits & IS_FORCE_VISIBLE; }
-	virtual void					Set_Force_Visible(int onoff)          									{ if (onoff) { Bits |= IS_FORCE_VISIBLE; } else { Bits &= ~IS_FORCE_VISIBLE; } }
+	// BFME drift: out-of-line in retail (0x91F890) — callers emit a call instead
+	// of inlining the Bits update (ParticleBufferClass ctor at 0x9897A7).
+	virtual void					Set_Force_Visible(int onoff);
 
 	virtual int						Is_Translucent(void) const													{ return Bits & IS_TRANSLUCENT; }
 	virtual void					Set_Translucent(int onoff)													{ if (onoff) { Bits |= IS_TRANSLUCENT; } else { Bits &= ~IS_TRANSLUCENT; } }

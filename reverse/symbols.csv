@@ -11,10 +11,12 @@ name,address,notes
 ??0CullSystemClass@@QAE@XZ,0x008E2140
 ??0GameMessage@@QAE@W4Type@0@@Z,0x000359E5,GameMessage::GameMessage(Type) thunk
 ??0GameMessageParser@@QAE@XZ,0x00013FCA,GameMessageParser::GameMessageParser() thunk
+??0LineGroupClass@@QAE@XZ,0x0098E9C0,derived from ParticleBufferClass main ctor aligned call sites
 ??0LockClass@CriticalSectionClass@@QAE@AAV1@@Z,0x009DB4B0
 ??0ParticleBufferClass@@QAE@ABV0@@Z,0x00989A20
 ??0PointGroupClass@@QAE@XZ,0x00912580,derived from ParticleBufferClass main ctor aligned call sites
 ??0RenderObjClass@@QAE@XZ,0x009204B0,derived from ParticleBufferClass main ctor aligned call sites
+??0SegLineRendererClass@@QAE@XZ,0x0095FFD0,derived from ParticleBufferClass main ctor aligned call sites
 ??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
 ??1Buffer@@QAE@XZ,0x009E1E60
 ??1BufferStraw@@UAE@XZ,0x00921790
@@ -68,6 +70,7 @@ name,address,notes
 ?HideInGameChat@@YAXXZ,0x00019583
 ?HideQuitMenu@@YAXXZ,0x0001BF36
 ?HideSaveLoadMenu@@YAXXZ,0x0000A416
+?Init@SegLineRendererClass@@QAEXABUW3dEmitterLinePropertiesStruct@@@Z,0x00960190,derived from ParticleBufferClass main ctor aligned call sites
 ?Internal_Remove@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@@Z,0x009DC100
 ?Inv_Sqrt@WWMath@@SIMM@Z,0x00027A43,WWMath::Inv_Sqrt (naked __fastcall) incremental-link thunk (body 0x00131C90); called by Quaternion::Normalize and Axis_To_Quat, owned by wwmath.cpp
 ?Load@INIClass@@QAEHAAVStraw@@@Z,0x009E4680
@@ -97,16 +100,23 @@ name,address,notes
 ?Search_For_Node@?$IndexClass@HPAUINISection@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2FD0
 ?Set_Arrays@LineGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@0PAV?$ShareBufferClass@VVector4@@@@1PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@3H@Z,0x0098EB00
 ?Set_Arrays@PointGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@PAV?$ShareBufferClass@VVector4@@@@PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@PAV?$ShareBufferClass@E@@4HMMMM@Z,0x009126B0,derived from Render_Particles call sites
+?Set_Flag@LineGroupClass@@QAEXW4FlagsType@1@_N@Z,0x0098E900,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Flag@PointGroupClass@@QAEXW4FlagsType@1@_N@Z,0x009120A0,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Force_Visible@RenderObjClass@@UAEXH@Z,0x0091F890,out-of-line in retail; GeneralsMD inlines the Bits OR
+?Set_Frame_Row_Column_Count_Log2@PointGroupClass@@QAEXE@Z,0x00912130,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Line_Alpha@LineGroupClass@@QAEXM@Z,0x0098E8C0
 ?Set_Line_Color@LineGroupClass@@QAEXABVVector3@@@Z,0x0098EC00
+?Set_Line_Mode@LineGroupClass@@QAEXW4LineModeType@1@@Z,0x0098E950,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Line_Size@LineGroupClass@@QAEXM@Z,0x0098E8A0
 ?Set_Line_UCoord@LineGroupClass@@QAEXM@Z,0x0098E8E0
 ?Set_Point_Alpha@PointGroupClass@@QAEXM@Z,0x00912020,derived from Render_Particles call sites
 ?Set_Point_Color@PointGroupClass@@QAEXVVector3@@@Z,0x009127B0,derived from Render_Particles call sites
 ?Set_Point_Frame@PointGroupClass@@QAEXE@Z,0x00912060,derived from Render_Particles call sites
+?Set_Point_Mode@PointGroupClass@@QAEXW4PointModeEnum@1@@Z,0x00912080,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Point_Orientation@PointGroupClass@@QAEXE@Z,0x00912040,derived from Render_Particles call sites
 ?Set_Point_Size@PointGroupClass@@QAEXM@Z,0x00912000,derived from Render_Particles call sites
+?Set_Shader@LineGroupClass@@QAEXABVShaderClass@@@Z,0x0098E940,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Shader@PointGroupClass@@QAEXVShaderClass@@@Z,0x009120E0,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Tail_Diffuse@LineGroupClass@@QAEXABVVector4@@@Z,0x0098EC40
 ?Set_Texture@LineGroupClass@@QAEXPAVTextureClass@@@Z,0x0098EC80
 ?Set_Texture@PointGroupClass@@QAEXPAVTextureClass@@@Z,0x009127F0

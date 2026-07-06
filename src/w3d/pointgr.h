@@ -75,6 +75,10 @@ public:
 
 	enum FlagsType {
 		TRANSFORM,	// transform points w. modelview matrix (worldspace points)
+		// BFME drift: a second flag exists; the ParticleBufferClass ctor sets it
+		// unconditionally right after TRANSFORM (0x989130 pushes 1,1). Presumed to
+		// be the billboard toggle that replaced the removed Billboard member.
+		BILLBOARD,
 	};
 
 	PointGroupClass(void);
@@ -110,8 +114,8 @@ public:
 	TextureClass * 	Peek_Texture(void);
 	void						Set_Shader(ShaderClass shader);
 	ShaderClass			Get_Shader(void);
-	void						Set_Billboard(bool shouldBillboard);
-	bool						Get_Billboard(void);
+	// BFME drift: no Billboard member — retail PointGroupClass is 0x5C bytes and
+	// its ctor (0x912580) initializes VPYMax at +0x58 as the last member.
 
 	// The frame property is taken from a set of possible frames. The rows/columns in the frame
 	// texture determine the number of possible frames. Since it must be a power of 2, we represent
@@ -188,7 +192,6 @@ protected:
 	float						VPXMax;
 	float						VPYMax;
 
-	bool						Billboard;
 
 	// Static stuff:
 	// For performance / memory reasons we prepare vertex location and UV

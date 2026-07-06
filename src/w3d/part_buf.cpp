@@ -232,6 +232,7 @@ ParticleBufferClass::ParticleBufferClass
 			// Set up worldspace point group
 			PointGroup = W3DNEW PointGroupClass();
 			PointGroup->Set_Flag(PointGroupClass::TRANSFORM, true);
+			PointGroup->Set_Flag(PointGroupClass::BILLBOARD, true);
 			PointGroup->Set_Texture(tex);			
 			PointGroup->Set_Shader(shader);
 			PointGroup->Set_Frame_Row_Column_Count_Log2(frame_mode);
@@ -243,6 +244,7 @@ ParticleBufferClass::ParticleBufferClass
 			// Set up worldspace point group
 			PointGroup = W3DNEW PointGroupClass();
 			PointGroup->Set_Flag(PointGroupClass::TRANSFORM, true);
+			PointGroup->Set_Flag(PointGroupClass::BILLBOARD, true);
 			PointGroup->Set_Texture(tex);			
 			PointGroup->Set_Shader(shader);
 			PointGroup->Set_Frame_Row_Column_Count_Log2(frame_mode);
@@ -3488,7 +3490,6 @@ float ParticleBufferClass::Get_Texture_Tile_Factor(void) const
 	return 1.0f;
 }
 
-// ?ParticleBufferClass::Get_UV_Offset_Rate present-unmatched
 Vector2 ParticleBufferClass::Get_UV_Offset_Rate(void) const
 {
 	if (LineRenderer != NULL) {

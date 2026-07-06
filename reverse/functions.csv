@@ -309,7 +309,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0003C6DC,0x005D7D40,62,src/game/fx_particle_system_bulk.cpp,matched,
 ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x00048DB0,0x005D7C70,106,src/game/fx_particle_system_bulk.cpp,matched,
 ??0PKey@@QAE@PBX0@Z,,0x009EAA10,81,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
-??0ParticleBufferClass@@QAE@PAVParticleEmitterClass@@IAAU?$ParticlePropertyStruct@VVector3@@@@AAU?$ParticlePropertyStruct@M@@22M22VVector3@@MMPAVTextureClass@@VShaderClass@@_NHHPBUW3dEmitterLinePropertiesStruct@@@Z,,0x00989130,2227,src/w3d/part_buf.cpp,unmatched,"close (2220 vs 2227): retail PointGroupClass is 0x5C bytes (mine 0x60 — one member less, needs its own dtor-Rosetta); BFME init seq adds Set_Flag(x,true) call at +0x400 (push 1;push 1;call 0x9120A0) replacing a Set_Point_Color path; base/ctor callees pinned 2026-07-05"
+??0ParticleBufferClass@@QAE@PAVParticleEmitterClass@@IAAU?$ParticlePropertyStruct@VVector3@@@@AAU?$ParticlePropertyStruct@M@@22M22VVector3@@MMPAVTextureClass@@VShaderClass@@_NHHPBUW3dEmitterLinePropertiesStruct@@@Z,,0x00989130,2227,src/w3d/part_buf.cpp,matched,"close (2220 vs 2227): retail PointGroupClass is 0x5C bytes (mine 0x60 — one member less, needs its own dtor-Rosetta); BFME init seq adds Set_Flag(x,true) call at +0x400 (push 1;push 1;call 0x9120A0) replacing a Set_Point_Color path; base/ctor callees pinned 2026-07-05"
 ??0PlaneClass@@QAE@ABVVector3@@0@Z,,0x008DAA60,52,src/w3d/colmathline.cpp,matched,
 ??0PlaneClass@@QAE@XZ,,0x00931400,20,src/w3d/frustum.cpp,matched,
 ??0PointEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0000FECA,0x005D5930,62,src/game/fx_particle_system_bulk.cpp,matched,
@@ -1078,6 +1078,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Translation@Matrix3D@@QBE?AVVector3@@XZ,,0x001B4770,24,src/w3d/matrix3d.cpp,matched,
 ?Get_UUBlock@INIClass@@QBEHPBD0PAXH@Z,,0x009E55C0,228,src/w3d/ini.cpp,matched,
 ?Get_UUBlock@INIClass@@QBEHPBDPAXH@Z,,0x009E5070,455,src/w3d/ini.cpp,matched,
+?Get_UV_Offset_Rate@ParticleBufferClass@@QBE?AVVector2@@XZ,,0x00988F20,60,src/w3d/part_buf.cpp,matched,
+?Get_UV_Offset_Rate@SegLineRendererClass@@QBE?AVVector2@@XZ,,0x00918990,30,src/w3d/part_buf.cpp,matched,
 ?Get_Value@ParticleBufferClass@@UBEMXZ,,0x009837F0,20,src/w3d/part_buf.cpp,matched,
 ?Get_X_Rotation@Matrix3D@@QBEMXZ,,0x008D6880,9,src/w3d/matrix3d.cpp,matched,
 ?Get_X_Vector@Matrix3D@@QBE?AVVector3@@XZ,,0x00131DC0,23,src/w3d/frustum.cpp,matched,
@@ -1355,7 +1357,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Element@?$ShareBufferClass@VVector4@@@@QAEXHABVVector4@@@Z,,0x00984460,41,src/w3d/part_buf.cpp,matched,
 ?Set_Emitter@ParticleBufferClass@@QAEXPAVParticleEmitterClass@@@Z,,0x00983A60,46,src/w3d/part_buf.cpp,matched,
 ?Set_Frame_Per_Second@GridTextureMapperClass@@QAEXM@Z,,0x00967040,17,src/w3d/mapper.cpp,matched,
-?Set_Freeze_Random@SegLineRendererClass@@QAEXH@Z,,0x0095C650,29,src/w3d/part_buf.cpp,matched,
 ?Set_LOD_Bias@ParticleBufferClass@@UAEXM@Z,,0x00984B70,43,src/w3d/part_buf.cpp,matched,
 ?Set_LOD_Level@ParticleBufferClass@@UAEXH@Z,,0x00985020,46,src/w3d/part_buf.cpp,matched,
 ?Set_LOD_Max_Screen_Size@ParticleBufferClass@@SAXHM@Z,,0x009843D0,25,src/w3d/part_buf.cpp,matched,

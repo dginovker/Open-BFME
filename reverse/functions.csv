@@ -778,6 +778,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??M@YA_NABV?$StringBase@D@@0@Z,0x0000FAAB,0x00062ED0,24,src/game/string_base.cpp,matched,StringBase<char> less-than
 ??M@YA_NABV?$StringBase@G@@0@Z,0x00005D94,0x0054EB50,24,src/game/string_base.cpp,matched,StringBase<wchar_t> less-than
 ??O?$Int@$0EA@@@QBEHABV0@@Z,,0x009EA950,28,src/w3d/pk.cpp,matched,
+??RCRCEngine@@QAEJPBXH@Z,,0x009E8070,184,src/w3d/crc.cpp,matched,
+??RCRCEngine@@QAEXD@Z,,0x009E8040,47,src/w3d/crc.cpp,matched,
 ??RRandom2Class@@QAEHXZ,,0x009E5E60,69,src/w3d/random.cpp,matched,
 ??RRandom3Class@@QAEHXZ,,0x009E5ED0,244,src/w3d/random.cpp,matched,verbatim Generals WWLib
 ??RRandom4Class@@QAEHXZ,,0x009E6020,253,src/w3d/random.cpp,matched,verbatim Generals WWLib (Mersenne twister)
@@ -944,6 +946,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Crypt_Block_Size@PKey@@QBEHXZ,,0x009EA740,18,src/w3d/pk.cpp,matched,
 ?DERDecode@?$Int@$0EA@@@QAEXPBE@Z,,0x009EA790,19,src/w3d/pk.cpp,matched,ghidra-unknown callee + identical DEREncode wrapper; disambiguated by call target; build.sh exact
 ?DEREncode@?$Int@$0EA@@@QBEHPAE@Z,,0x009E21F0,19,src/w3d/pk.cpp,matched,ghidra-unknown callee + identical DERDecode wrapper; disambiguated by call target; build.sh exact
+?Decode@@YAXPAKPAEI@Z,,0x0086A470,57,src/w3d/md5.cpp,matched,
 ?Decode_Exponent@PKey@@QAEXPAX@Z,,0x009EAAE0,25,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
 ?Decode_Modulus@PKey@@QAEXPAX@Z,,0x009EAAB0,38,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
 ?Decrement_LOD@ParticleBufferClass@@UAEXXZ,,0x009837B0,22,src/w3d/part_buf.cpp,matched,
@@ -976,6 +979,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Dot_Product@Vector3@@SAMABV1@0@Z,,0x001A1C20,29,src/w3d/lineseg.cpp,matched,
 ?DuplicateCRCError@INIClass@@QAEXPBD00@Z,,0x009E2160,90,src/w3d/ini.cpp,matched,
 ?Emitter_Is_Dead@ParticleBufferClass@@QAEXXZ,,0x00983A40,18,src/w3d/part_buf.cpp,matched,
+?Encode@@YAXPAEPAKI@Z,,0x0086A430,49,src/w3d/md5.cpp,matched,
 ?Encode_Exponent@PKey@@QBEHPAX@Z,,0x009EAA90,32,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
 ?Encode_Modulus@PKey@@QBEHPAX@Z,,0x009EAA70,26,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
 ?Encrypt@PKey@@QBEHPBXHPAX@Z,,0x009EACE0,299,src/w3d/pk.cpp,matched,
@@ -1123,6 +1127,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Y_Rotation@Matrix3D@@QBEMXZ,,0x008D6890,9,src/w3d/matrix3d.cpp,matched,
 ?Get_Y_Vector@Matrix3D@@QBE?AVVector3@@XZ,,0x001BD810,24,src/w3d/frustum.cpp,matched,
 ?Get_Z_Rotation@Matrix3D@@QBEMXZ,,0x008D68A0,8,src/w3d/matrix3d.cpp,matched,
+?Greatest_Common_Divisor@@YAIII@Z,,0x009E6450,29,src/w3d/gcd_lcm.cpp,matched,
 ?Hash@HashTableClass@@AAEHPBD@Z,,0x009E0010,27,src/w3d/hash.cpp,matched,
 ?ID@?$DynamicVectorClass@M@@UAEHABM@Z,,0x00974530,54,src/w3d/ode.cpp,matched,
 ?ID@?$VectorClass@E@@UAEHABE@Z,,0x00912F80,49,src/w3d/pointgr.cpp,matched,
@@ -1191,6 +1196,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Is_Present@?$IndexClass@HPAUINISection@@@@QBE_NABH@Z,,0x009E3500,54,src/w3d/ini.cpp,matched,
 ?Is_Present@INIClass@@QBE_NPBD0@Z,,0x009E4D50,79,src/w3d/ini.cpp,matched,
 ?Kill_Old_Particles@ParticleBufferClass@@IAEXXZ,,0x00987FA0,178,src/w3d/part_buf.cpp,matched,
+?Least_Common_Multiple@@YAIII@Z,,0x009E6470,58,src/w3d/gcd_lcm.cpp,matched,
 ?Length@Vector3@@QBEMXZ,,0x001EF570,53,src/w3d/colmathobbtri.cpp,matched,
 ?Lerp@Vector3@@SAXABV1@0MPAV1@@Z,,0x006DF920,57,src/w3d/vector3.cpp,matched,
 ?Link@GenericNode@@QAEXPAV1@@Z,,0x009E2900,75,src/w3d/ini.cpp,matched,
@@ -1215,6 +1221,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?LoadPostProcess@TerrainCollisionModuleInfo@FXParticleSystem@@UAEXXZ,0x0003D208,0x005D4780,1,src/game/fx_particle_system.cpp,matched,no-op
 ?LoadPostProcess@WindModuleInfo@FXParticleSystem@@UAEXXZ,0x0001B518,0x005BD940,1,src/game/fx_particle_system.cpp,matched,no-op
 ?Look_At@Matrix3D@@QAEXABVVector3@@0M@Z,,0x008D6970,584,src/w3d/matrix3d.cpp,matched,
+?MD5Final@@YAXQAEPAUMD5_CTX@@@Z,,0x0086AEE0,174,src/w3d/md5.cpp,matched,
+?MD5Init@@YAXPAUMD5_CTX@@@Z,,0x0086A400,40,src/w3d/md5.cpp,matched,
+?MD5Transform@@YAXQAKQAE@Z,,0x0086A540,2268,src/w3d/md5.cpp,matched,
 ?Make_Closest@Quaternion@@QAEAAV1@ABV1@@Z,,0x008DB490,80,src/w3d/quat.cpp,matched,
 ?Make_Identity@Matrix3@@QAEXXZ,,0x007A0260,34,src/w3d/matrix3.cpp,matched,
 ?Make_Identity@Matrix3D@@QAEXXZ,,0x000FBBE0,43,src/w3d/matrix3d.cpp,matched,

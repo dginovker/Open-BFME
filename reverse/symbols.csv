@@ -76,6 +76,7 @@ name,address,notes
 ?Intersection_Test@CollisionMath@@SA_NABVSphereClass@@ABVAABoxClass@@@Z,0x008E3600
 ?Inv_Sqrt@WWMath@@SIMM@Z,0x00027A43,WWMath::Inv_Sqrt (naked __fastcall) incremental-link thunk (body 0x00131C90); called by Quaternion::Normalize and Axis_To_Quat, owned by wwmath.cpp
 ?Load@INIClass@@QAEHAAVStraw@@@Z,0x009E4680
+?MD5Update@@YAXPAUMD5_CTX@@PAEI@Z,0x0086AE20
 ?Open_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1380
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVFrustumClass@@ABVAABoxClass@@@Z,0x008DB380
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVOBBoxClass@@ABVAABoxClass@@@Z,0x008E2310

@@ -1287,6 +1287,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Reset_Collection@CullSystemClass@@QAEXXZ,,0x008E21C0,8,src/w3d/cullsys.cpp,matched,
 ?Reset_Colors@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@VVector3@@@@@Z,,0x00985050,1569,src/w3d/part_buf.cpp,matched,
 ?Reset_Frames@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x009866E0,1250,src/w3d/part_buf.cpp,matched,
+?Reset_Line@SegLineRendererClass@@QAEXXZ,,0x009600A0,17,src/w3d/seglinerenderer.cpp,matched,
 ?Reset_Opacity@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x00985680,1155,src/w3d/part_buf.cpp,matched,
 ?Reset_Rotations@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@M@Z,,0x00986050,1656,src/w3d/part_buf.cpp,matched,
 ?Reset_Size@ParticleBufferClass@@QAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x00985B10,1328,src/w3d/part_buf.cpp,matched,

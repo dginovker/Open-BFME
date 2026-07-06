@@ -239,7 +239,6 @@ void SegLineRendererClass::Set_Texture_Tile_Factor(float factor)
 	TextureTileFactor = factor;
 }
 
-// ?SegLineRendererClass::Reset_Line present-unmatched
 void SegLineRendererClass::Reset_Line(void)
 {
 	LastUsedSyncTime = WW3D::Get_Sync_Time();

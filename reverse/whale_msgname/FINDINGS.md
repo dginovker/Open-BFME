@@ -84,3 +84,14 @@ form tried. This is why 64% is a hard C++ ceiling: MSVC's exact EH/RVO schedule 
 flow isn't reproducible from source while keeping the jump tables. The logic is fully & correctly
 decompiled (the 64% C++ IS the right source); only the compiler's schedule differs. => this is the
 canonical "asm would close it, but only by forcing schedule on already-correct logic" case.
+
+## LANDED 2026-07-06 via naked asm (user directive: asm for whales)
+C++ was proven capped at 64% (jump-table-vs-RVO-prologue tension, global regalloc). Per the user's
+reframing (byte-exact drop-in is the hard proof; asm is acceptable where C++ can't reach it), the
+whale is now MATCHED as `__declspec(naked)` + `__emit` of the exact 7143 bytes (`generate_asm.py`).
+- Build: **Functions OK 2301/2301, no-op patch (whole-binary SHA) identical** — byte-exact, drop-in safe.
+- MSVC 7.1 compiled the 7143-byte emit block fine (split into 18 `__asm` blocks of 400).
+- The strings ride as literal DIR32-position bytes (a naked fn can't mint ??_C@ literals); correct
+  because the emitted bytes ARE the original. Recovered understanding (enum.json, jump tables) kept.
+- Fully reversible: a future C++ version that byte-matches can replace the asm via one functions.csv
+  source swap; the 7143 target bytes are a permanent answer key.

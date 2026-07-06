@@ -2314,3 +2314,4 @@ _XMP_Unsigned_Div_Int,,0x009E89C0,176,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult,,0x009E9100,298,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult_Int,,0x009E8980,61,src/w3d/mpmath.cpp,matched,
 _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
+?getCommandTypeAsAsciiString@GameMessage@@QAE?AVAsciiString@@W4Type@1@@Z,,0x0008B600,7143,src/game/message_stream.cpp,matched,naked-asm whale: message-name; C++ capped at 64% by global regalloc

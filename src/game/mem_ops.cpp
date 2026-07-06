@@ -11,3 +11,4 @@ extern "C" GameAllocFn __gameMemAllocPtr;  // pin -> 0x0130e9b4
 void __cdecl operator delete(void* p) { if (p) __gameMemFreePtr(p, 1); }
 void __cdecl operator delete[](void* p) { if (p) __gameMemFreePtr(p, 2); }
 void* __cdecl operator new(size_t s) { return __gameMemAllocPtr(s, 1); }
+void* __cdecl operator new[](size_t s) { return __gameMemAllocPtr(s, 2); }

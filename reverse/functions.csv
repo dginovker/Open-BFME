@@ -946,6 +946,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??_GWindModuleInfo@FXParticleSystem@@UAEPAXI@Z,,0x005BDAA0,30,src/game/fx_particle_system_bulk.cpp,matched,
 ??_GWindowLayout@@UAEPAXI@Z,,0x004706F0,30,src/game/window_layout.cpp,matched,compiler-generated deleting dtor
 ??_H@YGXPAXIHP6EPAX0@Z@Z,,0x0005C600,48,src/w3d/gridcull.cpp,matched,
+??_U@YAPAXI@Z,,0x00881F70,17,src/game/mem_ops.cpp,matched,operator new[]
 ??_V@YAXPAX@Z,,0x00881EF0,21,src/game/mem_ops.cpp,matched,operator delete[]
 ?ACos@@YAMM@Z,0x00873940,0x00873940,10,src/math/trig.cpp,matched,wraps internal acos helper
 ?ASin@@YAMM@Z,0x00873950,0x00873950,10,src/math/trig.cpp,matched,wraps internal asin helper

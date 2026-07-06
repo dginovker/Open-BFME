@@ -22,6 +22,8 @@ public:
     void __cdecl format(UnicodeString fmt, ...);
     void translate(const AsciiString &that);
 
+public:
+    const wchar_t *str() const { return m_text; }
 private:
     wchar_t *m_text;
 };

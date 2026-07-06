@@ -22,6 +22,7 @@ public:
     AsciiString &operator+=(const UnicodeString &that);
     void __cdecl format(AsciiString fmt, ...);
     void translate(const UnicodeString &that);
+    const char *str() const { return m_text; }
 
     friend AsciiString operator+(AsciiString left, const char *right);
     friend AsciiString operator+(AsciiString left, const AsciiString &right);

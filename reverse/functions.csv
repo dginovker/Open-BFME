@@ -1875,6 +1875,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?height@IRegion3D@@QBEHXZ,0x00005B5A,0x007E6F10,7,src/math/region.cpp,matched,returns integer height
 ?height@Region2D@@QBEMXZ,0x00035053,0x00160B30,7,src/math/region.cpp,matched,returns float height
 ?height@Region3D@@QBEMXZ,0x00039225,0x001066C0,7,src/math/region.cpp,matched,returns float height
+?hexDigitToInt@@YAHD@Z,,0x00105F00,48,src/game/quoted_printable.cpp,matched,
 ?hide@WindowLayout@@UAEXH@Z,,0x00497A00,58,src/game/window_layout.cpp,matched,
 ?init@ModuleFactory@@UAEXXZ,,0x0012C2E0,18040,src/game/module_factory.cpp,matched,
 ?init_volume@GridCullSystemClass@@IAEXABVAABoxClass@@PAUVolumeStruct@1@@Z,,0x008DD170,463,src/w3d/gridcull.cpp,matched,
@@ -1882,6 +1883,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?init_volume@GridCullSystemClass@@IAEXABVOBBoxClass@@PAUVolumeStruct@1@@Z,,0x008DD340,483,src/w3d/gridcull.cpp,matched,
 ?init_volume@GridCullSystemClass@@IAEXABVVector3@@0PAUVolumeStruct@1@@Z,,0x008DCFB0,442,src/w3d/gridcull.cpp,matched,
 ?initialize@GridTextureMapperClass@@IAEXMI@Z,,0x00964930,226,src/w3d/mapper.cpp,matched,
+?intToHexDigit@@YADH@Z,,0x00105EE0,25,src/game/quoted_printable.cpp,matched,
 ?intersect_obb_obb@@YA_NAAUObbIntersectionStruct@@@Z,,0x008E2C70,2391,src/w3d/colmathobbobb.cpp,matched,
 ?isEmpty@?$StringBase@D@@QBE_NXZ,0x0000C752,0x0005E4C0,22,src/game/string_base.cpp,matched,returns true if string has no data or zero length
 ?isEmpty@?$StringBase@G@@QBE_NXZ,0x0001F361,0x0007F7D0,22,src/game/string_base.cpp,matched,returns true if string has no data or zero length

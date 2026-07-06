@@ -171,8 +171,8 @@ name,address,notes
 ?initFromINI@INI@@QAEXPAXPBX@Z,0x008520A0,INI::initFromINI(void*, const void*) body
 ?makeDecoratedNameKey@ModuleFactory@@KAHABVAsciiString@@H@Z,0x0004B439,ModuleFactory::makeDecoratedNameKey thunk (body 0x00126260)
 ?nameToKey@NameKeyGenerator@@QAE?AW4NameKeyType@@PBD@Z,0x0003ADD7
-?parseFXList@INI@@SAXPAV1@PAX1PBX@Z,0x00851EE0,INI::parseFXList body
 ?nstrdup@@YAPADPBD@Z,0x009E6410
+?parseFXList@INI@@SAXPAV1@PAX1PBX@Z,0x00851EE0,INI::parseFXList body
 ?readUnicodeString@@YA?AVUnicodeString@@PAU_iobuf@@@Z,0x000322F4,shared replay Unicode string reader thunk
 ?set@LayoutFilename@@QAEXPBDH@Z,0x00887D20
 ?spin@LockClass@FastCriticalSectionClass@@CIXPAI@Z,0x00026FA8,FastCriticalSectionClass::LockClass spin-acquire (shared out-of-line body reached via ILT thunk); StringClass locks resolve here

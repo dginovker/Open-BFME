@@ -67,3 +67,11 @@ Conclusion: the divergence is SOURCE-STRUCTURAL global register allocation (MSVC
 e.g. eax-vs-ecx for a cached constant), which no flag controls. Matching needs iterating the source
 shape until MSVC's global allocator lands identically over all 537 blocks — the genuine multi-day part.
 The form/layout are proven correct (first ~5 templates byte-align); this is purely the regalloc fight.
+
+## The 11 unclean templates (diagnosed 2026-07-06)
+7 have one missing uiString, 4 (MUSIC_SCRIPT_*) miss uiName. Cause: MSVC BATCHES two string
+assignments' address-leas together (e.g. enum44 SET_BASE_CONSTRUCTION_SPEED: `push " "; lea
+[uiStrings0]; lea [uiStrings1]; push " will delay "; call...`), so the single pend_push/pend_ecx
+state machine drops one. Fix: make the decoder a small QUEUE that pairs pending (push,lea) in
+order across a batched run. (These 11 must be complete for the all-or-nothing match, but they do
+NOT change the regalloc verdict.) Manual values recoverable per-block from the disasm if needed.

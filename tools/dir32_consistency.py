@@ -7,8 +7,15 @@
 #     double-linking (contents differ) and NOT a normal construction vtable (those have a different
 #     ??_8/??_R symbol). UNEXPLAINED — a genuine candidate byte-fidelity gap the masking hides: the
 #     empty `~Class(){}` source compiles a reference to the class's regular vtable, but the binary
-#     dtor sets a different vtable, so a full rebuild would NOT reproduce the binary here. Needs
-#     deeper vtable-layout analysis (or it IS a real defect like the two strings). DO NOT assume benign.
+#     dtor sets a different vtable. CONFIRMED (2026-07-06): ctor and dtor carry the BYTE-IDENTICAL
+#     symbol ??_7DefaultDrawModuleInfo@FXParticleSystem@@6B@, yet it resolves to 0x1110920 (ctor) vs
+#     0x1073744 (dtor) — two different-content vtables for one symbol, which a normal single link
+#     can't produce. NOT double-linking (contents differ). This is a BFME-build-specific anomaly.
+#     IMPORTANT: it does NOT affect the current PATCH-BASED drop-in (compile_function masks the DIR32
+#     with the original correct bytes, so the no-op whole-binary SHA still passes and the produced
+#     binary is byte-identical). It is a LATENT source-fidelity gap: a hypothetical 100%-from-source
+#     rebuild would resolve both refs to one address and diverge here. Needs deep vtable/linker
+#     analysis to reproduce; not fixable by a literal edit like the two strings were.
 # NET: 2 confirmed real string bugs fixed; CRC/COLLISION confirmed legitimate (double-link); the 8 FX
 # vtable diffs are OPEN — real candidate defects to resolve before this can be a clean build gate.
 """Consistency verifier for the NON-string DIR32 relocations that build.py masks (globals, vtables,

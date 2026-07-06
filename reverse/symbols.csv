@@ -14,6 +14,7 @@ name,address,notes
 ??0LineGroupClass@@QAE@XZ,0x0098E9C0,derived from ParticleBufferClass main ctor aligned call sites
 ??0LockClass@CriticalSectionClass@@QAE@AAV1@@Z,0x009DB4B0
 ??0ParticleBufferClass@@QAE@ABV0@@Z,0x00989A20
+??0PivotClass@@QAE@ABU0@@Z,0x00972D70,derived from HTreeClass::Alter_Avatar_HTree
 ??0PointGroupClass@@QAE@XZ,0x00912580,derived from ParticleBufferClass main ctor aligned call sites
 ??0RenderObjClass@@QAE@ABV0@@Z,0x0091FFE0,base copy ctor; derived from ParticleBufferClass copy ctor site
 ??0RenderObjClass@@QAE@XZ,0x009204B0,derived from ParticleBufferClass main ctor aligned call sites
@@ -38,6 +39,7 @@ name,address,notes
 ??4RenderObjClass@@QAEAAV0@ABV0@@Z,0x0091F790
 ??4StringClass@@QAEABV0@ABV0@@Z,0x00035FDF
 ??AModuleTemplateMap@ModuleFactory@@QAEAAVModuleTemplate@1@ABH@Z,0x0002047D,ModuleFactory::ModuleTemplateMap::operator[] thunk (body 0x001296E0)
+??_L@YGXPAXIHP6EX0@Z1@Z,0x009F6EE4
 ??_M@YGXPAXIHP6EX0@Z@Z,0x009F6D76
 ??_U@YAPAXI@Z,0x00881F30
 ??_U@YAPAXI@Z,0x00881F70,array operator new flag-2 variant (W3D containers); flag-1 at 0x881F30
@@ -47,11 +49,15 @@ name,address,notes
 ?Add_To_Static_Sort_List@WW3D@@SAXPAVRenderObjClass@@I@Z,0x008FD4C0
 ?Allocate_Object_Memory@?$ObjectPoolClass@VGridLinkClass@@$0BAA@@@QAEPAVGridLinkClass@@XZ,0x008DD970
 ?Allocate_Object_Memory@?$ObjectPoolClass@VMultiListNodeClass@@$0BAA@@@QAEPAVMultiListNodeClass@@XZ,0x009DBDD0
+?Base_Update@HTreeClass@@QAEXABVMatrix3D@@@Z,0x009528D0
 ?Begin_Chunk@ChunkSaveClass@@QAE_NK@Z,0x009E16F0
+?Blend_Update@HTreeClass@@QAEXABVMatrix3D@@PAVHAnimClass@@M1MM@Z,0x009546B0
 ?Close_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E13E0
 ?Collide@CollisionMath@@SA_NABVAABoxClass@@ABVVector3@@ABVTriClass@@PAUCastResultStruct@@@Z,0x008E0C30
 ?Combine_Color_And_Alpha@ParticleBufferClass@@IAEXXZ,0x00984CB0,derived from Render_Particles call sites
+?Combo_Update@HTreeClass@@QAEXABVMatrix3D@@PAVHAnimComboClass@@@Z,0x00954D90
 ?Contains_Point@TriClass@@QBE_NABVVector3@@@Z,0x008E1900
+?Control_Bone@HTreeClass@@QAEXHABVMatrix3D@@_N@Z,0x00952A60
 ?Cur_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E1440
 ?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
 ?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,0x0098B750
@@ -101,6 +107,7 @@ name,address,notes
 ?Render_Line@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098AD00
 ?Render_Line_Group@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B950
 ?Render_Particles@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B800
+?Reset@HAnimComboClass@@QAEXXZ,0x00974DC0
 ?ResetInGameChat@@YAXXZ,0x00033A6E
 ?Reset_Collection@CullSystemClass@@QAEXXZ,0x008E21C0
 ?Scale@SegLineRendererClass@@QAEXM@Z,0x0095FF30

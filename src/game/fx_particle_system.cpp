@@ -1,6 +1,8 @@
 #define FX_PARTICLE_SYSTEM_CPP
 #include "fx_particle_system.h"
 
+#include "string_base.h"
+
 #include "../math/region.h"
 
 namespace FXParticleSystem {
@@ -881,18 +883,10 @@ __declspec(naked) AsciiString ParticleSystemTemplate::getTextureFilename() const
     }
 }
 
-__declspec(naked) void ParticleSystemTemplate::setTextureFilename(AsciiString &filename)
+void ParticleSystemTemplate::setTextureFilename(AsciiString &filename)
 {
-    __asm {
-        __emit 0x83
-        __emit 0xc1
-        __emit 0x10
-        __emit 0xe9
-        __emit 0x38
-        __emit 0xb1
-        __emit 0x82
-        __emit 0x00
-    }
+    reinterpret_cast<StringBase<char> *>(reinterpret_cast<char *>(this) + 0x10)->set(
+        *reinterpret_cast<const StringBase<char> *>(&filename));
 }
 
 __declspec(naked) void ParticleSystemTemplate::setSlaveSystemName(const AsciiString &name)

@@ -553,6 +553,50 @@ def verify_string_refs(rows):
     print(f"String-ref verify: OK ({checked} DIR32 string literals independently self-verified)")
 
 
+def verify_dir32_consistency(rows):
+    """Regression gate for the non-string DIR32s (globals/vtables/func-addrs) build.py masks. A symbol
+    has one address, so every reference must resolve to the same base once the addend is subtracted
+    (base = binary_addr - compiled_addend). A symbol with >1 base is a candidate hidden discrepancy.
+    Whitelist (reverse/dir32_consistency_whitelist.txt) holds the CURRENT known-legitimate cases
+    (double-linked TUs CRC32_Table/_COLLISION_EPSILON; the investigated FX ctor/dtor vtable artifacts).
+    Self-bootstrapping: writes the whitelist on first run; afterwards any NEW inconsistency FAILS."""
+    from collections import defaultdict
+    whitelist_path = ROOT / "reverse" / "dir32_consistency_whitelist.txt"
+    sym2base = defaultdict(set)
+    for row in rows:
+        obj = BUILD_DIR / ((ROOT / row["source"]).stem + ".obj")
+        if not obj.exists():
+            continue
+        trva, tsz = int(row["target_rva"], 16), int(row["target_size"])
+        target = read_target_bytes(trva, tsz)
+        try:
+            body, relocs = read_object_symbol_bytes(obj, row["name"])
+        except ValueError:
+            continue
+        for off, rtype, sym in relocs:
+            if rtype != 0x0006 or off + 4 > tsz or off + 4 > len(body) or sym.startswith("??_C@"):
+                continue
+            final = struct.unpack_from("<I", target, off)[0]
+            addend = struct.unpack_from("<I", body, off)[0]
+            sym2base[sym].add((final - addend) & 0xFFFFFFFF)
+    inconsistent = sorted(s for s, b in sym2base.items() if len(b) > 1)
+    if not whitelist_path.exists():
+        whitelist_path.write_text("# DIR32 consistency whitelist — symbols with >1 resolved base that are\n"
+            "# KNOWN-legitimate (doubly-linked TUs / investigated FX vtable artifacts). Any symbol NOT\n"
+            "# listed here that becomes inconsistent is a NEW candidate bug and fails the build.\n"
+            + "".join(s + "\n" for s in inconsistent))
+        print(f"DIR32 consistency: wrote whitelist ({len(inconsistent)} known cases) — review reverse/dir32_consistency_whitelist.txt")
+        return
+    whitelist = {l.strip() for l in whitelist_path.read_text().splitlines() if l.strip() and not l.startswith("#")}
+    new = [s for s in inconsistent if s not in whitelist]
+    if new:
+        print(f"DIR32 consistency: FAIL {len(new)} NEW inconsistent symbol(s) (candidate hidden bug — same symbol, multiple addresses)")
+        for s in new[:12]:
+            print(f"    {s}: bases {[hex(b) for b in sorted(sym2base[s])]}")
+        raise SystemExit(1)
+    print(f"DIR32 consistency: OK ({len(sym2base)} symbols; {len(inconsistent)} whitelisted, 0 new)")
+
+
 def main(only=None):
     if only:
         # Fast path: compile and byte-compare only the matching sources/functions
@@ -564,6 +608,7 @@ def main(only=None):
     verify_baseline()
     patches = verify_functions()
     verify_string_refs(load_function_rows())
+    verify_dir32_consistency(load_function_rows())
     verify_noop_patch(patches)
 
 

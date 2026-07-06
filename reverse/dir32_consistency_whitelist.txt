@@ -1,0 +1,14 @@
+# DIR32 consistency whitelist — symbols with >1 resolved base that are
+# KNOWN-legitimate (doubly-linked TUs / investigated FX vtable artifacts). Any symbol NOT
+# listed here that becomes inconsistent is a NEW candidate bug and fails the build.
+??_7DefaultAlphaModuleInfo@FXParticleSystem@@6B@
+??_7DefaultColorModuleInfo@FXParticleSystem@@6B@
+??_7DefaultDrawModuleInfo@FXParticleSystem@@6B@
+??_7DefaultPhysicsModuleInfo@FXParticleSystem@@6B@
+??_7DefaultUpdateModuleInfo@FXParticleSystem@@6B@
+??_7EmissionVelocityInfo@FXParticleSystem@@6B@
+??_7LightningDrawModuleInfo@FXParticleSystem@@6B@
+??_7StreakDrawModuleInfo@FXParticleSystem@@6B@
+??_7WindModuleInfo@FXParticleSystem@@6B@
+?CRC32_Table@@3PAKA
+_COLLISION_EPSILON

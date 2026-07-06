@@ -64,8 +64,18 @@
 #   define _STLP_DEFAULTCHAR __stl_char
 #  endif /* (_STLP_MSVC < 1100 ) */
 
-#  define _STLP_NO_TYPENAME_ON_RETURN_TYPE 1 
+#  define _STLP_NO_TYPENAME_ON_RETURN_TYPE 1
 //  using ::func_name results in ambiguity
+
+// VC7.1 (VS2003, _MSC_VER 1310) postdates STLport 4.5.3 and is stricter than VC7.0:
+// it requires `typename` on dependent return types (e.g. _string.c / _tree.c out-of-line
+// method defs) and typename-in-template-headers. These keywords are parse-only, so
+// undoing STLport's VC-wide suppressions changes NO emitted bytes — the game (built with
+// VC7.1 + a similarly-patched STLport) produces identical code. Without this, <map>/<set>/
+// <string>/<hash_map>/<deque> fail to compile though <list>/<vector> happen to squeak by.
+# if (_MSC_VER >= 1310)
+#  undef _STLP_NO_TYPENAME_ON_RETURN_TYPE
+# endif
 
 # if (_STLP_MSVC <= 1300) 
 // boris : not defining this macro for SP5 causes other problems

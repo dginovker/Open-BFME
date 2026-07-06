@@ -408,6 +408,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0UnicodeString@@QAE@XZ,0x00041C95,0x00083D10,9,src/game/unicode_string.cpp,matched,default constructor
 ??0Vector3SolidBoxRandomizer@@QAE@ABVVector3@@@Z,,0x00B02150,109,src/w3d/v3_rnd.cpp,matched,
 ??0Vector3SolidCylinderRandomizer@@QAE@MM@Z,,0x00B02480,81,src/w3d/v3_rnd.cpp,matched,
+??0Vector3i16@@QAE@GGG@Z,,0x00956C50,31,src/w3d/meshmdl.cpp,matched,
 ??0WSEnvMapperClass@@QAE@ABVINIClass@@PBDI@Z,,0x00965920,167,src/w3d/mapper.cpp,matched,
 ??0WindModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00047410,0x005BD970,117,src/game/fx_particle_system_bulk.cpp,matched,
 ??0WindowLayout@@QAE@XZ,,0x00497C40,99,src/game/window_layout.cpp,matched,EH function (cl: /EHsc); BFME added vtable vs Generals
@@ -1259,6 +1260,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Hash@HashTableClass@@AAEHPBD@Z,,0x009E0010,27,src/w3d/hash.cpp,matched,
 ?ID@?$DynamicVectorClass@M@@UAEHABM@Z,,0x00974530,54,src/w3d/ode.cpp,matched,
 ?ID@?$DynamicVectorClass@VVector3@@@@UAEHABVVector3@@@Z,,0x007BBA50,84,src/w3d/hmdldef.cpp,matched,
+?ID@?$DynamicVectorClass@VVector4@@@@UAEHABVVector4@@@Z,,0x0094E340,99,src/w3d/meshmdl.cpp,matched,
 ?ID@?$VectorClass@E@@UAEHABE@Z,,0x00912F80,49,src/w3d/pointgr.cpp,matched,
 ?ID@?$VectorClass@M@@UAEHABM@Z,,0x00913490,68,src/w3d/pointgr.cpp,matched,
 ?ID@?$VectorClass@UWeightInfoStruct@NamedPivotMapClass@@@@UAEHABUWeightInfoStruct@NamedPivotMapClass@@@Z,,0x009749F0,51,src/w3d/hanim.cpp,matched,

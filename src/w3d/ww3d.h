@@ -10,6 +10,15 @@
 
 class WW3D
 {
+public:
+	enum NPatchesGapFillingModeEnum {
+		NPATCHES_GAP_FILLING_DISABLED,
+		NPATCHES_GAP_FILLING_ENABLED,
+		NPATCHES_GAP_FILLING_FORCE
+	};
+private:
+	static NPatchesGapFillingModeEnum NPatchesGapFillingMode;
+	static unsigned int NPatchesLevel;
 	static unsigned int SyncTime;
 	static int FrameCount;
 	static float DefaultNativeScreenSize;
@@ -21,6 +30,8 @@ public:
 	static unsigned int Get_Frame_Count(void) { return FrameCount; }
 	static float Get_Default_Native_Screen_Size(void) { return DefaultNativeScreenSize; }
 	static unsigned int Get_Frame_Time(void) { return FrameTime; }
+	static NPatchesGapFillingModeEnum Get_NPatches_Gap_Filling_Mode() { return NPatchesGapFillingMode; }
+	static unsigned int Get_NPatches_Level() { return NPatchesLevel; }
 	static bool Is_Sorting_Enabled(void) { return IsSortingEnabled; }
 	static bool Are_Static_Sort_Lists_Enabled(void) { return AreStaticSortListsEnabled; }
 	static void Add_To_Static_Sort_List(class RenderObjClass *robj, unsigned int sort_level);

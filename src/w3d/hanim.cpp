@@ -83,7 +83,6 @@ void NamedPivotMapClass::Add(const char *Name, float Weight)
 }
 
 // configure the base pivot map using the specified tree
-// ?NamedPivotMapClass::Update_Pivot_Map present-unmatched
 void NamedPivotMapClass::Update_Pivot_Map(const HTreeClass *Tree)
 {
 	// first, resize the base pivot map to fit the tree

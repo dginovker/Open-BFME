@@ -29,6 +29,7 @@ name,address,notes
 ??1CullSystemClass@@UAE@XZ,0x008E2150
 ??1FilePipe@@UAE@XZ,0x009E7DC0
 ??1FileStraw@@UAE@XZ,0x009E1C50
+??1HTreeClass@@QAE@XZ,0x00952790
 ??1LayoutFilename@@QAE@XZ,0x00887940
 ??1LockClass@CriticalSectionClass@@QAE@XZ,0x009DB4D0
 ??1Pipe@@UAE@XZ,0x009E78C0
@@ -73,6 +74,7 @@ name,address,notes
 ?Free@DistLODClass@@AAEXXZ,0x00014BC3
 ?Free_String@StringClass@@AAEXXZ,0x009DB7A0
 ?Get@Base64Straw@@UAEHPAXH@Z,0x009E7B80
+?Get_Bone_Index@HTreeClass@@QBEHPBD@Z,0x00952260
 ?Get_Bounding_Box@MeshGeometryClass@@QAEXPAVAABoxClass@@@Z,0x00924DD0
 ?Get_Bounding_Sphere@MeshGeometryClass@@QAEXPAVSphereClass@@@Z,0x00924E70
 ?Get_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,0x008E2160
@@ -105,6 +107,7 @@ name,address,notes
 ?Random_Float@WWMath@@SAMXZ,0x008D8E00
 ?Raw_Seek@RawFileClass@@IAEHHH@Z,0x009E6910
 ?Read@ChunkLoadClass@@QAEKPAXK@Z,0x009E15C0
+?Release@Animatable3DObjClass@@IAEXXZ,0x00982090
 ?ReleaseWindowLayout@@YAXPAVWindowLayout@@@Z,0x00049AD0
 ?Release_Ref@TextureBaseClass@@QAEXXZ,0x009EB7A0,hider decl in texture.h; WORD refcount+flags release
 ?Release_Ref@TextureClass@@QAEXXZ,0x009EB7A0,BFME texture release: WORD refcount+flag bits at [this+4]; auto-delete via vtbl slot 8 when bit24 set — TextureClass does NOT derive RefCountClass

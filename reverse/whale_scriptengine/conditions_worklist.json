@@ -1,0 +1,2932 @@
+[
+{
+"i": 0,
+"internalName": "CONDITION_FALSE",
+"uiName": "Scripting_/ False.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"False."
+]
+},
+{
+"i": 1,
+"internalName": "COUNTER",
+"uiName": "Scripting_/ Counter compared to a value.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+6,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Counter ",
+" IS ",
+" "
+]
+},
+{
+"i": 112,
+"internalName": "COUNTER_SECONDS",
+"uiName": "Scripting_/ Counter compared to time in seconds.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+6,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Counter ",
+" IS ",
+" time ",
+" secs. "
+]
+},
+{
+"i": 111,
+"internalName": "COUNTER_COUNTER",
+"uiName": "Scripting_/ Counter compared to another Counter.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+6,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Counter ",
+" IS ",
+" counter "
+]
+},
+{
+"i": 113,
+"internalName": "DISTANCE_BETWEEN_OBJ",
+"uiName": "Scripting_/ Compare distance between 2 objects.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+14,
+14,
+6,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Distance between object ",
+" and object ",
+" IS ",
+" to value "
+]
+},
+{
+"i": 114,
+"internalName": "DISTANCE_BETWEEN_TEAM",
+"uiName": "Scripting_/ Compare distance between 2 teams.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+3,
+6,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Distance between team ",
+" and team ",
+" IS ",
+" to value "
+]
+},
+{
+"i": 53,
+"internalName": "UNIT_HEALTH",
+"uiName": "Unit_/ Unit health % compared to a value.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" Health IS ",
+" ",
+" percent."
+]
+},
+{
+"i": 2,
+"internalName": "FLAG",
+"uiName": "Scripting_/ Flag compared to a value.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+5,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" IS "
+]
+},
+{
+"i": 11,
+"internalName": "TEAM_STATE_IS",
+"uiName": "Team_/ Team state is.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+18
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" state IS "
+]
+},
+{
+"i": 12,
+"internalName": "TEAM_STATE_IS_NOT",
+"uiName": "Team_/ Team state is not.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+18
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" state IS NOT "
+]
+},
+{
+"i": 143,
+"internalName": "TEAM_HAS_CUSTOM_STATE",
+"uiName": "Team_/ Team custom has state.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+18
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has the custom state "
+]
+},
+{
+"i": 3,
+"internalName": "CONDITION_TRUE",
+"uiName": "Scripting_/ True.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"True."
+]
+},
+{
+"i": 4,
+"internalName": "TIMER_EXPIRED",
+"uiName": "Scripting_/ Timer expired.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Timer ",
+" has expired."
+]
+},
+{
+"i": 5,
+"internalName": "PLAYER_ALL_DESTROYED",
+"uiName": "Player_/ All destroyed.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Everything belonging to  ",
+" has been destroyed."
+]
+},
+{
+"i": 6,
+"internalName": "PLAYER_ALL_BUILDFACILITIES_DESTROYED",
+"uiName": "Player_/ All factories destroyed.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"All factories belonging to  ",
+" have been destroyed."
+]
+},
+{
+"i": 7,
+"internalName": "TEAM_INSIDE_AREA_PARTIALLY",
+"uiName": "Team_/ Team has units in an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+37
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has one or more units in ",
+" (",
+")."
+]
+},
+{
+"i": 13,
+"internalName": "NAMED_INSIDE_AREA",
+"uiName": "Unit_/ Unit inside an area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is inside "
+]
+},
+{
+"i": 8,
+"internalName": "TEAM_DESTROYED",
+"uiName": "Team_/ Team is destroyed.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been destroyed."
+]
+},
+{
+"i": 170,
+"internalName": "TEAM_HAS_FEWER_THAN_X_UNITS_WITH_KINDOF",
+"uiName": "Team_/ Team has fewer than X units left of KindOf..",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+0,
+27
+],
+"numUiStrings": 4,
+"uiStrings": [
+"",
+" has fewer than ",
+" units left of type ",
+"."
+]
+},
+{
+"i": 172,
+"internalName": "NAMED_RANK_LEVEL",
+"uiName": "Unit_/Experience/ Unit is rank level or above.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is rank ",
+" or above."
+]
+},
+{
+"i": 15,
+"internalName": "NAMED_DESTROYED",
+"uiName": "Unit_/ Unit is destroyed.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been destroyed."
+]
+},
+{
+"i": 56,
+"internalName": "NAMED_DYING",
+"uiName": "Unit_/ Unit is dying.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been killed, but still on screen."
+]
+},
+{
+"i": 57,
+"internalName": "NAMED_TOTALLY_DEAD",
+"uiName": "Unit_/ Unit is finished dying.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been killed, and is finished dying."
+]
+},
+{
+"i": 55,
+"internalName": "BRIDGE_BROKEN",
+"uiName": "Unit_/ Bridge is broken.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+26
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been broken."
+]
+},
+{
+"i": 54,
+"internalName": "BRIDGE_REPAIRED",
+"uiName": "Unit_/ Bridge is repaired.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+26
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been repaired."
+]
+},
+{
+"i": 16,
+"internalName": "NAMED_NOT_DESTROYED",
+"uiName": "Unit_/ Unit exists and is alive.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" exists and is alive."
+]
+},
+{
+"i": 10,
+"internalName": "TEAM_HAS_UNITS",
+"uiName": "Team_/ Team has units.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has one or more units."
+]
+},
+{
+"i": 9,
+"internalName": "CAMERA_MOVEMENT_FINISHED",
+"uiName": "Camera_/ Camera movement finished.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The camera movement has finished."
+]
+},
+{
+"i": 14,
+"internalName": "NAMED_OUTSIDE_AREA",
+"uiName": "Unit_/ Unit outside an area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is outside "
+]
+},
+{
+"i": 17,
+"internalName": "TEAM_INSIDE_AREA_ENTIRELY",
+"uiName": "Team_/ Team completely inside an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+37
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" is all inside ",
+" (",
+")."
+]
+},
+{
+"i": 18,
+"internalName": "TEAM_OUTSIDE_AREA_ENTIRELY",
+"uiName": "Team_/ Team is completely outside an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+37
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" is completely outside ",
+" (",
+")."
+]
+},
+{
+"i": 19,
+"internalName": "NAMED_ATTACKED_BY_OBJECTTYPE",
+"uiName": "Unit_/ Unit is attacked by a specific unit type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+61
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been attacked by a(n) "
+]
+},
+{
+"i": 20,
+"internalName": "TEAM_ATTACKED_BY_OBJECTTYPE",
+"uiName": "Team_/ Team is attacked by a specific unit type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+61
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been attacked by a(n) "
+]
+},
+{
+"i": 21,
+"internalName": "NAMED_ATTACKED_BY_PLAYER",
+"uiName": "Unit_/ Unit has been attacked by a player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been attacked by "
+]
+},
+{
+"i": 22,
+"internalName": "TEAM_ATTACKED_BY_PLAYER",
+"uiName": "Team_/ Team has been attacked by a player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been attacked by "
+]
+},
+{
+"i": 23,
+"internalName": "BUILT_BY_PLAYER",
+"uiName": "Player_/ Player has built an object type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+61,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been built by "
+]
+},
+{
+"i": 24,
+"internalName": "NAMED_CREATED",
+"uiName": "Unit_/ Unit has been created.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been created."
+]
+},
+{
+"i": 25,
+"internalName": "TEAM_CREATED",
+"uiName": "Team_/ Team has been created.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been created."
+]
+},
+{
+"i": 26,
+"internalName": "PLAYER_HAS_CREDITS",
+"uiName": "Player_/ Player has (comparison) to a number of credits.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+0,
+6,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is ",
+" the number of credits possessed by "
+]
+},
+{
+"i": 27,
+"internalName": "NAMED_DISCOVERED",
+"uiName": "Player_/ Player has discovered a specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been discovered by "
+]
+},
+{
+"i": 78,
+"internalName": "NAMED_BUILDING_IS_EMPTY",
+"uiName": "Unit_/ A specific building is empty.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is empty."
+]
+},
+{
+"i": 51,
+"internalName": "BUILDING_ENTERED_BY_PLAYER",
+"uiName": "Player_/ Player has entered a specific building.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has entered building named "
+]
+},
+{
+"i": 52,
+"internalName": "ENEMY_SIGHTED",
+"uiName": "Unit_/ Unit has sighted a(n) friendly/neutral/enemy unit belonging to a side.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+19,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" sees a(n) ",
+" unit belonging to ",
+"."
+]
+},
+{
+"i": 133,
+"internalName": "ENEMY_SIGHTED_BY_TEAM",
+"uiName": "Team/ Team has sighted a(n) friendly/neutral/enemy unit belonging to a side.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+19,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" sees a(n) ",
+" unit belonging to ",
+"."
+]
+},
+{
+"i": 77,
+"internalName": "TYPE_SIGHTED",
+"uiName": "Unit_/ Unit has sighted a type of unit belonging to a side.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+61,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" sees a(n) ",
+" belonging to ",
+"."
+]
+},
+{
+"i": 28,
+"internalName": "TEAM_DISCOVERED",
+"uiName": "Player_/ Player has discovered a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been discovered by "
+]
+},
+{
+"i": 29,
+"internalName": "MISSION_ATTEMPTS",
+"uiName": "Player_/ Player has attempted the mission a number of times.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has attempted the mission ",
+" ",
+" times."
+]
+},
+{
+"i": 30,
+"internalName": "NAMED_OWNED_BY_PLAYER",
+"uiName": "Player/Owns/ Player owns the specific Unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is owned by "
+]
+},
+{
+"i": 31,
+"internalName": "TEAM_OWNED_BY_PLAYER",
+"uiName": "Player/Owns/ Player owns a specific team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is owned by "
+]
+},
+{
+"i": 79,
+"internalName": "PLAYER_HAS_N_OR_FEWER_FACTION_BUILDINGS",
+"uiName": "Player/Owns/ Player currently owns N or fewer faction buildings.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" currently owns ",
+" or fewer faction buildings."
+]
+},
+{
+"i": 131,
+"internalName": "PLAYER_HAS_N_OR_FEWER_BASES",
+"uiName": "Player/Owns/ Player currently controls N or fewer bases.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" currently controls ",
+" or fewer bases."
+]
+},
+{
+"i": 33,
+"internalName": "PLAYER_HAS_POWER",
+"uiName": "Player_/ Player's base currently has power.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" buildings are powered."
+]
+},
+{
+"i": 47,
+"internalName": "PLAYER_HAS_NO_POWER",
+"uiName": "Player_/ Player's base currently has no power.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" buildings are not powered."
+]
+},
+{
+"i": 34,
+"internalName": "NAMED_REACHED_WAYPOINTS_END",
+"uiName": "Unit_/ Unit has reached the end of a specific waypoint path.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+24
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has reached the end of "
+]
+},
+{
+"i": 35,
+"internalName": "TEAM_REACHED_WAYPOINTS_END",
+"uiName": "Team_/ Team has reached the end of a specific waypoint path.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+24
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has reached the end of "
+]
+},
+{
+"i": 37,
+"internalName": "NAMED_SELECTED",
+"uiName": "Unit_/ Unit currently selected.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is currently selected."
+]
+},
+{
+"i": 38,
+"internalName": "NAMED_ENTERED_AREA",
+"uiName": "Unit_/ Unit enters an area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" enters "
+]
+},
+{
+"i": 39,
+"internalName": "NAMED_EXITED_AREA",
+"uiName": "Unit_/ Unit exits an area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" exits "
+]
+},
+{
+"i": 40,
+"internalName": "TEAM_ENTERED_AREA_ENTIRELY",
+"uiName": "Team_/ Team entirely enters an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+37
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" all enter ",
+" (",
+")."
+]
+},
+{
+"i": 121,
+"internalName": "NAMED_BASE_UNPACKABLE_FOR_PLAYER",
+"uiName": "Base/ Player is allowed to unpack a base.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is unpackable for the player: ",
+"."
+]
+},
+{
+"i": 41,
+"internalName": "TEAM_ENTERED_AREA_PARTIALLY",
+"uiName": "Team_/ One unit enters an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+37
+],
+"numUiStrings": 4,
+"uiStrings": [
+"One unit from ",
+" enters ",
+" (",
+")."
+]
+},
+{
+"i": 42,
+"internalName": "TEAM_EXITED_AREA_ENTIRELY",
+"uiName": "Team_/ Team entirely exits an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+37
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" all exit ",
+" (",
+")."
+]
+},
+{
+"i": 43,
+"internalName": "TEAM_EXITED_AREA_PARTIALLY",
+"uiName": "Team_/ One unit exits an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+37
+],
+"numUiStrings": 4,
+"uiStrings": [
+"One unit from ",
+" exits ",
+" (",
+")."
+]
+},
+{
+"i": 44,
+"internalName": "MULTIPLAYER_ALLIED_VICTORY",
+"uiName": "Multiplayer_/ Multiplayer allied victory.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The multiplayer game has ended in victory for the local player and his allies."
+]
+},
+{
+"i": 45,
+"internalName": "MULTIPLAYER_ALLIED_DEFEAT",
+"uiName": "Multiplayer_/ Multiplayer allied defeat.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The multiplayer game has ended in defeat for the local player and his allies."
+]
+},
+{
+"i": 46,
+"internalName": "MULTIPLAYER_PLAYER_DEFEAT",
+"uiName": "Multiplayer_/ Multiplayer local player defeat check.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Everything belonging to the local player has been destroyed, but his allies may or may not have been defeated."
+]
+},
+{
+"i": 48,
+"internalName": "HAS_FINISHED_VIDEO",
+"uiName": "Multimedia_/ Video has completed playing.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+23
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has completed playing."
+]
+},
+{
+"i": 49,
+"internalName": "HAS_FINISHED_SPEECH",
+"uiName": "Multimedia_/ Speech has completed playing.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+21
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has completed playing."
+]
+},
+{
+"i": 50,
+"internalName": "HAS_FINISHED_AUDIO",
+"uiName": "Multimedia_/ Sound has completed playing.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+12
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has completed playing."
+]
+},
+{
+"i": 61,
+"internalName": "PLAYER_TRIGGERED_SPECIAL_POWER",
+"uiName": "Player_/ Player starts using a special power.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+31
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Player ",
+" starts using ",
+"."
+]
+},
+{
+"i": 64,
+"internalName": "PLAYER_TRIGGERED_SPECIAL_POWER_FROM_NAMED",
+"uiName": "Player_/ Player start using a special power from a named unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+31,
+14
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Player ",
+" starts using ",
+" from ",
+"."
+]
+},
+{
+"i": 63,
+"internalName": "PLAYER_MIDWAY_SPECIAL_POWER",
+"uiName": "Player_/ Player is midway through using a special power.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+31
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Player ",
+" is midway using ",
+"."
+]
+},
+{
+"i": 66,
+"internalName": "PLAYER_MIDWAY_SPECIAL_POWER_FROM_NAMED",
+"uiName": "Player_/ Player is midway through using a special power from a named unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+31,
+14
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Player ",
+" is midway using ",
+" from ",
+"."
+]
+},
+{
+"i": 62,
+"internalName": "PLAYER_COMPLETED_SPECIAL_POWER",
+"uiName": "Player_/ Player completed using a special power.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+31
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Player ",
+" completed using ",
+"."
+]
+},
+{
+"i": 65,
+"internalName": "PLAYER_COMPLETED_SPECIAL_POWER_FROM_NAMED",
+"uiName": "Player_/ Player completed using a special power from a named unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+31,
+14
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Player ",
+" completed using ",
+" from ",
+"."
+]
+},
+{
+"i": 100,
+"internalName": "PLAYER_ACQUIRED_SCIENCE",
+"uiName": "Player_/ Player acquired a Science.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+32
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Player ",
+" acquired ",
+"."
+]
+},
+{
+"i": 102,
+"internalName": "PLAYER_CAN_PURCHASE_SCIENCE",
+"uiName": "Player_/ Player can purchase a particular Science (has all prereqs & points).",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+32
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Player ",
+" can purchase ",
+"."
+]
+},
+{
+"i": 173,
+"internalName": "PLAYER_HAS_REACHED_LEVEL_CAP",
+"uiName": "Player_/Upgrades & Sciences/Has Player Reached Level Cap",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has reached his level cap (cannot gain any more Science Purchace Points)"
+]
+},
+{
+"i": 101,
+"internalName": "PLAYER_HAS_SCIENCEPURCHASEPOINTS",
+"uiName": "Player_/ Player has a certain number of Science Purchase Points available.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Player ",
+" has at least ",
+" Science Purchase Points available."
+]
+},
+{
+"i": 69,
+"internalName": "PLAYER_BUILT_UPGRADE",
+"uiName": "Player_/ Player built an upgrade.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+33
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Player ",
+" built ",
+"."
+]
+},
+{
+"i": 70,
+"internalName": "PLAYER_BUILT_UPGRADE_FROM_NAMED",
+"uiName": "Player_/ Player built an upgrade from a named unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+33,
+14
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Player ",
+" built ",
+" from ",
+"."
+]
+},
+{
+"i": 32,
+"internalName": "PLAYER_HAS_N_OR_FEWER_BUILDINGS",
+"uiName": "Player/Owns/ Player currently owns N or fewer buildings.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" currently owns ",
+" or fewer buildings."
+]
+},
+{
+"i": 71,
+"internalName": "PLAYER_DESTROYED_N_BUILDINGS_PLAYER",
+"uiName": "Player_/ Player destroyed N or more of an opponent's buildings.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+0,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Player ",
+" destroyed ",
+" or more buildings owned by ",
+"."
+]
+},
+{
+"i": 58,
+"internalName": "PLAYER_HAS_OBJECT_COMPARISON",
+"uiName": "Player_/ Player has (comparison) unit type.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+11,
+6,
+0,
+61
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" unit or structure of type "
+]
+},
+{
+"i": 110,
+"internalName": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_WITH_UPGRADE",
+"uiName": "Player_/ Player has (comparison) kind of unit or structure in an area with a specified upgrade.",
+"uiName2": null,
+"numParameters": 6,
+"parameters": [
+11,
+6,
+0,
+61,
+9,
+33
+],
+"numUiStrings": 6,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" unit or structure with ",
+" in the ",
+" with upgrade "
+]
+},
+{
+"i": 74,
+"internalName": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA",
+"uiName": "Player_/ Player has (comparison) unit type in an area.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+11,
+6,
+0,
+61,
+9
+],
+"numUiStrings": 5,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" unit or structure of type ",
+" in the "
+]
+},
+{
+"i": 160,
+"internalName": "PLAYER_HAS_NUMBER_OBJECTS_WITH_MODELCONDITION",
+"uiName": "Player_/ Player has (comparison) objects with model condition",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+11,
+58,
+6,
+0
+],
+"numUiStrings": 5,
+"uiStrings": [
+" # of objects owned by player ",
+" with model condition ",
+" is ",
+" ",
+"."
+]
+},
+{
+"i": 161,
+"internalName": "PLAYER_HAS_NUMBER_UNITS_DISTANCE_FROM_OBJECT",
+"uiName": "Player_/ Player has (comparison) units more than x distance from object",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+11,
+6,
+0,
+1,
+14
+],
+"numUiStrings": 6,
+"uiStrings": [
+" Player ",
+" has ",
+" ",
+" units at least ",
+" yards from ",
+"."
+]
+},
+{
+"i": 134,
+"internalName": "COMPARISON_TREES_IN_TRIGGER_AREA",
+"uiName": "Trees_/ There are (comparison) trees in an area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+6,
+0,
+9
+],
+"numUiStrings": 4,
+"uiStrings": [
+"There are ",
+" ",
+" trees in the ",
+" ."
+]
+},
+{
+"i": 75,
+"internalName": "PLAYER_HAS_COMPARISON_UNIT_KIND_IN_TRIGGER_AREA",
+"uiName": "Player_/ Player has (comparison) kind of unit or structure in an area.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+11,
+6,
+0,
+27,
+9
+],
+"numUiStrings": 5,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" unit or structure with ",
+" in the "
+]
+},
+{
+"i": 83,
+"internalName": "PLAYER_POWER_COMPARE_PERCENT",
+"uiName": "Player_/ Player has (comparison) percent power supply to consumption.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" percent power supply ratio."
+]
+},
+{
+"i": 84,
+"internalName": "PLAYER_EXCESS_POWER_COMPARE_VALUE",
+"uiName": "Player_/ Player has (comparison) kilowatts excess power supply.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" excess kilowatts power supply."
+]
+},
+{
+"i": 76,
+"internalName": "UNIT_EMPTIED",
+"uiName": "Unit_/ Unit has emptied its contents.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" emptied its contents."
+]
+},
+{
+"i": 85,
+"internalName": "SKIRMISH_SPECIAL_POWER_READY",
+"uiName": "Skirmish_/ Player's special power is ready to fire.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+31
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is ready to fire ",
+"."
+]
+},
+{
+"i": 171,
+"internalName": "SKIRMISH_FIRE_SPECIAL_POWER_ON_TEAM",
+"uiName": "Skirmish_/ Player's special power is able to fire on team.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+31,
+3
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" can perform special power ",
+" at team location ",
+"."
+]
+},
+{
+"i": 80,
+"internalName": "UNIT_HAS_OBJECT_STATUS",
+"uiName": "Unit_/ Unit has object status.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+41
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has "
+]
+},
+{
+"i": 81,
+"internalName": "TEAM_ALL_HAS_OBJECT_STATUS",
+"uiName": "Team_/ Team has object status - all.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+41
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has "
+]
+},
+{
+"i": 82,
+"internalName": "TEAM_SOME_HAVE_OBJECT_STATUS",
+"uiName": "Team_/ Team has object status - partial.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+41
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has "
+]
+},
+{
+"i": 86,
+"internalName": "SKIRMISH_VALUE_IN_AREA",
+"uiName": "Skirmish Only_/ Player has total value in area.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+11,
+6,
+0,
+9
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" within area "
+]
+},
+{
+"i": 87,
+"internalName": "SKIRMISH_PLAYER_FACTION",
+"uiName": "Skirmish_/ Player is faction. - untested",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+47
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is "
+]
+},
+{
+"i": 88,
+"internalName": "SKIRMISH_SUPPLIES_VALUE_WITHIN_DISTANCE",
+"uiName": "Skirmish Only_/ Supplies are within specified distance.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+11,
+1,
+9,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has supplies within ",
+" of ",
+" worth at least "
+]
+},
+{
+"i": 89,
+"internalName": "SKIRMISH_COMMAND_BUTTON_READY_ALL",
+"uiName": "Skirmish_/ Command Ability is ready - all.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+3,
+42
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+"'s ",
+" are ready to use ",
+" (all applicable members)."
+]
+},
+{
+"i": 90,
+"internalName": "SKIRMISH_COMMAND_BUTTON_READY_PARTIAL",
+"uiName": "Skirmish_/ Command Ability is ready - partial",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+3,
+42
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+"'s ",
+" are ready to use ",
+" (at least one member)."
+]
+},
+{
+"i": 91,
+"internalName": "SKIRMISH_UNOWNED_FACTION_UNIT_EXISTS",
+"uiName": "Skirmish_/ Unowned faction unit -- comparison.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+". There are ",
+" ",
+" unowned faction units."
+]
+},
+{
+"i": 92,
+"internalName": "SKIRMISH_PLAYER_HAS_PREREQUISITE_TO_BUILD",
+"uiName": "Skirmish_/ Player has prerequisites to build an object type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+61
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" can build ",
+"."
+]
+},
+{
+"i": 93,
+"internalName": "SKIRMISH_PLAYER_HAS_COMPARISON_GARRISONED",
+"uiName": "Skirmish_/ Player has garrisoned buildings -- comparison.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" garrisoned buildings."
+]
+},
+{
+"i": 94,
+"internalName": "SKIRMISH_PLAYER_HAS_COMPARISON_CAPTURED_UNITS",
+"uiName": "Skirmish_/ Player has captured units -- comparison",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has captured ",
+" ",
+" units."
+]
+},
+{
+"i": 95,
+"internalName": "SKIRMISH_NAMED_AREA_EXIST",
+"uiName": "Skirmish_/ Area exists.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+9
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+". ",
+" exists."
+]
+},
+{
+"i": 96,
+"internalName": "SKIRMISH_PLAYER_HAS_UNITS_IN_AREA",
+"uiName": "Skirmish_/ Player has units in an area",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+9
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has units in ",
+"."
+]
+},
+{
+"i": 97,
+"internalName": "SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER",
+"uiName": "Skirmish_/ Player has been attacked by player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has been attacked by ",
+"."
+]
+},
+{
+"i": 98,
+"internalName": "SKIRMISH_PLAYER_IS_OUTSIDE_AREA",
+"uiName": "Skirmish_/ Player doesn't have units in an area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+9
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has doesn't have units in ",
+"."
+]
+},
+{
+"i": 99,
+"internalName": "SKIRMISH_PLAYER_HAS_DISCOVERED_PLAYER",
+"uiName": "Skirmish_/ Player has discovered another player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has discovered ",
+"."
+]
+},
+{
+"i": 103,
+"internalName": "MUSIC_TRACK_HAS_COMPLETED",
+"uiName": "Multimedia_/ Music track has completed some number of times.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+22,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has completed at least ",
+null
+]
+},
+{
+"i": 105,
+"internalName": "SUPPLY_SOURCE_SAFE",
+"uiName": "Skirmish_/ Supply source is safe.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" closest supply src with at least ",
+" available resources is SAFE from enemy influence."
+]
+},
+{
+"i": 106,
+"internalName": "SUPPLY_SOURCE_ATTACKED",
+"uiName": "Skirmish_/ Supply source is attacked.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" supply source is under attack."
+]
+},
+{
+"i": 107,
+"internalName": "START_POSITION_IS",
+"uiName": "Skirmish_/ Start position.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" starting position is ",
+" ."
+]
+},
+{
+"i": 108,
+"internalName": "ZONE_FOCUS_MORE_THAN",
+"uiName": "LivingWorld_/ Zone Focus Check.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+10,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Zone named ",
+" has been entered at least ",
+" times."
+]
+},
+{
+"i": 109,
+"internalName": "IS_SEIGE_ATTACHED_TO_WALL",
+"uiName": "Unit_/ CHeck if Siege Unit is attached to wall.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Is Siege Unit named ",
+" attached to a wall. "
+]
+},
+{
+"i": 36,
+"internalName": "BANNER_PRESSED",
+"uiName": "LivingWorld_/Banner pressed.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+10
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Banner button ",
+" was pressed."
+]
+},
+{
+"i": 104,
+"internalName": "PLAYER_LOST_OBJECT_TYPE",
+"uiName": "Player_/ Player has lost an object of type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+61
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has lost an object of type ",
+" (can be an object type list)."
+]
+},
+{
+"i": 120,
+"internalName": "CAMERA_HIT_SPECIFIC_SPLINE_WAYPOINT",
+"uiName": "Camera_/Camera following spline path hits specified waypoint.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Camera following spline path hits ",
+" waypoint."
+]
+},
+{
+"i": 132,
+"internalName": "CAMERA_ENTERED_AREA",
+"uiName": "Camera_/Camera entered a specific area.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+9
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Camera enters "
+]
+},
+{
+"i": 123,
+"internalName": "TEAM_IS_LED_BY_UNIT",
+"uiName": "Team_/ Is Team affected by leadership ability from unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Is team ",
+" affected by leadership ability from unit "
+]
+},
+{
+"i": 124,
+"internalName": "PLAYER_COMPARE_LIGHT_POINTS",
+"uiName": "Player_/ Player has light points (comparison) to a value.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has light points ",
+" to the value "
+]
+},
+{
+"i": 125,
+"internalName": "HAS_COMMAND_POINTS_TO_BUILD_TEAM",
+"uiName": "Player_/ Player has enough command points to build a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has enough command points to build team "
+]
+},
+{
+"i": 126,
+"internalName": "HAS_COMMAND_POINTS_TO_BUILD_UNIT",
+"uiName": "Player_/ Player has enough command points to build a unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+61
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has enough command points to build unit "
+]
+},
+{
+"i": 127,
+"internalName": "CAN_BUILD_AT_BASE",
+"uiName": "Player_/ Can build at base.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Can player ",
+" build at base "
+]
+},
+{
+"i": 169,
+"internalName": "CAN_BUILD_OBJECTTYPE_AT_BASE",
+"uiName": "Player_/ Can build a particular type of structure at base.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+14,
+15
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Can player ",
+" build at base",
+" an object of type, "
+]
+},
+{
+"i": 128,
+"internalName": "PLAYER_HAS_KILLED_KINDOF_UNITS",
+"uiName": "Player_/ Player currently has killed N or more units of KindOf.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+0,
+27
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has killed ",
+" or more units of kindof "
+]
+},
+{
+"i": 129,
+"internalName": "PLAYER_HAS_KILLED_TYPE_UNITS",
+"uiName": "Player_/ Player currently has killed N or more units of type.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+0,
+61
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" has killed ",
+" or more units of type "
+]
+},
+{
+"i": 130,
+"internalName": "NAMED_DESTROYED_BY_OBJECTTYPE",
+"uiName": "Unit_/ Unit is destroyzed by a specific unit type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+61
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" has been destroyed by a(n) "
+]
+},
+{
+"i": 135,
+"internalName": "GATE_IS_OPEN",
+"uiName": "Unit (includes Structures)/ Check if a gate is open. (False, if not a gate, or closed)",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" The unit (presumed a gate) referenced as",
+" is OPEN."
+]
+},
+{
+"i": 142,
+"internalName": "MUSIC_IS_PLAYING_FROM_SCRIPT",
+"uiName": "Audio_/Music/MUSIC_IS_PLAYING_FROM_SCRIPT",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+" The music scripting system is on."
+]
+},
+{
+"i": 136,
+"internalName": "UNIT_CAN_PATH_TO_WAYPOINT",
+"uiName": "Unit_/ Unit can path to waypoint.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" can path to waypoint "
+]
+},
+{
+"i": 137,
+"internalName": "UNIT_CAN_PATH_TO_OBJECT",
+"uiName": "Unit_/ Unit can path to object.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" can path to unit/object "
+]
+},
+{
+"i": 139,
+"internalName": "TEAM_CAN_PATH_TO_WAYPOINT",
+"uiName": "Team_/ Team can path to waypoint.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+"The first unit of team ",
+" can path to waypoint "
+]
+},
+{
+"i": 140,
+"internalName": "TEAM_CAN_PATH_TO_OBJECT",
+"uiName": "Team_/ Team can path to object.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"The first unit of team ",
+" can path to unit/object "
+]
+},
+{
+"i": 138,
+"internalName": "UNIT_CAN_PATH_INTO_PLAYERS_NEAREST_BASE",
+"uiName": "Unit/ Unit can path into (Player's) nearest base. Or is already inside it :-)",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Unit",
+" is inside, or can path into the nearest base owned by player, "
+]
+},
+{
+"i": 141,
+"internalName": "TEAM_CAN_PATH_INTO_PLAYERS_NEAREST_BASE",
+"uiName": "Team/ Team can path into (Player's) nearest base. Or is already inside it :-).",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"The first unit of team ",
+" is inside, or can path into the nearest base owned by player, "
+]
+},
+{
+"i": 144,
+"internalName": "UNIT_COMPARE_RANK",
+"uiName": "Unit_/ Unit compared to rank level.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+6,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Does unit ",
+" have rank ",
+" to "
+]
+},
+{
+"i": 145,
+"internalName": "PLAYER_COMPARE_RANK",
+"uiName": "Player_/ Player compared to rank level.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+6,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Does player ",
+" have rank ",
+" to "
+]
+},
+{
+"i": 174,
+"internalName": "EVAL_TEAM_HEALTH",
+"uiName": "Team_/ Compare team health.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" Check if Team ",
+" has health ",
+" to ",
+" percent"
+]
+},
+{
+"i": 117,
+"internalName": "UNIT_HAS_GAINED_LEVEL",
+"uiName": "Unit_/Experience/Unit gained experience level.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+"has gained a level"
+]
+},
+{
+"i": 118,
+"internalName": "UNIT_IS_AT_LEVEL",
+"uiName": "Unit_/Experience/Unit is at a specified experience level.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+10
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is at experience level "
+]
+},
+{
+"i": 119,
+"internalName": "UNIT_HAS_NUM_SKILL_POINTS",
+"uiName": "Unit_/Skill Points/Unit has (comparison) number of skill points.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" ",
+" skill points"
+]
+},
+{
+"i": 146,
+"internalName": "PLAYER_HAS_OBJECT_OF_VETERANCY",
+"uiName": "Player/Experience/Player has object of rank level.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+11,
+61,
+6,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" Player ",
+" has obvject of type ",
+" with rank level ",
+" to "
+]
+},
+{
+"i": 147,
+"internalName": "OBJECT_OF_TYPE_OR_LIST_INSIDE_REFD_BASE",
+"uiName": "Base/There is an object of given type (or list) inside the base.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+61,
+54
+],
+"numUiStrings": 2,
+"uiStrings": [
+" There is a unit of type (or list) ",
+" inside the base "
+]
+},
+{
+"i": 148,
+"internalName": "TEAM_ENTERED_REFD_BASE_ENTIRELY",
+"uiName": "Base/Team/Team entered a base, entirely.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has entered the base ",
+" entirely."
+]
+},
+{
+"i": 149,
+"internalName": "TEAM_ENTERED_REFD_BASE_PARTIALLY",
+"uiName": "Base/Team/Team entered a base, partially.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has entered the base ",
+" partially."
+]
+},
+{
+"i": 150,
+"internalName": "TEAM_EXITED_REFD_BASE_ENTIRELY",
+"uiName": "Base/Team/Team exited a base, entirely.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has exited the base ",
+" entirely."
+]
+},
+{
+"i": 151,
+"internalName": "TEAM_EXITED_REFD_BASE_PARTIALLY",
+"uiName": "Base/Team/Team exited a base, partially.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has exited the base ",
+" partially."
+]
+},
+{
+"i": 156,
+"internalName": "NAMED_ENTERED_REFD_BASE",
+"uiName": "Base/Unit/Unit entered a base.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Unit ",
+" has entered the base ",
+" entirely."
+]
+},
+{
+"i": 157,
+"internalName": "NAMED_EXITED_REFD_BASE",
+"uiName": "Base/Unit/Unit exited a base.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Unit ",
+" has exited the base ",
+" entirely."
+]
+},
+{
+"i": 152,
+"internalName": "TEAM_ENTERED_NEAREST_BASE_ENTIRELY",
+"uiName": "Base/Team/Team entered (Player's) nearest base, entirely.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has entered the nearest base owned by player ",
+" entirely."
+]
+},
+{
+"i": 153,
+"internalName": "TEAM_ENTERED_NEAREST_BASE_PARTIALLY",
+"uiName": "Base/Team/Team entered (Player's) nearest base, partially.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has entered the nearest base owned by player ",
+" partially."
+]
+},
+{
+"i": 154,
+"internalName": "TEAM_EXITED_NEAREST_BASE_ENTIRELY",
+"uiName": "Base/Team/Team exited (Player's) nearest base, entirely.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has exited the nearest base owned by player ",
+" entirely."
+]
+},
+{
+"i": 155,
+"internalName": "TEAM_EXITED_NEAREST_BASE_PARTIALLY",
+"uiName": "Base/Team/Team exited (Player's) nearest base, partially.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Team ",
+" has exited the nearest base owned by player ",
+" partially."
+]
+},
+{
+"i": 158,
+"internalName": "NAMED_ENTERED_NEAREST_BASE",
+"uiName": "Base/Unit/Unit entered (Player's) nearest base.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Unit ",
+" has entered the nearest base owned by player ",
+" entirely."
+]
+},
+{
+"i": 159,
+"internalName": "NAMED_EXITED_NEAREST_BASE",
+"uiName": "Base/Unit/Unit exited (Player's) nearest base.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Unit ",
+" has exited the nearest base owned by player ",
+" entirely."
+]
+},
+{
+"i": 162,
+"internalName": "UNIT_HAS_PASSENGER",
+"uiName": "Unit_/Unit/Unit has passenger.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Evaluate if ",
+" is containing any passengers."
+]
+},
+{
+"i": 163,
+"internalName": "UNIT_IS_ATTACKED_AND_CANNOT_RETALIATE",
+"uiName": "Unit_/Unit is being attacked but cannot retaliate.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Evaluate if ",
+" is being attacked and cannot retaliate."
+]
+},
+{
+"i": 164,
+"internalName": "TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ANY",
+"uiName": "Team_/Any Team meember is being attacked but cannot retaliate.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Evaluate if any team member of ",
+" is being attacked and cannot retaliate."
+]
+},
+{
+"i": 165,
+"internalName": "TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ALL",
+"uiName": "Team_/All Team members who are being attacked cannot retaliate.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Evaluate if all team members of ",
+" who are being attacked and cannot retaliate."
+]
+},
+{
+"i": 166,
+"internalName": "IS_GAME_IN_SKIRMISH_OR_MULTIPLAYER",
+"uiName": "GameType/Is game in a skirmish or multiplayer game.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 1,
+"uiStrings": [
+" Is the game in a skirmish or multiplayer mode == "
+]
+},
+{
+"i": 167,
+"internalName": "REGION_CAMPS_SHOULD_UNPACK",
+"uiName": "Base/ Should camps unpack for this region map?",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+" Should camps in this region map unpack?"
+]
+},
+{
+"i": 168,
+"internalName": "COMPARE_NUM_PLAYERS_IN_GAME",
+"uiName": "GameType/Compares the number of players in game to a value.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+6,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Is this a ",
+" ",
+" player game."
+]
+},
+{
+"i": 175,
+"internalName": "IS_UNIT_WEBBED",
+"uiName": "Unit_/Test webbed status of a unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Is webbed status of ",
+" == "
+]
+},
+{
+"i": 176,
+"internalName": "ANY_HERO_REACHED_RANK",
+"uiName": "ObjectivesTest/Num heroes reached level during game.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+1,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Does ",
+" have ",
+" Heroes that have reached rank "
+]
+},
+{
+"i": 177,
+"internalName": "NUM_UNITS_LEVELED_UP",
+"uiName": "ObjectivesTest/Num units leveled up during game.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+0,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Does ",
+" have ",
+" units that has gained a level this game --> should include Heroes "
+]
+},
+{
+"i": 178,
+"internalName": "PLAYER_HAS_NUM_UNITS_WITH_UPGRADE",
+"uiName": "ObjectivesTest/Num units has specified upgrade.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+0,
+33
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Does ",
+" have ",
+" units that has upgrade "
+]
+},
+{
+"i": 179,
+"internalName": "PLAYER_HAS_NUM_UNITS_LOADED_WITH_OBJECT",
+"uiName": "ObjectivesTest/Num units of type loaded on transport.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+11,
+0,
+15,
+15
+],
+"numUiStrings": 4,
+"uiStrings": [
+" Does ",
+" have ",
+" units of type ",
+" loaded on transport of type "
+]
+},
+{
+"i": 180,
+"internalName": "UNIT_HAS_TOGGLED_WEAPON",
+"uiName": "ObjectivesTest/Does Player have Units that have Toggled Weapon set.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+15
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Does ",
+" have ",
+" that have toggled weapon set."
+]
+},
+{
+"i": 183,
+"internalName": "UNIT_IN_ALT_FORMATION",
+"uiName": "ObjectivesTest/Does Player have Units that are in alternate formation.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+15
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Does ",
+" have ",
+" that is currently in alternate formation."
+]
+},
+{
+"i": 182,
+"internalName": "UNIT_USING_AUTOPICKUP",
+"uiName": "ObjectivesTest/Does Player have Units that have triggered auto pickup.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+15
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Does ",
+" have ",
+" that has triggered auto pickup."
+]
+}
+]

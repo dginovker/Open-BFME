@@ -58,3 +58,12 @@ cleanly. Result: **generated init() = 56,028B vs target 57,072B; masked-match 41
 AsciiString m_uiStrings[12]; int m_numParameters; int m_parameters[12]; int m_pad; };` (sizeof 0x7C,
 NO vtable). `class ScriptEngine : SubsystemInterface { char m_pre[0x14]; Template m_actionTemplates[600]; };`
 (m_actionTemplates @ this+0x1C). String assign = `AsciiString::operator=(const char*)` @ 0x62040 (MATCHED).
+
+## Flag sweep 2026-07-06 (ruling out compile settings)
+Swept /EHsc /EHa /O1 /Os /Oy- /Gy — **44% aligned match is the ceiling; flags don't move it.**
+- /EHsc,/EHa,/Gy: 56028B, 44%.  /O1,/Os: 50883B (size-opt, too small), 43%.
+- /Oy- (keep frame ptr): 57142B — closest SIZE to target 57072B (~the 4 skipped templates) but 41%.
+Conclusion: the divergence is SOURCE-STRUCTURAL global register allocation (MSVC's register *picks*,
+e.g. eax-vs-ecx for a cached constant), which no flag controls. Matching needs iterating the source
+shape until MSVC's global allocator lands identically over all 537 blocks — the genuine multi-day part.
+The form/layout are proven correct (first ~5 templates byte-align); this is purely the regalloc fight.

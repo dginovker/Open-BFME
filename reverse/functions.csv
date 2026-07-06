@@ -207,6 +207,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0CacheStraw@@QAE@H@Z,,0x009E1F60,88,src/w3d/ini.cpp,matched,
 ??0CastResultStruct@@QAE@XZ,,0x006099F0,38,src/w3d/colmathaabox.cpp,matched,
 ??0ChunkSaveClass@@QAE@PAVFileClass@@@Z,,0x009E1690,91,src/w3d/chunkio.cpp,matched,
+??0ColmathStatsStruct@CollisionMath@@QAE@XZ,,0x008E2110,46,src/w3d/colmath.cpp,matched,
 ??0Coord2D@@QAE@ABUCoord2DBase@@@Z,0x00007824,0x007E59E0,19,src/math/coord2d.cpp,matched,copies x/y from Coord2DBase
 ??0Coord2D@@QAE@ABUCoord3DBase@@@Z,0x0001D034,0x003BB840,19,src/math/coord2d.cpp,matched,copies x/y from Coord3DBase
 ??0Coord2D@@QAE@ABV0@@Z,0x00011455,0x0005BD70,19,src/math/coord2d.cpp,matched,copies x/y from Coord2D
@@ -291,6 +292,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0Matrix3@@QAE@ABVVector3@@00@Z,,0x005F6910,67,src/w3d/obbox.cpp,matched,
 ??0Matrix3@@QAE@MMMMMMMMM@Z,,0x008D8F30,67,src/w3d/matrix3.cpp,matched,
 ??0Matrix3@@QAE@_N@Z,,0x0060C330,46,src/w3d/colmathobbobb.cpp,matched,
+??0Matrix3D@@QAE@ABVMatrix3@@ABVVector3@@@Z,,0x00956C10,26,src/w3d/colmathsphere.cpp,matched,
 ??0Matrix3D@@QAE@MMMMMMMMMMMM@Z,,0x008D64A0,88,src/w3d/matrix3d.cpp,matched,
 ??0Matrix4@@QAE@ABVMatrix3D@@@Z,,0x006CB3A0,97,src/w3d/matrix3d.cpp,matched,
 ??0Matrix4D@@QAE@ABV0@@Z,0x00014FB0,0x007E7B70,107,src/math/matrix4d.cpp,matched,copies values
@@ -1160,6 +1162,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Inverse@?$Int@$0EA@@@QBE?AV1@ABV1@@Z,,0x009EAC20,79,src/w3d/pk.cpp,matched,
 ?Inverse@Matrix4D@@QAEMXZ,0x00023f47,0x007e7d10,1060,src/math/matrix4d.cpp,matched,
 ?Inverse_Rotate_Vector@Matrix3D@@QBE?AVVector3@@ABV2@@Z,,0x008D6910,81,src/w3d/matrix3d.cpp,matched,
+?Inverse_Rotate_Vector@Matrix3D@@SAXABV1@ABVVector3@@PAV2@@Z,,0x005FAF20,115,src/w3d/colmathsphere.cpp,matched,
+?Inverse_Transform_Vector@Matrix3D@@SAXABV1@ABVVector3@@PAV2@@Z,,0x005FB3E0,184,src/w3d/colmathsphere.cpp,matched,
 ?IsCRC@Xfer@@UBE_NXZ,0x0001BE7D,0x007E7690,3,src/game/xfer.cpp,matched,returns false
 ?IsExactlyEqualTo@Coord2D@@QBE_NABV1@@Z,0x0003012A,0x003BC910,45,src/math/coord2d.cpp,matched,compares exact x/y
 ?IsExactlyEqualTo@Coord3D@@QBE_NABV1@@Z,0x0001DD72,0x001B2C20,60,src/math/coord3d.cpp,matched,compares exact x/y/z
@@ -1260,6 +1264,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVPlaneClass@@ABVSphereClass@@@Z,,0x008E1F10,76,src/w3d/colmathplane.cpp,matched,
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVPlaneClass@@ABVTriClass@@@Z,,0x008E1EA0,97,src/w3d/colmathplane.cpp,matched,
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVPlaneClass@@ABVVector3@@@Z,,0x008DB1F0,82,src/w3d/colmathplane.cpp,matched,
+?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVSphereClass@@ABVAABoxClass@@@Z,,0x008E2310,27,src/w3d/colmathsphere.cpp,matched,
 ?Peek_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,,0x008E2190,4,src/w3d/cullsys.cpp,matched,
 ?Peek_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,,0x008E21A0,19,src/w3d/cullsys.cpp,matched,
 ?Plain_Block_Size@PKey@@QBEHXZ,,0x009EA720,17,src/w3d/pk.cpp,matched,
@@ -1310,6 +1315,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Reset@BTCollisionStruct@@QAEXXZ,,0x008E5BE0,443,src/w3d/colmathobbtri.cpp,matched,
 ?Reset@Buffer@@QAEXXZ,,0x009E1E60,40,src/w3d/buff.cpp,matched,
 ?Reset@CastResultStruct@@QAEXXZ,,0x006098A0,36,src/w3d/colmathaabox.cpp,matched,
+?Reset@ColmathStatsStruct@CollisionMath@@QAEXXZ,,0x008E20E0,44,src/w3d/colmath.cpp,matched,
 ?Reset@EdgeMapperClass@@UAEXXZ,,0x00965880,16,src/w3d/mapper.cpp,matched,
 ?Reset@GridTextureMapperClass@@UAEXXZ,,0x009648F0,52,src/w3d/mapper.cpp,matched,
 ?Reset@HashTableClass@@QAEXXZ,,0x009DFFE0,28,src/w3d/hash.cpp,matched,

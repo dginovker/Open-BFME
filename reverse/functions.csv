@@ -475,6 +475,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1DefaultDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x00008CBA,0x005D5690,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1DefaultPhysicsModuleInfo@FXParticleSystem@@UAE@XZ,0x00042F28,0x005D7E90,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1DefaultUpdateModuleInfo@FXParticleSystem@@UAE@XZ,0x00017242,0x005D81B0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
+??1DistLODClass@@UAE@XZ,,0x00725F40,86,src/w3d/distlod.cpp,matched,
 ??1EmissionVelocityInfo@FXParticleSystem@@UAE@XZ,0x0003CF47,0x005BD810,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1EmissionVolumeInfo@FXParticleSystem@@UAE@XZ,0x0004AA61,0x005BD6B0,7,src/game/fx_particle_system.cpp,matched,destructor resets vtable pointer
 ??1EventModuleInfo@FXParticleSystem@@IAE@XZ,0x0002A298,0x0005C8B0,1,src/game/fx_particle_system.cpp,matched,empty protected destructor
@@ -845,6 +846,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??_GBufferedFileClass@@UAEPAXI@Z,,0x009E78A0,30,src/w3d/bufffile.cpp,matched,
 ??_GCullSystemClass@@UAEPAXI@Z,,0x008E2260,31,src/w3d/cullsys.cpp,matched,
 ??_GCullableClass@@UAEPAXI@Z,,0x008E2280,30,src/w3d/cullsys.cpp,matched,
+??_GDistLODClass@@UAEPAXI@Z,,0x00725FD0,30,src/w3d/distlod.cpp,matched,
 ??_GFilePipe@@UAEPAXI@Z,,0x009E20E0,30,src/w3d/ini.cpp,matched,
 ??_GFileStraw@@UAEPAXI@Z,,0x009E1CC0,30,src/w3d/ini.cpp,matched,
 ??_GGenericMultiListClass@@UAEPAXI@Z,,0x006D1210,30,src/w3d/lookuptable.cpp,matched,
@@ -1140,9 +1142,11 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_New_Particles@ParticleBufferClass@@IAEXXZ,,0x00987C60,827,src/w3d/part_buf.cpp,matched,
 ?Get_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,,0x008E2170,19,src/w3d/cullsys.cpp,matched,
 ?Get_Obj_Space_Bounding_Box@CompositeRenderObjClass@@UBEXAAVAABoxClass@@@Z,,0x0097B6D0,60,src/w3d/hlod.cpp,matched,
+?Get_Obj_Space_Bounding_Box@Line3DClass@@UBEXAAVAABoxClass@@@Z,,0x00951810,40,src/w3d/line3d.cpp,matched,
 ?Get_Obj_Space_Bounding_Box@Null3DObjClass@@UBEXAAVAABoxClass@@@Z,,0x009729B0,31,src/w3d/nullrobj.cpp,matched,
 ?Get_Obj_Space_Bounding_Box@ParticleBufferClass@@UBEXAAVAABoxClass@@@Z,,0x0098BD50,69,src/w3d/part_buf.cpp,matched,
 ?Get_Obj_Space_Bounding_Sphere@CompositeRenderObjClass@@UBEXAAVSphereClass@@@Z,,0x009828B0,42,src/w3d/animobj.cpp,matched,
+?Get_Obj_Space_Bounding_Sphere@Line3DClass@@UBEXAAVSphereClass@@@Z,,0x009517E0,34,src/w3d/line3d.cpp,matched,
 ?Get_Obj_Space_Bounding_Sphere@Null3DObjClass@@UBEXAAVSphereClass@@@Z,,0x00972990,24,src/w3d/nullrobj.cpp,matched,
 ?Get_Obj_Space_Bounding_Sphere@ParticleBufferClass@@UBEXAAVSphereClass@@@Z,,0x0098BCE0,105,src/w3d/part_buf.cpp,matched,
 ?Get_Obj_Space_Bounding_Sphere@RenderObjClass@@UBEXAAVSphereClass@@@Z,,0x009203F0,24,src/w3d/rendobj.cpp,matched,

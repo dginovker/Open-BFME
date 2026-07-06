@@ -23,6 +23,7 @@ name,address,notes
 ??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
 ??1Buffer@@QAE@XZ,0x009E1E60
 ??1BufferStraw@@UAE@XZ,0x00921790
+??1CompositeRenderObjClass@@UAE@XZ,0x0091FC10
 ??1CriticalSectionClass@@QAE@XZ,0x009DB450
 ??1CullSystemClass@@UAE@XZ,0x008E2150
 ??1FilePipe@@UAE@XZ,0x009E7DC0
@@ -66,6 +67,7 @@ name,address,notes
 ?End_Chunk@ChunkSaveClass@@QAE_NXZ,0x009E17F0
 ?Fast_Slerp@@YAXAAVQuaternion@@ABV1@1M@Z,0x008DC4C0
 ?Find_POT@@YAHH@Z,0x00AFFAB0
+?Free@DistLODClass@@AAEXXZ,0x00014BC3
 ?Free_String@StringClass@@AAEXXZ,0x009DB7A0
 ?Get@Base64Straw@@UAEHPAXH@Z,0x009E7B80
 ?Get_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,0x008E2160

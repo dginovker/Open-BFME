@@ -265,7 +265,7 @@ void SegLineRendererClass::Render
 }
 
 
-// ?SegLineRendererClass::subdivision_util present-unmatched
+// ?SegLineRendererClass::subdivision_util present-unmatched (addr 0x9602A0, size 1724; scheduling drift at +0x28 near Is_Freeze_Random; Vector3SolidBoxRandomizer callees unresolved)
 void SegLineRendererClass::subdivision_util(unsigned int point_cnt, const Vector3 *xformed_pts,
 	const float *base_tex_v, unsigned int *p_sub_point_cnt, Vector3 *xformed_subdiv_pts,
 	float *subdiv_tex_v, Vector4 *base_diffuse, Vector4 *subdiv_diffuse)

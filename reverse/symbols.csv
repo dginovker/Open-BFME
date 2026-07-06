@@ -34,8 +34,11 @@ name,address,notes
 ??1file_auto_ptr@@QAE@XZ,0x009DD560
 ??2@YAPAXI@Z,0x00881F30,operator new body
 ??3@YAXPAX@Z,0x00881EB0
+??4?$VectorClass@VModelNodeClass@HLodClass@@@@QAEAAV0@ABV0@@Z,0x0097ACA0
+??4RenderObjClass@@QAEAAV0@ABV0@@Z,0x0091F790
 ??4StringClass@@QAEABV0@ABV0@@Z,0x00035FDF
 ??AModuleTemplateMap@ModuleFactory@@QAEAAVModuleTemplate@1@ABH@Z,0x0002047D,ModuleFactory::ModuleTemplateMap::operator[] thunk (body 0x001296E0)
+??_M@YGXPAXIHP6EX0@Z@Z,0x009F6D76
 ??_U@YAPAXI@Z,0x00881F30
 ??_U@YAPAXI@Z,0x00881F70,array operator new flag-2 variant (W3D containers); flag-1 at 0x881F30
 ??_V@YAXPAX@Z,0x00881EB0
@@ -49,6 +52,7 @@ name,address,notes
 ?Collide@CollisionMath@@SA_NABVAABoxClass@@ABVVector3@@ABVTriClass@@PAUCastResultStruct@@@Z,0x008E0C30
 ?Combine_Color_And_Alpha@ParticleBufferClass@@IAEXXZ,0x00984CB0,derived from Render_Particles call sites
 ?Contains_Point@TriClass@@QBE_NABVVector3@@@Z,0x008E1900
+?Cur_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E1440
 ?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
 ?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,0x0098B750
 ?Enable_Fog@ShaderClass@@QAEXPBD@Z,0x00910F90,derived from ParticleBufferClass main ctor aligned call sites
@@ -180,5 +184,3 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
-??_M@YGXPAXIHP6EX0@Z@Z,0x009F6D76
-??4RenderObjClass@@QAEAAV0@ABV0@@Z,0x0091F790

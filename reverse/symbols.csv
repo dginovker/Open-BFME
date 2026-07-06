@@ -13,6 +13,8 @@ name,address,notes
 ??0GameMessageParser@@QAE@XZ,0x00013FCA,GameMessageParser::GameMessageParser() thunk
 ??0LockClass@CriticalSectionClass@@QAE@AAV1@@Z,0x009DB4B0
 ??0ParticleBufferClass@@QAE@ABV0@@Z,0x00989A20
+??0PointGroupClass@@QAE@XZ,0x00912580,derived from ParticleBufferClass main ctor aligned call sites
+??0RenderObjClass@@QAE@XZ,0x009204B0,derived from ParticleBufferClass main ctor aligned call sites
 ??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
 ??1Buffer@@QAE@XZ,0x009E1E60
 ??1BufferStraw@@UAE@XZ,0x00921790
@@ -46,6 +48,7 @@ name,address,notes
 ?Contains_Point@TriClass@@QBE_NABVVector3@@@Z,0x008E1900
 ?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
 ?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,0x0098B750
+?Enable_Fog@ShaderClass@@QAEXPBD@Z,0x00910F90,derived from ParticleBufferClass main ctor aligned call sites
 ?End_Chunk@ChunkSaveClass@@QAE_NXZ,0x009E17F0
 ?Find_POT@@YAHH@Z,0x00AFFAB0
 ?Free_String@StringClass@@AAEXXZ,0x009DB7A0
@@ -94,6 +97,7 @@ name,address,notes
 ?Search_For_Node@?$IndexClass@HPAUINISection@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2FD0
 ?Set_Arrays@LineGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@0PAV?$ShareBufferClass@VVector4@@@@1PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@3H@Z,0x0098EB00
 ?Set_Arrays@PointGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@PAV?$ShareBufferClass@VVector4@@@@PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@PAV?$ShareBufferClass@E@@4HMMMM@Z,0x009126B0,derived from Render_Particles call sites
+?Set_Flag@PointGroupClass@@QAEXW4FlagsType@1@_N@Z,0x009120A0,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Line_Alpha@LineGroupClass@@QAEXM@Z,0x0098E8C0
 ?Set_Line_Color@LineGroupClass@@QAEXABVVector3@@@Z,0x0098EC00
 ?Set_Line_Size@LineGroupClass@@QAEXM@Z,0x0098E8A0

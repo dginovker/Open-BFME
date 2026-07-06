@@ -309,6 +309,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0003C6DC,0x005D7D40,62,src/game/fx_particle_system_bulk.cpp,matched,
 ??0OutwardEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x00048DB0,0x005D7C70,106,src/game/fx_particle_system_bulk.cpp,matched,
 ??0PKey@@QAE@PBX0@Z,,0x009EAA10,81,src/w3d/pk.cpp,matched,locate ghidra-unknown callee; build.sh exact match
+??0ParticleBufferClass@@QAE@PAVParticleEmitterClass@@IAAU?$ParticlePropertyStruct@VVector3@@@@AAU?$ParticlePropertyStruct@M@@22M22VVector3@@MMPAVTextureClass@@VShaderClass@@_NHHPBUW3dEmitterLinePropertiesStruct@@@Z,,0x00989130,2227,src/w3d/part_buf.cpp,unmatched,"close (2220 vs 2227): retail PointGroupClass is 0x5C bytes (mine 0x60 — one member less, needs its own dtor-Rosetta); BFME init seq adds Set_Flag(x,true) call at +0x400 (push 1;push 1;call 0x9120A0) replacing a Set_Point_Color path; base/ctor callees pinned 2026-07-05"
 ??0PlaneClass@@QAE@ABVVector3@@0@Z,,0x008DAA60,52,src/w3d/colmathline.cpp,matched,
 ??0PlaneClass@@QAE@XZ,,0x00931400,20,src/w3d/frustum.cpp,matched,
 ??0PointEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0000FECA,0x005D5930,62,src/game/fx_particle_system_bulk.cpp,matched,

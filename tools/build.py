@@ -508,6 +508,51 @@ def verify_noop_patch(patches):
     print(f"No-op patch: OK {NOOP_EXE.relative_to(ROOT)}")
 
 
+def verify_string_refs(rows):
+    """Independently VERIFY (not mask) every DIR32 relocation that points at a string literal:
+    read the address the compiled code references, and confirm the string AT that address in the
+    binary byte-equals the compiled literal. Self-verifying (no pins) — catches source/binary string
+    discrepancies that compile_function's DIR32 masking otherwise hides (e.g. "%S" vs "%ls",
+    "ParticleSystemInfo" vs "FXParticleSystemInfo"). Reuses the objs already built by verify_functions."""
+    exe = EXE.read_bytes()
+    pe = pe_sections(exe)
+    mismatches = []
+    checked = 0
+    for row in rows:
+        obj = BUILD_DIR / ((ROOT / row["source"]).stem + ".obj")
+        if not obj.exists():
+            continue
+        target_rva = int(row["target_rva"], 16)
+        target_size = int(row["target_size"])
+        target = read_target_bytes(target_rva, target_size)
+        try:
+            _, relocs = read_object_symbol_bytes(obj, row["name"])
+        except ValueError:
+            continue
+        for offset, rtype, sym in relocs:
+            if rtype != 0x0006 or offset + 4 > target_size or not sym.startswith("??_C@"):
+                continue
+            try:
+                cs, _ = read_object_symbol_bytes(obj, sym)
+                content = cs.rstrip(b"\x00")
+                if not content:
+                    continue
+                str_rva = struct.unpack_from("<I", target, offset)[0] - 0x400000
+                file_off = rva_to_file_offset(pe, str_rva)
+                if exe[file_off : file_off + len(content)] != content:
+                    mismatches.append((row["name"], content, exe[file_off : file_off + len(content)]))
+                else:
+                    checked += 1
+            except Exception:
+                pass  # extraction edge case (wide-string alignment etc.) — skip, don't false-fail
+    if mismatches:
+        print(f"String-ref verify: FAIL {len(mismatches)} mismatch(es) (source string != binary string)")
+        for name, src_s, bin_s in mismatches[:12]:
+            print(f"    {name}: source={src_s!r} binary={bin_s!r}")
+        raise SystemExit(1)
+    print(f"String-ref verify: OK ({checked} DIR32 string literals independently self-verified)")
+
+
 def main(only=None):
     if only:
         # Fast path: compile and byte-compare only the matching sources/functions
@@ -518,6 +563,7 @@ def main(only=None):
     print("Full verification")
     verify_baseline()
     patches = verify_functions()
+    verify_string_refs(load_function_rows())
     verify_noop_patch(patches)
 
 

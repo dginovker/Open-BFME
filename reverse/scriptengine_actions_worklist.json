@@ -1,0 +1,8939 @@
+[
+{
+"i": 0,
+"internalName": "DEBUG_MESSAGE_BOX",
+"uiName": "Scripting_/Debug/Display message and pause",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+10
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Show debug string and pause: "
+]
+},
+{
+"i": 104,
+"internalName": "DEBUG_STRING",
+"uiName": "Scripting_/Debug/Display string",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+10
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Show debug string without pausing: "
+]
+},
+{
+"i": 220,
+"internalName": "DEBUG_CRASH_BOX",
+"uiName": "{INTERNAL}_/Debug/Display a crash box (debug/internal builds only).",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+10
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Display a crash box with the text: "
+]
+},
+{
+"i": 1,
+"internalName": "SET_FLAG",
+"uiName": "Scripting_/Flags/Set flag to value.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+5,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to "
+]
+},
+{
+"i": 375,
+"internalName": "SET_FLAG_TO_FLAG",
+"uiName": "Scripting_/Flags/Set flag to another flag.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+5,
+5
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to "
+]
+},
+{
+"i": 2,
+"internalName": "SET_COUNTER",
+"uiName": "Scripting_/Counters/Set counter to a value.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+4,
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to "
+]
+},
+{
+"i": 374,
+"internalName": "SET_COUNTER_TO_COUNTER",
+"uiName": "Scripting_/Counters/Set counter to another counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+4,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to "
+]
+},
+{
+"i": 373,
+"internalName": "SET_RANDOM_COUNTER",
+"uiName": "Scripting_/Counters/Set a random counter.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+4,
+4
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Set Counter ",
+" randomly between ",
+" and ",
+"."
+]
+},
+{
+"i": 507,
+"internalName": "SET_COUNTER_TO_CLIENT_RANDOM_VALUE",
+"uiName": "Scripting_/Counters/Set a counter to a random CLIENT-SIDE value.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+4,
+4
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Set Counter ",
+" to a CLIENT-SIDE random between ",
+" and ",
+". WARNING: Will cause desyncs if used for multiplayer maps! Don't use unless you have a good reason!"
+]
+},
+{
+"i": 415,
+"internalName": "SET_COUNTER_IN_SECONDS",
+"uiName": "Scripting_/Counters/Set counter to a time in seconds.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+4,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" to ",
+" seconds. "
+]
+},
+{
+"i": 416,
+"internalName": "SET_RANDOM_COUNTER_IN_SECONDS",
+"uiName": "Scripting_/Counters/Set a random counter in seconds.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+1,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Set Counter ",
+" randomly between ",
+" and ",
+" seconds."
+]
+},
+{
+"i": 103,
+"internalName": "SET_TREE_SWAY",
+"uiName": "Map_/Environment/Set wind sway amount and direction.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+17,
+17,
+17,
+0,
+1
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Set wind direction to ",
+", amount to sway ",
+", amount to lean with the wind ",
+", frames to take to sway once ",
+", randomness ",
+"(0=lock step, 1=large random variation)."
+]
+},
+{
+"i": 334,
+"internalName": "SET_CAMERA_CLIP_DEPTH_MULTIPLIER",
+"uiName": "Camera/Adjust/Change the camera depth of field.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Modify normal depth of Frustrum by ",
+" (1.0 = normal, < 1.0 shortens frustrum, > 1.0 lengthens.)"
+]
+},
+{
+"i": 327,
+"internalName": "QUICKVICTORY",
+"uiName": "User_/ Announce quick win",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"End game in victory immediately."
+]
+},
+{
+"i": 3,
+"internalName": "VICTORY",
+"uiName": "Multiplayer_/ Announce victory.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Show 'Victorious' window and end game"
+]
+},
+{
+"i": 510,
+"internalName": "VICTORY_SCREEN",
+"uiName": "User_/ Show Victory Screen",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Shows the victory screen, but does not behave as a victory."
+]
+},
+{
+"i": 4,
+"internalName": "DEFEAT",
+"uiName": "Multiplayer_/ Announce defeat.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Show 'Defeated' window and end game"
+]
+},
+{
+"i": 5,
+"internalName": "NO_OP",
+"uiName": "Scripting_/Debug/Null operation.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Null operation. (Does nothing.)"
+]
+},
+{
+"i": 6,
+"internalName": "SET_TIMER",
+"uiName": "Scripting_/Timer/Frame countdown timer -- set.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+4,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set timer ",
+" to expire in ",
+" frames."
+]
+},
+{
+"i": 150,
+"internalName": "SET_RANDOM_TIMER",
+"uiName": "Scripting_/Timer/Frame countdown timer -- set random.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+17,
+17
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Set timer ",
+" to expire between ",
+" and ",
+" frames."
+]
+},
+{
+"i": 152,
+"internalName": "STOP_TIMER",
+"uiName": "Scripting_/Timer/Timer -- stop.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+4
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Stop timer "
+]
+},
+{
+"i": 153,
+"internalName": "RESTART_TIMER",
+"uiName": "Scripting_/Timer/Timer -- restart stopped.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+4
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Restart timer "
+]
+},
+{
+"i": 7,
+"internalName": "PLAY_SOUND_EFFECT",
+"uiName": "Multimedia_/Sound Effect/Play 2D sound effect.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+12
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Play ",
+" as though it was a 2D sound (NOT RECOMMENDED for 3D sounds)."
+]
+},
+{
+"i": 8,
+"internalName": "ENABLE_SCRIPT",
+"uiName": "Scripting_/Script/Enable Script.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+2
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Enable ",
+"."
+]
+},
+{
+"i": 9,
+"internalName": "DISABLE_SCRIPT",
+"uiName": "Scripting_/Script/Disable script.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+2
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Disable ",
+"."
+]
+},
+{
+"i": 10,
+"internalName": "CALL_SUBROUTINE",
+"uiName": "Scripting_/Script/Run subroutine script.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+13
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Run ",
+"."
+]
+},
+{
+"i": 11,
+"internalName": "PLAY_SOUND_EFFECT_AT",
+"uiName": "Multimedia_/Sound Effect/Play sound effect at waypoint.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+12,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Play ",
+" at ",
+"."
+]
+},
+{
+"i": 12,
+"internalName": "DAMAGE_MEMBERS_OF_TEAM",
+"uiName": "Team_/Damage/Damage the members of a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Damage ",
+", amount=",
+" (-1==kill)."
+]
+},
+{
+"i": 423,
+"internalName": "TEAM_SET_HEALTH",
+"uiName": "Team_/Health/Set the health of the team members (in percentage).",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set health of ",
+" to percentage (0.0 - 100.0) "
+]
+},
+{
+"i": 13,
+"internalName": "MOVE_TEAM_TO",
+"uiName": "Team_/Move/Set to move to a location.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Move ",
+" to ",
+"."
+]
+},
+{
+"i": 455,
+"internalName": "MOVE_TEAM_HOME",
+"uiName": "Team_/Move/Set to move home.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Move ",
+" Home. "
+]
+},
+{
+"i": 36,
+"internalName": "TEAM_FOLLOW_WAYPOINTS",
+"uiName": "Team_/Move/Set to follow a waypoint path.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+24,
+8,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Have ",
+" follow ",
+" , as a team is ",
+" , in formation is "
+]
+},
+{
+"i": 285,
+"internalName": "TEAM_FOLLOW_WAYPOINTS_EXACT",
+"uiName": "Team_/Move/Set to EXACTLY follow a waypoint path.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+24,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have ",
+" EXACTLY follow ",
+" , as a team is "
+]
+},
+{
+"i": 237,
+"internalName": "TEAM_WANDER_IN_PLACE",
+"uiName": "Team_/Move/Set to wander around current location.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Have ",
+" wander around it's current location."
+]
+},
+{
+"i": 238,
+"internalName": "TEAM_INCREASE_PRIORITY",
+"uiName": "Team_/AI/Increase priority by Success Priority Increase amount.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Increase the AI priority for",
+"  by its Success Priority Increase amount."
+]
+},
+{
+"i": 239,
+"internalName": "TEAM_DECREASE_PRIORITY",
+"uiName": "Team_/AI/Reduce priority by Failure Priority Decrease amount.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Reduce the AI priority for",
+"  by its Failure Priority Decrease amount."
+]
+},
+{
+"i": 115,
+"internalName": "TEAM_WANDER",
+"uiName": "Team_/Move/Set to follow a waypoint path -- wander.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+24
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Have ",
+" wander along "
+]
+},
+{
+"i": 116,
+"internalName": "TEAM_PANIC",
+"uiName": "Team_/Move/Set to follow a waypoint path -- panic.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+24
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Have ",
+" move in panic along "
+]
+},
+{
+"i": 38,
+"internalName": "MOVE_NAMED_UNIT_TO",
+"uiName": "Unit_/Move/Move a specific unit to a location.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Move ",
+" to ",
+"."
+]
+},
+{
+"i": 37,
+"internalName": "TEAM_SET_STATE",
+"uiName": "Team_/Misc/Team state - set state.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+18
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" to ",
+"."
+]
+},
+{
+"i": 490,
+"internalName": "TEAM_SET_CUSTOM_STATE",
+"uiName": "Team_/Misc/Team state - set custom state.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+18,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" set custom state ",
+" to "
+]
+},
+{
+"i": 34,
+"internalName": "CREATE_REINFORCEMENT_TEAM",
+"uiName": "Team_/ Spawn a reinforcement team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Spawn an instance of ",
+" at ",
+"."
+]
+},
+{
+"i": 444,
+"internalName": "CREATE_REINFORCEMENT_TEAM_AT_UNIT_POSITION",
+"uiName": "Team_/ Spawn a reinforcement team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Spawn an instance of ",
+" at ",
+"."
+]
+},
+{
+"i": 498,
+"internalName": "UNIT_SET_TEAM",
+"uiName": "Unit_/ Force unit to join team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+3
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Unit named ",
+" will join team named ",
+"."
+]
+},
+{
+"i": 248,
+"internalName": "SKIRMISH_BUILD_BUILDING",
+"uiName": "Skirmish Only_/ Build a building.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+15
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Build a building of type "
+]
+},
+{
+"i": 289,
+"internalName": "AI_PLAYER_BUILD_SUPPLY_CENTER",
+"uiName": "Player_/AI/AI player build near a supply source.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+15,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Have AI ",
+" build a ",
+" near a supply src with at least ",
+" available resources."
+]
+},
+{
+"i": 316,
+"internalName": "TEAM_GUARD_SUPPLY_CENTER",
+"uiName": "Team_/Guard/Set to guard a supply source.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have Team ",
+" guard attacked or closest supply src with at least ",
+" available resources"
+]
+},
+{
+"i": 290,
+"internalName": "AI_PLAYER_BUILD_UPGRADE",
+"uiName": "Player_/AI/AI player build an upgrade.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+33
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Have AI ",
+" build this upgrade: "
+]
+},
+{
+"i": 419,
+"internalName": "GIVE_PLAYER_UPGRADE",
+"uiName": "Player_/Player/Give player an upgrade.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+33
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Give ",
+" this upgrade: "
+]
+},
+{
+"i": 249,
+"internalName": "SKIRMISH_FOLLOW_APPROACH_PATH",
+"uiName": "Skirmish Only_/Move/Team follow approach path.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+43,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have ",
+" approach the enemy using path ",
+", as a team is "
+]
+},
+{
+"i": 253,
+"internalName": "SKIRMISH_MOVE_TO_APPROACH_PATH",
+"uiName": "Skirmish Only_/Move/Team move to approach path.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+43
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have ",
+" move to the start of enemy path ",
+"."
+]
+},
+{
+"i": 254,
+"internalName": "SKIRMISH_BUILD_BASE_DEFENSE_FRONT",
+"uiName": "Skirmish Only_/Build/Build base defense on front perimeter.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Build one additional perimeter base defenses, on the front."
+]
+},
+{
+"i": 258,
+"internalName": "SKIRMISH_BUILD_BASE_DEFENSE_FLANK",
+"uiName": "Skirmish Only_/Build/Build base defense on flank perimeter.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Build one additional perimeter base defenses, on the flank."
+]
+},
+{
+"i": 259,
+"internalName": "SKIRMISH_BUILD_STRUCTURE_FRONT",
+"uiName": "Skirmish Only_/Build/Build structure on front perimeter.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+15
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Build one additional ",
+", on the front."
+]
+},
+{
+"i": 260,
+"internalName": "SKIRMISH_BUILD_STRUCTURE_FLANK",
+"uiName": "Skirmish Only_/Build/Build structure on flank perimeter.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+15
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Build one additional ",
+", on the flank."
+]
+},
+{
+"i": 180,
+"internalName": "RECRUIT_TEAM",
+"uiName": "Team_/Create/Recruit a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Recruit an instance of ",
+", maximum recruiting distance (feet):",
+"."
+]
+},
+{
+"i": 181,
+"internalName": "RECRUIT_TEAM_AT_TEAM",
+"uiName": "Team_/Create/Recruit a team from the location of another team.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+1,
+3
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Recruit an instance of ",
+", maximum recruiting distance (feet):",
+" from the team ",
+"."
+]
+},
+{
+"i": 14,
+"internalName": "MOVE_CAMERA_TO",
+"uiName": "Camera_/Move/Move the camera to a location.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+51,
+1,
+1,
+1,
+1
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Move camera to ",
+" in ",
+" seconds, camera shutter ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 484,
+"internalName": "CAMERA_RESTRICT_TO_AREA",
+"uiName": "Camera_/Move/Restrict camera movement to area.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Restrict camera movement to ",
+"."
+]
+},
+{
+"i": 485,
+"internalName": "CAMERA_REMOVE_AREA_RESTRICTION",
+"uiName": "Camera_/Move/Restrict camera movement to area -- REMOVE.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Restrict camera movement to area -- REMOVE."
+]
+},
+{
+"i": 120,
+"internalName": "ZOOM_CAMERA",
+"uiName": "Camera_/Adjust/Change the camera zoom.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Change camera zoom to ",
+" in ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 389,
+"internalName": "FOCAL_LENGTH_CAMERA",
+"uiName": "Camera_/Adjust/Change the camera's focal length (mm).",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Change camera focal length to ",
+"mm in ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 124,
+"internalName": "CAMERA_FADE_ADD",
+"uiName": "Camera_/Fade Effects/Fade using an add blend to white.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+1,
+1,
+8,
+8,
+8
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Fade (0-1) from ",
+" to ",
+" adding toward white. Take ",
+" frames to increase, hold for ",
+" fames, and decrease ",
+" frames."
+]
+},
+{
+"i": 125,
+"internalName": "CAMERA_FADE_SUBTRACT",
+"uiName": "Camera_/Fade Effects/Fade using a subtractive blend to black.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+1,
+1,
+8,
+8,
+8
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Fade (0-1) from ",
+" to ",
+" subtracting toward black. Take ",
+" frames to increase, hold for ",
+" fames, and decrease ",
+" frames."
+]
+},
+{
+"i": 127,
+"internalName": "CAMERA_FADE_MULTIPLY",
+"uiName": "Camera_/Fade Effects/Fade using a multiply blend to black.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+1,
+1,
+8,
+8,
+8
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Fade (1-0) from ",
+" to ",
+" multiplying toward black. Take ",
+" frames to increase, hold for ",
+" fames, and decrease ",
+" frames."
+]
+},
+{
+"i": 126,
+"internalName": "CAMERA_FADE_SATURATE",
+"uiName": "Camera_/Fade Effects/Fade using a saturate blend.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+1,
+1,
+8,
+8,
+8
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Fade (0.5-1) from ",
+" to ",
+" increasing saturation. Take ",
+" frames to increase, hold for ",
+" fames, and decrease ",
+" frames."
+]
+},
+{
+"i": 121,
+"internalName": "PITCH_CAMERA",
+"uiName": "Camera_/Adjust/Change the camera pitch.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Change camera pitch to ",
+" in ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 346,
+"internalName": "ROLL_CAMERA",
+"uiName": "Camera_/Adjust/Change the camera roll.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Change camera roll to ",
+" degrees in ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 122,
+"internalName": "CAMERA_FOLLOW_NAMED",
+"uiName": "Camera_/Move/Follow a specific unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+8,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Have the camera follow ",
+". Snap camera to object is ",
+". Camera will be ",
+" higher than the unit."
+]
+},
+{
+"i": 135,
+"internalName": "CAMERA_STOP_FOLLOW",
+"uiName": "Camera_/Move/Stop following any units.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Stop following any units."
+]
+},
+{
+"i": 117,
+"internalName": "SETUP_CAMERA",
+"uiName": "Camera_/Adjust/Set up the camera.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+7,
+1,
+1,
+7
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Position camera at ",
+", zoom = ",
+"(0.0 to 1.0), pitch = ",
+"(1.0==default), looking towards ",
+"."
+]
+},
+{
+"i": 15,
+"internalName": "INCREMENT_COUNTER",
+"uiName": "Scripting_/Counters/Increment counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+0,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Add ",
+" to counter "
+]
+},
+{
+"i": 16,
+"internalName": "DECREMENT_COUNTER",
+"uiName": "Scripting_/Counters/Decrement counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+0,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Subtract ",
+" from counter "
+]
+},
+{
+"i": 17,
+"internalName": "MOVE_CAMERA_ALONG_SPLINE_PATH",
+"uiName": "Camera_/Move/Move along a spline path.",
+"uiName2": null,
+"numParameters": 6,
+"parameters": [
+24,
+1,
+1,
+1,
+1,
+1
+],
+"numUiStrings": 7,
+"uiStrings": [
+"Move along ",
+" in ",
+" seconds, camera shutter ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds, delay start ",
+" seconds. "
+]
+},
+{
+"i": 390,
+"internalName": "MOVE_CAMERA_LOCATOR_ALONG_SPLINE_PATH",
+"uiName": "Camera_/Locator/Order camera's locator to follow a spline path.",
+"uiName2": null,
+"numParameters": 6,
+"parameters": [
+24,
+1,
+1,
+1,
+1,
+1
+],
+"numUiStrings": 7,
+"uiStrings": [
+"Look at point moving along ",
+" in ",
+" seconds, camera shutter ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds, delay start ",
+" seconds. "
+]
+},
+{
+"i": 18,
+"internalName": "ROTATE_CAMERA",
+"uiName": "Camera_/Rotate/ Rotate around the current viewpoint.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Rotate ",
+" times, taking ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 528,
+"internalName": "ROTATE_CAMERA_TO_ANGLE",
+"uiName": "Camera_/Rotate/ Rotate to a specific view angle.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Rotate camera view to ",
+" degrees, taking ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 340,
+"internalName": "ROTATE_CAMERA_LOCKED",
+"uiName": "Camera_/Rotate/ Rotate the camera in place.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Rotate in place ",
+" times, taking ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 19,
+"internalName": "RESET_CAMERA",
+"uiName": "Camera_/Move/ Reset to the default view.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+7,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Reset to ",
+", taking ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds."
+]
+},
+{
+"i": 35,
+"internalName": "MOVE_CAMERA_TO_SELECTION",
+"uiName": "Camera_/Move/Modify/ End movement at selected unit.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"End movement at selected unit."
+]
+},
+{
+"i": 20,
+"internalName": "SET_MILLISECOND_TIMER",
+"uiName": "Scripting_/Timer/Seconds countdown timer -- set.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+4,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set timer ",
+" to expire in ",
+" seconds."
+]
+},
+{
+"i": 151,
+"internalName": "SET_RANDOM_MSEC_TIMER",
+"uiName": "Scripting_/Timer/Seconds countdown timer -- set random.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+1,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Set timer ",
+" to expire between ",
+" and ",
+" seconds."
+]
+},
+{
+"i": 154,
+"internalName": "ADD_TO_MSEC_TIMER",
+"uiName": "Scripting_/Timer/Seconds countdown timer -- add seconds.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+1,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Add ",
+" seconds to timer ",
+" ."
+]
+},
+{
+"i": 155,
+"internalName": "SUB_FROM_MSEC_TIMER",
+"uiName": "Scripting_/Timer/Seconds countdown timer -- subtract seconds.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+1,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Subtract ",
+" seconds from timer ",
+" ."
+]
+},
+{
+"i": 21,
+"internalName": "CAMERA_MOD_FREEZE_TIME",
+"uiName": "Camera_/Move/Modify/ Freeze time during the camera movement.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Freeze time during the camera movement."
+]
+},
+{
+"i": 28,
+"internalName": "CAMERA_MOD_FREEZE_ANGLE",
+"uiName": "Camera_/Move/Modify/ Freeze camera angle during the camera movement.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Freeze camera angle during the camera movement."
+]
+},
+{
+"i": 24,
+"internalName": "SUSPEND_BACKGROUND_SOUNDS",
+"uiName": "Multimedia_/All Sounds/Suspend all sounds.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Suspend background sounds."
+]
+},
+{
+"i": 25,
+"internalName": "RESUME_BACKGROUND_SOUNDS",
+"uiName": "Multimedia_/All Sounds/Resume all sounds.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Resume background sounds."
+]
+},
+{
+"i": 26,
+"internalName": "CAMERA_MOD_SET_FINAL_ZOOM",
+"uiName": "Camera_/Move/Modify/Set Final zoom for camera movement.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+1,
+52,
+52
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Adjust zoom to ",
+" (1.0==max height, 0.0==in the ground) ",
+" ease-in ",
+" ease-out."
+]
+},
+{
+"i": 27,
+"internalName": "CAMERA_MOD_SET_FINAL_PITCH",
+"uiName": "Camera_/Move/Modify/Set Final pitch for camera movement.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+1,
+52,
+52
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Adjust pitch to ",
+" (1.0==default, 0.0==toward horizon, >1 = toward ground) ",
+" ease-in ",
+" ease-out."
+]
+},
+{
+"i": 22,
+"internalName": "SET_VISUAL_SPEED_MULTIPLIER",
+"uiName": "{Compatibility}_/Multimedia/Modify visual game time.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Make visual time ",
+" time normal (1=normal, 2 = twice as fast, ...)."
+]
+},
+{
+"i": 29,
+"internalName": "CAMERA_MOD_SET_FINAL_SPEED_MULTIPLIER",
+"uiName": "{Compatibility}_/Camera/Modify/Final visual game time for camera movement.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Adjust game time to",
+" times normal (1=normal, 2 = twice as fast, ...)."
+]
+},
+{
+"i": 30,
+"internalName": "CAMERA_MOD_SET_ROLLING_AVERAGE",
+"uiName": "Camera_/Move/Modify/ Number of frames to average movements.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Average position and angle changes over",
+" frames. (1=no smoothing, 5 = very smooth)"
+]
+},
+{
+"i": 31,
+"internalName": "CAMERA_MOD_FINAL_LOOK_TOWARD",
+"uiName": "{Compatibility}_/Camera/Modify/Move/ Final camera look toward point.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Look toward",
+" at the end of the camera movement."
+]
+},
+{
+"i": 32,
+"internalName": "CAMERA_MOD_LOOK_TOWARD",
+"uiName": "Camera_/Modify/Move/Camera look toward point while moving.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Look toward",
+" during the camera movement."
+]
+},
+{
+"i": 23,
+"internalName": "CREATE_OBJECT",
+"uiName": "Unit_/Spawn/Spawn object.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+15,
+3,
+16,
+17
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Spawn object ",
+" in ",
+" at position (",
+"), rotated ",
+" ."
+]
+},
+{
+"i": 33,
+"internalName": "TEAM_ATTACK_TEAM",
+"uiName": "Team_/Attack/Set to attack -- another team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begin attack on "
+]
+},
+{
+"i": 39,
+"internalName": "NAMED_ATTACK_NAMED",
+"uiName": "Unit_/Attack/Set unit to attack another unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begin attack on "
+]
+},
+{
+"i": 40,
+"internalName": "CREATE_NAMED_ON_TEAM_AT_WAYPOINT",
+"uiName": "Unit_/Spawn/Spawn -- named unit on a team at a waypoint.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+14,
+15,
+3,
+7
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Spawn ",
+" of type ",
+" on ",
+" at waypoint "
+]
+},
+{
+"i": 41,
+"internalName": "CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT",
+"uiName": "Unit_/Spawn/Spawn -- unnamed unit on a team at a waypoint.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+15,
+3,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Spawn unit of type ",
+" on ",
+" at waypoint "
+]
+},
+{
+"i": 42,
+"internalName": "NAMED_APPLY_ATTACK_PRIORITY_SET",
+"uiName": "AttackPrioritySet_/Apply/Unit/Apply unit's attack priority set.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+28
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have ",
+" use ",
+"."
+]
+},
+{
+"i": 43,
+"internalName": "TEAM_APPLY_ATTACK_PRIORITY_SET",
+"uiName": "AttackPrioritySet_/Apply/Team/Apply a team's attack priority set.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+28
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have ",
+" use ",
+"."
+]
+},
+{
+"i": 132,
+"internalName": "SET_ATTACK_PRIORITY_THING",
+"uiName": "AttackPrioritySet_/Set/Modify a set's priority for a single unit type.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+28,
+61,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"For ",
+" set the priority of object type ",
+" to "
+]
+},
+{
+"i": 133,
+"internalName": "SET_ATTACK_PRIORITY_KIND_OF",
+"uiName": "AttackPrioritySet_/Set/Modify a set's priorities for all of a kind.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+28,
+27,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"For ",
+" set the priority of object type ",
+" to "
+]
+},
+{
+"i": 134,
+"internalName": "SET_DEFAULT_ATTACK_PRIORITY",
+"uiName": "AttackPrioritySet_/Set/Specify the set's default priority.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+28,
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"For ",
+" set the default priority to "
+]
+},
+{
+"i": 276,
+"internalName": "PLAYER_ADD_SKILLPOINTS",
+"uiName": "Player_/Experience/Add or Subtract Skill Points.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is given ",
+" Skill Points."
+]
+},
+{
+"i": 537,
+"internalName": "SET_HERO_EXPERIENCE_SHARING",
+"uiName": "Player_/Experience/Set whether heroes share experience with other heroes",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set Hero experience sharing to ",
+"."
+]
+},
+{
+"i": 277,
+"internalName": "PLAYER_ADD_RANKLEVEL",
+"uiName": "Player_/Experience/Add or Subtract Rank Levels.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is given ",
+" Rank Levels."
+]
+},
+{
+"i": 278,
+"internalName": "PLAYER_SET_RANKLEVEL",
+"uiName": "Player_/Experience/Set Rank Level.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is given a Rank Level of ",
+"."
+]
+},
+{
+"i": 279,
+"internalName": "PLAYER_SET_RANKLEVELLIMIT",
+"uiName": "Map_/Experience/Set Rank Level Limit for current Map.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"The current map is given a Rank Level Limit of ",
+"."
+]
+},
+{
+"i": 280,
+"internalName": "PLAYER_GRANT_SCIENCE",
+"uiName": "Player_/Science/Grant a Science to a given Player (ignoring prerequisites).",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+32
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is granted ",
+"."
+]
+},
+{
+"i": 281,
+"internalName": "PLAYER_PURCHASE_SCIENCE",
+"uiName": "Player_/Science/Player attempts to purchase a Science.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+32
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" attempts to purchase Science ",
+"."
+]
+},
+{
+"i": 302,
+"internalName": "PLAYER_SCIENCE_AVAILABILITY",
+"uiName": "Player_/Science/Set science availability.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+32,
+50
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" set ",
+" availability to ",
+"."
+]
+},
+{
+"i": 44,
+"internalName": "SET_BASE_CONSTRUCTION_SPEED",
+"uiName": "Player_/AI/Set the delay between building teams.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" will delay ",
+null
+]
+},
+{
+"i": 45,
+"internalName": "NAMED_SET_ATTITUDE",
+"uiName": "Unit_/Mood/Set the general attitude of a specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+20
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" changes his attitude to "
+]
+},
+{
+"i": 46,
+"internalName": "TEAM_SET_ATTITUDE",
+"uiName": "Team_/Mood/Set the general attitude of a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+20
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" change their attitude to "
+]
+},
+{
+"i": 235,
+"internalName": "NAMED_SET_REPULSOR",
+"uiName": "Unit_/Internal/Repulsor/Set the REPULSOR flag of a specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" REPULSOR flag is "
+]
+},
+{
+"i": 236,
+"internalName": "TEAM_SET_REPULSOR",
+"uiName": "Team_/Internal/Repulsor/Set the REPULSOR flag of a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" REPULSOR flag is "
+]
+},
+{
+"i": 47,
+"internalName": "NAMED_ATTACK_AREA",
+"uiName": "Unit_/Attack/Set a specific unit to attack a specific trigger area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" attacks anything in "
+]
+},
+{
+"i": 48,
+"internalName": "NAMED_ATTACK_AREA_FOR_SECONDS",
+"uiName": "Unit_/Attack/Set a specific unit to attack a specific trigger area for a number of seconds.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+9,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" attacks anything in ",
+" for ",
+" seconds."
+]
+},
+{
+"i": 49,
+"internalName": "NAMED_ATTACK_TEAM",
+"uiName": "Unit_/Attack/Set a specific unit to attack a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" attacks "
+]
+},
+{
+"i": 50,
+"internalName": "TEAM_ATTACK_AREA",
+"uiName": "Team_/Attack/Set to attack -- trigger area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" attack anything in "
+]
+},
+{
+"i": 51,
+"internalName": "TEAM_ATTACK_NAMED",
+"uiName": "Team_/Attack/Set to attack -- specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" attacks "
+]
+},
+{
+"i": 52,
+"internalName": "TEAM_LOAD_TRANSPORTS",
+"uiName": "Team_/Transport/Transport -- automatically load.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" load into transports."
+]
+},
+{
+"i": 53,
+"internalName": "NAMED_ENTER_NAMED",
+"uiName": "Unit_/Transport/Transport -- load unit into specific.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" loads into "
+]
+},
+{
+"i": 54,
+"internalName": "TEAM_ENTER_NAMED",
+"uiName": "Team_/Transport/Transport -- load team into specific.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" attempt to load into "
+]
+},
+{
+"i": 55,
+"internalName": "NAMED_EXIT_ALL",
+"uiName": "Unit_/Transport/Transport -- unload units from specific.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" unloads."
+]
+},
+{
+"i": 56,
+"internalName": "TEAM_EXIT_ALL",
+"uiName": "Team_/Transport/Transport -- unload team from all.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" unload."
+]
+},
+{
+"i": 57,
+"internalName": "NAMED_FOLLOW_WAYPOINTS",
+"uiName": "Unit_/Move/Set a specific unit to follow a waypoint path.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+24
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" follows waypoints, beginning at "
+]
+},
+{
+"i": 286,
+"internalName": "NAMED_FOLLOW_WAYPOINTS_EXACT",
+"uiName": "Unit_/Move/Set a specific unit to EXACTLY follow a waypoint path.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+24
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" EXACTLY follows waypoints, beginning at "
+]
+},
+{
+"i": 58,
+"internalName": "NAMED_GUARD",
+"uiName": "Unit_/Move/Set to guard.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding."
+]
+},
+{
+"i": 401,
+"internalName": "UNIT_GUARD_NEAREST_KINDOF",
+"uiName": "Unit_/Move/Set to guard -- nearest kindof.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+27
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding nearest kindof "
+]
+},
+{
+"i": 59,
+"internalName": "TEAM_GUARD",
+"uiName": "Team_/Guard/Set to guard -- current location.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding."
+]
+},
+{
+"i": 206,
+"internalName": "TEAM_GUARD_POSITION",
+"uiName": "Team_/Guard/Set to guard -- location.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding at "
+]
+},
+{
+"i": 207,
+"internalName": "TEAM_GUARD_OBJECT",
+"uiName": "Team_/Guard/Set to guard -- specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding "
+]
+},
+{
+"i": 399,
+"internalName": "TEAM_GUARD_TEAM",
+"uiName": "Team_/Guard/Set to guard -- a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Team ",
+" begins guarding Team "
+]
+},
+{
+"i": 208,
+"internalName": "TEAM_GUARD_AREA",
+"uiName": "Team_/Guard/Set to guard -- area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding "
+]
+},
+{
+"i": 487,
+"internalName": "TEAM_GUARD_AREA_FROM_POSITION",
+"uiName": "Team_/Guard/Set to guard -- area, from a waypoint.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+9,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" begins guarding ",
+" from Waypoint "
+]
+},
+{
+"i": 400,
+"internalName": "TEAM_GUARD_NEAREST_KINDOF",
+"uiName": "Team_/Guard/Set to guard -- nearest kindof.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+27
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding nearest kindof "
+]
+},
+{
+"i": 452,
+"internalName": "UNIT_GUARD_POSITION",
+"uiName": "Unit_/Guard/Set to guard -- location.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding at "
+]
+},
+{
+"i": 453,
+"internalName": "UNIT_GUARD_OBJECT",
+"uiName": "Unit_/Guard/Set to guard -- specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding "
+]
+},
+{
+"i": 454,
+"internalName": "UNIT_GUARD_AREA",
+"uiName": "Unit_/Guard/Set to guard -- area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins guarding "
+]
+},
+{
+"i": 486,
+"internalName": "UNIT_GUARD_AREA_FROM_POSITION",
+"uiName": "Unit_/Guard/Set to guard -- area, from a waypoint.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+9,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" begins guarding ",
+" from Waypoint "
+]
+},
+{
+"i": 60,
+"internalName": "NAMED_HUNT",
+"uiName": "Unit_/Hunt/Set a specific unit to hunt.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins hunting."
+]
+},
+{
+"i": 282,
+"internalName": "TEAM_HUNT_WITH_COMMAND_BUTTON",
+"uiName": "Team_/Hunt/Set to hunt using commandbutton ability.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" begins hunting using ",
+"."
+]
+},
+{
+"i": 61,
+"internalName": "TEAM_HUNT",
+"uiName": "Team_/Hunt/Set to hunt.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins hunting."
+]
+},
+{
+"i": 99,
+"internalName": "PLAYER_HUNT",
+"uiName": "Player_/Hunt/Set all of a player's units to hunt.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begins hunting."
+]
+},
+{
+"i": 468,
+"internalName": "TEAM_HARVEST",
+"uiName": "Team_/Hunt/Set to harvest.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" begins harvesting around ",
+"."
+]
+},
+{
+"i": 63,
+"internalName": "PLAYER_DISABLE_BASE_CONSTRUCTION",
+"uiName": "Player_/Build/Set a player to be unable to build buildings.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is unable to build buildings."
+]
+},
+{
+"i": 64,
+"internalName": "PLAYER_DISABLE_FACTORIES",
+"uiName": "Player_/Build/Set a player to be unable to build from a specific building.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+15
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is unable to build from "
+]
+},
+{
+"i": 65,
+"internalName": "PLAYER_DISABLE_UNIT_CONSTRUCTION",
+"uiName": "Player_/Build/Set a player to be unable to build units.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is unable to build units."
+]
+},
+{
+"i": 66,
+"internalName": "PLAYER_ENABLE_BASE_CONSTRUCTION",
+"uiName": "Player_/Build/Set a player to be able to build buildings.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is able to build buildings."
+]
+},
+{
+"i": 67,
+"internalName": "PLAYER_ENABLE_FACTORIES",
+"uiName": "Player_/Build/Set a player to be able to build from a specific building.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+15
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is able to build from "
+]
+},
+{
+"i": 68,
+"internalName": "PLAYER_ENABLE_UNIT_CONSTRUCTION",
+"uiName": "Player_/Build/Set a player to be able to build units.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is able to build units."
+]
+},
+{
+"i": 69,
+"internalName": "CAMERA_MOVE_HOME",
+"uiName": "Camera_/Move/Move the camera to the home position.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The camera moves to the home base."
+]
+},
+{
+"i": 123,
+"internalName": "OVERSIZE_TERRAIN",
+"uiName": "Camera_/Terrain/Oversize the terrain.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Oversize the terrain ",
+" tiles on each side [0 = reset to normal]."
+]
+},
+{
+"i": 70,
+"internalName": "BUILD_TEAM",
+"uiName": "Team_/AI/Start building a team.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Start building team "
+]
+},
+{
+"i": 71,
+"internalName": "NAMED_DAMAGE",
+"uiName": "Unit_/Damage/Deal damage to a specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" takes ",
+" points of damage."
+]
+},
+{
+"i": 436,
+"internalName": "KILL_HORDE_MEMBERS",
+"uiName": "Unit_/Damage/Kill off a percentage of the Horde.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Horde ",
+" kill off  ",
+" percent. "
+]
+},
+{
+"i": 72,
+"internalName": "NAMED_DELETE",
+"uiName": "Unit_/Damage or Remove/Delete a specific unit.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is removed from the world."
+]
+},
+{
+"i": 73,
+"internalName": "TEAM_DELETE",
+"uiName": "Team_/Damage or Remove/Delete a team.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is removed from the world."
+]
+},
+{
+"i": 330,
+"internalName": "TEAM_DELETE_LIVING",
+"uiName": "Team_/Damage or Remove/Delete a team, but ignore dead guys.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Each living member of team ",
+" is removed from the world."
+]
+},
+{
+"i": 74,
+"internalName": "NAMED_SHOCK",
+"uiName": "Unit_/Damage or Remove/Shock a specific unit.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+14,
+1,
+1,
+1,
+10
+],
+"numUiStrings": 6,
+"uiStrings": [
+" ",
+" will be shocked dir (0-360) ",
+", force ",
+", zMult ",
+", with FX named ",
+" ."
+]
+},
+{
+"i": 75,
+"internalName": "NAMED_KILL",
+"uiName": "Unit_/Damage or Remove/Kill a specific unit.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+"is dealt a lethal amount of damage."
+]
+},
+{
+"i": 76,
+"internalName": "TEAM_KILL",
+"uiName": "Team_/Damage or Remove/Kill an entire team.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is dealt a lethal amount of damage."
+]
+},
+{
+"i": 77,
+"internalName": "PLAYER_KILL",
+"uiName": "Player_/Damage or Remove/Kill a player.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"All of ",
+"'s buildings and units are dealt a lethal amount of damage."
+]
+},
+{
+"i": 78,
+"internalName": "DISPLAY_TEXT",
+"uiName": "User_/String/Display a string.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+25
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Displays ",
+" in the text log and message area."
+]
+},
+{
+"i": 219,
+"internalName": "DISPLAY_CINEMATIC_TEXT",
+"uiName": "User_/String/Display a cinematic string.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+25,
+40,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Displays ",
+" with font type ",
+" in the bottom letterbox for ",
+" seconds."
+]
+},
+{
+"i": 79,
+"internalName": "CAMEO_FLASH",
+"uiName": "User_/Flash/Flash a cameo for a specified amount of time.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+39,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" flashes for ",
+" seconds."
+]
+},
+{
+"i": 80,
+"internalName": "NAMED_FLASH",
+"uiName": "User_/Flash/Flash a specific unit for a specified amount of time.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" flashes for ",
+" seconds."
+]
+},
+{
+"i": 81,
+"internalName": "TEAM_FLASH",
+"uiName": "User_/Flash/Flash a team for a specified amount of time.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" flashes for ",
+" seconds."
+]
+},
+{
+"i": 252,
+"internalName": "NAMED_CUSTOM_COLOR",
+"uiName": "User_/Flash/Set a specific unit to use a special indicator color.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+44
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" uses the color ",
+" ."
+]
+},
+{
+"i": 246,
+"internalName": "NAMED_FLASH_WHITE",
+"uiName": "User_/Flash/Flash a specific unit white for a specified amount of time.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" flashes white for ",
+" seconds."
+]
+},
+{
+"i": 247,
+"internalName": "TEAM_FLASH_WHITE",
+"uiName": "User_/Flash/Flash a team white for a specified amount of time.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" flashes white for ",
+" seconds."
+]
+},
+{
+"i": 227,
+"internalName": "INGAME_POPUP_MESSAGE",
+"uiName": "User_/String/Display Popup Message Box.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+25,
+14,
+14,
+14,
+8
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Displays ",
+" at ",
+" percent of the screen Width ",
+" percent of the screen Height and a width of ",
+" pixels and pauses the game (",
+" )"
+]
+},
+{
+"i": 82,
+"internalName": "MOVIE_PLAY_FULLSCREEN",
+"uiName": "Interface/Play a movie in fullscreen mode.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+23,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" plays fullscreen but doesn't play for low detail ( ",
+" )"
+]
+},
+{
+"i": 83,
+"internalName": "MOVIE_PLAY_RADAR",
+"uiName": "Multimedia_/Movie/Play a movie in the palantir.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+23
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" plays in the palantir window."
+]
+},
+{
+"i": 84,
+"internalName": "SOUND_PLAY_NAMED",
+"uiName": "Multimedia_/Sound Effects/Play a sound as though coming from a specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+12,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" plays as though coming from "
+]
+},
+{
+"i": 85,
+"internalName": "SPEECH_PLAY",
+"uiName": "Multimedia_/Sound Effects/Play a speech file.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+21,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" plays, allowing overlap ",
+" (true to allow, false to disallow)."
+]
+},
+{
+"i": 86,
+"internalName": "PLAYER_TRANSFER_OWNERSHIP_PLAYER",
+"uiName": "Player_/Transfer/Transfer assets from one player to another player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"All assets of ",
+" are transferred to "
+]
+},
+{
+"i": 87,
+"internalName": "NAMED_TRANSFER_OWNERSHIP_PLAYER",
+"uiName": "Player_/Transfer/Transfer a specific unit to the control of a player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is transferred to the command of "
+]
+},
+{
+"i": 315,
+"internalName": "PLAYER_EXCLUDE_FROM_SCORE_SCREEN",
+"uiName": "Player_/Score/Exclude this player from the score screen.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Exclude ",
+" from the score screen."
+]
+},
+{
+"i": 317,
+"internalName": "ENABLE_SCORING",
+"uiName": "Player_/Score/Turn on scoring.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Turn on scoring."
+]
+},
+{
+"i": 318,
+"internalName": "DISABLE_SCORING",
+"uiName": "Player_/Score/Turn off scoring.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Turn off scoring."
+]
+},
+{
+"i": 88,
+"internalName": "PLAYER_RELATES_PLAYER",
+"uiName": "Player_/Alliances/Change how a player relates to another player.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+11,
+19
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" considers ",
+" to be "
+]
+},
+{
+"i": 89,
+"internalName": "PALANTIR_EVENT",
+"uiName": "Palantir/Create a Palantir event.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+29
+],
+"numUiStrings": 1,
+"uiStrings": [
+"A palantir event of type "
+]
+},
+{
+"i": 90,
+"internalName": "RADAR_CREATE_EVENT",
+"uiName": "Radar_/Create Event/Create a radar event at a specified location.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+16,
+30
+],
+"numUiStrings": 2,
+"uiStrings": [
+"A radar event occurs at ",
+" of type "
+]
+},
+{
+"i": 217,
+"internalName": "OBJECT_CREATE_RADAR_EVENT",
+"uiName": "Radar_/Create Event/Create a radar event at a specific object.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+30
+],
+"numUiStrings": 2,
+"uiStrings": [
+"A radar event occurs at ",
+" of type "
+]
+},
+{
+"i": 218,
+"internalName": "TEAM_CREATE_RADAR_EVENT",
+"uiName": "Radar_/Create Event/Create a radar event at a specific team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+30
+],
+"numUiStrings": 2,
+"uiStrings": [
+"A radar event occurs at ",
+" of type "
+]
+},
+{
+"i": 91,
+"internalName": "RADAR_DISABLE",
+"uiName": "Radar_/Control/Disable the radar.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The radar is disabled."
+]
+},
+{
+"i": 92,
+"internalName": "RADAR_ENABLE",
+"uiName": "Radar_/Control/Enable the radar.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The radar is enabled."
+]
+},
+{
+"i": 529,
+"internalName": "NAMED_SET_CAMERA_FADING",
+"uiName": "Unit_/Status/Camera fading set enabled or disabled.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" camera fading to ",
+"."
+]
+},
+{
+"i": 295,
+"internalName": "NAMED_SET_STEALTH_ENABLED",
+"uiName": "Unit_/Status/Stealth set enabled or disabled.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" stealth ability to ",
+"."
+]
+},
+{
+"i": 296,
+"internalName": "TEAM_SET_STEALTH_ENABLED",
+"uiName": "Team_/Status/Stealth set enabled or disabled.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" stealth ability to ",
+"."
+]
+},
+{
+"i": 432,
+"internalName": "NAMED_SET_STRICT_CONTROL_ENABLED",
+"uiName": "Unit_/Status/Strict Control set enabled or disabled.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" strict control to ",
+"."
+]
+},
+{
+"i": 433,
+"internalName": "TEAM_SET_STRICT_CONTROL_ENABLED",
+"uiName": "Team_/Status/Strict Control set enabled or disabled.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" strict control to ",
+"."
+]
+},
+{
+"i": 93,
+"internalName": "MAP_REVEAL_AT_WAYPOINT",
+"uiName": "Map_/Shroud or Reveal/Reveal map at waypoint -- fog.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+7,
+1,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+"The map is revealed at ",
+" with a radius of ",
+" feet for ",
+"."
+]
+},
+{
+"i": 148,
+"internalName": "MAP_SHROUD_AT_WAYPOINT",
+"uiName": "Map_/Shroud or Reveal/Shroud map at waypoint -- add fog.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+7,
+1,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+"The map is shrouded at ",
+" with a radius of ",
+" feet for ",
+"."
+]
+},
+{
+"i": 105,
+"internalName": "MAP_REVEAL_ALL",
+"uiName": "Map_/Shroud or Reveal/Reveal the entire map for a player.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"The world is revealed for ",
+"."
+]
+},
+{
+"i": 233,
+"internalName": "MAP_REVEAL_ALL_PERM",
+"uiName": "Map_/Shroud or Reveal/Reveal the entire map permanently for a player.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"The world is revealed permanently for ",
+"."
+]
+},
+{
+"i": 234,
+"internalName": "MAP_REVEAL_ALL_UNDO_PERM",
+"uiName": "Map_/Shroud or Reveal/Un-Reveal the entire map permanently for a player.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Undo the permanent reveal for ",
+".  This will mess things up badly if called when there has been no permanent reveal."
+]
+},
+{
+"i": 149,
+"internalName": "MAP_SHROUD_ALL",
+"uiName": "Map_/Shroud or Reveal/Shroud the entire map for a player.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"The world is shrouded for ",
+"."
+]
+},
+{
+"i": 321,
+"internalName": "DISABLE_BORDER_SHROUD",
+"uiName": "Map_/Shroud or Reveal/Border Shroud is turned off.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Shroud off the map edges is turned off."
+]
+},
+{
+"i": 322,
+"internalName": "ENABLE_BORDER_SHROUD",
+"uiName": "Map_/Shroud or Reveal/Border Shroud is turned on.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Shroud off the map edges is turned on."
+]
+},
+{
+"i": 106,
+"internalName": "TEAM_GARRISON_SPECIFIC_BUILDING",
+"uiName": "Team_/Garrison/Garrison a specific building with a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" enters into building named "
+]
+},
+{
+"i": 107,
+"internalName": "EXIT_SPECIFIC_BUILDING",
+"uiName": "Unit_/Garrison/Empty a specific building.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" empties."
+]
+},
+{
+"i": 108,
+"internalName": "TEAM_GARRISON_NEAREST_BUILDING",
+"uiName": "Team_/Garrison/Garrison a nearby building with a team.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" garrison a nearby building."
+]
+},
+{
+"i": 109,
+"internalName": "TEAM_EXIT_ALL_BUILDINGS",
+"uiName": "Team_/Garrison/Exit all buildings a team is in.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" exits all buildings."
+]
+},
+{
+"i": 110,
+"internalName": "NAMED_GARRISON_SPECIFIC_BUILDING",
+"uiName": "Unit_/Garrison/Garrison a specific building with a specific unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" garrison building "
+]
+},
+{
+"i": 111,
+"internalName": "NAMED_GARRISON_NEAREST_BUILDING",
+"uiName": "Unit_/Garrison/Garrison a nearby building with a specific unit.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" garrison a nearby building."
+]
+},
+{
+"i": 112,
+"internalName": "NAMED_EXIT_BUILDING",
+"uiName": "Unit_/Garrison/Exit the building the unit is in.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" leaves the building."
+]
+},
+{
+"i": 113,
+"internalName": "PLAYER_GARRISON_ALL_BUILDINGS",
+"uiName": "Player_/Garrison/Garrison as many buildings as player has units for.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" garrison buildings."
+]
+},
+{
+"i": 114,
+"internalName": "PLAYER_EXIT_ALL_BUILDINGS",
+"uiName": "Player_/Garrison/All units leave their garrisons.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" evacuate."
+]
+},
+{
+"i": 94,
+"internalName": "TEAM_AVAILABLE_FOR_RECRUITMENT",
+"uiName": "Team_/AI/Set whether members of a team can be recruited into another team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" sets their willingness to join teams to "
+]
+},
+{
+"i": 95,
+"internalName": "TEAM_COLLECT_NEARBY_FOR_TEAM",
+"uiName": "Team_/AI/Set to collect nearby units.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" attempts to collect nearby units for a team."
+]
+},
+{
+"i": 96,
+"internalName": "TEAM_MERGE_INTO_TEAM",
+"uiName": "Team_/Merge/Merge a team into another team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" merges onto "
+]
+},
+{
+"i": 250,
+"internalName": "IDLE_ALL_UNITS",
+"uiName": "Scripting_/Idle or Restart/Idle all units for all players.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Idle all units for all players."
+]
+},
+{
+"i": 251,
+"internalName": "RESUME_SUPPLY_TRUCKING",
+"uiName": "Scripting_/Idle or Restart/All idle Supply Trucks attempt to resume supply routes.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"All idle Supply Trucks attempt to resume supply routes."
+]
+},
+{
+"i": 97,
+"internalName": "DISABLE_INPUT",
+"uiName": "User_/Input/User input -- disable.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Disable mouse and keyboard input."
+]
+},
+{
+"i": 98,
+"internalName": "ENABLE_INPUT",
+"uiName": "User_/Input/User input -- enable.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Enable mouse and keyboard input."
+]
+},
+{
+"i": 100,
+"internalName": "SOUND_AMBIENT_PAUSE",
+"uiName": "Multimedia_/SoundEffects/Pause the ambient sounds.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Pause the ambient sounds."
+]
+},
+{
+"i": 101,
+"internalName": "SOUND_AMBIENT_RESUME",
+"uiName": "Multimedia_/SoundEffects/Resume the ambient sounds.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Resume the ambient sounds."
+]
+},
+{
+"i": 102,
+"internalName": "MUSIC_SET_TRACK",
+"uiName": "Multimedia_/Music/Play a music track.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+22,
+8,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Play ",
+" using fadeout (",
+") and fadein (",
+")."
+]
+},
+{
+"i": 450,
+"internalName": "AUDIO_PUSH_MUSIC",
+"uiName": "Multimedia_/Music/Push music track.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+22,
+8,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Push (stack) ",
+" atop the current music track using fadeout (",
+") and fadein (",
+")."
+]
+},
+{
+"i": 451,
+"internalName": "AUDIO_POP_MUSIC",
+"uiName": "Multimedia_/Music/Pop music track.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+8,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Pop the current music track off the stack using fadeout (",
+") and fadein (",
+")."
+]
+},
+{
+"i": 456,
+"internalName": "MUSIC_SCRIPT_SET_TRACK",
+"uiName": "Multimedia_/Music Scripting Internal (music.scb only!)/Play a music track as part of the music scripting system.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+22,
+8,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Play ",
+" using fadeout (",
+") and fadein (",
+") as part of the music scripting system."
+]
+},
+{
+"i": 457,
+"internalName": "MUSIC_SCRIPT_PUSH_MUSIC",
+"uiName": "Multimedia_/Music Scripting Internal (music.scb only!)/Push music track as part of the music scripting system.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+22,
+8,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Push (stack) ",
+" atop the current music track using fadeout (",
+") and fadein (",
+") as part of the music scripting system."
+]
+},
+{
+"i": 458,
+"internalName": "MUSIC_SCRIPT_POP_MUSIC",
+"uiName": "Multimedia_/Music Scripting Internal (music.scb only!)/Pop music track as part of the music scripting system.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+8,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Pop the current music scripting system's music track off the stack using fadeout (",
+") and fadein (",
+")."
+]
+},
+{
+"i": 471,
+"internalName": "MUSIC_PLAY_TRACK_FINITE_TIMES",
+"uiName": "Multimedia_/Music/Play a music track a certain number of times.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+22,
+0,
+8,
+8
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Play ",
+" ",
+" times using fadeout (",
+") and fadein (",
+")."
+]
+},
+{
+"i": 472,
+"internalName": "MUSIC_PLAY_TRACK_FINITE_TIMES_AND_NOTIFY",
+"uiName": "Multimedia_/Music/Play a music track a certain number of times, then set a flag.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+22,
+0,
+8,
+8,
+5
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Play ",
+" ",
+" times using fadeout (",
+") and fadein (",
+"), then set ",
+" to TRUE."
+]
+},
+{
+"i": 473,
+"internalName": "MUSIC_PUSH_TRACK_FINITE_TIMES",
+"uiName": "Multimedia_/Music/Push music track to play a certain number of times.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+22,
+0,
+8,
+8
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Push (stack) ",
+" atop the current music track and play it ",
+" times using fadeout (",
+") and fadein (",
+"). (Does NOT pop the music off the stack upon completion.) "
+]
+},
+{
+"i": 474,
+"internalName": "MUSIC_PUSH_TRACK_FINITE_TIMES_AND_NOTIFY",
+"uiName": "Multimedia_/Music/Push music track to play a certain number of times, then set a flag.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+22,
+0,
+8,
+8,
+5
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Push (stack) ",
+" atop the current music track and play it ",
+" times using fadeout (",
+") and fadein (",
+"), then set ",
+" to TRUE. (Does NOT pop the music off the stack upon completion.) "
+]
+},
+{
+"i": 475,
+"internalName": "MUSIC_SCRIPT_PLAY_TRACK_FINITE_TIMES",
+"uiName": null,
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+22,
+0,
+8,
+8
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Play ",
+" ",
+" times as part of the music scripting system, using fadeout (",
+") and fadein (",
+")."
+]
+},
+{
+"i": 476,
+"internalName": "MUSIC_SCRIPT_PLAY_TRACK_FINITE_TIMES_AND_NOTIFY",
+"uiName": null,
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+22,
+0,
+8,
+8,
+5
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Play ",
+" ",
+" times as of the music scripting system using fadeout (",
+") and fadein (",
+"), then set ",
+" to TRUE."
+]
+},
+{
+"i": 477,
+"internalName": "MUSIC_SCRIPT_PUSH_TRACK_FINITE_TIMES",
+"uiName": null,
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+22,
+0,
+8,
+8
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Push (stack) ",
+" atop the current music scripting music track and play it ",
+" times using fadeout (",
+") and fadein (",
+"). (Does NOT pop the music off the stack upon completion.) "
+]
+},
+{
+"i": 478,
+"internalName": "MUSIC_SCRIPT_PUSH_TRACK_FINITE_TIMES_AND_NOTIFY",
+"uiName": null,
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+22,
+0,
+8,
+8,
+5
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Push (stack) ",
+" atop the current music scripting music track and play it ",
+" times using fadeout (",
+") and fadein (",
+"), then set ",
+" to TRUE. (Does NOT pop the music off the stack upon completion.) "
+]
+},
+{
+"i": 459,
+"internalName": "MUSIC_TURN_OFF_MUSIC_SCRIPTING",
+"uiName": "Multimedia_/Music/Turn off music scripting.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Turn off the music scripting system, fading out (",
+") the music scripting system's current music."
+]
+},
+{
+"i": 460,
+"internalName": "MUSIC_RETURN_TO_MUSIC_SCRIPTING",
+"uiName": "Multimedia_/Music/Return to music scripting.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+8,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Resume use of (turn on) the music scripting system, fading out (",
+") the current music track and fading in (",
+") the music scripting system's music."
+]
+},
+{
+"i": 461,
+"internalName": "MUSIC_RESET_MUSIC_SCRIPTING_SYSTEM",
+"uiName": "Multimedia_/Music/Reset music scripting system.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Reset the music scripting system, as if the level had just started, fading out (",
+") the music scripting system's current music."
+]
+},
+{
+"i": 118,
+"internalName": "CAMERA_LETTERBOX_BEGIN",
+"uiName": "Camera_/Letterbox/Start letterbox mode.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Start letterbox mode (hide UI, add border)."
+]
+},
+{
+"i": 119,
+"internalName": "CAMERA_LETTERBOX_END",
+"uiName": "Camera_/ End letterbox mode.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"End letterbox mode (show UI, remove border)."
+]
+},
+{
+"i": 347,
+"internalName": "HIDE_UI",
+"uiName": "Camera_/Hide UI",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Hide UI (like letterbox mode, but with no border)."
+]
+},
+{
+"i": 348,
+"internalName": "SHOW_UI",
+"uiName": "Camera_/Show UI",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Show UI"
+]
+},
+{
+"i": 128,
+"internalName": "CAMERA_BW_MODE_BEGIN",
+"uiName": "Camera_/Fade Effects/Start black & white mode.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Frames to fade into black & white mode = "
+]
+},
+{
+"i": 129,
+"internalName": "CAMERA_BW_MODE_END",
+"uiName": "Camera_/Fade Effects/End black & white mode.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Frames to fade into color mode = "
+]
+},
+{
+"i": 349,
+"internalName": "CAMERA_RING_MODE_START",
+"uiName": "Camera_/Fade Effects/Start Ring effect.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Frames to transition into ring mode = "
+]
+},
+{
+"i": 350,
+"internalName": "CAMERA_RING_MODE_END",
+"uiName": "Camera_/Fade Effects/End Ring effect.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Frames to transition out of ring mode = "
+]
+},
+{
+"i": 136,
+"internalName": "CAMERA_MOTION_BLUR",
+"uiName": "Camera_/Fade Effects/Motion blur zoom.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+8,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Blur zoom, zoom in = ",
+" (true=zoom in, false = zoom out), saturate colors = "
+]
+},
+{
+"i": 137,
+"internalName": "CAMERA_MOTION_BLUR_JUMP",
+"uiName": "Camera_/Fade Effects/Motion blur zoom with jump cut.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+7,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Blur zoom, zoom in at current location, zoom out at ",
+", saturate colors = "
+]
+},
+{
+"i": 138,
+"internalName": "CAMERA_MOTION_BLUR_FOLLOW",
+"uiName": "Camera_/Fade Effects/Start motion blur as the camera moves.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Start motion blur as the camera moves, amount= ",
+" (start with 30 and adjust up or down). "
+]
+},
+{
+"i": 139,
+"internalName": "CAMERA_MOTION_BLUR_END_FOLLOW",
+"uiName": "Camera_/Fade Effects/End motion blur as the camera moves.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"End motion blur as the camera moves."
+]
+},
+{
+"i": 130,
+"internalName": "DRAW_SKYBOX_BEGIN",
+"uiName": "Camera_/Skybox/Start skybox mode.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Start skybox mode (draw sky background)."
+]
+},
+{
+"i": 131,
+"internalName": "DRAW_SKYBOX_END",
+"uiName": "Camera_/Skybox/End skybox mode.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"End skybox mode (draw black background)."
+]
+},
+{
+"i": 140,
+"internalName": "FREEZE_TIME",
+"uiName": "Scripting_/Time/Freeze time.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Freeze time."
+]
+},
+{
+"i": 141,
+"internalName": "UNFREEZE_TIME",
+"uiName": "Scripting_/Time/Unfreeze time.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Unfreeze time."
+]
+},
+{
+"i": 142,
+"internalName": "SHOW_MILITARY_CAPTION",
+"uiName": "Scripting_/Briefing/Show military briefing caption.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+25,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Show military briefing ",
+" for ",
+" milliseconds."
+]
+},
+{
+"i": 143,
+"internalName": "CAMERA_SET_AUDIBLE_DISTANCE",
+"uiName": "Camera_/Sounds/Set the audible distance for camera-up shots.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set the audible range during camera-up shots to ",
+null
+]
+},
+{
+"i": 229,
+"internalName": "NAMED_SET_HELD",
+"uiName": "Unit_/Move/Set unit to be held in place, ignoring Physics, Locomotors, etc.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set Held status for ",
+" to ",
+"."
+]
+},
+{
+"i": 145,
+"internalName": "NAMED_SET_STOPPING_DISTANCE",
+"uiName": "Unit_/Move/Set stopping distance for current locomotor.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set stopping distance for ",
+" to ",
+"."
+]
+},
+{
+"i": 144,
+"internalName": "SET_STOPPING_DISTANCE",
+"uiName": "Team_/Move/Set stopping distance for each unit's current locomotor.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set stopping distances for ",
+" to ",
+"."
+]
+},
+{
+"i": 146,
+"internalName": "SET_FPS_LIMIT",
+"uiName": "Scripting_/ Set max frames per second.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set max FPS to ",
+".  (0 sets to default.)"
+]
+},
+{
+"i": 159,
+"internalName": "DISABLE_SPECIAL_POWER_DISPLAY",
+"uiName": "Scripting_/ Special power countdown display -- disable.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Disables special power countdown display."
+]
+},
+{
+"i": 160,
+"internalName": "ENABLE_SPECIAL_POWER_DISPLAY",
+"uiName": "Scripting_/ Special power countdown display -- enable.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Enables special power countdown display."
+]
+},
+{
+"i": 161,
+"internalName": "NAMED_HIDE_SPECIAL_POWER_DISPLAY",
+"uiName": "Unit_/ Special power countdown timer -- hide.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Hides special power countdowns for ",
+"."
+]
+},
+{
+"i": 162,
+"internalName": "NAMED_SHOW_SPECIAL_POWER_DISPLAY",
+"uiName": "Unit_/ Special power countdown timer -- display.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Shows special power countdowns for ",
+"."
+]
+},
+{
+"i": 147,
+"internalName": "MUSIC_SET_VOLUME",
+"uiName": "Multimedia_/ Set the current music volume.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set the desired music volume to ",
+"%. (0-100)"
+]
+},
+{
+"i": 156,
+"internalName": "TEAM_TRANSFER_TO_PLAYER",
+"uiName": "Team_/ Transfer control of a team to a player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Control of ",
+" transfers to "
+]
+},
+{
+"i": 157,
+"internalName": "PLAYER_SET_MONEY",
+"uiName": "Player_/ Set player's money.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+"'s money to $"
+]
+},
+{
+"i": 158,
+"internalName": "PLAYER_GIVE_MONEY",
+"uiName": "Player_/ Gives/takes from player's money.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" gets $"
+]
+},
+{
+"i": 240,
+"internalName": "DISPLAY_COUNTER",
+"uiName": "Scripting_/ Counter -- display an individual counter to the user.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+4,
+25
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Show ",
+" with text "
+]
+},
+{
+"i": 241,
+"internalName": "HIDE_COUNTER",
+"uiName": "Scripting_/ Counter -- hides an individual counter from the user.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+4
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Hide "
+]
+},
+{
+"i": 163,
+"internalName": "DISPLAY_COUNTDOWN_TIMER",
+"uiName": "Scripting_/ Timer -- display an individual timer to the user.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+4,
+25
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Show ",
+" with text "
+]
+},
+{
+"i": 164,
+"internalName": "HIDE_COUNTDOWN_TIMER",
+"uiName": "Scripting_/ Timer -- hides an individual timer from the user.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+4
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Hide "
+]
+},
+{
+"i": 166,
+"internalName": "DISABLE_COUNTDOWN_TIMER_DISPLAY",
+"uiName": "Scripting_/ Timer -- hide all timers from the user.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Disables timer display."
+]
+},
+{
+"i": 165,
+"internalName": "ENABLE_COUNTDOWN_TIMER_DISPLAY",
+"uiName": "Scripting_/ Timer -- display all timers to the user.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Enables timer display."
+]
+},
+{
+"i": 167,
+"internalName": "NAMED_STOP_SPECIAL_POWER_COUNTDOWN",
+"uiName": "Unit_/ Special power countdown timer -- pause.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+31
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Pause ",
+"'s ",
+" countdown."
+]
+},
+{
+"i": 168,
+"internalName": "NAMED_START_SPECIAL_POWER_COUNTDOWN",
+"uiName": "Unit_/ Special power countdown timer -- resume.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+31
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Resume ",
+"'s ",
+" countdown."
+]
+},
+{
+"i": 169,
+"internalName": "NAMED_SET_SPECIAL_POWER_COUNTDOWN",
+"uiName": "Unit_/ Special power countdown timer -- set.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+31,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Set ",
+"'s ",
+" to ",
+" seconds."
+]
+},
+{
+"i": 170,
+"internalName": "NAMED_ADD_SPECIAL_POWER_COUNTDOWN",
+"uiName": "Unit_/ Special power countdown timer -- add seconds.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+31,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+"'s ",
+" has ",
+" seconds added to it."
+]
+},
+{
+"i": 255,
+"internalName": "SKIRMISH_FIRE_SPECIAL_POWER_AT_MOST_COST",
+"uiName": "Skirmish_/ Special power -- fire at enemy's highest cost area.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+31
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" fire ",
+" at enemy's most costly area."
+]
+},
+{
+"i": 445,
+"internalName": "FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE",
+"uiName": "Player/ Special power -- fire on nearest object type.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+11,
+31,
+61,
+3
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" fire ",
+" on nearest object of ",
+" to "
+]
+},
+{
+"i": 446,
+"internalName": "FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE_BY_PLAYER",
+"uiName": "Player/ Special power -- fire on nearest object type owned by player.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+11,
+31,
+61,
+3,
+11
+],
+"numUiStrings": 5,
+"uiStrings": [
+" ",
+" fire ",
+" on nearest object of ",
+" to ",
+" owned by "
+]
+},
+{
+"i": 447,
+"internalName": "FIRE_SPECIAL_POWER_ON_TEAM",
+"uiName": "Player/ Special power -- fire on team.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+31,
+3
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" fire ",
+" on "
+]
+},
+{
+"i": 257,
+"internalName": "PLAYER_REPAIR_NAMED_STRUCTURE",
+"uiName": "Player_/ Repair named bridge or structure.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+14
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have ",
+" repair ",
+"."
+]
+},
+{
+"i": 171,
+"internalName": "NAMED_FIRE_SPECIAL_POWER_AT_WAYPOINT",
+"uiName": "Unit_/ Special power -- fire at location.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+31,
+7
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" fires ",
+" at ",
+"."
+]
+},
+{
+"i": 172,
+"internalName": "NAMED_FIRE_SPECIAL_POWER_AT_NAMED",
+"uiName": "Unit_/ Special power -- fire at unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+31,
+14
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" fires ",
+" at ",
+"."
+]
+},
+{
+"i": 173,
+"internalName": "REFRESH_RADAR",
+"uiName": "Scripting_/ Refresh radar terrain.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Refresh radar terrain."
+]
+},
+{
+"i": 177,
+"internalName": "NAMED_STOP",
+"uiName": "Unit_/ Set a specific unit to stop.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" stops."
+]
+},
+{
+"i": 178,
+"internalName": "TEAM_STOP",
+"uiName": "Team_/ Set to stop.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" stops."
+]
+},
+{
+"i": 179,
+"internalName": "TEAM_STOP_AND_DISBAND",
+"uiName": "Team_/ Set to stop, then disband.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" stops, then disbands."
+]
+},
+{
+"i": 182,
+"internalName": "TEAM_SET_OVERRIDE_RELATION_TO_TEAM",
+"uiName": "Team_/ Override a team's relationship to another team.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+3,
+19
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" considers ",
+" to be ",
+" (rather than using the the player relationship)."
+]
+},
+{
+"i": 183,
+"internalName": "TEAM_REMOVE_OVERRIDE_RELATION_TO_TEAM",
+"uiName": "Team_/ Remove an override to a team's relationship to another team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" uses the player relationship to "
+]
+},
+{
+"i": 184,
+"internalName": "TEAM_REMOVE_ALL_OVERRIDE_RELATIONS",
+"uiName": "Team_/ Remove all overrides to team's relationship to teams and/or players.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" uses the player relationship to all other teams and players."
+]
+},
+{
+"i": 174,
+"internalName": "CAMERA_TETHER_NAMED",
+"uiName": "Camera_/ Tether camera to a specific unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+8,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Have the camera tethered to ",
+".  Snap camera to object is ",
+".  Amount of play is ",
+"."
+]
+},
+{
+"i": 175,
+"internalName": "CAMERA_STOP_TETHER_NAMED",
+"uiName": "Camera_/ Stop tether to any units.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Stop tether to any units."
+]
+},
+{
+"i": 176,
+"internalName": "CAMERA_SET_DEFAULT",
+"uiName": "Camera_/ Set default camera.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+1,
+1,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Camera Pitch = ",
+"(0.0==default), angle = ",
+"(0.0 is N, 90.0 is W, etc), height = ",
+"(1.0==default)."
+]
+},
+{
+"i": 185,
+"internalName": "CAMERA_LOOK_TOWARD_OBJECT",
+"uiName": "Camera (R)_/ Rotate toward unit.",
+"uiName2": null,
+"numParameters": 6,
+"parameters": [
+14,
+1,
+1,
+1,
+1,
+1
+],
+"numUiStrings": 7,
+"uiStrings": [
+"Rotate toward ",
+", taking ",
+" seconds and holding ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds with z-offset of ",
+"."
+]
+},
+{
+"i": 210,
+"internalName": "CAMERA_LOOK_TOWARD_WAYPOINT",
+"uiName": "Camera (R)_/ Rotate to look at a waypoint.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+7,
+1,
+1,
+1,
+8
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Rotate to look at ",
+", taking ",
+" seconds, ease-in ",
+" seconds, ease-out ",
+" seconds, reverse rotation ",
+"."
+]
+},
+{
+"i": 211,
+"internalName": "UNIT_DESTROY_ALL_CONTAINED",
+"uiName": "Unit_/ Kill all units contained within a specific transport or structure.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"All units inside ",
+" are killed."
+]
+},
+{
+"i": 186,
+"internalName": "NAMED_FIRE_WEAPON_FOLLOWING_WAYPOINT_PATH",
+"uiName": "Unit_/ Fire waypoint-weapon following waypoint path.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+24
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" fire waypoint-weapon following waypoints starting at ",
+"."
+]
+},
+{
+"i": 187,
+"internalName": "TEAM_SET_OVERRIDE_RELATION_TO_PLAYER",
+"uiName": "Team_/ Override a team's relationship to another player.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+11,
+19
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" considers ",
+" to be ",
+" (rather than using the the player relationship)."
+]
+},
+{
+"i": 188,
+"internalName": "TEAM_REMOVE_OVERRIDE_RELATION_TO_PLAYER",
+"uiName": "Team_/ Remove an override to a team's relationship to another player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" uses the player relationship to "
+]
+},
+{
+"i": 189,
+"internalName": "PLAYER_SET_OVERRIDE_RELATION_TO_TEAM",
+"uiName": "Player_/ Override a player's relationship to another team.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+3,
+19
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" considers ",
+" to be ",
+" (rather than using the the player relationship)."
+]
+},
+{
+"i": 190,
+"internalName": "PLAYER_REMOVE_OVERRIDE_RELATION_TO_TEAM",
+"uiName": "Player_/ Remove an override to a player's relationship to another team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" uses the player relationship to "
+]
+},
+{
+"i": 191,
+"internalName": "UNIT_EXECUTE_SEQUENTIAL_SCRIPT",
+"uiName": "Unit_/ Set a specific unit to execute a script sequentially.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+2
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" executes ",
+" sequentially."
+]
+},
+{
+"i": 192,
+"internalName": "UNIT_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING",
+"uiName": "Unit_/ Set a specific unit to execute a looping sequential script.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+2,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" executes ",
+" sequentially, ",
+" times. (0=forever)"
+]
+},
+{
+"i": 194,
+"internalName": "TEAM_EXECUTE_SEQUENTIAL_SCRIPT",
+"uiName": "Team_/ Execute script sequentially -- start.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+2
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" executes ",
+" sequentially."
+]
+},
+{
+"i": 195,
+"internalName": "TEAM_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING",
+"uiName": "Team_/ Execute script sequentially -- looping.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+2,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" executes ",
+" sequentially, ",
+" times. (0=forever)"
+]
+},
+{
+"i": 193,
+"internalName": "UNIT_STOP_SEQUENTIAL_SCRIPT",
+"uiName": "Unit_/ Set a specific unit to stop executing a sequential script.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" stops executing."
+]
+},
+{
+"i": 196,
+"internalName": "TEAM_STOP_SEQUENTIAL_SCRIPT",
+"uiName": "Team_/ Execute script sequentially -- stop.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" stops executing."
+]
+},
+{
+"i": 197,
+"internalName": "UNIT_GUARD_FOR_FRAMECOUNT",
+"uiName": "Unit_/ Set to guard for some number of frames.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" guards for ",
+" frames."
+]
+},
+{
+"i": 198,
+"internalName": "UNIT_IDLE_FOR_FRAMECOUNT",
+"uiName": "Unit_/ Set to idle for some number of frames.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" idles for ",
+" frames."
+]
+},
+{
+"i": 411,
+"internalName": "UNIT_GUARD_FOR_SECONDS",
+"uiName": "Unit_/ Set to guard for some number of seconds.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" guards for ",
+" seconds."
+]
+},
+{
+"i": 412,
+"internalName": "UNIT_IDLE_FOR_SECONDS",
+"uiName": "Unit_/ Set to idle for some number of seconds.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" idles for ",
+" seconds."
+]
+},
+{
+"i": 328,
+"internalName": "UNIT_SET_MODELCONDITION",
+"uiName": "Unit_/ Set or clear a custom model condition flag on a unit.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+0,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" sets custom model condition number (1-4) ",
+" to ",
+"."
+]
+},
+{
+"i": 329,
+"internalName": "TEAM_SET_MODELCONDITION",
+"uiName": "Team_/ Set or clear a custom model condition flag on a team.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+0,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" sets custom model condition number (1-4) ",
+" to ",
+"."
+]
+},
+{
+"i": 434,
+"internalName": "UNIT_SET_MODELCONDITION_FOR_DURATION",
+"uiName": "Unit_/ Set a model condition flag on a unit for duration. % specifies # of members in horde that get this.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+14,
+58,
+1,
+52
+],
+"numUiStrings": 5,
+"uiStrings": [
+" ",
+" sets model condition ",
+" for ",
+" seconds. Percentage (hordes) ",
+"."
+]
+},
+{
+"i": 435,
+"internalName": "TEAM_SET_MODELCONDITION_FOR_DURATION",
+"uiName": "Team_/ Set a model condition flag on a team for duration. % specifies # of members that get this.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+58,
+1,
+52
+],
+"numUiStrings": 5,
+"uiStrings": [
+" ",
+" sets model condition ",
+" for ",
+" seconds. Percentage ",
+"."
+]
+},
+{
+"i": 344,
+"internalName": "UNIT_SET_FLAME_STATUS",
+"uiName": "Unit_/ Set or clear the Aflame status on a unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is now on fire (T-F) ",
+" ."
+]
+},
+{
+"i": 345,
+"internalName": "TEAM_SET_FLAME_STATUS",
+"uiName": "Team_/ Set or clear the Aflame status on a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is now on fire (T-F) ",
+" ."
+]
+},
+{
+"i": 199,
+"internalName": "TEAM_GUARD_FOR_FRAMECOUNT",
+"uiName": "Team_/ Set to guard -- number of frames.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" guards for ",
+" frames."
+]
+},
+{
+"i": 200,
+"internalName": "TEAM_IDLE_FOR_FRAMECOUNT",
+"uiName": "Team_/ Set to idle for some number of frames.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" idles for ",
+" frames."
+]
+},
+{
+"i": 413,
+"internalName": "TEAM_GUARD_FOR_SECONDS",
+"uiName": "Team_/ Set to guard -- number of seconds.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" guards for ",
+" seconds."
+]
+},
+{
+"i": 414,
+"internalName": "TEAM_IDLE_FOR_SECONDS",
+"uiName": "Team_/ Set to idle for some number of seconds.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" idles for ",
+" seconds."
+]
+},
+{
+"i": 201,
+"internalName": "WATER_CHANGE_HEIGHT",
+"uiName": "Map_/ Adjust water height to a new level",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+9,
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" changes altitude to "
+]
+},
+{
+"i": 506,
+"internalName": "HUMAN_IMPASSABLE_AREA",
+"uiName": "Map_/ Make area impassable for human player",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+9,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Make area ",
+" impassable for human player: "
+]
+},
+{
+"i": 204,
+"internalName": "WATER_CHANGE_HEIGHT_OVER_TIME",
+"uiName": "Map_/ Adjust water height to a new level with damage over time",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+9,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+" ",
+" changes altitude to ",
+" in ",
+" seconds doing ",
+" dam_/sec."
+]
+},
+{
+"i": 244,
+"internalName": "NAMED_USE_COMMANDBUTTON_ABILITY",
+"uiName": "Unit_/ Use commandbutton ability.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+34
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"."
+]
+},
+{
+"i": 202,
+"internalName": "NAMED_USE_COMMANDBUTTON_ABILITY_ON_NAMED",
+"uiName": "Unit_/ Use commandbutton ability on an object.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+34,
+14
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" on ",
+"."
+]
+},
+{
+"i": 203,
+"internalName": "NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+"uiName": "Unit_/ Use commandbutton ability at a waypoint.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+34,
+7
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" at ",
+"."
+]
+},
+{
+"i": 424,
+"internalName": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT",
+"uiName": "Unit_/ Use command ability -- all -- nearest enemy unit",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy unit."
+]
+},
+{
+"i": 425,
+"internalName": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING",
+"uiName": "Unit_/ Use command ability -- all -- nearest enemy garrisoned building.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy garrisoned building."
+]
+},
+{
+"i": 426,
+"internalName": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_KINDOF",
+"uiName": "Unit_/ Use command ability -- all -- nearest enemy object with kind of.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+42,
+27
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy with ",
+null
+]
+},
+{
+"i": 427,
+"internalName": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING",
+"uiName": "Unit_/ Use command ability -- all -- nearest enemy building.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy building."
+]
+},
+{
+"i": 428,
+"internalName": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS",
+"uiName": "Unit_/ Use command ability -- all -- nearest enemy building kindof.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+42,
+27
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy building with "
+]
+},
+{
+"i": 429,
+"internalName": "NAMED_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE",
+"uiName": "Unit_/ Use command ability -- all -- nearest object type.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+42,
+15
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" on nearest object of type ",
+"."
+]
+},
+{
+"i": 245,
+"internalName": "TEAM_USE_COMMANDBUTTON_ABILITY",
+"uiName": "Team_/ Use commandbutton ability.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"."
+]
+},
+{
+"i": 242,
+"internalName": "TEAM_USE_COMMANDBUTTON_ABILITY_ON_NAMED",
+"uiName": "Team_/ Use commandbutton ability on an object.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+42,
+14
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" on ",
+"."
+]
+},
+{
+"i": 243,
+"internalName": "TEAM_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT",
+"uiName": "Team_/ Use commandbutton ability at a waypoint.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+42,
+7
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" at ",
+"."
+]
+},
+{
+"i": 205,
+"internalName": "MAP_SWITCH_BORDER",
+"uiName": "Map_/ Change the active boundary.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+35
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" becomes the active border."
+]
+},
+{
+"i": 371,
+"internalName": "MAP_CHANGE_CLOUD_SPEED",
+"uiName": "Map_/ Change the speed of the CloudEffect.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+52
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Modify the default CloudEffect speed to be ",
+""
+]
+},
+{
+"i": 209,
+"internalName": "OBJECT_FORCE_SELECT",
+"uiName": "Scripting_/ Select the first object type on a team.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+15,
+8,
+21
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" 's first ",
+", centers in view (",
+") while playing "
+]
+},
+{
+"i": 212,
+"internalName": "RADAR_FORCE_ENABLE",
+"uiName": "Radar_/ Force enable the radar.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The radar is now forced to be enabled."
+]
+},
+{
+"i": 213,
+"internalName": "RADAR_REVERT_TO_NORMAL",
+"uiName": "Radar_/ Revert radar to normal behavior.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"The radar is now reverting to its normal behavior."
+]
+},
+{
+"i": 214,
+"internalName": "SCREEN_SHAKE",
+"uiName": "Camera_/ Shake Screen.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+38
+],
+"numUiStrings": 1,
+"uiStrings": [
+"The screen will shake with "
+]
+},
+{
+"i": 215,
+"internalName": "TECHTREE_MODIFY_BUILDABILITY_OBJECT",
+"uiName": "Map_/ Adjust the tech tree for a specific object type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+15,
+36
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" becomes "
+]
+},
+{
+"i": 228,
+"internalName": "SET_CAVE_INDEX",
+"uiName": "Unit_/ Set Cave connectivity index.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Cave named ",
+" is set to being connected to all caves of index ",
+", but only if both Cave listings have no occupants. "
+]
+},
+{
+"i": 216,
+"internalName": "WAREHOUSE_SET_VALUE",
+"uiName": "Unit_/ Set cash value of Warehouse.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Warehouse named ",
+" is set to having ",
+" dollars worth of boxes. "
+]
+},
+{
+"i": 221,
+"internalName": "SOUND_DISABLE_TYPE",
+"uiName": "Multimedia_/ Sound Events -- disable type.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+59
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is disabled."
+]
+},
+{
+"i": 222,
+"internalName": "SOUND_ENABLE_TYPE",
+"uiName": "Multimedia_/ Sound Events -- enable type.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+59
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is enabled."
+]
+},
+{
+"i": 325,
+"internalName": "SOUND_REMOVE_TYPE",
+"uiName": "Multimedia_/ Sound Events -- remove type.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+59
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is removed."
+]
+},
+{
+"i": 324,
+"internalName": "SOUND_REMOVE_ALL_DISABLED",
+"uiName": "Multimedia_/ Sound Events -- remove all disabled. (OBSOLETE)",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Remove all disabled sound events (OBSOLETE -- disable type now does all the work)"
+]
+},
+{
+"i": 223,
+"internalName": "SOUND_ENABLE_ALL",
+"uiName": "Multimedia_/ Sound Events -- enable all.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Enable all sound events."
+]
+},
+{
+"i": 224,
+"internalName": "AUDIO_OVERRIDE_VOLUME_TYPE",
+"uiName": "Multimedia_/ Sound Events -- override volume -- type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+59,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" play at ",
+"% of full volume."
+]
+},
+{
+"i": 225,
+"internalName": "AUDIO_RESTORE_VOLUME_TYPE",
+"uiName": "Multimedia_/ Sound Events -- restore volume -- type.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+59
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" play at normal volume.",
+null
+]
+},
+{
+"i": 226,
+"internalName": "AUDIO_RESTORE_VOLUME_ALL_TYPE",
+"uiName": "Multimedia_/ Sound Events -- restore volume -- all.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"All sound events play at normal volume."
+]
+},
+{
+"i": 230,
+"internalName": "NAMED_SET_TOPPLE_DIRECTION",
+"uiName": "Unit_/ Set topple direction.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+16
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" will topple towards ",
+" if destroyed."
+]
+},
+{
+"i": 231,
+"internalName": "UNIT_MOVE_TOWARDS_NEAREST_OBJECT_TYPE",
+"uiName": "Unit_/ Move unit towards the nearest object of a specific type in trigger area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+15,
+9
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" will move towards the nearest ",
+" within "
+]
+},
+{
+"i": 232,
+"internalName": "TEAM_MOVE_TOWARDS_NEAREST_OBJECT_TYPE",
+"uiName": "Team_/ Move team towards the nearest object of a specific type in trigger area.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+15,
+9
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" will move towards the nearest ",
+" within "
+]
+},
+{
+"i": 261,
+"internalName": "SKIRMISH_ATTACK_NEAREST_GROUP_WITH_VALUE",
+"uiName": "Skirmish_/ Team attacks nearest group matching value comparison.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+6,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" attacks nearest group worth ",
+" "
+]
+},
+{
+"i": 262,
+"internalName": "SKIRMISH_PERFORM_COMMANDBUTTON_ON_MOST_VALUABLE_OBJECT",
+"uiName": "Skirmish_/ Team performs command ability on most valuable object.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+42,
+1,
+8
+],
+"numUiStrings": 5,
+"uiStrings": [
+" ",
+" performs ",
+" on most expensive object within ",
+" ",
+" (true = all valid sources, false = first valid source)."
+]
+},
+{
+"i": 263,
+"internalName": "SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_ALL",
+"uiName": "Skirmish_/ Delay a sequential script until the specified command ability is ready - all.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+3,
+42
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" 's ",
+" all wait until ",
+" is ready."
+]
+},
+{
+"i": 264,
+"internalName": "SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_PARTIAL",
+"uiName": "Skirmish_/ Delay a sequential script until the specified command ability is ready - partial.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+3,
+42
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" 's ",
+" wait until at least one member is ",
+" ready."
+]
+},
+{
+"i": 265,
+"internalName": "TEAM_SPIN_FOR_FRAMECOUNT",
+"uiName": "Team_/ Set to continue current action for some number of frames.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" continue their current action for at least ",
+" frames."
+]
+},
+{
+"i": 335,
+"internalName": "CAMERA_ENABLE_SLAVE_MODE",
+"uiName": "Camera_/Enable 3DSMax Camera Animation Playback mode.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+10,
+10
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Enable 3DSMax Camera playback of animation with thing name ",
+" containing bone name "
+]
+},
+{
+"i": 336,
+"internalName": "CAMERA_DISABLE_SLAVE_MODE",
+"uiName": "Camera_/Disable 3DSMax Camera Animation Playback mode.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Disable camera playback mode."
+]
+},
+{
+"i": 337,
+"internalName": "CAMERA_ADD_SHAKER_AT",
+"uiName": "Camera_/Add Camera Shaker Effect at.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+7,
+1,
+1,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Add Camera Shaker Effect at waypoint ",
+" with Amplitude ",
+" Duration (seconds) ",
+" Radius."
+]
+},
+{
+"i": 266,
+"internalName": "TEAM_ALL_USE_COMMANDBUTTON_ON_NAMED",
+"uiName": "Team_/ Use command ability -- all -- named enemy",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on "
+]
+},
+{
+"i": 267,
+"internalName": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT",
+"uiName": "Team_/ Use command ability -- all -- nearest enemy unit",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy unit."
+]
+},
+{
+"i": 268,
+"internalName": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING",
+"uiName": "Team_/ Use command ability -- all -- nearest enemy garrisoned building.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy garrisoned building."
+]
+},
+{
+"i": 269,
+"internalName": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_KINDOF",
+"uiName": "Team_/ Use command ability -- all -- nearest enemy object with kind of.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+42,
+27
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy with ",
+null
+]
+},
+{
+"i": 270,
+"internalName": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING",
+"uiName": "Team_/ Use command ability -- all -- nearest enemy building.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+42
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy building."
+]
+},
+{
+"i": 271,
+"internalName": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS",
+"uiName": "Team_/ Use command ability -- all -- nearest enemy building kindof.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+42,
+27
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" use ",
+"  on nearest enemy building with "
+]
+},
+{
+"i": 272,
+"internalName": "TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE",
+"uiName": "Team_/ Use command ability -- all -- nearest object type.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+42,
+15
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" on nearest object of type ",
+"."
+]
+},
+{
+"i": 273,
+"internalName": "TEAM_PARTIAL_USE_COMMANDBUTTON",
+"uiName": "Team_/ Use command ability -- partial -- self.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+1,
+3,
+42
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+"% of ",
+" perform ",
+"."
+]
+},
+{
+"i": 274,
+"internalName": "TEAM_CAPTURE_NEAREST_UNOWNED_FACTION_UNIT",
+"uiName": "Team_/ Capture unowned faction unit -- nearest.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" capture the nearest unowned faction unit."
+]
+},
+{
+"i": 275,
+"internalName": "PLAYER_CREATE_TEAM_FROM_CAPTURED_UNITS",
+"uiName": "Player_/ Create team from all captured units.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+3
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" creates a new ",
+" from units it has captured. (There's nothing quite like being assaulted by your own captured units!)"
+]
+},
+{
+"i": 283,
+"internalName": "TEAM_WAIT_FOR_NOT_CONTAINED_ALL",
+"uiName": "Team_/ Delay a sequential script until the team is no longer contained - all",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" all delay until they are no longer contained."
+]
+},
+{
+"i": 284,
+"internalName": "TEAM_WAIT_FOR_NOT_CONTAINED_PARTIAL",
+"uiName": "Team_/ Delay a sequential script until the team is no longer contained - partial",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" delay until at least one of them is no longer contained."
+]
+},
+{
+"i": 287,
+"internalName": "TEAM_SET_EMOTICON",
+"uiName": "Team_/ Set emoticon for duration (-1.0 permanent, otherwise duration in sec).",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+45,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" emoticon for ",
+" seconds."
+]
+},
+{
+"i": 288,
+"internalName": "NAMED_SET_EMOTICON",
+"uiName": "Unit_/ Set emoticon for duration (-1.0 permanent, otherwise duration in sec).",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+45,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" use ",
+" emoticon for ",
+" seconds."
+]
+},
+{
+"i": 291,
+"internalName": "OBJECTLIST_ADDOBJECTTYPE",
+"uiName": "Scripting_/ Object Type List -- Add Object Type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+48,
+15
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" : add "
+]
+},
+{
+"i": 292,
+"internalName": "OBJECTLIST_REMOVEOBJECTTYPE",
+"uiName": "Scripting_/ Object Type List -- Remove Object Type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+48,
+15
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" : remove "
+]
+},
+{
+"i": 293,
+"internalName": "MAP_REVEAL_PERMANENTLY_AT_WAYPOINT",
+"uiName": "Map_/ Reveal map at waypoint -- permanently.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+7,
+1,
+11,
+49
+],
+"numUiStrings": 5,
+"uiStrings": [
+"The map is permanently revealed at ",
+" with a radius of ",
+" for ",
+". (Afterwards referred to as ",
+")."
+]
+},
+{
+"i": 294,
+"internalName": "MAP_UNDO_REVEAL_PERMANENTLY_AT_WAYPOINT",
+"uiName": "Map_/ Reveal map at waypoint -- undo permanently.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+49
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" is undone."
+]
+},
+{
+"i": 297,
+"internalName": "EVA_SET_ENABLED_DISABLED",
+"uiName": "Scripting_/ Enable or Disable EVA.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set EVA to be enabled ",
+" (False to disable.)"
+]
+},
+{
+"i": 298,
+"internalName": "OPTIONS_SET_OCCLUSION_MODE",
+"uiName": "Scripting_/ Enable or Disable Occlusion (Drawing Behind Buildings).",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set Occlusion to be enabled ",
+" (False to disable.)"
+]
+},
+{
+"i": 300,
+"internalName": "OPTIONS_SET_DRAWICON_UI_MODE",
+"uiName": "Scripting_/ Enable or Disable Draw-icon UI.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set Draw-icon UI to be enabled ",
+" (False to disable.)"
+]
+},
+{
+"i": 301,
+"internalName": "OPTIONS_SET_PARTICLE_CAP_MODE",
+"uiName": "Scripting_/ Enable or Disable Particle Cap.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set Particle Cap to be enabled ",
+" (False to disable.)"
+]
+},
+{
+"i": 303,
+"internalName": "UNIT_AFFECT_OBJECT_PANEL_FLAGS",
+"uiName": "Unit_/ Affect flags set on object panel.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+46,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" changes the value of flag ",
+" to ",
+"."
+]
+},
+{
+"i": 304,
+"internalName": "TEAM_AFFECT_OBJECT_PANEL_FLAGS",
+"uiName": "Team_/ Affect flags set on object panel - all.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+46,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" change the value of flag ",
+" to ",
+"."
+]
+},
+{
+"i": 305,
+"internalName": "PLAYER_SELECT_SKILLSET",
+"uiName": "Player_/ Set the skillset for a computer player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" uses skillset number ",
+" (1-5)."
+]
+},
+{
+"i": 306,
+"internalName": "SCRIPTING_OVERRIDE_HULK_LIFETIME",
+"uiName": "Scripting_/ Hulk set override lifetime.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Override hulk lifetime to ",
+" seconds. Negative value reverts to normal behavior."
+]
+},
+{
+"i": 307,
+"internalName": "NAMED_FACE_NAMED",
+"uiName": "Unit_/ Set unit to face another unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begin facing "
+]
+},
+{
+"i": 308,
+"internalName": "NAMED_FACE_WAYPOINT",
+"uiName": "Unit_/ Set unit to face a waypoint.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begin facing "
+]
+},
+{
+"i": 309,
+"internalName": "TEAM_FACE_NAMED",
+"uiName": "Team_/ Set team to face another unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begin facing "
+]
+},
+{
+"i": 310,
+"internalName": "TEAM_FACE_WAYPOINT",
+"uiName": "Team_/ Set team to face a waypoint.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+7
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" begin facing "
+]
+},
+{
+"i": 311,
+"internalName": "COMMANDBAR_REMOVE_BUTTON_OBJECTTYPE",
+"uiName": "Scripting_/ Remove a command button from an object type.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+39,
+15
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is removed from all objects of type ",
+"."
+]
+},
+{
+"i": 312,
+"internalName": "COMMANDBAR_ADD_BUTTON_OBJECTTYPE_SLOT",
+"uiName": "Scripting_/ Add a command button to an object type.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+39,
+15,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" is added to all objects of type ",
+" in slot number ",
+" (1-12)."
+]
+},
+{
+"i": 313,
+"internalName": "UNIT_SPAWN_NAMED_LOCATION_ORIENTATION",
+"uiName": "Unit_/ Spawn -- named unit on a team at a position with an orientation.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+14,
+15,
+3,
+16,
+17
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Spawn ",
+" of type ",
+" on team ",
+" at position (",
+"), rotated ",
+" ."
+]
+},
+{
+"i": 314,
+"internalName": "PLAYER_AFFECT_RECEIVING_EXPERIENCE",
+"uiName": "Player_/ Change the modifier to generals experience that a player receives.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" gains experience at ",
+" times the usual rate (0.0 for no gain, 1.0 for normal rate)"
+]
+},
+{
+"i": 319,
+"internalName": "SOUND_SET_VOLUME",
+"uiName": "Multimedia_/ Set the current sound volume.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set the desired sound volume to ",
+"%. (0-100)"
+]
+},
+{
+"i": 320,
+"internalName": "SPEECH_SET_VOLUME",
+"uiName": "Multimedia_/ Set the current speech volume.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set the desired speech volume to ",
+"%. (0-100)"
+]
+},
+{
+"i": 323,
+"internalName": "OBJECT_ALLOW_BONUSES",
+"uiName": "Map_/ Adjust Object Bonuses based on difficulty.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Enable Object Bonuses based on difficulty ",
+" (true to enable, false to disable)."
+]
+},
+{
+"i": 326,
+"internalName": "TEAM_GUARD_IN_TUNNEL_NETWORK",
+"uiName": "Team_/ Set to guard - from inside tunnel network.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" Enter and guard from tunnel network."
+]
+},
+{
+"i": 299,
+"internalName": "LOCALDEFEAT",
+"uiName": "Multiplayer_/ Announce local defeat.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Show 'Game Over' window"
+]
+},
+{
+"i": 331,
+"internalName": "RESIZE_VIEW_GUARDBAND",
+"uiName": "Map_/ Resize view guardband.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+1,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Allow bigger objects to be perceived as onscreen near the edge (",
+",",
+") Width then height, in world units."
+]
+},
+{
+"i": 332,
+"internalName": "DELETE_ALL_UNMANNED",
+"uiName": "Scripting_/ Delete all unmanned (sniped) vehicles.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Delete all unmanned (sniped) vehicles."
+]
+},
+{
+"i": 333,
+"internalName": "CHOOSE_VICTIM_ALWAYS_USES_NORMAL",
+"uiName": "Map_/ Force ChooseVictim to ignore game difficulty and always use Normal setting.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Force ChooseVictim to ignore game difficulty and always use Normal setting ",
+" (true to enable, false to disable)."
+]
+},
+{
+"i": 338,
+"internalName": "ENABLE_OBJECT_SOUND",
+"uiName": "Multimedia_/Sound Effect/Enable object's ambient sound",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Enable (or trigger) ",
+"'s ambient sound."
+]
+},
+{
+"i": 339,
+"internalName": "DISABLE_OBJECT_SOUND",
+"uiName": "Multimedia_/Sound Effect/Disable object's ambient sound",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Disable ",
+"'s ambient sound."
+]
+},
+{
+"i": 341,
+"internalName": "CAMERA_BLOOM_EFFECT_BEGIN",
+"uiName": "Camera_/Lighting Effects/Begin bloom lighting effect.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Set Bloom Filter to be enabled"
+]
+},
+{
+"i": 342,
+"internalName": "CAMERA_BLOOM_EFFECT_END",
+"uiName": "Camera_/Lighting Effects/End bloom lighting effect.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Set Bloom Filter to be disabled"
+]
+},
+{
+"i": 372,
+"internalName": "TERRAIN_RENDER_DISABLE",
+"uiName": "Camera_/Terrain/Enable or Disable Terrain Render.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Disable terrain render ",
+" (True to disable.)"
+]
+},
+{
+"i": 351,
+"internalName": "PLAYER_GIVE_LIGHT_POINTS",
+"uiName": "Player_/ Give light points",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Gives ",
+" ",
+" ",
+" light points."
+]
+},
+{
+"i": 352,
+"internalName": "PLAYER_RESET_LIGHT_POINTS",
+"uiName": "Player_/ Reset light points",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Resets light points for ",
+"."
+]
+},
+{
+"i": 353,
+"internalName": "PLAYER_GIVE_LIGHT_POINT_LEVEL",
+"uiName": "Player_/ Gives a light point level",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Gives ",
+"  light point level ",
+"."
+]
+},
+{
+"i": 354,
+"internalName": "PLAYER_REMOVE_LIGHT_POINT_LEVEL",
+"uiName": "Player_/ Takes away a light point level",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Takes away from ",
+" light point level ",
+"."
+]
+},
+{
+"i": 355,
+"internalName": "TEAM_GIVE_EXPERIENCE_LEVEL",
+"uiName": "Team_/ Gives specified team an experience level",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Gives ",
+" experience level ",
+"."
+]
+},
+{
+"i": 356,
+"internalName": "TEAM_GIVE_EXPERIENCE_POINTS",
+"uiName": "Team_/ Gives specified team experience points",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Gives ",
+" experience points ",
+"."
+]
+},
+{
+"i": 357,
+"internalName": "TEAM_SET_EXPERIENCE_POINTS",
+"uiName": "Team_/ Sets a team's experience points",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Sets ",
+" experience points' to ",
+"."
+]
+},
+{
+"i": 358,
+"internalName": "UNIT_GIVE_EXPERIENCE_LEVEL",
+"uiName": "Unit_/ Gives specified team an experience level",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Gives ",
+" experience level ",
+"."
+]
+},
+{
+"i": 359,
+"internalName": "UNIT_GIVE_EXPERIENCE_POINTS",
+"uiName": "Unit_/ Gives a unit experience points",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Gives ",
+" experience points ",
+"."
+]
+},
+{
+"i": 360,
+"internalName": "UNIT_SET_EXPERIENCE_POINTS",
+"uiName": "Unit_/ Sets a unit's experience points",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Sets ",
+" experience points' to ",
+"."
+]
+},
+{
+"i": 361,
+"internalName": "LIVING_WORLD_MOVE_ARMY_TO_POSITION",
+"uiName": "LivingWorld_/ Move army to a world position",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+10,
+10,
+16
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Move Army named",
+" of faction ",
+" To the position ",
+" in the world."
+]
+},
+{
+"i": 362,
+"internalName": "LIVING_WORLD_MOVE_ARMY_TO_ZONE",
+"uiName": "LivingWorld_/ Move army to a named zone",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+10,
+10,
+10
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Move Army named",
+" of faction ",
+" To the ",
+" zone."
+]
+},
+{
+"i": 363,
+"internalName": "LIVING_WORLD_SPAWN_ARMY_AT_POSITION",
+"uiName": "LivingWorld_/ Spawn an army at world position",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+10,
+10,
+16
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Spawn Army named",
+" of TemplateType ",
+" To the position ",
+" in the world."
+]
+},
+{
+"i": 364,
+"internalName": "LIVING_WORLD_SPAWN_ARMY_IN_ZONE",
+"uiName": "LivingWorld_/ Spawn an army in a named zone",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+10,
+10,
+10
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Spawn Army named ",
+" of TemplateType ",
+" To the ",
+" zone."
+]
+},
+{
+"i": 365,
+"internalName": "LIVING_WORLD_DESPAWN_ARMY",
+"uiName": "LivingWorld_/ Despawn an army from the Living World",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+10,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Despawn Army named ",
+" of faction ",
+" from the living world."
+]
+},
+{
+"i": 366,
+"internalName": "LIVING_WORLD_EXIT_TO_REGION_VIEW",
+"uiName": "LivingWorld_/ Exit back into region view",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Exit back into the living world map region view."
+]
+},
+{
+"i": 367,
+"internalName": "TOGGLE_AVI_CAPTURE",
+"uiName": "AVICapture_/ Toggles on & off AVI capture",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Toggles on & off the AVI capture."
+]
+},
+{
+"i": 368,
+"internalName": "PLAY_MOVIE_IN_GAME",
+"uiName": "PlayMovie/ Plays a movie in game.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+23,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Play Movie named ",
+" allow cancel ",
+" ."
+]
+},
+{
+"i": 369,
+"internalName": "DEPLOY_SIEGE_ON_NAMED_WALL",
+"uiName": "Unit_/Siege/ Deploy the siege tower to the named wall.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+14
+],
+"numUiStrings": 3,
+"uiStrings": [
+" Request ",
+" to attach it's siege ramp to the wall ",
+" . "
+]
+},
+{
+"i": 370,
+"internalName": "RETRACT_SIEGE_FROM_WALL",
+"uiName": "Unit_/Siege/ Retract the siege tower from that wall it's attached to.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" Request ",
+" to retract it's siege ramp from the wall "
+]
+},
+{
+"i": 658,
+"internalName": "UNIT_THREAT_LEVEL",
+"uiName": "Unit_/ Unit has (comparison) threat level within radius.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+14,
+6,
+1,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" threat level ",
+" within radius "
+]
+},
+{
+"i": 659,
+"internalName": "TEAM_THREAT_LEVEL",
+"uiName": "Team_/ Team has (comparison) threat level within radius.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+6,
+1,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" has ",
+" threat level ",
+" within radius "
+]
+},
+{
+"i": 376,
+"internalName": "SET_UNIT_REFERENCE",
+"uiName": "Scripting_/Reference/ Set reference to a unit.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+54,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to reference unit "
+]
+},
+{
+"i": 462,
+"internalName": "TEAM_SET_PLAYERS_NEAREST_UNIT_OF_TYPE_TO_REFERENCE",
+"uiName": "Scripting/Reference/ Set a reference to the unit nearest-to-team, owned by player.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+61,
+3,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Find the unit matching a type in the list ",
+"nearest the team",
+" (and owned by the teams Player) and set its reference to "
+]
+},
+{
+"i": 488,
+"internalName": "FIND_HOME_BASE_OF_PLAYER",
+"uiName": "_Scr",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+54,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Find the home base owned by ",
+" and set ",
+" to reference it. (Building must be inside map boundaries: ",
+")"
+]
+},
+{
+"i": 463,
+"internalName": "GATE_OPEN",
+"uiName": "Unit/gate/ open a gate",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Open gate "
+]
+},
+{
+"i": 464,
+"internalName": "GATE_CLOSE",
+"uiName": "Unit/gate/ close a gate",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 1,
+"uiStrings": [
+" Close gate."
+]
+},
+{
+"i": 496,
+"internalName": "GATE_READY",
+"uiName": "Unit/gate/ Delay a sequential script until the gate is ready again",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" delay until it is ready again."
+]
+},
+{
+"i": 377,
+"internalName": "SET_TEAM_REFERENCE",
+"uiName": "Scripting_/Reference/ Set reference to a team.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+55,
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to reference team "
+]
+},
+{
+"i": 378,
+"internalName": "SET_UNIT_REFERENCE_TO_REFERENCE",
+"uiName": "Scripting_/Reference/ Set reference to another unit reference.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+54,
+54
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to reference another unit reference "
+]
+},
+{
+"i": 379,
+"internalName": "SET_TEAM_REFERENCE_TO_REFERNECE",
+"uiName": "Scripting_/Reference/ Set reference to another team reference.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+55,
+55
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to reference another team reference "
+]
+},
+{
+"i": 380,
+"internalName": "TEAM_GIVE_NEAREST_TEAM_UPGRADE",
+"uiName": "Team_/Upgrades/Team gives nearest team upgrade.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" will give nearest team upgrade"
+]
+},
+{
+"i": 402,
+"internalName": "TEAM_GIVE_TEAM_UPGRADE",
+"uiName": "Team_/Upgrades/Team gives team upgrade.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+3
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" will give ",
+" upgrade "
+]
+},
+{
+"i": 381,
+"internalName": "NAMED_BASE_UNPACK",
+"uiName": "Base/Unpack a base so team can start building structures on it.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Unpack the base: ",
+"and reference it as ",
+"."
+]
+},
+{
+"i": 492,
+"internalName": "NAMED_BASE_UNPACK_FREE",
+"uiName": "Base/Instant Unpack a base so team can start building structures on it (Free).",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+54
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Instantly unpack the free base: ",
+"and reference it as ",
+"."
+]
+},
+{
+"i": 383,
+"internalName": "BUILD_BASE_BUILDING",
+"uiName": "Player_/AI/AI build base building in first available slot in a referenced base.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+15,
+14,
+54
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Build building ",
+" in base ",
+" and reference it as ",
+" ."
+]
+},
+{
+"i": 384,
+"internalName": "BUILD_BASE_BUILDING_IN_SLOT",
+"uiName": "Base/AI build base building in slot in a referenced base.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+15,
+0,
+14,
+54
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Build building ",
+" at slot ",
+" in base ",
+" and reference it as",
+" ."
+]
+},
+{
+"i": 385,
+"internalName": "BUILD_BASE_BUILDING_PER_TACTICAL_MARKER",
+"uiName": "Base/AI build base building on a foundation chosen by proximity to tactical marker (new).",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+15,
+56,
+15,
+14,
+54
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Build building ",
+" at a foundation that is the most ",
+", relative to the object of type, ",
+" which is part of the base named, ",
+" ... then finally reference the new building as: ",
+" ."
+]
+},
+{
+"i": 386,
+"internalName": "BUILD_BUILDING_ON_FOUNDATION",
+"uiName": "Build building on the chosen foundation.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+15,
+14
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Build building ",
+" at a foundation",
+null
+]
+},
+{
+"i": 391,
+"internalName": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF",
+"uiName": "Team/Team will move to the nearest object that matches kindof specified.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+27
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Team ",
+" will move to the nearest object of kindof ",
+"."
+]
+},
+{
+"i": 392,
+"internalName": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF_OWNED_BY_PLAYER",
+"uiName": "Team/Team will move to the nearest object that matches both kindof and player specified.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+27,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Team ",
+" will move to the nearest object of kindof ",
+" that is owned by the player ",
+"."
+]
+},
+{
+"i": 393,
+"internalName": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE",
+"uiName": "Team/Team will move to the nearest object that matches type specified.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+61
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Team ",
+" will move to the nearest object of type ",
+"."
+]
+},
+{
+"i": 394,
+"internalName": "TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE_OWNED_BY_PLAYER",
+"uiName": "Team/Team will move to the nearest object that matches both type and player specified.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+61,
+11
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Team ",
+" will move to the nearest object of type ",
+" that is owned by the player ",
+"."
+]
+},
+{
+"i": 395,
+"internalName": "COUNTER_MATH_COUNTER",
+"uiName": "Scripting_/Counters/Counter do math opertation with another Counter.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+57,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Counter ",
+" , ",
+" with counter "
+]
+},
+{
+"i": 396,
+"internalName": "COUNTER_MATH_VALUE",
+"uiName": "Scripting_/Counters/Counter do math opertation with value.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+57,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Counter ",
+" , ",
+" with value "
+]
+},
+{
+"i": 397,
+"internalName": "TEAM_RECRUIT_UNITS",
+"uiName": "Team_/Team recruit units from nearby teams.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+0,
+61
+],
+"numUiStrings": 4,
+"uiStrings": [
+"",
+" will recruit ",
+" units of type ",
+" from nearby recruitable allied teams."
+]
+},
+{
+"i": 398,
+"internalName": "TEAM_RECRUIT_UNITS_FROM_TEAM",
+"uiName": "Team_/Team recruit units from a specific team.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+0,
+61,
+3
+],
+"numUiStrings": 5,
+"uiStrings": [
+"",
+" will recruit ",
+" units of type ",
+" from ",
+" ."
+]
+},
+{
+"i": 534,
+"internalName": "RECRUIT_COMBO_UNITS_FROM_TEAM",
+"uiName": "Team_/Team recruit combo units from a specific team.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+3,
+0,
+61,
+3
+],
+"numUiStrings": 5,
+"uiStrings": [
+"",
+" will recruit ",
+" combo units of type ",
+" from ",
+" ."
+]
+},
+{
+"i": 403,
+"internalName": "TEAM_UPGRADE",
+"uiName": "Team_/Give Team upgrade.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+33
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Give Team ",
+" the upgrade ",
+"."
+]
+},
+{
+"i": 404,
+"internalName": "SET_PLAYER_MONEY_TO_COUNTER",
+"uiName": "Scripting_/Counters/Set players money to counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Store amount of  ",
+" money to the counter "
+]
+},
+{
+"i": 405,
+"internalName": "SET_PLAYER_LIGHT_POINTS_TO_COUNTER",
+"uiName": "Scripting_/Counters/Set players light points to counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Store amount of ",
+" light points to the counter "
+]
+},
+{
+"i": 406,
+"internalName": "SET_UNIT_EXPERIENCE_TO_COUNTER",
+"uiName": "Scripting_/Counters/Set units experience points to counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Store amount of ",
+" experience points to the counter "
+]
+},
+{
+"i": 407,
+"internalName": "SET_PLAYER_COMMAND_POINTS_USED_TO_COUNTER",
+"uiName": "Scripting_/CommandPoints/Set command points used by player to counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Store amount of command points used by player ",
+" to the counter "
+]
+},
+{
+"i": 408,
+"internalName": "SET_PLAYER_COMMAND_POINTS_AVAILABLE_TO_COUNTER",
+"uiName": "Scripting_/CommandPoints/Set command points available to player to counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Store amount of command points available to player ",
+" to the counter "
+]
+},
+{
+"i": 409,
+"internalName": "SET_PLAYER_COMMAND_POINTS_TOTAL_TO_COUNTER",
+"uiName": "Scripting_/CommandPoints/Set command points total of player to counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Store total number of command point of player ",
+" to the counter "
+]
+},
+{
+"i": 410,
+"internalName": "SET_COMMAND_POINTS_TO_BUILD_TEAM_TO_COUNTER",
+"uiName": "Scripting_/CommandPoints/Set command points required to build team to counter.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+4
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Store the amount of command points required to build ",
+" to the counter "
+]
+},
+{
+"i": 420,
+"internalName": "SET_PLAYER_KILLS_OF_TYPE_TO_COUNTER",
+"uiName": "Scripting_/Set numer of player kills of a type to counter.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+15,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Store the amount of kills by player ",
+" of the type of object ",
+" to the counter "
+]
+},
+{
+"i": 421,
+"internalName": "SET_PLAYER_KILLS_OF_KINDOF_TO_COUNTER",
+"uiName": "Scripting_/Set number of player kills of a kindof to counter.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+27,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Store the amount of kills by player ",
+" of the kindof ",
+" to the counter "
+]
+},
+{
+"i": 422,
+"internalName": "SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER",
+"uiName": "Scripting_/Set numer of object type owned by player to counter.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+61,
+11,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Store the number of object ",
+" owned by ",
+" to the counter "
+]
+},
+{
+"i": 521,
+"internalName": "SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER_INCLUDE_DEAD",
+"uiName": "Scripting_/Set numer of object type owned by player to counter including dead ones.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+61,
+11,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Store the number of object (include dead ones)",
+" owned by ",
+" to the counter "
+]
+},
+{
+"i": 508,
+"internalName": "SET_COUNTER_TO_NUMBER_OBJECTS_PLAYER_OWNES_WITH_MODELCONDITION",
+"uiName": "Scripting_/Set counter to number of objects owned by player with a model condition",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+58,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Store the number of objects owned by ",
+" with ",
+" ON to the counter "
+]
+},
+{
+"i": 509,
+"internalName": "PLAY_SOUND_EFFECT_AT_TEAM",
+"uiName": "Multimedia_/Play sound effect from team",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+12,
+3
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Play sound ",
+" as though coming from a member of ",
+"."
+]
+},
+{
+"i": 417,
+"internalName": "AUDIO_FADE_VOLUME",
+"uiName": "Audio_/Volume/Fade all audio",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+1,
+1,
+1,
+1,
+1
+],
+"numUiStrings": 6,
+"uiStrings": [
+"Fade (0-1) all audio from volume ",
+" to volume ",
+". Take ",
+" seconds to increase, hold for ",
+" seconds, and decrease ",
+" seconds."
+]
+},
+{
+"i": 441,
+"internalName": "AUDIO_MAKE_SOUND_IMMUNE_TO_FADE",
+"uiName": "Audio_/Volume/Make Sound Immune to Fade",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+59
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Make the sound ",
+" ignore the fade levels set by 'fade all audio.'"
+]
+},
+{
+"i": 442,
+"internalName": "AUDIO_MAKE_SOUND_SUBJECT_TO_FADE",
+"uiName": "Audio_/Volume/Make Sound Subject to Fade",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+59
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Make the sound ",
+" subject to the fade levels set by 'fade all audio.'"
+]
+},
+{
+"i": 443,
+"internalName": "AUDIO_MAKE_ALL_SOUNDS_SUBJECT_TO_FADE",
+"uiName": "Audio_/Volume/Make All Sounds Subject to Fade",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Make all sounds subject to the fade levels set by 'fade all audio.'"
+]
+},
+{
+"i": 448,
+"internalName": "AUDIO_SET_REVERB_ROOM_TYPE",
+"uiName": "Audio_/All Sounds/Set Global Reverb Room Type",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+60
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Use global reverb room type "
+]
+},
+{
+"i": 449,
+"internalName": "AUDIO_REMOVE_REVERB",
+"uiName": "Audio_/All Sounds/Remove all reverb effects",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Do not use reverb effects"
+]
+},
+{
+"i": 524,
+"internalName": "AUDIO_SET_REVERB_SUPPRESSION_POLYGON",
+"uiName": "Audio_/All Sounds/Suppress reverb in an area",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+9,
+52
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Lower reverb of all sounds in ",
+" to ",
+" of normal."
+]
+},
+{
+"i": 525,
+"internalName": "AUDIO_REMOVE_REVERB_SUPPRESSION_POLYGON",
+"uiName": "Audio_/All Sounds/Unsuppress reverb in an area",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+9
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Return the reverb of sounds in ",
+" to normal."
+]
+},
+{
+"i": 526,
+"internalName": "AUDIO_REMOVE_ALL_REVERB_SUPPRESSION_POLYGONS",
+"uiName": "Audio_/All Sounds/Unsuppress all reverb",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Remove all reverb-suppression areas."
+]
+},
+{
+"i": 437,
+"internalName": "DIM_WORLD_LIGHTS",
+"uiName": "Scene/Light/Dim all global and ambient lights.",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+1,
+1,
+1,
+1
+],
+"numUiStrings": 5,
+"uiStrings": [
+"Gradually interpolate all the scene lights to the color, red:",
+" green: ",
+". blue: ",
+" over ",
+null
+]
+},
+{
+"i": 438,
+"internalName": "RESTORE_WORLD_LIGHTS",
+"uiName": "Scene/Light/Restore (un-dim) all global and ambient lights.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Gradually interpolate all the scene lights to normal Time-Of-Day color, over:",
+" seconds: "
+]
+},
+{
+"i": 387,
+"internalName": "ALLOW_DISALLOW_ONE_BUILDING",
+"uiName": "Base/Allow or Disallow one building of a specific type",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+15,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" allowed to build ",
+" is ",
+"."
+]
+},
+{
+"i": 388,
+"internalName": "ALLOW_DISALLOW_ALL_BUILDINGS",
+"uiName": "Base/Allow or Disallow all buildings",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+" ",
+" is allowed to build ALL buildings is ",
+" . "
+]
+},
+{
+"i": 418,
+"internalName": "TOGGLE_AUTO_BUILD",
+"uiName": "Player/Build/Turn on or off a player's structures that auto build units.  (Starts ON)",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" toggle auto build "
+]
+},
+{
+"i": 469,
+"internalName": "TEAM_TOGGLE_CLOSE_RANGE_WEAPON",
+"uiName": "Team/Toggle close range weapon",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" sets their close range weapons to "
+]
+},
+{
+"i": 470,
+"internalName": "NAMED_TOGGLE_CLOSE_RANGE_WEAPON",
+"uiName": "Unit/Toggle close range weapon",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" sets its close range weapon to "
+]
+},
+{
+"i": 439,
+"internalName": "SET_COUNTER_TO_UNIT_THREAT",
+"uiName": "Scripting_/Counters/Set counter to single unit threat.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+14,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" to ",
+" radius of "
+]
+},
+{
+"i": 440,
+"internalName": "SET_COUNTER_TO_TEAM_THREAT",
+"uiName": "Scripting_/Counters/Set counter to team threat.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+4,
+3,
+1
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" to ",
+" radius of "
+]
+},
+{
+"i": 494,
+"internalName": "SET_COUNTER_TO_BASE_POPULATION",
+"uiName": "Base/Counters/Count units inside a base.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+14,
+4
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Count units owned by ",
+" inside the base ",
+" and store in counter "
+]
+},
+{
+"i": 430,
+"internalName": "REINFORCEMENTS_DISPLAY_BANNER",
+"uiName": "LivingWorld_/Display Reinforcements banner.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Display Reinforcements banner."
+]
+},
+{
+"i": 431,
+"internalName": "NAMED_SET_SPECIAL_WEAPONSET",
+"uiName": "Unit_/Set unit to switch to weapon set.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" set special weapon upgrade to "
+]
+},
+{
+"i": 465,
+"internalName": "DEPLOY_NAMED_SIEGE_ON_WAYPOINT",
+"uiName": "Unit_/Siege/Deploy near waypoint.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+7,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" attempts to Deploy near ",
+" within the radius ",
+"."
+]
+},
+{
+"i": 466,
+"internalName": "DEPLOY_SIEGE_ON_WAYPOINT",
+"uiName": "Team_/Siege/Deploy near waypoint.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+7,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" attempts to Deploy near ",
+" within the radius ",
+"."
+]
+},
+{
+"i": 467,
+"internalName": "DEPLOY_SIEGE_NEAR_TEAM",
+"uiName": "Team_/Siege/Deploy near team.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+3,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+" ",
+" attempts to Deploy near ",
+" within the radius ",
+"."
+]
+},
+{
+"i": 479,
+"internalName": "TEAM_REPAIR_NEREST",
+"uiName": "Team_/Reepair/Repair nearest building that needs it.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+1
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Have Team ",
+" repair the nearest building within the radius "
+]
+},
+{
+"i": 482,
+"internalName": "TEAM_SET_AUTO_ABILITY",
+"uiName": "Team_/AutoAbility/Team set auto ability to on/off.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+39,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have Team ",
+" set auto ability ",
+" to "
+]
+},
+{
+"i": 481,
+"internalName": "NAME_SET_AUTO_ABILITY",
+"uiName": "Unit_/AutoAbility/Named set auto abilty to on/off.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+39,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Have Team ",
+" set auto ability ",
+" to "
+]
+},
+{
+"i": 483,
+"internalName": "SET_LOGIC_FOG_STATE",
+"uiName": "Map_/Shroud or Reveal/Toggle Fog of War.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set presence of Fog of War to ",
+". (Default TRUE.)"
+]
+},
+{
+"i": 256,
+"internalName": "NAMED_RECEIVE_UPGRADE",
+"uiName": "Unit_/Upgrade/Give Team upgrade.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+33
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Give Unit ",
+" the upgrade ",
+"."
+]
+},
+{
+"i": 489,
+"internalName": "UPGRADE_NEAREST_WALL",
+"uiName": "Script/Upgrade/Upgrade Base with upgrade to the nearest upgradable wall.",
+"uiName2": null,
+"numParameters": 5,
+"parameters": [
+14,
+33,
+15,
+15,
+54
+],
+"numUiStrings": 5,
+"uiStrings": [
+"For Base ",
+" give upgrade ",
+" to object type ",
+" nearest marker ",
+" and reference as "
+]
+},
+{
+"i": 491,
+"internalName": "SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER",
+"uiName": "Scripting_/Reference/ Set reference to object owned by player ",
+"uiName2": null,
+"numParameters": 4,
+"parameters": [
+61,
+11,
+3,
+54
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Find ",
+" Owned by ",
+" nearest team ",
+" and reference as "
+]
+},
+{
+"i": 493,
+"internalName": "SELL_BUILDING_ON_FOUNDATION",
+"uiName": "Base/Sell building on foundation ",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Sell anything on foundation named "
+]
+},
+{
+"i": 495,
+"internalName": "MAP_EXIT",
+"uiName": "Map_/ Exit back to the main menu",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Exits map back to the main menu."
+]
+},
+{
+"i": 497,
+"internalName": "TEAM_NEEDS_OPEN_GATE",
+"uiName": "Team_/Misc/ Set or clear a team-needs-gate open flag ",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Team ",
+" wants gate ",
+" open is "
+]
+},
+{
+"i": 499,
+"internalName": "UNIT_STAND_GROUND",
+"uiName": "Unit/Status/Unit Set Stand Ground Status.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set Stand Ground Status of ",
+" to "
+]
+},
+{
+"i": 500,
+"internalName": "TEAM_STAND_GROUND",
+"uiName": "Unit/Status/Team Set Stand Ground Status.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set Stand Ground Status of ",
+" to "
+]
+},
+{
+"i": 501,
+"internalName": "UNIT_TELEPORT_TO_WAYPOINT",
+"uiName": "Unit_/Action/Move/Teleport to a waypoint.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Teleport ",
+" to ",
+"."
+]
+},
+{
+"i": 502,
+"internalName": "TEAM_TELEPORT_TO_WAYPOINT",
+"uiName": "Team_/Action/Move/Teleport to a waypoint.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+7
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Teleport ",
+" to ",
+"."
+]
+},
+{
+"i": 503,
+"internalName": "OVERRIDE_PLAYER_COMMAND_POINTS",
+"uiName": "Player_/Command/ Override player command points.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Override command points for ",
+" to "
+]
+},
+{
+"i": 504,
+"internalName": "SELECT_OBJECT",
+"uiName": "Player_/Select/ Select an object belonging to player.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"For ",
+" select object "
+]
+},
+{
+"i": 505,
+"internalName": "DESELECT",
+"uiName": "Player_/Select/ Deselects everything.",
+"uiName2": null,
+"numParameters": 0,
+"parameters": [],
+"numUiStrings": 1,
+"uiStrings": [
+"Deselects everything "
+]
+},
+{
+"i": 511,
+"internalName": "HERO_SELECT_BUTTON_FLASH",
+"uiName": "User_/Flash/Flash a hero select button for a specified amount of time.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+62,
+0
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Flash the select button for ",
+" for ",
+" seconds."
+]
+},
+{
+"i": 512,
+"internalName": "LOCK_CAMERA",
+"uiName": "Camera_/Lock or unlock camera.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set the camera lock to ",
+" ."
+]
+},
+{
+"i": 527,
+"internalName": "LOCK_CAMERA_ANGLE_AND_HEIGHT",
+"uiName": "Camera_/Lock or unlock camera height and angle (allow scrolling).",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set the camera angle&  height lock to ",
+" ."
+]
+},
+{
+"i": 513,
+"internalName": "TEAM_ASSIMILATE_WITH_FIRST_WALK_ON_ARMY",
+"uiName": "Team_/Assimilates team with the first walk on army.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+3
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to be assimilated by the first walk on army."
+]
+},
+{
+"i": 514,
+"internalName": "UNIT_ASSIMILATE_WITH_FIRST_WALK_ON_ARMY",
+"uiName": "Unit_/Assimilates unit with the first walk on army.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+14
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Set ",
+" to be assimilated by the first walk on army."
+]
+},
+{
+"i": 515,
+"internalName": "UNIT_ENABLE_HOUSE_COLOR",
+"uiName": "Unit_/Enables or disables the house color.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Enable house color for ",
+" to ",
+" ."
+]
+},
+{
+"i": 516,
+"internalName": "TEAM_ENABLE_HOUSE_COLOR",
+"uiName": "Team_/Enables or disables the house color",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Enable the house color for ",
+" to ",
+" ."
+]
+},
+{
+"i": 517,
+"internalName": "ENABLE_HOUSE_COLOR",
+"uiName": "Script/Enables or disables the house color for all units",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Enable the house color for all units ",
+" ."
+]
+},
+{
+"i": 518,
+"internalName": "UNIT_FORCE_EMOTION",
+"uiName": "Unit_/Force an emotion.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+63,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Force unit ",
+" to have ",
+" for ",
+" seconds."
+]
+},
+{
+"i": 519,
+"internalName": "TEAM_FORCE_EMOTION",
+"uiName": "Team_/Force an emotion.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+63,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Force team ",
+" to have ",
+" for ",
+" seconds."
+]
+},
+{
+"i": 520,
+"internalName": "PLAYER_FORCE_EMOTION",
+"uiName": "Player_/Force an emotion.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+11,
+63,
+1
+],
+"numUiStrings": 4,
+"uiStrings": [
+"Force all units of player ",
+" to have ",
+" for ",
+" seconds."
+]
+},
+{
+"i": 62,
+"internalName": "PLAYER_SELL_EVERYTHING",
+"uiName": "Player_/Player sell everything he has.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+11
+],
+"numUiStrings": 1,
+"uiStrings": [
+"Sell everything belonging to "
+]
+},
+{
+"i": 522,
+"internalName": "UNIT_GAIN_LEVEL",
+"uiName": "Unit_/Experience/Unit Gain Level.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" gains a level with FX turned "
+]
+},
+{
+"i": 523,
+"internalName": "TEAM_GAIN_LEVEL",
+"uiName": "Team/Experience/Team Gain Level.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+8
+],
+"numUiStrings": 2,
+"uiStrings": [
+" ",
+" gains a level with FX turned "
+]
+},
+{
+"i": 530,
+"internalName": "SHOW_MISSION_OBJECTIVE",
+"uiName": "Interface/Objectives/Show mission objective",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Make mission objective ",
+" visible."
+]
+},
+{
+"i": 531,
+"internalName": "HIDE_MISSION_OBJECTIVE",
+"uiName": "Interface/Objectives/Hide mission objective",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Hide mission objective ",
+"."
+]
+},
+{
+"i": 532,
+"internalName": "MARK_MISSION_OBJECTIVE_COMPLETED",
+"uiName": "Interface/Objectives/Mark mission objective as completed",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Mark mission objective ",
+" as completed."
+]
+},
+{
+"i": 533,
+"internalName": "MARK_MISSION_OBJECTIVE_NOT_COMPLETED",
+"uiName": "Interface/Objectives/Mark mission objective as not completed",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+0
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Mark mission objective ",
+" as not completed."
+]
+},
+{
+"i": 535,
+"internalName": "UNIT_CHANGE_OBJECT_STATUS",
+"uiName": "Unit_/Change object status.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+14,
+41,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"For unit ",
+" set object status ",
+" to ",
+"."
+]
+},
+{
+"i": 536,
+"internalName": "TEAM_CHANGE_OBJECT_STATUS",
+"uiName": "Team_/Change object status.",
+"uiName2": null,
+"numParameters": 3,
+"parameters": [
+3,
+41,
+8
+],
+"numUiStrings": 4,
+"uiStrings": [
+"For all units in team ",
+" set object status ",
+" to ",
+"."
+]
+},
+{
+"i": 538,
+"internalName": "REMOVE_REINFORCEMENT_ARMY",
+"uiName": "ReinforcementArmies/Remove army.",
+"uiName2": null,
+"numParameters": 1,
+"parameters": [
+10
+],
+"numUiStrings": 2,
+"uiStrings": [
+"Remove reinforcement army named ",
+"."
+]
+},
+{
+"i": 539,
+"internalName": "PLAYER_ASSIMILATE_WITH_ARMY_BY_NAME",
+"uiName": "Player_/Assimilates player with an army by name.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+11,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" to be assimilated by army ",
+". "
+]
+},
+{
+"i": 540,
+"internalName": "TEAM_ASSIMILATE_WITH_ARMY_BY_NAME",
+"uiName": "Team_/Assimilates team with an army by name.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+3,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" to be assimilated by army ",
+". "
+]
+},
+{
+"i": 541,
+"internalName": "UNIT_ASSIMILATE_WITH_ARMY_BY_NAME",
+"uiName": "Unit_/Assimilates unit with an army by name.",
+"uiName2": null,
+"numParameters": 2,
+"parameters": [
+14,
+10
+],
+"numUiStrings": 3,
+"uiStrings": [
+"Set ",
+" to be assimilated by army ",
+". "
+]
+}
+]

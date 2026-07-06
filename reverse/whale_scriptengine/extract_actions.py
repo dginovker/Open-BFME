@@ -37,12 +37,15 @@ while i<len(buf):
         if mod==3: ins.append(('rr',R[(m>>3)&7],R[m&7])); i+=2
         else: i+= (2 if mod==0 else 3 if mod==1 else 6)
     else: i+=1
-# state machine
+# state machine. MSVC addresses fields two ways: absolute `[esi+ABSOFF]` (dominant, 2508x) and
+# via a cached base reg `lea edi,[esi+baseoff]; [edi+fieldoff]`. Resolve BOTH to an absolute
+# offset; the noise (stale cached bases bleeding phantom high-index uiStrings/params) is removed
+# structurally AFTER, by clamping each template's arrays to its own numUiStrings/numParameters.
 regval={}; pend_push=None; pend_ecx=None; fields=[]
 def resolve(reg,off):
+    if reg=='esi': return off                       # absolute from this
     v=regval.get(reg)
-    if reg=='esi': return off
-    if v and v[0]=='base': return v[1]+off
+    if v and v[0]=='base': return v[1]+off           # cached base = &array[E]
     return None
 for it in ins:
     t=it[0]
@@ -54,7 +57,7 @@ for it in ins:
     elif t=='rr' and it[1]=='ecx': pend_ecx=(regval[it[2]][1] if regval.get(it[2]) and regval[it[2]][0]=='base' else None)
     elif t=='call':
         if pend_push is not None and pend_ecx is not None: fields.append((pend_ecx,'str',pend_push))
-        pend_push=None
+        pend_push=None; pend_ecx=None
     elif t=='mi':
         a=resolve(it[1],it[2])
         if a is not None: fields.append((a,'imm',it[3]))
@@ -72,10 +75,25 @@ for a,k,v in fields:
 # real templates = those with an internalName (offset 0x08) that's an identifier
 real=[E for E in order if 0x08 in tmpl[E] and tmpl[E][0x08][0]=='str']
 print(f"{len(ins)} instrs, {len(fields)} fields, {len(order)} indices, {len(real)} REAL templates (have internalName)")
-def fn(off):
-    return {0:'uiName',4:'uiName2',8:'internalName',0xc:'internalNameKey',0x10:'numUiStrings',0x44:'numParameters'}.get(off) or (f'uiStrings[{(off-0x14)//4}]' if 0x14<=off<0x44 else f'parameters[{(off-0x48)//4}]' if 0x48<=off<0x78 else f'?{off:#x}')
-wl=[{'i':E,'f':{fn(o):tmpl[E][o] for o in sorted(tmpl[E])}} for E in real]
-json.dump(wl,open('reverse/scriptengine_actions_worklist.json','w'))
-print("sample template 0:",wl[0]['f'])
+# Build CLEAN per-template records. Layout (struct-offset): uiName@0, uiName2@4, internalName@8,
+# internalNameKey@0xC, numUiStrings@0x10, uiStrings[i]@0x14+4i, numParameters@0x44, params[i]@0x48+4i.
+# Clamp arrays to the template's own counts -> drops stale-base phantom high-index writes.
+def geti(d,off,default=None):
+    return d[off][1] if off in d and d[off][0]=='imm' else default
+def gets(d,off):
+    return d[off][1] if off in d and d[off][0]=='str' else None
+wl=[]
+for E in real:
+    d=tmpl[E]
+    nP=geti(d,0x44,0); nU=geti(d,0x10,0)
+    rec={'i':E,'internalName':gets(d,0x08),'uiName':gets(d,0x00),
+         'uiName2':gets(d,0x04),
+         'numParameters':nP,'parameters':[geti(d,0x48+4*k,0) for k in range(nP or 0)],
+         'numUiStrings':nU,'uiStrings':[gets(d,0x14+4*k) for k in range(nU or 0)]}
+    wl.append(rec)
+json.dump(wl,open('reverse/scriptengine_actions_worklist.json','w'),indent=0)
+print("sample template 0:",{k:v for k,v in wl[0].items() if k!='i'})
 print("enum indices (first 12):",[t['i'] for t in wl[:12]])
-print("total uiStrings+params fields across all:",sum(len(t['f']) for t in wl))
+# sanity: how many have clean (non-None) required fields + no None in clamped arrays
+clean=sum(1 for r in wl if r['internalName'] and r['uiName'] is not None and None not in r['uiStrings'] and None not in r['parameters'])
+print(f"{clean}/{len(wl)} templates fully clean (internalName+uiName+all clamped strings present)")

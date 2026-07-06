@@ -199,6 +199,8 @@ _XMP_Is_Small_Prime,0x009E8CA0
 __CIacos,0x009F7256
 __CIasin,0x009F7D86
 __CIpow,0x009F6FB2
+___gameMemAllocPtr,0x0130E9B4,game memory-manager alloc fn ptr
+___gameMemFreePtr,0x0130E9AC,game memory-manager free fn ptr (indirect call target)
 __alloca_probe,0x009F6C60
 __chkstk,0x009F6C60
 __ftol2,0x009F6E38,MSVC float-to-int conversion helper (statically linked CRT)

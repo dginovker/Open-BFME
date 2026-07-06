@@ -567,6 +567,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1WindowLayout@@UAE@XZ,,0x00497CC0,14,src/game/window_layout.cpp,matched,virtual dtor; tail-jmps member string dtor
 ??1Xfer@@UAE@XZ,0x00038D2A,0x007E7670,7,src/game/xfer.cpp,matched,destructor
 ??1file_auto_ptr@@QAE@XZ,,0x009DD560,14,src/w3d/ffactory.cpp,matched,
+??2@YAPAXI@Z,,0x00881F30,17,src/game/mem_ops.cpp,matched,operator new
+??3@YAXPAX@Z,,0x00881EB0,21,src/game/mem_ops.cpp,matched,operator delete
 ??4?$CategoryModuleClassBase@$00$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0002C499,0x005C12B0,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4?$CategoryModuleClassBase@$01$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00038D1B,0x005C1330,5,src/game/fx_particle_system.cpp,matched,empty assignment returns this
 ??4?$CategoryModuleClassBase@$02$00@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x0003E8FB,0x005C1490,5,src/game/fx_particle_system.cpp,matched,empty base assignment returns this
@@ -944,6 +946,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??_GWindModuleInfo@FXParticleSystem@@UAEPAXI@Z,,0x005BDAA0,30,src/game/fx_particle_system_bulk.cpp,matched,
 ??_GWindowLayout@@UAEPAXI@Z,,0x004706F0,30,src/game/window_layout.cpp,matched,compiler-generated deleting dtor
 ??_H@YGXPAXIHP6EPAX0@Z@Z,,0x0005C600,48,src/w3d/gridcull.cpp,matched,
+??_V@YAXPAX@Z,,0x00881EF0,21,src/game/mem_ops.cpp,matched,operator delete[]
 ?ACos@@YAMM@Z,0x00873940,0x00873940,10,src/math/trig.cpp,matched,wraps internal acos helper
 ?ASin@@YAMM@Z,0x00873950,0x00873950,10,src/math/trig.cpp,matched,wraps internal asin helper
 ?Add2D@Coord3D@@QAEAAV1@ABUCoord3DBase@@0@Z,0x000263B4,0x007E5DE0,28,src/math/coord3d.cpp,matched,adds two Coord3DBase x/y values
@@ -2017,6 +2020,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getValue@GameClientRandomVariable@@QBEMXZ,0x0000D7B5,0x00096F60,123,src/game/game_client_random_variable.cpp,matched,evaluate distribution value
 ?getVertexBuffer@SegLineRendererClass@@AAEPAUVertexFormatXYZDUV1@@I@Z,,0x0095FF60,57,src/w3d/seglinerenderer.cpp,matched,
 ?get_far_extent@@YAXABVVector3@@0PAV1@@Z,,0x008DB190,95,src/w3d/colmathplane.cpp,matched,
+?greater_than@@YA_NU?$pair@W4ObjectID@@I@_STL@@0@Z,,0x00094BE0,13,src/game/partition_solver.cpp,matched,
 ?hasItem@LList@@QAE_NPAX@Z,,0x00105DA0,60,src/game/list.cpp,matched,
 ?height@IRegion2D@@QBEHXZ,0x00011B49,0x001A19B0,7,src/math/region.cpp,matched,returns integer height
 ?height@IRegion3D@@QBEHXZ,0x00005B5A,0x007E6F10,7,src/math/region.cpp,matched,returns integer height
@@ -2278,4 +2282,3 @@ _XMP_Unsigned_Div_Int,,0x009E89C0,176,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult,,0x009E9100,298,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult_Int,,0x009E8980,61,src/w3d/mpmath.cpp,matched,
 _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
-?greater_than@@YA_NU?$pair@W4ObjectID@@I@_STL@@0@Z,,0x00094BE0,13,src/game/partition_solver.cpp,matched,

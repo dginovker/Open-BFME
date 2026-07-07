@@ -1,0 +1,17 @@
+file,status,located,ambiguous,unlocated,blocker
+GameEngine/Source/GameClient/Snow.cpp,ok,0,3,17,
+GameEngine/Source/GameClient/ParabolicEase.cpp,ok,0,1,2,
+GameEngine/Source/Common/System/ObjectStatusTypes.cpp,ok,0,0,0,
+GameEngine/Source/Common/Audio/AudioEventRTS.cpp,ok,0,1,37,
+GameEngine/Source/Common/Audio/AudioRequest.cpp,ok,0,0,0,
+GameEngine/Source/Common/Audio/DynamicAudioEventInfo.cpp,ok,0,5,30,
+GameEngine/Source/Common/Audio/GameAudio.cpp,ok,5,27,136,
+GameEngine/Source/Common/Audio/GameMusic.cpp,ok,0,1,4,
+GameEngine/Source/Common/Audio/GameSounds.cpp,compile-error,0,0,0,C2383 'Display::DebugDisplayCallback' : default-arguments are not allowed on this symbol
+GameEngine/Source/Common/Audio/GameSpeech.cpp,missing-header,0,0,0,wpaudio/attributes.h
+GameEngine/Source/Common/Audio/simpleplayer.cpp,missing-header,0,0,0,wmsdk.h
+GameEngine/Source/Common/Audio/urllaunch.cpp,compile-error,0,0,0,C2501 'HRESULT' : missing storage-class or type specifiers
+GameEngine/Source/Common/Bezier/BezFwdIterator.cpp,missing-header,0,0,0,D3DX8Math.h
+GameEngine/Source/Common/Bezier/BezierSegment.cpp,missing-header,0,0,0,D3DX8Math.h
+GameEngine/Source/Common/BitFlags.cpp,ok,0,0,0,
+GameEngine/Source/Common/CRCDebug.cpp,missing-header,0,0,0,netdb.h

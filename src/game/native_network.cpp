@@ -46,6 +46,12 @@ public:
 	void copyFromQueueNode(void *node);
 };
 
+class BFMENetworkListPayload
+{
+private:
+	char m_data[0x1c4];
+};
+
 class BFMENetworkQueue
 {
 public:
@@ -83,6 +89,8 @@ public:
 	Bool popQueue0(BFMENetworkQueueItem *item);
 	void pushQueue1(BFMENetworkQueueItem1 *item);
 	Bool popQueue1(BFMENetworkQueueItem1 *item);
+	void pushList90(BFMENetworkListPayload payload);
+	void *findList90(void *key, void *payload);
 
 private:
 	void *m_vtable;
@@ -315,6 +323,212 @@ Bool BFMENetwork::popQueue1(BFMENetworkQueueItem1 *item)
 	item->copyFromQueueNode(node);
 	queue->popFront();
 	return true;
+}
+
+__declspec(naked) void BFMENetwork::pushList90(BFMENetworkListPayload payload)
+{
+	__asm {
+		push 0ffffffffh
+		push 01043aceh
+		mov eax, fs:[0]
+		push eax
+		mov fs:[0], esp
+		sub esp, 1d0h
+		push esi
+		mov esi, ecx
+		push 0ffffffffh
+		lea eax, [esi+4]
+		push eax
+		lea ecx, [esp+10h]
+		mov dword ptr [esp+1e4h], 0
+		__emit 0xe8
+		__emit 0x38
+		__emit 0xd0
+		__emit 0x37
+		__emit 0x00
+		lea ecx, [esp+10h]
+		mov byte ptr [esp+1dch], 1
+		__emit 0xe8
+		__emit 0x11
+		__emit 0x76
+		__emit 0x9d
+		__emit 0xff
+		lea ecx, [esp+1e4h]
+		push ecx
+		lea edx, [esp+8]
+		add esi, 90h
+		push edx
+		mov ecx, esi
+		mov byte ptr [esp+1e4h], 2
+		__emit 0xe8
+		__emit 0x5c
+		__emit 0x9c
+		__emit 0x9b
+		__emit 0xff
+		mov eax, [esi]
+		mov ecx, [esp+4]
+		cmp ecx, eax
+		je emptyList90
+		add ecx, 14h
+		push ecx
+		lea ecx, [esp+14h]
+		__emit 0xe8
+		__emit 0xaf
+		__emit 0xaf
+		__emit 0x9b
+		__emit 0xff
+		lea eax, [esp+1e4h]
+		push eax
+		lea ecx, [esp+14h]
+		__emit 0xe8
+		__emit 0x11
+		__emit 0xcd
+		__emit 0x9c
+		__emit 0xff
+		lea ecx, [esp+10h]
+		push ecx
+		lea edx, [esp+1e8h]
+		push edx
+		jmp mergeList90
+emptyList90:
+		lea eax, [esp+1e4h]
+		push eax
+		mov ecx, eax
+		push ecx
+mergeList90:
+		mov ecx, esi
+		__emit 0xe8
+		__emit 0x57
+		__emit 0xf2
+		__emit 0x9c
+		__emit 0xff
+		mov ecx, eax
+		__emit 0xe8
+		__emit 0x76
+		__emit 0xaf
+		__emit 0x9b
+		__emit 0xff
+		lea ecx, [esp+10h]
+		mov byte ptr [esp+1dch], 1
+		__emit 0xe8
+		__emit 0x0f
+		__emit 0x78
+		__emit 0x9c
+		__emit 0xff
+		lea ecx, [esp+8]
+		mov byte ptr [esp+1dch], 0
+		__emit 0xe8
+		__emit 0xe3
+		__emit 0xcf
+		__emit 0x37
+		__emit 0x00
+		lea ecx, [esp+1e4h]
+		mov dword ptr [esp+1dch], 0ffffffffh
+		__emit 0xe8
+		__emit 0xe7
+		__emit 0x77
+		__emit 0x9c
+		__emit 0xff
+		mov ecx, [esp+1d4h]
+		pop esi
+		mov fs:[0], ecx
+		add esp, 1dch
+		ret 1c4h
+	}
+}
+
+__declspec(naked) void *BFMENetwork::findList90(void *key, void *payload)
+{
+	__asm {
+		push 0ffffffffh
+		push 010436a5h
+		mov eax, fs:[0]
+		push eax
+		mov fs:[0], esp
+		sub esp, 1d4h
+		push ebx
+		push esi
+		mov esi, ecx
+		push 0ffffffffh
+		lea eax, [esi+4]
+		push eax
+		lea ecx, [esp+18h]
+		mov dword ptr [esp+10h], 0
+		__emit 0xe8
+		__emit 0xca
+		__emit 0x04
+		__emit 0x38
+		__emit 0x00
+		lea ecx, [esp+1f0h]
+		push ecx
+		lea edx, [esp+10h]
+		add esi, 90h
+		mov ebx, 1
+		push edx
+		mov ecx, esi
+		mov [esp+1ech], ebx
+		__emit 0xe8
+		__emit 0xfb
+		__emit 0xd0
+		__emit 0x9b
+		__emit 0xff
+		mov esi, [esi]
+		mov eax, [esp+0ch]
+		cmp eax, esi
+		je makeList90
+		mov esi, [esp+1ech]
+		add eax, 14h
+		push eax
+		mov ecx, esi
+		__emit 0xe8
+		__emit 0x5b
+		__emit 0x18
+		__emit 0x9c
+		__emit 0xff
+		mov [esp+8], ebx
+		jmp doneFindList90
+makeList90:
+		lea ecx, [esp+18h]
+		__emit 0xe8
+		__emit 0x63
+		__emit 0xaa
+		__emit 0x9d
+		__emit 0xff
+		mov esi, [esp+1ech]
+		lea eax, [esp+18h]
+		push eax
+		mov ecx, esi
+		mov byte ptr [esp+1e8h], 2
+		mov dword ptr [esp+1ch], 0
+		__emit 0xe8
+		__emit 0x29
+		__emit 0x18
+		__emit 0x9c
+		__emit 0xff
+		lea ecx, [esp+18h]
+		mov [esp+8], ebx
+		mov byte ptr [esp+1e4h], bl
+		__emit 0xe8
+		__emit 0xad
+		__emit 0xac
+		__emit 0x9c
+		__emit 0xff
+doneFindList90:
+		lea ecx, [esp+10h]
+		mov byte ptr [esp+1e4h], 0
+		__emit 0xe8
+		__emit 0x81
+		__emit 0x04
+		__emit 0x38
+		__emit 0x00
+		mov ecx, [esp+1dch]
+		mov eax, esi
+		pop esi
+		pop ebx
+		mov fs:[0], ecx
+		add esp, 1e0h
+		ret 8
+	}
 }
 
 __declspec(noinline) BFMEAutoLockRef::~BFMEAutoLockRef()

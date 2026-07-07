@@ -2689,3 +2689,5 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?popQueue0@BFMENetwork@@QAE_NPAVBFMENetworkQueueItem@@@Z,,0x0065ADE0,164,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x14; pops dispatcher queue +0x14
 ?pushQueue1@BFMENetwork@@QAEXPAVBFMENetworkQueueItem1@@@Z,,0x0065E120,162,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x18; pushes callback queue +0x3c
 ?popQueue1@BFMENetwork@@QAE_NPAVBFMENetworkQueueItem1@@@Z,,0x00658E20,164,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x1c; pops callback queue +0x3c
+?pushList90@BFMENetwork@@QAEXVBFMENetworkListPayload@@@Z,,0x0065E340,268,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x20; appends dispatcher payload list at +0x90
+?findList90@BFMENetwork@@QAEPAXPAX0@Z,,0x0065AEB0,234,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x24; finds or creates payload list entry at +0x90

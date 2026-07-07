@@ -78,6 +78,8 @@ anchors, not behavior changes.
 | wrapper queue 0 pop | RVA `0x0065ADE0` | byte-matched as `BFMENetwork::popQueue0`; locks wrapper `+0x04`, pops queue at `+0x14` into caller output | matched |
 | wrapper queue 1 push | RVA `0x0065E120` | byte-matched as `BFMENetwork::pushQueue1`; locks wrapper `+0x0C`, appends to queue at `+0x3C` | matched |
 | wrapper queue 1 pop | RVA `0x00658E20` | byte-matched as `BFMENetwork::popQueue1`; locks wrapper `+0x0C`, pops queue at `+0x3C` into caller output | matched |
+| wrapper payload-list push | RVA `0x0065E340` | byte-matched as `BFMENetwork::pushList90`; dispatcher calls wrapper slot `+0x20` after building a payload, appending to list at `+0x90` | matched |
+| wrapper payload-list find/create | RVA `0x0065AEB0` | byte-matched as `BFMENetwork::findList90`; wrapper slot `+0x24` searches or materializes an entry in list at `+0x90` | matched |
 | backend event dispatcher | RVA `0x0065CA50` | backend vtable slot `+0x08`; switch/jump table at VA `0x00A5D6FC` | boundary suspect |
 | registered callback | RVA `0x0065C260` | pushed as callback VA `0x00A5C260` by dispatcher before call to `0x009D5330` | Ghidra start missing |
 
@@ -93,8 +95,8 @@ Known wrapper slots from vtable VA `0x01119C8C`:
 | `+0x14` | `0x0065ADE0` | matched as `BFMENetwork::popQueue0`; pops queue at wrapper `+0x14`, returns bool |
 | `+0x18` | `0x0065E120` | matched as `BFMENetwork::pushQueue1`; pushes queue at wrapper `+0x3C` |
 | `+0x1C` | `0x00658E20` | matched as `BFMENetwork::popQueue1`; pops queue at wrapper `+0x3C`, returns bool |
-| `+0x20` | `0x0065E340` | list transfer-ish operation using wrapper `+0x90` |
-| `+0x24` | `0x0065AEB0` | list operation using wrapper `+0x90` |
+| `+0x20` | `0x0065E340` | matched as `BFMENetwork::pushList90`; appends payload list at wrapper `+0x90` |
+| `+0x24` | `0x0065AEB0` | matched as `BFMENetwork::findList90`; searches or creates payload list entry at wrapper `+0x90` |
 
 The wrapper constructor initializes locks at `+0x04`, `+0x0C`, and `+0x9C`;
 queue/list structures at `+0x14` and `+0x3C`; object/array regions at `+0x6C`,
@@ -126,6 +128,8 @@ and `+0x10` and reads `TheNetwork+0x68`.
   - `BFMENetwork::popQueue0` at `0x0065ADE0`.
   - `BFMENetwork::pushQueue1` at `0x0065E120`.
   - `BFMENetwork::popQueue1` at `0x00658E20`.
+  - `BFMENetwork::pushList90` at `0x0065E340`.
+  - `BFMENetwork::findList90` at `0x0065AEB0`.
 - The current matched network rows are:
   - `ConnectionManager::processProgress` at `0x00662D20`.
   - `NetworkInterface::createNetwork` at `0x0065C1F0`.

@@ -83,3 +83,12 @@ as the actions whale (44%), as expected (identical structure, fewer templates). 
 now measured: actions 44%, conditions 41%, message-name 64%. Every one confirmed matchable
 (structure/layout/enum recovered) but blocked at the MSVC-codegen wall (register allocation /
 RVO scheduling) — the dedicated multi-day mile. Groundwork for all three is committed.
+
+## ACTIONS WHALE LANDED 2026-07-06 via naked asm (user directive: asm for whales)
+ScriptEngine::init (0x3107f0, 57072 bytes — biggest function in the binary) is now MATCHED as
+`__declspec(naked)` + `__emit` of the exact bytes (`generate_asm.py`). C++ was proven capped at 44%
+(global regalloc across 537 blocks). Confirmed identity: incremental-link jmp thunk @0x4b169 reaches
+it; prologue `push ecx/ebx/ebp/esi; mov esi,ecx; lea edi,[esi+0x1c]` = this->m_actionTemplates setup;
+matches reference GeneralsMD ScriptEngine::init. Named ?init@ScriptEngine@@UAEXXZ (SubsystemInterface
+virtual override). Build: 2302/2302, no-op patch (whole-binary SHA) identical. Understanding
+(actions_worklist.json, 541 templates) preserved; reversible via one functions.csv edit.

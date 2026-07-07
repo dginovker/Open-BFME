@@ -2315,3 +2315,4 @@ _XMP_Unsigned_Mult,,0x009E9100,298,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult_Int,,0x009E8980,61,src/w3d/mpmath.cpp,matched,
 _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?getCommandTypeAsAsciiString@GameMessage@@QAE?AVAsciiString@@W4Type@1@@Z,,0x0008B600,7143,src/game/message_stream.cpp,matched,naked-asm whale: message-name; C++ capped at 64% by global regalloc
+?init@ScriptEngine@@UAEXXZ,,0x003107F0,57072,src/game/script_engine.cpp,matched,naked-asm whale: ScriptEngine::init action-template registration; C++ capped at 44% by global regalloc

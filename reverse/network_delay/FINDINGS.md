@@ -102,12 +102,6 @@ continues to `0x0065D69E`, so its boundary is suspect. The callback at
 `0x0065C260` also needs a manual function start; it calls wrapper slots `+0x18`
 and `+0x10` and reads `TheNetwork+0x68`.
 
-Recheck these anchors with:
-
-```sh
-python3 reverse/network_delay/extract_native_path.py
-```
-
 ## Landed evidence
 
 - `src/zh/connectionmanager.cpp` is present from ZH and byte-verifies 5 emitted

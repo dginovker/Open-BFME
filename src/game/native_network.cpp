@@ -87,6 +87,7 @@ public:
 class BFMENetwork
 {
 public:
+	void *construct();
 	void *destroyAndMaybeDelete(unsigned int flags);
 	void init();
 	Bool backendHasLiveHandle();
@@ -256,6 +257,134 @@ doneWrapperDeleting:
 		mov eax, esi
 		pop esi
 		ret 4
+	}
+}
+
+// ?construct@BFMENetwork@@QAEPAXXZ
+__declspec(naked) void *BFMENetwork::construct()
+{
+	__asm {
+		push 0ffffffffh
+		push 01043626h
+		mov eax, fs:[0]
+		push eax
+		mov fs:[0], esp
+		push ecx
+		push ebx
+		push esi
+		mov esi, ecx
+		mov [esp+8], esi
+		xor ebx, ebx
+		push ebx
+		lea ecx, [esi+4]
+		mov [esp+18h], ebx
+		mov dword ptr [esi], 01119c8ch
+		__emit 0xe8
+		__emit 0xbd
+		__emit 0x06
+		__emit 0x38
+		__emit 0x00
+		push ebx
+		lea ecx, [esi+0ch]
+		mov byte ptr [esp+18h], 1
+		__emit 0xe8
+		__emit 0xaf
+		__emit 0x06
+		__emit 0x38
+		__emit 0x00
+		lea ecx, [esi+14h]
+		mov [ecx], ebx
+		mov [ecx+4], ebx
+		mov [ecx+8], ebx
+		mov [ecx+0ch], ebx
+		mov [ecx+10h], ebx
+		mov [ecx+14h], ebx
+		mov [ecx+18h], ebx
+		mov [ecx+1ch], ebx
+		mov [ecx+20h], ebx
+		push ebx
+		mov byte ptr [esp+18h], 2
+		mov [ecx+24h], ebx
+		__emit 0xe8
+		__emit 0x37
+		__emit 0x5d
+		__emit 0x9b
+		__emit 0xff
+		lea ecx, [esi+3ch]
+		mov [ecx], ebx
+		mov [ecx+4], ebx
+		mov [ecx+8], ebx
+		mov [ecx+0ch], ebx
+		mov [ecx+10h], ebx
+		mov [ecx+14h], ebx
+		mov [ecx+18h], ebx
+		mov [ecx+1ch], ebx
+		mov [ecx+20h], ebx
+		push ebx
+		mov byte ptr [esp+18h], 3
+		mov [ecx+24h], ebx
+		__emit 0xe8
+		__emit 0x58
+		__emit 0x3c
+		__emit 0x9d
+		__emit 0xff
+		lea ecx, [esi+6ch]
+		mov byte ptr [esp+14h], 4
+		__emit 0xe8
+		__emit 0xb6
+		__emit 0x57
+		__emit 0x9e
+		__emit 0xff
+		lea ecx, [esi+78h]
+		mov byte ptr [esp+14h], 5
+		__emit 0xe8
+		__emit 0xa9
+		__emit 0x57
+		__emit 0x9e
+		__emit 0xff
+		lea ecx, [esi+84h]
+		mov byte ptr [esp+14h], 6
+		__emit 0xe8
+		__emit 0x99
+		__emit 0x57
+		__emit 0x9e
+		__emit 0xff
+		push 1d8h
+		mov byte ptr [esp+18h], 7
+		mov [esi+90h], ebx
+		__emit 0xe8
+		__emit 0x2a
+		__emit 0x72
+		__emit 0x22
+		__emit 0x00
+		mov [esi+90h], eax
+		mov [esi+94h], ebx
+		mov [eax], bl
+		mov eax, [esi+90h]
+		mov [eax+4], ebx
+		mov eax, [esi+90h]
+		mov [eax+8], eax
+		mov eax, [esi+90h]
+		add esp, 4
+		mov [eax+0ch], eax
+		push ebx
+		lea ecx, [esi+9ch]
+		mov byte ptr [esp+18h], 8
+		__emit 0xe8
+		__emit 0xdd
+		__emit 0x05
+		__emit 0x38
+		__emit 0x00
+		mov [esi+0a4h], ebx
+		mov [esi+64h], ebx
+		mov [esi+68h], ebx
+		mov ecx, [esp+0ch]
+		mov eax, esi
+		pop esi
+		pop ebx
+		mov fs:[0], ecx
+		add esp, 10h
+		ret
 	}
 }
 

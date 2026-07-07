@@ -67,7 +67,7 @@ anchors, not behavior changes.
 | --- | --- | --- | --- |
 | `TheNetwork` global | VA `0x012F76F0` / RVA `0x00EF76F0` | caller at `0x006377D0` stores the `createNetwork` return value, then calls vtable slot `+0x04` | recovered |
 | `NetworkInterface::createNetwork` | RVA `0x0065C1F0`, ILT `0x000362C3` | byte-matched row; allocates `0xA8` bytes | matched |
-| BFME network wrapper constructor | RVA `0x0065AC30`, ILT `0x00029C12` | called by `createNetwork`; installs vtable VA `0x01119C8C` | recovered |
+| BFME network wrapper constructor | RVA `0x0065AC30`, ILT `0x00029C12` | byte-matched as `BFMENetwork::construct`; installs vtable VA `0x01119C8C` and initializes wrapper queues/list | matched |
 | BFME network wrapper vtable | VA `0x01119C8C` / RVA `0x00D19C8C` | referenced by constructor | recovered |
 | backend constructor | RVA `0x006547F0`, ILT `0x00040E44` | byte-matched as `BFMENetworkBackend::construct`; stores owner pointer at backend `+0x68` and initializes list at `+0x5C` | matched |
 | backend vtable | VA `0x0111988C` / RVA `0x00D1988C` | installed by backend constructor | recovered |
@@ -124,6 +124,7 @@ and `+0x10` and reads `TheNetwork+0x68`.
   wrapper/backend code:
   - `BFMENetworkBackend::construct` at `0x006547F0` (constructor body).
   - `BFMENetworkBackend::destroyAndMaybeDelete` at `0x00654890`.
+  - `BFMENetwork::construct` at `0x0065AC30` (constructor body).
   - `BFMENetwork::destroyAndMaybeDelete` at `0x0065ADB0`.
   - `BFMENetwork::init` at `0x006548C0`.
   - `BFMENetwork::backendHasLiveHandle` at `0x00651780`.

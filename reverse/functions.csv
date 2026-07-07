@@ -2685,6 +2685,7 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?hasLiveHandle@BFMENetworkBackend@@QAE_NXZ,,0x009DB590,11,src/game/native_network.cpp,matched,native BFME network backend handle check used by wrapper slot +0x0c
 ?closeLiveHandle@BFMENetworkBackend@@QAEXXZ,,0x009DB5A0,35,src/game/native_network.cpp,matched,native BFME network backend wait/clear for handle fields +0x48/+0x44
 ??1BFMEAutoLockRef@@QAE@XZ,,0x009DB400,22,src/game/native_network.cpp,matched,native BFME lock-ref release helper used by wrapper/backend
+?construct@BFMENetwork@@QAEPAXXZ,,0x0065AC30,306,src/game/native_network.cpp,matched,native BFME network wrapper constructor body; initializes locks queues list and backend pointer
 ?destroyAndMaybeDelete@BFMENetwork@@QAEPAXI@Z,,0x0065ADB0,30,src/game/native_network.cpp,matched,native BFME network wrapper vtable slot +0x00; scalar deleting destructor wrapper
 ?init@BFMENetwork@@QAEXXZ,,0x006548C0,204,src/game/native_network.cpp,matched,native BFME network wrapper vtable slot +0x04; creates backend and calls backend slot +0x04
 ?backendHasLiveHandle@BFMENetwork@@QAE_NXZ,,0x00651780,15,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x0c; delegates through backend pointer at +0x64

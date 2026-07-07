@@ -272,3 +272,15 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?_M_insert_overflow@?$vector@W4ObjectID@@V?$allocator@W4ObjectID@@@_STL@@@_STL@@IAEXPAW4ObjectID@@ABW43@ABU__false_type@2@I_N@Z,0x00033DAC
 ?parseBitString32@INI@@SAXPAV1@PAX1PBX@Z,0x00850E70
 ?getNextMission@Campaign@@QAEPAVMission@@PAV2@@Z,0x0003236C
+?_M_insert_overflow@?$vector@PBVFXList@@V?$allocator@PBVFXList@@@_STL@@@_STL@@IAEXPAPBVFXList@@ABQBV3@ABU__true_type@2@I_N@Z,0x00044FC1
+?doFXPos@FXList@@IBEXPBUCoord3D@@PBVMatrix3D@@M0M@Z,0x0003E360
+?findFXList@FXListStore@@QBEPBVFXList@@PBD@Z,0x0001EDE9
+?getNextTokenOrNull@INI@@QAEPBDPBD@Z,0x008509C0
+?scanIndexList@INI@@SAHPBDPBQBD@Z,0x008509E0
+?initTimes@BoneFXUpdate@@IAEXXZ,0x0002F775
+?killRunningParticleSystems@BoneFXUpdate@@IAEXXZ,0x0000628F
+?parseDurationReal@INI@@SAXPAV1@PAX1PBX@Z,0x0003D9B0
+?getName@SpecialPowerTemplate@@QBE?AVAsciiString@@XZ,0x00005682
+?parseWeaponTemplate@INI@@SAXPAV1@PAX1PBX@Z,0x0000CBDF
+?friend_awakenUpdateModule@GameLogic@@QAEXPAVObject@@PAVUpdateModule@@I@Z,0x00009944
+?normalizeAngle@@YAMM@Z,0x0000991C

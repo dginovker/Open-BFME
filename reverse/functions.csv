@@ -2603,6 +2603,7 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ??0DrawableLocoInfo@@QAE@XZ,,0x004109F0,78,src/zh/drawable.cpp,matched,
 ?drawableIconNameToIndex@@YA?AW4DrawableIconType@@PBD@Z,,0x00410A80,51,src/zh/drawable.cpp,matched,
 ?saturateRGB@Drawable@@QAEXAAURGBColor@@M@Z,,0x00410AF0,53,src/zh/drawable.cpp,matched,
+??1NetCommandMsg@@MAE@XZ,,0x006737E0,7,src/zh/netcommandmsg.cpp,matched,base destructor needed for NetWrapperCommandMsg dtor shape
 ??1NetWrapperCommandMsg@@MAE@XZ,,0x00673E20,40,src/zh/netcommandmsg.cpp,matched,
 ?setData@NetWrapperCommandMsg@@QAEXPAEI@Z,,0x00673E70,77,src/zh/netcommandmsg.cpp,matched,
 ?setFileData@NetFileCommandMsg@@QAEXPAEI@Z,,0x00673FA0,52,src/zh/netcommandmsg.cpp,matched,

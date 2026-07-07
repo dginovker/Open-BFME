@@ -44,6 +44,7 @@ INCLUDE_DIRS = [
     REF / "Libraries" / "Source" / "WWVegas" / "WW3D2",
     REF / "Libraries" / "Source" / "WWVegas" / "WWMath",
     REF / "Libraries" / "Source" / "WWVegas" / "WWDebug",
+    REF / "Libraries" / "Source" / "WWVegas" / "WWSaveLoad",
 ]
 
 HEAD = "// cl: /DNDEBUG /MD /EHsc\n// stlport\n#define Matrix4x4 Matrix4  // BFME renamed it\n"

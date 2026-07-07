@@ -33,7 +33,7 @@
 
 #include <stdio.h>
 #include "Common/SubsystemInterface.h"
-#include "View.h"
+#include "GameClient/View.h"  // SHIM: qualified — the shadow copy lost file-relative resolution
 #include "GameClient/Color.h"
 #include "GameClient/GameFont.h"
 

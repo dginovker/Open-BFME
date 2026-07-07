@@ -1,5 +1,5 @@
 #pragma once
-// "windows.h" stand-in for sweeping GeneralsMD reference files: the vendored
+// <windows.h> stand-in for sweeping GeneralsMD reference files: the vendored
 // VS2003 toolchain has no PlatformSDK. Declarations mirror the real SDK
 // (dllimport + __stdcall, exact struct layouts) so codegen is byte-identical.
 // Grown empirically: the sweep's error histogram drives what gets added.
@@ -36,7 +36,8 @@ typedef void *LPVOID;
 typedef const void *LPCVOID;
 typedef char *LPSTR;
 typedef const char *LPCSTR;
-typedef unsigned short *LPWSTR;
+typedef unsigned short WCHAR;   // = VC7.1 default wchar_t (unsigned short), mangles as G like retail
+typedef WCHAR *PWCHAR, *LPWSTR;
 typedef const unsigned short *LPCWSTR;
 typedef unsigned long SIZE_T;
 typedef unsigned long ULONG_PTR;

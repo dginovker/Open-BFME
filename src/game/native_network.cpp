@@ -2,9 +2,12 @@
 
 typedef bool Bool;
 
+class BFMENetworkLock;
+
 class BFMENetworkBackend
 {
 public:
+	void *construct(BFMENetworkLock *ownerLock);
 	virtual ~BFMENetworkBackend();
 	void *destroyAndMaybeDelete(unsigned int flags);
 	__declspec(noinline) Bool hasLiveHandle();
@@ -85,6 +88,7 @@ class BFMENetwork
 {
 public:
 	void *destroyAndMaybeDelete(unsigned int flags);
+	void init();
 	Bool backendHasLiveHandle();
 	void destroyBackend();
 	void pushQueue0(BFMENetworkQueueItem *item);
@@ -107,6 +111,62 @@ private:
 
 extern "C" __declspec(dllimport) unsigned long __stdcall WaitForSingleObject(void *handle, unsigned long milliseconds);
 extern "C" __declspec(dllimport) int __stdcall ReleaseMutex(void *handle);
+
+// ?construct@BFMENetworkBackend@@QAEPAXPAVBFMENetworkLock@@@Z
+__declspec(naked) void *BFMENetworkBackend::construct(BFMENetworkLock *ownerLock)
+{
+	__asm {
+		push 0ffffffffh
+		push 01042c98h
+		mov eax, fs:[0]
+		push eax
+		mov fs:[0], esp
+		push ecx
+		push ebx
+		push esi
+		mov esi, ecx
+		xor ebx, ebx
+		push ebx
+		mov [esp+0ch], esi
+		__emit 0xe8
+		__emit 0xca
+		__emit 0x6c
+		__emit 0x38
+		__emit 0x00
+		mov dword ptr [esi], 0111988ch
+		push 18h
+		mov [esp+18h], ebx
+		mov [esi+5ch], ebx
+		__emit 0xe8
+		__emit 0x16
+		__emit 0x9d
+		__emit 0x1d
+		__emit 0x00
+		mov ecx, [esp+20h]
+		mov [esi+5ch], eax
+		mov [esi+60h], ebx
+		mov [eax], bl
+		mov eax, [esi+5ch]
+		mov [eax+4], ebx
+		mov eax, [esi+5ch]
+		mov [eax+8], eax
+		mov eax, [esi+5ch]
+		mov [eax+0ch], eax
+		add esp, 4
+		mov [esi+68h], ecx
+		mov ecx, [esp+0ch]
+		mov [esi+51h], bl
+		mov [esi+58h], bl
+		mov [esi+50h], bl
+		mov [esi+54h], ebx
+		mov eax, esi
+		pop esi
+		pop ebx
+		mov fs:[0], ecx
+		add esp, 10h
+		ret 4
+	}
+}
 
 __declspec(naked) void *BFMENetworkBackend::destroyAndMaybeDelete(unsigned int flags)
 {
@@ -196,6 +256,106 @@ doneWrapperDeleting:
 		mov eax, esi
 		pop esi
 		ret 4
+	}
+}
+
+__declspec(naked) void BFMENetwork::init()
+{
+	__asm {
+		push 0ffffffffh
+		push 01042cc6h
+		mov eax, fs:[0]
+		push eax
+		mov fs:[0], esp
+		push ecx
+		push ebx
+		push esi
+		mov esi, ecx
+		mov eax, [esi+64h]
+		xor ebx, ebx
+		cmp eax, ebx
+		jne doneInit
+		push 8
+		__emit 0xe8
+		__emit 0x42
+		__emit 0xd6
+		__emit 0x22
+		__emit 0x00
+		add esp, 4
+		mov [esp+8], eax
+		cmp eax, ebx
+		mov [esp+14h], ebx
+		je emptyLockRef
+		push 0ffffffffh
+		lea ecx, [esi+9ch]
+		push ecx
+		mov ecx, eax
+		__emit 0xe8
+		__emit 0xa3
+		__emit 0x6a
+		__emit 0x38
+		__emit 0x00
+		mov ebx, eax
+emptyLockRef:
+		push edi
+		mov edi, [esi+0a4h]
+		cmp ebx, edi
+		mov dword ptr [esp+18h], 0ffffffffh
+		je keepLockRef
+		test edi, edi
+		je storeLockRef
+		mov ecx, edi
+		__emit 0xe8
+		__emit 0xd3
+		__emit 0x6a
+		__emit 0x38
+		__emit 0x00
+		push edi
+		__emit 0xe8
+		__emit 0x7d
+		__emit 0xd5
+		__emit 0x22
+		__emit 0x00
+		add esp, 4
+storeLockRef:
+		mov [esi+0a4h], ebx
+keepLockRef:
+		push 6ch
+		__emit 0xe8
+		__emit 0xed
+		__emit 0xd5
+		__emit 0x22
+		__emit 0x00
+		add esp, 4
+		mov [esp+0ch], eax
+		test eax, eax
+		mov dword ptr [esp+18h], 1
+		pop edi
+		je emptyBackend
+		lea edx, [esi+9ch]
+		push edx
+		mov ecx, eax
+		__emit 0xe8
+		__emit 0xdf
+		__emit 0xc4
+		__emit 0x9e
+		__emit 0xff
+		jmp storeBackend
+emptyBackend:
+		xor eax, eax
+storeBackend:
+		mov [esi+64h], eax
+		mov edx, [eax]
+		mov ecx, eax
+		mov dword ptr [esp+14h], 0ffffffffh
+		call dword ptr [edx+4]
+doneInit:
+		mov ecx, [esp+0ch]
+		pop esi
+		pop ebx
+		mov fs:[0], ecx
+		add esp, 10h
+		ret
 	}
 }
 

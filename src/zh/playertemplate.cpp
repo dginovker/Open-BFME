@@ -1,5 +1,6 @@
-// cl: /DNDEBUG /MD /EHsc /Ireference/shims/sweep /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWLib
+// cl: /DNDEBUG /DWIN32 /MD /EHsc /Ireference/shims/sweep /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWLib /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2 /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWMath /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWDebug /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWSaveLoad /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Main
 // stlport
+#define Matrix4x4 Matrix4  // BFME renamed it
 /*
 **	Command & Conquer Generals Zero Hour(tm)
 **	Copyright 2025 Electronic Arts Inc.
@@ -131,7 +132,7 @@
 	return TheFieldParseTable;
 }
 
-// ?getStartingUnit@PlayerTemplate@@ present-unmatched
+// ?getStartingUnit@PlayerTemplate@@QBE?AVAsciiString@@H@Z present-unmatched
 AsciiString PlayerTemplate::getStartingUnit( Int i ) const
 {
 	if (i<0 || i>= MAX_MP_STARTING_UNITS)
@@ -197,7 +198,7 @@ AsciiString PlayerTemplate::getStartingUnit( Int i ) const
 // PUBLIC FUNCTIONS ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-// ??0PlayerTemplate@@QAE@ABV0@@Z present-unmatched
+// ??0PlayerTemplate@@ present-unmatched
 PlayerTemplate::PlayerTemplate() : 
 	m_nameKey(NAMEKEY_INVALID),
 	m_observer(false),
@@ -211,35 +212,35 @@ PlayerTemplate::PlayerTemplate() :
 }
 
 //-----------------------------------------------------------------------------
-// ?getHeadWaterMarkImage@PlayerTemplate@@ present-unmatched
+// ?getHeadWaterMarkImage@PlayerTemplate@@QBEPBVImage@@XZ present-unmatched
 const Image *PlayerTemplate::getHeadWaterMarkImage( void ) const
 {
 	return TheMappedImageCollection->findImageByName(m_headWaterMark);
 }
 
 //-----------------------------------------------------------------------------
-// ?getFlagWaterMarkImage@PlayerTemplate@@ present-unmatched
+// ?getFlagWaterMarkImage@PlayerTemplate@@QBEPBVImage@@XZ present-unmatched
 const Image *PlayerTemplate::getFlagWaterMarkImage( void ) const
 {
 	return TheMappedImageCollection->findImageByName(m_flagWaterMark);
 }
 
 //-----------------------------------------------------------------------------
-// ?getSideIconImage@PlayerTemplate@@ present-unmatched
+// ?getSideIconImage@PlayerTemplate@@QBEPBVImage@@XZ present-unmatched
 const Image *PlayerTemplate::getSideIconImage( void ) const
 {
 	return TheMappedImageCollection->findImageByName(m_sideIconImage);
 }
 
 //-----------------------------------------------------------------------------
-// ?getGeneralImage@PlayerTemplate@@ present-unmatched
+// ?getGeneralImage@PlayerTemplate@@QBEPBVImage@@XZ present-unmatched
 const Image *PlayerTemplate::getGeneralImage( void ) const
 {
 	return TheMappedImageCollection->findImageByName(m_generalImage);
 }
 
 //-----------------------------------------------------------------------------
-// ?getEnabledImage@PlayerTemplate@@ present-unmatched
+// ?getEnabledImage@PlayerTemplate@@QBEPBVImage@@XZ present-unmatched
 const Image *PlayerTemplate::getEnabledImage( void ) const
 {
 	return TheMappedImageCollection->findImageByName(m_enabledImage);
@@ -270,28 +271,28 @@ const Image *PlayerTemplate::getEnabledImage( void ) const
 /*extern*/ PlayerTemplateStore *ThePlayerTemplateStore = NULL;
 
 //-----------------------------------------------------------------------------
-// ??0PlayerTemplateStore@@ present-unmatched
+// ??0PlayerTemplateStore@@QAE@XZ present-unmatched
 PlayerTemplateStore::PlayerTemplateStore() 
 {
 	// nothing
 }
 
 //-----------------------------------------------------------------------------
-// ??1PlayerTemplateStore@@ present-unmatched
+// ??1PlayerTemplateStore@@UAE@XZ present-unmatched
 PlayerTemplateStore::~PlayerTemplateStore() 
 {
 	// nothing
 }
 
 //-----------------------------------------------------------------------------
-// ?init@PlayerTemplateStore@@ present-unmatched
+// ?init@PlayerTemplateStore@@UAEXXZ present-unmatched
 void PlayerTemplateStore::init()
 {
 	m_playerTemplates.clear();
 }
 
 //-----------------------------------------------------------------------------
-// ?reset@PlayerTemplateStore@@ present-unmatched
+// ?reset@PlayerTemplateStore@@UAEXXZ present-unmatched
 void PlayerTemplateStore::reset()
 {
 // don't reset this list here; we want to retain this info.
@@ -299,14 +300,14 @@ void PlayerTemplateStore::reset()
 }
 
 //-----------------------------------------------------------------------------
-// ?update@PlayerTemplateStore@@ present-unmatched
+// ?update@PlayerTemplateStore@@UAEXXZ present-unmatched
 void PlayerTemplateStore::update()
 {
 	// nothing
 }
 
 
-// ?getTemplateNumByName@PlayerTemplateStore@@ present-unmatched
+// ?getTemplateNumByName@PlayerTemplateStore@@QBEHVAsciiString@@@Z present-unmatched
 Int PlayerTemplateStore::getTemplateNumByName(AsciiString name) const
 {
 	for (Int num = 0; num < m_playerTemplates.size(); num++)
@@ -319,7 +320,6 @@ Int PlayerTemplateStore::getTemplateNumByName(AsciiString name) const
 }
 
 //-----------------------------------------------------------------------------
-// ?findPlayerTemplate@PlayerTemplateStore@@ present-unmatched
 const PlayerTemplate* PlayerTemplateStore::findPlayerTemplate(NameKeyType namekey) const
 {
 // begin ugly, hokey code to quietly load old maps...
@@ -364,7 +364,6 @@ const PlayerTemplate* PlayerTemplateStore::findPlayerTemplate(NameKeyType nameke
 }
 
 //-----------------------------------------------------------------------------
-// ?getNthPlayerTemplate@PlayerTemplateStore@@ present-unmatched
 const PlayerTemplate* PlayerTemplateStore::getNthPlayerTemplate(Int i) const
 {
 	if (i >= 0 && i < m_playerTemplates.size())
@@ -377,7 +376,7 @@ const PlayerTemplate* PlayerTemplateStore::getNthPlayerTemplate(Int i) const
 // @todo: PERF_EVALUATE Get a perf timer on this. 
 // If this function is called frequently, there are some relatively trivial changes we could make to 
 // have it run a lot faster.
-// ?getAllSideStrings@PlayerTemplateStore@@ present-unmatched
+// ?getAllSideStrings@PlayerTemplateStore@@QAEXPAV?$list@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@@Z present-unmatched
 void PlayerTemplateStore::getAllSideStrings(AsciiStringList *outStringList)
 {
 	if (!outStringList) 
@@ -429,7 +428,7 @@ void PlayerTemplateStore::getAllSideStrings(AsciiStringList *outStringList)
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?parsePlayerTemplateDefinition@INI@@ present-unmatched
+// ?parsePlayerTemplateDefinition@INI@@SAXPAV1@@Z present-unmatched
 void INI::parsePlayerTemplateDefinition( INI* ini )
 {
 	PlayerTemplateStore::parsePlayerTemplateDefinition(ini);

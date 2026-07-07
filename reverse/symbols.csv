@@ -292,3 +292,8 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?winHide@GameWindow@@QAEH_N@Z,0x00027F2A
 ?winIsHidden@GameWindow@@QAE_NXZ,0x0003A5B7
 ??0DisplayStringManager@@QAE@XZ,0x0000F7A9
+??0PlayerTemplate@@QAE@ABV0@@Z,0x0001449D
+??0PlayerTemplate@@QAE@XZ,0x0003E6E4
+??1PlayerTemplate@@QAE@XZ,0x000181CE
+??4PlayerTemplate@@QAEAAV0@ABV0@@Z,0x000050F6
+?_M_insert_overflow@?$vector@VPlayerTemplate@@V?$allocator@VPlayerTemplate@@@_STL@@@_STL@@IAEXPAVPlayerTemplate@@ABV3@ABU__false_type@2@I_N@Z,0x0003059E

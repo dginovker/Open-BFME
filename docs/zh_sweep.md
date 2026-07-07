@@ -66,6 +66,29 @@ Sweepable, in current include-chain order of value:
 (audio rewritten; no "Miles Sound System" banner in the exe), `VideoDevice` (Bink wrapper rewritten).
 Evidence: reverse/zh_provenance/FINDINGS.md method, measured 2026-07-06.
 
+## Reconciling drift (the tail after the verbatim tier)
+
+`python3 tools/drift_classify.py` ranks every drifted function (`present-unmatched` in landed files)
+into `reverse/zh_sweep/drift_report.csv`: best candidate address in the binary (voted by known-callee
+call sites, verified string refs, rare byte runs), % aligned, and a **class that tells you what to do**:
+
+- **`immediate-only`** — same code shape, a literal/offset changed (BFME resized a class, tweaked a
+  constant). THE mechanical queue: find the value in the ZH source, fix it, `./build.sh <file>`,
+  then `tools/locate.py <file> --emit` to land the now-exact function. Remove its
+  `present-unmatched` marker.
+- **`structural`** — real logic drift; the hint gives shape-ratio and size delta. Medium task:
+  disassemble at the candidate (`objdump`-style windows via tools/explain_mismatch.py once a row
+  exists) and reconcile the source against the binary.
+- **`register-swap` / `imm+reg` with heavy reg diffs** — the MSVC global-regalloc wall (proven on
+  the whales). Do NOT burn time trying C++ source tweaks; these are asm-recipe candidates at best.
+- **`absent`** — anchors found no plausible placement; BFME likely removed it. Prune it from plans.
+- **`no-anchors`** — too small/reloc-dense to fingerprint; needs a manual look, low priority.
+
+The report is ADVISORY: candidates are heuristic votes. Nothing lands without the byte-verify +
+gate suite, so a wrong candidate costs a look, never a bad match. Re-run the tool after landing
+batches — newly pinned callees improve candidates for the rest (same fixpoint idea as
+tools/relocate_cascade.py).
+
 ## State
 
 `reverse/zh_sweep/report.csv` is the sweep ledger (resumable via `--skip-done`).

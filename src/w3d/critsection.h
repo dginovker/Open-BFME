@@ -45,7 +45,7 @@
 
 #include "always.h"
 #include "wwdebug.h"
-#include <windows.h>
+#include "windows.h"  // sweep-shim stand-in (no PlatformSDK in the toolchain)
 
 class CriticalSectionClass
 {

@@ -23,8 +23,11 @@ REF_REL = "reference/CnC_Generals_Zero_Hour/GeneralsMD/Code"
 HEAD = (
     f"// cl: /DNDEBUG /MD /EHsc /Ireference/shims/sweep /I{REF_REL}/GameEngine/Include"
     f" /I{REF_REL}/GameEngine/Source /I{REF_REL}/Libraries/Include /I{REF_REL}/Libraries/Source"
-    f" /I{REF_REL}/Libraries/Source/WWVegas /I{REF_REL}/Libraries/Source/WWVegas/WWLib\n"
+    f" /I{REF_REL}/Libraries/Source/WWVegas /I{REF_REL}/Libraries/Source/WWVegas/WWLib"
+    f" /I{REF_REL}/GameEngineDevice/Include /I{REF_REL}/Libraries/Source/WWVegas/WW3D2"
+    f" /I{REF_REL}/Libraries/Source/WWVegas/WWMath /I{REF_REL}/Libraries/Source/WWVegas/WWDebug\n"
     "// stlport\n"
+    "#define Matrix4x4 Matrix4  // BFME renamed it\n"
 )
 
 

@@ -59,11 +59,20 @@ def resolve_headers(cpp: Path, limit=30):
             return
         base = Path(m.group(1)).name
         lc = base.lower()
-        if lc in ("windows.h", "win.h") or lc.startswith(("dx8", "d3d")):
-            if lc.startswith(("dx8", "d3d")):
-                (W3D / lc).write_text(f"#pragma once\n#ifndef {lc[:-2]}_S\n#define {lc[:-2]}_S\n#endif\n")
-                continue
-            return  # windows wall
+        if lc in ("windows.h", "win.h"):
+            # the windows wall fell: vendor the validated sweep stand-in (dllimport+stdcall
+            # decls -> byte-identical codegen) and quote-redirect untracked headers to it
+            shutil.copy(ROOT / "reference" / "shims" / "sweep" / "windows.h", W3D / lc)
+            for other in list(W3D.glob("*.h")) + list(W3D.glob("*.cpp")):
+                if tracked(other):
+                    continue
+                txt = other.read_text(errors="replace")
+                if f"<{lc}>" in txt:
+                    other.write_text(txt.replace(f"<{lc}>", f'"{lc}"'))
+            continue
+        if lc.startswith(("dx8", "d3d")) or lc == "ddraw.h":
+            (W3D / lc).write_text(f"#pragma once\n#ifndef {lc[:-2]}_S\n#define {lc[:-2]}_S\n#endif\n")
+            continue
         dest = W3D / lc
         if dest.exists() or tracked(dest):
             return

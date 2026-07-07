@@ -665,3 +665,14 @@ GameEngine/Source/GameNetwork/GameSpyGameInfo.cpp,missing-header,0,0,0,GameSpy/P
 GameEngine/Source/GameNetwork/GameSpyOverlay.cpp,missing-header,0,0,0,GameSpy/GP/GP.h
 GameEngine/Source/GameNetwork/IPEnumeration.cpp,missing-header,0,0,0,netdb.h
 GameEngine/Source/GameNetwork/LANAPI.cpp,missing-header,0,0,0,winsock2.h
+GameEngine/Source/GameNetwork/LANAPICallbacks.cpp,missing-header,0,0,0,netdb.h
+GameEngine/Source/GameNetwork/LANAPIhandlers.cpp,missing-header,0,0,0,winsock2.h
+GameEngine/Source/GameNetwork/LANGameInfo.cpp,missing-header,0,0,0,netdb.h
+GameEngine/Source/GameNetwork/NAT.cpp,missing-header,0,0,0,netdb.h
+GameEngine/Source/GameNetwork/NetCommandList.cpp,missing-header,0,0,0,netdb.h
+GameEngine/Source/GameNetwork/NetPacket.cpp,missing-header,0,0,0,netdb.h
+GameEngine/Source/GameNetwork/Network.cpp,missing-header,0,0,0,netdb.h
+GameEngine/Source/GameNetwork/NetworkUtil.cpp,missing-header,0,0,0,netdb.h
+GameEngine/Source/GameNetwork/Transport.cpp,missing-header,0,0,0,winsock2.h
+GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h
+GameEngine/Source/GameNetwork/udp.cpp,missing-header,0,0,0,netdb.h

@@ -2952,3 +2952,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?dlink_isInList_TeamReadyQueue@TeamInQueue@@QBE_NPBQAV1@@Z,,0x000EC2D0,35,src/zh/aiplayer.cpp,matched,
 ?dlink_removeFrom_TeamReadyQueue@TeamInQueue@@QAEXPAPAV1@@Z,,0x000EC320,58,src/zh/aiplayer.cpp,matched,
 ?locoSetMatches@@YA_NHI@Z,,0x000EC7E0,24,src/zh/team.cpp,matched,
+?getClassMemoryPool@VeterancyCrateCollide@@CAPAVMemoryPool@@XZ,,0x00218CA0,104,src/zh/modulefactory.cpp,matched,

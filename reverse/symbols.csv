@@ -917,3 +917,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?Close_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1480
 ?Cur_Micro_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E14E0
 ?Open_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E17C0
+?findMapping@DataChunkTableOfContents@@AAEPAVMapping@@ABVAsciiString@@@Z,0x0001587A

@@ -3920,3 +3920,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 _BFMENetworkBackendEventCallback@40,,0x006549C0,372,src/game/native_network.cpp,matched,
 _BFMENetworkBackendThreadStart@4,,0x009DB630,25,src/game/native_network.cpp,matched,
 ?openLiveHandle@BFMENetworkBackend@@QAEXXZ,,0x009DB650,54,src/game/native_network.cpp,matched,
+?count@?$map@GEU?$less@G@_STL@@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@QBEIABG@Z,,0x006AC500,28,src/zh/connectionmanager.cpp,matched,

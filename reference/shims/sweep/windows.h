@@ -33,6 +33,8 @@ typedef void *HBRUSH;
 typedef void *HKEY;
 typedef void *HICON;
 typedef void *HCURSOR;
+typedef void *HRSRC;
+typedef void *HKL;
 typedef unsigned long DWORD;
 typedef unsigned long *LPDWORD;
 typedef unsigned long ULONG;
@@ -134,12 +136,25 @@ struct _EXCEPTION_POINTERS;
 #define MB_YESNO 0x00000004L
 #define MB_ICONSTOP 0x00000010L
 #define MB_ICONERROR 0x00000010L
+#define MB_ICONHAND 0x00000010L
+#define MB_ICONQUESTION 0x00000020L
 #define MB_ICONWARNING 0x00000030L
+#define MB_ICONEXCLAMATION 0x00000030L
 #define MB_ICONINFORMATION 0x00000040L
+#define MB_ICONASTERISK 0x00000040L
 #define MB_TASKMODAL 0x00002000L
 #define MB_SETFOREGROUND 0x00010000L
 #define MB_SYSTEMMODAL 0x00001000L
 #define IDOK 1
+#define MB_APPLMODAL 0x00000000L
+#define MB_DEFBUTTON3 0x00000200L
+#define VK_RETURN 0x0D
+#define ERROR_SUCCESS 0L
+#define CP_ACP 0
+#define CP_UTF8 65001
+#define EINVAL 22
+#define FORMAT_MESSAGE_FROM_SYSTEM 0x00001000
+#define FORMAT_MESSAGE_IGNORE_INSERTS 0x00000200
 #define IDCANCEL 2
 #define IDABORT 3
 #define IDRETRY 4
@@ -165,10 +180,22 @@ struct _EXCEPTION_POINTERS;
 #define FILE_END 2
 #define INFINITE 0xFFFFFFFF
 #define WAIT_OBJECT_0 0
+#define HWND_TOP ((HWND)0)
+#define HWND_BOTTOM ((HWND)1)
+#define HWND_TOPMOST ((HWND)-1)
+#define HWND_NOTOPMOST ((HWND)-2)
+#define SWP_NOSIZE 0x0001
+#define SWP_NOMOVE 0x0002
+#define SW_HIDE 0
+#define SW_SHOW 1
+#define SW_SHOWNORMAL 1
 
 extern "C" {
 __declspec(dllimport) int WINAPIV wsprintfA(LPSTR, LPCSTR, ...);
 __declspec(dllimport) int WINAPI MessageBoxA(HWND, LPCSTR, LPCSTR, UINT);
+__declspec(dllimport) int WINAPI MessageBoxW(HWND, LPCWSTR, LPCWSTR, UINT);
+__declspec(dllimport) BOOL WINAPI SetWindowPos(HWND, HWND, int, int, int, int, UINT);
+__declspec(dllimport) BOOL WINAPI ShowWindow(HWND, int);
 __declspec(dllimport) BOOL WINAPI TerminateProcess(HANDLE, UINT);
 __declspec(dllimport) HANDLE WINAPI GetCurrentProcess(void);
 __declspec(dllimport) DWORD WINAPI GetCurrentProcessId(void);
@@ -217,6 +244,9 @@ __declspec(dllimport) BOOL WINAPI GetVersionExA(LPOSVERSIONINFOA);
 #define GetTimeFormat GetTimeFormatA
 #define GetCurrentDirectory GetCurrentDirectoryA
 #define SetCurrentDirectory SetCurrentDirectoryA
+#define GetWindowsDirectory GetWindowsDirectoryA
+#define LoadString LoadStringA
+#define FormatMessage FormatMessageA
 __declspec(dllimport) int WINAPI GetDateFormatA(DWORD, DWORD, const SYSTEMTIME *, LPCSTR, LPSTR, int);
 __declspec(dllimport) int WINAPI GetDateFormatW(DWORD, DWORD, const SYSTEMTIME *, LPCWSTR, LPWSTR, int);
 __declspec(dllimport) int WINAPI GetTimeFormatA(DWORD, DWORD, const SYSTEMTIME *, LPCSTR, LPSTR, int);
@@ -224,6 +254,12 @@ __declspec(dllimport) int WINAPI GetTimeFormatW(DWORD, DWORD, const SYSTEMTIME *
 __declspec(dllimport) DWORD WINAPI GetCurrentDirectoryA(DWORD, LPSTR);
 __declspec(dllimport) BOOL WINAPI SetCurrentDirectoryA(LPCSTR);
 __declspec(dllimport) int __cdecl _access(LPCSTR, int);
+__declspec(dllimport) UINT WINAPI GetWindowsDirectoryA(LPSTR, UINT);
+__declspec(dllimport) BOOL WINAPI GetDiskFreeSpaceA(LPCSTR, LPDWORD, LPDWORD, LPDWORD, LPDWORD);
+__declspec(dllimport) int WINAPI LoadStringA(HINSTANCE, UINT, LPSTR, int);
+__declspec(dllimport) int WINAPI LoadStringW(HINSTANCE, UINT, LPWSTR, int);
+__declspec(dllimport) DWORD WINAPI FormatMessageA(DWORD, LPCVOID, DWORD, DWORD, LPSTR, DWORD, va_list *);
+__declspec(dllimport) DWORD WINAPI FormatMessageW(DWORD, LPCVOID, DWORD, DWORD, LPWSTR, DWORD, va_list *);
 __declspec(dllimport) BOOL WINAPI QueryPerformanceCounter(PLARGE_INTEGER);
 __declspec(dllimport) BOOL WINAPI QueryPerformanceFrequency(PLARGE_INTEGER);
 __declspec(dllimport) void WINAPI InitializeCriticalSection(LPCRITICAL_SECTION);

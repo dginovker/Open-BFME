@@ -2797,3 +2797,7 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,
+??1FastFixedAllocator@@QAE@XZ,,0x00B02720,26,src/zh/fastallocator.cpp,matched,
+??0FastFixedAllocator@@QAE@I@Z,,0x00B02760,45,src/zh/fastallocator.cpp,matched,
+??_FFastFixedAllocator@@QAEXXZ,,0x00B02790,24,src/zh/fastallocator.cpp,matched,
+?Get_Allocator@FastAllocatorGeneral@@SAPAV1@XZ,,0x00B02830,92,src/zh/fastallocator.cpp,matched,

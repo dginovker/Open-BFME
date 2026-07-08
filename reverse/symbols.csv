@@ -361,3 +361,7 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ??0Vector3HollowSphereRandomizer@@QAE@M@Z,0x00B02350
 ??0Vector3SolidSphereRandomizer@@QAE@M@Z,0x00B02250
 ?Convert_Shader@W3dUtilityClass@@SAXABVShaderClass@@PAUW3dShaderStruct@@@Z,0x00978820
+??$__copy@U?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@_STL@@U12@H@_STL@@YA?AU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@0@U10@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0000F682
+??0?$_STLP_alloc_proxy@PAIIV?$allocator@I@_STL@@@_STL@@QAE@ABV?$allocator@I@1@PAI@Z,0x00031039
+?_M_fill_insert@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAEXU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@I_N@Z,0x0000886E
+?_M_insert_aux@?$vector@_NV?$allocator@_N@_STL@@@_STL@@IAEXU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@_N@Z,0x0002CB5B

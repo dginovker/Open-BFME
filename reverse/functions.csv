@@ -2792,3 +2792,8 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?push_back@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAEX_N@Z,,0x002CCB10,109,src/zh/dockupdate.cpp,matched,
 ?insert@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAEXU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@I_N@Z,,0x002CCBA0,36,src/zh/dockupdate.cpp,matched,
 ?resize@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAEXI_N@Z,,0x002CD080,182,src/zh/dockupdate.cpp,matched,
+?RGB_To_HSV@@YAXAAVVector3@@ABV1@@Z,,0x00106730,302,src/zh/bitmaphandler.cpp,matched,
+?HSV_To_RGB@@YAXAAVVector3@@ABV1@@Z,,0x001068B0,358,src/zh/bitmaphandler.cpp,matched,
+?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
+?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
+?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,

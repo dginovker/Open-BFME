@@ -5814,6 +5814,103 @@ Bool InGameUI::areTooltipsDisabled() const
 WindowMsgHandledType IdleWorkerSystem( GameWindow *window, UnsignedInt msg, 
 																				WindowMsgData mData1, WindowMsgData mData2 )
 {
+	struct RetailInGameUI : public SubsystemInterface
+	{
+		virtual ~RetailInGameUI() {}
+		virtual void __dummy0() {}
+		virtual void __dummy1() {}
+		virtual void __dummy2() {}
+		virtual void __dummy3() {}
+		virtual void __dummy4() {}
+		virtual void __dummy5() {}
+		virtual void __dummy6() {}
+		virtual void __dummy7() {}
+		virtual void __dummy8() {}
+		virtual void __dummy9() {}
+		virtual void __dummy10() {}
+		virtual void __dummy11() {}
+		virtual void __dummy12() {}
+		virtual void __dummy13() {}
+		virtual void __dummy14() {}
+		virtual void __dummy15() {}
+		virtual void __dummy16() {}
+		virtual void __dummy17() {}
+		virtual void __dummy18() {}
+		virtual void __dummy19() {}
+		virtual void __dummy20() {}
+		virtual void __dummy21() {}
+		virtual void __dummy22() {}
+		virtual void __dummy23() {}
+		virtual void __dummy24() {}
+		virtual void __dummy25() {}
+		virtual void __dummy26() {}
+		virtual void __dummy27() {}
+		virtual void __dummy28() {}
+		virtual void __dummy29() {}
+		virtual void __dummy30() {}
+		virtual void __dummy31() {}
+		virtual void __dummy32() {}
+		virtual void __dummy33() {}
+		virtual void __dummy34() {}
+		virtual void __dummy35() {}
+		virtual void __dummy36() {}
+		virtual void __dummy37() {}
+		virtual void __dummy38() {}
+		virtual void __dummy39() {}
+		virtual void __dummy40() {}
+		virtual void __dummy41() {}
+		virtual void __dummy42() {}
+		virtual void __dummy43() {}
+		virtual void __dummy44() {}
+		virtual void __dummy45() {}
+		virtual void __dummy46() {}
+		virtual void __dummy47() {}
+		virtual void __dummy48() {}
+		virtual void __dummy49() {}
+		virtual void __dummy50() {}
+		virtual void __dummy51() {}
+		virtual void __dummy52() {}
+		virtual void __dummy53() {}
+		virtual void __dummy54() {}
+		virtual void __dummy55() {}
+		virtual void __dummy56() {}
+		virtual void __dummy57() {}
+		virtual void __dummy58() {}
+		virtual void __dummy59() {}
+		virtual void __dummy60() {}
+		virtual void __dummy61() {}
+		virtual void __dummy62() {}
+		virtual void __dummy63() {}
+		virtual void __dummy64() {}
+		virtual void __dummy65() {}
+		virtual void __dummy66() {}
+		virtual void __dummy67() {}
+		virtual void __dummy68() {}
+		virtual void __dummy69() {}
+		virtual void __dummy70() {}
+		virtual void __dummy71() {}
+		virtual void __dummy72() {}
+		virtual void __dummy73() {}
+		virtual void __dummy74() {}
+		virtual void __dummy75() {}
+		virtual void __dummy76() {}
+		virtual void __dummy77() {}
+		virtual void __dummy78() {}
+		virtual void __dummy79() {}
+		virtual void __dummy80() {}
+		virtual void __dummy81() {}
+		virtual void __dummy82() {}
+		virtual void __dummy83() {}
+		virtual void __dummy84() {}
+		virtual void __dummy85() {}
+		virtual void __dummy86() {}
+		virtual void __dummy87() {}
+		virtual void __dummy88() {}
+		virtual void __dummy89() {}
+		virtual void __dummy90() {}
+		virtual void selectNextIdleWorker() {}
+	};
+
 	switch( msg ) 
 	{
 		//---------------------------------------------------------------------------------------------
@@ -5830,7 +5927,7 @@ WindowMsgHandledType IdleWorkerSystem( GameWindow *window, UnsignedInt msg,
 			static NameKeyType buttonSelectID = NAMEKEY( "IdleWorker.wnd:ButtonSelectNextIdleWorker" );
 			if (control && control->winGetWindowId() == buttonSelectID)
 			{
-				TheInGameUI->selectNextIdleWorker( );
+				(reinterpret_cast<RetailInGameUI *>(TheInGameUI))->selectNextIdleWorker( );
 			}
 			break;
 

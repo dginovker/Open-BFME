@@ -1122,3 +1122,12 @@ GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,missing-header,0,0,0,GameSpy/
 GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupReplay.cpp,ok,1,0,15,
 GameEngine/Source/GameNetwork/GameSpy/StagingRoomGameInfo.cpp,missing-header,0,0,0,GameSpy/GP/GP.h
 GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupSaveLoad.cpp,ok,0,0,18,
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,missing-header,0,0,0,GameSpy/GP/GP.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/QuitMenu.cpp,ok,0,0,16,
+GameEngine/Source/GameNetwork/GameSpy/Thread/GameResultsThread.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'EXCEPTION_POINTERS'
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ReplayMenu.cpp,compile-error,0,0,0,C2065 'LPITEMIDLIST' : undeclared identifier
+GameEngine/Source/GameNetwork/GameSpy/Thread/PeerThread.cpp,missing-header,0,0,0,GameSpy/GP/GP.h
+Libraries/Source/WWVegas/WW3D2/dx8webbrowser.cpp,timeout,0,0,0,
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+GameEngine/Source/GameNetwork/GameSpy/Thread/PersistentStorageThread.cpp,missing-header,0,0,0,GameSpy/gstats/gpersist.h
+Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,missing-header,0,0,0,d3d8types.h

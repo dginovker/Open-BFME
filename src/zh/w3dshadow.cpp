@@ -246,11 +246,11 @@ void W3DShadowManager::setLightPosition(Int lightIndex, Real x, Real y, Real z)
 	LightPosWorld[lightIndex]=Vector3(x,y,z);
 }
 
-// ?setTimeOfDay@W3DShadowManager@@QAEXW4TimeOfDay@@@Z present-unmatched
+// ?setTimeOfDay@W3DShadowManager@@QAEXW4TimeOfDay@@@Z
 void W3DShadowManager::setTimeOfDay(TimeOfDay tod)
 {
 	//Ray to light source
-	const GlobalData::TerrainLighting *ol=&TheGlobalData->m_terrainObjectsLighting[tod][0];
+	const GlobalData::TerrainLighting *ol=(const GlobalData::TerrainLighting *)(((const char *)&TheGlobalData->m_terrainObjectsLighting[tod][0]) + 0x80);
 
 	Vector3 lightRay(-ol->lightPos.x,-ol->lightPos.y,-ol->lightPos.z);
 

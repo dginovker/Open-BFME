@@ -2926,3 +2926,5 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Release_Log@WWMemoryLogClass@@KAXXZ,,0x00AFF860,159,src/zh/wwmemlog.cpp,matched,
 ?Get_Log@WWMemoryLogClass@@KAPAVMemLogClass@@XZ,,0x00AFF960,180,src/zh/wwmemlog.cpp,matched,
 ??0?$list@UCoord3D@@V?$allocator@UCoord3D@@@_STL@@@_STL@@QAE@ABV01@@Z,,0x000BF580,111,src/zh/inimapcache.cpp,matched,copy ctor for Coord3DList; BFME uses STLport node allocator
+?getLightPosWorld@W3DShadowManager@@QAEAAVVector3@@H@Z,,0x007B7820,17,src/zh/w3dshadow.cpp,matched,
+?setTimeOfDay@W3DShadowManager@@QAEXW4TimeOfDay@@@Z,,0x007B7B70,198,src/zh/w3dshadow.cpp,matched,

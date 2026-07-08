@@ -2893,3 +2893,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?IdleWorkerSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x0043BAE0,179,src/zh/ingameui.cpp,matched,
 ?doToppleDoneStuff@StructureToppleUpdate@@IAEXXZ,,0x002AF3D0,382,src/zh/structuretoppleupdate.cpp,matched,
 ?getFileInfo@Win32LocalFileSystem@@UBE_NABVAsciiString@@PAUFileInfo@@@Z,,0x009CDE50,105,src/zh/win32localfilesystem.cpp,matched,
+?parseStaticTextData@@YA_NPADPAVWinInstanceData@@0PAX@Z,,0x00484C10,78,src/zh/gamewindowmanagerscript.cpp,matched,

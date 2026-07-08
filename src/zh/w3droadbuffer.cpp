@@ -2622,9 +2622,12 @@ void W3DRoadBuffer::insert4Way(Vector2 loc, Int index1, Real scale)
 //=============================================================================
 /** Inserts Tee intersections at 3 way intersections. */
 //=============================================================================
-// ?insertTeeIntersections@W3DRoadBuffer@@IAEXXZ present-unmatched
+// ?insertTeeIntersections@W3DRoadBuffer@@IAEXXZ
 void W3DRoadBuffer::insertTeeIntersections(void)
 {
+	if (!m_initialized) {
+		return;
+	}
 	// Insert the tees. 
 	Int numRoadSegments = m_numRoads;
 	Int i;

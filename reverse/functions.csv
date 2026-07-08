@@ -2894,3 +2894,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?doToppleDoneStuff@StructureToppleUpdate@@IAEXXZ,,0x002AF3D0,382,src/zh/structuretoppleupdate.cpp,matched,
 ?getFileInfo@Win32LocalFileSystem@@UBE_NABVAsciiString@@PAUFileInfo@@@Z,,0x009CDE50,105,src/zh/win32localfilesystem.cpp,matched,
 ?parseStaticTextData@@YA_NPADPAVWinInstanceData@@0PAX@Z,,0x00484C10,78,src/zh/gamewindowmanagerscript.cpp,matched,
+?doCollapseDoneStuff@StructureCollapseUpdate@@IAEXXZ,,0x002A38A0,123,src/zh/structurecollapseupdate.cpp,matched,

@@ -400,3 +400,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?openDataChunk@DataChunkOutput@@QAEXPADG@Z,0x0003A256
 ??1?$_Rb_tree@PBVThingTemplate@@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Select1st@U?$pair@QBVThingTemplate@@H@_STL@@@3@U?$less@PBVThingTemplate@@@3@V?$allocator@U?$pair@QBVThingTemplate@@H@_STL@@@3@@_STL@@QAE@XZ,0x0003D61D
 ?selectFriends@SelectionTranslator@@AAE_NPAVDrawable@@PAVGameMessage@@_N@Z,0x000282B8
+?stopAllBoneFX@BoneFXUpdate@@QAEXXZ,0x0002728C

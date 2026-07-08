@@ -350,11 +350,12 @@ void StructureCollapseUpdate::doPhaseStuff(StructureCollapsePhaseType scphase, c
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?doCollapseDoneStuff@StructureCollapseUpdate@@ present-unmatched
+// ?doCollapseDoneStuff@StructureCollapseUpdate@@IAEXXZ
 void StructureCollapseUpdate::doCollapseDoneStuff() 
 {
 	static NameKeyType key_BoneFXUpdate = NAMEKEY("BoneFXUpdate");
-	BoneFXUpdate *bfxu = (BoneFXUpdate *)getObject()->findUpdateModule(key_BoneFXUpdate);
+	Object *building = *(Object **)((unsigned char *)this + 8);
+	BoneFXUpdate *bfxu = (BoneFXUpdate *)building->findUpdateModule(key_BoneFXUpdate);
 	if (bfxu != NULL) 
 	{
 		bfxu->stopAllBoneFX();

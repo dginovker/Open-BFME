@@ -4044,3 +4044,7 @@ _HUFF_decode@12,,0x00822EB0,20,src/w3d/huffdecode.cpp,matched,
 ?findGameMessageMetaType@MetaMap@@IAE?AW4Type@GameMessage@@PBD@Z,,0x005B6AD0,69,src/zh/metaevent.cpp,matched,
 ??0SelectionInfo@@QAE@XZ,,0x00458F60,58,src/zh/selectioninfo.cpp,matched,
 ?canOverrideSpecialPowerDestination@ActionManager@@QAE_NPBVObject@@PBUCoord3D@@W4SpecialPowerType@@W4CommandSourceType@@@Z,,0x000C4330,68,src/zh/actionmanager.cpp,matched,
+?getModuleNameKey@ObjectDefectionHelper@@UBE?AW4NameKeyType@@XZ,,0x001C0EF0,104,src/zh/object.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs
+?getModuleNameKey@ObjectRepulsorHelper@@UBE?AW4NameKeyType@@XZ,,0x001C1210,104,src/zh/object.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs
+?getModuleNameKey@ObjectSMCHelper@@UBE?AW4NameKeyType@@XZ,,0x001C5530,104,src/zh/object.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs
+?getModuleNameKey@ObjectWeaponStatusHelper@@UBE?AW4NameKeyType@@XZ,,0x001C13D0,104,src/zh/object.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs

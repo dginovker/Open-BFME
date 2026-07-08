@@ -2955,3 +2955,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Remap_Vertex_Material@MaterialRemapperClass@@QAEPAVVertexMaterialClass@@PAV2@@Z,,0x0092EDC0,88,src/zh/matinfo.cpp,matched,
 ?Find_Vertex_Material@MaterialCollectorClass@@QAEHPAVVertexMaterialClass@@@Z,,0x0092F5F0,36,src/zh/matinfo.cpp,matched,
 ?Add_Shader@MaterialCollectorClass@@QAEXVShaderClass@@@Z,,0x009300D0,89,src/zh/matinfo.cpp,matched,
+?grantScience@Player@@QAE_NW4ScienceType@@@Z,,0x000D5600,42,src/zh/player.cpp,matched,
+?onPowerBrownOutChange@Player@@QAEX_N@Z,,0x000D59F0,63,src/zh/player.cpp,matched,
+??0TerrainRoadCollection@@QAE@XZ,,0x00601430,36,src/zh/terrainroads.cpp,matched,

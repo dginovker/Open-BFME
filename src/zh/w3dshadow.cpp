@@ -232,7 +232,6 @@ void W3DShadowManager::invalidateCachedLightPositions(void)
 		TheW3DProjectedShadowManager->invalidateCachedLightPositions();
 }
 
-// ?getLightPosWorld@W3DShadowManager@@QAEAAVVector3@@H@Z present-unmatched
 Vector3 &W3DShadowManager::getLightPosWorld(Int lightIndex)
 {
 	return LightPosWorld[lightIndex];

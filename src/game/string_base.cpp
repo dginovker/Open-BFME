@@ -1247,118 +1247,6 @@ __declspec(naked) int StringBase<wchar_t>::compareNoCase(const wchar_t *str, int
     }
 }
 
-__declspec(naked) bool StringBase<char>::startsWith(const StringBase<char> &str) const
-{
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x8b
-        __emit 0x00
-        __emit 0x85
-        __emit 0xc0
-        __emit 0x74
-        __emit 0x06
-        __emit 0x0f
-        __emit 0xb7
-        __emit 0x50
-        __emit 0x04
-        __emit 0xeb
-        __emit 0x02
-        __emit 0x33
-        __emit 0xd2
-        __emit 0x85
-        __emit 0xc0
-        __emit 0x74
-        __emit 0x0d
-        __emit 0x83
-        __emit 0xc0
-        __emit 0x08
-        __emit 0x52
-        __emit 0x50
-        __emit 0xe8
-        __emit 0x30
-        __emit 0xaa
-        __emit 0x54
-        __emit 0x00
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-        __emit 0xb8
-        __emit 0x8b
-        __emit 0x38
-        __emit 0x07
-        __emit 0x01
-        __emit 0x52
-        __emit 0x50
-        __emit 0xe8
-        __emit 0x21
-        __emit 0xaa
-        __emit 0x54
-        __emit 0x00
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
-
-__declspec(naked) bool StringBase<char>::startsWith(const char *str) const
-{
-    __asm {
-        __emit 0x56
-        __emit 0x8b
-        __emit 0x74
-        __emit 0x24
-        __emit 0x08
-        __emit 0x85
-        __emit 0xf6
-        __emit 0x74
-        __emit 0x1c
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x57
-        __emit 0x8d
-        __emit 0x78
-        __emit 0x01
-        __emit 0x90
-        __emit 0x8a
-        __emit 0x10
-        __emit 0x40
-        __emit 0x84
-        __emit 0xd2
-        __emit 0x75
-        __emit 0xf9
-        __emit 0x2b
-        __emit 0xc7
-        __emit 0x5f
-        __emit 0x50
-        __emit 0x56
-        __emit 0xe8
-        __emit 0x8f
-        __emit 0x57
-        __emit 0x82
-        __emit 0x00
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-        __emit 0x33
-        __emit 0xc0
-        __emit 0x50
-        __emit 0x56
-        __emit 0xe8
-        __emit 0x82
-        __emit 0x57
-        __emit 0x82
-        __emit 0x00
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
-
 __declspec(naked) StringBase<char>::StringBase(const StringBase<char> &src)
 {
     __asm {
@@ -8054,7 +7942,7 @@ bool operator!=<char>(const char *left, const StringBase<char> &right)
 }
 
 template <>
-bool StringBase<char>::startsWith(const char *str, int len) const
+__declspec(noinline) bool StringBase<char>::startsWith(const char *str, int len) const
 {
     if (str[0] == '\0') {
         return true;
@@ -8065,4 +7953,19 @@ bool StringBase<char>::startsWith(const char *str, int len) const
     }
     return memcmp(&m_data->data[0], str, len) == 0;
 }
+
+template <>
+bool StringBase<char>::startsWith(const char *str) const
+{
+    return startsWith(str, str ? stringLength(str) : 0);
+}
+
+template <>
+bool StringBase<char>::startsWith(const StringBase<char> &str) const
+{
+    int len = str.m_data ? str.m_data->length : 0;
+    const char *data = str.m_data ? str.m_data->data : "";
+    return startsWith(data, len);
+}
+
 

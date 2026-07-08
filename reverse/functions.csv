@@ -2860,3 +2860,7 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?worldToRadar@Radar@@QAE_NPBUCoord3D@@PAUICoord2D@@@Z,,0x00106D20,120,src/zh/radar.cpp,matched,
 ?reset@Radar@@UAEXXZ,,0x001077A0,28,src/zh/radar.cpp,matched,
 ?objectUnderRadarPixel@Radar@@QAEPAVObject@@PBUICoord2D@@@Z,,0x00107CF0,83,src/zh/radar.cpp,matched,
+?groupAttackObject@AIGroup@@QAEXPAVObject@@HW4CommandSourceType@@@Z,,0x002ED2A0,25,src/zh/scriptactions.cpp,matched,
+?doRadarCreateEvent@ScriptActions@@IAEXPAUCoord3D@@H@Z,,0x002EEC70,29,src/zh/scriptactions.cpp,matched,
+?doSkyBox@ScriptActions@@IAEX_N@Z,,0x002EF640,32,src/zh/scriptactions.cpp,matched,
+?doRevealMapAtWaypointPermanent@ScriptActions@@IAEXABVAsciiString@@M00@Z,,0x002F0560,48,src/zh/scriptactions.cpp,matched,

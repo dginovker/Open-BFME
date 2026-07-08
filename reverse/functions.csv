@@ -2870,3 +2870,7 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ??0FrustumClass@@QAE@XZ,,0x00931980,97,src/zh/camera.cpp,matched,
 ??0FrustumClass@@QAE@ABV0@@Z,,0x009319F0,254,src/zh/camera.cpp,matched,
 ??4FrustumClass@@QAEAAV0@ABV0@@Z,,0x00931B10,607,src/zh/camera.cpp,matched,
+?groupAttackObject@AIGroup@@QAEXPAVObject@@HW4CommandSourceType@@@Z,,0x002ED2A0,25,src/zh/scriptactions.cpp,matched,
+?doRadarCreateEvent@ScriptActions@@IAEXPAUCoord3D@@H@Z,,0x002EEC70,29,src/zh/scriptactions.cpp,matched,
+?doSkyBox@ScriptActions@@IAEX_N@Z,,0x002EF640,32,src/zh/scriptactions.cpp,matched,
+?doRevealMapAtWaypointPermanent@ScriptActions@@IAEXABVAsciiString@@M00@Z,,0x002F0560,48,src/zh/scriptactions.cpp,matched,

@@ -2860,3 +2860,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?worldToRadar@Radar@@QAE_NPBUCoord3D@@PAUICoord2D@@@Z,,0x00106D20,120,src/zh/radar.cpp,matched,
 ?reset@Radar@@UAEXXZ,,0x001077A0,28,src/zh/radar.cpp,matched,
 ?objectUnderRadarPixel@Radar@@QAEPAVObject@@PBUICoord2D@@@Z,,0x00107CF0,83,src/zh/radar.cpp,matched,
+?internalTaskComplete@WorkerAIUpdate@@UAEXW4DozerTask@@@Z,,0x002C7FC0,59,src/zh/workeraiupdate.cpp,matched,
+?getMostRecentCommand@WorkerAIUpdate@@UAE?AW4DozerTask@@XZ,,0x002C8010,66,src/zh/workeraiupdate.cpp,matched,
+?getDockPoint@WorkerAIUpdate@@UAEPBUCoord3D@@W4DozerTask@@W4DozerDockPoint@@@Z,,0x002C8070,55,src/zh/workeraiupdate.cpp,matched,

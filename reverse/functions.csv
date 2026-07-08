@@ -2797,3 +2797,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,
+?getMostRecentCommand@DozerAIUpdate@@UAE?AW4DozerTask@@XZ,,0x002B6960,66,src/zh/dozeraiupdate.cpp,matched,

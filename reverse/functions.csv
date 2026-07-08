@@ -2797,3 +2797,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,
+?worldToRadar@Radar@@QAE_NPBUCoord3D@@PAUICoord2D@@@Z,,0x00106D20,120,src/zh/radar.cpp,matched,
+?reset@Radar@@UAEXXZ,,0x001077A0,28,src/zh/radar.cpp,matched,
+?objectUnderRadarPixel@Radar@@QAEPAVObject@@PBUICoord2D@@@Z,,0x00107CF0,83,src/zh/radar.cpp,matched,

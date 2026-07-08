@@ -395,3 +395,6 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?groupAttackObjectPrivate@AIGroup@@AAEX_NPAVObject@@HW4CommandSourceType@@@Z,0x00041CD1
 ?evaluateTeamInsideAreaEntirely@ScriptConditions@@IAE_NPAVParameter@@00@Z,0x00013219
 ?evaluateTeamInsideAreaPartially@ScriptConditions@@IAE_NPAVParameter@@00@Z,0x0004A8E0
+?WriteConditionDataChunk@Condition@@SAXAAVDataChunkOutput@@PAV1@@Z,0x0003DA91
+?closeDataChunk@DataChunkOutput@@QAEXXZ,0x00004B42
+?openDataChunk@DataChunkOutput@@QAEXPADG@Z,0x0003A256

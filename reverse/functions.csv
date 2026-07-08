@@ -2876,3 +2876,7 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?doRevealMapAtWaypointPermanent@ScriptActions@@IAEXABVAsciiString@@M00@Z,,0x002F0560,48,src/zh/scriptactions.cpp,matched,
 ??$sum@H@rts@@YAHAAV?$vector@HV?$allocator@H@_STL@@@_STL@@@Z,,0x002F1380,29,src/zh/scriptconditions.cpp,matched,
 ?evaluateTeamOutsideAreaEntirely@ScriptConditions@@IAE_NPAVParameter@@00@Z,,0x00324BD0,65,src/zh/scriptconditions.cpp,matched,
+?removeCondition@OrCondition@@QAEPAVCondition@@PAV2@@Z,,0x0034FCE0,69,src/zh/scripts.cpp,matched,
+?findPreviousCondition@OrCondition@@QAEPAVCondition@@PAV2@@Z,,0x0034FD70,34,src/zh/scripts.cpp,matched,
+??0Condition@@IAE@XZ,,0x0034FDA0,65,src/zh/scripts.cpp,matched,
+?WriteOrConditionDataChunk@OrCondition@@SAXAAVDataChunkOutput@@PAV1@@Z,,0x00355C90,64,src/zh/scripts.cpp,matched,

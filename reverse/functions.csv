@@ -2886,3 +2886,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?frameToSleepTime@@YA?AW4StateReturnType@@IIII@Z,,0x0018C2A0,37,src/zh/turretai.cpp,matched,
 ?parseTWS@@YAXPAVINI@@PAX1PBX@Z,,0x0018C380,77,src/zh/turretai.cpp,matched,
 ?parseTurretSweepSpeed@TurretAIData@@SAXPAVINI@@PAX1PBX@Z,,0x0018C420,48,src/zh/turretai.cpp,matched,
+?Set_Index_Buffer_Index_Offset@DX8Wrapper@@SAXI@Z,,0x0072EAD0,32,src/zh/w3dterraintracks.cpp,matched,

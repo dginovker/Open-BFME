@@ -1131,3 +1131,28 @@ Libraries/Source/WWVegas/WW3D2/dx8webbrowser.cpp,timeout,0,0,0,
 GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
 GameEngine/Source/GameNetwork/GameSpy/Thread/PersistentStorageThread.cpp,missing-header,0,0,0,GameSpy/gstats/gpersist.h
 Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,missing-header,0,0,0,d3d8types.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/SinglePlayerMenu.cpp,ok,0,0,7,
+GameEngine/Source/GameNetwork/GameSpy/Thread/PingThread.cpp,compile-error,0,0,0,"C3861 'MAKEWORD': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/dynamesh.cpp,ok,0,14,76,
+Libraries/Source/WWVegas/WW3D2/font3d.cpp,ok,0,3,13,
+GameEngine/Source/GameNetwork/GameSpy/Thread/ThreadUtils.cpp,ok,0,0,2,
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/SkirmishGameOptionsMenu.cpp,ok,0,19,114,
+Libraries/Source/WWVegas/WW3D2/formconv.cpp,compile-error,0,0,0,"C3861 'D3DFMT_R8G8B8': identifier not found, even with argument-dependent lookup"
+GameEngine/Source/GameNetwork/GameSpyChat.cpp,missing-header,0,0,0,GameNetwork/GameSpy.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/SkirmishMapSelectMenu.cpp,ok,0,0,11,
+Libraries/Source/WWVegas/WW3D2/hrawanim.cpp,ok,0,10,26,
+Libraries/Source/WWVegas/WW3D2/htreemgr.cpp,ok,0,1,22,
+GameEngine/Source/GameNetwork/GameSpyGP.cpp,missing-header,0,0,0,GameNetwork/GameSpy.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+Libraries/Source/WWVegas/WW3D2/intersec.cpp,ok,0,9,20,
+GameEngine/Source/GameNetwork/GameSpyGameInfo.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+Libraries/Source/WWVegas/WW3D2/layer.cpp,ok,0,6,8,
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLCustomScoreScreen.cpp,ok,0,0,6,
+Libraries/Source/WWVegas/WW3D2/matpass.cpp,ok,0,2,7,
+GameEngine/Source/GameNetwork/GameSpyOverlay.cpp,missing-header,0,0,0,GameSpy/GP/GP.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLGameSetupMenu.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+Libraries/Source/WWVegas/WW3D2/matrixmapper.cpp,compile-error,0,0,0,C2065 'D3DTS_TEXTURE0' : undeclared identifier
+GameEngine/Source/GameNetwork/IPEnumeration.cpp,compile-error,0,0,0,C2065 'HOSTENT' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/meshbuild.cpp,ok,0,14,53,
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLadderScreen.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h
+Libraries/Source/WWVegas/WW3D2/meshdam.cpp,ok,0,0,0,

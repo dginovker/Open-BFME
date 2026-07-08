@@ -92,6 +92,20 @@ typedef int (__stdcall *FARPROC)();
 #define MAX_PATH 260
 #define LOWORD(l) ((WORD)((DWORD)(l) & 0xFFFF))
 #define HIWORD(l) ((WORD)((DWORD)(l) >> 16))
+#define MAKEWORD(a,b) ((WORD)(((BYTE)((a) & 0xFF)) | ((WORD)((BYTE)((b) & 0xFF))) << 8))
+#define LOBYTE(w) ((BYTE)((w) & 0xFF))
+#define HIBYTE(w) ((BYTE)(((w) >> 8) & 0xFF))
+
+typedef LONG HRESULT;
+#define S_OK ((HRESULT)0)
+#define S_FALSE ((HRESULT)1)
+#define E_FAIL ((HRESULT)0x80004005)
+#define E_INVALIDARG ((HRESULT)0x80070057)
+#define E_OUTOFMEMORY ((HRESULT)0x8007000E)
+#define E_UNEXPECTED ((HRESULT)0x8000FFFF)
+
+struct _EXCEPTION_POINTERS; // fwd-declare for Minidump handlers / crash reporters
+typedef struct _ITEMIDLIST { BYTE abID[1]; } ITEMIDLIST, *LPITEMIDLIST;
 #define LOCALE_SYSTEM_DEFAULT 0x0800
 #define DATE_SHORTDATE 0x00000001
 #define DATE_LONGDATE 0x00000002
@@ -252,6 +266,12 @@ struct _EXCEPTION_POINTERS;
 
 extern "C" {
 __declspec(dllimport) int WINAPIV wsprintfA(LPSTR, LPCSTR, ...);
+__declspec(dllimport) int WINAPI lstrcmpA(LPCSTR, LPCSTR);
+__declspec(dllimport) int WINAPI lstrcmpW(LPCWSTR, LPCWSTR);
+__declspec(dllimport) int WINAPI lstrcmpiA(LPCSTR, LPCSTR);
+__declspec(dllimport) int WINAPI lstrcmpiW(LPCWSTR, LPCWSTR);
+#define lstrcmp lstrcmpA
+#define lstrcmpi lstrcmpiA
 __declspec(dllimport) int WINAPI MessageBoxA(HWND, LPCSTR, LPCSTR, UINT);
 __declspec(dllimport) int WINAPI MessageBoxW(HWND, LPCWSTR, LPCWSTR, UINT);
 __declspec(dllimport) BOOL WINAPI SetWindowPos(HWND, HWND, int, int, int, int, UINT);

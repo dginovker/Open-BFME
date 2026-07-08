@@ -898,3 +898,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?isPlayerVotedOut@DisconnectManager@@IAE_NHPAVConnectionManager@@@Z,0x0001ECE0
 ?getColor@MultiplayerSettings@@QAEPAVMultiplayerColorDefinition@@H@Z,0x00021EC2
 ?isSlotLocalAlly@@YA_NPBVGameSlot@@@Z,0x0061ED20
+??0Cftp@@QAE@XZ,0x00885AD0

@@ -399,3 +399,12 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ??1?$_Rb_tree@VUnicodeString@@U?$pair@$$CBVUnicodeString@@_N@_STL@@U?$_Select1st@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@UUnicodeStringLessThan@@V?$allocator@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@@_STL@@QAE@XZ,0x0003BD2C
 ?_M_erase@?$_Rb_tree@VUnicodeString@@U?$pair@$$CBVUnicodeString@@_N@_STL@@U?$_Select1st@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@UUnicodeStringLessThan@@V?$allocator@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBVUnicodeString@@_N@_STL@@@2@@Z,0x00008B34
 ?doFxAtBones@FXListAtBonePosFXNugget@@IBEXPBVObject@@H@Z,0x00010CC6
+?processContextSensitiveButtonClick@ControlBar@@QAE?AW4CBCommandStatus@@PAVGameWindow@@W4GadgetGameMessage@@@Z,0x00046F88
+?detach@NetCommandMsg@@QAEXXZ,0x009EB7A0
+?winNextTab@GameWindow@@QAEHXZ,0x0000D297
+?winPrevTab@GameWindow@@QAEHXZ,0x00010550
+??0OptionPreferences@@QAE@XZ,0x0003713C
+??1OptionPreferences@@UAE@XZ,0x00001307
+?GadgetRadioSetSelection@@YAXPAVGameWindow@@_N@Z,0x00034536
+?getCampaignDifficulty@OptionPreferences@@QAEHXZ,0x00032B5A
+?winGetStyle@GameWindow@@QAEIXZ,0x00008B52

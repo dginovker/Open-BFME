@@ -2930,3 +2930,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?setTimeOfDay@W3DShadowManager@@QAEXW4TimeOfDay@@@Z,,0x007B7B70,198,src/zh/w3dshadow.cpp,matched,
 ?parseScreenRect@@YA_NPAD0PAH111@Z,,0x004854F0,453,src/zh/gamewindowmanagerscript.cpp,matched,
 ?calcRandomForce@@YAXMMMMAAUCoord3D@@@Z,,0x00207F20,312,src/zh/slowdeathbehavior.cpp,matched,
+?pickBridge@Bridge@@QAE_NABVVector3@@0PAV2@@Z,,0x001A73D0,265,src/zh/terrainlogic.cpp,matched,

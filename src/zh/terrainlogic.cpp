@@ -1,4 +1,4 @@
-// cl: /DNDEBUG /DWIN32 /MD /EHsc /Ireference/shims/sweep /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWLib /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2 /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWMath /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWDebug /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWSaveLoad /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Main
+// cl: /DNDEBUG /DWIN32 /MD /EHsc /Isrc /Ireference/shims/sweep /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWLib /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngineDevice/Include /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2 /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWMath /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWDebug /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWSaveLoad /Ireference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Main
 // stlport
 #define Matrix4x4 Matrix4  // BFME renamed it
 /*
@@ -854,8 +854,8 @@ Bool Bridge::isCellEntryPoint(const Region2D *cell)
 //-------------------------------------------------------------------------------------------------
 /** pickBridge - see if point is on bridge. */
 //-------------------------------------------------------------------------------------------------
-// ?pickBridge@Bridge@@QAEPAVDrawable@@ABVVector3@@0PAV3@@Z present-unmatched
-Drawable *Bridge::pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos)
+// ?pickBridge@Bridge@@QAE_NABVVector3@@0PAV3@@Z
+Bool Bridge::pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos)
 {
 
 	Vector3 left1(m_bridgeInfo.fromLeft.x, m_bridgeInfo.fromLeft.y, m_bridgeInfo.fromLeft.z);
@@ -876,12 +876,9 @@ Drawable *Bridge::pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *po
 	if (isPointOnBridge(&loc)) {
 		*pos = intersectPos;
 		//DEBUG_LOG(("Picked bridge %.2f, %.2f, %.2f\n", intersectPos.X, intersectPos.Y, intersectPos.Z));
-		Object *bridge = TheGameLogic->findObjectByID(m_bridgeInfo.bridgeObjectID);
-		if (bridge) {
-			return bridge->getDrawable();
-		}
+		return TRUE;
 	}
-	return NULL;
+	return FALSE;
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -2012,16 +2009,16 @@ void TerrainLogic::getBridgeAttackPoints(const Object *bridge, TBridgeAttackInfo
 //-------------------------------------------------------------------------------------------------
 /** Picks a bridge, and returns it's drawable. */
 //-------------------------------------------------------------------------------------------------
-// ?pickBridge@TerrainLogic@@UAEPAVDrawable@@ABVVector3@@0PAV3@@Z present-unmatched
-Drawable *TerrainLogic::pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos)
+// ?pickBridge@TerrainLogic@@UAE_NABVVector3@@0PAV3@@Z
+Bool TerrainLogic::pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos)
 {
-	Drawable *curDraw = NULL;
+	Bool curDraw = FALSE;
 	Vector3 curPos(0,0,0);
 
 	Bridge *pBridge = getFirstBridge();
 	while (pBridge) {
 		Vector3 thisPos;
-		Drawable *thisDraw = pBridge->pickBridge(from, to , &thisPos);
+		Bool thisDraw = pBridge->pickBridge(from, to , &thisPos);
 		if (!curDraw) {
 			curDraw = thisDraw;
 			curPos = thisPos;

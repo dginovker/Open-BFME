@@ -368,3 +368,5 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?Set@Matrix3D@@QAEXABVMatrix3x3@@ABVVector3@@@Z,0x00964150
 ?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVOBBoxClass@@PAUCastResultStruct@@@Z,0x008DAD70
 ?Collide@CollisionMath@@SA_NABVOBBoxClass@@ABVVector3@@ABVTriClass@@1PAUCastResultStruct@@@Z,0x008E7180
+?Get_Name@MeshGeometryClass@@QBEPBDXZ,0x00924C30
+?Remove_Polygon_Renderer@DX8TextureCategoryClass@@QAEXPAVDX8PolygonRendererClass@@@Z,0x00947D30

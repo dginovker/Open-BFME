@@ -91,7 +91,6 @@ const Int PIXELS_PER_GRID = 8; // default tex resolution allocated for each tile
 //=============================================================================
 /** Loads the terrain into the vertex buffer for drawing. */
 //=============================================================================
-// ?setFlip@W3DTerrainBackground@@QAEXPAVWorldHeightMap@@@Z present-unmatched
 void W3DTerrainBackground::setFlip(WorldHeightMap *htMap)
 {
 	if (m_map==NULL) return;
@@ -116,7 +115,6 @@ const Int STEP=4;
 The coordinates in partialRange are map cell coordinates, relative to the entire map.
 The vertex coordinates and texture coordinates, as well as static lighting are updated.
 */
-// ?doPartialUpdate@W3DTerrainBackground@@QAEXABUIRegion2D@@PAVWorldHeightMap@@_N@Z present-unmatched
 void W3DTerrainBackground::doPartialUpdate(const IRegion2D &partialRange, WorldHeightMap *htMap, Bool doTextures )
 {	
 	if (m_map==NULL) return;
@@ -242,7 +240,6 @@ void W3DTerrainBackground::doPartialUpdate(const IRegion2D &partialRange, WorldH
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
-// ?advanceLeft@W3DTerrainBackground@@IAE_NAAUICoord2D@@HHH@Z present-unmatched
 Bool W3DTerrainBackground::advanceLeft(ICoord2D &left, Int xOffset, Int yOffset, Int width)
 {
 	while (left.y < yOffset+width) {
@@ -265,7 +262,6 @@ Bool W3DTerrainBackground::advanceLeft(ICoord2D &left, Int xOffset, Int yOffset,
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
-// ?advanceRight@W3DTerrainBackground@@IAE_NAAUICoord2D@@HHH@Z present-unmatched
 Bool W3DTerrainBackground::advanceRight(ICoord2D &right, Int xOffset, Int yOffset, Int width)
 {
 	while (right.x < xOffset+width) {
@@ -288,7 +284,6 @@ Bool W3DTerrainBackground::advanceRight(ICoord2D &right, Int xOffset, Int yOffse
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
-// ?fillVBRecursive@W3DTerrainBackground@@IAEXPAGHHH0AAH@Z present-unmatched
 void W3DTerrainBackground::fillVBRecursive(UnsignedShort *ib, Int xOffset, Int yOffset, 
 																					 Int width, UnsignedShort *ndx, Int &curIndex)
 {
@@ -426,7 +421,6 @@ void W3DTerrainBackground::fillVBRecursive(UnsignedShort *ib, Int xOffset, Int y
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
-// ?setFlipRecursive@W3DTerrainBackground@@IAEXHHH@Z present-unmatched
 void W3DTerrainBackground::setFlipRecursive(Int xOffset, Int yOffset, Int width)
 {
 	
@@ -478,7 +472,6 @@ void W3DTerrainBackground::setFlipRecursive(Int xOffset, Int yOffset, Int width)
 The coordinates in partialRange are map cell coordinates, relative to the entire map.
 The vertex coordinates and texture coordinates, as well as static lighting are updated.
 */
-// ?doTesselatedUpdate@W3DTerrainBackground@@QAEXABUIRegion2D@@PAVWorldHeightMap@@_N@Z present-unmatched
 void W3DTerrainBackground::doTesselatedUpdate(const IRegion2D &partialRange, WorldHeightMap *htMap, Bool doTextures )
 {	
 	if (m_map==NULL) return;
@@ -612,7 +605,6 @@ void W3DTerrainBackground::doTesselatedUpdate(const IRegion2D &partialRange, Wor
 //=============================================================================
 /** Destructor. Releases w3d assets. */
 //=============================================================================
-// ??1W3DTerrainBackground@@QAE@XZ present-unmatched
 W3DTerrainBackground::~W3DTerrainBackground(void)
 {
 	freeTerrainBuffers();
@@ -627,7 +619,6 @@ W3DTerrainBackground::~W3DTerrainBackground(void)
 /** Constructor. Sets m_initialized to true if it finds the w3d models it needs
 for the bibs. */
 //=============================================================================
-// ??0W3DTerrainBackground@@QAE@XZ present-unmatched
 W3DTerrainBackground::W3DTerrainBackground(void):
 m_vertexTerrain(NULL),
 m_vertexTerrainSize(0),
@@ -647,7 +638,6 @@ m_texMultiplier(TEX1X)
 //=============================================================================
 /** Frees the index and vertex buffers. */
 //=============================================================================
-// ?freeTerrainBuffers@W3DTerrainBackground@@IAEXXZ present-unmatched
 void W3DTerrainBackground::freeTerrainBuffers(void)
 {
 	REF_PTR_RELEASE(m_vertexTerrain);
@@ -664,7 +654,6 @@ void W3DTerrainBackground::freeTerrainBuffers(void)
 //=============================================================================
 /** Allocates the index and vertex buffers. */
 //=============================================================================
-// ?allocateTerrainBuffers@W3DTerrainBackground@@QAEXPAVWorldHeightMap@@HHH@Z present-unmatched
 void W3DTerrainBackground::allocateTerrainBuffers(WorldHeightMap *htMap, Int xOrigin, Int yOrigin, Int width)
 {
 	if (htMap==NULL) return;
@@ -684,7 +673,6 @@ void W3DTerrainBackground::allocateTerrainBuffers(WorldHeightMap *htMap, Int xOr
 //=============================================================================
 /** Updates the culling status. */
 //=============================================================================
-// ?updateCenter@W3DTerrainBackground@@QAEXPAVCameraClass@@@Z present-unmatched
 void W3DTerrainBackground::updateCenter(CameraClass *camera)
 {
 	if (camera->Cull_Box(m_bounds)) {
@@ -741,7 +729,6 @@ void W3DTerrainBackground::updateCenter(CameraClass *camera)
 //=============================================================================
 /** Updates the culling status. */
 //=============================================================================
-// ?updateTexture@W3DTerrainBackground@@QAEXXZ present-unmatched
 void W3DTerrainBackground::updateTexture(void)
 {
 	if (m_cullStatus==CULL_STATUS_INVISIBLE) {
@@ -775,7 +762,6 @@ void W3DTerrainBackground::updateTexture(void)
 // W3DTerrainBackground::renderTerrain
 //=============================================================================
 //=============================================================================
-// ?drawVisiblePolys@W3DTerrainBackground@@QAEXAAVRenderInfoClass@@_N@Z present-unmatched
 void W3DTerrainBackground::drawVisiblePolys(RenderInfoClass & rinfo, Bool disableTextures)
 {
 #if 1

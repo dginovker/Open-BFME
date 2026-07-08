@@ -1172,3 +1172,5 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?getControllingPlayer@Object@@QBEPAVPlayer@@XZ,0x00020824
 ?giveUpgrade@Object@@QAEXPBVUpgradeTemplate@@@Z,0x0001A97E
 ??0DockUpdateModuleData@@QAE@XZ,0x0002C54D
+?initializeBonePositions@SpawnPointProductionExitUpdate@@AAEXXZ,0x0003B566
+?revalidateOccupiers@SpawnPointProductionExitUpdate@@AAEXXZ,0x0002374A

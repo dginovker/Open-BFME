@@ -3097,3 +3097,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?isValidINIFilename@INI@@KA_NPBD@Z,,0x008507C0,77,src/zh/ini.cpp,matched,
 ?findFieldParse@@YAP6AXPAVINI@@PAX1PBX@ZPBUFieldParse@@PBDAAHAAPBX@Z,,0x00850880,128,src/zh/ini.cpp,matched,
 ?isEndOfBlock@INI@@SA_NPAD@Z,,0x00850BA0,224,src/zh/ini.cpp,matched,
+??0ShellMenuSchemeLine@@QAE@XZ,,0x00580400,30,src/zh/shellmenuscheme.cpp,matched,
+?init@HotKeyManager@@UAEXXZ,,0x005B38D0,52,src/zh/hotkey.cpp,matched,
+?getTowerID@BridgeBehavior@@UAE?AW4ObjectID@@W4BridgeTowerType@@@Z,,0x001F1FB0,25,src/zh/bridgebehavior.cpp,matched,

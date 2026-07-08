@@ -24,6 +24,22 @@ python3 tools/land_zh.py Dict MessageStream GameAudio                    # land 
   definition with the `present-unmatched` convention (`tools/zh_annotate.py`) so the pre-commit
   gate passes without pretending they're matched.
 
+## Landing is not matching (claims gates)
+
+Progress is **matched rows in reverse/functions.csv** — byte-verified on every build —
+and nothing else. `present-unmatched` definitions are unclaimed reference text: invisible
+to stats, never patched, never verified. Enforced mechanically, not by convention:
+
+- a src `.cpp` owning ZERO matched rows fails both the pre-commit checker and the build's
+  `Source claims` gate (explicit parked exceptions with reasons:
+  `reverse/unclaimed_sources_whitelist.txt`; stale entries also fail);
+- a marker on a symbol matched **from the same file** fails (stale annotation);
+- `land_zh.py` refuses files where locate finds nothing.
+
+Audit any session's real output before believing a "done" claim:
+`python3 tools/progress.py <ref>` — verified functions/bytes delta + marker delta.
+Anything claimed beyond those numbers is unverified prose.
+
 ## Growing the shims (when the sweep reports blockers)
 
 The sweep summary histograms blockers. Fix the top one, delete its rows from the report

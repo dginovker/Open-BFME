@@ -1,6 +1,7 @@
 # How to Contribute
 
 * First read `docs/matching.md` — the core workflow (C++ in `src/`, row in `reverse/functions.csv`, `./build.sh` byte-verifies; nothing lands without passing it)
+* Progress = matched functions.csv rows, nothing else. Report your session's results with `python3 tools/progress.py <start-ref>` output — landing files of `present-unmatched` markers is not work, and the gates reject sources with zero matched rows
 * Highest yield: the ZH sweep pipeline (`docs/zh_sweep.md`) — batch-port Zero Hour reference sources that still match BFME verbatim
 * Start easy - Find a small function you can generate the C++ code for, or translate __asm to C++
 * If confident, go harder - Check docs/ for more ambitious things to do

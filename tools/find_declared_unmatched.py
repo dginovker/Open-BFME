@@ -11,6 +11,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SRC_DIR = ROOT / "src"
 FUNCTIONS_CSV = ROOT / "reverse" / "functions.csv"
+CLAIMS_WHITELIST = ROOT / "reverse" / "unclaimed_sources_whitelist.txt"
+
+# `// <label> present-unmatched` / `// <label> absent-from-retail` definition markers
+UNMATCHED_MARKER_RE = re.compile(
+    r"^\s*//\s*(\S+)\s+(present-unmatched|absent-from-retail)\b", re.MULTILINE
+)
+
+
+def load_claims_whitelist():
+    if not CLAIMS_WHITELIST.exists():
+        return set()
+    return {
+        line.strip()
+        for line in CLAIMS_WHITELIST.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    }
 
 # MSVC operator mangling codes for common operators.
 OPERATOR_CODES = {
@@ -52,11 +68,15 @@ def read_function_names(path: Path, staged: bool):
         text = path.read_text(encoding="utf-8")
     declared = set()
     matched = set()
+    matched_by_source = {}
+    matched_sources = {}
     for row in csv.DictReader(text.splitlines()):
         declared.add(row["name"])
         if row["status"] == "matched":
             matched.add(row["name"])
-    return declared, matched
+            matched_by_source[row["source"]] = matched_by_source.get(row["source"], 0) + 1
+            matched_sources.setdefault(row["name"], set()).add(row["source"])
+    return declared, matched, matched_by_source, matched_sources
 
 
 def mangle_method(class_name: str, method_name: str) -> str:
@@ -151,9 +171,11 @@ def main():
     parser.add_argument("--staged", action="store_true", help="read paths from the git index")
     args = parser.parse_args()
 
-    declared, matched = read_function_names(FUNCTIONS_CSV, args.staged)
+    declared, matched, matched_by_source, matched_sources = read_function_names(FUNCTIONS_CSV, args.staged)
+    whitelist = load_claims_whitelist()
 
     unmatched = []
+    violations = []
     source_paths = [ROOT / path for path in args.paths] if args.paths else sorted(SRC_DIR.rglob("*.cpp"))
     for source_path in source_paths:
         if source_path.suffix != ".cpp":
@@ -165,6 +187,32 @@ def main():
                 continue
         else:
             text = source_path.read_text(encoding="utf-8")
+
+        # Claims gate: a source file with ZERO byte-verified rows is not progress —
+        # a wall of present-unmatched markers must not be committable as if it were.
+        marker_labels = UNMATCHED_MARKER_RE.findall(text)
+        file_matched = matched_by_source.get(rel_path.as_posix(), 0)
+        if file_matched == 0 and rel_path.as_posix() not in whitelist:
+            violations.append(
+                f"{rel_path}: ZERO matched functions.csv rows — match at least one "
+                f"function before committing this file, or whitelist it with a reason "
+                f"(reverse/unclaimed_sources_whitelist.txt)"
+            )
+        for label, marker in marker_labels:
+            # matched from ANOTHER file is correct bookkeeping (asm-whale scaffolds
+            # claim symbols the verbatim ZH copy also defines); matched from THIS
+            # file means the marker is stale
+            if rel_path.as_posix() in matched_sources.get(label, ()):
+                violations.append(
+                    f"{rel_path}: {label} is matched in functions.csv from this file but "
+                    f"still marked {marker} (stale annotation — remove the marker)"
+                )
+        if args.paths and marker_labels:
+            print(
+                f"note: {rel_path}: {file_matched} matched row(s), "
+                f"{len(marker_labels)} unclaimed definition(s)"
+            )
+
         for class_name, method_name, symbol_name in find_defined_functions(text):
             if symbol_name:
                 # `// ?<mangled> absent-from-retail` marks a definition kept only to
@@ -193,7 +241,10 @@ def main():
                     continue
             unmatched.append((rel_path, class_name, method_name))
 
-    if not unmatched:
+    if violations:
+        for violation in violations:
+            print(violation)
+    if not unmatched and not violations:
         print("All defined functions are already matched.")
         return
 

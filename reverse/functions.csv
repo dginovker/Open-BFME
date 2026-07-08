@@ -3093,3 +3093,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ??0ResizerWindow@@QAE@XZ,,0x004AAED0,31,src/zh/controlbarresizer.cpp,matched,
 ?unloadAll@RailedTransportDockUpdate@@UAEXXZ,,0x002CE7C0,26,src/zh/railedtransportdockupdate.cpp,matched,
 ?notifyShroudChanged@W3DPropBuffer@@QAEXXZ,,0x007024E0,50,src/zh/w3dpropbuffer.cpp,matched,
+?BlitBackward@?$BlitPlain@E@@UBEXPAXPBXH@Z,,0x0006B150,27,src/zh/xsurface.cpp,matched,

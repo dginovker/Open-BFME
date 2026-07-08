@@ -90,9 +90,13 @@ typedef int (__stdcall *FARPROC)();
 #define FALSE 0
 #endif
 #define MAX_PATH 260
+#define MAX_COMPUTERNAME_LENGTH 31
 #define LOWORD(l) ((WORD)((DWORD)(l) & 0xFFFF))
 #define HIWORD(l) ((WORD)((DWORD)(l) >> 16))
+#ifndef MAKEWORD
 #define MAKEWORD(a,b) ((WORD)(((BYTE)((a) & 0xFF)) | ((WORD)((BYTE)((b) & 0xFF))) << 8))
+#endif
+#define UNLEN 256
 #define LOBYTE(w) ((BYTE)((w) & 0xFF))
 #define HIBYTE(w) ((BYTE)(((w) >> 8) & 0xFF))
 

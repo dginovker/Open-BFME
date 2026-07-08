@@ -35,6 +35,7 @@ struct hostent {
     char **h_addr_list;
 #define h_addr h_addr_list[0]
 };
+typedef struct hostent HOSTENT, *PHOSTENT;
 
 struct WSADATA {
     WORD wVersion;

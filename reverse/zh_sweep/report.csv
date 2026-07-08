@@ -1191,3 +1191,71 @@ Libraries/Source/WWVegas/WW3D2/shattersystem.cpp,ok,0,52,74,
 GameEngine/Source/GameClient/GUI/GUICallbacks/MessageBox.cpp,ok,0,0,10,
 Libraries/Source/WWVegas/WW3D2/snappts.cpp,ok,0,2,2,
 GameEngine/Source/GameNetwork/User.cpp,ok,0,1,8,
+GameEngine/Source/GameClient/GUI/GUICallbacks/ReplayControls.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WW3D2/sortingrenderer.cpp,compile-error,0,0,0,"C3861 'D3DXMATRIX': identifier not found, even with argument-dependent lookup"
+GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h
+Libraries/Source/WWVegas/WW3D2/soundrobj.cpp,ok,0,0,0,
+GameEngine/Source/GameClient/GUI/Gadget/GadgetCheckBox.cpp,ok,0,0,5,
+GameEngine/Source/GameNetwork/udp.cpp,ok,10,0,2,
+Libraries/Source/WWVegas/WW3D2/sphereobj.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&'
+Libraries/Source/WWVegas/WW3D2/sr_util.cpp,missing-header,0,0,0,srVector3i.hpp
+GameEngine/Source/GameClient/GUI/Gadget/GadgetHorizontalSlider.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WW3D2/streak.cpp,ok,0,51,51,
+GameEngine/Source/GameClient/GUI/Gadget/GadgetProgressBar.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WW3D2/stripoptimizer.cpp,ok,0,2,23,
+GameEngine/Source/GameClient/GUI/Gadget/GadgetTextEntry.cpp,ok,0,0,4,
+Libraries/Source/WWVegas/WW3D2/surfaceclass.cpp,compile-error,0,0,0,C2039 'ZeroMemory' : is not a member of 'operator``global namespace'''
+Libraries/Source/WWVegas/WW3D2/texfcach.cpp,ok,0,0,0,
+GameEngine/Source/GameClient/GUI/Gadget/GadgetVerticalSlider.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WW3D2/texproject.cpp,ok,0,11,27,
+GameEngine/Source/GameClient/GUI/GameWindowTransitions.cpp,ok,0,3,57,
+Libraries/Source/WWVegas/WW3D2/textdraw.cpp,compile-error,0,0,0,C2660 'Font3DInstanceClass::Peek_Texture' : function does not take 1 arguments
+GameEngine/Source/GameClient/GUI/IMEManager.cpp,compile-error,0,0,0,"C3861 'm_context': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/texture.cpp,compile-error,0,0,0,C2664 'TextureBaseClass::Poke_Texture' : cannot convert parameter 1 from 'IDirect3DVolumeTexture
+Libraries/Source/WWVegas/WW3D2/texturefile.cpp,ok,0,0,0,
+GameEngine/Source/GameClient/GUI/LoadScreen.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+Libraries/Source/WWVegas/WW3D2/texturefilter.cpp,compile-error,0,0,0,C2065 'D3DPTFILTERCAPS_MINFANISOTROPIC' : undeclared identifier
+GameEngine/Source/GameClient/GUI/Shell/Shell.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+Libraries/Source/WWVegas/WW3D2/textureloader.cpp,compile-error,0,0,0,C2059 syntax error : ')'
+GameEngine/Source/GameClient/GUI/WindowLayout.cpp,ok,0,1,17,
+Libraries/Source/WWVegas/WW3D2/texturethumbnail.cpp,ok,0,21,41,
+Libraries/Source/WWVegas/WW3D2/txt.cpp,compile-error,0,0,0,C2668 'sqrt' : ambiguous call to overloaded function
+GameEngine/Source/GameClient/GUI/WindowVideoManager.cpp,ok,0,10,34,
+Libraries/Source/WWVegas/WW3D2/txt2d.cpp,ok,0,0,0,
+GameEngine/Source/GameClient/GameClient.cpp,ok,0,31,78,
+Libraries/Source/WWVegas/WW3D2/vertmaterial.cpp,compile-error,0,0,0,C2065 'D3DMCS_COLOR2' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/w3d_dep.cpp,compile-error,0,0,0,"C2084 function 'void operator delete[](void *,void *) throw()' already has a body"
+GameEngine/Source/GameClient/GameClientDispatch.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WW3D2/w3dexclusionlist.cpp,ok,0,1,17,
+GameEngine/Source/GameClient/GameText.cpp,compile-error,0,0,0,C2039 'SetWindowText' : is not a member of 'operator``global namespace'''
+Libraries/Source/WWVegas/WW3D2/ww3d.cpp,missing-header,0,0,0,d3d8types.h
+GameEngine/Source/GameClient/GlobalLanguage.cpp,ok,0,2,29,
+Libraries/Source/WWVegas/WW3D2/ww3dformat.cpp,ok,0,1,11,
+Libraries/Source/WWVegas/WWAudio/AudibleSound.cpp,missing-header,0,0,0,audiblesound.h
+GameEngine/Source/GameClient/GraphDraw.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWAudio/AudioSaveLoad.cpp,missing-header,0,0,0,audiosaveload.h
+Libraries/Source/WWVegas/WWAudio/FilteredSound.cpp,missing-header,0,0,0,filteredsound.h
+GameEngine/Source/GameClient/Input/Keyboard.cpp,ok,0,1,9,
+Libraries/Source/WWVegas/WWAudio/Listener.cpp,missing-header,0,0,0,listener.h
+Libraries/Source/WWVegas/WWAudio/LogicalListener.cpp,missing-header,0,0,0,LogicalListener.H
+Libraries/Source/WWVegas/WWAudio/LogicalSound.cpp,missing-header,0,0,0,LogicalSound.H
+GameEngine/Source/GameClient/Input/Mouse.cpp,ok,0,3,30,
+Libraries/Source/WWVegas/WWAudio/Sound3D.cpp,missing-header,0,0,0,sound3d.h
+Libraries/Source/WWVegas/WWAudio/SoundBuffer.cpp,missing-header,0,0,0,soundbuffer.h
+GameEngine/Source/GameClient/Line2D.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWAudio/SoundPseudo3D.cpp,missing-header,0,0,0,soundpseudo3d.h
+Libraries/Source/WWVegas/WWAudio/SoundScene.cpp,missing-header,0,0,0,soundscene.h
+Libraries/Source/WWVegas/WWAudio/SoundSceneObj.cpp,missing-header,0,0,0,SoundSceneObj.h
+GameEngine/Source/GameClient/MapUtil.cpp,ok,5,50,186,
+Libraries/Source/WWVegas/WWAudio/Threads.cpp,missing-header,0,0,0,Threads.h
+Libraries/Source/WWVegas/WWAudio/Utils.cpp,missing-header,0,0,0,Utils.H
+Libraries/Source/WWVegas/WWAudio/WWAudio.cpp,missing-header,0,0,0,WWAudio.H
+Libraries/Source/WWVegas/WWAudio/listenerhandle.cpp,missing-header,0,0,0,listenerhandle.h
+GameEngine/Source/GameClient/MessageStream/CommandXlat.cpp,missing-header,0,0,0,GameSpy/GP/GP.h
+Libraries/Source/WWVegas/WWAudio/sound2dhandle.cpp,missing-header,0,0,0,sound2dhandle.h
+Libraries/Source/WWVegas/WWAudio/sound3dhandle.cpp,missing-header,0,0,0,sound3dhandle.h
+GameEngine/Source/GameClient/MessageStream/GUICommandTranslator.cpp,ok,0,2,7,
+Libraries/Source/WWVegas/WWAudio/soundhandle.cpp,missing-header,0,0,0,soundhandle.h
+Libraries/Source/WWVegas/WWAudio/soundstreamhandle.cpp,missing-header,0,0,0,soundstreamhandle.h
+Libraries/Source/WWVegas/WWDebug/wwdebug.cpp,ok,0,0,4,
+GameEngine/Source/GameClient/MessageStream/HintSpy.cpp,ok,0,0,1,

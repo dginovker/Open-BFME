@@ -88,7 +88,7 @@ anchors, not behavior changes.
 | wrapper payload-list find/create | RVA `0x0065AEB0` | byte-matched as `BFMENetwork::findList90`; wrapper slot `+0x24` searches or materializes an entry in list at `+0x90` | matched |
 | wrapper state-copy helpers | RVAs `0x00655060`, `0x00655090`, `0x006550C0` | byte-matched as `BFMENetwork::copyState6C`, `copyState78`, `copyState84`; callback uses these to copy wrapper fields `+0x6C`, `+0x78`, `+0x84` | matched |
 | backend event dispatcher | RVA `0x0065CA50` | backend vtable slot `+0x08`; switch/jump table at VA `0x00A5D6FC` | boundary suspect |
-| registered callback | RVA `0x0065C260` | pushed as callback VA `0x00A5C260` by dispatcher before call to `0x009D5330` | Ghidra start missing |
+| registered callback | RVA `0x0065C260` | byte-matched as `BFMENetworkRegisteredCallback`; dispatcher pushes callback VA `0x00A5C260` before call to `0x009D5330`; callback calls wrapper slots `+0x18` and `+0x10` | matched |
 
 Known wrapper slots from vtable VA `0x01119C8C`:
 
@@ -110,13 +110,11 @@ queue/list structures at `+0x14` and `+0x3C`; object/array regions at `+0x6C`,
 `+0x78`, and `+0x84`; backend pointer at `+0x64`; and a current/session-ish
 field at `+0x68`.
 
-The dispatcher at `0x0065CA50` should be treated as one of the next primary
+The dispatcher at `0x0065CA50` should be treated as the next primary
 targets. It references packet/event cases `0..0x0B`, calls wrapper slot `+0x14`,
 reads and writes `TheNetwork+0x68`, and jumps through table VA `0x00A5D6FC`.
 Ghidra currently reports a short function boundary even though control flow
-continues to `0x0065D69E`, so its boundary is suspect. The callback at
-`0x0065C260` also needs a manual function start; it calls wrapper slots `+0x18`
-and `+0x10` and reads `TheNetwork+0x68`.
+continues to `0x0065D69E`, so its boundary is suspect.
 
 ## Landed evidence
 
@@ -147,6 +145,8 @@ and `+0x10` and reads `TheNetwork+0x68`.
   - `BFMENetwork::findList90` at `0x0065AEB0`.
   - `BFMENetwork::copyState6C`, `copyState78`, and `copyState84` at
     `0x00655060`, `0x00655090`, and `0x006550C0`.
+- `src/game/native_network_callback.cpp` contains `BFMENetworkRegisteredCallback`
+  at `0x0065C260`.
 - The current matched network rows are:
   - `ConnectionManager::processProgress` at `0x00662D20`.
   - `NetworkInterface::createNetwork` at `0x0065C1F0`.
@@ -162,8 +162,8 @@ and `+0x10` and reads `TheNetwork+0x68`.
 2. DONE: land the first byte-verified `ConnectionManager` and `Network` rows.
 3. DONE: prove that the needed path is BFME-native enough that ZH is a search
    map, not the source of truth.
-4. NEXT: recover the native dispatcher/callback boundaries and name the wrapper
-   slots/fields before attempting any patch design.
+4. NEXT: recover the native dispatcher boundary and name the remaining wrapper
+   fields before attempting any patch design.
 5. NEXT: trace the dispatcher cases that schedule, hold, or advance synchronized
    command frames and only then decide whether a delay constant or runtime field
    exists.

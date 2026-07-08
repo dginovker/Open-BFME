@@ -2702,3 +2702,4 @@ _BFMENetworkBackendEventCallback@40,,0x006549C0,375,src/game/native_network.cpp,
 ?copyState6C@BFMENetwork@@QAEPAXPAX@Z,,0x00655060,32,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x6c
 ?copyState78@BFMENetwork@@QAEPAXPAX@Z,,0x00655090,32,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x78
 ?copyState84@BFMENetwork@@QAEPAXPAX@Z,,0x006550C0,35,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x84
+_BFMENetworkRegisteredCallback,,0x0065C260,1617,src/game/native_network_callback.cpp,matched,native BFME registered callback body; dispatcher registers VA 0x00A5C260 before 0x009D5330 and callback pushes wrapper queues

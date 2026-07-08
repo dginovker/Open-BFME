@@ -2874,3 +2874,5 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?doRadarCreateEvent@ScriptActions@@IAEXPAUCoord3D@@H@Z,,0x002EEC70,29,src/zh/scriptactions.cpp,matched,
 ?doSkyBox@ScriptActions@@IAEX_N@Z,,0x002EF640,32,src/zh/scriptactions.cpp,matched,
 ?doRevealMapAtWaypointPermanent@ScriptActions@@IAEXABVAsciiString@@M00@Z,,0x002F0560,48,src/zh/scriptactions.cpp,matched,
+??$sum@H@rts@@YAHAAV?$vector@HV?$allocator@H@_STL@@@_STL@@@Z,,0x002F1380,29,src/zh/scriptconditions.cpp,matched,
+?evaluateTeamOutsideAreaEntirely@ScriptConditions@@IAE_NPAVParameter@@00@Z,,0x00324BD0,65,src/zh/scriptconditions.cpp,matched,

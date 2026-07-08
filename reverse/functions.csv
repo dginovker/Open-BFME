@@ -2887,3 +2887,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?parseTWS@@YAXPAVINI@@PAX1PBX@Z,,0x0018C380,77,src/zh/turretai.cpp,matched,
 ?parseTurretSweepSpeed@TurretAIData@@SAXPAVINI@@PAX1PBX@Z,,0x0018C420,48,src/zh/turretai.cpp,matched,
 ?Set_Index_Buffer_Index_Offset@DX8Wrapper@@SAXI@Z,,0x0072EAD0,32,src/zh/w3dterraintracks.cpp,matched,
+?internalTaskComplete@WorkerAIUpdate@@UAEXW4DozerTask@@@Z,,0x002C7FC0,59,src/zh/workeraiupdate.cpp,matched,
+?getMostRecentCommand@WorkerAIUpdate@@UAE?AW4DozerTask@@XZ,,0x002C8010,66,src/zh/workeraiupdate.cpp,matched,
+?getDockPoint@WorkerAIUpdate@@UAEPBUCoord3D@@W4DozerTask@@W4DozerDockPoint@@@Z,,0x002C8070,55,src/zh/workeraiupdate.cpp,matched,

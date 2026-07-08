@@ -1166,3 +1166,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?evaluateNamedInsideArea@ScriptConditions@@IAE_NPAVParameter@@0@Z,0x0000696F
 ?killThemKillThemAll@SelectionTranslator@@AAE_NPAVDrawable@@PAVGameMessage@@@Z,0x00019F5B
 ?ParseBlendTileData@WorldHeightMap@@IAE_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z,0x00040AAC
+??1?$SimpleDynVecClass@VVector3@@@@UAE@XZ,0x00887940

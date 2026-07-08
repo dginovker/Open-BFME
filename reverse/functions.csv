@@ -2860,3 +2860,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?worldToRadar@Radar@@QAE_NPBUCoord3D@@PAUICoord2D@@@Z,,0x00106D20,120,src/zh/radar.cpp,matched,
 ?reset@Radar@@UAEXXZ,,0x001077A0,28,src/zh/radar.cpp,matched,
 ?objectUnderRadarPixel@Radar@@QAEPAVObject@@PBUICoord2D@@@Z,,0x00107CF0,83,src/zh/radar.cpp,matched,
+??1SelectionTranslator@@UAE@XZ,,0x005B7BE0,73,src/zh/selectionxlat.cpp,matched,
+??_GSelectionTranslator@@UAEPAXI@Z,,0x005B7E70,30,src/zh/selectionxlat.cpp,matched,
+?selectFriendsWrapper@@YA_NPAVDrawable@@PAX@Z,,0x005B8490,33,src/zh/selectionxlat.cpp,matched,

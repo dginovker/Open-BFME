@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import concurrent.futures
 import csv
 import hashlib
 import json
@@ -433,16 +434,28 @@ def verify_functions(only=None):
     total = len(rows)
     symbol_map = load_symbol_map()
 
-    failures = 0
-    patches = []
-    source_outputs = {}
+    sources = []
+    seen = set()
     for row in rows:
         source = ROOT / row["source"]
-        if source not in source_outputs:
-            output = BUILD_DIR / (source.stem + ".obj")
-            compile_source(source, output)
-            source_outputs[source] = output
+        if source not in seen:
+            seen.add(source)
+            sources.append(source)
+    source_outputs = {s: BUILD_DIR / (s.stem + ".obj") for s in sources}
+    if len(set(source_outputs.values())) != len(source_outputs):
+        raise SystemExit("obj stem collision between sources; refusing parallel compile")
+    # wine cl.exe instances are independent processes; compile is the wall-clock
+    # hog (byte comparison below is pure reads), so parallelize only this phase
+    pool_size = min(8, os.cpu_count() or 1)
+    with concurrent.futures.ThreadPoolExecutor(pool_size) as pool:
+        futures = {pool.submit(compile_source, s, source_outputs[s]): s for s in sources}
+        for future in concurrent.futures.as_completed(futures):
+            future.result()
 
+    failures = 0
+    patches = []
+    for row in rows:
+        source = ROOT / row["source"]
         patch = compile_function(row, symbol_map, source_outputs[source])
         target = patch["target"]
         compiled = patch["bytes"]

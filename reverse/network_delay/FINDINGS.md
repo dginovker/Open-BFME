@@ -19,8 +19,8 @@ Zero Hour schedules synchronized network commands for a future logic frame:
 - `Network::processRunAheadCommand` applies those values and adjusts packet
   frame grouping.
 
-BFME may drift from ZH, so ZH is only the search map. The BFME binary remains the
-source of truth.
+BFME does not keep this command-message path verbatim. ZH remains useful as an
+intent map, but the BFME binary is the source of truth.
 
 ## ZH delay map
 
@@ -32,8 +32,8 @@ source of truth.
 | local commands | `ConnectionManager::sendLocalGameMessage` | TBD | not recovered |
 | command relay | `ConnectionManager::sendLocalCommand` | TBD | not recovered |
 | readiness gate | `ConnectionManager::allCommandsReady` | TBD | not recovered |
-| dynamic delay | `ConnectionManager::updateRunAhead` | TBD | not recovered |
-| apply delay | `Network::processRunAheadCommand` | TBD | not recovered |
+| dynamic delay | `ConnectionManager::updateRunAhead` | TBD | not recovered; ZH command path disproven for BFME |
+| apply delay | `Network::processRunAheadCommand` | TBD | not recovered; BFME has no run-ahead command type |
 | frame pacing | `Network::timeForNewFrame` | TBD | not recovered |
 
 These names are useful search targets, but the current evidence says the BFME
@@ -56,6 +56,39 @@ runtime path is not the ZH `Network`/`ConnectionManager` path verbatim:
 
 If the delay code is not in ZH, that is still actionable: use ZH for intent and
 recover BFME's native wrapper/backend path directly from the retail binary.
+
+## BFME command-type correction
+
+The old ZH run-ahead command trail is now ruled out for BFME retail. The BFME
+command-type string mapper at `0x00683020` names the relevant values as:
+
+| Value | BFME name |
+| --- | --- |
+| `3` | `NETCOMMANDTYPE_FRAMEINFO` |
+| `4` | `NETCOMMANDTYPE_GAMECOMMAND` |
+| `5` | `NETCOMMANDTYPE_REQUEST_GAMESPY_STATS_AUTHKEY` |
+| `6` | `NETCOMMANDTYPE_GAMESPY_STATS_AUTHKEY` |
+| `7` | `NETCOMMANDTYPE_REQUESTPLAYERLEAVE` |
+| `8` | `NETCOMMANDTYPE_INFORMPLAYERLEAVEFRAME` |
+| `9` | `NETCOMMANDTYPE_REQUESTFRAMEDATA` |
+| `10` | `NETCOMMANDTYPE_PLAYERLEAVE` |
+| `11` | `NETCOMMANDTYPE_DESTROYPLAYER` |
+
+This differs from Zero Hour, where values `6` and `7` are run-ahead metrics and
+run-ahead. In BFME:
+
+- `0x006741F0` is byte-matched as the command type `7` constructor and initializes
+  a single dword payload at `+0x1C`; it is now named
+  `BFMENetRequestPlayerLeaveCommandMsg::construct`.
+- `0x00674240` and `0x00674250` are byte-matched as the payload setter/getter.
+- `0x00677530` writes the type `7` wire payload as a four-byte `D` field after
+  `T/R/P/C`; there is no ZH-style frame-rate byte.
+- `0x00675BE0` constructs command type `6`, whose callers populate two
+  `AsciiString`-like fields. It is GameSpy stats auth-key traffic, not
+  run-ahead metrics.
+
+So a future delay fix should not patch BFME command types `6` or `7` as if they
+were ZH `NetRunAhead*` classes.
 
 ## BFME-native path
 
@@ -119,6 +152,21 @@ case `10` calls helper `0x0062F7F2`; case `0` registers callback VA
 through `"5"` with default value `10`. Treat those key/default reads as GameSpy
 misc-preference evidence until another caller proves they feed gameplay delay.
 
+## BFME timing fields
+
+The first native timing slice is now byte-matched:
+
+| Function | RVA | Timing evidence |
+| --- | --- | --- |
+| `BFMEConnectionManager::isPlayerConnected` | `0x00662A50` | uses `timeGetTime`; compares elapsed time against `TheGlobalData + 0xCBC` (`NetworkPlayerTimeoutTime`); before frame threshold `0x010EAD50`, uses `NetworkPlayerTimeoutTime * 4` |
+| `BFMEConnectionManager::isPlayerConnectedForTimeout` | `0x00662B00` | same connection timestamp at peer object `+0x34C`; normally uses caller timeout, but startup path still falls back to `NetworkPlayerTimeoutTime * 4` |
+| `BFMEConnectionManager::hasPacketRouterFrameStall` | `0x00664260` | only runs when local player is packet router; after frame `5`, uses `TheGlobalData + 0xCB4` (`NetworkKeepAliveDelay`) to detect stale per-player frame data |
+| `BFMEDisconnectManager::hasDisconnectScreenNotifyTimedOut` | `0x0066B510` | compares elapsed time against `TheGlobalData + 0xCC0` (`NetworkDisconnectScreenNotifyTime`) |
+
+These are timeout/readiness gates, not the delay patch itself, but they expose the
+retail frame and keep-alive timing constants that a later patch design must not
+confuse with ZH run-ahead command traffic.
+
 ## Landed evidence
 
 - `src/zh/connectionmanager.cpp`, `src/zh/network.cpp`,
@@ -152,6 +200,12 @@ misc-preference evidence until another caller proves they feed gameplay delay.
   at `0x0065C260`.
 - `src/game/native_network_dispatcher.cpp` contains `BFMENetworkBackend::dispatchEvents`
   at `0x0065CA50` and its EH catch thunk at `0x0065D6F3`.
+- `src/game/native_netcommandmsg.cpp` contains the BFME command type `7`
+  request-player-leave constructor/destructor and its single dword payload
+  setter/getter at `0x006741F0`, `0x00674230`, `0x00674240`, and `0x00674250`.
+- `src/game/native_connection_timing.cpp` contains the first byte-matched BFME
+  player-timeout, packet-router stall, and disconnect-screen timeout checks at
+  `0x00662A50`, `0x00662B00`, `0x00664260`, and `0x0066B510`.
 - The current matched network rows are:
   - `ConnectionManager::processProgress` at `0x00662D20`.
   - `NetworkInterface::createNetwork` at `0x0065C1F0`.
@@ -169,9 +223,13 @@ misc-preference evidence until another caller proves they feed gameplay delay.
    map, not the source of truth.
 4. DONE: recover the native dispatcher boundary and name the remaining wrapper
    fields before attempting any patch design.
-5. NEXT: trace the dispatcher cases that schedule, hold, or advance synchronized
-   command frames and only then decide whether a delay constant or runtime field
-   exists.
+5. DONE: rule out the ZH `NetRunAhead*` command classes for BFME command types
+   `6` and `7`.
+6. DONE: match the first BFME timing/readiness gates that consume
+   `NetworkPlayerTimeoutTime`, `NetworkKeepAliveDelay`, and
+   `NetworkDisconnectScreenNotifyTime`.
+7. NEXT: trace the BFME frame scheduler that sends/consumes frame info, request
+   frame-data, inform-player-leave-frame, and keep-alive commands.
 
 ## Non-goals
 

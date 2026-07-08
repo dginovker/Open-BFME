@@ -1,4 +1,5 @@
 // cl: /DNDEBUG /MD
+#define Matrix4x4 Matrix4
 /*
 **	Command & Conquer Generals Zero Hour(tm)
 **	Copyright 2025 Electronic Arts Inc.

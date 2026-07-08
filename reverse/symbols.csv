@@ -358,3 +358,6 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?pop@Shell@@QAEXXZ,0x00006AAA
 ?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z,0x0000FC3B
 ?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z,0x0001CF0D
+??0Vector3HollowSphereRandomizer@@QAE@M@Z,0x00B02350
+??0Vector3SolidSphereRandomizer@@QAE@M@Z,0x00B02250
+?Convert_Shader@W3dUtilityClass@@SAXABVShaderClass@@PAUW3dShaderStruct@@@Z,0x00978820

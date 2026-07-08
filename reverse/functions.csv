@@ -2891,3 +2891,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?getMostRecentCommand@WorkerAIUpdate@@UAE?AW4DozerTask@@XZ,,0x002C8010,66,src/zh/workeraiupdate.cpp,matched,
 ?getDockPoint@WorkerAIUpdate@@UAEPBUCoord3D@@W4DozerTask@@W4DozerDockPoint@@@Z,,0x002C8070,55,src/zh/workeraiupdate.cpp,matched,
 ?IdleWorkerSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x0043BAE0,179,src/zh/ingameui.cpp,matched,
+?doToppleDoneStuff@StructureToppleUpdate@@IAEXXZ,,0x002AF3D0,382,src/zh/structuretoppleupdate.cpp,matched,

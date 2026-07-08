@@ -446,9 +446,22 @@ def verify_functions(only=None):
         raise SystemExit("obj stem collision between sources; refusing parallel compile")
     # wine cl.exe instances are independent processes; compile is the wall-clock
     # hog (byte comparison below is pure reads), so parallelize only this phase
+    # Incremental mode (BUILD_RECOMPILE_ONLY="a.cpp;b.cpp"): reuse existing .obj
+    # files for every source NOT listed - valid only when the caller proves the
+    # unlisted sources and all headers are identical to the previous verified
+    # build in this same tree (the fleet verifier does, via git diff). A missing
+    # .obj is compiled regardless; never silently reused when absent.
+    recompile_only = os.environ.get("BUILD_RECOMPILE_ONLY")
+    if recompile_only is not None:
+        wanted = {w for w in recompile_only.split(";") if w}
+        to_compile = [s for s in sources
+                      if str(s.relative_to(ROOT)) in wanted or not source_outputs[s].exists()]
+        print(f"Incremental compile: {len(to_compile)} of {len(sources)} source(s)")
+    else:
+        to_compile = sources
     pool_size = min(8, os.cpu_count() or 1)
     with concurrent.futures.ThreadPoolExecutor(pool_size) as pool:
-        futures = {pool.submit(compile_source, s, source_outputs[s]): s for s in sources}
+        futures = {pool.submit(compile_source, s, source_outputs[s]): s for s in to_compile}
         for future in concurrent.futures.as_completed(futures):
             future.result()
 

@@ -3072,3 +3072,7 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Push_Material_Pass@RenderInfoClass@@QAEXPAVMaterialPassClass@@@Z,,0x00923790,48,src/zh/rinfo.cpp,matched,
 ?Pop_Material_Pass@RenderInfoClass@@QAEXXZ,,0x009237C0,50,src/zh/rinfo.cpp,matched,
 ??1DecalPolyClass@@QAE@XZ,,0x0022A2F0,76,src/zh/decalmsh.cpp,matched,
+?onBodyDamageStateChange@BoneFXDamage@@UAEXPBVDamageInfo@@W4BodyDamageType@@1@Z,,0x00250940,135,src/zh/bonefxdamage.cpp,matched,
+??0RepairDockUpdateModuleData@@QAE@XZ,,0x002CEF40,25,src/zh/repairdockupdate.cpp,matched,
+??_ELODHeapNode@@QAEPAXI@Z,,0x00881390,77,src/zh/predlod.cpp,matched,
+?findGameMessageMetaType@MetaMap@@IAE?AW4Type@GameMessage@@PBD@Z,,0x005B6AD0,69,src/zh/metaevent.cpp,matched,

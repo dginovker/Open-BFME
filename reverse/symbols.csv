@@ -864,3 +864,4 @@ __ehhandler$?getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ,0x00C140BE,p
 ?getControllingPlayer@Object@@QBEPAVPlayer@@XZ,0x00020824
 ?getShroudStatusForPlayer@PartitionManager@@QBE?AW4CellShroudStatus@@HPBUCoord3D@@@Z,0x008F7430
 ??1?$SimpleDynVecClass@VVector3@@@@UAE@XZ,0x00887940
+??0DockUpdateModuleData@@QAE@XZ,0x0002C54D

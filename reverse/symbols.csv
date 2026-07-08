@@ -450,3 +450,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?enableRadar@Player@@QAEXXZ,0x00043207
 ?isScienceGrantable@ScienceStore@@QBE_NW4ScienceType@@@Z,0x0003882A
 ?iterateObjects@Player@@QBEXP6AXPAVObject@@PAX@Z1@Z,0x0002F1CB
+?Get_Char_Spacing@FontCharsClass@@QAEHG@Z,0x009414D0,body

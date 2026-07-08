@@ -2681,6 +2681,7 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?createNetwork@NetworkInterface@@SAPAV1@XZ,,0x0065C1F0,89,src/zh/network.cpp,matched,
 ?isPacketRouter@Network@@UAE_NXZ,,0x00681B20,25,src/zh/network.cpp,matched,
 _BFMENetworkBackendThreadStart@4,,0x009DB630,25,src/game/native_network.cpp,matched,native BFME backend thread start; calls global slot +0x58 then backend dispatcher slot +0x08
+_BFMENetworkBackendEventCallback@40,,0x006549C0,375,src/game/native_network.cpp,matched,native BFME backend event callback body; dispatcher calls through ILT 0x000276B0 with ret 0x28 callback shape
 ?construct@BFMENetworkBackend@@QAEPAXPAVBFMENetworkLock@@@Z,,0x006547F0,127,src/game/native_network.cpp,matched,native BFME backend constructor body; stores wrapper lock owner at +0x68 and initializes backend list at +0x5c
 ?destroyAndMaybeDelete@BFMENetworkBackend@@QAEPAXI@Z,,0x00654890,30,src/game/native_network.cpp,matched,native BFME backend vtable slot +0x00; scalar deleting destructor wrapper
 ?openLiveHandle@BFMENetworkBackend@@QAEXXZ,,0x009DB650,54,src/game/native_network.cpp,matched,native BFME backend vtable slot +0x04; starts backend thread and stores live handle at +0x48

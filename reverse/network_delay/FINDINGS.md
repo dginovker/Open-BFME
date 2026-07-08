@@ -74,6 +74,7 @@ anchors, not behavior changes.
 | backend deleting destructor | RVA `0x00654890` | byte-matched as `BFMENetworkBackend::destroyAndMaybeDelete`; backend vtable slot `+0x00` | matched |
 | backend live-handle opener | RVA `0x009DB650` | byte-matched as `BFMENetworkBackend::openLiveHandle`; backend vtable slot `+0x04`, starts thread and stores handle at `+0x48` | matched |
 | backend thread start | RVA `0x009DB630` | byte-matched as `BFMENetworkBackendThreadStart`; calls global slot `+0x58`, then backend vtable slot `+0x08` | matched |
+| backend event callback | RVA `0x006549C0`, ILT `0x000276B0` | byte-matched as `BFMENetworkBackendEventCallback`; dispatcher calls it through the ILT in multiple cases, callback returns with `ret 0x28` | matched |
 | wrapper deleting destructor | RVA `0x0065ADB0` | byte-matched as `BFMENetwork::destroyAndMaybeDelete`; wrapper vtable slot `+0x00` | matched |
 | wrapper init | RVA `0x006548C0` | byte-matched as `BFMENetwork::init`; creates backend at wrapper `+0x64` and calls backend vtable slot `+0x04` | matched |
 | backend handle check | RVA `0x009DB590` | byte-matched as `BFMENetworkBackend::hasLiveHandle`; reads backend `+0x48` | matched |
@@ -128,6 +129,7 @@ and `+0x10` and reads `TheNetwork+0x68`.
   - `BFMENetworkBackend::destroyAndMaybeDelete` at `0x00654890`.
   - `BFMENetworkBackend::openLiveHandle` at `0x009DB650`.
   - `BFMENetworkBackendThreadStart` at `0x009DB630`.
+  - `BFMENetworkBackendEventCallback` at `0x006549C0`.
   - `BFMENetwork::construct` at `0x0065AC30` (constructor body).
   - `BFMENetwork::destroyAndMaybeDelete` at `0x0065ADB0`.
   - `BFMENetwork::init` at `0x006548C0`.

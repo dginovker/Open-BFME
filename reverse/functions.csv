@@ -2797,3 +2797,8 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,
+?findObjectCreationList@ObjectCreationListStore@@QBEPBVObjectCreationList@@PBD@Z,,0x001D7440,89,src/zh/objectcreationlist.cpp,matched,
+?push_back@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAEXABQAVObjectCreationNugget@@@Z,,0x001D77D0,50,src/zh/objectcreationlist.cpp,matched,
+?addObjectCreationNugget@ObjectCreationListStore@@QAEXPAVObjectCreationNugget@@@Z,,0x001D7970,53,src/zh/objectcreationlist.cpp,matched,
+?addObjectCreationNugget@ObjectCreationList@@QAEXPAVObjectCreationNugget@@@Z,,0x001D82E0,106,src/zh/objectcreationlist.cpp,matched,
+?parseObjectCreationListDefinition@ObjectCreationListStore@@SAXPAVINI@@@Z,,0x001DB050,124,src/zh/objectcreationlist.cpp,matched,

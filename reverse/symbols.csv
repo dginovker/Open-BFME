@@ -388,3 +388,6 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?deleteListResources@Radar@@IAEXXZ,0x0002C976
 ?localPixelToRadar@Radar@@QAE_NPBUICoord2D@@PAU2@@Z,0x00004D59
 ?searchListForRadarLocationMatch@Radar@@IAEPAVObject@@PAVRadarObject@@PAUICoord2D@@@Z,0x0000C6DA
+?setOrientation@Thing@@QAEXM@Z,0x000399A5
+?setTransformMatrix@Thing@@QAEXPBVMatrix3D@@@Z,0x00023D49
+?stopAllBoneFX@BoneFXUpdate@@QAEXXZ,0x0002728C

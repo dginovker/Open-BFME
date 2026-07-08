@@ -2860,3 +2860,5 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?worldToRadar@Radar@@QAE_NPBUCoord3D@@PAUICoord2D@@@Z,,0x00106D20,120,src/zh/radar.cpp,matched,
 ?reset@Radar@@UAEXXZ,,0x001077A0,28,src/zh/radar.cpp,matched,
 ?objectUnderRadarPixel@Radar@@QAEPAVObject@@PBUICoord2D@@@Z,,0x00107CF0,83,src/zh/radar.cpp,matched,
+??$sum@H@rts@@YAHAAV?$vector@HV?$allocator@H@_STL@@@_STL@@@Z,,0x002F1380,29,src/zh/scriptconditions.cpp,matched,
+?evaluateTeamOutsideAreaEntirely@ScriptConditions@@IAE_NPAVParameter@@00@Z,,0x00324BD0,65,src/zh/scriptconditions.cpp,matched,

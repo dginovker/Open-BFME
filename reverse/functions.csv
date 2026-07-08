@@ -2883,3 +2883,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ??1SelectionTranslator@@UAE@XZ,,0x005B7BE0,73,src/zh/selectionxlat.cpp,matched,
 ??_GSelectionTranslator@@UAEPAXI@Z,,0x005B7E70,30,src/zh/selectionxlat.cpp,matched,
 ?selectFriendsWrapper@@YA_NPAVDrawable@@PAX@Z,,0x005B8490,33,src/zh/selectionxlat.cpp,matched,
+?frameToSleepTime@@YA?AW4StateReturnType@@IIII@Z,,0x0018C2A0,37,src/zh/turretai.cpp,matched,
+?parseTWS@@YAXPAVINI@@PAX1PBX@Z,,0x0018C380,77,src/zh/turretai.cpp,matched,
+?parseTurretSweepSpeed@TurretAIData@@SAXPAVINI@@PAX1PBX@Z,,0x0018C420,48,src/zh/turretai.cpp,matched,

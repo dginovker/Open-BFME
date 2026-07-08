@@ -2797,3 +2797,8 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,
+??$fill@PAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@V12@@_STL@@YAXPAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@0@0ABV10@@Z,,0x000BCC50,38,src/zh/partitionmanager.cpp,matched,
+??$__copy_backward@PAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@PAV12@H@_STL@@YAPAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@0@PAV10@00ABUrandom_access_iterator_tag@0@PAH@Z,,0x000BCCE0,77,src/zh/partitionmanager.cpp,matched,
+??$__copy_backward_ptrs@PAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@PAV12@@_STL@@YAPAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@0@PAV10@00ABU__false_type@0@@Z,,0x000BD5B0,32,src/zh/partitionmanager.cpp,matched,
+?_M_fill_insert@?$vector@EV?$allocator@E@_STL@@@_STL@@QAEXPAEIABE@Z,,0x0074DA00,257,src/zh/partitionmanager.cpp,matched,
+??_ECellAndObjectIntersection@@QAEPAXI@Z,,0x008F7DD0,77,src/zh/partitionmanager.cpp,matched,

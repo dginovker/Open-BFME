@@ -200,10 +200,16 @@ constructor body at `0x006818B0`, now byte-matched as
 | `+0x38` | frame/player sentinel initialized to `-1` |
 
 The native vtable at `0x0111A968` resolves slot `+0x3C` to `0x00681F70` and
-slot `+0x40` to `0x00682160`. Both are QPC-backed frame readiness/pacing
-candidates; `0x00681F70` also uses connection manager `+0x1205C`, current
-game frame `TheGameLogic + 0x3C`, and globals `0x012F7718`,
-`0x012F771C`, `0x012F7724`, and `0x012F7728`.
+slot `+0x40` to `0x00682160`. Slot `+0x40` is now byte-matched as
+`BFMENativeNetwork::getFramePacingStatus`:
+
+| Function | RVA | Pacing evidence |
+| --- | --- | --- |
+| `BFMENativeNetwork::getFramePacingStatus` | `0x00682160` | returns `1` when not in active network status; without packet-router timing mode, returns `connectionManager->+0x1205C - currentFrame + 1`; otherwise accumulates QPC ticks and returns `0`, `1`, or `2` based on elapsed budget |
+
+The remaining slot `+0x3C` at `0x00681F70` also uses connection manager
+`+0x1205C`, current game frame `TheGameLogic + 0x3C`, and globals
+`0x012F7718`, `0x012F771C`, `0x012F7724`, and `0x012F7728`.
 
 ## Landed evidence
 
@@ -246,7 +252,8 @@ game frame `TheGameLogic + 0x3C`, and globals `0x012F7718`,
   frame-data handler checks at `0x00662A50`, `0x00662B00`, `0x00664260`,
   `0x0066B510`, and `0x006659B0`.
 - `src/game/native_network_interface.cpp` contains the native BFME `Network`
-  constructor body at `0x006818B0`, anchoring the QPC frame-pacing fields.
+  constructor body at `0x006818B0`, anchoring the QPC frame-pacing fields, and
+  the QPC-backed pacing-status helper at `0x00682160`.
 - The current matched network rows are:
   - `ConnectionManager::processProgress` at `0x00662D20`.
   - `NetworkInterface::createNetwork` at `0x0065C1F0`.
@@ -272,8 +279,9 @@ game frame `TheGameLogic + 0x3C`, and globals `0x012F7718`,
 7. NEXT: trace the BFME frame scheduler that sends/consumes frame info, request
    frame-data, inform-player-leave-frame, and keep-alive commands. Command type
    `9` request-frame-data handling is matched; command type `8` and the frame
-   tick sender remain next. Native QPC frame pacing is anchored, but slots
-   `0x00681F70` and `0x00682160` still need names/matches before patch design.
+   tick sender remain next. Native QPC frame pacing is anchored, and slot
+   `0x00682160` is matched; slot `0x00681F70` still needs a name/match before
+   patch design.
 
 ## Non-goals
 

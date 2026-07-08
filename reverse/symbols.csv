@@ -356,3 +356,5 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ??0CullNodeStruct@AABTreeBuilderClass@@QAE@XZ,0x0096B500
 ??4SplitChoiceStruct@AABTreeBuilderClass@@QAEAAU01@ABU01@@Z,0x0096B6B0
 ?pop@Shell@@QAEXXZ,0x00006AAA
+?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z,0x0000FC3B
+?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z,0x0001CF0D

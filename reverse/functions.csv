@@ -2962,3 +2962,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ??0DefaultStaticSortListClass@@QAE@XZ,,0x00958110,98,src/zh/static_sort_list.cpp,matched,
 ??1DefaultStaticSortListClass@@UAE@XZ,,0x00958180,83,src/zh/static_sort_list.cpp,matched,
 ??_GDefaultStaticSortListClass@@UAEPAXI@Z,,0x009581E0,30,src/zh/static_sort_list.cpp,matched,
+?getClassMemoryPool@VeterancyCrateCollide@@CAPAVMemoryPool@@XZ,,0x00218CA0,104,src/zh/modulefactory.cpp,matched,

@@ -248,7 +248,20 @@
 #include "GameLogic/Module/SalvageCrateCollide.h"
 #include "GameLogic/Module/ShroudCrateCollide.h"
 #include "GameLogic/Module/UnitCrateCollide.h"
+
+// BFME: VeterancyCrateCollide switched from createMemoryPool to findMemoryPool
+#undef MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE
+#define MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(ARGCLASS, ARGPOOLNAME) \
+	MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+	GCMP_FIND(ARGCLASS, ARGPOOLNAME)
+
 #include "GameLogic/Module/VeterancyCrateCollide.h"
+
+// Restore the ZH macro for remaining headers.
+#undef MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE
+#define MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(ARGCLASS, ARGPOOLNAME) \
+	MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+	GCMP_CREATE(ARGCLASS, ARGPOOLNAME, -1, -1)
 
 // body includes
 #include "GameLogic/Module/InactiveBody.h"

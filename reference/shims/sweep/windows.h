@@ -10,6 +10,8 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <errno.h>
 
 // GameMemory.h defines the ARRAY placement new/delete itself; keep VC7.1's <new>
 // from also defining them. Lives here (not just the PreRTS shim) because device-side
@@ -65,8 +67,12 @@ typedef WCHAR *PWCHAR, *LPWSTR;
 typedef const unsigned short *LPCWSTR;
 typedef unsigned long SIZE_T;
 typedef unsigned long ULONG_PTR;
+typedef long LONG_PTR;
+typedef unsigned int UINT_PTR;
 typedef long *LPLONG;
 typedef BOOL *LPBOOL;
+typedef UINT_PTR WPARAM;
+typedef LONG_PTR LPARAM;
 typedef int (__stdcall *FARPROC)();
 
 #define WINAPI __stdcall
@@ -123,6 +129,28 @@ typedef struct _OSVERSIONINFOA {
     DWORD dwPlatformId;
     char szCSDVersion[128];
 } OSVERSIONINFOA, *LPOSVERSIONINFOA;
+
+typedef struct _STARTUPINFOA {
+    DWORD cb;
+    LPSTR lpReserved;
+    LPSTR lpDesktop;
+    LPSTR lpTitle;
+    DWORD dwX, dwY, dwXSize, dwYSize;
+    DWORD dwXCountChars, dwYCountChars;
+    DWORD dwFillAttribute;
+    DWORD dwFlags;
+    WORD wShowWindow;
+    WORD cbReserved2;
+    LPBYTE lpReserved2;
+    HANDLE hStdInput, hStdOutput, hStdError;
+} STARTUPINFOA, *LPSTARTUPINFOA;
+
+typedef struct _PROCESS_INFORMATION {
+    HANDLE hProcess;
+    HANDLE hThread;
+    DWORD dwProcessId;
+    DWORD dwThreadId;
+} PROCESS_INFORMATION, *LPPROCESS_INFORMATION;
 #define OSVERSIONINFO OSVERSIONINFOA
 #define VER_PLATFORM_WIN32_WINDOWS 1
 #define VER_PLATFORM_WIN32_NT 2
@@ -201,6 +229,19 @@ struct _EXCEPTION_POINTERS;
 #define SW_SHOW 1
 #define SW_SHOWNORMAL 1
 #define DRIVE_CDROM 5
+#define WM_MOUSEMOVE 0x0200
+#define WM_LBUTTONDOWN 0x0201
+#define WM_LBUTTONUP 0x0202
+#define WM_LBUTTONDBLCLK 0x0203
+#define WM_RBUTTONDOWN 0x0204
+#define WM_RBUTTONUP 0x0205
+#define WM_RBUTTONDBLCLK 0x0206
+#define WM_MBUTTONDOWN 0x0207
+#define WM_MBUTTONUP 0x0208
+#define WM_MBUTTONDBLCLK 0x0209
+#define WM_MOUSEWHEEL 0x020A
+#define STARTF_USESHOWWINDOW 0x00000001
+#define STARTF_USESTDHANDLES 0x00000100
 
 extern "C" {
 __declspec(dllimport) int WINAPIV wsprintfA(LPSTR, LPCSTR, ...);
@@ -208,6 +249,12 @@ __declspec(dllimport) int WINAPI MessageBoxA(HWND, LPCSTR, LPCSTR, UINT);
 __declspec(dllimport) int WINAPI MessageBoxW(HWND, LPCWSTR, LPCWSTR, UINT);
 __declspec(dllimport) BOOL WINAPI SetWindowPos(HWND, HWND, int, int, int, int, UINT);
 __declspec(dllimport) BOOL WINAPI ShowWindow(HWND, int);
+__declspec(dllimport) BOOL WINAPI CreateProcessA(LPCSTR, LPSTR, void *, void *, BOOL, DWORD, void *, LPCSTR, LPSTARTUPINFOA, LPPROCESS_INFORMATION);
+__declspec(dllimport) UINT WINAPI GetTempFileNameA(LPCSTR, LPCSTR, UINT, LPSTR);
+__declspec(dllimport) HINSTANCE WINAPI FindExecutableA(LPCSTR, LPCSTR, LPSTR);
+__declspec(dllimport) BOOL WINAPI ScreenToClient(HWND, LPPOINT);
+__declspec(dllimport) HCURSOR WINAPI LoadCursorFromFileA(LPCSTR);
+__declspec(dllimport) HCURSOR WINAPI SetCursor(HCURSOR);
 __declspec(dllimport) BOOL WINAPI TerminateProcess(HANDLE, UINT);
 __declspec(dllimport) HANDLE WINAPI GetCurrentProcess(void);
 __declspec(dllimport) DWORD WINAPI GetCurrentProcessId(void);
@@ -260,8 +307,16 @@ __declspec(dllimport) BOOL WINAPI GetVersionExA(LPOSVERSIONINFOA);
 #define LoadString LoadStringA
 #define FormatMessage FormatMessageA
 #define FindResource FindResourceA
+#define CreateProcess CreateProcessA
+#define GetTempFileName GetTempFileNameA
+#define FindExecutable FindExecutableA
+#define STARTUPINFO STARTUPINFOA
+#define LoadCursorFromFile LoadCursorFromFileA
 #define GetVolumeInformation GetVolumeInformationA
 #define GetDriveType GetDriveTypeA
+#define GetDiskFreeSpace GetDiskFreeSpaceA
+#define GetComputerName GetComputerNameA
+#define GetUserName GetUserNameA
 #define RegOpenKeyEx RegOpenKeyExA
 #define RegCreateKeyEx RegCreateKeyExA
 #define RegSetValueEx RegSetValueExA
@@ -277,6 +332,9 @@ __declspec(dllimport) UINT WINAPI GetWindowsDirectoryA(LPSTR, UINT);
 __declspec(dllimport) BOOL WINAPI GetDiskFreeSpaceA(LPCSTR, LPDWORD, LPDWORD, LPDWORD, LPDWORD);
 __declspec(dllimport) BOOL WINAPI GetVolumeInformationA(LPCSTR, LPSTR, DWORD, LPDWORD, LPDWORD, LPDWORD, LPSTR, DWORD);
 __declspec(dllimport) UINT WINAPI GetDriveTypeA(LPCSTR);
+__declspec(dllimport) BOOL WINAPI GetComputerNameA(LPSTR, LPDWORD);
+__declspec(dllimport) BOOL WINAPI GetUserNameA(LPSTR, LPDWORD);
+__declspec(dllimport) HKL WINAPI GetKeyboardLayout(DWORD);
 __declspec(dllimport) LONG WINAPI RegOpenKeyExA(HKEY, LPCSTR, DWORD, DWORD, PHKEY);
 __declspec(dllimport) LONG WINAPI RegCreateKeyExA(HKEY, LPCSTR, DWORD, LPSTR, DWORD, DWORD, void *, PHKEY, LPDWORD);
 __declspec(dllimport) LONG WINAPI RegSetValueExA(HKEY, LPCSTR, DWORD, DWORD, const BYTE *, DWORD);

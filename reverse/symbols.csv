@@ -409,3 +409,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?insertTee@W3DRoadBuffer@@IAEXVVector2@@HM@Z,0x00007522,ILT thunk to 0x70BC00
 ?insert4Way@W3DRoadBuffer@@IAEXVVector2@@HM@Z,0x00032B96,ILT thunk to 0x706310
 ?_M_allocate@?$__node_alloc@$00$0A@@_STL@@CAPAXI@Z,0x00082E540,STLport _Node_alloc::_M_allocate called by list<Coord3D> copy ctor
+?GetGameLogicRandomValueReal@@YAMMMPADH@Z,0x0002CCA5

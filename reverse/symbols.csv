@@ -871,3 +871,4 @@ __ehhandler$?getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ,0x00C140BE,p
 ?findUpgrade@UpgradeCenter@@QBEPBVUpgradeTemplate@@ABVAsciiString@@@Z,0x0002F95A
 ?giveUpgrade@Object@@QAEXPBVUpgradeTemplate@@@Z,0x0001A97E
 ?wouldIgnite@FlammableUpdate@@QAE_NXZ,0x00016653
+?unloadNext@RailedTransportDockUpdate@@IAEXXZ,0x0000C27F

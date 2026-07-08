@@ -3090,3 +3090,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Add_Point@MinMaxAABoxClass@@QAEXABVVector3@@@Z,,0x00728B30,115,src/zh/w3dterrainbackground.cpp,matched,
 ??0SelectionInfo@@QAE@XZ,,0x00458F60,58,src/zh/selectioninfo.cpp,matched,
 ?allow@PartitionFilterFlammable@@UAE_NPAVObject@@@Z,,0x002925C0,144,src/zh/firespreadupdate.cpp,matched,
+??0ResizerWindow@@QAE@XZ,,0x004AAED0,31,src/zh/controlbarresizer.cpp,matched,
+?unloadAll@RailedTransportDockUpdate@@UAEXXZ,,0x002CE7C0,26,src/zh/railedtransportdockupdate.cpp,matched,
+?notifyShroudChanged@W3DPropBuffer@@QAEXXZ,,0x007024E0,50,src/zh/w3dpropbuffer.cpp,matched,

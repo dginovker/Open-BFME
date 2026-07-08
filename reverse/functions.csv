@@ -2831,3 +2831,8 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Init@OutputLightStruct@LightEnvironmentClass@@QAEXABUInputLightStruct@2@ABVMatrix3D@@@Z,,0x0094AA30,179,src/zh/lightenvironment.cpp,matched,
 ?Get_Element@TexBufferClass@@QAEPAVTextureClass@@H@Z,,0x00739780,35,src/zh/meshmatdesc.cpp,matched,
 ?Set_Shader@MeshMatDescClass@@QAEXHVShaderClass@@H@Z,,0x0092C200,26,src/zh/meshmatdesc.cpp,matched,
+?Resize@?$VectorClass@VStringClass@@@@UAE_NHPBVStringClass@@@Z,,0x0013B450,333,src/zh/mixfile.cpp,matched,
+?Resize@?$DynamicVectorClass@VStringClass@@@@UAE_NHPBVStringClass@@@Z,,0x0013B7C0,47,src/zh/mixfile.cpp,matched,
+??0?$VectorClass@UAddInfoStruct@MixFileFactoryClass@@@@QAE@HPBUAddInfoStruct@MixFileFactoryClass@@@Z,,0x0093DBB0,191,src/zh/mixfile.cpp,matched,
+??0?$DynamicVectorClass@UAddInfoStruct@MixFileFactoryClass@@@@QAE@IPBUAddInfoStruct@MixFileFactoryClass@@@Z,,0x0093E660,46,src/zh/mixfile.cpp,matched,
+?Clear@?$DynamicVectorClass@UAddInfoStruct@MixFileFactoryClass@@@@UAEXXZ,,0x0093E6C0,64,src/zh/mixfile.cpp,matched,

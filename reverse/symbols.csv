@@ -1,4 +1,8 @@
 name,address,notes
+?erase@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAE?AU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@2@U32@0@Z,0x00024131,ILT thunk for list<GameWindow*>::erase(range)
+?erase@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAE?AU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@2@U32@0@Z,0x00483310,body
+??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@_STL@@@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@1@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@1@1ABU__false_type@1@@Z,0x0003F68E,ILT thunk for list<GameWindow*>::_M_insert_dispatch
+??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@_STL@@@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@1@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@1@1ABU__false_type@1@@Z,0x00483620,body
 ??$__copy@PAUHorzLine@@PAU1@H@_STL@@YAPAUHorzLine@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0001B91E
 ??0?$ShareBufferClass@E@@QAE@HPBDH@Z,0x0004B4A7,derived from part_buf matched-caller call sites
 ??0?$ShareBufferClass@VVector3@@@@QAE@HPBDH@Z,0x00049832,ILT thunk; body 0x5F3BE0

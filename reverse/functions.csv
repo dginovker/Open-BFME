@@ -2699,3 +2699,6 @@ _BFMENetworkBackendEventCallback@40,,0x006549C0,375,src/game/native_network.cpp,
 ?popQueue1@BFMENetwork@@QAE_NPAVBFMENetworkQueueItem1@@@Z,,0x00658E20,164,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x1c; pops callback queue +0x3c
 ?pushList90@BFMENetwork@@QAEXVBFMENetworkListPayload@@@Z,,0x0065E340,268,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x20; appends dispatcher payload list at +0x90
 ?findList90@BFMENetwork@@QAEPAXPAX0@Z,,0x0065AEB0,234,src/game/native_network.cpp,matched,native BFME network wrapper slot +0x24; finds or creates payload list entry at +0x90
+?copyState6C@BFMENetwork@@QAEPAXPAX@Z,,0x00655060,32,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x6c
+?copyState78@BFMENetwork@@QAEPAXPAX@Z,,0x00655090,32,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x78
+?copyState84@BFMENetwork@@QAEPAXPAX@Z,,0x006550C0,35,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x84

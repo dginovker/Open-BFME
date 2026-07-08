@@ -99,6 +99,9 @@ public:
 	Bool popQueue1(BFMENetworkQueueItem1 *item);
 	void pushList90(BFMENetworkListPayload payload);
 	void *findList90(void *key, void *payload);
+	void *copyState6C(void *out);
+	void *copyState78(void *out);
+	void *copyState84(void *out);
 
 private:
 	void *m_vtable;
@@ -1314,6 +1317,72 @@ doneFindList90:
 		mov fs:[0], ecx
 		add esp, 1e0h
 		ret 8
+	}
+}
+
+__declspec(naked) void *BFMENetwork::copyState6C(void *out)
+{
+	__asm {
+		push ecx
+		push esi
+		mov esi, [esp+0ch]
+		add ecx, 6ch
+		push ecx
+		mov ecx, esi
+		mov dword ptr [esp+8], 0
+		__emit 0xe8
+		__emit 0x98
+		__emit 0x7a
+		__emit 0x9c
+		__emit 0xff
+		mov eax, esi
+		pop esi
+		pop ecx
+		ret 4
+	}
+}
+
+__declspec(naked) void *BFMENetwork::copyState78(void *out)
+{
+	__asm {
+		push ecx
+		push esi
+		mov esi, [esp+0ch]
+		add ecx, 78h
+		push ecx
+		mov ecx, esi
+		mov dword ptr [esp+8], 0
+		__emit 0xe8
+		__emit 0x68
+		__emit 0x7a
+		__emit 0x9c
+		__emit 0xff
+		mov eax, esi
+		pop esi
+		pop ecx
+		ret 4
+	}
+}
+
+__declspec(naked) void *BFMENetwork::copyState84(void *out)
+{
+	__asm {
+		push ecx
+		push esi
+		mov esi, [esp+0ch]
+		add ecx, 84h
+		push ecx
+		mov ecx, esi
+		mov dword ptr [esp+8], 0
+		__emit 0xe8
+		__emit 0x35
+		__emit 0x7a
+		__emit 0x9c
+		__emit 0xff
+		mov eax, esi
+		pop esi
+		pop ecx
+		ret 4
 	}
 }
 

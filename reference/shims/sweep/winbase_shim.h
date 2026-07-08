@@ -17,4 +17,10 @@ extern "C" __declspec(dllimport) char * __stdcall lstrcpynA(char *, const char *
 #define lstrlen  lstrlenA
 #define lstrcmpi lstrcmpiA
 #define lstrcpyn lstrcpynA
+#ifndef __max
+#define __max(a,b) (((a) > (b)) ? (a) : (b))
+#endif
+#ifndef __min
+#define __min(a,b) (((a) < (b)) ? (a) : (b))
+#endif
 #endif

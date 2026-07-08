@@ -376,6 +376,12 @@ __declspec(dllimport) void WINAPI ExitProcess(UINT);
 }
 
 #define wsprintf wsprintfA
+#ifndef __max
+#define __max(a,b) (((a) > (b)) ? (a) : (b))
+#endif
+#ifndef __min
+#define __min(a,b) (((a) < (b)) ? (a) : (b))
+#endif
 #define MessageBox MessageBoxA
 #define CreateFile CreateFileA
 #define DeleteFile DeleteFileA

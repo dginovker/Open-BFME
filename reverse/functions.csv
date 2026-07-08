@@ -2887,3 +2887,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?parseTWS@@YAXPAVINI@@PAX1PBX@Z,,0x0018C380,77,src/zh/turretai.cpp,matched,
 ?parseTurretSweepSpeed@TurretAIData@@SAXPAVINI@@PAX1PBX@Z,,0x0018C420,48,src/zh/turretai.cpp,matched,
 ?Set_Index_Buffer_Index_Offset@DX8Wrapper@@SAXI@Z,,0x0072EAD0,32,src/zh/w3dterraintracks.cpp,matched,
+??0?$list@UCoord3D@@V?$allocator@UCoord3D@@@_STL@@@_STL@@QAE@ABV01@@Z,,0x000BF580,111,src/zh/inimapcache.cpp,matched,copy ctor for Coord3DList; BFME uses STLport node allocator

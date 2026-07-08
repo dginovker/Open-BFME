@@ -83,6 +83,56 @@ void StringBase<T>::validate() const
 {
 }
 
+__declspec(naked) StringBase<char> &StringBase<char>::operator=(const StringBase<char> &src)
+{
+    __asm {
+        __emit 0x8b
+        __emit 0x44
+        __emit 0x24
+        __emit 0x04
+        __emit 0x56
+        __emit 0x50
+        __emit 0x8b
+        __emit 0xf1
+        __emit 0xe8
+        __emit 0xd3
+        __emit 0xfa
+        __emit 0xff
+        __emit 0xff
+        __emit 0x8b
+        __emit 0xc6
+        __emit 0x5e
+        __emit 0xc2
+        __emit 0x04
+        __emit 0x00
+    }
+}
+
+__declspec(naked) StringBase<wchar_t> &StringBase<wchar_t>::operator=(const StringBase<wchar_t> &src)
+{
+    __asm {
+        __emit 0x8b
+        __emit 0x44
+        __emit 0x24
+        __emit 0x04
+        __emit 0x56
+        __emit 0x50
+        __emit 0x8b
+        __emit 0xf1
+        __emit 0xe8
+        __emit 0x93
+        __emit 0xfa
+        __emit 0xff
+        __emit 0xff
+        __emit 0x8b
+        __emit 0xc6
+        __emit 0x5e
+        __emit 0xc2
+        __emit 0x04
+        __emit 0x00
+    }
+}
+
 __declspec(naked) int StringBase<char>::compare(const char *str) const
 {
     __asm {
@@ -2017,56 +2067,6 @@ __declspec(naked) StringBase<wchar_t>::StringBase(const wchar_t *str, int len)
         __emit 0x5e
         __emit 0xc2
         __emit 0x08
-        __emit 0x00
-    }
-}
-
-__declspec(naked) StringBase<char> &StringBase<char>::operator=(const StringBase<char> &src)
-{
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0xd3
-        __emit 0xfa
-        __emit 0xff
-        __emit 0xff
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
-}
-
-__declspec(naked) StringBase<wchar_t> &StringBase<wchar_t>::operator=(const StringBase<wchar_t> &src)
-{
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x50
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0xe8
-        __emit 0x93
-        __emit 0xfa
-        __emit 0xff
-        __emit 0xff
-        __emit 0x8b
-        __emit 0xc6
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
         __emit 0x00
     }
 }
@@ -5831,72 +5831,6 @@ __declspec(naked) void StringBase<wchar_t>::set(const StringBase<wchar_t> &src, 
     }
 }
 
-__declspec(naked) bool StringBase<char>::startsWith(const char *str, int len) const
-{
-    __asm {
-        __emit 0x57
-        __emit 0x8b
-        __emit 0x7c
-        __emit 0x24
-        __emit 0x08
-        __emit 0x80
-        __emit 0x3f
-        __emit 0x00
-        __emit 0x75
-        __emit 0x06
-        __emit 0xb0
-        __emit 0x01
-        __emit 0x5f
-        __emit 0xc2
-        __emit 0x08
-        __emit 0x00
-        __emit 0x8b
-        __emit 0x01
-        __emit 0x85
-        __emit 0xc0
-        __emit 0x74
-        __emit 0x06
-        __emit 0x0f
-        __emit 0xb7
-        __emit 0x50
-        __emit 0x04
-        __emit 0xeb
-        __emit 0x02
-        __emit 0x33
-        __emit 0xd2
-        __emit 0x8b
-        __emit 0x4c
-        __emit 0x24
-        __emit 0x0c
-        __emit 0x3b
-        __emit 0xd1
-        __emit 0x7d
-        __emit 0x06
-        __emit 0x32
-        __emit 0xc0
-        __emit 0x5f
-        __emit 0xc2
-        __emit 0x08
-        __emit 0x00
-        __emit 0x56
-        __emit 0x8d
-        __emit 0x70
-        __emit 0x08
-        __emit 0x33
-        __emit 0xc0
-        __emit 0xf3
-        __emit 0xa6
-        __emit 0x5e
-        __emit 0x0f
-        __emit 0x94
-        __emit 0xc0
-        __emit 0x5f
-        __emit 0xc2
-        __emit 0x08
-        __emit 0x00
-    }
-}
-
 __declspec(naked) bool StringBase<wchar_t>::startsWith(const StringBase<wchar_t> &str) const
 {
     __asm {
@@ -8118,3 +8052,17 @@ bool operator!=<char>(const char *left, const StringBase<char> &right)
 {
     return right.compare(left) != 0;
 }
+
+template <>
+bool StringBase<char>::startsWith(const char *str, int len) const
+{
+    if (str[0] == '\0') {
+        return true;
+    }
+    int myLen = m_data ? m_data->length : 0;
+    if (myLen < len) {
+        return false;
+    }
+    return memcmp(&m_data->data[0], str, len) == 0;
+}
+

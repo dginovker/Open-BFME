@@ -2998,10 +2998,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?getClassMemoryPool@ShroudCrateCollide@@CAPAVMemoryPool@@XZ,,0x00218770,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@UnitCrateCollide@@CAPAVMemoryPool@@XZ,,0x002188F0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@VeterancyCrateCollide@@CAPAVMemoryPool@@XZ,,0x00218CA0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@InactiveBody@@CAPAVMemoryPool@@XZ,,0x00213D60,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@CashHackSpecialPower@@CAPAVMemoryPool@@XZ,,0x002584C0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@DefectorSpecialPower@@CAPAVMemoryPool@@XZ,,0x00259FD0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@OCLSpecialPower@@CAPAVMemoryPool@@XZ,,0x00262AF0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@AssistedTargetingUpdate@@CAPAVMemoryPool@@XZ,,0x0027FC20,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@DefaultProductionExitUpdate@@CAPAVMemoryPool@@XZ,,0x002CFE50,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@DeletionUpdate@@CAPAVMemoryPool@@XZ,,0x0028C620,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
@@ -3040,8 +3036,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?getClassMemoryPool@CostModifierUpgrade@@CAPAVMemoryPool@@XZ,,0x002D4610,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@ExperienceScalarUpgrade@@CAPAVMemoryPool@@XZ,,0x002D5040,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@MaxHealthUpgrade@@CAPAVMemoryPool@@XZ,,0x002D6410,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@SpecialAbility@@CAPAVMemoryPool@@XZ,,0x002A6520,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@AnimatedParticleSysBoneClientUpdate@@CAPAVMemoryPool@@XZ,,0x00602F60,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@AIUpdateInterface@@CAPAVMemoryPool@@XZ,,0x0027F130,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@TransportAIUpdate@@CAPAVMemoryPool@@XZ,,0x002C70D0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@WanderAIUpdate@@CAPAVMemoryPool@@XZ,,0x002C75C0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
@@ -3066,7 +3060,3 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?getClassMemoryPool@SupplyWarehouseDockUpdate@@CAPAVMemoryPool@@XZ,,0x002CF760,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ,,0x002C7BD0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@TransitionDamageFX@@CAPAVMemoryPool@@XZ,,0x00253000,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@ActiveBody@@CAPAVMemoryPool@@XZ,,0x0020F9C0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@HighlanderBody@@CAPAVMemoryPool@@XZ,,0x00213830,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@ImmortalBody@@CAPAVMemoryPool@@XZ,,0x00213A10,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@StructureBody@@CAPAVMemoryPool@@XZ,,0x00214BA0,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs

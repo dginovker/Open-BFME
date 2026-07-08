@@ -866,3 +866,4 @@ __ehhandler$?getClassMemoryPool@WeaponBonusUpgrade@@CAPAVMemoryPool@@XZ,0x00C14D
 __ehhandler$?getClassMemoryPool@WeaponSetUpgrade@@CAPAVMemoryPool@@XZ,0x00C14DFE,pool-glue cascade static (back-solved)
 __ehhandler$?getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ,0x00C140BE,pool-glue cascade static (back-solved)
 ?findMemoryPool@MemoryPoolFactory@@QAEPAVMemoryPool@@PBD@Z,0x0003ADD7,pool-glue cascade callee (from retail call site)
+?createMemoryPool@MemoryPoolFactory@@QAEPAVMemoryPool@@PBDHHH@Z,0x0003ADD7,pool-glue cascade callee (ICF-folded with findMemoryPool)

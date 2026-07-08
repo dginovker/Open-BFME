@@ -132,6 +132,7 @@ static Bool isObjectShroudedForAction ( const Object *source, const Object *targ
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ??0ActionManager@@QAE@XZ present-unmatched
 ActionManager::ActionManager( void )
 {
 
@@ -139,6 +140,7 @@ ActionManager::ActionManager( void )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ??1ActionManager@@UAE@XZ present-unmatched
 ActionManager::~ActionManager( void )
 {
 
@@ -146,6 +148,7 @@ ActionManager::~ActionManager( void )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canGetRepairedAt@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canGetRepairedAt( const Object *obj, const Object *repairDest, CommandSourceType commandSource ) 
 {
 
@@ -211,6 +214,7 @@ Bool ActionManager::canGetRepairedAt( const Object *obj, const Object *repairDes
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
 // note that "dest" is typically a building...
+// ?canTransferSuppliesAt@ActionManager@@ present-unmatched
 Bool ActionManager::canTransferSuppliesAt( const Object *obj, const Object *transferDest ) 
 {
 
@@ -290,6 +294,7 @@ Bool ActionManager::canTransferSuppliesAt( const Object *obj, const Object *tran
 // ------------------------------------------------------------------------------------------------
 /** Can object 'obj' dock with object 'dockDest' for any reason */
 // ------------------------------------------------------------------------------------------------
+// ?canDockAt@ActionManager@@ present-unmatched
 Bool ActionManager::canDockAt( const Object *obj, const Object *dockDest, CommandSourceType commandSource )
 {
 
@@ -331,6 +336,7 @@ Bool ActionManager::canDockAt( const Object *obj, const Object *dockDest, Comman
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canGetHealedAt@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canGetHealedAt( const Object *obj, const Object *healDest, CommandSourceType commandSource ) 
 {
 
@@ -383,6 +389,7 @@ Bool ActionManager::canGetHealedAt( const Object *obj, const Object *healDest, C
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canRepairObject@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canRepairObject( const Object *obj, const Object *objectToRepair, CommandSourceType commandSource ) 
 {
 
@@ -453,6 +460,7 @@ Bool ActionManager::canRepairObject( const Object *obj, const Object *objectToRe
 // ------------------------------------------------------------------------------------------------
 /** Can 'obj' resume the construction of 'objectBeingConstructed' */
 // ------------------------------------------------------------------------------------------------
+// ?canResumeConstructionOf@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canResumeConstructionOf( const Object *obj, 
 																						 const Object *objectBeingConstructed, 
 																						 CommandSourceType commandSource )
@@ -526,6 +534,7 @@ Bool ActionManager::canResumeConstructionOf( const Object *obj,
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canEnterObject@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@W4CanEnterType@@@Z present-unmatched
 Bool ActionManager::canEnterObject( const Object *obj, const Object *objectToEnter, CommandSourceType commandSource, CanEnterType mode )
 {
 
@@ -723,6 +732,7 @@ Bool ActionManager::canEnterObject( const Object *obj, const Object *objectToEnt
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?getCanAttackObject@ActionManager@@QAE?AW4CanAttackResult@@PBVObject@@0W4CommandSourceType@@W4AbleToAttackType@@@Z present-unmatched
 CanAttackResult ActionManager::getCanAttackObject( const Object *obj, const Object *objectToAttack, CommandSourceType commandSource, AbleToAttackType attackType )
 {
 	// sanity
@@ -818,6 +828,7 @@ CanAttackResult ActionManager::getCanAttackObject( const Object *obj, const Obje
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canConvertObjectToCarBomb@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canConvertObjectToCarBomb( const Object *obj, const Object *objectToConvert, CommandSourceType commandSource ) 
 {
 
@@ -853,6 +864,7 @@ Bool ActionManager::canConvertObjectToCarBomb( const Object *obj, const Object *
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canHijackVehicle@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canHijackVehicle( const Object *obj, const Object *objectToHijack, CommandSourceType commandSource ) //LORENZEN
 {
 	// sanity
@@ -915,6 +927,7 @@ Bool ActionManager::canHijackVehicle( const Object *obj, const Object *objectToH
 }
 
 // ------------------------------------------------------------------------------------------------
+// ?canSabotageBuilding@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canSabotageBuilding( const Object *obj, const Object *objectToSabotage, CommandSourceType commandSource )
 {
 	// sanity
@@ -960,6 +973,7 @@ Bool ActionManager::canSabotageBuilding( const Object *obj, const Object *object
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canMakeObjectDefector@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canMakeObjectDefector( const Object *obj, const Object *objectToMakeDefector, CommandSourceType commandSource ) //LORENZEN
 {
 	// sanity
@@ -995,6 +1009,7 @@ Bool ActionManager::canMakeObjectDefector( const Object *obj, const Object *obje
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
 
+// ?canCaptureBuilding@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canCaptureBuilding( const Object *obj, const Object *objectToCapture, CommandSourceType commandSource )
 {
 
@@ -1100,6 +1115,7 @@ Bool ActionManager::canCaptureBuilding( const Object *obj, const Object *objectT
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canDisableVehicleViaHacking@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@_N@Z present-unmatched
 Bool ActionManager::canDisableVehicleViaHacking( const Object *obj, const Object *objectToHack, CommandSourceType commandSource, Bool checkSourceRequirements)
 {
 	// sanity
@@ -1182,6 +1198,7 @@ Bool ActionManager::canDisableVehicleViaHacking( const Object *obj, const Object
 // ------------------------------------------------------------------------------------------------
 /** Can 'obj' pick up the prisoner 'prisoner' */
 // ------------------------------------------------------------------------------------------------
+// ?canPickUpPrisoner@ActionManager@@ present-unmatched
 Bool ActionManager::canPickUpPrisoner( const Object *obj, const Object *prisoner, CommandSourceType commandSource )
 {
 
@@ -1224,6 +1241,7 @@ Bool ActionManager::canPickUpPrisoner( const Object *obj, const Object *prisoner
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canStealCashViaHacking@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canStealCashViaHacking( const Object *obj, const Object *objectToHack, CommandSourceType commandSource )
 {
 	// sanity
@@ -1310,6 +1328,7 @@ Bool ActionManager::canStealCashViaHacking( const Object *obj, const Object *obj
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canDisableBuildingViaHacking@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canDisableBuildingViaHacking( const Object *obj, const Object *objectToHack, CommandSourceType commandSource )
 {
 	// sanity
@@ -1380,12 +1399,14 @@ Bool ActionManager::canDisableBuildingViaHacking( const Object *obj, const Objec
 }
 
 // ------------------------------------------------------------------------------------------------
+// ?canBribeUnit@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canBribeUnit( const Object *obj, const Object *objectToBribe, CommandSourceType commandSource )
 {
 	return FALSE;
 }
 
 // ------------------------------------------------------------------------------------------------
+// ?canCutBuildingPower@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canCutBuildingPower( const Object *obj, const Object *building, CommandSourceType commandSource )
 {
 	return FALSE;
@@ -1393,6 +1414,7 @@ Bool ActionManager::canCutBuildingPower( const Object *obj, const Object *buildi
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canSnipeVehicle@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canSnipeVehicle( const Object *obj, const Object *objectToSnipe, CommandSourceType commandSource )
 {
 	//Sanity check
@@ -1460,6 +1482,7 @@ inline Bool isPointOnMap( const Coord3D  *testPos )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canDoSpecialPowerAtLocation@ActionManager@@QAE_NPBVObject@@PBUCoord3D@@W4CommandSourceType@@PBVSpecialPowerTemplate@@0I_N@Z present-unmatched
 Bool ActionManager::canDoSpecialPowerAtLocation( const Object *obj, const Coord3D *loc, CommandSourceType commandSource, const SpecialPowerTemplate *spTemplate, const Object *objectInWay, UnsignedInt commandOptions, Bool checkSourceRequirements )
 {
 	if (checkSourceRequirements)
@@ -1582,6 +1605,7 @@ Bool ActionManager::canDoSpecialPowerAtLocation( const Object *obj, const Coord3
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canDoSpecialPowerAtObject@ActionManager@@ present-unmatched
 Bool ActionManager::canDoSpecialPowerAtObject( const Object *obj, const Object *target, CommandSourceType commandSource, const SpecialPowerTemplate *spTemplate, UnsignedInt commandOptions, Bool checkSourceRequirements )
 {
 	if (checkSourceRequirements)
@@ -1844,6 +1868,7 @@ Bool ActionManager::canDoSpecialPowerAtObject( const Object *obj, const Object *
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
+// ?canDoSpecialPower@ActionManager@@QAE_NPBVObject@@PBVSpecialPowerTemplate@@W4CommandSourceType@@I_N@Z present-unmatched
 Bool ActionManager::canDoSpecialPower( const Object *obj, const SpecialPowerTemplate *spTemplate, CommandSourceType commandSource, UnsignedInt commandOptions, Bool checkSourceRequirements )
 {
 	if (checkSourceRequirements)
@@ -1934,6 +1959,7 @@ Bool ActionManager::canDoSpecialPower( const Object *obj, const SpecialPowerTemp
 }
 
 //------------------------------------------------------------------------------------------------
+// ?canFireWeaponAtLocation@ActionManager@@QAE_NPBVObject@@PBUCoord3D@@W4CommandSourceType@@W4WeaponSlotType@@0@Z present-unmatched
 Bool ActionManager::canFireWeaponAtLocation( const Object *obj, const Coord3D *loc, CommandSourceType commandSource, const WeaponSlotType slot, const Object *objectInWay )
 {
 	//Sanity check
@@ -1953,6 +1979,7 @@ Bool ActionManager::canFireWeaponAtLocation( const Object *obj, const Coord3D *l
 }
 
 //------------------------------------------------------------------------------------------------
+// ?canFireWeaponAtObject@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@W4WeaponSlotType@@@Z present-unmatched
 Bool ActionManager::canFireWeaponAtObject( const Object *obj, const Object *target, CommandSourceType commandSource, const WeaponSlotType slot )
 {
 	//Sanity check
@@ -1992,6 +2019,7 @@ Bool ActionManager::canFireWeaponAtObject( const Object *obj, const Object *targ
 }
 
 //------------------------------------------------------------------------------------------------
+// ?canFireWeapon@ActionManager@@QAE_NPBVObject@@W4WeaponSlotType@@W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canFireWeapon( const Object *obj, const WeaponSlotType slot, CommandSourceType commandSource )
 {
 	//Sanity check
@@ -2012,6 +2040,7 @@ Bool ActionManager::canFireWeapon( const Object *obj, const WeaponSlotType slot,
 }
 
 //------------------------------------------------------------------------------------------------
+// ?canGarrison@ActionManager@@QAE_NPBVObject@@0W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canGarrison( const Object *obj, const Object *target, CommandSourceType commandSource )
 {
 	if (!(obj && target))
@@ -2050,6 +2079,7 @@ Bool ActionManager::canGarrison( const Object *obj, const Object *target, Comman
 }
 
 //------------------------------------------------------------------------------------------------
+// ?canPlayerGarrison@ActionManager@@QAE_NPBVPlayer@@PBVObject@@W4CommandSourceType@@@Z present-unmatched
 Bool ActionManager::canPlayerGarrison( const Player *player, const Object *target, CommandSourceType commandSource )
 {
 	if (!(player && target))

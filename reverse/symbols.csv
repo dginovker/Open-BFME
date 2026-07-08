@@ -1178,3 +1178,5 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?_M_insert_overflow@?$vector@UUpgrades@OCLSpecialPowerModuleData@@V?$allocator@UUpgrades@OCLSpecialPowerModuleData@@@_STL@@@_STL@@IAEXPAUUpgrades@OCLSpecialPowerModuleData@@ABU34@ABU__false_type@2@I_N@Z,0x0003913F
 ?parseObjectCreationList@INI@@SAXPAV1@PAX1PBX@Z,0x0003CBA0
 ?unloadNext@RailedTransportDockUpdate@@IAEXXZ,0x0000C27F
+?findSpecialPowerWithOverridableDestinationActive@Object@@QBEPAVSpecialPowerUpdateInterface@@W4SpecialPowerType@@@Z,0x00039766
+?getShroudStatusForPlayer@PartitionManager@@QBE?AW4CellShroudStatus@@HPBUCoord3D@@@Z,0x008F7430

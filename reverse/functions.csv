@@ -2808,3 +2808,7 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ??1DX8PolygonRendererClass@@UAE@XZ,,0x00972AF0,87,src/zh/dx8polygonrenderer.cpp,matched,
 ??_GDX8PolygonRendererClass@@UAEPAXI@Z,,0x00972C10,30,src/zh/dx8polygonrenderer.cpp,matched,
 ?Log@DX8PolygonRendererClass@@QAEXXZ,,0x00972CD0,158,src/zh/dx8polygonrenderer.cpp,matched,
+??1FastFixedAllocator@@QAE@XZ,,0x00B02720,26,src/zh/fastallocator.cpp,matched,
+??0FastFixedAllocator@@QAE@I@Z,,0x00B02760,45,src/zh/fastallocator.cpp,matched,
+??_FFastFixedAllocator@@QAEXXZ,,0x00B02790,24,src/zh/fastallocator.cpp,matched,
+?Get_Allocator@FastAllocatorGeneral@@SAPAV1@XZ,,0x00B02830,92,src/zh/fastallocator.cpp,matched,

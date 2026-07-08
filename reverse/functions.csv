@@ -2804,3 +2804,4 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVOBBoxClass@@ABVTriClass@@@Z,,0x008E2560,200,src/zh/colmathobbox.cpp,matched,
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVOBBoxClass@@0@Z,,0x008E2630,200,src/zh/colmathobbox.cpp,matched,
 ?Collide@CollisionMath@@SA_NABVOBBoxClass@@ABVVector3@@ABVPlaneClass@@PAUCastResultStruct@@@Z,,0x008E2700,533,src/zh/colmathobbox.cpp,matched,
+?getMostRecentCommand@DozerAIUpdate@@UAE?AW4DozerTask@@XZ,,0x002B6960,66,src/zh/dozeraiupdate.cpp,matched,

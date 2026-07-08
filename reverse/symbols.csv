@@ -372,3 +372,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?Remove_Polygon_Renderer@DX8TextureCategoryClass@@QAEXPAVDX8PolygonRendererClass@@@Z,0x00947D30
 ??0FastAllocatorGeneral@@QAE@XZ,0x00B027B0
 ??$__find@U?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@_STL@@H@_STL@@YA?AU?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@0@U10@0ABHABUinput_iterator_tag@0@@Z,0x0004093A
+?Get_Shader_Array@MeshMatDescClass@@QAEPAVShaderClass@@H_N@Z,0x0092BF50

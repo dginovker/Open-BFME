@@ -2829,3 +2829,5 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?isInSection@SectionChecker@@QAE_NXZ,,0x006287C0,41,src/zh/gsconfig.cpp,matched,
 ?Contribution@InputLightStruct@LightEnvironmentClass@@QAEMXZ,,0x0094AA10,32,src/zh/lightenvironment.cpp,matched,
 ?Init@OutputLightStruct@LightEnvironmentClass@@QAEXABUInputLightStruct@2@ABVMatrix3D@@@Z,,0x0094AA30,179,src/zh/lightenvironment.cpp,matched,
+?Get_Element@TexBufferClass@@QAEPAVTextureClass@@H@Z,,0x00739780,35,src/zh/meshmatdesc.cpp,matched,
+?Set_Shader@MeshMatDescClass@@QAEXHVShaderClass@@H@Z,,0x0092C200,26,src/zh/meshmatdesc.cpp,matched,

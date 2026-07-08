@@ -2797,3 +2797,5 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,
+??0MeshSaveContextClass@@QAE@XZ,,0x0096CAD0,28,src/zh/meshmdlio.cpp,matched,
+??0LegacyMaterialClass@MeshLoadContextClass@@QAE@XZ,,0x0096D0E0,54,src/zh/meshmdlio.cpp,matched,

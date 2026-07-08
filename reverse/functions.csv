@@ -2703,3 +2703,5 @@ _BFMENetworkBackendEventCallback@40,,0x006549C0,375,src/game/native_network.cpp,
 ?copyState78@BFMENetwork@@QAEPAXPAX@Z,,0x00655090,32,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x78
 ?copyState84@BFMENetwork@@QAEPAXPAX@Z,,0x006550C0,35,src/game/native_network.cpp,matched,native BFME network callback helper; copies wrapper state at +0x84
 _BFMENetworkRegisteredCallback,,0x0065C260,1617,src/game/native_network_callback.cpp,matched,native BFME registered callback body; dispatcher registers VA 0x00A5C260 before 0x009D5330 and callback pushes wrapper queues
+?dispatchEvents@BFMENetworkBackend@@QAEXXZ,,0x0065CA50,3235,src/game/native_network_dispatcher.cpp,matched,native BFME backend dispatcher vtable slot +0x08; code ends before EH catch thunk and switch table at 0x0065D6FC
+_BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatcher.cpp,matched,native BFME backend dispatcher EH catch thunk; returns cleanup resume VA 0x00A5CAEB

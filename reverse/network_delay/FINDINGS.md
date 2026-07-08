@@ -19,8 +19,8 @@ Zero Hour schedules synchronized network commands for a future logic frame:
 - `Network::processRunAheadCommand` applies those values and adjusts packet
   frame grouping.
 
-BFME may drift from ZH, so ZH is only the search map. The BFME binary remains the
-source of truth.
+BFME does not keep this command-message path verbatim. ZH remains useful as an
+intent map, but the BFME binary is the source of truth.
 
 ## ZH delay map
 
@@ -32,8 +32,8 @@ source of truth.
 | local commands | `ConnectionManager::sendLocalGameMessage` | TBD | not recovered |
 | command relay | `ConnectionManager::sendLocalCommand` | TBD | not recovered |
 | readiness gate | `ConnectionManager::allCommandsReady` | TBD | not recovered |
-| dynamic delay | `ConnectionManager::updateRunAhead` | TBD | not recovered |
-| apply delay | `Network::processRunAheadCommand` | TBD | not recovered |
+| dynamic delay | `ConnectionManager::updateRunAhead` | TBD | not recovered; ZH command path disproven for BFME |
+| apply delay | `Network::processRunAheadCommand` | TBD | not recovered; BFME has no run-ahead command type |
 | frame pacing | `Network::timeForNewFrame` | TBD | not recovered |
 
 These names are useful search targets, but the current evidence says the BFME
@@ -56,6 +56,48 @@ runtime path is not the ZH `Network`/`ConnectionManager` path verbatim:
 
 If the delay code is not in ZH, that is still actionable: use ZH for intent and
 recover BFME's native wrapper/backend path directly from the retail binary.
+
+## BFME command-type correction
+
+The old ZH run-ahead command trail is now ruled out for BFME retail. The BFME
+command-type string mapper at `0x00683020` names the relevant values as:
+
+| Value | BFME name |
+| --- | --- |
+| `3` | `NETCOMMANDTYPE_FRAMEINFO` |
+| `4` | `NETCOMMANDTYPE_GAMECOMMAND` |
+| `5` | `NETCOMMANDTYPE_REQUEST_GAMESPY_STATS_AUTHKEY` |
+| `6` | `NETCOMMANDTYPE_GAMESPY_STATS_AUTHKEY` |
+| `7` | `NETCOMMANDTYPE_REQUESTPLAYERLEAVE` |
+| `8` | `NETCOMMANDTYPE_INFORMPLAYERLEAVEFRAME` |
+| `9` | `NETCOMMANDTYPE_REQUESTFRAMEDATA` |
+| `10` | `NETCOMMANDTYPE_PLAYERLEAVE` |
+| `11` | `NETCOMMANDTYPE_DESTROYPLAYER` |
+
+This differs from Zero Hour, where values `6` and `7` are run-ahead metrics and
+run-ahead. In BFME:
+
+- `0x006741F0` is byte-matched as the command type `7` constructor and initializes
+  a single dword payload at `+0x1C`; it is now named
+  `BFMENetRequestPlayerLeaveCommandMsg::construct`.
+- `0x00674240` and `0x00674250` are byte-matched as the payload setter/getter.
+- `0x00677530` writes the type `7` wire payload as a four-byte `D` field after
+  `T/R/P/C`; there is no ZH-style frame-rate byte.
+- `0x00675BE0` constructs command type `6`, whose callers populate two
+  `AsciiString`-like fields. It is GameSpy stats auth-key traffic, not
+  run-ahead metrics.
+
+So a future delay fix should not patch BFME command types `6` or `7` as if they
+were ZH `NetRunAhead*` classes.
+
+The incoming command dispatcher at `0x0066A3F0` uses the command type at message
+offset `+0x14` and a jump table at `0x0066A634`. For the frame-delay path:
+
+| Value | Dispatcher evidence |
+| --- | --- |
+| `3` | inline frame-info-ish state update for per-player latest frame fields at `+0x12060`/`+0x120A0` |
+| `8` | calls `0x00664430`, the next frame-info/request helper to recover |
+| `9` | calls matched `BFMEConnectionManager::processRequestFrameDataCommand` at `0x006659B0` |
 
 ## BFME-native path
 
@@ -87,8 +129,9 @@ anchors, not behavior changes.
 | wrapper payload-list push | RVA `0x0065E340` | byte-matched as `BFMENetwork::pushList90`; dispatcher calls wrapper slot `+0x20` after building a payload, appending to list at `+0x90` | matched |
 | wrapper payload-list find/create | RVA `0x0065AEB0` | byte-matched as `BFMENetwork::findList90`; wrapper slot `+0x24` searches or materializes an entry in list at `+0x90` | matched |
 | wrapper state-copy helpers | RVAs `0x00655060`, `0x00655090`, `0x006550C0` | byte-matched as `BFMENetwork::copyState6C`, `copyState78`, `copyState84`; callback uses these to copy wrapper fields `+0x6C`, `+0x78`, `+0x84` | matched |
-| backend event dispatcher | RVA `0x0065CA50` | backend vtable slot `+0x08`; switch/jump table at VA `0x00A5D6FC` | boundary suspect |
-| registered callback | RVA `0x0065C260` | pushed as callback VA `0x00A5C260` by dispatcher before call to `0x009D5330` | Ghidra start missing |
+| backend event dispatcher | RVA `0x0065CA50` | byte-matched as `BFMENetworkBackend::dispatchEvents`; backend vtable slot `+0x08`; body ends at `0x0065D6F2` before EH catch thunk and switch table | matched |
+| dispatcher catch thunk | RVA `0x0065D6F3` | byte-matched as `BFMENetworkBackendDispatchCatch`; returns cleanup resume VA `0x00A5CAEB` | matched |
+| registered callback | RVA `0x0065C260` | byte-matched as `BFMENetworkRegisteredCallback`; dispatcher pushes callback VA `0x00A5C260` before call to `0x009D5330`; callback calls wrapper slots `+0x18` and `+0x10` | matched |
 
 Known wrapper slots from vtable VA `0x01119C8C`:
 
@@ -110,13 +153,63 @@ queue/list structures at `+0x14` and `+0x3C`; object/array regions at `+0x6C`,
 `+0x78`, and `+0x84`; backend pointer at `+0x64`; and a current/session-ish
 field at `+0x68`.
 
-The dispatcher at `0x0065CA50` should be treated as one of the next primary
-targets. It references packet/event cases `0..0x0B`, calls wrapper slot `+0x14`,
-reads and writes `TheNetwork+0x68`, and jumps through table VA `0x00A5D6FC`.
-Ghidra currently reports a short function boundary even though control flow
-continues to `0x0065D69E`, so its boundary is suspect. The callback at
-`0x0065C260` also needs a manual function start; it calls wrapper slots `+0x18`
-and `+0x10` and reads `TheNetwork+0x68`.
+The dispatcher at `0x0065CA50` is now bounded and byte-matched. Its switch table
+starts at `0x0065D6FC`; that table is data and is intentionally not part of the
+function row. Cases `4`, `8`, and `9` share the cleanup block at `0x0065D69E`;
+case `10` calls helper `0x0062F7F2`; case `0` registers callback VA
+`0x00A5C260`; and case `1` reads `LoTRB4MEOnline\MiscPref%d.ini` keys `"0"`
+through `"5"` with default value `10`. Treat those key/default reads as GameSpy
+misc-preference evidence until another caller proves they feed gameplay delay.
+
+## BFME timing fields
+
+The first native timing slice is now byte-matched:
+
+| Function | RVA | Timing evidence |
+| --- | --- | --- |
+| `BFMEConnectionManager::isPlayerConnected` | `0x00662A50` | uses `timeGetTime`; compares elapsed time against `TheGlobalData + 0xCBC` (`NetworkPlayerTimeoutTime`); before frame threshold `0x010EAD50`, uses `NetworkPlayerTimeoutTime * 4` |
+| `BFMEConnectionManager::isPlayerConnectedForTimeout` | `0x00662B00` | same connection timestamp at peer object `+0x34C`; normally uses caller timeout, but startup path still falls back to `NetworkPlayerTimeoutTime * 4` |
+| `BFMEConnectionManager::hasPacketRouterFrameStall` | `0x00664260` | only runs when local player is packet router; after frame `5`, uses `TheGlobalData + 0xCB4` (`NetworkKeepAliveDelay`) to detect stale per-player frame data |
+| `BFMEDisconnectManager::hasDisconnectScreenNotifyTimedOut` | `0x0066B510` | compares elapsed time against `TheGlobalData + 0xCC0` (`NetworkDisconnectScreenNotifyTime`) |
+| `BFMEConnectionManager::processRequestFrameDataCommand` | `0x006659B0` | command type `9` handler; rejects/clamps requested resend windows using `NetworkKeepAliveDelay`, then calls `0x0040D8CD` with player id and frame range |
+
+These are timeout/readiness gates, not the delay patch itself, but they expose the
+retail frame and keep-alive timing constants that a later patch design must not
+confuse with ZH run-ahead command traffic.
+
+## BFME frame pacing
+
+ZH `Network::timeForNewFrame` is not a BFME byte match. A locate-only probe of
+the 256-byte ZH-shaped body returned `0 located`, and BFME has no code xrefs to
+the `NetworkRunAheadSlack`/`NetworkRunAheadMetricsTime` strings beyond their INI
+parse-table rows. That rules out the ZH run-ahead pacing body as the direct patch
+site.
+
+The BFME-native `Network` object instead initializes QPC pacing state in the
+constructor body at `0x006818B0`, now byte-matched as
+`BFMENativeNetwork::construct`:
+
+| Field | Constructor evidence |
+| --- | --- |
+| `+0x08` | connection manager pointer initialized to null |
+| `+0x0C` | local/network status initialized to `0` |
+| `+0x10` | `QueryPerformanceFrequency` output |
+| `+0x18` | initial `QueryPerformanceCounter` output |
+| `+0x20`/`+0x24` | QPC accumulator initialized to `0` |
+| `+0x28`, `+0x34`, `+0x35` | pacing/status flags initialized to false |
+| `+0x38` | frame/player sentinel initialized to `-1` |
+
+The native vtable at `0x0111A968` resolves slot `+0x3C` to `0x00681F70` and
+slot `+0x40` to `0x00682160`. Slot `+0x40` is now byte-matched as
+`BFMENativeNetwork::getFramePacingStatus`:
+
+| Function | RVA | Pacing evidence |
+| --- | --- | --- |
+| `BFMENativeNetwork::getFramePacingStatus` | `0x00682160` | returns `1` when not in active network status; without packet-router timing mode, returns `connectionManager->+0x1205C - currentFrame + 1`; otherwise accumulates QPC ticks and returns `0`, `1`, or `2` based on elapsed budget |
+
+The remaining slot `+0x3C` at `0x00681F70` also uses connection manager
+`+0x1205C`, current game frame `TheGameLogic + 0x3C`, and globals
+`0x012F7718`, `0x012F771C`, `0x012F7724`, and `0x012F7728`.
 
 ## Landed evidence
 
@@ -147,6 +240,20 @@ and `+0x10` and reads `TheNetwork+0x68`.
   - `BFMENetwork::findList90` at `0x0065AEB0`.
   - `BFMENetwork::copyState6C`, `copyState78`, and `copyState84` at
     `0x00655060`, `0x00655090`, and `0x006550C0`.
+- `src/game/native_network_callback.cpp` contains `BFMENetworkRegisteredCallback`
+  at `0x0065C260`.
+- `src/game/native_network_dispatcher.cpp` contains `BFMENetworkBackend::dispatchEvents`
+  at `0x0065CA50` and its EH catch thunk at `0x0065D6F3`.
+- `src/game/native_netcommandmsg.cpp` contains the BFME command type `7`
+  request-player-leave constructor/destructor and its single dword payload
+  setter/getter at `0x006741F0`, `0x00674230`, `0x00674240`, and `0x00674250`.
+- `src/game/native_connection_timing.cpp` contains the first byte-matched BFME
+  player-timeout, packet-router stall, disconnect-screen timeout, and request
+  frame-data handler checks at `0x00662A50`, `0x00662B00`, `0x00664260`,
+  `0x0066B510`, and `0x006659B0`.
+- `src/game/native_network_interface.cpp` contains the native BFME `Network`
+  constructor body at `0x006818B0`, anchoring the QPC frame-pacing fields, and
+  the QPC-backed pacing-status helper at `0x00682160`.
 - The current matched network rows are:
   - `ConnectionManager::processProgress` at `0x00662D20`.
   - `NetworkInterface::createNetwork` at `0x0065C1F0`.
@@ -162,11 +269,19 @@ and `+0x10` and reads `TheNetwork+0x68`.
 2. DONE: land the first byte-verified `ConnectionManager` and `Network` rows.
 3. DONE: prove that the needed path is BFME-native enough that ZH is a search
    map, not the source of truth.
-4. NEXT: recover the native dispatcher/callback boundaries and name the wrapper
-   slots/fields before attempting any patch design.
-5. NEXT: trace the dispatcher cases that schedule, hold, or advance synchronized
-   command frames and only then decide whether a delay constant or runtime field
-   exists.
+4. DONE: recover the native dispatcher boundary and name the remaining wrapper
+   fields before attempting any patch design.
+5. DONE: rule out the ZH `NetRunAhead*` command classes for BFME command types
+   `6` and `7`.
+6. DONE: match the first BFME timing/readiness gates that consume
+   `NetworkPlayerTimeoutTime`, `NetworkKeepAliveDelay`, and
+   `NetworkDisconnectScreenNotifyTime`.
+7. NEXT: trace the BFME frame scheduler that sends/consumes frame info, request
+   frame-data, inform-player-leave-frame, and keep-alive commands. Command type
+   `9` request-frame-data handling is matched; command type `8` and the frame
+   tick sender remain next. Native QPC frame pacing is anchored, and slot
+   `0x00682160` is matched; slot `0x00681F70` still needs a name/match before
+   patch design.
 
 ## Non-goals
 

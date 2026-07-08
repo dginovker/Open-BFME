@@ -906,3 +906,14 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?getOriginalPlayerID@NetAckBothCommandMsg@@QAEEXZ,0x00046D17
 ?getOriginalPlayerID@NetAckStage1CommandMsg@@QAEEXZ,0x00020518
 ?getOriginalPlayerID@NetAckStage2CommandMsg@@QAEEXZ,0x0002714C
+?createDirectory@FileSystem@@QAE_NVAsciiString@@@Z,0x009C8DC0
+?getUserMapDir@MapCache@@QBE?AVAsciiString@@XZ,0x000139E9
+?loadStandardMaps@MapCache@@AAEXXZ,0x000359DB
+?loadUserMaps@MapCache@@AAE_NXZ,0x00028FF1
+?readDict@DataChunkInput@@QAE?AVDict@@XZ,0x00022683
+?resize@?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEXI@Z,0x0000366B
+?setFPMode@@YAXXZ,0x008FC4C0
+?writeCacheINI@MapCache@@AAEX_N@Z,0x0000E2B4
+?Close_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1480
+?Cur_Micro_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E14E0
+?Open_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E17C0

@@ -1259,3 +1259,28 @@ Libraries/Source/WWVegas/WWAudio/soundhandle.cpp,missing-header,0,0,0,soundhandl
 Libraries/Source/WWVegas/WWAudio/soundstreamhandle.cpp,missing-header,0,0,0,soundstreamhandle.h
 Libraries/Source/WWVegas/WWDebug/wwdebug.cpp,ok,0,0,4,
 GameEngine/Source/GameClient/MessageStream/HintSpy.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWDebug/wwprofile.cpp,ok,0,25,65,
+Libraries/Source/WWVegas/WWDownload/Download.cpp,missing-header,0,0,0,DownloadDebug.h
+GameEngine/Source/GameClient/MessageStream/LookAtXlat.cpp,ok,0,2,6,
+Libraries/Source/WWVegas/WWDownload/registry.cpp,compile-error,0,0,0,"C2084 function 'void *operator new[](size_t,void *) throw()' already has a body"
+Libraries/Source/WWVegas/WWDownload/urlBuilder.cpp,compile-error,0,0,0,"C2084 function 'void *operator new[](size_t,void *) throw()' already has a body"
+GameEngine/Source/GameClient/MessageStream/PlaceEventTranslator.cpp,compile-error,0,0,0,C2668 'sqrt' : ambiguous call to overloaded function
+Libraries/Source/WWVegas/WWLib/Except.cpp,compile-error,0,0,0,C2227 left of '->MaxNameLength' must point to class/struct/union
+Libraries/Source/WWVegas/WWLib/LaunchWeb.cpp,ok,0,0,1,
+GameEngine/Source/GameClient/MessageStream/WindowXlat.cpp,ok,0,2,2,
+Libraries/Source/WWVegas/WWLib/WWCOMUtil.cpp,missing-header,0,0,0,oaidl.h
+Libraries/Source/WWVegas/WWLib/_convert.cpp,ok,0,0,0,
+GameEngine/Source/GameClient/ParabolicEase.cpp,ok,0,1,2,
+Libraries/Source/WWVegas/WWLib/_mono.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/_timer.cpp,ok,0,3,3,
+GameEngine/Source/GameClient/RadiusDecal.cpp,ok,0,0,15,
+Libraries/Source/WWVegas/WWLib/argv.cpp,ok,0,0,10,
+Libraries/Source/WWVegas/WWLib/bfiofile.cpp,ok,0,1,14,
+GameEngine/Source/GameClient/Snow.cpp,ok,0,5,15,
+Libraries/Source/WWVegas/WWLib/blit.cpp,ok,0,5,12,
+Libraries/Source/WWVegas/WWLib/blowfish.cpp,ok,0,0,6,
+GameEngine/Source/GameClient/System/Debug Displayers/AudioDebugDisplay.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/blowpipe.cpp,ok,0,0,3,
+Libraries/Source/WWVegas/WWLib/blwstraw.cpp,ok,0,0,2,
+GameEngine/Source/GameClient/System/DebugDisplay.cpp,ok,0,2,3,
+Libraries/Source/WWVegas/WWLib/convert.cpp,missing-header,0,0,0,ddraw.h

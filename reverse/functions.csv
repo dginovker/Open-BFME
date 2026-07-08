@@ -2797,3 +2797,6 @@ _BFMENetworkBackendDispatchCatch,,0x0065D6F3,6,src/game/native_network_dispatche
 ?Convert_Color@DX8Wrapper@@SAIABVVector3@@M@Z,,0x00710E70,151,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SAIABVVector4@@@Z,,0x0091DBB0,160,src/zh/bitmaphandler.cpp,matched,
 ?Convert_Color@DX8Wrapper@@SA?AVVector4@@I@Z,,0x00929100,150,src/zh/bitmaphandler.cpp,matched,
+??$find@U?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@_STL@@H@_STL@@YA?AU?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@0@U10@0ABH@Z,,0x005063B0,38,src/zh/gsconfig.cpp,matched,
+?getPointsForRank@GameSpyConfig@@UAEHH@Z,,0x006282F0,34,src/zh/gsconfig.cpp,matched,
+?isInSection@SectionChecker@@QAE_NXZ,,0x006287C0,41,src/zh/gsconfig.cpp,matched,

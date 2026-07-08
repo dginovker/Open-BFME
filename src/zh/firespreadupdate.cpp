@@ -78,7 +78,6 @@ Bool PartitionFilterFlammable::allow(Object *objOther)
 //-------------------------------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------------------------------
-// ??0FireSpreadUpdateModuleData@@QAE@XZ present-unmatched
 FireSpreadUpdateModuleData::FireSpreadUpdateModuleData()
 {
 	m_minSpreadTryDelayData = 0;
@@ -105,7 +104,6 @@ FireSpreadUpdateModuleData::FireSpreadUpdateModuleData()
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??0FireSpreadUpdate@@QAE@PAVThing@@PBVModuleData@@@Z present-unmatched
 FireSpreadUpdate::FireSpreadUpdate( Thing *thing, const ModuleData* moduleData ) : UpdateModule( thing, moduleData )
 {
 	setWakeFrame(getObject(), UPDATE_SLEEP_FOREVER);
@@ -113,14 +111,12 @@ FireSpreadUpdate::FireSpreadUpdate( Thing *thing, const ModuleData* moduleData )
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??1FireSpreadUpdate@@MAE@XZ present-unmatched
 FireSpreadUpdate::~FireSpreadUpdate( void )
 {
 }
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?update@FireSpreadUpdate@@ present-unmatched
 UpdateSleepTime FireSpreadUpdate::update( void )
 {
 	const FireSpreadUpdateModuleData* d = getFireSpreadUpdateModuleData();
@@ -167,7 +163,6 @@ UpdateSleepTime FireSpreadUpdate::update( void )
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?startFireSpreading@FireSpreadUpdate@@QAEXXZ present-unmatched
 void FireSpreadUpdate::startFireSpreading()
 {
 	if( !getObject()->getStatusBits().test( OBJECT_STATUS_AFLAME ) )
@@ -178,7 +173,6 @@ void FireSpreadUpdate::startFireSpreading()
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?calcNextSpreadDelay@FireSpreadUpdate@@IAEIXZ present-unmatched
 UnsignedInt FireSpreadUpdate::calcNextSpreadDelay()
 {
 	const FireSpreadUpdateModuleData* d = getFireSpreadUpdateModuleData();
@@ -191,7 +185,6 @@ UnsignedInt FireSpreadUpdate::calcNextSpreadDelay()
 // ------------------------------------------------------------------------------------------------
 /** CRC */
 // ------------------------------------------------------------------------------------------------
-// ?crc@FireSpreadUpdate@@MAEXPAVXfer@@@Z present-unmatched
 void FireSpreadUpdate::crc( Xfer *xfer )
 {
 
@@ -205,7 +198,6 @@ void FireSpreadUpdate::crc( Xfer *xfer )
 	* Version Info:
 	* 1: Initial version */
 // ------------------------------------------------------------------------------------------------
-// ?xfer@FireSpreadUpdate@@MAEXPAVXfer@@@Z present-unmatched
 void FireSpreadUpdate::xfer( Xfer *xfer )
 {
 
@@ -222,7 +214,6 @@ void FireSpreadUpdate::xfer( Xfer *xfer )
 // ------------------------------------------------------------------------------------------------
 /** Load post process */
 // ------------------------------------------------------------------------------------------------
-// ?loadPostProcess@FireSpreadUpdate@@MAEXXZ present-unmatched
 void FireSpreadUpdate::loadPostProcess( void )
 {
 

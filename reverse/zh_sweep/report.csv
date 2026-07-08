@@ -684,3 +684,281 @@ GameEngine/Source/GameNetwork/NetPacket.cpp,compile-error,0,0,0,C2664 '_STL::lis
 GameEngine/Source/GameNetwork/Connection.cpp,ok,0,0,22,
 GameEngine/Source/GameNetwork/ConnectionManager.cpp,ok,5,28,143,
 GameEngine/Source/GameNetwork/Network.cpp,ok,2,4,48,
+Libraries/Source/Compression/CompressionManager.cpp,missing-header,0,0,0,ZLib/zlib.h
+Libraries/Source/Compression/EAC/btreeabout.cpp,missing-header,0,0,0,codex.h
+Libraries/Source/Compression/EAC/huffabout.cpp,missing-header,0,0,0,codex.h
+Libraries/Source/Compression/EAC/refabout.cpp,missing-header,0,0,0,codex.h
+Libraries/Source/Compression/LZHCompress/NoxCompress.cpp,missing-header,0,0,0,Noxcompress.h
+Libraries/Source/WPAudio/AUD_Assert.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Attributes.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Cache.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Channel.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_DSoundDriver.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Device.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Events.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Level.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_List.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Lock.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Memory.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Profiler.cpp,missing-header,0,0,0,wpaudio/profiler.h
+Libraries/Source/WPAudio/AUD_Source.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_StreamBuffering.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Streamer.cpp,missing-header,0,0,0,wpaudio/altypes.h
+Libraries/Source/WPAudio/AUD_Time.cpp,missing-header,0,0,0,wpaudio/time.h
+Libraries/Source/WPAudio/AUD_Windows.cpp,missing-header,0,0,0,mmreg.h
+Libraries/Source/WWVegas/WW3D2/FramGrab.cpp,missing-header,0,0,0,windowsx.h
+Libraries/Source/WWVegas/WW3D2/agg_def.cpp,compile-error,0,0,0,C2039 'lstrcmpi' : is not a member of 'operator``global namespace'''
+Libraries/Source/WWVegas/WW3D2/animatedsoundmgr.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before 'const'
+Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,compile-error,0,0,0,C2051 case expression not constant
+Libraries/Source/WWVegas/WW3D2/assetstatus.cpp,ok,0,1,14,
+Libraries/Source/WWVegas/WW3D2/bitmaphandler.cpp,ok,5,6,12,
+Libraries/Source/WWVegas/WW3D2/bmp2d.cpp,ok,0,4,45,
+Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,ok,3,16,71,
+Libraries/Source/WWVegas/WW3D2/bw_render.cpp,ok,0,2,11,
+Libraries/Source/WWVegas/WW3D2/bwrender.cpp,ok,0,2,11,
+Libraries/Source/WWVegas/WW3D2/camera.cpp,ok,11,21,39,
+Libraries/Source/WWVegas/WW3D2/collect.cpp,ok,0,67,72,
+Libraries/Source/WWVegas/WW3D2/coltest.cpp,ok,0,8,11,
+Libraries/Source/WWVegas/WW3D2/dazzle.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before 'const'
+Libraries/Source/WWVegas/WW3D2/ddsfile.cpp,missing-header,0,0,0,ddraw.h
+Libraries/Source/WWVegas/WW3D2/decalmsh.cpp,ok,2,95,55,
+Libraries/Source/WWVegas/WW3D2/decalsys.cpp,ok,0,8,24,
+Libraries/Source/WWVegas/WW3D2/dx8caps.cpp,compile-error,0,0,0,C2065 'D3DTEXOPCAPS_BUMPENVMAPLUMINANCE' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/dx8fvf.cpp,compile-error,0,0,0,"C3861 'D3DXGetFVFVertexSize': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/dx8indexbuffer.cpp,ok,0,3,25,
+Libraries/Source/WWVegas/WW3D2/dx8polygonrenderer.cpp,ok,3,1,2,
+Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,compile-error,0,0,0,C2065 'D3DRS_SRCBLEND' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/dx8rendererdebugger.cpp,ok,0,1,12,
+Libraries/Source/WWVegas/WW3D2/dx8texman.cpp,compile-error,0,0,0,C2664 'TextureBaseClass::Poke_Texture' : cannot convert parameter 1 from 'IDirect3DTexture8 *' t
+Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.cpp,ok,2,3,34,
+Libraries/Source/WWVegas/WW3D2/dx8webbrowser.cpp,missing-header,0,0,0,ole2.h
+Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,missing-header,0,0,0,d3d8types.h
+Libraries/Source/WWVegas/WW3D2/dynamesh.cpp,ok,2,14,76,
+Libraries/Source/WWVegas/WW3D2/font3d.cpp,ok,0,3,13,
+Libraries/Source/WWVegas/WW3D2/formconv.cpp,compile-error,0,0,0,"C3861 'D3DFMT_A8': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/hanimmgr.cpp,ok,1,10,11,
+Libraries/Source/WWVegas/WW3D2/hrawanim.cpp,ok,0,10,26,
+Libraries/Source/WWVegas/WW3D2/htreemgr.cpp,ok,0,1,22,
+Libraries/Source/WWVegas/WW3D2/intersec.cpp,ok,0,9,20,
+Libraries/Source/WWVegas/WW3D2/layer.cpp,ok,0,6,8,
+Libraries/Source/WWVegas/WW3D2/light.cpp,ok,1,10,33,
+Libraries/Source/WWVegas/WW3D2/lightenvironment.cpp,ok,4,12,13,
+Libraries/Source/WWVegas/WW3D2/matinfo.cpp,ok,3,51,33,
+Libraries/Source/WWVegas/WW3D2/matpass.cpp,ok,0,2,7,
+Libraries/Source/WWVegas/WW3D2/matrixmapper.cpp,compile-error,0,0,0,C2065 'D3DTSS_TCI_CAMERASPACEPOSITION' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/meshbuild.cpp,ok,0,14,53,
+Libraries/Source/WWVegas/WW3D2/meshdam.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,ok,5,7,73,
+Libraries/Source/WWVegas/WW3D2/meshmdlio.cpp,ok,5,89,79,
+Libraries/Source/WWVegas/WW3D2/metalmap.cpp,ok,0,5,9,
+Libraries/Source/WWVegas/WW3D2/missingtexture.cpp,compile-error,0,0,0,"C3861 'texture_surface_desc': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/polyinfo.cpp,ok,0,0,4,
+Libraries/Source/WWVegas/WW3D2/predlod.cpp,ok,1,0,12,
+Libraries/Source/WWVegas/WW3D2/prim_anim.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&'
+Libraries/Source/WWVegas/WW3D2/projector.cpp,ok,3,8,11,
+Libraries/Source/WWVegas/WW3D2/proto.cpp,ok,0,3,13,
+Libraries/Source/WWVegas/WW3D2/render2d.cpp,compile-error,0,0,0,C2065 'D3DTA_ALPHAREPLICATE' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/render2dsentence.cpp,compile-error,0,0,0,"C3861 'SetTextColor': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/renderobjectrecycler.cpp,ok,0,0,9,
+Libraries/Source/WWVegas/WW3D2/rinfo.cpp,ok,3,0,2,
+Libraries/Source/WWVegas/WW3D2/ringobj.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&'
+Libraries/Source/WWVegas/WW3D2/scene.cpp,compile-error,0,0,0,C2065 'D3DRS_FILLMODE' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/shader.cpp,compile-error,0,0,0,"C3861 'D3DTA_CURRENT': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/shattersystem.cpp,ok,3,52,74,
+Libraries/Source/WWVegas/WW3D2/snappts.cpp,ok,0,2,2,
+Libraries/Source/WWVegas/WW3D2/sortingrenderer.cpp,compile-error,0,0,0,"C3861 'D3DXMATRIX': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/soundrobj.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WW3D2/sphereobj.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&'
+Libraries/Source/WWVegas/WW3D2/sr_util.cpp,missing-header,0,0,0,srVector3i.hpp
+Libraries/Source/WWVegas/WW3D2/static_sort_list.cpp,ok,3,3,5,
+Libraries/Source/WWVegas/WW3D2/streak.cpp,ok,0,51,51,
+Libraries/Source/WWVegas/WW3D2/streakRender.cpp,ok,4,9,19,
+Libraries/Source/WWVegas/WW3D2/stripoptimizer.cpp,ok,0,2,23,
+Libraries/Source/WWVegas/WW3D2/surfaceclass.cpp,compile-error,0,0,0,"C3861 'lock_rect': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/texfcach.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WW3D2/texproject.cpp,ok,0,11,27,
+Libraries/Source/WWVegas/WW3D2/textdraw.cpp,compile-error,0,0,0,C2660 'Font3DInstanceClass::Peek_Texture' : function does not take 1 arguments
+Libraries/Source/WWVegas/WW3D2/texture.cpp,compile-error,0,0,0,C2664 'TextureBaseClass::Poke_Texture' : cannot convert parameter 1 from 'IDirect3DVolumeTexture
+Libraries/Source/WWVegas/WW3D2/texturefile.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WW3D2/texturefilter.cpp,compile-error,0,0,0,C2065 'D3DPTFILTERCAPS_MINFLINEAR' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/textureloader.cpp,compile-error,0,0,0,C2065 'D3DLOCKED_BOX' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/texturethumbnail.cpp,compile-error,0,0,0,"C3861 'GetCurrentDirectory': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/txt.cpp,compile-error,0,0,0,C2668 'sqrt' : ambiguous call to overloaded function
+Libraries/Source/WWVegas/WW3D2/txt2d.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WW3D2/vertmaterial.cpp,compile-error,0,0,0,C2065 'D3DMCS_COLOR2' : undeclared identifier
+Libraries/Source/WWVegas/WW3D2/w3d_dep.cpp,compile-error,0,0,0,"C2084 function 'void operator delete[](void *,void *) throw()' already has a body"
+Libraries/Source/WWVegas/WW3D2/w3dexclusionlist.cpp,ok,0,1,17,
+Libraries/Source/WWVegas/WW3D2/ww3d.cpp,missing-header,0,0,0,d3d8types.h
+Libraries/Source/WWVegas/WW3D2/ww3dformat.cpp,ok,2,1,11,
+Libraries/Source/WWVegas/WWAudio/AudibleSound.cpp,missing-header,0,0,0,audiblesound.h
+Libraries/Source/WWVegas/WWAudio/AudioSaveLoad.cpp,missing-header,0,0,0,audiosaveload.h
+Libraries/Source/WWVegas/WWAudio/FilteredSound.cpp,missing-header,0,0,0,filteredsound.h
+Libraries/Source/WWVegas/WWAudio/Listener.cpp,missing-header,0,0,0,listener.h
+Libraries/Source/WWVegas/WWAudio/LogicalListener.cpp,missing-header,0,0,0,LogicalListener.H
+Libraries/Source/WWVegas/WWAudio/LogicalSound.cpp,missing-header,0,0,0,LogicalSound.H
+Libraries/Source/WWVegas/WWAudio/Sound3D.cpp,missing-header,0,0,0,sound3d.h
+Libraries/Source/WWVegas/WWAudio/SoundBuffer.cpp,missing-header,0,0,0,soundbuffer.h
+Libraries/Source/WWVegas/WWAudio/SoundPseudo3D.cpp,missing-header,0,0,0,soundpseudo3d.h
+Libraries/Source/WWVegas/WWAudio/SoundScene.cpp,missing-header,0,0,0,soundscene.h
+Libraries/Source/WWVegas/WWAudio/SoundSceneObj.cpp,missing-header,0,0,0,SoundSceneObj.h
+Libraries/Source/WWVegas/WWAudio/Threads.cpp,missing-header,0,0,0,Threads.h
+Libraries/Source/WWVegas/WWAudio/Utils.cpp,missing-header,0,0,0,Utils.H
+Libraries/Source/WWVegas/WWAudio/WWAudio.cpp,missing-header,0,0,0,WWAudio.H
+Libraries/Source/WWVegas/WWAudio/listenerhandle.cpp,missing-header,0,0,0,listenerhandle.h
+Libraries/Source/WWVegas/WWAudio/sound2dhandle.cpp,missing-header,0,0,0,sound2dhandle.h
+Libraries/Source/WWVegas/WWAudio/sound3dhandle.cpp,missing-header,0,0,0,sound3dhandle.h
+Libraries/Source/WWVegas/WWAudio/soundhandle.cpp,missing-header,0,0,0,soundhandle.h
+Libraries/Source/WWVegas/WWAudio/soundstreamhandle.cpp,missing-header,0,0,0,soundstreamhandle.h
+Libraries/Source/WWVegas/WWDebug/wwdebug.cpp,compile-error,0,0,0,C2065 'FORMAT_MESSAGE_FROM_SYSTEM' : undeclared identifier
+Libraries/Source/WWVegas/WWDebug/wwmemlog.cpp,ok,26,14,5,
+Libraries/Source/WWVegas/WWDebug/wwprofile.cpp,compile-error,0,0,0,"C3861 'isdigit': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WWDownload/Download.cpp,missing-header,0,0,0,DownloadDebug.h
+Libraries/Source/WWVegas/WWDownload/registry.cpp,compile-error,0,0,0,C2065 'REG_SZ' : undeclared identifier
+Libraries/Source/WWVegas/WWDownload/urlBuilder.cpp,compile-error,0,0,0,"C2084 function 'void *operator new[](size_t,void *) throw()' already has a body"
+Libraries/Source/WWVegas/WWLib/Except.cpp,compile-error,0,0,0,C2227 left of '->SizeOfStruct' must point to class/struct/union
+Libraries/Source/WWVegas/WWLib/FastAllocator.cpp,ok,4,0,1,
+Libraries/Source/WWVegas/WWLib/LaunchWeb.cpp,compile-error,0,0,0,"C3861 'GetWindowsDirectory': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WWLib/WWCOMUtil.cpp,missing-header,0,0,0,oaidl.h
+Libraries/Source/WWVegas/WWLib/_convert.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/_mono.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/_timer.cpp,ok,0,3,3,
+Libraries/Source/WWVegas/WWLib/argv.cpp,ok,0,0,10,
+Libraries/Source/WWVegas/WWLib/bfiofile.cpp,compile-error,0,0,0,C2065 'EINVAL' : undeclared identifier
+Libraries/Source/WWVegas/WWLib/blit.cpp,ok,0,5,12,
+Libraries/Source/WWVegas/WWLib/blowfish.cpp,ok,0,0,6,
+Libraries/Source/WWVegas/WWLib/blowpipe.cpp,ok,0,0,3,
+Libraries/Source/WWVegas/WWLib/blwstraw.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WWLib/convert.cpp,missing-header,0,0,0,ddraw.h
+Libraries/Source/WWVegas/WWLib/cpudetect.cpp,compile-error,0,0,0,C2228 left of '.dwPlatformId' must have class/struct/union type
+Libraries/Source/WWVegas/WWLib/crcpipe.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/crcstraw.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/critsection.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/data.cpp,compile-error,0,0,0,"C3861 'LoadString': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WWLib/ddraw.cpp,missing-header,0,0,0,ddraw.h
+Libraries/Source/WWVegas/WWLib/dib.cpp,compile-error,0,0,0,C2227 left of '->bmiColors' must point to class/struct/union
+Libraries/Source/WWVegas/WWLib/draw.cpp,missing-header,0,0,0,ddraw.h
+Libraries/Source/WWVegas/WWLib/dsurface.cpp,missing-header,0,0,0,ddraw.h
+Libraries/Source/WWVegas/WWLib/fixed.cpp,ok,0,0,3,
+Libraries/Source/WWVegas/WWLib/hsv.cpp,ok,0,0,5,
+Libraries/Source/WWVegas/WWLib/jshell.cpp,ok,0,0,4,
+Libraries/Source/WWVegas/WWLib/keyboard.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'HACCEL'
+Libraries/Source/WWVegas/WWLib/lcw.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WWLib/lcwpipe.cpp,ok,0,1,4,
+Libraries/Source/WWVegas/WWLib/load.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/lzo.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WWLib/lzo1x_c.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WWLib/lzo1x_d.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/lzopipe.cpp,ok,0,1,4,
+Libraries/Source/WWVegas/WWLib/lzostraw.cpp,ok,0,1,3,
+Libraries/Source/WWVegas/WWLib/mixfile.cpp,ok,5,54,45,
+Libraries/Source/WWVegas/WWLib/mono.cpp,missing-header,0,0,0,winioctl.h
+Libraries/Source/WWVegas/WWLib/mpu.cpp,compile-error,0,0,0,C2668 'abs' : ambiguous call to overloaded function
+Libraries/Source/WWVegas/WWLib/msgloop.cpp,compile-error,0,0,0,C2226 syntax error : unexpected type 'HWND'
+Libraries/Source/WWVegas/WWLib/mutex.cpp,ok,6,0,0,
+Libraries/Source/WWVegas/WWLib/obscure.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/palette.cpp,ok,0,0,11,
+Libraries/Source/WWVegas/WWLib/pcx.cpp,ok,0,4,6,
+Libraries/Source/WWVegas/WWLib/pkpipe.cpp,ok,0,3,10,
+Libraries/Source/WWVegas/WWLib/pkstraw.cpp,ok,0,3,10,
+Libraries/Source/WWVegas/WWLib/point.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/ramfile.cpp,ok,0,2,9,
+Libraries/Source/WWVegas/WWLib/rc4.cpp,ok,0,0,7,
+Libraries/Source/WWVegas/WWLib/rcfile.cpp,compile-error,0,0,0,C2065 'HRSRC' : undeclared identifier
+Libraries/Source/WWVegas/WWLib/refcount.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/regexpr.cpp,missing-header,0,0,0,gnu_regex.h
+Libraries/Source/WWVegas/WWLib/registry.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before 'const'
+Libraries/Source/WWVegas/WWLib/rgb.cpp,ok,0,0,5,
+Libraries/Source/WWVegas/WWLib/rle.cpp,ok,0,0,4,
+Libraries/Source/WWVegas/WWLib/rndstraw.cpp,ok,0,1,9,
+Libraries/Source/WWVegas/WWLib/rndstrng.cpp,ok,0,0,4,
+Libraries/Source/WWVegas/WWLib/sampler.cpp,ok,0,5,14,
+Libraries/Source/WWVegas/WWLib/sha.cpp,compile-error,0,0,0,"C2084 function 'void *operator new[](size_t,void *)' already has a body"
+Libraries/Source/WWVegas/WWLib/shapipe.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/shastraw.cpp,ok,0,0,1,
+Libraries/Source/WWVegas/WWLib/slnode.cpp,ok,0,2,0,
+Libraries/Source/WWVegas/WWLib/srandom.cpp,compile-error,0,0,0,"C3861 'GetDiskFreeSpace': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WWLib/surface.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/tagblock.cpp,ok,0,2,36,
+Libraries/Source/WWVegas/WWLib/textfile.cpp,ok,0,2,3,
+Libraries/Source/WWVegas/WWLib/tgatodxt.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/thread.cpp,compile-error,0,0,0,"C3861 'GetExceptionCode': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WWLib/vector.cpp,ok,0,3,13,
+Libraries/Source/WWVegas/WWLib/verchk.cpp,missing-header,0,0,0,winnt.h
+Libraries/Source/WWVegas/WWLib/widestring.cpp,compile-error,0,0,0,C2065 'CP_ACP' : undeclared identifier
+Libraries/Source/WWVegas/WWLib/win.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/WWLib/wwfile.cpp,ok,0,0,3,
+Libraries/Source/WWVegas/WWLib/wwfont.cpp,ok,0,3,12,
+Libraries/Source/WWVegas/WWLib/wwmouse.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'TimerHandle'
+Libraries/Source/WWVegas/WWLib/xsurface.cpp,ok,1,2,28,
+Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,ok,0,25,69,
+Libraries/Source/WWVegas/WWMath/cardinalspline.cpp,ok,1,30,35,
+Libraries/Source/WWVegas/WWMath/catmullromspline.cpp,ok,1,20,26,
+Libraries/Source/WWVegas/WWMath/colmathobbox.cpp,ok,5,4,3,
+Libraries/Source/WWVegas/WWMath/curve.cpp,ok,0,35,51,
+Libraries/Source/WWVegas/WWMath/euler.cpp,ok,0,1,3,
+Libraries/Source/WWVegas/WWMath/hermitespline.cpp,ok,1,21,49,
+Libraries/Source/WWVegas/WWMath/tcbspline.cpp,ok,1,19,28,
+Libraries/Source/WWVegas/WWSaveLoad/definition.cpp,ok,0,1,5,
+Libraries/Source/WWVegas/WWSaveLoad/definitionfactory.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WWSaveLoad/definitionfactorymgr.cpp,ok,0,0,9,
+Libraries/Source/WWVegas/WWSaveLoad/definitionmgr.cpp,ok,0,20,34,
+Libraries/Source/WWVegas/WWSaveLoad/parameter.cpp,ok,3,62,198,
+Libraries/Source/WWVegas/WWSaveLoad/persistfactory.cpp,ok,0,0,2,
+Libraries/Source/WWVegas/WWSaveLoad/saveload.cpp,ok,0,0,28,
+Libraries/Source/WWVegas/WWSaveLoad/saveloadstatus.cpp,ok,0,0,3,
+Libraries/Source/WWVegas/WWSaveLoad/saveloadsubsystem.cpp,ok,0,2,2,
+Libraries/Source/WWVegas/WWSaveLoad/twiddler.cpp,ok,0,25,13,
+Libraries/Source/WWVegas/WWSaveLoad/wwsaveload.cpp,ok,0,0,0,
+Libraries/Source/WWVegas/Wwutil/mathutil.cpp,missing-header,0,0,0,mathutil.h
+Libraries/Source/WWVegas/Wwutil/miscutil.cpp,missing-header,0,0,0,miscutil.h
+Libraries/Source/WWVegas/wwshade/shd6bumpdiff.cpp,missing-header,0,0,0,shdbumpdiff.h
+Libraries/Source/WWVegas/wwshade/shd6bumpspec.cpp,missing-header,0,0,0,shdbumpspec.h
+Libraries/Source/WWVegas/wwshade/shd7bumpdiff.cpp,missing-header,0,0,0,shdhwshader.h
+Libraries/Source/WWVegas/wwshade/shd7bumpspec.cpp,missing-header,0,0,0,shdbumpspec.h
+Libraries/Source/WWVegas/wwshade/shd8bumpdiff.cpp,missing-header,0,0,0,shdmesh.h
+Libraries/Source/WWVegas/wwshade/shd8bumpspec.cpp,missing-header,0,0,0,shdmesh.h
+Libraries/Source/WWVegas/wwshade/shdbumpdiff.cpp,missing-header,0,0,0,shdbumpdiff.h
+Libraries/Source/WWVegas/wwshade/shdbumpspec.cpp,missing-header,0,0,0,shdbumpspec.h
+Libraries/Source/WWVegas/wwshade/shdcubemap.cpp,missing-header,0,0,0,shdcubemap.h
+Libraries/Source/WWVegas/wwshade/shddef.cpp,missing-header,0,0,0,shddef.h
+Libraries/Source/WWVegas/wwshade/shddeffactory.cpp,missing-header,0,0,0,shddeffactory.h
+Libraries/Source/WWVegas/wwshade/shddefmanager.cpp,missing-header,0,0,0,shddef.h
+Libraries/Source/WWVegas/wwshade/shdforcelinks.cpp,missing-header,0,0,0,shdforcelinks.h
+Libraries/Source/WWVegas/wwshade/shdglossmask.cpp,missing-header,0,0,0,shdglossmask.h
+Libraries/Source/WWVegas/wwshade/shdhwshader.cpp,missing-header,0,0,0,shdhwshader.h
+Libraries/Source/WWVegas/wwshade/shdinterface.cpp,missing-header,0,0,0,shdinterface.h
+Libraries/Source/WWVegas/wwshade/shdlegacyw3d.cpp,missing-header,0,0,0,shdlegacyw3d.h
+Libraries/Source/WWVegas/wwshade/shdlib.cpp,missing-header,0,0,0,shdloader.h
+Libraries/Source/WWVegas/wwshade/shdloader.cpp,missing-header,0,0,0,shdloader.h
+Libraries/Source/WWVegas/wwshade/shdmesh.cpp,missing-header,0,0,0,shdmesh.h
+Libraries/Source/WWVegas/wwshade/shdrenderer.cpp,missing-header,0,0,0,shdrenderer.h
+Libraries/Source/WWVegas/wwshade/shdsimple.cpp,missing-header,0,0,0,shdsimple.h
+Libraries/Source/WWVegas/wwshade/shdsubmesh.cpp,missing-header,0,0,0,shddefmanager.h
+Libraries/Source/debug/_pch.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_cmd.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_debug.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_dlg/debug_dlg.cpp,missing-header,0,0,0,commctrl.h
+Libraries/Source/debug/debug_except.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_getdefaultcommands.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_io_con.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_io_flat.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_io_net.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_io_ods.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_purecall.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/debug_stack.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/debug/netserv/netserv.cpp,compile-error,0,0,0,"C3861 'ci': identifier not found, even with argument-dependent lookup"
+Libraries/Source/debug/test1/test1.cpp,missing-header,0,0,0,../debug.h
+Libraries/Source/debug/test2/StdAfx.cpp,missing-header,0,0,0,stdafx.h
+Libraries/Source/debug/test2/test2.cpp,missing-header,0,0,0,stdafx.h
+Libraries/Source/debug/test3/test3.cpp,missing-header,0,0,0,../debug.h
+Libraries/Source/debug/test4/test4.cpp,missing-header,0,0,0,../debug.h
+Libraries/Source/debug/test5/test5.cpp,missing-header,0,0,0,../debug.h
+Libraries/Source/debug/test6/test6.cpp,missing-header,0,0,0,../debug.h
+Libraries/Source/profile/_pch.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/profile/profile.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/profile/profile_cmd.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/profile/profile_funclevel.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/profile/profile_highlevel.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/profile/profile_result.cpp,missing-header,0,0,0,_pch.h
+Libraries/Source/profile/test1/test1.cpp,missing-header,0,0,0,../profile.h
+Libraries/Source/template.cpp,ok,0,0,0,

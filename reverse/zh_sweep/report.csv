@@ -1114,3 +1114,11 @@ GameEngine/Source/GameNetwork/GameSpy/Chat.cpp,missing-header,0,0,0,GameSpy/Peer
 GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupHostGame.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
 GameEngine/Source/GameNetwork/GameSpy/LadderDefs.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
 GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupJoinGame.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupLadderSelect.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cpp,missing-header,0,0,0,GameSpy/ghttp/ghttp.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPlayerInfo.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupReplay.cpp,ok,1,0,15,
+GameEngine/Source/GameNetwork/GameSpy/StagingRoomGameInfo.cpp,missing-header,0,0,0,GameSpy/GP/GP.h
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupSaveLoad.cpp,ok,0,0,18,

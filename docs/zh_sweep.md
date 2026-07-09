@@ -66,7 +66,8 @@ The sweep summary histograms blockers. Fix the top one, delete its rows from the
   hand-force an address.
 - A landed file whose excised/annotated sibling was *inlined* by a matched function will fail the
   byte-verify — land_zh reverts it; reconcile manually or drop that file.
-- The pre-commit hook runs the full build (several minutes); don't bypass it, budget for it.
+- The pre-commit hook is fast now (static ledger checks + byte-verify of your delta, seconds);
+  never bypass it. The full build runs at session start, not per commit.
 
 ## Territory map (string-vote: fraction of an area's literals present in lotrbfme.exe)
 

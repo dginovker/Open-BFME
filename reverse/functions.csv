@@ -3434,3 +3434,5 @@ _XMP_Unsigned_Div_Int,,0x009E89C0,176,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult,,0x009E9100,298,src/w3d/mpmath.cpp,matched,
 _XMP_Unsigned_Mult_Int,,0x009E8980,61,src/w3d/mpmath.cpp,matched,
 _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
+?friend_newModuleData@RepairDockUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011B0D0,107,src/zh/modulefactory.cpp,matched,recovered from Open-BFME6 overnight session (GLM)
+?friend_newModuleData@SupplyWarehouseDockUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011BAC0,107,src/zh/modulefactory.cpp,matched,recovered from Open-BFME6 overnight session (GLM)

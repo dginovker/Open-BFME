@@ -1701,3 +1701,5 @@ GameEngine/Source/GameLogic/Object/Update/AIUpdate/DeployStyleAIUpdate.cpp,ok,0,
 GameEngine/Source/GameLogic/Object/Update/AIUpdate/HackInternetAIUpdate.cpp,ok,0,11,54,
 GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp,ok,0,32,147,
 GameEngine/Source/GameLogic/Object/Update/AIUpdate/MissileAIUpdate.cpp,ok,0,7,47,
+GameEngineDevice/Source/VideoDevice/Bink/BinkVideoPlayer.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle'
+GameEngineDevice/Source/MilesAudioDevice/MilesAudioManager.cpp,missing-header,0,0,0,dsound.h

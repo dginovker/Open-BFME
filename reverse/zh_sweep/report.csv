@@ -2265,3 +2265,47 @@ Libraries/Source/WWVegas/WWLib/refcount.cpp,ok,0,0,0,
 Libraries/Source/WWVegas/WWLib/regexpr.cpp,missing-header,0,0,0,gnu_regex.h
 Libraries/Source/WWVegas/WWLib/registry.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before 'const'
 Libraries/Source/WWVegas/WWLib/rgb.cpp,ok,0,0,5,
+GameEngine/Source/Common/Audio/AudioEventRTS.cpp,ok,0,1,37,
+GameEngine/Source/Common/Audio/AudioRequest.cpp,ok,0,0,0,
+GameEngine/Source/Common/Audio/DynamicAudioEventInfo.cpp,ok,0,7,28,
+GameEngine/Source/Common/Audio/GameMusic.cpp,ok,0,1,4,
+GameEngine/Source/Common/Audio/GameSounds.cpp,ok,0,1,6,
+GameEngine/Source/Common/Audio/GameSpeech.cpp,missing-header,0,0,0,wpaudio/attributes.h
+GameEngine/Source/Common/Audio/simpleplayer.cpp,missing-header,0,0,0,wmsdk.h
+GameEngine/Source/Common/Audio/urllaunch.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'GetShellOpenCommand'
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DDebrisDraw.cpp,ok,0,7,13,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DDependencyModelDraw.cpp,ok,0,5,9,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DLaserDraw.cpp,ok,0,6,11,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DOverlordAircraftDraw.cpp,ok,0,4,6,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DOverlordTankDraw.cpp,ok,0,4,9,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DOverlordTruckDraw.cpp,ok,0,4,9,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DPoliceCarDraw.cpp,ok,0,4,9,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DProjectileStreamDraw.cpp,ok,0,6,13,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DPropDraw.cpp,ok,0,5,8,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DScienceModelDraw.cpp,ok,0,3,5,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DSupplyDraw.cpp,ok,0,9,21,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle'
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankTruckDraw.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle'
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTracerDraw.cpp,ok,0,5,10,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTreeDraw.cpp,ok,0,4,10,
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTruckDraw.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle'
+GameEngineDevice/Source/W3DDevice/GameClient/FlatHeightMap.cpp,ok,0,5,23,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/GUICallbacks/W3DMainMenu.cpp,ok,0,10,12,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DCheckBox.cpp,ok,0,9,4,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DComboBox.cpp,ok,0,9,3,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DHorizontalSlider.cpp,ok,0,9,7,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DListBox.cpp,ok,0,9,5,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DProgressBar.cpp,ok,0,10,4,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DPushButton.cpp,ok,0,9,7,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DRadioButton.cpp,ok,0,9,4,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DStaticText.cpp,ok,0,9,4,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,ok,0,9,3,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTextEntry.cpp,ok,0,9,4,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DVerticalSlider.cpp,ok,0,9,3,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/W3DGameFont.cpp,ok,0,9,3,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/W3DGameWindow.cpp,ok,0,10,16,
+GameEngineDevice/Source/W3DDevice/GameClient/GUI/W3DGameWindowManager.cpp,ok,0,11,2,
+GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DBufferManager.cpp,ok,0,0,13,
+GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp,ok,4,32,45,
+GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,compile-error,0,0,0,"C3861 'D3DXVECTOR4': identifier not found, even with argument-dependent lookup"
+GameEngineDevice/Source/W3DDevice/GameClient/TerrainTex.cpp,compile-error,0,0,0,C2065 'D3DFMT_A1R5G5B5' : undeclared identifier

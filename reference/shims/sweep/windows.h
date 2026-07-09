@@ -47,6 +47,8 @@ typedef void *HRSRC;
 typedef void *HKL;
 typedef void *HACCEL;
 typedef void *HMENU;
+typedef int INT;
+typedef int *LPINT;
 typedef unsigned long DWORD;
 typedef unsigned long *LPDWORD;
 typedef unsigned long ULONG;
@@ -445,6 +447,13 @@ __declspec(dllimport) HFONT WINAPI CreateFontA(int, int, int, int, int, DWORD, D
 __declspec(dllimport) HGDIOBJ WINAPI SelectObject(HDC, HGDIOBJ);
 __declspec(dllimport) BOOL WINAPI GetTextMetricsA(HDC, LPTEXTMETRIC);
 #define GetTextMetrics GetTextMetricsA
+__declspec(dllimport) BOOL WINAPI GetTextExtentPoint32A(HDC, LPCSTR, int, LPSIZE);
+__declspec(dllimport) BOOL WINAPI GetTextExtentPoint32W(HDC, LPCWSTR, int, LPSIZE);
+#define GetTextExtentPoint32 GetTextExtentPoint32A
+__declspec(dllimport) BOOL WINAPI ExtTextOutA(HDC, int, int, UINT, const RECT *, LPCSTR, UINT, const INT *);
+__declspec(dllimport) BOOL WINAPI ExtTextOutW(HDC, int, int, UINT, const RECT *, LPCWSTR, UINT, const INT *);
+#define ExtTextOut ExtTextOutA
+#define ETO_OPAQUE 0x0002
 __declspec(dllimport) BOOL WINAPI DeleteObject(HGDIOBJ);
 __declspec(dllimport) BOOL WINAPI DeleteDC(HDC);
 __declspec(dllimport) HDC WINAPI GetDC(HWND);

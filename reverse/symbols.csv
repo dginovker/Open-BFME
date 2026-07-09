@@ -1187,3 +1187,6 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?Insert_Triangles@SortingRendererClass@@SAXABVSphereClass@@GGGG@Z,0x0093B340
 _D3DXVec4Transform@12,0x009FAA48
 ?Initialize@AggregateDefClass@@QAEXAAVRenderObjClass@@@Z,0x00980A60
+?Build_Sentence_Not_Centered@Render2DSentenceClass@@AAE?AVVector2@@PBGPAH1_N@Z,0x00942430
+?Build_Textures@Render2DSentenceClass@@AAEXXZ,0x0093DD60
+?Render@Render2DClass@@QAEXXZ,0x00933E50

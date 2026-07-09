@@ -409,7 +409,56 @@ enum _D3DTRANSFORMSTATETYPE { D3DTS_VIEW=2, D3DTS_PROJECTION=3, D3DTS_WORLD=256 
 typedef enum _D3DTRANSFORMSTATETYPE D3DTRANSFORMSTATETYPE;
 // D3DMATRIX: 4x4 float (64 bytes) — layout-bearing member of DX8Wrapper.
 typedef struct _D3DMATRIX { float m[4][4]; } D3DMATRIX;
-typedef struct _D3DXVECTOR4 { float x, y, z, w; } D3DXVECTOR4;
+typedef struct _D3DXVECTOR2 { float x, y; } D3DXVECTOR2;
+typedef struct _D3DXVECTOR3 { float x, y, z; } D3DXVECTOR3;
+typedef struct _D3DXVECTOR4 {
+    float x, y, z, w;
+    _D3DXVECTOR4() {}
+    _D3DXVECTOR4(float _x, float _y, float _z, float _w) : x(_x), y(_y), z(_z), w(_w) {}
+    float operator[](int i) const { return (&x)[i]; }
+    float& operator[](int i) { return (&x)[i]; }
+} D3DXVECTOR4;
+typedef struct _D3DXMATRIX {
+    float m[4][4];
+    _D3DXMATRIX() {}
+    _D3DXMATRIX(float m00, float m01, float m02, float m03,
+                float m10, float m11, float m12, float m13,
+                float m20, float m21, float m22, float m23,
+                float m30, float m31, float m32, float m33) {
+        m[0][0]=m00; m[0][1]=m01; m[0][2]=m02; m[0][3]=m03;
+        m[1][0]=m10; m[1][1]=m11; m[1][2]=m12; m[1][3]=m13;
+        m[2][0]=m20; m[2][1]=m21; m[2][2]=m22; m[2][3]=m23;
+        m[3][0]=m30; m[3][1]=m31; m[3][2]=m32; m[3][3]=m33;
+    }
+    _D3DXMATRIX operator*(const _D3DXMATRIX& o) const {
+        _D3DXMATRIX r;
+        for (int i = 0; i < 4; ++i)
+            for (int j = 0; j < 4; ++j)
+                r.m[i][j] = m[i][0]*o.m[0][j] + m[i][1]*o.m[1][j] + m[i][2]*o.m[2][j] + m[i][3]*o.m[3][j];
+        return r;
+    }
+} D3DXMATRIX;
+typedef struct _D3DXPLANE { float a, b, c, d; } D3DXPLANE;
+typedef struct _D3DXQUATERNION { float x, y, z, w; } D3DXQUATERNION;
+#define D3DX_PI 3.141592654f
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixIdentity(D3DXMATRIX *pOut);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixInverse(D3DXMATRIX *pOut, float *pDeterminant, const D3DXMATRIX *pM);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixMultiply(D3DXMATRIX *pOut, const D3DXMATRIX *pM1, const D3DXMATRIX *pM2);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixRotationX(D3DXMATRIX *pOut, float Angle);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixRotationY(D3DXMATRIX *pOut, float Angle);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixRotationZ(D3DXMATRIX *pOut, float Angle);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixTranslation(D3DXMATRIX *pOut, float x, float y, float z);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixScaling(D3DXMATRIX *pOut, float x, float y, float z);
+extern "C" D3DXMATRIX* __stdcall D3DXMatrixTranspose(D3DXMATRIX *pOut, const D3DXMATRIX *pM);
+extern "C" D3DXVECTOR4* __stdcall D3DXVec3Transform(D3DXVECTOR4 *pOut, const D3DXVECTOR3 *pV, const D3DXMATRIX *pM);
+extern "C" D3DXVECTOR4* __stdcall D3DXVec4Transform(D3DXVECTOR4 *pOut, const D3DXVECTOR4 *pV, const D3DXMATRIX *pM);
+extern "C" D3DXVECTOR3* __stdcall D3DXVec3Normalize(D3DXVECTOR3 *pOut, const D3DXVECTOR3 *pV);
+extern "C" D3DXVECTOR3* __stdcall D3DXVec3Cross(D3DXVECTOR3 *pOut, const D3DXVECTOR3 *pV1, const D3DXVECTOR3 *pV2);
+extern "C" float __stdcall D3DXVec3Dot(const D3DXVECTOR3 *pV1, const D3DXVECTOR3 *pV2);
+extern "C" float __stdcall D3DXVec4Dot(const D3DXVECTOR4 *pV1, const D3DXVECTOR4 *pV2);
+extern "C" D3DXPLANE* __stdcall D3DXPlaneNormalize(D3DXPLANE *pOut, const D3DXPLANE *pP);
+extern "C" D3DXQUATERNION* __stdcall D3DXQuaternionRotationMatrix(D3DXQUATERNION *pOut, const D3DXMATRIX *pM);
+extern "C" D3DXQUATERNION* __stdcall D3DXQuaternionSlerp(D3DXQUATERNION *pOut, const D3DXQUATERNION *pQ1, const D3DXQUATERNION *pQ2, float t);
 typedef struct _D3DVIEWPORT8 { DWORD X,Y,Width,Height; float MinZ,MaxZ; } D3DVIEWPORT8;
 typedef struct _D3DLOCKED_RECT { long Pitch; void *pBits; } D3DLOCKED_RECT;
 typedef struct _D3DLOCKED_BOX { int RowPitch; int SlicePitch; void *pBits; } D3DLOCKED_BOX;

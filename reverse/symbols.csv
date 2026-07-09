@@ -1185,3 +1185,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?OnStatusUpdate@DownloadManager@@UAEJH@Z,0x00008283
 ?getStatusString@DownloadManager@@QAE?AVUnicodeString@@XZ,0x0001AEEC
 ?Insert_Triangles@SortingRendererClass@@SAXABVSphereClass@@GGGG@Z,0x0093B340
+_D3DXVec4Transform@12,0x009FAA48

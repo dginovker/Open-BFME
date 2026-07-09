@@ -170,6 +170,30 @@ struct IDirect3DTexture8 : IDirect3DBaseTexture8 {
 	virtual HRESULT __stdcall UnlockRect(UINT) = 0;
 	virtual HRESULT __stdcall AddDirtyRect(const void*) = 0;
 };
+struct IDirect3DCubeTexture8 : IDirect3DBaseTexture8 {
+	virtual HRESULT __stdcall GetLevelDesc(UINT, void*) = 0;
+	virtual HRESULT __stdcall GetCubeMapSurface(DWORD, UINT, IDirect3DSurface8**) = 0;
+	virtual HRESULT __stdcall LockRect(DWORD, UINT, void*, const void*, DWORD) = 0;
+	virtual HRESULT __stdcall UnlockRect(DWORD, UINT) = 0;
+	virtual HRESULT __stdcall AddDirtyRect(DWORD, const void*) = 0;
+};
+enum _D3DCUBEMAP_FACES {
+    D3DCUBEMAP_FACE_POSITIVE_X = 0,
+    D3DCUBEMAP_FACE_NEGATIVE_X = 1,
+    D3DCUBEMAP_FACE_POSITIVE_Y = 2,
+    D3DCUBEMAP_FACE_NEGATIVE_Y = 3,
+    D3DCUBEMAP_FACE_POSITIVE_Z = 4,
+    D3DCUBEMAP_FACE_NEGATIVE_Z = 5
+};
+typedef enum _D3DCUBEMAP_FACES D3DCUBEMAP_FACES;
+typedef struct _D3DVOLUME_DESC { D3DFORMAT Format; D3DRESOURCETYPE Type; DWORD Usage; D3DPOOL Pool; UINT Size; UINT Width; UINT Height; UINT Depth; } D3DVOLUME_DESC;
+struct IDirect3DVolumeTexture8 : IDirect3DBaseTexture8 {
+	virtual HRESULT __stdcall GetLevelDesc(UINT, void*) = 0;
+	virtual HRESULT __stdcall GetVolumeLevel(UINT, void**) = 0;
+	virtual HRESULT __stdcall LockBox(UINT, void*, const void*, DWORD) = 0;
+	virtual HRESULT __stdcall UnlockBox(UINT) = 0;
+	virtual HRESULT __stdcall AddDirtyBox(const void*) = 0;
+};
 
 // IDirect3DDevice8 : IUnknown — full DX8.0 vtable order.
 struct IDirect3DDevice8 {

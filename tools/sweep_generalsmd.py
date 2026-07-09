@@ -15,21 +15,29 @@ Usage:
   python3 tools/sweep_generalsmd.py --area GameEngine/Source --limit 40
   python3 tools/sweep_generalsmd.py --files Snow ParabolicEase ObjectStatusTypes
   python3 tools/sweep_generalsmd.py --area GameEngine/Source        # full run
-Report: reverse/zh_sweep/report.csv (appended incrementally, resumable via --skip-done)
+Report: reverse/zh_sweep/report.csv (appended incrementally, resumable via --skip-done).
+The landable column counts located functions big enough for land_zh's locate --emit;
+report.meta records the git HEAD the report reflects.
 """
 import argparse
 import csv
+import json
 import re
 import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from locate import MIN_SIZE_DEFAULT
+
 ROOT = Path(__file__).resolve().parents[1]
 REF = ROOT / "reference" / "CnC_Generals_Zero_Hour" / "GeneralsMD" / "Code"
 SHIMS = ROOT / "reference" / "shims" / "sweep"
 SCRATCH = ROOT / "build" / "zh_sweep"
 REPORT = ROOT / "reverse" / "zh_sweep" / "report.csv"
+META = ROOT / "reverse" / "zh_sweep" / "report.meta"
+REPORT_FIELDS = ["file", "status", "located", "ambiguous", "unlocated", "blocker", "landable"]
 
 # every sweep compile sees: shims first (PreRTS.h/windows.h shadowing), then the real engine tree
 INCLUDE_DIRS = [
@@ -58,9 +66,11 @@ def candidates(area, names):
     if names:
         out = []
         for name in names:
-            hits = sorted(REF.rglob(f"{name}.cpp"))
+            # accept both Foo and Foo.cpp — agents paste either form
+            stem = name[:-4] if name.lower().endswith(".cpp") else name
+            hits = sorted(REF.rglob(f"{stem}.cpp"))
             if not hits:
-                print(f"  no reference file named {name}.cpp")
+                print(f"  no reference file named {stem}.cpp")
             out += hits
         return out
     return [p for p in sorted((REF / area).rglob("*.cpp")) if p.stem.lower() not in ported]
@@ -79,25 +89,51 @@ def sweep_one(ref_cpp):
     summary = re.search(r"(\d+) located, (\d+) ambiguous, (\d+) unlocated", out)
     if summary:
         located, ambiguous, unlocated = map(int, summary.groups())
-        rows = re.findall(r"^  (\?[^,]+,.*,matched,)$", out, re.M)
+        # located rows at or above land_zh's locate --emit threshold actually land
+        sizes = re.findall(r"^  \S+,[^,]*,0x[0-9A-Fa-f]+,(\d+),\S+,matched,$", out, re.M)
+        landable = sum(1 for size in sizes if int(size) >= MIN_SIZE_DEFAULT)
         return {"status": "ok", "located": located, "ambiguous": ambiguous,
-                "unlocated": unlocated, "rows": rows, "blocker": ""}
+                "unlocated": unlocated, "landable": landable, "blocker": ""}
     missing = re.search(r"Cannot open include file: '([^']+)'", out)
     if missing:
         return {"status": "missing-header", "located": 0, "ambiguous": 0, "unlocated": 0,
-                "rows": [], "blocker": missing.group(1)}
+                "landable": 0, "blocker": missing.group(1)}
     error = re.search(r"error (C\d+)\s*:\s*([^\r\n]{0,90})", out)
     if error:
         return {"status": "compile-error", "located": 0, "ambiguous": 0, "unlocated": 0,
-                "rows": [], "blocker": f"{error.group(1)} {error.group(2)}"}
+                "landable": 0, "blocker": f"{error.group(1)} {error.group(2)}"}
     return {"status": "unknown", "located": 0, "ambiguous": 0, "unlocated": 0,
-            "rows": [], "blocker": out.strip()[-120:]}
+            "landable": 0, "blocker": out.strip()[-120:]}
+
+
+def upgrade_report_header():
+    """Reports written before the landable column exist in the wild; rewrite them
+    in place (landable empty on old rows = unknown) so appends stay aligned."""
+    if not REPORT.exists():
+        return
+    with REPORT.open(newline="") as handle:
+        rows = list(csv.reader(handle))
+    if not rows or "landable" in rows[0]:
+        return
+    if rows[0] != REPORT_FIELDS[:-1]:
+        raise SystemExit(f"{REPORT}: unexpected header {rows[0]}, refusing to rewrite")
+    with REPORT.open("w", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(REPORT_FIELDS)
+        writer.writerows(row + [""] for row in rows[1:])
+
+
+def write_meta():
+    ref = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, check=True,
+                         capture_output=True, text=True).stdout.strip()
+    META.write_text(json.dumps({"ref": ref}) + "\n")
+    print(f"wrote {META.relative_to(ROOT)} (ref {ref[:12]})")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--area", default="GameEngine/Source")
-    parser.add_argument("--files", nargs="*", help="sweep only these basenames")
+    parser.add_argument("--files", nargs="*", help="sweep only these basenames (.cpp optional)")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--skip-done", action="store_true",
                         help="skip files already present in the report")
@@ -105,6 +141,7 @@ def main():
 
     SCRATCH.mkdir(parents=True, exist_ok=True)
     REPORT.parent.mkdir(parents=True, exist_ok=True)
+    upgrade_report_header()
 
     done = set()
     if args.skip_done and REPORT.exists():
@@ -121,7 +158,7 @@ def main():
     with REPORT.open("a", newline="") as handle:
         writer = csv.writer(handle)
         if new_report:
-            writer.writerow(["file", "status", "located", "ambiguous", "unlocated", "blocker"])
+            writer.writerow(REPORT_FIELDS)
         for index, ref_cpp in enumerate(todo, 1):
             rel = str(ref_cpp.relative_to(REF))
             if rel in done:
@@ -130,9 +167,9 @@ def main():
                 result = sweep_one(ref_cpp)
             except subprocess.TimeoutExpired:
                 result = {"status": "timeout", "located": 0, "ambiguous": 0,
-                          "unlocated": 0, "rows": [], "blocker": ""}
-            writer.writerow([rel, result["status"], result["located"],
-                             result["ambiguous"], result["unlocated"], result["blocker"]])
+                          "unlocated": 0, "landable": 0, "blocker": ""}
+            writer.writerow([rel, result["status"], result["located"], result["ambiguous"],
+                             result["unlocated"], result["blocker"], result["landable"]])
             handle.flush()
             if result["status"] in ("missing-header", "compile-error"):
                 blockers[result["blocker"].split()[0]] += 1
@@ -151,6 +188,8 @@ def main():
         print("top blockers (grow the shim here):")
         for blocker, count in blockers.most_common(12):
             print(f"  {count:4d}  {blocker}")
+    # lets downstream tools (e.g. next_work.py) tell what HEAD the report reflects
+    write_meta()
 
 
 if __name__ == "__main__":

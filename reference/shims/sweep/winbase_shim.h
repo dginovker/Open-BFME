@@ -9,6 +9,15 @@
 #define TRUE 1
 #define FALSE 0
 #endif
+typedef long LONG;
+typedef unsigned long DWORD;
+#ifndef _LARGE_INTEGER_DEFINED
+typedef union _LARGE_INTEGER {
+    struct { DWORD LowPart; LONG HighPart; };
+    __int64 QuadPart;
+} LARGE_INTEGER, *PLARGE_INTEGER;
+#define _LARGE_INTEGER_DEFINED
+#endif
 extern "C" __declspec(dllimport) char * __stdcall lstrcpyA(char *, const char *);
 extern "C" __declspec(dllimport) int    __stdcall lstrlenA(const char *);
 extern "C" __declspec(dllimport) int    __stdcall lstrcmpiA(const char *, const char *);

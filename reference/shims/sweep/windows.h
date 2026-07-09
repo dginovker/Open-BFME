@@ -151,10 +151,13 @@ typedef struct tagMSG {
     POINT pt;
 } MSG, *LPMSG;
 
+#ifndef _LARGE_INTEGER_DEFINED
 typedef union _LARGE_INTEGER {
     struct { DWORD LowPart; LONG HighPart; };
     LONGLONG QuadPart;
 } LARGE_INTEGER, *PLARGE_INTEGER;
+#define _LARGE_INTEGER_DEFINED
+#endif
 
 typedef struct _RTL_CRITICAL_SECTION {
     void *DebugInfo;

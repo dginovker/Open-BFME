@@ -2069,3 +2069,22 @@ GameEngine/Source/GameLogic/Object/Update/DemoTrapUpdate.cpp,ok,0,6,24,
 GameEngine/Source/GameLogic/Object/Update/DockUpdate/PrisonDockUpdate.cpp,ok,0,0,0,
 GameEngine/Source/GameLogic/Object/Update/DockUpdate/SupplyCenterDockUpdate.cpp,ok,0,5,8,
 GameEngine/Source/GameLogic/Object/Update/DynamicGeometryInfoUpdate.cpp,ok,0,4,11,
+Libraries/Source/WWVegas/WW3D2/FramGrab.cpp,missing-header,0,0,0,windowsx.h
+Libraries/Source/WWVegas/WW3D2/agg_def.cpp,compile-error,0,0,0,C2039 'lstrlen' : is not a member of 'operator``global namespace'''
+Libraries/Source/WWVegas/WW3D2/animatedsoundmgr.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before 'const'
+Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,compile-error,0,0,0,C2051 case expression not constant
+Libraries/Source/WWVegas/WW3D2/assetstatus.cpp,ok,0,1,14,
+Libraries/Source/WWVegas/WW3D2/bmp2d.cpp,ok,0,4,45,
+Libraries/Source/WWVegas/WW3D2/bw_render.cpp,ok,0,2,11,
+Libraries/Source/WWVegas/WW3D2/bwrender.cpp,ok,0,2,11,
+Libraries/Source/WWVegas/WW3D2/collect.cpp,ok,0,67,72,
+Libraries/Source/WWVegas/WW3D2/coltest.cpp,ok,0,8,11,
+Libraries/Source/WWVegas/WW3D2/dazzle.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before 'const'
+Libraries/Source/WWVegas/WW3D2/ddsfile.cpp,missing-header,0,0,0,ddraw.h
+Libraries/Source/WWVegas/WW3D2/decalsys.cpp,ok,0,8,24,
+Libraries/Source/WWVegas/WW3D2/dx8caps.cpp,compile-error,0,0,0,C2039 'Data4' : is not a member of '_GUID'
+Libraries/Source/WWVegas/WW3D2/dx8fvf.cpp,compile-error,0,0,0,"C3861 'D3DXGetFVFVertexSize': identifier not found, even with argument-dependent lookup"
+Libraries/Source/WWVegas/WW3D2/dx8indexbuffer.cpp,ok,0,3,25,
+Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,ok,9,55,100,
+Libraries/Source/WWVegas/WW3D2/dx8rendererdebugger.cpp,ok,0,1,12,
+Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.cpp,ok,0,3,34,

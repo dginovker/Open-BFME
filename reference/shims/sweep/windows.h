@@ -279,6 +279,9 @@ __declspec(dllimport) int WINAPI lstrcmpiA(LPCSTR, LPCSTR);
 __declspec(dllimport) int WINAPI lstrcmpiW(LPCWSTR, LPCWSTR);
 #define lstrcmp lstrcmpA
 #define lstrcmpi lstrcmpiA
+__declspec(dllimport) int WINAPI lstrlenA(LPCSTR);
+__declspec(dllimport) int WINAPI lstrlenW(LPCWSTR);
+#define lstrlen lstrlenA
 __declspec(dllimport) int WINAPI MessageBoxA(HWND, LPCSTR, LPCSTR, UINT);
 __declspec(dllimport) int WINAPI MessageBoxW(HWND, LPCWSTR, LPCWSTR, UINT);
 __declspec(dllimport) BOOL WINAPI SetWindowPos(HWND, HWND, int, int, int, int, UINT);

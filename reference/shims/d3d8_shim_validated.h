@@ -25,7 +25,7 @@ typedef const void* LPCVOID;
 typedef void* LPVOID;
 typedef unsigned long D3DCOLOR;
 typedef void* REFIID;
-typedef struct _GUID { DWORD a; WORD b, c; BYTE d[8]; } GUID, IID;
+typedef struct _GUID { DWORD Data1; WORD Data2; WORD Data3; BYTE Data4[8]; } GUID, IID;
 #define SUCCEEDED(hr) ((HRESULT)(hr) >= 0)
 #define FAILED(hr)    ((HRESULT)(hr) < 0)
 #define D3D_OK 0
@@ -40,6 +40,11 @@ typedef struct _D3DPOINT { long x,y; } D3DPOINT;
 // --- FVF flags ---
 #define D3DFVF_XYZ            0x002
 #define D3DFVF_XYZRHW        0x004
+#define D3DFVF_XYZB1         0x006
+#define D3DFVF_XYZB2         0x007
+#define D3DFVF_XYZB3         0x008
+#define D3DFVF_XYZB4         0x009
+#define D3DFVF_XYZB5         0x00a
 #define D3DFVF_NORMAL        0x010
 #define D3DFVF_DIFFUSE       0x040
 #define D3DFVF_SPECULAR      0x080
@@ -52,11 +57,15 @@ typedef struct _D3DPOINT { long x,y; } D3DPOINT;
 #define D3DFVF_TEX6          0x600
 #define D3DFVF_TEX7          0x700
 #define D3DFVF_TEX8          0x800
+#define D3DFVF_LASTBETA_UBYTE4   0x00001000L
+#define D3DFVF_LASTBETA_D3DCOLOR 0x00008000L
 #define D3DFVF_TEXCOUNT_SHIFT 8
 #define D3DFVF_TEXCOORDSIZE3(idx) (1 << (idx*2 + 16))
 #define D3DFVF_TEXCOORDSIZE2(idx) 0
 #define D3DFVF_TEXCOORDSIZE4(idx) (2 << (idx*2 + 16))
 #define D3DFVF_TEXCOORDSIZE1(idx) (3 << (idx*2 + 16))
+
+extern "C" UINT __stdcall D3DXGetFVFVertexSize(DWORD FVF);
 
 // --- Usage flags ---
 #define D3DUSAGE_RENDERTARGET        0x00000001L
@@ -402,7 +411,9 @@ typedef struct _D3DSURFACE_DESC { D3DFORMAT Format; D3DRESOURCETYPE Type; DWORD 
 #define D3DFILL_POINT 1
 #define D3DFILL_WIREFRAME 2
 #define D3DFILL_SOLID 3
+#ifndef S_OK
 #define S_OK 0
+#endif
 typedef struct _D3DADAPTER_IDENTIFIER8 {
 	char Driver[512]; char Description[512];
 	long long DriverVersion; DWORD VendorId, DeviceId, SubSysId, Revision;

@@ -377,6 +377,11 @@ __declspec(dllimport) UINT WINAPI GetWindowsDirectoryA(LPSTR, UINT);
 __declspec(dllimport) BOOL WINAPI SHGetSpecialFolderPathA(HWND, LPSTR, int, BOOL);
 __declspec(dllimport) BOOL WINAPI SHGetSpecialFolderPathW(HWND, LPWSTR, int, BOOL);
 #define SHGetSpecialFolderPath SHGetSpecialFolderPathA
+typedef const ITEMIDLIST *LPCITEMIDLIST;
+__declspec(dllimport) HRESULT WINAPI SHGetSpecialFolderLocation(HWND, int, LPITEMIDLIST *);
+__declspec(dllimport) BOOL WINAPI SHGetPathFromIDListA(LPCITEMIDLIST, LPSTR);
+__declspec(dllimport) BOOL WINAPI SHGetPathFromIDListW(LPCITEMIDLIST, LPWSTR);
+#define SHGetPathFromIDList SHGetPathFromIDListA
 __declspec(dllimport) BOOL WINAPI GetDiskFreeSpaceA(LPCSTR, LPDWORD, LPDWORD, LPDWORD, LPDWORD);
 __declspec(dllimport) BOOL WINAPI GetVolumeInformationA(LPCSTR, LPSTR, DWORD, LPDWORD, LPDWORD, LPDWORD, LPSTR, DWORD);
 __declspec(dllimport) UINT WINAPI GetDriveTypeA(LPCSTR);

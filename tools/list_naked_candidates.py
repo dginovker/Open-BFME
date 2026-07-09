@@ -16,8 +16,28 @@ def collect_rows():
     by_name = {}
     for row in build.load_all_function_rows():
         rows.setdefault(row["source"], []).append(row)
-        by_name[row["name"]] = row
+        by_name.setdefault(row["name"], []).append(row)
     return rows, by_name
+
+
+def matched_body_index(rows_by_source, max_bytes):
+    """Exact binary bytes of every matched row -> row. A naked body that
+    byte-verifies is a literal copy of the binary, so an already-matched
+    function is recognizable by its bytes even when the symbol comment is
+    missing or the source mangles the name differently than the ledger."""
+    exe = build.EXE.read_bytes()
+    sections = build.pe_sections(exe)
+    index = {}
+    for rows in rows_by_source.values():
+        for row in rows:
+            if row["status"] != "matched":
+                continue
+            size = int(row["target_size"])
+            if not 0 < size <= max_bytes:
+                continue
+            offset = build.rva_to_file_offset(sections, int(row["target_rva"], 16))
+            index.setdefault(exe[offset : offset + size], row)
+    return index
 
 
 def symbol_comment(lines, index):
@@ -120,7 +140,8 @@ def main():
     parser.add_argument("--max-bytes", type=int, default=160)
     args = parser.parse_args()
 
-    row_by_source, row_by_name = collect_rows()
+    row_by_source, rows_by_name = collect_rows()
+    body_index = matched_body_index(row_by_source, args.max_bytes)
     files = []
     for raw in args.paths:
         path = build.ROOT / raw
@@ -130,6 +151,7 @@ def main():
             files.append(path)
 
     candidates = []
+    already_matched = 0
     for path in files:
         rel = path.relative_to(build.ROOT).as_posix()
         text = path.read_text(encoding="utf-8", errors="replace")
@@ -146,9 +168,17 @@ def main():
                 continue
             sig = signature(lines, index)
             symbol = symbol_comment(lines, index)
-            row = row_by_name.get(symbol) if symbol else None
-            if row and row["source"] != rel:
-                row = None
+            symbol_rows = rows_by_name.get(symbol, []) if symbol else []
+            own = [row for row in symbol_rows if row["source"] == rel]
+            row = own[0] if own else None
+            if row is None:
+                # not this file's ledger row, but the function may already be
+                # matched — by name under another source, or (when the symbol
+                # comment is missing) by its exact bytes; listing it as
+                # "untracked" lures agents into redoing done work
+                if any(r["status"] == "matched" for r in symbol_rows) or data in body_index:
+                    already_matched += 1
+                    continue
             if not row and not args.all:
                 continue
             score, reasons = score_candidate(data, sig)
@@ -169,6 +199,8 @@ def main():
                 }
             )
 
+    if already_matched:
+        print(f"{already_matched} excluded as already matched in reverse/functions.csv")
     candidates.sort(key=lambda item: (-item["score"], item["size"], item["path"], item["line"]))
     if args.groups:
         groups = defaultdict(list)

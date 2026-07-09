@@ -477,14 +477,34 @@ def verify_functions(only=None):
     # oversubscribe the cores into a stall. Only the full-suite periodic audit,
     # which runs alone, sets BUILD_POOL=8 to compile all 260+ TUs in parallel.
     pool_size = max(1, min(int(os.environ.get("BUILD_POOL", "1")), os.cpu_count() or 1))
-    if pool_size == 1 or len(to_compile) <= 1:
-        for s in to_compile:
-            compile_source(s, source_outputs[s])
-    else:
-        with concurrent.futures.ThreadPoolExecutor(pool_size) as pool:
-            futures = {pool.submit(compile_source, s, source_outputs[s]): s for s in to_compile}
-            for future in concurrent.futures.as_completed(futures):
-                future.result()
+    # Host-wide wine/cl mutex: many clones share this machine's wine prefix, and
+    # concurrent full builds thrash each other into 20-40 min runs (and wine cl
+    # failures at high concurrency). Big compiles take the lock exclusively;
+    # small per-file verifies share it, so they still run concurrently with
+    # each other but wait out any full build.
+    import fcntl
+    lock_dir = Path.home() / ".cache"
+    lock_dir.mkdir(parents=True, exist_ok=True)
+    lock_file = (lock_dir / "open-bfme-build.lock").open("a")
+    lock_mode = fcntl.LOCK_EX if len(to_compile) > 8 else fcntl.LOCK_SH
+    try:
+        fcntl.flock(lock_file, lock_mode | fcntl.LOCK_NB)
+    except OSError:
+        print(f"waiting for build lock ({'exclusive' if lock_mode == fcntl.LOCK_EX else 'shared'}; "
+              f"another clone is running a full build)...")
+        fcntl.flock(lock_file, lock_mode)
+    try:
+        if pool_size == 1 or len(to_compile) <= 1:
+            for s in to_compile:
+                compile_source(s, source_outputs[s])
+        else:
+            with concurrent.futures.ThreadPoolExecutor(pool_size) as pool:
+                futures = {pool.submit(compile_source, s, source_outputs[s]): s for s in to_compile}
+                for future in concurrent.futures.as_completed(futures):
+                    future.result()
+    finally:
+        fcntl.flock(lock_file, fcntl.LOCK_UN)
+        lock_file.close()
 
     failures = 0
     patches = []

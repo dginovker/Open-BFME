@@ -3080,85 +3080,42 @@ GameEngine/Source/GameNetwork/GameSpy/StagingRoomGameInfo.cpp,compile-error,0,0,
 GameEngine/Source/GameNetwork/GameSpy/Thread/PeerThread.cpp,compile-error,0,0,0,C2065 'NUM_RESERVED_KEYS' : undeclared identifier,0
 GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,ok,2,31,75,,2
 GameEngine/Source/GameNetwork/NAT.cpp,ok,2,3,39,,2
-Libraries/Source/debug/debug_cmd.cpp,ok,0,0,1,,0
-Libraries/Source/debug/debug_cmd.cpp,ok,0,0,1,,0
-Libraries/Source/debug/debug_debug.cpp,ok,0,2,49,,0
-Libraries/Source/debug/debug_except.cpp,compile-error,0,0,0,C2065 'WM_SETTEXT' : undeclared identifier,0
-Libraries/Source/debug/debug_getdefaultcommands.cpp,ok,0,0,0,,0
-Libraries/Source/debug/debug_io_con.cpp,ok,0,2,6,,0
-Libraries/Source/debug/debug_io_flat.cpp,ok,0,2,7,,0
-Libraries/Source/debug/debug_io_net.cpp,ok,0,2,3,,0
-Libraries/Source/debug/debug_io_ods.cpp,ok,0,2,2,,0
-Libraries/Source/debug/debug_purecall.cpp,ok,0,0,0,,0
-Libraries/Source/debug/debug_stack.cpp,ok,0,2,4,,0
-Libraries/Source/profile/profile.cpp,compile-error,0,0,0,C2228 left of '.name' must have class/struct/union type,0
-Libraries/Source/profile/profile_cmd.cpp,compile-error,0,0,0,"C3861 'PatternListEntry': identifier not found, even with argument-dependent lookup",0
-Libraries/Source/profile/profile_funclevel.cpp,compile-error,0,0,0,C2270 'GetCaller' : modifiers not allowed on nonmember functions,0
-Libraries/Source/profile/profile_highlevel.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'STRING_BUFFER_SIZE',0
-Libraries/Source/profile/profile_result.cpp,compile-error,0,0,0,C2448 'ProfileResultFileCSV::WriteThread' : function-style initializer appears to be a function ,0
-Libraries/Source/WPAudio/AUD_Assert.cpp,missing-header,0,0,0,wpaudio/altypes.h,0
-Libraries/Source/WPAudio/AUD_Assert.cpp,ok,0,0,0,,0
-Libraries/Source/WPAudio/AUD_Attributes.cpp,missing-header,0,0,0,wpaudio/level.h,0
-Libraries/Source/WPAudio/AUD_Cache.cpp,missing-header,0,0,0,wpaudio/memory.h,0
-Libraries/Source/WPAudio/AUD_Channel.cpp,missing-header,0,0,0,wpaudio/memory.h,0
-Libraries/Source/WPAudio/AUD_DSoundDriver.cpp,missing-header,0,0,0,dsound.h,0
-Libraries/Source/WPAudio/AUD_Device.cpp,missing-header,0,0,0,wpaudio/memory.h,0
-Libraries/Source/WPAudio/AUD_Events.cpp,missing-header,0,0,0,wpaudio/cache.h,0
-Libraries/Source/WPAudio/AUD_Level.cpp,missing-header,0,0,0,wpaudio/level.h,0
-Libraries/Source/WPAudio/AUD_List.cpp,missing-header,0,0,0,wpaudio/list.h,0
-Libraries/Source/WPAudio/AUD_Lock.cpp,missing-header,0,0,0,wpaudio/lock.h,0
-Libraries/Source/WPAudio/AUD_Memory.cpp,missing-header,0,0,0,wpaudio/memory.h,0
-Libraries/Source/WPAudio/AUD_Source.cpp,missing-header,0,0,0,wpaudio/memory.h,0
-Libraries/Source/WPAudio/AUD_StreamBuffering.cpp,missing-header,0,0,0,wpaudio/list.h,0
-Libraries/Source/WPAudio/AUD_Streamer.cpp,missing-header,0,0,0,wpaudio/Streamer.h,0
-Libraries/Source/WPAudio/AUD_Assert.cpp,ok,0,0,0,,0
-Libraries/Source/WPAudio/AUD_Attributes.cpp,compile-error,0,0,0,C2448 'AudioAttribsUpdate' : function-style initializer appears to be a function definition,0
-Libraries/Source/WPAudio/AUD_Cache.cpp,missing-header,0,0,0,wsys/File.h,0
-Libraries/Source/WPAudio/AUD_Channel.cpp,compile-error,0,0,0,C2065 'AudioChannel' : undeclared identifier,0
-Libraries/Source/WPAudio/AUD_DSoundDriver.cpp,missing-header,0,0,0,dsound.h,0
-Libraries/Source/WPAudio/AUD_Device.cpp,compile-error,0,0,0,C2501 '__unnamed::attribs' : missing storage-class or type specifiers,0
-Libraries/Source/WPAudio/AUD_Events.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '}',0
-Libraries/Source/WPAudio/AUD_Level.cpp,compile-error,0,0,0,"C3861 'level': identifier not found, even with argument-dependent lookup",0
-Libraries/Source/WPAudio/AUD_List.cpp,compile-error,0,0,0,"C3861 'ListNode': identifier not found, even with argument-dependent lookup",0
-Libraries/Source/WPAudio/AUD_Lock.cpp,compile-error,0,0,0,C2065 'Lock' : undeclared identifier,0
-Libraries/Source/WPAudio/AUD_Memory.cpp,compile-error,0,0,0,C2501 'DBG_DECLARE_TYPE' : missing storage-class or type specifiers,0
-Libraries/Source/WPAudio/AUD_Source.cpp,missing-header,0,0,0,wsys/file.h,0
-Libraries/Source/WPAudio/AUD_StreamBuffering.cpp,missing-header,0,0,0,wsys/file.h,0
-Libraries/Source/WPAudio/AUD_Streamer.cpp,missing-header,0,0,0,wsys/file.h,0
-GameEngineDevice/Source/W3DDevice/GameClient/W3DWebBrowser.cpp,missing-header,0,0,0,atlcom.h,0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,missing-header,0,0,0,atlcom.h,0
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,missing-header,0,0,0,atlcom.h,0
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLadderScreen.cpp,missing-header,0,0,0,atlcom.h,0
-GameEngineDevice/Source/W3DDevice/GameClient/W3DWebBrowser.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2501 'STDMETHODIMP' : missing storage-class or type specifiers,0
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngineDevice/Source/W3DDevice/GameClient/W3DWebBrowser.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2501 'STDMETHODIMP' : missing storage-class or type specifiers,0
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2501 'STDMETHODIMP' : missing storage-class or type specifiers,0
-GameEngineDevice/Source/W3DDevice/GameClient/W3DWebBrowser.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2501 'STDMETHODIMP' : missing storage-class or type specifiers,0
-GameEngineDevice/Source/W3DDevice/GameClient/W3DWebBrowser.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'TestMethod',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '<',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier '_Module',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier '_Module',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,"C2143 syntax error : missing ',' before '*'",0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,"C2143 syntax error : missing ',' before '*'",0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,"C3861 'OleInitialize': identifier not found, even with argument-dependent lookup",0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,"C3861 'OleInitialize': identifier not found, even with argument-dependent lookup",0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2065 'COLL_TYPE_0' : undeclared identifier,0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2446 '==' : no conversion from 'CComObject<T> *' to 'WebBrowser *const ',0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2065 'IID_IUnknown' : undeclared identifier,0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2678 binary '==' : no operator found which takes a left-hand operand of type 'const IID' (or th,0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,compile-error,0,0,0,C2065 'E_NOINTERFACE' : undeclared identifier,0
-GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,ok,0,2,19,,0
-GameEngineDevice/Source/W3DDevice/GameClient/W3DWebBrowser.cpp,compile-error,0,0,0,C2372 'REFIID' : redefinition; different types of indirection,0
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,ok,1,18,128,,1
-GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLadderScreen.cpp,ok,0,0,6,,0
-GameEngine/Source/Common/GameEngine.cpp,compile-error,0,0,0,C2079 'TintEnvelope::m_attackRate' uses undefined struct 'Vector3',0
-GameEngine/Source/Common/INI/INIWebpageURL.cpp,compile-error,0,0,0,"C3861 'getcwd': identifier not found, even with argument-dependent lookup",0
-Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,compile-error,0,0,0,C2011 '_GUID' : 'struct' type redefinition,0
-Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'REFIID',0
-Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,ok,0,16,71,,0
+GameEngine/Source/GameLogic/ScriptEngine/VictoryConditions.cpp,ok,0,4,15,,0
+GameEngine/Source/Common/Audio/AudioEventRTS.cpp,ok,0,1,37,,0
+GameEngine/Source/Common/Audio/AudioRequest.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/Audio/DynamicAudioEventInfo.cpp,ok,0,7,28,,0
+GameEngine/Source/Common/Audio/GameMusic.cpp,ok,0,1,4,,0
+GameEngine/Source/Common/Audio/GameSounds.cpp,ok,0,1,6,,0
+GameEngine/Source/Common/Audio/GameSpeech.cpp,missing-header,0,0,0,wpaudio/attributes.h,0
+GameEngine/Source/Common/Audio/simpleplayer.cpp,missing-header,0,0,0,wmsdk.h,0
+GameEngine/Source/Common/Audio/urllaunch.cpp,compile-error,0,0,0,C2086 'int HRESULT' : redefinition,0
+GameEngine/Source/Common/Bezier/BezierSegment.cpp,ok,0,15,16,,0
+GameEngine/Source/Common/BitFlags.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/CRCDebug.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/CommandLine.cpp,compile-error,0,0,0,C2661 '_stat::_stat' : no overloaded function takes 2 arguments,0
+GameEngine/Source/Common/DiscreteCircle.cpp,ok,0,7,10,,0
+GameEngine/Source/Common/GameEngine.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h,0
+GameEngine/Source/Common/GameMain.cpp,ok,0,0,1,,0
+GameEngine/Source/Common/GlobalData.cpp,ok,0,6,27,,0
+GameEngine/Source/Common/INI/INIAiData.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIAnimation.cpp,ok,0,0,3,,0
+GameEngine/Source/Common/INI/INIAudioEventInfo.cpp,ok,0,4,26,,0
+GameEngine/Source/Common/INI/INICommandButton.cpp,ok,0,0,2,,0
+GameEngine/Source/Common/INI/INICommandSet.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIControlBarScheme.cpp,ok,0,0,3,,0
+GameEngine/Source/Common/INI/INICrate.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIDamageFX.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIGameData.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIMapData.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIMappedImage.cpp,ok,0,1,5,,0
+GameEngine/Source/Common/INI/INIMiscAudio.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIModel.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INIMultiplayer.cpp,ok,0,0,7,,0
+GameEngine/Source/Common/INI/INIObject.cpp,ok,0,0,3,,0
+GameEngine/Source/Common/INI/INIParticleSys.cpp,ok,0,0,3,,0
+GameEngine/Source/Common/INI/INISpecialPower.cpp,ok,0,0,0,,0
+GameEngine/Source/Common/INI/INITerrain.cpp,ok,0,0,3,,0
+GameEngine/Source/Common/INI/INITerrainBridge.cpp,ok,0,0,3,,0
+GameEngine/Source/Common/INI/INITerrainRoad.cpp,ok,0,0,3,,0
+GameEngine/Source/Common/INI/INIUpgrade.cpp,ok,0,0,0,,0
+GameEngine/Source/GameNetwork/GUIUtil.cpp,ok,0,13,42,,0

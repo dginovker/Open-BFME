@@ -971,4 +971,8 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ??1CustomMatchPreferences@@UAE@XZ,0x00041F6A
 ?findLadderByIndex@LadderList@@QAEPBVLadderInfo@@H@Z,0x00028E93
 ?setLastLadder@CustomMatchPreferences@@QAEXABVAsciiString@@G@Z,0x00046E43
+??0QuickMatchPreferences@@QAE@XZ,0x0002E802
+??1QuickMatchPreferences@@UAE@XZ,0x00010073
+?findLadderByIndex@LadderList@@QAEPBVLadderInfo@@H@Z,0x00028E93
+?setLastLadder@QuickMatchPreferences@@QAEXABVAsciiString@@G@Z,0x00029B36
 ?write@UserPreferences@@UAE_NXZ,0x00030495

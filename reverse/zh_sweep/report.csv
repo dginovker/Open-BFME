@@ -3510,3 +3510,13 @@ Tools/mangler/wlib/streamer.cpp,missing-header,0,0,0,streamer.h,0
 Tools/mangler/wlib/syslogd.cpp,missing-header,0,0,0,syslogd.h,0
 Tools/mangler/wlib/threadfac.cpp,missing-header,0,0,0,threadfac.h,0
 GameEngine/Source/GameNetwork/LANAPICallbacks.cpp,ok,0,3,44,,0
+GameEngine/Source/Common/Thing/ThingFactory.cpp,ok,0,68,165,,0
+GameEngine/Source/GameLogic/Object/Update/NeutronMissileUpdate.cpp,ok,0,14,25,,0
+Libraries/Source/WWVegas/WW3D2/shattersystem.cpp,ok,0,52,74,,0
+Libraries/Source/WWVegas/WWSaveLoad/parameter.cpp,ok,0,63,200,,0
+GameEngine/Source/Common/INI/INIMultiplayer.cpp,ok,0,0,7,,0
+GameEngine/Source/GameLogic/Object/Update/HelicopterSlowDeathUpdate.cpp,ok,0,6,27,,0
+GameEngine/Source/GameLogic/Object/Update/AIUpdate/RailroadGuideAIUpdate.cpp,ok,0,10,74,,0
+Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.cpp,ok,0,3,34,,0
+Libraries/Source/WWVegas/WW3D2/dynamesh.cpp,ok,0,14,75,,0
+Libraries/Source/WWVegas/WW3D2/ww3dformat.cpp,ok,0,1,11,,0

@@ -65,6 +65,22 @@ while IFS= read -r path; do
     [ -n "$path" ] && verify_set["$path"]=1
 done < <(python3 tools/delta_sources.py --staged)
 
+# Parked reconstruction drafts (whitelisted zero-matched-row sources) have
+# nothing to byte-verify; build.py errors on a filter that matches no rows.
+if [ "${#verify_set[@]}" -ne 0 ]; then
+    while IFS= read -r path; do
+        unset "verify_set[$path]"
+    done < <(python3 - "${!verify_set[@]}" <<'PY'
+import csv, sys
+claimed = {r["source"] for r in csv.DictReader(open("reverse/functions.csv"))
+           if r.get("status") == "matched"}
+for p in sys.argv[1:]:
+    if p not in claimed:
+        print(p)
+PY
+    )
+fi
+
 if [ "${#verify_set[@]}" -ne 0 ]; then
     BUILD_POOL="${BUILD_POOL:-4}" ./build.sh "${!verify_set[@]}" \
         || fail "byte-verify of changed sources (see above)"

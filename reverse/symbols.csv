@@ -186,6 +186,8 @@ name,address,notes
 ??0UnicodeString@@QAE@ABV0@@Z,0x00888400
 ??0Vector3HollowSphereRandomizer@@QAE@M@Z,0x00B02350
 ??0Vector3SolidSphereRandomizer@@QAE@M@Z,0x00B02250
+??0W3DDisplay@@QAE@XZ,0x00002432
+??0W3DGameWindowManager@@QAE@XZ,0x00021701
 ??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
 ??1?$SimpleDynVecClass@VVector3@@@@UAE@XZ,0x00887940
 ??1?$_Rb_tree@JU?$pair@$$CBJVLadderPref@@@_STL@@U?$_Select1st@U?$pair@$$CBJVLadderPref@@@_STL@@@2@U?$less@J@2@V?$allocator@U?$pair@$$CBJVLadderPref@@@_STL@@@2@@_STL@@QAE@XZ,0x000192CC
@@ -632,6 +634,7 @@ name,address,notes
 ?_M_push_back_aux_v@?$deque@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXABVGameResultsResponse@@@Z,0x0004A0B1
 ?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z,0x0000B569,GameMessageParser::addArgType thunk
 ?addScience@Player@@AAE_NW4ScienceType@@@Z,0x00036057
+?addScorch@BaseHeightMapRenderObjClass@@QAEXVVector3@@MW4Scorches@@@Z,0x00047906
 ?addToBuildList@SidesInfo@@QAEXPAVBuildListInfo@@H@Z,0x0000DD9B
 ?addUpgrade@Player@@QAEPAVUpgrade@@PBVUpgradeTemplate@@W4UpgradeStatusType@@@Z,0x00040327
 ?addWaypointLink@TerrainLogic@@IAEXHH@Z,0x00038B77
@@ -1003,11 +1006,3 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
-?erase@?$list@PAVDrawable@@V?$allocator@PAVDrawable@@@_STL@@@_STL@@QAE?AU?$_List_iterator@PAVDrawable@@U?$_Nonconst_traits@PAVDrawable@@@_STL@@@2@U32@0@Z,0x00015348,ILT thunk to 0x00234C10
-?getNextSubToken@INI@@QAEPBDPBD@Z,0x00850B00,INI parser
-?scanInt@INI@@SAHPBD@Z,0x00852620,INI parser
-?loadDockPositions@DockUpdate@@IAEXXZ,0x0000C595,ILT thunk to 0x002CB0A0
-?isUsingAirborneLocomotor@Object@@QBE_NXZ,0x0000A001,ILT thunk to 0x001C1770
-??0W3DDisplay@@QAE@XZ,0x00002432
-??0W3DGameWindowManager@@QAE@XZ,0x00021701
-?addScorch@BaseHeightMapRenderObjClass@@QAEXVVector3@@MW4Scorches@@@Z,0x00047906

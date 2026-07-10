@@ -87,3 +87,4 @@ _$E312	landed	Compiler-generated static initializer. Candidate RVA 0xC6B74F off 
 ?parseStringAsNameKeyType@NameKeyGenerator@@SAXPAVINI@@PAX1PBX@Z	no-match	Prologue diff: target push edi;mov ecx,ebp;xor bl,bl vs compiled mov ecx,[esp+4]. Target inherits ebp from caller context. Different arg passing + register allocation.
 ?GadgetSliderSetDisabledSelectedThumbColor@@YAXPAVGameWindow@@H@Z	no-match	Misplaced: target starts with je (mid-function). Compiled starts with mov ecx,[esp+4];call;test;je. Different branch structure.
 ?GadgetSliderSetDisabledThumbColor@@YAXPAVGameWindow@@H@Z	dead	ICF fold with GadgetSliderSetDisabledSelectedThumbColor - same drift RVA 0x78E60A, same compiled bytes.
+?Set_Transform@DX8Wrapper@@SAXW4_D3DTRANSFORMSTATETYPE@@ABVMatrix3D@@@Z	landed	99% immediate-only, exact match after explain_mismatch. Vtable offset diff (0x94 vs 0xb0) was resolved by existing pins. No source changes needed.

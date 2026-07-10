@@ -141,3 +141,22 @@ _$E312	landed	Compiler-generated static initializer. Candidate RVA 0xC6B74F off 
 ??4?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z	no-match	candidate RVA is mid-function inside already-matched vector::operator= at 0x004A08B4 (210B). Stale drift sub-span.
 ??4?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z	no-match	candidate RVA is mid-function inside already-matched vector::operator= at 0x00170220 (221B). Stale drift sub-span.
 ?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z	no-match	target starts with 6cc padding; real start 0x006235E0. Two unresolved callees; REL32 blocked.
+?Post_Load_Process@MeshMatDescClass@@QAEX_NPAVMeshModelClass@@@Z	no-match	target starts with ret+int3 padding; real start likely 0x0092A6B8. Large function with completely different register/frame setup from compiled; multiple unresolved callees; not a literal fix.
+?getBuildFacilityTemplate@ThingTemplate@@QBEPBV1@PBVPlayer@@@Z	no-match	target uses esi/this with offsets 0x2c4/0x2c8 and div-by-8 magic; compiled uses ecx/this with offsets 0x15c/0x160 and div-by-4 magic. BFME struct layout diff in ProductionPrerequisite vector, not a literal fix.
+?doBorderSwitch@ScriptActions@@IAEXH@Z	no-match	target starts mid-function (or al,0x0). Candidate RVA is inside an already-matched ScriptActions function; stale drift sub-span. Four unresolved PartitionManager/TerrainLogic callees.
+??0WorkerStateMachine@@QAE@PAVObject@@@Z	no-match	prologue/SEH stack layout differs (target lacks push-1 SEH guard); multiple unresolved callees (State ctor, StateMachine ctor, MemoryPool allocate, defineState, AsciiString buffer, getClassMemoryPool for ActAsDozerState/ActAsSupplyTruckState). Size matches but shape drifts.
+?doTeamRemoveOverrideRelationToPlayer@ScriptActions@@IAEXABVAsciiString@@0@Z	no-match	target starts mid-function (add eax,0x2c) inside already-matched ScriptActions region. Unresolved Team::removeOverridePlayerRelationship absent. Misplacement.
+?getClassMemoryPool@AIAttackApproachTargetState@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@AIEnterState@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@AIExitInstantlyState@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@AIRappelState@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@AnimationSteeringUpdate@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@AudioRequest@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@BaseRegenerateUpdate@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@CleanupHazardUpdate@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@CountermeasuresBehavior@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@GrantStealthBehavior@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@LeafletDropBehavior@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@NetCommandWrapperListNode@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@NeutronBlastBehavior@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.
+?getClassMemoryPool@ObjectSMCHelper@@CAPAVMemoryPool@@XZ	no-match	drift RVA is mid-function inside MOTDSystem; completely misplaced. Same systemic createW3DMemPool shape diff.

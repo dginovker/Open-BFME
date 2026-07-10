@@ -1006,3 +1006,4 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
+?moveRoadSegTo@W3DRoadBuffer@@IAEXHH@Z,0x0003283F,ILT thunk -> 0x70b040 (checkLinkBefore callee)

@@ -3037,3 +3037,46 @@ GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0
 GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2196 case value '0' already used,0
 GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2039 'profile' : is not a member of 'GPGetInfoResponseArg',0
 GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,ok,2,31,75,,2
+GameEngine/Source/Common/UserPreferences.cpp,ok,3,32,166,,3
+GameEngine/Source/GameClient/GUI/GUICallbacks/Diplomacy.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupHostGame.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupJoinGame.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupLadderSelect.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPlayerInfo.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLGameSetupMenu.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/Common/UserPreferences.cpp,ok,3,32,166,,3
+GameEngine/Source/GameClient/GUI/GUICallbacks/Diplomacy.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupHostGame.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupJoinGame.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupLadderSelect.cpp,compile-error,0,0,0,C2365 'GP_DONT_UPDATE' : redefinition; previous definition was a 'enumerator',0
+GameEngine/Source/Common/UserPreferences.cpp,ok,3,32,166,,3
+GameEngine/Source/GameClient/GUI/GUICallbacks/Diplomacy.cpp,ok,0,2,32,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupHostGame.cpp,ok,1,12,48,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupJoinGame.cpp,ok,1,0,14,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupLadderSelect.cpp,ok,0,5,29,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPlayerInfo.cpp,ok,0,13,50,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,ok,0,28,79,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,ok,3,34,94,,3
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLGameSetupMenu.cpp,ok,0,13,87,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,ok,1,19,98,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLocaleSelectPopup.cpp,ok,0,6,17,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLMapSelectMenu.cpp,ok,0,0,12,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu.cpp,ok,1,33,106,,1
+GameEngine/Source/GameClient/GUI/LoadScreen.cpp,ok,0,8,54,,0
+GameEngine/Source/GameClient/GUI/Shell/Shell.cpp,ok,2,2,32,,2
+GameEngine/Source/GameNetwork/GameSpy/Chat.cpp,ok,0,11,37,,0
+GameEngine/Source/GameNetwork/GameSpy/LadderDefs.cpp,ok,1,8,60,,1
+GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,ok,7,7,38,,7
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,ok,6,84,264,,6
+GameEngine/Source/GameNetwork/GameSpyGameInfo.cpp,compile-error,0,0,0,C1189 #error :  this file is obsolete,0
+GameEngine/Source/GameClient/MessageStream/CommandXlat.cpp,ok,0,8,46,,0
+GameEngine/Source/GameNetwork/GameSpyOverlay.cpp,ok,1,0,13,,1
+GameEngine/Source/GameLogic/System/GameLogic.cpp,ok,1,51,204,,1
+GameEngine/Source/GameNetwork/GameSpy/StagingRoomGameInfo.cpp,compile-error,0,0,0,"C3861 'bind_ptr': identifier not found, even with argument-dependent lookup",0
+GameEngine/Source/GameNetwork/GameSpy/Thread/PeerThread.cpp,compile-error,0,0,0,C2065 'NUM_RESERVED_KEYS' : undeclared identifier,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,ok,2,31,75,,2
+GameEngine/Source/GameNetwork/NAT.cpp,ok,2,3,39,,2

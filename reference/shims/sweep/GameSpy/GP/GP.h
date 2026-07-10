@@ -53,7 +53,6 @@ enum {
 	GP_CHECK_CACHE,
 	GP_DONT_CHECK_CACHE,
 	GP_MASK_NONE,
-	GP_DONT_UPDATE,
 };
 
 // GP connection state (300-399)

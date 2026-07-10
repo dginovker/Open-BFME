@@ -1663,7 +1663,6 @@ Player * Object::getControllingPlayer() const
 }
 
 //=============================================================================
-// ?setProducer@Object@@QAEXPBV1@@Z present-unmatched
 void Object::setProducer(const Object* obj)
 {
 	m_producerID = obj ? obj->getID() : INVALID_ID;
@@ -1673,7 +1672,6 @@ void Object::setProducer(const Object* obj)
 }
 
 //=============================================================================
-// ?setBuilder@Object@@QAEXPBV1@@Z present-unmatched
 void Object::setBuilder( const Object *obj )
 {
 
@@ -2786,7 +2784,6 @@ void Object::setTriggerAreaFlagsForChangeInPosition()
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?isInList@Object@@QBE_NPAPAV1@@Z present-unmatched
 Bool Object::isInList(Object **pListHead) const
 {
 	Bool result = m_prev || m_next || *pListHead == this;

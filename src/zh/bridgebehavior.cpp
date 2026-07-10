@@ -398,7 +398,6 @@ void BridgeBehavior::resolveFX( void )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?setTower@BridgeBehavior@@UAEXW4BridgeTowerType@@PAVObject@@@Z present-unmatched
 void BridgeBehavior::setTower( BridgeTowerType towerType, Object *tower )
 {
 

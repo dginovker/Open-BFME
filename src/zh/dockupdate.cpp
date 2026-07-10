@@ -115,7 +115,6 @@ DockUpdate::~DockUpdate()
 {
 }
 
-// ?isClearToApproach@DockUpdate@@UBE_NPBVObject@@@Z present-unmatched
 Bool DockUpdate::isClearToApproach( Object const* docker ) const
 {
 	// If we allow infinite approaches, we don't even need to look up.  Just say yes.
@@ -192,7 +191,6 @@ Bool DockUpdate::reserveApproachPosition( Object* docker, Coord3D *position, Int
 	return FALSE;
 }
 
-// ?advanceApproachPosition@DockUpdate@@UAE_NPAVObject@@PAUCoord3D@@PAH@Z present-unmatched
 Bool DockUpdate::advanceApproachPosition( Object* docker, Coord3D *position, Int *index )
 {
 	// load dock positions if not loaded yet
@@ -228,7 +226,6 @@ Bool DockUpdate::isClearToEnter( Object const* docker ) const
 	return dockerID == m_activeDocker;
 }
 
-// ?isClearToAdvance@DockUpdate@@UBE_NPBVObject@@H@Z present-unmatched
 Bool DockUpdate::isClearToAdvance( Object const* docker, Int dockerIndex ) const
 {
 	if( dockerIndex < 0 )
@@ -325,7 +322,6 @@ void DockUpdate::getExitPosition( Object* docker, Coord3D *position )
 
 }
 
-// ?onApproachReached@DockUpdate@@UAEXPAVObject@@@Z present-unmatched
 void DockUpdate::onApproachReached( Object* docker )
 {
 	ObjectID dockerID = docker->getID();

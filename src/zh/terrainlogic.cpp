@@ -854,7 +854,7 @@ Bool Bridge::isCellEntryPoint(const Region2D *cell)
 //-------------------------------------------------------------------------------------------------
 /** pickBridge - see if point is on bridge. */
 //-------------------------------------------------------------------------------------------------
-// ?pickBridge@Bridge@@QAE_NABVVector3@@0PAV3@@Z
+// ?pickBridge@Bridge@@QAE_NABVVector3@@0PAV2@@Z
 Bool Bridge::pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos)
 {
 
@@ -1687,7 +1687,6 @@ PolygonTrigger *TerrainLogic::getTriggerAreaByName( AsciiString name )
 //-------------------------------------------------------------------------------------------------
 /** Finds the bridge at a given x/y coordinate.  */
 //-------------------------------------------------------------------------------------------------
-// ?findBridgeAt@TerrainLogic@@UBEPAVBridge@@PBUCoord3D@@@Z present-unmatched
 Bridge * TerrainLogic::findBridgeAt( const Coord3D *pLoc) const
 {
 
@@ -1918,7 +1917,6 @@ void TerrainLogic::updateBridgeDamageStates( void )
 //-------------------------------------------------------------------------------------------------
 /** Checks if a bridge is repaired. */
 //-------------------------------------------------------------------------------------------------
-// ?isBridgeRepaired@TerrainLogic@@QAE_NPBVObject@@@Z present-unmatched
 Bool TerrainLogic::isBridgeRepaired(const Object *bridge)
 {
 	if (!bridge) return false;
@@ -1944,7 +1942,6 @@ Bool TerrainLogic::isBridgeRepaired(const Object *bridge)
 //-------------------------------------------------------------------------------------------------
 /** Checks if a bridge is broken. */
 //-------------------------------------------------------------------------------------------------
-// ?isBridgeBroken@TerrainLogic@@QAE_NPBVObject@@@Z present-unmatched
 Bool TerrainLogic::isBridgeBroken( const Object *bridge )
 {
 	if (!bridge) return false;
@@ -1970,7 +1967,6 @@ Bool TerrainLogic::isBridgeBroken( const Object *bridge )
 //-------------------------------------------------------------------------------------------------
 /** Gets the attack points for a bridge. */
 //-------------------------------------------------------------------------------------------------
-// ?getBridgeAttackPoints@TerrainLogic@@QAEXPBVObject@@PAUTBridgeAttackInfo@@@Z present-unmatched
 void TerrainLogic::getBridgeAttackPoints(const Object *bridge, TBridgeAttackInfo *attackInfo)
 {
 	ObjectID id = bridge->getID();
@@ -2009,7 +2005,7 @@ void TerrainLogic::getBridgeAttackPoints(const Object *bridge, TBridgeAttackInfo
 //-------------------------------------------------------------------------------------------------
 /** Picks a bridge, and returns it's drawable. */
 //-------------------------------------------------------------------------------------------------
-// ?pickBridge@TerrainLogic@@UAE_NABVVector3@@0PAV3@@Z
+// ?pickBridge@TerrainLogic@@UAE_NABVVector3@@0PAV2@@Z present-unmatched
 Bool TerrainLogic::pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos)
 {
 	Bool curDraw = FALSE;

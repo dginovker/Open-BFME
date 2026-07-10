@@ -195,7 +195,7 @@ public:
 	void getBridgeInfo(class BridgeInfo *pInfo) {*pInfo = m_bridgeInfo; }
 	/// See if the point is on the bridge.
 	Bool isPointOnBridge(const Coord3D *pLoc);
-	Bool pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos);
+	Drawable *pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos);
 	void updateDamageState(void); ///< Updates a bridge's damage info.
 	inline const BridgeInfo *peekBridgeInfo(void) const {return &m_bridgeInfo;}
 	inline PathfindLayerEnum getLayer(void) const {return m_layer;}
@@ -274,6 +274,7 @@ public:
 	/// Return the trigger area with the given name
 	virtual PolygonTrigger *getTriggerAreaByName( AsciiString name );
 
+	// BFME layout reconciliation: 9 virtuals inserted here to shift getFirstBridge vtable slot 0x70->0x94
 	virtual void _bfme_tl_v1( void ) {}
 	virtual void _bfme_tl_v2( void ) {}
 	virtual void _bfme_tl_v3( void ) {}
@@ -299,7 +300,7 @@ public:
 	///  Returns true if the object is close to one or the other end of the bridge.
 	virtual Bool objectInteractsWithBridgeEnd(Object *obj, Int layer) const;
 
-	virtual Bool pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos);
+	virtual Drawable *pickBridge(const Vector3 &from, const Vector3 &to, Vector3 *pos);
 
 	virtual void addBridgeToLogic(BridgeInfo *pInfo, Dict *props, AsciiString bridgeTemplateName); ///< Adds a bridge's logical info.
 	virtual void addLandmarkBridgeToLogic(Object *bridgeObj); ///< Adds a bridge's logical info.

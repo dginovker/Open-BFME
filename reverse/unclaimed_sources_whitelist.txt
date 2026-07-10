@@ -24,3 +24,4 @@ src/zh/grantstealthbehavior.cpp
 # bytes matched — 2-byte diff is MSVC codegen ordering (push-before-store vs
 # store-before-push). See reverse/re_attempts.log for full analysis.
 src/game/handicap.cpp
+src/game/water_transparency.cpp

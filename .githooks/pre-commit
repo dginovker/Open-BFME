@@ -16,15 +16,26 @@ fail() {
 
 staged_sources=()
 ledger_changed=0
+wide_change=0
 while IFS= read -r path; do
     case "$path" in
         src/*.cpp) staged_sources+=("$path") ;;
         reverse/functions.csv|reverse/symbols.csv) ledger_changed=1 ;;
+        # A header or shim recompiles many TUs while changing NO ledger rows,
+        # so the delta byte-verify below would prove nothing. Any such change
+        # forces the full gate — this is exactly how a layout-shim experiment
+        # could otherwise land a silent regression.
+        *.h|reference/shims/*) wide_change=1 ;;
     esac
 done < <(git diff --cached --name-only --diff-filter=ACMRT)
 
-if [ "${#staged_sources[@]}" -eq 0 ] && [ "$ledger_changed" -eq 0 ]; then
+if [ "${#staged_sources[@]}" -eq 0 ] && [ "$ledger_changed" -eq 0 ] && [ "$wide_change" -eq 0 ]; then
     exit 0
+fi
+
+if [ "$wide_change" -ne 0 ]; then
+    echo "pre-commit: header/shim change — running FULL gate (delta verify can't see wide effects)" >&2
+    BUILD_POOL="${BUILD_POOL:-4}" ./build.sh || fail "full gate after header/shim change (see above)"
 fi
 
 # The build verifies file contents on disk; refuse if a file being committed

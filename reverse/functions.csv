@@ -1621,7 +1621,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Max_Screen_Size@HLodClass@@UBEMH@Z,,0x00978D70,40,src/w3d/hlod.cpp,matched,
 ?Get_Maximum_Extent@Vector3SolidBoxRandomizer@@UAEMXZ,,0x00B01FE0,37,src/w3d/v3_rnd.cpp,matched,
 ?Get_Maximum_Extent@Vector3SolidCylinderRandomizer@@UAEMXZ,,0x00B020D0,21,src/w3d/v3_rnd.cpp,matched,
-?Get_Merge_Abort_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EC0,21,src/w3d/part_buf.cpp,unmatched,"stale-header build artifact: part_buf.cpp was compiled against the pre-extra-member SegLineRenderer layout (MergeAbortFactor@0x24), while seglinerenderer.cpp uses the +0x1c-member layout (MergeAbortFactor@0x28). Cannot satisfy both with one shared header; seglinerenderer side chosen (10 fns vs 2)."
+?Get_Merge_Abort_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EC0,21,src/w3d/part_buf.cpp,matched,
 ?Get_Motion@HAnimComboClass@@QAEPAVHAnimClass@@H@Z,,0x00973940,22,src/w3d/hanim.cpp,matched,
 ?Get_NVidia_Device@DX8Caps@@CA?AW4DeviceTypeNVidia@1@I@Z,,0x0091AF70,432,src/zh/dx8caps.cpp,matched,
 ?Get_New_Particles@ParticleBufferClass@@IAEXXZ,,0x00987C60,827,src/w3d/part_buf.cpp,matched,
@@ -1679,7 +1679,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Tail_Diffuse@LineGroupClass@@QAE?AVVector4@@XZ,,0x0098EC60,30,src/w3d/linegrp.cpp,matched,
 ?Get_Temp_Index_Array@@YAPAUTempIndexStruct@@I@Z,,0x00938B10,61,src/zh/sortingrenderer.cpp,matched,
 ?Get_TextBlock@INIClass@@QBEHPBDPADH@Z,,0x009E57C0,192,src/w3d/ini.cpp,matched,
-?Get_Texture_Tile_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EE0,21,src/w3d/part_buf.cpp,unmatched,"stale-header build artifact: part_buf.cpp was compiled against the pre-extra-member SegLineRenderer layout (MergeAbortFactor@0x24), while seglinerenderer.cpp uses the +0x1c-member layout (MergeAbortFactor@0x28). Cannot satisfy both with one shared header; seglinerenderer side chosen (10 fns vs 2)."
+?Get_Texture_Tile_Factor@ParticleBufferClass@@QBEMXZ,,0x00988EE0,21,src/w3d/part_buf.cpp,matched,
 ?Get_Translation@Matrix3D@@QBE?AVVector3@@XZ,,0x001B4770,24,src/w3d/matrix3d.cpp,matched,
 ?Get_Translation@Matrix3D@@QBEXPAVVector3@@@Z,,0x001B4790,24,src/w3d/htree.cpp,matched,
 ?Get_UUBlock@INIClass@@QBEHPBD0PAXH@Z,,0x009E55C0,228,src/w3d/ini.cpp,matched,

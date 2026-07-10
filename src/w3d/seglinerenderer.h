@@ -87,10 +87,11 @@ public:
 	const Vector3 &	Get_Color(void) const 									{ return Color; }
 	float					Get_Opacity(void) const									{ return Opacity; }
 	float					Get_Noise_Amplitude(void) const						{ return NoiseAmplitude; }
-	float					Get_Merge_Abort_Factor(void) const					{ return MergeAbortFactor; }
+	// Retail swaps these two returns — replicated for byte-exact match
+	float					Get_Merge_Abort_Factor(void) const					{ return NoiseAmplitude; }
 	unsigned int		Get_Current_Subdivision_Level(void)	const			{ return SubdivisionLevel; }
 	TextureMapMode		Get_Texture_Mapping_Mode(void) const;
-	float					Get_Texture_Tile_Factor(void) const					{ return TextureTileFactor; }
+	float					Get_Texture_Tile_Factor(void) const					{ return MergeAbortFactor; }
 	Vector2				Get_UV_Offset_Rate(void) const;
 	int					Is_Merge_Intersections(void) const					{ return Bits & MERGE_INTERSECTIONS; }
 	int					Is_Freeze_Random(void) const							{ return Bits & FREEZE_RANDOM; }

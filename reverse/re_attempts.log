@@ -223,3 +223,4 @@ _$E312	landed	Compiler-generated static initializer. Candidate RVA 0xC6B74F off 
 ?Resize@?$VectorClass@K@@UAE_NHPBK@Z	dead	ICF fold: claimed by VectorClass<VertexMaterialClass*>::Resize at 0x00AFEA70 (matinfo.cpp)
 ?getWindowUnderCursor@GameWindowManager@@UAEPAVGameWindow@@HH_N@Z	no-match	19 literal diffs from GameWindow class field shift (0x4 vs 0x8). 31 matched fns in file — cant change struct layout.
 ?Project@CameraClass@@QBE?AW4ProjectionResType@1@AAVVector3@@ABV3@@Z	no-match	29 literal diffs from CameraClass field shift (0x360 vs 0x394 — 52B). Camera class heavily resized in BFME. Not fixable without BFME-correct headers.
+?getClassMemoryPool@ActiveBody@@CAPAVMemoryPool@@XZ	no-match	Candidate starts at 0x213C97 which is int3 padding before true function. Compiled function begins immediately at 0x213C97. Misplacement by drift_report; true start requires ghidra boundary. Same systemic createW3DMemPool arg-setup diff as sibling getClassMemoryPool functions.

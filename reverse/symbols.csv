@@ -995,3 +995,1000 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?SetLobbyAttemptHostJoin@@YAX_N@Z,0x0000362A
 ?PopulateLobbyPlayerListbox@@YAXXZ,0x000070B3
 ??$_M_allocate_and_copy@PBUICoord2D@@@?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@IAEPAUICoord2D@@IPBU2@0@Z,0x009F5370,decoded from vector assign call site
+name,address,notes
+?$S103@?1??getClassMemoryPool@AIUpdateInterface@@CAPAVMemoryPool@@XZ@4IA,0x00EEFE34,pool-glue cascade static (back-solved)
+?$S105@?1??getClassMemoryPool@PoisonedBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF830,pool-glue cascade static (back-solved)
+?$S107@?1??getClassMemoryPool@SupplyWarehouseCripplingBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF91C,pool-glue cascade static (back-solved)
+?$S112@?1??getClassMemoryPool@CreateCrateDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFBF8,pool-glue cascade static (back-solved)
+?$S113@?1??getClassMemoryPool@CreateObjectDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC00,pool-glue cascade static (back-solved)
+?$S114@?1??getClassMemoryPool@CrushDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC08,pool-glue cascade static (back-solved)
+?$S116@?1??getClassMemoryPool@DestroyDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC10,pool-glue cascade static (back-solved)
+?$S118@?1??getClassMemoryPool@FXListDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC18,pool-glue cascade static (back-solved)
+?$S120@?1??getClassMemoryPool@SpecialPowerCompletionDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC38,pool-glue cascade static (back-solved)
+?$S121@?1??getClassMemoryPool@UpgradeDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC40,pool-glue cascade static (back-solved)
+?$S122@?1??getClassMemoryPool@KeepObjectDie@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC28,pool-glue cascade static (back-solved)
+?$S124@?1??getClassMemoryPool@AssistedTargetingUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFE3C,pool-glue cascade static (back-solved)
+?$S131@?1??getClassMemoryPool@SupplyTruckAIUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0308,pool-glue cascade static (back-solved)
+?$S133@?1??getClassMemoryPool@DefaultProductionExitUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF04F8,pool-glue cascade static (back-solved)
+?$S134@?1??getClassMemoryPool@DeletionUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF04,pool-glue cascade static (back-solved)
+?$S145@?1??getClassMemoryPool@DozerAIUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0258,pool-glue cascade static (back-solved)
+?$S147@?1??getClassMemoryPool@DynamicShroudClearingRangeUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF24,pool-glue cascade static (back-solved)
+?$S149@?1??getClassMemoryPool@FireSpreadUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF4C,pool-glue cascade static (back-solved)
+?$S151@?1??getClassMemoryPool@FireWeaponUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF5C,pool-glue cascade static (back-solved)
+?$S152@?1??getClassMemoryPool@FlammableUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF64,pool-glue cascade static (back-solved)
+?$S153@?1??getClassMemoryPool@FloatUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF84,pool-glue cascade static (back-solved)
+?$S160@?1??getClassMemoryPool@DeployStyleAIUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0250,pool-glue cascade static (back-solved)
+?$S161@?1??getClassMemoryPool@AssaultTransportAIUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0248,pool-glue cascade static (back-solved)
+?$S162@?1??getClassMemoryPool@HeightDieUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF8C,pool-glue cascade static (back-solved)
+?$S165@?1??getClassMemoryPool@LaserUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF702C,pool-glue cascade static (back-solved)
+?$S168@?1??getClassMemoryPool@AutoFindHealingUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFE5C,pool-glue cascade static (back-solved)
+?$S169@?1??getClassMemoryPool@CommandButtonHuntUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFEE4,pool-glue cascade static (back-solved)
+?$S171@?1??getClassMemoryPool@DemoTrapUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF0C,pool-glue cascade static (back-solved)
+?$S177@?1??getClassMemoryPool@BattlePlanUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFEA8,pool-glue cascade static (back-solved)
+?$S178@?1??getClassMemoryPool@LifetimeUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFFBC,pool-glue cascade static (back-solved)
+?$S179@?1??getClassMemoryPool@RadiusDecalUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0024,pool-glue cascade static (back-solved)
+?$S17@?1??getClassMemoryPool@AutoHealBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF768,pool-glue cascade static (back-solved)
+?$S180@?1??getClassMemoryPool@AutoDepositUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFE54,pool-glue cascade static (back-solved)
+?$S186@?1??getClassMemoryPool@ProductionUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFFFC,pool-glue cascade static (back-solved)
+?$S188@?1??getClassMemoryPool@ProneUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0014,pool-glue cascade static (back-solved)
+?$S189@?1??getClassMemoryPool@QueueProductionExitUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0500,pool-glue cascade static (back-solved)
+?$S190@?1??getClassMemoryPool@RadarUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF001C,pool-glue cascade static (back-solved)
+?$S191@?1??getClassMemoryPool@SupplyCenterDockUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF04E8,pool-glue cascade static (back-solved)
+?$S192@?1??getClassMemoryPool@RepairDockUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF04E0,pool-glue cascade static (back-solved)
+?$S193@?1??getClassMemoryPool@RailedTransportDockUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF04D8,pool-glue cascade static (back-solved)
+?$S196@?1??getClassMemoryPool@SlavedUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF004C,pool-glue cascade static (back-solved)
+?$S200@?1??getClassMemoryPool@StealthDetectorUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF00A0,pool-glue cascade static (back-solved)
+?$S201@?1??getClassMemoryPool@StealthUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF01CC,pool-glue cascade static (back-solved)
+?$S202@?1??getClassMemoryPool@SpawnPointProductionExitUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0508,pool-glue cascade static (back-solved)
+?$S203@?1??getClassMemoryPool@SpawnBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF904,pool-glue cascade static (back-solved)
+?$S207@?1??getClassMemoryPool@HijackerUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFF94,pool-glue cascade static (back-solved)
+?$S210@?1??getClassMemoryPool@SupplyCenterProductionExitUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0510,pool-glue cascade static (back-solved)
+?$S211@?1??getClassMemoryPool@SupplyWarehouseDockUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF04F0,pool-glue cascade static (back-solved)
+?$S213@?1??getClassMemoryPool@TransportAIUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF046C,pool-glue cascade static (back-solved)
+?$S214@?1??getClassMemoryPool@WanderAIUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0474,pool-glue cascade static (back-solved)
+?$S218@?1??getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF0480,pool-glue cascade static (back-solved)
+?$S21@?1??getClassMemoryPool@BridgeBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF778,pool-glue cascade static (back-solved)
+?$S224@?1??getClassMemoryPool@ArmorUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF0518,pool-glue cascade static (back-solved)
+?$S225@?1??getClassMemoryPool@CommandSetUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF054C,pool-glue cascade static (back-solved)
+?$S228@?1??getClassMemoryPool@LocomotorSetUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF0584,pool-glue cascade static (back-solved)
+?$S229@?1??getClassMemoryPool@ObjectCreationUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF059C,pool-glue cascade static (back-solved)
+?$S230@?1??getClassMemoryPool@RadarUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF05BC,pool-glue cascade static (back-solved)
+?$S233@?1??getClassMemoryPool@ModelConditionUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF0594,pool-glue cascade static (back-solved)
+?$S234@?1??getClassMemoryPool@StatusBitsUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF05C4,pool-glue cascade static (back-solved)
+?$S235@?1??getClassMemoryPool@SubObjectsUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF05D4,pool-glue cascade static (back-solved)
+?$S236@?1??getClassMemoryPool@StealthUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF05CC,pool-glue cascade static (back-solved)
+?$S237@?1??getClassMemoryPool@UnpauseSpecialPowerUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF05E4,pool-glue cascade static (back-solved)
+?$S238@?1??getClassMemoryPool@WeaponBonusUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF05EC,pool-glue cascade static (back-solved)
+?$S239@?1??getClassMemoryPool@WeaponSetUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF05F4,pool-glue cascade static (back-solved)
+?$S23@?1??getClassMemoryPool@BridgeTowerBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF788,pool-glue cascade static (back-solved)
+?$S240@?1??getClassMemoryPool@CostModifierUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF0554,pool-glue cascade static (back-solved)
+?$S241@?1??getClassMemoryPool@ExperienceScalarUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF0564,pool-glue cascade static (back-solved)
+?$S242@?1??getClassMemoryPool@MaxHealthUpgrade@@CAPAVMemoryPool@@XZ@4IA,0x00EF058C,pool-glue cascade static (back-solved)
+?$S243@?1??getClassMemoryPool@LockWeaponCreate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFB98,pool-glue cascade static (back-solved)
+?$S244@?1??getClassMemoryPool@SupplyCenterCreate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFBB0,pool-glue cascade static (back-solved)
+?$S245@?1??getClassMemoryPool@SupplyWarehouseCreate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFBB8,pool-glue cascade static (back-solved)
+?$S247@?1??getClassMemoryPool@GrantUpgradeCreate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFB90,pool-glue cascade static (back-solved)
+?$S248@?1??getClassMemoryPool@PreorderCreate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFBA0,pool-glue cascade static (back-solved)
+?$S249@?1??getClassMemoryPool@SpecialPowerCreate@@CAPAVMemoryPool@@XZ@4IA,0x00EEFBA8,pool-glue cascade static (back-solved)
+?$S252@?1??getClassMemoryPool@TransitionDamageFX@@CAPAVMemoryPool@@XZ@4IA,0x00EEFBF0,pool-glue cascade static (back-solved)
+?$S253@?1??getClassMemoryPool@FireWeaponCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEF9CC,pool-glue cascade static (back-solved)
+?$S254@?1??getClassMemoryPool@SquishCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEF9DC,pool-glue cascade static (back-solved)
+?$S257@?1??getClassMemoryPool@HealCrateCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA0C,pool-glue cascade static (back-solved)
+?$S258@?1??getClassMemoryPool@MoneyCrateCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA14,pool-glue cascade static (back-solved)
+?$S267@?1??getClassMemoryPool@SalvageCrateCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA1C,pool-glue cascade static (back-solved)
+?$S268@?1??getClassMemoryPool@ShroudCrateCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA24,pool-glue cascade static (back-solved)
+?$S269@?1??getClassMemoryPool@UnitCrateCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA2C,pool-glue cascade static (back-solved)
+?$S26@?1??getClassMemoryPool@InstantDeathBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF818,pool-glue cascade static (back-solved)
+?$S270@?1??getClassMemoryPool@VeterancyCrateCollide@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA34,pool-glue cascade static (back-solved)
+?$S271@?1??getClassMemoryPool@InactiveBody@@CAPAVMemoryPool@@XZ@4IA,0x00EEF98C,pool-glue cascade static (back-solved)
+?$S272@?1??getClassMemoryPool@ActiveBody@@CAPAVMemoryPool@@XZ@4IA,0x00EEF92C,pool-glue cascade static (back-solved)
+?$S273@?1??getClassMemoryPool@HighlanderBody@@CAPAVMemoryPool@@XZ@4IA,0x00EEF97C,pool-glue cascade static (back-solved)
+?$S274@?1??getClassMemoryPool@ImmortalBody@@CAPAVMemoryPool@@XZ@4IA,0x00EEF984,pool-glue cascade static (back-solved)
+?$S275@?1??getClassMemoryPool@StructureBody@@CAPAVMemoryPool@@XZ@4IA,0x00EEF9B4,pool-glue cascade static (back-solved)
+?$S278@?1??getClassMemoryPool@CashHackSpecialPower@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC58,pool-glue cascade static (back-solved)
+?$S279@?1??getClassMemoryPool@DefectorSpecialPower@@CAPAVMemoryPool@@XZ@4IA,0x00EEFC78,pool-glue cascade static (back-solved)
+?$S280@?1??getClassMemoryPool@OCLSpecialPower@@CAPAVMemoryPool@@XZ@4IA,0x00EEFCE8,pool-glue cascade static (back-solved)
+?$S281@?1??getClassMemoryPool@SpecialAbility@@CAPAVMemoryPool@@XZ@4IA,0x00EF0054,pool-glue cascade static (back-solved)
+?$S286@?1??getClassMemoryPool@AnimatedParticleSysBoneClientUpdate@@CAPAVMemoryPool@@XZ@4IA,0x00EF701C,pool-glue cascade static (back-solved)
+?$S30@?1??getClassMemoryPool@OpenContain@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA64,pool-glue cascade static (back-solved)
+?$S31@?1??getClassMemoryPool@CaveContain@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA3C,pool-glue cascade static (back-solved)
+?$S33@?1??getClassMemoryPool@HealContain@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA5C,pool-glue cascade static (back-solved)
+?$S34@?1??getClassMemoryPool@GarrisonContain@@CAPAVMemoryPool@@XZ@4IA,0x00EEFA54,pool-glue cascade static (back-solved)
+?$S35@?1??getClassMemoryPool@TransportContain@@CAPAVMemoryPool@@XZ@4IA,0x00EEFAA8,pool-glue cascade static (back-solved)
+?$S40@?1??getClassMemoryPool@TunnelContain@@CAPAVMemoryPool@@XZ@4IA,0x00EEFAB0,pool-glue cascade static (back-solved)
+?$S46@?1??getClassMemoryPool@PropagandaTowerBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF838,pool-glue cascade static (back-solved)
+?$S51@?1??getClassMemoryPool@FireWeaponWhenDamagedBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF7C8,pool-glue cascade static (back-solved)
+?$S52@?1??getClassMemoryPool@FireWeaponWhenDeadBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF7D0,pool-glue cascade static (back-solved)
+??$_Construct@VGameResultsResponse@@V1@@_STL@@YAXPAVGameResultsResponse@@ABV1@@Z,0x0000DCE7
+??$_Destroy@PAVProductionPrerequisite@@@_STL@@YAXPAVProductionPrerequisite@@0@Z,0x00011D47
+??$_M_allocate_and_copy@PBVProductionPrerequisite@@@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEPAVProductionPrerequisite@@IPBV2@0@Z,0x00014961
+??$_M_find@G@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@1@ABG@Z,0x00003071
+??$_M_find@VAsciiString@@@?$hashtable@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@@_STL@@ABEPAU?$_Hashtable_node@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@1@ABVAsciiString@@@Z,0x0000F727
+??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@_STL@@@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@1@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@1@1ABU__false_type@1@@Z,0x0003F68E,ILT thunk for list<GameWindow*>::_M_insert_dispatch
+??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@_STL@@@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@1@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@1@1ABU__false_type@1@@Z,0x00483620,body
+??$_M_insert_dispatch@U?$_List_iterator@UCoord3D@@U?$_Const_traits@UCoord3D@@@_STL@@@_STL@@@?$list@UCoord3D@@V?$allocator@UCoord3D@@@_STL@@@_STL@@QAEXU?$_List_iterator@UCoord3D@@U?$_Nonconst_traits@UCoord3D@@@_STL@@@1@U?$_List_iterator@UCoord3D@@U?$_Const_traits@UCoord3D@@@_STL@@@1@1ABU__false_type@1@@Z,0x00011E87
+??$__copy@PAUHorzLine@@PAU1@H@_STL@@YAPAUHorzLine@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0001B91E
+??$__copy@PAUVideo@@PAU1@H@_STL@@YAPAUVideo@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000112FC
+??$__copy@PAVAsciiString@@PAV1@H@_STL@@YAPAVAsciiString@@PAV1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00042EA6
+??$__copy@PBVProductionPrerequisite@@PAV1@H@_STL@@YAPAVProductionPrerequisite@@PBV1@0PAV1@ABUrandom_access_iterator_tag@0@PAH@Z,0x000078E7
+??$__copy@U?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@_STL@@U12@H@_STL@@YA?AU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@0@U10@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0000F682
+??$__destroy_aux@PAVAsciiString@@@_STL@@YAXPAVAsciiString@@0ABU__false_type@0@@Z,0x00014AA1
+??$__find@U?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@_STL@@H@_STL@@YA?AU?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@0@U10@0ABHABUinput_iterator_tag@0@@Z,0x0004093A
+??$__uninitialized_copy@PBVProductionPrerequisite@@PAV1@@_STL@@YAPAVProductionPrerequisite@@PBV1@0PAV1@ABU__false_type@0@@Z,0x0001FFEB
+??$find@W4NameKeyType@@@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@2@@1@ABW4NameKeyType@@@Z,0x0000C054
+??$find@W4NameKeyType@@@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@3@@_STL@@QBE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@U?$_Const_traits@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@2@@1@ABW4NameKeyType@@@Z,0x0001CDEB
+??$uninitialized_fill_n@PAEIE@_STL@@YAPAEPAEIABE@Z,0x0003932E
+??0?$ShareBufferClass@E@@QAE@HPBDH@Z,0x0004B4A7,derived from part_buf matched-caller call sites
+??0?$ShareBufferClass@VVector3@@@@QAE@HPBDH@Z,0x00049832,ILT thunk; body 0x5F3BE0
+??0?$ShareBufferClass@VVector3@@@@QAE@HPBDH@Z,0x005F3BE0,3-arg aligned-buffer ctor
+??0?$ShareBufferClass@VVector4@@@@QAE@HPBDH@Z,0x000281EB
+??0?$_STLP_alloc_proxy@PAIIV?$allocator@I@_STL@@@_STL@@QAE@ABV?$allocator@I@1@PAI@Z,0x00031039
+??0ArchiveFile@@QAE@XZ,0x009D10B0
+??0AutoHealBehaviorModuleData@@QAE@XZ,0x000287C7
+??0BFMEAutoLockRef@@QAE@PAVBFMENetworkLock@@I@Z,0x009DB3B0,native BFME lock-ref acquire helper
+??0BattlePlanUpdateModuleData@@QAE@XZ,0x0003025B
+??0BezierSegment@@QAE@XZ,0x00043A9A
+??0Buffer@@QAE@J@Z,0x009E1DA0
+??0Buffer@@QAE@PAXJ@Z,0x009E1CE0,Buffer::Buffer(void*, long)
+??0BufferPipe@@QAE@PAXH@Z,0x009E2010
+??0BufferStraw@@QAE@PBXH@Z,0x00921730
+??0CDDrive@@QAE@XZ,0x0002E997
+??0Cftp@@QAE@XZ,0x00885AD0
+??0CriticalSectionClass@@QAE@XZ,0x009DB420
+??0CullNodeStruct@AABTreeBuilderClass@@QAE@XZ,0x0096B500
+??0CullSystemClass@@QAE@XZ,0x008E2140
+??0CustomMatchPreferences@@QAE@XZ,0x0000B0F5
+??0DisplayStringManager@@QAE@XZ,0x0000F7A9
+??0DockUpdateModuleData@@QAE@XZ,0x0002C54D
+??0DozerAIUpdateModuleData@@QAE@XZ,0x0002BFF8
+??0FastAllocatorGeneral@@QAE@XZ,0x00B027B0
+??0FirestormDynamicGeometryInfoUpdateModuleData@@QAE@XZ,0x0001235A
+??0FirewallHelperClass@@QAE@XZ,0x00003AD5
+??0FlightDeckBehaviorModuleData@@QAE@XZ,0x0000CC3E
+??0GameMessage@@QAE@W4Type@0@@Z,0x000359E5,GameMessage::GameMessage(Type) thunk
+??0GameMessageParser@@QAE@XZ,0x00013FCA,GameMessageParser::GameMessageParser() thunk
+??0GameResultsQueue@@QAE@XZ,0x0000DAFD
+??0GameResultsRequest@@QAE@ABV0@@Z,0x0004355E
+??0GenerateMinefieldBehaviorModuleData@@QAE@XZ,0x0002B062
+??0GhostObjectManager@@QAE@XZ,0x00008652
+??0HTreeClass@@QAE@ABV0@@Z,0x009527C0,derived from HTreeClass::Alter_Avatar_HTree
+??0LList@@QAE@XZ,0x000057B8
+??0LineGroupClass@@QAE@XZ,0x0098E9C0,derived from ParticleBufferClass main ctor aligned call sites
+??0LockClass@CriticalSectionClass@@QAE@AAV1@@Z,0x009DB4B0
+??0MaterialCollectorClass@@QAE@XZ,0x00931070
+??0MissileAIUpdateModuleData@@QAE@XZ,0x00025EBE
+??0Network@@QAE@XZ,0x00029C12
+??0OptionPreferences@@QAE@XZ,0x0003713C
+??0ParticleBufferClass@@QAE@ABV0@@Z,0x00989A20
+??0PivotClass@@QAE@ABU0@@Z,0x00972D70,derived from HTreeClass::Alter_Avatar_HTree
+??0PlayerTemplate@@QAE@ABV0@@Z,0x0001449D
+??0PlayerTemplate@@QAE@XZ,0x0003E6E4
+??0PointGroupClass@@QAE@XZ,0x00912580,derived from ParticleBufferClass main ctor aligned call sites
+??0PropagandaTowerBehaviorModuleData@@QAE@XZ,0x00010B2C
+??0QuickMatchPreferences@@QAE@XZ,0x0002E802
+??0RenderObjClass@@QAE@ABV0@@Z,0x0091FFE0,base copy ctor; derived from ParticleBufferClass copy ctor site
+??0RenderObjClass@@QAE@XZ,0x009204B0,derived from ParticleBufferClass main ctor aligned call sites
+??0SegLineRendererClass@@QAE@ABV0@@Z,0x00960990
+??0SegLineRendererClass@@QAE@XZ,0x0095FFD0,derived from ParticleBufferClass main ctor aligned call sites
+??0StealthUpdateModuleData@@QAE@XZ,0x00049AA3
+??0SubsystemInterface@@QAE@XZ,0x009A1A30
+??0TensileFormationUpdateModuleData@@QAE@XZ,0x000028AB
+??0TileData@@QAE@XZ,0x0003B6B5
+??0UDP@@QAE@XZ,0x0001FFFA
+??0UnicodeString@@QAE@ABV0@@Z,0x00888400
+??0Vector3HollowSphereRandomizer@@QAE@M@Z,0x00B02350
+??0Vector3SolidSphereRandomizer@@QAE@M@Z,0x00B02250
+??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
+??1?$SimpleDynVecClass@VVector3@@@@UAE@XZ,0x00887940
+??1?$_Rb_tree@PBVThingTemplate@@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Select1st@U?$pair@QBVThingTemplate@@H@_STL@@@3@U?$less@PBVThingTemplate@@@3@V?$allocator@U?$pair@QBVThingTemplate@@H@_STL@@@3@@_STL@@QAE@XZ,0x0003D61D
+??1?$_Rb_tree@VUnicodeString@@U?$pair@$$CBVUnicodeString@@_N@_STL@@U?$_Select1st@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@UUnicodeStringLessThan@@V?$allocator@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@@_STL@@QAE@XZ,0x0003BD2C
+??1?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@QAE@XZ,0x000200FE
+??1?$set@PAVGameSpyStagingRoom@@U?$less@PAVGameSpyStagingRoom@@@_STL@@V?$allocator@PAVGameSpyStagingRoom@@@3@@_STL@@QAE@XZ,0x0001F514
+??1AIUpdateModuleData@@UAE@XZ,0x00887940
+??1AudioEventRTS@@UAE@XZ,0x0002671F
+??1Buffer@@QAE@XZ,0x009E1E60
+??1BufferStraw@@UAE@XZ,0x00921790
+??1CompositeRenderObjClass@@UAE@XZ,0x0091FC10
+??1CriticalSectionClass@@QAE@XZ,0x009DB450
+??1CullSystemClass@@UAE@XZ,0x008E2150
+??1CustomMatchPreferences@@UAE@XZ,0x00041F6A
+??1FilePipe@@UAE@XZ,0x009E7DC0
+??1FileStraw@@UAE@XZ,0x009E1C50
+??1GameMessageList@@UAE@XZ,0x0000E421
+??1GameResultsRequest@@QAE@XZ,0x00049288
+??1GameResultsResponse@@QAE@XZ,0x00024352
+??1HTreeClass@@QAE@XZ,0x00952790
+??1LayoutFilename@@QAE@XZ,0x00887940
+??1LockClass@CriticalSectionClass@@QAE@XZ,0x009DB4D0
+??1LockClass@MutexClass@@QAE@XZ,0x009DB400
+??1OptionPreferences@@UAE@XZ,0x00001307
+??1Pipe@@UAE@XZ,0x009E78C0
+??1PlayerTemplate@@QAE@XZ,0x000181CE
+??1QuickMatchPreferences@@UAE@XZ,0x00010073
+??1RenderObjClass@@UAE@XZ,0x0091FC10,base dtor; derived from ~ParticleBufferClass call site
+??1SegLineRendererClass@@QAE@XZ,0x00960030,derived from ~ParticleBufferClass call site
+??1Snapshot@@QAE@XZ,0x009A1A40
+??1Straw@@UAE@XZ,0x009E1A90
+??1SubsystemInterface@@UAE@XZ,0x009A1A40
+??1UDP@@QAE@XZ,0x00006591
+??1Video@@QAE@XZ,0x0001642D
+??1WindowVideo@@QAE@XZ,0x000253E7
+??1file_auto_ptr@@QAE@XZ,0x009DD560
+??2@YAPAXI@Z,0x00881F30,operator new body
+??3@YAXPAX@Z,0x00881EB0
+??4?$VectorClass@VModelNodeClass@HLodClass@@@@QAEAAV0@ABV0@@Z,0x0097ACA0
+??4?$vector@U?$pair@W4ObjectID@@I@_STL@@V?$allocator@U?$pair@W4ObjectID@@I@_STL@@@2@@_STL@@QAEAAV01@ABV01@@Z,0x0002DC9F
+??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z,0x00018A70
+??4Matrix3@@QAEAAV0@ABVMatrix3D@@@Z,0x008D9150
+??4PlayerTemplate@@QAEAAV0@ABV0@@Z,0x000050F6
+??4RenderObjClass@@QAEAAV0@ABV0@@Z,0x0091F790
+??4SegLineRendererClass@@QAEAAV0@ABV0@@Z,0x009600F0
+??4SplitChoiceStruct@AABTreeBuilderClass@@QAEAAU01@ABU01@@Z,0x0096B6B0
+??4StringClass@@QAEABV0@ABV0@@Z,0x00035FDF
+??4TRoadSegInfo@@QAEAAU0@ABU0@@Z,0x000015EB
+??8?$VectorClass@H@@UBE_NABV0@@Z,0x00AFEDF0
+??A?$hash_map@W4NameKeyType@@VDamageFX@@U?$hash@W4NameKeyType@@@rts@@U?$equal_to@W4NameKeyType@@@4@V?$allocator@U?$pair@$$CBW4NameKeyType@@VDamageFX@@@_STL@@@_STL@@@_STL@@QAEAAVDamageFX@@ABW4NameKeyType@@@Z,0x00032506
+??A?$map@W4NameKeyType@@VObjectCreationList@@U?$less@W4NameKeyType@@@_STL@@V?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@4@@_STL@@QAEAAVObjectCreationList@@ABW4NameKeyType@@@Z,0x00049968
+??AModuleTemplateMap@ModuleFactory@@QAEAAVModuleTemplate@1@ABH@Z,0x0002047D,ModuleFactory::ModuleTemplateMap::operator[] thunk (body 0x001296E0)
+??M@YA_NABVAsciiString@@0@Z,0x00015898
+??RGameSortStruct@@QAE_NPAVGameSpyStagingRoom@@0@Z,0x000317D7
+??_C@_08MBMCFODG@CrushDie?$AA@,0x00C908A8,pool-glue cascade static (back-solved)
+??_C@_09OMFJEEND@FXListDie?$AA@,0x00C908B4,pool-glue cascade static (back-solved)
+??_C@_0BA@CLLFEOBD@CreateObjectDie?$AA@,0x00C90868,pool-glue cascade static (back-solved)
+??_C@_0BA@CPDBFKDB@HeightDieUpdate?$AA@,0x00C905AC,pool-glue cascade static (back-solved)
+??_C@_0BA@DPBBOKKE@FlammableUpdate?$AA@,0x00C905D0,pool-glue cascade static (back-solved)
+??_C@_0BA@FHHLAKGO@GarrisonContain?$AA@,0x00C90AC0,pool-glue cascade static (back-solved)
+??_C@_0BA@JKMFNOEK@OCLSpecialPower?$AA@,0x00C8FA28,pool-glue cascade static (back-solved)
+??_C@_0BB@COJJGIFG@WeaponSetUpgrade?$AA@,0x00C8FED0,pool-glue cascade static (back-solved)
+??_C@_0BB@EILKNGJ@MaxHealthUpgrade?$AA@,0x00C8FEA0,pool-glue cascade static (back-solved)
+??_C@_0BB@EOFKMFCB@FireSpreadUpdate?$AA@,0x00C905F8,pool-glue cascade static (back-solved)
+??_C@_0BB@FCBJDMF@PoisonedBehavior?$AA@,0x00C90970,pool-glue cascade static (back-solved)
+??_C@_0BB@GPPINPJO@AutoHealBehavior?$AA@,0x00C90DC4,pool-glue cascade static (back-solved)
+??_C@_0BB@IPEDMECH@TransportContain?$AA@,0x00C90AAC,pool-glue cascade static (back-solved)
+??_C@_0BB@JAJBNHKL@BattlePlanUpdate?$AA@,0x00C90490,pool-glue cascade static (back-solved)
+??_C@_0BB@JGNAJMLC@LockWeaponCreate?$AA@,0x00C8FD94,pool-glue cascade static (back-solved)
+??_C@_0BB@KEDGLEPB@ProductionUpdate?$AA@,0x00C901C4,pool-glue cascade static (back-solved)
+??_C@_0BB@LFMJBKGH@FireWeaponUpdate?$AA@,0x00C905E4,pool-glue cascade static (back-solved)
+??_C@_0BB@MLOLFGLB@HealCrateCollide?$AA@,0x00C8FC4C,pool-glue cascade static (back-solved)
+??_C@_0BB@MNDNKIPL@RepairDockUpdate?$AA@,0x00C9045C,pool-glue cascade static (back-solved)
+??_C@_0BB@OLNKJLO@UnitCrateCollide?$AA@,0x00C8FC08,pool-glue cascade static (back-solved)
+??_C@_0BC@BALOIFKE@MoneyCrateCollide?$AA@,0x00C8FC34,pool-glue cascade static (back-solved)
+??_C@_0BC@FHNJNFCB@FireWeaponCollide?$AA@,0x00C8FC9C,pool-glue cascade static (back-solved)
+??_C@_0BC@HHGMEJCL@RadiusDecalUpdate?$AA@,0x00C9065C,pool-glue cascade static (back-solved)
+??_C@_0BC@IBPABIJN@TransportAIUpdate?$AA@,0x00C900FC,pool-glue cascade static (back-solved)
+??_C@_0BC@IDMPIFHC@AIUpdateInterface?$AA@,0x00C90584,pool-glue cascade static (back-solved)
+??_C@_0BC@PBMFNADD@StatusBitsUpgrade?$AA@,0x00C8FF8C,pool-glue cascade static (back-solved)
+??_C@_0BC@PDBDPIMA@SubObjectsUpgrade?$AA@,0x00C8FF74,pool-glue cascade static (back-solved)
+??_C@_0BC@PFHOMFOI@CommandSetUpgrade?$AA@,0x00C8FFCC,pool-glue cascade static (back-solved)
+??_C@_0BC@PHFOBMNL@AutoDepositUpdate?$AA@,0x00C84024,pool-glue cascade static (back-solved)
+??_C@_0BD@BCFNJHGA@SupplyCenterCreate?$AA@,0x00C8FD68,pool-glue cascade static (back-solved)
+??_C@_0BD@GBJHKEHF@GrantUpgradeCreate?$AA@,0x00C8FD1C,pool-glue cascade static (back-solved)
+??_C@_0BD@IOOGCONM@SpecialPowerCreate?$AA@,0x00C8FD34,pool-glue cascade static (back-solved)
+??_C@_0BD@KHBPKGBK@WeaponBonusUpgrade?$AA@,0x00C8FEE4,pool-glue cascade static (back-solved)
+??_C@_0BD@NCJOKLEG@TransitionDamageFX?$AA@,0x00C8FCD8,pool-glue cascade static (back-solved)
+??_C@_0BD@NHKAHDFM@ShroudCrateCollide?$AA@,0x00C8FC1C,pool-glue cascade static (back-solved)
+??_C@_0BE@BAFBOFGC@SalvageCrateCollide?$AA@,0x00C8FBD4,pool-glue cascade static (back-solved)
+??_C@_0BE@BGBBKIHF@SupplyTruckAIUpdate?$AA@,0x00C90544,pool-glue cascade static (back-solved)
+??_C@_0BE@EACLBGCM@BridgeTowerBehavior?$AA@,0x00C90D30,pool-glue cascade static (back-solved)
+??_C@_0BE@HKAPMKBO@LocomotorSetUpgrade?$AA@,0x00C8FF38,pool-glue cascade static (back-solved)
+??_C@_0BE@OCEDCHPO@DeployStyleAIUpdate?$AA@,0x00C90740,pool-glue cascade static (back-solved)
+??_C@_0BE@ONEBEPBN@CostModifierUpgrade?$AA@,0x00C90004,pool-glue cascade static (back-solved)
+??_C@_0BF@GEMOFNO@DefectorSpecialPower?$AA@,0x00C8FA74,pool-glue cascade static (back-solved)
+??_C@_0BF@HFGDFOCE@CashHackSpecialPower?$AA@,0x00C8FA90,pool-glue cascade static (back-solved)
+??_C@_0BF@LHGDEPPB@InstantDeathBehavior?$AA@,0x00C90C0C,pool-glue cascade static (back-solved)
+??_C@_0BG@BCKDOMMA@VeterancyCrateCollide?$AA@,0x00C8FBEC,pool-glue cascade static (back-solved)
+??_C@_0BG@COPEKOKI@StealthDetectorUpdate?$AA@,0x00C907D4,pool-glue cascade static (back-solved)
+??_C@_0BG@DBHJFFHM@SupplyWarehouseCreate?$AA@,0x00C8FD4C,pool-glue cascade static (back-solved)
+??_C@_0BG@IIGFLGAM@ObjectCreationUpgrade?$AA@,0x00C8FF1C,pool-glue cascade static (back-solved)
+??_C@_0BG@IOIFGFBJ@ModelConditionUpgrade?$AA@,0x00C8FE84,pool-glue cascade static (back-solved)
+??_C@_0BG@MEKMKBJJ@AutoFindHealingUpdate?$AA@,0x00C907F0,pool-glue cascade static (back-solved)
+??_C@_0BH@LIOMMODL@SupplyCenterDockUpdate?$AA@,0x00C83BC0,pool-glue cascade static (back-solved)
+??_C@_0BI@CDJDCLBB@ExperienceScalarUpgrade?$AA@,0x00C8FEB4,pool-glue cascade static (back-solved)
+??_C@_0BI@KOPPFFBF@AssistedTargetingUpdate?$AA@,0x00C9080C,pool-glue cascade static (back-solved)
+??_C@_0BI@NEECHINF@CommandButtonHuntUpdate?$AA@,0x00C90518,pool-glue cascade static (back-solved)
+??_C@_0BI@PGJBFKDA@PropagandaTowerBehavior?$AA@,0x00C909C8,pool-glue cascade static (back-solved)
+??_C@_0BJ@DMGODKN@AssaultTransportAIUpdate?$AA@,0x00C90720,pool-glue cascade static (back-solved)
+??_C@_0BK@GDIHPEOG@SupplyWarehouseDockUpdate?$AA@,0x00C83BDC,pool-glue cascade static (back-solved)
+??_C@_0BK@HLBABBNP@RailedTransportDockUpdate?$AA@,0x00CCADB0,pool-glue cascade static (back-solved)
+??_C@_0BK@IMMIJKDD@QueueProductionExitUpdate?$AA@,0x00C90470,pool-glue cascade static (back-solved)
+??_C@_0BK@PHJPNGJF@SpecialPowerCompletionDie?$AA@,0x00C90848,pool-glue cascade static (back-solved)
+??_C@_0BL@IAJJNEIE@FireWeaponWhenDeadBehavior?$AA@,0x00C90984,pool-glue cascade static (back-solved)
+??_C@_0BL@NKPHCDJJ@UnpauseSpecialPowerUpgrade?$AA@,0x00C8FEFC,pool-glue cascade static (back-solved)
+??_C@_0BM@NMJJOOBP@DefaultProductionExitUpdate?$AA@,0x00C902E0,pool-glue cascade static (back-solved)
+??_C@_0BO@JFKKPIFG@FireWeaponWhenDamagedBehavior?$AA@,0x00C909A4,pool-glue cascade static (back-solved)
+??_C@_0BP@KHFKLJFC@SpawnPointProductionExitUpdate?$AA@,0x00C902B8,pool-glue cascade static (back-solved)
+??_C@_0CB@IDCCCMML@SupplyWarehouseCripplingBehavior@,0x00C90948,pool-glue cascade static (back-solved)
+??_C@_0CB@LIPKINCO@DynamicShroudClearingRangeUpdate@,0x00C90758,pool-glue cascade static (back-solved)
+??_C@_0CB@MOCKBGLE@SupplyCenterProductionExitUpdate@,0x00C90234,pool-glue cascade static (back-solved)
+??_C@_0CE@MMFOENO@AnimatedParticleSysBoneClientUpd@,0x00C8F7CC,pool-glue cascade static (back-solved)
+??_C@_0L@BJCDJCGK@UpgradeDie?$AA@,0x00C90838,pool-glue cascade static (back-solved)
+??_C@_0L@BJHONFCE@DestroyDie?$AA@,0x00C908C0,pool-glue cascade static (back-solved)
+??_C@_0L@PMFBCIMB@ActiveBody?$AA@,0x00C8FB98,pool-glue cascade static (back-solved)
+??_C@_0M@BLHDDDNA@LaserUpdate?$AA@,0x00C90534,pool-glue cascade static (back-solved)
+??_C@_0M@EADCCBCH@OpenContain?$AA@,0x00C90BA4,pool-glue cascade static (back-solved)
+??_C@_0M@GEIMNDJL@CaveContain?$AA@,0x00C90BB4,pool-glue cascade static (back-solved)
+??_C@_0M@GGMEMGKP@RadarUpdate?$AA@,0x00C90114,pool-glue cascade static (back-solved)
+??_C@_0M@JMMBKPFL@FloatUpdate?$AA@,0x00C905C0,pool-glue cascade static (back-solved)
+??_C@_0M@MMBGCINN@HealContain?$AA@,0x00C90B10,pool-glue cascade static (back-solved)
+??_C@_0M@OMMMPGOO@ProneUpdate?$AA@,0x00C901B4,pool-glue cascade static (back-solved)
+??_C@_0N@IOJLEMBF@ArmorUpgrade?$AA@,0x00C8FFF4,pool-glue cascade static (back-solved)
+??_C@_0N@JDCPHKGM@ImmortalBody?$AA@,0x00C8FB74,pool-glue cascade static (back-solved)
+??_C@_0N@JJFELHDL@RadarUpgrade?$AA@,0x00C8FF50,pool-glue cascade static (back-solved)
+??_C@_0N@JPFOMAJC@SlavedUpdate?$AA@,0x00C902A8,pool-glue cascade static (back-solved)
+??_C@_0N@OFEFHECN@InactiveBody?$AA@,0x00C8FBA8,pool-glue cascade static (back-solved)
+??_C@_0O@BJLKCGIC@SpawnBehavior?$AA@,0x00C90BE4,pool-glue cascade static (back-solved)
+??_C@_0O@CCMCEFEC@TunnelContain?$AA@,0x00C90A68,pool-glue cascade static (back-solved)
+??_C@_0O@DBIDNLGA@KeepObjectDie?$AA@,0x00C90828,pool-glue cascade static (back-solved)
+??_C@_0O@GDDOOMCF@DozerAIUpdate?$AA@,0x00C9020C,pool-glue cascade static (back-solved)
+??_C@_0O@JFMHDEPB@StealthUpdate?$AA@,0x00C8403C,pool-glue cascade static (back-solved)
+??_C@_0O@JHJLGGPJ@SquishCollide?$AA@,0x00C8FC8C,pool-glue cascade static (back-solved)
+??_C@_0O@OINDDPDM@StructureBody?$AA@,0x00C8FB64,pool-glue cascade static (back-solved)
+??_C@_0P@BDPFFDMA@LifetimeUpdate?$AA@,0x00C906AC,pool-glue cascade static (back-solved)
+??_C@_0P@BFHEMIDK@StealthUpgrade?$AA@,0x00C8FF60,pool-glue cascade static (back-solved)
+??_C@_0P@BLGIMPP@WanderAIUpdate?$AA@,0x00C900E8,pool-glue cascade static (back-solved)
+??_C@_0P@EOKLCPHI@HijackerUpdate?$AA@,0x00C901A0,pool-glue cascade static (back-solved)
+??_C@_0P@HAMKGADL@DemoTrapUpdate?$AA@,0x00C90504,pool-glue cascade static (back-solved)
+??_C@_0P@IPIFMECI@CreateCrateDie?$AA@,0x00C90888,pool-glue cascade static (back-solved)
+??_C@_0P@JGAEFJCP@WorkerAIUpdate?$AA@,0x00C900A8,pool-glue cascade static (back-solved)
+??_C@_0P@JJNBOAAK@HighlanderBody?$AA@,0x00C8FB84,pool-glue cascade static (back-solved)
+??_C@_0P@LPEKFMJM@DeletionUpdate?$AA@,0x00C90780,pool-glue cascade static (back-solved)
+??_C@_0P@MIFOBMND@PreorderCreate?$AA@,0x00C8FD80,pool-glue cascade static (back-solved)
+??_C@_0P@NAODOLPO@BridgeBehavior?$AA@,0x00C90D64,pool-glue cascade static (back-solved)
+??_C@_0P@NPFAECDL@SpecialAbility?$AA@,0x00C9025C,pool-glue cascade static (back-solved)
+??_L@YGXPAXIHP6EX0@Z1@Z,0x009F6EE4
+??_M@YGXPAXIHP6EX0@Z@Z,0x009F6D76
+??_U@YAPAXI@Z,0x00881F30
+??_U@YAPAXI@Z,0x00881F70,array operator new flag-2 variant (W3D containers); flag-1 at 0x881F30
+??_V@YAXPAX@Z,0x00881EB0
+??_V@YAXPAX@Z,0x00881EF0,array operator delete flag-2 variant (W3D containers); flag-1 at 0x881EB0
+?Add@?$DynamicVectorClass@VShaderClass@@@@QAE_NABVShaderClass@@@Z,0x0092FA60
+?AddOutput@Debug@@AAEXPBDI@Z,0x0088A8F0
+?Add_To_Collection@CullSystemClass@@IAEXPAVCullableClass@@@Z,0x008E21D0
+?Add_To_Static_Sort_List@WW3D@@SAXPAVRenderObjClass@@I@Z,0x008FD4C0
+?Allocate_Object_Memory@?$ObjectPoolClass@VGridLinkClass@@$0BAA@@@QAEPAVGridLinkClass@@XZ,0x008DD970
+?Allocate_Object_Memory@?$ObjectPoolClass@VMultiListNodeClass@@$0BAA@@@QAEPAVMultiListNodeClass@@XZ,0x009DBDD0
+?Base_Update@HTreeClass@@QAEXABVMatrix3D@@@Z,0x009528D0
+?Begin_Chunk@ChunkSaveClass@@QAE_NK@Z,0x009E16F0
+?Bind@UDP@@QAEHIG@Z,0x00047FA0
+?Blend_Update@HTreeClass@@QAEXABVMatrix3D@@PAVHAnimClass@@M1MM@Z,0x009546B0
+?Build_Sentence_Not_Centered@Render2DSentenceClass@@AAE?AVVector2@@PBGPAH1_N@Z,0x00942430
+?Build_Textures@Render2DSentenceClass@@AAEXXZ,0x0093DD60
+?Close_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E13E0
+?Close_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1480
+?Collide@CollisionMath@@SA_NABVAABoxClass@@ABVVector3@@ABVTriClass@@PAUCastResultStruct@@@Z,0x008E0C30
+?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVOBBoxClass@@PAUCastResultStruct@@@Z,0x008DAD70
+?Collide@CollisionMath@@SA_NABVOBBoxClass@@ABVVector3@@ABVTriClass@@1PAUCastResultStruct@@@Z,0x008E7180
+?Combine_Color_And_Alpha@ParticleBufferClass@@IAEXXZ,0x00984CB0,derived from Render_Particles call sites
+?Combo_Update@HTreeClass@@QAEXABVMatrix3D@@PAVHAnimComboClass@@@Z,0x00954D90
+?Contains_Point@TriClass@@QBE_NABVVector3@@@Z,0x008E1900
+?Control_Bone@HTreeClass@@QAEXHABVMatrix3D@@_N@Z,0x00952A60
+?Convert_Shader@W3dUtilityClass@@SAXABUW3dShaderStruct@@PAVShaderClass@@@Z,0x00978760
+?Convert_Shader@W3dUtilityClass@@SAXABVShaderClass@@PAUW3dShaderStruct@@@Z,0x00978820
+?Cur_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E1440
+?Cur_Micro_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E14E0
+?DebugAllocMemory@@YAPAXI@Z,0x0088EB30
+?DebugFreeMemory@@YAXPAX@Z,0x0088EAD0
+?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
+?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,0x0098B750
+?DoesCommandRequireACommandID@@YA_NW4NetCommandType@@@Z,0x00015B72
+?Enable_Fog@ShaderClass@@QAEXPBD@Z,0x00910F90,derived from ParticleBufferClass main ctor aligned call sites
+?End_Chunk@ChunkSaveClass@@QAE_NXZ,0x009E17F0
+?Fast_Slerp@@YAXAAVQuaternion@@ABV1@1M@Z,0x008DC4C0
+?Find_POT@@YAHH@Z,0x00AFFAB0
+?Free@DistLODClass@@AAEXXZ,0x00014BC3
+?Free_String@StringClass@@AAEXXZ,0x009DB7A0
+?Free_String@WideStringClass@@AAEXXZ,0x009E71B0
+?GadgetListBoxAddEntryImage@@YAHPAVGameWindow@@PBVImage@@HHHH_NH@Z,0x0001712A
+?GadgetListBoxGetTextAndColor@@YA?AVUnicodeString@@PAVGameWindow@@PAHHH@Z,0x00044C0B
+?GadgetRadioSetSelection@@YAXPAVGameWindow@@_N@Z,0x00034536
+?GadgetStaticTextSetText@@YAXPAVGameWindow@@VUnicodeString@@@Z,0x0002C16F
+?GadgetTabControlShowSubPane@@YAXPAVGameWindow@@H@Z,0x00008936
+?GameSpyCloseOverlay@@YAXW4GSOverlayType@@@Z,0x00040E94
+?GameSpyOpenOverlay@@YAXW4GSOverlayType@@@Z,0x0002BA21
+?Get@Base64Straw@@UAEHPAXH@Z,0x009E7B80
+?GetGameLogicRandomValueReal@@YAMMMPADH@Z,0x0002CCA5
+?Get_Bone_Index@HTreeClass@@QBEHPBD@Z,0x00952260
+?Get_Bone_Name@HTreeClass@@QBEPBDH@Z,0x009522B0
+?Get_Bounding_Box@MeshGeometryClass@@QAEXPAVAABoxClass@@@Z,0x00924DD0
+?Get_Bounding_Sphere@MeshGeometryClass@@QAEXPAVSphereClass@@@Z,0x00924E70
+?Get_Char_Spacing@FontCharsClass@@QAEHG@Z,0x009414D0,body
+?Get_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,0x008E2160
+?Get_Name@MeshGeometryClass@@QBEPBDXZ,0x00924C30
+?Get_New_Particles@ParticleBufferClass@@IAEXXZ,0x00987C60
+?Get_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,0x008E2170
+?Get_Position@RenderObjClass@@QBE?AVVector3@@XZ,0x009202C0,derived from part_buf matched-caller call sites
+?Get_Shader@LineGroupClass@@QAE?AVShaderClass@@XZ,0x0098ED00
+?Get_Shader@PointGroupClass@@QAE?AVShaderClass@@XZ,0x00912870
+?Get_Shader_Array@MeshMatDescClass@@QAEPAVShaderClass@@H_N@Z,0x0092BF50
+?Get_String@INIClass@@QBEHPBD00PADH@Z,0x009E3DA0
+?Get_String@StringClass@@AAEXH_N@Z,0x009DB890
+?Get_Texture@ParticleBufferClass@@QBE?AVTextureHandleClass@1@XZ,0x00988F60,sret holder-returning getter
+?Get_View_Plane@CameraClass@@QBEXAAVVector2@@0@Z,0x00931DC0,derived from part_buf matched-caller call sites
+?Guess_Sort_Level@ShaderClass@@QBEHXZ,0x00910E90
+?HideDiplomacy@@YAXXZ,0x000067BC
+?HideInGameChat@@YAXXZ,0x00019583
+?HideQuitMenu@@YAXXZ,0x0001BF36
+?HideSaveLoadMenu@@YAXXZ,0x0000A416
+?Init@SegLineRendererClass@@QAEXABUW3dEmitterLinePropertiesStruct@@@Z,0x00960190,derived from ParticleBufferClass main ctor aligned call sites
+?Initialize@AggregateDefClass@@QAEXAAVRenderObjClass@@@Z,0x00980A60
+?Insert_Triangles@SortingRendererClass@@SAXABVSphereClass@@GGGG@Z,0x0093B340
+?Internal_Remove@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@@Z,0x009DC100
+?Intersection_Test@CollisionMath@@SA_NABVSphereClass@@ABVAABoxClass@@@Z,0x008E3600
+?Inv_Sqrt@WWMath@@SIMM@Z,0x00027A43,WWMath::Inv_Sqrt (naked __fastcall) incremental-link thunk (body 0x00131C90); called by Quaternion::Normalize and Axis_To_Quat, owned by wwmath.cpp
+?Is_Bone_Captured@HTreeClass@@QBE_NH@Z,0x00952A40
+?Is_Running@ThreadClass@@QAE_NXZ,0x009DB590
+?Load@INIClass@@QAEHAAVStraw@@@Z,0x009E4680
+?MD5Update@@YAXPAUMD5_CTX@@PAEI@Z,0x0086AE20
+?OnStatusUpdate@DownloadManager@@UAEJH@Z,0x00008283
+?Open_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1380
+?Open_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E17C0
+?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVFrustumClass@@ABVAABoxClass@@@Z,0x008DB380
+?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVOBBoxClass@@ABVAABoxClass@@@Z,0x008E2310
+?ParseBlendTileData@WorldHeightMap@@IAE_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z,0x00040AAC
+?Put@Base64Pipe@@UAEHPBXH@Z,0x009E7990
+?Put_String@INIClass@@QAE_NPBD00@Z,0x009E3BD0
+?Put_To@Pipe@@UAEXPAV1@@Z,0x009E7900
+?Random_Float@WWMath@@SAMXZ,0x008D8E00
+?Raw_Seek@RawFileClass@@IAEHHH@Z,0x009E6910
+?Read@ChunkLoadClass@@QAEKPAXK@Z,0x009E15C0
+?RefreshGameListBox@@YAXPAVGameWindow@@_N@Z,0x0000FD1C
+?Release@Animatable3DObjClass@@IAEXXZ,0x00982090
+?ReleaseWindowLayout@@YAXPAVWindowLayout@@@Z,0x00049AD0
+?Release_Ref@TextureBaseClass@@QAEXXZ,0x009EB7A0,hider decl in texture.h; WORD refcount+flags release
+?Release_Ref@TextureClass@@QAEXXZ,0x009EB7A0,BFME texture release: WORD refcount+flag bits at [this+4]; auto-delete via vtbl slot 8 when bit24 set — TextureClass does NOT derive RefCountClass
+?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,0x009E26A0
+?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,0x009E2730
+?Remove_Polygon_Renderer@DX8TextureCategoryClass@@QAEXPAVDX8PolygonRendererClass@@@Z,0x00947D30
+?Render@LineGroupClass@@QAEXAAVRenderInfoClass@@@Z,0x0098ED30
+?Render@PointGroupClass@@QAEXAAVRenderInfoClass@@H@Z,0x00917B70,derived from Render_Particles call sites; BFME added the int param
+?Render@Render2DClass@@QAEXXZ,0x00933E50
+?Render_Line@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098AD00
+?Render_Line_Group@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B950
+?Render_Particles@ParticleBufferClass@@IAEXAAVRenderInfoClass@@@Z,0x0098B800
+?Render_Seg_Line@SegmentedLineClass@@IAEXAAVRenderInfoClass@@@Z,0x00950960
+?Reset@HAnimComboClass@@QAEXXZ,0x00974DC0
+?ResetInGameChat@@YAXXZ,0x00033A6E
+?Reset_Collection@CullSystemClass@@QAEXXZ,0x008E21C0
+?Scale@SegLineRendererClass@@QAEXM@Z,0x0095FF30
+?Search_For_Node@?$IndexClass@HPAUINIEntry@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2E60
+?Search_For_Node@?$IndexClass@HPAUINISection@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2FD0
+?Set@Matrix3D@@QAEXABVMatrix3x3@@ABVVector3@@@Z,0x00964150
+?Set_Arrays@LineGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@0PAV?$ShareBufferClass@VVector4@@@@1PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@3H@Z,0x0098EB00
+?Set_Arrays@PointGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@PAV?$ShareBufferClass@VVector4@@@@PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@PAV?$ShareBufferClass@E@@4HMMMM@Z,0x009126B0,derived from Render_Particles call sites
+?Set_DX8_Render_State@DX8Wrapper@@SAXKI@Z,0x0001321E
+?Set_Flag@LineGroupClass@@QAEXW4FlagsType@1@_N@Z,0x0098E900,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Flag@PointGroupClass@@QAEXW4FlagsType@1@_N@Z,0x009120A0,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Force_Visible@RenderObjClass@@UAEXH@Z,0x0091F890,out-of-line in retail; GeneralsMD inlines the Bits OR
+?Set_Frame_Row_Column_Count_Log2@PointGroupClass@@QAEXE@Z,0x00912130,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Line_Alpha@LineGroupClass@@QAEXM@Z,0x0098E8C0
+?Set_Line_Color@LineGroupClass@@QAEXABVVector3@@@Z,0x0098EC00
+?Set_Line_Mode@LineGroupClass@@QAEXW4LineModeType@1@@Z,0x0098E950,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Line_Size@LineGroupClass@@QAEXM@Z,0x0098E8A0
+?Set_Line_UCoord@LineGroupClass@@QAEXM@Z,0x0098E8E0
+?Set_Name@GameFileClass@@UAEPBDPBD@Z,0x00006F05
+?Set_Point_Alpha@PointGroupClass@@QAEXM@Z,0x00912020,derived from Render_Particles call sites
+?Set_Point_Color@PointGroupClass@@QAEXVVector3@@@Z,0x009127B0,derived from Render_Particles call sites
+?Set_Point_Frame@PointGroupClass@@QAEXE@Z,0x00912060,derived from Render_Particles call sites
+?Set_Point_Mode@PointGroupClass@@QAEXW4PointModeEnum@1@@Z,0x00912080,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Point_Orientation@PointGroupClass@@QAEXE@Z,0x00912040,derived from Render_Particles call sites
+?Set_Point_Size@PointGroupClass@@QAEXM@Z,0x00912000,derived from Render_Particles call sites
+?Set_Shader@LineGroupClass@@QAEXABVShaderClass@@@Z,0x0098E940,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Shader@PointGroupClass@@QAEXVShaderClass@@@Z,0x009120E0,derived from ParticleBufferClass main ctor aligned call sites
+?Set_Tail_Diffuse@LineGroupClass@@QAEXABVVector4@@@Z,0x0098EC40
+?Set_Texture@LineGroupClass@@QAEXPAVTextureClass@@@Z,0x0098EC80
+?Set_Texture@PointGroupClass@@QAEXPAVTextureClass@@@Z,0x009127F0
+?Set_Texture@SegLineRendererClass@@QAEXPAVTextureClass@@@Z,0x00960050
+?Start@ParticleEmitterClass@@QAEXXZ,0x0097F090
+?String@CRC@@SAKPBDK@Z,0x009E7FD0
+?TheAIUpdateInterfacePool@?1??getClassMemoryPool@AIUpdateInterface@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFE30,pool-glue cascade static (back-solved)
+?TheActiveBodyPool@?1??getClassMemoryPool@ActiveBody@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF928,pool-glue cascade static (back-solved)
+?TheAnimatedParticleSysBoneClientUpdatePool@?1??getClassMemoryPool@AnimatedParticleSysBoneClientUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF7018,pool-glue cascade static (back-solved)
+?TheArmorUpgradePool@?1??getClassMemoryPool@ArmorUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0514,pool-glue cascade static (back-solved)
+?TheAssaultTransportAIUpdatePool@?1??getClassMemoryPool@AssaultTransportAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0244,pool-glue cascade static (back-solved)
+?TheAssistedTargetingUpdatePool@?1??getClassMemoryPool@AssistedTargetingUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFE38,pool-glue cascade static (back-solved)
+?TheAutoDepositUpdatePool@?1??getClassMemoryPool@AutoDepositUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFE50,pool-glue cascade static (back-solved)
+?TheAutoFindHealingUpdatePool@?1??getClassMemoryPool@AutoFindHealingUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFE58,pool-glue cascade static (back-solved)
+?TheAutoHealBehaviorPool@?1??getClassMemoryPool@AutoHealBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF764,pool-glue cascade static (back-solved)
+?TheBattlePlanUpdatePool@?1??getClassMemoryPool@BattlePlanUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFEA4,pool-glue cascade static (back-solved)
+?TheBridgeBehaviorPool@?1??getClassMemoryPool@BridgeBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF774,pool-glue cascade static (back-solved)
+?TheBridgeTowerBehaviorPool@?1??getClassMemoryPool@BridgeTowerBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF784,pool-glue cascade static (back-solved)
+?TheCashHackSpecialPowerPool@?1??getClassMemoryPool@CashHackSpecialPower@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC54,pool-glue cascade static (back-solved)
+?TheCaveContainPool@?1??getClassMemoryPool@CaveContain@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA38,pool-glue cascade static (back-solved)
+?TheCommandButtonHuntUpdatePool@?1??getClassMemoryPool@CommandButtonHuntUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFEE0,pool-glue cascade static (back-solved)
+?TheCommandSetUpgradePool@?1??getClassMemoryPool@CommandSetUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0548,pool-glue cascade static (back-solved)
+?TheCostModifierUpgradePool@?1??getClassMemoryPool@CostModifierUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0550,pool-glue cascade static (back-solved)
+?TheCreateCrateDiePool@?1??getClassMemoryPool@CreateCrateDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFBF4,pool-glue cascade static (back-solved)
+?TheCreateObjectDiePool@?1??getClassMemoryPool@CreateObjectDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFBFC,pool-glue cascade static (back-solved)
+?TheCrushDiePool@?1??getClassMemoryPool@CrushDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC04,pool-glue cascade static (back-solved)
+?TheDefaultProductionExitUpdatePool@?1??getClassMemoryPool@DefaultProductionExitUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF04F4,pool-glue cascade static (back-solved)
+?TheDefectorSpecialPowerPool@?1??getClassMemoryPool@DefectorSpecialPower@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC74,pool-glue cascade static (back-solved)
+?TheDeletionUpdatePool@?1??getClassMemoryPool@DeletionUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF00,pool-glue cascade static (back-solved)
+?TheDemoTrapUpdatePool@?1??getClassMemoryPool@DemoTrapUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF08,pool-glue cascade static (back-solved)
+?TheDeployStyleAIUpdatePool@?1??getClassMemoryPool@DeployStyleAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF024C,pool-glue cascade static (back-solved)
+?TheDestroyDiePool@?1??getClassMemoryPool@DestroyDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC0C,pool-glue cascade static (back-solved)
+?TheDozerAIUpdatePool@?1??getClassMemoryPool@DozerAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0254,pool-glue cascade static (back-solved)
+?TheDynamicShroudClearingRangeUpdatePool@?1??getClassMemoryPool@DynamicShroudClearingRangeUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF20,pool-glue cascade static (back-solved)
+?TheExperienceScalarUpgradePool@?1??getClassMemoryPool@ExperienceScalarUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0560,pool-glue cascade static (back-solved)
+?TheFXListDiePool@?1??getClassMemoryPool@FXListDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC14,pool-glue cascade static (back-solved)
+?TheFireSpreadUpdatePool@?1??getClassMemoryPool@FireSpreadUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF48,pool-glue cascade static (back-solved)
+?TheFireWeaponCollidePool@?1??getClassMemoryPool@FireWeaponCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF9C8,pool-glue cascade static (back-solved)
+?TheFireWeaponUpdatePool@?1??getClassMemoryPool@FireWeaponUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF58,pool-glue cascade static (back-solved)
+?TheFireWeaponWhenDamagedBehaviorPool@?1??getClassMemoryPool@FireWeaponWhenDamagedBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF7C4,pool-glue cascade static (back-solved)
+?TheFireWeaponWhenDeadBehaviorPool@?1??getClassMemoryPool@FireWeaponWhenDeadBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF7CC,pool-glue cascade static (back-solved)
+?TheFlammableUpdatePool@?1??getClassMemoryPool@FlammableUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF60,pool-glue cascade static (back-solved)
+?TheFloatUpdatePool@?1??getClassMemoryPool@FloatUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF80,pool-glue cascade static (back-solved)
+?TheGarrisonContainPool@?1??getClassMemoryPool@GarrisonContain@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA50,pool-glue cascade static (back-solved)
+?TheGrantUpgradeCreatePool@?1??getClassMemoryPool@GrantUpgradeCreate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFB8C,pool-glue cascade static (back-solved)
+?TheHealContainPool@?1??getClassMemoryPool@HealContain@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA58,pool-glue cascade static (back-solved)
+?TheHealCrateCollidePool@?1??getClassMemoryPool@HealCrateCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA08,pool-glue cascade static (back-solved)
+?TheHeightDieUpdatePool@?1??getClassMemoryPool@HeightDieUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF88,pool-glue cascade static (back-solved)
+?TheHighlanderBodyPool@?1??getClassMemoryPool@HighlanderBody@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF978,pool-glue cascade static (back-solved)
+?TheHijackerUpdatePool@?1??getClassMemoryPool@HijackerUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFF90,pool-glue cascade static (back-solved)
+?TheImmortalBodyPool@?1??getClassMemoryPool@ImmortalBody@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF980,pool-glue cascade static (back-solved)
+?TheInactiveBodyPool@?1??getClassMemoryPool@InactiveBody@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF988,pool-glue cascade static (back-solved)
+?TheInstantDeathBehaviorPool@?1??getClassMemoryPool@InstantDeathBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF814,pool-glue cascade static (back-solved)
+?TheKeepObjectDiePool@?1??getClassMemoryPool@KeepObjectDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC24,pool-glue cascade static (back-solved)
+?TheLaserUpdatePool@?1??getClassMemoryPool@LaserUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF7028,pool-glue cascade static (back-solved)
+?TheLifetimeUpdatePool@?1??getClassMemoryPool@LifetimeUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFFB8,pool-glue cascade static (back-solved)
+?TheLockWeaponCreatePool@?1??getClassMemoryPool@LockWeaponCreate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFB94,pool-glue cascade static (back-solved)
+?TheLocomotorSetUpgradePool@?1??getClassMemoryPool@LocomotorSetUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0580,pool-glue cascade static (back-solved)
+?TheMaxHealthUpgradePool@?1??getClassMemoryPool@MaxHealthUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0588,pool-glue cascade static (back-solved)
+?TheMemoryPoolFactory@@3PAVMemoryPoolFactory@@A,0x00EED600,pool-glue cascade static (back-solved)
+?TheModelConditionUpgradePool@?1??getClassMemoryPool@ModelConditionUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0590,pool-glue cascade static (back-solved)
+?TheMoneyCrateCollidePool@?1??getClassMemoryPool@MoneyCrateCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA10,pool-glue cascade static (back-solved)
+?TheOCLSpecialPowerPool@?1??getClassMemoryPool@OCLSpecialPower@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFCE4,pool-glue cascade static (back-solved)
+?TheObjectCreationUpgradePool@?1??getClassMemoryPool@ObjectCreationUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0598,pool-glue cascade static (back-solved)
+?TheOpenContainPool@?1??getClassMemoryPool@OpenContain@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA60,pool-glue cascade static (back-solved)
+?ThePoisonedBehaviorPool@?1??getClassMemoryPool@PoisonedBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF82C,pool-glue cascade static (back-solved)
+?ThePreorderCreatePool@?1??getClassMemoryPool@PreorderCreate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFB9C,pool-glue cascade static (back-solved)
+?TheProductionUpdatePool@?1??getClassMemoryPool@ProductionUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFFF8,pool-glue cascade static (back-solved)
+?TheProneUpdatePool@?1??getClassMemoryPool@ProneUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0010,pool-glue cascade static (back-solved)
+?ThePropagandaTowerBehaviorPool@?1??getClassMemoryPool@PropagandaTowerBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF834,pool-glue cascade static (back-solved)
+?TheQueueProductionExitUpdatePool@?1??getClassMemoryPool@QueueProductionExitUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF04FC,pool-glue cascade static (back-solved)
+?TheRadarUpdatePool@?1??getClassMemoryPool@RadarUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0018,pool-glue cascade static (back-solved)
+?TheRadarUpgradePool@?1??getClassMemoryPool@RadarUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF05B8,pool-glue cascade static (back-solved)
+?TheRadiusDecalUpdatePool@?1??getClassMemoryPool@RadiusDecalUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0020,pool-glue cascade static (back-solved)
+?TheRailedTransportDockUpdatePool@?1??getClassMemoryPool@RailedTransportDockUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF04D4,pool-glue cascade static (back-solved)
+?TheRepairDockUpdatePool@?1??getClassMemoryPool@RepairDockUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF04DC,pool-glue cascade static (back-solved)
+?TheSalvageCrateCollidePool@?1??getClassMemoryPool@SalvageCrateCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA18,pool-glue cascade static (back-solved)
+?TheShroudCrateCollidePool@?1??getClassMemoryPool@ShroudCrateCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA20,pool-glue cascade static (back-solved)
+?TheSlavedUpdatePool@?1??getClassMemoryPool@SlavedUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0048,pool-glue cascade static (back-solved)
+?TheSpawnBehaviorPool@?1??getClassMemoryPool@SpawnBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF900,pool-glue cascade static (back-solved)
+?TheSpawnPointProductionExitUpdatePool@?1??getClassMemoryPool@SpawnPointProductionExitUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0504,pool-glue cascade static (back-solved)
+?TheSpecialAbilityPool@?1??getClassMemoryPool@SpecialAbility@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0050,pool-glue cascade static (back-solved)
+?TheSpecialPowerCompletionDiePool@?1??getClassMemoryPool@SpecialPowerCompletionDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC34,pool-glue cascade static (back-solved)
+?TheSpecialPowerCreatePool@?1??getClassMemoryPool@SpecialPowerCreate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFBA4,pool-glue cascade static (back-solved)
+?TheSquishCollidePool@?1??getClassMemoryPool@SquishCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF9D8,pool-glue cascade static (back-solved)
+?TheStatusBitsUpgradePool@?1??getClassMemoryPool@StatusBitsUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF05C0,pool-glue cascade static (back-solved)
+?TheStealthDetectorUpdatePool@?1??getClassMemoryPool@StealthDetectorUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF009C,pool-glue cascade static (back-solved)
+?TheStealthUpdatePool@?1??getClassMemoryPool@StealthUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF01C8,pool-glue cascade static (back-solved)
+?TheStealthUpgradePool@?1??getClassMemoryPool@StealthUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF05C8,pool-glue cascade static (back-solved)
+?TheStructureBodyPool@?1??getClassMemoryPool@StructureBody@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF9B0,pool-glue cascade static (back-solved)
+?TheSubObjectsUpgradePool@?1??getClassMemoryPool@SubObjectsUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF05D0,pool-glue cascade static (back-solved)
+?TheSupplyCenterCreatePool@?1??getClassMemoryPool@SupplyCenterCreate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFBAC,pool-glue cascade static (back-solved)
+?TheSupplyCenterDockUpdatePool@?1??getClassMemoryPool@SupplyCenterDockUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF04E4,pool-glue cascade static (back-solved)
+?TheSupplyCenterProductionExitUpdatePool@?1??getClassMemoryPool@SupplyCenterProductionExitUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF050C,pool-glue cascade static (back-solved)
+?TheSupplyTruckAIUpdatePool@?1??getClassMemoryPool@SupplyTruckAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0304,pool-glue cascade static (back-solved)
+?TheSupplyWarehouseCreatePool@?1??getClassMemoryPool@SupplyWarehouseCreate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFBB4,pool-glue cascade static (back-solved)
+?TheSupplyWarehouseCripplingBehaviorPool@?1??getClassMemoryPool@SupplyWarehouseCripplingBehavior@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEF918,pool-glue cascade static (back-solved)
+?TheSupplyWarehouseDockUpdatePool@?1??getClassMemoryPool@SupplyWarehouseDockUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF04EC,pool-glue cascade static (back-solved)
+?TheTransitionDamageFXPool@?1??getClassMemoryPool@TransitionDamageFX@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFBEC,pool-glue cascade static (back-solved)
+?TheTransportAIUpdatePool@?1??getClassMemoryPool@TransportAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0468,pool-glue cascade static (back-solved)
+?TheTransportContainPool@?1??getClassMemoryPool@TransportContain@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFAA4,pool-glue cascade static (back-solved)
+?TheTunnelContainPool@?1??getClassMemoryPool@TunnelContain@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFAAC,pool-glue cascade static (back-solved)
+?TheUnitCrateCollidePool@?1??getClassMemoryPool@UnitCrateCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA28,pool-glue cascade static (back-solved)
+?TheUnpauseSpecialPowerUpgradePool@?1??getClassMemoryPool@UnpauseSpecialPowerUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF05E0,pool-glue cascade static (back-solved)
+?TheUpgradeDiePool@?1??getClassMemoryPool@UpgradeDie@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFC3C,pool-glue cascade static (back-solved)
+?TheVeterancyCrateCollidePool@?1??getClassMemoryPool@VeterancyCrateCollide@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFA30,pool-glue cascade static (back-solved)
+?TheWanderAIUpdatePool@?1??getClassMemoryPool@WanderAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF0470,pool-glue cascade static (back-solved)
+?TheWeaponBonusUpgradePool@?1??getClassMemoryPool@WeaponBonusUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF05E8,pool-glue cascade static (back-solved)
+?TheWeaponSetUpgradePool@?1??getClassMemoryPool@WeaponSetUpgrade@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF05F0,pool-glue cascade static (back-solved)
+?TheWorkerAIUpdatePool@?1??getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF047C,pool-glue cascade static (back-solved)
+?Uninitialised_Grow@StringClass@@AAEXH@Z,0x009DBA70
+?Update_Bounding_Box@ParticleBufferClass@@IAEXXZ,0x0098B460
+?Update_Non_New_Particles@ParticleBufferClass@@IAEXI@Z,0x00988060
+?Update_Visual_Particle_State@ParticleBufferClass@@IAEXXZ,0x00986FC0
+?Write@ChunkSaveClass@@QAEKPBXK@Z,0x009E18A0
+?WriteConditionDataChunk@Condition@@SAXAAVDataChunkOutput@@PAV1@@Z,0x0003DA91
+?_M_allocate@?$__node_alloc@$00$0A@@_STL@@CAPAXI@Z,0x00082E540,STLport _Node_alloc::_M_allocate called by list<Coord3D> copy ctor
+?_M_clear@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEXXZ,0x0001FE92
+?_M_copy@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@2@PAU32@0@Z,0x0002E15E
+?_M_deallocate@?$__node_alloc@$00$0A@@_STL@@CAXPAXI@Z,0x0082E5F0
+?_M_decrement@?$_Rb_global@_N@_STL@@SAPAU_Rb_tree_node_base@2@PAU32@@Z,0x0082B8E0
+?_M_erase@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@@2@@Z,0x00020E37
+?_M_erase@?$_Rb_tree@VUnicodeString@@U?$pair@$$CBVUnicodeString@@_N@_STL@@U?$_Select1st@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@UUnicodeStringLessThan@@V?$allocator@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBVUnicodeString@@_N@_STL@@@2@@Z,0x00008B34
+?_M_fill_insert@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAEXU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@I_N@Z,0x0000886E
+?_M_increment@?$_Rb_global@_N@_STL@@SAPAU_Rb_tree_node_base@2@PAU32@@Z,0x0082B870
+?_M_insert@?$_Rb_tree@PAVGameSpyStagingRoom@@PAV1@U?$_Identity@PAVGameSpyStagingRoom@@@_STL@@UGameSortStruct@@V?$allocator@PAVGameSpyStagingRoom@@@3@@_STL@@AAE?AU?$_Rb_tree_iterator@PAVGameSpyStagingRoom@@U?$_Nonconst_traits@PAVGameSpyStagingRoom@@@_STL@@@2@PAU_Rb_tree_node_base@2@0ABQAVGameSpyStagingRoom@@0@Z,0x0000FF47
+?_M_insert@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@AAE?AU?$_Rb_tree_iterator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@2@@2@PAU_Rb_tree_node_base@2@0ABU?$pair@$$CBVAsciiString@@UCoord3D@@@2@0@Z,0x000086A2
+?_M_insert_aux@?$vector@_NV?$allocator@_N@_STL@@@_STL@@IAEXU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@_N@Z,0x0002CB5B
+?_M_insert_overflow@?$vector@EV?$allocator@E@_STL@@@_STL@@IAEXPAEABEABU__true_type@2@I_N@Z,0x0002F20C
+?_M_insert_overflow@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@IAEXPAPAVObjectCreationNugget@@ABQAV3@ABU__true_type@2@I_N@Z,0x0002B6E8
+?_M_insert_overflow@?$vector@PBVFXList@@V?$allocator@PBVFXList@@@_STL@@@_STL@@IAEXPAPBVFXList@@ABQBV3@ABU__true_type@2@I_N@Z,0x00044FC1
+?_M_insert_overflow@?$vector@UHorzLine@@V?$allocator@UHorzLine@@@_STL@@@_STL@@IAEXPAUHorzLine@@ABU3@ABU__false_type@2@I_N@Z,0x00017FB2
+?_M_insert_overflow@?$vector@UUpgrades@CashHackSpecialPowerModuleData@@V?$allocator@UUpgrades@CashHackSpecialPowerModuleData@@@_STL@@@_STL@@IAEXPAUUpgrades@CashHackSpecialPowerModuleData@@ABU34@ABU__false_type@2@I_N@Z,0x0000EF11
+?_M_insert_overflow@?$vector@UUpgrades@OCLSpecialPowerModuleData@@V?$allocator@UUpgrades@OCLSpecialPowerModuleData@@@_STL@@@_STL@@IAEXPAUUpgrades@OCLSpecialPowerModuleData@@ABU34@ABU__false_type@2@I_N@Z,0x0003913F
+?_M_insert_overflow@?$vector@VPlayerTemplate@@V?$allocator@VPlayerTemplate@@@_STL@@@_STL@@IAEXPAVPlayerTemplate@@ABV3@ABU__false_type@2@I_N@Z,0x0003059E
+?_M_insert_overflow@?$vector@VWeaponTemplateSet@@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@IAEXPAVWeaponTemplateSet@@ABV3@ABU__false_type@2@I_N@Z,0x0001636F
+?_M_insert_overflow@?$vector@W4ObjectID@@V?$allocator@W4ObjectID@@@_STL@@@_STL@@IAEXPAW4ObjectID@@ABW43@ABU__false_type@2@I_N@Z,0x00033DAC
+?_M_insert_overflow@?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@IAEXPAW4ScienceType@@ABW43@ABU__false_type@2@I_N@Z,0x00023588
+?_M_push_back_aux_v@?$deque@VGameResultsRequest@@V?$allocator@VGameResultsRequest@@@_STL@@@_STL@@IAEXABVGameResultsRequest@@@Z,0x0002217E
+?_M_push_back_aux_v@?$deque@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXABVGameResultsResponse@@@Z,0x0004A0B1
+?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z,0x0000B569,GameMessageParser::addArgType thunk
+?addScience@Player@@AAE_NW4ScienceType@@@Z,0x00036057
+?addToBuildList@SidesInfo@@QAEXPAVBuildListInfo@@H@Z,0x0000DD9B
+?addUpgrade@Player@@QAEPAVUpgrade@@PBVUpgradeTemplate@@W4UpgradeStatusType@@@Z,0x00040327
+?addWaypointLink@TerrainLogic@@IAEXHH@Z,0x00038B77
+?appendBooleanArgument@GameMessage@@QAEX_N@Z,0x000032AB,GameMessage::appendBooleanArgument thunk
+?appendDrawableIDArgument@GameMessage@@QAEXI@Z,0x000154BF,GameMessage::appendDrawableIDArgument thunk
+?appendIntegerArgument@GameMessage@@QAEXH@Z,0x00001370,GameMessage::appendIntegerArgument thunk
+?appendLocationArgument@GameMessage@@QAEXABUCoord3D@@@Z,0x00037AD8,GameMessage::appendLocationArgument thunk
+?appendObjectIDArgument@GameMessage@@QAEXI@Z,0x0002BCEC,GameMessage::appendObjectIDArgument thunk
+?appendPixelArgument@GameMessage@@QAEXABUICoord2D@@@Z,0x0002EA41,GameMessage::appendPixelArgument thunk
+?appendPixelRegionArgument@GameMessage@@QAEXABUIRegion2D@@@Z,0x00011DCE,GameMessage::appendPixelRegionArgument thunk
+?appendRealArgument@GameMessage@@QAEXM@Z,0x00002608,GameMessage::appendRealArgument thunk
+?appendTeamIDArgument@GameMessage@@QAEXI@Z,0x0000C522,GameMessage::appendTeamIDArgument thunk
+?appendTimestampArgument@GameMessage@@QAEXI@Z,0x0000D558,GameMessage::appendTimestampArgument thunk
+?appendWideCharArgument@GameMessage@@QAEXABG@Z,0x000028C9,GameMessage::appendWideCharArgument thunk
+?applyTopplingForce@ToppleUpdate@@QAEXPBUCoord3D@@MI@Z,0x0003FC97
+?begin@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAE?AU?$_Ht_iterator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@U?$_Nonconst_traits@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@2@XZ,0x0003EE14
+?calcNumPrereqUnitsOwned@ProductionPrerequisite@@ABEHPBVPlayer@@QAH@Z,0x000379B1
+?clear@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAEXXZ,0x000458BD
+?clear@DamageFX@@QAEXXZ,0x00044297
+?clear@Dict@@QAEXXZ,0x00033F46
+?clear@TeamFactory@@QAEXXZ,0x000284A7
+?clearAllEvents@Radar@@IAEXXZ,0x00028C27
+?closeDataChunk@DataChunkOutput@@QAEXXZ,0x00004B42
+?copyFrom@DictPair@Dict@@QAEXPAU12@@Z,0x00013E94
+?copyFromQueueNode@BFMENetworkQueueItem1@@QAEXPAX@Z,0x00032F6A,native BFME queue item copy helper for wrapper queue +0x3c
+?copyFromQueueNode@BFMENetworkQueueItem@@QAEXPAX@Z,0x00030C60,native BFME queue item copy helper for wrapper queue +0x14
+?createDirectory@FileSystem@@QAE_NVAsciiString@@@Z,0x009C8DC0
+?createEvent@Radar@@QAEXPBUCoord3D@@W4RadarEventType@@M@Z,0x00008B8E
+?createMemoryPool@MemoryPoolFactory@@QAEPAVMemoryPool@@PBDHHH@Z,0x0003ADD7,pool-glue cascade callee (ICF-folded with findMemoryPool)
+?createNamedMapReveal@ScriptEngine@@QAEXABVAsciiString@@0M0@Z,0x0002C8EA
+?deleteListResources@Radar@@IAEXXZ,0x0002C976
+?deposit@Money@@QAEXI_N@Z,0x00027D6D
+?detach@NetCommandMsg@@QAEXXZ,0x009EB7A0
+?detectionBeginUpdate@FirewallHelperClass@@QAE_NXZ,0x000205F4
+?disableRadar@Player@@QAEXXZ,0x0003C2BD
+?doFXPos@FXList@@IBEXPBUCoord3D@@PBVMatrix3D@@M0M@Z,0x0003E360
+?doFxAtBones@FXListAtBonePosFXNugget@@IBEXPBVObject@@H@Z,0x00010CC6
+?doNamedMapReveal@ScriptEngine@@QAEXABVAsciiString@@@Z,0x0001FC3F
+?doSkyBoxSet@@YAX_N@Z,0x00029AC8
+?enableRadar@Player@@QAEXXZ,0x00043207
+?ensureUnique@Dict@@AAEPAUDictPair@1@H_NPAU21@@Z,0x0002BF21
+?erase@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAEXABU?$_Ht_iterator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@U?$_Const_traits@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@2@@Z,0x0003FB98
+?erase@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAE?AU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@2@U32@0@Z,0x00024131,ILT thunk for list<GameWindow*>::erase(range)
+?erase@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAE?AU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@2@U32@0@Z,0x00483310,body
+?erase@?$list@UCoord3D@@V?$allocator@UCoord3D@@@_STL@@@_STL@@QAE?AU?$_List_iterator@UCoord3D@@U?$_Nonconst_traits@UCoord3D@@@_STL@@@2@U32@0@Z,0x0004169B
+?erase@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@QAEPAUPrereqUnitRec@ProductionPrerequisite@@PAU34@0@Z,0x0001E632
+?evaluateBezSegmentAtT@BezierSegment@@QBEXMPAUCoord3D@@@Z,0x000059ED
+?evaluateNamedInsideArea@ScriptConditions@@IAE_NPAVParameter@@0@Z,0x0000696F
+?evaluateTeamInsideAreaEntirely@ScriptConditions@@IAE_NPAVParameter@@00@Z,0x00013219
+?evaluateTeamInsideAreaPartially@ScriptConditions@@IAE_NPAVParameter@@00@Z,0x0004A8E0
+?findControlBarOverride@GameLogic@@QBE_NABVAsciiString@@HAAPBVCommandButton@@@Z,0x00002509
+?findFXList@FXListStore@@QBEPBVFXList@@PBD@Z,0x0001EDE9
+?findFunction@FunctionLexicon@@IAEPAXW4NameKeyType@@W4TableIndex@1@@Z,0x00025CD4
+?findLadderByIndex@LadderList@@QAEPBVLadderInfo@@H@Z,0x00028E93
+?findMapping@DataChunkTableOfContents@@AAEPAVMapping@@ABVAsciiString@@@Z,0x0001587A
+?findMemoryPool@MemoryPoolFactory@@QAEPAVMemoryPool@@PBD@Z,0x0003ADD7,pool-glue cascade callee (from retail call site)
+?findModule@Object@@IBEPAVModule@@W4NameKeyType@@@Z,0x0002AE23
+?findSpecialPowerWithOverridableDestinationActive@Object@@QBEPAVSpecialPowerUpdateInterface@@W4SpecialPowerType@@@Z,0x00039766
+?findUpgrade@UpgradeCenter@@QBEPBVUpgradeTemplate@@ABVAsciiString@@@Z,0x0002F95A
+?friend_awakenUpdateModule@GameLogic@@QAEXPAVObject@@PAVUpdateModule@@I@Z,0x00009944
+?friend_getFinalOverride@Overridable@@QAEPAV1@XZ,0x00048C61
+?getAsciiString@Dict@@QBE?AVAsciiString@@W4NameKeyType@@PA_N@Z,0x0002FF6D
+?getCampaignDifficulty@OptionPreferences@@QAEHXZ,0x00032B5A
+?getCell@Pathfinder@@QAEPAVPathfindCell@@W4PathfindLayerEnum@@HH@Z,0x00020671
+?getChunkNumber@NetWrapperCommandMsg@@QAEIXZ,0x0003F814
+?getColor@MultiplayerSettings@@QAEPAVMultiplayerColorDefinition@@H@Z,0x00021EC2
+?getCommandID@NetAckBothCommandMsg@@QAEGXZ,0x000074E1
+?getCommandID@NetAckStage1CommandMsg@@QAEGXZ,0x0002A482
+?getCommandID@NetAckStage2CommandMsg@@QAEGXZ,0x00005975
+?getCommandTypeAsAsciiString@GameMessage@@SA?AVAsciiString@@W4Type@1@@Z,0x00040A1B
+?getControllingPlayer@Object@@QBEPAVPlayer@@XZ,0x00020824
+?getData@NetWrapperCommandMsg@@QAEPAEXZ,0x0002D867
+?getDataLength@NetWrapperCommandMsg@@QAEIXZ,0x0003D839
+?getDataOffset@NetWrapperCommandMsg@@QAEIXZ,0x00027048
+?getFinalOverride@Overridable@@QBEPBV1@XZ,0x000022BB
+?getID@AIGroup@@QAEIXZ,0x000131DD
+?getID@Drawable@@QBE?AW4DrawableID@@XZ,0x00009B01
+?getListboxBottomEntry@@YAHPAU_ListboxData@@@Z,0x004B6BA0
+?getListboxEntryBasedOnCoord@@YAHPAVGameWindow@@HHAAH1@Z,0x004B69D0
+?getListboxTopEntry@@YAHPAU_ListboxData@@@Z,0x004B6B60
+?getLocalPlayerID@ConnectionManager@@QAEIXZ,0x0004A291
+?getManglerResponse@FirewallHelperClass@@QAEGGH@Z,0x00025A7C
+?getMode@RecorderClass@@QAE?AW4RecorderModeType@@XZ,0x00043EEB
+?getModelVertices@W3DBridge@@IAEHPAUVertexFormatXYZNDUV1@@HMAAVVector3@@111ABVMatrix3D@@PAVMeshClass@@PAV?$RefMultiListIterator@VRenderObjClass@@@@@Z,0x0001B14E
+?getNATPortAllocationScheme@FirewallHelperClass@@AAEHHPAG0AA_N1@Z,0x00012F3F
+?getName@SpecialPowerTemplate@@QBE?AVAsciiString@@XZ,0x00005682
+?getNewPushButtonData@@YAPAU_PushButtonData@@XZ,0x00012765
+?getNextMission@Campaign@@QAEPAVMission@@PAV2@@Z,0x0003236C
+?getNextToken@INI@@QAEPBDPBD@Z,0x00850970
+?getNextTokenOrNull@INI@@QAEPBDPBD@Z,0x008509C0
+?getOriginalPlayerID@NetAckBothCommandMsg@@QAEEXZ,0x00046D17
+?getOriginalPlayerID@NetAckStage1CommandMsg@@QAEEXZ,0x00020518
+?getOriginalPlayerID@NetAckStage2CommandMsg@@QAEEXZ,0x0002714C
+?getPath_UserData@GlobalData@@QBE?AVAsciiString@@XZ,0x000106EA,GlobalData::getPath_UserData thunk
+?getPercentComplete@NetCommandWrapperListNode@@QAEHXZ,0x0003D497
+?getPercentage@NetProgressCommandMsg@@QAEEXZ,0x000157A3
+?getRelationship@Object@@QBE?AW4Relationship@@PBV1@@Z,0x0004A719
+?getSciencePurchaseCost@ScienceStore@@QBEHW4ScienceType@@@Z,0x00002BFD
+?getShroudStatusForPlayer@PartitionManager@@QBE?AW4CellShroudStatus@@HPBUCoord3D@@@Z,0x008F7430
+?getStatusString@DownloadManager@@QAE?AVUnicodeString@@XZ,0x0001AEEC
+?getUserMapDir@MapCache@@QBE?AVAsciiString@@XZ,0x000139E9
+?getframe@AdaptiveDeltaMotionChannelClass@@AAEMKK@Z,0x00977FF0
+?giveUpgrade@Object@@QAEXPBVUpgradeTemplate@@@Z,0x0001A97E
+?groupAttackObjectPrivate@AIGroup@@AAEX_NPAVObject@@HW4CommandSourceType@@@Z,0x00041CD1
+?hasPlayerTimedOut@DisconnectManager@@IAE_NH@Z,0x00014AD8
+?hidePurchaseScience@ControlBar@@QAEXXZ,0x00020347
+?hideSpecialPowerShortcut@ControlBar@@QAEXXZ,0x00041367
+?init@WinInstanceData@@QAEXXZ,0x00021EC7
+?initFromINI@INI@@QAEXPAXPBUFieldParse@@@Z,0x008520A0
+?initFromINI@INI@@QAEXPAXPBX@Z,0x008520A0,INI::initFromINI(void*, const void*) body
+?initFromINIMultiProc@INI@@QAEXPAXP6AXAAVMultiIniFieldParse@@@Z@Z,0x00852130
+?initTimes@BoneFXUpdate@@IAEXXZ,0x0002F775
+?initializeBonePositions@SpawnPointProductionExitUpdate@@AAEXXZ,0x0003B566
+?insert4Way@W3DRoadBuffer@@IAEXVVector2@@HM@Z,0x00032B96,ILT thunk to 0x706310
+?insertTee@W3DRoadBuffer@@IAEXVVector2@@HM@Z,0x00007522,ILT thunk to 0x70BC00
+?insert_unique@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBGE@_STL@@U?$_Nonconst_traits@U?$pair@$$CBGE@_STL@@@2@@2@U32@ABU?$pair@$$CBGE@2@@Z,0x0000DE77
+?insert_unique@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@QAE?AU?$pair@U?$_Rb_tree_iterator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@2@@_STL@@_N@2@ABU?$pair@$$CBVAsciiString@@UCoord3D@@@2@@Z,0x0002DA10
+?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@2@@Z,0x00024ADC
+?isAbleToBeToppled@ToppleUpdate@@QBE_NXZ,0x0000678A
+?isPacketRouter@ConnectionManager@@QAE_NXZ,0x00044139
+?isPlayerConnected@ConnectionManager@@QAE_NH@Z,0x0001514A
+?isPlayerVotedOut@DisconnectManager@@IAE_NHPAVConnectionManager@@@Z,0x0001ECE0
+?isPointOnBridge@Bridge@@QAE_NPBUCoord3D@@@Z,0x00014637
+?isScienceGrantable@ScienceStore@@QBE_NW4ScienceType@@@Z,0x0003882A
+?isSlotLocalAlly@@YA_NPBVGameSlot@@@Z,0x0061ED20
+?iterateObjects@Player@@QBEXP6AXPAVObject@@PAX@Z1@Z,0x0002F1CB
+?keyToName@NameKeyGenerator@@QAE?AVAsciiString@@W4NameKeyType@@@Z,0x0003EC7A
+?killRunningParticleSystems@BoneFXUpdate@@IAEXXZ,0x0000628F
+?killThemKillThemAll@SelectionTranslator@@AAE_NPAVDrawable@@PAVGameMessage@@@Z,0x00019F5B
+?loadBridgesInVertexAndIndexBuffers@W3DBridgeBuffer@@IAEXPAV?$RefMultiListIterator@VRenderObjClass@@@@@Z,0x000367EB
+?loadFloat4PtSection@W3DRoadBuffer@@IAEXPAVRoadSegment@@VVector2@@11PAV3@MMMM@Z,0x000346DF
+?loadStandardMaps@MapCache@@AAEXXZ,0x000359DB
+?loadUserMaps@MapCache@@AAE_NXZ,0x00028FF1
+?localPixelToRadar@Radar@@QAE_NPBUICoord2D@@PAU2@@Z,0x00004D59
+?makeDecoratedNameKey@ModuleFactory@@KA?AW4NameKeyType@@ABVAsciiString@@W4ModuleType@@@Z,0x0004B439
+?makeDecoratedNameKey@ModuleFactory@@KAHABVAsciiString@@H@Z,0x0004B439,ModuleFactory::makeDecoratedNameKey thunk (body 0x00126260)
+?nameToKey@NameKeyGenerator@@QAE?AW4NameKeyType@@PBD@Z,0x0003ADD7
+?normalizeAngle@@YAMM@Z,0x0000991C
+?nstrdup@@YAPADPBD@Z,0x009E6410
+?onEnter@AIInternalMoveToState@@UAE?AW4StateReturnType@@XZ,0x00021E27
+?onExit@AIInternalMoveToState@@UAEXW4StateExitType@@@Z,0x00029311
+?openDataChunk@DataChunkOutput@@QAEXPADG@Z,0x0003A256
+?openFile@FileSystem@@QAEPAVFile@@PBDH@Z,0x009C8860
+?parseBitString32@INI@@SAXPAV1@PAX1PBX@Z,0x00850E70
+?parseCommonStuff@@YAXPAVINI@@PBQBDAAW4VeterancyLevel@@2AAW4DamageType@@3@Z,0x00065F80
+?parseDurationReal@INI@@SAXPAV1@PAX1PBX@Z,0x0003D9B0
+?parseDurationUnsignedInt@INI@@SAXPAV1@PAX1PBX@Z,0x000324DE
+?parseFXList@INI@@SAXPAV1@PAX1PBX@Z,0x00004B47,INI::parseFXList thunk
+?parseFXList@INI@@SAXPAV1@PAX1PBX@Z,0x00851EE0,INI::parseFXList body
+?parseInt@INI@@SAXPAV1@PAX1PBX@Z,0x00852A60
+?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z,0x0000FC3B
+?parseObjectCreationList@INI@@SAXPAV1@PAX1PBX@Z,0x0003CBA0
+?parseParticleSystemTemplate@INI@@SAXPAV1@PAX1PBX@Z,0x00040C1E
+?parsePercentToReal@INI@@SAXPAV1@PAX1PBX@Z,0x00852EE0
+?parseRGBColor@INI@@SAXPAV1@PAX1PBX@Z,0x00852F50
+?parseReal@INI@@SAXPAV1@PAX1PBX@Z,0x00852B20
+?parseScience@INI@@SAXPAV1@PAX1PBX@Z,0x0001393A
+?parseUnsignedInt@INI@@SAXPAV1@PAX1PBX@Z,0x00852AC0
+?parseWeaponTemplate@INI@@SAXPAV1@PAX1PBX@Z,0x0000CBDF
+?playerHasPrereqsForScience@ScienceStore@@QBE_NPBVPlayer@@W4ScienceType@@@Z,0x0000DCDD
+?pop@Shell@@QAEXXZ,0x00006AAA
+?popFront@BFMENetworkQueue1@@QAEXXZ,0x00023592,native BFME queue pop helper for wrapper queue +0x3c
+?popFront@BFMENetworkQueue@@QAEXXZ,0x0002491A,native BFME queue pop helper for wrapper queue +0x14
+?processContextSensitiveButtonClick@ControlBar@@QAE?AW4CBCommandStatus@@PAVGameWindow@@W4GadgetGameMessage@@@Z,0x00046F88
+?processProgress@GameLogic@@QAEXHH@Z,0x0002E66D
+?readDict@DataChunkInput@@QAE?AVDict@@XZ,0x00022683
+?readInt@DataChunkInput@@QAEHXZ,0x0003A805
+?readUnicodeString@@YA?AVUnicodeString@@PAU_iobuf@@@Z,0x000322F4,shared replay Unicode string reader thunk
+?releaseBuffer@UnicodeString@@IAEXXZ,0x009409F0
+?releaseData@Dict@@AAEXXZ,0x00014475
+?remove@Dict@@QAE_NW4NameKeyType@@@Z,0x000072B6
+?removeFromBuildList@SidesInfo@@QAEHPAVBuildListInfo@@@Z,0x0000A5A6
+?renderTrees@BaseHeightMapRenderObjClass@@QAEXPAVCameraClass@@@Z,0x0003FE36
+?reserve@?$vector@UHorzLine@@V?$allocator@UHorzLine@@@_STL@@@_STL@@QAEXI@Z,0x0000DE95
+?resize@?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEXI@Z,0x0000366B
+?revalidateOccupiers@SpawnPointProductionExitUpdate@@AAEXXZ,0x0002374A
+?scanIndexList@INI@@SAHPBDPBQBD@Z,0x008509E0
+?scanReal@INI@@SAMPBD@Z,0x008526E0
+?scanUnsignedInt@INI@@SAIPBD@Z,0x00852680
+?searchListForRadarLocationMatch@Radar@@IAEPAVObject@@PAVRadarObject@@PAUICoord2D@@@Z,0x0000C6DA
+?selectFriends@SelectionTranslator@@AAE_NPAVDrawable@@PAVGameMessage@@_N@Z,0x000282B8
+?sendToManglerFromPort@FirewallHelperClass@@QAE_NIGG_N@Z,0x00022C00
+?set@LayoutFilename@@QAEXPBDH@Z,0x00887D20
+?set@UnicodeString@@QAEXABV1@@Z,0x00888530
+?setDefaultControlBarConfig@ControlBar@@IAEXXZ,0x00043E73
+?setFPMode@@YAXXZ,0x008FC4C0
+?setLastLadder@CustomMatchPreferences@@QAEXABVAsciiString@@G@Z,0x00046E43
+?setLastLadder@QuickMatchPreferences@@QAEXABVAsciiString@@G@Z,0x00029B36
+?setLowControlBarConfig@ControlBar@@IAEXXZ,0x0002FA6D
+?setOrientation@Thing@@QAEXM@Z,0x000399A5
+?setPrep@Dict@@AAEPAUDictPair@1@W4NameKeyType@@W4DataType@1@@Z,0x00042749
+?setSortMode@@YAXW4GameSortType@@@Z,0x00048360
+?setTransformMatrix@Thing@@QAEXPBVMatrix3D@@@Z,0x00023D49
+?spin@LockClass@FastCriticalSectionClass@@CIXPAI@Z,0x00026FA8,FastCriticalSectionClass::LockClass spin-acquire (shared out-of-line body reached via ILT thunk); StringClass locks resolve here
+?stopAllBoneFX@BoneFXUpdate@@QAEXXZ,0x0002728C
+?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z,0x0001CF0D
+?strtrim@@YAPADPAD@Z,0x009E7EB0
+?unloadNext@RailedTransportDockUpdate@@IAEXXZ,0x0000C27F
+?update@AIInternalMoveToState@@UAE?AW4StateReturnType@@XZ,0x000488F6
+?winBringToTop@GameWindow@@QAEHXZ,0x0000FE66
+?winClearStatus@GameWindow@@QAEII@Z,0x00027B24
+?winEnable@GameWindow@@QAEH_N@Z,0x0004A1FB
+?winGetChild@GameWindow@@QAEPAV1@XZ,0x00017DF5
+?winGetEnabledTextBorderColor@GameWindow@@QAEHXZ,0x0002D7EA
+?winGetInstanceData@GameWindow@@QAEPAVWinInstanceData@@XZ,0x00034991
+?winGetNext@GameWindow@@QAEPAV1@XZ,0x0000D2B0
+?winGetNextInLayout@GameWindow@@QAEPAV1@XZ,0x0002A414
+?winGetPrev@GameWindow@@QAEPAV1@XZ,0x0000DDF5
+?winGetPrevInLayout@GameWindow@@QAEPAV1@XZ,0x00005399
+?winGetScreenPosition@GameWindow@@QAEHPAH0@Z,0x0002F94B
+?winGetSize@GameWindow@@QAEHPAH0@Z,0x00036EBC
+?winGetStatus@GameWindow@@QAEIXZ,0x00023DDA
+?winGetStyle@GameWindow@@QAEIXZ,0x00008B52
+?winGetUserData@GameWindow@@QAEPAXXZ,0x00046538
+?winGetWindowId@GameWindow@@QAEHXZ,0x000188A4
+?winHide@GameWindow@@QAEHH@Z,0x00027F2A
+?winHide@GameWindow@@QAEH_N@Z,0x00027F2A
+?winIsHidden@GameWindow@@QAE_NXZ,0x0003A5B7
+?winNextTab@GameWindow@@QAEHXZ,0x0000D297
+?winPrevTab@GameWindow@@QAEHXZ,0x00010550
+?winSetDisabledTextColors@GameWindow@@QAEXHH@Z,0x0001B694
+?winSetEnabledImage@GameWindow@@QAEHHPBVImage@@@Z,0x00035E09
+?winSetEnabledTextColors@GameWindow@@QAEXHH@Z,0x00017459
+?winSetLayout@GameWindow@@QAEHPAVWindowLayout@@@Z,0x00031881
+?winSetNextInLayout@GameWindow@@QAEHPAV1@@Z,0x00035CF6
+?winSetPosition@GameWindow@@QAEHHH@Z,0x0001949D
+?winSetPrevInLayout@GameWindow@@QAEHPAV1@@Z,0x00015FB4
+?winSetSize@GameWindow@@QAEHHH@Z,0x000482AC
+?winSetStatus@GameWindow@@QAEII@Z,0x00033523
+?winSetUserData@GameWindow@@QAEXPAX@Z,0x00002E69
+?worldToCell@Pathfinder@@QAE_NPBUCoord3D@@PAUICoord2D@@@Z,0x000171E8
+?wouldIgnite@FlammableUpdate@@QAE_NXZ,0x00016653
+?write@UserPreferences@@UAE_NXZ,0x00030495
+?writeCacheINI@MapCache@@AAEX_N@Z,0x0000E2B4
+?xferRandomVariable@@YAXAAVXfer@@AAVGameClientRandomVariable@@@Z,0x0003EE32,H1 GameClientRandomVariable xfer helper (thunk; body 0x0010C4D0) — pinned, ideally matched in game_client_random_variable.cpp
+_D3DXMatrixInverse@12,0x009FB321
+_D3DXVec4Transform@12,0x009FAA48
+_XMP_Fetch_Prime_Size,0x009E8140
+_XMP_Fetch_Prime_Table,0x009E8130
+_XMP_Is_Small_Prime,0x009E8CA0
+__CIacos,0x009F7256
+__CIasin,0x009F7D86
+__CIpow,0x009F6FB2
+___gameMemAllocPtr,0x0130E9B4,game memory-manager alloc fn ptr
+___gameMemFreePtr,0x0130E9AC,game memory-manager free fn ptr (indirect call target)
+__alloca_probe,0x009F6C60
+__chkstk,0x009F6C60
+__ehhandler$?getClassMemoryPool@AIUpdateInterface@@CAPAVMemoryPool@@XZ,0x00C1074E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ActiveBody@@CAPAVMemoryPool@@XZ,0x00C0C4BE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@AnimatedParticleSysBoneClientUpdate@@CAPAVMemoryPool@@XZ,0x00C3D3EE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ArmorUpgrade@@CAPAVMemoryPool@@XZ,0x00C1453E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@AssaultTransportAIUpdate@@CAPAVMemoryPool@@XZ,0x00C1320E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@AssistedTargetingUpdate@@CAPAVMemoryPool@@XZ,0x00C1081E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@AutoDepositUpdate@@CAPAVMemoryPool@@XZ,0x00C109AE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@AutoFindHealingUpdate@@CAPAVMemoryPool@@XZ,0x00C10A0E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@AutoHealBehavior@@CAPAVMemoryPool@@XZ,0x00C0A83E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@BattlePlanUpdate@@CAPAVMemoryPool@@XZ,0x00C10D3E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@BridgeBehavior@@CAPAVMemoryPool@@XZ,0x00C0AB8E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@BridgeTowerBehavior@@CAPAVMemoryPool@@XZ,0x00C0AD8E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CashHackSpecialPower@@CAPAVMemoryPool@@XZ,0x00C0EECE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CaveContain@@CAPAVMemoryPool@@XZ,0x00C0CD3E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CommandButtonHuntUpdate@@CAPAVMemoryPool@@XZ,0x00C1133E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CommandSetUpgrade@@CAPAVMemoryPool@@XZ,0x00C1477E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CostModifierUpgrade@@CAPAVMemoryPool@@XZ,0x00C147BE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CreateCrateDie@@CAPAVMemoryPool@@XZ,0x00C0EACE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CreateObjectDie@@CAPAVMemoryPool@@XZ,0x00C0EB3E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@CrushDie@@CAPAVMemoryPool@@XZ,0x00C0EBAE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DefaultProductionExitUpdate@@CAPAVMemoryPool@@XZ,0x00C143BE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DefectorSpecialPower@@CAPAVMemoryPool@@XZ,0x00C0F05E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DeletionUpdate@@CAPAVMemoryPool@@XZ,0x00C1151E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DemoTrapUpdate@@CAPAVMemoryPool@@XZ,0x00C1153E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DeployStyleAIUpdate@@CAPAVMemoryPool@@XZ,0x00C1324E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DestroyDie@@CAPAVMemoryPool@@XZ,0x00C0EBEE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DozerAIUpdate@@CAPAVMemoryPool@@XZ,0x00C1333E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@DynamicShroudClearingRangeUpdate@@CAPAVMemoryPool@@XZ,0x00C1168E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ExperienceScalarUpgrade@@CAPAVMemoryPool@@XZ,0x00C1488E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FXListDie@@CAPAVMemoryPool@@XZ,0x00C0EC0E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FireSpreadUpdate@@CAPAVMemoryPool@@XZ,0x00C11A4E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FireWeaponCollide@@CAPAVMemoryPool@@XZ,0x00C0CA4E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FireWeaponUpdate@@CAPAVMemoryPool@@XZ,0x00C11ABE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FireWeaponWhenDamagedBehavior@@CAPAVMemoryPool@@XZ,0x00C0B2DE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FireWeaponWhenDeadBehavior@@CAPAVMemoryPool@@XZ,0x00C0B33E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FlammableUpdate@@CAPAVMemoryPool@@XZ,0x00C11B1E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@FloatUpdate@@CAPAVMemoryPool@@XZ,0x00C11CFE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@GarrisonContain@@CAPAVMemoryPool@@XZ,0x00C0CEFE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@GrantUpgradeCreate@@CAPAVMemoryPool@@XZ,0x00C0E55E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@HealContain@@CAPAVMemoryPool@@XZ,0x00C0CFEE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@HealCrateCollide@@CAPAVMemoryPool@@XZ,0x00C0CB7E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@HeightDieUpdate@@CAPAVMemoryPool@@XZ,0x00C11D1E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@HighlanderBody@@CAPAVMemoryPool@@XZ,0x00C0C7CE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@HijackerUpdate@@CAPAVMemoryPool@@XZ,0x00C11D5E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ImmortalBody@@CAPAVMemoryPool@@XZ,0x00C0C7EE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@InactiveBody@@CAPAVMemoryPool@@XZ,0x00C0C82E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@InstantDeathBehavior@@CAPAVMemoryPool@@XZ,0x00C0B7FE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@KeepObjectDie@@CAPAVMemoryPool@@XZ,0x00C0EC6E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@LaserUpdate@@CAPAVMemoryPool@@XZ,0x00C3D4AE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@LifetimeUpdate@@CAPAVMemoryPool@@XZ,0x00C11F8E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@LockWeaponCreate@@CAPAVMemoryPool@@XZ,0x00C0E5CE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@LocomotorSetUpgrade@@CAPAVMemoryPool@@XZ,0x00C14A4E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@MaxHealthUpgrade@@CAPAVMemoryPool@@XZ,0x00C14A6E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ModelConditionUpgrade@@CAPAVMemoryPool@@XZ,0x00C14AAE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@MoneyCrateCollide@@CAPAVMemoryPool@@XZ,0x00C0CBBE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@OCLSpecialPower@@CAPAVMemoryPool@@XZ,0x00C0F81E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ObjectCreationUpgrade@@CAPAVMemoryPool@@XZ,0x00C14AEE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@OpenContain@@CAPAVMemoryPool@@XZ,0x00C0D1DE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@PoisonedBehavior@@CAPAVMemoryPool@@XZ,0x00C0BA3E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@PreorderCreate@@CAPAVMemoryPool@@XZ,0x00C0E5EE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ProductionUpdate@@CAPAVMemoryPool@@XZ,0x00C1229E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ProneUpdate@@CAPAVMemoryPool@@XZ,0x00C124AE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@PropagandaTowerBehavior@@CAPAVMemoryPool@@XZ,0x00C0BA7E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@QueueProductionExitUpdate@@CAPAVMemoryPool@@XZ,0x00C143FE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@RadarUpdate@@CAPAVMemoryPool@@XZ,0x00C124CE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@RadarUpgrade@@CAPAVMemoryPool@@XZ,0x00C14BCE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@RadiusDecalUpdate@@CAPAVMemoryPool@@XZ,0x00C1251E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@RailedTransportDockUpdate@@CAPAVMemoryPool@@XZ,0x00C142FE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@RepairDockUpdate@@CAPAVMemoryPool@@XZ,0x00C1431E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SalvageCrateCollide@@CAPAVMemoryPool@@XZ,0x00C0CBFE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@ShroudCrateCollide@@CAPAVMemoryPool@@XZ,0x00C0CC7E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SlavedUpdate@@CAPAVMemoryPool@@XZ,0x00C1270E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SpawnBehavior@@CAPAVMemoryPool@@XZ,0x00C0C24E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SpawnPointProductionExitUpdate@@CAPAVMemoryPool@@XZ,0x00C1449E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SpecialAbility@@CAPAVMemoryPool@@XZ,0x00C1288E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SpecialPowerCompletionDie@@CAPAVMemoryPool@@XZ,0x00C0ECCE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SpecialPowerCreate@@CAPAVMemoryPool@@XZ,0x00C0E60E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SquishCollide@@CAPAVMemoryPool@@XZ,0x00C0CAAE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@StatusBitsUpgrade@@CAPAVMemoryPool@@XZ,0x00C14BEE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@StealthDetectorUpdate@@CAPAVMemoryPool@@XZ,0x00C12BAE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@StealthUpdate@@CAPAVMemoryPool@@XZ,0x00C12D2E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@StealthUpgrade@@CAPAVMemoryPool@@XZ,0x00C14C0E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@StructureBody@@CAPAVMemoryPool@@XZ,0x00C0C8FE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SubObjectsUpgrade@@CAPAVMemoryPool@@XZ,0x00C14C2E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SupplyCenterCreate@@CAPAVMemoryPool@@XZ,0x00C0E62E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SupplyCenterDockUpdate@@CAPAVMemoryPool@@XZ,0x00C1433E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SupplyCenterProductionExitUpdate@@CAPAVMemoryPool@@XZ,0x00C144FE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SupplyTruckAIUpdate@@CAPAVMemoryPool@@XZ,0x00C13E7E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SupplyWarehouseCreate@@CAPAVMemoryPool@@XZ,0x00C0E64E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SupplyWarehouseCripplingBehavior@@CAPAVMemoryPool@@XZ,0x00C0C36E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@SupplyWarehouseDockUpdate@@CAPAVMemoryPool@@XZ,0x00C1437E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@TransitionDamageFX@@CAPAVMemoryPool@@XZ,0x00C0E8AE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@TransportAIUpdate@@CAPAVMemoryPool@@XZ,0x00C13F9E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@TransportContain@@CAPAVMemoryPool@@XZ,0x00C0D73E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@TunnelContain@@CAPAVMemoryPool@@XZ,0x00C0D85E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@UnitCrateCollide@@CAPAVMemoryPool@@XZ,0x00C0CC9E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@UnpauseSpecialPowerUpgrade@@CAPAVMemoryPool@@XZ,0x00C14D9E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@UpgradeDie@@CAPAVMemoryPool@@XZ,0x00C0ED0E,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@VeterancyCrateCollide@@CAPAVMemoryPool@@XZ,0x00C0CCDE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@WanderAIUpdate@@CAPAVMemoryPool@@XZ,0x00C13FDE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@WeaponBonusUpgrade@@CAPAVMemoryPool@@XZ,0x00C14DDE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@WeaponSetUpgrade@@CAPAVMemoryPool@@XZ,0x00C14DFE,pool-glue cascade static (back-solved)
+__ehhandler$?getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ,0x00C140BE,pool-glue cascade static (back-solved)
+__ftol2,0x009F6E38,MSVC float-to-int conversion helper (statically linked CRT)
+__stringbase_isnone_cmp_char,0x00405E8,internal char string none-comparison helper
+__stringbase_isnone_cmp_wchar,0x0041F3D,internal wide-char string none-comparison helper
+__stringbase_isnotnone_cmp_char,0x00405E8,internal char string not-none comparison helper
+__stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none comparison helper
+_atexit,0x009F6E26,CRT atexit (registers static destructors)
+_bfme_acos,0x009F7256,internal acos helper called by ACos
+_bfme_asin,0x009F7D86,internal asin helper called by ASin
+??$find@H@?$_Rb_tree@HU?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@U?$_Select1st@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@2@@1@ABH@Z,0x0001990C
+??$find@H@?$_Rb_tree@HU?$pair@$$CBHVBuddyInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHVBuddyInfo@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@@1@ABH@Z,0x0002BAC6
+??0PSPlayerStats@@QAE@ABV0@@Z,0x00887B60
+?_M_erase@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@3@UAsciiComparator@@V?$allocator@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@2@@Z,0x00035F12
+?_M_insert_overflow@?$vector@VUnicodeString@@V?$allocator@VUnicodeString@@@_STL@@@_STL@@IAEXPAVUnicodeString@@ABV3@ABU__false_type@2@I_N@Z,0x00016A63
+??1?$_Rb_tree@JU?$pair@$$CBJVLadderPref@@@_STL@@U?$_Select1st@U?$pair@$$CBJVLadderPref@@@_STL@@@2@U?$less@J@2@V?$allocator@U?$pair@$$CBJVLadderPref@@@_STL@@@2@@_STL@@QAE@XZ,0x000192CC
+??1UserPreferences@@UAE@XZ,0x0003F25B
+?connectCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPConnectResponseArg@@@Z,0x000314AD
+?errorCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPErrorArg@@@Z,0x0000BEE2
+?messageCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyMessageArg@@@Z,0x0000E43A
+?requestCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyRequestArg@@@Z,0x00031D9F
+?statusCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyStatusArg@@@Z,0x0003BD8B
+?Alloc@FastAllocatorGeneral@@QAEPAXI@Z,0x00AFEE40,decoded from Allocate_Memory call site
+?_M_insert@?$_Rb_tree@PBVThingTemplate@@PBV1@U?$_Identity@PBVThingTemplate@@@_STL@@U?$less@PBVThingTemplate@@@3@V?$allocator@PBVThingTemplate@@@3@@_STL@@AAE?AU?$_Rb_tree_iterator@PBVThingTemplate@@U?$_Nonconst_traits@PBVThingTemplate@@@_STL@@@2@PAU_Rb_tree_node_base@2@0ABQBVThingTemplate@@0@Z,0x009A4130,decoded from insert_unique call site
+?read_texture_ids@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z,0x0096DB40,decoded from read_texture_stage call site
+?SetLobbyAttemptHostJoin@@YAX_N@Z,0x0000362A
+?PopulateLobbyPlayerListbox@@YAXXZ,0x000070B3
+??$_M_insert_dispatch@U?$_List_iterator@PAVDrawable@@U?$_Const_traits@PAVDrawable@@@_STL@@@_STL@@@?$list@PAVDrawable@@V?$allocator@PAVDrawable@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVDrawable@@U?$_Nonconst_traits@PAVDrawable@@@_STL@@@1@U?$_List_iterator@PAVDrawable@@U?$_Const_traits@PAVDrawable@@@_STL@@@1@1ABU__false_type@1@@Z,0x00015349,

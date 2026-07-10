@@ -8,7 +8,7 @@
 #ifndef _MATRIX3D_H
 #define _MATRIX3D_H
 
-#include "vector3.h"
+#include "../../../../../CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWMath/vector3.h"
 
 class Matrix3D
 {

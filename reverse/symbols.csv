@@ -102,6 +102,7 @@ name,address,notes
 ?$S46@?1??getClassMemoryPool@PropagandaTowerBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF838,pool-glue cascade static (back-solved)
 ?$S51@?1??getClassMemoryPool@FireWeaponWhenDamagedBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF7C8,pool-glue cascade static (back-solved)
 ?$S52@?1??getClassMemoryPool@FireWeaponWhenDeadBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF7D0,pool-glue cascade static (back-solved)
+??$_Construct@VGameResultsResponse@@V1@@_STL@@YAXPAVGameResultsResponse@@ABV1@@Z,0x0000DCE7
 ??$_Destroy@PAVProductionPrerequisite@@@_STL@@YAXPAVProductionPrerequisite@@0@Z,0x00011D47
 ??$_M_allocate_and_copy@PBVProductionPrerequisite@@@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEPAVProductionPrerequisite@@IPBV2@0@Z,0x00014961
 ??$_M_find@G@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@1@ABG@Z,0x00003071
@@ -148,6 +149,8 @@ name,address,notes
 ??0FlightDeckBehaviorModuleData@@QAE@XZ,0x0000CC3E
 ??0GameMessage@@QAE@W4Type@0@@Z,0x000359E5,GameMessage::GameMessage(Type) thunk
 ??0GameMessageParser@@QAE@XZ,0x00013FCA,GameMessageParser::GameMessageParser() thunk
+??0GameResultsQueue@@QAE@XZ,0x0000DAFD
+??0GameResultsRequest@@QAE@ABV0@@Z,0x0004355E
 ??0GenerateMinefieldBehaviorModuleData@@QAE@XZ,0x0002B062
 ??0GhostObjectManager@@QAE@XZ,0x00008652
 ??0HTreeClass@@QAE@ABV0@@Z,0x009527C0,derived from HTreeClass::Alter_Avatar_HTree
@@ -191,9 +194,12 @@ name,address,notes
 ??1FilePipe@@UAE@XZ,0x009E7DC0
 ??1FileStraw@@UAE@XZ,0x009E1C50
 ??1GameMessageList@@UAE@XZ,0x0000E421
+??1GameResultsRequest@@QAE@XZ,0x00049288
+??1GameResultsResponse@@QAE@XZ,0x00024352
 ??1HTreeClass@@QAE@XZ,0x00952790
 ??1LayoutFilename@@QAE@XZ,0x00887940
 ??1LockClass@CriticalSectionClass@@QAE@XZ,0x009DB4D0
+??1LockClass@MutexClass@@QAE@XZ,0x009DB400
 ??1OptionPreferences@@UAE@XZ,0x00001307
 ??1Pipe@@UAE@XZ,0x009E78C0
 ??1PlayerTemplate@@QAE@XZ,0x000181CE
@@ -333,6 +339,7 @@ name,address,notes
 ??_V@YAXPAX@Z,0x00881EB0
 ??_V@YAXPAX@Z,0x00881EF0,array operator delete flag-2 variant (W3D containers); flag-1 at 0x881EB0
 ?Add@?$DynamicVectorClass@VShaderClass@@@@QAE_NABVShaderClass@@@Z,0x0092FA60
+?AddOutput@Debug@@AAEXPBDI@Z,0x0088A8F0
 ?Add_To_Collection@CullSystemClass@@IAEXPAVCullableClass@@@Z,0x008E21D0
 ?Add_To_Static_Sort_List@WW3D@@SAXPAVRenderObjClass@@I@Z,0x008FD4C0
 ?Allocate_Object_Memory@?$ObjectPoolClass@VGridLinkClass@@$0BAA@@@QAEPAVGridLinkClass@@XZ,0x008DD970
@@ -356,6 +363,8 @@ name,address,notes
 ?Convert_Shader@W3dUtilityClass@@SAXABVShaderClass@@PAUW3dShaderStruct@@@Z,0x00978820
 ?Cur_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E1440
 ?Cur_Micro_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E14E0
+?DebugAllocMemory@@YAPAXI@Z,0x0088EB30
+?DebugFreeMemory@@YAXPAX@Z,0x0088EAD0
 ?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
 ?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,0x0098B750
 ?DoesCommandRequireACommandID@@YA_NW4NetCommandType@@@Z,0x00015B72
@@ -402,6 +411,7 @@ name,address,notes
 ?Intersection_Test@CollisionMath@@SA_NABVSphereClass@@ABVAABoxClass@@@Z,0x008E3600
 ?Inv_Sqrt@WWMath@@SIMM@Z,0x00027A43,WWMath::Inv_Sqrt (naked __fastcall) incremental-link thunk (body 0x00131C90); called by Quaternion::Normalize and Axis_To_Quat, owned by wwmath.cpp
 ?Is_Bone_Captured@HTreeClass@@QBE_NH@Z,0x00952A40
+?Is_Running@ThreadClass@@QAE_NXZ,0x009DB590
 ?Load@INIClass@@QAEHAAVStraw@@@Z,0x009E4680
 ?MD5Update@@YAXPAUMD5_CTX@@PAEI@Z,0x0086AE20
 ?OnStatusUpdate@DownloadManager@@UAEJH@Z,0x00008283
@@ -595,6 +605,8 @@ name,address,notes
 ?_M_insert_overflow@?$vector@VWeaponTemplateSet@@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@IAEXPAVWeaponTemplateSet@@ABV3@ABU__false_type@2@I_N@Z,0x0001636F
 ?_M_insert_overflow@?$vector@W4ObjectID@@V?$allocator@W4ObjectID@@@_STL@@@_STL@@IAEXPAW4ObjectID@@ABW43@ABU__false_type@2@I_N@Z,0x00033DAC
 ?_M_insert_overflow@?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@IAEXPAW4ScienceType@@ABW43@ABU__false_type@2@I_N@Z,0x00023588
+?_M_push_back_aux_v@?$deque@VGameResultsRequest@@V?$allocator@VGameResultsRequest@@@_STL@@@_STL@@IAEXABVGameResultsRequest@@@Z,0x0002217E
+?_M_push_back_aux_v@?$deque@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXABVGameResultsResponse@@@Z,0x0004A0B1
 ?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z,0x0000B569,GameMessageParser::addArgType thunk
 ?addScience@Player@@AAE_NW4ScienceType@@@Z,0x00036057
 ?addToBuildList@SidesInfo@@QAEXPAVBuildListInfo@@H@Z,0x0000DD9B
@@ -949,15 +961,3 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
-?DebugAllocMemory@@YAPAXI@Z,0x0088EB30
-?DebugFreeMemory@@YAXPAX@Z,0x0088EAD0
-?AddOutput@Debug@@AAEXPBDI@Z,0x0088A8F0
-??$_Construct@VGameResultsResponse@@V1@@_STL@@YAXPAVGameResultsResponse@@ABV1@@Z,0x0000DCE7
-??0GameResultsQueue@@QAE@XZ,0x0000DAFD
-??0GameResultsRequest@@QAE@ABV0@@Z,0x0004355E
-??1GameResultsRequest@@QAE@XZ,0x00049288
-??1GameResultsResponse@@QAE@XZ,0x00024352
-??1LockClass@MutexClass@@QAE@XZ,0x009DB400
-?Is_Running@ThreadClass@@QAE_NXZ,0x009DB590
-?_M_push_back_aux_v@?$deque@VGameResultsRequest@@V?$allocator@VGameResultsRequest@@@_STL@@@_STL@@IAEXABVGameResultsRequest@@@Z,0x0002217E
-?_M_push_back_aux_v@?$deque@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXABVGameResultsResponse@@@Z,0x0004A0B1

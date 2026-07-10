@@ -3119,3 +3119,8 @@ GameEngine/Source/Common/INI/INITerrainBridge.cpp,ok,0,0,3,,0
 GameEngine/Source/Common/INI/INITerrainRoad.cpp,ok,0,0,3,,0
 GameEngine/Source/Common/INI/INIUpgrade.cpp,ok,0,0,0,,0
 GameEngine/Source/GameNetwork/GUIUtil.cpp,ok,0,13,42,,0
+Libraries/Source/WWVegas/WWLib/ddraw.cpp,compile-error,0,0,0,C2065 'DDCAPS_BLTCOLORFILL' : undeclared identifier,0
+Libraries/Source/WWVegas/WW3D2/ddsfile.cpp,compile-error,0,0,0,C2372 'REFIID' : redefinition; different types of indirection,0
+Libraries/Source/WWVegas/WWLib/convert.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'LPDIRECTDRAWSURFACE',0
+Libraries/Source/WWVegas/WWLib/draw.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'LPDIRECTDRAWSURFACE',0
+Libraries/Source/WWVegas/WWLib/dsurface.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'Clipper',0

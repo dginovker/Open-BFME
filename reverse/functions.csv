@@ -1768,7 +1768,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Init@ProxyRecordClass@@QAEXABUW3dHLodSubObjectStruct@@@Z,,0x00978900,30,src/w3d/hlod.cpp,matched,
 ?Init@SegLineRendererClass@@QAEXABUW3dEmitterLinePropertiesStruct@@@Z,,0x00960190,237,src/w3d/seglinerenderer.cpp,matched,
 ?Init@WWMath@@SAXXZ,,0x008D8E90,157,src/w3d/wwmath.cpp,matched,BFME drift: no LookupTableMgrClass::Init() call
-?InitDbghelp@@YAXXZ,,0x0088C550,329,src/zh/debug_stack.cpp,matched,
 ?InitGameLogicRandom@@YAXI@Z,,0x00096C90,72,src/game/random_value.cpp,matched,
 ?InitRandom@@YAXI@Z,,0x00096BA0,188,src/game/random_value.cpp,matched,
 ?InitRandom@@YAXXZ,,0x00096A80,227,src/game/random_value.cpp,matched,
@@ -2753,7 +2752,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getClassMemoryPool@ModelConditionUpgrade@@CAPAVMemoryPool@@XZ,,0x002D6740,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@MoneyCrateCollide@@CAPAVMemoryPool@@XZ,,0x00217D90,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@ObjectCreationUpgrade@@CAPAVMemoryPool@@XZ,,0x002D6C60,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
-?getClassMemoryPool@ObjectRepulsorHelper@@CAPAVMemoryPool@@XZ,,0x001C10D0,104,src/zh/object.cpp,matched,
 ?getClassMemoryPool@OpenContain@@CAPAVMemoryPool@@XZ,,0x00226460,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@PoisonedBehavior@@CAPAVMemoryPool@@XZ,,0x00202B10,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@PreorderCreate@@CAPAVMemoryPool@@XZ,,0x0024FF00,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
@@ -2886,7 +2884,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getModelVerticesFixed@W3DBridge@@IAEHPAUVertexFormatXYZNDUV1@@HABVMatrix3D@@PAVMeshClass@@PAV?$RefMultiListIterator@VRenderObjClass@@@@@Z,,0x006D84F0,532,src/zh/w3dbridgebuffer.cpp,matched,
 ?getModuleNameKey@BoneFXUpdate@@UBE?AW4NameKeyType@@XZ,,0x00288E40,104,src/zh/bonefxupdate.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs
 ?getModuleNameKey@BridgeScaffoldBehavior@@UBE?AW4NameKeyType@@XZ,,0x001F5B00,104,src/zh/bridgescaffoldbehavior.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs
-?getModuleNameKey@DozerAIUpdate@@UBE?AW4NameKeyType@@XZ,,0x0011A1D0,104,src/zh/dozeraiupdate.cpp,matched,
 ?getModuleNameKey@ObjectDefectionHelper@@UBE?AW4NameKeyType@@XZ,,0x001C0EF0,104,src/zh/object.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs
 ?getModuleNameKey@ObjectRepulsorHelper@@UBE?AW4NameKeyType@@XZ,,0x001C1210,104,src/zh/object.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs
 ?getModuleNameKey@ObjectSMCHelper@@UBE?AW4NameKeyType@@XZ,,0x001C5530,104,src/zh/object.cpp,matched,exact-ambiguous copy; assignment proven by verify_string_refs

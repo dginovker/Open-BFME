@@ -27,3 +27,10 @@ _COLLISION_EPSILON
 # memmove is imported through two IAT slots in retail (two import descriptors); DIR32
 # references legitimately resolve to either __imp__ address.
 __imp__memmove
+
+# Float-constant COMDAT: 1.0f is emitted per-TU; retail keeps two copies. Same
+# class as _COLLISION_EPSILON above.
+__real@3f800000
+# File-scope static `parentPopup` exists independently in two GameSpy popup TUs;
+# same symbol name in each obj, genuinely two variables in retail.
+_parentPopup

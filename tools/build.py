@@ -744,6 +744,13 @@ def main(only=None):
         # (a few seconds), skipping the baseline hash and no-op patch. Use this to
         # iterate; run with no arguments for the full check before committing.
         verify_functions(only)
+        # String-ref verify scoped to the same rows: function bytes alone cannot
+        # tell identical-twin stubs apart (their string pointer is a masked
+        # DIR32) — three wrong-twin claims survived per-file verification and
+        # reached master before the full gate caught them.
+        rows = [row for row in load_function_rows()
+                if any(sel in row["source"] or sel in row["name"] for sel in only)]
+        verify_string_refs(rows)
         return
     print("Full verification")
     verify_baseline()

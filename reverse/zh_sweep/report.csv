@@ -3124,3 +3124,28 @@ Libraries/Source/WWVegas/WW3D2/ddsfile.cpp,compile-error,0,0,0,C2372 'REFIID' : 
 Libraries/Source/WWVegas/WWLib/convert.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'LPDIRECTDRAWSURFACE',0
 Libraries/Source/WWVegas/WWLib/draw.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'LPDIRECTDRAWSURFACE',0
 Libraries/Source/WWVegas/WWLib/dsurface.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'Clipper',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,compile-error,0,0,0,"C3861 'Row': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,compile-error,0,0,0,"C3861 'Row': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankTruckDraw.cpp,compile-error,0,0,0,"C3861 'Row': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTruckDraw.cpp,compile-error,0,0,0,"C3861 'Row': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,compile-error,0,0,0,"C3861 'Row': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/VideoDevice/Bink/BinkVideoPlayer.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,compile-error,0,0,0,C2365 'COLL_TYPE_PHYSICAL' : redefinition; previous definition was a 'enumerator',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,compile-error,0,0,0,C2365 'COLL_TYPE_2' : redefinition; previous definition was a 'formerly unknown identifier',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankTruckDraw.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTruckDraw.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle',0
+GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'm_handle',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'DIDEVICEOBJECTDATA',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankTruckDraw.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'DIDEVICEOBJECTDATA',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTruckDraw.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'DIDEVICEOBJECTDATA',0
+GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,compile-error,0,0,0,C2061 syntax error : identifier 'DIDEVICEOBJECTDATA',0
+GameEngineDevice/Source/VideoDevice/Bink/BinkVideoPlayer.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'flags',0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankDraw.cpp,ok,0,12,20,,0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankTruckDraw.cpp,ok,0,13,22,,0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTruckDraw.cpp,ok,0,13,19,,0
+GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,ok,6,15,12,,6
+GameEngineDevice/Source/VideoDevice/Bink/BinkVideoPlayer.cpp,compile-error,0,0,0,"C3861 'BinkSetSoundTrack': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/VideoDevice/Bink/BinkVideoPlayer.cpp,compile-error,0,0,0,"C3861 'BinkSoundUseDirectSound': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/VideoDevice/Bink/BinkVideoPlayer.cpp,compile-error,0,0,0,C2660 'BinkSoundUseDirectSound' : function does not take 1 arguments,0
+GameEngineDevice/Source/VideoDevice/Bink/BinkVideoPlayer.cpp,compile-error,0,0,0,C2440 '=' : cannot convert from 'void' to 'Int',0

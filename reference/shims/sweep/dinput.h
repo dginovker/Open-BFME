@@ -169,4 +169,11 @@ typedef void *LPDIRECTINPUTDEVICE8;
 #define DIK_DOWNARROW DIK_DOWN
 #define DIK_PGDN DIK_NEXT
 
+typedef struct _DIDEVICEOBJECTDATA {
+	DWORD dwOfs;
+	DWORD dwData;
+	DWORD dwTimeStamp;
+	DWORD dwSequence;
+} DIDEVICEOBJECTDATA;
+
 #endif

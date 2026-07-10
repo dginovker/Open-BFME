@@ -1003,3 +1003,11 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
+?erase@?$list@PAVDrawable@@V?$allocator@PAVDrawable@@@_STL@@@_STL@@QAE?AU?$_List_iterator@PAVDrawable@@U?$_Nonconst_traits@PAVDrawable@@@_STL@@@2@U32@0@Z,0x00015348,ILT thunk to 0x00234C10
+?getNextSubToken@INI@@QAEPBDPBD@Z,0x00850B00,INI parser
+?scanInt@INI@@SAHPBD@Z,0x00852620,INI parser
+?loadDockPositions@DockUpdate@@IAEXXZ,0x0000C595,ILT thunk to 0x002CB0A0
+?isUsingAirborneLocomotor@Object@@QBE_NXZ,0x0000A001,ILT thunk to 0x001C1770
+??0W3DDisplay@@QAE@XZ,0x00002432
+??0W3DGameWindowManager@@QAE@XZ,0x00021701
+?addScorch@BaseHeightMapRenderObjClass@@QAEXVVector3@@MW4Scorches@@@Z,0x00047906

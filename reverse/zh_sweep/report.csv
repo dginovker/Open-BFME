@@ -2980,4 +2980,60 @@ GameEngine/Source/GameNetwork/Transport.cpp,ok,0,0,19,,0
 GameEngine/Source/GameNetwork/User.cpp,ok,0,1,8,,0
 GameEngine/Source/GameNetwork/WOLBrowser/WebBrowser.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h,0
 GameEngine/Source/Precompiled/PreRTS.cpp,ok,0,0,0,,0
-GameEngine/Source/GameLogic/ScriptEngine/VictoryConditions.cpp,ok,0,4,15,,0
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,missing-header,0,0,0,GameSpy/Peer/Peer.h,0
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,missing-header,0,0,0,GameSpy/GP/GP.h,0
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,missing-header,0,0,0,GameSpy/gstats/gpersist.h,0
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'result',0
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,ok,7,84,264,,7
+GameEngine/Source/Common/UserPreferences.cpp,ok,3,32,166,,3
+GameEngine/Source/GameClient/GUI/GUICallbacks/Diplomacy.cpp,ok,1,2,32,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupHostGame.cpp,ok,1,12,48,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupJoinGame.cpp,ok,1,0,14,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupLadderSelect.cpp,ok,0,5,29,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPlayerInfo.cpp,ok,0,13,50,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,compile-error,0,0,0,C2065 'GP_ONLINE' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,compile-error,0,0,0,C2065 'GP_OFFLINE' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLGameSetupMenu.cpp,ok,1,13,87,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,compile-error,0,0,0,C2065 'PEERFullRoom' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLocaleSelectPopup.cpp,ok,0,6,17,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,ok,1,28,79,,1
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,compile-error,0,0,0,C2065 'GP_RECV_GAME_INVITE' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,compile-error,0,0,0,C2065 'PEERInviteOnlyRoom' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLMapSelectMenu.cpp,ok,0,0,12,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu.cpp,ok,1,33,106,,1
+GameEngine/Source/GameClient/GUI/LoadScreen.cpp,ok,1,8,54,,1
+GameEngine/Source/GameClient/GUI/Shell/Shell.cpp,ok,2,2,32,,2
+GameEngine/Source/GameNetwork/GameSpy/Chat.cpp,ok,0,11,37,,0
+GameEngine/Source/GameNetwork/GameSpy/LadderDefs.cpp,ok,1,8,60,,1
+GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,compile-error,0,0,0,C2065 'GP_STAGING' : undeclared identifier,0
+GameEngine/Source/GameNetwork/NAT.cpp,ok,3,3,39,,3
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,ok,3,34,94,,3
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,compile-error,0,0,0,C2065 'PEERInviteOnlyRoom' : undeclared identifier,0
+GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,ok,8,7,38,,8
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,compile-error,0,0,0,C2065 'PEERBannedFromRoom' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,missing-header,0,0,0,EABrowserDispatch/BrowserDispatch.h,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,compile-error,0,0,0,C2065 'PEERBadPassword' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,ok,2,19,98,,2
+GameEngine/Source/GameLogic/System/GameLogic.cpp,ok,2,51,204,,2
+GameEngine/Source/GameNetwork/GameSpy/StagingRoomGameInfo.cpp,compile-error,0,0,0,"C3861 'bind_ptr': identifier not found, even with argument-dependent lookup",0
+GameEngine/Source/GameNetwork/GameSpy/Thread/PeerThread.cpp,compile-error,0,0,0,C2065 'NUM_RESERVED_KEYS' : undeclared identifier,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2065 'GP_NEWPROFILE_BAD_NICK' : undeclared identifier,0
+GameEngine/Source/GameNetwork/GameSpyOverlay.cpp,ok,1,0,13,,1
+GameEngine/Source/GameClient/MessageStream/CommandXlat.cpp,ok,0,8,46,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPlayerInfo.cpp,ok,0,13,50,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupLadderSelect.cpp,ok,0,5,29,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLocaleSelectPopup.cpp,ok,0,6,17,,0
+GameEngine/Source/GameNetwork/GameSpyGameInfo.cpp,compile-error,0,0,0,C1189 #error :  this file is obsolete,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2227 left of '->countrycode' must point to class/struct/union,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,"C3861 'arg': identifier not found, even with argument-dependent lookup",0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,"C2664 'gpSetCallback' : cannot convert parameter 3 from 'void (GPConnection *,void *,void *)' to",0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2065 'GPConnection' : undeclared identifier,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2660 'gpDeleteProfile' : function does not take 1 arguments,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2664 'gpSendBuddyMessage' : cannot convert parameter 3 from 'const char *' to 'const wchar_t *',0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2660 'gpIsConnected' : function does not take 2 arguments,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2196 case value '0' already used,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,compile-error,0,0,0,C2039 'profile' : is not a member of 'GPGetInfoResponseArg',0
+GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThread.cpp,ok,2,31,75,,2

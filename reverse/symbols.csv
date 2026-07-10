@@ -989,3 +989,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?messageCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyMessageArg@@@Z,0x0000E43A
 ?requestCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyRequestArg@@@Z,0x00031D9F
 ?statusCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyStatusArg@@@Z,0x0003BD8B
+?Alloc@FastAllocatorGeneral@@QAEPAXI@Z,0x00AFEE40,decoded from Allocate_Memory call site

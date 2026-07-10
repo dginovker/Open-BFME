@@ -652,7 +652,6 @@ struct MemoryLogStruct
  * HISTORY:                                                                                    *
  *   5/29/2001  gth : Created.                                                                 *
  *=============================================================================================*/
-// ?Allocate_Memory@WWMemoryLogClass@@SAPAXI@Z present-unmatched
 void * WWMemoryLogClass::Allocate_Memory(size_t size)
 {
 	AllocateCount++;

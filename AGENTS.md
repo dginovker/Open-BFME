@@ -31,7 +31,10 @@ The workflow docs: `docs/matching.md` (core byte-matching loop),
 1. `python3 tools/land_ambiguous.py` — string-anchored exact-ambiguous drift
    copies; cheapest wins when available.
 2. `tools/next_work.py` sweep winners → `python3 tools/land_zh.py <Basename>`
-   (one or two at a time; big batches time out).
+   (one or two at a time; big batches time out). If a winner comes back
+   "0 located", the report entry is stale — refresh it with
+   `python3 tools/sweep_generalsmd.py --files <Basename>` and move on; when
+   the whole sweep section is dry, rung 3 is where the volume is.
 3. Grow a shim to unblock swept-out areas: `reverse/zh_sweep/report.csv`
    rows with `missing-header`/`compile-error` blockers. Add MINIMAL verbatim
    declarations to `reference/shims/sweep/`, then re-sweep those files.

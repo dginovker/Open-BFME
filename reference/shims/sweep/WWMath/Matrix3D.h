@@ -1,6 +1,7 @@
 /*
-**  WWMath/Matrix3D.h shim — minimal declaration for sweep compilation
-**  The real Matrix3D is a WWSMath type.
+**  WWMath/Matrix3D.h shim — delegates to the real matrix3d.h
+**  The real header is on the WWMath include path for most TUs.
+**  For sweep TUs that lack WWMath on the path, we include it via relative path.
 */
 
 #pragma once
@@ -8,22 +9,7 @@
 #ifndef _MATRIX3D_H
 #define _MATRIX3D_H
 
-// If the real matrix3d.h was already included, its class Matrix3D is already
-// defined; skip our shim entirely.
-#ifndef MATRIX3D_H
-
 #include "../../../../../CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWMath/vector3.h"
-
-class Matrix3D
-{
-public:
-	float Row[3][3];
-
-	static void Transform_Vector(const Matrix3D& tm, const struct Vector3& in, struct Vector3* out);
-	static void Rotate_Vector(const Matrix3D& tm, const struct Vector3& in, struct Vector3* out);
-	void Make_Identity();
-};
-
-#endif // MATRIX3D_H
+#include "../../../../../CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWMath/matrix3d.h"
 
 #endif // _MATRIX3D_H

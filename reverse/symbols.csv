@@ -994,3 +994,4 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?read_texture_ids@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z,0x0096DB40,decoded from read_texture_stage call site
 ?SetLobbyAttemptHostJoin@@YAX_N@Z,0x0000362A
 ?PopulateLobbyPlayerListbox@@YAXXZ,0x000070B3
+??$_M_allocate_and_copy@PBUICoord2D@@@?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@IAEPAUICoord2D@@IPBU2@0@Z,0x009F5370,decoded from vector assign call site

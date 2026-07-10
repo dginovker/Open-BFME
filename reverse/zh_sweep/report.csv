@@ -3165,3 +3165,50 @@ GameEngine/Source/Common/Audio/simpleplayer.cpp,compile-error,0,0,0,C2065 'MAX_P
 GameEngine/Source/Common/Audio/simpleplayer.cpp,compile-error,0,0,0,"C3861 'wcsstr': identifier not found, even with argument-dependent lookup",0
 GameEngine/Source/Common/Audio/simpleplayer.cpp,compile-error,0,0,0,C2664 'wcsstr' : cannot convert parameter 2 from 'const unsigned short [4]' to 'const wchar_t *',0
 GameEngine/Source/Common/Audio/simpleplayer.cpp,compile-error,0,0,0,"C3861 'wszFullUrl': identifier not found, even with argument-dependent lookup",0
+Libraries/Source/WPAudio/AUD_Assert.cpp,ok,0,0,0,,0
+Libraries/Source/WPAudio/AUD_Assert.cpp,ok,0,0,0,,0
+Libraries/Source/WPAudio/AUD_Attributes.cpp,compile-error,0,0,0,C2448 'AudioAttribsUpdate' : function-style initializer appears to be a function definition,0
+Libraries/Source/WPAudio/AUD_Cache.cpp,compile-error,0,0,0,C2371 'AudioCacheItem' : redefinition; different basic types,0
+Libraries/Source/WPAudio/AUD_Channel.cpp,compile-error,0,0,0,C2065 'AudioChannel' : undeclared identifier,0
+Libraries/Source/WPAudio/AUD_DSoundDriver.cpp,missing-header,0,0,0,dsound.h,0
+Libraries/Source/WPAudio/AUD_Device.cpp,compile-error,0,0,0,C2501 '__unnamed::devListAccess' : missing storage-class or type specifiers,0
+Libraries/Source/WPAudio/AUD_Events.cpp,compile-error,0,0,0,C2501 'audioCache' : missing storage-class or type specifiers,0
+Libraries/Source/WPAudio/AUD_Level.cpp,compile-error,0,0,0,"C3861 'level': identifier not found, even with argument-dependent lookup",0
+Libraries/Source/WPAudio/AUD_List.cpp,compile-error,0,0,0,C2448 'ListAddNode' : function-style initializer appears to be a function definition,0
+Libraries/Source/WPAudio/AUD_Lock.cpp,ok,0,0,0,,0
+Libraries/Source/WPAudio/AUD_Memory.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '*',0
+Libraries/Source/WPAudio/AUD_Profiler.cpp,compile-error,0,0,0,C2065 'ProfileData' : undeclared identifier,0
+Libraries/Source/WPAudio/AUD_Source.cpp,compile-error,0,0,0,C2447 '{' : missing function header (old-style formal list?),0
+Libraries/Source/WPAudio/AUD_StreamBuffering.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '*',0
+Libraries/Source/WPAudio/AUD_Streamer.cpp,compile-error,0,0,0,C2501 'AudioStreamerTag::format' : missing storage-class or type specifiers,0
+Libraries/Source/WPAudio/AUD_Time.cpp,compile-error,0,0,0,C2146 syntax error : missing ';' before identifier 'failsafeGetTime',0
+Libraries/Source/WPAudio/AUD_Windows.cpp,missing-header,0,0,0,mmreg.h,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ChallengeMenu.cpp,ok,0,2,22,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/DisconnectWindow.cpp,ok,0,1,7,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/EstablishConnectionsWindow.cpp,ok,0,0,7,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/KeyboardOptionsMenu.cpp,ok,0,1,14,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/LanGameOptionsMenu.cpp,ok,0,8,46,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/LanLobbyMenu.cpp,ok,0,6,47,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/LanMapSelectMenu.cpp,ok,0,1,27,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp,compile-error,0,0,0,C2065 '_P_NOWAIT' : undeclared identifier,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MapSelectMenu.cpp,ok,0,1,27,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/NetworkDirectConnect.cpp,ok,0,2,29,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupCommunicator.cpp,ok,0,0,6,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupLadderSelect.cpp,ok,0,5,29,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPlayerInfo.cpp,ok,0,13,50,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupSaveLoad.cpp,ok,0,0,18,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/QuitMenu.cpp,ok,0,0,16,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ReplayMenu.cpp,ok,0,3,37,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,ok,0,28,79,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/SinglePlayerMenu.cpp,ok,0,0,7,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/SkirmishGameOptionsMenu.cpp,ok,0,16,111,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/SkirmishMapSelectMenu.cpp,ok,0,0,11,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLCustomScoreScreen.cpp,ok,0,0,6,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLGameSetupMenu.cpp,ok,0,13,87,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLadderScreen.cpp,ok,0,0,6,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLocaleSelectPopup.cpp,ok,0,6,17,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLMapSelectMenu.cpp,ok,0,0,12,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLMessageWindow.cpp,ok,0,0,6,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQMScoreScreen.cpp,ok,0,0,6,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLStatusMenu.cpp,ok,0,0,6,,0
+GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLWelcomeMenu.cpp,compile-error,0,0,0,"C2782 'T max(T,T)' : template parameter 'T' is ambiguous",0

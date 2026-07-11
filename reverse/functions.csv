@@ -3581,3 +3581,4 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?getClassMemoryPool@SpecialAbility@@CAPAVMemoryPool@@XZ,,0x002A6520,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@AnimatedParticleSysBoneClientUpdate@@CAPAVMemoryPool@@XZ,,0x00602F60,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
 ?getClassMemoryPool@BeaconClientUpdate@@CAPAVMemoryPool@@XZ,,0x00603130,104,src/zh/modulefactory.cpp,matched,pool-glue cascade; copy proven by verify_string_refs
+?getClassMemoryPool@BoneFXDamage@@CAPAVMemoryPool@@XZ,,0x002507C0,104,src/zh/bonefxdamage.cpp,matched,pool-glue cascade; copy proven by verify_string_refs

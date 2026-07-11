@@ -3568,3 +3568,6 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?Get_Spot_Direction@LightClass@@QBEXAAVVector3@@@Z,,0x00903870,33,src/zh/lightenvironment.cpp,matched,exact after camera shim (RenderObjClass +0x34)
 ?Set_Ambient@LightClass@@QAEXABVVector3@@@Z,,0x006E7980,33,src/zh/w3dscene.cpp,matched,exact after camera shim
 ?setEnabled@W3DDynamicLight@@QAEX_N@Z,,0x006E7A90,39,src/zh/w3dscene.cpp,matched,exact after camera shim
+?adjustVector@@YAXPAUCoord3D@@PBVMatrix3D@@@Z,,0x00429350,84,src/zh/fxlist.cpp,matched,identical-bytes drift row; string-anchored; ICF-folded template instantiation
+??0?$DynamicVectorClass@PAVVertexMaterialClass@@@@QAE@IPBQAVVertexMaterialClass@@@Z,,0x00981490,93,src/zh/matinfo.cpp,matched,identical-bytes drift row; string-anchored; ICF-folded template instantiation
+?Put_TextBlock@INIClass@@QAE_NPBD0@Z,,0x009E56B0,257,src/w3d/ini.cpp,matched,identical-bytes drift row; string-anchored; ICF-folded template instantiation

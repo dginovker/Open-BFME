@@ -1859,7 +1859,6 @@ Bool TerrainLogic::objectInteractsWithBridgeLayer(Object *obj, Int layer, Bool c
 //-------------------------------------------------------------------------------------------------
 /** Determines whether the object interacts with the bridge on specified layer. */
 //-------------------------------------------------------------------------------------------------
-// ?objectInteractsWithBridgeEnd@TerrainLogic@@UBE_NPAVObject@@H@Z present-unmatched
 Bool TerrainLogic::objectInteractsWithBridgeEnd(Object *obj, Int layer) const
 {
 	if (layer == LAYER_GROUND) return NULL;

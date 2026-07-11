@@ -704,6 +704,12 @@ private:
 	Object *			m_prev;
 	ObjectStatusMaskType		m_status;									///< status bits (see ObjectStatusMaskType)
 
+	// BFME layout reconciliation: 16 more bytes before m_geometryInfo; retail
+	// reads m_geometryInfo.m_minorRadius at this+0xbc where the ZH+pad layout
+	// gives this+0xac (objectInteractsWithBridgeEnd). m_next/m_prev/m_id stay
+	// pinned by matched setProducer/setBuilder/isInList.
+	UnsignedByte		_bfme_obj_pad2[16];
+
 	GeometryInfo	m_geometryInfo;
 
 	AIGroup*			m_group;								///< if non-NULL, we are part of this group of agents

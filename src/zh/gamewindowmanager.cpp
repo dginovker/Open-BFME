@@ -768,7 +768,6 @@ GameWindow *GameWindowManager::winGetFocus( void )
 //-------------------------------------------------------------------------------------------------
 /** Set the current input focus */
 //-------------------------------------------------------------------------------------------------
-// ?winSetFocus@GameWindowManager@@UAEHPAVGameWindow@@@Z present-unmatched
 Int GameWindowManager::winSetFocus( GameWindow *window )
 {
 	Bool wantsFocus = FALSE;
@@ -819,7 +818,6 @@ Int GameWindowManager::winSetFocus( GameWindow *window )
 //-------------------------------------------------------------------------------------------------
 /** Process key press through the GUI. */
 //-------------------------------------------------------------------------------------------------
-// ?winProcessKey@GameWindowManager@@UAE?AW4WinInputReturnCode@@EE@Z present-unmatched
 WinInputReturnCode GameWindowManager::winProcessKey( UnsignedByte key, 
 																										 UnsignedByte state )
 {

@@ -1148,3 +1148,5 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ?OnEnd@DownloadManager@@UAEJXZ,0x000044E4,ILT thunk used by call site
 ?downloadNextQueuedFile@DownloadManager@@QAEJXZ,0x00038F00,ILT thunk used by call site
 ??0DownloadManager@@QAE@XZ,0x0001958D,ILT thunk used by call site
+??0WriteLockClass@VertexBufferClass@@QAE@PAV1@H@Z,0x0091DD70,REL32 callee pin
+??1WriteLockClass@VertexBufferClass@@QAE@XZ,0x0091DE10,REL32 callee pin

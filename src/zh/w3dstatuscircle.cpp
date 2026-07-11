@@ -25,6 +25,11 @@
 //																																						//
 ////////////////////////////////////////////////////////////////////////////////
 
+// BFME ShaderClass is 16 bytes (3 extra dwords after ShaderBits) — pull the
+// shadow shim in before any WW3D2 header grabs the real 4-byte shader.h via
+// a same-directory quoted include (assetmgr.h etc.). See shim header comment.
+#include "WW3D2/Shader.h"
+
 #include "W3DDevice/GameClient/W3DStatusCircle.h"
 
 #include <stdio.h>
@@ -195,7 +200,6 @@ Int W3DStatusCircle::initData(void)
 
 /** updateCircleVB puts a circle with a team color vertex buffer. */
 
-// ?updateCircleVB@W3DStatusCircle@@IAEHXZ present-unmatched
 Int W3DStatusCircle::updateCircleVB(void)
 {
 	Int i, k;
@@ -253,7 +257,6 @@ Int W3DStatusCircle::updateCircleVB(void)
 
 /** updateCircleVB puts a circle with a team color vertex buffer. */
 
-// ?updateScreenVB@W3DStatusCircle@@IAEHH@Z present-unmatched
 Int W3DStatusCircle::updateScreenVB(Int diffuse)
 {
 	DX8VertexBufferClass	*pVB = m_vertexBufferScreen;

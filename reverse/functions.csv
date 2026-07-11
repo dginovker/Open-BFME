@@ -3685,3 +3685,5 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?OnError@DownloadManagerMunkee@@UAEJH@Z,,0x004C79A0,129,src/zh/downloadmenu.cpp,matched,gametext vtable fix
 ?OnEnd@DownloadManagerMunkee@@UAEJXZ,,0x004C7A50,217,src/zh/downloadmenu.cpp,matched,gametext vtable fix
 ?DownloadMenuInit@@YAXPAVWindowLayout@@PAX@Z,,0x004C74B0,459,src/zh/downloadmenu.cpp,matched,gametext vtable fix
+?updateCircleVB@W3DStatusCircle@@IAEHXZ,,0x007260F0,324,src/zh/w3dstatuscircle.cpp,matched,shaderclass fix
+?updateScreenVB@W3DStatusCircle@@IAEHH@Z,,0x00725DE0,221,src/zh/w3dstatuscircle.cpp,matched,shaderclass fix

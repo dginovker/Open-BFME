@@ -239,6 +239,19 @@ struct IDirect3DDevice8 {
 	virtual HRESULT __stdcall BeginScene() = 0;
 	virtual HRESULT __stdcall EndScene() = 0;
 	virtual HRESULT __stdcall Clear(DWORD, const void*, DWORD, D3DCOLOR, float, DWORD) = 0;
+	// Retail BFME device vtable is SDK + 7 slots from SetTransform onward: retail
+	// calls SetTransform at +0xb0 (SDK +0x94), GetTransform +0xb4 (SDK +0x98),
+	// SetRenderState +0xe4 (SDK +0xc8). Seven pure-virtuals occupied these slots
+	// in BFME's d3d8 header; their signatures are unknown and unused by our
+	// sources, but the slots must exist so every later method lands on the
+	// retail vtable offset.
+	virtual HRESULT __stdcall DevReserved37(DWORD) = 0;
+	virtual HRESULT __stdcall DevReserved38(DWORD) = 0;
+	virtual HRESULT __stdcall DevReserved39(DWORD) = 0;
+	virtual HRESULT __stdcall DevReserved40(DWORD) = 0;
+	virtual HRESULT __stdcall DevReserved41(DWORD) = 0;
+	virtual HRESULT __stdcall DevReserved42(DWORD) = 0;
+	virtual HRESULT __stdcall DevReserved43(DWORD) = 0;
 	virtual HRESULT __stdcall SetTransform(DWORD, const void*) = 0;
 	virtual HRESULT __stdcall GetTransform(DWORD, void*) = 0;
 	virtual HRESULT __stdcall MultiplyTransform(DWORD, const void*) = 0;

@@ -34,3 +34,11 @@ __real@3f800000
 # File-scope static `parentPopup` exists independently in two GameSpy popup TUs;
 # same symbol name in each obj, genuinely two variables in retail.
 _parentPopup
+# File-scope static `_parent` exists independently in the download-menu and popup-replay
+# TUs (both zero-initialized); same symbol name, genuinely two variables in retail.
+_parent
+# BitFlags<0xHF>::s_bitNameList materializes per-TU with different initializer arrays
+# (drawable.cpp's TAUNT/CHEER/HERO_CHEER/POINT list at 0xea687c; modelconditionupgrade.cpp's
+# CINEMA/HUD list at 0xec51bc). Both are retail-true references from byte-matched functions —
+# same class of per-TU static as _Table@CRC / __real@3f800000 above.
+?s_bitNameList@?$BitFlags@$0HF@@@0PAPBDA

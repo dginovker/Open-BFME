@@ -1063,7 +1063,6 @@ int INIClass::Get_UUBlock(char const * section, char const *entry, void * block,
  * HISTORY:                                                                                    *
  *   07/03/1996 JLB : Created.                                                                 *
  *=============================================================================================*/
-// ?Put_TextBlock@INIClass@@QAE_NPBD0@Z absent-from-retail
 bool INIClass::Put_TextBlock(char const * section, char const * text)
 {
 	if (section == NULL) return(false);

@@ -3637,3 +3637,4 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?friend_newModuleInstance@UnitCrateCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011F030,96,src/zh/modulefactory.cpp,matched,module-glue exact match (ctor pinned)
 ?friend_newModuleInstance@VeterancyCrateCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011F0E0,96,src/zh/modulefactory.cpp,matched,module-glue exact match (ctor pinned)
 ?friend_newModuleInstance@SalvageCrateCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011F190,96,src/zh/modulefactory.cpp,matched,module-glue exact match (ctor pinned)
+?findBestInfoSlow@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@ABEPBVArmorTemplateSet@@ABV?$vector@VArmorTemplateSet@@V?$allocator@VArmorTemplateSet@@@_STL@@@_STL@@ABV?$BitFlags@$0L@@@@Z,,0x00144300,192,src/zh/thingtemplate.cpp,matched,BFME ArmorSetFlags=11 bits (shadow shim ArmorSet.h)

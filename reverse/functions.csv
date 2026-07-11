@@ -3561,3 +3561,8 @@ _powf,,0x00097070,14,src/w3d/vp.cpp,matched,
 ?Project_Camera_Space_Point@CameraClass@@QBE?AW4ProjectionResType@1@AAVVector3@@ABV3@@Z,,0x00932DE0,381,src/zh/camera.cpp,matched,RenderObjClass +0x34 (camera shim)
 ?Transform_To_View_Space@CameraClass@@QBEXAAVVector3@@ABV2@@Z,,0x00932F60,170,src/zh/camera.cpp,matched,RenderObjClass +0x34 (camera shim)
 ?Rotate_To_View_Space@CameraClass@@QBEXAAVVector3@@ABV2@@Z,,0x00933010,152,src/zh/camera.cpp,matched,RenderObjClass +0x34 (camera shim)
+?Cull_Sphere@CameraClass@@QBE_NABVSphereClass@@@Z,,0x006F7C80,38,src/zh/scene.cpp,matched,exact after camera shim (RenderObjClass +0x34)
+?Get_Ambient@LightClass@@QBEXPAVVector3@@@Z,,0x006C54F0,37,src/zh/lightenvironment.cpp,matched,exact after camera shim (RenderObjClass +0x34)
+?Get_Diffuse@LightClass@@QBEXPAVVector3@@@Z,,0x006C5520,37,src/zh/lightenvironment.cpp,matched,exact after camera shim (RenderObjClass +0x34)
+?Get_Far_Attenuation_Range@LightClass@@QBEXAAN0@Z,,0x006C5550,27,src/zh/lightenvironment.cpp,matched,exact after camera shim (RenderObjClass +0x34)
+?Get_Spot_Direction@LightClass@@QBEXAAVVector3@@@Z,,0x00903870,33,src/zh/lightenvironment.cpp,matched,exact after camera shim (RenderObjClass +0x34)

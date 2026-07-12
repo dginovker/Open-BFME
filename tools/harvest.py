@@ -74,6 +74,14 @@ def compile_obj(source, includes):
     if result.returncode != 0:
         print("COMPILE FAILED:\n" + result.stdout[-3000:])
         raise SystemExit(1)
+    # Wine's VC7 driver lowercases the /Fo basename for some mixed-case sources
+    # (notably AI.cpp).  Use the object it actually produced rather than
+    # rejecting an otherwise successful compile on this case-sensitive host.
+    if not obj.exists():
+        matches = [p for p in obj.parent.glob("*.harvest.obj")
+                   if p.name.casefold() == obj.name.casefold()]
+        if len(matches) == 1:
+            obj = matches[0]
     return obj
 
 

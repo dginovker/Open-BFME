@@ -3543,3 +3543,6 @@ GameEngine/Source/Common/System/encrypt.cpp,ok,0,0,1,,0
 GameEngine/Source/Common/crc.cpp,ok,0,0,0,,0
 GameEngine/Source/GameClient/Color.cpp,ok,0,1,0,,0
 GameEngine/Source/GameClient/Statistics.cpp,ok,0,0,0,,0
+GameEngine/Source/GameLogic/AI/AI.cpp,ok,0,12,59,,0
+Libraries/Source/debug/debug_stack.cpp,ok,0,2,2,,0
+GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DRopeDraw.cpp,ok,0,14,19,,0

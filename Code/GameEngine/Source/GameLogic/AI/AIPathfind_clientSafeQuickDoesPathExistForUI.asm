@@ -1,0 +1,58 @@
+.386
+.model flat
+
+; ?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z
+; Exact 375 retail bytes @ 0x003D96A3
+_TEXT SEGMENT
+public ?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z
+?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z PROC
+    db 53h,55h,56h,8Bh,74h,24h,2Ch,57h
+    db 56h,8Bh,0F9h,8Bh,0Dh,0CCh,0F4h,2Eh
+    db 01h,6Ah,00h,0E8h,0BAh,2Fh,0C4h,0FFh
+    db 8Bh,6Ch,24h,2Ch,8Bh,0Dh,0CCh,0F4h
+    db 2Eh,01h,55h,6Ah,00h,8Bh,0D8h,0E8h
+    db 0A6h,2Fh,0C4h,0FFh,89h,44h,24h,30h
+    db 8Dh,44h,24h,10h,50h,55h,8Bh,0CFh
+    db 0E8h,08h,0DBh,0C3h,0FFh,8Bh,4Ch,24h
+    db 14h,8Bh,54h,24h,10h,8Bh,44h,24h
+    db 30h,51h,52h,50h,8Bh,0CFh,0E8h,7Bh
+    db 6Fh,0C4h,0FFh,8Dh,4Ch,24h,10h,51h
+    db 56h,8Bh,0CFh,8Bh,0E8h,0E8h,0E3h,0DAh
+    db 0C3h,0FFh,8Bh,54h,24h,14h,8Bh,44h
+    db 24h,10h,52h,50h,53h,8Bh,0CFh,0E8h
+    db 5Ah,6Fh,0C4h,0FFh,8Bh,4Ch,24h,28h
+    db 8Bh,51h,10h,89h,54h,24h,18h,0C6h
+    db 44h,24h,1Ch,00h,0C6h,44h,24h,1Dh
+    db 00h,0C7h,44h,24h,20h,0FFh,0FFh,0FFh
+    db 0FFh,0Fh,0B7h,6Dh,08h,8Bh,0D8h,55h
+    db 8Dh,44h,24h,1Ch,8Dh,0B7h,9Ch,0Ch
+    db 00h,00h,50h,8Bh,0CEh,0E8h,0Fh,0A0h
+    db 0C6h,0FFh,0Fh,0B7h,5Bh,08h,53h,8Dh
+    db 4Ch,24h,1Ch,51h,8Bh,0CEh,0Fh,0B7h
+    db 0E8h,0E8h,0FBh,9Fh,0C6h,0FFh,55h,8Dh
+    db 54h,24h,1Ch,52h,8Bh,0CEh,0Fh,0B7h
+    db 0D8h,0E8h,0FBh,0C1h,0C6h,0FFh,0Fh,0B7h
+    db 0E8h,53h,8Dh,44h,24h,1Ch,50h,8Bh
+    db 0CEh,0E8h,0EBh,0C1h,0C6h,0FFh,8Dh,4Ch
+    db 24h,18h,55h,51h,0Fh,0B7h,0D8h,8Bh
+    db 0CEh,0E8h,0CBh,9Fh,0C6h,0FFh,53h,8Dh
+    db 54h,24h,1Ch,52h,8Bh,0CEh,0Fh,0B7h
+    db 0E8h,0E8h,0BBh,9Fh,0C6h,0FFh,0Fh,0B7h
+    db 0D8h,3Bh,0EBh,74h,49h,8Dh,8Fh,5Ch
+    db 08h,00h,00h,0C7h,44h,24h,30h,00h
+    db 00h,00h,00h,89h,4Ch,24h,2Ch,8Dh
+    db 9Bh,00h,00h,00h,00h,8Ah,41h,34h
+    db 84h,0C0h,74h,15h,8Bh,44h,24h,28h
+    db 53h,55h,50h,56h,0E8h,0ABh,5Bh,0C4h
+    db 0FFh,84h,0C0h,75h,25h,8Bh,4Ch,24h
+    db 2Ch,8Bh,44h,24h,30h,40h,83h,0C1h
+    db 44h,83h,0F8h,0Fh,89h,44h,24h,30h
+    db 89h,4Ch,24h,2Ch,7Eh,0CFh,5Fh,5Eh
+    db 5Dh,33h,0C0h,5Bh,83h,0C4h,14h,0C2h
+    db 0Ch,00h,8Bh,44h,24h,30h,6Bh,0C0h
+    db 44h,8Dh,8Ch,38h,5Ch,08h,00h,00h
+    db 0E8h,09h,0BDh,0C3h,0FFh,5Fh,5Eh,5Dh
+    db 5Bh,83h,0C4h,14h,0C2h,0Ch,00h
+?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z ENDP
+_TEXT ENDS
+END

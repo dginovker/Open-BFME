@@ -1,0 +1,57 @@
+.386
+.model flat
+
+; ?update@WaypointMap@@QAEXXZ
+; Exact 363 retail bytes @ 0x00454EF3
+_TEXT SEGMENT
+public ?update@WaypointMap@@QAEXXZ
+?update@WaypointMap@@QAEXXZ PROC
+    db 0A1h,00h,00h,00h,00h,68h,0B8h,3Fh
+    db 02h,01h,50h,0A1h,88h,15h,2Fh,01h
+    db 64h,89h,25h,00h,00h,00h,00h,83h
+    db 0ECh,08h,53h,55h,56h,57h,33h,0FFh
+    db 3Bh,0C7h,8Bh,0D9h,75h,1Ah,0C7h,43h
+    db 0Ch,01h,00h,00h,00h,8Bh,4Ch,24h
+    db 18h,64h,89h,0Dh,00h,00h,00h,00h
+    db 5Fh,5Eh,5Dh,5Bh,83h,0C4h,14h,0C3h
+    db 39h,7Bh,04h,74h,1Fh,8Bh,03h,8Bh
+    db 48h,04h,51h,8Bh,0CBh,0E8h,61h,0E4h
+    db 0BEh,0FFh,8Bh,03h,89h,40h,08h,8Bh
+    db 13h,89h,7Ah,04h,8Bh,03h,89h,40h
+    db 0Ch,89h,7Bh,04h,0B9h,00h,7Ah,2Ah
+    db 01h,0E8h,0A3h,43h,0BBh,0FFh,8Bh,0Dh
+    db 00h,0D6h,2Eh,01h,50h,8Dh,44h,24h
+    db 14h,50h,0E8h,08h,9Dh,0BEh,0FFh,8Bh
+    db 2Dh,88h,15h,2Fh,01h,8Dh,4Ch,24h
+    db 10h,51h,8Bh,0CDh,89h,7Ch,24h,24h
+    db 0E8h,27h,0BBh,0BBh,0FFh,8Bh,0F0h,3Bh
+    db 75h,00h,74h,1Fh,8Dh,54h,24h,10h
+    db 52h,8Bh,0CBh,0E8h,0FCh,7Dh,0BBh,0FFh
+    db 83h,0C6h,14h,8Bh,0Eh,89h,08h,8Bh
+    db 56h,04h,89h,50h,04h,8Bh,4Eh,08h
+    db 89h,48h,08h,8Dh,6Bh,0Ch,89h,7Dh
+    db 00h,33h,0C0h,8Dh,70h,01h,56h,51h
+    db 89h,64h,24h,1Ch,8Bh,0CCh,68h,0E4h
+    db 32h,08h,01h,0E8h,0F5h,3Bh,43h,00h
+    db 8Dh,54h,24h,18h,52h,0E8h,1Bh,40h
+    db 43h,00h,8Bh,0Dh,88h,15h,2Fh,01h
+    db 83h,0C4h,0Ch,8Dh,44h,24h,10h,50h
+    db 0E8h,0C7h,0BAh,0BBh,0FFh,8Bh,0Dh,88h
+    db 15h,2Fh,01h,8Bh,0F8h,3Bh,39h,74h
+    db 2Dh,8Dh,54h,24h,10h,52h,8Bh,0CBh
+    db 0E8h,97h,7Dh,0BBh,0FFh,83h,0C7h,14h
+    db 8Bh,0Fh,89h,08h,8Bh,57h,04h,89h
+    db 50h,04h,8Bh,4Fh,08h,89h,48h,08h
+    db 8Bh,55h,00h,42h,8Bh,0C6h,83h,0F8h
+    db 08h,89h,55h,00h,7Ch,95h,83h,7Dh
+    db 00h,01h,0C7h,44h,24h,14h,01h,00h
+    db 00h,00h,8Dh,44h,24h,14h,7Ch,02h
+    db 8Bh,0C5h,8Bh,10h,8Dh,4Ch,24h,10h
+    db 89h,55h,00h,0C7h,44h,24h,20h,0FFh
+    db 0FFh,0FFh,0FFh,0E8h,0F5h,28h,43h,00h
+    db 8Bh,4Ch,24h,18h,5Fh,5Eh,5Dh,64h
+    db 89h,0Dh,00h,00h,00h,00h,5Bh,83h
+    db 0C4h,14h,0C3h
+?update@WaypointMap@@QAEXXZ ENDP
+_TEXT ENDS
+END

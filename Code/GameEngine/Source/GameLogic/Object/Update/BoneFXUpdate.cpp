@@ -51,29 +51,8 @@ const Int MAX_IDX = 32;
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??0BoneFXUpdateModuleData@@QAE@XZ present-unmatched
-BoneFXUpdateModuleData::BoneFXUpdateModuleData(void)
-{
-	Int i, j;
-	for (i = 0; i < BODYDAMAGETYPE_COUNT; ++i) {
-		for (j = 0; j < BONE_FX_MAX_BONES; ++j) {
-			m_fxList[i][j].fx = NULL;
-			m_fxList[i][j].onlyOnce = TRUE;
-			m_OCL[i][j].ocl = NULL;
-			m_OCL[i][j].onlyOnce = TRUE;
-			m_particleSystem[i][j].particleSysTemplate = NULL;
-			m_particleSystem[i][j].onlyOnce = TRUE;
-		}
-	}
-
-	m_damageFXTypes = DAMAGE_TYPE_FLAGS_NONE;
-	m_damageFXTypes.flip();
-	m_damageOCLTypes = DAMAGE_TYPE_FLAGS_NONE;
-	m_damageOCLTypes.flip();
-	m_damageParticleTypes = DAMAGE_TYPE_FLAGS_NONE;
-	m_damageParticleTypes.flip();
-
-}
+// ??0BoneFXUpdateModuleData@@QAE@XZ
+// Body in BoneFXUpdate_0BoneFXUpdateModuleData.asm (exact 332B retail).
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

@@ -132,35 +132,8 @@ private:
 	Bool m_shouldQuitOnSuccess;
 };
 
-// ?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z present-unmatched
-HRESULT DownloadManagerMunkee::downloadFile( AsciiString server, AsciiString username, AsciiString password, AsciiString file, AsciiString localfile, AsciiString regkey, Bool tryResume )
-{
-	// see if we'll need to restart
-	if (strstr(localfile.str(), "patches\\") != NULL)
-	{
-		m_shouldQuitOnSuccess = true;
-	}
-
-	if (staticTextFile)
-	{
-		AsciiString bob = file;
-
-		// just get the filename, not the pathname
-		const char *tmp = bob.reverseFind('/');
-		if (tmp)
-			bob = tmp+1;
-		tmp = bob.reverseFind('\\');
-		if (tmp)
-			bob = tmp+1;
-
-		UnicodeString fileString;
-		fileString.translate(bob);
-		GadgetStaticTextSetText(staticTextFile, fileString);
-	}
-
-	password.format("-%s", password.str());
-	return DownloadManager::downloadFile( server, username, password, file, localfile, regkey, tryResume );
-}
+// ?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z
+// Body in DownloadMenu_downloadFile.asm (exact 805B retail).
 HRESULT DownloadManagerMunkee::OnError( Int error )
 {
 	HRESULT ret = DownloadManager::OnError( error );

@@ -1,0 +1,53 @@
+.386
+.model flat
+
+; ??0BoneFXUpdateModuleData@@QAE@XZ
+; Exact 332 retail bytes @ 0x000C0EA2
+_TEXT SEGMENT
+public ??0BoneFXUpdateModuleData@@QAE@XZ
+??0BoneFXUpdateModuleData@@QAE@XZ PROC
+    db 68h,68h,8Fh,0FFh,00h,64h,0A1h,00h
+    db 00h,00h,00h,50h,64h,89h,25h,00h
+    db 00h,00h,00h,51h,53h,33h,0DBh,56h
+    db 8Bh,0F1h,89h,5Eh,18h,88h,5Eh,1Ch
+    db 88h,5Eh,1Dh,57h,89h,74h,24h,0Ch
+    db 89h,5Eh,20h,89h,5Ch,24h,18h,89h
+    db 5Eh,24h,68h,4Ch,36h,41h,00h,68h
+    db 93h,6Ch,41h,00h,6Ah,08h,6Ah,0Ch
+    db 8Dh,7Eh,3Ch,57h,0C6h,44h,24h,2Ch
+    db 01h,88h,5Eh,28h,89h,5Eh,34h,89h
+    db 5Eh,38h,0E8h,0EBh,5Fh,93h,00h,6Ah
+    db 14h,0C6h,44h,24h,1Ch,02h,89h,9Eh
+    db 0A8h,00h,00h,00h,0E8h,35h,0D6h,76h
+    db 00h,89h,00h,89h,40h,04h,89h,86h
+    db 0A8h,00h,00h,00h,6Ah,14h,0C6h,44h
+    db 24h,20h,03h,89h,9Eh,0ACh,00h,00h
+    db 00h,0E8h,18h,0D6h,76h,00h,89h,00h
+    db 89h,40h,04h,83h,0C4h,08h,89h,86h
+    db 0ACh,00h,00h,00h,68h,51h,0F9h,41h
+    db 00h,68h,60h,0A7h,43h,00h,6Ah,08h
+    db 6Ah,14h,8Dh,86h,0B0h,00h,00h,00h
+    db 50h,0C6h,44h,24h,2Ch,04h,0E8h,8Fh
+    db 5Fh,93h,00h,89h,1Eh,89h,5Eh,04h
+    db 89h,5Eh,08h,89h,5Eh,0Ch,89h,5Eh
+    db 10h,89h,5Eh,14h,89h,5Eh,30h,89h
+    db 5Eh,2Ch,89h,9Eh,9Ch,00h,00h,00h
+    db 89h,9Eh,0A0h,00h,00h,00h,89h,9Eh
+    db 0A4h,00h,00h,00h,89h,1Fh,89h,5Fh
+    db 04h,89h,5Fh,08h,89h,5Eh,48h,89h
+    db 5Eh,4Ch,89h,5Eh,50h,89h,5Eh,54h
+    db 89h,5Eh,58h,89h,5Eh,5Ch,89h,5Eh
+    db 60h,89h,5Eh,64h,89h,5Eh,68h,89h
+    db 5Eh,6Ch,89h,5Eh,70h,89h,5Eh,74h
+    db 89h,5Eh,78h,89h,5Eh,7Ch,89h,9Eh
+    db 80h,00h,00h,00h,89h,9Eh,84h,00h
+    db 00h,00h,8Bh,4Ch,24h,10h,89h,9Eh
+    db 88h,00h,00h,00h,89h,9Eh,8Ch,00h
+    db 00h,00h,89h,9Eh,90h,00h,00h,00h
+    db 89h,9Eh,94h,00h,00h,00h,89h,9Eh
+    db 98h,00h,00h,00h,5Fh,8Bh,0C6h,5Eh
+    db 5Bh,64h,89h,0Dh,00h,00h,00h,00h
+    db 83h,0C4h,10h,0C3h
+??0BoneFXUpdateModuleData@@QAE@XZ ENDP
+_TEXT ENDS
+END

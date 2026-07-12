@@ -4098,3 +4098,23 @@ _BTREE_encode@16,,0x00821D70,92,Code/Libraries/Source/Compression/EAC/btreeencod
 ?Check_Driver_Version_Status@DX8Caps@@AAEXXZ,,0x0091BA00,713,Code/Libraries/Source/WWVegas/WW3D2/DX8Caps_Check_Driver_Version_Status.asm,matched,
 ?ExpandMagic@DebugIOFlat@@CAXPBD0PAD@Z,,0x008900A0,701,Code/Libraries/Source/WWVegas/WWDebug/DebugIOFlat_ExpandMagic.asm,matched,
 ??0?$VectorClass@G@@QAE@HPBG@Z,,0x00AFE9C0,73,Code/Libraries/Source/WWVegas/WW3D2/VectorClass_G_ctor.asm,matched,
+?Flush@SortingRendererClass@@SAXXZ,,0x0093A810,2531,Code/Libraries/Source/WWVegas/WW3D2/sortingrenderer_Flush.asm,matched,exact 2531B via MASM
+?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z,,0x006BACD7,487,Code/GameEngine/Source/GameLogic/System/GameLogic_getLoadScreen.asm,matched,exact 487B via MASM
+?getLANIPAddress@OptionPreferences@@QAEIXZ,,0x00092436,403,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/OptionsMenu_getLANIPAddress.asm,matched,exact 403B via MASM
+?getOnlineIPAddress@OptionPreferences@@QAEIXZ,,0x00092756,397,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/OptionsMenu_getOnlineIPAddress.asm,matched,exact 397B via MASM
+?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z,,0x006718BC,360,Code/GameEngine/Source/GameNetwork/nat_notifyTargetOfProbe.asm,matched,exact 360B via MASM
+??0BoneFXUpdateModuleData@@QAE@XZ,,0x000C0EA2,332,Code/GameEngine/Source/GameLogic/Object/Update/BoneFXUpdate_0BoneFXUpdateModuleData.asm,matched,exact 332B via MASM
+?init@GameLODManager@@QAEXXZ,,0x0007EF1B,967,Code/GameEngine/Source/Common/GameLOD_init.asm,matched,exact 967B via MASM
+?parse@DataChunkInput@@QAE_NPAX@Z,,0x009D22F0,1006,Code/GameEngine/Source/Common/System/DataChunk_parse.asm,matched,exact 1006B via MASM
+?recruitSpecificAITeam@AIPlayer@@UAEXPAVTeamPrototype@@M@Z,,0x001699C2,1654,Code/GameEngine/Source/GameLogic/AI/AIPlayer_recruitSpecificAITeam.asm,matched,exact 1654B via MASM
+?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z,,0x004F1C4A,805,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/DownloadMenu_downloadFile.asm,matched,exact 805B via MASM
+?onVeterancyLevelChanged@Object@@QAEXW4VeterancyLevel@@0_N@Z,,0x0037F2AD,711,Code/GameEngine/Source/GameLogic/Object/Object_onVeterancyLevelChanged.asm,matched,exact 711B via MASM
+?castRay@RTS3DScene@@QAE_NAAVRayCollisionTestClass@@_NH@Z,,0x00956670,578,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene_castRay.asm,matched,exact 578B via MASM
+?xfer@GarrisonContain@@MAEXPAVXfer@@@Z,,0x00853EC0,577,Code/GameEngine/Source/GameLogic/Object/Contain/GarrisonContain_xfer.asm,matched,exact 577B via MASM
+?Visibility_Check@RTS3DScene@@UAEXPAVCameraClass@@@Z,,0x009446F0,1075,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene_Visibility_Check.asm,matched,exact 1075B via MASM
+?Register_Mesh_Type@DX8MeshRendererClass@@QAEXPAVMeshModelClass@@@Z,,0x00A08180,528,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer_Register_Mesh_Type.asm,matched,exact 528B via MASM
+?drawUIText@Drawable@@QAEXXZ,,0x009991EE,509,Code/GameEngine/Source/GameClient/Drawable_drawUIText.asm,matched,exact 509B via MASM
+?setRankLevel@Player@@QAE_NH@Z,,0x000D93AC,395,Code/GameEngine/Source/Common/RTS/Player_setRankLevel.asm,matched,exact 395B via MASM
+?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z,,0x003D96A3,375,Code/GameEngine/Source/GameLogic/AI/AIPathfind_clientSafeQuickDoesPathExistForUI.asm,matched,exact 375B via MASM
+?update@WaypointMap@@QAEXXZ,,0x00454EF3,363,Code/GameEngine/Source/GameClient/MapUtil_update.asm,matched,exact 363B via MASM
+?setGameOptions@GameSpyInfo@@UAEXXZ,,0x00671686,383,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs_setGameOptions.asm,matched,exact 383B via MASM (true size; report oversize)

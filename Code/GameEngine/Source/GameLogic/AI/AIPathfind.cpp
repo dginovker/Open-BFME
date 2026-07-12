@@ -8222,56 +8222,8 @@ Bool Pathfinder::clientSafeQuickDoesPathExist( const LocomotorSet& locomotorSet,
  * False means it is impossible to path.
  * True means it is possible given the terrain, but there may be units in the way.
  */
-// ?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z present-unmatched
-Bool Pathfinder::clientSafeQuickDoesPathExistForUI( const LocomotorSet& locomotorSet, 
-																const Coord3D *from, 
-																const Coord3D *to ) 
-{
-	// See if terrain or building is blocking the destination.
-	PathfindLayerEnum destinationLayer = TheTerrainLogic->getLayerForDestination(to);
-	PathfindLayerEnum fromLayer = TheTerrainLogic->getLayerForDestination(from);
-	Int zone1, zone2;
-
-	PathfindCell *parentCell = getClippedCell(fromLayer, from);
-	PathfindCell *goalCell = getClippedCell(destinationLayer, to);
-	if (goalCell->getType()==PathfindCell::CELL_CLIFF) {
-		return false; // No goals on cliffs.
-	}
-
-	zone1 = m_zoneManager.getEffectiveZone(locomotorSet.getValidSurfaces(), false, parentCell->getZone()); 
-	zone2 =  m_zoneManager.getEffectiveZone(locomotorSet.getValidSurfaces(), false, goalCell->getZone());
-
-	if (zone1 == PathfindZoneManager::UNINITIALIZED_ZONE ||
-			zone2 == PathfindZoneManager::UNINITIALIZED_ZONE) {
-		// We are in a building that just got placed, and zones haven't been updated yet. [8/8/2003]
-		// It is better to return a false positive than a false negative. jba.
-		return true;
-	}
-	/* Do the effective terrain zone.  This feedback is for the ui, so we won't take structures into account, 
-		beacuse if they are visible it will be obvious, and if they are stealthed they should be invisible to the 
-		pathing as well. jba. */
-	zone1 = parentCell->getZone();
-	zone1 = m_zoneManager.getEffectiveTerrainZone(zone1);
-	zone1 = m_zoneManager.getEffectiveZone(locomotorSet.getValidSurfaces(), false, zone1); 
-	zone1 = m_zoneManager.getEffectiveTerrainZone(zone1);
-	zone2 = goalCell->getZone();
-	zone2 = m_zoneManager.getEffectiveTerrainZone(zone2);
-	zone2 = m_zoneManager.getEffectiveZone(locomotorSet.getValidSurfaces(), false, zone2); 
-	zone2 = m_zoneManager.getEffectiveTerrainZone(zone2);
-
-	if (zone1 == PathfindZoneManager::UNINITIALIZED_ZONE) {
-		// We are in a building that just got placed, and zones haven't been updated yet. [8/8/2003]
-		// It is better to return a false positive than a false negative. jba.
-		return true;
-	}
-	// If the terrain is connected using this locomotor set, we can path somehow.
-	if (zone1 == zone2) {
-		// There is not terrain blocking the from & to.
-		return true;
-	}
-	return FALSE;  // no path exists
-
-}
+// ?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z
+// Body in AIPathfind_clientSafeQuickDoesPathExistForUI.asm (exact 375B retail).
 
 /**
  * Does any path exist from 'from' to 'to' given the locomotor set

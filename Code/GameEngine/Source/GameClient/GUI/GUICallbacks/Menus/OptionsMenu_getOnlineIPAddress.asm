@@ -1,0 +1,61 @@
+.386
+.model flat
+
+; ?getOnlineIPAddress@OptionPreferences@@QAEIXZ
+; Exact 397 retail bytes @ 0x00092756
+_TEXT SEGMENT
+public ?getOnlineIPAddress@OptionPreferences@@QAEIXZ
+?getOnlineIPAddress@OptionPreferences@@QAEIXZ PROC
+    db 68h,0E4h,0FBh,07h,01h,0C7h,44h,24h
+    db 28h,00h,00h,00h,00h,0E8h,58h,64h
+    db 7Fh,00h,8Dh,54h,24h,18h,52h,0E8h
+    db 7Eh,68h,7Fh,00h,83h,0C4h,18h,68h
+    db 0F4h,0FBh,07h,01h,8Dh,4Ch,24h,1Ch
+    db 0E8h,3Dh,64h,7Fh,00h,8Dh,44h,24h
+    db 18h,50h,8Dh,4Eh,04h,0C6h,44h,24h
+    db 14h,01h,0E8h,45h,0BFh,0FAh,0FFh,8Dh
+    db 4Ch,24h,04h,51h,8Bh,0C8h,0E8h,0EFh
+    db 54h,7Fh,00h,8Dh,4Ch,24h,18h,0C6h
+    db 44h,24h,10h,00h,0E8h,91h,51h,7Fh
+    db 00h,8Dh,4Ch,24h,04h,0C7h,44h,24h
+    db 10h,0FFh,0FFh,0FFh,0FFh,0E8h,80h,51h
+    db 7Fh,00h,8Bh,4Ch,24h,08h,64h,89h
+    db 0Dh,00h,00h,00h,00h,5Eh,83h,0C4h
+    db 10h,0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,6Ah,0FFh,68h,98h,5Bh,0FFh
+    db 00h,64h,0A1h,00h,00h,00h,00h,50h
+    db 64h,89h,25h,00h,00h,00h,00h,51h
+    db 56h,57h,8Bh,0F9h,68h,0B0h,0F9h,07h
+    db 01h,8Dh,4Ch,24h,0Ch,0E8h,88h,63h
+    db 7Fh,00h,8Bh,44h,24h,1Ch,8Bh,0Dh
+    db 0ACh,0D5h,2Eh,01h,50h,0C7h,44h,24h
+    db 18h,00h,00h,00h,00h,0E8h,68h,0C0h
+    db 0F7h,0FFh,8Dh,4Ch,24h,08h,51h,8Dh
+    db 4Fh,04h,8Bh,0F0h,0E8h,7Bh,0BEh,0FAh
+    db 0FFh,85h,0F6h,74h,19h,8Bh,0D6h,8Dh
+    db 7Ah,01h,53h,8Dh,0A4h,24h,00h,00h
+    db 00h,00h,8Ah,1Ah,42h,84h,0DBh,75h
+    db 0F9h,2Bh,0D7h,5Bh,0EBh,02h,33h,0D2h
+    db 52h,56h,8Bh,0C8h,0E8h,99h,54h,7Fh
+    db 00h,8Dh,4Ch,24h,08h,0C7h,44h,24h
+    db 14h,0FFh,0FFh,0FFh,0FFh,0E8h,0A8h,50h
+    db 7Fh,00h,8Bh,4Ch,24h,0Ch,5Fh,5Eh
+    db 64h,89h,0Dh,00h,00h,00h,00h,83h
+    db 0C4h,10h,0C2h,04h,00h,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,8Bh,0C1h,0C3h
+?getOnlineIPAddress@OptionPreferences@@QAEIXZ ENDP
+_TEXT ENDS
+END

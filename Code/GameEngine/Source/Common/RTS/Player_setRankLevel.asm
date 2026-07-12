@@ -1,0 +1,61 @@
+.386
+.model flat
+
+; ?setRankLevel@Player@@QAE_NH@Z
+; Exact 395 retail bytes @ 0x000D93AC
+_TEXT SEGMENT
+public ?setRankLevel@Player@@QAE_NH@Z
+?setRankLevel@Player@@QAE_NH@Z PROC
+    db 56h,8Bh,0F1h,0D8h,8Eh,98h,02h,00h
+    db 00h,57h,0D9h,5Ch,24h,14h,74h,4Dh
+    db 8Bh,0Dh,98h,08h,2Fh,01h,0E8h,02h
+    db 3Eh,0F4h,0FFh,84h,0C0h,74h,3Eh,8Bh
+    db 8Eh,9Ch,06h,00h,00h,8Bh,51h,04h
+    db 8Bh,39h,8Bh,86h,58h,02h,00h,00h
+    db 8Bh,9Eh,0A0h,06h,00h,00h,2Bh,0D7h
+    db 2Bh,0C3h,0C1h,0FAh,02h,3Bh,0C2h,7Ch
+    db 0Bh,8Bh,41h,04h,8Bh,0DFh,2Bh,0C3h
+    db 0C1h,0F8h,02h,48h,85h,0C0h,7Ch,0Dh
+    db 0D9h,44h,24h,14h,8Bh,09h,0D8h,0Ch
+    db 81h,0D9h,5Ch,24h,14h,0D9h,05h,50h
+    db 53h,07h,01h,0D9h,44h,24h,14h,0DAh
+    db 0E9h,0DFh,0E0h,0F6h,0C4h,44h,7Ah,09h
+    db 5Fh,5Eh,32h,0C0h,5Bh,59h,0C2h,08h
+    db 00h,8Bh,0CEh,0E8h,0A3h,74h,0F3h,0FFh
+    db 8Bh,0Dh,14h,10h,2Fh,01h,8Dh,56h
+    db 28h,52h,50h,0E8h,63h,1Bh,0F5h,0FFh
+    db 8Bh,0C8h,0E8h,61h,0D2h,0F2h,0FFh,0D9h
+    db 44h,24h,14h,0D8h,86h,5Ch,02h,00h
+    db 00h,89h,44h,24h,0Ch,32h,0DBh,0D9h
+    db 5Ch,24h,18h,0DBh,44h,24h,0Ch,0D9h
+    db 54h,24h,14h,0D8h,5Ch,24h,18h,0DFh
+    db 0E0h,0F6h,0C4h,05h,8Dh,44h,24h,14h
+    db 7Bh,04h,8Dh,44h,24h,18h,0D9h,00h
+    db 83h,0ECh,08h,0D9h,96h,5Ch,02h,00h
+    db 00h,0DDh,1Ch,24h,0FFh,15h,0B8h,93h
+    db 35h,01h,0D9h,5Ch,24h,20h,83h,0C4h
+    db 08h,0D9h,44h,24h,18h,0DBh,5Ch,24h
+    db 14h,8Bh,7Ch,24h,14h,3Bh,0BEh,68h
+    db 02h,00h,00h,7Ch,1Dh,8Bh,86h,58h
+    db 02h,00h,00h,40h,50h,8Bh,0CEh,0E8h
+    db 0D1h,53h,0F3h,0FFh,0Ah,0D8h,84h,0C0h
+    db 74h,08h,3Bh,0BEh,68h,02h,00h,00h
+    db 7Dh,0E3h,5Fh,5Eh,8Ah,0C3h,5Bh,59h
+    db 0C2h,08h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,53h,56h,8Bh,74h
+    db 24h,0Ch,85h,0F6h,57h,8Bh,0D9h,74h
+    db 6Eh,8Bh,7Ch,24h,14h,85h,0FFh,74h
+    db 66h,0F6h,87h,90h,00h,00h,00h,04h
+    db 75h,5Dh,8Bh,0CFh,0E8h,0EFh,72h,0F4h
+    db 0FFh,3Bh,0C3h
+?setRankLevel@Player@@QAE_NH@Z ENDP
+_TEXT ENDS
+END

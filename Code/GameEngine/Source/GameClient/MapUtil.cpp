@@ -315,44 +315,8 @@ static void getExtent( Region3D *extent )
 
 //-------------------------------------------------------------------------------
 
-// ?update@WaypointMap@@QAEXXZ present-unmatched
-void WaypointMap::update( void )
-{
-	if (!m_waypoints)
-	{
-		m_numStartSpots = 1;
-		return;
-	}
-
-	this->clear();
-
-	AsciiString startingCamName = TheNameKeyGenerator->keyToName(TheKey_InitialCameraPosition);
-	WaypointMap::const_iterator it;
-
-	it = m_waypoints->find(startingCamName);
-	if (it != m_waypoints->end())
-	{
-		(*this)[startingCamName] = it->second;
-	}
-
-	m_numStartSpots = 0;
-	for (Int i=0; i<MAX_SLOTS; ++i)
-	{
-		startingCamName.format("Player_%d_Start", i+1); // start pos waypoints are 1-based
-		it = m_waypoints->find(startingCamName);
-		if (it != m_waypoints->end())
-		{
-			(*this)[startingCamName] = it->second;
-			++m_numStartSpots;
-		}
-		else
-		{
-			break;
-		}
-	}
-
-	m_numStartSpots = max(1, m_numStartSpots);
-}
+// ?update@WaypointMap@@QAEXXZ
+// Body in MapUtil_update.asm (exact 363B retail).
 
 const char * MapCache::m_mapCacheName = "MapCache.ini";
 

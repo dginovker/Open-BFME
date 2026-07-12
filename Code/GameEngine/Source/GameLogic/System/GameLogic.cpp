@@ -628,47 +628,8 @@ static void placeNetworkBuildingsForPlayer(Int slotNum, const GameSlot *pSlot, P
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z present-unmatched
-LoadScreen *GameLogic::getLoadScreen( Bool loadingSaveGame )
-{
-	switch (m_gameMode) 
-	{
-	case GAME_SHELL:
-		return NEW ShellGameLoadScreen;
-		break;                         
-	case GAME_SINGLE_PLAYER:
-	{
-		Campaign* currentCampaign = TheCampaignManager->getCurrentCampaign();
-		if( currentCampaign && loadingSaveGame == FALSE )
-		{
-			if ( currentCampaign->m_isChallengeCampaign) 
-			{
-				return NEW ChallengeLoadScreen;
-			}
-			return NEW SinglePlayerLoadScreen;
-		}
-		else
-			return NEW ShellGameLoadScreen;
-		break;
-	}
-	case GAME_SKIRMISH:
-		return NEW MultiPlayerLoadScreen;
-		break;
-	case GAME_LAN:
-		return NEW MultiPlayerLoadScreen;
-		break;
-	case GAME_REPLAY:
-		return NEW ShellGameLoadScreen;
-		break;
-	case GAME_INTERNET:
-		return NEW GameSpyLoadScreen;
-		break;
-	case GAME_NONE:
-	default:
-		return NULL;
-	}
-
-}
+// ?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z
+// Body in GameLogic_getLoadScreen.asm (exact 487B retail).
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------

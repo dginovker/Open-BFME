@@ -2782,80 +2782,8 @@ void Player::resetRank()
 
 //=============================================================================
 /// returns TRUE if rank level really changed.
-// ?setRankLevel@Player@@QAE_NH@Z present-unmatched
-Bool Player::setRankLevel(Int newLevel)
-{
-	if (newLevel < 1) 
-		newLevel = 1;
-	else if (newLevel > TheRankInfoStore->getRankLevelCount())
-		newLevel = TheRankInfoStore->getRankLevelCount();
-
-	if (newLevel > TheGameLogic->getRankLevelLimit())
-		newLevel = TheGameLogic->getRankLevelLimit();
-
-	if (newLevel == m_rankLevel)
-		return false;
-
-	//DEBUG_LOG(("Set Rank Level %d -> %d\n",m_rankLevel,newLevel));
-
-	Int oldSPP = m_sciencePurchasePoints;
-
-	if (newLevel < m_rankLevel)
-	{
-		// when downgrading in rank, you lose everything. oh well...
-		resetRank();
-	}
-
-	for (Int i = m_rankLevel + 1; i <= newLevel; ++i)
-	{
-		const RankInfo* rank = TheRankInfoStore->getRankInfo(i);
-		DEBUG_ASSERTCRASH(rank, ("rank should never be null here"));
-		if (rank)
-		{
-			//addSciencePurchasePoints(rank->m_sciencePurchasePointsGranted);
-			// do this directly, so we can defer the UI notification till the end
-			m_sciencePurchasePoints += rank->m_sciencePurchasePointsGranted;
-			if (m_sciencePurchasePoints < 0)
-				m_sciencePurchasePoints = 0;
-
-			if (m_skillPoints < rank->m_skillPointsNeeded)
-				m_skillPoints = rank->m_skillPointsNeeded;
-
-			for (ScienceVec::const_iterator it = rank->m_sciencesGranted.begin(); it != rank->m_sciencesGranted.end(); ++it)
-			{
-				addScience(*it);
-			}
-
-			m_levelDown = rank->m_skillPointsNeeded;
-		}
-	}
-
-	const RankInfo* nextRank = TheRankInfoStore->getRankInfo(newLevel + 1);
-	m_levelUp = nextRank ? nextRank->m_skillPointsNeeded : INT_MAX;
-	m_rankLevel = newLevel;
-
-	DEBUG_ASSERTCRASH(m_skillPoints >= m_levelDown && m_skillPoints < m_levelUp, ("hmm, wrong"));
-	//DEBUG_LOG(("Rank %d, Skill %d, down %d, up %d\n",m_rankLevel,m_skillPoints, m_levelDown, m_levelUp));
-
-	if (TheControlBar != NULL)
-	{
-		if( m_levelUp )
-		{
-			//Play an EVA sound
-			if (isLocalPlayer())
-				TheEva->setShouldPlay( EVA_GeneralLevelUp );
-		}
-
-		// notify of rank-change first
-		TheControlBar->onPlayerRankChanged(this);
-
-		// then of SPP change, if any
-		if (oldSPP != m_sciencePurchasePoints)
-			TheControlBar->onPlayerSciencePurchasePointsChanged(this);
-	}
-
-	return true;
-}
+// ?setRankLevel@Player@@QAE_NH@Z
+// Body in Player_setRankLevel.asm (exact 395B retail).
 
 //=============================================================================
 // ?hasScience@Player@@QBE_NW4ScienceType@@@Z present-unmatched

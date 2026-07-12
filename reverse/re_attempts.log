@@ -339,3 +339,25 @@ _$E117	no-match	Compiler-generated static initializer. Drift RVA 0xC6E36F starts
 ??0GameTextManager@@QAE@XZ	landed	MASM exact 161B @ 0x00438350
 ?WriteBuildInfo@Debug@@QAEXXZ	landed	MASM exact 135B @ 0x0088A492
 ?Check_Driver_Version_Status@DX8Caps@@AAEXXZ	landed	MASM exact 713B @ 0x0091BA00 (true size from ret; report said 1013)
+?Flush@SortingRendererClass@@SAXXZ	landed	MASM exact 2531B @ 0x93A810
+?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z	landed	MASM exact 487B @ 0x6BACD7
+?getLANIPAddress@OptionPreferences@@QAEIXZ	landed	MASM exact 403B @ 0x92436
+?getOnlineIPAddress@OptionPreferences@@QAEIXZ	landed	MASM exact 397B @ 0x92756
+?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z	landed	MASM exact 360B @ 0x6718BC
+??0BoneFXUpdateModuleData@@QAE@XZ	landed	MASM exact 332B @ 0xC0EA2
+?init@GameLODManager@@QAEXXZ	landed	MASM exact 967B @ 0x7EF1B
+?parse@DataChunkInput@@QAE_NPAX@Z	landed	MASM exact 1006B @ 0x9D22F0
+?recruitSpecificAITeam@AIPlayer@@UAEXPAVTeamPrototype@@M@Z	landed	MASM exact 1654B @ 0x1699C2
+?setGameOptions@GameSpyInfo@@UAEXXZ	landed	MASM exact 1997B @ 0x671686
+?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z	landed	MASM exact 805B @ 0x4F1C4A
+?onVeterancyLevelChanged@Object@@QAEXW4VeterancyLevel@@0_N@Z	landed	MASM exact 711B @ 0x37F2AD
+?castRay@RTS3DScene@@QAE_NAAVRayCollisionTestClass@@_NH@Z	landed	MASM exact 578B @ 0x956670
+?xfer@GarrisonContain@@MAEXPAVXfer@@@Z	landed	MASM exact 577B @ 0x853EC0
+?Visibility_Check@RTS3DScene@@UAEXPAVCameraClass@@@Z	landed	MASM exact 1075B @ 0x9446F0
+?Register_Mesh_Type@DX8MeshRendererClass@@QAEXPAVMeshModelClass@@@Z	landed	MASM exact 528B @ 0xA08180
+?drawUIText@Drawable@@QAEXXZ	landed	MASM exact 509B @ 0x9991EE
+?setRankLevel@Player@@QAE_NH@Z	landed	MASM exact 395B @ 0xD93AC
+?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z	landed	MASM exact 375B @ 0x3D96A3
+?update@WaypointMap@@QAEXXZ	landed	MASM exact 363B @ 0x454EF3
+?setGameOptions@GameSpyInfo@@UAEXXZ	no-match	size 1997 overlapped notifyTargetOfProbe @0x6718BC; true size TBD
+?setGameOptions@GameSpyInfo@@UAEXXZ	landed	MASM exact 383B @ 0x00671686 (report oversize into neighbor)

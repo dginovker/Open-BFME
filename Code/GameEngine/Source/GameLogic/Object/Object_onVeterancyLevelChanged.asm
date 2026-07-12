@@ -1,0 +1,100 @@
+.386
+.model flat
+
+; ?onVeterancyLevelChanged@Object@@QAEXW4VeterancyLevel@@0_N@Z
+; Exact 711 retail bytes @ 0x0037F2AD
+_TEXT SEGMENT
+public ?onVeterancyLevelChanged@Object@@QAEXW4VeterancyLevel@@0_N@Z
+?onVeterancyLevelChanged@Object@@QAEXW4VeterancyLevel@@0_N@Z PROC
+    db 33h,0DBh,85h,0C0h,8Bh,0E9h,76h,1Eh
+    db 8Bh,46h,28h,8Dh,0Ch,98h,6Ah,0FFh
+    db 51h,8Bh,0CFh,0E8h,91h,87h,0CBh,0FFh
+    db 8Bh,56h,2Ch,2Bh,56h,28h,43h,0C1h
+    db 0FAh,02h,3Bh,0DAh,72h,0E2h,8Bh,46h
+    db 48h,2Bh,46h,44h,0C1h,0F8h,02h,33h
+    db 0DBh,85h,0C0h,76h,1Ch,8Bh,46h,44h
+    db 8Bh,04h,98h,50h,8Bh,0CFh,0E8h,8Eh
+    db 0B6h,0C9h,0FFh,8Bh,4Eh,48h,2Bh,4Eh
+    db 44h,43h,0C1h,0F9h,02h,3Bh,0D9h,72h
+    db 0E4h,8Ah,4Ch,24h,50h,84h,0C9h,8Bh
+    db 15h,98h,08h,2Fh,01h,8Bh,42h,3Ch
+    db 74h,1Ch,83h,0F8h,0Ah,72h,17h,57h
+    db 56h,8Bh,0CDh,0E8h,26h,95h,0CBh,0FFh
+    db 6Ah,0Fh,68h,0C7h,00h,00h,00h,8Bh
+    db 0CFh,0E8h,03h,92h,0CAh,0FFh,8Bh,87h
+    db 10h,02h,00h,00h,8Dh,48h,08h,8Dh
+    db 46h,0Ch,50h,0E8h,53h,89h,50h,00h
+    db 8Bh,87h,10h,02h,00h,00h,8Bh,4Eh
+    db 14h,89h,48h,10h,8Bh,87h,10h,02h
+    db 00h,00h,8Bh,4Eh,18h,89h,48h,14h
+    db 8Bh,87h,10h,02h,00h,00h,0FFh,40h
+    db 20h,8Bh,96h,0CCh,00h,00h,00h,8Bh
+    db 8Fh,10h,02h,00h,00h,52h,0E8h,0A3h
+    db 45h,0C8h,0FFh,8Dh,56h,50h,33h,0C0h
+    db 8Bh,0CAh,83h,39h,00h,75h,0Bh,40h
+    db 83h,0C1h,04h,83h,0F8h,0Ah,72h,0F2h
+    db 0EBh,37h,33h,0C0h,89h,44h,24h,10h
+    db 89h,44h,24h,14h,89h,44h,24h,18h
+    db 89h,44h,24h,1Ch,89h,44h,24h,20h
+    db 89h,44h,24h,24h,89h,44h,24h,28h
+    db 89h,44h,24h,2Ch,52h,8Dh,4Ch,24h
+    db 14h,89h,44h,24h,34h,51h,8Bh,0CFh
+    db 89h,44h,24h,3Ch,0E8h,2Fh,0A2h,0C8h
+    db 0FFh,8Ah,86h,0D0h,00h,00h,00h,84h
+    db 0C0h,0BBh,01h,00h,00h,00h,74h,53h
+    db 84h,1Dh,94h,08h,2Fh,01h,75h,2Bh
+    db 09h,1Dh,94h,08h,2Fh,01h,8Bh,0Dh
+    db 00h,0D6h,2Eh,01h,68h,0A4h,04h,09h
+    db 01h,0C7h,44h,24h,44h,00h,00h,00h
+    db 00h,0E8h,0E4h,0B9h,0CBh,0FFh,0A3h,90h
+    db 08h,2Fh,01h,0C7h,44h,24h,40h,0FFh
+    db 0FFh,0FFh,0FFh,8Bh,15h,90h,08h,2Fh
+    db 01h,52h,8Bh,0CFh,0E8h,15h,0BAh,0CAh
+    db 0FFh,85h,0C0h,74h,0Eh,8Bh,8Eh,0CCh
+    db 00h,00h,00h,51h,8Bh,0C8h,0E8h,1Fh
+    db 0D5h,0CAh,0FFh,8Bh,0B6h,0D4h,00h,00h
+    db 00h,83h,0FEh,0FFh,74h,0Bh,53h,6Ah
+    db 00h,56h,8Bh,0CFh,0E8h,0E8h,24h,0C9h
+    db 0FFh,8Bh,4Ch,24h,38h,5Fh,5Eh,5Dh
+    db 5Bh,64h,89h,0Dh,00h,00h,00h,00h
+    db 83h,0C4h,34h,0C2h,0Ch,00h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,56h,57h,8Bh,0F9h,8Bh
+    db 47h,1Ch,8Bh,30h,3Bh,0F0h,74h,75h
+    db 53h,55h,8Bh,2Dh,98h,08h,2Fh,01h
+    db 8Bh,4Eh,08h,85h,0C9h,74h,5Dh,8Bh
+    db 85h,0B4h,00h,00h,00h,8Bh,9Dh,0B8h
+    db 00h,00h,00h,2Bh,0D8h,33h,0D2h,0C1h
+    db 0FBh,02h,8Bh,0C1h,0F7h,0F3h,8Bh,85h
+    db 0B4h,00h,00h,00h,8Bh,14h,90h,85h
+    db 0D2h,74h,39h,39h,4Ah,04h,74h,08h
+    db 8Bh,12h,85h,0D2h,75h,0F5h,0EBh,2Ch
+    db 85h,0D2h,74h,28h,8Bh,52h,08h,85h
+    db 0D2h,74h,21h,0F6h,82h,44h,03h,00h
+    db 00h,01h,75h,18h,33h,0C9h,8Ah,4Eh
+    db 10h,51h,52h,8Bh,56h,0Ch,52h,8Bh
+    db 0CFh,0E8h,0C3h,0C2h,0CAh,0FFh,8Bh,2Dh
+    db 98h,08h,2Fh,01h,8Bh,36h,3Bh,77h
+    db 1Ch,75h,95h,5Dh,5Bh,8Bh,47h,1Ch
+    db 8Bh,30h,3Bh,0F0h,74h,1Bh,0EBh,03h
+    db 8Dh,49h,00h,8Bh,0C6h,8Bh,36h,6Ah
+    db 14h,50h,0E8h,94h,0F0h,4Ah,00h,8Bh
+    db 47h,1Ch,83h,0C4h,08h,3Bh,0F0h,75h
+    db 0EAh,8Bh,47h,1Ch,89h,00h,8Bh,7Fh
+    db 1Ch,89h,7Fh,04h,5Fh,5Eh,0C3h
+?onVeterancyLevelChanged@Object@@QAEXW4VeterancyLevel@@0_N@Z ENDP
+_TEXT ENDS
+END

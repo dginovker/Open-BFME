@@ -270,22 +270,8 @@ void OptionPreferences::setCampaignDifficulty( Int diff )
 	(*this)["CampaignDifficulty"] = prefString;
 }
 
-// ?getLANIPAddress@OptionPreferences@@QAEIXZ present-unmatched
-UnsignedInt OptionPreferences::getLANIPAddress(void)
-{
-	AsciiString selectedIP = (*this)["IPAddress"];
-	IPEnumeration IPs;
-	EnumeratedIP *IPlist = IPs.getAddresses();
-	while (IPlist)
-	{
-		if (selectedIP.compareNoCase(IPlist->getIPstring()) == 0)
-		{
-			return IPlist->getIP();
-		}
-		IPlist = IPlist->getNext();
-	}
-	return TheGlobalData->m_defaultIP;
-}
+// ?getLANIPAddress@OptionPreferences@@QAEIXZ
+// Body in OptionsMenu_getLANIPAddress.asm (exact 403B retail).
 
 // ?setLANIPAddress@OptionPreferences@@ present-unmatched
 void OptionPreferences::setLANIPAddress( AsciiString IP )
@@ -301,22 +287,8 @@ void OptionPreferences::setLANIPAddress( UnsignedInt IP )
 	(*this)["IPAddress"] = tmp;
 }
 
-// ?getOnlineIPAddress@OptionPreferences@@QAEIXZ present-unmatched
-UnsignedInt OptionPreferences::getOnlineIPAddress(void)
-{
-	AsciiString selectedIP = (*this)["GameSpyIPAddress"];
-	IPEnumeration IPs;
-	EnumeratedIP *IPlist = IPs.getAddresses();
-	while (IPlist)
-	{
-		if (selectedIP.compareNoCase(IPlist->getIPstring()) == 0)
-		{
-			return IPlist->getIP();
-		}
-		IPlist = IPlist->getNext();
-	}
-	return TheGlobalData->m_defaultIP;
-}
+// ?getOnlineIPAddress@OptionPreferences@@QAEIXZ
+// Body in OptionsMenu_getOnlineIPAddress.asm (exact 397B retail).
 
 // ?setOnlineIPAddress@OptionPreferences@@ present-unmatched
 void OptionPreferences::setOnlineIPAddress( AsciiString IP )

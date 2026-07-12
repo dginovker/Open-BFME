@@ -1,0 +1,62 @@
+.386
+.model flat
+
+; ?getLANIPAddress@OptionPreferences@@QAEIXZ
+; Exact 403 retail bytes @ 0x00092436
+_TEXT SEGMENT
+public ?getLANIPAddress@OptionPreferences@@QAEIXZ
+?getLANIPAddress@OptionPreferences@@QAEIXZ PROC
+    db 68h,0E4h,0FBh,07h,01h,0C7h,44h,24h
+    db 28h,00h,00h,00h,00h,0E8h,78h,67h
+    db 7Fh,00h,8Dh,54h,24h,18h,52h,0E8h
+    db 9Eh,6Bh,7Fh,00h,83h,0C4h,18h,68h
+    db 0D8h,0FBh,07h,01h,8Dh,4Ch,24h,1Ch
+    db 0E8h,5Dh,67h,7Fh,00h,8Dh,44h,24h
+    db 18h,50h,8Dh,4Eh,04h,0C6h,44h,24h
+    db 14h,01h,0E8h,65h,0C2h,0FAh,0FFh,8Dh
+    db 4Ch,24h,04h,51h,8Bh,0C8h,0E8h,0Fh
+    db 58h,7Fh,00h,8Dh,4Ch,24h,18h,0C6h
+    db 44h,24h,10h,00h,0E8h,0B1h,54h,7Fh
+    db 00h,8Dh,4Ch,24h,04h,0C7h,44h,24h
+    db 10h,0FFh,0FFh,0FFh,0FFh,0E8h,0A0h,54h
+    db 7Fh,00h,8Bh,4Ch,24h,08h,64h,89h
+    db 0Dh,00h,00h,00h,00h,5Eh,83h,0C4h
+    db 10h,0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,6Ah,0FFh,68h,38h,5Bh,0FFh
+    db 00h,64h,0A1h,00h,00h,00h,00h,50h
+    db 64h,89h,25h,00h,00h,00h,00h,83h
+    db 0ECh,14h,53h,55h,56h,57h,8Bh,0F1h
+    db 68h,0F4h,0FBh,07h,01h,8Dh,4Ch,24h
+    db 18h,0E8h,0A4h,66h,7Fh,00h,8Dh,44h
+    db 24h,14h,50h,8Dh,4Eh,04h,0C7h,44h
+    db 24h,30h,00h,00h,00h,00h,0E8h,0A9h
+    db 0C1h,0FAh,0FFh,50h,8Dh,4Ch,24h,14h
+    db 0E8h,25h,56h,7Fh,00h,8Dh,4Ch,24h
+    db 14h,0C6h,44h,24h,2Ch,02h,0E8h,0F7h
+    db 53h,7Fh,00h,8Dh,4Ch,24h,1Ch,0E8h
+    db 4Dh,3Fh,0F9h,0FFh,8Dh,4Ch,24h,1Ch
+    db 0C6h,44h,24h,2Ch,03h,0E8h,0BAh,0F8h
+    db 0F6h,0FFh,8Bh,0E8h,85h,0EDh,74h,73h
+    db 8Dh,4Ch,24h,18h,51h,8Bh,0CDh,0E8h
+    db 0Ah,45h,0F8h,0FFh,8Bh,00h,85h,0C0h
+    db 74h,06h,0Fh,0B7h,78h,04h,0EBh,02h
+    db 33h,0FFh,85h,0C0h,8Dh,50h,08h,75h
+    db 05h,0BAh,8Bh,38h,07h,01h,8Bh,4Ch
+    db 24h,10h,85h,0C9h,74h,09h,0Fh,0B7h
+    db 71h,04h,83h,0C1h,08h,0EBh,07h,33h
+    db 0F6h,0B9h,8Bh,38h,07h,01h,3Bh,0F7h
+    db 8Bh,0C6h,7Ch,02h,8Bh,0C7h,50h,52h
+    db 51h,0FFh,15h,10h,93h,35h,01h,83h
+    db 0C4h,0Ch,85h,0C0h,75h,06h,2Bh,0F7h
+    db 8Bh,0C6h,85h,0C0h,8Dh,4Ch,24h,18h
+    db 0Fh,94h,0C3h
+?getLANIPAddress@OptionPreferences@@QAEIXZ ENDP
+_TEXT ENDS
+END

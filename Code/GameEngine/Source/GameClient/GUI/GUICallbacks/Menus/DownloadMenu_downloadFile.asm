@@ -1,0 +1,112 @@
+.386
+.model flat
+
+; ?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z
+; Exact 805 retail bytes @ 0x004F1C4A
+_TEXT SEGMENT
+public ?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z
+?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z PROC
+    db 0A1h,0F0h,43h,2Fh,01h,85h,0C0h,0Fh
+    db 84h,40h,01h,00h,00h,85h,0F6h,0Fh
+    db 84h,38h,01h,00h,00h,8Bh,16h,8Bh
+    db 0CEh,33h,0FFh,0FFh,52h,14h,85h,0C0h
+    db 7Ch,11h,8Bh,06h,8Bh,0CEh,0FFh,50h
+    db 14h,50h,8Bh,0CEh,0E8h,0E5h,77h,0B3h
+    db 0FFh,8Bh,0F8h,51h,8Bh,0CCh,89h,64h
+    db 24h,14h,51h,8Bh,0Dh,94h,71h,2Fh
+    db 01h,8Bh,11h,0FFh,92h,0C4h,00h,00h
+    db 00h,8Bh,0C8h,0E8h,0F4h,0D5h,0B3h,0FFh
+    db 8Bh,0Dh,94h,15h,2Fh,01h,0E8h,0DBh
+    db 7Bh,0B2h,0FFh,85h,0C0h,74h,2Bh,85h
+    db 0FFh,74h,27h,8Ah,4Fh,09h,84h,0C9h
+    db 74h,20h,51h,8Bh,0CCh,89h,64h,24h
+    db 14h,50h,0E8h,67h,41h,0B3h,0FFh,0A1h
+    db 08h,44h,2Fh,01h,50h,0E8h,0A3h,0A4h
+    db 0B3h,0FFh,83h,0C4h,08h,0E9h,0A0h,00h
+    db 00h,00h,8Dh,4Ch,24h,08h,51h,8Bh
+    db 0Dh,94h,71h,2Fh,01h,8Bh,11h,0FFh
+    db 92h,0C4h,00h,00h,00h,8Bh,0C8h,0E8h
+    db 0A0h,0D5h,0B3h,0FFh,6Ah,5Ch,8Dh,4Ch
+    db 24h,0Ch,0C7h,44h,24h,20h,00h,00h
+    db 00h,00h,0E8h,41h,0A6h,0B1h,0FFh,85h
+    db 0C0h,74h,16h,6Ah,5Ch,8Dh,4Ch,24h
+    db 0Ch,0E8h,32h,0A6h,0B1h,0FFh,40h,50h
+    db 8Dh,4Ch,24h,0Ch,0E8h,9Eh,6Eh,0B3h
+    db 0FFh,0C7h,44h,24h,0Ch,00h,00h,00h
+    db 00h,8Dh,44h,24h,08h,50h,8Dh,4Ch
+    db 24h,10h,0C6h,44h,24h,20h,01h,0E8h
+    db 0BAh,74h,39h,00h,51h,8Dh,54h,24h
+    db 10h,89h,64h,24h,14h,8Bh,0CCh,52h
+    db 0E8h,0B9h,66h,39h,00h,0A1h,08h,44h
+    db 2Fh,01h,50h,0E8h,1Dh,0A4h,0B3h,0FFh
+    db 83h,0C4h,08h,8Dh,4Ch,24h,0Ch,0C6h
+    db 44h,24h,1Ch,00h,0E8h,6Dh,64h,39h
+    db 00h,8Dh,4Ch,24h,08h,0C7h,44h,24h
+    db 1Ch,0FFh,0FFh,0FFh,0FFh,0E8h,0CCh,5Bh
+    db 39h,00h,0E8h,0C6h,7Ah,0B2h,0FFh,8Bh
+    db 0Dh,94h,71h,2Fh,01h,8Bh,11h,6Ah
+    db 00h,68h,0D0h,44h,2Fh,01h,0FFh,92h
+    db 0C4h,00h,00h,00h,50h,0E8h,22h,0Dh
+    db 0B3h,0FFh,83h,0C4h,0Ch,8Bh,4Ch,24h
+    db 14h,5Fh,64h,89h,0Dh,00h,00h,00h
+    db 00h,5Eh,83h,0C4h,18h,0C3h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,51h,0A1h
+    db 0F0h,43h,2Fh,01h,85h,0C0h,53h,56h
+    db 57h,0Fh,84h,49h,01h,00h,00h,8Bh
+    db 0Dh,94h,71h,2Fh,01h,8Bh,01h,0FFh
+    db 90h,0C4h,00h,00h,00h,85h,0C0h,0Fh
+    db 84h,33h,01h,00h,00h,8Bh,0Dh,94h
+    db 71h,2Fh,01h,8Bh,11h,0FFh,92h,0C4h
+    db 00h,00h,00h,8Bh,0D8h,8Ah,43h,0Ch
+    db 84h,0C0h,0Fh,84h,18h,01h,00h,00h
+    db 0A1h,0F8h,43h,2Fh,01h,68h,0D0h,44h
+    db 2Fh,01h,50h,68h,50h,44h,2Fh,01h
+    db 68h,0B0h,44h,2Fh,01h,68h,90h,44h
+    db 2Fh,01h,68h,70h,44h,2Fh,01h,68h
+    db 10h,44h,2Fh,01h,53h,0E8h,3Fh,0C6h
+    db 0B2h,0FFh,83h,0C4h,20h,0E8h,0A0h,02h
+    db 0B3h,0FFh,33h,0F6h,56h,8Bh,0CBh,0E8h
+    db 48h,43h,0B1h,0FFh,8Bh,0F8h,85h,0FFh
+    db 0Fh,84h,0B6h,00h,00h,00h,8Bh,0CFh
+    db 0E8h,2Ch,5Bh,0B3h,0FFh,84h,0C0h,0Fh
+    db 84h,0A7h,00h,00h,00h,8Bh,13h,8Bh
+    db 0CBh,0FFh,52h,14h,3Bh,0F0h,75h,22h
+    db 8Bh,0Dh,94h,71h,2Fh,01h,8Bh,01h
+    db 0FFh,90h,14h,01h,00h,00h,51h,89h
+    db 64h,24h,10h,8Bh,0CCh,50h,0E8h,93h
+    db 5Ch,39h,00h,8Bh,0CFh,0E8h,0F8h,0C4h
+    db 0B1h,0FFh,8Bh,0Ch,0B5h,0F0h,44h,2Fh
+    db 01h,85h,0C9h,0Fh,84h,7Dh,00h,00h
+    db 00h,6Ah,00h,0E8h,40h,60h,0B3h,0FFh
+    db 8Bh,0Dh,0E4h,70h,2Fh,01h,8Bh,11h
+    db 8Bh,7Fh,54h,0FFh,52h,10h,3Bh,0F8h
+    db 7Dh,16h,0A1h,10h,45h,2Fh,01h,8Bh
+    db 0Ch,0B5h,0F0h,44h,2Fh,01h,50h,6Ah
+    db 00h,0E8h,0F9h,3Eh,0B4h,0FFh,0EBh,4Eh
+    db 8Bh,0Dh,0E4h,70h,2Fh,01h,8Bh,11h
+    db 0FFh,52h,14h,3Bh,0F8h,7Dh,16h,0A1h
+    db 14h,45h,2Fh,01h,8Bh,0Ch,0B5h,0F0h
+    db 44h,2Fh,01h,50h,6Ah,00h,0E8h,0D4h
+    db 3Eh,0B4h,0FFh,0EBh,29h,8Bh,0Dh,18h
+    db 45h,2Fh,01h,51h,8Bh,0Ch,0B5h,0F0h
+    db 44h,2Fh,01h,6Ah,00h,0E8h,0BDh,3Eh
+    db 0B4h,0FFh,0EBh,12h,8Bh,0Ch,0B5h,0F0h
+    db 44h,2Fh,01h,85h,0C9h,74h,07h,6Ah
+    db 01h,0E8h,0CAh,5Fh,0B3h,0FFh,46h,83h
+    db 0FEh,08h,0Fh,8Ch,1Ch,0FFh,0FFh,0FFh
+    db 5Fh,5Eh,5Bh,59h,0C3h
+?downloadFile@DownloadManagerMunkee@@UAEJVAsciiString@@00000_N@Z ENDP
+_TEXT ENDS
+END

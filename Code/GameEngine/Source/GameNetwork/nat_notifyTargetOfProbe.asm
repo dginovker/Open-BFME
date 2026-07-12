@@ -1,0 +1,56 @@
+.386
+.model flat
+
+; ?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z
+; Exact 360 retail bytes @ 0x006718BC
+_TEXT SEGMENT
+public ?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z
+?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z PROC
+    db 56h,8Bh,0F1h,8Dh,4Ch,24h,14h,0E8h
+    db 34h,59h,9Ah,0FFh,33h,0DBh,89h,9Ch
+    db 24h,0B0h,01h,00h,00h,89h,5Ch,24h
+    db 08h,0Fh,0B7h,8Ch,24h,0B8h,01h,00h
+    db 00h,8Bh,46h,18h,8Bh,56h,10h,50h
+    db 51h,52h,51h,89h,64h,24h,20h,8Bh
+    db 0CCh,68h,0Ch,0A4h,11h,01h,0C6h,84h
+    db 24h,0C4h,01h,00h,00h,01h,0E8h,0C1h
+    db 72h,21h,00h,8Dh,44h,24h,18h,50h
+    db 0E8h,0E7h,76h,21h,00h,83h,0C4h,14h
+    db 68h,0DCh,0A3h,11h,01h,68h,0D8h,0A3h
+    db 11h,01h,8Dh,4Ch,24h,50h,0C7h,44h
+    db 24h,1Ch,0Dh,00h,00h,00h,0C6h,84h
+    db 24h,00h,01h,00h,00h,01h,0E8h,68h
+    db 99h,9Bh,0FFh,89h,5Ch,24h,0Ch,8Dh
+    db 4Ch,24h,10h,51h,8Bh,8Ch,24h,0C0h
+    db 01h,00h,00h,0C6h,84h,24h,0B4h,01h
+    db 00h,00h,02h,0E8h,0BFh,88h,9Ch,0FFh
+    db 50h,8Dh,4Ch,24h,10h,0C6h,84h,24h
+    db 0B4h,01h,00h,00h,03h,0E8h,0F2h,76h
+    db 21h,00h,8Dh,4Ch,24h,10h,0C6h,84h
+    db 24h,0B0h,01h,00h,00h,02h,0E8h,61h
+    db 68h,21h,00h,8Bh,44h,24h,0Ch,3Bh
+    db 0C3h,8Dh,48h,08h,75h,05h,0B9h,8Bh
+    db 38h,07h,01h,8Bh,0C1h,8Dh,70h,01h
+    db 8Ah,10h,40h,3Ah,0D3h,75h,0F9h,2Bh
+    db 0C6h,03h,0C1h,50h,51h,8Dh,4Ch,24h
+    db 20h,0E8h,0FDh,98h,9Bh,0FFh,8Bh,44h
+    db 24h,08h,3Bh,0C3h,8Dh,48h,08h,75h
+    db 05h,0B9h,8Bh,38h,07h,01h,8Bh,0C1h
+    db 8Dh,70h,01h,90h,8Ah,10h,40h,3Ah
+    db 0D3h,75h,0F9h,2Bh,0C6h,03h,0C1h,50h
+    db 51h,8Dh,4Ch,24h,5Ch,0E8h,0D1h,98h
+    db 9Bh,0FFh,8Bh,0Dh,0C8h,71h,2Fh,01h
+    db 8Bh,11h,8Dh,44h,24h,14h,50h,0FFh
+    db 52h,18h,8Dh,4Ch,24h,0Ch,0C6h,84h
+    db 24h,0B0h,01h,00h,00h,01h,0E8h,59h
+    db 5Fh,21h,00h,8Dh,4Ch,24h,08h,88h
+    db 9Ch,24h,0B0h,01h,00h,00h,0E8h,49h
+    db 5Fh,21h,00h,8Dh,4Ch,24h,14h,0C7h
+    db 84h,24h,0B0h,01h,00h,00h,0FFh,0FFh
+    db 0FFh,0FFh,0E8h,0CAh,51h,9Ah,0FFh,8Bh
+    db 8Ch,24h,0A8h,01h,00h,00h,5Eh,64h
+    db 89h,0Dh,00h,00h,00h,00h,5Bh,81h
+    db 0C4h,0ACh,01h,00h,00h,0C2h,08h,00h
+?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z ENDP
+_TEXT ENDS
+END

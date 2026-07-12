@@ -1095,21 +1095,8 @@ void NAT::gotInternalAddress(Int nodeNumber, UnsignedInt address) {
 	}
 }
 
-// ?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z present-unmatched
-void NAT::notifyTargetOfProbe(GameSlot *targetSlot) {
-	PeerRequest req;
-	AsciiString options;
-	options.format("PROBED%d", m_localNodeNumber);
-	req.peerRequestType = PeerRequest::PEERREQUEST_UTMPLAYER;
-	req.UTM.isStagingRoom = TRUE;
-	req.id = "NAT/";
-	AsciiString hostName;
-	hostName.translate(targetSlot->getName());
-	req.nick = hostName.str();
-	req.options = options.str();
-	TheGameSpyPeerMessageQueue->addRequest(req);
-	DEBUG_LOG(("NAT::notifyTargetOfProbe - notifying %ls that we have probed them.\n", targetSlot->getName().str()));
-}
+// ?notifyTargetOfProbe@NAT@@IAEXPAVGameSlot@@@Z
+// Body in nat_notifyTargetOfProbe.asm (exact 360B retail).
 
 // ?notifyUsersOfConnectionDone@NAT@@IAEXH@Z present-unmatched
 void NAT::notifyUsersOfConnectionDone(Int nodeIndex) {

@@ -631,72 +631,8 @@ void DataChunkInput::registerParser( const AsciiString& label, const AsciiString
 // parse the chunk stream using registered parsers
 // it is assumed that the file position is at the start of a data chunk
 // (it can be inside a parent chunk) when parse is called.
-// ?parse@DataChunkInput@@QAE_NPAX@Z present-unmatched
-Bool DataChunkInput::parse( void *userData )
-{
-	AsciiString label;
-	AsciiString parentLabel;
-	DataChunkVersionType ver;
-	UserParser *parser;
-	Bool scopeOK;
-	DataChunkInfo info;
-	
-	// If the header wasn't a chunk table of contents, we can't parse. 
-	if (!m_contents.isOpenedForRead()) {
-		return false;
-	}
-
-	// if we are inside a data chunk right now, get its name
-	if (m_chunkStack)
-		parentLabel = m_contents.getName( m_chunkStack->id );
-
-	while( atEndOfFile() == false )
-	{
-		if (m_chunkStack) { // If we are parsing chunks in a chunk, check current length. 
-			if (m_chunkStack->dataLeft < CHUNK_HEADER_BYTES) {
-				DEBUG_ASSERTCRASH( m_chunkStack->dataLeft==0, ("Unexpected extra data in chunk."));
-				break;
-			}
-		}
-		// open the chunk
-		label = openDataChunk( &ver );
-		if (atEndOfFile()) { // FILE * returns eof after you read past end of file, so check.
-			break;
-		}
-
-		// find a registered parser for this chunk
-		for( parser=m_parserList; parser; parser=parser->next )
-		{
-			// chunk labels must match
-			if ( parser->label == label )
-			{
-				// make sure parent name (scope) also matches
-				scopeOK = true;
-
-				if (parentLabel != parser->parentLabel) 
-					scopeOK = false;
-
-				if (scopeOK)
-				{
-					// m_tmp_file out the chunk info and call the user parser
-					info.label = label;
-					info.parentLabel = parentLabel;
-					info.version = ver;
-					info.dataSize = getChunkDataSize();
-
-					if (parser->parser( *this, &info, userData ) == false)
-						return false;
-					break; 
-				}
-			}
-		}
-
-		// close chunk (and skip to end if need be)
-		closeDataChunk();
-	}
-
-	return true;
-}
+// ?parse@DataChunkInput@@QAE_NPAX@Z
+// Body in DataChunk_parse.asm (exact 1006B retail).
 
 // clear the stack
 // ?clearChunkStack@DataChunkInput@@IAEXXZ present-unmatched

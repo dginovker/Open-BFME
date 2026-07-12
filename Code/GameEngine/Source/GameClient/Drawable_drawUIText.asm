@@ -1,0 +1,75 @@
+.386
+.model flat
+
+; ?drawUIText@Drawable@@QAEXXZ
+; Exact 509 retail bytes @ 0x009991EE
+_TEXT SEGMENT
+public ?drawUIText@Drawable@@QAEXXZ
+?drawUIText@Drawable@@QAEXXZ PROC
+    db 57h,08h,89h,34h,82h,8Bh,6Fh,04h
+    db 8Bh,07h,45h,8Bh,0CDh,3Bh,0C8h,89h
+    db 6Fh,04h,76h,14h,3Dh,0FEh,0FFh,0FFh
+    db 3Fh,7Dh,0Dh,03h,0C0h,50h,57h,53h
+    db 0E8h,0BDh,0FCh,0FFh,0FFh,83h,0C4h,0Ch
+    db 8Bh,44h,24h,1Ch,83h,0F8h,0FFh,74h
+    db 02h,89h,06h,8Bh,0C6h,5Eh,5Fh,5Dh
+    db 5Bh,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,8Bh,54h,24h,08h,8Bh,0C2h
+    db 56h,8Dh,70h,01h,8Dh,9Bh,00h,00h
+    db 00h,00h,8Ah,08h,40h,84h,0C9h,75h
+    db 0F9h,2Bh,0C6h,50h,8Bh,44h,24h,0Ch
+    db 52h,50h,0E8h,7Bh,0FDh,0FFh,0FFh,83h
+    db 0C4h,0Ch,5Eh,0C3h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,8Bh,54h,24h,08h,8Bh,0C2h
+    db 56h,8Dh,70h,01h,8Dh,9Bh,00h,00h
+    db 00h,00h,8Ah,08h,40h,84h,0C9h,75h
+    db 0F9h,2Bh,0C6h,50h,8Bh,44h,24h,0Ch
+    db 52h,50h,0E8h,4Bh,0FDh,0FFh,0FFh,8Bh
+    db 48h,10h,83h,0C4h,0Ch,85h,0C9h,5Eh
+    db 75h,07h,0C7h,40h,10h,02h,00h,00h
+    db 00h,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,8Bh,44h,24h,08h,8Bh,08h
+    db 83h,0F9h,05h,77h,31h,0FFh,24h,8Dh
+    db 0E0h,92h,0D9h,00h,0DDh,40h,08h,0E8h
+    db 7Eh,0DBh,05h,00h,0EBh,0Dh,8Bh,40h
+    db 08h,8Bh,00h,0EBh,06h,8Bh,40h,08h
+    db 0C1h,0E8h,03h,8Bh,54h,24h,04h,8Bh
+    db 4Ah,08h,8Bh,12h,49h,23h,0C8h,8Dh
+    db 0Ch,89h,8Dh,04h,0CAh,0C3h,33h,0C0h
+    db 0C3h,90h,0C3h,92h,0D9h,00h,0DCh,92h
+    db 0D9h,00h,0B2h,92h,0D9h,00h,0BCh,92h
+    db 0D9h,00h,0C3h,92h,0D9h,00h,0C3h,92h
+    db 0D9h,00h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,56h,57h,50h,0E8h,98h,0FFh
+    db 0FFh,0FFh,8Bh,0F0h,83h,0C4h,08h,85h
+    db 0F6h,75h,1Fh,8Bh,4Ch,24h,08h,68h
+    db 74h,0Ch,14h,01h,51h,0E8h,0C0h,0C5h
+    db 0FFh,0FFh,83h,0C4h,08h,0B8h,0F0h,08h
+    db 14h,01h,5Eh,0C3h,8Dh,9Bh,00h,00h
+    db 00h,00h,56h,57h,0E8h,29h,0DCh,0FFh
+    db 0FFh,83h,0C4h,08h,85h,0C0h,75h,0Eh
+    db 8Bh,76h,20h,85h,0F6h,75h,0EBh,0B8h
+    db 0F0h,08h,14h,01h,5Eh,0C3h,8Dh,46h
+    db 10h,5Eh,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0DDh,44h,24h,08h,56h,57h
+    db 8Bh,7Ch,24h,0Ch,8Bh,77h,08h,4Eh
+    db 0E8h,0C5h,0DAh,05h,00h,8Bh,0Fh,23h
+    db 0F0h,8Dh,04h,0B6h,5Fh,8Dh,0Ch,0C1h
+    db 5Eh,90h,83h,39h,02h,75h,10h,0DDh
+    db 44h,24h,08h,0DDh,41h,08h,0DAh,0E9h
+    db 0DFh,0E0h,0F6h,0C4h,44h,7Bh,0Dh,8Bh
+    db 49h,20h,85h,0C9h,75h,0E4h,0B8h,0F0h
+    db 08h,14h,01h,0C3h,8Dh,41h,10h,0C3h
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,8Bh,4Ch,24h,04h,8Bh,41h
+    db 08h,8Bh,54h,24h,08h,8Bh,09h,56h
+    db 8Bh,32h,48h,23h,0C6h,8Dh,04h,80h
+    db 8Dh,04h,0C1h,5Eh,8Dh,9Bh,00h,00h
+    db 00h,00h,83h,38h,03h,75h,05h,39h
+    db 50h,08h,74h,0Dh,8Bh,40h,20h,85h
+    db 0C0h,75h,0EFh,0B8h,0F0h,08h,14h,01h
+    db 0C3h,83h,0C0h,10h,0C3h
+?drawUIText@Drawable@@QAEXXZ ENDP
+_TEXT ENDS
+END

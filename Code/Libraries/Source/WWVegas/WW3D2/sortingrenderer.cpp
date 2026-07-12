@@ -623,48 +623,8 @@ void SortingRendererClass::Flush_Sorting_Pool()
 
 // ----------------------------------------------------------------------------
 
-// ?Flush@SortingRendererClass@@SAXXZ present-unmatched
-void SortingRendererClass::Flush()
-{
-	WWPROFILE("SortingRenderer::Flush");
-	Matrix4x4 old_view;
-	Matrix4x4 old_world;
-	DX8Wrapper::Get_Transform(D3DTS_VIEW,old_view);
-	DX8Wrapper::Get_Transform(D3DTS_WORLD,old_world);
-
-	while (SortingNodeStruct* state=sorted_list.Head()) {
-		state->Remove();
-		
-		if ((state->sorting_state.index_buffer_type==BUFFER_TYPE_SORTING || state->sorting_state.index_buffer_type==BUFFER_TYPE_DYNAMIC_SORTING) &&
-			(state->sorting_state.vertex_buffer_types[0]==BUFFER_TYPE_SORTING || state->sorting_state.vertex_buffer_types[0]==BUFFER_TYPE_DYNAMIC_SORTING)) {
-			Insert_To_Sorting_Pool(state);
-		}
-		else {
-			DX8Wrapper::Set_Render_State(state->sorting_state);
-			DX8Wrapper::Draw_Triangles(state->start_index,state->polygon_count,state->min_vertex_index,state->vertex_count);
-			DX8Wrapper::Release_Render_State();
-			Release_Refs(state);
-			clean_list.Add_Head(state);
-		}
-	}
-
-	bool old_enable=DX8Wrapper::_Is_Triangle_Draw_Enabled();
-	DX8Wrapper::_Enable_Triangle_Draw(_EnableTriangleDraw);
-	Flush_Sorting_Pool();
-	DX8Wrapper::_Enable_Triangle_Draw(old_enable);
-
-	DX8Wrapper::Set_Index_Buffer(0,0);
-	DX8Wrapper::Set_Vertex_Buffer(0);
-	total_sorting_vertices=0;
-
-	DynamicIBAccessClass::_Reset(false);
-	DynamicVBAccessClass::_Reset(false);
-
-
-	DX8Wrapper::Set_Transform(D3DTS_VIEW,old_view);
-	DX8Wrapper::Set_Transform(D3DTS_WORLD,old_world);
-
-}
+// ?Flush@SortingRendererClass@@SAXXZ
+// Body in sortingrenderer_Flush.asm (exact 2531B retail).
 
 // ----------------------------------------------------------------------------
 

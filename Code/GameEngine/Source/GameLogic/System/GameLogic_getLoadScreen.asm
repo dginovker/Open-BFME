@@ -1,0 +1,72 @@
+.386
+.model flat
+
+; ?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z
+; Exact 487 retail bytes @ 0x006BACD7
+_TEXT SEGMENT
+public ?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z
+?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z PROC
+    db 64h,0A1h,00h,00h,00h,00h,50h,64h
+    db 89h,25h,00h,00h,00h,00h,51h,56h
+    db 68h,94h,02h,00h,00h,0E8h,3Fh,72h
+    db 1Ch,00h,8Bh,0F0h,83h,0C4h,04h,89h
+    db 74h,24h,04h,33h,0C0h,3Bh,0F0h,89h
+    db 44h,24h,10h,74h,16h,8Bh,0CEh,0E8h
+    db 4Eh,33h,98h,0FFh,0C7h,06h,5Ch,0CAh
+    db 11h,01h,0C7h,46h,08h,48h,0CAh,11h
+    db 01h,8Bh,0C6h,8Bh,4Ch,24h,08h,5Eh
+    db 64h,89h,0Dh,00h,00h,00h,00h,83h
+    db 0C4h,10h,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,6Ah,0FFh,68h,6Bh,95h,04h,01h
+    db 64h,0A1h,00h,00h,00h,00h,50h,64h
+    db 89h,25h,00h,00h,00h,00h,51h,68h
+    db 04h,19h,00h,00h,0E8h,0D0h,71h,1Ch
+    db 00h,83h,0C4h,04h,89h,04h,24h,85h
+    db 0C0h,0C7h,44h,24h,0Ch,00h,00h,00h
+    db 00h,74h,16h,8Bh,0C8h,0E8h,0FCh,6Eh
+    db 95h,0FFh,8Bh,4Ch,24h,04h,64h,89h
+    db 0Dh,00h,00h,00h,00h,83h,0C4h,10h
+    db 0C3h,8Bh,4Ch,24h,04h,33h,0C0h,64h
+    db 89h,0Dh,00h,00h,00h,00h,83h,0C4h
+    db 10h,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,6Ah,0FFh,68h,8Bh,95h,04h,01h
+    db 64h,0A1h,00h,00h,00h,00h,50h,64h
+    db 89h,25h,00h,00h,00h,00h,51h,6Ah
+    db 14h,0E8h,63h,71h,1Ch,00h,83h,0C4h
+    db 04h,89h,04h,24h,85h,0C0h,0C7h,44h
+    db 24h,0Ch,00h,00h,00h,00h,74h,16h
+    db 8Bh,0C8h,0E8h,0BFh,7Eh,96h,0FFh,8Bh
+    db 4Ch,24h,04h,64h,89h,0Dh,00h,00h
+    db 00h,00h,83h,0C4h,10h,0C3h,8Bh,4Ch
+    db 24h,04h,33h,0C0h,64h,89h,0Dh,00h
+    db 00h,00h,00h,83h,0C4h,10h,0C3h,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,6Ah,0FFh,68h,0ABh,95h,04h,01h
+    db 64h,0A1h,00h,00h,00h,00h,50h,64h
+    db 89h,25h,00h,00h,00h,00h,51h,6Ah
+    db 0Ch,0E8h,0F3h,70h,1Ch,00h,83h,0C4h
+    db 04h,89h,04h,24h,85h,0C0h,0C7h,44h
+    db 24h,0Ch,00h,00h,00h,00h,74h,16h
+    db 8Bh,0C8h,0E8h,0F3h,0Bh,97h,0FFh,8Bh
+    db 4Ch,24h,04h,64h,89h,0Dh,00h,00h
+    db 00h,00h,83h,0C4h,10h,0C3h,8Bh,4Ch
+    db 24h,04h,33h,0C0h,64h,89h,0Dh,00h
+    db 00h,00h,00h,83h,0C4h,10h,0C3h,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,83h,0E9h,08h,0E9h,0EEh,38h,96h
+    db 0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,56h,8Bh,0F1h,0E8h,1Dh,0FDh,97h
+    db 0FFh,0F6h,44h,24h,08h,01h,74h,09h
+    db 56h,0E8h,0FBh,6Fh,1Ch,00h,83h,0C4h
+    db 04h,8Bh,0C6h,5Eh,0C2h,04h,00h
+?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z ENDP
+_TEXT ENDS
+END

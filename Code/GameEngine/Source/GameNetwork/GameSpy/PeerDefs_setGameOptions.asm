@@ -1,0 +1,59 @@
+.386
+.model flat
+
+; ?setGameOptions@GameSpyInfo@@UAEXXZ
+; Exact 383 retail bytes @ 0x00671686
+_TEXT SEGMENT
+public ?setGameOptions@GameSpyInfo@@UAEXXZ
+?setGameOptions@GameSpyInfo@@UAEXXZ PROC
+    db 68h,0Fh,84h,0B1h,00h,00h,00h,8Bh
+    db 46h,08h,8Bh,0Ch,0B8h,3Bh,0CBh,0Fh
+    db 84h,0A3h,00h,00h,00h,0E8h,2Bh,63h
+    db 9Bh,0FFh,84h,0C0h,0Fh,84h,96h,00h
+    db 00h,00h,89h,5Ch,24h,14h,8Bh,56h
+    db 08h,8Dh,4Ch,24h,1Ch,51h,8Bh,0Ch
+    db 0BAh,0C6h,84h,24h,0C0h,01h,00h,00h
+    db 03h,0E8h,47h,8Bh,9Ch,0FFh,50h,8Dh
+    db 4Ch,24h,18h,0C6h,84h,24h,0C0h,01h
+    db 00h,00h,04h,0E8h,7Ah,79h,21h,00h
+    db 8Dh,4Ch,24h,1Ch,0C6h,84h,24h,0BCh
+    db 01h,00h,00h,03h,0E8h,0E9h,6Ah,21h
+    db 00h,8Bh,44h,24h,10h,3Bh,0C3h,74h
+    db 1Bh,66h,39h,58h,04h,74h,15h,6Ah
+    db 01h,8Dh,44h,24h,10h,50h,8Dh,4Ch
+    db 24h,18h,0C6h,44h,24h,14h,2Ch,0E8h
+    db 56h,66h,21h,00h,8Bh,44h,24h,14h
+    db 3Bh,0C3h,74h,09h,0Fh,0B7h,48h,04h
+    db 83h,0C0h,08h,0EBh,07h,33h,0C9h,0B8h
+    db 8Bh,38h,07h,01h,51h,50h,8Dh,4Ch
+    db 24h,18h,0E8h,33h,66h,21h,00h,8Dh
+    db 4Ch,24h,14h,0C6h,84h,24h,0BCh,01h
+    db 00h,00h,02h,0E8h,02h,62h,21h,00h
+    db 47h,83h,0FFh,08h,0Fh,8Ch,38h,0FFh
+    db 0FFh,0FFh,8Bh,4Ch,24h,10h,3Bh,0CBh
+    db 74h,05h,83h,0C1h,08h,0EBh,05h,0B9h
+    db 8Bh,38h,07h,01h,8Bh,0C1h,8Dh,70h
+    db 01h,90h,8Ah,10h,40h,3Ah,0D3h,75h
+    db 0F9h,2Bh,0C6h,03h,0C1h,50h,51h,8Dh
+    db 4Ch,24h,2Ch,0E8h,21h,9Bh,9Bh,0FFh
+    db 8Bh,44h,24h,18h,3Bh,0C3h,8Dh,48h
+    db 08h,75h,05h,0B9h,8Bh,38h,07h,01h
+    db 8Bh,0C1h,8Dh,70h,01h,0EBh,03h,8Dh
+    db 49h,00h,8Ah,10h,40h,3Ah,0D3h,75h
+    db 0F9h,2Bh,0C6h,03h,0C1h,50h,51h,8Dh
+    db 4Ch,24h,68h,0E8h,0F1h,9Ah,9Bh,0FFh
+    db 8Bh,0Dh,0C8h,71h,2Fh,01h,8Bh,11h
+    db 8Dh,44h,24h,20h,50h,0FFh,52h,18h
+    db 8Dh,4Ch,24h,10h,0C6h,84h,24h,0BCh
+    db 01h,00h,00h,01h,0E8h,79h,61h,21h
+    db 00h,8Dh,4Ch,24h,18h,88h,9Ch,24h
+    db 0BCh,01h,00h,00h,0E8h,69h,61h,21h
+    db 00h,8Dh,4Ch,24h,20h,0C7h,84h,24h
+    db 0BCh,01h,00h,00h,0FFh,0FFh,0FFh,0FFh
+    db 0E8h,0EAh,53h,9Ah,0FFh,8Bh,8Ch,24h
+    db 0B4h,01h,00h,00h,5Fh,5Eh,64h,89h
+    db 0Dh,00h,00h,00h,00h,5Bh,81h,0C4h
+    db 0B4h,01h,00h,00h,0C2h,04h,00h
+?setGameOptions@GameSpyInfo@@UAEXXZ ENDP
+_TEXT ENDS
+END

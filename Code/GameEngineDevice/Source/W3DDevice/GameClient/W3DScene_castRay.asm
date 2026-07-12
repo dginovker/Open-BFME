@@ -1,0 +1,84 @@
+.386
+.model flat
+
+; ?castRay@RTS3DScene@@QAE_NAAVRayCollisionTestClass@@_NH@Z
+; Exact 578 retail bytes @ 0x00956670
+_TEXT SEGMENT
+public ?castRay@RTS3DScene@@QAE_NAAVRayCollisionTestClass@@_NH@Z
+?castRay@RTS3DScene@@QAE_NAAVRayCollisionTestClass@@_NH@Z PROC
+    db 83h,0ECh,1Ch,8Bh,01h,8Dh,54h,24h
+    db 04h,52h,0FFh,90h,0Ch,01h,00h,00h
+    db 0D9h,44h,24h,04h,8Bh,44h,24h,20h
+    db 8Bh,4Ch,24h,08h,0D9h,18h,0D9h,44h
+    db 24h,18h,8Bh,54h,24h,0Ch,0D8h,4Ch
+    db 24h,18h,89h,48h,04h,0D9h,44h,24h
+    db 14h,89h,50h,08h,0D8h,4Ch,24h,14h
+    db 0DEh,0C1h,0D9h,44h,24h,10h,0D8h,4Ch
+    db 24h,10h,0DEh,0C1h,0D9h,5Ch,24h,20h
+    db 0D9h,44h,24h,20h,0D9h,0FAh,0D9h,1Ch
+    db 24h,8Bh,0Ch,24h,89h,48h,0Ch,83h
+    db 0C4h,1Ch,0C2h,04h,00h,0CCh,0CCh,0CCh
+    db 6Ah,0FFh,68h,94h,0E4h,05h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,56h,8Bh
+    db 0F1h,89h,74h,24h,04h,0E8h,0BEh,9Dh
+    db 0FCh,0FFh,33h,0C0h,0C7h,06h,0E0h,0D5h
+    db 13h,01h,0C7h,46h,08h,0DCh,0D5h,13h
+    db 01h,89h,44h,24h,10h,89h,86h,0CCh
+    db 00h,00h,00h,89h,86h,0D0h,00h,00h
+    db 00h,0C7h,86h,0C8h,00h,00h,00h,0C8h
+    db 7Ah,12h,01h,89h,86h,0D4h,00h,00h
+    db 00h,89h,86h,0DCh,00h,00h,00h,89h
+    db 86h,0E0h,00h,00h,00h,0C7h,86h,0D8h
+    db 00h,00h,00h,14h,0ADh,13h,01h,89h
+    db 86h,0E4h,00h,00h,00h,8Dh,8Eh,0E8h
+    db 00h,00h,00h,0C6h,44h,24h,10h,03h
+    db 0E8h,33h,0E8h,01h,00h,8Bh,4Ch,24h
+    db 08h,8Bh,0C6h,5Eh,64h,89h,0Dh,00h
+    db 00h,00h,00h,83h,0C4h,10h,0C3h,0CCh
+    db 83h,0ECh,74h,56h,8Bh,0F1h,8Bh,06h
+    db 0FFh,90h,0DCh,01h,00h,00h,8Bh,4Ch
+    db 24h,7Ch,85h,41h,04h,75h,09h,32h
+    db 0C0h,5Eh,83h,0C4h,74h,0C2h,04h,00h
+    db 8Bh,86h,0D4h,00h,00h,00h,53h,0BBh
+    db 01h,00h,00h,00h,3Bh,0C3h,0C6h,44h
+    db 24h,0Bh,00h,0C7h,44h,24h,0Ch,00h
+    db 00h,80h,3Fh,0Fh,86h,0A1h,01h,00h
+    db 00h,55h,57h,0BDh,0F4h,0FFh,0FFh,0FFh
+    db 0BFh,0Ch,00h,00h,00h,8Dh,49h,00h
+    db 8Bh,8Eh,0CCh,00h,00h,00h,8Bh,0D5h
+    db 2Bh,0D1h,8Dh,44h,0Fh,0F4h,03h,0D0h
+    db 8Dh,4Ch,14h,4Ch,0BAh,02h,00h,00h
+    db 00h,8Dh,0A4h,24h,00h,00h,00h,00h
+    db 0D9h,00h,83h,0C0h,0Ch,0D8h,4Eh,18h
+    db 83h,0C1h,0Ch,4Ah,0D9h,40h,0F8h,0D8h
+    db 4Eh,1Ch,0DEh,0C1h,0D9h,40h,0FCh,0D8h
+    db 4Eh,20h,0DEh,0C1h,0D8h,46h,24h,0D9h
+    db 59h,0ECh,0D9h,40h,0F8h,0D8h,4Eh,2Ch
+    db 0D9h,40h,0F4h,0D8h,4Eh,28h,0DEh,0C1h
+    db 0D9h,40h,0FCh,0D8h,4Eh,30h,0DEh,0C1h
+    db 0D8h,46h,34h,0D9h,59h,0F0h,0D9h,40h
+    db 0FCh,0D8h,4Eh,40h,0D9h,46h,38h,0D8h
+    db 48h,0F4h,0DEh,0C1h,0D9h,46h,3Ch,0D8h
+    db 48h,0F8h,0DEh,0C1h,0D8h,46h,44h,0D9h
+    db 59h,0F4h,75h,0A4h,8Bh,4Ch,24h,3Ch
+    db 8Bh,44h,24h,38h,8Bh,54h,24h,40h
+    db 89h,4Ch,24h,54h,8Bh,4Ch,24h,48h
+    db 89h,44h,24h,50h,8Bh,44h,24h,44h
+    db 89h,54h,24h,58h,8Bh,54h,24h,4Ch
+    db 89h,4Ch,24h,60h,8Dh,4Ch,24h,50h
+    db 89h,44h,24h,5Ch,89h,54h,24h,64h
+    db 0E8h,0B0h,98h,6Eh,0FFh,6Ah,00h,8Dh
+    db 44h,24h,30h,50h,8Dh,4Ch,24h,1Ch
+    db 51h,8Bh,8Ch,24h,94h,00h,00h,00h
+    db 8Dh,54h,24h,2Ch,52h,8Dh,44h,24h
+    db 60h,50h,83h,0C1h,0Ch,0E8h,0C6h,21h
+    db 0F8h,0FFh,84h,0C0h,74h,75h,0D9h,44h
+    db 24h,20h,0D8h,64h,24h,2Ch,0D9h,44h
+    db 24h,24h,0D8h,64h,24h,30h,0D9h,44h
+    db 24h,28h,0D8h,64h,24h,34h,0D9h,0C0h
+    db 0D8h,0C9h,0D9h,0C2h,0D8h,0CBh,0DEh,0C1h
+    db 0D9h,0C3h
+?castRay@RTS3DScene@@QAE_NAAVRayCollisionTestClass@@_NH@Z ENDP
+_TEXT ENDS
+END

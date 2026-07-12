@@ -4065,7 +4065,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getListboxBottomEntry@@YAHPAU_ListboxData@@@Z,,0x004B6BA0,63,Code/masm_dumps/_getListboxBottomEntry__YAHPAU_ListboxData___Z_4B6BA0.asm,matched,MASM exact retail dump
 ?getListboxEntryBasedOnCoord@@YAHPAVGameWindow@@HHAAH1@Z,,0x004B69D0,273,Code/masm_dumps/__getListboxEntryBasedOnCoord__YAHPAVGameWindow__HH_4B69D0.asm,matched,
 ?getListboxTopEntry@@YAHPAU_ListboxData@@@Z,,0x004B6B60,44,Code/masm_dumps/_getListboxTopEntry__YAHPAU_ListboxData___Z_4B6B60.asm,matched,MASM exact retail dump
-?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z,,0x006BACD7,487,Code/GameEngine/Source/GameLogic/System/GameLogic_getLoadScreen.asm,matched,exact 487B via MASM
+?getLoadScreen@GameLogic@@AAEPAVLoadScreen@@_N@Z,,0x006BACD7,83,Code/GameEngine/Source/GameLogic/System/GameLogic_getLoadScreen.asm,matched,exact 487B via MASM
 ?getLocalAddr@UDP@@QAEHAAIAAG@Z,,0x006845C0,25,Code/GameEngine/Source/GameNetwork/udp.cpp,matched,
 ?getLocalPlayerID@ConnectionManager@@QAEIXZ,,0x0004A291,5,Code/masm_dumps/_getLocalPlayerID_ConnectionManager__QAEIXZ_4A291.asm,matched,MASM exact retail dump
 ?getManglerResponse@FirewallHelperClass@@QAEGGH@Z,,0x00025A7C,5,Code/masm_dumps/_getManglerResponse_FirewallHelperClass__QAEGGH_Z_25A7C.asm,matched,MASM exact retail dump
@@ -5116,3 +5116,6 @@ _powf,,0x00097070,14,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
 ??0LightClass@@QAE@ABV0@@Z,,0x0093BFB0,307,Code/Libraries/Source/WWVegas/WW3D2/light.cpp,matched,trimmed oversized claim into sibling
 ?Clone@LightClass@@UBEPAVRenderObjClass@@XZ,,0x0093C230,96,Code/Libraries/Source/WWVegas/WW3D2/light.cpp,matched,
 ?getErrorStringFromReturnType@LANAPIInterface@@QAE?AVUnicodeString@@W4ReturnType@1@@Z,,0x00688B50,304,Code/GameEngine/Source/GameNetwork/LANAPICallbacks.cpp,matched,
+??1MapCache@@QAE@XZ,,0x00078E90,89,Code/GameEngine/Source/Common/GameEngine.cpp,matched,
+??_GMapCache@@QAEPAXI@Z,,0x00079030,30,Code/GameEngine/Source/Common/GameEngine.cpp,matched,
+?createFileSystem@GameEngine@@MAEPAVFileSystem@@XZ,,0x006BADB0,86,Code/GameEngine/Source/Common/GameEngine.cpp,matched,

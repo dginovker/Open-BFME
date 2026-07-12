@@ -293,6 +293,7 @@ typedef struct _WIN32_FIND_DATAA {
 #define VK_F7 0x76
 #define VK_F8 0x77
 #define ERROR_SUCCESS 0L
+#define ERROR_ALREADY_EXISTS 183L
 #define CP_ACP 0
 #define CP_UTF8 65001
 #define EINVAL 22
@@ -348,6 +349,7 @@ typedef struct _WIN32_FIND_DATAA {
 #define SW_SHOW 1
 #define SW_SHOWNORMAL 1
 #define DRIVE_CDROM 5
+#define WM_USER 0x0400
 #define WM_MOUSEMOVE 0x0200
 #define WM_LBUTTONDOWN 0x0201
 #define WM_LBUTTONUP 0x0202

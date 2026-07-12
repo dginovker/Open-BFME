@@ -25,6 +25,8 @@ class STLSpecialAlloc;
 #include <math.h>
 #include <memory.h>
 #include <mmsystem.h>
+#include <process.h>
+#include <direct.h>
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdio.h>

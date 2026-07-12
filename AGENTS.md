@@ -56,12 +56,11 @@ Sources live under `Code/` at the official BFME tree path (from `__FILE__`
 strings in the exe): `Code/GameEngine/{Source,Include}/...`,
 `Code/GameEngineDevice/...`, `Code/Libraries/Source/WWVegas/{WWLib,WWMath,WWDebug,WW3D2,...}`.
 New hand-ports go to the same official location as the original file;
-`land_zh.py` already lands sweep files there. EXCEPTION: `src/w3d/` still holds
-85 unreconciled ported WWVegas headers (always.h, rendobj.h, dx8wrapper.h, ...)
-whose modified content the ported cpps need but the zh cpps can't bind (they
-compile against reference/shim variants). Moving one header to its official dir
-= verify BOTH the zh cpps and the ported cpps that include it still byte-match,
-then delete its /Isrc/w3d idir entries. Everything else w3d already moved.
+`land_zh.py` already lands sweep files there. `src/` is gone: all 85
+ported WWVegas headers were reconciled against retail and moved to their
+official dirs (the old `/Isrc/w3d` idirs are stripped). Headers are shared
+truth now — moving/editing one means BOTH the zh cpps and the ported cpps
+that include it must still byte-match.
 
 ## Stopping rules
 

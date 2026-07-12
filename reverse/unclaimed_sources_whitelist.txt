@@ -1,6 +1,6 @@
 # Source files allowed to exist with ZERO matched functions.csv rows.
 #
-# Everything else in Code/ (and src/w3d/) MUST own at least one byte-verified matched row:
+# Everything else in Code/ MUST own at least one byte-verified matched row:
 # source presence is not progress, and a file of present-unmatched markers
 # must not be committable as if it were work (see docs/zh_sweep.md).
 # The build fails on any unlisted zero-claim source AND on any stale entry

@@ -1,6 +1,7 @@
 /*
 **  Minimal wmsdk.h shim — provides the Win32 wave/WM types needed by
-**  simpleplayer.h so the sweep build can proceed.
+**  simpleplayer.h so the sweep build can proceed.  Base Win32 types come
+**  from the windows.h shim (no native wchar_t in this toolchain).
 */
 
 #pragma once
@@ -8,18 +9,10 @@
 #ifndef WMSDK_H
 #define WMSDK_H
 
-// Standard Win32 wave types
-typedef void VOID;
-typedef unsigned long DWORD;
-typedef unsigned short WORD;
-typedef unsigned char BYTE;
-typedef int BOOL;
-typedef void* HANDLE;
-typedef wchar_t WCHAR;
-typedef const wchar_t* LPCWSTR;
-typedef wchar_t* LPWSTR;
-typedef long LONG;
+#include <windows.h>
+
 typedef unsigned __int64 QWORD;
+typedef unsigned long DWORD_PTR;
 
 #ifndef REFIID_DEFINED
 typedef void* REFIID;
@@ -31,14 +24,9 @@ struct IID {};
 #define IID_DEFINED
 #endif
 
-typedef long HRESULT;
-#define S_OK ((HRESULT)0L)
-#define E_FAIL ((HRESULT)0x80004005L)
-#define E_UNEXPECTED ((HRESULT)0x8000FFFFL)
-
 #define MAX_PATH 260
 
-extern const wchar_t* wcsstr(const wchar_t*, const unsigned short*);
+extern const WCHAR* wcsstr(const WCHAR*, const unsigned short*);
 extern int memcmp(const void*, const void*, unsigned int);
 
 // Wave types
@@ -66,15 +54,12 @@ typedef struct wavehdr_tag {
 typedef void* HWAVEOUT;
 typedef void* HMMIO;
 
+#ifndef CALLBACK
 #define CALLBACK __stdcall
+#endif
 #define STDMETHODCALLTYPE __stdcall
 
-typedef unsigned long ULONG;
-typedef unsigned int UINT;
 #define __RPC_FAR
-
-// Critical section
-struct CRITICAL_SECTION { void* DebugInfo; long LockCount; long RecursionCount; void* OwningThread; void* LockSemaphore; unsigned long SpinCount; };
 
 // WM reader types (forward declarations — sweep doesn't instantiate these)
 struct IWMReaderCallback { virtual ~IWMReaderCallback() {} };

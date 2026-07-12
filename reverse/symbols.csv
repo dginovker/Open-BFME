@@ -1283,3 +1283,7 @@ _bfme_asin,0x009F7D86,internal asin helper called by ASin
 _InitStatsConnection,0x009D58C0
 _IsStatsConnected,0x009D2B60
 ?_M_insert_overflow@?$vector@UtConnInfoStruct@@V?$allocator@UtConnInfoStruct@@@_STL@@@_STL@@IAEXPAUtConnInfoStruct@@ABU3@ABU__false_type@2@I_N@Z,0x0004ABF6
+?enableWaterGrid@WaterRenderObjClass@@QAEX_N@Z,0x000366E7
+?setGridHeightClamps@WaterRenderObjClass@@QAEXMM@Z,0x0003387F
+?Allocate_DX8_Dynamic_Buffer@DynamicIBAccessClass@@QAEXXZ,0x0091D560
+?Allocate_Sorting_Dynamic_Buffer@DynamicIBAccessClass@@QAEXXZ,0x0091D6B0

@@ -359,6 +359,10 @@ typedef struct _WIN32_FIND_DATAA {
 #define SW_SHOWNORMAL 1
 #define DRIVE_CDROM 5
 #define WM_USER 0x0400
+#define WM_SETTEXT 0x000C
+#define WM_INITDIALOG 0x0110
+#define WM_COMMAND 0x0111
+#define LB_ADDSTRING 0x0180
 #define WM_MOUSEMOVE 0x0200
 #define WM_LBUTTONDOWN 0x0201
 #define WM_LBUTTONUP 0x0202
@@ -488,6 +492,11 @@ typedef DWORD (WINAPI *LPTHREAD_START_ROUTINE)(LPVOID);
 __declspec(dllimport) HANDLE WINAPI CreateThread(LPSECURITY_ATTRIBUTES, DWORD, LPTHREAD_START_ROUTINE, LPVOID, DWORD, LPDWORD);
 __declspec(dllimport) BOOL WINAPI TerminateThread(HANDLE, DWORD);
 __declspec(dllimport) DWORD WINAPI GetCurrentTime(void);
+// excpt.h SEH intrinsics (VC7 treats these as intrinsics in __except filters)
+unsigned long __cdecl _exception_code(void);
+void * __cdecl _exception_info(void);
+#define GetExceptionCode _exception_code
+#define GetExceptionInformation ((PEXCEPTION_POINTERS)_exception_info())
 __declspec(dllimport) BOOL WINAPI ReadConsoleInputA(HANDLE, PINPUT_RECORD, DWORD, LPDWORD);
 #define ReadConsoleInput ReadConsoleInputA
 __declspec(dllimport) BOOL WINAPI WriteConsoleOutputA(HANDLE, CHAR_INFO *, COORD, COORD, PSMALL_RECT);

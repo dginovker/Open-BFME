@@ -1193,3 +1193,4 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ?Notify_Added@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FBF0
 ?Notify_Removed@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FC00
 ??0TexBufferClass@@QAE@HPBD@Z,0x0092BA60
+?CRC_Memory@@YAKPBEKK@Z,0x009E19C0,second realcrc link (Install_UV / Update_CRC)

@@ -1228,3 +1228,6 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ??0?$_STLP_alloc_proxy@PAPAPAVMapObject@@PAPAV1@V?$allocator@PAPAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVMapObject@@@1@PAPAPAVMapObject@@@Z,0x008F9A20,rel32 pin for exact-ambiguous landing
 ??0?$_STLP_alloc_proxy@IPAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVMapObject@@@1@I@Z,0x008F9A30,rel32 pin for exact-ambiguous landing
 ?_M_initialize_map@?$_Deque_base@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@IAEXI@Z,0x008FA2B0,rel32 pin for exact-ambiguous landing
+?Add@?$DynamicVectorClass@PAVVertexMaterialClass@@@@QAE_NABQAVVertexMaterialClass@@@Z,0x0092F7C0,rel32 pin for exact-ambiguous landing
+?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVAABoxClass@@PAUCastResultStruct@@@Z,0x008DAD70,rel32 pin for exact-ambiguous landing
+??4BoxRenderObjClass@@QAEAAV0@ABV0@@Z,0x00956E40,rel32 pin for exact-ambiguous landing

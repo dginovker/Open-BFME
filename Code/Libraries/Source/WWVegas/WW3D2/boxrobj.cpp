@@ -648,7 +648,6 @@ AABoxRenderObjClass::AABoxRenderObjClass(const AABoxClass & box)
  * HISTORY:                                                                                    *
  *   1/19/00    gth : Created.                                                                 *
  *=============================================================================================*/
-// ??4AABoxRenderObjClass@@QAEAAV0@ABV0@@Z present-unmatched
 AABoxRenderObjClass & AABoxRenderObjClass::operator = (const AABoxRenderObjClass & that)
 {
 	if (this != &that) {
@@ -816,7 +815,6 @@ void AABoxRenderObjClass::update_cached_box(void)
  * HISTORY:                                                                                    *
  *   1/19/00    gth : Created.                                                                 *
  *=============================================================================================*/
-// ?Cast_Ray@AABoxRenderObjClass@@UAE_NAAVRayCollisionTestClass@@@Z present-unmatched
 bool AABoxRenderObjClass::Cast_Ray(RayCollisionTestClass & raytest)
 {
 	if ((Get_Collision_Type() & raytest.CollisionType) == 0) return false;

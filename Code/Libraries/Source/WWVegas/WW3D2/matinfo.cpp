@@ -380,7 +380,6 @@ void MaterialCollectorClass::Add_Shader(ShaderClass shader)
 	LastShader = shader;
 }
 
-// ?Add_Vertex_Material@MaterialCollectorClass@@QAEXPAVVertexMaterialClass@@@Z present-unmatched
 void MaterialCollectorClass::Add_Vertex_Material(VertexMaterialClass * vmat)
 {
 	if (vmat == NULL) return;
@@ -409,7 +408,6 @@ int MaterialCollectorClass::Get_Texture_Count(void)
 	return Textures.Count();
 }
 	
-// ?Peek_Shader@MaterialCollectorClass@@QAE?AVShaderClass@@H@Z present-unmatched
 ShaderClass MaterialCollectorClass::Peek_Shader(int i)
 {
 	return Shaders[i];
@@ -421,7 +419,6 @@ TextureClass * MaterialCollectorClass::Peek_Texture(int i)
 	return Textures[i];
 }
 
-// ?Peek_Vertex_Material@MaterialCollectorClass@@QAEPAVVertexMaterialClass@@H@Z present-unmatched
 VertexMaterialClass * MaterialCollectorClass::Peek_Vertex_Material(int i)
 {
 	return VertexMaterials[i];

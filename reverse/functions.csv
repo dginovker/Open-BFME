@@ -4976,3 +4976,11 @@ __CIasin,,0x009F7D86,6,Code/masm_dumps/__CIasin_9F7D86.asm,matched,MASM exact re
 ?_bfme_ro_v28@HLodClass@@UBEHXZ,,0x00979E80,29,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,retail slot-28 override sums Lod model counts
 ?Add_Vertex_Material@MaterialInfoClass@@QAEHPAVVertexMaterialClass@@@Z,,0x0096E2D0,85,Code/Libraries/Source/WWVegas/WW3D2/shattersystem.cpp,matched,
 ?Set_Material@DX8Wrapper@@SAXPBVVertexMaterialClass@@@Z,,0x006C5A70,62,Code/Libraries/Source/WWVegas/WW3D2/dynamesh.cpp,matched,
+?Get_Draw_Call_Count@MeshClass@@QBEHXZ,,0x0092D470,62,Code/Libraries/Source/WWVegas/WW3D2/mesh.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+?Add_Vertex_Material@MaterialCollectorClass@@QAEXPAVVertexMaterialClass@@@Z,,0x00930130,78,Code/Libraries/Source/WWVegas/WW3D2/matinfo.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+?Set_Opacity@Line3DClass@@QAEXM@Z,,0x00950FE0,73,Code/Libraries/Source/WWVegas/WW3D2/line3d.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+?Cast_Ray@AABoxRenderObjClass@@UAE_NAAVRayCollisionTestClass@@@Z,,0x00956B90,83,Code/Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+??4AABoxRenderObjClass@@QAEAAV0@ABV0@@Z,,0x00957920,97,Code/Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+?Read_Nodes@AABTreeClass@@AAEXAAVChunkLoadClass@@@Z,,0x0096A670,144,Code/Libraries/Source/WWVegas/WW3D2/aabtree.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+?Build_Tree_Recursive@AABTreeClass@@AAEXPAUCullNodeStruct@AABTreeBuilderClass@@AAH@Z,,0x0096AAF0,171,Code/Libraries/Source/WWVegas/WW3D2/aabtree.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+??0?$DynamicVectorClass@PAVHAnimComboDataClass@@@@QAE@IPBQAVHAnimComboDataClass@@@Z,,0x0096E000,93,Code/Libraries/Source/WWVegas/WW3D2/hanim.cpp,matched,exact-ambiguous COMDAT pinned by string anchor

@@ -1171,3 +1171,5 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ?releaseTrack@WaterTracksRenderSystem@@IAEXPAVWaterTracksObj@@@Z,0x0000E250
 ?shutdown@WaterTracksRenderSystem@@QAEXXZ,0x000319CB
 ?findImageByName@ImageCollection@@QAEPBVImage@@ABVAsciiString@@@Z,0x0001D606
+?Init_From_Directional_Light@InputLightStruct@LightEnvironmentClass@@QAEXABVLightClass@@ABVVector3@@@Z,0x0094A970
+?Init_From_Point_Or_Spot_Light@InputLightStruct@LightEnvironmentClass@@QAEXABVLightClass@@ABVVector3@@@Z,0x0094AE10

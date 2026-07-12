@@ -1190,3 +1190,5 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ?setConnectionState@NAT@@IAEXHW4NATConnectionState@@@Z,0x00670DC0,processGlobalMessage callee (ILT body)
 ?gotInternalAddress@NAT@@IAEXHI@Z,0x00670D70,processGlobalMessage callee
 ?gotMangledPort@NAT@@IAEXHG@Z,0x00671EB0,processGlobalMessage callee
+?Notify_Added@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FBF0
+?Notify_Removed@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FC00

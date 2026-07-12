@@ -299,3 +299,4 @@ _$E117	no-match	Compiler-generated static initializer. Drift RVA 0xC6E36F starts
 ?Get_Shader_Array@MeshMatDescClass@@QAEPAVShaderClass@@H_N@Z	landed	BFME sharebuf in shim (0x18); pin ShareBuffer Shader 3-arg ctor
 ?processGlobalMessage@NAT@@QAEXHPBD@Z	blocked	pinned probed/setConnectionState/gotInternal/gotMangled; still 448 vs 456 size (+8B) with early jne offset drift — likely NAT field layout or string-path shape, not just REL32
 ?Get_Material_Array@MeshMatDescClass@@QAEPAVMatBufferClass@@H_N@Z	blocked	ShareBuffer 0x18 fixed; still short-branch 0x5e vs 0x64 on alloc path; unresolved getClassMemoryPool@MatBuffer / allocateFromW3DMemPool systemic
+?Prepare_LOD@ParticleBufferClass@@UAEXAAVCameraClass@@@Z	blocked	Almost: Is_Not_Hidden_At_All@+0x180 matches; size 446 vs 437 (+9); only 2 REL32 (Camera helpers). Shape drift after early je — not just pin.

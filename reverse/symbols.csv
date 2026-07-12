@@ -1186,3 +1186,7 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ??0?$ShareBufferClass@VShaderClass@@@@QAE@HPBDH@Z,0x0092B940,Get_Shader_Array ShareBuffer 3-arg ctor
 ??0?$ShareBufferClass@I@@QAE@ABV0@@Z,0x0092A090
 ??0?$ShareBufferClass@VVector2@@@@QAE@ABV0@@Z,0x0092B710
+?probed@NAT@@IAEXH@Z,0x00671DE0,processGlobalMessage callee (ILT body)
+?setConnectionState@NAT@@IAEXHW4NATConnectionState@@@Z,0x00670DC0,processGlobalMessage callee (ILT body)
+?gotInternalAddress@NAT@@IAEXHI@Z,0x00670D70,processGlobalMessage callee
+?gotMangledPort@NAT@@IAEXHG@Z,0x00671EB0,processGlobalMessage callee

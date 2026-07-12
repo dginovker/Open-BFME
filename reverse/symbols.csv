@@ -1163,3 +1163,11 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ?clearAndSetModelConditionState@Drawable@@QAEXW4ModelConditionFlagType@@0@Z,0x0001C8D2
 ?setDisabledUntil@Object@@QAEXW4DisabledType@@I@Z,0x0003364A
 ?parseWeaponBonusSet@WeaponBonusSet@@QAEXPAVINI@@@Z,0x00019BC8
+??0MaterialPassClass@@QAE@XZ,0x009333A0
+??RMapHelper@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@QBE_NABV?$BitFlags@$0L@@@0@Z,0x0000A9A2
+?insert_unique@?$_Rb_tree@$$CBV?$BitFlags@$0L@@@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@2@@2@U32@ABU?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@2@@Z,0x0000F952
+?ExceptionFilter@DebugExceptionhandler@@SGJPAU_EXCEPTION_POINTERS@@@Z,0x0088E5F0
+?shutdown@TerrainTracksRenderObjClassSystem@@QAEXXZ,0x0002C6E7
+?releaseTrack@WaterTracksRenderSystem@@IAEXPAVWaterTracksObj@@@Z,0x0000E250
+?shutdown@WaterTracksRenderSystem@@QAEXXZ,0x000319CB
+?findImageByName@ImageCollection@@QAEPBVImage@@ABVAsciiString@@@Z,0x0001D606

@@ -403,7 +403,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0LightningDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0004A89F,0x005D9170,62,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0LightningEmissionInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0003E32E,0x005D6780,271,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0001FDF7,0x005D6BA0,1056,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,unmatched,needs copy-constructor wrapper reconciliation
-??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@XZ,0x0000CC39,0x005D6AD0,144,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,unmatched,needs constructor wrapper reconciliation
+??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@XZ,0x0000CC39,0x005D6AD0,144,Code/GameEngine/Source/GameClient/System/FXParticleSystem/LightningEmissionModuleTemplate_ctor.asm,matched,SEH ctor via MASM exact bytes
 ??0LineEmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0003E0EA,0x005D5A90,63,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0LineEmissionVolumeInfo@FXParticleSystem@@QAE@XZ,0x0003656B,0x005D5A50,32,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,default constructor sets vtable and zeros line endpoints
 ??0LineEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00004269,0x005D5C60,116,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
@@ -645,7 +645,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1BufferStraw@@UAE@XZ,,0x00921790,76,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,definite (call-site resolved)
 ??1BufferedFileClass@@UAE@XZ,,0x009E7780,102,Code/Libraries/Source/WWVegas/WWLib/bufffile.cpp,matched,
 ??1ButterflyDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x00001C08,0x005D8B50,7,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,destructor resets vtable pointer
-??1ButterflyDrawModuleTemplate@FXParticleSystem@@UAE@XZ,0x0003BE8A,0x005D8CB0,1008,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,unmatched,needs destructor wrapper reconciliation
+??1ButterflyDrawModuleTemplate@FXParticleSystem@@UAE@XZ,0x0003BE8A,0x005D8CB0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/ButterflyDrawModuleTemplate_dtor.asm,matched,exact 50B dtor via MASM (was inflated 1008; ICF twin of Quad dtor)
 ??1CDManager@@UAE@XZ,,0x00101DB0,85,Code/GameEngine/Source/Common/System/CDManager.cpp,matched,
 ??1CDownload@@QAE@XZ,,0x006268C0,23,Code/GameEngine/Source/GameNetwork/DownloadManager.cpp,matched,
 ??1CacheStraw@@UAE@XZ,,0x009E1FC0,76,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,sibling
@@ -705,7 +705,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1PivotMapClass@@UAE@XZ,,0x00974730,62,Code/Libraries/Source/WWVegas/WW3D2/hanim.cpp,matched,
 ??1PopupMessageData@@MAE@XZ,,0x0078CFB0,73,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,
 ??1QuadDrawModuleInfo@FXParticleSystem@@UAE@XZ,0x0001C5CB,0x005D88A0,7,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,destructor resets vtable pointer
-??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ,0x000459F8,0x005D8A00,688,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,unmatched,needs destructor wrapper reconciliation
+??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ,0x000459F8,0x005D8A00,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/QuadDrawModuleTemplate_dtor.asm,matched,exact 50B dtor via MASM (was inflated 688)
 ??1RawFileClass@@UAE@XZ,,0x009E7080,123,Code/Libraries/Source/WWVegas/WWLib/rawfile.cpp,matched,
 ??1Region2D@@QAE@XZ,0x000071DF,0x0005C310,1,Code/Libraries/Source/WWVegas/WWMath/region.cpp,matched,empty destructor emits ret
 ??1Region3D@@QAE@XZ,0x00045746,0x0006B0C0,1,Code/Libraries/Source/WWVegas/WWMath/region.cpp,matched,empty destructor emits ret

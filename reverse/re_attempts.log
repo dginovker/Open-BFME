@@ -306,3 +306,7 @@ _$E117	no-match	Compiler-generated static initializer. Drift RVA 0xC6E36F starts
 ?Prepare_LOD@ParticleBufferClass@@UAEXAAVCameraClass@@@Z	blocked	Drop Add_Object to hit size 437; Get_Bounding_Sphere needs +0x100 vs our +0xf0 (+4 stubs) but that shifts Is_Not_Hidden_At_All from +0x180 to +0x190. Need 4 fewer virtuals between sphere and Is_Not_Hidden than ZH source order provides.
 ?Internal_Remove@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@@Z	no-match	Duplicated delete still 98 vs 101; retail uses AutoPool free (thiscall pool@0x134ecd4) not operator delete; branch 0x18 vs 0x08
 ??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@XZ	landed	MASM exact 102B SEH array-ctor; C++ naked prepends member-init fragments; /EHsc does not emit SEH. Source DefaultAlphaModuleInfo_ctor.asm + build.py ml.exe for .asm
+??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@XZ	landed	MASM exact 144B SEH ctor; C++ naked prepends member-init fragments
+??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ	landed	MASM exact 688B SEH dtor wrapper; empty C++ body was size-mismatched
+??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ	landed	corrected size 50B (ledger had 688 multi-fn span); MASM exact
+??1ButterflyDrawModuleTemplate@FXParticleSystem@@UAE@XZ	landed	MASM exact 50B; identical bytes to Quad dtor at different RVA; ledger had inflated 1008

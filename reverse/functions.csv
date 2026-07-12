@@ -5115,3 +5115,4 @@ _powf,,0x00097070,14,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
 ??0LightClass@@QAE@W4LightType@0@@Z,,0x0093BE90,249,Code/Libraries/Source/WWVegas/WW3D2/light.cpp,matched,trimmed oversized claim into sibling
 ??0LightClass@@QAE@ABV0@@Z,,0x0093BFB0,307,Code/Libraries/Source/WWVegas/WW3D2/light.cpp,matched,trimmed oversized claim into sibling
 ?Clone@LightClass@@UBEPAVRenderObjClass@@XZ,,0x0093C230,96,Code/Libraries/Source/WWVegas/WW3D2/light.cpp,matched,
+?getErrorStringFromReturnType@LANAPIInterface@@QAE?AVUnicodeString@@W4ReturnType@1@@Z,,0x00688B50,304,Code/GameEngine/Source/GameNetwork/LANAPICallbacks.cpp,matched,

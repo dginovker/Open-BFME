@@ -107,7 +107,8 @@ public:
 
 		SCENE_ID_LAST = 0x0000FFFF,
 	};
-	virtual int					Get_Scene_ID(void) const	{	return SCENE_ID_SCENE;	}
+	// BFME: not virtual — keeps Scene::Register at vtable +0x38 (Set_Transform).
+	int								Get_Scene_ID(void) const	{	return SCENE_ID_SCENE;	}
 
 
 	virtual void				Add_Render_Object(RenderObjClass * obj);

@@ -433,11 +433,16 @@ RenderObjClass * RenderObjClass::Get_Container(void) const
  *   2/25/99    GTH : Created.                                                                 *
  *=============================================================================================*/
 // ?RenderObjClass::Set_Transform present-unmatched
+// BFME: clear SUBOBJ_TRANSFORMS_DIRTY (not BOUNDING_VOLUMES_VALID), then if this is a
+// top-level object (in scene, no container) notify the scene via vtable+0x38 with arg 3.
 void RenderObjClass::Set_Transform(const Matrix3D &m)
 {
 	Transform = m;
 	IsTransformIdentity=Check_Is_Transform_Identity(m);
-	Invalidate_Cached_Bounding_Volumes();
+	Bits &= ~SUBOBJ_TRANSFORMS_DIRTY;
+	if (Scene && !Container) {
+		Scene->Register(this, (SceneClass::RegType)3);
+	}
 }
 
 
@@ -455,11 +460,15 @@ void RenderObjClass::Set_Transform(const Matrix3D &m)
  *   07/14/2001 SKB : Add Check_Is_Transform_Identity                                          * 
  *=============================================================================================*/
 // ?RenderObjClass::Set_Position present-unmatched
+// BFME: same post-update sequence as Set_Transform (see above).
 void RenderObjClass::Set_Position(const Vector3 &v)
 {
 	Transform.Set_Translation(v);
 	IsTransformIdentity=Check_Is_Transform_Identity(Transform);
-	Invalidate_Cached_Bounding_Volumes();
+	Bits &= ~SUBOBJ_TRANSFORMS_DIRTY;
+	if (Scene && !Container) {
+		Scene->Register(this, (SceneClass::RegType)3);
+	}
 }
 
 

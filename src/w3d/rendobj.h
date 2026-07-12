@@ -556,6 +556,8 @@ protected:
 	};
 
 	mutable unsigned long		Bits;
+	// BFME: 4 bytes between Bits@0x10 and Transform@0x18 (Set_Transform / Update_Frustum).
+	char								_bfme_pre_transform_pad[4];
 	Matrix3D							Transform;
  	float						ObjectScale;					//user applied scaling factor inside Transform matrix.
 	unsigned int				ObjectColor;					//user applied coloring to the asset/prototype used to make this robj. - For Generals -MW
@@ -570,10 +572,10 @@ protected:
 
 	RenderHookClass *				RenderHook;
 
-	// BFME layout drift: the retail RenderObjClass is 0x3C bytes larger than this
-	// GeneralsMD reconstruction (unknown added members). Validated by matching
-	// ParticleBufferClass early-member accessors once this pad is present.
-	char								_bfme_base_pad[0x3C];
+	// End pad keeps sizeof(RenderObjClass) stable after mid-pad (was 0x3C).
+	// ParticleBufferClass early accessors need Bits@0x10; total size was validated
+	// at 0xC8 for Camera FrustumValid@0x100 on the sweep-shim path.
+	char								_bfme_base_pad[0x38];
 
 	friend class SceneClass;
 	friend class RenderObjProxyClass;

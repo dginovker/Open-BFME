@@ -12,9 +12,9 @@ prints the callee RVA, every name known for it (exports / functions.csv /
 symbols.csv / ghidra inventory), and the ready-to-paste symbols.csv line.
 
 Usage:
-  python3 tools/decode_calls.py src/zh/foo.cpp                 # all ledger rows of the source
+  python3 tools/decode_calls.py Code/GameEngine/Source/Common/foo.cpp                 # all ledger rows of the source
   python3 tools/decode_calls.py '?fn@Cls@@QAEXXZ'              # one function, source from its row
-  python3 tools/decode_calls.py '?fn@Cls@@QAEXXZ' --rva 0x00812340 --source src/zh/foo.cpp
+  python3 tools/decode_calls.py '?fn@Cls@@QAEXXZ' --rva 0x00812340 --source Code/GameEngine/Source/Common/foo.cpp
                                                                # candidate without a ledger row
 """
 import argparse

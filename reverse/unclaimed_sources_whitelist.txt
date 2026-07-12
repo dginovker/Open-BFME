@@ -1,6 +1,6 @@
 # Source files allowed to exist with ZERO matched functions.csv rows.
 #
-# Everything else in src/ MUST own at least one byte-verified matched row:
+# Everything else in Code/ (and src/w3d/) MUST own at least one byte-verified matched row:
 # source presence is not progress, and a file of present-unmatched markers
 # must not be committable as if it were work (see docs/zh_sweep.md).
 # The build fails on any unlisted zero-claim source AND on any stale entry
@@ -10,20 +10,20 @@
 # logicMessageDispatcher whale recon. Carries an explicit status=unmatched pin
 # row (0x00396950) that call-site resolution depends on; promoting it to
 # matched is the open task, deleting it would lose the evidence trail.
-src/game/game_logic_dispatch.cpp
+Code/GameEngine/Source/GameLogic/ScriptEngine/game_logic_dispatch.cpp
 
 # Landed verbatim; its only locatable function (??0Matrix4@@QAE@_N@Z COMDAT) is
 # claimed by src/w3d/projector.cpp after dedup (one row per address). Kept for
 # its present-unmatched drift inventory until more of its functions match.
-src/zh/streakrender.cpp
+Code/Libraries/Source/WWVegas/WW3D2/streakRender.cpp
 # Same situation: its located functions were COMDAT-deduped to other files'
 # rows; carries drift markers pending reconciliation.
-src/zh/grantstealthbehavior.cpp
+Code/GameEngine/Source/GameLogic/Object/Behavior/GrantStealthBehavior.cpp
 
 # BEYOND-ZH probe: reconstructed Handicap::readFromDict from binary. 360/362
 # bytes matched — 2-byte diff is MSVC codegen ordering (push-before-store vs
 # store-before-push). See reverse/re_attempts.log for full analysis.
-src/game/handicap.cpp
-src/game/water_transparency.cpp
+Code/GameEngine/Source/Common/RTS/Handicap.cpp
+Code/GameEngine/Source/GameClient/water_transparency.cpp
 # Third beyond-ZH probe target from r1s4; drafts parked with attempt evidence.
-src/game/object_defection_helper_pool.cpp
+Code/GameEngine/Source/GameLogic/Object/object_defection_helper_pool.cpp

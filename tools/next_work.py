@@ -154,15 +154,15 @@ def drift_quick_wins(mine):
         rva = to_int(row["candidate_rva"], 16, f"drift_report.csv candidate_rva for {name}")
         if rva in claimed or not mine(name):
             continue
-        source = ROOT / "src" / "zh" / row["source"]
-        if not source.exists():
+        rel = resolve_drift_source(row["source"])
+        if rel is None:
             print(f"warning: drift_report.csv row for {name} names a missing source "
-                  f"{source.relative_to(ROOT)} — stale report, skipped", file=sys.stderr)
+                  f"{row['source']} — stale report, skipped", file=sys.stderr)
             continue
-        out.append({"function": name, "source": f"src/zh/{row['source']}",
+        out.append({"function": name, "source": rel,
                     "class": row["class"], "aligned_pct": int(row["aligned_pct"]),
                     "candidate_rva": row["candidate_rva"], "hint": row["hint"],
-                    "command": f"python3 tools/build.py src/zh/{row['source']}"})
+                    "command": f"python3 tools/build.py {rel}"})
     out.sort(key=lambda c: (-c["aligned_pct"], c["function"]))
     return out
 
@@ -187,12 +187,9 @@ def read_attempts():
 
 
 def resolve_drift_source(basename):
-    """drift_report source column is a bare basename; the landed file usually
-    lives in src/zh/ but older landings sit elsewhere under src/."""
-    direct = ROOT / "src" / "zh" / basename
-    if direct.exists():
-        return direct.relative_to(ROOT).as_posix()
-    hits = sorted(ROOT.glob(f"src/*/{basename}"))
+    """drift_report source column is a bare basename; landed files live under
+    Code/ (official tree layout); a few remainders sit under src/."""
+    hits = sorted(ROOT.glob(f"Code/**/{basename}")) + sorted(ROOT.glob(f"src/**/{basename}"))
     return hits[0].relative_to(ROOT).as_posix() if hits else None
 
 

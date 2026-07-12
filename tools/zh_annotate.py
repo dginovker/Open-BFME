@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Annotate the unmatched (drifted) definitions in a landed src/zh file with the
+"""Annotate the unmatched (drifted) definitions in a landed Code/ file with the
 project's established `// ?<mangled> present-unmatched` marker: the function exists in
 retail but its bytes/address aren't pinned yet, and it stays in the TU because trimming
 it could change inlining of the matched functions (find_declared_unmatched.py honors
@@ -8,7 +8,7 @@ the marker; the pre-commit hook enforces it).
 Regenerates the file VERBATIM from the reference first (so a previous excision/annotation
 run never compounds), inserts markers, then byte-verifies the matched set is unchanged.
 
-Usage: python3 tools/zh_annotate.py src/zh/dict.cpp [...]
+Usage: python3 tools/zh_annotate.py Code/GameEngine/Source/Common/Dict.cpp [...]
 """
 import csv
 import re
@@ -99,7 +99,7 @@ def annotate(path):
 
 def main():
     if len(sys.argv) < 2:
-        raise SystemExit("usage: zh_annotate.py <src/zh/file.cpp> [...]")
+        raise SystemExit("usage: zh_annotate.py <Code/.../file.cpp> [...]")
     ok = True
     for arg in sys.argv[1:]:
         ok &= annotate(Path(arg).resolve())

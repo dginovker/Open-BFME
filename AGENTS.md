@@ -50,6 +50,17 @@ The workflow docs: `docs/matching.md` (core byte-matching loop),
 6. Translate a `__asm` block or a small unmatched export to C++
    (`python3 tools/list_naked_candidates.py src --limit 20`).
 
+## Tree layout
+
+Sources live under `Code/` at the official BFME tree path (from `__FILE__`
+strings in the exe): `Code/GameEngine/{Source,Include}/...`,
+`Code/GameEngineDevice/...`, `Code/Libraries/Source/WWVegas/{WWLib,WWMath,WWDebug,WW3D2,...}`.
+New hand-ports go to the same official location as the original file;
+`land_zh.py` already lands sweep files there. EXCEPTION: `src/w3d/` still holds
+the ported WWVegas headers — its scatter is deferred (phase 2) until ported vs
+shim header variants are synced, since moved zh cpps would silently rebind to
+the modified ported headers via MSVC's same-dir rule.
+
 ## Stopping rules
 
 * 3 failed attempts on one function → note it and move on (skip, don't sink).

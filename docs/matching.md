@@ -1,7 +1,8 @@
 # Matching a function
 
-1. Write the C++ in `src/`, add a row to `reverse/functions.csv`, then verify.
-   - Iterate fast: `./build.sh src/your_file.cpp` (or a function name) compiles+byte-compares
+1. Write the C++ under `Code/` at its official-tree path (see below), add a row to
+   `reverse/functions.csv`, then verify.
+   - Iterate fast: `./build.sh Code/path/to/your_file.cpp` (or a function name) compiles+byte-compares
      just that source in a few seconds.
    - Before committing: `./build.sh` (no args) runs the full check — every function, plus the
      baseline hash and the no-op patch that confirms the rebuilt exe is identical.

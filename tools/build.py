@@ -23,7 +23,7 @@ PATCH_DIR = ROOT / "build" / "patch"
 
 def obj_path(source):
     # Namespace objs by the source's repo-relative path, not its bare stem:
-    # src/w3d/ini.cpp and src/zh/ini.cpp must not both map to ini.obj.
+    # same-basename sources in different tree dirs must not collide.
     rel = Path(source).resolve().relative_to(ROOT)
     return BUILD_DIR / ("_".join(rel.with_suffix("").parts) + ".obj")
 NOOP_EXE = PATCH_DIR / "lotrbfme.noop.exe"

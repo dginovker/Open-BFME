@@ -20,7 +20,7 @@ without tools/build.py byte-verification + the full gate suite. A wrong candidat
 costs an agent a look, never a bad match.
 
 Usage:
-  python3 tools/drift_classify.py [--src src/zh] [--limit N] [--min-size 24]
+  python3 tools/drift_classify.py [--src Code] [--limit N] [--min-size 24]
 Report: reverse/zh_sweep/drift_report.csv (function,source,...,class,hint)
 """
 import argparse
@@ -212,7 +212,7 @@ def classify(exe, pe, body, relocs, cand_rva, ghidra):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--src", default="src/zh")
+    ap.add_argument("--src", default="Code")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--min-size", type=int, default=24)
     args = ap.parse_args()

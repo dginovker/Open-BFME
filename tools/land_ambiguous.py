@@ -25,7 +25,7 @@ ROOT = build.ROOT
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--report", default="reverse/zh_sweep/drift_report.csv")
-    ap.add_argument("--src-dir", default="src/zh")
+    ap.add_argument("--src-dir", default="Code")
     args = ap.parse_args()
 
     ghidra = {}

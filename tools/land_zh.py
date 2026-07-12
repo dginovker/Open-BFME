@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Land a GeneralsMD sweep winner: copy the reference .cpp verbatim into src/zh/
-with the sweep-environment flags head, fingerprint-locate its functions, emit the
-matched rows, and byte-verify through build.py.
+"""Land a GeneralsMD sweep winner: copy the reference .cpp verbatim into Code/
+at its reference-relative (official tree) path, with the sweep-environment flags
+head, fingerprint-locate its functions, emit the matched rows, and byte-verify
+through build.py.
 
     python3 tools/land_zh.py Dict MessageStream GameAudio
     python3 tools/land_zh.py --dry-run GameEngine/Source/Common/Dict.cpp
@@ -12,10 +13,10 @@ without writing anything.
 
 Winners come from reverse/zh_sweep/report.csv (tools/sweep_generalsmd.py). A file
 whose located functions all fail verification is removed again — nothing lands
-unverified. src/zh/ holds verbatim ZH sources on purpose: the sweep shims supply
-the environment via /I flags, and src/game's own prerts.h must not shadow them.
+unverified. Landed files are verbatim ZH sources on purpose: the sweep shims
+supply the environment via /I flags.
 
-Exit code is 0 when every name landed or was skipped (already in src/zh), 1 when
+Exit code is 0 when every name landed or was skipped (already landed), 1 when
 any name failed (no reference file, compile failure, nothing located).
 """
 import argparse
@@ -26,7 +27,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REF = ROOT / "reference" / "CnC_Generals_Zero_Hour" / "GeneralsMD" / "Code"
-DEST = ROOT / "src" / "zh"
+DEST = ROOT / "Code"
 
 REF_REL = "reference/CnC_Generals_Zero_Hour/GeneralsMD/Code"
 HEAD = (
@@ -44,19 +45,18 @@ HEAD = (
 
 def land(name, dry_run=False):
     """True when landed or skipped, False when the name failed."""
-    # skip before the reference lookup: dest is lowercase, so src/zh paths skip
-    # cleanly even though reference basenames are case-sensitive
-    dest = DEST / f"{name.lower()}.cpp"
-    if dest.exists():
-        print(f"{name}: SKIP — {dest.relative_to(ROOT)} already exists (already landed)")
-        return True
     hits = sorted(REF.rglob(f"{name}.cpp"))
     if not hits:
         print(f"{name}: FAIL — no reference file {name}.cpp under {REF.relative_to(ROOT)}")
         return False
+    dest = DEST / hits[0].relative_to(REF)
+    if dest.exists():
+        print(f"{name}: SKIP — {dest.relative_to(ROOT)} already exists (already landed)")
+        return True
     if dry_run:
         print(f"{name}: would land {hits[0].relative_to(ROOT)} -> {dest.relative_to(ROOT)}")
         return True
+    dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(HEAD + hits[0].read_text(errors="replace"))
 
     proc = subprocess.run(

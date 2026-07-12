@@ -11,14 +11,14 @@ strings appear in lotrbfme.exe vs 4% of Generals-unique). **Always port from `Ge
 python3 tools/sweep_generalsmd.py --area GameEngine/Source --skip-done   # hours; resumable
 sort -t, -k3 -rn reverse/zh_sweep/report.csv | head -20                  # ranked winners
 python3 tools/land_zh.py Dict MessageStream GameAudio                    # land them (basenames)
-./build.sh && git add -A src/zh reverse && git commit                    # full verify runs in the hook
+./build.sh && git add Code reverse && git commit                    # full verify runs in the hook
 ```
 
 - **sweep** compiles each never-attempted reference `.cpp` against the reference's own engine
   headers (only Windows/SDK walls are shimmed — `reference/shims/sweep/`), then fingerprint-locates
   every emitted function in the binary (`tools/locate.py`: unique masked placement + callee
   validation; no export entry needed). Appends to `reverse/zh_sweep/report.csv`.
-- **land_zh** copies the reference file **verbatim** into `src/zh/` with a 2-line head
+- **land_zh** copies the reference file **verbatim** into `Code/` at its reference-relative (official tree) path with a 2-line head
   (`// cl:` flags carrying the `/I` include chain + `// stlport`), locates, emits the
   functions.csv/symbols.csv rows, **byte-verifies via build.py**, then marks every drifted sibling
   definition with the `present-unmatched` convention (`tools/zh_annotate.py`) so the pre-commit
@@ -60,8 +60,9 @@ The sweep summary histograms blockers. Fix the top one, delete its rows from the
 
 - **grep on reference files silently returns nothing** (the © byte makes them "binary"): use
   `grep -a`.
-- Quoted includes resolve file-relative *first*: a swept file placed in `src/game/` picks up
-  `src/game/prerts.h` instead of the sweep shims. That's why landed files live in `src/zh/`.
+- Quoted includes resolve file-relative *first*: a swept file placed next to a
+  ported header picks that up instead of the sweep shims. Landed dirs hold cpps
+  only, so this stays inert until headers move in.
 - `locate.py` CONFLICT/AMBIGUOUS lines are conservative skips, not errors — leave them; never
   hand-force an address.
 - A landed file whose excised/annotated sibling was *inlined* by a matched function will fail the
@@ -109,6 +110,6 @@ tools/relocate_cascade.py).
 ## State
 
 `reverse/zh_sweep/report.csv` is the sweep ledger (resumable via `--skip-done`).
-`src/zh/` files are verbatim ZH sources: reconciling a `present-unmatched` sibling against the
+Landed `Code/` files are verbatim ZH sources: reconciling a `present-unmatched` sibling against the
 binary is a normal `docs/matching.md` task afterwards — start from the ZH text, not from scratch.
 147 files exist ONLY in ZH (never in Generals): ranked candidates in `reverse/zh_provenance/FINDINGS.md`.

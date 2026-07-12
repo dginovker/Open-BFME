@@ -1179,3 +1179,7 @@ __CxxThrowException@8,0x00850600,CRT throw helper
 ?Get_Color_Array@MeshMatDescClass@@QAEPAIH_N@Z,0x0002F8E2,
 ?Get_UV_Array_By_Index@MeshMatDescClass@@QAEPAVVector2@@H_N@Z,0x0001D179
 ?Get_SS_Category@ShaderClass@@QBE?AW4StaticSortCategoryType@1@XZ,0x00910E10
+?Set@Matrix3x3@@QAEXABVMatrix3D@@@Z,0x008D9000,Update_Frustum callee
+??0OBBoxClass@@QAE@ABV0@@Z,0x00931420
+?Set_Position@RenderObjClass@@UAEXABVVector3@@@Z,0x00920220
+?Set_Transform@RenderObjClass@@UAEXABVMatrix3D@@@Z,0x009201A0

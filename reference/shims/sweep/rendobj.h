@@ -169,7 +169,9 @@ private:
 };
 
 // RenderObjClass definition
-class RenderObjClass : public RefCountClass , public PersistClass, public MultiListObjectClass
+// BFME: only two vtable-bearing bases (vtbls at +0 and +8). PersistClass was
+// dropped vs ZH — confirmed by Update_Frustum Transform@0x18 / Bits@0x10.
+class RenderObjClass : public RefCountClass , public MultiListObjectClass
 {
 public:
 
@@ -265,12 +267,11 @@ public:
 	//           put itself back into a state as if it has never been rendered (e.g. particle emitters 
 	//           should reset their "emitted particle counts" so they can be re-used.)
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// BFME layout stubs: retail RenderObjClass vtable (see retail ParticleBufferClass
-	// vtable RVA 0xD3F618) has Render at slot 12, Get_Bounding_Box at 65,
-	// Increment_LOD at 73; shim declarations alone put them at 9/61/68.
+	// BFME layout stubs: two slots before Render so Validate_Transform is at
+	// primary vtable +0x50 (Update_Frustum). A third stub pushed it to +0x54.
+	// Bounding/LOD stubs below still pin Get_Bounding_Box / Increment_LOD.
 	virtual void					_bfme_ro_v9(void)														{ }
 	virtual void					_bfme_ro_v10(void)														{ }
-	virtual void					_bfme_ro_v11(void)														{ }
 	virtual void					Render(RenderInfoClass & rinfo)											= 0;
 	virtual void					Special_Render(SpecialRenderInfoClass & rinfo)						{ }
 	virtual void					On_Frame_Update() 														{ }
@@ -290,6 +291,9 @@ public:
 	virtual SceneClass *			Peek_Scene(void)																{ return Scene; }
 	virtual void					Set_Container(RenderObjClass * con);
 	virtual void					Validate_Transform(void) const;
+	// Compensates for the removed third pre-Render stub so late slots
+	// (Get_Bounding_Box @ +0x104 used by updateBounds) stay pinned.
+	virtual void					_bfme_ro_after_validate(void)										{ }
 
 #define GET_CONTAINER_INLINE
 #ifdef GET_CONTAINER_INLINE
@@ -554,6 +558,8 @@ protected:
 	};
 
 	mutable unsigned long		Bits;
+	// BFME: 4 bytes between Bits@0x10 and Transform@0x18 (Update_Frustum).
+	char								_bfme_pre_transform_pad[4];
 	Matrix3D							Transform;
  	float						ObjectScale;					//user applied scaling factor inside Transform matrix.
 	unsigned int				ObjectColor;					//user applied coloring to the asset/prototype used to make this robj. - For Generals -MW
@@ -568,12 +574,10 @@ protected:
 
 	RenderHookClass *				RenderHook;
 
-	// BFME layout drift: retail RenderObjClass is 0x34 bytes larger than the
-	// Generals Zero Hour reference. Required so CameraClass (and other
-	// RenderObjClass subclasses) field offsets line up with retail — e.g.
-	// CameraClass::Project reads the frustum/projection data at offsets that
-	// are uniformly +0x34 vs an unpadded reference build.
-	char								_bfme_robj_pad[0x34];
+	// End pad keeps sizeof(RenderObjClass)==0xC8 so CameraClass FrustumValid stays
+	// at 0x100 (matched FOV/Project getters). PersistClass drop freed 8; mid-pad
+	// took 4; raise end pad 0x34→0x38 to hold total size.
+	char								_bfme_robj_pad[0x38];
 
 	friend class SceneClass;
 	friend class RenderObjProxyClass;

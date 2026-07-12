@@ -92,7 +92,6 @@
  * HISTORY:                                                                                    *
  *   3/21/98    GTH : Created.                                                                 *
  *=============================================================================================*/
-// ??0CameraClass@@ present-unmatched
 CameraClass::CameraClass(void) :
 	Projection(PERSPECTIVE),
 	Viewport(Vector2(0,0),Vector2(1,1)),		// pixel viewport to render into
@@ -498,7 +497,6 @@ CameraClass::Project_Camera_Space_Point(Vector3 & dest,const Vector3 & cam_point
  * HISTORY:                                                                                    *
  *   3/21/98    GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?Un_Project@CameraClass@@QBEXAAVVector3@@ABVVector2@@@Z present-unmatched
 void CameraClass::Un_Project(Vector3 & dest,const Vector2 & view_point) const
 {
 	/*
@@ -608,7 +606,6 @@ bool CameraClass::Cull_Box(const AABoxClass & box) const
  * HISTORY:                                                                                    *
  *   5/29/98    GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?Update_Frustum@CameraClass@@IBEXXZ present-unmatched
 void CameraClass::Update_Frustum(void) const
 {
 	if (FrustumValid) return;

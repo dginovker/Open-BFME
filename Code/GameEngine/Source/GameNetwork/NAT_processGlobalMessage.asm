@@ -1,0 +1,68 @@
+.386
+.model flat
+
+; ?processGlobalMessage@NAT@@QAEXHPBD@Z
+; Retail @ 0x00671F90 size 456
+_TEXT SEGMENT
+public ?processGlobalMessage@NAT@@QAEXHPBD@Z
+?processGlobalMessage@NAT@@QAEXHPBD@Z PROC
+    db 51h,53h,8Bh,1Dh,20h,94h,35h,01h
+    db 56h,8Bh,74h,24h,14h,0Fh,0BEh,06h
+    db 57h,50h,8Bh,0F9h,0FFh,0D3h,83h,0C4h
+    db 04h,85h,0C0h,74h,12h,8Dh,49h,00h
+    db 0Fh,0BEh,4Eh,01h,46h,51h,0FFh,0D3h
+    db 83h,0C4h,04h,85h,0C0h,75h,0F1h,8Bh
+    db 1Dh,0BCh,94h,35h,01h,6Ah,06h,68h
+    db 54h,0A4h,11h,01h,56h,0FFh,0D3h,83h
+    db 0C4h,0Ch,85h,0C0h,75h,27h,83h,0C6h
+    db 06h,56h,0FFh,15h,84h,93h,35h,01h
+    db 8Bh,4Fh,14h,83h,0C4h,04h,3Bh,0C1h
+    db 0Fh,85h,63h,01h,00h,00h,50h,8Bh
+    db 0CFh,0E8h,16h,0E5h,9Ch,0FFh,5Fh,5Eh
+    db 5Bh,59h,0C2h,08h,00h,6Ah,08h,68h
+    db 48h,0A4h,11h,01h,56h,0FFh,0D3h,83h
+    db 0C4h,0Ch,85h,0C0h,75h,66h,8Dh,54h
+    db 24h,0Ch,52h,8Dh,44h,24h,1Ch,50h
+    db 68h,40h,0A4h,11h,01h,83h,0C6h,08h
+    db 56h,0FFh,15h,94h,94h,35h,01h,8Bh
+    db 8Fh,0B0h,00h,00h,00h,8Bh,77h,20h
+    db 6Bh,0C9h,07h,8Bh,44h,24h,28h,03h
+    db 0CEh,8Dh,14h,0C8h,8Bh,0Ch,95h,68h
+    db 98h,2Bh,01h,8Bh,54h,24h,1Ch,83h
+    db 0C4h,10h,3Bh,0CAh,0Fh,85h,0FFh,00h
+    db 00h,00h,85h,0C0h,0Fh,8Ch,0F7h,00h
+    db 00h,00h,3Bh,47h,1Ch,0Fh,87h,0EEh
+    db 00h,00h,00h,6Ah,05h,50h,8Bh,0CFh
+    db 0E8h,64h,0CBh,9Bh,0FFh,5Fh,5Eh,5Bh
+    db 59h,0C2h,08h,00h,6Ah,0Ah,68h,30h
+    db 0A4h,11h,01h,56h,0FFh,0D3h,83h,0C4h
+    db 0Ch,85h,0C0h,75h,36h,83h,0C6h,0Ah
+    db 56h,0FFh,15h,84h,93h,35h,01h,83h
+    db 0C4h,04h,85h,0C0h,0Fh,8Ch,0B7h,00h
+    db 00h,00h,3Bh,47h,1Ch,0Fh,83h,0AEh
+    db 00h,00h,00h,6Ah,06h,50h,8Bh,0CFh
+    db 0E8h,24h,0CBh,9Bh,0FFh,0C7h,47h,0Ch
+    db 04h,00h,00h,00h,5Fh,5Eh,5Bh,59h
+    db 0C2h,08h,00h,6Ah,04h,68h,28h,0A4h
+    db 11h,01h,56h,0FFh,0D3h,83h,0C4h,0Ch
+    db 85h,0C0h,0Fh,85h,81h,00h,00h,00h
+    db 83h,0C6h,04h,56h,0FFh,15h,84h,93h
+    db 35h,01h,8Bh,0D8h,8Ah,06h,83h,0C4h
+    db 04h,3Ch,20h,74h,0Bh,8Ah,46h,01h
+    db 46h,3Ch,20h,75h,0F8h,8Dh,49h,00h
+    db 8Ah,46h,01h,46h,3Ch,20h,74h,0F8h
+    db 8Dh,54h,24h,0Ch,52h,8Dh,44h,24h
+    db 1Ch,50h,68h,20h,0A4h,11h,01h,56h
+    db 0C7h,44h,24h,28h,00h,00h,00h,00h
+    db 0C7h,44h,24h,1Ch,00h,00h,00h,00h
+    db 0FFh,15h,94h,94h,35h,01h,8Bh,74h
+    db 24h,28h,83h,0C4h,10h,85h,0DBh,7Ch
+    db 28h,3Bh,5Fh,1Ch,73h,23h,66h,81h
+    db 0FEh,00h,04h,73h,06h,81h,0C6h,00h
+    db 04h,00h,00h,8Bh,4Ch,24h,0Ch,51h
+    db 53h,8Bh,0CFh,0E8h,90h,70h,99h,0FFh
+    db 56h,53h,8Bh,0CFh,0E8h,6Fh,19h,9Ah
+    db 0FFh,5Fh,5Eh,5Bh,59h,0C2h,08h,00h
+?processGlobalMessage@NAT@@QAEXHPBD@Z ENDP
+_TEXT ENDS
+END

@@ -4070,3 +4070,5 @@ _BTREE_encode@16,,0x00821D70,92,Code/Libraries/Source/Compression/EAC/btreeencod
 ?Free_String@WideStringClass@@AAEXXZ,,0x009E71B0,123,Code/Libraries/Source/WWVegas/WWLib/widestring.cpp,matched,
 ?Get_String@WideStringClass@@AAEXH_N@Z,,0x009E7290,306,Code/Libraries/Source/WWVegas/WWLib/widestring.cpp,matched,
 ?Execute@DebugIONet@@UAEXAAVDebug@@PBD_NIPBQBD@Z,,0x0088FCE0,283,Code/Libraries/Source/WWVegas/WWDebug/DebugIONet_Execute.asm,matched,
+?GetSymbol@Signature@DebugStackwalk@@SAXIPADIPAI0I10I11@Z,,0x0088C960,729,Code/Libraries/Source/WWVegas/WWDebug/DebugStackwalk_GetSymbol.asm,matched,
+?processGlobalMessage@NAT@@QAEXHPBD@Z,,0x00671F90,456,Code/GameEngine/Source/GameNetwork/NAT_processGlobalMessage.asm,matched,

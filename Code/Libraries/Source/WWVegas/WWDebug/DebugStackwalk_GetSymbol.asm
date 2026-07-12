@@ -1,0 +1,103 @@
+.386
+.model flat
+
+; ?GetSymbol@Signature@DebugStackwalk@@SAXIPADIPAI0I10I11@Z
+; Retail @ 0x0088C960 size 729
+_TEXT SEGMENT
+public ?GetSymbol@Signature@DebugStackwalk@@SAXIPADIPAI0I10I11@Z
+?GetSymbol@Signature@DebugStackwalk@@SAXIPADIPAI0I10I11@Z PROC
+    db 55h,8Bh,0ECh,81h,0ECh,14h,02h,00h
+    db 00h,56h,57h,0E8h,0E0h,0FBh,0FFh,0FFh
+    db 8Bh,75h,0Ch,85h,0F6h,74h,03h,0C6h
+    db 06h,00h,8Bh,45h,14h,85h,0C0h,74h
+    db 06h,0C7h,00h,00h,00h,00h,00h,8Bh
+    db 55h,18h,85h,0D2h,74h,03h,0C6h,02h
+    db 00h,8Bh,45h,20h,85h,0C0h,74h,06h
+    db 0C7h,00h,00h,00h,00h,00h,8Bh,4Dh
+    db 24h,85h,0C9h,74h,03h,0C6h,01h,00h
+    db 8Bh,45h,2Ch,85h,0C0h,74h,06h,0C7h
+    db 00h,00h,00h,00h,00h,8Bh,45h,30h
+    db 85h,0C0h,74h,06h,0C7h,00h,00h,00h
+    db 00h,00h,85h,0F6h,0B8h,10h,00h,00h
+    db 00h,74h,09h,39h,45h,10h,0Fh,82h
+    db 66h,02h,00h,00h,85h,0D2h,74h,09h
+    db 39h,45h,1Ch,0Fh,82h,59h,02h,00h
+    db 00h,85h,0C9h,74h,09h,39h,45h,28h
+    db 0Fh,82h,4Ch,02h,00h,00h,53h,8Bh
+    db 5Dh,08h,53h,0FFh,15h,74h,8Dh,35h
+    db 01h,50h,0FFh,15h,98h,6Eh,33h,01h
+    db 8Bh,0F8h,85h,0FFh,75h,30h,85h,0F6h
+    db 0Fh,84h,08h,02h,00h,00h,0A1h,40h
+    db 36h,13h,01h,89h,06h,8Bh,0Dh,44h
+    db 36h,13h,01h,89h,4Eh,04h,8Bh,15h
+    db 48h,36h,13h,01h,89h,56h,08h,66h
+    db 0A1h,4Ch,36h,13h,01h,66h,89h,46h
+    db 0Ch,0E9h,0E0h,01h,00h,00h,6Ah,04h
+    db 53h,0FFh,15h,64h,8Eh,35h,01h,85h
+    db 0C0h,0Fh,85h,0AAh,01h,00h,00h,53h
+    db 0FFh,15h,60h,8Eh,35h,01h,85h,0C0h
+    db 0Fh,85h,9Bh,01h,00h,00h,85h,0F6h
+    db 8Bh,1Dh,0C0h,94h,35h,01h,74h,45h
+    db 68h,00h,02h,00h,00h,8Dh,95h,0ECh
+    db 0FDh,0FFh,0FFh,52h,57h,0FFh,15h,0C0h
+    db 8Dh,35h,01h,8Dh,85h,0ECh,0FDh,0FFh
+    db 0FFh,6Ah,5Ch,50h,0FFh,15h,0C8h,94h
+    db 35h,01h,83h,0C4h,08h,85h,0C0h,74h
+    db 03h,40h,0EBh,06h,8Dh,85h,0ECh,0FDh
+    db 0FFh,0FFh,8Bh,4Dh,10h,51h,50h,56h
+    db 0FFh,0D3h,8Bh,55h,10h,83h,0C4h,0Ch
+    db 0C6h,44h,16h,0FFh,00h,8Bh,45h,14h
+    db 85h,0C0h,74h,07h,8Bh,4Dh,08h,2Bh
+    db 0CFh,89h,08h,8Bh,75h,18h,85h,0F6h
+    db 0Fh,84h,82h,00h,00h,00h,33h,0C0h
+    db 0B9h,80h,00h,00h,00h,8Dh,0BDh,0ECh
+    db 0FDh,0FFh,0FFh,0F3h,0ABh,8Bh,4Dh,08h
+    db 8Dh,95h,0ECh,0FDh,0FFh,0FFh,52h,8Dh
+    db 45h,18h,50h,51h,0C7h,85h,0ECh,0FDh
+    db 0FFh,0FFh,18h,00h,00h,00h,0C7h,85h
+    db 0FCh,0FDh,0FFh,0FFh,0E8h,01h,00h,00h
+    db 0FFh,15h,74h,8Dh,35h,01h,50h,0FFh
+    db 15h,9Ch,6Eh,33h,01h,85h,0C0h,74h
+    db 24h,8Bh,7Dh,1Ch,57h,8Dh,95h,00h
+    db 0FEh,0FFh,0FFh,52h,56h,0FFh,0D3h,8Bh
+    db 45h,20h,83h,0C4h,0Ch,85h,0C0h,0C6h
+    db 44h,3Eh,0FFh,00h,74h,22h,8Bh,4Dh
+    db 18h,89h,08h,0EBh,1Bh,8Bh,15h,34h
+    db 36h,13h,01h,89h,16h,0A1h,38h,36h
+    db 13h,01h,89h,46h,04h,66h,8Bh,0Dh
+    db 3Ch,36h,13h,01h,66h,89h,4Eh,08h
+    db 8Bh,7Dh,24h,85h,0FFh,0Fh,84h,0EEh
+    db 00h,00h,00h,33h,0D2h,89h,55h,0ECh
+    db 89h,55h,0F0h,89h,55h,0F4h,89h,55h
+    db 0F8h,8Dh,45h,0ECh,50h,8Dh,4Dh,18h
+    db 89h,55h,0FCh,8Bh,55h,08h,51h,52h
+    db 0C7h,45h,0ECh,14h,00h,00h,00h,0FFh
+    db 15h,74h,8Dh,35h,01h,50h,0FFh,15h
+    db 0A0h,6Eh,33h,01h,85h,0C0h,75h,22h
+    db 0A1h,34h,36h,13h,01h,89h,07h,8Bh
+    db 0Dh,38h,36h,13h,01h,89h,4Fh,04h
+    db 66h,8Bh,15h,3Ch,36h,13h,01h,5Bh
+    db 66h,89h,57h,08h,5Fh,5Eh,8Bh,0E5h
+    db 5Dh,0C3h,8Bh,45h,0F8h,6Ah,5Ch,50h
+    db 0FFh,15h,0C8h,94h,35h,01h,83h,0C4h
+    db 08h,85h,0C0h,74h,0Ah,8Ah,4Dh,34h
+    db 84h,0C9h,75h,03h,40h,0EBh,03h,8Bh
+    db 45h,0F8h,8Bh,75h,28h,56h,50h,57h
+    db 0FFh,0D3h,8Bh,45h,2Ch,83h,0C4h,0Ch
+    db 85h,0C0h,0C6h,44h,37h,0FFh,00h,74h
+    db 05h,8Bh,4Dh,0F4h,89h,08h,8Bh,45h
+    db 30h,85h,0C0h,74h,54h,8Bh,55h,18h
+    db 5Bh,5Fh,89h,10h,5Eh,8Bh,0E5h,5Dh
+    db 0C3h,85h,0F6h,74h,21h,0A1h,24h,36h
+    db 13h,01h,89h,06h,8Bh,0Dh,28h,36h
+    db 13h,01h,89h,4Eh,04h,8Bh,15h,2Ch
+    db 36h,13h,01h,89h,56h,08h,0A1h,30h
+    db 36h,13h,01h,89h,46h,0Ch,8Bh,45h
+    db 18h,85h,0C0h,74h,1Ch,8Bh,0Dh,34h
+    db 36h,13h,01h,89h,08h,8Bh,15h,38h
+    db 36h,13h,01h,89h,50h,04h,66h,8Bh
+    db 0Dh,3Ch,36h,13h,01h,66h,89h,48h
+    db 08h
+?GetSymbol@Signature@DebugStackwalk@@SAXIPADIPAI0I10I11@Z ENDP
+_TEXT ENDS
+END

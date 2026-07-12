@@ -4951,3 +4951,5 @@ __CIasin,,0x009F7D86,6,Code/masm_dumps/__CIasin_9F7D86.asm,matched,MASM exact re
 ?Reset@ParticleEmitterClass@@QAEXXZ,,0x0097EFF0,145,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
 ?Find_Subobject@AggregateDefClass@@MAEPAVRenderObjClass@@AAV2@QAY0CA@$$CBD1@Z,,0x009808F0,269,Code/Libraries/Source/WWVegas/WW3D2/agg_def.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
 ?Read_Opacity_Keyframe@ParticleEmitterDefClass@@MAE_NAAVChunkLoadClass@@PAM1@Z,,0x0098C630,81,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+??4?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@QAEAAV01@ABV01@@Z,,0x005672C0,178,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
+?Emit@ParticleEmitterClass@@UAEXXZ,,0x0097FC20,328,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,exact-ambiguous COMDAT pinned by string anchor

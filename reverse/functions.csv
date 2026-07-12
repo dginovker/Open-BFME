@@ -4118,3 +4118,31 @@ _BTREE_encode@16,,0x00821D70,92,Code/Libraries/Source/Compression/EAC/btreeencod
 ?clientSafeQuickDoesPathExistForUI@Pathfinder@@QAE_NABVLocomotorSet@@PBUCoord3D@@1@Z,,0x003D96A3,375,Code/GameEngine/Source/GameLogic/AI/AIPathfind_clientSafeQuickDoesPathExistForUI.asm,matched,exact 375B via MASM
 ?update@WaypointMap@@QAEXXZ,,0x00454EF3,363,Code/GameEngine/Source/GameClient/MapUtil_update.asm,matched,exact 363B via MASM
 ?setGameOptions@GameSpyInfo@@UAEXXZ,,0x00671686,383,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs_setGameOptions.asm,matched,exact 383B via MASM (true size; report oversize)
+?handleRequestJoin@LANAPI@@IAEXPAULANMessage@@I@Z,,0x005A565D,1119,Code/GameEngine/Source/GameNetwork/LANAPIhandlers_handleRequestJoin.asm,matched,exact 1119B via MASM
+?switchToContext@ControlBar@@IAEXW4ControlBarContext@@PAVDrawable@@@Z,,0x0049E901,869,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar_switchToContext.asm,matched,exact 869B via MASM
+?AddOutput@Debug@@AAEXPBDI@Z,,0x0088A8F0,675,Code/Libraries/Source/WWVegas/WWDebug/debug_debug_AddOutput.asm,matched,exact 675B via MASM
+?parseSideInfo@AI@@SAXPAVINI@@PAX1PBX@Z,,0x009A15C0,516,Code/GameEngine/Source/GameLogic/AI/ai_parseSideInfo.asm,matched,exact 516B via MASM
+??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z,,0x002C1061,501,Code/GameEngine/Source/GameLogic/AI/AIStates_0AIAttackMoveStateMachine.asm,matched,exact 501B via MASM
+?doTeamUseCommandButtonOnNearestKindof@ScriptActions@@IAEXABVAsciiString@@0H@Z,,0x00614F8E,496,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions_doTeamUseCommandButtonOnNearestKindof.asm,matched,exact 496B via MASM
+?generateParticleInfo@ParticleSystem@@IAEPBVParticleInfo@@HH@Z,,0x006008AF,1257,Code/GameEngine/Source/GameClient/System/ParticleSys_generateParticleInfo.asm,matched,exact 1257B via MASM
+?gogoGadgetComboBox@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHPAVWinInstanceData@@PAU_ComboBoxData@@PAVGameFont@@_N@Z,,0x0047F757,1121,Code/GameEngine/Source/GameClient/GUI/GameWindowManager_gogoGadgetComboBox.asm,matched,exact 1121B via MASM
+?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z,,0x005B3B2A,597,Code/GameEngine/Source/GameClient/MessageStream/HotKey_executeHotKey.asm,matched,exact 597B via MASM
+?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z,,0x00A9A533,590,Code/Libraries/Source/WWVegas/WW3D2/boxrobj_vis_render_box.asm,matched,exact 590B via MASM
+?setPortraitByObject@ControlBar@@IAEXPAVObject@@@Z,,0x0059A664,739,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar_setPortraitByObject.asm,matched,exact 739B via MASM
+?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ,,0x001888D9,794,Code/GameEngine/Source/GameLogic/AI/AIStates_update.asm,matched,exact 794B via MASM
+?setTriggerAreaFlagsForChangeInPosition@Object@@IAEXXZ,,0x001C8E7D,749,Code/GameEngine/Source/GameLogic/Object/Object_setTriggerAreaFlagsForChangeInPosition.asm,matched,exact 749B via MASM
+?onRemoving@RiderChangeContain@@UAEXPAVObject@@@Z,,0x004A747F,715,Code/GameEngine/Source/GameLogic/Object/Contain/RiderChangeContain_onRemoving.asm,matched,exact 715B via MASM
+?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z,,0x003F89A0,788,Code/GameEngine/Source/GameLogic/AI/AIPathfind_snapClosestGoalPosition.asm,matched,exact 788B via MASM
+?drawBridges@W3DBridgeBuffer@@QAEXPAVCameraClass@@_NPAVTextureClass@@@Z,,0x00938FF7,909,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DBridgeBuffer_drawBridges.asm,matched,exact 909B via MASM
+?drawViewBox@W3DRadar@@IAEXHHHH@Z,,0x00784783,984,Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar_drawViewBox.asm,matched,exact 984B via MASM
+?update@StructureToppleUpdate@@UAE?AW4UpdateSleepTime@@XZ,,0x008F7E80,769,Code/GameEngine/Source/GameLogic/Object/Update/StructureToppleUpdate_update.asm,matched,exact 769B via MASM
+?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z,,0x0076E90A,568,Code/GameEngine/Source/Common/RTS/Team_tryToRecruit.asm,matched,exact 568B via MASM
+?doDamageLine@StructureToppleUpdate@@IAEXPAVObject@@PBVWeaponTemplate@@MMMM@Z,,0x002AF8F9,523,Code/GameEngine/Source/GameLogic/Object/Update/StructureToppleUpdate_doDamageLine.asm,matched,exact 523B via MASM
+?update@BridgeScaffoldBehavior@@UAE?AW4UpdateSleepTime@@XZ,,0x0073327B,580,Code/GameEngine/Source/GameLogic/Object/Behavior/BridgeScaffoldBehavior_update.asm,matched,exact 580B via MASM
+?locoUpdate_moveTowardsPosition@Locomotor@@QAEXPAVObject@@ABUCoord3D@@MMPA_N@Z,,0x002BAFB8,1103,Code/GameEngine/Source/GameLogic/Object/Locomotor_locoUpdate_moveTowardsPosition.asm,matched,exact 1103B via MASM
+?xfer@AIPlayer@@MAEXPAVXfer@@@Z,,0x00852B62,1170,Code/GameEngine/Source/GameLogic/AI/AIPlayer_xfer.asm,matched,exact 1170B via MASM
+??0RTS3DScene@@QAE@XZ,,0x00A1FDCD,940,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene_0RTS3DScene.asm,matched,exact 940B via MASM
+?isReady@CommandButton@@QBE_NPBVObject@@@Z,,0x0049AD65,254,Code/masm_dumps/_isReady_CommandButton__QBE_NPBVObject___Z.asm,matched,
+?getModuleNameKey@FlammableUpdate@@UBE?AW4NameKeyType@@XZ,,0x002EFB20,294,Code/masm_dumps/_getModuleNameKey_FlammableUpdate__UBE_AW4NameKeyType__XZ.asm,matched,
+?constructVolume@W3DVolumetricShadow@@IAEXPAVVector3@@MHH@Z,,0x007B82A2,1397,Code/masm_dumps/_constructVolume_W3DVolumetricShadow__IAEXPAVVector3__MHH_Z.asm,matched,
+?getModuleNameKey@WorkerAIUpdate@@UBE?AW4NameKeyType@@XZ,,0x001F8AB0,155,Code/masm_dumps/_getModuleNameKey_WorkerAIUpdate__UBE_AW4NameKeyType__XZ.asm,matched,

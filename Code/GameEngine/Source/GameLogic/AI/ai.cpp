@@ -218,42 +218,8 @@ static const FieldParse TheAIFieldParseTable[] =
 
 };
 
-// ?parseSideInfo@AI@@ present-unmatched
-void AI::parseSideInfo(INI *ini, void *instance, void* /*store*/, const void* /*userData*/)
-{
-	const char* c = ini->getNextToken();
-	AsciiString side(c);
-
-	static const FieldParse myFieldParse[] = 
-		{
-			{ "ResourceGatherersEasy",				INI::parseInt,						NULL, offsetof( AISideInfo, m_easy ) },
-			{ "ResourceGatherersNormal",			INI::parseInt,						NULL, offsetof( AISideInfo, m_normal ) },
-      { "ResourceGatherersHard",				INI::parseInt,						NULL, offsetof( AISideInfo, m_hard ) },
-      { "BaseDefenseStructure1",				INI::parseAsciiString,		NULL, offsetof( AISideInfo, m_baseDefenseStructure1 ) },
-			{ "SkillSet1",										AI::parseSkillSet,				NULL, offsetof( AISideInfo, m_skillSet1 ) },
-			{ "SkillSet2",										AI::parseSkillSet,				NULL, offsetof( AISideInfo, m_skillSet2 ) },
-			{ "SkillSet3",										AI::parseSkillSet,				NULL, offsetof( AISideInfo, m_skillSet3 ) },
-			{ "SkillSet4",										AI::parseSkillSet,				NULL, offsetof( AISideInfo, m_skillSet4 ) },
-			{ "SkillSet5",										AI::parseSkillSet,				NULL, offsetof( AISideInfo, m_skillSet5 ) },
-			{ NULL,							NULL,											NULL, 0 }  // keep this last
-		};
-
-	AISideInfo *resourceInfo = ((TAiData*)instance)->m_sideInfo;
-	while (resourceInfo) {
-		if (side == resourceInfo->m_side) {
-			break;
-		}
-		resourceInfo = resourceInfo->m_next;
-	}
-	if (resourceInfo==NULL) 
-	{
-		resourceInfo = newInstance(AISideInfo);
-		((TAiData*)instance)->addSideInfo(resourceInfo);
-	}
-	resourceInfo->m_side = side;
-	ini->initFromINI(resourceInfo, myFieldParse);
-
-}
+// ?parseSideInfo@AI@@SAXPAVINI@@PAX1PBX@Z
+// Body in ai_parseSideInfo.asm (exact 516B retail).
 
 void AI::parseSkillSet(INI *ini, void *instance, void* store, const void* /*userData*/)
 {

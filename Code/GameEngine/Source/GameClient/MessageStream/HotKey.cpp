@@ -170,41 +170,8 @@ void HotKeyManager::addHotKey( GameWindow *win, const AsciiString& keyIn)
 }
 
 //-----------------------------------------------------------------------------
-// ?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z present-unmatched
-Bool HotKeyManager::executeHotKey( const AsciiString& keyIn )
-{
-	AsciiString key = keyIn;
-	key.toLower();
-	HotKeyMap::iterator it = m_hotKeyMap.find(key);
-	if( it == m_hotKeyMap.end() )
-		return FALSE;
-	GameWindow *win = it->second.m_win;
-	if( !win )
-		return FALSE;
-	if( !BitTest( win->winGetStatus(), WIN_STATUS_HIDDEN ) )
-	{
-		if( BitTest( win->winGetStatus(), WIN_STATUS_ENABLED ) )
- 		{
- 			TheWindowManager->winSendSystemMsg( win->winGetParent(), GBM_SELECTED, (WindowMsgData)win, win->winGetWindowId() );
- 
- 			// here we make the same click sound that the GUI uses when you click a button
- 			AudioEventRTS buttonClick("GUIClick");
- 
- 			if( TheAudio )
- 			{
- 				TheAudio->addAudioEvent( &buttonClick );
- 			}  // end if
-			return TRUE;
- 		}
-
-		AudioEventRTS disabledClick( "GUIClickDisabled" );
-		if( TheAudio )
-		{
-			TheAudio->addAudioEvent( &disabledClick );
-		}
-	}
-	return FALSE;
-}
+// ?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z
+// Body in HotKey_executeHotKey.asm (exact 597B retail).
 
 //-----------------------------------------------------------------------------
 // ?searchHotKey@HotKeyManager@@ present-unmatched

@@ -1,0 +1,125 @@
+.386
+.model flat
+
+; ?drawBridges@W3DBridgeBuffer@@QAEXPAVCameraClass@@_NPAVTextureClass@@@Z
+; Exact 909 retail bytes @ 0x00938FF7
+_TEXT SEGMENT
+public ?drawBridges@W3DBridgeBuffer@@QAEXPAVCameraClass@@_NPAVTextureClass@@@Z
+?drawBridges@W3DBridgeBuffer@@QAEXPAVCameraClass@@_NPAVTextureClass@@@Z PROC
+    db 8Bh,95h,30h,02h,00h,00h,89h,93h
+    db 30h,02h,00h,00h,8Bh,85h,34h,02h
+    db 00h,00h,89h,83h,34h,02h,00h,00h
+    db 8Bh,8Dh,38h,02h,00h,00h,89h,8Bh
+    db 38h,02h,00h,00h,8Bh,95h,3Ch,02h
+    db 00h,00h,89h,93h,3Ch,02h,00h,00h
+    db 8Bh,85h,40h,02h,00h,00h,89h,83h
+    db 40h,02h,00h,00h,8Bh,8Dh,44h,02h
+    db 00h,00h,89h,8Bh,44h,02h,00h,00h
+    db 8Bh,95h,48h,02h,00h,00h,89h,93h
+    db 48h,02h,00h,00h,8Bh,85h,4Ch,02h
+    db 00h,00h,89h,83h,4Ch,02h,00h,00h
+    db 8Bh,8Dh,50h,02h,00h,00h,89h,8Bh
+    db 50h,02h,00h,00h,8Bh,95h,54h,02h
+    db 00h,00h,89h,93h,54h,02h,00h,00h
+    db 66h,8Bh,85h,58h,02h,00h,00h,66h
+    db 89h,83h,58h,02h,00h,00h,66h,8Bh
+    db 8Dh,5Ah,02h,00h,00h,66h,89h,8Bh
+    db 5Ah,02h,00h,00h,66h,8Bh,95h,5Ch
+    db 02h,00h,00h,66h,89h,93h,5Ch,02h
+    db 00h,00h,66h,8Bh,85h,6Ch,02h,00h
+    db 00h,66h,89h,83h,6Ch,02h,00h,00h
+    db 8Bh,0C3h,5Fh,5Eh,5Dh,5Bh,0C2h,04h
+    db 00h,53h,8Bh,5Ch,24h,08h,56h,57h
+    db 8Dh,0B3h,6Ch,02h,00h,00h,0BFh,02h
+    db 00h,00h,00h,8Bh,0Eh,85h,0C9h,74h
+    db 0Fh,0FFh,49h,04h,75h,04h,8Bh,01h
+    db 0FFh,10h,0C7h,06h,00h,00h,00h,00h
+    db 83h,0C6h,04h,4Fh,75h,0E5h,8Bh,8Bh
+    db 74h,02h,00h,00h,85h,0C9h,74h,13h
+    db 0FFh,49h,04h,75h,04h,8Bh,11h,0FFh
+    db 12h,0C7h,83h,74h,02h,00h,00h,00h
+    db 00h,00h,00h,8Bh,4Bh,10h,85h,0C9h
+    db 74h,10h,0FFh,49h,04h,75h,04h,8Bh
+    db 01h,0FFh,10h,0C7h,43h,10h,00h,00h
+    db 00h,00h,8Bh,0Dh,78h,05h,34h,01h
+    db 8Bh,81h,78h,02h,00h,00h,33h,0FFh
+    db 85h,0C0h,7Eh,28h,8Dh,73h,14h,8Bh
+    db 0Eh,85h,0C9h,74h,0Bh,0E8h,6Fh,26h
+    db 0Bh,00h,0C7h,06h,00h,00h,00h,00h
+    db 8Bh,15h,78h,05h,34h,01h,8Bh,82h
+    db 78h,02h,00h,00h,47h,83h,0C6h,04h
+    db 3Bh,0F8h,7Ch,0DBh,5Fh,5Eh,5Bh,0C3h
+    db 0CCh,8Bh,0Dh,94h,6Eh,34h,01h,81h
+    db 0F9h,00h,10h,00h,00h,72h,05h,0E9h
+    db 4Dh,0FFh,0FFh,0FFh,8Bh,44h,24h,04h
+    db 89h,04h,8Dh,0A0h,6Eh,34h,01h,0Fh
+    db 0B7h,90h,86h,02h,00h,00h,0Fh,0B7h
+    db 80h,82h,02h,00h,00h,56h,8Bh,35h
+    db 0A8h,0AEh,34h,01h,03h,0F2h,8Bh,15h
+    db 90h,6Eh,34h,01h,03h,0D0h,41h,89h
+    db 35h,0A8h,0AEh,34h,01h,89h,15h,90h
+    db 6Eh,34h,01h,89h,0Dh,94h,6Eh,34h
+    db 01h,5Eh,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,55h,8Bh,6Ch,24h,08h,56h,57h
+    db 55h,0E8h,06h,0E2h,6Dh,0FFh,8Bh,75h
+    db 04h,83h,0C4h,04h,85h,0F6h,74h,03h
+    db 0FFh,46h,04h,0A1h,0C4h,0Eh,34h,01h
+    db 85h,0C0h,74h,15h,8Bh,78h,04h,8Bh
+    db 0C8h,83h,0C0h,04h,4Fh,8Bh,0D7h,85h
+    db 0D2h,89h,38h,75h,04h,8Bh,01h,0FFh
+    db 10h,81h,0Dh,9Ch,0F4h,33h,01h,00h
+    db 40h,00h,00h,8Bh,0Dh,78h,05h,34h
+    db 01h,89h,35h,0C4h,0Eh,34h,01h,8Bh
+    db 81h,78h,02h,00h,00h,33h,0F6h,85h
+    db 0C0h,7Eh,24h,8Dh,7Dh,08h,8Dh,49h
+    db 00h,57h,56h,0E8h,0A9h,0C8h,0FCh,0FFh
+    db 8Bh,15h,78h,05h,34h,01h,8Bh,82h
+    db 78h,02h,00h,00h,83h,0C4h,08h,46h
+    db 83h,0C7h,04h,3Bh,0F0h,7Ch,0E2h,8Bh
+    db 45h,04h,8Ah,48h,69h,84h,0C9h,0Fh
+    db 84h,0D1h,00h,00h,00h,33h,0F6h,8Dh
+    db 7Dh,28h,8Ah,84h,2Eh,0C8h,01h,00h
+    db 00h,84h,0C0h,0Fh,84h,88h,00h,00h
+    db 00h,85h,0FFh,74h,42h,0A1h,5Ch,05h
+    db 34h,01h,40h,57h,0A3h,5Ch,05h,34h
+    db 01h,0A1h,34h,05h,34h,01h,8Bh,08h
+    db 56h,50h,0FFh,91h,0CCh,00h,00h,00h
+    db 8Bh,15h,94h,05h,34h,01h,0A1h,34h
+    db 05h,34h,01h,6Ah,01h,42h,56h,89h
+    db 15h,94h,05h,34h,01h,8Bh,10h,50h
+    db 0FFh,92h,0D4h,00h,00h,00h,0C6h,86h
+    db 0FCh,00h,34h,01h,01h,0EBh,2Dh,8Ah
+    db 86h,0FCh,00h,34h,01h,84h,0C0h,74h
+    db 29h,0A1h,5Ch,05h,34h,01h,40h,6Ah
+    db 00h,0A3h,5Ch,05h,34h,01h,0A1h,34h
+    db 05h,34h,01h,56h,0C6h,86h,0FCh,00h
+    db 34h,01h,00h,8Bh,08h,50h,0FFh,91h
+    db 0D4h,00h,00h,00h,0FFh,05h,94h,05h
+    db 34h,01h,46h,83h,0C7h,68h,83h,0FEh
+    db 04h,0Fh,8Ch,6Bh,0FFh,0FFh,0FFh,0EBh
+    db 35h,8Ah,86h,0FCh,00h,34h,01h,84h
+    db 0C0h,74h,2Bh,8Bh,15h,5Ch,05h,34h
+    db 01h,0A1h,34h,05h,34h,01h,6Ah,00h
+    db 42h,56h,89h,15h,5Ch,05h,34h,01h
+    db 0C6h,86h,0FCh,00h,34h,01h,00h,8Bh
+    db 10h,50h,0FFh,92h,0D4h,00h,00h,00h
+    db 0FFh,05h,94h,05h,34h,01h,0A1h,4Ch
+    db 05h,34h,01h,40h,8Dh,95h,0CCh,01h
+    db 00h,00h,52h,0A3h,4Ch,05h,34h,01h
+    db 0A1h,34h,05h,34h,01h,8Bh,08h,68h
+    db 00h,01h,00h,00h,50h,0FFh,91h,0B0h
+    db 00h,00h,00h,8Bh,0Dh,94h,05h,34h
+    db 01h,0A1h,4Ch,05h,34h,01h,41h,40h
+    db 81h,0C5h,0Ch,02h,00h,00h,55h,0A3h
+    db 4Ch,05h,34h,01h,0A1h,34h,05h,34h
+    db 01h,6Ah,02h,89h,0Dh,94h,05h,34h
+    db 01h,8Bh,08h,50h,0FFh,91h,0B0h,00h
+    db 00h,00h,0A1h,94h,05h,34h,01h,5Fh
+    db 40h,5Eh,0A3h,94h,05h,34h,01h,5Dh
+    db 0C3h,55h,8Bh,6Ch,24h,08h,56h,8Bh
+    db 0F0h,8Bh,45h,00h,3Bh,06h,74h,05h
+    db 5Eh,0B0h,01h,5Dh,0C3h
+?drawBridges@W3DBridgeBuffer@@QAEXPAVCameraClass@@_NPAVTextureClass@@@Z ENDP
+_TEXT ENDS
+END

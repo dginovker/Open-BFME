@@ -1,0 +1,84 @@
+.386
+.model flat
+
+; ?update@BridgeScaffoldBehavior@@UAE?AW4UpdateSleepTime@@XZ
+; Exact 580 retail bytes @ 0x0073327B
+_TEXT SEGMENT
+public ?update@BridgeScaffoldBehavior@@UAE?AW4UpdateSleepTime@@XZ
+?update@BridgeScaffoldBehavior@@UAE?AW4UpdateSleepTime@@XZ PROC
+    db 81h,0F8h,18h,00h,00h,0D8h,15h,50h
+    db 53h,07h,01h,53h,57h,8Bh,0BCh,28h
+    db 0DCh,7Ch,2Ah,00h,0DFh,0E0h,0F6h,0C4h
+    db 41h,75h,06h,0D9h,5Ch,24h,28h,0EBh
+    db 17h,0DDh,0D8h,0D9h,44h,24h,28h,0D8h
+    db 5Fh,38h,0DFh,0E0h,0F6h,0C4h,05h,7Ah
+    db 07h,8Bh,57h,38h,89h,54h,24h,28h
+    db 8Bh,44h,24h,24h,8Bh,18h,8Dh,4Eh
+    db 74h,8Bh,0D1h,89h,1Ah,8Bh,58h,04h
+    db 89h,5Ah,04h,8Bh,40h,08h,89h,42h
+    db 08h,0E8h,0B1h,8Ah,8Fh,0FFh,0D9h,44h
+    db 24h,28h,8Bh,0Eh,8Bh,56h,04h,8Bh
+    db 46h,08h,33h,0DBh,89h,9Eh,84h,00h
+    db 00h,00h,0D8h,4Fh,2Ch,0D9h,5Eh,6Ch
+    db 0D9h,44h,24h,28h,0D8h,4Fh,30h,0C7h
+    db 86h,80h,00h,00h,00h,01h,00h,00h
+    db 00h,89h,9Eh,8Ch,00h,00h,00h,89h
+    db 4Ch,24h,10h,0D9h,5Eh,70h,89h,54h
+    db 24h,14h,89h,44h,24h,18h,8Bh,7Fh
+    db 20h,3Bh,0FBh,74h,1Ah,8Bh,0CFh,0E8h
+    db 58h,0ECh,8Dh,0FFh,84h,0C0h,75h,0Fh
+    db 53h,53h,53h,8Dh,4Ch,24h,1Ch,51h
+    db 8Bh,0CFh,0E8h,0EFh,87h,8Eh,0FFh,0C6h
+    db 85h,0B5h,7Ch,2Ah,00h,01h,89h,9Eh
+    db 94h,00h,00h,00h,89h,9Eh,98h,00h
+    db 00h,00h,89h,9Eh,9Ch,00h,00h,00h
+    db 0B8h,00h,00h,80h,3Fh,89h,86h,90h
+    db 00h,00h,00h,89h,9Eh,0A0h,00h,00h
+    db 00h,89h,86h,0A4h,00h,00h,00h,89h
+    db 9Eh,0A8h,00h,00h,00h,89h,9Eh,0ACh
+    db 00h,00h,00h,89h,9Eh,0B0h,00h,00h
+    db 00h,89h,9Eh,0B4h,00h,00h,00h,89h
+    db 86h,0B8h,00h,00h,00h,89h,9Eh,0BCh
+    db 00h,00h,00h,8Bh,16h,89h,96h,9Ch
+    db 00h,00h,00h,8Bh,46h,04h,89h,86h
+    db 0ACh,00h,00h,00h,8Bh,4Eh,08h,5Fh
+    db 5Bh,89h,8Eh,0BCh,00h,00h,00h,5Eh
+    db 0B0h,01h,5Dh,83h,0C4h,0Ch,0C2h,0Ch
+    db 00h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,56h,8Bh,0B1h
+    db 0B0h,7Ch,2Ah,00h,33h,0C0h,85h,0F6h
+    db 57h,7Eh,19h,8Bh,7Ch,24h,0Ch,8Dh
+    db 91h,08h,02h,00h,00h,39h,3Ah,74h
+    db 12h,40h,81h,0C2h,0E8h,00h,00h,00h
+    db 3Bh,0C6h,7Ch,0F1h,5Fh,5Eh,32h,0C0h
+    db 0C2h,04h,00h,69h,0C0h,0E8h,00h,00h
+    db 00h,03h,0C1h,8Bh,88h,30h,02h,00h
+    db 00h,85h,0C9h,7Eh,27h,8Ah,88h,74h
+    db 02h,00h,00h,84h,0C9h,75h,1Dh,83h
+    db 0B8h,0F0h,01h,00h,00h,0FEh,74h,14h
+    db 8Bh,88h,78h,02h,00h,00h,85h,0C9h
+    db 75h,0Ah,5Fh,5Eh,0B8h,01h,00h,00h
+    db 00h,0C2h,04h,00h,5Fh,5Eh,33h,0C0h
+    db 0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,57h,8Bh,7Ch
+    db 24h,08h,85h,0FFh,75h,06h,32h,0C0h
+    db 5Fh,0C2h,04h,00h
+?update@BridgeScaffoldBehavior@@UAE?AW4UpdateSleepTime@@XZ ENDP
+_TEXT ENDS
+END

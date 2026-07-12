@@ -2429,72 +2429,8 @@ static Bool isInBuildVariations(const ThingTemplate* ttWithVariations, const Thi
 
 // ------------------------------------------------------------------------
 /* Try to recruit a unit from other teams of this player. */
-// ?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z present-unmatched
-Object *Team::tryToRecruit(const ThingTemplate *tTemplate, const Coord3D *teamHome, Real maxDist)
-{
-	Player *myPlayer = getControllingPlayer();
-	Object *obj=NULL;
-	Real distSqr = maxDist*maxDist;
-	Object *recruit = NULL;
-	for( obj = TheGameLogic->getFirstObject(); obj; obj = obj->getNextObject() )
-	{
-		if (!obj->getTemplate()->isEquivalentTo(tTemplate)) 
-		{
-			// it might be ok, if tTemplate is really just a "build-variations" template...
-			if (!isInBuildVariations(tTemplate, obj->getTemplate()))
-				continue;
-		}
-		if (obj->getControllingPlayer() != myPlayer) 
-			continue;
-		Team *team = obj->getTeam();
-		Bool isDefaultTeam = false;
-		if (team == myPlayer->getDefaultTeam()) {
-			isDefaultTeam = true;
-		}
-		if (!team->isActive()) {
-			continue; // Team is building, so don't steal it's members yet.
-		}
-		if (team->getPrototype()->getTemplateInfo()->m_productionPriority>=getPrototype()->getTemplateInfo()->m_productionPriority) {
-			continue;
-		}
-		Bool teamIsRecruitable = isDefaultTeam;	 // Default team always recruitable.
-		if (team->getPrototype()->getTemplateInfo()->m_isAIRecruitable) {
-			teamIsRecruitable = true; 
-		}
-		// Check & see if individual team has been marked for recruitability.
-		if (team->m_isRecruitablitySet) {
-			teamIsRecruitable = team->m_isRecruitable;
-		}
-		if (!teamIsRecruitable) {
-			continue;
-		}
-		if (obj->getAIUpdateInterface() && !obj->getAIUpdateInterface()->isRecruitable()) {
-			continue; // can't recruit this unit.
-		}
-		if( obj->isDisabledByType( DISABLED_HELD ) ) 
-		{
-			continue; // Don't recruit held units.
-		}
-		Real dx, dy;
-		dx = teamHome->x - obj->getPosition()->x;
-		dy = teamHome->y - obj->getPosition()->y;
-
-		if (isDefaultTeam && recruit == NULL) {
-			recruit = obj;
-			distSqr = dx*dx+dy*dy;
-		}
-
-		if (dx*dx+dy*dy > distSqr) {
-			continue;
-		}
-		distSqr = dx*dx+dy*dy;
-		recruit = obj;
-	}
-	if (recruit!=NULL) {
-		return recruit;
-	}
- 	return NULL;	 
-}
+// ?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z
+// Body in Team_tryToRecruit.asm (exact 568B retail).
 
 // ------------------------------------------------------------------------
 // ?evacuateTeam@Team@@QAEXXZ present-unmatched

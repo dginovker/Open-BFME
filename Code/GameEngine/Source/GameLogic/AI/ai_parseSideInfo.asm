@@ -1,0 +1,76 @@
+.386
+.model flat
+
+; ?parseSideInfo@AI@@SAXPAVINI@@PAX1PBX@Z
+; Exact 516 retail bytes @ 0x009A15C0
+_TEXT SEGMENT
+public ?parseSideInfo@AI@@SAXPAVINI@@PAX1PBX@Z
+?parseSideInfo@AI@@SAXPAVINI@@PAX1PBX@Z PROC
+    db 6Ah,0FFh,68h,41h,01h,06h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,83h,0ECh,38h
+    db 56h,8Bh,74h,24h,4Ch,57h,6Ah,00h
+    db 8Bh,0CEh,0E8h,89h,0F3h,0EAh,0FFh,50h
+    db 8Dh,4Ch,24h,54h,0E8h,0CFh,75h,0EEh
+    db 0FFh,8Dh,4Ch,24h,10h,0C7h,44h,24h
+    db 48h,00h,00h,00h,00h,0E8h,8Eh,0FDh
+    db 0FFh,0FFh,8Dh,44h,24h,50h,50h,8Dh
+    db 4Ch,24h,14h,0C6h,44h,24h,4Ch,01h
+    db 0E8h,7Bh,66h,0EEh,0FFh,68h,0C0h,15h
+    db 14h,01h,8Dh,4Ch,24h,14h,51h,8Bh
+    db 0CEh,0E8h,7Ah,0Ah,0EBh,0FFh,0A1h,0C4h
+    db 0C6h,34h,01h,85h,0C0h,74h,3Ah,8Bh
+    db 78h,08h,6Ah,38h,0E8h,07h,0CFh,0E8h
+    db 0FFh,8Bh,0F0h,8Dh,4Eh,08h,83h,0C4h
+    db 04h,89h,4Ch,24h,08h,89h,4Ch,24h
+    db 0Ch,85h,0C9h,0C6h,44h,24h,48h,02h
+    db 74h,0Ah,8Dh,54h,24h,10h,52h,0E8h
+    db 54h,0FCh,0FFh,0FFh,8Bh,47h,04h,89h
+    db 3Eh,89h,46h,04h,89h,30h,89h,77h
+    db 04h,8Dh,4Ch,24h,10h,0C6h,44h,24h
+    db 48h,00h,0E8h,63h,0Bh,66h,0FFh,8Dh
+    db 4Ch,24h,50h,0C7h,44h,24h,48h,0FFh
+    db 0FFh,0FFh,0FFh,0E8h,0B8h,62h,0EEh,0FFh
+    db 8Bh,4Ch,24h,40h,5Fh,64h,89h,0Dh
+    db 00h,00h,00h,00h,5Eh,83h,0C4h,44h
+    db 0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,0Dh,0C4h,0C6h,34h,01h,85h,0C9h
+    db 74h,0Ah,8Bh,44h,24h,04h,50h,0E8h
+    db 0Ch,0FFh,0FFh,0FFh,0C3h,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,01h,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,41h,04h,0C3h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,0C1h,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,01h,83h,0E8h,08h,0C3h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,01h,83h,0E8h,08h,0C3h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,0C1h,83h,00h,0F8h,0C3h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,0C1h,8Bh,4Ch,24h,04h,89h,08h
+    db 0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,41h,04h,2Bh,01h,0C1h,0F8h,03h
+    db 0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,44h,24h,04h,8Bh,54h,24h,08h
+    db 89h,01h,8Bh,44h,24h,0Ch,89h,51h
+    db 04h,89h,41h,08h,0C2h,0Ch,00h,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,41h,0Ch,0C3h
+?parseSideInfo@AI@@SAXPAVINI@@PAX1PBX@Z ENDP
+_TEXT ENDS
+END

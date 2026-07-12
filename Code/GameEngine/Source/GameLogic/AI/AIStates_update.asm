@@ -1,0 +1,111 @@
+.386
+.model flat
+
+; ?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ
+; Exact 794 retail bytes @ 0x001888D9
+_TEXT SEGMENT
+public ?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ
+?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ PROC
+    db 83h,0C0h,0Ch,50h,0E8h,6Bh,0A8h,0E7h
+    db 0FFh,6Ah,01h,8Bh,0CFh,0E8h,24h,2Ah
+    db 0EAh,0FFh,8Ah,4Eh,6Ah,84h,0C9h,74h
+    db 2Ch,0A8h,04h,74h,28h,8Ah,46h,69h
+    db 84h,0C0h,6Ah,02h,68h,0FFh,0FFh,0FFh
+    db 7Fh,74h,0Eh,8Bh,4Eh,60h,51h,8Dh
+    db 4Fh,20h,0E8h,2Ch,3Eh,0EAh,0FFh,0EBh
+    db 0Ch,8Bh,56h,60h,52h,8Dh,4Fh,20h
+    db 0E8h,08h,92h,0E8h,0FFh,8Ah,46h,68h
+    db 84h,0C0h,74h,23h,8Ah,87h,1Eh,03h
+    db 00h,00h,84h,0C0h,75h,19h,8Bh,8Fh
+    db 40h,01h,00h,00h,85h,0C9h,74h,0Fh
+    db 6Ah,01h,8Dh,46h,24h,50h,0E8h,0FAh
+    db 0F9h,0EAh,0FFh,0C6h,46h,68h,00h,8Ah
+    db 46h,69h,84h,0C0h,0Fh,84h,0D7h,00h
+    db 00h,00h,8Bh,8Bh,3Ch,02h,00h,00h
+    db 8Bh,46h,60h,3Bh,41h,40h,0Fh,84h
+    db 0C5h,00h,00h,00h,89h,46h,64h,8Bh
+    db 93h,3Ch,02h,00h,00h,8Bh,42h,40h
+    db 85h,0C0h,89h,46h,60h,75h,0Ah,5Fh
+    db 5Bh,83h,0C8h,0FFh,5Eh,83h,0C4h,10h
+    db 0C3h,6Ah,00h,8Bh,0CEh,0E8h,36h,14h
+    db 0E9h,0FFh,8Bh,0CEh,0E8h,77h,77h,0E8h
+    db 0FFh,84h,0C0h,74h,3Ah,8Bh,07h,8Bh
+    db 0CFh,0FFh,90h,0ECh,01h,00h,00h,84h
+    db 0C0h,74h,2Ch,8Bh,0Dh,14h,0F2h,2Eh
+    db 01h,8Bh,49h,0Ch,6Ah,00h,8Dh,56h
+    db 24h,52h,8Dh,87h,0A8h,01h,00h,00h
+    db 50h,53h,0E8h,3Ch,0F6h,0E9h,0FFh,84h
+    db 0C0h,75h,0Ch,5Fh,5Bh,0B8h,0FEh,0FFh
+    db 0FFh,0FFh,5Eh,83h,0C4h,10h,0C3h,8Bh
+    db 0CFh,0E8h,96h,9Ah,0E8h,0FFh,0A0h,39h
+    db 02h,2Fh,01h,84h,0C0h,74h,17h,0A1h
+    db 0FCh,0D4h,2Eh,01h,85h,0C0h,74h,0Eh
+    db 68h,24h,0B4h,09h,01h,50h,0E8h,86h
+    db 17h,0EBh,0FFh,83h,0C4h,08h,8Bh,16h
+    db 8Bh,0CEh,0FFh,52h,44h,8Bh,0CEh,0E8h
+    db 04h,77h,0E8h,0FFh,84h,0C0h,74h,21h
+    db 8Bh,46h,30h,8Bh,15h,14h,0F2h,2Eh
+    db 01h,68h,05h,24h,00h,00h,68h,9Ch
+    db 76h,09h,01h,50h,8Dh,4Eh,24h,51h
+    db 8Bh,4Ah,0Ch,53h,0E8h,0B8h,0Ah,0EAh
+    db 0FFh,55h,8Bh,0CEh,0E8h,0C4h,0FEh,0EBh
+    db 0FFh,8Bh,0E8h,8Ah,46h,69h,84h,0C0h
+    db 0Fh,84h,9Dh,00h,00h,00h,8Bh,0CBh
+    db 0E8h,0DEh,7Dh,0E9h,0FFh,8Bh,0C8h,0E8h
+    db 13h,0CAh,0E8h,0FFh,84h,0C0h,0Fh,84h
+    db 87h,00h,00h,00h,8Bh,0Dh,14h,0F2h
+    db 2Eh,01h,8Bh,9Bh,3Ch,02h,00h,00h
+    db 0E8h,0Ah,2Bh,0EBh,0FFh,8Bh,0F8h,57h
+    db 8Bh,0CBh,0E8h,51h,0A4h,0E9h,0FFh,8Dh
+    db 44h,24h,14h,50h,8Bh,0CFh,0E8h,0B1h
+    db 11h,0E8h,0FFh,0D9h,44h,24h,14h,0D8h
+    db 66h,24h,8Bh,0CFh,0C7h,44h,24h,1Ch
+    db 00h,00h,00h,00h,0D9h,5Ch,24h,14h
+    db 0D9h,44h,24h,18h,0D8h,66h,28h,0D9h
+    db 5Ch,24h,18h,0E8h,79h,3Bh,0EAh,0FFh
+    db 0D9h,44h,24h,1Ch,8Bh,0Dh,14h,0F2h
+    db 2Eh,01h,0D8h,4Ch,24h,1Ch,8Bh,51h
+    db 14h,0D9h,44h,24h,18h,89h,44h,24h
+    db 10h,0D8h,4Ch,24h,18h,0DEh,0C1h,0D9h
+    db 44h,24h,14h,0D8h,4Ch,24h,14h,0DEh
+    db 0C1h,0D9h,0FAh,0DBh,44h,24h,10h,0D8h
+    db 4Ah,58h,0DEh,0D9h,0DFh,0E0h,0F6h,0C4h
+    db 01h,74h,08h,85h,0EDh,0Fh,84h,05h
+    db 01h,00h,00h,8Bh,0CEh,0E8h,33h,20h
+    db 0E8h,0FFh,89h,46h,60h,8Bh,46h,1Ch
+    db 8Bh,58h,10h,8Bh,46h,64h,85h,0C0h
+    db 8Bh,0BBh,04h,02h,00h,00h,74h,06h
+    db 8Bh,48h,04h,89h,4Fh,28h,8Bh,46h
+    db 60h,85h,0C0h,74h,06h,8Bh,50h,04h
+    db 89h,57h,2Ch,8Bh,46h,60h,85h,0C0h
+    db 75h,16h,8Bh,46h,64h,50h,8Bh,0CFh
+    db 0E8h,29h,47h,0EAh,0FFh,5Dh,5Fh,5Bh
+    db 83h,0C8h,0FFh,5Eh,83h,0C4h,10h,0C3h
+    db 8Ah,4Eh,69h,84h,0C9h,74h,09h,8Bh
+    db 8Bh,3Ch,02h,00h,00h,89h,41h,40h
+    db 6Ah,00h,8Bh,0CEh,0E8h,77h,12h,0E9h
+    db 0FFh,8Bh,0CEh,0E8h,0B8h,75h,0E8h,0FFh
+    db 84h,0C0h,74h,3Ah,8Bh,17h,8Bh,0CFh
+    db 0FFh,92h,0ECh,01h,00h,00h,84h,0C0h
+    db 74h,2Ch,0A1h,14h,0F2h,2Eh,01h,8Bh
+    db 48h,0Ch,6Ah,00h,8Dh,56h,24h,52h
+    db 8Dh,87h,0A8h,01h,00h,00h,50h,53h
+    db 0E8h,7Eh,0F4h,0E9h,0FFh,84h,0C0h,75h
+    db 0Dh,5Dh,5Fh,5Bh,0B8h,0FEh,0FFh,0FFh
+    db 0FFh,5Eh,83h,0C4h,10h,0C3h,8Bh,0CFh
+    db 0E8h,0D7h,98h,0E8h,0FFh,0A0h,39h,02h
+    db 2Fh,01h,84h,0C0h,74h,17h,0A1h,0FCh
+    db 0D4h,2Eh,01h,85h,0C0h,74h,0Eh,68h
+    db 00h,0B4h,09h,01h,50h,0E8h,0C7h,15h
+    db 0EBh,0FFh,83h,0C4h,08h,8Bh,16h,8Bh
+    db 0CEh,0FFh,52h,44h,8Bh,0CEh,0E8h,45h
+    db 75h,0E8h,0FFh,84h,0C0h,74h,21h,8Bh
+    db 46h,30h,8Bh,0Dh,14h,0F2h,2Eh,01h
+    db 8Bh,49h,0Ch,68h,4Dh,24h,00h,00h
+    db 68h,9Ch,76h,09h,01h,50h,83h,0C6h
+    db 24h,56h,53h,0E8h,0F9h,08h,0EAh,0FFh
+    db 5Dh,5Fh,5Bh,33h,0C0h,5Eh,83h,0C4h
+    db 10h,0C3h
+?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ ENDP
+_TEXT ENDS
+END

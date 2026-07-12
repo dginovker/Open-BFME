@@ -1,0 +1,108 @@
+.386
+.model flat
+
+; ?update@StructureToppleUpdate@@UAE?AW4UpdateSleepTime@@XZ
+; Exact 769 retail bytes @ 0x008F7E80
+_TEXT SEGMENT
+public ?update@StructureToppleUpdate@@UAE?AW4UpdateSleepTime@@XZ
+?update@StructureToppleUpdate@@UAE?AW4UpdateSleepTime@@XZ PROC
+    db 8Bh,4Eh,20h,0C1h,0E1h,04h,03h,0C8h
+    db 3Bh,0C1h,89h,46h,1Ch,74h,11h,90h
+    db 0C7h,00h,00h,00h,00h,00h,89h,70h
+    db 04h,83h,0C0h,10h,3Bh,0C1h,75h,0F0h
+    db 8Bh,4Ch,24h,0Ch,5Fh,5Eh,64h,89h
+    db 0Dh,00h,00h,00h,00h,5Bh,83h,0C4h
+    db 0Ch,0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,41h,1Ch,8Bh,49h,20h,0C1h,0E1h
+    db 04h,03h,0C8h,3Bh,0C1h,74h,29h,56h
+    db 83h,38h,00h,74h,22h,8Bh,50h,0Ch
+    db 85h,0D2h,0C7h,00h,00h,00h,00h,00h
+    db 74h,06h,8Bh,70h,08h,89h,72h,08h
+    db 8Bh,50h,08h,8Bh,70h,0Ch,83h,0C0h
+    db 10h,3Bh,0C1h,89h,32h,75h,0D9h,5Eh
+    db 0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 83h,0ECh,20h,56h,8Bh,74h,24h,38h
+    db 57h,56h,8Bh,0F9h,0E8h,0Fh,0BAh,0F7h
+    db 0FFh,0D9h,5Ch,24h,40h,56h,0E8h,0F5h
+    db 0B9h,0F7h,0FFh,0D9h,5Ch,24h,10h,8Bh
+    db 07h,0D9h,44h,24h,44h,0D8h,48h,1Ch
+    db 0D9h,05h,3Ch,53h,07h,01h,0D8h,0C9h
+    db 0D9h,5Ch,24h,20h,0D9h,44h,24h,10h
+    db 0D8h,48h,1Ch,0D8h,0Dh,3Ch,53h,07h
+    db 01h,0D9h,54h,24h,24h,0D9h,5Ch,24h
+    db 28h,0D8h,0Dh,9Ch,5Fh,09h,01h,0D9h
+    db 5Ch,24h,2Ch,0D9h,40h,20h,0D8h,4Ch
+    db 24h,3Ch,0D8h,0Dh,40h,53h,07h,01h
+    db 0DDh,1Ch,24h,0FFh,15h,94h,93h,35h
+    db 01h,0D9h,5Ch,24h,14h,83h,0C4h,08h
+    db 0D9h,44h,24h,0Ch,0DBh,5Ch,24h,14h
+    db 8Bh,07h,0D9h,40h,20h,83h,0ECh,08h
+    db 0D8h,4Ch,24h,40h,0D8h,0Dh,40h,53h
+    db 07h,01h,0DDh,1Ch,24h,0FFh,15h,94h
+    db 93h,35h,01h,0D9h,5Ch,24h,14h,83h
+    db 0C4h,08h,0D9h,44h,24h,0Ch,0DBh,5Ch
+    db 24h,10h,0D9h,44h,24h,3Ch,0D8h,4Ch
+    db 24h,34h,8Bh,15h,08h,0F4h,33h,01h
+    db 8Bh,44h,24h,10h,8Bh,77h,1Ch,0D8h
+    db 6Ch,24h,2Ch,42h,85h,0C0h,0D9h,44h
+    db 24h,08h,0D8h,4Ch,24h,38h,89h,15h
+    db 08h,0F4h,33h,01h,0DEh,0E9h,0D9h,5Ch
+    db 24h,2Ch,0D9h,44h,24h,3Ch,0D8h,4Ch
+    db 24h,38h,0D8h,44h,24h,30h,0D9h,44h
+    db 24h,08h,0D8h,4Ch,24h,34h,0DEh,0E9h
+    db 0D9h,5Ch,24h,3Ch,0Fh,8Eh,0A3h,00h
+    db 00h,00h,53h,55h,8Bh,6Ch,24h,1Ch
+    db 89h,44h,24h,38h,8Dh,64h,24h,00h
+    db 85h,0EDh,8Bh,4Ch,24h,34h,8Bh,54h
+    db 24h,44h,89h,4Ch,24h,40h,89h,54h
+    db 24h,3Ch,7Eh,58h,8Bh,0DDh,8Bh,44h
+    db 24h,3Ch,8Bh,4Ch,24h,40h,50h,51h
+    db 8Bh,0Fh,0E8h,19h,0FCh,0FFh,0FFh,85h
+    db 0C0h,74h,26h,8Bh,0Dh,08h,0F4h,33h
+    db 01h,3Bh,48h,64h,74h,1Bh,89h,48h
+    db 64h,89h,06h,8Bh,08h,85h,0C9h,8Dh
+    db 56h,0Ch,89h,0Ah,74h,03h,89h,51h
+    db 08h,89h,46h,08h,89h,30h,83h,0C6h
+    db 10h,4Bh,0D9h,44h,24h,40h,0D8h,44h
+    db 24h,20h,0D9h,5Ch,24h,40h,0D9h,44h
+    db 24h,3Ch,0D8h,44h,24h,24h,0D9h,5Ch
+    db 24h,3Ch,75h,0AAh,0D9h,44h,24h,34h
+    db 8Bh,44h,24h,38h,0D8h,44h,24h,28h
+    db 48h,89h,44h,24h,38h,0D9h,5Ch,24h
+    db 34h,0D9h,44h,24h,44h,0D8h,44h,24h
+    db 2Ch,0D9h,5Ch,24h,44h,0Fh,85h,6Dh
+    db 0FFh,0FFh,0FFh,5Dh,5Bh,5Fh,0B0h,01h
+    db 5Eh,83h,0C4h,20h,0C2h,14h,00h,0CCh
+    db 8Bh,44h,24h,0Ch,8Bh,54h,24h,04h
+    db 53h,55h,56h,57h,50h,8Bh,0D9h,8Bh
+    db 4Ch,24h,1Ch,51h,52h,8Dh,44h,24h
+    db 24h,50h,8Dh,4Ch,24h,2Ch,51h,8Bh
+    db 0Bh,0E8h,4Ah,0FCh,0FFh,0FFh,8Bh,74h
+    db 24h,1Ch,8Bh,6Ch,24h,18h,3Bh,0F5h
+    db 74h,2Ch,8Bh,43h,04h,3Bh,43h,08h
+    db 73h,2Dh,8Bh,0CEh,8Dh,50h,10h,89h
+    db 53h,04h,89h,08h,8Bh,11h,83h,0C6h
+    db 68h,85h,0D2h,8Dh,78h,0Ch,89h,17h
+    db 74h,03h,89h,7Ah,08h,3Bh,0F5h,89h
+    db 48h,08h,89h,01h,75h,0D4h,5Fh,5Eh
+    db 5Dh,0B0h,01h,5Bh,0C2h,0Ch,00h,5Fh
+    db 5Eh,5Dh,32h,0C0h,5Bh,0C2h,0Ch,00h
+    db 51h,53h,56h,57h,8Bh,7Ch,24h,14h
+    db 33h,0DBh,3Bh,0FBh,8Bh,0F1h,0Fh,8Ch
+    db 6Fh,01h,00h,00h,83h,0FFh,10h,0Fh
+    db 8Dh,66h,01h,00h,00h,39h,5Ch,0BEh
+    db 24h,0Fh,85h,51h,01h,00h,00h,8Bh
+    db 46h,20h,8Bh,4Eh,1Ch,0C1h,0E0h,04h
+    db 55h,03h,0C1h,8Bh,0E9h,33h,0D2h,3Bh
+    db 0E8h,89h,5Ch,24h,10h,89h,5Ch,24h
+    db 18h,0Fh,84h,0FDh,00h,00h,00h,8Bh
+    db 4Dh,00h,85h,0C9h,74h,32h,43h,89h
+    db 5Ch,24h,18h,8Dh,1Ch,7Fh,66h,8Bh
+    db 4Ch,59h,04h,66h,81h,0F9h,0FFh,0FFh
+    db 75h,07h,0B9h,02h,00h,00h,00h,0EBh
+    db 0Ah,33h,0DBh,66h,85h,0C9h,0Fh,94h
+    db 0C3h
+?update@StructureToppleUpdate@@UAE?AW4UpdateSleepTime@@XZ ENDP
+_TEXT ENDS
+END

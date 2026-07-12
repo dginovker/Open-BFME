@@ -549,23 +549,8 @@ void BoxRenderObjClass::render_box(RenderInfoClass & rinfo,const Vector3 & cente
  * HISTORY:                                                                                    *
  *   1/19/00    gth : Created.                                                                 *
  *=============================================================================================*/
-// ?vis_render_box@BoxRenderObjClass@@ present-unmatched
-void BoxRenderObjClass::vis_render_box(SpecialRenderInfoClass & rinfo,const Vector3 & center,const Vector3 & extent)
-{
-	if (!IsInitted) return;
-	
-	static Vector3 verts[NUM_BOX_VERTS];
-
-	// compute the vertex positions
-	for (int ivert=0; ivert<NUM_BOX_VERTS; ivert++) {
-		verts[ivert].X = center.X + _BoxVerts[ivert][0] * extent.X;
-		verts[ivert].Y = center.Y + _BoxVerts[ivert][1] * extent.Y;
-		verts[ivert].Z = center.Z + _BoxVerts[ivert][2] * extent.Z;
-	}
-
-	// render!
-	rinfo.VisRasterizer->Render_Triangles(verts,NUM_BOX_VERTS,_BoxFaces,NUM_BOX_FACES,Get_Bounding_Box());
-}
+// ?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z
+// Body in boxrobj_vis_render_box.asm (exact 590B retail).
 
 /*
 ** AABoxRenderObjClass Implementation

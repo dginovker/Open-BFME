@@ -5767,50 +5767,8 @@ void ScriptActions::doTeamUseCommandButtonOnNearestGarrisonedBuilding( const Asc
 //-------------------------------------------------------------------------------------------------
 /** doTeamUseCommandButtonOnNearestKindof */
 //-------------------------------------------------------------------------------------------------
-// ?doTeamUseCommandButtonOnNearestKindof@ScriptActions@@IAEXABVAsciiString@@0H@Z present-unmatched
-void ScriptActions::doTeamUseCommandButtonOnNearestKindof( const AsciiString& teamName, const AsciiString& commandAbility, Int kindofBit )
-{
-	Team *team = TheScriptEngine->getTeamNamed(teamName);
-	if (!team) {
-		return;
-	}
-
-	AIGroup *theGroup = TheAI->createGroup();
-	team->getTeamAsAIGroup(theGroup);
-
-	const CommandButton *commandButton = TheControlBar->findCommandButton(commandAbility);
-	if (!commandButton) {
-		return;
-	}
-
-	Object *srcObj = NULL;
-	if (commandButton->getSpecialPowerTemplate()) {
-		srcObj = theGroup->getSpecialPowerSourceObject(commandButton->getSpecialPowerTemplate()->getID());
-	} else {
-		srcObj = theGroup->getCommandButtonSourceObject(commandButton->getCommandType());
-	}
-
-	if (!srcObj) {
-		return;
-	}
-
-	PartitionFilterPlayerAffiliation f1(team->getControllingPlayer(), ALLOW_ENEMIES, true);
-	PartitionFilterAcceptByKindOf f2(MAKE_KINDOF_MASK(kindofBit), KINDOFMASK_NONE);
-	PartitionFilterValidCommandButtonTarget f3(srcObj, commandButton, true, CMD_FROM_SCRIPT);
-	PartitionFilterSameMapStatus filterMapStatus(srcObj);
-
-	Coord3D pos;
-	theGroup->getCenter(&pos);
-
-	PartitionFilter *filters[] = { &f1, &f2, &f3, &filterMapStatus, 0 };
-	Object *obj = ThePartitionManager->getClosestObject(&pos, REALLY_FAR, FROM_CENTER_2D, filters);
-	if (!obj) {
-		return;
-	}
-
-	// already been checked for validity
-	theGroup->groupDoCommandButtonAtObject(commandButton, obj, CMD_FROM_SCRIPT);
-}
+// ?doTeamUseCommandButtonOnNearestKindof@ScriptActions@@IAEXABVAsciiString@@0H@Z
+// Body in ScriptActions_doTeamUseCommandButtonOnNearestKindof.asm (exact 496B retail).
 
 //-------------------------------------------------------------------------------------------------
 /** doTeamUseCommandButtonOnNearestBuilding */

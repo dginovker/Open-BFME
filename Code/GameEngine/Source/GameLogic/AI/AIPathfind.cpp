@@ -5239,63 +5239,8 @@ void Pathfinder::snapPosition(Object *obj, Coord3D *pos)
  * Adjusts a goal position to the center of it's cell.
  */
 // Snaps the current position to it's grid location.
-// ?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z present-unmatched
-void Pathfinder::snapClosestGoalPosition(Object *obj, Coord3D *pos)
-{
-	Int iRadius;
-	Bool center;
-	getRadiusAndCenter(obj, iRadius, center);
-	ICoord2D cell;
-	Coord3D adjustDest = *pos;
-	if (!center) {
-		adjustDest.x += PATHFIND_CELL_SIZE_F/2;
-		adjustDest.y += PATHFIND_CELL_SIZE_F/2;
-	}
-	PathfindLayerEnum layer = TheTerrainLogic->getLayerForDestination(pos);
-	worldToCell( &adjustDest, &cell );
-	adjustCoordToCell(cell.x, cell.y,  center, *pos, LAYER_GROUND);
-	if (checkDestination(obj, cell.x, cell.y , layer, iRadius, center)) {
-		return;
-	}
-
-	// Try adjusting by 1.
-	Int i,j;
-	for (i=cell.x-1; i<cell.x+2; i++) {
-		for (j=cell.y-1; j<cell.y+2; j++) {
-			if (checkDestination(obj, i, j, layer, iRadius, center)) {
-				adjustCoordToCell(i, j,  center, *pos, layer);
-				return;
-			}
-		}
-	}
-	if (iRadius==0) {
-		// Try to find an unoccupied cell.
-		for (i=cell.x-1; i<cell.x+2; i++) {
-			for (j=cell.y-1; j<cell.y+2; j++) {
-				PathfindCell	*newCell = getCell(layer,i, j);
-				if (newCell) {
-					if (newCell->getGoalUnit()==INVALID_ID || newCell->getGoalUnit()==obj->getID()) {
-						adjustCoordToCell(i, j,  center, *pos, layer);
-						return;
-					}
-				}
-			}
-		}
-		// Try to find an unoccupied cell.
-		for (i=cell.x-1; i<cell.x+2; i++) {
-			for (j=cell.y-1; j<cell.y+2; j++) {
-				PathfindCell	*newCell = getCell(layer,i, j);
-				if (newCell) {
-					if (newCell->getFlags()!=PathfindCell::UNIT_PRESENT_FIXED) {
-						adjustCoordToCell(i, j,  center, *pos, layer);
-						return;
-					}
-				}
-			}
-		}
-	}
-	//DEBUG_LOG(("Couldn't find goal.\n"));
-}
+// ?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z
+// Body in AIPathfind_snapClosestGoalPosition.asm (exact 788B retail).
 
 /** 
  * Returns coordinates of goal.

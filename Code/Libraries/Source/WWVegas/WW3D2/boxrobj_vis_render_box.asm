@@ -1,0 +1,85 @@
+.386
+.model flat
+
+; ?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z
+; Exact 590 retail bytes @ 0x00A9A533
+_TEXT SEGMENT
+public ?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z
+?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z PROC
+    db 8Bh,0Fh,6Bh,0C0h,44h,8Bh,5Ch,08h
+    db 34h,8Bh,0D6h,6Bh,0D2h,44h,89h,5Ch
+    db 0Ah,34h,8Bh,0Fh,89h,74h,01h,34h
+    db 8Bh,45h,0Ch,89h,30h,5Bh,8Bh,45h
+    db 0FCh,5Fh,5Eh,0C9h,0C2h,1Ch,00h,55h
+    db 8Bh,0ECh,83h,0ECh,18h,83h,65h,0FCh
+    db 00h,53h,8Bh,5Dh,0Ch,8Bh,0C3h,0C1h
+    db 0E0h,05h,56h,50h,0E8h,0BCh,79h,0DEh
+    db 0FFh,8Bh,0F0h,85h,0F6h,59h,74h,12h
+    db 68h,7Bh,9Fh,0E9h,00h,53h,6Ah,20h
+    db 56h,0E8h,0D3h,08h,57h,0FFh,8Bh,0C6h
+    db 0EBh,02h,33h,0C0h,85h,0C0h,8Bh,4Dh
+    db 08h,89h,01h,75h,09h,0C7h,45h,0FCh
+    db 0Eh,00h,07h,80h,0EBh,62h,85h,0DBh
+    db 76h,5Eh,0D9h,0EEh,33h,0C0h,0D9h,5Dh
+    db 0E8h,57h,0D9h,0EEh,0D9h,5Dh,0ECh,0D9h
+    db 0EEh,0D9h,5Dh,0F0h,0D9h,0EEh,0D9h,5Dh
+    db 0F4h,0D9h,0EEh,0D9h,5Dh,0F8h,8Bh,11h
+    db 83h,0Ch,10h,0FFh,8Bh,11h,83h,4Ch
+    db 02h,04h,0FFh,8Bh,11h,8Dh,7Ch,02h
+    db 14h,8Dh,75h,0E8h,0A5h,0A5h,0A5h,8Bh
+    db 11h,8Bh,75h,0F4h,89h,74h,02h,0Ch
+    db 8Bh,75h,0F8h,89h,74h,02h,10h,8Bh
+    db 11h,8Dh,54h,02h,08h,80h,22h,0FEh
+    db 8Bh,11h,8Dh,54h,02h,08h,80h,22h
+    db 0FDh,83h,0C0h,20h,4Bh,75h,0BFh,5Fh
+    db 8Bh,45h,0FCh,5Eh,5Bh,0C9h,0C2h,08h
+    db 00h,55h,8Dh,6Ch,24h,0C4h,81h,0ECh
+    db 04h,05h,00h,00h,8Bh,45h,50h,53h
+    db 56h,33h,0DBh,57h,0FFh,75h,70h,8Dh
+    db 8Dh,0CCh,0FEh,0FFh,0FFh,89h,5Dh,20h
+    db 89h,5Dh,34h,89h,5Dh,28h,89h,5Dh
+    db 24h,89h,45h,2Ch,89h,5Dh,18h,89h
+    db 5Dh,30h,89h,5Dh,08h,0E8h,0BDh,72h
+    db 0F7h,0FFh,8Bh,45h,5Ch,3Bh,0C3h,74h
+    db 04h,8Bh,00h,0EBh,03h,6Ah,02h,58h
+    db 50h,8Dh,4Dh,0B0h,0E8h,5Eh,0B1h,0F6h
+    db 0FFh,8Dh,45h,90h,50h,8Dh,4Dh,0B0h
+    db 0E8h,05h,0E8h,0FBh,0FFh,8Bh,55h,48h
+    db 33h,0C9h,3Bh,0D3h,0Fh,86h,98h,01h
+    db 00h,00h,8Bh,45h,44h,8Bh,00h,83h
+    db 0C0h,0Ch,0F6h,00h,08h,74h,03h,33h
+    db 0C9h,41h,83h,0C0h,2Ch,4Ah,75h,0F2h
+    db 3Bh,0CBh,0Fh,84h,7Ah,01h,00h,00h
+    db 39h,9Dh,60h,0FFh,0FFh,0FFh,0Fh,84h
+    db 6Eh,01h,00h,00h,89h,5Dh,38h,8Bh
+    db 45h,44h,8Bh,10h,03h,0D3h,0F6h,42h
+    db 0Ch,08h,0Fh,84h,0ECh,00h,00h,00h
+    db 8Bh,45h,4Ch,8Bh,30h,8Bh,02h,8Bh
+    db 4Ah,04h,6Bh,0C0h,44h,8Bh,52h,08h
+    db 6Bh,0C9h,44h,03h,0C6h,6Bh,0D2h,44h
+    db 0D9h,00h,03h,0CEh,03h,0D6h,8Dh,75h
+    db 0Ch,0D8h,21h,8Dh,7Dh,0FCh,0D9h,40h
+    db 04h,0D8h,61h,04h,0D9h,40h,08h,0D8h
+    db 61h,08h,0D9h,00h,0D8h,22h,0D9h,5Dh
+    db 0F0h,0D9h,40h,04h,0D8h,62h,04h,0D9h
+    db 5Dh,0F4h,0D9h,40h,08h,0D8h,62h,08h
+    db 0D9h,0C0h,0D8h,0CBh,0D9h,45h,0F4h,0D8h
+    db 0CBh,0DEh,0E9h,0D9h,5Dh,0Ch,0D9h,0C1h
+    db 0D8h,4Dh,0F0h,0D9h,0C1h,0D8h,0CDh,0DEh
+    db 0E9h,0D9h,5Dh,10h,0DDh,0D8h,0DDh,0D8h
+    db 0D9h,45h,0F4h,0D8h,0CAh,0D9h,0C1h,0D8h
+    db 4Dh,0F0h,0DEh,0E9h,0D9h,55h,14h,0A5h
+    db 0DDh,0DAh,0DDh,0D8h,0A5h,0D9h,45h,10h
+    db 0D8h,4Dh,10h,0D9h,45h,0Ch,0D8h,4Dh
+    db 0Ch,0A5h,0DEh,0C1h,33h,0FFh,0D9h,0C1h
+    db 0D8h,0CAh,0DEh,0C1h,0D9h,0FAh,0DDh,0D9h
+    db 0D8h,3Dh,34h,53h,07h,01h,0D9h,45h
+    db 0Ch,0D8h,0C9h,0D9h,5Dh,0FCh,0D9h,45h
+    db 00h,0D8h,0C9h,0D9h,5Dh,00h,0D9h,45h
+    db 04h,0D8h,0C9h,0D9h,5Dh,04h,0DDh,0D8h
+    db 8Bh,45h,44h,8Bh,00h,8Dh,4Dh,2Ch
+    db 51h,8Dh,4Dh,50h,51h,0FFh,75h,4Ch
+    db 8Dh,4Dh,0FCh,51h,03h,0C3h
+?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z ENDP
+_TEXT ENDS
+END

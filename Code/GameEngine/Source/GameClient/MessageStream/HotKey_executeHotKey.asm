@@ -1,0 +1,86 @@
+.386
+.model flat
+
+; ?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z
+; Exact 597 retail bytes @ 0x005B3B2A
+_TEXT SEGMENT
+public ?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z
+?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z PROC
+    db 8Bh,8Ch,24h,90h,00h,00h,00h,53h
+    db 56h,57h,51h,8Dh,4Ch,24h,18h,0E8h
+    db 22h,40h,2Dh,00h,8Dh,4Ch,24h,14h
+    db 0C7h,84h,24h,94h,00h,00h,00h,00h
+    db 00h,00h,00h,0E8h,4Eh,42h,2Dh,00h
+    db 8Dh,54h,24h,14h,8Dh,7Dh,08h,52h
+    db 8Bh,0CFh,32h,0DBh,0E8h,7Bh,52h,0A8h
+    db 0FFh,8Bh,0Fh,3Bh,0C1h,74h,07h,8Bh
+    db 70h,14h,85h,0F6h,75h,1Ah,8Dh,44h
+    db 24h,14h,8Dh,75h,14h,50h,8Bh,0CEh
+    db 0E8h,5Fh,52h,0A8h,0FFh,3Bh,06h,74h
+    db 1Fh,8Bh,70h,14h,85h,0F6h,74h,18h
+    db 8Bh,0CEh,0E8h,49h,02h,0A7h,0FFh,0A8h
+    db 10h,75h,0Dh,8Bh,0CEh,0E8h,3Eh,02h
+    db 0A7h,0FFh,0A8h,08h,75h,62h,0B3h,01h
+    db 8Dh,4Ch,24h,14h,0E8h,0E5h,42h,2Dh
+    db 00h,8Dh,4Ch,24h,14h,51h,8Bh,0CFh
+    db 0E8h,27h,52h,0A8h,0FFh,3Bh,07h,74h
+    db 07h,8Bh,70h,14h,85h,0F6h,75h,22h
+    db 8Dh,54h,24h,14h,8Dh,75h,14h,52h
+    db 8Bh,0CEh,0E8h,0Dh,52h,0A8h,0FFh,3Bh
+    db 06h,0Fh,84h,0F2h,00h,00h,00h,8Bh
+    db 70h,14h,85h,0F6h,0Fh,84h,0E7h,00h
+    db 00h,00h,8Bh,0CEh,0E8h,0EFh,01h,0A7h
+    db 0FFh,0A8h,10h,0Fh,85h,0D8h,00h,00h
+    db 00h,8Bh,0CEh,0E8h,0E0h,01h,0A7h,0FFh
+    db 0A8h,08h,0Fh,84h,0CDh,00h,00h,00h
+    db 8Bh,0CEh,0E8h,88h,0Dh,0A8h,0FFh,85h
+    db 0C0h,0Fh,84h,39h,01h,00h,00h,8Ah
+    db 8Ch,24h,0A0h,00h,00h,00h,8Bh,15h
+    db 40h,1Bh,2Fh,01h,8Bh,68h,14h,8Bh
+    db 1Ah,0F6h,0D9h,0C6h,44h,24h,13h,01h
+    db 1Bh,0C9h,83h,0E1h,03h,81h,0C1h,08h
+    db 40h,00h,00h,8Bh,0F9h,8Bh,0CEh,0E8h
+    db 66h,4Ch,0A6h,0FFh,8Bh,0Dh,40h,1Bh
+    db 2Fh,01h,50h,56h,57h,55h,0FFh,93h
+    db 0D4h,00h,00h,00h,85h,0C0h,75h,10h
+    db 8Ah,84h,24h,0A0h,00h,00h,00h,84h
+    db 0C0h,74h,05h,0C6h,44h,24h,13h,00h
+    db 8Bh,0Dh,68h,0D6h,2Eh,01h,85h,0C9h
+    db 74h,31h,8Bh,01h,0FFh,90h,24h,01h
+    db 00h,00h,85h,0C0h,74h,25h,8Ah,44h
+    db 24h,13h,84h,0C0h,74h,1Dh,8Bh,0Dh
+    db 68h,0D6h,2Eh,01h,8Bh,31h,0FFh,96h
+    db 24h,01h,00h,00h,8Bh,0Dh,68h,0D6h
+    db 2Eh,01h,05h,0B0h,0Ch,00h,00h,50h
+    db 0FFh,56h,44h,8Dh,4Ch,24h,14h,0C7h
+    db 84h,24h,94h,00h,00h,00h,0FFh,0FFh
+    db 0FFh,0FFh,0E8h,8Fh,3Ch,2Dh,00h,0B0h
+    db 01h,5Fh,5Eh,5Bh,5Dh,8Bh,4Ch,24h
+    db 7Ch,64h,89h,0Dh,00h,00h,00h,00h
+    db 81h,0C4h,88h,00h,00h,00h,0C2h,08h
+    db 00h,84h,0DBh,74h,7Bh,68h,0BCh,77h
+    db 0Fh,01h,8Dh,4Ch,24h,1Ch,0E8h,0E3h
+    db 4Eh,2Dh,00h,6Ah,00h,8Dh,4Ch,24h
+    db 1Ch,51h,8Dh,4Ch,24h,24h,0C6h,84h
+    db 24h,9Ch,00h,00h,00h,01h,0E8h,11h
+    db 16h,0A7h,0FFh,8Dh,4Ch,24h,18h,0C6h
+    db 84h,24h,94h,00h,00h,00h,03h,0E8h
+    db 3Ah,3Ch,2Dh,00h,8Bh,0Dh,68h,0D6h
+    db 2Eh,01h,85h,0C9h,74h,29h,8Bh,11h
+    db 0FFh,92h,24h,01h,00h,00h,85h,0C0h
+    db 74h,1Dh,8Bh,0Dh,68h,0D6h,2Eh,01h
+    db 8Bh,31h,0FFh,96h,24h,01h,00h,00h
+    db 8Bh,0Dh,68h,0D6h,2Eh,01h,05h,20h
+    db 0Dh,00h,00h,50h,0FFh,56h,44h,8Dh
+    db 4Ch,24h,1Ch,0C6h,84h,24h,94h,00h
+    db 00h,00h,00h,0E8h,0EBh,31h,0A7h,0FFh
+    db 8Dh,4Ch,24h,14h,0C7h,84h,24h,94h
+    db 00h,00h,00h,0FFh,0FFh,0FFh,0FFh,0E8h
+    db 0E2h,3Bh,2Dh,00h,32h,0C0h,0E9h,4Eh
+    db 0FFh,0FFh,0FFh,8Bh,8Ch,24h,80h,00h
+    db 00h,00h,32h,0C0h,5Dh,64h,89h,0Dh
+    db 00h,00h,00h,00h,81h,0C4h,88h,00h
+    db 00h,00h,0C2h,08h,00h
+?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z ENDP
+_TEXT ENDS
+END

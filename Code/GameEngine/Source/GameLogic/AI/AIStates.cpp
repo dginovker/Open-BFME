@@ -2053,14 +2053,8 @@ void AIAttackMoveStateMachine::loadPostProcess( void )
 }  // end loadPostProcess
 
 //-----------------------------------------------------------------------------------------------------------
-// ??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z present-unmatched
-AIAttackMoveStateMachine::AIAttackMoveStateMachine(Object *owner, AsciiString name) : StateMachine(owner, name)
-{
-	// order matters: first state is the default state.
-	defineState( AI_IDLE, newInstance(AIIdleState)( this, AIIdleState::DO_NOT_LOOK_FOR_TARGETS ), AI_IDLE, AI_IDLE );
-	defineState( AI_PICK_UP_CRATE, newInstance(AIPickUpCrateState)( this ), AI_IDLE, AI_IDLE );
-	defineState( AI_ATTACK_OBJECT,	newInstance(AIAttackState)(this, false, true, false, NULL ), AI_IDLE, AI_IDLE);
-}
+// ??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z
+// Body in AIStates_0AIAttackMoveStateMachine.asm (exact 501B retail).
 
 //----------------------------------------------------------------------------------------------------------
 // ??1AIAttackMoveStateMachine@@MAE@XZ present-unmatched
@@ -4248,135 +4242,8 @@ void AIFollowWaypointPathState::onExit( StateExitType status )
 }
 
 //----------------------------------------------------------------------------------------------------------
-// ?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ present-unmatched
-StateReturnType AIFollowWaypointPathState::update()
-{
-	if (m_framesSleeping>0) {
-		m_framesSleeping--;
-		return STATE_CONTINUE;
-	}
-	Object *obj = getMachineOwner();
- 	AIUpdateInterface *ai = obj->getAI();
-
-
-	getMachine()->setGoalPosition(m_currentWaypoint->getLocation());
-	
-	UnsignedInt adjustment = ai->getMoodMatrixActionAdjustment(MM_Action_Move);
-	if (m_isFollowWaypointPathState && (adjustment & MAA_Action_To_AttackMove))	{
-		if (m_moveAsGroup) {
-			ai->aiAttackFollowWaypointPathAsTeam(m_currentWaypoint, NO_MAX_SHOTS_LIMIT, CMD_FROM_AI);
-		}	else {
-			ai->aiAttackFollowWaypointPath(m_currentWaypoint, NO_MAX_SHOTS_LIMIT, CMD_FROM_AI);
-		}
-	}
-
-	if (m_appendGoalPosition) {	 
-		Path *thePath = ai->getPath();
-		if (!ai->isWaitingForPath() && ai->getPath()) {
-			//Coord3D pathEnd = *thePath->getLastNode()->getPosition();
-			thePath->appendNode(&m_goalPosition, LAYER_GROUND);	// waypoints are always on the ground.
-			m_appendGoalPosition = false; // just did it.
-		}
-	}
-	if (m_moveAsGroup && m_currentWaypoint != obj->getTeam()->getCurrentWaypoint()) {
-		m_priorWaypoint = m_currentWaypoint;
-		m_currentWaypoint = obj->getTeam()->getCurrentWaypoint();
-		if (m_currentWaypoint == NULL) {
-			return STATE_SUCCESS;
-		}			 
-		computeGoal(false);
-		if (getAdjustsDestination() && ai->isDoingGroundMovement()) {
-			if (!TheAI->pathfinder()->adjustDestination(obj, ai->getLocomotorSet(), &m_goalPosition)) {
-				if (m_currentWaypoint) {
-					DEBUG_LOG(("Breaking out of follow waypoint path %s of %s\n", 
-					m_currentWaypoint->getName().str(), m_currentWaypoint->getPathLabel1().str()));
-				}
-				return STATE_FAILURE;
-			}
-		}
-		ai->friend_startingMove();
-		computePath();
-		if (getAdjustsDestination()) {
-			TheAI->pathfinder()->updateGoal(obj, &m_goalPosition, m_goalLayer);
-		}
-	}
-
-	// do movement
-	StateReturnType status = AIInternalMoveToState::update();
-	
-	// We may want to allow ourselves to bail out of this one early. In order to do this, we check and
-	// see if we're moving as a group, and then if our team is owned by an AI Skirmish player. 
-	// If it is, then we compute the group centroid, and see if it is within some distance of the 
-	if (m_moveAsGroup) {
-		if (obj->getControllingPlayer()->isSkirmishAIPlayer()) {
-			Team *team = obj->getTeam();
-			AIGroup *group = TheAI->createGroup();
-			team->getTeamAsAIGroup(group);
-
-			Coord3D pos;
-			group->getCenter(&pos);
-
-			pos.x -= m_goalPosition.x;
-			pos.y -= m_goalPosition.y;
-			pos.z = 0;
-
-			Int numInGroup = group->getCount();
-			if (pos.length() <= (numInGroup * TheAI->getAiData()->m_skirmishGroupFudgeValue)) {
-				// Consider ourselves close enough.
-				status = STATE_SUCCESS;
-			}
-		}
-	}
-
-	// if move to has finished, move to next point on waypoint path
-	if (status != STATE_CONTINUE)
-	{
-		m_currentWaypoint = getNextWaypoint();
-
-		//LORENZEN ADDED LORENZEN ADDED LORENZEN ADDED 
-		Object *obj = getMachineOwner();
-		AIUpdateInterface *ai = obj->getAI();
-		if ( m_priorWaypoint )
-			ai->setPriorWaypointID( m_priorWaypoint->getID() );
-		if ( m_currentWaypoint )
-			ai->setCurrentWaypointID( m_currentWaypoint->getID() );
-		//LORENZEN ADDED LORENZEN ADDED LORENZEN ADDED 
-
-
-
-		// if there are no links from this waypoint, we're done
-		if (m_currentWaypoint==NULL)	{
-			/// Trigger "end of waypoint path" scripts (jba)
-			ai->setCompletedWaypoint(m_priorWaypoint);			
-			return STATE_SUCCESS;
-		}
-		if (m_moveAsGroup) {
-			obj->getTeam()->setCurrentWaypoint(m_currentWaypoint);
-		} 
-		
-		computeGoal(false);
-		if (getAdjustsDestination() && ai->isDoingGroundMovement()) {
-			if (!TheAI->pathfinder()->adjustDestination(obj, ai->getLocomotorSet(), &m_goalPosition)) {
-				if (m_currentWaypoint) {
-					DEBUG_LOG(("Breaking out of follow waypoint path %s of %s\n", 
-					m_currentWaypoint->getName().str(), m_currentWaypoint->getPathLabel1().str()));
-				}
-				return STATE_FAILURE;
-			}
-		}
-		ai->friend_startingMove();
-		computePath();
-		if (getAdjustsDestination()) {
-			TheAI->pathfinder()->updateGoal(obj, &m_goalPosition, m_goalLayer);
-		}
-
-		return STATE_CONTINUE;
-	}
-	if (status != STATE_CONTINUE) {
-		DEBUG_LOG(("Breaking out of follow waypoint path\n"));
-	}
-	return status;
-}
+// ?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ
+// Body in AIStates_update.asm (exact 794B retail).
 
 //----------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,77 @@
+.386
+.model flat
+
+; ?doDamageLine@StructureToppleUpdate@@IAEXPAVObject@@PBVWeaponTemplate@@MMMM@Z
+; Exact 523 retail bytes @ 0x002AF8F9
+_TEXT SEGMENT
+public ?doDamageLine@StructureToppleUpdate@@IAEXPAVObject@@PBVWeaponTemplate@@MMMM@Z
+?doDamageLine@StructureToppleUpdate@@IAEXPAVObject@@PBVWeaponTemplate@@MMMM@Z PROC
+    db 8Bh,6Dh,5Ch,85h,0EDh,74h,1Dh,8Bh
+    db 0CDh,0E8h,70h,26h,0D6h,0FFh,84h,0C0h
+    db 75h,12h,6Ah,00h,6Ah,00h,6Ah,00h
+    db 8Dh,44h,24h,28h,50h,8Bh,0CDh,0E8h
+    db 04h,0C2h,0D6h,0FFh,8Bh,6Ch,24h,14h
+    db 0D9h,44h,24h,10h,0D8h,05h,28h,4Ah
+    db 0Ch,01h,0D9h,54h,24h,10h,0D8h,5Ch
+    db 24h,3Ch,0DFh,0E0h,0F6h,0C4h,05h,0Fh
+    db 8Bh,47h,0FFh,0FFh,0FFh,53h,0E8h,0CCh
+    db 3Fh,5Ch,00h,0D8h,4Ch,24h,40h,53h
+    db 0D8h,46h,38h,0D8h,44h,24h,3Ch,0D9h
+    db 5Ch,24h,24h,0E8h,0C7h,3Fh,5Ch,00h
+    db 0D8h,4Ch,24h,44h,8Bh,0Dh,0CCh,0F4h
+    db 2Eh,01h,83h,0C4h,08h,6Ah,00h,0D8h
+    db 46h,3Ch,0D8h,44h,24h,3Ch,0D9h,5Ch
+    db 24h,24h,8Bh,44h,24h,24h,8Bh,11h
+    db 50h,8Bh,44h,24h,24h,50h,0FFh,52h
+    db 18h,0D9h,5Ch,24h,24h,8Bh,54h,24h
+    db 30h,8Dh,4Ch,24h,1Ch,51h,8Bh,0Dh
+    db 38h,0F7h,2Eh,01h,56h,52h,0E8h,0C2h
+    db 64h,0D8h,0FFh,85h,0FFh,74h,10h,8Bh
+    db 4Fh,10h,49h,0B8h,01h,00h,00h,00h
+    db 0D3h,0E0h,85h,45h,48h,74h,24h,8Bh
+    db 7Dh,5Ch,85h,0FFh,74h,1Dh,8Bh,0CFh
+    db 0E8h,0B9h,25h,0D6h,0FFh,84h,0C0h,75h
+    db 12h,6Ah,00h,6Ah,00h,6Ah,00h,8Dh
+    db 4Ch,24h,28h,51h,8Bh,0CFh,0E8h,4Dh
+    db 0C1h,0D6h,0FFh,0D9h,44h,24h,34h,8Bh
+    db 0Dh,0CCh,0F4h,2Eh,01h,0D8h,46h,38h
+    db 6Ah,00h,0D9h,5Ch,24h,20h,0D9h,44h
+    db 24h,3Ch,0D8h,46h,3Ch,0D9h,5Ch,24h
+    db 24h,8Bh,44h,24h,24h,8Bh,11h,50h
+    db 8Bh,44h,24h,24h,50h,0FFh,52h,18h
+    db 0D9h,5Ch,24h,24h,8Dh,4Ch,24h,1Ch
+    db 51h,8Bh,4Ch,24h,1Ch,6Ah,02h,0E8h
+    db 97h,30h,0D7h,0FFh,5Fh,5Eh,5Dh,5Bh
+    db 83h,0C4h,18h,0C2h,18h,00h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,53h
+    db 56h,8Bh,0F1h,8Bh,46h,08h,8Bh,88h
+    db 00h,02h,00h,00h,8Bh,11h,57h,8Bh
+    db 7Eh,04h,0FFh,52h,3Ch,85h,0C0h,8Bh
+    db 5Ch,24h,10h,74h,10h,8Bh,48h,10h
+    db 49h,0B8h,01h,00h,00h,00h,0D3h,0E0h
+    db 85h,47h,48h,74h,23h,8Bh,7Fh,4Ch
+    db 85h,0FFh,74h,1Ch,8Bh,0CFh,0E8h,9Bh
+    db 24h,0D6h,0FFh,84h,0C0h,75h,11h,6Ah
+    db 00h,6Ah,00h,6Ah,00h,8Dh,4Bh,38h
+    db 51h,8Bh,0CFh,0E8h,30h,0C0h,0D6h,0FFh
+    db 83h,0C3h,38h,53h,6Ah,00h,8Bh,0CEh
+    db 0E8h,0AEh,2Fh,0D7h,0FFh,5Fh,5Eh,5Bh
+    db 0C2h,08h,00h
+?doDamageLine@StructureToppleUpdate@@IAEXPAVObject@@PBVWeaponTemplate@@MMMM@Z ENDP
+_TEXT ENDS
+END

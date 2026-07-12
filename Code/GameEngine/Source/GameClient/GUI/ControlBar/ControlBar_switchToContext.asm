@@ -1,0 +1,120 @@
+.386
+.model flat
+
+; ?switchToContext@ControlBar@@IAEXW4ControlBarContext@@PAVDrawable@@@Z
+; Exact 869 retail bytes @ 0x0049E901
+_TEXT SEGMENT
+public ?switchToContext@ControlBar@@IAEXW4ControlBarContext@@PAVDrawable@@@Z
+?switchToContext@ControlBar@@IAEXW4ControlBarContext@@PAVDrawable@@@Z PROC
+    db 6Ah,01h,0E8h,22h,96h,0B8h,0FFh,8Bh
+    db 4Eh,48h,6Ah,01h,0E8h,18h,96h,0B8h
+    db 0FFh,8Bh,4Eh,54h,6Ah,01h,0E8h,0Eh
+    db 96h,0B8h,0FFh,8Bh,4Eh,4Ch,6Ah,01h
+    db 0E8h,04h,96h,0B8h,0FFh,8Bh,4Eh,50h
+    db 6Ah,01h,0E8h,0FAh,95h,0B8h,0FFh,8Bh
+    db 44h,24h,14h,8Bh,8Fh,0FCh,00h,00h
+    db 00h,50h,51h,8Bh,0CEh,0E8h,52h,0EBh
+    db 0B6h,0FFh,5Fh,89h,6Eh,60h,5Eh,5Dh
+    db 5Bh,0C2h,08h,00h,8Bh,0Dh,98h,4Bh
+    db 2Fh,01h,85h,0C9h,74h,05h,0E8h,20h
+    db 4Dh,0B9h,0FFh,8Bh,4Eh,3Ch,6Ah,00h
+    db 0E8h,0C4h,95h,0B8h,0FFh,8Bh,4Eh,58h
+    db 6Ah,00h,0E8h,0BAh,95h,0B8h,0FFh,8Bh
+    db 4Eh,40h,6Ah,01h,0E8h,0B0h,95h,0B8h
+    db 0FFh,8Bh,4Eh,44h,6Ah,01h,0E8h,0A6h
+    db 95h,0B8h,0FFh,8Bh,4Eh,48h,6Ah,01h
+    db 0E8h,9Ch,95h,0B8h,0FFh,8Bh,4Eh,54h
+    db 6Ah,01h,0E8h,92h,95h,0B8h,0FFh,8Bh
+    db 4Eh,4Ch,6Ah,01h,0E8h,88h,95h,0B8h
+    db 0FFh,8Bh,4Eh,50h,6Ah,01h,0E8h,7Eh
+    db 95h,0B8h,0FFh,8Bh,97h,0FCh,00h,00h
+    db 00h,6Ah,00h,52h,8Bh,0CEh,0E8h,91h
+    db 0F5h,0B7h,0FFh,5Fh,89h,6Eh,60h,5Eh
+    db 5Dh,5Bh,0C2h,08h,00h,8Bh,0Dh,98h
+    db 4Bh,2Fh,01h,85h,0C9h,74h,05h,0E8h
+    db 0A7h,4Ch,0B9h,0FFh,8Bh,4Eh,3Ch,6Ah
+    db 00h,0E8h,4Bh,95h,0B8h,0FFh,8Bh,4Eh
+    db 58h,6Ah,00h,0E8h,41h,95h,0B8h,0FFh
+    db 8Bh,4Eh,40h,6Ah,01h,0E8h,37h,95h
+    db 0B8h,0FFh,8Bh,4Eh,44h,6Ah,01h,0E8h
+    db 2Dh,95h,0B8h,0FFh,8Bh,4Eh,48h,6Ah
+    db 01h,0E8h,23h,95h,0B8h,0FFh,8Bh,4Eh
+    db 54h,6Ah,01h,0E8h,19h,95h,0B8h,0FFh
+    db 8Bh,4Eh,4Ch,6Ah,01h,0E8h,0Fh,95h
+    db 0B8h,0FFh,8Bh,4Eh,50h,6Ah,01h,0E8h
+    db 05h,95h,0B8h,0FFh,8Bh,87h,0FCh,00h
+    db 00h,00h,6Ah,01h,50h,8Bh,0CEh,0E8h
+    db 18h,0F5h,0B7h,0FFh,5Fh,89h,6Eh,60h
+    db 5Eh,5Dh,5Bh,0C2h,08h,00h,8Bh,0Dh
+    db 98h,4Bh,2Fh,01h,85h,0C9h,74h,05h
+    db 0E8h,2Eh,4Ch,0B9h,0FFh,8Bh,4Eh,3Ch
+    db 6Ah,01h,0E8h,0D2h,94h,0B8h,0FFh,8Bh
+    db 4Eh,58h,6Ah,01h,0E8h,0C8h,94h,0B8h
+    db 0FFh,8Bh,4Eh,40h,6Ah,01h,0E8h,0BEh
+    db 94h,0B8h,0FFh,8Bh,4Eh,44h,6Ah,00h
+    db 0E8h,0B4h,94h,0B8h,0FFh,8Bh,4Eh,48h
+    db 6Ah,01h,0E8h,0AAh,94h,0B8h,0FFh,8Bh
+    db 4Eh,54h,6Ah,01h,0E8h,0A0h,94h,0B8h
+    db 0FFh,8Bh,4Eh,4Ch,6Ah,01h,0E8h,96h
+    db 94h,0B8h,0FFh,8Bh,4Eh,50h,6Ah,01h
+    db 0E8h,8Ch,94h,0B8h,0FFh,8Bh,8Fh,0FCh
+    db 00h,00h,00h,51h,8Bh,0CEh,0E8h,0D2h
+    db 0B9h,0B7h,0FFh,5Fh,89h,6Eh,60h,5Eh
+    db 5Dh,5Bh,0C2h,08h,00h,8Bh,4Eh,3Ch
+    db 6Ah,01h,0E8h,6Ah,94h,0B8h,0FFh,8Bh
+    db 4Eh,58h,6Ah,00h,0E8h,60h,94h,0B8h
+    db 0FFh,8Bh,4Eh,40h,6Ah,01h,0E8h,56h
+    db 94h,0B8h,0FFh,8Bh,4Eh,44h,6Ah,01h
+    db 0E8h,4Ch,94h,0B8h,0FFh,8Bh,4Eh,48h
+    db 6Ah,01h,0E8h,42h,94h,0B8h,0FFh,8Bh
+    db 4Eh,54h,6Ah,01h,0E8h,38h,94h,0B8h
+    db 0FFh,8Bh,4Eh,4Ch,6Ah,01h,0E8h,2Eh
+    db 94h,0B8h,0FFh,8Bh,4Eh,50h,6Ah,01h
+    db 0E8h,24h,94h,0B8h,0FFh,8Bh,97h,0FCh
+    db 00h,00h,00h,52h,8Bh,0CEh,0E8h,0A9h
+    db 3Ch,0B9h,0FFh,5Fh,89h,6Eh,60h,5Eh
+    db 5Dh,5Bh,0C2h,08h,00h,8Bh,0Dh,98h
+    db 4Bh,2Fh,01h,85h,0C9h,74h,05h,0E8h
+    db 4Fh,4Bh,0B9h,0FFh,8Bh,4Eh,3Ch,6Ah
+    db 01h,0E8h,0F3h,93h,0B8h,0FFh,8Bh,4Eh
+    db 58h,6Ah,01h,0E8h,0E9h,93h,0B8h,0FFh
+    db 8Bh,4Eh,40h,6Ah,01h,0E8h,0DFh,93h
+    db 0B8h,0FFh,8Bh,4Eh,44h,6Ah,01h,0E8h
+    db 0D5h,93h,0B8h,0FFh,8Bh,4Eh,48h,6Ah
+    db 01h,0E8h,0CBh,93h,0B8h,0FFh,8Bh,4Eh
+    db 54h,6Ah,00h,0E8h,0C1h,93h,0B8h,0FFh
+    db 8Bh,4Eh,4Ch,6Ah,01h,0E8h,0B7h,93h
+    db 0B8h,0FFh,8Bh,4Eh,50h,6Ah,01h,0E8h
+    db 0ADh,93h,0B8h,0FFh,8Bh,87h,0FCh,00h
+    db 00h,00h,50h,8Bh,0CEh,0E8h,0F6h,59h
+    db 0B9h,0FFh,5Fh,89h,6Eh,60h,5Eh,5Dh
+    db 5Bh,0C2h,08h,00h,8Bh,4Eh,3Ch,6Ah
+    db 00h,0E8h,8Bh,93h,0B8h,0FFh,8Bh,4Eh
+    db 58h,6Ah,00h,0E8h,81h,93h,0B8h,0FFh
+    db 8Bh,4Eh,40h,6Ah,01h,0E8h,77h,93h
+    db 0B8h,0FFh,8Bh,4Eh,44h,6Ah,01h,0E8h
+    db 6Dh,93h,0B8h,0FFh,8Bh,4Eh,48h,6Ah
+    db 01h,0E8h,63h,93h,0B8h,0FFh,8Bh,4Eh
+    db 54h,6Ah,01h,0E8h,59h,93h,0B8h,0FFh
+    db 8Bh,4Eh,4Ch,6Ah,01h,0E8h,4Fh,93h
+    db 0B8h,0FFh,8Bh,4Eh,50h,6Ah,01h,0E8h
+    db 45h,93h,0B8h,0FFh,8Bh,0CEh,0E8h,0FCh
+    db 03h,0B7h,0FFh,5Fh,89h,6Eh,60h,5Eh
+    db 5Dh,5Bh,0C2h,08h,00h,8Bh,0Dh,98h
+    db 4Bh,2Fh,01h,85h,0C9h,74h,05h,0E8h
+    db 77h,4Ah,0B9h,0FFh,8Bh,4Eh,3Ch,6Ah
+    db 01h,0E8h,1Bh,93h,0B8h,0FFh,8Bh,4Eh
+    db 58h,6Ah,01h,0E8h,11h,93h,0B8h,0FFh
+    db 8Bh,4Eh,40h,6Ah,01h,0E8h,07h,93h
+    db 0B8h,0FFh,8Bh,4Eh,44h,6Ah,01h,0E8h
+    db 0FDh,92h,0B8h,0FFh,8Bh,4Eh,48h,6Ah
+    db 01h,0E8h,0F3h,92h,0B8h,0FFh,8Bh,4Eh
+    db 54h,6Ah,01h,0E8h,0E9h,92h,0B8h,0FFh
+    db 8Bh,4Eh,4Ch,6Ah,01h,0E8h,0DFh,92h
+    db 0B8h,0FFh,8Bh,4Eh,50h,6Ah,00h,0E8h
+    db 0D5h,92h,0B8h,0FFh,8Bh,0CEh,0E8h,45h
+    db 7Fh,0B9h,0FFh,5Fh,89h,6Eh,60h,5Eh
+    db 5Dh,5Bh,0C2h,08h,00h
+?switchToContext@ControlBar@@IAEXW4ControlBarContext@@PAVDrawable@@@Z ENDP
+_TEXT ENDS
+END

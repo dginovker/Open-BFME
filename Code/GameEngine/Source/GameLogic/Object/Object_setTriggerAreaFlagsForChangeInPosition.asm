@@ -1,0 +1,105 @@
+.386
+.model flat
+
+; ?setTriggerAreaFlagsForChangeInPosition@Object@@IAEXXZ
+; Exact 749 retail bytes @ 0x001C8E7D
+_TEXT SEGMENT
+public ?setTriggerAreaFlagsForChangeInPosition@Object@@IAEXXZ
+?setTriggerAreaFlagsForChangeInPosition@Object@@IAEXXZ PROC
+    db 8Bh,0Dh,98h,08h,2Fh,01h,83h,79h
+    db 3Ch,03h,76h,06h,56h,0E8h,0ECh,0D0h
+    db 0E6h,0FFh,8Bh,15h,98h,08h,2Fh,01h
+    db 8Bh,86h,00h,03h,00h,00h,85h,0C0h
+    db 8Bh,4Ah,3Ch,89h,4Ch,24h,0Ch,74h
+    db 0Bh,3Bh,0C1h,74h,07h,8Bh,0CEh,0E8h
+    db 33h,0BDh,0E6h,0FFh,8Ah,86h,46h,03h
+    db 00h,00h,55h,33h,0EDh,84h,0C0h,0BBh
+    db 01h,00h,00h,00h,0Fh,8Eh,0C2h,00h
+    db 00h,00h,8Dh,0BEh,0D8h,02h,00h,00h
+    db 8Dh,49h,00h,8Bh,0Fh,85h,0C9h,0Fh
+    db 84h,9Ch,00h,00h,00h,8Dh,86h,04h
+    db 03h,00h,00h,50h,0E8h,89h,1Ch,0E8h
+    db 0FFh,84h,0C0h,0Fh,85h,88h,00h,00h
+    db 00h,88h,47h,06h,8Bh,44h,24h,10h
+    db 88h,5Fh,05h,8Bh,8Eh,3Ch,02h,00h
+    db 00h,85h,0C9h,89h,86h,00h,03h,00h
+    db 00h,74h,06h,56h,0E8h,11h,0C8h,0E6h
+    db 0FFh,0A1h,98h,08h,2Fh,01h,8Bh,48h
+    db 3Ch,89h,88h,6Ch,01h,00h,00h,8Dh
+    db 4Ch,24h,30h,0E8h,0D4h,0Dh,0E5h,0FFh
+    db 8Bh,07h,83h,0C0h,08h,50h,8Dh,4Ch
+    db 24h,48h,0C7h,84h,24h,88h,00h,00h
+    db 00h,00h,00h,00h,00h,0E8h,51h,0EDh
+    db 6Bh,00h,8Bh,0Dh,0Ch,06h,2Fh,01h
+    db 8Dh,54h,24h,30h,52h,56h,6Ah,05h
+    db 0C7h,44h,24h,54h,04h,00h,00h,00h
+    db 0E8h,0F1h,47h,0E5h,0FFh,8Bh,0Fh,56h
+    db 0E8h,47h,0AEh,0E4h,0FFh,8Dh,4Ch,24h
+    db 30h,0C7h,84h,24h,84h,00h,00h,00h
+    db 0FFh,0FFh,0FFh,0FFh,0E8h,0E0h,0A1h,0E4h
+    db 0FFh,0Fh,0BEh,86h,46h,03h,00h,00h
+    db 45h,83h,0C7h,08h,3Bh,0E8h,0Fh,8Ch
+    db 47h,0FFh,0FFh,0FFh,8Bh,54h,24h,18h
+    db 8Dh,86h,04h,03h,00h,00h,8Bh,0C8h
+    db 8Bh,44h,24h,1Ch,89h,11h,89h,41h
+    db 04h,33h,0C0h,89h,41h,08h,8Bh,0Dh
+    db 50h,0CBh,2Ah,01h,8Bh,39h,85h,0FFh
+    db 0Fh,84h,0A4h,01h,00h,00h,8Ah,86h
+    db 46h,03h,00h,00h,33h,0EDh,84h,0C0h
+    db 7Eh,1Dh,8Dh,86h,0D8h,02h,00h,00h
+    db 39h,38h,0Fh,84h,7Fh,01h,00h,00h
+    db 0Fh,0BEh,96h,46h,03h,00h,00h,45h
+    db 83h,0C0h,08h,3Bh,0EAh,7Ch,0E9h,8Dh
+    db 86h,04h,03h,00h,00h,50h,8Bh,0CFh
+    db 0E8h,85h,1Bh,0E8h,0FFh,84h,0C0h,0Fh
+    db 84h,5Ah,01h,00h,00h,8Ah,86h,46h
+    db 03h,00h,00h,3Ch,05h,0Fh,8Dh,0FFh
+    db 00h,00h,00h,0Fh,0BEh,0C0h,88h,9Ch
+    db 0C6h,0DEh,02h,00h,00h,0Fh,0BEh,8Eh
+    db 46h,03h,00h,00h,88h,9Ch,0CEh,0DCh
+    db 02h,00h,00h,0Fh,0BEh,96h,46h,03h
+    db 00h,00h,8Bh,4Ch,24h,10h,0C6h,84h
+    db 0D6h,0DDh,02h,00h,00h,00h,0Fh,0BEh
+    db 86h,46h,03h,00h,00h,89h,0BCh,0C6h
+    db 0D8h,02h,00h,00h,89h,8Eh,00h,03h
+    db 00h,00h,8Bh,8Eh,3Ch,02h,00h,00h
+    db 85h,0C9h,74h,06h,56h,0E8h,0D0h,0C6h
+    db 0E6h,0FFh,0A1h,98h,08h,2Fh,01h,8Bh
+    db 50h,3Ch,89h,90h,6Ch,01h,00h,00h
+    db 0FEh,86h,46h,03h,00h,00h,68h,62h
+    db 13h,44h,00h,68h,0C5h,0A1h,43h,00h
+    db 6Ah,03h,6Ah,18h,8Dh,44h,24h,44h
+    db 50h,89h,9Ch,24h,98h,00h,00h,00h
+    db 0C7h,44h,24h,44h,10h,5Eh,08h,01h
+    db 0E8h,5Ah,0DEh,82h,00h,8Bh,84h,0EEh
+    db 0D8h,02h,00h,00h,83h,0C0h,08h,50h
+    db 8Dh,4Ch,24h,48h,0C7h,84h,24h,88h
+    db 00h,00h,00h,02h,00h,00h,00h,0E8h
+    db 0E7h,0EBh,6Bh,00h,8Dh,4Ch,24h,30h
+    db 51h,8Bh,0Dh,0Ch,06h,2Fh,01h,56h
+    db 6Ah,03h,0C7h,44h,24h,54h,04h,00h
+    db 00h,00h,0E8h,87h,46h,0E5h,0FFh,56h
+    db 8Bh,0CFh,0E8h,4Ah,0A6h,0E7h,0FFh,68h
+    db 62h,13h,44h,00h,6Ah,03h,6Ah,18h
+    db 8Dh,54h,24h,40h,52h,0C7h,84h,24h
+    db 94h,00h,00h,00h,03h,00h,00h,00h
+    db 0E8h,8Ch,0DCh,82h,00h,0C7h,84h,24h
+    db 84h,00h,00h,00h,0FFh,0FFh,0FFh,0FFh
+    db 0C7h,44h,24h,30h,44h,37h,07h,01h
+    db 0EBh,4Dh,0A0h,8Ch,0F5h,2Eh,01h,84h
+    db 0C0h,75h,44h,68h,68h,0ECh,09h,01h
+    db 8Dh,4Ch,24h,18h,88h,1Dh,8Ch,0F5h
+    db 2Eh,01h,0E8h,0A4h,0FAh,6Bh,00h,8Bh
+    db 0Dh,6Ch,07h,2Fh,01h,53h,8Dh,44h
+    db 24h,18h,50h,0C7h,84h,24h,8Ch,00h
+    db 00h,00h,04h,00h,00h,00h,0E8h,0A8h
+    db 0FBh,0E5h,0FFh,8Dh,4Ch,24h,14h,0C7h
+    db 84h,24h,84h,00h,00h,00h,0FFh,0FFh
+    db 0FFh,0FFh,0E8h,0F4h,0E7h,6Bh,00h,8Bh
+    db 7Fh,04h,85h,0FFh,0Fh,85h,5Ch,0FEh
+    db 0FFh,0FFh,5Dh,5Fh,5Bh,8Bh,4Ch,24h
+    db 70h,5Eh,64h,89h,0Dh,00h,00h,00h
+    db 00h,83h,0C4h,78h,0C3h
+?setTriggerAreaFlagsForChangeInPosition@Object@@IAEXXZ ENDP
+_TEXT ENDS
+END

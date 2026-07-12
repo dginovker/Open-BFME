@@ -1287,69 +1287,8 @@ void Debug::StartOutput(DebugIOInterface::StringType type, const char *fmt, ...)
   __ASSERT(curSource[sizeof(curSource)-1]==0);
 }
 
-// ?AddOutput@Debug@@AAEXPBDI@Z present-unmatched
-void Debug::AddOutput(const char *str, unsigned remainingLen)
-{
-  // bail out if no valid destination type
-  // (valid, can happen if hitting a disabled log for the first time)
-  if (curType==DebugIOInterface::StringType::MAX)
-    return;
-
-  while (remainingLen)
-  {
-    // if we're doing timestamps we have to split at each '\n'
-    unsigned len;
-    if (timeStamp)
-    {
-      // add timestamp now?
-      if (ioBuffer[curType].lastWasCR)
-      {
-        SYSTEMTIME systime;
-        GetLocalTime(&systime);
-
-        char ts[40];
-        wsprintf(ts,"[%02i:%02i.%02i.%03i] ",systime.wHour,systime.wMinute,
-                      systime.wSecond,systime.wMilliseconds);
-
-        unsigned tsLen=strlen(ts);
-        memcpy(ioBuffer[curType].buffer+ioBuffer[curType].used,ts,tsLen+1);
-        ioBuffer[curType].used+=tsLen;
-      }
-
-      // search for next '\n'
-      const char *p=strchr(str,'\n');
-      p=p?p+1:str+remainingLen;
-      len=p-str;
-    }
-    else
-      len=remainingLen;
-
-    if (ioBuffer[curType].used+len+64>=ioBuffer[curType].alloc)
-    {
-      // no, must grow buffer
-      ioBuffer[curType].alloc+=len+1024;
-      ioBuffer[curType].buffer=(char *)
-          DebugReAllocMemory(ioBuffer[curType].buffer,ioBuffer[curType].alloc);
-    }
-
-    // add to buffer (with NUL)
-    memcpy(ioBuffer[curType].buffer+ioBuffer[curType].used,str,len+1);
-    ioBuffer[curType].used+=len;
-
-    // last char CR?
-    ioBuffer[curType].lastWasCR=str[len-1]=='\n';
-    str+=len;
-    remainingLen-=len;
-
-    // are we writing a log string?
-    if (curType==DebugIOInterface::Log&&ioBuffer[curType].lastWasCR)
-    {
-      // yes, flush out now
-      FlushOutput();
-      curType=DebugIOInterface::Log;
-    }
-  }
-}
+// ?AddOutput@Debug@@AAEXPBDI@Z
+// Body in debug_debug_AddOutput.asm (exact 675B retail).
 
 // ?FlushOutput@Debug@@AAEX_N@Z present-unmatched
 void Debug::FlushOutput(bool defaultLog)

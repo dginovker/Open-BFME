@@ -1,0 +1,110 @@
+.386
+.model flat
+
+; ?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z
+; Exact 788 retail bytes @ 0x003F89A0
+_TEXT SEGMENT
+public ?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z
+?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z PROC
+    db 83h,0FEh,0Fh,7Fh,27h,8Dh,54h,24h
+    db 38h,52h,8Dh,44h,24h,5Ch,50h,8Bh
+    db 0CDh,0E8h,32h,0E8h,0C1h,0FFh,6Bh,0F6h
+    db 44h,8Dh,4Ch,24h,38h,51h,8Dh,8Ch
+    db 2Eh,5Ch,08h,00h,00h,0E8h,9Eh,0Ah
+    db 0C5h,0FFh,0EBh,08h,0C7h,44h,24h,18h
+    db 01h,00h,00h,00h,8Bh,54h,24h,64h
+    db 83h,0ECh,0Ch,8Bh,0C4h,89h,10h,8Bh
+    db 4Ch,24h,74h,89h,48h,04h,8Bh,54h
+    db 24h,78h,89h,64h,24h,44h,6Ah,00h
+    db 8Bh,0CDh,89h,50h,08h,0E8h,58h,85h
+    db 0C4h,0FFh,8Bh,0F0h,83h,0FEh,02h,89h
+    db 74h,24h,24h,89h,74h,24h,28h,7Ch
+    db 2Ch,83h,0FEh,0Fh,7Fh,27h,8Dh,44h
+    db 24h,38h,50h,8Dh,4Ch,24h,68h,51h
+    db 8Bh,0CDh,0E8h,0C9h,0E7h,0C1h,0FFh,6Bh
+    db 0F6h,44h,8Dh,54h,24h,38h,52h,8Dh
+    db 8Ch,2Eh,5Ch,08h,00h,00h,0E8h,35h
+    db 0Ah,0C5h,0FFh,0EBh,08h,0C7h,44h,24h
+    db 24h,01h,00h,00h,00h,0D9h,44h,24h
+    db 48h,83h,0ECh,08h,0D8h,25h,70h,5Ch
+    db 07h,01h,0D8h,0Dh,70h,5Ch,07h,01h
+    db 0DDh,1Ch,24h,0FFh,15h,0B8h,93h,35h
+    db 01h,0D9h,5Ch,24h,18h,83h,0C4h,08h
+    db 0D9h,44h,24h,10h,0DBh,5Ch,24h,14h
+    db 0D9h,44h,24h,4Ch,0D8h,25h,70h,5Ch
+    db 07h,01h,83h,0ECh,08h,0D8h,0Dh,70h
+    db 5Ch,07h,01h,0DDh,1Ch,24h,0FFh,15h
+    db 0B8h,93h,35h,01h,0D9h,5Ch,24h,18h
+    db 83h,0C4h,08h,0D9h,44h,24h,10h,0DBh
+    db 5Ch,24h,2Ch,0D9h,44h,24h,50h,0D8h
+    db 05h,70h,5Ch,07h,01h,83h,0ECh,08h
+    db 0D8h,0Dh,70h,5Ch,07h,01h,0DDh,1Ch
+    db 24h,0FFh,15h,94h,93h,35h,01h,0D9h
+    db 5Ch,24h,18h,83h,0C4h,08h,0D9h,44h
+    db 24h,10h,0DBh,5Ch,24h,1Ch,0D9h,44h
+    db 24h,54h,0D8h,05h,70h,5Ch,07h,01h
+    db 83h,0ECh,08h,0D8h,0Dh,70h,5Ch,07h
+    db 01h,0DDh,1Ch,24h,0FFh,15h,94h,93h
+    db 35h,01h,0D9h,5Ch,24h,18h,83h,0C4h
+    db 08h,0D9h,44h,24h,10h,0DBh,5Ch,24h
+    db 38h,8Bh,4Ch,24h,14h,8Bh,74h,24h
+    db 1Ch,8Bh,54h,24h,2Ch,8Bh,7Ch,24h
+    db 38h,8Bh,45h,14h,83h,0C1h,0FEh,83h
+    db 0C2h,0FEh,83h,0C6h,02h,83h,0C7h,02h
+    db 3Bh,0C8h,89h,4Ch,24h,14h,89h,54h
+    db 24h,20h,89h,74h,24h,34h,89h,7Ch
+    db 24h,1Ch,7Dh,04h,89h,44h,24h,14h
+    db 8Bh,45h,18h,3Bh,0D0h,7Dh,04h,89h
+    db 44h,24h,20h,8Bh,45h,1Ch,3Bh,0F0h
+    db 7Eh,04h,89h,44h,24h,34h,8Bh,45h
+    db 20h,3Bh,0F8h,7Eh,04h,89h,44h,24h
+    db 1Ch,8Ah,85h,0F4h,43h,02h,00h,84h
+    db 0C0h,0Fh,85h,65h,01h,00h,00h,8Ah
+    db 84h,24h,0CCh,00h,00h,00h,84h,0C0h
+    db 0Fh,84h,56h,01h,00h,00h,8Bh,4Ch
+    db 24h,18h,83h,0F9h,02h,7Ch,09h,83h
+    db 0F9h,0Fh,0Fh,8Eh,48h,01h,00h,00h
+    db 8Bh,44h,24h,24h,83h,0F8h,02h,7Ch
+    db 09h,83h,0F8h,0Fh,0Fh,8Eh,36h,01h
+    db 00h,00h,8Bh,74h,24h,20h,8Ah,84h
+    db 24h,0CCh,00h,00h,00h,84h,0C0h,0Fh
+    db 84h,12h,01h,00h,00h,0B8h,01h,00h
+    db 00h,00h,3Bh,0C8h,75h,0Ah,39h,44h
+    db 24h,24h,0Fh,84h,0FFh,00h,00h,00h
+    db 39h,44h,24h,30h,0Fh,84h,0F5h,00h
+    db 00h,00h,39h,44h,24h,28h,0Fh,84h
+    db 0EBh,00h,00h,00h,8Bh,4Ch,24h,14h
+    db 8Bh,44h,24h,34h,41h,48h,3Bh,0C8h
+    db 89h,4Ch,24h,14h,89h,44h,24h,10h
+    db 0Fh,8Fh,0D1h,00h,00h,00h,8Bh,7Ch
+    db 24h,1Ch,46h,4Fh,89h,74h,24h,38h
+    db 89h,7Ch,24h,30h,8Bh,5Ch,24h,38h
+    db 3Bh,0DFh,0Fh,8Fh,0AAh,00h,00h,00h
+    db 8Bh,0F3h,0C1h,0E6h,04h,89h,74h,24h
+    db 28h,8Dh,0A4h,24h,00h,00h,00h,00h
+    db 8Bh,45h,10h,8Bh,04h,88h,03h,0C6h
+    db 8Bh,40h,0Ch,8Bh,0D0h,81h,0E2h,0C0h
+    db 0Fh,00h,00h,81h,0FAh,00h,04h,00h
+    db 00h,75h,6Bh,83h,0E0h,07h,3Ch,05h
+    db 74h,64h,33h,0FFh,8Bh,87h,34h,4Ch
+    db 2Bh,01h,8Bh,55h,10h,03h,0C1h,8Bh
+    db 8Fh,0Ch,4Ch,2Bh,01h,8Bh,34h,82h
+    db 03h,0CBh,0C1h,0E1h,04h,03h,0CEh,8Bh
+    db 71h,0Ch,8Bh,0C6h,0C1h,0E8h,06h,83h
+    db 0E0h,3Fh,83h,0F8h,10h,74h,23h,8Bh
+    db 0D6h,83h,0E2h,07h,80h,0FAh,05h,74h
+    db 19h,83h,0F8h,01h,75h,14h,8Bh,01h
+    db 85h,0C0h,74h,07h,8Bh,50h,20h,85h
+    db 0D2h,75h,07h,6Ah,02h,0E8h,0B5h,0F1h
+    db 0C1h,0FFh,8Bh,4Ch,24h,14h,83h,0C7h
+    db 04h,83h,0FFh,20h,7Ch,0A6h,8Bh,7Ch
+    db 24h,30h,8Bh,74h,24h,28h,43h,83h
+    db 0C6h,10h,3Bh,0DFh,89h,74h,24h,28h
+    db 0Fh,8Eh,6Ah,0FFh,0FFh,0FFh,8Bh,44h
+    db 24h,10h,41h,3Bh,0C8h,89h,4Ch,24h
+    db 14h,0Fh,8Eh,3Dh,0FFh,0FFh,0FFh,5Fh
+    db 5Eh,5Dh,5Bh,81h,0C4h,0B4h,00h,00h
+    db 00h,0C2h,08h,00h
+?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z ENDP
+_TEXT ENDS
+END

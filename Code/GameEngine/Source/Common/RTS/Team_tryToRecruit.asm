@@ -1,0 +1,82 @@
+.386
+.model flat
+
+; ?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z
+; Exact 568 retail bytes @ 0x0076E90A
+_TEXT SEGMENT
+public ?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z
+?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z PROC
+    db 8Bh,56h,08h,85h,0D2h,8Bh,46h,04h
+    db 8Bh,98h,24h,01h,00h,00h,0Fh,84h
+    db 0B3h,00h,00h,00h,85h,0DBh,0Fh,86h
+    db 0ABh,00h,00h,00h,8Bh,4Eh,34h,85h
+    db 0C9h,8Ah,80h,28h,01h,00h,00h,88h
+    db 86h,10h,02h,00h,00h,0Fh,84h,8Ch
+    db 00h,00h,00h,84h,0C0h,0Fh,84h,84h
+    db 00h,00h,00h,8Bh,01h,55h,0FFh,90h
+    db 50h,01h,00h,00h,8Bh,0E8h,85h,0EDh
+    db 74h,34h,6Ah,00h,8Bh,0CDh,0E8h,0B3h
+    db 0BDh,8Ch,0FFh,8Bh,0F8h,85h,0FFh,74h
+    db 19h,8Dh,8Eh,20h,02h,00h,00h,51h
+    db 8Bh,0CFh,0E8h,0BFh,30h,1Bh,00h,0FFh
+    db 4Fh,04h,75h,06h,8Bh,17h,8Bh,0CFh
+    db 0FFh,12h,0FFh,4Dh,04h,75h,07h,8Bh
+    db 45h,00h,8Bh,0CDh,0FFh,10h,8Bh,4Eh
+    db 34h,6Ah,00h,51h,0E8h,2Dh,0A6h,8Ah
+    db 0FFh,8Bh,56h,34h,6Ah,00h,6Ah,00h
+    db 6Ah,00h,52h,0E8h,38h,0E0h,8Bh,0FFh
+    db 89h,9Eh,14h,02h,00h,00h,0C7h,86h
+    db 18h,02h,00h,00h,00h,00h,00h,00h
+    db 8Bh,0Dh,64h,14h,2Fh,01h,8Bh,01h
+    db 83h,0C4h,18h,0FFh,50h,68h,89h,86h
+    db 1Ch,02h,00h,00h,5Dh,0EBh,08h,53h
+    db 8Bh,0CAh,0E8h,4Eh,80h,8Dh,0FFh,8Bh
+    db 46h,08h,8Bh,0B8h,0FCh,00h,00h,00h
+    db 85h,0FFh,74h,5Fh,6Ah,1Ch,8Bh,0CFh
+    db 0E8h,38h,3Bh,8Ch,0FFh,84h,0C0h,74h
+    db 52h,8Bh,0CFh,0E8h,32h,1Eh,8Bh,0FFh
+    db 85h,0C0h,74h,47h,8Ah,88h,97h,02h
+    db 00h,00h,84h,0C9h,75h,3Dh,68h,78h
+    db 36h,12h,01h,8Dh,4Ch,24h,10h,0E8h
+    db 0B2h,0A1h,11h,00h,8Bh,56h,0Ch,6Ah
+    db 00h,6Ah,00h,6Ah,01h,8Dh,4Eh,0Ch
+    db 6Ah,00h,8Dh,44h,24h,1Ch,50h,0C7h
+    db 44h,24h,5Ch,00h,00h,00h,00h,0FFh
+    db 52h,78h,8Dh,4Ch,24h,0Ch,0C7h,44h
+    db 24h,48h,0FFh,0FFh,0FFh,0FFh,0E8h,03h
+    db 8Fh,11h,00h,8Bh,4Ch,24h,40h,5Fh
+    db 5Eh,5Bh,64h,89h,0Dh,00h,00h,00h
+    db 00h,83h,0C4h,40h,0C3h,90h,0ADh,0E8h
+    db 0B6h,00h,0ADh,0E8h,0B6h,00h,0B4h,0E8h
+    db 0B6h,00h,0BBh,0E8h,0B6h,00h,0BBh,0E8h
+    db 0B6h,00h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0A1h,64h
+    db 80h,2Fh,01h,56h,8Bh,0F1h,8Bh,96h
+    db 90h,00h,00h,00h,3Bh,0C2h,8Dh,4Eh
+    db 0F4h,74h,05h,0E8h,35h,64h,8Bh,0FFh
+    db 8Dh,8Eh,0D0h,00h,00h,00h,33h,0C0h
+    db 5Eh,83h,39h,00h,74h,09h,40h,83h
+    db 0C1h,1Ch,83h,0F8h,03h,72h,0F2h,0C3h
+?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z ENDP
+_TEXT ENDS
+END

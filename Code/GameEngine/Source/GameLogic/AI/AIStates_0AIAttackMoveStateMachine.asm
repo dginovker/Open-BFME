@@ -1,0 +1,74 @@
+.386
+.model flat
+
+; ??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z
+; Exact 501 retail bytes @ 0x002C1061
+_TEXT SEGMENT
+public ??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z
+??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z PROC
+    db 8Bh,56h,48h,8Bh,0Dh,10h,0D8h,2Eh
+    db 01h,52h,8Bh,0D8h,0E8h,0BCh,3Bh,0D8h
+    db 0FFh,85h,0DBh,75h,4Eh,85h,0C0h,74h
+    db 7Bh,8Dh,4Ch,24h,10h,51h,8Bh,0C8h
+    db 0E8h,78h,31h,0D6h,0FFh,8Bh,54h,24h
+    db 18h,8Bh,74h,24h,14h,8Bh,5Ch,24h
+    db 10h,0D9h,47h,28h,8Dh,4Fh,28h,0D8h
+    db 64h,24h,10h,0D9h,0C0h,0D8h,0C9h,0D8h
+    db 1Dh,18h,64h,09h,01h,0DFh,0E0h,0DDh
+    db 0D8h,0F6h,0C4h,41h,75h,2Ch,89h,19h
+    db 5Bh,89h,71h,04h,5Eh,5Fh,89h,51h
+    db 08h,0B8h,0FEh,0FFh,0FFh,0FFh,5Dh,83h
+    db 0C4h,0Ch,0C3h,83h,0C3h,38h,8Bh,0C3h
+    db 8Bh,18h,8Bh,70h,04h,8Bh,50h,08h
+    db 89h,5Ch,24h,10h,89h,74h,24h,14h
+    db 0EBh,0B7h,0D9h,47h,2Ch,0D8h,64h,24h
+    db 14h,0D9h,0C0h,0D8h,0C9h,0D8h,1Dh,18h
+    db 64h,09h,01h,0DFh,0E0h,0DDh,0D8h,0F6h
+    db 0C4h,41h,74h,0BAh,8Bh,47h,24h,5Bh
+    db 5Eh,5Fh,2Bh,0C5h,5Dh,83h,0C4h,0Ch
+    db 0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,51h
+    db 56h,51h,8Bh,0F1h,89h,64h,24h,08h
+    db 8Bh,0CCh,68h,28h,61h,09h,01h,0E8h
+    db 5Bh,7Ah,5Ch,00h,8Bh,44h,24h,10h
+    db 50h,8Bh,0CEh,0E8h,11h,10h,0D7h,0FFh
+    db 0C7h,46h,50h,00h,00h,00h,00h,0C7h
+    db 06h,30h,7Dh,0Ch,01h,8Bh,0C6h,5Eh
+    db 59h,0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,56h
+    db 8Bh,0F1h,0E8h,0F7h,0D0h,0D5h,0FFh,0F6h
+    db 44h,24h,08h,01h,74h,09h,56h,0E8h
+    db 0FBh,0Ch,5Ch,00h,83h,0C4h,04h,8Bh
+    db 0C6h,5Eh,0C2h,04h,00h,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0E9h
+    db 22h,99h,0D8h,0FFh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,51h
+    db 56h,51h,8Bh,0F1h,89h,64h,24h,08h
+    db 8Bh,0CCh,68h,0DCh,7Dh,0Ch,01h,0E8h
+    db 0CBh,79h,5Ch,00h,8Bh,44h,24h,10h
+    db 50h,8Bh,0CEh,0E8h,0B1h,23h,0D4h,0FFh
+    db 33h,0C0h,0C7h,06h,88h,7Dh,0Ch,01h
+    db 89h,46h,28h,89h,46h,38h,89h,46h
+    db 3Ch,0C7h,46h,24h,0D4h,74h,0Ch,01h
+    db 89h,46h,2Ch,89h,46h,30h,89h,46h
+    db 34h,88h,46h,44h,89h,46h,40h,8Bh
+    db 0C6h,5Eh,59h,0C2h,04h,00h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0B8h
+    db 0DCh,7Dh,0Ch,01h,0C3h
+??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z ENDP
+_TEXT ENDS
+END

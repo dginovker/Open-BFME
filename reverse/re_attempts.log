@@ -361,3 +361,27 @@ _$E117	no-match	Compiler-generated static initializer. Drift RVA 0xC6E36F starts
 ?update@WaypointMap@@QAEXXZ	landed	MASM exact 363B @ 0x454EF3
 ?setGameOptions@GameSpyInfo@@UAEXXZ	no-match	size 1997 overlapped notifyTargetOfProbe @0x6718BC; true size TBD
 ?setGameOptions@GameSpyInfo@@UAEXXZ	landed	MASM exact 383B @ 0x00671686 (report oversize into neighbor)
+?handleRequestJoin@LANAPI@@IAEXPAULANMessage@@I@Z	landed	MASM exact 1119B
+?switchToContext@ControlBar@@IAEXW4ControlBarContext@@PAVDrawable@@@Z	landed	MASM exact 869B
+?AddOutput@Debug@@AAEXPBDI@Z	landed	MASM exact 675B
+?parseSideInfo@AI@@SAXPAVINI@@PAX1PBX@Z	landed	MASM exact 516B
+??0AIAttackMoveStateMachine@@QAE@PAVObject@@VAsciiString@@@Z	landed	MASM exact 501B
+?doTeamUseCommandButtonOnNearestKindof@ScriptActions@@IAEXABVAsciiString@@0H@Z	landed	MASM exact 496B
+?generateParticleInfo@ParticleSystem@@IAEPBVParticleInfo@@HH@Z	landed	MASM exact 1257B
+?gogoGadgetComboBox@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHPAVWinInstanceData@@PAU_ComboBoxData@@PAVGameFont@@_N@Z	landed	MASM exact 1121B
+?executeHotKey@HotKeyManager@@QAE_NABVAsciiString@@@Z	landed	MASM exact 597B
+?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z	landed	MASM exact 590B
+?setPortraitByObject@ControlBar@@IAEXPAVObject@@@Z	landed	MASM exact 739B
+?update@AIFollowWaypointPathState@@UAE?AW4StateReturnType@@XZ	landed	MASM exact 794B
+?setTriggerAreaFlagsForChangeInPosition@Object@@IAEXXZ	landed	MASM exact 749B
+?onRemoving@RiderChangeContain@@UAEXPAVObject@@@Z	landed	MASM exact 715B
+?snapClosestGoalPosition@Pathfinder@@QAEXPAVObject@@PAUCoord3D@@@Z	landed	MASM exact 788B
+?drawBridges@W3DBridgeBuffer@@QAEXPAVCameraClass@@_NPAVTextureClass@@@Z	landed	MASM exact 909B
+?drawViewBox@W3DRadar@@IAEXHHHH@Z	landed	MASM exact 984B
+?update@StructureToppleUpdate@@UAE?AW4UpdateSleepTime@@XZ	landed	MASM exact 769B
+?tryToRecruit@Team@@QAEPAVObject@@PBVThingTemplate@@PBUCoord3D@@M@Z	landed	MASM exact 568B
+?doDamageLine@StructureToppleUpdate@@IAEXPAVObject@@PBVWeaponTemplate@@MMMM@Z	landed	MASM exact 523B
+?update@BridgeScaffoldBehavior@@UAE?AW4UpdateSleepTime@@XZ	landed	MASM exact 580B
+?locoUpdate_moveTowardsPosition@Locomotor@@QAEXPAVObject@@ABUCoord3D@@MMPA_N@Z	landed	MASM exact 1103B
+?xfer@AIPlayer@@MAEXPAVXfer@@@Z	landed	MASM exact 1170B
+??0RTS3DScene@@QAE@XZ	landed	MASM exact 940B

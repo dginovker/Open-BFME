@@ -3520,3 +3520,8 @@ GameEngine/Source/GameLogic/Object/Update/AIUpdate/RailroadGuideAIUpdate.cpp,ok,
 Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.cpp,ok,0,3,34,,0
 Libraries/Source/WWVegas/WW3D2/dynamesh.cpp,ok,0,14,75,,0
 Libraries/Source/WWVegas/WW3D2/ww3dformat.cpp,ok,0,1,11,,0
+GameEngine/Source/GameNetwork/GameSpy/Thread/GameResultsThread.cpp,unknown,0,0,0,dError: [Errno 2] No such file or directory: '/home/wacket/Projects/Open-BFME/build/match/gameresultsthread.harvest.obj',0
+GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,ok,0,7,36,,0
+GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,unknown,0,0,0,leNotFoundError: [Errno 2] No such file or directory: '/home/wacket/Projects/Open-BFME/build/match/peerdefs.harvest.obj',0
+GameEngine/Source/GameNetwork/LANGameInfo.cpp,unknown,0,0,0,otFoundError: [Errno 2] No such file or directory: '/home/wacket/Projects/Open-BFME/build/match/langameinfo.harvest.obj',0
+GameEngine/Source/GameNetwork/NAT.cpp,ok,0,3,33,,0

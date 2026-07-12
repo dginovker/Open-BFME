@@ -1114,7 +1114,6 @@ int OBBoxRenderObjClass::Class_ID(void) const
  * HISTORY:                                                                                    *
  *   1/19/00    gth : Created.                                                                 *
  *=============================================================================================*/
-// ?Render@OBBoxRenderObjClass@@UAEXAAVRenderInfoClass@@@Z present-unmatched
 void OBBoxRenderObjClass::Render(RenderInfoClass & rinfo)
 {
 	DX8Wrapper::Set_Transform(D3DTS_WORLD,Transform);

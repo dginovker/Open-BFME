@@ -1,0 +1,87 @@
+.386
+.model flat
+
+; ??1MaterialCollectorClass@@QAE@XZ
+; Retail @ 0x00C5C6A8 size 603
+_TEXT SEGMENT
+public ??1MaterialCollectorClass@@QAE@XZ
+??1MaterialCollectorClass@@QAE@XZ PROC
+    db 8Bh,45h,04h,50h,0E8h,3Fh,58h,0C2h
+    db 0FFh,59h,0C3h,0B8h,0C4h,0B7h,24h,01h
+    db 0E9h,19h,0A7h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,0E9h,3Dh,58h,3Ah,0FFh
+    db 8Bh,4Dh,0F0h,83h,0C1h,08h,0E9h,0BDh
+    db 0FAh,0D7h,0FFh,0B8h,0F0h,0B7h,24h,01h
+    db 0E9h,0F9h,0A6h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 8Bh,45h,04h,50h,0E8h,0C7h,57h,0C2h
+    db 0FFh,59h,0C3h,8Bh,45h,04h,50h,0E8h
+    db 0BCh,57h,0C2h,0FFh,59h,0C3h,8Bh,4Dh
+    db 04h,0E9h,07h,58h,3Ah,0FFh,8Bh,45h
+    db 04h,50h,0E8h,0A9h,57h,0C2h,0FFh,59h
+    db 0C3h,8Bh,45h,04h,50h,0E8h,9Eh,57h
+    db 0C2h,0FFh,59h,0C3h,8Bh,45h,04h,50h
+    db 0E8h,93h,57h,0C2h,0FFh,59h,0C3h,8Bh
+    db 4Dh,04h,0E9h,0DEh,57h,3Ah,0FFh,0B8h
+    db 44h,0B8h,24h,01h,0E9h,0A5h,0A6h,0D9h
+    db 0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,45h,04h,50h,0E8h,67h,57h,0C2h
+    db 0FFh,59h,0C3h,0B8h,68h,0B8h,24h,01h
+    db 0E9h,81h,0A6h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,45h,08h,50h,0E8h,47h,57h,0C2h
+    db 0FFh,59h,0C3h,0B8h,8Ch,0B8h,24h,01h
+    db 0E9h,61h,0A6h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,0E9h,7Dh,57h,3Ah,0FFh
+    db 83h,7Dh,0F0h,00h,0Fh,84h,0Eh,00h
+    db 00h,00h,8Bh,45h,0F0h,83h,0C0h,08h
+    db 89h,45h,0ECh,0E9h,07h,00h,00h,00h
+    db 0C7h,45h,0ECh,00h,00h,00h,00h,8Bh
+    db 4Dh,0ECh,0E9h,0E1h,0F9h,0D7h,0FFh,0B8h
+    db 0B8h,0B8h,24h,01h,0E9h,1Dh,0A6h,0D9h
+    db 0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,0E9h,18h,0AEh,0CCh,0FFh
+    db 0B8h,0DCh,0B8h,24h,01h,0E9h,04h,0A6h
+    db 0D9h,0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,83h,0C1h,04h,0E9h,22h
+    db 8Fh,3Bh,0FFh,0B8h,00h,0B9h,24h,01h
+    db 0E9h,0E1h,0A5h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,83h,0C1h,04h,0E9h,02h
+    db 8Fh,3Bh,0FFh,0B8h,24h,0B9h,24h,01h
+    db 0E9h,0C1h,0A5h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,83h,0C1h,04h,0E9h,0E2h
+    db 8Eh,3Bh,0FFh,0B8h,48h,0B9h,24h,01h
+    db 0E9h,0A1h,0A5h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Dh,4Dh,0B0h,0E9h,32h,9Ah,3Bh,0FFh
+    db 8Dh,4Dh,0A4h,0E9h,40h,0B9h,0CCh,0FFh
+    db 8Dh,4Dh,0E0h,0E9h,0B8h,0BDh,0CCh,0FFh
+    db 0B8h,7Ch,0B9h,24h,01h,0E9h,74h,0A5h
+    db 0D9h,0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,45h,0E8h,50h,0E8h,37h,56h,0C2h
+    db 0FFh,59h,0C3h,0B8h,0A0h,0B9h,24h,01h
+    db 0E9h,51h,0A5h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,0E9h,6Dh,56h,3Ah,0FFh
+    db 0B8h,0C4h,0B9h,24h,01h,0E9h,34h,0A5h
+    db 0D9h,0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,0E9h,4Dh,56h,3Ah,0FFh
+    db 0B8h,0E8h,0B9h,24h,01h,0E9h,14h,0A5h
+    db 0D9h,0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0ECh,0E9h,2Dh,56h,3Ah,0FFh
+    db 8Bh,45h,0F0h,50h,0E8h,0Fh,56h,0C2h
+    db 0FFh,59h,0C3h,0B8h,14h,0BAh,24h,01h
+    db 0E9h,0E9h,0A4h,0D9h,0FFh,0CCh,0CCh,0CCh
+    db 8Bh,4Dh,0F0h,0E9h,0Dh,56h,3Ah,0FFh
+    db 8Bh,45h,04h,50h,0E8h,0EFh,55h,0C2h
+    db 0FFh,59h,0C3h
+??1MaterialCollectorClass@@QAE@XZ ENDP
+_TEXT ENDS
+END

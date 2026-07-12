@@ -1,0 +1,99 @@
+.386
+.model flat
+
+; ??4?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z
+; Retail @ 0x004A08B8 size 697
+_TEXT SEGMENT
+public ??4?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z
+??4?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z PROC
+    db 02h,3Bh,0FAh,76h,69h,51h,50h,57h
+    db 8Bh,0CEh,0E8h,0B4h,4Bh,0BAh,0FFh,8Bh
+    db 0Eh,85h,0C9h,8Bh,0D8h,74h,3Eh,8Bh
+    db 46h,08h,2Bh,0C1h,0C1h,0F8h,02h,0C1h
+    db 0E0h,02h,3Dh,80h,00h,00h,00h,76h
+    db 22h,51h,0E8h,0C9h,15h,3Eh,00h,8Dh
+    db 04h,0BBh,83h,0C4h,04h,89h,46h,08h
+    db 8Bh,0D3h,8Dh,04h,0BAh,5Fh,89h,1Eh
+    db 89h,46h,04h,5Bh,8Bh,0C6h,5Eh,5Dh
+    db 0C2h,04h,00h,50h,51h,0E8h,0E6h,0DCh
+    db 38h,00h,83h,0C4h,08h,8Dh,04h,0BBh
+    db 89h,46h,08h,8Bh,0D3h,8Dh,04h,0BAh
+    db 5Fh,89h,1Eh,89h,46h,04h,5Bh,8Bh
+    db 0C6h,5Eh,5Dh,0C2h,04h,00h,8Bh,56h
+    db 04h,2Bh,0D3h,0C1h,0FAh,02h,3Bh,0D7h
+    db 72h,0Bh,3Bh,0C8h,74h,43h,2Bh,0C8h
+    db 51h,50h,53h,0EBh,33h,8Dh,0Ch,90h
+    db 3Bh,0C8h,74h,0Eh,2Bh,0C8h,51h,50h
+    db 53h,0FFh,15h,5Ch,94h,35h,01h,83h
+    db 0C4h,0Ch,8Bh,56h,04h,8Bh,1Eh,8Bh
+    db 45h,04h,8Bh,0CAh,2Bh,0CBh,8Bh,5Dh
+    db 00h,0C1h,0F9h,02h,8Dh,0Ch,8Bh,3Bh
+    db 0C1h,74h,0Eh,2Bh,0C1h,50h,51h,52h
+    db 0FFh,15h,5Ch,94h,35h,01h,83h,0C4h
+    db 0Ch,8Bh,16h,8Dh,04h,0BAh,5Fh,89h
+    db 46h,04h,5Bh,8Bh,0C6h,5Eh,5Dh,0C2h
+    db 04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 53h,8Bh,5Ch,24h,1Ch,55h,8Bh,6Ch
+    db 24h,1Ch,56h,8Bh,74h,24h,1Ch,0C6h
+    db 06h,00h,0C6h,45h,00h,00h,0C6h,03h
+    db 00h,8Bh,0Dh,98h,08h,2Fh,01h,57h
+    db 0E8h,0B6h,0D6h,0B7h,0FFh,84h,0C0h,8Bh
+    db 7Ch,24h,14h,74h,1Bh,85h,0FFh,0Fh
+    db 84h,0D0h,00h,00h,00h,8Bh,47h,04h
+    db 85h,0C0h,0Fh,84h,0C5h,00h,00h,00h
+    db 8Dh,88h,0A8h,00h,00h,00h,0EBh,19h
+    db 85h,0FFh,0Fh,84h,0B5h,00h,00h,00h
+    db 8Bh,47h,04h,85h,0C0h,0Fh,84h,0AAh
+    db 00h,00h,00h,8Dh,88h,0A4h,00h,00h
+    db 00h,8Bh,01h,85h,0C0h,0Fh,84h,9Ah
+    db 00h,00h,00h,66h,83h,78h,04h,00h
+    db 0Fh,84h,8Fh,00h,00h,00h,51h,8Bh
+    db 0Dh,0F8h,33h,2Fh,01h,0E8h,78h,82h
+    db 0BAh,0FFh,85h,0C0h,74h,7Fh,8Bh,4Ch
+    db 24h,18h,51h,8Bh,0C8h,0E8h,1Eh,35h
+    db 0B6h,0FFh,85h,0C0h,8Bh,4Ch,24h,1Ch
+    db 89h,01h,74h,69h,0C6h,06h,01h,8Bh
+    db 01h,8Bh,90h,84h,00h,00h,00h,3Bh
+    db 90h,88h,00h,00h,00h,74h,56h,8Bh
+    db 0Dh,0ACh,0D7h,2Eh,01h,8Bh,0C2h,8Bh
+    db 30h,56h,57h,0E8h,0C1h,4Ah,0B6h,0FFh
+    db 84h,0C0h,74h,41h,56h,8Bh,0CFh,0E8h
+    db 0A3h,89h,0B6h,0FFh,84h,0C0h,75h,32h
+    db 8Bh,0Dh,0ACh,0D7h,2Eh,01h,56h,57h
+    db 0E8h,30h,0D2h,0B6h,0FFh,84h,0C0h,74h
+    db 24h,8Bh,0Dh,0ACh,0D7h,2Eh,01h,8Bh
+    db 0BFh,64h,02h,00h,00h,56h,0E8h,3Ah
+    db 21h,0B6h,0FFh,3Bh,0C7h,7Fh,0Eh,5Fh
+    db 5Eh,0C6h,45h,00h,01h,5Dh,5Bh,0C2h
+    db 18h,00h,0C6h,03h,01h,5Fh,5Eh,5Dh
+    db 5Bh,0C2h,18h,00h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 83h,0ECh,08h,8Dh,44h,24h,03h,50h
+    db 8Dh,54h,24h,10h,52h,8Dh,44h,24h
+    db 18h,50h,8Bh,44h,24h,1Ch,8Dh,54h
+    db 24h,10h,52h,8Bh,54h,24h,1Ch,50h
+    db 52h,0E8h,73h,0C2h,0B7h,0FFh,8Ah,44h
+    db 24h,10h,84h,0C0h,74h,1Bh,8Ah,44h
+    db 24h,0Ch,84h,0C0h,74h,13h,8Ah,44h
+    db 24h,03h,84h,0C0h,75h,0Bh,0B8h,01h
+    db 00h,00h,00h,83h,0C4h,08h,0C2h,08h
+    db 00h,33h,0C0h,83h,0C4h,08h,0C2h,08h
+    db 00h
+??4?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z ENDP
+_TEXT ENDS
+END

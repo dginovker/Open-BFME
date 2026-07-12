@@ -1,0 +1,101 @@
+.386
+.model flat
+
+; ??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z
+; Retail @ 0x009F5838 size 716
+_TEXT SEGMENT
+public ??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z
+??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z PROC
+    db 3Bh,0F9h,76h,69h,55h,50h,57h,8Bh
+    db 0CEh,0E8h,2Ah,0FBh,0FFh,0FFh,8Bh,0Eh
+    db 85h,0C9h,8Bh,0D8h,74h,3Eh,8Bh,46h
+    db 08h,2Bh,0C1h,0C1h,0F8h,03h,0C1h,0E0h
+    db 03h,3Dh,80h,00h,00h,00h,76h,22h
+    db 51h,0E8h,4Ah,0C6h,0E8h,0FFh,83h,0C4h
+    db 04h,8Bh,0C3h,8Dh,14h,0FBh,8Dh,0Ch
+    db 0F8h,5Fh,5Dh,89h,1Eh,89h,56h,08h
+    db 89h,4Eh,04h,8Bh,0C6h,5Eh,5Bh,0C2h
+    db 04h,00h,50h,51h,0E8h,67h,8Dh,0E3h
+    db 0FFh,83h,0C4h,08h,8Bh,0C3h,8Dh,14h
+    db 0FBh,8Dh,0Ch,0F8h,5Fh,5Dh,89h,1Eh
+    db 89h,56h,08h,89h,4Eh,04h,8Bh,0C6h
+    db 5Eh,5Bh,0C2h,04h,00h,8Bh,4Eh,04h
+    db 2Bh,0CAh,0C1h,0F9h,03h,3Bh,0CFh,72h
+    db 21h,8Dh,4Ch,24h,14h,51h,52h,55h
+    db 50h,0E8h,82h,0F2h,0FFh,0FFh,8Bh,06h
+    db 83h,0C4h,10h,8Dh,0Ch,0F8h,5Fh,5Dh
+    db 89h,4Eh,04h,8Bh,0C6h,5Eh,5Bh,0C2h
+    db 04h,00h,8Dh,6Ch,24h,14h,55h,52h
+    db 8Dh,14h,0C8h,52h,50h,0E8h,5Eh,0F2h
+    db 0FFh,0FFh,8Bh,46h,04h,8Bh,2Eh,8Bh
+    db 53h,04h,8Dh,4Ch,24h,24h,51h,8Bh
+    db 0Bh,50h,2Bh,0C5h,52h,0C1h,0F8h,03h
+    db 8Dh,14h,0C1h,52h,0E8h,7Fh,0F2h,0FFh
+    db 0FFh,8Bh,06h,83h,0C4h,20h,8Dh,0Ch
+    db 0F8h,5Fh,89h,4Eh,04h,5Dh,8Bh,0C6h
+    db 5Eh,5Bh,0C2h,04h,00h,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Ch,24h,0Ch,8Bh,44h,24h,08h
+    db 56h,6Ah,00h,51h,83h,0C0h,0E8h,83h
+    db 0ECh,18h,8Bh,0D0h,8Bh,32h,8Bh,0CCh
+    db 89h,31h,8Bh,72h,04h,89h,71h,04h
+    db 8Bh,72h,08h,89h,71h,08h,8Bh,72h
+    db 0Ch,50h,89h,71h,0Ch,8Bh,72h,10h
+    db 8Bh,52h,14h,50h,8Bh,44h,24h,30h
+    db 89h,71h,10h,50h,89h,51h,14h,0E8h
+    db 0DCh,0FAh,0FFh,0FFh,83h,0C4h,2Ch,5Eh
+    db 0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 6Ah,0FFh,68h,86h,1Eh,06h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,56h,8Bh
+    db 0F1h,89h,74h,24h,04h,0C7h,44h,24h
+    db 10h,00h,00h,00h,00h,0E8h,36h,0F5h
+    db 0FFh,0FFh,68h,90h,56h,0DFh,00h,6Ah
+    db 11h,6Ah,0Ch,83h,0C6h,18h,56h,0C7h
+    db 44h,24h,20h,0FFh,0FFh,0FFh,0FFh,0E8h
+    db 0C2h,13h,00h,00h,8Bh,4Ch,24h,08h
+    db 5Eh,64h,89h,0Dh,00h,00h,00h,00h
+    db 83h,0C4h,10h,0C3h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 64h,0A1h,00h,00h,00h,00h,6Ah,0FFh
+    db 68h,98h,1Eh,06h,01h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,83h,0ECh,0Ch
+    db 55h,8Bh,0E9h,8Bh,4Ch,24h,20h,83h
+    db 0F9h,0Bh,0Fh,87h,0FAh,00h,00h,00h
+    db 8Bh,95h,0ECh,00h,00h,00h,0B8h,01h
+    db 00h,00h,00h,0D3h,0E0h,3Bh,0C2h,0Fh
+    db 84h,0E5h,00h,00h,00h,85h,0C9h,53h
+    db 56h,57h,89h,85h,0ECh,00h,00h,00h
+    db 0BFh,01h,00h,00h,00h,74h,0Bh,90h
+    db 49h,8Dh,3Ch,0BDh,01h,00h,00h,00h
+    db 75h,0F6h,8Bh,0CDh,0E8h,9Fh,0F4h,0FFh
+    db 0FFh,8Dh,5Dh,18h,0C7h,44h,24h,2Ch
+    db 11h,00h,00h,00h,8Dh,64h,24h,00h
+    db 8Dh,44h,24h,2Ch,50h,57h,8Dh,4Ch
+    db 24h,18h,0E8h,0A1h,0F7h,0FFh,0FFh,85h
+    db 0FFh,8Bh,74h,24h,10h,8Bh,0C6h,76h
+    db 18h,8Bh,0CFh,0EBh,03h,8Dh,49h,00h
+    db 85h,0C0h,74h,07h,33h,0D2h,89h,10h
+    db 89h,50h,04h,83h,0C0h,08h,49h,75h
+    db 0EFh,89h,44h,24h,14h,8Dh,4Ch,24h
+    db 10h,51h,8Bh,0CBh,0C7h,44h,24h,28h
+    db 00h,00h,00h,00h,0E8h,87h,0FDh,0FFh
+    db 0FFh,85h,0F6h,0C7h,44h,24h,24h,0FFh
+    db 0FFh,0FFh,0FFh,74h,28h,8Bh,44h,24h
+    db 18h,2Bh,0C6h,0C1h,0F8h,03h,0C1h,0E0h
+    db 03h,3Dh,80h,00h,00h,00h,76h,0Bh
+    db 56h,0E8h,02h,0C4h,0E8h,0FFh,83h,0C4h
+    db 04h,0EBh,0Ah,50h,56h,0E8h,36h,8Bh
+    db 0E3h,0FFh,83h,0C4h,08h,8Bh,44h,24h
+    db 2Ch,83h,0C3h,0Ch,48h,89h,44h,24h
+    db 2Ch,0Fh,85h,71h,0FFh,0FFh,0FFh,8Bh
+    db 0B5h,0E4h,00h,00h,00h,85h,0F6h,74h
+    db 16h,8Dh,0A4h,24h,00h,00h,00h,00h
+    db 56h,8Bh,0CDh,0E8h,98h,0F2h,0FFh,0FFh
+    db 8Bh,76h,0Ch,85h,0F6h,75h,0F1h,5Fh
+    db 5Eh,5Bh,8Bh,4Ch,24h,10h,5Dh,64h
+    db 89h,0Dh,00h,00h,00h,00h,83h,0C4h
+    db 18h,0C2h,04h,00h
+??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z ENDP
+_TEXT ENDS
+END

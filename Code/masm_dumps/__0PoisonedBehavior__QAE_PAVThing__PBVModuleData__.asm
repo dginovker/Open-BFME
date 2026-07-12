@@ -1,0 +1,88 @@
+.386
+.model flat
+
+; ??0PoisonedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z
+; Retail @ 0x002B0AD0 size 610
+_TEXT SEGMENT
+public ??0PoisonedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z
+??0PoisonedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z PROC
+    db 6Ah,0FFh,68h,58h,2Fh,01h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,8Bh,44h
+    db 24h,18h,56h,8Bh,0F1h,8Bh,4Ch,24h
+    db 18h,50h,51h,8Bh,0CEh,89h,74h,24h
+    db 0Ch,0E8h,0E6h,65h,0D6h,0FFh,0C7h,46h
+    db 0Ch,0D0h,0C9h,09h,01h,0C7h,46h,10h
+    db 0A0h,0CBh,09h,01h,83h,0C9h,0FFh,33h
+    db 0C0h,89h,46h,14h,89h,4Eh,18h,89h
+    db 4Eh,1Ch,8Bh,56h,08h,68h,0FFh,0FFh
+    db 0FFh,3Fh,52h,8Bh,0CEh,89h,44h,24h
+    db 18h,0C7h,06h,0CCh,4Dh,0Ch,01h,0C7h
+    db 46h,0Ch,08h,4Dh,0Ch,01h,0C7h,46h
+    db 10h,0F8h,4Ch,0Ch,01h,89h,46h,20h
+    db 89h,46h,24h,89h,46h,28h,88h,46h
+    db 2Ch,0E8h,8Ch,4Ch,0D6h,0FFh,8Bh,4Ch
+    db 24h,08h,8Bh,0C6h,5Eh,64h,89h,0Dh
+    db 00h,00h,00h,00h,83h,0C4h,10h,0C2h
+    db 08h,00h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0B8h,0A8h,0FDh,08h,01h,0C3h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 64h,0A1h,00h,00h,00h,00h,8Ah,0Dh
+    db 0Ch,02h,2Fh,01h,6Ah,0FFh,68h,7Eh
+    db 2Fh,01h,01h,50h,0B8h,01h,00h,00h
+    db 00h,84h,0C8h,64h,89h,25h,00h,00h
+    db 00h,00h,75h,31h,09h,05h,0Ch,02h
+    db 2Fh,01h,8Bh,0Dh,00h,0D6h,2Eh,01h
+    db 68h,0A8h,0FDh,08h,01h,0C7h,44h,24h
+    db 0Ch,00h,00h,00h,00h,0E8h,0F5h,0A1h
+    db 0D8h,0FFh,0A3h,08h,02h,2Fh,01h,8Bh
+    db 0Ch,24h,64h,89h,0Dh,00h,00h,00h
+    db 00h,83h,0C4h,0Ch,0C3h,8Bh,0Ch,24h
+    db 0A1h,08h,02h,2Fh,01h,64h,89h,0Dh
+    db 00h,00h,00h,00h,83h,0C4h,0Ch,0C3h
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 56h,8Bh,0F1h,0E8h,88h,4Ah,0D8h,0FFh
+    db 0F6h,44h,24h,08h,01h,74h,09h,56h
+    db 0E8h,6Bh,12h,5Dh,00h,83h,0C4h,04h
+    db 8Bh,0C6h,5Eh,0C2h,04h,00h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 51h,56h,8Bh,74h,24h,0Ch,8Bh,06h
+    db 57h,8Bh,0F9h,8Dh,4Ch,24h,08h,51h
+    db 8Bh,0CEh,0C6h,44h,24h,0Ch,01h,0C6h
+    db 44h,24h,0Dh,03h,0FFh,50h,28h,56h
+    db 8Bh,0CFh,0E8h,3Ah,38h,0D5h,0FFh,8Bh
+    db 16h,8Dh,47h,20h,50h,8Bh,0CEh,0FFh
+    db 52h,74h,80h,7Ch,24h,09h,02h,8Bh
+    db 16h,8Bh,0CEh,72h,09h,8Dh,47h,24h
+    db 50h,0FFh,52h,74h,0EBh,0Eh,0FFh,52h
+    db 04h,84h,0C0h,74h,07h,0C7h,47h,24h
+    db 00h,00h,00h,00h,80h,7Ch,24h,09h
+    db 03h,72h,0Dh,83h,0C7h,28h,57h,56h
+    db 0E8h,0EFh,0BCh,0D5h,0FFh,83h,0C4h,08h
+    db 5Fh,5Eh,59h,0C2h,04h,00h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,44h,24h,04h,0C7h,00h,08h,00h
+    db 00h,00h,0C2h,04h,00h,0CCh,0CCh,0CCh
+    db 56h,8Bh,0F1h,8Bh,46h,28h,85h,0C0h
+    db 74h,24h,8Bh,0Dh,98h,08h,2Fh,01h
+    db 50h,0E8h,3Dh,0E5h,0D6h,0FFh,85h,0C0h
+    db 74h,09h,0F6h,80h,44h,03h,00h,00h
+    db 01h,74h,0Bh,0C7h,46h,28h,00h,00h
+    db 00h,00h,0B0h,01h,5Eh,0C3h,32h,0C0h
+    db 5Eh,0C3h
+??0PoisonedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z ENDP
+_TEXT ENDS
+END

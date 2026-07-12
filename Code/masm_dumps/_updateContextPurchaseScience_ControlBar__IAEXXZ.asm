@@ -1,0 +1,73 @@
+.386
+.model flat
+
+; ?updateContextPurchaseScience@ControlBar@@IAEXXZ
+; Retail @ 0x0049CAE3 size 493
+_TEXT SEGMENT
+public ?updateContextPurchaseScience@ControlBar@@IAEXXZ
+?updateContextPurchaseScience@ControlBar@@IAEXXZ PROC
+    db 2Eh,01h,83h,0ECh,08h,53h,56h,8Bh
+    db 70h,0Ch,57h,8Bh,0F9h,8Bh,0Dh,40h
+    db 1Bh,2Fh,01h,8Bh,19h,8Bh,0Dh,00h
+    db 0D6h,2Eh,01h,68h,10h,0B8h,0Fh,01h
+    db 0E8h,0CFh,0E2h,0B9h,0FFh,8Bh,57h,38h
+    db 8Bh,0Dh,40h,1Bh,2Fh,01h,50h,52h
+    db 0FFh,93h,0DCh,00h,00h,00h,8Bh,0F8h
+    db 85h,0FFh,74h,45h,0D9h,86h,5Ch,02h
+    db 00h,00h,83h,0ECh,08h,0DDh,1Ch,24h
+    db 0FFh,15h,0B8h,93h,35h,01h,0D9h,5Ch
+    db 24h,14h,83h,0C4h,08h,0D9h,44h,24h
+    db 0Ch,0DBh,5Ch,24h,10h,8Bh,8Eh,6Ch
+    db 02h,00h,00h,8Bh,44h,24h,10h,8Bh
+    db 0B6h,68h,02h,00h,00h,2Bh,0C1h,6Bh
+    db 0C0h,64h,99h,2Bh,0F1h,0F7h,0FEh,50h
+    db 57h,0E8h,19h,50h,0B8h,0FFh,83h,0C4h
+    db 08h,5Fh,5Eh,5Bh,83h,0C4h,08h,0C3h
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0C6h,41h,24h
+    db 01h,8Bh,0Dh,8Ch,14h,2Fh,01h,8Bh
+    db 01h,0C7h,44h,24h,04h,00h,00h,00h
+    db 00h,0FFh,0A0h,0B8h,00h,00h,00h,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0C6h,41h,24h
+    db 01h,8Bh,0Dh,8Ch,14h,2Fh,01h,8Bh
+    db 01h,0FFh,90h,0F0h,00h,00h,00h,85h
+    db 0C0h,75h,0Fh,8Bh,0Dh,8Ch,14h,2Fh
+    db 01h,8Bh,11h,50h,0FFh,92h,0B8h,00h
+    db 00h,00h,8Bh,0Dh,8Ch,14h,2Fh,01h
+    db 8Bh,01h,6Ah,00h,6Ah,00h,0FFh,90h
+    db 0C0h,00h,00h,00h,0C2h,04h,00h,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0A1h,48h,0D7h
+    db 2Eh,01h,56h,8Bh,0F1h,8Bh,48h,0Ch
+    db 8Bh,81h,64h,02h,00h,00h,39h,86h
+    db 0CCh,02h,00h,00h,57h,7Fh,0Ch,85h
+    db 0C0h,7Eh,08h,89h,86h,0CCh,02h,00h
+    db 00h,0EBh,07h,0C6h,86h,0C8h,02h,00h
+    db 00h,00h,8Bh,15h,40h,1Bh,2Fh,01h
+    db 8Bh,0Dh,00h,0D6h,2Eh,01h,8Bh,3Ah
+    db 68h,44h,0B8h,0Fh,01h,0E8h,92h,0E1h
+    db 0B9h,0FFh,8Bh,0Dh,40h,1Bh,2Fh,01h
+    db 50h,6Ah,00h,0FFh,97h,0DCh,00h,00h
+    db 00h,8Bh,0F8h,85h,0FFh,74h,71h,8Ah
+    db 86h,0C8h,02h,00h,00h,84h,0C0h,75h
+    db 2Bh,8Bh,86h,0C0h,02h,00h,00h,50h
+    db 6Ah,00h,8Bh,0CFh,0E8h,95h,91h,0B9h
+    db 0FFh,6Ah,00h,6Ah,05h,8Bh,0CFh,0E8h
+    db 8Ah,91h,0B9h,0FFh,6Ah,00h,6Ah,06h
+    db 8Bh,0CFh,0E8h,7Fh,91h,0B9h,0FFh,5Fh
+    db 33h,0C0h,5Eh,0C3h,8Bh,0Dh,98h,08h
+    db 2Fh,01h,8Bh,41h,3Ch,33h,0D2h,0B9h
+    db 05h,00h,00h,00h,0F7h,0F1h,83h,0FAh
+    db 02h,76h,15h,8Bh,96h,0C4h,02h,00h
+    db 00h,52h,57h,0E8h,70h,0BDh,0B9h,0FFh
+    db 83h,0C4h,08h,5Fh,33h,0C0h,5Eh,0C3h
+    db 8Bh,86h,0C0h,02h,00h,00h,50h,57h
+    db 0E8h,5Bh,0BDh,0B9h,0FFh,83h,0C4h,08h
+    db 5Fh,33h,0C0h,5Eh,0C3h
+?updateContextPurchaseScience@ControlBar@@IAEXXZ ENDP
+_TEXT ENDS
+END

@@ -1,0 +1,99 @@
+.386
+.model flat
+
+; ??4?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z
+; Retail @ 0x00170228 size 700
+_TEXT SEGMENT
+public ??4?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z
+??4?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z PROC
+    db 3Bh,0F9h,76h,69h,55h,50h,57h,8Bh
+    db 0CEh,0E8h,13h,7Ah,0EDh,0FFh,8Bh,0Eh
+    db 85h,0C9h,8Bh,0D8h,74h,3Eh,8Bh,46h
+    db 08h,2Bh,0C1h,0C1h,0F8h,02h,0C1h,0E0h
+    db 02h,3Dh,80h,00h,00h,00h,76h,22h
+    db 51h,0E8h,5Ah,1Ch,71h,00h,83h,0C4h
+    db 04h,8Bh,0C3h,8Dh,14h,0BBh,8Dh,0Ch
+    db 0B8h,5Fh,5Dh,89h,1Eh,89h,56h,08h
+    db 89h,4Eh,04h,8Bh,0C6h,5Eh,5Bh,0C2h
+    db 04h,00h,50h,51h,0E8h,77h,0E3h,6Bh
+    db 00h,83h,0C4h,08h,8Bh,0C3h,8Dh,14h
+    db 0BBh,8Dh,0Ch,0B8h,5Fh,5Dh,89h,1Eh
+    db 89h,56h,08h,89h,4Eh,04h,8Bh,0C6h
+    db 5Eh,5Bh,0C2h,04h,00h,8Bh,4Eh,04h
+    db 2Bh,0CAh,0C1h,0F9h,02h,3Bh,0CFh,72h
+    db 21h,8Dh,4Ch,24h,14h,51h,52h,55h
+    db 50h,0E8h,9Ah,5Eh,0EBh,0FFh,8Bh,06h
+    db 83h,0C4h,10h,8Dh,0Ch,0B8h,5Fh,5Dh
+    db 89h,4Eh,04h,8Bh,0C6h,5Eh,5Bh,0C2h
+    db 04h,00h,8Dh,6Ch,24h,14h,55h,52h
+    db 8Dh,14h,88h,52h,50h,0E8h,76h,5Eh
+    db 0EBh,0FFh,8Bh,46h,04h,8Bh,2Eh,8Bh
+    db 53h,04h,8Dh,4Ch,24h,24h,51h,8Bh
+    db 0Bh,50h,2Bh,0C5h,52h,0C1h,0F8h,02h
+    db 8Dh,14h,81h,52h,0E8h,77h,05h,0EDh
+    db 0FFh,8Bh,06h,83h,0C4h,20h,8Dh,0Ch
+    db 0B8h,5Fh,89h,4Eh,04h,5Dh,8Bh,0C6h
+    db 5Eh,5Bh,0C2h,04h,00h,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,44h,24h,04h,85h,0C0h,56h,74h
+    db 23h,0C1h,0E0h,02h,3Dh,80h,00h,00h
+    db 00h,50h,76h,0Ch,0E8h,0C7h,1Bh,71h
+    db 00h,83h,0C4h,04h,8Bh,0F0h,0EBh,0Eh
+    db 0E8h,0CBh,0E1h,6Bh,00h,83h,0C4h,04h
+    db 8Bh,0F0h,0EBh,02h,33h,0F6h,8Bh,44h
+    db 24h,10h,8Bh,4Ch,24h,0Ch,3Bh,0C1h
+    db 74h,0Eh,2Bh,0C1h,50h,51h,56h,0FFh
+    db 15h,5Ch,94h,35h,01h,83h,0C4h,0Ch
+    db 8Bh,0C6h,5Eh,0C2h,0Ch,00h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 56h,8Bh,0F1h,8Bh,4Eh,58h,85h,0C9h
+    db 74h,62h,8Bh,01h,53h,0FFh,50h,18h
+    db 8Bh,15h,98h,08h,2Fh,01h,8Bh,5Ah
+    db 3Ch,8Bh,4Eh,5Ch,3Bh,0CBh,5Bh,73h
+    db 09h,85h,0C0h,75h,07h,83h,0C8h,0FFh
+    db 0EBh,04h,85h,0C0h,7Dh,46h,8Bh,4Eh
+    db 58h,85h,0C9h,74h,3Fh,8Bh,01h,6Ah
+    db 00h,0FFh,50h,14h,8Bh,4Eh,60h,51h
+    db 8Bh,0Dh,98h,08h,2Fh,01h,0E8h,48h
+    db 0EEh,0EAh,0FFh,50h,8Bh,0CEh,0E8h,2Fh
+    db 77h,0EBh,0FFh,8Dh,56h,64h,52h,8Bh
+    db 0CEh,0E8h,2Fh,2Dh,0E9h,0FFh,0C7h,46h
+    db 60h,00h,00h,00h,00h,0C7h,46h,58h
+    db 00h,00h,00h,00h,8Bh,0CEh,5Eh,0E9h
+    db 50h,0C8h,0E9h,0FFh,5Eh,0C3h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 56h,8Bh,0F1h,8Bh,4Eh,58h,85h,0C9h
+    db 74h,4Eh,8Bh,01h,6Ah,01h,0FFh,50h
+    db 14h,8Bh,4Eh,60h,51h,8Bh,0Dh,98h
+    db 08h,2Fh,01h,0E8h,0D3h,0EDh,0EAh,0FFh
+    db 50h,8Bh,0CEh,0E8h,0BAh,76h,0EBh,0FFh
+    db 8Dh,56h,64h,52h,8Bh,0CEh,0E8h,0BAh
+    db 2Ch,0E9h,0FFh,0C7h,46h,60h,00h,00h
+    db 00h,00h,0C7h,46h,58h,00h,00h,00h
+    db 00h,8Bh,76h,10h,85h,0F6h,74h,10h
+    db 8Bh,8Eh,0F8h,01h,00h,00h,85h,0C9h
+    db 74h,06h,5Eh,0E9h,5Bh,0D1h,0ECh,0FFh
+    db 5Eh,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 56h,8Bh,0F1h,8Bh,46h,58h,85h,0C0h
+    db 74h,11h,83h,7Eh,5Ch,0FFh,75h,04h
+    db 33h,0C0h,5Eh,0C3h
+??4?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z ENDP
+_TEXT ENDS
+END

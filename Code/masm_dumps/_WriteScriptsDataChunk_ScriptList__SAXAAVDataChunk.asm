@@ -1,0 +1,81 @@
+.386
+.model flat
+
+; ?WriteScriptsDataChunk@ScriptList@@SAXAAVDataChunkOutput@@QAPAV1@H@Z
+; Retail @ 0x0035B4B0 size 557
+_TEXT SEGMENT
+public ?WriteScriptsDataChunk@ScriptList@@SAXAAVDataChunkOutput@@QAPAV1@H@Z
+?WriteScriptsDataChunk@ScriptList@@SAXAAVDataChunkOutput@@QAPAV1@H@Z PROC
+    db 53h,57h,8Bh,7Ch,24h,0Ch,6Ah,05h
+    db 68h,44h,85h,0Eh,01h,8Bh,0CFh,0E8h
+    db 92h,0EDh,0CDh,0FFh,8Bh,44h,24h,14h
+    db 33h,0DBh,85h,0C0h,7Eh,52h,55h,8Bh
+    db 6Ch,24h,14h,56h,6Ah,01h,68h,98h
+    db 8Ch,0Eh,01h,8Bh,0CFh,0E8h,74h,0EDh
+    db 0CDh,0FFh,8Bh,74h,9Dh,00h,85h,0F6h
+    db 74h,24h,8Bh,46h,08h,85h,0C0h,74h
+    db 0Bh,50h,56h,57h,0E8h,0DAh,0D0h,0CCh
+    db 0FFh,83h,0C4h,0Ch,8Bh,46h,04h,85h
+    db 0C0h,74h,0Bh,50h,56h,57h,0E8h,05h
+    db 6Eh,0CAh,0FFh,83h,0C4h,0Ch,8Bh,0CFh
+    db 0E8h,2Dh,96h,0CAh,0FFh,8Bh,44h,24h
+    db 1Ch,43h,3Bh,0D8h,7Ch,0B6h,5Eh,5Dh
+    db 8Bh,0CFh,5Fh,5Bh,0E9h,19h,96h,0CAh
+    db 0FFh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 6Ah,0FFh,68h,89h,96h,01h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,53h,56h
+    db 8Bh,0F1h,57h,89h,74h,24h,0Ch,8Bh
+    db 7Ch,24h,20h,8Dh,47h,04h,33h,0DBh
+    db 8Dh,4Eh,04h,50h,89h,5Ch,24h,1Ch
+    db 0C7h,06h,8Ch,85h,0Eh,01h,0E8h,0D5h
+    db 0C5h,52h,00h,8Dh,57h,08h,8Dh,4Eh
+    db 08h,52h,0C6h,44h,24h,1Ch,01h,0E8h
+    db 0C4h,0C5h,52h,00h,8Dh,47h,0Ch,8Dh
+    db 4Eh,0Ch,50h,0C6h,44h,24h,1Ch,02h
+    db 0E8h,0B3h,0C5h,52h,00h,8Bh,4Fh,10h
+    db 89h,4Eh,10h,8Ah,57h,14h,88h,56h
+    db 14h,8Ah,47h,15h,88h,46h,15h,8Ah
+    db 4Fh,16h,88h,4Eh,16h,8Ah,57h,17h
+    db 88h,56h,17h,8Ah,47h,18h,88h,46h
+    db 18h,8Ah,4Fh,19h,88h,4Eh,19h,8Ah
+    db 57h,1Ah,88h,56h,1Ah,8Bh,4Fh,1Ch
+    db 3Bh,0CBh,0C6h,44h,24h,18h,03h,74h
+    db 07h,0E8h,0E9h,0CCh,0CBh,0FFh,0EBh,02h
+    db 33h,0C0h,89h,46h,1Ch,8Bh,4Fh,20h
+    db 3Bh,0CBh,74h,07h,0E8h,0A7h,49h,0CEh
+    db 0FFh,0EBh,02h,33h,0C0h,89h,46h,20h
+    db 8Bh,4Fh,24h,3Bh,0CBh,74h,07h,0E8h
+    db 94h,49h,0CEh,0FFh,0EBh,02h,33h,0C0h
+    db 8Bh,4Ch,24h,10h,89h,46h,24h,89h
+    db 5Eh,28h,88h,5Eh,2Ch,89h,5Eh,30h
+    db 89h,5Eh,34h,89h,5Eh,38h,89h,5Eh
+    db 3Ch,5Fh,8Bh,0C6h,5Eh,5Bh,64h,89h
+    db 0Dh,00h,00h,00h,00h,83h,0C4h,10h
+    db 0C2h,04h,00h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 6Ah,0FFh,68h,0ABh,96h,01h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,56h,6Ah
+    db 40h,8Bh,0F1h,0E8h,90h,68h,52h,00h
+    db 83h,0C4h,04h,89h,44h,24h,04h,85h
+    db 0C0h,0C7h,44h,24h,10h,00h,00h,00h
+    db 00h,74h,18h,56h,8Bh,0C8h,0E8h,78h
+    db 3Ch,0CDh,0FFh,5Eh,8Bh,4Ch,24h,04h
+    db 64h,89h,0Dh,00h,00h,00h,00h,83h
+    db 0C4h,10h,0C3h,8Bh,4Ch,24h,08h,33h
+    db 0C0h,5Eh,64h,89h,0Dh,00h,00h,00h
+    db 00h,83h,0C4h,10h,0C3h
+?WriteScriptsDataChunk@ScriptList@@SAXAAVDataChunkOutput@@QAPAV1@H@Z ENDP
+_TEXT ENDS
+END

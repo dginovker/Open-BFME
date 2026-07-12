@@ -5125,3 +5125,6 @@ __stringbase_isnone_cmp_char,,0x000405E8,5,Code/masm_dumps/__stringbase_isnone_c
 __stringbase_isnone_cmp_wchar,,0x00041F3D,5,Code/masm_dumps/__stringbase_isnone_cmp_wchar_41F3D.asm,matched,MASM exact retail dump
 _atexit,,0x009F6E26,18,Code/masm_dumps/_atexit_9F6E26.asm,matched,MASM exact retail dump
 _powf,,0x00097070,14,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
+?getTypeFromKey@DictPair@Dict@@CA?AW4DataType@2@W4DictPairKeyType@2@@Z,,0x00067CC0,10,Code/GameEngine/Source/Common/Dict.cpp,matched,
+?getNameFromKey@DictPair@Dict@@CA?AW4NameKeyType@@W4DictPairKeyType@2@@Z,,0x00067CD0,8,Code/GameEngine/Source/Common/Dict.cpp,matched,
+?getType@DictPair@Dict@@QBE?AW4DataType@2@XZ,,0x00067CE0,8,Code/GameEngine/Source/Common/Dict.cpp,matched,

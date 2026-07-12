@@ -116,11 +116,13 @@ public:
 	// to update the heirarchy, but needs to know the transform of
 	// a bone at a given frame.
 	//
-	virtual bool					Simple_Evaluate_Bone(int boneindex, Matrix3D *tm) const;
+	// BFME: retail vtable order has the float-frame overload first (slots 133/134).
 	virtual bool					Simple_Evaluate_Bone(int boneindex, float frame, Matrix3D *tm) const;
+	virtual bool					Simple_Evaluate_Bone(int boneindex, Matrix3D *tm) const;
 
 	// (gth) TESTING DYNAMICALLY SWAPPING SKELETONS!
-	virtual void					Set_HTree(HTreeClass * htree);
+	// BFME: not virtual in retail (Animatable3DObjClass adds exactly 5 virtuals).
+	void							Set_HTree(HTreeClass * htree);
 	///Generals change so we can set sub-object transforms directly without having them revert to base pose
 	///when marked dirty.  DON'T USE THIS UNLESS YOU HAVE A GOOD REASON! -MW
 	void							Friend_Set_Hierarchy_Valid(bool onoff) const  	{ IsTreeValid = onoff; }

@@ -351,7 +351,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0?$_STLP_alloc_proxy@PAPAPAVSightingInfo@@PAPAV1@V?$allocator@PAPAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVSightingInfo@@@1@PAPAPAVSightingInfo@@@Z,,0x009ED3E0,11,Code/masm_dumps/__0___STLP_alloc_proxy_PAPAPAVSightingInfo__PAPAV1_V__allocator_PAPAVSightingInfo____STL____STL__QAE_ABV__allo_9ED3E0.asm,matched,MASM exact retail dump
 ??0?$_Vector_base@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@IABV?$allocator@PAVObjectCreationNugget@@@1@@Z,,0x0003F418,5,Code/masm_dumps/__0___Vector_base_PAVObjectCreationNugget__V__allocator_PAVObjectCreationNugget____STL____STL__QAE_IABV__alloc_3F418.asm,matched,MASM exact retail dump
 ??0?$deque@PAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVPartitionCell@@@1@@Z,,0x008FAEA0,46,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,
-??0?$deque@PAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVSightingInfo@@@1@@Z,,0x009EDFB0,180,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,
+??0?$deque@PAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVSightingInfo@@@1@@Z,,0x009EDFB0,46,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,shrunk 180->46: was riding a stale obj; trailing funcs not emitted by current toolchain
 ??0?$list@UCoord3D@@V?$allocator@UCoord3D@@@_STL@@@_STL@@QAE@ABV01@@Z,,0x000BF580,111,Code/GameEngine/Source/Common/INI/INIMapCache.cpp,matched,copy ctor for Coord3DList; BFME uses STLport node allocator
 ??0?$map@VAsciiString@@UCoord3D@@U?$less@VAsciiString@@@_STL@@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@4@@_STL@@QAE@ABV01@@Z,,0x000C0E30,19,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,
 ??0?$pair@$$CBGE@_STL@@QAE@ABGABE@Z,,0x00663D00,24,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,
@@ -2524,7 +2524,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?IsLoading@Xfer@@UBE_NXZ,0x0004A7FA,0x0006B1C0,3,Code/GameEngine/Source/Common/System/Xfer.cpp,matched,returns false
 ?IsStoring@Xfer@@UBE_NXZ,0x0003C286,0x007E7680,3,Code/GameEngine/Source/Common/System/Xfer.cpp,matched,returns false
 ?Is_ANSI@WideStringClass@@QAE_NXZ,,0x009E7130,40,Code/Libraries/Source/WWVegas/WWLib/widestring.cpp,matched,
-?Is_Additive@RenderObjClass@@UBEHXZ,,0x00979380,9,Code/Libraries/Source/WWVegas/WW3D2/nullrobj.cpp,matched,
+?Is_Additive@RenderObjClass@@UBEHXZ,,0x006CF800,9,Code/Libraries/Source/WWVegas/WW3D2/nullrobj.cpp,matched,relocated: vtable slot 109 target (was coincidence-match at 0x979380 with pre-fix mask)
 ?Is_Alpha@RenderObjClass@@UBEHXZ,,0x006CF7C0,9,Code/Libraries/Source/WWVegas/WW3D2/nullrobj.cpp,matched,
 ?Is_Alternate_Material_Description_Enabled@MeshModelClass@@QAE_NXZ,,0x0094DB50,18,Code/Libraries/Source/WWVegas/WW3D2/meshmdl.cpp,matched,
 ?Is_Archive_Same@?$IndexClass@HPAUINIEntry@@@@ABE_NABH@Z,,0x009E22E0,27,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,IndexClass sibling
@@ -2967,7 +2967,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?SetZero@Coord2D@@QAEAAV1@XZ,0x00022D0E,0x003FD390,16,Code/Libraries/Source/WWVegas/WWMath/coord2d.cpp,matched,sets x/y to zero and returns self
 ?SetZero@Coord3D@@QAEAAV1@XZ,0x000495CB,0x00148760,13,Code/Libraries/Source/WWVegas/WWMath/coord3d.cpp,matched,sets x/y/z to zero and returns self
 ?Set_Acceleration@ParticleEmitterDefClass@@UAEXABVVector3@@@Z,,0x0098D350,33,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,
-?Set_Additive@RenderObjClass@@UAEXH@Z,,0x009807D0,33,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,
+?Set_Additive@RenderObjClass@@UAEXH@Z,,0x006CF810,33,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,relocated: vtable slot 110 target (was coincidence-match at 0x9807D0 with pre-fix mask)
 ?Set_Alpha@RenderObjClass@@UAEXH@Z,,0x006CF7D0,33,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,
 ?Set_Alpha_Test@ShaderClass@@QAEXW4AlphaTestType@1@@Z,,0x006C52F0,21,Code/Libraries/Source/WWVegas/WW3D2/line3d.cpp,matched,
 ?Set_Ambient@LightClass@@QAEXABVVector3@@@Z,,0x006E7980,33,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp,matched,exact after camera shim
@@ -5128,3 +5128,32 @@ _powf,,0x00097070,14,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
 ?getTypeFromKey@DictPair@Dict@@CA?AW4DataType@2@W4DictPairKeyType@2@@Z,,0x00067CC0,10,Code/GameEngine/Source/Common/Dict.cpp,matched,
 ?getNameFromKey@DictPair@Dict@@CA?AW4NameKeyType@@W4DictPairKeyType@2@@Z,,0x00067CD0,8,Code/GameEngine/Source/Common/Dict.cpp,matched,
 ?getType@DictPair@Dict@@QBE?AW4DataType@2@XZ,,0x00067CE0,8,Code/GameEngine/Source/Common/Dict.cpp,matched,
+?Is_Really_Visible@RenderObjClass@@UAEHXZ,,0x006CF6A0,36,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 95
+?Is_Not_Hidden_At_All@RenderObjClass@@UAEHXZ,,0x006CF6D0,19,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 96
+?Is_Hidden@RenderObjClass@@UBEHXZ,,0x006CF6F0,12,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 99
+?Set_Hidden@RenderObjClass@@UAEXH@Z,,0x006CF700,33,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 100
+?Is_Animation_Hidden@RenderObjClass@@UBEHXZ,,0x006CF730,12,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 101
+?Set_Animation_Hidden@RenderObjClass@@UAEXH@Z,,0x006CF740,33,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 102
+?Is_Force_Visible@RenderObjClass@@UBEHXZ,,0x006CF770,9,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 103
+?Is_Translucent@RenderObjClass@@UBEHXZ,,0x006CF780,9,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 105
+?Set_Translucent@RenderObjClass@@UAEXH@Z,,0x006CF790,33,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 106
+?Get_Collision_Type@RenderObjClass@@UBEHXZ,,0x006CF940,12,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,vtable slot 119
+?Scale@RenderObjClass@@UAEXM@Z,,0x006CF650,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 91
+?Scale@RenderObjClass@@UAEXMMM@Z,,0x006CF660,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 90
+?Set_ObjectScale@RenderObjClass@@UAEXM@Z,,0x006CF670,10,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 92
+?Get_Sort_Level@RenderObjClass@@UBEHXZ,,0x006CF680,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 93
+?Set_Sort_Level@RenderObjClass@@UAEXH@Z,,0x006CF690,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 94
+?_bfme_ro_flag109@RenderObjClass@@UBEHXZ,,0x006CF840,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 111
+?_bfme_ro_flag111@RenderObjClass@@UBEHXZ,,0x006CF880,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 113
+?_bfme_ro_flag113@RenderObjClass@@UBEHXZ,,0x006CF8C0,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 115
+?_bfme_ro_flag115@RenderObjClass@@UBEHXZ,,0x006CF900,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 117
+?Is_Complete@RenderObjClass@@UAE_NXZ,,0x006CF950,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 121
+?Is_In_Scene@RenderObjClass@@UAE_NXZ,,0x006CF960,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 122
+?Get_Native_Screen_Size@RenderObjClass@@UBEMXZ,,0x006CF980,4,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 123
+?Set_Native_Screen_Size@RenderObjClass@@UAEXM@Z,,0x006CF990,10,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 124
+?Create_Decal@RenderObjClass@@UAEXPAVDecalGeneratorClass@@_N@Z,,0x006CF9A0,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,vtable slot 125
+?Set_Visible@RenderObjClass@@UAEXHH@Z,,0x0091F880,13,Code/Libraries/Source/WWVegas/WW3D2/rendobj.cpp,matched,out-of-line in retail; stores scene visibility token at 0x90
+?Set_Collision_Type@RenderObjClass@@UAEXH_N@Z,,0x0091FA10,102,Code/Libraries/Source/WWVegas/WW3D2/rendobj.cpp,matched,out-of-line with recursion param
+?Update_Sub_Object_Bits@RenderObjClass@@MAEXXZ,,0x0091FA80,269,Code/Libraries/Source/WWVegas/WW3D2/rendobj.cpp,matched,protected; retail body reconstructed
+?Add@?$DynamicVectorClass@VModelNodeClass@HLodClass@@@@QAE_NABVModelNodeClass@HLodClass@@@Z,,0x0097B080,107,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,template COMDAT
+?Add_Sub_Object_To_Bone@HLodClass@@UAEHPAVRenderObjClass@@HPBVVector3@@@Z,,0x0097C080,279,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,retail has Vector3 offset param

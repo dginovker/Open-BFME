@@ -433,13 +433,13 @@ RenderObjClass * RenderObjClass::Get_Container(void) const
  *   2/25/99    GTH : Created.                                                                 *
  *=============================================================================================*/
 // ?RenderObjClass::Set_Transform present-unmatched
-// BFME: clear SUBOBJ_TRANSFORMS_DIRTY (not BOUNDING_VOLUMES_VALID), then if this is a
-// top-level object (in scene, no container) notify the scene via vtable+0x38 with arg 3.
+// BFME: clear BOUNDING_VOLUMES_VALID (0x20000), then if this is a top-level
+// object (in scene, no container) notify the scene via vtable+0x38 with arg 3.
 void RenderObjClass::Set_Transform(const Matrix3D &m)
 {
 	Transform = m;
 	IsTransformIdentity=Check_Is_Transform_Identity(m);
-	Bits &= ~SUBOBJ_TRANSFORMS_DIRTY;
+	Bits &= ~BOUNDING_VOLUMES_VALID;
 	if (Scene && !Container) {
 		Scene->Register(this, (SceneClass::RegType)3);
 	}
@@ -465,7 +465,7 @@ void RenderObjClass::Set_Position(const Vector3 &v)
 {
 	Transform.Set_Translation(v);
 	IsTransformIdentity=Check_Is_Transform_Identity(Transform);
-	Bits &= ~SUBOBJ_TRANSFORMS_DIRTY;
+	Bits &= ~BOUNDING_VOLUMES_VALID;
 	if (Scene && !Container) {
 		Scene->Register(this, (SceneClass::RegType)3);
 	}
@@ -763,33 +763,71 @@ int RenderObjClass::Calculate_Cost_Value_Arrays(float screen_area, float *values
 // ?RenderObjClass::Update_Sub_Object_Bits present-unmatched
 void RenderObjClass::Update_Sub_Object_Bits(void)
 {
-	// this doesn't do anything for non-composite objects
-	if (Get_Num_Sub_Objects() == 0) return;
-	
-	// go through all of our sub-objects
-	int coltype = 0;
-	int istrans = 0;
+	// BFME retail @ 0x91FA80: with no sub-objects, fold the stored collision
+	// type back into Bits; otherwise union collision/alpha/additive/flag
+	// (0x01000000) over the sub-objects.  No translucent handling in retail.
+	if (Get_Num_Sub_Objects() == 0) {
+		Bits = (Bits & 0xFFFFF000) | _bfme_unk_14;
+		return;
+	}
+
+	int coltype = _bfme_unk_14;
 	int isalpha = 0;
 	int isadditive = 0;
+	int isflag = 0;
 
 	for (int ni = 0; ni < Get_Num_Sub_Objects(); ni++) {
 		RenderObjClass * robj = Get_Sub_Object(ni);
 		coltype |= robj->Get_Collision_Type();
-		istrans |= robj->Is_Translucent();
 		isalpha |= robj->Is_Alpha();
 		isadditive |= robj->Is_Additive();
+		isflag |= robj->_bfme_ro_flag115();
 		robj->Release_Ref();
 	}
-	
-	Set_Collision_Type(coltype);
-	Set_Translucent(istrans);	
+
+	Bits = (Bits & 0xFFFFF000) | coltype;
 	Set_Alpha(isalpha);
 	Set_Additive(isadditive);
+	_bfme_ro_flag116(isflag);
 
 	// if we are a sub-object, tell our container to do this
 	if (Container) {
 		Container->Update_Sub_Object_Bits();
 	}
+}
+
+
+/***********************************************************************************************
+ * RenderObjClass::Set_Visible -- set the object's visibility state                              *
+ *                                                                                             *
+ * BFME: retail @ 0x91F880 stores the second parameter (a scene visibility token)              *
+ * at member 0x90; the Bits test moved into Is_Visible's scene-token check.                    *
+ *=============================================================================================*/
+// ?RenderObjClass::Set_Visible present-unmatched
+void RenderObjClass::Set_Visible(int onoff, int unk)
+{
+	_bfme_unk_90 = unk;
+}
+
+
+/***********************************************************************************************
+ * RenderObjClass::Set_Collision_Type -- set the collision type bits                           *
+ *                                                                                             *
+ * BFME: retail @ 0x91FA10 stashes (type & 0xFFF) in the member at 0x14, optionally            *
+ * propagates to all sub-objects, then refreshes the merged bits.                              *
+ *=============================================================================================*/
+// ?RenderObjClass::Set_Collision_Type present-unmatched
+void RenderObjClass::Set_Collision_Type(int type, bool recurse)
+{
+	_bfme_unk_14 = type & 0xFFF;
+	if (recurse) {
+		for (int ni = 0; ni < Get_Num_Sub_Objects(); ni++) {
+			RenderObjClass * robj = Get_Sub_Object(ni);
+			robj->Set_Collision_Type(type, true);
+			robj->Release_Ref();
+		}
+	}
+	Update_Sub_Object_Bits();
 }
 
 

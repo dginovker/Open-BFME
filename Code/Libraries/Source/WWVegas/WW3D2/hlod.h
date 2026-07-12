@@ -113,10 +113,12 @@ public:
 	virtual RenderObjClass *	Peek_Lod_Model (int lod_index, int model_index) const;
 	virtual RenderObjClass *	Get_Lod_Model (int lod_index, int model_index) const;
 	virtual int						Get_Lod_Model_Bone (int lod_index, int model_index) const;
-	virtual int						Get_Additional_Model_Count(void) const;
-	virtual RenderObjClass *	Peek_Additional_Model (int model_index) const;
-	virtual RenderObjClass *	Get_Additional_Model (int model_index) const;
-	virtual int						Get_Additional_Model_Bone (int model_index) const;
+	// BFME: the four additional-model getters are NOT virtual in retail
+	// (retail HLod adds exactly 12 virtuals, slots 135-146).
+	int								Get_Additional_Model_Count(void) const;
+	RenderObjClass *				Peek_Additional_Model (int model_index) const;
+	RenderObjClass *				Get_Additional_Model (int model_index) const;
+	int								Get_Additional_Model_Bone (int model_index) const;
 	virtual void					Add_Lod_Model(int lod, RenderObjClass * robj, int boneindex);
 
 	virtual bool					Is_NULL_Lod_Included (void) const;
@@ -221,7 +223,8 @@ public:
 	virtual void					Set_Hidden(int onoff);
 
 	// (gth) TESTING DYNAMICALLY SWAPPING SKELETONS!
-	virtual void					Set_HTree(HTreeClass * htree);
+	// BFME: not virtual in retail (matches Animatable3DObjClass).
+	void							Set_HTree(HTreeClass * htree);
 
 protected:
 

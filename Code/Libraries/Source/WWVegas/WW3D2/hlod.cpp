@@ -2646,7 +2646,7 @@ int HLodClass::Add_Sub_Object_To_Bone(RenderObjClass * subobj,int boneindex, con
 	if (offset) {
 		newnode.Offset = *offset;
 	} else {
-		newnode.Offset.Set(0.0f, 0.0f, 0.0f);
+		newnode.Offset.X = newnode.Offset.Y = newnode.Offset.Z = 0.0f;
 	}
 
 	int result = AdditionalModels.Add(newnode);

@@ -1255,3 +1255,4 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
+?Add@?$DynamicVectorClass@VModelNodeClass@HLodClass@@@@QAE_NABVModelNodeClass@HLodClass@@@Z,0x0097B080,pin for HLod Add_Sub_Object_To_Bone (rel32)

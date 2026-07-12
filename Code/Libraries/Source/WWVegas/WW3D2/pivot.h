@@ -102,6 +102,7 @@ public:
 	Matrix3D					CapTransform;
 	int								Index;
 	bool							IsVisible;				// result of the visibility channel
+	float							PivotFade;				// BFME-era per-pivot scalar; retail offset 0xAC (set to 1.0f in HTreeClass::Anim_Update)
 	bool							WorldSpaceTranslation;
 	bool							IsCaptured;
 	bool							Unused;						// padding

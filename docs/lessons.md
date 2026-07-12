@@ -48,3 +48,4 @@ BFME gadget-msg enum: retail GCM_ADD_ENTRY=0x4022 (ZH 0x4020) - BFME added 2 msg
 * SEH array-ctors (e.g. DefaultAlphaModuleInfo default): C++/naked under /EHsc- cannot emit the retail SEH prologue; MSVC still prepends member-init fragments before a naked ctor body. Land exact bytes via MASM (.asm + ml.exe; build.py routes .asm to ml).
 * MASM exact-byte dumps: size = last non-0xCC byte ending in ret (C3/C2); strip trailing int3. When removing C++ body, force-emit any sibling COMDATs it was the only caller of (AABoxClass::Init, GameSpyStagingRoom setExe/IniCRC).
 * MASM dump sizes: clamp true size to next claimed ledger RVA (drift report can oversize into a neighbor; setGameOptions 1997→383). Prefer last C2/C3 before 0xCC.
+* MASM db immediates that start with A-F need a leading 0 (`0C1h` not `C1h`) or ml.exe treats them as symbols (A2006).

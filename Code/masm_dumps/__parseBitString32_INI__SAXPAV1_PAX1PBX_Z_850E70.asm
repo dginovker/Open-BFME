@@ -1,0 +1,49 @@
+.386
+.model flat
+
+; ?parseBitString32@INI@@SAXPAV1@PAX1PBX@Z
+; Retail @ 0x00850E70 size 297
+_TEXT SEGMENT
+public ?parseBitString32@INI@@SAXPAV1@PAX1PBX@Z
+?parseBitString32@INI@@SAXPAV1@PAX1PBX@Z PROC
+    db 83h,0ECh,08h,55h,8Bh,6Ch,24h,1Ch
+    db 85h,0EDh,0Fh,84h,0A5h,01h,00h,00h
+    db 83h,7Dh,00h,00h,0Fh,84h,9Bh,01h
+    db 00h,00h,8Bh,44h,24h,10h,8Bh,80h
+    db 14h,04h,00h,00h,53h,56h,50h,6Ah
+    db 00h,0C6h,44h,24h,2Ch,00h,32h,0DBh
+    db 0FFh,15h,0D8h,94h,35h,01h,8Bh,0F0h
+    db 83h,0C4h,08h,85h,0F6h,0Fh,84h,0C5h
+    db 00h,00h,00h,57h,8Bh,7Ch,24h,24h
+    db 0EBh,06h,8Dh,9Bh,00h,00h,00h,00h
+    db 68h,0D8h,36h,07h,01h,56h,0FFh,15h
+    db 3Ch,93h,35h,01h,83h,0C4h,08h,85h
+    db 0C0h,0Fh,84h,0A8h,00h,00h,00h,8Ah
+    db 06h,3Ch,2Bh,75h,18h,8Ah,44h,24h
+    db 28h,84h,0C0h,0Fh,85h,0D3h,00h,00h
+    db 00h,46h,55h,56h,0E8h,0EFh,0FAh,0FFh
+    db 0FFh,0B3h,01h,0EBh,50h,3Ch,2Dh,75h
+    db 2Ah,8Ah,44h,24h,28h,84h,0C0h,0Fh
+    db 85h,0DAh,00h,00h,00h,55h,46h,56h
+    db 0E8h,0D3h,0FAh,0FFh,0FFh,8Bh,0C8h,8Bh
+    db 07h,0BAh,01h,00h,00h,00h,0D3h,0E2h
+    db 83h,0C4h,08h,0B3h,01h,0F7h,0D2h,23h
+    db 0C2h,0EBh,32h,84h,0DBh,0Fh,85h,0D7h
+    db 00h,00h,00h,8Ah,44h,24h,28h,84h
+    db 0C0h,75h,06h,0C7h,07h,00h,00h,00h
+    db 00h,55h,56h,0E8h,0A0h,0FAh,0FFh,0FFh
+    db 0C6h,44h,24h,30h,01h,8Bh,0C8h,8Bh
+    db 07h,0BAh,01h,00h,00h,00h,0D3h,0E2h
+    db 83h,0C4h,08h,0Bh,0C2h,89h,07h,8Bh
+    db 44h,24h,1Ch,8Bh,80h,14h,04h,00h
+    db 00h,50h,6Ah,00h,0FFh,15h,0D8h,94h
+    db 35h,01h,8Bh,0F0h,83h,0C4h,08h,85h
+    db 0F6h,0Fh,85h,49h,0FFh,0FFh,0FFh,5Fh
+    db 5Eh,5Bh,5Dh,83h,0C4h,08h,0C3h,8Ah
+    db 44h,24h,28h,84h,0C0h,75h,12h,84h
+    db 0DBh,75h,0Eh,0C7h,07h,00h,00h,00h
+    db 00h,5Fh,5Eh,5Bh,5Dh,83h,0C4h,08h
+    db 0C3h
+?parseBitString32@INI@@SAXPAV1@PAX1PBX@Z ENDP
+_TEXT ENDS
+END

@@ -1,0 +1,78 @@
+.386
+.model flat
+
+; ?Build_Textures@Render2DSentenceClass@@AAEXXZ
+; Retail @ 0x0093DD60 size 530
+_TEXT SEGMENT
+public ?Build_Textures@Render2DSentenceClass@@AAEXXZ
+?Build_Textures@Render2DSentenceClass@@AAEXXZ PROC
+    db 6Ah,0FFh,68h,0F8h,0D5h,05h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,83h,0ECh,24h
+    db 53h,56h,8Bh,0F1h,8Bh,86h,0B0h,00h
+    db 00h,00h,33h,0DBh,3Bh,0C3h,57h,89h
+    db 74h,24h,18h,74h,0Eh,8Dh,4Eh,7Ch
+    db 0E8h,3Bh,0EAh,0FBh,0FFh,89h,9Eh,0B0h
+    db 00h,00h,00h,8Bh,46h,7Ch,3Bh,0C3h
+    db 74h,09h,8Bh,08h,50h,0FFh,51h,08h
+    db 89h,5Eh,7Ch,89h,5Eh,68h,89h,5Eh
+    db 6Ch,39h,5Eh,2Ch,89h,5Eh,70h,89h
+    db 5Ch,24h,20h,0Fh,8Eh,9Fh,01h,00h
+    db 00h,55h,89h,5Ch,24h,18h,8Bh,76h
+    db 20h,8Bh,54h,24h,18h,8Bh,04h,16h
+    db 03h,0F2h,3Bh,0C3h,89h,44h,24h,14h
+    db 74h,06h,8Bh,10h,50h,0FFh,52h,04h
+    db 8Dh,44h,24h,28h,50h,8Dh,4Ch,24h
+    db 18h,89h,5Ch,24h,40h,0E8h,0CEh,0E7h
+    db 0FBh,0FFh,89h,5Ch,24h,10h,8Bh,4Ch
+    db 24h,28h,8Bh,44h,24h,2Ch,53h,53h
+    db 0BFh,01h,00h,00h,00h,57h,51h,50h
+    db 50h,8Dh,4Ch,24h,28h,0C6h,44h,24h
+    db 54h,01h,0E8h,0A9h,0FDh,0FCh,0FFh,8Dh
+    db 54h,24h,20h,52h,8Dh,4Ch,24h,14h
+    db 0E8h,4Bh,08h,0FDh,0FFh,8Dh,4Ch,24h
+    db 10h,0C6h,44h,24h,3Ch,02h,0E8h,1Dh
+    db 0FFh,0FCh,0FFh,8Dh,4Ch,24h,10h,89h
+    db 78h,0Ch,0E8h,11h,0FFh,0FCh,0FFh,8Dh
+    db 4Ch,24h,10h,89h,78h,10h,0E8h,05h
+    db 0FFh,0FCh,0FFh,8Dh,4Ch,24h,10h,0C7h
+    db 00h,02h,00h,00h,00h,0E8h,0F6h,0FEh
+    db 0FCh,0FFh,6Ah,02h,8Dh,4Ch,24h,14h
+    db 0C7h,40h,04h,02h,00h,00h,00h,0E8h
+    db 0E4h,0FEh,0FCh,0FFh,8Bh,0C8h,0E8h,0EDh
+    db 2Bh,0FEh,0FFh,8Bh,54h,24h,20h,0A1h
+    db 34h,05h,34h,01h,8Bh,08h,53h,52h
+    db 8Bh,54h,24h,1Ch,53h,52h,50h,0FFh
+    db 51h,78h,0FFh,05h,94h,05h,34h,01h
+    db 8Bh,46h,14h,33h,0EDh,3Bh,0C3h,8Bh
+    db 44h,24h,10h,7Eh,42h,8Dh,49h,00h
+    db 8Bh,4Eh,08h,8Bh,3Ch,0A9h,3Bh,47h
+    db 4Ch,74h,2Ch,3Bh,0C3h,74h,08h,66h
+    db 0FFh,40h,04h,8Bh,44h,24h,10h,8Bh
+    db 4Fh,4Ch,3Bh,0CBh,74h,09h,0E8h,0DDh
+    db 0D8h,0Ah,00h,8Bh,44h,24h,10h,8Bh
+    db 0D0h,0F7h,0DAh,89h,47h,4Ch,1Bh,0D2h
+    db 89h,57h,50h,8Bh,44h,24h,10h,8Bh
+    db 4Eh,14h,45h,3Bh,0E9h,7Ch,0C1h,3Bh
+    db 0C3h,74h,0Bh,8Bh,0C8h,0E8h,0B6h,0D8h
+    db 0Ah,00h,89h,5Ch,24h,10h,8Dh,4Ch
+    db 24h,20h,0C6h,44h,24h,3Ch,01h,0E8h
+    db 0B4h,0E6h,0FBh,0FFh,8Bh,4Ch,24h,10h
+    db 3Bh,0CBh,88h,5Ch,24h,3Ch,74h,05h
+    db 0E8h,93h,0D8h,0Ah,00h,8Dh,4Ch,24h
+    db 14h,0C7h,44h,24h,3Ch,0FFh,0FFh,0FFh
+    db 0FFh,0E8h,92h,0E6h,0FBh,0FFh,8Bh,44h
+    db 24h,24h,8Bh,74h,24h,18h,8Bh,4Ch
+    db 24h,1Ch,8Bh,51h,2Ch,83h,0C6h,1Ch
+    db 40h,3Bh,0C2h,89h,74h,24h,18h,89h
+    db 44h,24h,24h,8Bh,0F1h,0Fh,8Ch,83h
+    db 0FEh,0FFh,0FFh,39h,5Eh,2Ch,5Dh,7Eh
+    db 17h,8Bh,56h,1Ch,8Bh,7Eh,24h,83h
+    db 0C6h,1Ch,8Bh,0CEh,0FFh,52h,0Ch,8Bh
+    db 06h,53h,57h,8Bh,0CEh,0FFh,50h,08h
+    db 8Bh,4Ch,24h,30h,5Fh,5Eh,5Bh,64h
+    db 89h,0Dh,00h,00h,00h,00h,83h,0C4h
+    db 30h,0C3h
+?Build_Textures@Render2DSentenceClass@@AAEXXZ ENDP
+_TEXT ENDS
+END

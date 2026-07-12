@@ -1,0 +1,93 @@
+.386
+.model flat
+
+; ??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameW
+; Retail @ 0x00483620 size 652
+_TEXT SEGMENT
+public ??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameW
+??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameW PROC
+    db 53h,8Bh,5Ch,24h,10h,56h,8Bh,74h
+    db 24h,10h,3Bh,0F3h,57h,74h,2Dh,8Bh
+    db 7Ch,24h,10h,6Ah,0Ch,0E8h,06h,0AFh
+    db 3Ah,00h,8Dh,48h,08h,83h,0C4h,04h
+    db 85h,0C9h,74h,05h,8Bh,56h,08h,89h
+    db 11h,8Bh,4Fh,04h,89h,38h,89h,48h
+    db 04h,89h,01h,89h,47h,04h,8Bh,36h
+    db 3Bh,0F3h,75h,0D7h,5Fh,5Eh,5Bh,0C2h
+    db 10h,00h,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 53h,8Bh,5Ch,24h,10h,56h,8Bh,74h
+    db 24h,0Ch,8Bh,06h,57h,8Bh,7Ch,24h
+    db 1Ch,50h,53h,0FFh,0D7h,8Bh,4Ch,24h
+    db 1Ch,83h,0C4h,08h,84h,0C0h,74h,1Fh
+    db 8Bh,0C1h,2Bh,0C6h,85h,0C0h,7Eh,11h
+    db 50h,2Bh,0C8h,83h,0C1h,04h,56h,51h
+    db 0FFh,15h,5Ch,94h,35h,01h,83h,0C4h
+    db 0Ch,5Fh,89h,1Eh,5Eh,5Bh,0C3h,57h
+    db 53h,51h,0E8h,0B4h,3Bh,0BCh,0FFh,83h
+    db 0C4h,0Ch,5Fh,5Eh,5Bh,0C3h,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,44h,24h,0Ch,8Bh,4Ch,24h,08h
+    db 8Bh,54h,24h,04h,6Ah,00h,6Ah,00h
+    db 50h,51h,52h,0E8h,7Ch,17h,0B9h,0FFh
+    db 83h,0C4h,14h,0C3h,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 8Bh,4Ch,24h,04h,8Bh,44h,24h,08h
+    db 8Bh,50h,0FCh,56h,8Bh,31h,89h,70h
+    db 0FCh,8Bh,74h,24h,10h,2Bh,0C1h,56h
+    db 52h,83h,0E8h,04h,0C1h,0F8h,02h,50h
+    db 6Ah,00h,51h,0E8h,0F5h,0F1h,0BBh,0FFh
+    db 83h,0C4h,14h,5Eh,0C3h,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 6Ah,0FFh,68h,0F8h,68h,02h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,56h,8Bh
+    db 0F1h,57h,89h,74h,24h,08h,0E8h,0ADh
+    db 0E2h,51h,00h,33h,0FFh,0C7h,06h,60h
+    db 8Bh,0Fh,01h,6Ah,0Ch,89h,7Ch,24h
+    db 18h,89h,7Eh,2Ch,0E8h,0A7h,0ADh,3Ah
+    db 00h,8Bh,4Ch,24h,10h,89h,00h,89h
+    db 40h,04h,89h,46h,2Ch,83h,0C4h,04h
+    db 89h,7Eh,08h,89h,7Eh,0Ch,89h,7Eh
+    db 10h,89h,7Eh,14h,89h,7Eh,18h,89h
+    db 7Eh,1Ch,89h,7Eh,20h,89h,7Eh,24h
+    db 89h,7Eh,28h,89h,7Eh,30h,89h,7Eh
+    db 34h,0C7h,46h,38h,0FFh,0FFh,0FFh,0FFh
+    db 5Fh,8Bh,0C6h,5Eh,64h,89h,0Dh,00h
+    db 00h,00h,00h,83h,0C4h,10h,0C3h,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 33h,0C0h,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 6Ah,0FFh,68h,23h,69h,02h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,56h,8Bh
+    db 0F1h,89h,74h,24h,04h,0C7h,06h,60h
+    db 8Bh,0Fh,01h,8Bh,46h,08h,85h,0C0h
+    db 0C7h,44h,24h,10h,01h,00h,00h,00h
+    db 74h,16h,57h,8Bh,16h,8Bh,0B8h,0F8h
+    db 01h,00h,00h,50h,8Bh,0CEh,0FFh,52h
+    db 78h,85h,0FFh,8Bh,0C7h,75h,0ECh,5Fh
+    db 8Bh,0CEh,0E8h,0EBh,0CCh,0B9h,0FFh,8Bh
+    db 0CEh,0E8h,18h,0D3h,0BBh,0FFh,8Bh,0Dh
+    db 30h,33h,2Fh,01h,85h,0C9h,74h,06h
+    db 8Bh,01h,6Ah,01h,0FFh,10h,8Dh,4Eh
+    db 2Ch,0C7h,05h,30h,33h,2Fh,01h,00h
+    db 00h,00h,00h,0C6h,44h,24h,10h,00h
+    db 0E8h,0EBh,0C9h,0BBh,0FFh,8Bh,0CEh,0C7h
+    db 44h,24h,10h,0FFh,0FFh,0FFh,0FFh,0E8h
+    db 0A4h,0E1h,51h,00h,8Bh,4Ch,24h,08h
+    db 5Eh,64h,89h,0Dh,00h,00h,00h,00h
+    db 83h,0C4h,10h,0C3h
+??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameW ENDP
+_TEXT ENDS
+END

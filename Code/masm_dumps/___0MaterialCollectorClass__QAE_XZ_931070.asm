@@ -1,0 +1,65 @@
+.386
+.model flat
+
+; ??0MaterialCollectorClass@@QAE@XZ
+; Retail @ 0x00931070 size 430
+_TEXT SEGMENT
+public ??0MaterialCollectorClass@@QAE@XZ
+??0MaterialCollectorClass@@QAE@XZ PROC
+    db 6Ah,0FFh,68h,0F3h,0CEh,05h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,53h,56h
+    db 57h,33h,0DBh,53h,8Bh,0F1h,53h,89h
+    db 74h,24h,14h,0E8h,38h,0F5h,0FFh,0FFh
+    db 0C7h,06h,44h,0C6h,13h,01h,0C7h,46h
+    db 14h,0Ah,00h,00h,00h,89h,5Eh,10h
+    db 0B0h,01h,89h,5Ch,24h,18h,89h,5Eh
+    db 1Ch,89h,5Eh,20h,88h,46h,24h,88h
+    db 5Eh,25h,0C7h,46h,18h,14h,0C6h,13h
+    db 01h,0C7h,46h,2Ch,0Ah,00h,00h,00h
+    db 89h,5Eh,28h,53h,8Dh,7Eh,30h,53h
+    db 8Bh,0CFh,88h,44h,24h,20h,0E8h,0C5h
+    db 0EAh,0FFh,0FFh,8Bh,4Ch,24h,10h,89h
+    db 5Fh,10h,0C7h,07h,2Ch,0C6h,13h,01h
+    db 0C7h,47h,14h,0Ah,00h,00h,00h,0C7h
+    db 46h,48h,1Bh,44h,10h,00h,89h,5Eh
+    db 50h,89h,5Eh,4Ch,5Fh,0C7h,46h,48h
+    db 0FFh,0FFh,0FFh,0FFh,8Bh,0C6h,5Eh,5Bh
+    db 64h,89h,0Dh,00h,00h,00h,00h,83h
+    db 0C4h,10h,0C3h,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 6Ah,0FFh,68h,29h,0CFh,05h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,53h,56h
+    db 8Bh,0F1h,89h,74h,24h,08h,0C7h,44h
+    db 24h,14h,03h,00h,00h,00h,0E8h,65h
+    db 0E3h,0FFh,0FFh,8Bh,4Eh,50h,33h,0DBh
+    db 3Bh,0CBh,0C6h,44h,24h,14h,02h,74h
+    db 05h,0E8h,42h,0A6h,0Bh,00h,8Bh,46h
+    db 34h,3Bh,0C3h,0C6h,44h,24h,14h,01h
+    db 0C7h,46h,30h,0FCh,0C5h,13h,01h,74h
+    db 27h,38h,5Eh,3Dh,74h,22h,8Bh,48h
+    db 0FCh,57h,8Dh,78h,0FCh,68h,52h,06h
+    db 43h,00h,51h,6Ah,04h,50h,0E8h,0EBh
+    db 5Bh,0Ch,00h,57h,0E8h,5Fh,0Dh,0F5h
+    db 0FFh,83h,0C4h,04h,89h,5Eh,34h,5Fh
+    db 88h,5Eh,3Dh,89h,5Eh,38h,8Bh,46h
+    db 1Ch,3Bh,0C3h,0C7h,46h,18h,0CCh,0C5h
+    db 13h,01h,74h,11h,38h,5Eh,25h,74h
+    db 0Ch,50h,0E8h,39h,0Dh,0F5h,0FFh,83h
+    db 0C4h,04h,89h,5Eh,1Ch,88h,5Eh,25h
+    db 89h,5Eh,20h,8Bh,46h,04h,3Bh,0C3h
+    db 0C7h,06h,0E4h,0C5h,13h,01h,74h,11h
+    db 38h,5Eh,0Dh,74h,0Ch,50h,0E8h,15h
+    db 0Dh,0F5h,0FFh,83h,0C4h,04h,89h,5Eh
+    db 04h,8Bh,4Ch,24h,0Ch,88h,5Eh,0Dh
+    db 89h,5Eh,08h,5Eh,5Bh,64h,89h,0Dh
+    db 00h,00h,00h,00h,83h,0C4h,10h,0C3h
+    db 0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh,0CCh
+    db 56h,8Bh,0F1h,0E8h,0A8h,0FBh,0FFh,0FFh
+    db 0F6h,44h,24h,08h,01h,74h,09h,56h
+    db 0E8h,9Bh,0Ch,0F5h,0FFh,83h,0C4h,04h
+    db 8Bh,0C6h,5Eh,0C2h,04h,00h
+??0MaterialCollectorClass@@QAE@XZ ENDP
+_TEXT ENDS
+END

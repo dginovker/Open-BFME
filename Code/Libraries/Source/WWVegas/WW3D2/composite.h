@@ -77,7 +77,7 @@ public:
 	virtual bool					Intersect_AABox(AABoxIntersectionTestClass & boxtest);
 	virtual bool					Intersect_OBBox(OBBoxIntersectionTestClass & boxtest);
 
-	virtual void					Create_Decal(DecalGeneratorClass * generator);
+	virtual void					Create_Decal(DecalGeneratorClass * generator, bool unk = false);
 	virtual void					Delete_Decal(uint32 decal_id);
 
 	virtual void					Get_Obj_Space_Bounding_Sphere(SphereClass	& sphere) const { sphere = ObjSphere; }

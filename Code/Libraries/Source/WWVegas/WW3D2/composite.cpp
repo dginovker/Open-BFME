@@ -442,7 +442,7 @@ bool CompositeRenderObjClass::Intersect_OBBox(OBBoxIntersectionTestClass & boxte
  *   1/26/00    gth : Created.                                                                 *
  *=============================================================================================*/
 // ?CompositeRenderObjClass::Create_Decal present-unmatched
-void CompositeRenderObjClass::Create_Decal(DecalGeneratorClass * generator)
+void CompositeRenderObjClass::Create_Decal(DecalGeneratorClass * generator, bool unk)
 {
 	for (int i=0; i<Get_Num_Sub_Objects(); i++) {
 		RenderObjClass * robj = Get_Sub_Object(i);

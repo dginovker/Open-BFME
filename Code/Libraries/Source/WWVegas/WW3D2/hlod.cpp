@@ -2621,7 +2621,7 @@ int HLodClass::Get_Sub_Object_Bone_Index(int LodIndex, int ModelIndex)	const
  *   1/26/00    gth : Created.                                                                 *
  *=============================================================================================*/
 // ?HLodClass::Add_Sub_Object_To_Bone present-unmatched
-int HLodClass::Add_Sub_Object_To_Bone(RenderObjClass * subobj,int boneindex)
+int HLodClass::Add_Sub_Object_To_Bone(RenderObjClass * subobj,int boneindex, bool unk)
 {
 	WWASSERT(subobj);
 	if ((boneindex < 0) || (boneindex >= HTree->Num_Pivots())) return 0;
@@ -3644,7 +3644,7 @@ void HLodClass::Add_Lod_Model(int lod, RenderObjClass * robj, int boneindex)
  *   1/26/00    gth : Created.                                                                 *
  *=============================================================================================*/
 // ?HLodClass::Create_Decal present-unmatched
-void HLodClass::Create_Decal(DecalGeneratorClass * generator)
+void HLodClass::Create_Decal(DecalGeneratorClass * generator, bool unk)
 {
 	for (int lod=0; lod<LodCount; lod++) {
 		for (int model=0; model<Lod[lod].Count(); model++) {

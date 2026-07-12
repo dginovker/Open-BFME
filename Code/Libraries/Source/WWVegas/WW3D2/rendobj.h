@@ -26,8 +26,8 @@
  *                                                                                             *
  *                   Org Author:: Greg Hjelstrom                                               *
  *                                                                                             *
- *                       Author : Kenny Mitchell                                               * 
- *                                                                                             * 
+ *                       Author : Kenny Mitchell                                               *
+ *                                                                                             *
  *                     $Modtime:: 06/27/02 9:23a                                              $*
  *                                                                                             *
  *                    $Revision:: 14                                                          $*
@@ -82,7 +82,7 @@ class RenderObjProxyClass;
 class StringClass;
 template<class T> class DynamicVectorClass;
 
-// "unreferenced formal parameter" 
+// "unreferenced formal parameter"
 #pragma warning(disable : 4100)
 
 #ifdef DEFINE_W3DANIMMODE_NAMES
@@ -102,7 +102,7 @@ static const char* TheAnimModeNames[] =
 //////////////////////////////////////////////////////////////////////////////////
 // RenderObjClass
 // This is the interface for all objects that get rendered by WW3D.
-// 
+//
 // Render object RTTI:  If you really need to typecast a render object
 //		pointer that you got from the asset manager, the class id mechanism
 //		can be used to check what you really have.  User class id's can come
@@ -128,14 +128,14 @@ static const char* TheAnimModeNames[] =
 //	VertexProcessors: Vertex processors are classes that are not actually 'rendered'
 //		They insert into the system an object that performs operations on all of
 //		the subsequent vertices that are processed.  Lights and Fogs are types of
-//		vertex processors.  
+//		vertex processors.
 //
-// "Scene Graph": A scene is organized as a list of render objects.  There is no 
-//		implied hierarchical structure to a scene.  RenderObjects can contain other 
+// "Scene Graph": A scene is organized as a list of render objects.  There is no
+//		implied hierarchical structure to a scene.  RenderObjects can contain other
 //		render objects (they follow the 'Composite' pattern) which is how hierarchical
 //		objects are built.  Hierarchical models are render objects that just
 //		contain other render objects and apply hierarchical transforms to them.
-//		Hierarchical Models can be inserted inside of other hierarchical models.   
+//		Hierarchical Models can be inserted inside of other hierarchical models.
 //
 //	Predictive LOD: The predictive LOD system selects LODs for the visible objects
 //		so that the various resources (polys, vertices, etc.) do not pass given
@@ -171,6 +171,21 @@ private:
 // RenderObjClass definition
 // BFME drift: retail RenderObjClass has only TWO vtable-bearing bases (the dtor
 // resets vtbls at +0 and +8 only) — PersistClass was dropped from the hierarchy.
+//
+// The virtual interface below is reconciled slot-by-slot against the retail
+// lotrbfme.exe RenderObjClass vtable (128 own virtuals). Deviations from ZH:
+//  - new unidentified slots (_bfme_ro_*) where retail has extra virtuals;
+//  - Special_Render / Cast_AABox / Cast_OBBox / Intersect_AABox /
+//    Build_Dependency_List / Build_Texture_List / Get_Factory / Save / Load
+//    are not in the retail vtable — kept as non-virtual so ZH-derived sources
+//    still compile (retail callers of these were rewritten in BFME);
+//  - overload order differs from ZH for Get_Sub_Object_Bone_Index,
+//    Add_Sub_Object_To_Bone, Remove_Sub_Objects_From_Bone and Set_Animation;
+//  - Add_Sub_Object_To_Bone / Set_Visible / Create_Decal have extra trailing
+//    parameters in retail (defaulted here so ZH call sites still compile);
+//  - Cast_Ray (slot 57) is pinned by SegmentedLineClass's only override and
+//    Intersect_Sphere(_Quick) by the IntersectionClass::Intersect_Sphere calls
+//    inside their retail bodies.
 class RenderObjClass : public RefCountClass , public MultiListObjectClass
 {
 public:
@@ -179,14 +194,14 @@ public:
  	//User_Data to signal that it points at custom mesh material settings.
 	//Added for 'Generals' - MW
  	enum	{USER_DATA_MATERIAL_OVERRIDE = 0x01234567};
- 
+
  	//This strucutre is used to pass custom rendering parameters into the W3D
  	//mesh renderer so it can override settings which are usually shared across
  	//all instances of a model - typically material settings like alpha, texture
- 	//animation, texture uv scrolling, etc.  Added for 'Generals' -MW 
+ 	//animation, texture uv scrolling, etc.  Added for 'Generals' -MW
  	struct Material_Override
  	{	Material_Override(void)	: Struct_ID(USER_DATA_MATERIAL_OVERRIDE),customUVOffset(0,0) {}
- 
+
  		int Struct_ID;	//ID used to identify this structure from a pointer to it.
  		Vector2 customUVOffset;
  	};
@@ -195,7 +210,7 @@ public:
 	//	Note:  It is very important that these values NEVER CHANGE.  That means
 	//	when adding a new class id, it should be added to the end of the enum.
 	//
-	enum 
+	enum
 	{
 		CLASSID_UNKNOWN	= 0xFFFFFFFF,
 		CLASSID_MESH		= 0,
@@ -211,7 +226,7 @@ public:
 		CLASSID_DYNASCREENMESH,
 		CLASSID_TEXTDRAW,
 		CLASSID_FOG,
-		CLASSID_LAYERFOG,		
+		CLASSID_LAYERFOG,
 		CLASSID_LIGHT,
 		CLASSID_PARTICLEEMITTER,
 		CLASSID_PARTICLEBUFFER,
@@ -247,13 +262,21 @@ public:
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Cloning and Identification
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	virtual RenderObjClass *	Clone(void) const																= 0;		
+	virtual RenderObjClass *	Clone(void) const																= 0;
 	virtual int						Class_ID(void)	const															{ return CLASSID_UNKNOWN; }
+	// BFME: two unidentified retail slots between Class_ID and Get_Name
+	// (MeshClass overrides both, 0x92C720/0x92C710).
+	virtual int						_bfme_ro_v2(void) const													{ return 0; }
+	virtual int						_bfme_ro_v3(void) const													{ return 0; }
 	virtual const char *			Get_Name(void) const															{ return "UNNAMED"; }
 	virtual void					Set_Name(const char * name)												{ }
 	virtual const char *			Get_Base_Model_Name (void) const											{ return NULL; }
 	virtual void					Set_Base_Model_Name (const char *name)									{ }
 	virtual int						Get_Num_Polys(void) const													{ return 0; }
+	// BFME: unidentified retail slot after Get_Num_Polys (MeshClass override
+	// 0x92D0B0 carries the ?Get_Num_Polys@MeshClass symbol; retail Get_Cost
+	// dispatches the slot before it).
+	virtual int						_bfme_ro_v9(void) const													{ return 0; }
 
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -261,24 +284,28 @@ public:
 	//
 	// Render - this object should render its polygons.  Typically called from a SceneClass
 	// Special_Render - all special-case rendering goes here to avoid polluting the main render pipe (e.g. VIS)
-	// On_Frame_Update - render objects can register for an On_Frame_Update call; the scene will call this once 
+	// On_Frame_Update - render objects can register for an On_Frame_Update call; the scene will call this once
 	//                   per frame if they do so.
 	// Restart - This interface is used to facilitate model recycling.  If a render object is "Restarted" it should
-	//           put itself back into a state as if it has never been rendered (e.g. particle emitters 
+	//           put itself back into a state as if it has never been rendered (e.g. particle emitters
 	//           should reset their "emitted particle counts" so they can be re-used.)
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	virtual void					Render(RenderInfoClass & rinfo)											= 0;
-	virtual void					Special_Render(SpecialRenderInfoClass & rinfo)						{ }
 	virtual void					On_Frame_Update() 														{ }
-	virtual void					Restart(void)																	{ }	
+	virtual void					Restart(void)																	{ }
+
+	// BFME: Special_Render is not in the retail RenderObjClass vtable (slots for
+	// On_Frame_Update/Restart are arg-less).  Kept non-virtual so ZH-derived
+	// subclasses and their recursive calls (hlod.cpp) still compile.
+	void								Special_Render(SpecialRenderInfoClass & rinfo)						{ }
 
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - "Scene Graph"
-	// Some of the functions in this group are non-virtual as they are meant 
-	// to be never overriden or are supposed to be implemented in terms of 
+	// Some of the functions in this group are non-virtual as they are meant
+	// to be never overriden or are supposed to be implemented in terms of
 	// the other virtual functions.  We want to keep the virtual interface
-	// as small as possible 
+	// as small as possible
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	virtual void					Add(SceneClass * scene);
 	virtual void					Remove(void);
@@ -305,10 +332,14 @@ public:
 	bool								Is_Transform_Identity_No_Validity_Check() const;
 	Vector3							Get_Position(void) const;
 
+	// BFME: unidentified retail float get/set pair on member 0x98.
+	virtual void					_bfme_ro_set_98(float v)													{ _bfme_unk_98 = v; }
+	virtual float					_bfme_ro_get_98(void) const												{ return _bfme_unk_98; }
+
 	virtual void					Notify_Added(SceneClass * scene);
 	virtual void					Notify_Removed(SceneClass * scene);
 
-	virtual int						Get_Num_Sub_Objects(void) const											{ return 0; } 					
+	virtual int						Get_Num_Sub_Objects(void) const											{ return 0; }
 	virtual RenderObjClass *	Get_Sub_Object(int index) const											{ return NULL; }
 	virtual int						Add_Sub_Object(RenderObjClass * subobj)								{ return 0; }
 	virtual int						Remove_Sub_Object(RenderObjClass * robj)								{ return 0; }
@@ -316,12 +347,17 @@ public:
 
 	virtual int						Get_Num_Sub_Objects_On_Bone(int boneindex) const					{ return 0; }
 	virtual RenderObjClass *	Get_Sub_Object_On_Bone(int index,int boneindex)	const				{ return NULL; }
-	virtual int						Get_Sub_Object_Bone_Index(RenderObjClass * subobj)	const 		{ return 0; }
+	// BFME: retail has the two Get_Sub_Object_Bone_Index overloads swapped vs ZH.
 	virtual int						Get_Sub_Object_Bone_Index(int LodIndex, int ModelIndex)	const 		{ return 0; }
-	virtual int						Add_Sub_Object_To_Bone(RenderObjClass * subobj,int bone_index)	{ return 0; }
-	virtual int						Add_Sub_Object_To_Bone(RenderObjClass * subobj,const char * bname);
-	virtual int						Remove_Sub_Objects_From_Bone(int boneindex);
+	virtual int						Get_Sub_Object_Bone_Index(RenderObjClass * subobj)	const 		{ return 0; }
+	// BFME: retail Add_Sub_Object_To_Bone takes a third parameter (defaulted
+	// here for ZH call sites) and the (const char *) overload precedes the
+	// (int) overload.
+	virtual int						Add_Sub_Object_To_Bone(RenderObjClass * subobj,const char * bname, bool unk = false);
+	virtual int						Add_Sub_Object_To_Bone(RenderObjClass * subobj,int bone_index, bool unk = false)	{ return 0; }
+	// BFME: retail Remove_Sub_Objects_From_Bone overloads are swapped vs ZH.
 	virtual int						Remove_Sub_Objects_From_Bone(const char * bname);
+	virtual int						Remove_Sub_Objects_From_Bone(int boneindex);
 
 	// This is public only so objects can recursively call this on their sub-objects
 	virtual void					Update_Sub_Object_Transforms(void);
@@ -330,7 +366,7 @@ public:
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Hierarchical Animation
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	enum AnimMode 
+	enum AnimMode
 	{
 		ANIM_MODE_MANUAL		= 0,
 		ANIM_MODE_LOOP,
@@ -340,30 +376,34 @@ public:
 		ANIM_MODE_ONCE_BACKWARDS,
 	};
 
+	// BFME: retail Set_Animation overload order is (void), (combo), (5-arg),
+	// (motion,frame,mode) — reversed vs ZH after the no-arg version.
 	virtual void					Set_Animation( void )														{ }
-	virtual void					Set_Animation( HAnimClass * motion,
-															float frame, int anim_mode = ANIM_MODE_MANUAL)	{ }
+	virtual void					Set_Animation( HAnimComboClass * anim_combo)							{ }
 	virtual void					Set_Animation( HAnimClass * motion0,
 															float frame0,
 															HAnimClass * motion1,
 															float frame1,
 															float percentage)											{ }
-	virtual void					Set_Animation( HAnimComboClass * anim_combo)							{ }
+	virtual void					Set_Animation( HAnimClass * motion,
+															float frame, int anim_mode = ANIM_MODE_MANUAL)	{ }
 
 	virtual HAnimClass *			Peek_Animation( void )														{ return NULL; }
 	virtual int						Get_Num_Bones(void)															{ return 0; }
+	// BFME: unidentified retail slot between Get_Num_Bones and Get_Bone_Name.
+	virtual int						_bfme_ro_v45(void) const													{ return 0; }
 	virtual const char *			Get_Bone_Name(int bone_index)												{ return NULL; }
 	virtual int						Get_Bone_Index(const char * bonename)									{ return 0; }
 	virtual const Matrix3D &	Get_Bone_Transform(const char * bonename)    						{ return Get_Transform(); }
 	virtual const Matrix3D &	Get_Bone_Transform(int boneindex)      								{ return Get_Transform(); }
+	// BFME: unidentified retail slot before Capture_Bone (stub returns true).
+	virtual bool					_bfme_ro_v50(int unk)														{ return true; }
 	virtual void					Capture_Bone(int bindex)													{ }
-	
-
 	virtual void					Release_Bone(int bindex)													{ }
 	virtual bool					Is_Bone_Captured(int bindex) const										{ return false; }
 	virtual void					Control_Bone(int bindex,const Matrix3D & objtm,bool world_space_translation = false)						{ }
 	virtual const HTreeClass *	Get_HTree(void) const														{ return NULL; }
-	
+
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Collision Detection
 	// Cast_Ray - intersects a ray with the render object
@@ -375,16 +415,21 @@ public:
 	// Intersect_Sphere - tests a ray for intersection with the bounding spheres
 	// Intersect_Sphere_Quick - tests a ray for intersection with bounding spheres
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// BFME: unidentified retail slot before Cast_Ray.
+	virtual void					_bfme_ro_v56(int unk)														{ }
 	virtual bool					Cast_Ray(RayCollisionTestClass & raytest)								{ return false; }
-	virtual bool					Cast_AABox(AABoxCollisionTestClass & boxtest)						{ return false; }
-	virtual bool					Cast_OBBox(OBBoxCollisionTestClass & boxtest)						{ return false; }
-	
-	virtual bool					Intersect_AABox(AABoxIntersectionTestClass & boxtest)				{ return false; }
+	// BFME: retail keeps only Intersect_OBBox virtual here (MeshClass override
+	// 0x92DCF0 reads CollisionType at arg+0, the IntersectionTestClass layout);
+	// Cast_AABox / Cast_OBBox / Intersect_AABox are not in the retail vtable —
+	// kept non-virtual so ZH-derived sources still compile.
 	virtual bool					Intersect_OBBox(OBBoxIntersectionTestClass & boxtest)				{ return false; }
-
 	virtual bool					Intersect(IntersectionClass *Intersection, IntersectionResultClass *Final_Result);
 	virtual bool					Intersect_Sphere(IntersectionClass *Intersection, IntersectionResultClass *Final_Result);
 	virtual bool					Intersect_Sphere_Quick(IntersectionClass *Intersection, IntersectionResultClass *Final_Result);
+
+	bool								Cast_AABox(AABoxCollisionTestClass & boxtest)						{ return false; }
+	bool								Cast_OBBox(OBBoxCollisionTestClass & boxtest)						{ return false; }
+	bool								Intersect_AABox(AABoxIntersectionTestClass & boxtest)				{ return false; }
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Bounding Volumes
@@ -394,6 +439,10 @@ public:
 	virtual void		 			Get_Obj_Space_Bounding_Sphere(SphereClass & sphere) const;
 	virtual void					Get_Obj_Space_Bounding_Box(AABoxClass & box) const;
    virtual void               Update_Obj_Space_Bounding_Volumes(void)								{ };
+
+	// BFME: unidentified retail float get/set pair on member 0x8C.
+	virtual void					_bfme_ro_set_8c(float v)													{ _bfme_unk_8c = v; }
+	virtual float					_bfme_ro_get_8c(void) const												{ return _bfme_unk_8c; }
 
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -424,22 +473,19 @@ public:
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Dependency Generation
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
+
 	//
 	//	Note:  The strings contained in these lists need to be freed by the caller.
 	// They should be freed using the delete operator.
 	//
 	//	Be aware, these lists WILL contain duplicate entries.
 	//
-	virtual bool					Build_Dependency_List (DynamicVectorClass<StringClass> &file_list, bool recursive=true);
-	virtual bool					Build_Texture_List (DynamicVectorClass<StringClass> &texture_file_list, bool recursive=true);
+	// BFME: Build_Dependency_List / Build_Texture_List are not in the retail
+	// vtable (Get_Current_LOD is followed directly by Get_Material_Info) —
+	// kept non-virtual; the recursive calls in rendobj.cpp bind directly.
+	bool								Build_Dependency_List (DynamicVectorClass<StringClass> &file_list, bool recursive=true);
+	bool								Build_Texture_List (DynamicVectorClass<StringClass> &texture_file_list, bool recursive=true);
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Render Object Interface - Decals
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	virtual void					Create_Decal(DecalGeneratorClass * generator)						{ }
-	virtual void					Delete_Decal(uint32 decal_id)												{ }
-	
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Attributes, Options, Properties, etc
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -451,8 +497,9 @@ public:
 //	virtual float					Calculate_Texture_Reduction_Factor(float norm_screensize);
 //	virtual void					Set_Texture_Reduction_Factor(float trf);
 	virtual float					Get_Screen_Size(CameraClass &camera);
-	virtual void					Scale(float scale) 															{ };
+	// BFME: retail has the 3-float Scale overload before the 1-float one.
 	virtual void					Scale(float scalex, float scaley, float scalez)						{ };
+	virtual void					Scale(float scale) 															{ };
  	virtual void					Set_ObjectScale(float scale) { ObjectScale=scale;}	//set's a scale factor that's factored into transform matrix.									{ScaleFactor=scale; };
 	const float						Get_ObjectScale( void ) const { return ObjectScale; };
  	void							Set_ObjectColor(unsigned int color) { ObjectColor=color;}	//the color that was used to modify the asset for player team color (for Generals). -MW
@@ -460,17 +507,13 @@ public:
 
    virtual int						Get_Sort_Level(void) const													{ return 0; /* SORT_LEVEL_NONE */ }
    virtual void					Set_Sort_Level(int level)													{ }
-	
+
 	virtual int						Is_Really_Visible(void)														{ return ((Bits & IS_REALLY_VISIBLE) == IS_REALLY_VISIBLE); }
-	// BFME drift: retail's vtable has two extra virtuals in this region —
-	// Prepare_LOD at 0x984E60 dispatches Is_Not_Hidden_At_All via slot +0x180
-	// where this reconstruction had +0x178. Identities unknown; placement is
-	// pinned only to "before Is_Not_Hidden_At_All" so far.
-	virtual void					_BFME_Unknown_Virtual_1(void)												{ }
-	virtual void					_BFME_Unknown_Virtual_2(void)												{ }
 	virtual int						Is_Not_Hidden_At_All(void)													{ return ((Bits & IS_NOT_HIDDEN_AT_ALL) == IS_NOT_HIDDEN_AT_ALL); }
 	virtual int						Is_Visible(void) const														{ return (Bits & IS_VISIBLE); }
-  virtual void					Set_Visible(int onoff)														{ if (onoff) { Bits |= IS_VISIBLE; } else { Bits &= ~IS_VISIBLE; } }
+	// BFME: retail Set_Visible takes a second parameter (stored at member 0x90);
+	// defaulted here so ZH call sites still compile.
+  virtual void					Set_Visible(int onoff, int unk = 0)										{ if (onoff) { Bits |= IS_VISIBLE; } else { Bits &= ~IS_VISIBLE; } }
 
 // The cheatSpy has been put on ice until later... perhaps the next patch? - M Lorenzen
   //	virtual int						Is_VisibleWithCheatSpy(void) const								{ return ((Bits&=~0x80) & (IS_VISIBLE); }
@@ -487,16 +530,35 @@ public:
 
 	virtual int						Is_Translucent(void) const													{ return Bits & IS_TRANSLUCENT; }
 	virtual void					Set_Translucent(int onoff)													{ if (onoff) { Bits |= IS_TRANSLUCENT; } else { Bits &= ~IS_TRANSLUCENT; } }
-	virtual int						Is_Alpha(void) const													{ return Bits & IS_ALPHA; }
-	virtual void					Set_Alpha(int onoff)													{ if (onoff) { Bits |= IS_ALPHA; } else { Bits &= ~IS_ALPHA; } }
+	virtual int						Is_Alpha(void) const														{ return Bits & IS_ALPHA; }
+	virtual void					Set_Alpha(int onoff)														{ if (onoff) { Bits |= IS_ALPHA; } else { Bits &= ~IS_ALPHA; } }
 	virtual int						Is_Additive(void) const													{ return Bits & IS_ADDITIVE; }
-	virtual void					Set_Additive(int onoff)													{ if (onoff) { Bits |= IS_ADDITIVE; } else { Bits &= ~IS_ADDITIVE; } }
+	virtual void					Set_Additive(int onoff)														{ if (onoff) { Bits |= IS_ADDITIVE; } else { Bits &= ~IS_ADDITIVE; } }
+	// BFME: four unidentified retail flag get/set pairs between Set_Additive
+	// and Get_Collision_Type (Bits masks 0x02000000, 0x04000000, 0x08000000,
+	// 0x01000000 in retail).
+	virtual int						_bfme_ro_flag109(void) const												{ return Bits & 0x02000000; }
+	virtual void					_bfme_ro_flag110(int onoff)												{ if (onoff) { Bits |= 0x02000000; } else { Bits &= ~0x02000000; } }
+	virtual int						_bfme_ro_flag111(void) const												{ return Bits & 0x04000000; }
+	virtual void					_bfme_ro_flag112(int onoff)												{ if (onoff) { Bits |= 0x04000000; } else { Bits &= ~0x04000000; } }
+	virtual int						_bfme_ro_flag113(void) const												{ return Bits & 0x08000000; }
+	virtual void					_bfme_ro_flag114(int onoff)												{ if (onoff) { Bits |= 0x08000000; } else { Bits &= ~0x08000000; } }
+	virtual int						_bfme_ro_flag115(void) const												{ return Bits & 0x01000000; }
+	virtual void					_bfme_ro_flag116(int onoff)												{ if (onoff) { Bits |= 0x01000000; } else { Bits &= ~0x01000000; } }
 	virtual int						Get_Collision_Type(void) const											{ return (Bits & COLL_TYPE_MASK); }
 	virtual void					Set_Collision_Type(int type)												{ Bits &= ~COLL_TYPE_MASK; Bits |= (type & COLL_TYPE_MASK) | COLL_TYPE_ALL; }
    virtual bool					Is_Complete(void)																{ return false; }
 	virtual bool					Is_In_Scene(void)																{ return Scene != NULL; }
 	virtual float					Get_Native_Screen_Size(void) const										{ return NativeScreenSize; }
 	virtual void					Set_Native_Screen_Size(float screensize)								{ NativeScreenSize = screensize; }
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Render Object Interface - Decals
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// BFME: retail Create_Decal sits here (before Delete_Decal) with a second
+	// parameter; Get_Factory/Save/Load are not in the retail vtable (see below).
+	virtual void					Create_Decal(DecalGeneratorClass * generator, bool unk = false)	{ }
+	virtual void					Delete_Decal(uint32 decal_id)												{ }
 
 	void								Set_Sub_Objects_Match_LOD(int onoff)									{ if (onoff) { Bits |= SUBOBJS_MATCH_LOD; } else { Bits &= ~SUBOBJS_MATCH_LOD; } }
 	int								Is_Sub_Objects_Match_LOD_Enabled(void)									{ return Bits & SUBOBJS_MATCH_LOD; }
@@ -514,9 +576,11 @@ public:
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Persistant object save-load interface
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	virtual const PersistFactoryClass &	Get_Factory (void) const;
-	virtual bool					Save (ChunkSaveClass &csave);
-	virtual bool					Load (ChunkLoadClass &cload);
+	// BFME: Get_Factory/Save/Load are not in the retail vtable — kept
+	// non-virtual; no base-pointer callers exist in the ported sources.
+	const PersistFactoryClass &	Get_Factory (void) const;
+	bool								Save (ChunkSaveClass &csave);
+	bool								Load (ChunkLoadClass &cload);
 
 	// Application-specific render hook:
 	RenderHookClass *				Get_Render_Hook(void) { return RenderHook; }
@@ -528,20 +592,26 @@ protected:
 
 	virtual void					Update_Cached_Bounding_Volumes(void) const;
 	virtual void					Update_Sub_Object_Bits(void);
-	
+
 	bool								Bounding_Volumes_Valid(void) const										{ return (Bits & BOUNDING_VOLUMES_VALID) != 0; }
 	void								Invalidate_Cached_Bounding_Volumes(void) const						{ Bits &= ~BOUNDING_VOLUMES_VALID; }
 	void								Validate_Cached_Bounding_Volumes(void)	const							{ Bits |= BOUNDING_VOLUMES_VALID; }
 
-	enum 
+	// BFME: retail bit layout differs — Is_Hidden tests 0x2000, Is_Really_Visible
+	// and Is_Not_Hidden_At_All mask 0x6000, Is_Force_Visible tests 0x8000, the
+	// cached-bounds getters test 0x20000, and the four _bfme_ro_flag pairs use
+	// 0x02000000/0x04000000/0x08000000/0x01000000.  All accessors of these bits
+	// are unmatched so the ZH values below are kept for now; a structural pass
+	// should reconcile the enum against the retail evidence.
+	enum
 	{
-		COLL_TYPE_MASK =		0x000000FF, 
+		COLL_TYPE_MASK =		0x000000FF,
 
 		IS_VISIBLE =					0x00000100,
 		IS_NOT_HIDDEN =				0x00000200,
 		IS_NOT_ANIMATION_HIDDEN =	0x00000400,
 		IS_FORCE_VISIBLE =			0x00000800,
-		BOUNDING_VOLUMES_VALID =	0x00002000,		
+		BOUNDING_VOLUMES_VALID =	0x00002000,
 		IS_TRANSLUCENT =				0x00004000,			// is additive or alpha blended on any poly
 		IGNORE_LOD_COST =				0x00008000,			// used to define if we should ignore object from LOD calculations
 		SUBOBJS_MATCH_LOD =			0x00010000,			// force sub-objects to have same LOD level
@@ -570,12 +640,19 @@ protected:
 	RenderObjClass *				Container;
 	void *							User_Data;
 
+	// BFME: retail has four members between User_Data@0x88 and RenderHook@0x9C —
+	// the 0x8C and 0x98 float-pair targets above, plus 0x90 (written by retail
+	// Set_Visible) and 0x94.  RenderHook@0x9C is pinned by the retail dtor.
+	float								_bfme_unk_8c;
+	unsigned long					_bfme_unk_90;
+	unsigned long					_bfme_unk_94;
+	float								_bfme_unk_98;
+
 	RenderHookClass *				RenderHook;
 
-	// End pad keeps sizeof(RenderObjClass) stable after mid-pad (was 0x3C).
-	// ParticleBufferClass early accessors need Bits@0x10; total size was validated
-	// at 0xC8 for Camera FrustumValid@0x100 on the sweep-shim path.
-	char								_bfme_base_pad[0x38];
+	// End pad keeps sizeof(RenderObjClass) stable at 0xC8 (validated for Camera
+	// FrustumValid@0x100 on the sweep-shim path).
+	char								_bfme_base_pad[0x28];
 
 	friend class SceneClass;
 	friend class RenderObjProxyClass;
@@ -585,7 +662,7 @@ WWINLINE const SphereClass & RenderObjClass::Get_Bounding_Sphere(void) const
 {
 	if (!(Bits & BOUNDING_VOLUMES_VALID)) {
 		Update_Cached_Bounding_Volumes();
-	} 
+	}
 	return CachedBoundingSphere;
 }
 
@@ -597,17 +674,17 @@ WWINLINE const AABoxClass & RenderObjClass::Get_Bounding_Box(void) const
 	return CachedBoundingBox;
 }
 
-/************************************************************************** 
- * Bound_Degrees -- Bounds a degree value between 0 and 360.              * 
- *                                                                        * 
- * INPUT:                                                                 * 
- *                                                                        * 
- * OUTPUT:                                                                * 
- *                                                                        * 
- * WARNINGS:                                                              * 
- *                                                                        * 
- * HISTORY:                                                               * 
- *   09/22/1997 PWG : Created.                                            * 
+/**************************************************************************
+ * Bound_Degrees -- Bounds a degree value between 0 and 360.              *
+ *                                                                        *
+ * INPUT:                                                                 *
+ *                                                                        *
+ * OUTPUT:                                                                *
+ *                                                                        *
+ * WARNINGS:                                                              *
+ *                                                                        *
+ * HISTORY:                                                               *
+ *   09/22/1997 PWG : Created.                                            *
  *========================================================================*/
 WWINLINE float Bound_Degrees(float angle)
 {
@@ -668,8 +745,5 @@ WWINLINE bool RenderObjClass::Is_Transform_Identity_No_Validity_Check() const
 {
 	return IsTransformIdentity;
 }
-
-
-
 
 #endif

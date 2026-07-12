@@ -385,3 +385,4 @@ _$E117	no-match	Compiler-generated static initializer. Drift RVA 0xC6E36F starts
 ?locoUpdate_moveTowardsPosition@Locomotor@@QAEXPAVObject@@ABUCoord3D@@MMPA_N@Z	landed	MASM exact 1103B
 ?xfer@AIPlayer@@MAEXPAVXfer@@@Z	landed	MASM exact 1170B
 ??0RTS3DScene@@QAE@XZ	landed	MASM exact 940B
+??_7RenderObjClass@@6B@	landed	Full 128-virtual retail slot map reconciled into Code/Libraries/Source/WWVegas/WW3D2/rendobj.h (= reference/shims/sweep/rendobj.h). Pins: Cast_Ray@57 via SegLine only-override, Intersect_Sphere(_Quick)@60/61 via IntersectionClass::Intersect_Sphere calls in bodies, Notify_Added/Removed@23/24 via symbols.csv, Get_Collision_Type@117 via Mesh/SegLine vcalls +0x1dc, Set_Force_Visible@102 symbol, UCBV/USOB@126/127. Special_Render/Cast_AABox/Cast_OBBox/Intersect_AABox/BDL/BTL/Get_Factory/Save/Load NOT in retail vtable (non-virtual now). Enum bit values still ZH (retail: hidden 0x2000, force-vis 0x8000, bounds-valid 0x20000) — all accessors unmatched.

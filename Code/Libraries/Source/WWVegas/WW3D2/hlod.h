@@ -152,7 +152,7 @@ public:
 	virtual RenderObjClass *	Get_Sub_Object_On_Bone(int index,int boneindex) const;
 	virtual int						Get_Sub_Object_Bone_Index(RenderObjClass * subobj) const;
 	virtual int						Get_Sub_Object_Bone_Index(int LodIndex, int ModelIndex)	const;
-	virtual int						Add_Sub_Object_To_Bone(RenderObjClass * subobj,int bone_index);
+	virtual int						Add_Sub_Object_To_Bone(RenderObjClass * subobj,int bone_index, bool unk = false);
 
 	/////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Hierarchical Animation
@@ -204,7 +204,7 @@ public:
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Render Object Interface - Decals
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	virtual void					Create_Decal(DecalGeneratorClass * generator);
+	virtual void					Create_Decal(DecalGeneratorClass * generator, bool unk = false);
 	virtual void					Delete_Decal(uint32 decal_id);
 	
 	/////////////////////////////////////////////////////////////////////////////

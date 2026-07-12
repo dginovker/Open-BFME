@@ -616,7 +616,7 @@ RenderObjClass * DistLODClass::Get_Sub_Object(int index) const
 }
 
 // ?DistLODClass::Add_Sub_Object_To_Bone present-unmatched
-int DistLODClass::Add_Sub_Object_To_Bone(RenderObjClass * subobj,int bone_index)
+int DistLODClass::Add_Sub_Object_To_Bone(RenderObjClass * subobj,int bone_index, bool unk)
 {
 	// NOTE: this is broken code, a render object cannot have two containers...
 	if (subobj->Class_ID() == CLASSID_DISTLOD) { 

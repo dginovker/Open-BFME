@@ -142,41 +142,8 @@ bool GenericMultiListClass::Internal_Add_After(MultiListObjectClass * obj,const 
 }
 
 // ?Internal_Remove@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@@Z
-// BFME drift: retail tail-duplicates `delete lnode` into both if/else branches
-// (optimizer choice, not reproducible from this source). Present at 0x009DC100.
-bool GenericMultiListClass::Internal_Remove(MultiListObjectClass *obj)
-{
-	// find the list node in this object that belongs to this list
-	MultiListNodeClass * lnode = obj->Get_List_Node();
-	MultiListNodeClass * prevlnode = 0;
-
-	while ((lnode) && (lnode->List != this)) {
-		prevlnode = lnode;
-		lnode = lnode->NextList;
-	}
-
-	if (lnode == 0) {
-		return false;
-	}
-
-	// now we've found the node which corresponds to this list,
-	// unlink from the list of objects
-	lnode->Prev->Next = lnode->Next;
-	lnode->Next->Prev = lnode->Prev;
-
-	// unlink from the list of list nodes
-	if (prevlnode) {
-		prevlnode->NextList = lnode->NextList;
-	} else {
-		assert(obj->Get_List_Node() == lnode);	// must be first list obj is in...
-		obj->Set_List_Node(lnode->NextList);
-	}
-
-	// delete the link
-	delete lnode;
-
-	return true;
-}
+// Body in GenericMultiListClass_Internal_Remove.asm (exact 104B retail;
+// C++ blocked on delete tail-duplicated into both branches).
 
 MultiListObjectClass * GenericMultiListClass::Internal_Remove_List_Head(void)
 {

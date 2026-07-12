@@ -1802,7 +1802,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Internal_Add@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@_N@Z,,0x009DBF60,125,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,matched,
 ?Internal_Add_After@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@PBV2@_N@Z,,0x009DC060,151,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,matched,
 ?Internal_Add_Tail@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@_N@Z,,0x009DBFE0,125,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,matched,
-?Internal_Remove@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@@Z,,0x009DC100,101,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,unmatched,BFME drift: delete tail-duplicated into both branches
+?Internal_Remove@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@@Z,,0x009DC100,104,Code/Libraries/Source/WWVegas/WWLib/GenericMultiListClass_Internal_Remove.asm,matched,exact 104B via MASM (delete tail-duplication wall)
 ?Internal_Remove_List_Head@GenericMultiListClass@@IAEPAVMultiListObjectClass@@XZ,,0x009DC170,27,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,matched,
 ?IntersectLine2D@@YA_NPBUCoord2D@@000PAU1@@Z,,0x0044EC20,286,Code/GameEngine/Source/Common/line2_d.cpp,matched,
 ?Intersect_Sphere@IntersectionClass@@QAE_NAAVSphereClass@@PAVIntersectionResultClass@@@Z,,0x0091FE90,175,Code/Libraries/Source/WWVegas/WW3D2/rendobj.cpp,matched,

@@ -469,7 +469,6 @@ void MemLogClass::Push_Active_Category(int category)
 	_ActiveCategoryTracker.Push(category);
 }
 
-// ?Pop_Active_Category@MemLogClass@@QAEXXZ present-unmatched
 void MemLogClass::Pop_Active_Category(void)
 {
 	MemLogMutexLockClass lock;

@@ -48,11 +48,26 @@ def main():
 
     emitted_total = 0
     for cpp_name, rows in sorted(by_source.items()):
+        # drift report stores bare basenames (often lowercased); resolve under Code/
         src = ROOT / args.src_dir / cpp_name
-        obj = build.BUILD_DIR / (src.stem + ".obj")
-        if not src.exists() or not obj.exists():
-            print(f"{cpp_name}: missing source/obj — skipped")
+        if not src.exists():
+            want = Path(cpp_name).name.lower()
+            hits = [h for h in (ROOT / args.src_dir).rglob("*.cpp") if h.name.lower() == want]
+            src = hits[0] if hits else src
+        if not src.exists():
+            print(f"{cpp_name}: missing source — skipped")
             continue
+        # ensure object exists via compile
+        try:
+            obj = build.obj_path(src)
+            build.compile_source(src, obj)
+        except Exception as e:
+            print(f"{cpp_name}: compile failed — skipped ({e})")
+            continue
+        if not obj.exists():
+            print(f"{cpp_name}: missing obj — skipped")
+            continue
+        rel_src = str(src.relative_to(ROOT)).replace("\\", "/")
         has_string = {}
         sizes = {}
         for name, span, relocs in object_functions(obj):
@@ -69,7 +84,7 @@ def main():
                 continue
             rva = int(row["candidate_rva"], 16)
             size = ghidra.get(rva, sizes.get(name, 0))
-            new_rows.append(f"{name},,0x{rva:08X},{size},{args.src_dir}/{cpp_name},matched,"
+            new_rows.append(f"{name},,0x{rva:08X},{size},{rel_src},matched,"
                             f"exact-ambiguous copy; assignment proven by verify_string_refs")
         if not new_rows:
             continue
@@ -77,13 +92,13 @@ def main():
             for line in new_rows:
                 fh.write(line + "\n")
         verify = subprocess.run([sys.executable, str(ROOT / "tools" / "build.py"),
-                                 f"{args.src_dir}/{cpp_name}"],
+                                 rel_src],
                                 cwd=ROOT, capture_output=True, text=True, timeout=420)
         if verify.returncode != 0:
             # revert this file's additions — fail loudly, land nothing unproven
             text = build.FUNCTIONS.read_text().splitlines(keepends=True)
             keep = [l for l in text if not any(l.startswith(r.split(",")[0] + ",") and
-                                               f",{args.src_dir}/{cpp_name}," in l for r in new_rows)]
+                                               f",{rel_src}," in l for r in new_rows)]
             build.FUNCTIONS.write_text("".join(keep))
             print(f"{cpp_name}: byte-verify REJECTED the assignment — reverted "
                   f"({(verify.stdout.strip().splitlines() or ['?'])[-1]})")

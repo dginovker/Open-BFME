@@ -102,56 +102,129 @@ name,address,notes
 ?$S46@?1??getClassMemoryPool@PropagandaTowerBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF838,pool-glue cascade static (back-solved)
 ?$S51@?1??getClassMemoryPool@FireWeaponWhenDamagedBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF7C8,pool-glue cascade static (back-solved)
 ?$S52@?1??getClassMemoryPool@FireWeaponWhenDeadBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF7D0,pool-glue cascade static (back-solved)
+??$_Construct@U?$pair@W4ObjectID@@W41@@_STL@@U12@@_STL@@YAXPAU?$pair@W4ObjectID@@W41@@0@ABU10@@Z,0x0001FA1E,rel32 pin for exact-ambiguous landing
+??$_Construct@UAnimSet@GenericObjectCreationNugget@@U12@@_STL@@YAXPAUAnimSet@GenericObjectCreationNugget@@ABU12@@Z,0x0000DDAF,resweep callee back-solved
+??$_Construct@UHideShowSubObjInfo@ModelConditionInfo@@U12@@_STL@@YAXPAUHideShowSubObjInfo@ModelConditionInfo@@ABU12@@Z,0x0004A818,rel32 pin for exact-ambiguous landing
+??$_Construct@UNugget@ModuleInfo@@U12@@_STL@@YAXPAUNugget@ModuleInfo@@ABU12@@Z,0x00006FD2,resweep callee back-solved
+??$_Construct@UPayload@DeliverPayloadNugget@@U12@@_STL@@YAXPAUPayload@DeliverPayloadNugget@@ABU12@@Z,0x00039F18,resweep callee back-solved
+??$_Construct@UPrereqUnitRec@ProductionPrerequisite@@U12@@_STL@@YAXPAUPrereqUnitRec@ProductionPrerequisite@@ABU12@@Z,0x00028957,rel32 pin for exact-ambiguous landing
+??$_Construct@UVideo@@U1@@_STL@@YAXPAUVideo@@ABU1@@Z,0x00030549,rel32 pin for exact-ambiguous landing
+??$_Construct@UWeaponBarrelInfo@ModelConditionInfo@@U12@@_STL@@YAXPAUWeaponBarrelInfo@ModelConditionInfo@@ABU12@@Z,0x0003B7E6,ILT thunk used by call site
+??$_Construct@VAsciiString@@V1@@_STL@@YAXPAVAsciiString@@ABV1@@Z,0x0004725D,resweep callee back-solved
 ??$_Construct@VGameResultsResponse@@V1@@_STL@@YAXPAVGameResultsResponse@@ABV1@@Z,0x0000DCE7
+??$_Construct@VProductionPrerequisite@@V1@@_STL@@YAXPAVProductionPrerequisite@@ABV1@@Z,0x0003AA26,resweep callee back-solved
+??$_Construct@VW3DAnimationInfo@@V1@@_STL@@YAXPAVW3DAnimationInfo@@ABV1@@Z,0x00033AAA,ILT thunk used by call site
+??$_Destroy@PAUHideShowSubObjInfo@ModelConditionInfo@@@_STL@@YAXPAUHideShowSubObjInfo@ModelConditionInfo@@0@Z,0x000413AD,ILT thunk used by call site
+??$_Destroy@PAUNugget@ModuleInfo@@@_STL@@YAXPAUNugget@ModuleInfo@@0@Z,0x0004883D,resweep callee back-solved
+??$_Destroy@PAUPrereqUnitRec@ProductionPrerequisite@@@_STL@@YAXPAUPrereqUnitRec@ProductionPrerequisite@@0@Z,0x0000CBE4,resweep callee back-solved
 ??$_Destroy@PAVProductionPrerequisite@@@_STL@@YAXPAVProductionPrerequisite@@0@Z,0x00011D47
+??$_Destroy@PAVW3DAnimationInfo@@@_STL@@YAXPAVW3DAnimationInfo@@0@Z,0x00001663,ILT thunk used by call site
+??$_M_allocate_and_copy@PBQAVObject@@@?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@IAEPAPAVObject@@IPBQAV2@0@Z,0x0004547B,ILT thunk -> 0x4a0140 (vector<Object*>::operator= callee)
+??$_M_allocate_and_copy@PBUHideShowSubObjInfo@ModelConditionInfo@@@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEPAUHideShowSubObjInfo@ModelConditionInfo@@IPBU23@0@Z,0x00030D69,ILT thunk used by call site
 ??$_M_allocate_and_copy@PBUICoord2D@@@?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@IAEPAUICoord2D@@IPBU2@0@Z,0x009F5370,decoded from vector assign call site
+??$_M_allocate_and_copy@PBUNugget@ModuleInfo@@@?$vector@UNugget@ModuleInfo@@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@IAEPAUNugget@ModuleInfo@@IPBU23@0@Z,0x000313AE,resweep callee back-solved
+??$_M_allocate_and_copy@PBUPrereqUnitRec@ProductionPrerequisite@@@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEPAUPrereqUnitRec@ProductionPrerequisite@@IPBU23@0@Z,0x00014470,resweep callee back-solved
 ??$_M_allocate_and_copy@PBVProductionPrerequisite@@@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEPAVProductionPrerequisite@@IPBV2@0@Z,0x00014961
+??$_M_allocate_and_copy@PBVW3DAnimationInfo@@@?$vector@VW3DAnimationInfo@@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@IAEPAVW3DAnimationInfo@@IPBV2@0@Z,0x0003D3C5,ILT thunk used by call site
 ??$_M_find@G@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@1@ABG@Z,0x00003071
+??$_M_find@V?$BitFlags@$0BB@@@@?$_Rb_tree@$$CBV?$BitFlags@$0BB@@@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@1@ABV?$BitFlags@$0BB@@@@Z,0x00042D1B,resweep callee back-solved
 ??$_M_find@VAsciiString@@@?$hashtable@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@@_STL@@ABEPAU?$_Hashtable_node@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@1@ABVAsciiString@@@Z,0x0000F727
 ??$_M_insert_dispatch@U?$_List_iterator@PAVDrawable@@U?$_Const_traits@PAVDrawable@@@_STL@@@_STL@@@?$list@PAVDrawable@@V?$allocator@PAVDrawable@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVDrawable@@U?$_Nonconst_traits@PAVDrawable@@@_STL@@@1@U?$_List_iterator@PAVDrawable@@U?$_Const_traits@PAVDrawable@@@_STL@@@1@1ABU__false_type@1@@Z,0x00004FFC,ILT thunk -> 0x1c53b0 (BFME list<Drawable*> insert callee)
 ??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@_STL@@@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@1@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@1@1ABU__false_type@1@@Z,0x0003F68E,ILT thunk for list<GameWindow*>::_M_insert_dispatch
 ??$_M_insert_dispatch@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@_STL@@@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAEXU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@1@U?$_List_iterator@PAVGameWindow@@U?$_Const_traits@PAVGameWindow@@@_STL@@@1@1ABU__false_type@1@@Z,0x00483620,body
 ??$_M_insert_dispatch@U?$_List_iterator@UCoord3D@@U?$_Const_traits@UCoord3D@@@_STL@@@_STL@@@?$list@UCoord3D@@V?$allocator@UCoord3D@@@_STL@@@_STL@@QAEXU?$_List_iterator@UCoord3D@@U?$_Nonconst_traits@UCoord3D@@@_STL@@@1@U?$_List_iterator@UCoord3D@@U?$_Const_traits@UCoord3D@@@_STL@@@1@1ABU__false_type@1@@Z,0x00011E87
+??$__copy@PAUFXBoneInfo@@PAU1@H@_STL@@YAPAUFXBoneInfo@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00003378,resweep callee back-solved
+??$__copy@PAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@H@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00018674,rel32 pin for exact-ambiguous landing
 ??$__copy@PAUHorzLine@@PAU1@H@_STL@@YAPAUHorzLine@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0001B91E
+??$__copy@PAUNugget@ModuleInfo@@PAU12@H@_STL@@YAPAUNugget@ModuleInfo@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0001F735,resweep callee back-solved
+??$__copy@PAUPayload@DeliverPayloadNugget@@PAU12@H@_STL@@YAPAUPayload@DeliverPayloadNugget@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000097CD,rel32 pin for exact-ambiguous landing
 ??$__copy@PAUVideo@@PAU1@H@_STL@@YAPAUVideo@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000112FC
+??$__copy@PAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@PAV12@H@_STL@@YAPAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@0@PAV10@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000112FC,resweep callee back-solved
 ??$__copy@PAVAsciiString@@PAV1@H@_STL@@YAPAVAsciiString@@PAV1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00042EA6
+??$__copy@PAVProductionPrerequisite@@PAV1@H@_STL@@YAPAVProductionPrerequisite@@PAV1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000181A1,resweep callee back-solved
+??$__copy@PAVW3DAnimationInfo@@PAV1@H@_STL@@YAPAVW3DAnimationInfo@@PAV1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00024023,ILT thunk used by call site
+??$__copy@PBUHideShowSubObjInfo@ModelConditionInfo@@PAU12@H@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PBU12@0PAU12@ABUrandom_access_iterator_tag@0@PAH@Z,0x0003DB1D,ILT thunk used by call site
+??$__copy@PBUNugget@ModuleInfo@@PAU12@H@_STL@@YAPAUNugget@ModuleInfo@@PBU12@0PAU12@ABUrandom_access_iterator_tag@0@PAH@Z,0x0003B688,resweep callee back-solved
+??$__copy@PBUPrereqUnitRec@ProductionPrerequisite@@PAU12@H@_STL@@YAPAUPrereqUnitRec@ProductionPrerequisite@@PBU12@0PAU12@ABUrandom_access_iterator_tag@0@PAH@Z,0x00008391,resweep callee back-solved
 ??$__copy@PBVProductionPrerequisite@@PAV1@H@_STL@@YAPAVProductionPrerequisite@@PBV1@0PAV1@ABUrandom_access_iterator_tag@0@PAH@Z,0x000078E7
+??$__copy@PBVW3DAnimationInfo@@PAV1@H@_STL@@YAPAVW3DAnimationInfo@@PBV1@0PAV1@ABUrandom_access_iterator_tag@0@PAH@Z,0x000417EF,ILT thunk used by call site
 ??$__copy@U?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@_STL@@U12@H@_STL@@YA?AU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@0@U10@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0000F682
 ??$__destroy_aux@PAVAsciiString@@@_STL@@YAXPAVAsciiString@@0ABU__false_type@0@@Z,0x00014AA1
 ??$__find@U?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@_STL@@H@_STL@@YA?AU?$_Rb_tree_iterator@HU?$_Const_traits@H@_STL@@@0@U10@0ABHABUinput_iterator_tag@0@@Z,0x0004093A
+??$__uninitialized_copy@PBUHideShowSubObjInfo@ModelConditionInfo@@PAU12@@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PBU12@0PAU12@ABU__false_type@0@@Z,0x000032A6,ILT thunk used by call site
+??$__uninitialized_copy@PBUNugget@ModuleInfo@@PAU12@@_STL@@YAPAUNugget@ModuleInfo@@PBU12@0PAU12@ABU__false_type@0@@Z,0x0001819C,resweep callee back-solved
+??$__uninitialized_copy@PBUPrereqUnitRec@ProductionPrerequisite@@PAU12@@_STL@@YAPAUPrereqUnitRec@ProductionPrerequisite@@PBU12@0PAU12@ABU__false_type@0@@Z,0x000178B4,resweep callee back-solved
 ??$__uninitialized_copy@PBVProductionPrerequisite@@PAV1@@_STL@@YAPAVProductionPrerequisite@@PBV1@0PAV1@ABU__false_type@0@@Z,0x0001FFEB
+??$__uninitialized_copy@PBVW3DAnimationInfo@@PAV1@@_STL@@YAPAVW3DAnimationInfo@@PBV1@0PAV1@ABU__false_type@0@@Z,0x0001D5F7,ILT thunk used by call site
+??$fill@PAPAVObject@@PAV1@@_STL@@YAXPAPAVObject@@0ABQAV1@@Z,0x0003C7F9,ILT thunk used by call site
 ??$find@H@?$_Rb_tree@HU?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@U?$_Select1st@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@2@@1@ABH@Z,0x0001990C
 ??$find@H@?$_Rb_tree@HU?$pair@$$CBHVBuddyInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHVBuddyInfo@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@@1@ABH@Z,0x0002BAC6
 ??$find@W4NameKeyType@@@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@2@@1@ABW4NameKeyType@@@Z,0x0000C054
 ??$find@W4NameKeyType@@@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@3@@_STL@@QBE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@U?$_Const_traits@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@2@@1@ABW4NameKeyType@@@Z,0x0001CDEB
 ??$uninitialized_fill_n@PAEIE@_STL@@YAPAEPAEIABE@Z,0x0003932E
 ??0?$ShareBufferClass@E@@QAE@HPBDH@Z,0x0004B4A7,derived from part_buf matched-caller call sites
+??0?$ShareBufferClass@I@@QAE@ABV0@@Z,0x0092A090
+??0?$ShareBufferClass@VShaderClass@@@@QAE@HPBDH@Z,0x0092B940,Get_Shader_Array ShareBuffer 3-arg ctor
+??0?$ShareBufferClass@VVector2@@@@QAE@ABV0@@Z,0x0092B710
 ??0?$ShareBufferClass@VVector3@@@@QAE@HPBDH@Z,0x00049832,ILT thunk; body 0x5F3BE0
 ??0?$ShareBufferClass@VVector3@@@@QAE@HPBDH@Z,0x005F3BE0,3-arg aligned-buffer ctor
 ??0?$ShareBufferClass@VVector4@@@@QAE@HPBDH@Z,0x000281EB
+??0?$_STLP_alloc_proxy@IPAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVMapObject@@@1@I@Z,0x008F9A30,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@IPAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVPartitionCell@@@1@I@Z,0x008F9A60,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@IPAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVSightingInfo@@@1@I@Z,0x009ED3F0,resweep callee back-solved
 ??0?$_STLP_alloc_proxy@PAIIV?$allocator@I@_STL@@@_STL@@QAE@ABV?$allocator@I@1@PAI@Z,0x00031039
+??0?$_STLP_alloc_proxy@PAPAPAVMapObject@@PAPAV1@V?$allocator@PAPAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVMapObject@@@1@PAPAPAVMapObject@@@Z,0x008F9A20,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@PAPAPAVPartitionCell@@PAPAV1@V?$allocator@PAPAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVPartitionCell@@@1@PAPAPAVPartitionCell@@@Z,0x008F9A50,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@PAPAPAVSightingInfo@@PAPAV1@V?$allocator@PAPAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVSightingInfo@@@1@PAPAPAVSightingInfo@@@Z,0x009ED3E0,resweep callee back-solved
+??0?$_Vector_base@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@IABV?$allocator@PAVObjectCreationNugget@@@1@@Z,0x0001D949,resweep callee back-solved
+??0?$_Vector_base@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@IABV?$allocator@PAVObjectCreationNugget@@@1@@Z,0x0003F418,resweep callee back-solved
 ??0ArchiveFile@@QAE@XZ,0x009D10B0
+??0ArmorUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003582D,module ctor (friend_newModuleInstance retail call target)
+??0AutoDepositUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00C15D,module ctor (friend_newModuleInstance retail call target)
+??0AutoFindHealingUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x02E12C,module ctor (friend_newModuleInstance retail call target)
+??0AutoFindHealingUpdateModuleData@@QAE@XZ,0x0001D4EE,module-glue cascade callee (from retail call site)
+??0AutoHealBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x0000A0E2
 ??0AutoHealBehaviorModuleData@@QAE@XZ,0x000287C7
 ??0BFMEAutoLockRef@@QAE@PAVBFMENetworkLock@@I@Z,0x009DB3B0,native BFME lock-ref acquire helper
 ??0BattlePlanUpdateModuleData@@QAE@XZ,0x0003025B
+??0BeaconClientUpdateModuleData@@QAE@XZ,0x000286C3,module-glue cascade callee (from retail call site)
 ??0BezierSegment@@QAE@XZ,0x00043A9A
+??0BoneFXUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0000264E,module ctor (friend_newModuleInstance retail call target)
+??0BoxRenderObjClass@@QAE@ABUW3dBoxStruct@@@Z,0x00956D30
+??0BridgeBehaviorModuleData@@QAE@XZ,0x0001F7F3,module-glue cascade callee (from retail call site)
+??0BridgeScaffoldBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x01002D,module ctor (friend_newModuleInstance retail call target)
 ??0Buffer@@QAE@J@Z,0x009E1DA0
 ??0Buffer@@QAE@PAXJ@Z,0x009E1CE0,Buffer::Buffer(void*, long)
 ??0BufferPipe@@QAE@PAXH@Z,0x009E2010
 ??0BufferStraw@@QAE@PBXH@Z,0x00921730
 ??0CDDrive@@QAE@XZ,0x0002E997
+??0CameraClass@@QAE@ABV0@@Z,0x00932690,CameraClass copy ctor (located from binary via Clone)
 ??0Cftp@@QAE@XZ,0x00885AD0
+??0CommandButtonHuntUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x020DCE,module ctor (friend_newModuleInstance retail call target)
+??0CommandButtonHuntUpdateModuleData@@QAE@XZ,0x0002E500,module-glue cascade callee (from retail call site)
+??0CommandSetUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003BB65,module ctor (friend_newModuleInstance retail call target)
 ??0CriticalSectionClass@@QAE@XZ,0x009DB420
 ??0CullNodeStruct@AABTreeBuilderClass@@QAE@XZ,0x0096B500
 ??0CullSystemClass@@QAE@XZ,0x008E2140
 ??0CustomMatchPreferences@@QAE@XZ,0x0000B0F5
+??0DefaultProductionExitUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00025581,module ctor (friend_newModuleInstance retail call target)
+??0DeletionUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x016C52,module ctor (friend_newModuleInstance retail call target)
+??0DemoTrapUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x02BF4E,module ctor (friend_newModuleInstance retail call target)
 ??0DisplayStringManager@@QAE@XZ,0x0000F7A9
 ??0DockUpdateModuleData@@QAE@XZ,0x0002C54D
+??0DownloadManager@@QAE@XZ,0x0001958D,ILT thunk used by call site
 ??0DozerAIUpdateModuleData@@QAE@XZ,0x0002BFF8
+??0DynamicGeometryInfoUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00048338
+??0ExperienceScalarUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x000380D2,module ctor (friend_newModuleInstance retail call target)
 ??0FastAllocatorGeneral@@QAE@XZ,0x00B027B0
+??0FireSpreadUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x04B510,module ctor (friend_newModuleInstance retail call target)
+??0FireSpreadUpdateModuleData@@QAE@XZ,0x000104B5,module-glue cascade callee (from retail call site)
+??0FireWeaponWhenDamagedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x02A379,module ctor (friend_newModuleInstance retail call target)
 ??0FirestormDynamicGeometryInfoUpdateModuleData@@QAE@XZ,0x0001235A
 ??0FirewallHelperClass@@QAE@XZ,0x00003AD5
 ??0FlightDeckBehaviorModuleData@@QAE@XZ,0x0000CC3E
+??0FloatUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x01DF84,module ctor (friend_newModuleInstance retail call target)
+??0FloatUpdateModuleData@@QAE@XZ,0x0004601A,module-glue cascade callee (from retail call site)
 ??0GameMessage@@QAE@W4Type@0@@Z,0x000359E5,GameMessage::GameMessage(Type) thunk
 ??0GameMessageParser@@QAE@XZ,0x00013FCA,GameMessageParser::GameMessageParser() thunk
 ??0GameResultsQueue@@QAE@XZ,0x0000DAFD
@@ -159,35 +232,78 @@ name,address,notes
 ??0GenerateMinefieldBehaviorModuleData@@QAE@XZ,0x0002B062
 ??0GhostObjectManager@@QAE@XZ,0x00008652
 ??0HTreeClass@@QAE@ABV0@@Z,0x009527C0,derived from HTreeClass::Alter_Avatar_HTree
+??0HealCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00046407,module ctor (friend_newModuleInstance retail call target)
+??0HeightDieUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00C199,module ctor (friend_newModuleInstance retail call target)
+??0HeightDieUpdateModuleData@@QAE@XZ,0x0002C9D0,module-glue cascade callee (from retail call site)
+??0HijackerUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003A382,module ctor (friend_newModuleInstance retail call target)
 ??0LList@@QAE@XZ,0x000057B8
+??0LaserUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00035D91
 ??0LineGroupClass@@QAE@XZ,0x0098E9C0,derived from ParticleBufferClass main ctor aligned call sites
 ??0LockClass@CriticalSectionClass@@QAE@AAV1@@Z,0x009DB4B0
+??0LockWeaponCreateModuleData@@QAE@XZ,0x000283F3,module-glue cascade callee (from retail call site)
+??0LocomotorSetUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x000078B5,module ctor (friend_newModuleInstance retail call target)
 ??0MaterialCollectorClass@@QAE@XZ,0x00931070
+??0MaterialPassClass@@QAE@XZ,0x009333A0
+??0MaxHealthUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003BEDA,module ctor (friend_newModuleInstance retail call target)
+??0MeshMatDescClass@@QAE@XZ,0x0092A2B0
 ??0MissileAIUpdateModuleData@@QAE@XZ,0x00025EBE
+??0ModelConditionUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00025810,module ctor (friend_newModuleInstance retail call target)
+??0MoneyCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003E48C,module ctor (friend_newModuleInstance retail call target)
 ??0Network@@QAE@XZ,0x00029C12
+??0NeutronMissileUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00048F2C
+??0OBBoxClass@@QAE@ABV0@@Z,0x00931420
 ??0OptionPreferences@@QAE@XZ,0x0003713C
 ??0PSPlayerStats@@QAE@ABV0@@Z,0x00887B60
 ??0ParticleBufferClass@@QAE@ABV0@@Z,0x00989A20
+??0PhysicsBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x000328C6
 ??0PivotClass@@QAE@ABU0@@Z,0x00972D70,derived from HTreeClass::Alter_Avatar_HTree
 ??0PlayerTemplate@@QAE@ABV0@@Z,0x0001449D
 ??0PlayerTemplate@@QAE@XZ,0x0003E6E4
 ??0PointGroupClass@@QAE@XZ,0x00912580,derived from ParticleBufferClass main ctor aligned call sites
+??0PoisonedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x041547,module ctor (friend_newModuleInstance retail call target)
+??0PoisonedBehaviorModuleData@@QAE@XZ,0x0002EA73,module-glue cascade callee (from retail call site)
+??0ProneUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x000425DC,module ctor (friend_newModuleInstance retail call target)
+??0ProneUpdateModuleData@@QAE@XZ,0x0002DABA,module-glue cascade callee (from retail call site)
+??0PropagandaTowerBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x00EF5C,module ctor (friend_newModuleInstance retail call target)
 ??0PropagandaTowerBehaviorModuleData@@QAE@XZ,0x00010B2C
 ??0QuickMatchPreferences@@QAE@XZ,0x0002E802
+??0RadarUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0002A013,module ctor (friend_newModuleInstance retail call target)
+??0RadarUpdateModuleData@@QAE@XZ,0x0001670C,module-glue cascade callee (from retail call site)
+??0RadarUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00020306,module ctor (friend_newModuleInstance retail call target)
 ??0RenderObjClass@@QAE@ABV0@@Z,0x0091FFE0,base copy ctor; derived from ParticleBufferClass copy ctor site
 ??0RenderObjClass@@QAE@XZ,0x009204B0,derived from ParticleBufferClass main ctor aligned call sites
+??0RepairDockUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0001E8D0,module ctor (friend_newModuleInstance retail call target)
+??0SalvageCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00038668,module ctor (friend_newModuleInstance retail call target)
 ??0SegLineRendererClass@@QAE@ABV0@@Z,0x00960990
 ??0SegLineRendererClass@@QAE@XZ,0x0095FFD0,derived from ParticleBufferClass main ctor aligned call sites
+??0ShroudCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00026F1C,module ctor (friend_newModuleInstance retail call target)
+??0SpawnPointProductionExitUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00023858,module ctor (friend_newModuleInstance retail call target)
+??0StatusBitsUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0000DFBC,module ctor (friend_newModuleInstance retail call target)
+??0StealthDetectorUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x036A0C,module ctor (friend_newModuleInstance retail call target)
 ??0StealthUpdateModuleData@@QAE@XZ,0x00049AA3
+??0StealthUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00019939,module ctor (friend_newModuleInstance retail call target)
+??0StructureToppleUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00034711,module ctor (friend_newModuleInstance retail call target)
 ??0SubsystemInterface@@QAE@XZ,0x009A1A30
+??0SupplyCenterDockUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00021CE2,module ctor (friend_newModuleInstance retail call target)
+??0SupplyCenterProductionExitUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00027B06,module ctor (friend_newModuleInstance retail call target)
+??0SupplyWarehouseCripplingBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x037619,module ctor (friend_newModuleInstance retail call target)
+??0SupplyWarehouseCripplingBehaviorModuleData@@QAE@XZ,0x000261CA,module-glue cascade callee (from retail call site)
+??0SupplyWarehouseDockUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0001E902,module ctor (friend_newModuleInstance retail call target)
 ??0TensileFormationUpdateModuleData@@QAE@XZ,0x000028AB
+??0TexBufferClass@@QAE@HPBD@Z,0x0092BA60
 ??0TileData@@QAE@XZ,0x0003B6B5
 ??0UDP@@QAE@XZ,0x0001FFFA
 ??0UnicodeString@@QAE@ABV0@@Z,0x00888400
+??0UnitCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00009AED,module ctor (friend_newModuleInstance retail call target)
+??0UnpauseSpecialPowerUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00048635,module ctor (friend_newModuleInstance retail call target)
 ??0Vector3HollowSphereRandomizer@@QAE@M@Z,0x00B02350
 ??0Vector3SolidSphereRandomizer@@QAE@M@Z,0x00B02250
+??0VeterancyCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003C37B,module ctor (friend_newModuleInstance retail call target)
 ??0W3DDisplay@@QAE@XZ,0x00002432
 ??0W3DGameWindowManager@@QAE@XZ,0x00021701
+??0WeaponBonusUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x000375B5,module ctor (friend_newModuleInstance retail call target)
+??0WeaponSetUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003406D,module ctor (friend_newModuleInstance retail call target)
+??0WriteLockClass@VertexBufferClass@@QAE@PAV1@H@Z,0x0091DD70,REL32 callee pin
 ??0file_auto_ptr@@QAE@PAVFileFactoryClass@@PBD@Z,0x009DD4F0
 ??1?$SimpleDynVecClass@VVector3@@@@UAE@XZ,0x00887940
 ??1?$_Rb_tree@JU?$pair@$$CBJVLadderPref@@@_STL@@U?$_Select1st@U?$pair@$$CBJVLadderPref@@@_STL@@@2@U?$less@J@2@V?$allocator@U?$pair@$$CBJVLadderPref@@@_STL@@@2@@_STL@@QAE@XZ,0x000192CC
@@ -195,6 +311,7 @@ name,address,notes
 ??1?$_Rb_tree@VUnicodeString@@U?$pair@$$CBVUnicodeString@@_N@_STL@@U?$_Select1st@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@UUnicodeStringLessThan@@V?$allocator@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@@_STL@@QAE@XZ,0x0003BD2C
 ??1?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@QAE@XZ,0x000200FE
 ??1?$set@PAVGameSpyStagingRoom@@U?$less@PAVGameSpyStagingRoom@@@_STL@@V?$allocator@PAVGameSpyStagingRoom@@@3@@_STL@@QAE@XZ,0x0001F514
+??1?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAE@XZ,0x0001642D,resweep callee back-solved
 ??1AIUpdateModuleData@@UAE@XZ,0x00887940
 ??1AudioEventRTS@@UAE@XZ,0x0002671F
 ??1Buffer@@QAE@XZ,0x009E1E60
@@ -203,18 +320,23 @@ name,address,notes
 ??1CriticalSectionClass@@QAE@XZ,0x009DB450
 ??1CullSystemClass@@UAE@XZ,0x008E2150
 ??1CustomMatchPreferences@@UAE@XZ,0x00041F6A
+??1FXBoneInfo@@QAE@XZ,0x00007928,resweep callee back-solved
 ??1FilePipe@@UAE@XZ,0x009E7DC0
 ??1FileStraw@@UAE@XZ,0x009E1C50
 ??1GameMessageList@@UAE@XZ,0x0000E421
 ??1GameResultsRequest@@QAE@XZ,0x00049288
 ??1GameResultsResponse@@QAE@XZ,0x00024352
 ??1HTreeClass@@QAE@XZ,0x00952790
+??1HideShowSubObjInfo@ModelConditionInfo@@QAE@XZ,0x0000466F,rel32 pin for exact-ambiguous landing
 ??1LayoutFilename@@QAE@XZ,0x00887940
 ??1LockClass@CriticalSectionClass@@QAE@XZ,0x009DB4D0
 ??1LockClass@MutexClass@@QAE@XZ,0x009DB400
+??1Nugget@ModuleInfo@@QAE@XZ,0x000454A3,resweep callee back-solved
 ??1OptionPreferences@@UAE@XZ,0x00001307
+??1Payload@DeliverPayloadNugget@@QAE@XZ,0x0004B10A,rel32 pin for exact-ambiguous landing
 ??1Pipe@@UAE@XZ,0x009E78C0
 ??1PlayerTemplate@@QAE@XZ,0x000181CE
+??1ProductionPrerequisite@@QAE@XZ,0x0003ECC0,resweep callee back-solved
 ??1QuickMatchPreferences@@UAE@XZ,0x00010073
 ??1RenderObjClass@@UAE@XZ,0x0091FC10,base dtor; derived from ~ParticleBufferClass call site
 ??1SegLineRendererClass@@QAE@XZ,0x00960030,derived from ~ParticleBufferClass call site
@@ -224,14 +346,18 @@ name,address,notes
 ??1UDP@@QAE@XZ,0x00006591
 ??1UserPreferences@@UAE@XZ,0x0003F25B
 ??1Video@@QAE@XZ,0x0001642D
+??1W3DAnimationInfo@@QAE@XZ,0x00020018,ILT thunk used by call site
 ??1WindowVideo@@QAE@XZ,0x000253E7
+??1WriteLockClass@VertexBufferClass@@QAE@XZ,0x0091DE10,REL32 callee pin
 ??1file_auto_ptr@@QAE@XZ,0x009DD560
 ??2@YAPAXI@Z,0x00881F30,operator new body
 ??3@YAXPAX@Z,0x00881EB0
 ??4?$VectorClass@VModelNodeClass@HLodClass@@@@QAEAAV0@ABV0@@Z,0x0097ACA0
 ??4?$vector@U?$pair@W4ObjectID@@I@_STL@@V?$allocator@U?$pair@W4ObjectID@@I@_STL@@@2@@_STL@@QAEAAV01@ABV01@@Z,0x0002DC9F
 ??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z,0x00018A70
+??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z,0x00026C6A,ILT thunk used by __copy call site
 ??4Matrix3@@QAEAAV0@ABVMatrix3D@@@Z,0x008D9150
+??4OBBoxClass@@QAEAAV0@ABV0@@Z,0x009316A0
 ??4PlayerTemplate@@QAEAAV0@ABV0@@Z,0x000050F6
 ??4RenderObjClass@@QAEAAV0@ABV0@@Z,0x0091F790
 ??4SegLineRendererClass@@QAEAAV0@ABV0@@Z,0x009600F0
@@ -240,10 +366,13 @@ name,address,notes
 ??4TRoadSegInfo@@QAEAAU0@ABU0@@Z,0x000015EB
 ??8?$VectorClass@H@@UBE_NABV0@@Z,0x00AFEDF0
 ??A?$hash_map@W4NameKeyType@@VDamageFX@@U?$hash@W4NameKeyType@@@rts@@U?$equal_to@W4NameKeyType@@@4@V?$allocator@U?$pair@$$CBW4NameKeyType@@VDamageFX@@@_STL@@@_STL@@@_STL@@QAEAAVDamageFX@@ABW4NameKeyType@@@Z,0x00032506
+??A?$map@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@_STL@@@_STL@@QAEAAPBVWeaponTemplateSet@@ABV?$BitFlags@$0BB@@@@Z,0x00019155,resweep callee back-solved
 ??A?$map@W4NameKeyType@@VObjectCreationList@@U?$less@W4NameKeyType@@@_STL@@V?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@4@@_STL@@QAEAAVObjectCreationList@@ABW4NameKeyType@@@Z,0x00049968
 ??AModuleTemplateMap@ModuleFactory@@QAEAAVModuleTemplate@1@ABH@Z,0x0002047D,ModuleFactory::ModuleTemplateMap::operator[] thunk (body 0x001296E0)
 ??M@YA_NABVAsciiString@@0@Z,0x00015898
 ??RGameSortStruct@@QAE_NPAVGameSpyStagingRoom@@0@Z,0x000317D7
+??RMapHelper@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@QBE_NABV?$BitFlags@$0L@@@0@Z,0x0000A9A2
+??RMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@QBE_NABV?$BitFlags@$0BB@@@0@Z,0x00010B1D,resweep callee back-solved
 ??_C@_08MBMCFODG@CrushDie?$AA@,0x00C908A8,pool-glue cascade static (back-solved)
 ??_C@_09OMFJEEND@FXListDie?$AA@,0x00C908B4,pool-glue cascade static (back-solved)
 ??_C@_0BA@CLLFEOBD@CreateObjectDie?$AA@,0x00C90868,pool-glue cascade static (back-solved)
@@ -353,6 +482,7 @@ name,address,notes
 ??_U@YAPAXI@Z,0x00881F70,array operator new flag-2 variant (W3D containers); flag-1 at 0x881F30
 ??_V@YAXPAX@Z,0x00881EB0
 ??_V@YAXPAX@Z,0x00881EF0,array operator delete flag-2 variant (W3D containers); flag-1 at 0x881EB0
+?Add@?$DynamicVectorClass@PAVVertexMaterialClass@@@@QAE_NABQAVVertexMaterialClass@@@Z,0x0092F7C0
 ?Add@?$DynamicVectorClass@VShaderClass@@@@QAE_NABVShaderClass@@@Z,0x0092FA60
 ?AddOutput@Debug@@AAEXPBDI@Z,0x0088A8F0
 ?Add_To_Collection@CullSystemClass@@IAEXPAVCullableClass@@@Z,0x008E21D0
@@ -360,15 +490,21 @@ name,address,notes
 ?Alloc@FastAllocatorGeneral@@QAEPAXI@Z,0x00AFEE40,decoded from Allocate_Memory call site
 ?Allocate_Object_Memory@?$ObjectPoolClass@VGridLinkClass@@$0BAA@@@QAEPAVGridLinkClass@@XZ,0x008DD970
 ?Allocate_Object_Memory@?$ObjectPoolClass@VMultiListNodeClass@@$0BAA@@@QAEPAVMultiListNodeClass@@XZ,0x009DBDD0
+?BTREE_treepack@@YAXPAUBTreeEncodeContext@@PAUBTREEMemStruct@@IIIH@Z,0x00821200
 ?Base_Update@HTreeClass@@QAEXABVMatrix3D@@@Z,0x009528D0
 ?Begin_Chunk@ChunkSaveClass@@QAE_NK@Z,0x009E16F0
 ?Bind@UDP@@QAEHIG@Z,0x00047FA0
 ?Blend_Update@HTreeClass@@QAEXABVMatrix3D@@PAVHAnimClass@@M1MM@Z,0x009546B0
+?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3D@@@Z,0x008DBA40,rel32 pin for exact-ambiguous landing
 ?Build_Sentence_Not_Centered@Render2DSentenceClass@@AAE?AVVector2@@PBGPAH1_N@Z,0x00942430
 ?Build_Textures@Render2DSentenceClass@@AAEXXZ,0x0093DD60
+?CRC_Memory@@YAKPBEKK@Z,0x009E19C0,second realcrc link (Install_UV / Update_CRC)
+?Cast_AABox_To_Polys@AABTreeClass@@AAE_NPAUCullNodeStruct@1@AAVAABoxCollisionTestClass@@@Z,0x0096AEE0
+?Cast_Ray_To_Polys@AABTreeClass@@AAE_NPAUCullNodeStruct@1@AAVRayCollisionTestClass@@@Z,0x0096ADC0
 ?Close_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E13E0
 ?Close_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1480
 ?Collide@CollisionMath@@SA_NABVAABoxClass@@ABVVector3@@ABVTriClass@@PAUCastResultStruct@@@Z,0x008E0C30
+?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVAABoxClass@@PAUCastResultStruct@@@Z,0x008DAC30
 ?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVOBBoxClass@@PAUCastResultStruct@@@Z,0x008DAD70
 ?Collide@CollisionMath@@SA_NABVOBBoxClass@@ABVVector3@@ABVTriClass@@1PAUCastResultStruct@@@Z,0x008E7180
 ?Combine_Color_And_Alpha@ParticleBufferClass@@IAEXXZ,0x00984CB0,derived from Render_Particles call sites
@@ -377,18 +513,26 @@ name,address,notes
 ?Control_Bone@HTreeClass@@QAEXHABVMatrix3D@@_N@Z,0x00952A60
 ?Convert_Shader@W3dUtilityClass@@SAXABUW3dShaderStruct@@PAVShaderClass@@@Z,0x00978760
 ?Convert_Shader@W3dUtilityClass@@SAXABVShaderClass@@PAUW3dShaderStruct@@@Z,0x00978820
+?Create_New_Particles@ParticleEmitterClass@@AAEXABVQuaternion@@ABVVector3@@@Z,0x0097F930,rel32 pin for exact-ambiguous landing
+?Cull@AABoxCollisionTestClass@@QAE_NABVVector3@@0@Z,0x0096A700
 ?Cur_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E1440
+?Cur_Chunk_Length@ChunkLoadClass@@QAEKXZ,0x009E1450
 ?Cur_Micro_Chunk_ID@ChunkLoadClass@@QAEKXZ,0x009E14E0
 ?DebugAllocMemory@@YAPAXI@Z,0x0088EB30
 ?DebugFreeMemory@@YAXPAX@Z,0x0088EAD0
 ?Delete@?$List@PAUINISection@@@@QAEXXZ,0x009E2630
 ?Determine_Tail_Diffuse@ParticleBufferClass@@IAE?AW4TailDiffuseTypeEnum@1@XZ,0x0098B750
+?Do_Mappers_Need_Normals@MeshMatDescClass@@QAE_NXZ,0x00929AD0
 ?DoesCommandRequireACommandID@@YA_NW4NetCommandType@@@Z,0x00015B72
 ?Enable_Fog@ShaderClass@@QAEXPBD@Z,0x00910F90,derived from ParticleBufferClass main ctor aligned call sites
 ?End_Chunk@ChunkSaveClass@@QAE_NXZ,0x009E17F0
+?ExceptionFilter@DebugExceptionhandler@@SGJPAU_EXCEPTION_POINTERS@@@Z,0x0088E5F0
 ?Fast_Slerp@@YAXAAVQuaternion@@ABV1@1M@Z,0x008DC4C0
 ?Find_POT@@YAHH@Z,0x00AFFAB0
 ?Free@DistLODClass@@AAEXXZ,0x00014BC3
+?Free@FastAllocatorGeneral@@QAEXPAX@Z,0x00AFEBC0
+?Free_Object_Memory@?$ObjectPoolClass@VMatPassTaskClass@@$0BAA@@@QAEXPAVMatPassTaskClass@@@Z,0x009453B0
+?Free_Object_Memory@?$ObjectPoolClass@VPolyRenderTaskClass@@$0BAA@@@QAEXPAVPolyRenderTaskClass@@@Z,0x009452A0
 ?Free_String@StringClass@@AAEXXZ,0x009DB7A0
 ?Free_String@WideStringClass@@AAEXXZ,0x009E71B0
 ?GadgetListBoxAddEntryImage@@YAHPAVGameWindow@@PBVImage@@HHHH_NH@Z,0x0001712A
@@ -405,17 +549,23 @@ name,address,notes
 ?Get_Bounding_Box@MeshGeometryClass@@QAEXPAVAABoxClass@@@Z,0x00924DD0
 ?Get_Bounding_Sphere@MeshGeometryClass@@QAEXPAVSphereClass@@@Z,0x00924E70
 ?Get_Char_Spacing@FontCharsClass@@QAEHG@Z,0x009414D0,body
+?Get_Color_Array@MeshMatDescClass@@QAEPAIH_N@Z,0x0002F8E2,
+?Get_DX8_Render_State_Value_Name@DX8Wrapper@@SAXAAVStringClass@@KI@Z,0x00907BE0
 ?Get_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,0x008E2160
 ?Get_Name@MeshGeometryClass@@QBEPBDXZ,0x00924C30
 ?Get_New_Particles@ParticleBufferClass@@IAEXXZ,0x00987C60
 ?Get_Next_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@PAV2@@Z,0x008E2170
 ?Get_Position@RenderObjClass@@QBE?AVVector3@@XZ,0x009202C0,derived from part_buf matched-caller call sites
+?Get_Render_Target_Resolution@WW3D@@SAXAAH00AA_N@Z,0x008FD1F0,located from binary (camera callee)
+?Get_SS_Category@ShaderClass@@QBE?AW4StaticSortCategoryType@1@XZ,0x00910E10
 ?Get_Shader@LineGroupClass@@QAE?AVShaderClass@@XZ,0x0098ED00
+?Get_Shader@MeshMatDescClass@@QBE?AVShaderClass@@HH@Z,0x00929990
 ?Get_Shader@PointGroupClass@@QAE?AVShaderClass@@XZ,0x00912870
 ?Get_Shader_Array@MeshMatDescClass@@QAEPAVShaderClass@@H_N@Z,0x0092BF50
 ?Get_String@INIClass@@QBEHPBD00PADH@Z,0x009E3DA0
 ?Get_String@StringClass@@AAEXH_N@Z,0x009DB890
 ?Get_Texture@ParticleBufferClass@@QBE?AVTextureHandleClass@1@XZ,0x00988F60,sret holder-returning getter
+?Get_UV_Array_By_Index@MeshMatDescClass@@QAEPAVVector2@@H_N@Z,0x0001D179
 ?Get_View_Plane@CameraClass@@QBEXAAVVector2@@0@Z,0x00931DC0,derived from part_buf matched-caller call sites
 ?Guess_Sort_Level@ShaderClass@@QBEHXZ,0x00910E90
 ?HideDiplomacy@@YAXXZ,0x000067BC
@@ -423,21 +573,73 @@ name,address,notes
 ?HideQuitMenu@@YAXXZ,0x0001BF36
 ?HideSaveLoadMenu@@YAXXZ,0x0000A416
 ?Init@SegLineRendererClass@@QAEXABUW3dEmitterLinePropertiesStruct@@@Z,0x00960190,derived from ParticleBufferClass main ctor aligned call sites
+?Init_Alternate@MeshMatDescClass@@QAEXAAV1@0@Z,0x00929410
+?Init_From_Directional_Light@InputLightStruct@LightEnvironmentClass@@QAEXABVLightClass@@ABVVector3@@@Z,0x0094A970
+?Init_From_Point_Or_Spot_Light@InputLightStruct@LightEnvironmentClass@@QAEXABVLightClass@@ABVVector3@@@Z,0x0094AE10
 ?Initialize@AggregateDefClass@@QAEXAAVRenderObjClass@@@Z,0x00980A60
+?Initialize@HLodDefClass@@QAEXAAVHLodClass@@@Z,0x0097CA80
 ?Insert_Triangles@SortingRendererClass@@SAXABVSphereClass@@GGGG@Z,0x0093B340
 ?Internal_Remove@GenericMultiListClass@@IAE_NPAVMultiListObjectClass@@@Z,0x009DC100
+?Intersect_OBBox@MeshGeometryClass@@QAE_NAAVOBBoxIntersectionTestClass@@@Z,0x00927920
 ?Intersection_Test@CollisionMath@@SA_NABVSphereClass@@ABVAABoxClass@@@Z,0x008E3600
 ?Inv_Sqrt@WWMath@@SIMM@Z,0x00027A43,WWMath::Inv_Sqrt (naked __fastcall) incremental-link thunk (body 0x00131C90); called by Quaternion::Normalize and Axis_To_Quat, owned by wwmath.cpp
 ?Is_Bone_Captured@HTreeClass@@QBE_NH@Z,0x00952A40
 ?Is_Running@ThreadClass@@QAE_NXZ,0x009DB590
 ?Load@INIClass@@QAEHAAVStraw@@@Z,0x009E4680
 ?MD5Update@@YAXPAUMD5_CTX@@PAEI@Z,0x0086AE20
+?MessageBoxOk@@YAPAVGameWindow@@VUnicodeString@@0P6AXXZ@Z,0x0004A340,ILT thunk used by call site
+?Multiply@Matrix3D@@SAXABV1@0PAV1@@Z,0x008D80C0,rel32 pin for exact-ambiguous landing
+?Needs_Vertex_Normals@MeshModelClass@@QAE_NXZ,0x0094E0B0,
+?Notify_Added@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FBF0
+?Notify_Removed@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FC00
+??0TexBufferClass@@QAE@HPBD@Z,0x0092BA60
+?CRC_Memory@@YAKPBEKK@Z,0x009E19C0,second realcrc link (Install_UV / Update_CRC)
+?BTREE_treepack@@YAXPAUBTreeEncodeContext@@PAUBTREEMemStruct@@IIIH@Z,0x00821200
+?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x0004004D,rel32 pin for exact-ambiguous landing
+?insert_unique@?$_Rb_tree@HU?$pair@$$CBHI@_STL@@U?$_Select1st@U?$pair@$$CBHI@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHI@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHI@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHI@_STL@@@2@@2@U32@ABU?$pair@$$CBHI@2@@Z,0x000079EB,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@IPAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVPartitionCell@@@1@I@Z,0x008F9A60,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@PAPAPAVPartitionCell@@PAPAV1@V?$allocator@PAPAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVPartitionCell@@@1@PAPAPAVPartitionCell@@@Z,0x008F9A50,rel32 pin for exact-ambiguous landing
+?_M_initialize_map@?$_Deque_base@PAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@IAEXI@Z,0x008FA150,rel32 pin for exact-ambiguous landing
+??$_Construct@U?$pair@W4ObjectID@@W41@@_STL@@U12@@_STL@@YAXPAU?$pair@W4ObjectID@@W41@@0@ABU10@@Z,0x0001FA1E,rel32 pin for exact-ambiguous landing
+?_M_insert_overflow@?$vector@U?$pair@W4ObjectID@@W41@@_STL@@V?$allocator@U?$pair@W4ObjectID@@W41@@_STL@@@2@@_STL@@IAEXPAU?$pair@W4ObjectID@@W41@@2@ABU32@ABU__false_type@2@I_N@Z,0x00022AF7,rel32 pin for exact-ambiguous landing
+??1Payload@DeliverPayloadNugget@@QAE@XZ,0x0004B10A,rel32 pin for exact-ambiguous landing
+
+??$__copy@PAUPayload@DeliverPayloadNugget@@PAU12@H@_STL@@YAPAUPayload@DeliverPayloadNugget@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000097CD,rel32 pin for exact-ambiguous landing
+??$_Construct@UVideo@@U1@@_STL@@YAXPAUVideo@@ABU1@@Z,0x00030549,rel32 pin for exact-ambiguous landing
+?_M_insert_overflow@?$vector@UVideo@@V?$allocator@UVideo@@@_STL@@@_STL@@IAEXPAUVideo@@ABU3@ABU__false_type@2@I_N@Z,0x000359B3,rel32 pin for exact-ambiguous landing
+?_M_insert@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAEAAU?$pair@QBVGameWindow@@PAVWindowVideo@@@2@ABU32@@Z,0x00032407,rel32 pin for exact-ambiguous landing
+?render_box@BoxRenderObjClass@@IAEXAAVRenderInfoClass@@ABVVector3@@1@Z,0x00956F40,rel32 pin for exact-ambiguous landing
+?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3D@@@Z,0x008DBA40,rel32 pin for exact-ambiguous landing
+?_M_erase@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@@Z,0x00049E13,rel32 pin for exact-ambiguous landing
+?_M_copy@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@PAU32@0@Z,0x0002BD3C,rel32 pin for exact-ambiguous landing
+?Create_New_Particles@ParticleEmitterClass@@AAEXABVQuaternion@@ABVVector3@@@Z,0x0097F930,rel32 pin for exact-ambiguous landing
+?Simple_Evaluate_Pivot@HTreeClass@@QBE_NPAVHAnimClass@@HMABVMatrix3D@@PAV3@@Z,0x00953620,rel32 pin for layout-fixed landing
+?Simple_Evaluate_Pivot@HTreeClass@@QBE_NHABVMatrix3D@@PAV2@@Z,0x009539C0,rel32 pin for layout-fixed landing
+??$__copy@PAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@H@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00018674,rel32 pin for exact-ambiguous landing
+??1HideShowSubObjInfo@ModelConditionInfo@@QAE@XZ,0x0000466F,rel32 pin for exact-ambiguous landing
+??$_Construct@UPrereqUnitRec@ProductionPrerequisite@@U12@@_STL@@YAXPAUPrereqUnitRec@ProductionPrerequisite@@ABU12@@Z,0x00028957,rel32 pin for exact-ambiguous landing
+?_M_insert_overflow@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEXPAUPrereqUnitRec@ProductionPrerequisite@@ABU34@ABU__false_type@2@I_N@Z,0x0000F277,rel32 pin for exact-ambiguous landing
+?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x0001F843,rel32 pin for exact-ambiguous landing
+?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@2@@Z,0x000290B4,rel32 pin for exact-ambiguous landing
+??$_Construct@UHideShowSubObjInfo@ModelConditionInfo@@U12@@_STL@@YAXPAUHideShowSubObjInfo@ModelConditionInfo@@ABU12@@Z,0x0004A818,rel32 pin for exact-ambiguous landing
+?_M_insert_overflow@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUHideShowSubObjInfo@ModelConditionInfo@@ABU34@ABU__false_type@2@I_N@Z,0x000251D0,rel32 pin for exact-ambiguous landing
+?_M_insert@?$hashtable@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAEAAU?$pair@$$CBHW4Relationship@@@2@ABU32@@Z,0x000013E8,rel32 pin for exact-ambiguous landing
+?Multiply@Matrix3D@@SAXABV1@0PAV1@@Z,0x008D80C0,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@PAPAPAVMapObject@@PAPAV1@V?$allocator@PAPAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVMapObject@@@1@PAPAPAVMapObject@@@Z,0x008F9A20,rel32 pin for exact-ambiguous landing
+??0?$_STLP_alloc_proxy@IPAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVMapObject@@@1@I@Z,0x008F9A30,rel32 pin for exact-ambiguous landing
+?_M_initialize_map@?$_Deque_base@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@IAEXI@Z,0x008FA2B0,rel32 pin for exact-ambiguous landing
+?Add@?$DynamicVectorClass@PAVVertexMaterialClass@@@@QAE_NABQAVVertexMaterialClass@@@Z,0x0092F7C0,rel32 pin for exact-ambiguous landing
+?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVAABoxClass@@PAUCastResultStruct@@@Z,0x008DAD70,rel32 pin for exact-ambiguous landing
+??4BoxRenderObjClass@@QAEAAV0@ABV0@@Z,0x00956E40,rel32 pin for exact-ambiguous landing
+?OnEnd@DownloadManager@@UAEJXZ,0x000044E4,ILT thunk used by call site
+?OnError@DownloadManager@@UAEJH@Z,0x00031EC1,ILT thunk used by call site
 ?OnStatusUpdate@DownloadManager@@UAEJH@Z,0x00008283
 ?Open_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E1380
 ?Open_Micro_Chunk@ChunkLoadClass@@QAE_NXZ,0x009E17C0
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVFrustumClass@@ABVAABoxClass@@@Z,0x008DB380
 ?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVOBBoxClass@@ABVAABoxClass@@@Z,0x008E2310
 ?ParseBlendTileData@WorldHeightMap@@IAE_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z,0x00040AAC
+?Poly_Count@AABTreeBuilderClass@@QAEHXZ,0x0096B3B0
 ?PopulateLobbyPlayerListbox@@YAXXZ,0x000070B3
 ?Put@Base64Pipe@@UAEHPBXH@Z,0x009E7990
 ?Put_String@INIClass@@QAE_NPBD00@Z,0x009E3BD0
@@ -467,6 +669,7 @@ name,address,notes
 ?Search_For_Node@?$IndexClass@HPAUINIEntry@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2E60
 ?Search_For_Node@?$IndexClass@HPAUINISection@@@@ABEPBUNodeElement@1@ABH@Z,0x009E2FD0
 ?Set@Matrix3D@@QAEXABVMatrix3x3@@ABVVector3@@@Z,0x00964150
+?Set@Matrix3x3@@QAEXABVMatrix3D@@@Z,0x008D9000,Update_Frustum callee
 ?SetLobbyAttemptHostJoin@@YAX_N@Z,0x0000362A
 ?Set_Arrays@LineGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@0PAV?$ShareBufferClass@VVector4@@@@1PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@3H@Z,0x0098EB00
 ?Set_Arrays@PointGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@PAV?$ShareBufferClass@VVector4@@@@PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@PAV?$ShareBufferClass@E@@4HMMMM@Z,0x009126B0,derived from Render_Particles call sites
@@ -487,12 +690,16 @@ name,address,notes
 ?Set_Point_Mode@PointGroupClass@@QAEXW4PointModeEnum@1@@Z,0x00912080,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Point_Orientation@PointGroupClass@@QAEXE@Z,0x00912040,derived from Render_Particles call sites
 ?Set_Point_Size@PointGroupClass@@QAEXM@Z,0x00912000,derived from Render_Particles call sites
+?Set_Position@RenderObjClass@@UAEXABVVector3@@@Z,0x00920220
 ?Set_Shader@LineGroupClass@@QAEXABVShaderClass@@@Z,0x0098E940,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Shader@PointGroupClass@@QAEXVShaderClass@@@Z,0x009120E0,derived from ParticleBufferClass main ctor aligned call sites
 ?Set_Tail_Diffuse@LineGroupClass@@QAEXABVVector4@@@Z,0x0098EC40
 ?Set_Texture@LineGroupClass@@QAEXPAVTextureClass@@@Z,0x0098EC80
 ?Set_Texture@PointGroupClass@@QAEXPAVTextureClass@@@Z,0x009127F0
 ?Set_Texture@SegLineRendererClass@@QAEXPAVTextureClass@@@Z,0x00960050
+?Set_Transform@RenderObjClass@@UAEXABVMatrix3D@@@Z,0x009201A0
+?Simple_Evaluate_Pivot@HTreeClass@@QBE_NHABVMatrix3D@@PAV2@@Z,0x009539C0,rel32 pin for layout-fixed landing
+?Simple_Evaluate_Pivot@HTreeClass@@QBE_NPAVHAnimClass@@HMABVMatrix3D@@PAV3@@Z,0x00953620,rel32 pin for layout-fixed landing
 ?Start@ParticleEmitterClass@@QAEXXZ,0x0097F090
 ?String@CRC@@SAKPBDK@Z,0x009E7FD0
 ?TheAIUpdateInterfacePool@?1??getClassMemoryPool@AIUpdateInterface@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EEFE30,pool-glue cascade static (back-solved)
@@ -601,35 +808,67 @@ name,address,notes
 ?TheWorkerAIUpdatePool@?1??getClassMemoryPool@WorkerAIUpdate@@CAPAVMemoryPool@@XZ@4PAV3@A,0x00EF047C,pool-glue cascade static (back-solved)
 ?Uninitialised_Grow@StringClass@@AAEXH@Z,0x009DBA70
 ?Update_Bounding_Box@ParticleBufferClass@@IAEXXZ,0x0098B460
+?Update_Frustum@CameraClass@@IBEXXZ,0x00931DF0,CameraClass::Update_Frustum - REL32 callee for Project/Project_Camera_Space_Point
+?Update_Min_Max@AABTreeClass@@AAEXHAAVVector3@@0@Z,0x0096AFC0
 ?Update_Non_New_Particles@ParticleBufferClass@@IAEXI@Z,0x00988060
 ?Update_Visual_Particle_State@ParticleBufferClass@@IAEXXZ,0x00986FC0
 ?Write@ChunkSaveClass@@QAEKPBXK@Z,0x009E18A0
 ?WriteConditionDataChunk@Condition@@SAXAAVDataChunkOutput@@PAV1@@Z,0x0003DA91
 ?_M_allocate@?$__node_alloc@$00$0A@@_STL@@CAPAXI@Z,0x00082E540,STLport _Node_alloc::_M_allocate called by list<Coord3D> copy ctor
+?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@PAUAudioEventInfo@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAUAudioEventInfo@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@PAUAudioEventInfo@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x000103F7,resweep callee back-solved
+?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x0001F843,rel32 pin for exact-ambiguous landing
+?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x0004004D,rel32 pin for exact-ambiguous landing
+?_M_clear@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXXZ,0x00015168,ILT thunk used by call site
+?_M_clear@?$vector@UNugget@ModuleInfo@@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@IAEXXZ,0x000481E9,resweep callee back-solved
+?_M_clear@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEXXZ,0x0001BEFA,resweep callee back-solved
 ?_M_clear@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEXXZ,0x0001FE92
+?_M_clear@?$vector@VW3DAnimationInfo@@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@IAEXXZ,0x00008837,ILT thunk used by call site
+?_M_copy@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@2@PAU32@0@Z,0x0002F095,resweep callee back-solved
 ?_M_copy@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@2@PAU32@0@Z,0x0002E15E
+?_M_copy@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@PAU32@0@Z,0x0002BD3C,rel32 pin for exact-ambiguous landing
 ?_M_deallocate@?$__node_alloc@$00$0A@@_STL@@CAXPAXI@Z,0x0082E5F0
 ?_M_decrement@?$_Rb_global@_N@_STL@@SAPAU_Rb_tree_node_base@2@PAU32@@Z,0x0082B8E0
+?_M_erase@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@2@@Z,0x00042FDC,resweep callee back-solved
 ?_M_erase@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VHotKey@@@_STL@@@2@@Z,0x00020E37
 ?_M_erase@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@3@UAsciiComparator@@V?$allocator@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@2@@Z,0x00035F12
 ?_M_erase@?$_Rb_tree@VUnicodeString@@U?$pair@$$CBVUnicodeString@@_N@_STL@@U?$_Select1st@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@UUnicodeStringLessThan@@V?$allocator@U?$pair@$$CBVUnicodeString@@_N@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBVUnicodeString@@_N@_STL@@@2@@Z,0x00008B34
+?_M_erase@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@@Z,0x00049E13,rel32 pin for exact-ambiguous landing
 ?_M_fill_insert@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAEXU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@I_N@Z,0x0000886E
 ?_M_increment@?$_Rb_global@_N@_STL@@SAPAU_Rb_tree_node_base@2@PAU32@@Z,0x0082B870
+?_M_initialize_map@?$_Deque_base@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@IAEXI@Z,0x008FA2B0,rel32 pin for exact-ambiguous landing
+?_M_initialize_map@?$_Deque_base@PAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@IAEXI@Z,0x008FA150,rel32 pin for exact-ambiguous landing
+?_M_initialize_map@?$_Deque_base@PAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@IAEXI@Z,0x009ED640,resweep callee back-solved
 ?_M_insert@?$_Rb_tree@PAVGameSpyStagingRoom@@PAV1@U?$_Identity@PAVGameSpyStagingRoom@@@_STL@@UGameSortStruct@@V?$allocator@PAVGameSpyStagingRoom@@@3@@_STL@@AAE?AU?$_Rb_tree_iterator@PAVGameSpyStagingRoom@@U?$_Nonconst_traits@PAVGameSpyStagingRoom@@@_STL@@@2@PAU_Rb_tree_node_base@2@0ABQAVGameSpyStagingRoom@@0@Z,0x0000FF47
 ?_M_insert@?$_Rb_tree@PBVThingTemplate@@PBV1@U?$_Identity@PBVThingTemplate@@@_STL@@U?$less@PBVThingTemplate@@@3@V?$allocator@PBVThingTemplate@@@3@@_STL@@AAE?AU?$_Rb_tree_iterator@PBVThingTemplate@@U?$_Nonconst_traits@PBVThingTemplate@@@_STL@@@2@PAU_Rb_tree_node_base@2@0ABQBVThingTemplate@@0@Z,0x009A4130,decoded from insert_unique call site
 ?_M_insert@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@AAE?AU?$_Rb_tree_iterator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@2@@2@PAU_Rb_tree_node_base@2@0ABU?$pair@$$CBVAsciiString@@UCoord3D@@@2@0@Z,0x000086A2
+?_M_insert@?$hashtable@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAEAAU?$pair@$$CBHW4Relationship@@@2@ABU32@@Z,0x000013E8,rel32 pin for exact-ambiguous landing
+?_M_insert@?$hashtable@U?$pair@$$CBIW4Relationship@@@_STL@@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@_STL@@QAEAAU?$pair@$$CBIW4Relationship@@@2@ABU32@@Z,0x009EE9B0,resweep callee back-solved
+?_M_insert@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAEAAU?$pair@QBVGameWindow@@PAVWindowVideo@@@2@ABU32@@Z,0x00032407,rel32 pin for exact-ambiguous landing
 ?_M_insert_aux@?$vector@_NV?$allocator@_N@_STL@@@_STL@@IAEXU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@_N@Z,0x0002CB5B
 ?_M_insert_overflow@?$vector@EV?$allocator@E@_STL@@@_STL@@IAEXPAEABEABU__true_type@2@I_N@Z,0x0002F20C
+?_M_insert_overflow@?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@IAEXPAPAVObject@@ABQAV3@ABU__true_type@2@I_N@Z,0x000486BC,ILT thunk used by call site
 ?_M_insert_overflow@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@IAEXPAPAVObjectCreationNugget@@ABQAV3@ABU__true_type@2@I_N@Z,0x0002B6E8
 ?_M_insert_overflow@?$vector@PBVFXList@@V?$allocator@PBVFXList@@@_STL@@@_STL@@IAEXPAPBVFXList@@ABQBV3@ABU__true_type@2@I_N@Z,0x00044FC1
+?_M_insert_overflow@?$vector@U?$pair@W4ObjectID@@W41@@_STL@@V?$allocator@U?$pair@W4ObjectID@@W41@@_STL@@@2@@_STL@@IAEXPAU?$pair@W4ObjectID@@W41@@2@ABU32@ABU__false_type@2@I_N@Z,0x00022AF7,rel32 pin for exact-ambiguous landing
+?_M_insert_overflow@?$vector@UAnimSet@GenericObjectCreationNugget@@V?$allocator@UAnimSet@GenericObjectCreationNugget@@@_STL@@@_STL@@IAEXPAUAnimSet@GenericObjectCreationNugget@@ABU34@ABU__false_type@2@I_N@Z,0x0000DB2F,resweep callee back-solved
+?_M_insert_overflow@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUHideShowSubObjInfo@ModelConditionInfo@@ABU34@ABU__false_type@2@I_N@Z,0x000251D0,rel32 pin for exact-ambiguous landing
 ?_M_insert_overflow@?$vector@UHorzLine@@V?$allocator@UHorzLine@@@_STL@@@_STL@@IAEXPAUHorzLine@@ABU3@ABU__false_type@2@I_N@Z,0x00017FB2
+?_M_insert_overflow@?$vector@UNugget@ModuleInfo@@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@IAEXPAUNugget@ModuleInfo@@ABU34@ABU__false_type@2@I_N@Z,0x0001ADBB,resweep callee back-solved
+?_M_insert_overflow@?$vector@UPayload@DeliverPayloadNugget@@V?$allocator@UPayload@DeliverPayloadNugget@@@_STL@@@_STL@@IAEXPAUPayload@DeliverPayloadNugget@@ABU34@ABU__false_type@2@I_N@Z,0x00004F93,resweep callee back-solved
+?_M_insert_overflow@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEXPAUPrereqUnitRec@ProductionPrerequisite@@ABU34@ABU__false_type@2@I_N@Z,0x0000F277,rel32 pin for exact-ambiguous landing
 ?_M_insert_overflow@?$vector@UUpgrades@CashHackSpecialPowerModuleData@@V?$allocator@UUpgrades@CashHackSpecialPowerModuleData@@@_STL@@@_STL@@IAEXPAUUpgrades@CashHackSpecialPowerModuleData@@ABU34@ABU__false_type@2@I_N@Z,0x0000EF11
 ?_M_insert_overflow@?$vector@UUpgrades@OCLSpecialPowerModuleData@@V?$allocator@UUpgrades@OCLSpecialPowerModuleData@@@_STL@@@_STL@@IAEXPAUUpgrades@OCLSpecialPowerModuleData@@ABU34@ABU__false_type@2@I_N@Z,0x0003913F
+?_M_insert_overflow@?$vector@UVideo@@V?$allocator@UVideo@@@_STL@@@_STL@@IAEXPAUVideo@@ABU3@ABU__false_type@2@I_N@Z,0x000359B3,rel32 pin for exact-ambiguous landing
+?_M_insert_overflow@?$vector@UWeaponBarrelInfo@ModelConditionInfo@@V?$allocator@UWeaponBarrelInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUWeaponBarrelInfo@ModelConditionInfo@@ABU34@ABU__false_type@2@I_N@Z,0x0003D7B2,ILT thunk used by call site
+?_M_insert_overflow@?$vector@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@IAEXPAVAsciiString@@ABV3@ABU__false_type@2@I_N@Z,0x000112C0,resweep callee back-solved
 ?_M_insert_overflow@?$vector@VPlayerTemplate@@V?$allocator@VPlayerTemplate@@@_STL@@@_STL@@IAEXPAVPlayerTemplate@@ABV3@ABU__false_type@2@I_N@Z,0x0003059E
+?_M_insert_overflow@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEXPAVProductionPrerequisite@@ABV3@ABU__false_type@2@I_N@Z,0x00041F1F,resweep callee back-solved
 ?_M_insert_overflow@?$vector@VUnicodeString@@V?$allocator@VUnicodeString@@@_STL@@@_STL@@IAEXPAVUnicodeString@@ABV3@ABU__false_type@2@I_N@Z,0x00016A63
+?_M_insert_overflow@?$vector@VW3DAnimationInfo@@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@IAEXPAVW3DAnimationInfo@@ABV3@ABU__false_type@2@I_N@Z,0x00037024,ILT thunk used by call site
 ?_M_insert_overflow@?$vector@VWeaponTemplateSet@@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@IAEXPAVWeaponTemplateSet@@ABV3@ABU__false_type@2@I_N@Z,0x0001636F
 ?_M_insert_overflow@?$vector@W4ObjectID@@V?$allocator@W4ObjectID@@@_STL@@@_STL@@IAEXPAW4ObjectID@@ABW43@ABU__false_type@2@I_N@Z,0x00033DAC
 ?_M_insert_overflow@?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@IAEXPAW4ScienceType@@ABW43@ABU__false_type@2@I_N@Z,0x00023588
+?_M_lower_bound@?$_Rb_tree@$$CBV?$BitFlags@$0BB@@@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@2@ABV?$BitFlags@$0BB@@@@Z,0x00005A60,resweep callee back-solved
 ?_M_push_back_aux_v@?$deque@VGameResultsRequest@@V?$allocator@VGameResultsRequest@@@_STL@@@_STL@@IAEXABVGameResultsRequest@@@Z,0x0002217E
 ?_M_push_back_aux_v@?$deque@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXABVGameResultsResponse@@@Z,0x0004A0B1
 ?addArgType@GameMessageParser@@QAEXW4GameMessageArgumentDataType@@H@Z,0x0000B569,GameMessageParser::addArgType thunk
@@ -657,7 +896,9 @@ name,address,notes
 ?clear@Dict@@QAEXXZ,0x00033F46
 ?clear@TeamFactory@@QAEXXZ,0x000284A7
 ?clearAllEvents@Radar@@IAEXXZ,0x00028C27
+?clearAndSetModelConditionState@Drawable@@QAEXW4ModelConditionFlagType@@0@Z,0x0001C8D2
 ?closeDataChunk@DataChunkOutput@@QAEXXZ,0x00004B42
+?computeApproachPosition@DockUpdate@@IAE?AUCoord3D@@HPAVObject@@@Z,0x0001D7C8
 ?connectCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPConnectResponseArg@@@Z,0x000314AD
 ?copyFrom@DictPair@Dict@@QAEXPAU12@@Z,0x00013E94
 ?copyFromQueueNode@BFMENetworkQueueItem1@@QAEXPAX@Z,0x00032F6A,native BFME queue item copy helper for wrapper queue +0x3c
@@ -675,6 +916,7 @@ name,address,notes
 ?doFxAtBones@FXListAtBonePosFXNugget@@IBEXPBVObject@@H@Z,0x00010CC6
 ?doNamedMapReveal@ScriptEngine@@QAEXABVAsciiString@@@Z,0x0001FC3F
 ?doSkyBoxSet@@YAX_N@Z,0x00029AC8
+?downloadNextQueuedFile@DownloadManager@@QAEJXZ,0x00038F00,ILT thunk used by call site
 ?enableRadar@Player@@QAEXXZ,0x00043207
 ?ensureUnique@Dict@@AAEPAUDictPair@1@H_NPAU21@@Z,0x0002BF21
 ?erase@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAEXABU?$_Ht_iterator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@U?$_Const_traits@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@2@@Z,0x0003FB98
@@ -688,9 +930,11 @@ name,address,notes
 ?evaluateNamedInsideArea@ScriptConditions@@IAE_NPAVParameter@@0@Z,0x0000696F
 ?evaluateTeamInsideAreaEntirely@ScriptConditions@@IAE_NPAVParameter@@00@Z,0x00013219
 ?evaluateTeamInsideAreaPartially@ScriptConditions@@IAE_NPAVParameter@@00@Z,0x0004A8E0
+?findBestInfoSlow@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@ABEPBVWeaponTemplateSet@@ABV?$vector@VWeaponTemplateSet@@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@ABV?$BitFlags@$0BB@@@@Z,0x00013ACA,resweep callee back-solved
 ?findControlBarOverride@GameLogic@@QBE_NABVAsciiString@@HAAPBVCommandButton@@@Z,0x00002509
 ?findFXList@FXListStore@@QBEPBVFXList@@PBD@Z,0x0001EDE9
 ?findFunction@FunctionLexicon@@IAEPAXW4NameKeyType@@W4TableIndex@1@@Z,0x00025CD4
+?findImageByName@ImageCollection@@QAEPBVImage@@ABVAsciiString@@@Z,0x0001D606
 ?findLadderByIndex@LadderList@@QAEPBVLadderInfo@@H@Z,0x00028E93
 ?findMapping@DataChunkTableOfContents@@AAEPAVMapping@@ABVAsciiString@@@Z,0x0001587A
 ?findMemoryPool@MemoryPoolFactory@@QAEPAVMemoryPool@@PBD@Z,0x0003ADD7,pool-glue cascade callee (from retail call site)
@@ -699,7 +943,10 @@ name,address,notes
 ?findUpgrade@UpgradeCenter@@QBEPBVUpgradeTemplate@@ABVAsciiString@@@Z,0x0002F95A
 ?friend_awakenUpdateModule@GameLogic@@QAEXPAVObject@@PAVUpdateModule@@I@Z,0x00009944
 ?friend_getFinalOverride@Overridable@@QAEPAV1@XZ,0x00048C61
+?friend_setDamageToFXString@TerrainRoadType@@QAEXW4BodyDamageType@@HVAsciiString@@@Z,0x00024E0B,ILT thunk -> 0x601b50 (parseTransitionToFX callee)
+?friend_setRepairedToFXString@TerrainRoadType@@QAEXW4BodyDamageType@@HVAsciiString@@@Z,0x0001C693,ILT thunk -> 0x61cc0 (parseTransitionToFX callee)
 ?getAsciiString@Dict@@QBE?AVAsciiString@@W4NameKeyType@@PA_N@Z,0x0002FF6D
+?getBridgeHeight@Bridge@@QAEMPBUCoord3D@@PAU2@@Z,0x0000B802,ILT thunk used by call site
 ?getCampaignDifficulty@OptionPreferences@@QAEHXZ,0x00032B5A
 ?getCell@Pathfinder@@QAEPAVPathfindCell@@W4PathfindLayerEnum@@HH@Z,0x00020671
 ?getChunkNumber@NetWrapperCommandMsg@@QAEIXZ,0x0003F814
@@ -712,6 +959,8 @@ name,address,notes
 ?getData@NetWrapperCommandMsg@@QAEPAEXZ,0x0002D867
 ?getDataLength@NetWrapperCommandMsg@@QAEIXZ,0x0003D839
 ?getDataOffset@NetWrapperCommandMsg@@QAEIXZ,0x00027048
+?getDisplayName@PlayerTemplate@@QBE?AVUnicodeString@@XZ,0x000300D5,ILT thunk used by call site
+?getErrorString@DownloadManager@@QAE?AVUnicodeString@@XZ,0x0000ECCD,ILT thunk used by call site
 ?getFinalOverride@Overridable@@QBEPBV1@XZ,0x000022BB
 ?getID@AIGroup@@QAEIXZ,0x000131DD
 ?getID@Drawable@@QBE?AW4DrawableID@@XZ,0x00009B01
@@ -740,8 +989,12 @@ name,address,notes
 ?getShroudStatusForPlayer@PartitionManager@@QBE?AW4CellShroudStatus@@HPBUCoord3D@@@Z,0x008F7430
 ?getStatusString@DownloadManager@@QAE?AVUnicodeString@@XZ,0x0001AEEC
 ?getUserMapDir@MapCache@@QBE?AVAsciiString@@XZ,0x000139E9
+?get_allocator@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QBE?AV?$allocator@PAVObjectCreationNugget@@@2@XZ,0x00042E06,resweep callee back-solved
+?get_allocator@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QBE?AV?$allocator@PAVObjectCreationNugget@@@2@XZ,0x00044166,resweep callee back-solved
 ?getframe@AdaptiveDeltaMotionChannelClass@@AAEMKK@Z,0x00977FF0
 ?giveUpgrade@Object@@QAEXPBVUpgradeTemplate@@@Z,0x0001A97E
+?gotInternalAddress@NAT@@IAEXHI@Z,0x00670D70,processGlobalMessage callee
+?gotMangledPort@NAT@@IAEXHG@Z,0x00671EB0,processGlobalMessage callee
 ?groupAttackObjectPrivate@AIGroup@@AAEX_NPAVObject@@HW4CommandSourceType@@@Z,0x00041CD1
 ?hasPlayerTimedOut@DisconnectManager@@IAE_NH@Z,0x00014AD8
 ?hidePurchaseScience@ControlBar@@QAEXXZ,0x00020347
@@ -754,10 +1007,20 @@ name,address,notes
 ?initializeBonePositions@SpawnPointProductionExitUpdate@@AAEXXZ,0x0003B566
 ?insert4Way@W3DRoadBuffer@@IAEXVVector2@@HM@Z,0x00032B96,ILT thunk to 0x706310
 ?insertTee@W3DRoadBuffer@@IAEXVVector2@@HM@Z,0x00007522,ILT thunk to 0x70BC00
+?insert_unique@?$_Rb_tree@$$CBV?$BitFlags@$0BB@@@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@2@@2@U32@ABU?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@2@@Z,0x00010F1E,resweep callee back-solved
+?insert_unique@?$_Rb_tree@$$CBV?$BitFlags@$0L@@@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@2@@2@U32@ABU?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@2@@Z,0x0000F952
 ?insert_unique@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBGE@_STL@@U?$_Nonconst_traits@U?$pair@$$CBGE@_STL@@@2@@2@U32@ABU?$pair@$$CBGE@2@@Z,0x0000DE77
+?insert_unique@?$_Rb_tree@HU?$pair@$$CBHI@_STL@@U?$_Select1st@U?$pair@$$CBHI@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHI@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHI@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHI@_STL@@@2@@2@U32@ABU?$pair@$$CBHI@2@@Z,0x000079EB,rel32 pin for exact-ambiguous landing
+?insert_unique@?$_Rb_tree@IU?$pair@$$CBIPAVImage@@@_STL@@U?$_Select1st@U?$pair@$$CBIPAVImage@@@_STL@@@2@U?$less@I@2@V?$allocator@U?$pair@$$CBIPAVImage@@@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBIPAVImage@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBIPAVImage@@@_STL@@@2@@2@U32@ABU?$pair@$$CBIPAVImage@@@2@@Z,0x009A4350,decoded from map<IPAVImage>::operator[]
+?insert_unique@?$_Rb_tree@PBVThingTemplate@@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Select1st@U?$pair@QBVThingTemplate@@H@_STL@@@3@U?$less@PBVThingTemplate@@@3@V?$allocator@U?$pair@QBVThingTemplate@@H@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Nonconst_traits@U?$pair@QBVThingTemplate@@H@_STL@@@2@@2@U32@ABU?$pair@QBVThingTemplate@@H@2@@Z,0x0003E22A,ILT thunk used by call site
+?insert_unique@?$_Rb_tree@PBVThingTemplate@@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Select1st@U?$pair@QBVThingTemplate@@H@_STL@@@3@U?$less@PBVThingTemplate@@@3@V?$allocator@U?$pair@QBVThingTemplate@@H@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Nonconst_traits@U?$pair@QBVThingTemplate@@H@_STL@@@2@@2@U32@ABU?$pair@QBVThingTemplate@@H@2@@Z,0x009A4350,resweep callee back-solved
 ?insert_unique@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@QAE?AU?$pair@U?$_Rb_tree_iterator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@2@@_STL@@_N@2@ABU?$pair@$$CBVAsciiString@@UCoord3D@@@2@@Z,0x0002DA10
+?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@M@2@@Z,0x00030512,resweep callee back-solved
+?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@2@@Z,0x000082F6,resweep callee back-solved
 ?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@2@@Z,0x00024ADC
+?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@2@@Z,0x000290B4,rel32 pin for exact-ambiguous landing
 ?isAbleToBeToppled@ToppleUpdate@@QBE_NXZ,0x0000678A
+?isCellOnEnd@Bridge@@QAE_NPBURegion2D@@@Z,0x0000DAAD,ILT thunk used by call site
 ?isPacketRouter@ConnectionManager@@QAE_NXZ,0x00044139
 ?isPlayerConnected@ConnectionManager@@QAE_NH@Z,0x0001514A
 ?isPlayerVotedOut@DisconnectManager@@IAE_NHPAVConnectionManager@@@Z,0x0001ECE0
@@ -802,11 +1065,13 @@ name,address,notes
 ?parseReal@INI@@SAXPAV1@PAX1PBX@Z,0x00852B20
 ?parseScience@INI@@SAXPAV1@PAX1PBX@Z,0x0001393A
 ?parseUnsignedInt@INI@@SAXPAV1@PAX1PBX@Z,0x00852AC0
+?parseWeaponBonusSet@WeaponBonusSet@@QAEXPAVINI@@@Z,0x00019BC8
 ?parseWeaponTemplate@INI@@SAXPAV1@PAX1PBX@Z,0x0000CBDF
 ?playerHasPrereqsForScience@ScienceStore@@QBE_NPBVPlayer@@W4ScienceType@@@Z,0x0000DCDD
 ?pop@Shell@@QAEXXZ,0x00006AAA
 ?popFront@BFMENetworkQueue1@@QAEXXZ,0x00023592,native BFME queue pop helper for wrapper queue +0x3c
 ?popFront@BFMENetworkQueue@@QAEXXZ,0x0002491A,native BFME queue pop helper for wrapper queue +0x14
+?probed@NAT@@IAEXH@Z,0x00671DE0,processGlobalMessage callee (ILT body)
 ?processContextSensitiveButtonClick@ControlBar@@QAE?AW4CBCommandStatus@@PAVGameWindow@@W4GadgetGameMessage@@@Z,0x00046F88
 ?processProgress@GameLogic@@QAEXHH@Z,0x0002E66D
 ?readDict@DataChunkInput@@QAE?AVDict@@XZ,0x00022683
@@ -814,11 +1079,14 @@ name,address,notes
 ?readUnicodeString@@YA?AVUnicodeString@@PAU_iobuf@@@Z,0x000322F4,shared replay Unicode string reader thunk
 ?readUntilSemicolon@@YAXPAVFile@@PADH@Z,0x004843E0,decoded from parseDefaultColor call site
 ?read_texture_ids@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z,0x0096DB40,decoded from read_texture_stage call site
+?releaseBuffer@UnicodeString@@IAEXXZ,0x008881D0,BFME releaseBuffer body (inlined ~UnicodeString call sites encode this)
 ?releaseBuffer@UnicodeString@@IAEXXZ,0x009409F0
 ?releaseData@Dict@@AAEXXZ,0x00014475
+?releaseTrack@WaterTracksRenderSystem@@IAEXPAVWaterTracksObj@@@Z,0x0000E250
 ?remove@Dict@@QAE_NW4NameKeyType@@@Z,0x000072B6
 ?removeFromBuildList@SidesInfo@@QAEHPAVBuildListInfo@@@Z,0x0000A5A6
 ?renderTrees@BaseHeightMapRenderObjClass@@QAEXPAVCameraClass@@@Z,0x0003FE36
+?render_box@BoxRenderObjClass@@IAEXAAVRenderInfoClass@@ABVVector3@@1@Z,0x00956F40,rel32 pin for exact-ambiguous landing
 ?requestCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyRequestArg@@@Z,0x00031D9F
 ?reserve@?$vector@UHorzLine@@V?$allocator@UHorzLine@@@_STL@@@_STL@@QAEXI@Z,0x0000DE95
 ?resize@?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEXI@Z,0x0000366B
@@ -832,7 +1100,9 @@ name,address,notes
 ?sendToManglerFromPort@FirewallHelperClass@@QAE_NIGG_N@Z,0x00022C00
 ?set@LayoutFilename@@QAEXPBDH@Z,0x00887D20
 ?set@UnicodeString@@QAEXABV1@@Z,0x00888530
+?setConnectionState@NAT@@IAEXHW4NATConnectionState@@@Z,0x00670DC0,processGlobalMessage callee (ILT body)
 ?setDefaultControlBarConfig@ControlBar@@IAEXXZ,0x00043E73
+?setDisabledUntil@Object@@QAEXW4DisabledType@@I@Z,0x0003364A
 ?setFPMode@@YAXXZ,0x008FC4C0
 ?setLastLadder@CustomMatchPreferences@@QAEXABVAsciiString@@G@Z,0x00046E43
 ?setLastLadder@QuickMatchPreferences@@QAEXABVAsciiString@@G@Z,0x00029B36
@@ -841,6 +1111,8 @@ name,address,notes
 ?setPrep@Dict@@AAEPAUDictPair@1@W4NameKeyType@@W4DataType@1@@Z,0x00042749
 ?setSortMode@@YAXW4GameSortType@@@Z,0x00048360
 ?setTransformMatrix@Thing@@QAEXPBVMatrix3D@@@Z,0x00023D49
+?shutdown@TerrainTracksRenderObjClassSystem@@QAEXXZ,0x0002C6E7
+?shutdown@WaterTracksRenderSystem@@QAEXXZ,0x000319CB
 ?spin@LockClass@FastCriticalSectionClass@@CIXPAI@Z,0x00026FA8,FastCriticalSectionClass::LockClass spin-acquire (shared out-of-line body reached via ILT thunk); StringClass locks resolve here
 ?statusCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyStatusArg@@@Z,0x0003BD8B
 ?stopAllBoneFX@BoneFXUpdate@@QAEXXZ,0x0002728C
@@ -856,6 +1128,7 @@ name,address,notes
 ?winGetInstanceData@GameWindow@@QAEPAVWinInstanceData@@XZ,0x00034991
 ?winGetNext@GameWindow@@QAEPAV1@XZ,0x0000D2B0
 ?winGetNextInLayout@GameWindow@@QAEPAV1@XZ,0x0002A414
+?winGetParent@GameWindow@@QAEPAV1@XZ,0x00014F97,ILT thunk used by call site
 ?winGetPrev@GameWindow@@QAEPAV1@XZ,0x0000DDF5
 ?winGetPrevInLayout@GameWindow@@QAEPAV1@XZ,0x00005399
 ?winGetScreenPosition@GameWindow@@QAEHPAH0@Z,0x0002F94B
@@ -892,6 +1165,7 @@ _XMP_Is_Small_Prime,0x009E8CA0
 __CIacos,0x009F7256
 __CIasin,0x009F7D86
 __CIpow,0x009F6FB2
+__CxxThrowException@8,0x00850600,CRT throw helper
 ___gameMemAllocPtr,0x0130E9B4,game memory-manager alloc fn ptr
 ___gameMemFreePtr,0x0130E9AC,game memory-manager free fn ptr (indirect call target)
 __alloca_probe,0x009F6C60
@@ -1007,227 +1281,3 @@ __stringbase_isnotnone_cmp_wchar,0x0041F3D,internal wide-char string not-none co
 _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
-?friend_setDamageToFXString@TerrainRoadType@@QAEXW4BodyDamageType@@HVAsciiString@@@Z,0x00024E0B,ILT thunk -> 0x601b50 (parseTransitionToFX callee)
-?friend_setRepairedToFXString@TerrainRoadType@@QAEXW4BodyDamageType@@HVAsciiString@@@Z,0x0001C693,ILT thunk -> 0x61cc0 (parseTransitionToFX callee)
-__CxxThrowException@8,0x00850600,CRT throw helper
-?insert_unique@?$_Rb_tree@IU?$pair@$$CBIPAVImage@@@_STL@@U?$_Select1st@U?$pair@$$CBIPAVImage@@@_STL@@@2@U?$less@I@2@V?$allocator@U?$pair@$$CBIPAVImage@@@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBIPAVImage@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBIPAVImage@@@_STL@@@2@@2@U32@ABU?$pair@$$CBIPAVImage@@@2@@Z,0x009A4350,decoded from map<IPAVImage>::operator[]
-??$_M_allocate_and_copy@PBQAVObject@@@?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@IAEPAPAVObject@@IPBQAV2@0@Z,0x0004547B,ILT thunk -> 0x4a0140 (vector<Object*>::operator= callee)
-?computeApproachPosition@DockUpdate@@IAE?AUCoord3D@@HPAVObject@@@Z,0x0001D7C8
-?Update_Frustum@CameraClass@@IBEXXZ,0x00931DF0,CameraClass::Update_Frustum - REL32 callee for Project/Project_Camera_Space_Point
-
-??0CameraClass@@QAE@ABV0@@Z,0x00932690,CameraClass copy ctor (located from binary via Clone)
-?Get_Render_Target_Resolution@WW3D@@SAXAAH00AA_N@Z,0x008FD1F0,located from binary (camera callee)
-??0BridgeBehaviorModuleData@@QAE@XZ,0x0001F7F3,module-glue cascade callee (from retail call site)
-??0PoisonedBehaviorModuleData@@QAE@XZ,0x0002EA73,module-glue cascade callee (from retail call site)
-??0SupplyWarehouseCripplingBehaviorModuleData@@QAE@XZ,0x000261CA,module-glue cascade callee (from retail call site)
-??0AutoFindHealingUpdateModuleData@@QAE@XZ,0x0001D4EE,module-glue cascade callee (from retail call site)
-??0FireSpreadUpdateModuleData@@QAE@XZ,0x000104B5,module-glue cascade callee (from retail call site)
-??0FloatUpdateModuleData@@QAE@XZ,0x0004601A,module-glue cascade callee (from retail call site)
-??0HeightDieUpdateModuleData@@QAE@XZ,0x0002C9D0,module-glue cascade callee (from retail call site)
-??0CommandButtonHuntUpdateModuleData@@QAE@XZ,0x0002E500,module-glue cascade callee (from retail call site)
-??0BridgeScaffoldBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x01002D,module ctor (friend_newModuleInstance retail call target)
-??0PropagandaTowerBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x00EF5C,module ctor (friend_newModuleInstance retail call target)
-??0FireWeaponWhenDamagedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x02A379,module ctor (friend_newModuleInstance retail call target)
-??0PoisonedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x041547,module ctor (friend_newModuleInstance retail call target)
-??0SupplyWarehouseCripplingBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x037619,module ctor (friend_newModuleInstance retail call target)
-??0AutoFindHealingUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x02E12C,module ctor (friend_newModuleInstance retail call target)
-??0StealthDetectorUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x036A0C,module ctor (friend_newModuleInstance retail call target)
-??0DeletionUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x016C52,module ctor (friend_newModuleInstance retail call target)
-??0AutoDepositUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00C15D,module ctor (friend_newModuleInstance retail call target)
-??0FireSpreadUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x04B510,module ctor (friend_newModuleInstance retail call target)
-??0FloatUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x01DF84,module ctor (friend_newModuleInstance retail call target)
-??0HeightDieUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00C199,module ctor (friend_newModuleInstance retail call target)
-??0CommandButtonHuntUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x020DCE,module ctor (friend_newModuleInstance retail call target)
-??0DemoTrapUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x02BF4E,module ctor (friend_newModuleInstance retail call target)
-??0ProneUpdateModuleData@@QAE@XZ,0x0002DABA,module-glue cascade callee (from retail call site)
-??0RadarUpdateModuleData@@QAE@XZ,0x0001670C,module-glue cascade callee (from retail call site)
-??0LockWeaponCreateModuleData@@QAE@XZ,0x000283F3,module-glue cascade callee (from retail call site)
-??0BeaconClientUpdateModuleData@@QAE@XZ,0x000286C3,module-glue cascade callee (from retail call site)
-??0RepairDockUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0001E8D0,module ctor (friend_newModuleInstance retail call target)
-??0DefaultProductionExitUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00025581,module ctor (friend_newModuleInstance retail call target)
-??0SpawnPointProductionExitUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00023858,module ctor (friend_newModuleInstance retail call target)
-??0SupplyCenterProductionExitUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00027B06,module ctor (friend_newModuleInstance retail call target)
-??0SupplyCenterDockUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00021CE2,module ctor (friend_newModuleInstance retail call target)
-??0SupplyWarehouseDockUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0001E902,module ctor (friend_newModuleInstance retail call target)
-??0ProneUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x000425DC,module ctor (friend_newModuleInstance retail call target)
-??0HijackerUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003A382,module ctor (friend_newModuleInstance retail call target)
-??0StructureToppleUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00034711,module ctor (friend_newModuleInstance retail call target)
-??0BoneFXUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0000264E,module ctor (friend_newModuleInstance retail call target)
-??0RadarUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0002A013,module ctor (friend_newModuleInstance retail call target)
-??0ArmorUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003582D,module ctor (friend_newModuleInstance retail call target)
-??0CommandSetUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003BB65,module ctor (friend_newModuleInstance retail call target)
-??0StatusBitsUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0000DFBC,module ctor (friend_newModuleInstance retail call target)
-??0StealthUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00019939,module ctor (friend_newModuleInstance retail call target)
-??0RadarUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00020306,module ctor (friend_newModuleInstance retail call target)
-??0LocomotorSetUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x000078B5,module ctor (friend_newModuleInstance retail call target)
-??0UnpauseSpecialPowerUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00048635,module ctor (friend_newModuleInstance retail call target)
-??0WeaponBonusUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x000375B5,module ctor (friend_newModuleInstance retail call target)
-??0WeaponSetUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003406D,module ctor (friend_newModuleInstance retail call target)
-??0ExperienceScalarUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x000380D2,module ctor (friend_newModuleInstance retail call target)
-??0MaxHealthUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003BEDA,module ctor (friend_newModuleInstance retail call target)
-??0ModelConditionUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,0x00025810,module ctor (friend_newModuleInstance retail call target)
-??0HealCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00046407,module ctor (friend_newModuleInstance retail call target)
-??0MoneyCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003E48C,module ctor (friend_newModuleInstance retail call target)
-??0ShroudCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00026F1C,module ctor (friend_newModuleInstance retail call target)
-??0UnitCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00009AED,module ctor (friend_newModuleInstance retail call target)
-??0VeterancyCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x0003C37B,module ctor (friend_newModuleInstance retail call target)
-??0SalvageCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,0x00038668,module ctor (friend_newModuleInstance retail call target)
-?releaseBuffer@UnicodeString@@IAEXXZ,0x008881D0,BFME releaseBuffer body (inlined ~UnicodeString call sites encode this)
-??$_Construct@UAnimSet@GenericObjectCreationNugget@@U12@@_STL@@YAXPAUAnimSet@GenericObjectCreationNugget@@ABU12@@Z,0x0000DDAF,resweep callee back-solved
-??$_Construct@UNugget@ModuleInfo@@U12@@_STL@@YAXPAUNugget@ModuleInfo@@ABU12@@Z,0x00006FD2,resweep callee back-solved
-??$_Construct@UPayload@DeliverPayloadNugget@@U12@@_STL@@YAXPAUPayload@DeliverPayloadNugget@@ABU12@@Z,0x00039F18,resweep callee back-solved
-??$_Construct@VAsciiString@@V1@@_STL@@YAXPAVAsciiString@@ABV1@@Z,0x0004725D,resweep callee back-solved
-??$_Construct@VProductionPrerequisite@@V1@@_STL@@YAXPAVProductionPrerequisite@@ABV1@@Z,0x0003AA26,resweep callee back-solved
-??$_Destroy@PAUNugget@ModuleInfo@@@_STL@@YAXPAUNugget@ModuleInfo@@0@Z,0x0004883D,resweep callee back-solved
-??$_Destroy@PAUPrereqUnitRec@ProductionPrerequisite@@@_STL@@YAXPAUPrereqUnitRec@ProductionPrerequisite@@0@Z,0x0000CBE4,resweep callee back-solved
-??$_M_allocate_and_copy@PBUNugget@ModuleInfo@@@?$vector@UNugget@ModuleInfo@@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@IAEPAUNugget@ModuleInfo@@IPBU23@0@Z,0x000313AE,resweep callee back-solved
-??$_M_allocate_and_copy@PBUPrereqUnitRec@ProductionPrerequisite@@@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEPAUPrereqUnitRec@ProductionPrerequisite@@IPBU23@0@Z,0x00014470,resweep callee back-solved
-??$_M_find@V?$BitFlags@$0BB@@@@?$_Rb_tree@$$CBV?$BitFlags@$0BB@@@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@1@ABV?$BitFlags@$0BB@@@@Z,0x00042D1B,resweep callee back-solved
-??$__copy@PAUFXBoneInfo@@PAU1@H@_STL@@YAPAUFXBoneInfo@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00003378,resweep callee back-solved
-??$__copy@PAUNugget@ModuleInfo@@PAU12@H@_STL@@YAPAUNugget@ModuleInfo@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x0001F735,resweep callee back-solved
-??$__copy@PAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@PAV12@H@_STL@@YAPAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@0@PAV10@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000112FC,resweep callee back-solved
-??$__copy@PAVProductionPrerequisite@@PAV1@H@_STL@@YAPAVProductionPrerequisite@@PAV1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000181A1,resweep callee back-solved
-??$__copy@PBUNugget@ModuleInfo@@PAU12@H@_STL@@YAPAUNugget@ModuleInfo@@PBU12@0PAU12@ABUrandom_access_iterator_tag@0@PAH@Z,0x0003B688,resweep callee back-solved
-??$__copy@PBUPrereqUnitRec@ProductionPrerequisite@@PAU12@H@_STL@@YAPAUPrereqUnitRec@ProductionPrerequisite@@PBU12@0PAU12@ABUrandom_access_iterator_tag@0@PAH@Z,0x00008391,resweep callee back-solved
-??$__uninitialized_copy@PBUNugget@ModuleInfo@@PAU12@@_STL@@YAPAUNugget@ModuleInfo@@PBU12@0PAU12@ABU__false_type@0@@Z,0x0001819C,resweep callee back-solved
-??$__uninitialized_copy@PBUPrereqUnitRec@ProductionPrerequisite@@PAU12@@_STL@@YAPAUPrereqUnitRec@ProductionPrerequisite@@PBU12@0PAU12@ABU__false_type@0@@Z,0x000178B4,resweep callee back-solved
-??0?$_STLP_alloc_proxy@IPAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVSightingInfo@@@1@I@Z,0x009ED3F0,resweep callee back-solved
-??0?$_STLP_alloc_proxy@PAPAPAVSightingInfo@@PAPAV1@V?$allocator@PAPAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVSightingInfo@@@1@PAPAPAVSightingInfo@@@Z,0x009ED3E0,resweep callee back-solved
-??0?$_Vector_base@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@IABV?$allocator@PAVObjectCreationNugget@@@1@@Z,0x0001D949,resweep callee back-solved
-??0?$_Vector_base@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@IABV?$allocator@PAVObjectCreationNugget@@@1@@Z,0x0003F418,resweep callee back-solved
-??1?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAE@XZ,0x0001642D,resweep callee back-solved
-??1FXBoneInfo@@QAE@XZ,0x00007928,resweep callee back-solved
-??1Nugget@ModuleInfo@@QAE@XZ,0x000454A3,resweep callee back-solved
-??1ProductionPrerequisite@@QAE@XZ,0x0003ECC0,resweep callee back-solved
-??A?$map@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@_STL@@@_STL@@QAEAAPBVWeaponTemplateSet@@ABV?$BitFlags@$0BB@@@@Z,0x00019155,resweep callee back-solved
-??RMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@QBE_NABV?$BitFlags@$0BB@@@0@Z,0x00010B1D,resweep callee back-solved
-?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@PAUAudioEventInfo@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAUAudioEventInfo@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@PAUAudioEventInfo@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x000103F7,resweep callee back-solved
-?_M_clear@?$vector@UNugget@ModuleInfo@@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@IAEXXZ,0x000481E9,resweep callee back-solved
-?_M_clear@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEXXZ,0x0001BEFA,resweep callee back-solved
-?_M_copy@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@2@PAU32@0@Z,0x0002F095,resweep callee back-solved
-?_M_erase@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@2@@Z,0x00042FDC,resweep callee back-solved
-?_M_initialize_map@?$_Deque_base@PAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@IAEXI@Z,0x009ED640,resweep callee back-solved
-?_M_insert@?$hashtable@U?$pair@$$CBIW4Relationship@@@_STL@@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@_STL@@QAEAAU?$pair@$$CBIW4Relationship@@@2@ABU32@@Z,0x009EE9B0,resweep callee back-solved
-?_M_insert_overflow@?$vector@UAnimSet@GenericObjectCreationNugget@@V?$allocator@UAnimSet@GenericObjectCreationNugget@@@_STL@@@_STL@@IAEXPAUAnimSet@GenericObjectCreationNugget@@ABU34@ABU__false_type@2@I_N@Z,0x0000DB2F,resweep callee back-solved
-?_M_insert_overflow@?$vector@UNugget@ModuleInfo@@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@IAEXPAUNugget@ModuleInfo@@ABU34@ABU__false_type@2@I_N@Z,0x0001ADBB,resweep callee back-solved
-?_M_insert_overflow@?$vector@UPayload@DeliverPayloadNugget@@V?$allocator@UPayload@DeliverPayloadNugget@@@_STL@@@_STL@@IAEXPAUPayload@DeliverPayloadNugget@@ABU34@ABU__false_type@2@I_N@Z,0x00004F93,resweep callee back-solved
-?_M_insert_overflow@?$vector@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@IAEXPAVAsciiString@@ABV3@ABU__false_type@2@I_N@Z,0x000112C0,resweep callee back-solved
-?_M_insert_overflow@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEXPAVProductionPrerequisite@@ABV3@ABU__false_type@2@I_N@Z,0x00041F1F,resweep callee back-solved
-?_M_lower_bound@?$_Rb_tree@$$CBV?$BitFlags@$0BB@@@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@2@ABV?$BitFlags@$0BB@@@@Z,0x00005A60,resweep callee back-solved
-?findBestInfoSlow@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@ABEPBVWeaponTemplateSet@@ABV?$vector@VWeaponTemplateSet@@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@ABV?$BitFlags@$0BB@@@@Z,0x00013ACA,resweep callee back-solved
-?get_allocator@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QBE?AV?$allocator@PAVObjectCreationNugget@@@2@XZ,0x00042E06,resweep callee back-solved
-?get_allocator@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QBE?AV?$allocator@PAVObjectCreationNugget@@@2@XZ,0x00044166,resweep callee back-solved
-?insert_unique@?$_Rb_tree@$$CBV?$BitFlags@$0BB@@@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@2@@2@U32@ABU?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@2@@Z,0x00010F1E,resweep callee back-solved
-?insert_unique@?$_Rb_tree@PBVThingTemplate@@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Select1st@U?$pair@QBVThingTemplate@@H@_STL@@@3@U?$less@PBVThingTemplate@@@3@V?$allocator@U?$pair@QBVThingTemplate@@H@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Nonconst_traits@U?$pair@QBVThingTemplate@@H@_STL@@@2@@2@U32@ABU?$pair@QBVThingTemplate@@H@2@@Z,0x009A4350,resweep callee back-solved
-?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@M@2@@Z,0x00030512,resweep callee back-solved
-?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@2@@Z,0x000082F6,resweep callee back-solved
-??4?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAEAAV01@ABV01@@Z,0x00026C6A,ILT thunk used by __copy call site
-??$_Construct@UWeaponBarrelInfo@ModelConditionInfo@@U12@@_STL@@YAXPAUWeaponBarrelInfo@ModelConditionInfo@@ABU12@@Z,0x0003B7E6,ILT thunk used by call site
-??$_Construct@VW3DAnimationInfo@@V1@@_STL@@YAXPAVW3DAnimationInfo@@ABV1@@Z,0x00033AAA,ILT thunk used by call site
-??$_Destroy@PAUHideShowSubObjInfo@ModelConditionInfo@@@_STL@@YAXPAUHideShowSubObjInfo@ModelConditionInfo@@0@Z,0x000413AD,ILT thunk used by call site
-??$_Destroy@PAVW3DAnimationInfo@@@_STL@@YAXPAVW3DAnimationInfo@@0@Z,0x00001663,ILT thunk used by call site
-??$_M_allocate_and_copy@PBUHideShowSubObjInfo@ModelConditionInfo@@@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEPAUHideShowSubObjInfo@ModelConditionInfo@@IPBU23@0@Z,0x00030D69,ILT thunk used by call site
-??$_M_allocate_and_copy@PBVW3DAnimationInfo@@@?$vector@VW3DAnimationInfo@@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@IAEPAVW3DAnimationInfo@@IPBV2@0@Z,0x0003D3C5,ILT thunk used by call site
-??$__copy@PAVW3DAnimationInfo@@PAV1@H@_STL@@YAPAVW3DAnimationInfo@@PAV1@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00024023,ILT thunk used by call site
-??$__copy@PBUHideShowSubObjInfo@ModelConditionInfo@@PAU12@H@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PBU12@0PAU12@ABUrandom_access_iterator_tag@0@PAH@Z,0x0003DB1D,ILT thunk used by call site
-??$__copy@PBVW3DAnimationInfo@@PAV1@H@_STL@@YAPAVW3DAnimationInfo@@PBV1@0PAV1@ABUrandom_access_iterator_tag@0@PAH@Z,0x000417EF,ILT thunk used by call site
-??$__uninitialized_copy@PBUHideShowSubObjInfo@ModelConditionInfo@@PAU12@@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PBU12@0PAU12@ABU__false_type@0@@Z,0x000032A6,ILT thunk used by call site
-??$__uninitialized_copy@PBVW3DAnimationInfo@@PAV1@@_STL@@YAPAVW3DAnimationInfo@@PBV1@0PAV1@ABU__false_type@0@@Z,0x0001D5F7,ILT thunk used by call site
-??$fill@PAPAVObject@@PAV1@@_STL@@YAXPAPAVObject@@0ABQAV1@@Z,0x0003C7F9,ILT thunk used by call site
-??1W3DAnimationInfo@@QAE@XZ,0x00020018,ILT thunk used by call site
-?_M_clear@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXXZ,0x00015168,ILT thunk used by call site
-?_M_clear@?$vector@VW3DAnimationInfo@@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@IAEXXZ,0x00008837,ILT thunk used by call site
-?_M_insert_overflow@?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@IAEXPAPAVObject@@ABQAV3@ABU__true_type@2@I_N@Z,0x000486BC,ILT thunk used by call site
-?_M_insert_overflow@?$vector@UWeaponBarrelInfo@ModelConditionInfo@@V?$allocator@UWeaponBarrelInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUWeaponBarrelInfo@ModelConditionInfo@@ABU34@ABU__false_type@2@I_N@Z,0x0003D7B2,ILT thunk used by call site
-?_M_insert_overflow@?$vector@VW3DAnimationInfo@@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@IAEXPAVW3DAnimationInfo@@ABV3@ABU__false_type@2@I_N@Z,0x00037024,ILT thunk used by call site
-?insert_unique@?$_Rb_tree@PBVThingTemplate@@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Select1st@U?$pair@QBVThingTemplate@@H@_STL@@@3@U?$less@PBVThingTemplate@@@3@V?$allocator@U?$pair@QBVThingTemplate@@H@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@QBVThingTemplate@@H@_STL@@U?$_Nonconst_traits@U?$pair@QBVThingTemplate@@H@_STL@@@2@@2@U32@ABU?$pair@QBVThingTemplate@@H@2@@Z,0x0003E22A,ILT thunk used by call site
-?winGetParent@GameWindow@@QAEPAV1@XZ,0x00014F97,ILT thunk used by call site
-?OnError@DownloadManager@@UAEJH@Z,0x00031EC1,ILT thunk used by call site
-?getErrorString@DownloadManager@@QAE?AVUnicodeString@@XZ,0x0000ECCD,ILT thunk used by call site
-?MessageBoxOk@@YAPAVGameWindow@@VUnicodeString@@0P6AXXZ@Z,0x0004A340,ILT thunk used by call site
-?OnEnd@DownloadManager@@UAEJXZ,0x000044E4,ILT thunk used by call site
-?downloadNextQueuedFile@DownloadManager@@QAEJXZ,0x00038F00,ILT thunk used by call site
-??0DownloadManager@@QAE@XZ,0x0001958D,ILT thunk used by call site
-??0WriteLockClass@VertexBufferClass@@QAE@PAV1@H@Z,0x0091DD70,REL32 callee pin
-??1WriteLockClass@VertexBufferClass@@QAE@XZ,0x0091DE10,REL32 callee pin
-?getDisplayName@PlayerTemplate@@QBE?AVUnicodeString@@XZ,0x000300D5,ILT thunk used by call site
-?isCellOnEnd@Bridge@@QAE_NPBURegion2D@@@Z,0x0000DAAD,ILT thunk used by call site
-?getBridgeHeight@Bridge@@QAEMPBUCoord3D@@PAU2@@Z,0x0000B802,ILT thunk used by call site
-?Free@FastAllocatorGeneral@@QAEXPAX@Z,0x00AFEBC0
-??0AutoHealBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x0000A0E2
-??0DynamicGeometryInfoUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00048338
-??0LaserUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00035D91
-??0NeutronMissileUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00048F2C
-??0PhysicsBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,0x000328C6
-?Get_DX8_Render_State_Value_Name@DX8Wrapper@@SAXAAVStringClass@@KI@Z,0x00907BE0
-?clearAndSetModelConditionState@Drawable@@QAEXW4ModelConditionFlagType@@0@Z,0x0001C8D2
-?setDisabledUntil@Object@@QAEXW4DisabledType@@I@Z,0x0003364A
-?parseWeaponBonusSet@WeaponBonusSet@@QAEXPAVINI@@@Z,0x00019BC8
-??0MaterialPassClass@@QAE@XZ,0x009333A0
-??RMapHelper@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@QBE_NABV?$BitFlags@$0L@@@0@Z,0x0000A9A2
-?insert_unique@?$_Rb_tree@$$CBV?$BitFlags@$0L@@@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@2@@2@U32@ABU?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@2@@Z,0x0000F952
-?ExceptionFilter@DebugExceptionhandler@@SGJPAU_EXCEPTION_POINTERS@@@Z,0x0088E5F0
-?shutdown@TerrainTracksRenderObjClassSystem@@QAEXXZ,0x0002C6E7
-?releaseTrack@WaterTracksRenderSystem@@IAEXPAVWaterTracksObj@@@Z,0x0000E250
-?shutdown@WaterTracksRenderSystem@@QAEXXZ,0x000319CB
-?findImageByName@ImageCollection@@QAEPBVImage@@ABVAsciiString@@@Z,0x0001D606
-?Init_From_Directional_Light@InputLightStruct@LightEnvironmentClass@@QAEXABVLightClass@@ABVVector3@@@Z,0x0094A970
-?Init_From_Point_Or_Spot_Light@InputLightStruct@LightEnvironmentClass@@QAEXABVLightClass@@ABVVector3@@@Z,0x0094AE10
-?Do_Mappers_Need_Normals@MeshMatDescClass@@QAE_NXZ,0x00929AD0
-?Get_Shader@MeshMatDescClass@@QBE?AVShaderClass@@HH@Z,0x00929990
-?Needs_Vertex_Normals@MeshModelClass@@QAE_NXZ,0x0094E0B0,
-?Get_Color_Array@MeshMatDescClass@@QAEPAIH_N@Z,0x0002F8E2,
-?Get_UV_Array_By_Index@MeshMatDescClass@@QAEPAVVector2@@H_N@Z,0x0001D179
-?Get_SS_Category@ShaderClass@@QBE?AW4StaticSortCategoryType@1@XZ,0x00910E10
-?Set@Matrix3x3@@QAEXABVMatrix3D@@@Z,0x008D9000,Update_Frustum callee
-??0OBBoxClass@@QAE@ABV0@@Z,0x00931420
-?Set_Position@RenderObjClass@@UAEXABVVector3@@@Z,0x00920220
-?Set_Transform@RenderObjClass@@UAEXABVMatrix3D@@@Z,0x009201A0
-??0?$ShareBufferClass@VShaderClass@@@@QAE@HPBDH@Z,0x0092B940,Get_Shader_Array ShareBuffer 3-arg ctor
-??0?$ShareBufferClass@I@@QAE@ABV0@@Z,0x0092A090
-??0?$ShareBufferClass@VVector2@@@@QAE@ABV0@@Z,0x0092B710
-?probed@NAT@@IAEXH@Z,0x00671DE0,processGlobalMessage callee (ILT body)
-?setConnectionState@NAT@@IAEXHW4NATConnectionState@@@Z,0x00670DC0,processGlobalMessage callee (ILT body)
-?gotInternalAddress@NAT@@IAEXHI@Z,0x00670D70,processGlobalMessage callee
-?gotMangledPort@NAT@@IAEXHG@Z,0x00671EB0,processGlobalMessage callee
-?Notify_Added@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FBF0
-?Notify_Removed@RenderObjClass@@UAEXPAVSceneClass@@@Z,0x0091FC00
-??0TexBufferClass@@QAE@HPBD@Z,0x0092BA60
-?CRC_Memory@@YAKPBEKK@Z,0x009E19C0,second realcrc link (Install_UV / Update_CRC)
-?BTREE_treepack@@YAXPAUBTreeEncodeContext@@PAUBTREEMemStruct@@IIIH@Z,0x00821200
-?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@W4BuildableStatus@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x0004004D,rel32 pin for exact-ambiguous landing
-?insert_unique@?$_Rb_tree@HU?$pair@$$CBHI@_STL@@U?$_Select1st@U?$pair@$$CBHI@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHI@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHI@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHI@_STL@@@2@@2@U32@ABU?$pair@$$CBHI@2@@Z,0x000079EB,rel32 pin for exact-ambiguous landing
-??0?$_STLP_alloc_proxy@IPAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVPartitionCell@@@1@I@Z,0x008F9A60,rel32 pin for exact-ambiguous landing
-??0?$_STLP_alloc_proxy@PAPAPAVPartitionCell@@PAPAV1@V?$allocator@PAPAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVPartitionCell@@@1@PAPAPAVPartitionCell@@@Z,0x008F9A50,rel32 pin for exact-ambiguous landing
-?_M_initialize_map@?$_Deque_base@PAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@IAEXI@Z,0x008FA150,rel32 pin for exact-ambiguous landing
-??$_Construct@U?$pair@W4ObjectID@@W41@@_STL@@U12@@_STL@@YAXPAU?$pair@W4ObjectID@@W41@@0@ABU10@@Z,0x0001FA1E,rel32 pin for exact-ambiguous landing
-?_M_insert_overflow@?$vector@U?$pair@W4ObjectID@@W41@@_STL@@V?$allocator@U?$pair@W4ObjectID@@W41@@_STL@@@2@@_STL@@IAEXPAU?$pair@W4ObjectID@@W41@@2@ABU32@ABU__false_type@2@I_N@Z,0x00022AF7,rel32 pin for exact-ambiguous landing
-??1Payload@DeliverPayloadNugget@@QAE@XZ,0x0004B10A,rel32 pin for exact-ambiguous landing
-
-??$__copy@PAUPayload@DeliverPayloadNugget@@PAU12@H@_STL@@YAPAUPayload@DeliverPayloadNugget@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x000097CD,rel32 pin for exact-ambiguous landing
-??$_Construct@UVideo@@U1@@_STL@@YAXPAUVideo@@ABU1@@Z,0x00030549,rel32 pin for exact-ambiguous landing
-?_M_insert_overflow@?$vector@UVideo@@V?$allocator@UVideo@@@_STL@@@_STL@@IAEXPAUVideo@@ABU3@ABU__false_type@2@I_N@Z,0x000359B3,rel32 pin for exact-ambiguous landing
-?_M_insert@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAEAAU?$pair@QBVGameWindow@@PAVWindowVideo@@@2@ABU32@@Z,0x00032407,rel32 pin for exact-ambiguous landing
-?render_box@BoxRenderObjClass@@IAEXAAVRenderInfoClass@@ABVVector3@@1@Z,0x00956F40,rel32 pin for exact-ambiguous landing
-?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3D@@@Z,0x008DBA40,rel32 pin for exact-ambiguous landing
-?_M_erase@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@AAEXPAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@@Z,0x00049E13,rel32 pin for exact-ambiguous landing
-?_M_copy@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@M@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@2@PAU32@0@Z,0x0002BD3C,rel32 pin for exact-ambiguous landing
-?Create_New_Particles@ParticleEmitterClass@@AAEXABVQuaternion@@ABVVector3@@@Z,0x0097F930,rel32 pin for exact-ambiguous landing
-?Simple_Evaluate_Pivot@HTreeClass@@QBE_NPAVHAnimClass@@HMABVMatrix3D@@PAV3@@Z,0x00953620,rel32 pin for layout-fixed landing
-?Simple_Evaluate_Pivot@HTreeClass@@QBE_NHABVMatrix3D@@PAV2@@Z,0x009539C0,rel32 pin for layout-fixed landing
-??$__copy@PAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@H@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,0x00018674,rel32 pin for exact-ambiguous landing
-??1HideShowSubObjInfo@ModelConditionInfo@@QAE@XZ,0x0000466F,rel32 pin for exact-ambiguous landing
-??$_Construct@UPrereqUnitRec@ProductionPrerequisite@@U12@@_STL@@YAXPAUPrereqUnitRec@ProductionPrerequisite@@ABU12@@Z,0x00028957,rel32 pin for exact-ambiguous landing
-?_M_insert_overflow@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEXPAUPrereqUnitRec@ProductionPrerequisite@@ABU34@ABU__false_type@2@I_N@Z,0x0000F277,rel32 pin for exact-ambiguous landing
-?_M_bkt_num_key@?$hashtable@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@U?$equal_to@VAsciiString@@@5@V?$allocator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@@_STL@@ABEIABVAsciiString@@I@Z,0x0001F843,rel32 pin for exact-ambiguous landing
-?insert_unique@?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@3@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@2@@2@U32@ABU?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@2@@Z,0x000290B4,rel32 pin for exact-ambiguous landing
-??$_Construct@UHideShowSubObjInfo@ModelConditionInfo@@U12@@_STL@@YAXPAUHideShowSubObjInfo@ModelConditionInfo@@ABU12@@Z,0x0004A818,rel32 pin for exact-ambiguous landing
-?_M_insert_overflow@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUHideShowSubObjInfo@ModelConditionInfo@@ABU34@ABU__false_type@2@I_N@Z,0x000251D0,rel32 pin for exact-ambiguous landing
-?_M_insert@?$hashtable@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAEAAU?$pair@$$CBHW4Relationship@@@2@ABU32@@Z,0x000013E8,rel32 pin for exact-ambiguous landing
-?Multiply@Matrix3D@@SAXABV1@0PAV1@@Z,0x008D80C0,rel32 pin for exact-ambiguous landing
-??0?$_STLP_alloc_proxy@PAPAPAVMapObject@@PAPAV1@V?$allocator@PAPAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVMapObject@@@1@PAPAPAVMapObject@@@Z,0x008F9A20,rel32 pin for exact-ambiguous landing
-??0?$_STLP_alloc_proxy@IPAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVMapObject@@@1@I@Z,0x008F9A30,rel32 pin for exact-ambiguous landing
-?_M_initialize_map@?$_Deque_base@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@IAEXI@Z,0x008FA2B0,rel32 pin for exact-ambiguous landing
-?Add@?$DynamicVectorClass@PAVVertexMaterialClass@@@@QAE_NABQAVVertexMaterialClass@@@Z,0x0092F7C0,rel32 pin for exact-ambiguous landing
-?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVAABoxClass@@PAUCastResultStruct@@@Z,0x008DAD70,rel32 pin for exact-ambiguous landing
-??4BoxRenderObjClass@@QAEAAV0@ABV0@@Z,0x00956E40,rel32 pin for exact-ambiguous landing

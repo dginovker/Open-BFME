@@ -310,3 +310,6 @@ _$E117	no-match	Compiler-generated static initializer. Drift RVA 0xC6E36F starts
 ??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ	landed	MASM exact 688B SEH dtor wrapper; empty C++ body was size-mismatched
 ??1QuadDrawModuleTemplate@FXParticleSystem@@UAE@XZ	landed	corrected size 50B (ledger had 688 multi-fn span); MASM exact
 ??1ButterflyDrawModuleTemplate@FXParticleSystem@@UAE@XZ	landed	MASM exact 50B; identical bytes to Quad dtor at different RVA; ledger had inflated 1008
+??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z	landed	MASM exact 76B (ledger inflated 1056)
+??0DefaultPhysicsModuleInfo@FXParticleSystem@@QAE@XZ	landed	MASM exact 91B SEH (ledger inflated 2096)
+??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@XZ	landed	MASM exact 181B SEH (ledger inflated 2400)

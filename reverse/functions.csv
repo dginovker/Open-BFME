@@ -344,10 +344,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0DefaultDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0003BB0B,0x005D56A0,11,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,copy constructor sets vtable pointer
 ??0DefaultDrawModuleInfo@FXParticleSystem@@QAE@XZ,0x000455C0,0x005F3090,9,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,default constructor sets vtable pointer
 ??0DefaultPhysicsModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00005DC6,0x005D7EA0,63,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
-??0DefaultPhysicsModuleInfo@FXParticleSystem@@QAE@XZ,0x0000AB23,0x005FD9E0,2096,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,unmatched,needs SEH constructor wrapper
+??0DefaultPhysicsModuleInfo@FXParticleSystem@@QAE@XZ,0x0000AB23,0x005FD9E0,91,Code/GameEngine/Source/GameClient/System/FXParticleSystem/DefaultPhysicsModuleInfo_ctor.asm,matched,exact 91B SEH ctor via MASM (was inflated 2096)
 ??0DefaultStaticSortListClass@@QAE@XZ,,0x00958110,98,Code/Libraries/Source/WWVegas/WW3D2/static_sort_list.cpp,matched,
 ??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x000052AE,0x005D81C0,135,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
-??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@XZ,0x0004506B,0x005FF750,2400,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,unmatched,needs SEH constructor wrapper
+??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@XZ,0x0004506B,0x005FF750,181,Code/GameEngine/Source/GameClient/System/FXParticleSystem/DefaultUpdateModuleInfo_ctor.asm,matched,exact 181B SEH ctor via MASM (was inflated 2400)
 ??0Dict@@QAE@H@Z,,0x00068550,33,Code/GameEngine/Source/Common/Dict.cpp,matched,
 ??0DiscreteCircle@@QAE@HHH@Z,,0x00069350,116,Code/GameEngine/Source/Common/discrete_circle.cpp,matched,
 ??0DrawableIconInfo@@QAE@XZ,,0x00410940,32,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
@@ -402,7 +402,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0LightningDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0002AD4C,0x005D8F00,97,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0LightningDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0004A89F,0x005D9170,62,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0LightningEmissionInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0003E32E,0x005D6780,271,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
-??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0001FDF7,0x005D6BA0,1056,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,unmatched,needs copy-constructor wrapper reconciliation
+??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0001FDF7,0x005D6BA0,76,Code/GameEngine/Source/GameClient/System/FXParticleSystem/LightningEmissionModuleTemplate_copy_ctor.asm,matched,exact 76B copy ctor via MASM (was inflated 1056)
 ??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@XZ,0x0000CC39,0x005D6AD0,144,Code/GameEngine/Source/GameClient/System/FXParticleSystem/LightningEmissionModuleTemplate_ctor.asm,matched,SEH ctor via MASM exact bytes
 ??0LineEmissionVolumeInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0003E0EA,0x005D5A90,63,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0LineEmissionVolumeInfo@FXParticleSystem@@QAE@XZ,0x0003656B,0x005D5A50,32,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,default constructor sets vtable and zeros line endpoints

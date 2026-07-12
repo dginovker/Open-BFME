@@ -16419,14 +16419,7 @@ DefaultPhysicsModuleInfo::DefaultPhysicsModuleInfo(const DefaultPhysicsModuleInf
 }
 
 // ??0DefaultPhysicsModuleInfo@FXParticleSystem@@QAE@XZ
-DefaultPhysicsModuleInfo::DefaultPhysicsModuleInfo()
-    : m_field0(0.0f)
-    , m_field1(0.0f)
-    , m_field2(0.0f)
-    , m_field3(0)
-{
-    m_var1.setRange(0.0f, 0.0f, GameClientRandomVariable::UNIFORM);
-}
+// Body in DefaultPhysicsModuleInfo_ctor.asm (SEH default ctor; ghidra 91B).
 
 // ??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@ABV01@@Z
 DefaultUpdateModuleInfo::DefaultUpdateModuleInfo(const DefaultUpdateModuleInfo &that)
@@ -16440,15 +16433,7 @@ DefaultUpdateModuleInfo::DefaultUpdateModuleInfo(const DefaultUpdateModuleInfo &
 }
 
 // ??0DefaultUpdateModuleInfo@FXParticleSystem@@QAE@XZ
-DefaultUpdateModuleInfo::DefaultUpdateModuleInfo()
-    : m_extra(1)
-{
-    m_var0.setRange(0.0f, 0.0f, GameClientRandomVariable::UNIFORM);
-    m_var1.setRange(0.0f, 0.0f, GameClientRandomVariable::UNIFORM);
-    m_var2.setRange(0.0f, 0.0f, GameClientRandomVariable::UNIFORM);
-    m_var3.setRange(0.0f, 0.0f, GameClientRandomVariable::UNIFORM);
-    m_var4.setRange(0.0f, 0.0f, GameClientRandomVariable::UNIFORM);
-}
+// Body in DefaultUpdateModuleInfo_ctor.asm (SEH default ctor; ghidra 181B).
 
 // ??0LifeEventModuleInfo@FXParticleSystem@@QAE@ABV01@@Z
 __declspec(naked) LifeEventModuleInfo::LifeEventModuleInfo(const LifeEventModuleInfo &that)
@@ -17512,9 +17497,7 @@ __declspec(naked) LightningEmissionInfo::LightningEmissionInfo()
 }
 
 // ??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z
-LightningEmissionModuleTemplate::LightningEmissionModuleTemplate(const LightningEmissionModuleTemplate &that)
-    : CategoryModuleTemplate<5>(that), LightningEmissionInfo(that)
-{}
+// Body in LightningEmissionModuleTemplate_copy_ctor.asm (ghidra 76B).
 
 // ??0LightningEmissionModuleTemplate@FXParticleSystem@@QAE@XZ
 // Body in LightningEmissionModuleTemplate_ctor.asm (SEH ctor; C++ naked

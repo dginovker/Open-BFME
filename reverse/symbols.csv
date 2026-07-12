@@ -1256,3 +1256,12 @@ _atexit,0x009F6E26,CRT atexit (registers static destructors)
 _bfme_acos,0x009F7256,internal acos helper called by ACos
 _bfme_asin,0x009F7D86,internal asin helper called by ASin
 ?Add@?$DynamicVectorClass@VModelNodeClass@HLodClass@@@@QAE_NABVModelNodeClass@HLodClass@@@Z,0x0097B080,pin for HLod Add_Sub_Object_To_Bone (rel32)
+?Make_Geometry_Unique@MeshModelClass@@QAEXXZ,0x0094EE80
+?Make_Unique@MeshClass@@QAEX_N@Z,0x0092C400
+?Scale@MeshGeometryClass@@QAEXABVVector3@@@Z,0x00925610
+??0Animatable3DObjClass@@QAE@ABV0@@Z,0x00982D10
+??0Animatable3DObjClass@@QAE@PBD@Z,0x00981EF0
+??4HLodClass@@QAEAAV0@ABV0@@Z,0x0097D3B0
+?Set_Animation@Animatable3DObjClass@@UAEXPAVHAnimClass@@M0MM@Z,0x009822C0
+?Set_Animation@Animatable3DObjClass@@UAEXPAVHAnimClass@@MH@Z,0x00982190
+?Set_Animation@Animatable3DObjClass@@UAEXPAVHAnimComboClass@@@Z,0x00982330

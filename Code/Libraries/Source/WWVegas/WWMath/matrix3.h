@@ -255,6 +255,11 @@ protected:
 
 };
 
+// BFME predates the Zero Hour "Matrix name change to avoid MAX conflicts"
+// (ZH renamed Matrix3 -> Matrix3x3). ZH-sourced TUs still spell it Matrix3x3;
+// alias it so both islands bind the same retail Matrix3. Declaration-only.
+typedef Matrix3 Matrix3x3;
+
 
 /*********************************************************************************************** 
  * Matrix3::Matrix3 -- Constructor, optionally initialize to Identitiy matrix                  * 

@@ -421,3 +421,6 @@ _$E117	no-match	Compiler-generated static initializer. Drift RVA 0xC6E36F starts
 ?Create_Asset_List@HAnimManagerClass@@QAEXAAV?$DynamicVectorClass@VStringClass@@@@@Z	no-match	no masked-anchor hit in retail .text (99B anchor absent) = genuine BFME restructure; candidate fn bodies in hanimmgr cluster: 0x7b9bc0(515) 0x7ba2b0(451) 0x7ba950(245)
 ?init@Anim2DCollection@@UAEXXZ	no-match	candidate 0x5bac70: retail builds parse table via virtual calls [edx+0x4c..0x84] on this; ours has EH frame + INI load - restructured in BFME
 ?update@Anim2DCollection@@UAEXXZ	no-match	candidate 0x5bad50(30B): retail keeps anim in esi across tryNextFrame call; ours keeps ecx (26B). next-pointer variant compiled 38B (worse). regalloc wall
+?translateGameMessage@MetaEventTranslator@@UAE?AW4GameMessageDisposition@@PBVGameMessage@@@Z	no-match	real start VA 0x9B6A30 (via slot-0x68 getFrame caller scan); genuine code drift vs ZH source, structural tier
+?getStarImage@ControlBar@@QAEPBVImage@@XZ	no-match	real start 0x89CC00; shape matches but member offsets drift ([esi+0x2cc] vs ours [esi+0x30c]) - ControlBar class layout reconciliation needed
+?isValidObjectTarget@CommandButton@@QBE_NPBVPlayer@@PBVObject@@@Z	no-match	callee_locate candidate 0x89AE20 false positive - different function; real location unknown

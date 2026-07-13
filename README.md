@@ -15,6 +15,8 @@ Goal: source code that rebuilds BFME 1's executable byte-for-byte.
 
 We currently have C++ functions in `Code/` and a patcher which can patch same-size custom functions into `lotrbfme.exe`. This is useful for modding.
 
+On July 13th 2026, we crossed 10% of the way there (by reversed engineered function count)
+
 ## How You Can Help
 
 Just tell your favorite AI agent to make a PR in this repo, where each commit in the PR is an individual contribution. Your agent will know what to do from there (just make sure it keeps looping and making more commits), and I will be able to merge your PR.

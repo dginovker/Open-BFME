@@ -2620,7 +2620,6 @@ void LocomotorSet::clear()
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?addLocomotor@LocomotorSet@@QAEXPBVLocomotorTemplate@@@Z present-unmatched
 void LocomotorSet::addLocomotor(const LocomotorTemplate* lt)
 {
 	Locomotor* loco = TheLocomotorStore->newLocomotor(lt);

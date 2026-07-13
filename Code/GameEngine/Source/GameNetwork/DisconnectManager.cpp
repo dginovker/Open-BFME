@@ -473,7 +473,6 @@ void DisconnectManager::allCommandsReady(UnsignedInt frame, ConnectionManager *c
 		}
 }
 
-// ?allowedToContinue@DisconnectManager@@QAE_NXZ present-unmatched
 Bool DisconnectManager::allowedToContinue() {
 	if (m_disconnectState != DISCONNECTSTATETYPE_SCREENOFF) {
 		return FALSE;
@@ -613,7 +612,6 @@ void DisconnectManager::disconnectPlayer(Int slot, ConnectionManager *conMgr) {
 	}
 }
 
-// ?sendDisconnectCommand@DisconnectManager@@IAEXHPAVConnectionManager@@@Z present-unmatched
 void DisconnectManager::sendDisconnectCommand(Int slot, ConnectionManager *conMgr) {
 	DEBUG_LOG(("DisconnectManager::sendDisconnectCommand - Sending disconnect command for slot number %d\n", slot));
 	DEBUG_ASSERTCRASH((slot >= 0) && (slot < MAX_SLOTS), ("Attempting to send a disconnect command for an invalid slot number"));
@@ -639,7 +637,6 @@ void DisconnectManager::sendDisconnectCommand(Int slot, ConnectionManager *conMg
 	msg->detach();
 }
 
-// ?sendVoteCommand@DisconnectManager@@IAEXHPAVConnectionManager@@@Z present-unmatched
 void DisconnectManager::sendVoteCommand(Int slot, ConnectionManager *conMgr) {
 	NetDisconnectVoteCommandMsg *msg = newInstance(NetDisconnectVoteCommandMsg);
 

@@ -1266,7 +1266,6 @@ Bool Object::isOutOfAmmo() const
 }
 
 //=============================================================================
-// ?hasAnyWeapon@Object@@QBE_NXZ present-unmatched
 Bool Object::hasAnyWeapon() const
 {
 	return m_weaponSet.hasAnyWeapon();
@@ -1825,7 +1824,6 @@ void Object::reactToTurretChange( WhichTurretType turret, Real oldRotation, Real
 
 //-------------------------------------------------------------------------------------------------
 //DECLARE_PERF_TIMER(Object_reactToTransformChange)
-// ?reactToTransformChange@Object@@MAEXPBVMatrix3D@@PBUCoord3D@@M@Z present-unmatched
 void Object::reactToTransformChange(const Matrix3D* oldMtx, const Coord3D* oldPos, Real oldAngle)
 {
 	//USE_PERF_TIMER(Object_reactToTransformChange)
@@ -2145,7 +2143,6 @@ void Object::setReceivingDifficultyBonus(Bool receive)
 //-------------------------------------------------------------------------------------------------
 //- DISABLEDNESS STUFF ----------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?setDisabled@Object@@QAEXW4DisabledType@@@Z present-unmatched
 void Object::setDisabled( DisabledType type )
 {
 	setDisabledUntil(type, FOREVER);
@@ -5062,7 +5059,6 @@ Real Object::getVisionRange() const
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?setVisionRange@Object@@QAEXM@Z present-unmatched
 void Object::setVisionRange( Real newVisionRange )
 {
 	m_visionRange = newVisionRange;

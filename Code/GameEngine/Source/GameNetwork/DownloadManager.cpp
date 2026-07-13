@@ -72,7 +72,6 @@ DownloadManager::DownloadManager()
 
 }
 
-// ??1DownloadManager@@UAE@XZ present-unmatched
 DownloadManager::~DownloadManager()
 {
 	delete m_download;

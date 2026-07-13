@@ -636,7 +636,6 @@ void NAT::attachSlotList(GameSlot *slotList[], Int localSlot, UnsignedInt localI
 	m_transport->init(m_localIP, getSlotPort(localSlot));
 }
 
-// ?getSlotPort@NAT@@QAEHH@Z present-unmatched
 Int NAT::getSlotPort(Int slot) {
 //	return (slot + m_startingPortNumber);
 	if (m_slotList[slot] != NULL) {

@@ -1625,7 +1625,6 @@ WeaponTemplate *WeaponStore::newWeaponTemplate(AsciiString name)
 } 
 
 //-------------------------------------------------------------------------------------------------
-// ?newOverride@WeaponStore@@IAEPAVWeaponTemplate@@PAV2@@Z present-unmatched
 WeaponTemplate *WeaponStore::newOverride(WeaponTemplate *weaponTemplate)
 {
 	if (!weaponTemplate)
@@ -3592,7 +3591,6 @@ void WeaponBonus::appendBonuses(WeaponBonus& bonus) const
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?parseWeaponBonusSet@WeaponBonusSet@@ present-unmatched
 void WeaponBonusSet::parseWeaponBonusSet(INI* ini)
 {
 	WeaponBonusConditionType wb = (WeaponBonusConditionType)INI::scanIndexList(ini->getNextToken(), TheWeaponBonusNames);

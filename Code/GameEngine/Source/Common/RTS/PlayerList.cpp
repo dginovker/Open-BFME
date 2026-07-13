@@ -132,7 +132,6 @@ void PlayerList::reset()
 }
 
 //-----------------------------------------------------------------------------
-// ?newGame@PlayerList@@ present-unmatched
 void PlayerList::newGame()
 {
 	Int i;

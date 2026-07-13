@@ -4939,7 +4939,6 @@ Bool NetPacket::addGameCommand(NetCommandRef *msg) {
 	return retval;
 }
 
-// ?writeGameMessageArgumentToPacket@NetPacket@@IAEXW4GameMessageArgumentDataType@@TGameMessageArgumentType@@@Z present-unmatched
 void NetPacket::writeGameMessageArgumentToPacket(GameMessageArgumentDataType type, GameMessageArgumentType arg) {
 	if (type == ARGUMENTDATATYPE_INTEGER) {
 		memcpy(m_packet + m_packetLen, &(arg.integer), sizeof(arg.integer));
@@ -5389,7 +5388,6 @@ NetCommandMsg * NetPacket::readGameMessage(UnsignedByte *data, Int &i)
 	return (NetCommandMsg *)msg;
 }
 
-// ?readGameMessageArgumentFromPacket@NetPacket@@KAXW4GameMessageArgumentDataType@@PAVNetGameCommandMsg@@PAEAAH@Z present-unmatched
 void NetPacket::readGameMessageArgumentFromPacket(GameMessageArgumentDataType type, NetGameCommandMsg *msg, UnsignedByte *data, Int &i) {
 	if (type == ARGUMENTDATATYPE_INTEGER) {
 		GameMessageArgumentType arg;

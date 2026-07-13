@@ -1318,3 +1318,5 @@ _bfme_timeGetTime@0,0x000481E4,ILT thunk for timeGetTime (non-dllimport call sit
 ?_M_initialize_map@?$_Deque_base@VGameResultsRequest@@V?$allocator@VGameResultsRequest@@@_STL@@@_STL@@IAEXI@Z,0x008FA2B0,shared deque initialize_map body (4 template instances)
 ?_M_initialize_map@?$_Deque_base@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXI@Z,0x008FA2B0,shared deque initialize_map body (4 template instances)
 ?_M_copy@?$_Rb_tree@HU?$pair@$$CBHI@_STL@@U?$_Select1st@U?$pair@$$CBHI@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHI@_STL@@@2@@_STL@@AAEPAU?$_Rb_tree_node@U?$pair@$$CBHI@_STL@@@2@PAU32@0@Z,0x00042BB3,ILT thunk; real body 0x4AAC70
+?allocate@__new_alloc@_STL@@SAPAXI@Z,0x0082E540,stlport static-lib allocate (SEH body; not operator new @ 0x881F30)
+??2@YAPAXI@Z,0x0082E540,0x82E540 is really __new_alloc::allocate (SEH body); stlport static-lib compiles the list-node alloc as operator new

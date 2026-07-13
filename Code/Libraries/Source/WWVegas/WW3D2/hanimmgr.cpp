@@ -288,7 +288,6 @@ Error:
  * HISTORY:                                                                                    * 
  *   08/11/1997 GH  : Created.                                                                 * 
  *=============================================================================================*/
-// ?Peek_Anim@HAnimManagerClass@@QAEPAVHAnimClass@@PBD@Z present-unmatched
 HAnimClass * HAnimManagerClass::Peek_Anim(const char * name)
 {
 	return (HAnimClass*)AnimPtrTable->Find( name );
@@ -307,7 +306,6 @@ HAnimClass * HAnimManagerClass::Peek_Anim(const char * name)
  * HISTORY:                                                                                    * 
  *   08/11/1997 GH  : Created.                                                                 * 
  *=============================================================================================*/
-// ?Get_Anim@HAnimManagerClass@@QAEPAVHAnimClass@@PBD@Z present-unmatched
 HAnimClass * HAnimManagerClass::Get_Anim(const char * name)
 {	
 	HAnimClass * anim = Peek_Anim( name );
@@ -330,7 +328,6 @@ HAnimClass * HAnimManagerClass::Get_Anim(const char * name)
  * HISTORY:                                                                                    * 
  *   08/11/1997 GH  : Created.                                                                 * 
  *=============================================================================================*/
-// ?Free_All_Anims@HAnimManagerClass@@QAEXXZ present-unmatched
 void HAnimManagerClass::Free_All_Anims(void)
 {
 	// Make an iterator, and release all ptrs
@@ -439,13 +436,11 @@ bool HAnimManagerClass::Add_Anim(HAnimClass *new_anim)
 ** so that if they are asked for again, we can quickly return NULL, without searching the
 ** disk again.
 */
-// ?Register_Missing@HAnimManagerClass@@QAEXPBD@Z present-unmatched
 void	HAnimManagerClass::Register_Missing( const char * name )
 {
 	MissingAnimTable->Add( W3DNEW MissingAnimClass( name ) );
 }
 
-// ?Is_Missing@HAnimManagerClass@@QAE_NPBD@Z present-unmatched
 bool	HAnimManagerClass::Is_Missing( const char * name )
 {
 	return ( MissingAnimTable->Find( name ) != NULL );

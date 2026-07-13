@@ -1290,3 +1290,4 @@ _IsStatsConnected,0x009D2B60
 ?Peek_D3D_Base_Texture@TextureBaseClass@@QBEPAUIDirect3DBaseTexture8@@XZ,0x0090DC60
 ?moveMouse@Mouse@@IAEXHHH@Z,0x000141A5
 ?update@Mouse@@UAEXXZ,0x0003D7FD
+??0MissingAnimClass@@QAE@PBD@Z,0x00034559,callers use this thunk (like findMemoryPool 0x3ADD7); real body drift candidate 0x9723BF

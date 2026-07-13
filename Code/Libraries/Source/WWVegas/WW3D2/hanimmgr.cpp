@@ -413,7 +413,6 @@ void HAnimManagerClass::Create_Asset_List(DynamicVectorClass<StringClass> & excl
  * HISTORY:                                                                                    * 
  *   05/31/2000 PDS  : Created.                                                                * 
  *=============================================================================================*/
-// ?Add_Anim@HAnimManagerClass@@QAE_NPAVHAnimClass@@@Z present-unmatched
 bool HAnimManagerClass::Add_Anim(HAnimClass *new_anim)
 {
 	WWASSERT (new_anim != NULL);

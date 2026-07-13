@@ -80,6 +80,8 @@ typedef union _ULARGE_INTEGER {
 } ULARGE_INTEGER;
 typedef const void *LPCVOID;
 typedef char *LPSTR;
+typedef char *LPTSTR;
+typedef const char *LPCTSTR;
 typedef const char *LPCSTR;
 typedef const char *PCSTR;
 typedef unsigned short WCHAR;   // = VC7.1 default wchar_t (unsigned short), mangles as G like retail
@@ -143,6 +145,8 @@ __inline int operator==(const GUID& a, const GUID& b) {
 
 typedef LONG HRESULT;
 #define S_OK ((HRESULT)0)
+#define SUCCEEDED(hr) ((HRESULT)(hr) >= 0)
+#define FAILED(hr) ((HRESULT)(hr) < 0)
 #define S_FALSE ((HRESULT)1)
 #define E_FAIL ((HRESULT)0x80004005)
 #define E_INVALIDARG ((HRESULT)0x80070057)
@@ -257,8 +261,13 @@ typedef struct tagBITMAPINFOHEADER {
     DWORD biSize; LONG biWidth, biHeight; WORD biPlanes, biBitCount;
     DWORD biCompression, biSizeImage; LONG biXPelsPerMeter, biYPelsPerMeter;
     DWORD biClrUsed, biClrImportant;
-} BITMAPINFOHEADER, *LPBITMAPINFOHEADER;
-typedef struct tagBITMAPINFO { BITMAPINFOHEADER bmiHeader; RGBQUAD bmiColors[1]; } BITMAPINFO, *LPBITMAPINFO;
+} BITMAPINFOHEADER, *LPBITMAPINFOHEADER, *PBITMAPINFOHEADER;
+typedef struct tagBITMAPINFO { BITMAPINFOHEADER bmiHeader; RGBQUAD bmiColors[1]; } BITMAPINFO, *LPBITMAPINFO, *PBITMAPINFO;
+#pragma pack(push, 2)
+typedef struct tagBITMAPFILEHEADER {
+    WORD bfType; DWORD bfSize; WORD bfReserved1, bfReserved2; DWORD bfOffBits;
+} BITMAPFILEHEADER, *PBITMAPFILEHEADER, *LPBITMAPFILEHEADER;
+#pragma pack(pop)
 #define RGB(r,g,b) ((DWORD)(((BYTE)(r) | ((WORD)(g) << 8)) | (((DWORD)(BYTE)(b)) << 16)))
 #define FW_NORMAL 400
 #define FW_BOLD 700
@@ -298,6 +307,7 @@ typedef struct _WIN32_FIND_DATAA {
 #define MB_APPLMODAL 0x00000000L
 #define MB_DEFBUTTON3 0x00000200L
 #define VK_RETURN 0x0D
+#define VK_CAPITAL 0x14
 #define VK_INSERT 0x2D
 #define VK_DELETE 0x2E
 #define VK_F5 0x74
@@ -587,6 +597,9 @@ __declspec(dllimport) HINSTANCE WINAPI FindExecutableA(LPCSTR, LPCSTR, LPSTR);
 __declspec(dllimport) BOOL WINAPI ScreenToClient(HWND, LPPOINT);
 __declspec(dllimport) HCURSOR WINAPI LoadCursorFromFileA(LPCSTR);
 __declspec(dllimport) HCURSOR WINAPI SetCursor(HCURSOR);
+__declspec(dllimport) BOOL WINAPI SetCursorPos(int, int);
+__declspec(dllimport) BOOL WINAPI IsIconic(HWND);
+__declspec(dllimport) BOOL WINAPI GetClientRect(HWND, LPRECT);
 __declspec(dllimport) BOOL WINAPI GetCursorPos(LPPOINT);
 __declspec(dllimport) BOOL WINAPI PeekMessageA(LPMSG, HWND, UINT, UINT, UINT);
 __declspec(dllimport) BOOL WINAPI GetMessageA(LPMSG, HWND, UINT, UINT);
@@ -618,6 +631,12 @@ __declspec(dllimport) HGLOBAL WINAPI GlobalAlloc(UINT, SIZE_T);
 __declspec(dllimport) HGLOBAL WINAPI GlobalReAlloc(HGLOBAL, SIZE_T, UINT);
 __declspec(dllimport) LPVOID WINAPI GlobalLock(HGLOBAL);
 __declspec(dllimport) BOOL WINAPI GlobalUnlock(HGLOBAL);
+#define LMEM_FIXED 0x0000
+#define LMEM_MOVEABLE 0x0002
+#define LMEM_ZEROINIT 0x0040
+#define LPTR (LMEM_FIXED | LMEM_ZEROINIT)
+__declspec(dllimport) HLOCAL WINAPI LocalAlloc(UINT, SIZE_T);
+__declspec(dllimport) HLOCAL WINAPI LocalFree(HLOCAL);
 __declspec(dllimport) HGLOBAL WINAPI GlobalFree(HGLOBAL);
 __declspec(dllimport) SIZE_T WINAPI GlobalSize(HGLOBAL);
 __declspec(dllimport) void WINAPI GlobalMemoryStatus(LPMEMORYSTATUS);

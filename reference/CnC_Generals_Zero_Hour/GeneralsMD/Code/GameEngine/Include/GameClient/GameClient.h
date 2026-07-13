@@ -135,6 +135,13 @@ public:
 	virtual void selectDrawablesInGroup( Int group );									///< select all drawables belong to the specifies group
 	virtual void assignSelectedDrawablesToGroup( Int group );						///< assign all selected drawables to the specified group
 	//---------------------------------------------------------------------------------------
+
+	// BFME: retail GameClient has 3 more virtuals before getFrame (getFrame is
+	// called through vtable slot 0x68 == index 26 in retail). Stub slots keep
+	// call-site encodings byte-identical until the real BFME methods are ported.
+	virtual void bfmeVirtualStub00( void ) { }
+	virtual void bfmeVirtualStub01( void ) { }
+	virtual void bfmeVirtualStub02( void ) { }
 	virtual UnsignedInt getFrame( void ) { return m_frame; }						///< Returns the current simulation frame number
 
 	//---------------------------------------------------------------------------

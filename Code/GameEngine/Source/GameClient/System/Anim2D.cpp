@@ -38,6 +38,7 @@
 #include "Common/Xfer.h"
 #include "GameClient/Anim2D.h"
 #include "GameClient/Display.h"
+#include "GameClient/GameClient.h"
 #include "GameClient/Image.h"
 #include "GameLogic/GameLogic.h"
 
@@ -56,31 +57,14 @@ Anim2DCollection *TheAnim2DCollection = NULL;
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ??0Anim2DTemplate@@QAE@VAsciiString@@@Z present-unmatched
-Anim2DTemplate::Anim2DTemplate( AsciiString name )
-{
-
-	m_name = name;
-	m_images = NULL;
-	m_numFrames = NUM_FRAMES_INVALID;
-	m_framesBetweenUpdates = 0;
-	m_animMode = ANIM_2D_LOOP;
-	m_randomizeStartFrame = FALSE;
-	m_nextTemplate = NULL;
-
-}  // end Anim2DTemplate
+// ??0Anim2DTemplate@@QAE@VAsciiString@@@Z
+// Body in Anim2DTemplate_ctor_dtor.asm (exact 124B retail; BFME AsciiString
+// copy-ctor is out-of-line, ours inlines -- AsciiString reconciliation wall).
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ??1Anim2DTemplate@@UAE@XZ present-unmatched
-Anim2DTemplate::~Anim2DTemplate( void )
-{
-
-	// delete the images
-	if( m_images )
-		delete [] m_images;
-
-}  // end ~Anim2DTemplate
+// ??1Anim2DTemplate@@UAE@XZ
+// Body in Anim2DTemplate_ctor_dtor.asm (exact 34B retail; same AsciiString wall).
 
 // ------------------------------------------------------------------------------------------------
 /** Field parse table for 2D animation templates */
@@ -101,32 +85,9 @@ const FieldParse Anim2DTemplate::s_anim2DFieldParseTable[] =
 // ------------------------------------------------------------------------------------------------
 /** Parse the number of images we will have in this animation and allocate the array for them */
 // ------------------------------------------------------------------------------------------------
-// ?parseNumImages@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z present-unmatched
-void Anim2DTemplate::parseNumImages( INI *ini, void *instance, void *store, const void *userData )
-{
-
-	// parse the integer data from the file
-	UnsignedInt numFrames;
-	ini->parseUnsignedInt( ini, instance, &numFrames, userData );
-
-	// get the template we are to store into
-	Anim2DTemplate *animTemplate = (Anim2DTemplate *)instance;
-
-	// animations must have a minimum # of frames
-	Int minimumFrames = 1;
-	if( numFrames < minimumFrames )
-	{
-
-		DEBUG_CRASH(( "Anim2DTemplate::parseNumImages - Invalid animation '%s', animations must have '%d' or more frames defined\n",
-									 animTemplate->getName().str(), minimumFrames ));
-		throw INI_INVALID_DATA;
-
-	}  // end if
-
-	// allocate the image array
-	animTemplate->allocateImages( (UnsignedShort)numFrames );
-
-}  // end parseNumImages
+// ?parseNumImages@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z
+// Body in Anim2DTemplate_parse_walls.asm (exact 158B retail; BFME keeps the
+// INI error-crash path in release, ours strips DEBUG_CRASH).
 
 // ------------------------------------------------------------------------------------------------
 /** Allocate the image array for an animation template and store the number of frames we have */
@@ -186,90 +147,14 @@ void Anim2DTemplate::parseImage( INI *ini, void *instance, void *store, const vo
 	* animation.  NOTE: That the number images *must* have already been specified before
 	* we can parse this entry so we know how many images to allocate and look for */
 // ------------------------------------------------------------------------------------------------
-/*static*/ void Anim2DTemplate::parseImageSequence( INI *ini, void *instance, 
-																										void *store, const void *userData )
-{
-	
-	// get the animation template 
-	Anim2DTemplate *animTemplate = (Anim2DTemplate *)instance;
-
-	//
-	// before we can read, allocate, and find all the images for the sequence ... we must
-	// know how many total images are in this animation.  Verify that now
-	//
-	if( animTemplate->getNumFrames() == NUM_FRAMES_INVALID )
-	{
-
-		DEBUG_CRASH(( "Anim2DTemplate::parseImageSequence - You must specify the number of animation frames for animation '%s' *BEFORE* specifying the image sequence name\n",
-									animTemplate->getName().str() ));
-		throw INI_INVALID_DATA;
-
-	}  // end if
-
-	//
-	// the image storage has already been allocated, all we have to do now is count from
-	// 0 to numImages - 1 and add those images to the template
-	//
-	AsciiString imageBaseName = ini->getNextAsciiString();
-	AsciiString imageName;
-	const Image *image;
-	for( Int i = 0; i < animTemplate->getNumFrames(); ++i )
-	{
-
-		// construct this name
-		imageName.format( "%s%03d", imageBaseName.str(), i );
-
-		// search for this image
-		image = TheMappedImageCollection->findImageByName( imageName );
-
-		// sanity
-		if( image == NULL )
-		{
-
-			DEBUG_CRASH(( "Anim2DTemplate::parseImageSequence - Image '%s' not found for animation '%s'.  Check the number of images specified in INI and also make sure all the actual images exist.\n",
-										imageName.str(), animTemplate->getName().str() ));
-			throw INI_INVALID_DATA;
-
-		}  // end if
-
-		// store the image in the next free frame
-		animTemplate->storeImage( image );
-
-	}  // end if
-
-}  // end parseImageSequence
+// ?parseImageSequence@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z
+// Body in Anim2DTemplate_parse_walls.asm (exact 381B retail; same release-crash wall).
 
 // ------------------------------------------------------------------------------------------------
 /** Store the image at the next open image slot for the animation */
 // ------------------------------------------------------------------------------------------------
-// ?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z present-unmatched
-void Anim2DTemplate::storeImage( const Image *image )
-{
-
-	// sanity
-	if( image == NULL )
-		return;
-
-	// search through the image list and store at the next free spot
-	for( Int i = 0; i < m_numFrames; ++i )
-	{
-
-		if( m_images[ i ] == NULL )
-		{
-
-			m_images[ i ] = image;
-			return;
-
-		}  // end if
-
-	}  // end for i
-
-	// if we got here we tried to store an image in an array that was too small
-	DEBUG_CRASH(( "Anim2DTemplate::storeImage - Unable to store image '%s' into animation '%s' because the animation is setup to only support '%d' image frames\n",
-								image->getName().str(), getName().str(), m_numFrames ));
-	throw INI_INVALID_DATA;
-
-}  // end storeImage
+// ?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z
+// Body in Anim2DTemplate_parse_walls.asm (exact 201B retail; same release-crash wall).
 
 // ------------------------------------------------------------------------------------------------
 /** Return the Image* for the frame number requested */
@@ -307,52 +192,9 @@ const Image* Anim2DTemplate::getFrame( UnsignedShort frameNumber ) const
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ??0Anim2D@@QAE@PAVAnim2DTemplate@@PAVAnim2DCollection@@@Z present-unmatched
-Anim2D::Anim2D( Anim2DTemplate *animTemplate, Anim2DCollection *collectionSystem )
-{
-
-	// sanity
-	DEBUG_ASSERTCRASH( animTemplate != NULL, ("Anim2D::Anim2D - NULL template\n") );
-
-	//Added By Sadullah Nader
-	//Initialization 
-
-	m_currentFrame = 0; 
-	
-	//
-
-	// set the template
-	m_template = animTemplate;
-	
-	// initialize members
-	m_status = ANIM_2D_STATUS_NONE;
-	m_alpha = 1.0f;
-
-	// set the initial frame for the animation based on the type of animation mode or randomize
-	if( m_template->isRandomizedStartFrame() )
-		randomizeCurrentFrame();
-	else
-		reset();
-
-	m_minFrame = 0;
-	m_maxFrame = m_template->getNumFrames() - 1;
-	m_framesBetweenUpdates = m_template->getNumFramesBetweenUpdates();
-	
-	//added by Sadullah Nader
-	// initializing pointers to NULL, and clearing Frame counters before
-	// we register ourselves to the System
-	m_collectionSystemNext = NULL;
-	m_collectionSystemPrev = NULL;
-	
-	m_lastUpdateFrame = 0;
-	
-	// if a system is present, register ourselves with that system
-	m_collectionSystem = collectionSystem;
-	if( m_collectionSystem )
-		m_collectionSystem->registerAnimation( this );
-	
-	
-}  // end Anim2D
+// ??0Anim2D@@QAE@PAVAnim2DTemplate@@PAVAnim2DCollection@@@Z
+// Body in Anim2D_ctor.asm (exact 297B retail; retail inlines reset()
+// and registerAnimation() and writes BFME-only cached fields +0x2c/+0x30).
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
@@ -369,7 +211,6 @@ Anim2D::~Anim2D( void )
 // ------------------------------------------------------------------------------------------------
 /** Set the current animation frame */
 // ------------------------------------------------------------------------------------------------
-// ?setCurrentFrame@Anim2D@@QAEXG@Z present-unmatched
 void Anim2D::setCurrentFrame( UnsignedShort frame )
 {
 
@@ -390,14 +231,14 @@ void Anim2D::setCurrentFrame( UnsignedShort frame )
 	m_currentFrame = frame;
 
 	// record the frame of this update to our current frame
-	m_lastUpdateFrame = TheGameLogic->getFrame();
+	m_lastUpdateFrame = TheGameClient->getFrame();
 
 }  // end setCurrentFrame
 
 // ------------------------------------------------------------------------------------------------
 /** Randomize the current frame */
 // ------------------------------------------------------------------------------------------------
-// ?randomizeCurrentFrame@Anim2D@@QAEXXZ present-unmatched
+#line 424 "F:\\\\bfme\\\\Code\\\\gameengine\\\\Source\\\\GameClient\\\\System\\\\Anim2D.cpp"
 void Anim2D::randomizeCurrentFrame( void )
 {
 
@@ -412,7 +253,6 @@ void Anim2D::randomizeCurrentFrame( void )
 // ------------------------------------------------------------------------------------------------
 /** Reset this animation instance to the "start" of the animation */
 // ------------------------------------------------------------------------------------------------
-// ?reset@Anim2D@@QAEXXZ present-unmatched
 void Anim2D::reset( void )
 {
 
@@ -450,7 +290,6 @@ void Anim2D::reset( void )
 /** This is called after we are drawn ... if sufficient time has passed since our last
 	* frame update we will update our current frame */
 // ------------------------------------------------------------------------------------------------
-// ?tryNextFrame@Anim2D@@IAEXXZ present-unmatched
 void Anim2D::tryNextFrame( void )
 {
 
@@ -460,7 +299,7 @@ void Anim2D::tryNextFrame( void )
 										  m_template->getName().str()) );
 
 	// how many frames have passed since our last update
-	if( TheGameLogic->getFrame() - m_lastUpdateFrame >= m_framesBetweenUpdates )
+	if( TheGameClient->getFrame() - m_lastUpdateFrame >= m_framesBetweenUpdates )
 	{
 
 		switch( m_template->getAnimMode() )
@@ -784,7 +623,6 @@ void Anim2DCollection::init( void )
 // ------------------------------------------------------------------------------------------------
 /** System update phase */
 // ------------------------------------------------------------------------------------------------
-// ?update@Anim2DCollection@@UAEXXZ present-unmatched
 void Anim2DCollection::update( void )
 {
 	Anim2D *anim;
@@ -804,24 +642,9 @@ void Anim2DCollection::update( void )
 // ------------------------------------------------------------------------------------------------
 /** Search the template list for a template with a matching name */
 // ------------------------------------------------------------------------------------------------
-// ?findTemplate@Anim2DCollection@@QAEPAVAnim2DTemplate@@ABVAsciiString@@@Z present-unmatched
-Anim2DTemplate *Anim2DCollection::findTemplate( const AsciiString& name )
-{
-
-	// search the list
-	for( Anim2DTemplate *animTemplate = m_templateList; 
-			 animTemplate; 
-			 animTemplate = animTemplate->friend_getNextTemplate() )
-	{
-
-		if( animTemplate->getName() == name )
-			return animTemplate;
-
-	}  // end for
-
-	return NULL;  // template not found
-
-}  // end findTemplate
+// ?findTemplate@Anim2DCollection@@QAEPAVAnim2DTemplate@@ABVAsciiString@@@Z
+// Body in Anim2DCollection_walls.asm (exact 155B retail; BFME AsciiString
+// compare with TheEmptyString fallback -- AsciiString reconciliation wall).
 
 //-------------------------------------------------------------------------------------------------
 Anim2DTemplate* Anim2DCollection::getNextTemplate( Anim2DTemplate *animTemplate ) const
@@ -836,21 +659,9 @@ Anim2DTemplate* Anim2DCollection::getNextTemplate( Anim2DTemplate *animTemplate 
 // ------------------------------------------------------------------------------------------------
 /** Allocate a new template, assign name, and link to our internal list */
 // ------------------------------------------------------------------------------------------------
-// ?newTemplate@Anim2DCollection@@QAEPAVAnim2DTemplate@@ABVAsciiString@@@Z present-unmatched
-Anim2DTemplate *Anim2DCollection::newTemplate( const AsciiString& name )
-{
-
-	// allocate a new template
-	Anim2DTemplate *animTemplate = new Anim2DTemplate( name );  // BFME: no memory pool for Anim2DTemplate
-
-	// link to our template list
-	animTemplate->friend_setNextTemplate( m_templateList );
-	m_templateList = animTemplate;
-
-	// return the new template
-	return animTemplate;
-
-}  // end newTemplate
+// ?newTemplate@Anim2DCollection@@QAEPAVAnim2DTemplate@@ABVAsciiString@@@Z
+// Body in Anim2DCollection_walls.asm (exact 106B retail; by-value AsciiString
+// arg copy is out-of-line in BFME -- AsciiString reconciliation wall).
 
 // ------------------------------------------------------------------------------------------------
 /** Register animation instance with us.  When an animation instance is registered it can

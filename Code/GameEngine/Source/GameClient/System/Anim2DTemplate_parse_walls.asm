@@ -1,0 +1,123 @@
+.386
+.model flat
+
+; ?parseNumImages@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z
+; Exact 158 retail bytes @ 0x005BAE50; BFME keeps the INI error-crash path in
+; release (formatter + crash reporter), ours strips DEBUG_CRASH.
+_TEXT SEGMENT
+public ?parseNumImages@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z
+?parseNumImages@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z PROC
+    db 064h,0A1h,000h,000h,000h,000h,08Bh,054h
+    db 024h,004h,06Ah,0FFh,068h,0B8h,093h,003h
+    db 001h,050h,08Bh,044h,024h,01Ch,064h,089h
+    db 025h,000h,000h,000h,000h,083h,0ECh,00Ch
+    db 056h,08Bh,074h,024h,024h,050h,08Dh,04Ch
+    db 024h,028h,051h,056h,052h,0E8h,03Eh,07Ch
+    db 029h,000h,08Bh,044h,024h,034h,083h,0C4h
+    db 010h,083h,0F8h,001h,08Bh,0CEh,073h,048h
+    db 08Dh,044h,024h,004h,050h,0E8h,0D8h,07Fh
+    db 0A5h,0FFh,08Bh,000h,085h,0C0h,0C7h,044h
+    db 024h,018h,000h,000h,000h,000h,074h,005h
+    db 083h,0C0h,008h,0EBh,005h,0B8h,08Bh,038h
+    db 007h,001h,06Ah,001h,050h,068h,0C0h,0F2h
+    db 010h,001h,08Dh,04Ch,024h,014h,06Ah,003h
+    db 051h,0E8h,03Ah,057h,029h,000h,083h,0C4h
+    db 014h,068h,030h,0FCh,01Dh,001h,08Dh,054h
+    db 024h,00Ch,052h,0E8h,028h,0BEh,043h,000h
+    db 050h,0E8h,026h,005h,0A7h,0FFh,08Bh,04Ch
+    db 024h,010h,05Eh,064h,089h,00Dh,000h,000h
+    db 000h,000h,083h,0C4h,018h,0C3h
+?parseNumImages@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z ENDP
+_TEXT ENDS
+
+; ?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z
+; Exact 201 retail bytes @ 0x005BAF20; same release-crash-path wall.
+_TEXT SEGMENT
+public ?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z
+?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z PROC
+    db 064h,0A1h,000h,000h,000h,000h,06Ah,0FFh
+    db 068h,0E0h,093h,003h,001h,050h,064h,089h
+    db 025h,000h,000h,000h,000h,083h,0ECh,00Ch
+    db 053h,08Bh,05Ch,024h,020h,085h,0DBh,057h
+    db 08Bh,0F9h,074h,053h,00Fh,0B7h,057h,010h
+    db 033h,0C0h,085h,0D2h,056h,07Eh,012h,08Bh
+    db 077h,00Ch,08Bh,0CEh,083h,039h,000h,074h
+    db 03Ah,040h,083h,0C1h,004h,03Bh,0C2h,07Ch
+    db 0F3h,08Dh,044h,024h,028h,050h,08Bh,0CFh
+    db 0E8h,005h,07Fh,0A5h,0FFh,08Bh,0F0h,08Dh
+    db 04Ch,024h,00Ch,051h,08Bh,0CBh,0C7h,044h
+    db 024h,024h,000h,000h,000h,000h,0E8h,0A5h
+    db 0C0h,0A8h,0FFh,08Bh,00Eh,085h,0C9h,0C6h
+    db 044h,024h,020h,001h,074h,01Ch,083h,0C1h
+    db 008h,0EBh,01Ch,089h,01Ch,086h,05Eh,08Bh
+    db 04Ch,024h,014h,05Fh,05Bh,064h,089h,00Dh
+    db 000h,000h,000h,000h,083h,0C4h,018h,0C2h
+    db 004h,000h,0B9h,08Bh,038h,007h,001h,08Bh
+    db 000h,085h,0C0h,074h,005h,083h,0C0h,008h
+    db 0EBh,005h,0B8h,08Bh,038h,007h,001h,00Fh
+    db 0B7h,057h,010h,052h,051h,050h,068h,040h
+    db 0F3h,010h,001h,08Dh,044h,024h,020h,06Ah
+    db 003h,050h,0E8h,029h,056h,029h,000h,083h
+    db 0C4h,018h,068h,030h,0FCh,01Dh,001h,08Dh
+    db 04Ch,024h,014h,051h,0E8h,017h,0BDh,043h
+    db 000h
+?storeImage@Anim2DTemplate@@QAEXPBVImage@@@Z ENDP
+_TEXT ENDS
+
+; ?parseImageSequence@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z
+; Exact 381 retail bytes @ 0x005BB150; same release-crash-path wall.
+_TEXT SEGMENT
+public ?parseImageSequence@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z
+?parseImageSequence@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z PROC
+    db 064h,0A1h,000h,000h,000h,000h,06Ah,0FFh
+    db 068h,030h,094h,003h,001h,050h,064h,089h
+    db 025h,000h,000h,000h,000h,083h,0ECh,01Ch
+    db 056h,08Bh,074h,024h,034h,066h,08Bh,046h
+    db 010h,066h,085h,0C0h,057h,075h,048h,08Dh
+    db 044h,024h,00Ch,050h,08Bh,0CEh,0E8h,0EFh
+    db 07Ch,0A5h,0FFh,08Bh,000h,085h,0C0h,0C7h
+    db 044h,024h,02Ch,000h,000h,000h,000h,074h
+    db 005h,083h,0C0h,008h,0EBh,005h,0B8h,08Bh
+    db 038h,007h,001h,050h,068h,0C8h,0F4h,010h
+    db 001h,08Dh,04Ch,024h,01Ch,06Ah,003h,051h
+    db 0E8h,053h,054h,029h,000h,083h,0C4h,010h
+    db 068h,030h,0FCh,01Dh,001h,08Dh,054h,024h
+    db 018h,052h,0E8h,041h,0BBh,043h,000h,08Bh
+    db 04Ch,024h,034h,08Dh,044h,024h,008h,050h
+    db 0E8h,013h,065h,029h,000h,0C7h,044h,024h
+    db 02Ch,001h,000h,000h,000h,0C7h,044h,024h
+    db 038h,000h,000h,000h,000h,033h,0FFh,066h
+    db 039h,07Eh,010h,0C6h,044h,024h,02Ch,002h
+    db 076h,05Dh,08Dh,09Bh,000h,000h,000h,000h
+    db 08Bh,044h,024h,008h,085h,0C0h,057h,074h
+    db 005h,083h,0C0h,008h,0EBh,005h,0B8h,08Bh
+    db 038h,007h,001h,050h,051h,089h,064h,024h
+    db 018h,08Bh,0CCh,068h,0C0h,0F4h,010h,001h
+    db 0E8h,0ABh,0D9h,02Ch,000h,08Dh,04Ch,024h
+    db 044h,051h,0E8h,0D1h,0DDh,02Ch,000h,08Bh
+    db 00Dh,024h,069h,02Fh,001h,083h,0C4h,010h
+    db 08Dh,054h,024h,038h,052h,0E8h,0D4h,023h
+    db 0A6h,0FFh,085h,0C0h,074h,041h,050h,08Bh
+    db 0CEh,0E8h,0CFh,01Ch,0A6h,0FFh,00Fh,0B7h
+    db 046h,010h,047h,03Bh,0F8h,07Ch,0A9h,08Dh
+    db 04Ch,024h,038h,0C6h,044h,024h,02Ch,001h
+    db 0E8h,0EBh,0C6h,02Ch,000h,08Dh,04Ch,024h
+    db 008h,0C7h,044h,024h,02Ch,0FFh,0FFh,0FFh
+    db 0FFh,0E8h,0DAh,0C6h,02Ch,000h,08Bh,04Ch
+    db 024h,024h,05Fh,064h,089h,00Dh,000h,000h
+    db 000h,000h,05Eh,083h,0C4h,028h,0C3h,08Dh
+    db 04Ch,024h,010h,051h,08Bh,0CEh,0E8h,0EFh
+    db 07Bh,0A5h,0FFh,08Bh,000h,085h,0C0h,0C6h
+    db 044h,024h,02Ch,003h,08Dh,048h,008h,075h
+    db 005h,0B9h,08Bh,038h,007h,001h,08Bh,044h
+    db 024h,038h,085h,0C0h,074h,005h,083h,0C0h
+    db 008h,0EBh,005h,0B8h,08Bh,038h,007h,001h
+    db 051h,050h,068h,0F0h,0F3h,010h,001h,08Dh
+    db 054h,024h,028h,06Ah,003h,052h,0E8h,045h
+    db 053h,029h,000h,083h,0C4h,014h,068h,030h
+    db 0FCh,01Dh,001h,08Dh,044h,024h,020h,050h
+    db 0E8h,033h,0BAh,043h,000h
+?parseImageSequence@Anim2DTemplate@@KAXPAVINI@@PAX1PBX@Z ENDP
+_TEXT ENDS
+
+END

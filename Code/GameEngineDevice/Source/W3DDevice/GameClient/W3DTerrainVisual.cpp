@@ -780,7 +780,6 @@ Bool W3DTerrainVisual::intersectTerrain( Coord3D *rayStart,
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?getTerrainColorAt@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::getTerrainColorAt( Real x, Real y, RGBColor *pColor )
 {
 
@@ -913,7 +912,6 @@ void W3DTerrainVisual::getWaterGridResolution( const WaterHandle *waterTable,
 // ------------------------------------------------------------------------------------------------
 /** adjust the water grid in world coords by the delta */
 // ------------------------------------------------------------------------------------------------
-// ?changeWaterHeight@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::changeWaterHeight( Real x, Real y, Real delta )
 {
 
@@ -924,7 +922,6 @@ void W3DTerrainVisual::changeWaterHeight( Real x, Real y, Real delta )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?addWaterVelocity@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::addWaterVelocity( Real worldX, Real worldY, 
 																				 Real velocity, Real preferredHeight )
 {

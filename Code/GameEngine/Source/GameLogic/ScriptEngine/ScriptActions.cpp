@@ -6180,7 +6180,6 @@ void ScriptActions::doRevealMapAtWaypointPermanent(const AsciiString& waypointNa
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?doUndoRevealMapAtWaypointPermanent@ScriptActions@@IAEXABVAsciiString@@@Z present-unmatched
 void ScriptActions::doUndoRevealMapAtWaypointPermanent(const AsciiString& lookName)
 {
 	TheScriptEngine->undoNamedMapReveal(lookName);

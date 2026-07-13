@@ -1345,3 +1345,25 @@ _bfme_timeGetTime@0,0x000481E4,ILT thunk for timeGetTime (non-dllimport call sit
 ??4AsciiString@@QAEAAV0@ABV0@@Z,0x00887C90,folded with UnicodeString::set per-TU copy
 ?add@MultiIniFieldParse@@QAEXPBUFieldParse@@I@Z,0x00850920,additive; direct body / per-TU copy
 ?getGridTransform@WaterRenderObjClass@@QAEXPAVMatrix3D@@@Z,0x00019376,ILT thunk; real body 0xB9FB50
+?changeGridHeight@WaterRenderObjClass@@QAEXMMM@Z,0x0079F850,thunk-resolved body (via 0x2b256)
+?addVelocity@WaterRenderObjClass@@QAEXMMMM@Z,0x0079F5F0,thunk-resolved body (via 0x4ae8f)
+?getTerrainColorAt@WorldHeightMap@@QAEXMMPAURGBColor@@@Z,0x007477E0,thunk-resolved body (via 0x197ae)
+?getFieldParse@DieMuxData@@SAPBUFieldParse@@XZ,0x00019326,ILT thunk; real body 0x655140
+?buildFieldParse@ActiveBodyModuleData@@SAXAAVMultiIniFieldParse@@@Z,0x00019772,ILT thunk; real body 0x6284A0
+?undoNamedMapReveal@ScriptEngine@@QAEXABVAsciiString@@@Z,0x0001019A,ILT thunk; real body 0x74D320
+?removeNamedMapReveal@ScriptEngine@@QAEXABVAsciiString@@@Z,0x00022610,ILT thunk; real body 0x74D440
+??0NetWrapperCommandMsg@@QAE@XZ,0x0002A586,ILT thunk; real body 0xA73DD0
+?setWrappedCommandID@NetWrapperCommandMsg@@QAEXG@Z,0x00037083,ILT thunk; real body 0xA73F70
+?setChunkNumber@NetWrapperCommandMsg@@QAEXI@Z,0x0003AE36,ILT thunk; real body 0xA73F10
+?setNumChunks@NetWrapperCommandMsg@@QAEXI@Z,0x00014A42,ILT thunk; real body 0xA73F30
+?setTotalDataLength@NetWrapperCommandMsg@@QAEXI@Z,0x0003EC52,ILT thunk; real body 0xA73F50
+?setDataOffset@NetWrapperCommandMsg@@QAEXI@Z,0x00023709,ILT thunk; real body 0xA73EF0
+?setData@NetWrapperCommandMsg@@QAEXPAEI@Z,0x00049ECC,ILT thunk; real body 0xA73E70
+??0NetFileProgressCommandMsg@@QAE@XZ,0x000409DA,ILT thunk; real body 0xA74030
+?setFileID@NetFileProgressCommandMsg@@QAEXG@Z,0x000247EE,ILT thunk; real body 0xA74090
+?setProgress@NetFileProgressCommandMsg@@QAEXH@Z,0x000153B6,ILT thunk; real body 0xA740B0
+?BTREE_decompress@@YAHPAE0@Z,0x00822FF0,additive; direct body / per-TU copy
+??$_S_unique@V?$basic_string@DV?$char_traits@D@_STL@@V?$allocator@D@2@@_STL@@V?$allocator@V?$basic_string@DV?$char_traits@D@_STL@@V?$allocator@D@2@@_STL@@@2@U?$equal_to@V?$basic_string@DV?$char_traits@D@_STL@@V?$allocator@D@2@@_STL@@@2@@_STL@@YAXAAV?$list@V?$basic_string@DV?$char_traits@D@_STL@@V?$allocator@D@2@@_STL@@V?$allocator@V?$basic_string@DV?$char_traits@D@_STL@@V?$allocator@D@2@@_STL@@@2@@0@U?$equal_to@V?$basic_string@DV?$char_traits@D@_STL@@V?$allocator@D@2@@_STL@@@0@@Z,0x0000F8B7,ILT thunk; real body 0x77F960
+??0Snapshot@@QAE@XZ,0x009A3A30,per-TU copy (ModuleFactory TU)
+??0Snapshot@@QAE@XZ,0x009A1A30,per-TU copy (ModuleFactory TU)
+??0GhostObjectManager@@QAE@XZ,0x006BC530,real body via thunk 0x2ba49

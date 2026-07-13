@@ -5791,7 +5791,6 @@ NetCommandMsg * NetPacket::readTimeOutGameStartMessage(UnsignedByte *data, Int &
 	return msg;
 }
 
-// ?readWrapperMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readWrapperMessage(UnsignedByte *data, Int &i) {
 	NetWrapperCommandMsg *msg = newInstance(NetWrapperCommandMsg);
 
@@ -5897,7 +5896,6 @@ NetCommandMsg * NetPacket::readFileAnnounceMessage(UnsignedByte *data, Int &i) {
 	return msg;
 }
 
-// ?readFileProgressMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readFileProgressMessage(UnsignedByte *data, Int &i) {
 	NetFileProgressCommandMsg *msg = newInstance(NetFileProgressCommandMsg);
 

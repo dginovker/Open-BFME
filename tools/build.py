@@ -388,8 +388,11 @@ def load_symbol_map():
             for row in csv.DictReader(handle):
                 address = int(row["address"], 16)
                 candidates = symbol_map.setdefault(row["name"], [])
-                if address not in candidates:
-                    candidates.append(address)
+                # a pinned body gets its incremental-link thunks too, same as a
+                # ledger row: call sites encode the thunk, not the body
+                for candidate in thunks.get(address, []) + [address]:
+                    if candidate not in candidates:
+                        candidates.append(candidate)
     return symbol_map
 
 

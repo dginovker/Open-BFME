@@ -4386,7 +4386,6 @@ UnsignedInt GameLogic::getObjectCount( void )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?createGhostObjectManager@GameLogic@@EAEPAVGhostObjectManager@@XZ present-unmatched
 GhostObjectManager *GameLogic::createGhostObjectManager(void)
 { 
 	return NEW GhostObjectManager;

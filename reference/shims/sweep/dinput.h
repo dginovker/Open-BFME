@@ -62,6 +62,21 @@ extern "C" const GUID GUID_SysMouse;
 extern "C" const struct _DIDATAFORMAT c_dfDIKeyboard;
 extern "C" const struct _DIDATAFORMAT c_dfDIMouse;
 
+
+// winuser.h cursor/capture decls — kept OUT of windows.h: their presence in the
+// global shim deterministically perturbs cl's regalloc for an unrelated template
+// instantiation in wwmemlog.cpp (VectorClass<ActiveCategoryStackClass>::Resize
+// load-swap); dinput.h is only seen by the DI device TUs that need these.
+__declspec(dllimport) BOOL WINAPI ClipCursor(const RECT *);
+__declspec(dllimport) BOOL WINAPI GetWindowRect(HWND, LPRECT);
+__declspec(dllimport) HCURSOR WINAPI LoadCursorA(HINSTANCE, LPCTSTR);
+__declspec(dllimport) BOOL WINAPI ReleaseCapture(void);
+__declspec(dllimport) HWND WINAPI SetCapture(HWND);
+#define LoadCursor LoadCursorA
+#define IDC_ARROW       ((LPCTSTR)32512)
+#define IDC_CROSS       ((LPCTSTR)32515)
+#define IDC_SIZEALL     ((LPCTSTR)32646)
+
 // property GUIDs are small integers cast to GUID pointers (push imm in codegen)
 // RTM cl rejects (const GUID &)1 (C2101 '&' on constant) — deref form binds fine
 #define DIPROP_BUFFERSIZE       (*(const GUID *)(1))

@@ -58,6 +58,7 @@ typedef DWORD *PDWORD;
 typedef unsigned long ULONG;
 typedef int BOOL;
 typedef unsigned int UINT;
+typedef unsigned int uint;  // windef.h
 typedef unsigned short WORD;
 typedef unsigned short USHORT;
 typedef short SHORT;
@@ -373,6 +374,7 @@ typedef struct _WIN32_FIND_DATAA {
 #define SW_SHOWNORMAL 1
 #define DRIVE_CDROM 5
 #define WM_USER 0x0400
+#define EVENT_MODIFY_STATE 0x0002  // winnt.h
 #define WM_SETTEXT 0x000C
 #define WM_INITDIALOG 0x0110
 #define WM_COMMAND 0x0111
@@ -624,6 +626,11 @@ __declspec(dllimport) DWORD WINAPI GetTimeZoneInformation(LPTIME_ZONE_INFORMATIO
 __declspec(dllimport) SHORT WINAPI GetAsyncKeyState(int);
 __declspec(dllimport) BOOL WINAPI TerminateProcess(HANDLE, UINT);
 __declspec(dllimport) HANDLE WINAPI GetCurrentProcess(void);
+__declspec(dllimport) HANDLE WINAPI OpenEventA(DWORD, BOOL, LPCSTR);
+#define OpenEvent OpenEventA
+#define FILE_MAP_ALL_ACCESS 0x000F001F  // winnt.h: STANDARD_RIGHTS_REQUIRED|SECTION_ALL_ACCESS
+__declspec(dllimport) LPVOID WINAPI MapViewOfFileEx(HANDLE, DWORD, DWORD, DWORD, SIZE_T, LPVOID);
+__declspec(dllimport) BOOL WINAPI UnmapViewOfFile(LPCVOID);
 __declspec(dllimport) DWORD WINAPI GetCurrentProcessId(void);
 __declspec(dllimport) DWORD WINAPI GetCurrentThreadId(void);
 __declspec(dllimport) HANDLE WINAPI GetCurrentThread(void);

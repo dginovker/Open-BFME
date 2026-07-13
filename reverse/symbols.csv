@@ -1294,3 +1294,10 @@ _IsStatsConnected,0x009D2B60
 _bfme_timeGetTime@0,0x000481E4,ILT thunk for timeGetTime (non-dllimport call sites in ProcessAnimateWindow.cpp)
 ?getVel@AnimateWindow@@QAE?AUCoord2D@@XZ,0x0000E548,ILT thunk -> 0x495610; retail call sites use the thunk
 ?winGetPosition@GameWindow@@QAEHPAH0@Z,0x000179BD,ILT thunk -> 0xC9D10; retail call sites use the thunk
+?resetToRestPosition@AnimateWindowManager@@QAEXXZ,0x00038F7D,ILT thunk -> 0x45D520; retail call sites use the thunk
+??0AnimateWindow@@QAE@XZ,0x0002DD44,ILT thunk -> 0x45CEE0; retail call sites use the thunk
+?clearWinList@@YAXAAV?$list@PAVAnimateWindow@@V?$allocator@PAVAnimateWindow@@@_STL@@@_STL@@@Z,0x0045D660,file-local static; retail takes list head in edi
+??1?$_List_base@PAVAnimateWindow@@V?$allocator@PAVAnimateWindow@@@_STL@@@_STL@@QAE@XZ,0x0002CFD4,ILT thunk; retail call sites use the thunk
+?_M_create_node@?$list@PAVAnimateWindow@@V?$allocator@PAVAnimateWindow@@@_STL@@@_STL@@IAEPAU?$_List_node@PAVAnimateWindow@@@2@ABQAVAnimateWindow@@@Z,0x00022D36,ILT thunk; retail call sites use the thunk
+?bfmePushBack@BFMEAnimateWindowListPush@@QAEXABQAVAnimateWindow@@@Z,0x00022D36,BFME out-of-line list<AnimateWindow*>::push_back body 0x45DAE0 via ILT thunk
+??1AnimateWindow@@UAE@XZ,0x0002F973,ILT thunk; retail call sites use the thunk

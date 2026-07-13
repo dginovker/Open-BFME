@@ -83,7 +83,6 @@ AnimateWindow::AnimateWindow( void )
 	m_endTime = 0;
 	m_startTime = 0;
 }
-// ??1AnimateWindow@@MAE@XZ present-unmatched
 AnimateWindow::~AnimateWindow( void )
 {
 	m_win = NULL;
@@ -117,7 +116,7 @@ static void clearWinList(AnimateWindowList &winList)
 		win = *(winList.begin());
 		winList.pop_front();
 		if (win)
-			win->deleteInstance();
+			delete win;  // BFME: no memory pool for AnimateWindow
 		win = NULL;
 	}
 }
@@ -139,7 +138,6 @@ AnimateWindowManager::AnimateWindowManager( void )
 	m_reverse = FALSE;
 	m_winMustFinishList.clear();
 }
-// ??1AnimateWindowManager@@UAE@XZ present-unmatched
 AnimateWindowManager::~AnimateWindowManager( void )
 {
 	if(m_slideFromRight)
@@ -166,7 +164,6 @@ AnimateWindowManager::~AnimateWindowManager( void )
 }
 
 	
-// ?init@AnimateWindowManager@@UAEXXZ present-unmatched
 void AnimateWindowManager::init( void )
 {
 	clearWinList(m_winList);
@@ -175,7 +172,6 @@ void AnimateWindowManager::init( void )
 	m_reverse = FALSE;
 }
 
-// ?reset@AnimateWindowManager@@UAEXXZ present-unmatched
 void AnimateWindowManager::reset( void )
 {
 	resetToRestPosition();
@@ -249,7 +245,14 @@ void AnimateWindowManager::update( void )
 }
 
 
-// ?registerGameWindow@AnimateWindowManager@@QAEXPAVGameWindow@@W4AnimTypes@@_NII@Z present-unmatched
+// BFME compiled list<AnimateWindow*>::push_back out-of-line in this TU (retail
+// body at 0x45DAE0, called through ILT thunk 0x22D36); a noinline derived
+// wrapper forces the same call shape instead of the inlined create_node+hook.
+struct BFMEAnimateWindowListPush : public AnimateWindowList
+{
+	__declspec(noinline) void bfmePushBack(AnimateWindow * const &win) { push_back(win); }
+};
+
 void AnimateWindowManager::registerGameWindow(GameWindow *win, AnimTypes animType, Bool needsToFinish, UnsignedInt ms, UnsignedInt delayMs)
 {
 	if(!win)
@@ -264,7 +267,7 @@ void AnimateWindowManager::registerGameWindow(GameWindow *win, AnimTypes animTyp
 	}
 
 	// Create a new AnimateWindow class and fill in it's data.
-	AnimateWindow *animWin = newInstance(AnimateWindow);	
+	AnimateWindow *animWin = new AnimateWindow;	// BFME: no memory pool for AnimateWindow
 	animWin->setGameWindow(win);
 	animWin->setAnimType(animType);
 	animWin->setNeedsToFinish(needsToFinish);
@@ -281,11 +284,11 @@ void AnimateWindowManager::registerGameWindow(GameWindow *win, AnimTypes animTyp
 	// Add the Window to the proper list
 	if(needsToFinish)
 	{
-		m_winMustFinishList.push_back(animWin);
+		((BFMEAnimateWindowListPush &)m_winMustFinishList).bfmePushBack(animWin);
 		m_needsUpdate = TRUE;
 	}
 	else
-		m_winList.push_back(animWin);
+		((BFMEAnimateWindowListPush &)m_winList).bfmePushBack(animWin);
 }
 
 ProcessAnimateWindow *AnimateWindowManager::getProcessAnimate( AnimTypes animType )

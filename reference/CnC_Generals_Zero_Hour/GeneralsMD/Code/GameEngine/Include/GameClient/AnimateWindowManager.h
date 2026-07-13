@@ -95,12 +95,15 @@ enum AnimTypes
 } ;
 
 //-----------------------------------------------------------------------------
-class AnimateWindow : public MemoryPoolObject
+class AnimateWindow
 {
-	MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(AnimateWindow, "AnimateWindow")		
+	// BFME has no memory pool for AnimateWindow: the "AnimateWindow" pool
+	// name string is absent from lotrbfme.exe, registerGameWindow uses plain
+	// operator new (push 0x44), clearWinList uses plain delete, and the
+	// vtable is a single slot (deleting dtor) — no MemoryPoolObject base.
 public:
 	AnimateWindow( void );
-	//~AnimateWindow( void );
+	virtual __declspec(noinline) ~AnimateWindow( void );	// BFME: retail ??_G calls ??1 out-of-line
 	
 	void setAnimData( ICoord2D startPos, ICoord2D endPos, ICoord2D curPos, ICoord2D restPos, Coord2D vel, UnsignedInt startTime, UnsignedInt endTime);
 

@@ -490,7 +490,6 @@ void VertexMaterialClass::Init_From_Material3(const W3dMaterial3Struct & mat3)
 	Set_Opacity(mat3.Opacity);
 }
 
-// ?Load_W3D@VertexMaterialClass@@QAE?AW4WW3DErrorType@@AAVChunkLoadClass@@@Z present-unmatched
 WW3DErrorType VertexMaterialClass::Load_W3D(ChunkLoadClass & cload)
 {
 	char name[256];
@@ -579,7 +578,6 @@ void VertexMaterialClass::Parse_W3dVertexMaterialStruct(const W3dVertexMaterialS
 	}
 }
 
-// ?Parse_Mapping_Args@VertexMaterialClass@@QAEXABUW3dVertexMaterialStruct@@PAD1@Z present-unmatched
 void VertexMaterialClass::Parse_Mapping_Args(const W3dVertexMaterialStruct & vmat,char * mapping0_arg_buffer,char * mapping1_arg_buffer)
 {
 	
@@ -1104,7 +1102,6 @@ void VertexMaterialClass::Shutdown()
  * HISTORY:                                                                                    *
  *   2/14/2001  hy : Created.                                                                  *
  *=============================================================================================*/
-// ?Get_Preset@VertexMaterialClass@@SAPAV1@W4PresetType@1@@Z present-unmatched
 VertexMaterialClass * VertexMaterialClass::Get_Preset(PresetType type)
 {
 	WWASSERT(type<PRESET_COUNT);

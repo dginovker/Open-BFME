@@ -893,7 +893,6 @@ const UnsignedInt START_CUMU_FRAME = LOGICFRAMES_PER_SECOND / 2;	// skip first h
 /** Update a moving average of the last 30 fps measurements.  Also try to filter out temporary spikes.
 	This code is designed to be used by the GameLOD sytems to determine the correct dynamic LOD setting.
 */
-// ?updateAverageFPS@W3DDisplay@@ present-unmatched
 void W3DDisplay::updateAverageFPS(void)
 {
 	const Real MaximumFrameTimeCutoff = 0.5f;	//largest frame interval (seconds) we accept before ignoring it as a momentary "spike"

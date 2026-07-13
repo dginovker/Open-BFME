@@ -1182,7 +1182,6 @@ void W3DRoadBuffer::preloadRoadSegment(RoadSegment *pRoad)
 //=============================================================================
 /** Loads the roads into the vertex buffer for drawing. */
 //=============================================================================
-// ?preloadRoadsInVertexAndIndexBuffers@W3DRoadBuffer@@IAEXXZ present-unmatched
 void W3DRoadBuffer::preloadRoadsInVertexAndIndexBuffers()
 {
 	if (!m_initialized) {

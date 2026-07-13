@@ -86,7 +86,6 @@ static void adjustVector(Coord3D *vec, const Matrix3D* mtx)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 //-------------------------------------------------------------------------------------------------
-// ?doFXObj@FXNugget@@UBEXPBVObject@@0@Z present-unmatched
 void FXNugget::doFXObj(const Object* primary, const Object* secondary) const
 {
 	const Coord3D* p = primary ? primary->getPosition() : NULL;

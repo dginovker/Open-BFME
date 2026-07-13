@@ -475,7 +475,6 @@ UnsignedInt Anim2D::getCurrentFrameHeight( void ) const
 // ------------------------------------------------------------------------------------------------
 /** Draw an Anim2D using the natural width and height of the image data */
 // ------------------------------------------------------------------------------------------------
-// ?draw@Anim2D@@ present-unmatched
 void Anim2D::draw( Int x, Int y )
 {
 

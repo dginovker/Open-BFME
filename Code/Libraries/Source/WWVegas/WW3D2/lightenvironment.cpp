@@ -331,7 +331,6 @@ void LightEnvironmentClass::Pre_Render_Update(const Matrix3D & camera_tm)
 	OutputAmbient.Z = WWMath::Clamp(OutputAmbient.Z,0.0f,1.0f);
 }
 
-// ?Set_Lighting_LOD_Cutoff@LightEnvironmentClass@@SAXM@Z present-unmatched
 void LightEnvironmentClass::Set_Lighting_LOD_Cutoff(float inten)
 {
 	_LightingLODCutoff = inten;

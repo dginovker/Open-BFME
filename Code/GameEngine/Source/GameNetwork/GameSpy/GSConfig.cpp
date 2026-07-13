@@ -461,7 +461,6 @@ Int GameSpyConfig::getPointsForRank(Int rank)
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
-// ?getManglerLocation@GameSpyConfig@@UAE_NHAAVAsciiString@@AAG@Z present-unmatched
 Bool GameSpyConfig::getManglerLocation(Int index, AsciiString& host, UnsignedShort& port)
 {
 	if (index < 0 || index >= m_manglerHosts.size())

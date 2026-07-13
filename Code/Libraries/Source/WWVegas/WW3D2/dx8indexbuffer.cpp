@@ -555,7 +555,6 @@ void DynamicIBAccessClass::Allocate_Sorting_Dynamic_Buffer()
 	IndexBufferOffset=_DynamicSortingIndexArrayOffset;
 }
 
-// ?_Reset@DynamicIBAccessClass@@SAX_N@Z present-unmatched
 void DynamicIBAccessClass::_Reset(bool frame_changed)
 {
 	_DynamicSortingIndexArrayOffset=0;

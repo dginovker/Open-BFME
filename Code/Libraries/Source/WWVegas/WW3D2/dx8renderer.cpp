@@ -429,7 +429,6 @@ void DX8TextureCategoryClass::Log(bool only_visible)
 
 // ----------------------------------------------------------------------------
 
-// ??0DX8FVFCategoryContainer@@QAE@I_N@Z present-unmatched
 DX8FVFCategoryContainer::DX8FVFCategoryContainer(unsigned FVF_,bool sorting_)
 	:
 	FVF(FVF_),

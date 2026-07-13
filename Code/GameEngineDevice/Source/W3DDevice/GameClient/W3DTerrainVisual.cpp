@@ -876,7 +876,6 @@ void W3DTerrainVisual::setWaterTransform( const Matrix3D *transform )
 // ------------------------------------------------------------------------------------------------
 /** get the water transform matrix */
 // ------------------------------------------------------------------------------------------------
-// ?getWaterTransform@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::getWaterTransform( const WaterHandle *waterTable, Matrix3D *transform )
 {
 

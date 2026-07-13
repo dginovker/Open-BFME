@@ -953,7 +953,6 @@ WW3DErrorType MeshModelClass::read_material_info(ChunkLoadClass & cload,MeshLoad
  * HISTORY:                                                                                    *
  *   2/16/99    GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?read_shaders@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z present-unmatched
 WW3DErrorType MeshModelClass::read_shaders(ChunkLoadClass & cload,MeshLoadContextClass * context)
 {
 	W3dShaderStruct shader;
@@ -1044,7 +1043,6 @@ WW3DErrorType MeshModelClass::read_textures(ChunkLoadClass & cload,MeshLoadConte
  * HISTORY:                                                                                    *
  *   2/16/99    GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?read_material_pass@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z present-unmatched
 WW3DErrorType MeshModelClass::read_material_pass(ChunkLoadClass & cload,MeshLoadContextClass * context)
 {
 	context->CurTexStage = 0;
@@ -1103,7 +1101,6 @@ WW3DErrorType MeshModelClass::read_material_pass(ChunkLoadClass & cload,MeshLoad
  *   2/16/99    GTH : Created.                                                                 *
  *   9/1/2000   gth : Added alternate material desc support                                    *
  *=============================================================================================*/
-// ?read_vertex_material_ids@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z present-unmatched
 WW3DErrorType MeshModelClass::read_vertex_material_ids(ChunkLoadClass & cload,MeshLoadContextClass * context)
 {
 	/*
@@ -1155,7 +1152,6 @@ WW3DErrorType MeshModelClass::read_vertex_material_ids(ChunkLoadClass & cload,Me
  *   2/16/99    GTH : Created.                                                                 *
  *   9/1/2000   gth : Added alternate material desc support                                    *
  *=============================================================================================*/
-// ?read_shader_ids@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z present-unmatched
 WW3DErrorType MeshModelClass::read_shader_ids(ChunkLoadClass & cload,MeshLoadContextClass * context)
 {
 	/*
@@ -1319,7 +1315,6 @@ WW3DErrorType MeshModelClass::read_dcg(ChunkLoadClass & cload,MeshLoadContextCla
  *   9/1/2000   gth : Added alternate material desc support                                    *
  *   2/9/2001   gth : converted to handle dx8 limitations                                      *
  *=============================================================================================*/
-// ?read_dig@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z present-unmatched
 WW3DErrorType MeshModelClass::read_dig(ChunkLoadClass & cload,MeshLoadContextClass * context)
 {
 	/*
@@ -1401,7 +1396,6 @@ WW3DErrorType MeshModelClass::read_scg(ChunkLoadClass & cload,MeshLoadContextCla
  * HISTORY:                                                                                    *
  *   2/16/99    GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?read_texture_stage@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z present-unmatched
 WW3DErrorType MeshModelClass::read_texture_stage(ChunkLoadClass & cload,MeshLoadContextClass * context)
 {
 	while (cload.Open_Chunk()) {
@@ -1507,7 +1501,6 @@ WW3DErrorType MeshModelClass::read_texture_ids(ChunkLoadClass & cload,MeshLoadCo
  *   7/14/99    IML : Lightmap support: calculate vertex count directly from chunk size.		  *
  *   9/1/2000   gth : Added alternate material desc support                                    *
  *=============================================================================================*/
-// ?read_stage_texcoords@MeshModelClass@@IAE?AW4WW3DErrorType@@AAVChunkLoadClass@@PAVMeshLoadContextClass@@@Z present-unmatched
 WW3DErrorType MeshModelClass::read_stage_texcoords(ChunkLoadClass & cload,MeshLoadContextClass * context)
 {
 	unsigned				elementcount;
@@ -1949,7 +1942,6 @@ void MeshModelClass::clone_materials(const MeshModelClass & srcmesh)
 }
 
 
-// ?install_alternate_material_desc@MeshModelClass@@IAEXPAVMeshLoadContextClass@@@Z present-unmatched
 void MeshModelClass::install_alternate_material_desc(MeshLoadContextClass * context)
 {
 	if (context->AlternateMatDesc.Is_Empty() == false) {
@@ -1971,7 +1963,6 @@ void MeshModelClass::install_alternate_material_desc(MeshLoadContextClass * cont
  * HISTORY:                                                                                    *
  *   12/10/98   GTH : Created.                                                                 *
  *=============================================================================================*/
-// ??0MeshLoadContextClass@@AAE@XZ present-unmatched
 MeshLoadContextClass::MeshLoadContextClass(void)
 {
 	memset(&Header,0,sizeof(Header));
@@ -2031,7 +2022,6 @@ MeshLoadContextClass::~MeshLoadContextClass(void)
  * HISTORY:                                                                                    *
  *   12/10/98   GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?Get_Texcoord_Array@MeshLoadContextClass@@AAEPAUW3dTexCoordStruct@@XZ present-unmatched
 W3dTexCoordStruct * MeshLoadContextClass::Get_Texcoord_Array(void)
 {
 	if (TexCoords == NULL) {
@@ -2053,7 +2043,6 @@ W3dTexCoordStruct * MeshLoadContextClass::Get_Texcoord_Array(void)
  * HISTORY:                                                                                    *
  *   12/10/98   GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?Add_Shader@MeshLoadContextClass@@AAEHVShaderClass@@@Z present-unmatched
 int MeshLoadContextClass::Add_Shader(ShaderClass shader)								
 { 
 	int index = Shaders.Count();
@@ -2074,7 +2063,6 @@ int MeshLoadContextClass::Add_Shader(ShaderClass shader)
  * HISTORY:                                                                                    *
  *   12/10/98   GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?Add_Vertex_Material@MeshLoadContextClass@@AAEHPAVVertexMaterialClass@@@Z present-unmatched
 int MeshLoadContextClass::Add_Vertex_Material(VertexMaterialClass * vmat)			
 { 
 	WWASSERT(vmat != NULL);
@@ -2190,7 +2178,6 @@ void MeshLoadContextClass::Add_Legacy_Material(ShaderClass shader,VertexMaterial
  * HISTORY:                                                                                    *
  *   12/10/98   GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?Peek_Legacy_Shader@MeshLoadContextClass@@AAE?AVShaderClass@@H@Z present-unmatched
 ShaderClass MeshLoadContextClass::Peek_Legacy_Shader(int legacy_material_index)
 {
 	WWASSERT(legacy_material_index >= 0);
@@ -2212,7 +2199,6 @@ ShaderClass MeshLoadContextClass::Peek_Legacy_Shader(int legacy_material_index)
  * HISTORY:                                                                                    *
  *   12/10/98   GTH : Created.                                                                 *
  *=============================================================================================*/
-// ?Peek_Legacy_Vertex_Material@MeshLoadContextClass@@AAEPAVVertexMaterialClass@@H@Z present-unmatched
 VertexMaterialClass * MeshLoadContextClass::Peek_Legacy_Vertex_Material(int legacy_material_index)
 {
 	WWASSERT(legacy_material_index >= 0);
@@ -2252,7 +2238,6 @@ TextureClass * MeshLoadContextClass::Peek_Legacy_Texture(int legacy_material_ind
 }
 
 
-// ?Get_Temporary_UV_Array@MeshLoadContextClass@@AAEPAVVector2@@H@Z present-unmatched
 Vector2 * MeshLoadContextClass::Get_Temporary_UV_Array(int elementcount)
 {
 	TempUVArray.Uninitialised_Grow(elementcount);

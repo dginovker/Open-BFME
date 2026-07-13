@@ -918,7 +918,6 @@ void ProcessAnimateWindowSlideFromBottomTimed::initAnimateWindow( AnimateWindow 
 	animWin->setAnimData(startPos, endPos, curPos, restPos, vel, now + delay, now + m_maxDuration + delay);
 }
 
-// ?updateAnimateWindow@ProcessAnimateWindowSlideFromBottomTimed@@UAE_NPAVAnimateWindow@@@Z present-unmatched
 Bool ProcessAnimateWindowSlideFromBottomTimed::updateAnimateWindow( AnimateWindow *animWin )
 {
 	
@@ -998,7 +997,6 @@ ProcessAnimateWindowSpiral::ProcessAnimateWindowSpiral( void )
 ProcessAnimateWindowSpiral::~ProcessAnimateWindowSpiral( void ) { }
 
 //-----------------------------------------------------------------------------
-// ?initReverseAnimateWindow@ProcessAnimateWindowSpiral@@UAEXPAVAnimateWindow@@I@Z present-unmatched
 void ProcessAnimateWindowSpiral::initReverseAnimateWindow( AnimateWindow *animWin, UnsignedInt maxDelay )
 {
 	if(!animWin)

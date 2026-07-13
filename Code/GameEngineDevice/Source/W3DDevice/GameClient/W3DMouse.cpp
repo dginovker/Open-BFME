@@ -270,7 +270,6 @@ void W3DMouse::freeD3DAssets(void)
 
 }
 
-// ?initW3DAssets@W3DMouse@@ present-unmatched
 void W3DMouse::initW3DAssets(void)
 {
 	CriticalSectionClass::LockClass m(mutex);

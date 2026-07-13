@@ -1251,7 +1251,6 @@ void MainMenuMediumScaleUpTransition::update( Int frame )
 	}
 }
 
-// ?reverse@MainMenuMediumScaleUpTransition@@UAEXXZ present-unmatched
 void MainMenuMediumScaleUpTransition::reverse( void )
 {
 	m_isFinished = FALSE;
@@ -1776,7 +1775,6 @@ ControlBarArrowTransition::~ControlBarArrowTransition( void )
 	m_arrowImage = NULL;
 }
 
-// ?init@ControlBarArrowTransition@@UAEXPAVGameWindow@@@Z present-unmatched
 void ControlBarArrowTransition::init( GameWindow *win )
 {
 	m_isForward = FALSE;
@@ -1996,7 +1994,6 @@ TextOnFrameTransition::~TextOnFrameTransition( void )
 	
 }
 
-// ?init@TextOnFrameTransition@@UAEXPAVGameWindow@@@Z present-unmatched
 void TextOnFrameTransition::init( GameWindow *win )
 {
 
@@ -2092,7 +2089,6 @@ ReverseSoundTransition::~ReverseSoundTransition( void )
 	
 }
 
-// ?init@ReverseSoundTransition@@UAEXPAVGameWindow@@@Z present-unmatched
 void ReverseSoundTransition::init( GameWindow *win )
 {
 	m_isFinished = TRUE;
@@ -2151,7 +2147,6 @@ void ReverseSoundTransition::draw( void )
 {
 }
 	
-// ?skip@ReverseSoundTransition@@UAEXXZ present-unmatched
 void ReverseSoundTransition::skip( void )
 {
 	if (!m_isFinished)

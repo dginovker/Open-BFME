@@ -500,7 +500,6 @@ void GameTextManager::removeLeadingAndTrailing ( Char *buffer )
 // GameTextManager::readToEndOfQuote
 //============================================================================
 
-// ?readToEndOfQuote@GameTextManager@@IAEXPAVFile@@PAD11H@Z present-unmatched
 void GameTextManager::readToEndOfQuote( File *file, Char *in, Char *out, Char *wavefile, Int maxBufLen )
 {
 	Int slash = FALSE;
@@ -844,7 +843,6 @@ Bool GameTextManager::getStringCount( const char *filename, Int& textCount )
 // GameTextManager::getCSFInfo 
 //============================================================================
 
-// ?getCSFInfo@GameTextManager@@IAE_NPBD@Z present-unmatched
 Bool GameTextManager::getCSFInfo ( const Char *filename )
 {
 	CSFHeader header;
@@ -1251,7 +1249,6 @@ quit:
 // *GameTextManager::fetch
 //============================================================================
 
-// ?fetch@GameTextManager@@ present-unmatched
 UnicodeString GameTextManager::fetch( const Char *label, Bool *exists )
 {
 	DEBUG_ASSERTCRASH ( m_initialized, ("String Manager has not been m_initialized") );

@@ -524,7 +524,6 @@ void BridgeBehavior::onHealing( DamageInfo *damageInfo )
 // ------------------------------------------------------------------------------------------------
 /** Pick a random surface spot on the bridge surface */
 // ------------------------------------------------------------------------------------------------
-// ?getRandomSurfacePosition@BridgeBehavior@@IAEXPAVTerrainRoadType@@PBVBridgeInfo@@PAUCoord3D@@@Z present-unmatched
 void BridgeBehavior::getRandomSurfacePosition( TerrainRoadType *bridgeTemplate, 
 																							 const BridgeInfo *bridgeInfo, 
 																							 Coord3D *pos )

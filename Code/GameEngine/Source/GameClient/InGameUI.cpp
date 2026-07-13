@@ -550,7 +550,6 @@ void InGameUI::loadPostProcess( void )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?setMouseCursor@InGameUI@@IAEXW4MouseCursor@Mouse@@@Z present-unmatched
 void InGameUI::setMouseCursor(Mouse::MouseCursor c)
 {
 	if (!TheMouse)
@@ -736,7 +735,6 @@ void InGameUI::showObjectSuperweaponDisplayByScript(const Object *obj)
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?setSuperweaponDisplayEnabledByScript@InGameUI@@UAEX_N@Z present-unmatched
 void InGameUI::setSuperweaponDisplayEnabledByScript(Bool enable)
 {
 	m_superweaponHiddenByScript = !enable;
@@ -2263,7 +2261,6 @@ void InGameUI::createForceAttackHint( const GameMessage *msg )
 //-------------------------------------------------------------------------------------------------
 /** An garrison command has occurred, start graphical "hint". */
 //-------------------------------------------------------------------------------------------------
-// ?createGarrisonHint@InGameUI@@UAEXPBVGameMessage@@@Z present-unmatched
 void InGameUI::createGarrisonHint( const GameMessage *msg )
 {
 	Drawable *draw = TheGameClient->findDrawableByID( msg->getArgument(0)->drawableID );
@@ -3399,7 +3396,6 @@ const DrawableList *InGameUI::getAllSelectedLocalDrawables( void )
 //-------------------------------------------------------------------------------------------------
 /** Return poiner to the first selected drawable, if any */
 //-------------------------------------------------------------------------------------------------
-// ?getFirstSelectedDrawable@InGameUI@@UAEPAVDrawable@@XZ present-unmatched
 Drawable *InGameUI::getFirstSelectedDrawable( void )
 {
 
@@ -3516,7 +3512,6 @@ void InGameUI::setInputEnabled( Bool enable )
 //-------------------------------------------------------------------------------------------------
 /** Drawable is being destroyed, clean up any UI elements associated with it. */
 //-------------------------------------------------------------------------------------------------
-// ?disregardDrawable@InGameUI@@UAEXPAVDrawable@@@Z present-unmatched
 void InGameUI::disregardDrawable( Drawable *draw )
 {
 
@@ -4268,7 +4263,6 @@ void InGameUI::resetCamera()
 //translator to determine whether to do something to an object or select it instead based on the context of what is currently
 //selected.
 //------------------------------------------------------------------------------
-// ?canSelectedObjectsNonAttackInteractWithObject@InGameUI@@QBE_NPBVObject@@W4SelectionRules@1@@Z present-unmatched
 Bool InGameUI::canSelectedObjectsNonAttackInteractWithObject( const Object *objectToInteractWith, SelectionRules rule ) const
 {
 	for( int i = 1; i < NUM_ACTIONTYPES; i++ )
@@ -4617,7 +4611,6 @@ Bool InGameUI::canSelectedObjectsDoSpecialPower( const CommandButton *command, c
 }
 
 //------------------------------------------------------------------------------
-// ?canSelectedObjectsOverrideSpecialPowerDestination@InGameUI@@QBE_NPBUCoord3D@@W4SelectionRules@1@W4SpecialPowerType@@@Z present-unmatched
 Bool InGameUI::canSelectedObjectsOverrideSpecialPowerDestination( const Coord3D *loc, SelectionRules rule, SpecialPowerType spType ) const
 {
 	// set up counters for rule checking
@@ -5462,7 +5455,6 @@ void InGameUI::updateAndDrawWorldAnimations( void )
 }  // end updateAndDrawWorldAnimations
 
 
-// ?findIdleWorker@InGameUI@@EAEPAVObject@@PAV2@@Z present-unmatched
 Object *InGameUI::findIdleWorker( Object *obj)
 {
 	if(!obj)

@@ -4212,7 +4212,6 @@ void Drawable::reactToGeometryChange()
 } 
 
 //-------------------------------------------------------------------------------------------------
-// ?handleWeaponFireFX@Drawable@@QAE_NW4WeaponSlotType@@HPBVFXList@@MMMPBUCoord3D@@M@Z present-unmatched
 Bool Drawable::handleWeaponFireFX(WeaponSlotType wslot, Int specificBarrelToUse, const FXList* fxl, Real weaponSpeed, Real recoilAmount, Real recoilAngle, const Coord3D* victimPos, Real damageRadius)
 {	  
 	if (recoilAmount != 0.0f)
@@ -4713,7 +4712,6 @@ void Drawable::notifyDrawableDependencyCleared()
 //-------------------------------------------------------------------------------------------------
 /** Set as selectable or not. */
 //-------------------------------------------------------------------------------------------------
-// ?setSelectable@Drawable@@QAEX_N@Z present-unmatched
 void Drawable::setSelectable( Bool selectable )
 {
 	// unselct drawable if it is no longer selectable.
@@ -5501,7 +5499,6 @@ TintEnvelope::TintEnvelope(void)
 const Real FADE_RATE_EPSILON = (0.001f);
 
 //-------------------------------------------------------------------------------------------------
-// ?play@TintEnvelope@@QAEXPBURGBColor@@III@Z present-unmatched
 void TintEnvelope::play(const RGBColor *peak, UnsignedInt atackFrames, UnsignedInt decayFrames, UnsignedInt sustainAtPeak )    
 {
 	setPeakColor( peak );

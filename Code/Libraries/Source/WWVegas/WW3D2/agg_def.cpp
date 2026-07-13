@@ -117,7 +117,6 @@ AggregateDefClass::AggregateDefClass (RenderObjClass &base_model)
 //
 //	~AggregateDefClass
 //
-// ??1AggregateDefClass@@UAE@XZ present-unmatched
 AggregateDefClass::~AggregateDefClass (void)
 {
 	// Free the name buffer if necessary

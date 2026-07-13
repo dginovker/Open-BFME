@@ -1165,13 +1165,11 @@ int ShaderClass::Guess_Sort_Level(void) const
  * HISTORY:                                                                                    *
  *   4/24/2001  gth : Created.                                                                 *
  *=============================================================================================*/
-// ?Is_Backface_Culling_Inverted@ShaderClass@@SA_NXZ present-unmatched
 bool ShaderClass::Is_Backface_Culling_Inverted(void)
 {
 	return (_PolygonCullMode == D3DCULL_CCW);
 }
 
-// ?Get_Description@ShaderClass@@QBEABVStringClass@@AAV2@@Z present-unmatched
 const StringClass& ShaderClass::Get_Description(StringClass& str) const
 {
 	str="";

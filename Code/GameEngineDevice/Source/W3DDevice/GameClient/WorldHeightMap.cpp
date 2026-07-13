@@ -357,7 +357,6 @@ void MapObject::setName(AsciiString name)
 	m_objectName = name;
 }
 
-// ?getWaypointID@MapObject@@QAE?AW4WaypointID@@XZ present-unmatched
 WaypointID MapObject::getWaypointID() { return (WaypointID)getProperties()->getInt(TheKey_waypointID); }
 AsciiString MapObject::getWaypointName() { return getProperties()->getAsciiString(TheKey_waypointName); }
 void MapObject::setWaypointID(Int i) { getProperties()->setInt(TheKey_waypointID, i); }
@@ -793,7 +792,6 @@ void WorldHeightMap::setCliffState(Int xIndex, Int yIndex, Bool state)
 	m_cellCliffState[yIndex*m_flipStateWidth + (xIndex >> 3)] = flagByte;
 }
 
-// ?ParseWorldDictDataChunk@WorldHeightMap@@KA_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z present-unmatched
 Bool WorldHeightMap::ParseWorldDictDataChunk(DataChunkInput &file, DataChunkInfo *info, void *userData)
 {
 	Dict d = file.readDict();
@@ -1379,7 +1377,6 @@ typedef struct {
 
 
 /// Count how many tiles come in from a targa file.
-// ?countTiles@WorldHeightMap@@SAHPAVInputStream@@PA_N@Z present-unmatched
 Int WorldHeightMap::countTiles(InputStream *pStr, Bool *halfTile)
 {
 	TTargaHeader hdr;

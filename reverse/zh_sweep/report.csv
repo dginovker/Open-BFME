@@ -4215,3 +4215,10 @@ Libraries/Source/WWVegas/WWLib/thread.cpp,compile-error,0,0,0,C2064 term does no
 Libraries/Source/WWVegas/WWDownload/urlBuilder.cpp,ok,0,0,1,,0
 GameEngine/Source/Common/Audio/urllaunch.cpp,compile-error,0,0,0,C2501 'GetShellOpenCommand' : missing storage-class or type specifiers,0
 Libraries/Source/WWVegas/WWLib/wwmouse.cpp,compile-error,0,0,0,C2614 'WWMouseClass' : illegal member initialization: 'TimerHandle' is not a base or member,0
+GameEngineDevice/Source/W3DDevice/GameClient/W3DTreeBuffer.cpp,ok,1,17,52,,1
+GameEngineDevice/Source/W3DDevice/GameClient/Water/W3DWater.cpp,compile-error,0,0,0,C2227 left of '->GetBufferPointer' must point to class/struct/union,0
+GameEngineDevice/Source/Win32Device/GameClient/Win32DIKeyboard.cpp,compile-error,0,0,0,C2227 left of '->Release' must point to class/struct/union,0
+GameEngineDevice/Source/Win32Device/GameClient/Win32DIMouse.cpp,compile-error,0,0,0,"C3861 'SetCursorPos': identifier not found, even with argument-dependent lookup",0
+GameEngineDevice/Source/W3DDevice/GameClient/W3DDisplay.cpp,compile-error,0,0,0,C2039 'reset' : is not a member of 'DebugDisplayInterface',0
+GameEngineDevice/Source/W3DDevice/GameClient/W3DWebBrowser.cpp,compile-error,0,0,0,C2065 'CComQIPtr' : undeclared identifier,0
+Libraries/Source/WWVegas/WW3D2/FramGrab.cpp,compile-error,0,0,0,"C3861 'AVIStreamSetFormat': identifier not found, even with argument-dependent lookup",0

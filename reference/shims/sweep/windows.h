@@ -29,6 +29,9 @@ typedef void *HWND;
 typedef void *HDC;
 typedef void *HFONT;
 typedef void *HBITMAP;
+// OLE forward: dx8webbrowser.h's CreateBrowser defaults take LPDISPATCH
+struct IDispatch;
+typedef IDispatch *LPDISPATCH;
 typedef void *HGDIOBJ;
 typedef void *HPEN;
 typedef void *HBRUSH;

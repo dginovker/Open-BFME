@@ -699,7 +699,6 @@ static void parseArbitraryFXIntoMap( INI* ini, void *instance, void* /* store */
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?parsePerUnitFX@ThingTemplate@@ present-unmatched
 void ThingTemplate::parsePerUnitFX( INI* ini, void *instance, void *store, const void *userData )
 {
 	PerUnitFXMap* fxmap = (PerUnitFXMap*)store;
@@ -731,7 +730,6 @@ static void parseArbitrarySoundsIntoMap( INI* ini, void *instance, void* /* stor
 //-------------------------------------------------------------------------------------------------
 /** Parse Additional per unit sounds such as TankTurretMove and TankTurretMoveLoop. */
 //-------------------------------------------------------------------------------------------------
-// ?parsePerUnitSounds@ThingTemplate@@ present-unmatched
 void ThingTemplate::parsePerUnitSounds( INI* ini, void *instance, void *store, const void *userData )
 {
 	PerUnitSoundMap *mapSounds = (PerUnitSoundMap*)store;

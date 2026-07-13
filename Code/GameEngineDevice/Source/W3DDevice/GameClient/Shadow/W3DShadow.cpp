@@ -128,7 +128,6 @@ W3DShadowManager::~W3DShadowManager( void )
 
 /** Do one-time initilalization of shadow systems that need to be
 active for full duration of game*/
-// ?init@W3DShadowManager@@QAE_NXZ present-unmatched
 Bool W3DShadowManager::init( void )
 {
 	Bool result=TRUE;

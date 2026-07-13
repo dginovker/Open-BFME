@@ -447,7 +447,6 @@ void DirectInputMouse::setMouseLimits( void )
 //-------------------------------------------------------------------------------------------------
 /** set the cursor position for windows OS */
 //-------------------------------------------------------------------------------------------------
-// ?setPosition@DirectInputMouse@@UAEXHH@Z present-unmatched
 void DirectInputMouse::setPosition( Int x, Int y )
 {
 	POINT p;

@@ -5562,7 +5562,6 @@ NetCommandMsg * NetPacket::readFrameMessage(UnsignedByte *data, Int &i) {
 /**
  * Reads the player leave message at this position in the packet.
  */
-// ?readPlayerLeaveMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readPlayerLeaveMessage(UnsignedByte *data, Int &i) {
 	NetPlayerLeaveCommandMsg *msg = newInstance(NetPlayerLeaveCommandMsg);
 
@@ -5618,7 +5617,6 @@ NetCommandMsg * NetPacket::readRunAheadMessage(UnsignedByte *data, Int &i) {
 /**
  * Reads the CRC info message at this position in the packet.
  */
-// ?readDestroyPlayerMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readDestroyPlayerMessage(UnsignedByte *data, Int &i) {
 	NetDestroyPlayerCommandMsg *msg = newInstance(NetDestroyPlayerCommandMsg);
 
@@ -5634,7 +5632,6 @@ NetCommandMsg * NetPacket::readDestroyPlayerMessage(UnsignedByte *data, Int &i) 
 /**
  * Reads the keep alive data, of which there is none.
  */
-// ?readKeepAliveMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readKeepAliveMessage(UnsignedByte *data, Int &i) {
 	NetKeepAliveCommandMsg *msg = newInstance(NetKeepAliveCommandMsg);
 
@@ -5644,7 +5641,6 @@ NetCommandMsg * NetPacket::readKeepAliveMessage(UnsignedByte *data, Int &i) {
 /**
  * Reads the disconnect keep alive data, of which there is none.
  */
-// ?readDisconnectKeepAliveMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readDisconnectKeepAliveMessage(UnsignedByte *data, Int &i) {
 	NetDisconnectKeepAliveCommandMsg *msg = newInstance(NetDisconnectKeepAliveCommandMsg);
 
@@ -5673,7 +5669,6 @@ NetCommandMsg * NetPacket::readDisconnectPlayerMessage(UnsignedByte *data, Int &
 /**
  * Reads the packet router query data, of which there is none.
  */
-// ?readPacketRouterQueryMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readPacketRouterQueryMessage(UnsignedByte *data, Int &i) {
 	NetPacketRouterQueryCommandMsg *msg = newInstance(NetPacketRouterQueryCommandMsg);
 
@@ -5683,7 +5678,6 @@ NetCommandMsg * NetPacket::readPacketRouterQueryMessage(UnsignedByte *data, Int 
 /**
  * Reads the packet router ack data, of which there is none.
  */
-// ?readPacketRouterAckMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readPacketRouterAckMessage(UnsignedByte *data, Int &i) {
 	NetPacketRouterAckCommandMsg *msg = newInstance(NetPacketRouterAckCommandMsg);
 
@@ -5765,7 +5759,6 @@ NetCommandMsg * NetPacket::readDisconnectVoteMessage(UnsignedByte *data, Int &i)
 /**
  * Reads the Progress data.  Which is the slot number of the player being disconnected.
  */
-// ?readProgressMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readProgressMessage(UnsignedByte *data, Int &i) {
 	NetProgressCommandMsg *msg = newInstance(NetProgressCommandMsg);
 
@@ -5777,13 +5770,11 @@ NetCommandMsg * NetPacket::readProgressMessage(UnsignedByte *data, Int &i) {
 	return msg;
 }
 
-// ?readLoadCompleteMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readLoadCompleteMessage(UnsignedByte *data, Int &i) {
 	NetCommandMsg *msg = newInstance(NetCommandMsg);
 	return msg;
 }
 
-// ?readTimeOutGameStartMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readTimeOutGameStartMessage(UnsignedByte *data, Int &i) {
 	NetCommandMsg *msg = newInstance(NetCommandMsg);
 	return msg;
@@ -5910,7 +5901,6 @@ NetCommandMsg * NetPacket::readFileProgressMessage(UnsignedByte *data, Int &i) {
 	return msg;
 }
 
-// ?readDisconnectFrameMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readDisconnectFrameMessage(UnsignedByte *data, Int &i) {
 	NetDisconnectFrameCommandMsg *msg = newInstance(NetDisconnectFrameCommandMsg);
 
@@ -5924,7 +5914,6 @@ NetCommandMsg * NetPacket::readDisconnectFrameMessage(UnsignedByte *data, Int &i
 	return msg;
 }
 
-// ?readDisconnectScreenOffMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readDisconnectScreenOffMessage(UnsignedByte *data, Int &i) {
 	NetDisconnectScreenOffCommandMsg *msg = newInstance(NetDisconnectScreenOffCommandMsg);
 
@@ -5936,7 +5925,6 @@ NetCommandMsg * NetPacket::readDisconnectScreenOffMessage(UnsignedByte *data, In
 	return msg;
 }
 
-// ?readFrameResendRequestMessage@NetPacket@@KAPAVNetCommandMsg@@PAEAAH@Z present-unmatched
 NetCommandMsg * NetPacket::readFrameResendRequestMessage(UnsignedByte *data, Int &i) {
 	NetFrameResendRequestCommandMsg *msg = newInstance(NetFrameResendRequestCommandMsg);
 

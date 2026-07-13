@@ -784,7 +784,6 @@ static const FieldParse TheFXListFieldParse[] =
 };
 
 //-------------------------------------------------------------------------------------------------
-// ??0FXList@@ present-unmatched
 FXList::FXList()
 {
 }

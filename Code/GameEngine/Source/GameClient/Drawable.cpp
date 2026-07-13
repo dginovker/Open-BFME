@@ -153,7 +153,6 @@ DrawableIconInfo::DrawableIconInfo()
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ??1DrawableIconInfo@@MAE@XZ present-unmatched
 DrawableIconInfo::~DrawableIconInfo()
 {
 	clear();

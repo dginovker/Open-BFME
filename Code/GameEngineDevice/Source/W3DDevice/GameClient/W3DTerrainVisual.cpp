@@ -837,7 +837,6 @@ void W3DTerrainVisual::setWaterGridHeightClamps( const WaterHandle *waterTable,
 // ------------------------------------------------------------------------------------------------
 /** adjust fallof parameters for grid change method */
 // ------------------------------------------------------------------------------------------------
-// ?setWaterAttenuationFactors@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::setWaterAttenuationFactors( const WaterHandle *waterTable, 
 																									 Real a, Real b, Real c, Real range )
 {
@@ -850,7 +849,6 @@ void W3DTerrainVisual::setWaterAttenuationFactors( const WaterHandle *waterTable
 // ------------------------------------------------------------------------------------------------
 /** set the water table position and orientation in world space */
 // ------------------------------------------------------------------------------------------------
-// ?setWaterTransform@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::setWaterTransform( const WaterHandle *waterTable, 
 																					Real angle, Real x, Real y, Real z )
 {
@@ -863,7 +861,6 @@ void W3DTerrainVisual::setWaterTransform( const WaterHandle *waterTable,
 // ------------------------------------------------------------------------------------------------
 /** set water table transform by matrix */
 // ------------------------------------------------------------------------------------------------
-// ?setWaterTransform@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::setWaterTransform( const Matrix3D *transform )
 {
 
@@ -886,7 +883,6 @@ void W3DTerrainVisual::getWaterTransform( const WaterHandle *waterTable, Matrix3
 // ------------------------------------------------------------------------------------------------
 /** water grid resolution spacing */
 // ------------------------------------------------------------------------------------------------
-// ?setWaterGridResolution@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::setWaterGridResolution( const WaterHandle *waterTable,
 																							 Real gridCellsX, Real gridCellsY, Real cellSize )
 {
@@ -899,7 +895,6 @@ void W3DTerrainVisual::setWaterGridResolution( const WaterHandle *waterTable,
 // ------------------------------------------------------------------------------------------------
 /** get water grid resolution spacing */
 // ------------------------------------------------------------------------------------------------
-// ?getWaterGridResolution@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::getWaterGridResolution( const WaterHandle *waterTable,	
 																							 Real *gridCellsX, Real *gridCellsY, Real *cellSize )
 {
@@ -1104,7 +1099,6 @@ void W3DTerrainVisual::removeFactionBib(Object *factionBuilding)
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?removeAllBibs@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::removeAllBibs(void)
 {
 	if (m_terrainRenderObject) {
@@ -1114,7 +1108,6 @@ void W3DTerrainVisual::removeAllBibs(void)
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?removeBibHighlighting@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::removeBibHighlighting(void)
 {
 	if (m_terrainRenderObject) {
@@ -1124,7 +1117,6 @@ void W3DTerrainVisual::removeBibHighlighting(void)
  
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?removeTreesAndPropsForConstruction@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::removeTreesAndPropsForConstruction(const Coord3D* pos, 
 																				const GeometryInfo& geom,
 																				Real angle)
@@ -1177,7 +1169,6 @@ void W3DTerrainVisual::setTerrainTracksDetail(void)
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?setShoreLineDetail@W3DTerrainVisual@@ present-unmatched
 void W3DTerrainVisual::setShoreLineDetail(void)
 {
 	if (m_terrainRenderObject) 

@@ -275,7 +275,6 @@ PlayerTemplateStore::PlayerTemplateStore()
 }
 
 //-----------------------------------------------------------------------------
-// ??1PlayerTemplateStore@@UAE@XZ present-unmatched
 PlayerTemplateStore::~PlayerTemplateStore() 
 {
 	// nothing

@@ -4016,7 +4016,6 @@ W3DShadowGeometryManager::W3DShadowGeometryManager(void)
 	MissingGeomTable = NEW HashTableClass( 2048 );
 }
 
-// ??1W3DShadowGeometryManager@@QAE@XZ present-unmatched
 W3DShadowGeometryManager::~W3DShadowGeometryManager(void)
 {
 	Free_All_Geoms();
@@ -4093,7 +4092,6 @@ private:
 ** so that if they are asked for again, we can quickly return NULL, without searching the
 ** disk again.
 */
-// ?Register_Missing@W3DShadowGeometryManager@@QAEXPBD@Z present-unmatched
 void	W3DShadowGeometryManager::Register_Missing( const char * name )
 {
 	MissingGeomTable->Add( NEW MissingGeomClass( name ) );

@@ -10170,7 +10170,6 @@ void Pathfinder::removePos( Object *obj)
 /** 
  * Removes a mobile unit from the pathfind grid.
  */
-// ?removeUnitFromPathfindMap@Pathfinder@@QAEXPAVObject@@@Z present-unmatched
 void Pathfinder::removeUnitFromPathfindMap(  Object *obj )
 {
 	removePos(obj);

@@ -1383,7 +1383,6 @@ void W3DRadar::draw( Int pixelX, Int pixelY, Int width, Int height )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?refreshTerrain@W3DRadar@@UAEXPAVTerrainLogic@@@Z present-unmatched
 void W3DRadar::refreshTerrain( TerrainLogic *terrain )
 {
 

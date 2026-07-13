@@ -1418,7 +1418,6 @@ OrCondition::~OrCondition(void)
 	}
 }
 
-// ?duplicate@OrCondition@@QBEPAV1@XZ present-unmatched
 OrCondition *OrCondition::duplicate(void) const 
 {
 	OrCondition *pNew = newInstance(OrCondition);	

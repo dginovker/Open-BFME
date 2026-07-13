@@ -252,7 +252,6 @@ m_bounds(Vector3(0.0f, 0.0f, 0.0f), 1.0f)
 //=============================================================================
 /** Frees index & vertex data. */
 //=============================================================================
-// ??1RoadSegment@@QAE@XZ present-unmatched
 RoadSegment::~RoadSegment(void)
 {
 	m_numVertex = 0;
@@ -274,7 +273,6 @@ RoadSegment::~RoadSegment(void)
 //=============================================================================
 /** Allocates & sets the vertex entries. */
 //=============================================================================
-// ?SetVertexBuffer@RoadSegment@@QAEXPAUVertexFormatXYZDUV1@@H@Z present-unmatched
 void RoadSegment::SetVertexBuffer(VertexFormatXYZDUV1 *vb, Int numVertex)
 {
 	if (m_vb) {
@@ -303,7 +301,6 @@ void RoadSegment::SetVertexBuffer(VertexFormatXYZDUV1 *vb, Int numVertex)
 //=============================================================================
 /** Allocates & sets the index entries. */
 //=============================================================================
-// ?SetIndexBuffer@RoadSegment@@QAEXPAGH@Z present-unmatched
 void RoadSegment::SetIndexBuffer(UnsignedShort *ib, Int numIndex)
 {
 	if (m_ib) {

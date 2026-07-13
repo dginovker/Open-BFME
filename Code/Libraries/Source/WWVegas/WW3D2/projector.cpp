@@ -216,7 +216,6 @@ void ProjectorClass::Set_Ortho_Projection(float xmin,float xmax,float ymin,float
  * HISTORY:                                                                                    *
  *   1/27/00    gth : Created.                                                                 *
  *=============================================================================================*/
-// ?Compute_Texture_Coordinate@ProjectorClass@@QAEXABVVector3@@PAV2@@Z present-unmatched
 void ProjectorClass::Compute_Texture_Coordinate(const Vector3 & point,Vector3 * set_stq)
 {
 	Mapper->Compute_Texture_Coordinate(point,set_stq);

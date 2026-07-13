@@ -925,7 +925,6 @@ void GameEngine::execute( void )
 /** -----------------------------------------------------------------------------------------------
 	* Factory for the message stream
 	*/
-// ?createMessageStream@GameEngine@@MAEPAVMessageStream@@XZ present-unmatched
 MessageStream *GameEngine::createMessageStream( void )
 {
 	// if you change this update the tools that use the engine systems

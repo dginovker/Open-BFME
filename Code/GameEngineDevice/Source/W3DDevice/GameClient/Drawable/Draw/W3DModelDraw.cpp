@@ -2827,7 +2827,6 @@ void W3DModelDraw::setTerrainDecal(TerrainDecalType type)
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?setTerrainDecalSize@W3DModelDraw@@UAEXMM@Z present-unmatched
 void W3DModelDraw::setTerrainDecalSize(Real x, Real y)
 {
 	if (m_terrainDecal)

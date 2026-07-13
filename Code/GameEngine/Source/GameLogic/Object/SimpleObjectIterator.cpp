@@ -68,7 +68,6 @@ SimpleObjectIterator::SimpleObjectIterator()
 }
 
 //=============================================================================
-// ??1SimpleObjectIterator@@MAE@XZ present-unmatched
 SimpleObjectIterator::~SimpleObjectIterator()
 {
 	makeEmpty();

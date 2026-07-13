@@ -1800,7 +1800,6 @@ void Player::onStructureConstructionComplete( Object *builder, Object *structure
 }  // end onStructureConstructionComplete
 
 //=============================================================================
-// ?onStructureUndone@Player@@QAEXPAVObject@@@Z present-unmatched
 void Player::onStructureUndone(Object *structure)
 {
 	m_scoreKeeper.removeObjectBuilt(structure);

@@ -58,7 +58,6 @@ NameKeyGenerator::~NameKeyGenerator()
 }  // end ~NameKeyGenerator
 
 //------------------------------------------------------------------------------------------------- 
-// ?init@NameKeyGenerator@@ present-unmatched
 void NameKeyGenerator::init()
 {
 	DEBUG_ASSERTCRASH(m_nextID == (UnsignedInt)NAMEKEY_INVALID, ("NameKeyGen already inited"));
@@ -70,7 +69,6 @@ void NameKeyGenerator::init()
 }  // end init
 
 //------------------------------------------------------------------------------------------------- 
-// ?reset@NameKeyGenerator@@ present-unmatched
 void NameKeyGenerator::reset()
 {
 	freeSockets();
@@ -231,7 +229,6 @@ NameKeyType NameKeyGenerator::nameToLowercaseKey(const char* nameString)
 //------------------------------------------------------------------------------------------------- 
 // Get a string out of the INI. Store it into a NameKeyType
 //------------------------------------------------------------------------------------------------- 
-// ?parseStringAsNameKeyType@NameKeyGenerator@@ present-unmatched
 void NameKeyGenerator::parseStringAsNameKeyType( INI *ini, void *instance, void *store, const void* userData )
 {
   *(NameKeyType *)store = TheNameKeyGenerator->nameToKey( ini->getNextToken() );

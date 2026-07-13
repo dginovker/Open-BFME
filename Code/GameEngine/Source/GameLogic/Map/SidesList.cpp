@@ -629,13 +629,11 @@ void SidesList::addSide(const Dict* d)
 		m_sides[m_numSides++].init(d);
 }
 
-// ?addTeam@SidesList@@QAEXPBVDict@@@Z present-unmatched
 void SidesList::addTeam(const Dict* d)
 {
 	m_teamrec.addTeam(d);
 }
 
-// ?addSkirmishTeam@SidesList@@QAEXPBVDict@@@Z present-unmatched
 void SidesList::addSkirmishTeam(const Dict* d)
 {
 	m_skirmishTeamrec.addTeam(d);
@@ -656,7 +654,6 @@ void SidesList::removeSide(Int i)
 	--m_numSides;
 }
 
-// ?removeTeam@SidesList@@QAEXH@Z present-unmatched
 void SidesList::removeTeam(Int i)
 {
 	m_teamrec.removeTeam(i);

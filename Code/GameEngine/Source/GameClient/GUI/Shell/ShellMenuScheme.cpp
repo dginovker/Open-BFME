@@ -329,7 +329,6 @@ void ShellMenuSchemeManager::setShellMenuScheme( AsciiString name )
 	}
 }
 
-// ?draw@ShellMenuSchemeManager@@QAEXXZ present-unmatched
 void ShellMenuSchemeManager::draw( void )
 {
 	if(m_currentScheme)

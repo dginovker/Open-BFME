@@ -855,7 +855,6 @@ void Object::setTeam( Team *team )
 
 //=============================================================================
 //=============================================================================
-// ?setTemporaryTeam@Object@@QAEXPAVTeam@@@Z present-unmatched
 void Object::setTemporaryTeam( Team *team )
 {
 	const Bool restoring = false;

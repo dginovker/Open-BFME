@@ -1959,7 +1959,6 @@ CommandSet* ControlBar::findNonConstCommandSet( const AsciiString& name )
 //-------------------------------------------------------------------------------------------------
 /** find existing command button if present	*/
 //-------------------------------------------------------------------------------------------------
-// ?findCommandButton@ControlBar@@QAEPBVCommandButton@@ABVAsciiString@@@Z present-unmatched
 const CommandButton *ControlBar::findCommandButton( const AsciiString& name ) 
 { 
 	CommandButton *btn =  findNonConstCommandButton(name); 
@@ -1973,7 +1972,6 @@ const CommandButton *ControlBar::findCommandButton( const AsciiString& name )
 //-------------------------------------------------------------------------------------------------
 /** Find existing command set by name */
 //-------------------------------------------------------------------------------------------------
-// ?findCommandSet@ControlBar@@QAEPBVCommandSet@@ABVAsciiString@@@Z present-unmatched
 const CommandSet *ControlBar::findCommandSet( const AsciiString& name ) 
 { 
 	CommandSet *set = findNonConstCommandSet(name); 

@@ -539,7 +539,6 @@ LocomotorStore::~LocomotorStore()
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?findLocomotorTemplate@LocomotorStore@@ present-unmatched
 LocomotorTemplate* LocomotorStore::findLocomotorTemplate(NameKeyType namekey)
 {
 	if (namekey == NAMEKEY_INVALID)
@@ -553,7 +552,6 @@ LocomotorTemplate* LocomotorStore::findLocomotorTemplate(NameKeyType namekey)
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?findLocomotorTemplate@LocomotorStore@@ present-unmatched
 const LocomotorTemplate* LocomotorStore::findLocomotorTemplate(NameKeyType namekey) const
 {
 	if (namekey == NAMEKEY_INVALID)

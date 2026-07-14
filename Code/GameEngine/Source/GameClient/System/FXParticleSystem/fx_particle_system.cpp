@@ -890,40 +890,11 @@ void ParticleSystemTemplate::setTextureFilename(AsciiString &filename)
         *reinterpret_cast<const StringBase<char> *>(&filename));
 }
 
-__declspec(naked) void ParticleSystemTemplate::setSlaveSystemName(const AsciiString &name)
+void ParticleSystemTemplate::setSlaveSystemName(const AsciiString &name)
 {
-    __asm {
-        __emit 0x8b
-        __emit 0x44
-        __emit 0x24
-        __emit 0x04
-        __emit 0x56
-        __emit 0x8b
-        __emit 0xf1
-        __emit 0x50
-        __emit 0x8d
-        __emit 0x4e
-        __emit 0x68
-        __emit 0xe8
-        __emit 0xf0
-        __emit 0x95
-        __emit 0x2c
-        __emit 0x00
-        __emit 0xc7
-        __emit 0x86
-        __emit 0x9c
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x00
-        __emit 0x5e
-        __emit 0xc2
-        __emit 0x04
-        __emit 0x00
-    }
+    reinterpret_cast<StringBase<char> *>(reinterpret_cast<char *>(this) + 0x68)->set(
+        *reinterpret_cast<const StringBase<char> *>(&name));
+    *reinterpret_cast<unsigned int *>(reinterpret_cast<char *>(this) + 0x9c) = 0;
 }
 
 ParticleType ParticleSystemTemplate::getParticleType() const

@@ -17,6 +17,19 @@ We currently have C++ functions in `Code/` and a patcher which can patch same-si
 
 On July 13th 2026, we crossed 10% of the way there (by reversed engineered function count)
 
+## Roadmap
+
+[ ] BFME 1 Source Code (10% done)
+[ ] Network delay fix
+[ ] Memory fix
+[ ] 60/120 FPS
+[ ] Multi CPU
+[ ] AC fix
+[ ] World builder Source Code
+[ ] 16 player maps
+
+ping `redbracket` on Discord if there's something else you want to change this roadmap
+
 ## How You Can Help
 
 Just tell your favorite AI agent to make a PR in this repo, where each commit in the PR is an individual contribution. Your agent will know what to do from there (just make sure it keeps looping and making more commits), and I will be able to merge your PR.

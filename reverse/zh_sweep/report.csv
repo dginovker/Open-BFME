@@ -4232,3 +4232,7 @@ GameEngine/Source/Common/Thing/ThingTemplate.cpp,ok,2,59,234,,2
 GameEngine/Source/Common/System/DataChunk.cpp,ok,0,8,35,,0
 GameEngine/Source/GameClient/GUI/GameWindowManagerScript.cpp,ok,0,0,51,,0
 GameEngine/Source/GameNetwork/GameInfo.cpp,compile-error,0,0,0,C2065 'm_NATBehavior' : undeclared identifier,0
+Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&',0
+Libraries/Source/WWVegas/WW3D2/prim_anim.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&',0
+Libraries/Source/WWVegas/WW3D2/ringobj.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&',0
+Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,compile-error,0,0,0,C2143 syntax error : missing ';' before '&',0

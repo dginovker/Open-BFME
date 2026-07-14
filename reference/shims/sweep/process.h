@@ -14,6 +14,11 @@ int __cdecl _spawnl(int mode, const char *cmdname, const char *arg0, ...);
 int __cdecl _spawnlp(int mode, const char *cmdname, const char *arg0, ...);
 int __cdecl _spawnv(int mode, const char *cmdname, const char *const *argv);
 int __cdecl _spawnvp(int mode, const char *cmdname, const char *const *argv);
+unsigned long __cdecl _beginthread(void (__cdecl *start_address)(void *), unsigned stack_size, void *arglist);
+int __cdecl _getpid(void);
+#ifndef getpid
+#define getpid _getpid
+#endif
 #ifdef __cplusplus
 }
 #endif

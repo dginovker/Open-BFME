@@ -27,6 +27,8 @@ typedef LONG *			PLONG;
 typedef WORD *			LPWORD;
 typedef unsigned int	UINT;
 typedef void *			HWND;
+typedef void *			HACCEL;
+typedef void *			HMODULE;
 typedef unsigned short	WCHAR;
 typedef WCHAR *			LPWSTR;   // = VC7.1 default wchar_t; needed by widestring.h (same as shim windows.h)
 
@@ -39,11 +41,16 @@ typedef union _LARGE_INTEGER {
 } LARGE_INTEGER, *PLARGE_INTEGER;
 #endif
 
+#ifndef _FILETIME_DEFINED
+#define _FILETIME_DEFINED
 typedef struct _FILETIME {
 	DWORD dwLowDateTime;
 	DWORD dwHighDateTime;
 } FILETIME, *PFILETIME, *LPFILETIME;
+#endif
 
+#ifndef _WIN32_FIND_DATAA_DEFINED
+#define _WIN32_FIND_DATAA_DEFINED
 typedef struct _WIN32_FIND_DATAA {
 	DWORD dwFileAttributes;
 	FILETIME ftCreationTime, ftLastAccessTime, ftLastWriteTime;
@@ -51,6 +58,7 @@ typedef struct _WIN32_FIND_DATAA {
 	char cFileName[MAX_PATH];
 	char cAlternateFileName[14];
 } WIN32_FIND_DATAA, *LPWIN32_FIND_DATAA;
+#endif
 
 typedef struct _BY_HANDLE_FILE_INFORMATION {
 	DWORD		dwFileAttributes;
@@ -67,6 +75,42 @@ typedef struct _BY_HANDLE_FILE_INFORMATION {
 
 typedef struct _SECURITY_ATTRIBUTES *	LPSECURITY_ATTRIBUTES;
 typedef struct _OVERLAPPED *			LPOVERLAPPED;
+typedef void *			HGLOBAL;
+typedef void *			HRSRC;
+typedef void *			HINSTANCE;
+typedef char *			LPSTR;
+typedef unsigned int	WPARAM;
+typedef long			LPARAM;
+typedef unsigned int	MMRESULT;
+
+#ifndef _TAGPOINT_DEFINED
+#define _TAGPOINT_DEFINED
+typedef struct tagPOINT { LONG x; LONG y; } POINT, *LPPOINT;
+#endif
+
+#ifndef _TAGRECT_DEFINED
+#define _TAGRECT_DEFINED
+typedef struct tagRECT { LONG left, top, right, bottom; } RECT, *LPRECT;
+#endif
+
+#ifndef _MSG_DEFINED
+#define _MSG_DEFINED
+typedef struct tagMSG {
+	HWND hwnd;
+	UINT message;
+	WPARAM wParam;
+	LPARAM lParam;
+	DWORD time;
+	POINT pt;
+} MSG, *LPMSG;
+#endif
+
+#ifndef CALLBACK
+#define CALLBACK	__stdcall
+#endif
+#define PM_NOREMOVE	0x0000
+#define NORMAL_PRIORITY_CLASS	0x00000020
+#define REALTIME_PRIORITY_CLASS	0x00000100
 
 #ifndef TRUE
 #define TRUE	1
@@ -101,7 +145,10 @@ __declspec(dllimport) void __stdcall OutputDebugStringA(LPCSTR lpOutputString);
 __declspec(dllimport) int __stdcall MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCaption, UINT uType);
 
 
+#ifndef _CREATEFILEA_DECLARED
+#define _CREATEFILEA_DECLARED
 __declspec(dllimport) HANDLE __stdcall CreateFileA(LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile);
+#endif
 __declspec(dllimport) BOOL __stdcall CloseHandle(HANDLE hObject);
 __declspec(dllimport) BOOL __stdcall ReadFile(HANDLE hFile, LPVOID lpBuffer, DWORD nNumberOfBytesToRead, LPDWORD lpNumberOfBytesRead, LPOVERLAPPED lpOverlapped);
 __declspec(dllimport) BOOL __stdcall WriteFile(HANDLE hFile, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite, LPDWORD lpNumberOfBytesWritten, LPOVERLAPPED lpOverlapped);
@@ -120,6 +167,44 @@ __declspec(dllimport) BOOL __stdcall FileTimeToDosDateTime(const FILETIME *lpFil
 __declspec(dllimport) BOOL __stdcall DosDateTimeToFileTime(WORD wFatDate, WORD wFatTime, LPFILETIME lpFileTime);
 __declspec(dllimport) BOOL __stdcall SetFileTime(HANDLE hFile, const FILETIME *lpCreationTime, const FILETIME *lpLastAccessTime, const FILETIME *lpLastWriteTime);
 
+__declspec(dllimport) BOOL __stdcall PeekMessageA(LPMSG lpMsg, HWND hWnd, UINT wMsgFilterMin, UINT wMsgFilterMax, UINT wRemoveMsg);
+__declspec(dllimport) BOOL __stdcall GetMessageA(LPMSG lpMsg, HWND hWnd, UINT wMsgFilterMin, UINT wMsgFilterMax);
+__declspec(dllimport) BOOL __stdcall TranslateMessage(const MSG *lpMsg);
+__declspec(dllimport) LONG __stdcall DispatchMessageA(const MSG *lpMsg);
+__declspec(dllimport) HRSRC __stdcall FindResourceA(HINSTANCE hModule, LPCSTR lpName, LPCSTR lpType);
+__declspec(dllimport) HGLOBAL __stdcall LoadResource(HINSTANCE hModule, HRSRC hResInfo);
+__declspec(dllimport) LPVOID __stdcall LockResource(HGLOBAL hResData);
+__declspec(dllimport) DWORD __stdcall SizeofResource(HINSTANCE hModule, HRSRC hResInfo);
+__declspec(dllimport) BOOL __stdcall QueryPerformanceFrequency(LARGE_INTEGER *lpFrequency);
+__declspec(dllimport) BOOL __stdcall QueryPerformanceCounter(LARGE_INTEGER *lpPerformanceCount);
+__declspec(dllimport) HANDLE __stdcall GetCurrentProcess(void);
+__declspec(dllimport) DWORD __stdcall GetPriorityClass(HANDLE hProcess);
+__declspec(dllimport) BOOL __stdcall SetPriorityClass(HANDLE hProcess, DWORD dwPriorityClass);
+__declspec(dllimport) BOOL __stdcall GetDiskFreeSpaceA(LPCSTR lpRootPathName, LPDWORD lpSectorsPerCluster, LPDWORD lpBytesPerSector, LPDWORD lpNumberOfFreeClusters, LPDWORD lpTotalNumberOfClusters);
+__declspec(dllimport) BOOL __stdcall GetComputerNameA(LPSTR lpBuffer, LPDWORD lpnSize);
+__declspec(dllimport) BOOL __stdcall GetUserNameA(LPSTR lpBuffer, LPDWORD lpnSize);
+__declspec(dllimport) DWORD __stdcall GetTickCount(void);
+__declspec(dllimport) int __stdcall LoadStringA(HINSTANCE hInstance, UINT uID, LPSTR lpBuffer, int nBufferMax);
+__declspec(dllimport) BOOL __stdcall TranslateAcceleratorA(HWND hWnd, HACCEL hAccTable, LPMSG lpMsg);
+__declspec(dllimport) BOOL __stdcall IsDialogMessageA(HWND hDlg, LPMSG lpMsg);
+__declspec(dllimport) HANDLE __stdcall GetCurrentThread(void);
+__declspec(dllimport) int __stdcall GetThreadPriority(HANDLE hThread);
+__declspec(dllimport) BOOL __stdcall SetThreadPriority(HANDLE hThread, int nPriority);
+__declspec(dllimport) LONG __stdcall InterlockedIncrement(LONG volatile *);
+__declspec(dllimport) LONG __stdcall InterlockedDecrement(LONG volatile *);
+__declspec(dllimport) MMRESULT __stdcall timeSetEvent(UINT uDelay, UINT uResolution, void (CALLBACK *lpTimeProc)(UINT, UINT, DWORD, DWORD, DWORD), DWORD dwUser, UINT fuEvent);
+__declspec(dllimport) MMRESULT __stdcall timeKillEvent(UINT uTimerID);
+__declspec(dllimport) BOOL __stdcall GetClientRect(HWND hWnd, LPRECT lpRect);
+__declspec(dllimport) BOOL __stdcall ClientToScreen(HWND hWnd, LPPOINT lpPoint);
+__declspec(dllimport) int __stdcall ShowCursor(BOOL bShow);
+__declspec(dllimport) BOOL __stdcall GetCursorPos(LPPOINT lpPoint);
+__declspec(dllimport) BOOL __stdcall SetCursorPos(int X, int Y);
+__declspec(dllimport) char * __cdecl strdup(const char *);
+void * __cdecl memcpy(void *, const void *, unsigned int);
+__declspec(dllimport) void * __cdecl memmove(void *, const void *, unsigned int);
+
+extern HINSTANCE	ProgramInstance;
+
 }
 
 #define DeleteFile	DeleteFileA
@@ -130,5 +215,18 @@ __declspec(dllimport) BOOL __stdcall SetFileTime(HANDLE hFile, const FILETIME *l
 #define WIN32_FIND_DATA		WIN32_FIND_DATAA
 #define OutputDebugString	OutputDebugStringA
 #define MessageBox			MessageBoxA
+#define PeekMessage			PeekMessageA
+#define GetMessage			GetMessageA
+#define DispatchMessage		DispatchMessageA
+#define FindResource		FindResourceA
+#define GetDiskFreeSpace	GetDiskFreeSpaceA
+#define GetComputerName		GetComputerNameA
+#define GetUserName			GetUserNameA
+#define LoadString			LoadStringA
+#define TranslateAccelerator	TranslateAcceleratorA
+#define IsDialogMessage		IsDialogMessageA
+#define THREAD_PRIORITY_NORMAL			0
+#define THREAD_PRIORITY_TIME_CRITICAL	15
+#define TIME_PERIODIC	1
 
 #endif // WIN_H

@@ -22,6 +22,7 @@
 
 typedef void *HANDLE;
 typedef void *HGLOBAL;
+typedef struct _OVERLAPPED *LPOVERLAPPED;
 typedef void *HLOCAL;
 typedef void *HMODULE;
 typedef void *HINSTANCE;
@@ -178,8 +179,13 @@ typedef struct _TIME_ZONE_INFORMATION {
 } TIME_ZONE_INFORMATION, *LPTIME_ZONE_INFORMATION;
 
 #ifndef BFME_WIN_GEOM_DEFINED
+#ifndef _TAGPOINT_DEFINED
+#define _TAGPOINT_DEFINED
 typedef struct tagPOINT { LONG x; LONG y; } POINT, *LPPOINT;
 #endif
+#endif
+#ifndef _MSG_DEFINED
+#define _MSG_DEFINED
 typedef struct tagMSG {
     HWND hwnd;
     UINT message;
@@ -188,6 +194,7 @@ typedef struct tagMSG {
     DWORD time;
     POINT pt;
 } MSG, *LPMSG;
+#endif
 
 #ifndef _LARGE_INTEGER_DEFINED
 typedef union _LARGE_INTEGER {
@@ -248,7 +255,10 @@ typedef struct _PROCESS_INFORMATION {
 
 #ifndef BFME_WIN_GEOM_DEFINED
 #define BFME_WIN_GEOM_DEFINED
+#ifndef _TAGRECT_DEFINED
+#define _TAGRECT_DEFINED
 typedef struct tagRECT { LONG left, top, right, bottom; } RECT, *LPRECT;
+#endif
 #endif
 typedef struct tagSIZE { LONG cx, cy; } SIZE, *LPSIZE;
 typedef struct tagTEXTMETRICA {
@@ -280,7 +290,12 @@ typedef struct tagBITMAPFILEHEADER {
 #define BI_RGB 0L
 #define DIB_RGB_COLORS 0
 
+#ifndef _FILETIME_DEFINED
+#define _FILETIME_DEFINED
 typedef struct _FILETIME { DWORD dwLowDateTime, dwHighDateTime; } FILETIME, *LPFILETIME;
+#endif
+#ifndef _WIN32_FIND_DATAA_DEFINED
+#define _WIN32_FIND_DATAA_DEFINED
 typedef struct _WIN32_FIND_DATAA {
     DWORD dwFileAttributes;
     FILETIME ftCreationTime, ftLastAccessTime, ftLastWriteTime;
@@ -288,6 +303,7 @@ typedef struct _WIN32_FIND_DATAA {
     char cFileName[MAX_PATH];
     char cAlternateFileName[14];
 } WIN32_FIND_DATAA, *LPWIN32_FIND_DATAA;
+#endif
 
 #define MB_OK 0x00000000L
 #define MB_OKCANCEL 0x00000001L
@@ -647,9 +663,12 @@ __declspec(dllimport) HLOCAL WINAPI LocalFree(HLOCAL);
 __declspec(dllimport) HGLOBAL WINAPI GlobalFree(HGLOBAL);
 __declspec(dllimport) SIZE_T WINAPI GlobalSize(HGLOBAL);
 __declspec(dllimport) void WINAPI GlobalMemoryStatus(LPMEMORYSTATUS);
+#ifndef _CREATEFILEA_DECLARED
+#define _CREATEFILEA_DECLARED
 __declspec(dllimport) HANDLE WINAPI CreateFileA(LPCSTR, DWORD, DWORD, void *, DWORD, DWORD, HANDLE);
-__declspec(dllimport) BOOL WINAPI WriteFile(HANDLE, LPCVOID, DWORD, LPDWORD, void *);
-__declspec(dllimport) BOOL WINAPI ReadFile(HANDLE, LPVOID, DWORD, LPDWORD, void *);
+#endif
+__declspec(dllimport) BOOL WINAPI WriteFile(HANDLE, LPCVOID, DWORD, LPDWORD, LPOVERLAPPED);
+__declspec(dllimport) BOOL WINAPI ReadFile(HANDLE, LPVOID, DWORD, LPDWORD, LPOVERLAPPED);
 __declspec(dllimport) BOOL WINAPI CloseHandle(HANDLE);
 __declspec(dllimport) DWORD WINAPI SetFilePointer(HANDLE, LONG, LONG *, DWORD);
 __declspec(dllimport) DWORD WINAPI GetFileSize(HANDLE, LPDWORD);
@@ -861,3 +880,64 @@ inline double sqrt(unsigned long x) { return sqrt((double)x); }
 #include "mmsystem.h"
 
 #endif
+
+/* winbase additions (compile-unblockers; decls/constants only) */
+#ifndef _WINBASE_SHIM_EXTRAS
+#define _WINBASE_SHIM_EXTRAS
+#ifdef __cplusplus
+extern "C" {
+#endif
+__declspec(dllimport) BOOL WINAPI QueryPerformanceFrequency(LARGE_INTEGER *);
+__declspec(dllimport) BOOL WINAPI QueryPerformanceCounter(LARGE_INTEGER *);
+__declspec(dllimport) HANDLE WINAPI GetCurrentProcess(void);
+__declspec(dllimport) DWORD WINAPI GetPriorityClass(HANDLE);
+__declspec(dllimport) BOOL WINAPI SetPriorityClass(HANDLE, DWORD);
+#define NORMAL_PRIORITY_CLASS 0x00000020
+#define REALTIME_PRIORITY_CLASS 0x00000100
+__declspec(dllimport) BOOL WINAPI SetThreadPriority(HANDLE, int);
+__declspec(dllimport) HWND WINAPI GetActiveWindow(void);
+#define THREAD_PRIORITY_NORMAL 0
+unsigned long __cdecl _exception_code(void);
+void * __cdecl _exception_info(void);
+#define GetExceptionCode() _exception_code()
+#define GetExceptionInformation() ((struct _EXCEPTION_POINTERS *)_exception_info())
+__declspec(dllimport) int WINAPI GetDiskFreeSpaceA(LPCSTR, DWORD *, DWORD *, DWORD *, DWORD *);
+__declspec(dllimport) int WINAPI GetComputerNameA(LPSTR, DWORD *);
+__declspec(dllimport) int WINAPI GetUserNameA(LPSTR, DWORD *);
+#define GetDiskFreeSpace GetDiskFreeSpaceA
+#define GetComputerName GetComputerNameA
+#define GetUserName GetUserNameA
+#define EXCEPTION_DATATYPE_MISALIGNMENT  0x80000002L
+#define EXCEPTION_BREAKPOINT             0x80000003L
+#define EXCEPTION_SINGLE_STEP            0x80000004L
+#define EXCEPTION_ARRAY_BOUNDS_EXCEEDED  0xC000008CL
+#define EXCEPTION_FLT_DENORMAL_OPERAND   0xC000008DL
+#define EXCEPTION_FLT_DIVIDE_BY_ZERO     0xC000008EL
+#define EXCEPTION_FLT_INEXACT_RESULT     0xC000008FL
+#define EXCEPTION_FLT_INVALID_OPERATION  0xC0000090L
+#define EXCEPTION_FLT_OVERFLOW           0xC0000091L
+#define EXCEPTION_FLT_STACK_CHECK        0xC0000092L
+#define EXCEPTION_FLT_UNDERFLOW          0xC0000093L
+#define EXCEPTION_INT_DIVIDE_BY_ZERO     0xC0000094L
+#define EXCEPTION_INT_OVERFLOW           0xC0000095L
+#define EXCEPTION_PRIV_INSTRUCTION       0xC0000096L
+#define EXCEPTION_IN_PAGE_ERROR          0xC0000006L
+#define EXCEPTION_ILLEGAL_INSTRUCTION    0xC000001DL
+#define EXCEPTION_NONCONTINUABLE_EXCEPTION 0xC0000025L
+#define EXCEPTION_STACK_OVERFLOW         0xC00000FDL
+#define EXCEPTION_INVALID_DISPOSITION    0xC0000026L
+#define EXCEPTION_GUARD_PAGE             0x80000001L
+#define EXCEPTION_ACCESS_VIOLATION       0xC0000005L
+#define EXCEPTION_INVALID_HANDLE         0xC0000008L
+#define SIZE_OF_80387_REGISTERS 80
+#ifdef __cplusplus
+}
+#endif
+#endif
+
+#define LANG_NEUTRAL 0x00
+#define SUBLANG_DEFAULT 0x01
+#define MAKELANGID(p, s) ((((WORD)(s)) << 10) | (WORD)(p))
+#define EXCEPTION_CONTINUE_SEARCH 0
+#define EXCEPTION_EXECUTE_HANDLER 1
+#define EXCEPTION_CONTINUE_EXECUTION -1

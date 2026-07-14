@@ -44,7 +44,7 @@
 #ifndef RAWFILE_Hx
 #define RAWFILE_Hx
 
-//#include	<errno.h>
+#include	<errno.h>
 
 // #include	"win.h"
 

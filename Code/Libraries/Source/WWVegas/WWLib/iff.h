@@ -71,6 +71,42 @@ typedef	struct {
 
 } IFF_FILE;
 
+#ifndef VOID
+#define VOID void
+#endif
+
+//lint -strong(AJX,PicturePlaneType)
+typedef enum {
+	BM_AMIGA,	// Bit plane format (8K per bitplane).
+	BM_MCGA,		// Byte per pixel format (64K).
+
+	BM_DEFAULT=BM_MCGA	// Default picture format.
+} PicturePlaneType;
+
+/*
+**	This is the compression type code.  This value is used in the compressed
+**	file header to indicate the method of compression used.  Note that the
+**	LZW method may not be supported.
+*/
+//lint -strong(AJX,CompressionType)
+typedef enum {
+	NOCOMPRESS,		// No compression (raw data).
+	LZW12,			// LZW 12 bit codes.
+	LZW14,			// LZW 14 bit codes.
+	HORIZONTAL,		// Run length encoding (RLE).
+	LCW				// Westwood proprietary compression.
+} CompressionType;
+
+unsigned long __cdecl Uncompress_Data(void const *src, void *dst);
+
+//lint -strong(AJX,CompHeaderType)
+typedef struct {
+	char	Method;		// Compression method (CompressionType).
+	char	pad;			// Reserved pad byte (always 0).
+	long	Size;			// Size of the uncompressed data.
+	short	Skip;			// Number of bytes to skip before data.
+} CompHeaderType;
+
 IFF_FILE*		IFF_Open ( const char * );
 IFF_FILE*		IFF_Load ( const char * );
 VOID				IFF_Reset ( IFF_FILE * );

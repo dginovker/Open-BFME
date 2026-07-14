@@ -243,46 +243,16 @@ doneBackendDeleting:
 	}
 }
 
-__declspec(naked) void BFMENetworkBackend::openLiveHandle()
+void BFMENetworkBackend::openLiveHandle()
 {
-	__asm {
-		push esi
-		mov esi, ecx
-		lea eax, [esi+44h]
-		push eax
-		push 4
-		push esi
-		push 00ddb630h
-		push 0
-		push 0
-		__emit 0xff
-		__emit 0x15
-		__emit 0x98
-		__emit 0x92
-		__emit 0x35
-		__emit 0x01
-		mov ecx, [esi+4ch]
-		add esp, 18h
-		push ecx
-		push eax
-		mov [esi+48h], eax
-		__emit 0xff
-		__emit 0x15
-		__emit 0x20
-		__emit 0x8f
-		__emit 0x35
-		__emit 0x01
-		mov edx, [esi+48h]
-		push edx
-		__emit 0xff
-		__emit 0x15
-		__emit 0xd4
-		__emit 0x8e
-		__emit 0x35
-		__emit 0x01
-		pop esi
-		ret
-	}
+	typedef void *(*CreateThreadProc)(void *, unsigned long, unsigned long (__stdcall *)(BFMENetworkBackend *), BFMENetworkBackend *, unsigned long, unsigned long *);
+	typedef int (__stdcall *SetThreadPriorityProc)(void *, int);
+	typedef int (__stdcall *CloseHandleProc)(void *);
+
+	m_liveHandle = (*reinterpret_cast<CreateThreadProc *>(0x01359298))(
+		0, 0, BFMENetworkBackendThreadStart, this, 4, reinterpret_cast<unsigned long *>(reinterpret_cast<char *>(this) + 0x44));
+	(*reinterpret_cast<SetThreadPriorityProc *>(0x01358f20))(m_liveHandle, *reinterpret_cast<int *>(reinterpret_cast<char *>(this) + 0x4c));
+	(*reinterpret_cast<CloseHandleProc *>(0x01358ed4))(m_liveHandle);
 }
 
 extern "C" __declspec(naked) void __stdcall BFMENetworkBackendEventCallback(void *a0, void *a1, void *a2, void *a3, void *a4, void *a5, void *a6, void *a7, void *a8, void *a9)

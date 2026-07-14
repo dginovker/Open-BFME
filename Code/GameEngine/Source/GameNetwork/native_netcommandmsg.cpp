@@ -10,45 +10,31 @@ public:
 };
 
 // BFME command type 7 is NETCOMMANDTYPE_REQUESTPLAYERLEAVE, not ZH run-ahead.
-__declspec(naked) void *BFMENetRequestPlayerLeaveCommandMsg::construct()
+void *BFMENetRequestPlayerLeaveCommandMsg::construct()
 {
-	__asm {
-		mov eax, ecx
-		xor ecx, ecx
-		or edx, 0FFFFFFFFh
-		mov dword ptr [eax+08h], edx
-		mov word ptr [eax+10h], cx
-		mov dword ptr [eax+0Ch], ecx
-		mov dword ptr [eax+04h], ecx
-		mov dword ptr [eax+18h], 1
-		mov dword ptr [eax], 0111A5A0h
-		mov dword ptr [eax+14h], 7
-		mov dword ptr [eax+1Ch], edx
-		ret
-	}
+	char *base = reinterpret_cast<char *>(this);
+	*reinterpret_cast<unsigned int *>(base + 0x08) = 0xffffffff;
+	*reinterpret_cast<unsigned short *>(base + 0x10) = 0;
+	*reinterpret_cast<unsigned int *>(base + 0x0c) = 0;
+	*reinterpret_cast<unsigned int *>(base + 0x04) = 0;
+	*reinterpret_cast<unsigned int *>(base + 0x18) = 1;
+	*reinterpret_cast<unsigned int *>(base) = 0x0111a5a0;
+	*reinterpret_cast<unsigned int *>(base + 0x14) = 7;
+	*reinterpret_cast<unsigned int *>(base + 0x1c) = 0xffffffff;
+	return this;
 }
 
-__declspec(naked) void BFMENetRequestPlayerLeaveCommandMsg::destruct()
+void BFMENetRequestPlayerLeaveCommandMsg::destruct()
 {
-	__asm {
-		mov dword ptr [ecx], 0111A20Ch
-		ret
-	}
+	*reinterpret_cast<unsigned int *>(this) = 0x0111a20c;
 }
 
-__declspec(naked) void BFMENetRequestPlayerLeaveCommandMsg::setRequestedPlayerID(int playerID)
+void BFMENetRequestPlayerLeaveCommandMsg::setRequestedPlayerID(int playerID)
 {
-	__asm {
-		mov eax, dword ptr [esp+04h]
-		mov dword ptr [ecx+1Ch], eax
-		ret 4
-	}
+	*reinterpret_cast<int *>(reinterpret_cast<char *>(this) + 0x1c) = playerID;
 }
 
-__declspec(naked) int BFMENetRequestPlayerLeaveCommandMsg::getRequestedPlayerID()
+int BFMENetRequestPlayerLeaveCommandMsg::getRequestedPlayerID()
 {
-	__asm {
-		mov eax, dword ptr [ecx+1Ch]
-		ret
-	}
+	return *reinterpret_cast<int *>(reinterpret_cast<char *>(this) + 0x1c);
 }

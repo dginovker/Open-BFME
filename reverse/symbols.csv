@@ -2885,3 +2885,16 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ??0?$VectorClass@UAddInfoStruct@MixFileFactoryClass@@@@QAE@HPBUAddInfoStruct@MixFileFactoryClass@@@Z,0x0093DBB0,call-target pin: row deleted (ZH drift: element-ctor ptr), callers verify against this rva
 ??1NamedPivotMapClass@@UAE@XZ,0x00974E20,call-target pin: row deleted (ZH drift: element-ctor ptr), callers verify against this rva
 ??0?$VectorClass@VVector4@@@@QAE@HPBVVector4@@@Z,0x00906240,call-target pin: row deleted (ZH drift: element-ctor ptr), callers verify against this rva
+?resetShader@W3DShaderManager@@SAXW4ShaderTypes@1@@Z,0x00014367,pinharvest x1 (thunk)
+??1DebugIOCon@@UAE@XZ,0x00889620,pinharvest x1 (body)
+??1DebugIOCon@@UAE@XZ,0x0088A6E0,pinharvest x1 (body)
+??1DebugIOCon@@UAE@XZ,0x0088FAA0,pinharvest x1 (body)
+??1DebugIOCon@@UAE@XZ,0x0088FB30,pinharvest x1 (body)
+??1DebugIOCon@@UAE@XZ,0x00890780,pinharvest x1 (body)
+??1DebugIOCon@@UAE@XZ,0x00890F10,pinharvest x1 (body)
+??1DebugIOOds@@UAE@XZ,0x00889620,pinharvest x1 (body)
+??1DebugIOOds@@UAE@XZ,0x0088A6E0,pinharvest x1 (body)
+??1DebugIOOds@@UAE@XZ,0x0088FAA0,pinharvest x1 (body)
+??1DebugIOOds@@UAE@XZ,0x0088FB30,pinharvest x1 (body)
+??1DebugIOOds@@UAE@XZ,0x00890780,pinharvest x1 (body)
+??1DebugIOOds@@UAE@XZ,0x00890F10,pinharvest x1 (body)

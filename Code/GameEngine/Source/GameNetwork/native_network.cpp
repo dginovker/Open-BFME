@@ -85,6 +85,42 @@ public:
 	char m_pad1c[0x0c];
 };
 
+class BFMENetworkThreadRunner
+{
+public:
+	virtual void v00();
+	virtual void v04();
+	virtual void v08();
+	virtual void v0c();
+	virtual void v10();
+	virtual void v14();
+	virtual void v18();
+	virtual void v1c();
+	virtual void v20();
+	virtual void v24();
+	virtual void v28();
+	virtual void v2c();
+	virtual void v30();
+	virtual void v34();
+	virtual void v38();
+	virtual void v3c();
+	virtual void v40();
+	virtual void v44();
+	virtual void v48();
+	virtual void v4c();
+	virtual void v50();
+	virtual void v54();
+	virtual void threadTick();
+};
+
+class BFMENetworkBackendThreadRunner
+{
+public:
+	virtual void v00();
+	virtual void v04();
+	virtual void dispatchEvents();
+};
+
 class BFMENetwork
 {
 public:
@@ -117,23 +153,12 @@ private:
 extern "C" __declspec(dllimport) unsigned long __stdcall WaitForSingleObject(void *handle, unsigned long milliseconds);
 extern "C" __declspec(dllimport) int __stdcall ReleaseMutex(void *handle);
 
-extern "C" __declspec(naked) unsigned long __stdcall BFMENetworkBackendThreadStart(BFMENetworkBackend *backend)
+extern "C" unsigned long __stdcall BFMENetworkBackendThreadStart(BFMENetworkBackend *backend)
 {
-	__asm {
-		__emit 0x8b
-		__emit 0x0d
-		__emit 0x5c
-		__emit 0x6e
-		__emit 0x33
-		__emit 0x01
-		mov eax, [ecx]
-		call dword ptr [eax+58h]
-		mov ecx, [esp+4]
-		mov edx, [ecx]
-		call dword ptr [edx+8]
-		xor eax, eax
-		ret 4
-	}
+	BFMENetworkThreadRunner *globalNetwork = *reinterpret_cast<BFMENetworkThreadRunner **>(0x01336e5c);
+	globalNetwork->threadTick();
+	reinterpret_cast<BFMENetworkBackendThreadRunner *>(backend)->dispatchEvents();
+	return 0;
 }
 
 // ?construct@BFMENetworkBackend@@QAEPAXPAVBFMENetworkLock@@@Z

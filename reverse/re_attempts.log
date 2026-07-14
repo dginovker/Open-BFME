@@ -504,3 +504,160 @@ debug_except.cpp	blocked	compile-blocked: needs commctrl/dialog shim tier (EndDi
 ?Clone@GridEnvironmentMapperClass@@UBEPAVTextureMapperClass@@XZ	no-match	drift candidate misplaced: target bytes are mid-function tails/padding, compiled size differs; genuine source drift not a boundary error
 ?Clone@GridClassicEnvironmentMapperClass@@UBEPAVTextureMapperClass@@XZ	no-match	drift candidate misplaced: target bytes are mid-function tails/padding, compiled size differs; genuine source drift not a boundary error
 ??1HAnimManagerClass@@QAE@XZ	no-match	drift candidate misplaced: target bytes are mid-function tails/padding, compiled size differs; genuine source drift not a boundary error
+?Remove_Current_Object@?$MultiListIterator@VPolyRemover@@@@QAEXXZ	no-match	wholesale drift: different register allocation from byte 0 (compiled mov eax,[ecx+4] vs retail mov eax,[esi+4]), 20/25 bytes differ
+?parsePositiveNonZeroReal@INI@@SAXPAV1@PAX1PBX@Z	no-match	wholesale drift: retail has 0x1ac stack frame (local buffer), ZH source compiles leaf-style, 119/151 bytes differ
+??_G?$DLNodeClass@VSortingNodeStruct@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@G@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@K@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@PAULegacyMaterialClass@MeshLoadContextClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@PAUW3dAggregateSubobjectStruct@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@PAVFontCharsBuffer@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@PAVRender2DClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@PAVRenderObjClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@PAVTextureClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@PAVVertexMaterialClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@UAddInfoStruct@MixFileFactoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@UFileInfoStruct@MixFileCreator@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@UFileInfoStruct@MixFileFactoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@UFileOffsetStruct@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@UPendingSurfaceStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@URendererDataStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@USentenceDataStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@VShaderClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@VStringClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@VVector2@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$DynamicVectorClass@VVector3@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$MultiListClass@VDX8FVFCategoryContainer@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$MultiListClass@VDX8PolygonRendererClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??_G?$MultiListClass@VDX8TextureCategoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor DCE'd: class held by value in retail (plain dtor matched elsewhere or trivial-dtor shape absent from .text per masked body-scan); 0xC71522 candidate is mid-function garbage
+??1CameraClass@@UAE@XZ	no-match	candidate misplaced: retail at 0x984B17 is SEH function tail; compiled 18B dtor shape differs
+??1LightClass@@UAE@XZ	no-match	candidate misplaced: retail at 0x984B17 is SEH function tail; compiled 18B dtor shape differs
+?Overlap_Test@CollisionMath@@SA?AW4OverlapType@1@ABVOBBoxClass@@ABVAABoxClass@@@Z	dead	masked body-scan: zero hits in retail .text; static math fn inlined at call sites
+??4FileOffsetStruct@@QAEAAU0@ABU0@@Z	dead	masked body-scan: zero hits in retail .text; operator= inlined
+?Create@DebugIONet@@SAPAVDebugIOInterface@@XZ	dead	masked body-scan: zero hits in retail .text; debug subsystem compiled out
+??_GAI@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GPathfinder@@QAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GTAiData@@QAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GLANAPIInterface@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GLANAPI@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GLANGameInfo@@QAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GTransport@@QAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@PAUW3dAggregateSubobjectStruct@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@PAVRenderObjClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GAggregateDefClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@PAUW3dAggregateSubobjectStruct@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@PAVRenderObjClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GBoxRenderObjClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GCameraClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@K@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@PAVTextureClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@PAVVertexMaterialClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@UDecalStruct@RigidDecalMeshClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@UDecalStruct@SkinDecalMeshClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@VShaderClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@VVector2@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@VVector3i16@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@VVector3@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GDecalMeshClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GRigidDecalMeshClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GSkinDecalMeshClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@VVector3@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$MultiListClass@VDX8FVFCategoryContainer@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$MultiListClass@VDX8PolygonRendererClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$MultiListClass@VDX8TextureCategoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$MultiListClass@VMeshModelClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$MultiListClass@VPolyRemover@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$SimpleDynVecClass@PAV?$MultiListClass@VDX8FVFCategoryContainer@@@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GDX8FVFCategoryContainer@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GDX8RigidFVFCategoryContainer@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GDX8SkinFVFCategoryContainer@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GDX8TextureCategoryClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GPolyRemover@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@VVector3@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$MultiListClass@VTextureTrackerClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GHAnimManagerIterator@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GHashableClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GHashTableIteratorClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GLightClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@PAVTextureClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@PAVVertexMaterialClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@VShaderClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@PAVTextureClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@PAVVertexMaterialClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@VShaderClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@K@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@PAULegacyMaterialClass@MeshLoadContextClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GLegacyMaterialClass@MeshLoadContextClass@@QAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@K@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@PAULegacyMaterialClass@MeshLoadContextClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@G@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@VVector2@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@G@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@VVector2@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@PAVFontCharsBuffer@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@PAVRender2DClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@UPendingSurfaceStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@URendererDataStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@USentenceDataStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@PAVFontCharsBuffer@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@PAVRender2DClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@URendererDataStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@USentenceDataStruct@Render2DSentenceClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$RefMultiListClass@VRenderObjClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GSceneClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GSimpleSceneClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GSimpleSceneIterator@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GSceneIterator@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DLListClass@VSortingNodeStruct@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GTextureMapperClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GWSEnvMapperClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GActiveCategoryClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@H@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@UAddInfoStruct@MixFileFactoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@UFileInfoStruct@MixFileCreator@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@UFileInfoStruct@MixFileFactoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@UFileOffsetStruct@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$DynamicVectorClass@VStringClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GMixFileFactoryClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GFileFactoryClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@UFileInfoStruct@MixFileFactoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@UAddInfoStruct@MixFileFactoryClass@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_G?$VectorClass@UFileInfoStruct@MixFileCreator@@@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan over full segment, 0 hits); class used by value - deleting variant DCE'd
+??_GW3DMPO@@UAEPAXI@Z	no-match	deleting dtor not emitted in ZH TU (not instantiated); no retail candidate
+??_G?$SimplePersistFactoryClass@VLightClass@@$0BAAAB@@@UAEPAXI@Z	no-match	deleting dtor not emitted in ZH TU (not instantiated); no retail candidate
+??_G?$DLNodeClass@VSortingNodeStruct@@@@UAEPAXI@Z	no-match	deleting dtor not emitted in ZH TU (not instantiated); no retail candidate
+??_GNAT@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan, 0 hits); by-value usage, deleting variant DCE'd
+??_GMultiListObjectClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan, 0 hits); by-value usage, deleting variant DCE'd
+??_GProjectorClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan, 0 hits); by-value usage, deleting variant DCE'd
+??_GStaticSortListClass@@UAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan, 0 hits); by-value usage, deleting variant DCE'd
+??_GDebugCmdInterface@@MAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan, 0 hits); by-value usage, deleting variant DCE'd
+??_GDebugIOInterface@@MAEPAXI@Z	dead	scalar deleting dtor absent from retail .text (masked body-scan, 0 hits); by-value usage, deleting variant DCE'd
+?allowBroadcasts@Transport@@QAE_N_N@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?getName@LANGameInfo@@QAE?AVUnicodeString@@XZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+??_GNAT@@UAEPAXI@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@PAUW3dAggregateSubobjectStruct@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@PAVRenderObjClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Cull_Box@CameraClass@@QBE_NABVAABoxClass@@@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Add_Vertex@DecalPolyClass@@QAEXABVVector3@@0@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+??_GMultiListObjectClass@@UAEPAXI@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Add_Visible_Texture_Category@DX8FVFCategoryContainer@@QAEXPAVDX8TextureCategoryClass@@H@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@VVector3@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@PAVTextureClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@PAVVertexMaterialClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@VShaderClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@K@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@PAULegacyMaterialClass@MeshLoadContextClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@G@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@VVector2@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@PAVFontCharsBuffer@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@PAVRender2DClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@URendererDataStruct@Render2DSentenceClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@USentenceDataStruct@Render2DSentenceClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Release_Head@?$RefMultiListClass@VRenderObjClass@@@@QAE_NXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Add@?$RefMultiListClass@VRenderObjClass@@@@QAE_NPAVRenderObjClass@@_N@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+??_GStaticSortListClass@@UAEPAXI@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+??_GDebugCmdInterface@@MAEPAXI@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+??_GDebugIOInterface@@MAEPAXI@Z	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@H@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+??0FileOffsetStruct@@QAE@XZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage
+?Clear@?$VectorClass@UFileInfoStruct@MixFileFactoryClass@@@@UAEXXZ	dead	absent from retail .text (masked body-scan over full segment, 0 hits); drift candidate is mid-function garbage

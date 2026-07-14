@@ -24,8 +24,12 @@ PATCH_DIR = ROOT / "build" / "patch"
 def obj_path(source):
     # Namespace objs by the source's repo-relative path, not its bare stem:
     # same-basename sources in different tree dirs must not collide.
+    # Encode uppercase as ^x because wine resolves paths case-insensitively:
+    # INI.cpp and ini.cpp would otherwise overwrite each other's obj.
     rel = Path(source).resolve().relative_to(ROOT)
-    return BUILD_DIR / ("_".join(rel.with_suffix("").parts) + ".obj")
+    stem = "_".join(rel.with_suffix("").parts)
+    encoded = "".join(("^" + c.lower()) if c.isupper() else c for c in stem)
+    return BUILD_DIR / (encoded + ".obj")
 NOOP_EXE = PATCH_DIR / "lotrbfme.noop.exe"
 DEFAULT_VC71_ROOT = (
     ROOT

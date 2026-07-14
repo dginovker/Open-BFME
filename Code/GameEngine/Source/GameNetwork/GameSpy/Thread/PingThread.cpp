@@ -83,7 +83,6 @@ private:
 	PingThreadClass *m_workerThreads[NumWorkerThreads];
 };
 
-// ?createNewPingerInterface@PingerInterface@@ present-unmatched
 PingerInterface* PingerInterface::createNewPingerInterface( void )
 {
 	return NEW Pinger;

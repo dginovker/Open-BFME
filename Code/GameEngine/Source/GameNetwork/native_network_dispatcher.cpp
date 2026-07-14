@@ -3451,14 +3451,7 @@ __declspec(naked) void BFMENetworkBackend::dispatchEvents()
 	}
 }
 
-extern "C" __declspec(naked) void BFMENetworkBackendDispatchCatch()
+extern "C" void *BFMENetworkBackendDispatchCatch()
 {
-	__asm {
-		__emit 0xb8
-		__emit 0xeb
-		__emit 0xca
-		__emit 0xa5
-		__emit 0x00
-		__emit 0xc3
-	}
+	return reinterpret_cast<void *>(0x00a5caeb);
 }

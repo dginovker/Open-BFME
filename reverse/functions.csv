@@ -9225,3 +9225,4 @@ _$E4,,0x00C6E270,50,Code/Libraries/Source/WWVegas/WWLib/cpudetect.cpp,matched,ic
 _$E7,,0x00C6E270,50,Code/Libraries/Source/WWVegas/WWLib/cpudetect.cpp,matched,icf-owner-E28
 _$E33,,0x00C6B750,23,Code/GameEngine/Source/GameClient/MapUtil.cpp,matched,icf-owner-E312
 ?createRayEffectByTemplate@W3DGameClient@@UAEXPBUCoord3D@@0PBVThingTemplate@@@Z,,0x006FBC00,129,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,
+??_GPopupMessageData@@MAEPAXI@Z,,0x0078D240,30,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,

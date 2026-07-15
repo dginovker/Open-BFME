@@ -1018,3 +1018,6 @@ _$E4	landed	exact-50B-ICF-alias-of-E28-at-0x00C6E270
 _$E7	landed	exact-50B-ICF-alias-of-E28-at-0x00C6E270
 _$E33	landed	true-start-0x00C6B750_exact-23B-ICF-alias-of-E312
 _$E30	no-match	drift-candidate-0x00C6E36F-is-mid-function_current-30B-vector-initializer-unresolved
+_$E28	no-match	Current VS2003 object emits only _$E9 and _$E10; _$E28 is absent, so this drift row is stale/compiler-numbering dependent.
+?emit_ArmorUpgrade@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z	dead	Corrected Ghidra boundary 0x11D090 is already claimed by matched ArmorUpgrade::friend_newModuleInstance; synthetic emitter is an ICF twin, not a separate retail function.
+_$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is absent, so this static-initializer drift row is stale/compiler-numbering dependent.

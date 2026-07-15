@@ -63,7 +63,12 @@ HEAD = "// cl: /DNDEBUG /DWIN32 /D_WINDOWS /MD /EHsc\n// stlport\n#define Matrix
 
 
 def candidates(area, names):
-    ported = {p.stem.lower() for p in ROOT.glob("src/**/*.cpp")}
+    legacy_ported = {p.stem.casefold() for p in ROOT.glob("src/**/*.cpp")}
+    code_root = ROOT / "Code"
+    landed_paths = {
+        p.relative_to(code_root).as_posix().casefold()
+        for p in code_root.rglob("*.cpp")
+    }
     if names:
         out = []
         for name in names:
@@ -74,8 +79,13 @@ def candidates(area, names):
                 print(f"  no reference file named {stem}.cpp")
             out += hits
         return out
-    return [p for p in sorted((REF / area).rglob("*.cpp"))
-            if p.stem.lower() not in ported and not p.name.startswith(".sweep_")]
+    return [
+        p
+        for p in sorted((REF / area).rglob("*.cpp"))
+        if p.stem.casefold() not in legacy_ported
+        and p.relative_to(REF).as_posix().casefold() not in landed_paths
+        and not p.name.startswith(".sweep_")
+    ]
 
 
 def sweep_one(ref_cpp):

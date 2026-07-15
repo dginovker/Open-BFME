@@ -9226,3 +9226,5 @@ _$E7,,0x00C6E270,50,Code/Libraries/Source/WWVegas/WWLib/cpudetect.cpp,matched,ic
 _$E33,,0x00C6B750,23,Code/GameEngine/Source/GameClient/MapUtil.cpp,matched,icf-owner-E312
 ?createRayEffectByTemplate@W3DGameClient@@UAEXPBUCoord3D@@0PBVThingTemplate@@@Z,,0x006FBC00,129,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,
 ??_GPopupMessageData@@MAEPAXI@Z,,0x0078D240,30,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,
+?parseTransitionToFX@TerrainRoadType@@KAXPAVINI@@PAX1PBX@Z,,0x00601E90,263,Code/masm_dumps/_parseTransitionToFX_TerrainRoadType__KAXPAVINI__PAX1PBX_Z_601E90.asm,matched,
+?parseTransitionToOCL@TerrainRoadType@@KAXPAVINI@@PAX1PBX@Z,,0x00601D40,263,Code/masm_dumps/_parseTransitionToOCL_TerrainRoadType__KAXPAVINI__PAX1PBX_Z_601D40.asm,matched,

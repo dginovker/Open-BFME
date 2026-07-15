@@ -8858,3 +8858,4 @@ _$E6,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,matched
 ??4?$DynamicVectorClass@U_ENUM_VALUE@EnumParameterClass@@@@QAEAAV0@ABV0@@Z,,0x00907320,33,Code/Libraries/Source/WWVegas/WWSaveLoad/parameter.cpp,matched,
 ?Create@?$SimpleDefinitionFactoryClass@VTwiddlerClass@@$0OAAA@$1?TwiddlerClassName@@3PADA@@UBEPAVDefinitionClass@@XZ,,0x006FB600,86,Code/Libraries/Source/WWVegas/WWSaveLoad/twiddler.cpp,matched,
 ??_GPopupMessageData@@MAEPAXI@Z,,0x0078D240,30,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,
+??$find@PBW4ScienceType@@W41@@_STL@@YAPBW4ScienceType@@PBW41@0ABW41@@Z,,0x000CD0A0,30,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,

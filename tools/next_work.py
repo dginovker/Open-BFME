@@ -117,7 +117,12 @@ def sweep_winners(mine):
     last = {}
     for row in rows:
         last[row["file"]] = row
-    ported = {p.stem.lower() for p in (ROOT / "src" / "zh").glob("*.cpp")}
+    legacy_ported = {p.stem.casefold() for p in (ROOT / "src" / "zh").glob("*.cpp")}
+    code_root = ROOT / "Code"
+    landed_paths = {
+        p.relative_to(code_root).as_posix().casefold()
+        for p in code_root.rglob("*.cpp")
+    }
     out = []
     for file, row in last.items():
         if row["status"] != "ok":
@@ -125,7 +130,10 @@ def sweep_winners(mine):
         score = (to_int(row["landable"], 10, f"report.csv landable for {file}")
                  if has_landable and row.get("landable", "") != ""
                  else to_int(row["located"], 10, f"report.csv located for {file}"))
-        if score < 1 or Path(file).stem.lower() in ported or not mine(file):
+        if (score < 1
+                or Path(file).stem.casefold() in legacy_ported
+                or file.casefold() in landed_paths
+                or not mine(file)):
             continue
         if not (REF / file).exists():
             print(f"warning: report.csv names a missing reference file, skipped: {file}",

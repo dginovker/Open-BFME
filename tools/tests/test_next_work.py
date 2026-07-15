@@ -78,8 +78,12 @@ def test_sweep_winners_validated(data):
     for c in data["sweep_winners"]:
         ref = REF / c["file"]
         assert ref.exists(), f"candidate reference file missing: {ref}"
-        dest = ROOT / "src" / "zh" / (Path(c["file"]).stem.lower() + ".cpp")
-        assert not dest.exists(), f"candidate already landed: {dest}"
+        legacy_dest = ROOT / "src" / "zh" / (Path(c["file"]).stem.lower() + ".cpp")
+        assert not legacy_dest.exists(), f"candidate already landed: {legacy_dest}"
+        code_rel = Path(*Path(c["file"]).parts)
+        code_dest = ROOT / "Code" / code_rel
+        code_siblings = {p.name.casefold() for p in code_dest.parent.glob("*.cpp")}
+        assert code_dest.name.casefold() not in code_siblings, f"candidate already landed: {code_dest}"
         assert c["command"].startswith("python3 tools/land_zh.py "), c["command"]
         assert c["landable"] >= 1, f"unlandable candidate listed: {c}"
     print(f"PASS sweep winners validated: {len(data['sweep_winners'])} candidates, "

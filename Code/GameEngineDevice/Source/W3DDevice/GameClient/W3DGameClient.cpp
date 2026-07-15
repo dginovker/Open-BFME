@@ -152,12 +152,18 @@ void W3DGameClient::addScorch(const Coord3D *pos, Real radius, Scorches type)
 //-------------------------------------------------------------------------------------------------
 /** create an effect that requires a start and end location */
 //-------------------------------------------------------------------------------------------------
-// ?createRayEffectByTemplate@W3DGameClient@@UAEXPBUCoord3D@@0PBVThingTemplate@@@Z present-unmatched
+// BFME ThingFactory::newDrawable takes (template, status, drawableID).
+class BFMEThingFactory : public ThingFactory
+{
+public:
+	Drawable *newDrawable(const ThingTemplate *tmplate, DrawableStatus statusBits, Int drawableID);
+};
+
 void W3DGameClient::createRayEffectByTemplate( const Coord3D *start, 
 																		 const Coord3D *end, 
 																		 const ThingTemplate* tmpl )
 {
-	Drawable *draw = TheThingFactory->newDrawable(tmpl);
+	Drawable *draw = ((BFMEThingFactory *)TheThingFactory)->newDrawable(tmpl, DRAWABLE_STATUS_NONE, -1);
 
 	if( draw )
 	{

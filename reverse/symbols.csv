@@ -3216,3 +3216,5 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ??_ETexProjectClass@@UAEPAXI@Z,0x0004822F,pinharvest x1 (thunk)
 ??0TwiddlerClass@@QAE@XZ,0x000063A2,pinharvest x1 (thunk)
 ??0TwiddlerClass@@QAE@XZ,0x0000CDC9,pinharvest x1 (thunk)
+?newDrawable@BFMEThingFactory@@QAEPAVDrawable@@PBVThingTemplate@@W4DrawableStatus@@H@Z,0x0002C336
+?setPosition@Drawable@@QAEXPBUCoord3D@@@Z,0x0001742C

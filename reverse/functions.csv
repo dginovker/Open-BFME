@@ -8857,3 +8857,4 @@ _$E6,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,matched
 ??4?$DynamicVectorClass@VStringClass@@@@QAEAAV0@ABV0@@Z,,0x00907320,33,Code/Libraries/Source/WWVegas/WWSaveLoad/parameter.cpp,matched,
 ??4?$DynamicVectorClass@U_ENUM_VALUE@EnumParameterClass@@@@QAEAAV0@ABV0@@Z,,0x00907320,33,Code/Libraries/Source/WWVegas/WWSaveLoad/parameter.cpp,matched,
 ?Create@?$SimpleDefinitionFactoryClass@VTwiddlerClass@@$0OAAA@$1?TwiddlerClassName@@3PADA@@UBEPAVDefinitionClass@@XZ,,0x006FB600,86,Code/Libraries/Source/WWVegas/WWSaveLoad/twiddler.cpp,matched,
+?createRayEffectByTemplate@W3DGameClient@@UAEXPBUCoord3D@@0PBVThingTemplate@@@Z,,0x006FBC00,129,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,

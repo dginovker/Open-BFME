@@ -1009,3 +1009,4 @@ _$E7	dead	absent from retail .text (masked body-scan over full segment, 0 hits)
 ?Save@LightClass@@UAE_NAAVChunkSaveClass@@@Z	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
 ?Load@LightClass@@UAE_NAAVChunkLoadClass@@@Z	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
 ??1MeshLoadContextClass@@EAE@XZ	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
+?createRayEffectByTemplate@W3DGameClient@@UAEXPBUCoord3D@@0PBVThingTemplate@@@Z	landed	BFME newDrawable(template, DRAWABLE_STATUS_NONE, -1) via local BFMEThingFactory cast; pins newDrawable@0x2C336 setPosition@0x1742C; size 129 at 0x6FBC00

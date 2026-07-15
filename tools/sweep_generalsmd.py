@@ -43,6 +43,7 @@ REPORT_FIELDS = ["file", "status", "located", "ambiguous", "unlocated", "blocker
 INCLUDE_DIRS = [
     SHIMS,
     REF / "GameEngine" / "Include",
+    REF / "GameEngine" / "Include" / "GameNetwork",
     REF / "GameEngine" / "Source",
     REF / "Libraries" / "Include",
     REF / "Libraries" / "Source",

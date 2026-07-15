@@ -32,6 +32,7 @@ DEST = ROOT / "Code"
 REF_REL = "reference/CnC_Generals_Zero_Hour/GeneralsMD/Code"
 HEAD = (
     f"// cl: /DNDEBUG /DWIN32 /D_WINDOWS /MD /EHsc /Ireference/shims/sweep /I{REF_REL}/GameEngine/Include"
+    f" /I{REF_REL}/GameEngine/Include/GameNetwork"
     f" /I{REF_REL}/GameEngine/Source /I{REF_REL}/Libraries/Include /I{REF_REL}/Libraries/Source"
     f" /I{REF_REL}/Libraries/Source/Compression /I{REF_REL}/Libraries/Source/debug"
     f" /I{REF_REL}/Libraries/Source/WWVegas /I{REF_REL}/Libraries/Source/WWVegas/WWLib"
@@ -51,7 +52,11 @@ def land(name, dry_run=False):
         print(f"{name}: FAIL — no reference file {name}.cpp under {REF.relative_to(ROOT)}")
         return False
     dest = DEST / hits[0].relative_to(REF)
-    if dest.exists():
+    existing = next(
+        (path for path in dest.parent.glob("*.cpp") if path.name.casefold() == dest.name.casefold()),
+        None,
+    )
+    if existing is not None:
         print(f"{name}: SKIP — {dest.relative_to(ROOT)} already exists (already landed)")
         return True
     if dry_run:

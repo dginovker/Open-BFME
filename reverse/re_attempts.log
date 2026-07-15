@@ -1009,3 +1009,5 @@ _$E7	dead	absent from retail .text (masked body-scan over full segment, 0 hits)
 ?Save@LightClass@@UAE_NAAVChunkSaveClass@@@Z	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
 ?Load@LightClass@@UAE_NAAVChunkLoadClass@@@Z	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
 ??1MeshLoadContextClass@@EAE@XZ	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
+?parseTransitionToFX@TerrainRoadType@@KAXPAVINI@@PAX1PBX@Z	landed	MASM exact 263B at true retail boundary 0x601E90; stale drift size 231 omitted two exception tails
+?parseTransitionToOCL@TerrainRoadType@@KAXPAVINI@@PAX1PBX@Z	landed	MASM exact 263B at true retail boundary 0x601D40; stale drift size 231 omitted two exception tails

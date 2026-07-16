@@ -9979,3 +9979,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ??$?8D@@YA_NABV?$StringBase@D@@PBD@Z,0x0002A71B,0x000AA230,20,Code/masm_dumps/8D_YA_NABV_StringBase_D_PBD_Z_000AA230_83309783.asm,matched,icf-owner=??8@YA_NABV?$StringBase@D@@PBD@Z; MASM exact retail export dump
 ??$?9D@@YA_NABV?$StringBase@D@@PBD@Z,0x000153A7,0x000D0D30,21,Code/masm_dumps/9D_YA_NABV_StringBase_D_PBD_Z_000D0D30_16e46bf9.asm,matched,icf-owner=??9@YA_NABV?$StringBase@D@@PBD@Z; MASM exact retail export dump
 ??$?MG@@YA_NABV?$StringBase@G@@0@Z,0x00005D94,0x0054EB50,24,Code/masm_dumps/MG_YA_NABV_StringBase_G_0_Z_0054EB50_19c1eacb.asm,matched,icf-owner=??M@YA_NABV?$StringBase@G@@0@Z; MASM exact retail export dump
+??1?$CategoryModuleTemplate@$05@FXParticleSystem@@UAE@XZ,0x00022C64,0x005BFDD0,33,Code/masm_dumps/1_CategoryModuleTemplate_05_FXParticleSystem_UAE_XZ_005BFDD0_a2b834c8.asm,matched,MASM exact retail export dump; Ghidra boundary

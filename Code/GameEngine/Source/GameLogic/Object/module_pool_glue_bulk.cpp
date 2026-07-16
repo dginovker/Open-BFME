@@ -225,11 +225,11 @@
 namespace ModulePoolGlueBulk
 {
 
-// Calling the class's pool placement new (the same expression ZH's
-// friend_newModuleInstance uses) emits both it and the getClassMemoryPool it
-// calls, byte-identical to the copies modulefactory.cpp used to produce.
+// Keep a separate pool-placement helper so getClassMemoryPool is emitted, while
+// the candidate body itself follows BFME's global-allocation module factory.
 #define EMIT_MODULE_POOL_GLUE( cls ) \
-	Module *emit_##cls( Thing *thing, const ModuleData *moduleData ) { return newInstance( cls )( thing, moduleData ); }
+	Module *pool_emit_##cls( Thing *thing, const ModuleData *moduleData ) { return newInstance( cls )( thing, moduleData ); } \
+	Module *emit_##cls( Thing *thing, const ModuleData *moduleData ) { return ::new cls( thing, moduleData ); }
 
 EMIT_MODULE_POOL_GLUE( AIUpdateInterface )
 EMIT_MODULE_POOL_GLUE( ArmorUpgrade )

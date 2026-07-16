@@ -10162,3 +10162,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?empty@?$set@PAVGameWindow@@U?$less@PAVGameWindow@@@_STL@@V?$allocator@PAVGameWindow@@@3@@_STL@@QBE_NXZ,,0x0061E630,11,Code/GameEngine/Source/GameNetwork/GameSpy/Chat.cpp,matched,tiny-locate
 ?ClearStatus@UDP@@QAEXXZ,,0x006DF1E0,8,Code/GameEngine/Source/GameNetwork/udp.cpp,matched,tiny-locate
 ?GadgetCheckBoxGetEnabledColor@@YAHPAVGameWindow@@@Z,,0x00857200,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DCheckBox.cpp,matched,tiny-locate
+?GadgetCheckBoxGetEnabledUncheckedBoxColor@@YAHPAVGameWindow@@@Z,,0x00857460,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DCheckBox.cpp,matched,tiny-locate

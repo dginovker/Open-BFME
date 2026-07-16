@@ -9973,3 +9973,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ??$?6D@@YAAAVDebug@@AAV0@ABV?$StringBase@D@@@Z,0x00016F86,0x0005F590,52,Code/masm_dumps/6D_YAAAVDebug_AAV0_ABV_StringBase_D_Z_0005F590_cfda0104.asm,matched,icf-owner=??6@YAAAVDebug@@AAV0@ABV?$StringBase@D@@@Z; MASM exact retail export dump
 ??$?8G@@YA_NABV?$StringBase@G@@0@Z,0x000447DD,0x000607A0,20,Code/masm_dumps/8G_YA_NABV_StringBase_G_0_Z_000607A0_162f1154.asm,matched,icf-owner=??8@YA_NABV?$StringBase@G@@0@Z; MASM exact retail export dump
 ??$?MD@@YA_NABV?$StringBase@D@@0@Z,0x0000FAAB,0x00062ED0,24,Code/masm_dumps/MD_YA_NABV_StringBase_D_0_Z_00062ED0_e1577e6f.asm,matched,icf-owner=??M@YA_NABV?$StringBase@D@@0@Z; MASM exact retail export dump
+??$?8D@@YA_NABV?$StringBase@D@@0@Z,0x000259B9,0x0007FFF0,20,Code/masm_dumps/8D_YA_NABV_StringBase_D_0_Z_0007FFF0_a0456e98.asm,matched,icf-owner=??8@YA_NABV?$StringBase@D@@0@Z; MASM exact retail export dump

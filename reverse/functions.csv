@@ -299,12 +299,15 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??$swap@UTempIndexStruct@@@_STL@@YAXAAUTempIndexStruct@@0@Z,,0x0018F130,53,Code/Libraries/Source/WWVegas/WW3D2/sortingrenderer.cpp,matched,
 ??$swap@V?$TPoint2D@H@@@@YAXAAV?$TPoint2D@H@@0@Z,,0x002608E0,33,Code/Libraries/Source/WWVegas/WWLib/xsurface.cpp,matched,
 ??$uninitialized_fill_n@PAEIE@_STL@@YAPAEPAEIABE@Z,,0x0074A9C0,57,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,
+??0?$BitFlags@$0BB@@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0?$BitFlags@$0CG@@@QAE@XZ,,0x005818F0,12,Code/GameEngine/Source/GameLogic/Object/Body/HiveStructureBody.cpp,matched,
 ??0?$BitFlags@$0CN@@@QAE@XZ,,0x005818F0,12,Code/GameEngine/Source/Common/System/BuildAssistant.cpp,matched,
 ??0?$BitFlags@$0ED@@@QAE@XZ,,0x00124D40,15,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ??0?$BitFlags@$0HE@@@QAE@XZ,,0x001C2970,18,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,matched,
 ??0?$BitFlags@$0HF@@@QAE@XZ,,0x001C4AB0,18,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ??0?$BitFlags@$0IA@@@QAE@XZ,,0x001C2970,18,Code/GameEngine/Source/GameLogic/Object/Behavior/FireWeaponWhenDeadBehavior.cpp,matched,
+??0?$BitFlags@$0L@@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$BitFlags@$0N@@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0?$BlitTransRemapXlat@E@@QAE@PBE0@Z,,0x0043CD10,25,Code/Libraries/Source/WWVegas/WWLib/convert.cpp,matched,
 ??0?$BlitTransZRemapXlat@E@@QAE@PBQBEPBE@Z,,0x0043CD10,25,Code/Libraries/Source/WWVegas/WWLib/convert.cpp,matched,
 ??0?$BlitTransZRemapXlat@G@@QAE@PBQBEPBG@Z,,0x0043CD10,25,Code/Libraries/Source/WWVegas/WWLib/convert.cpp,matched,
@@ -455,6 +458,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?LIFE_EVENT_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIFE_EVENT_MODULE_NAME@2@3QBDBVLifeEventModule@2@VLifeEventModuleTemplate@2@VParticleLifeEventModule@2@VParticleLifeEventModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,0x0002B1B6,0x5e1e00,32,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VParticleTerrainCollisionModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@ABV01@@Z,0x0000B195,0x5e1f50,39,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VParticleTerrainCollisionModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,0x00020E23,0x5e1f10,32,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
+??0?$DLNodeClass@USmudge@@@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameClient/System/Smudge.cpp,matched,ICF alias of existing matched body
+??0?$DLNodeClass@USmudgeSet@@@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameClient/System/Smudge.cpp,matched,ICF alias of existing matched body
 ??0?$DefaultModuleTemplate@$00@FXParticleSystem@@QAE@ABV01@@Z,,0x005D51A0,62,Code/masm_dumps/__0__DefaultModuleTemplate__00_FXParticleSystem__QAE_ABV01__Z_5D51A0.asm,matched,MASM exact retail dump
 ??0?$DefaultModuleTemplate@$00@FXParticleSystem@@QAE@XZ,0x00016F95,0x005DD370,106,Code/masm_dumps/___0__DefaultModuleTemplate__00_FXParticleSystem__Q_5DD370.asm,matched,
 ??0?$DefaultModuleTemplate@$01@FXParticleSystem@@QAE@ABV01@@Z,,0x005D8400,62,Code/masm_dumps/__0__DefaultModuleTemplate__01_FXParticleSystem__QAE_ABV01__Z_5D8400.asm,matched,MASM exact retail dump
@@ -630,6 +635,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0?$StringBase@G@@AAE@PBG@Z,0x00888DE0,0x888de0,82,Code/Libraries/Source/WWVegas/WWLib/string_base.cpp,matched,
 ??0?$StringBase@G@@AAE@PBGH@Z,0x00888DA0,0x888da0,56,Code/Libraries/Source/WWVegas/WWLib/string_base.cpp,matched,
 ??0?$StringBase@G@@AAE@XZ,0x0001431C,0x000834C0,9,Code/Libraries/Source/WWVegas/WWLib/string_base.cpp,matched,initializes string data pointer to null
+??0?$TPoint2D@H@@QAE@HH@Z,,0x0016A160,18,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,ICF alias of existing matched body
+??0?$TPoint2D@M@@QAE@MM@Z,,0x0016A160,18,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,ICF alias of existing matched body
 ??0?$TPoint3D@H@@QAE@HHH@Z,,0x003D65B0,25,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
 ??0?$TPoint3D@M@@QAE@MMM@Z,,0x0052CE40,25,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
 ??0?$TRect@H@@QAE@HHHH@Z,,0x0005BA90,32,Code/Libraries/Source/WWVegas/WWLib/xsurface.cpp,matched,
@@ -665,27 +672,136 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0?$VectorClass@VVector2@@@@QAE@HPBVVector2@@@Z,,0x00913500,175,Code/Libraries/Source/WWVegas/WW3D2/pointgr.cpp,matched,
 ??0?$VectorClass@VVector3@@@@QAE@HPBVVector3@@@Z,,0x007B9EE0,174,Code/Libraries/Source/WWVegas/WW3D2/pointgr.cpp,matched,
 ??0?$VectorClass@VVector4@@@@QAE@HPBVVector4@@@Z,,0x00912FE0,173,Code/Libraries/Source/WWVegas/WW3D2/meshmdl.cpp,matched,
+??0?$_Base_bitset@$00@_STL@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0?$_Base_bitset@$01@_STL@@QAE@XZ,,0x005818F0,12,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,
 ??0?$_Base_bitset@$02@_STL@@QAE@XZ,,0x000CED80,15,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ??0?$_Base_bitset@$03@_STL@@QAE@XZ,,0x001C2A00,18,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
+??0?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
+??0?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@_STL@@QAE@PAII@Z,,0x0016A160,18,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
+??0?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@_STL@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
+??0?$_Bit_iter@_NPB_N@_STL@@QAE@ABU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@1@@Z,,0x007E59E0,19,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
+??0?$_Bit_iter@_NPB_N@_STL@@QAE@PAII@Z,,0x0016A160,18,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
 ??0?$_Bvector_base@V?$allocator@_N@_STL@@@_STL@@QAE@ABV?$allocator@_N@1@@Z,,0x002CB320,38,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,
 ??0?$_Deque_base@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVMapObject@@@1@I@Z,,0x008FA9A0,76,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
 ??0?$_Deque_base@PAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVPartitionCell@@@1@I@Z,,0x008FA9F0,76,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
 ??0?$_Deque_base@PAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVSightingInfo@@@1@I@Z,,0x009ED980,76,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,resweep exact post-GWM-fix (exact-ambiguous)
+??0?$_Deque_iterator@PAVPartitionCell@@U?$_Nonconst_traits@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABU01@@Z,,0x007E70A0,35,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0?$_Deque_iterator@PAVSightingInfo@@U?$_Nonconst_traits@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABU01@@Z,,0x007E70A0,35,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0?$_Hashtable_iterator@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAE@PAU?$_Hashtable_node@U?$pair@$$CBHW4Relationship@@@_STL@@@1@PAV?$hashtable@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@1@@Z,,0x0016A160,18,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Hashtable_iterator@U?$pair@$$CBIW4Relationship@@@_STL@@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@_STL@@QAE@PAU?$_Hashtable_node@U?$pair@$$CBIW4Relationship@@@_STL@@@1@PAV?$hashtable@U?$pair@$$CBIW4Relationship@@@_STL@@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@1@@Z,,0x0016A160,18,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Hashtable_iterator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@W4NameKeyType@@U?$hash@W4NameKeyType@@@rts@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@U?$equal_to@W4NameKeyType@@@5@V?$allocator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@@_STL@@QAE@PAU?$_Hashtable_node@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@1@PAV?$hashtable@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@W4NameKeyType@@U?$hash@W4NameKeyType@@@rts@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@U?$equal_to@W4NameKeyType@@@5@V?$allocator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@@1@@Z,,0x0016A160,18,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBHW4Relationship@@@_STL@@U?$_Const_traits@U?$pair@$$CBHW4Relationship@@@_STL@@@2@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAE@ABU?$_Ht_iterator@U?$pair@$$CBHW4Relationship@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHW4Relationship@@@_STL@@@2@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@1@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBHW4Relationship@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHW4Relationship@@@_STL@@@2@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBHW4Relationship@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHW4Relationship@@@_STL@@@2@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAE@PBU?$_Hashtable_node@U?$pair@$$CBHW4Relationship@@@_STL@@@1@PBV?$hashtable@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@1@@Z,,0x0016A160,18,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBIW4Relationship@@@_STL@@U?$_Const_traits@U?$pair@$$CBIW4Relationship@@@_STL@@@2@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@_STL@@QAE@ABU?$_Ht_iterator@U?$pair@$$CBIW4Relationship@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBIW4Relationship@@@_STL@@@2@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@1@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBIW4Relationship@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBIW4Relationship@@@_STL@@@2@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBIW4Relationship@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBIW4Relationship@@@_STL@@@2@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@_STL@@QAE@PBU?$_Hashtable_node@U?$pair@$$CBIW4Relationship@@@_STL@@@1@PBV?$hashtable@U?$pair@$$CBIW4Relationship@@@_STL@@IU?$hash@I@2@U?$_Select1st@U?$pair@$$CBIW4Relationship@@@_STL@@@2@U?$equal_to@I@2@V?$allocator@U?$pair@$$CBIW4Relationship@@@_STL@@@2@@1@@Z,,0x0016A160,18,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@U?$_Const_traits@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@W4NameKeyType@@U?$hash@W4NameKeyType@@@rts@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@U?$equal_to@W4NameKeyType@@@6@V?$allocator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@@_STL@@QAE@PBU?$_Hashtable_node@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@1@PBV?$hashtable@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@W4NameKeyType@@U?$hash@W4NameKeyType@@@rts@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@U?$equal_to@W4NameKeyType@@@5@V?$allocator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@@1@@Z,,0x0016A160,18,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
+??0?$_Ht_iterator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@W4NameKeyType@@U?$hash@W4NameKeyType@@@rts@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@U?$equal_to@W4NameKeyType@@@6@V?$allocator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@@_STL@@QAE@PBU?$_Hashtable_node@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@1@PBV?$hashtable@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@W4NameKeyType@@U?$hash@W4NameKeyType@@@rts@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@U?$equal_to@W4NameKeyType@@@5@V?$allocator@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@2@@1@@Z,,0x0016A160,18,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
 ??0?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@QAE@ABU?$less@VAsciiString@@@1@ABV?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@1@@Z,,0x00195910,56,Code/GameEngine/Source/Common/INI/INIMapCache.cpp,matched,
 ??0?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@3@@_STL@@QAE@ABV01@@Z,,0x000C09D0,199,Code/GameEngine/Source/Common/INI/INIMapCache.cpp,matched,
 ??0?$_Rb_tree@W4NameKeyType@@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@U?$_Select1st@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@3@U?$less@W4NameKeyType@@@3@V?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@3@@_STL@@QAE@ABU?$less@W4NameKeyType@@@1@ABV?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@1@@Z,,0x00140680,56,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,
 ??0?$_Rb_tree_base@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@V?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@1@@Z,,0x000BF0D0,35,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,
+??0?$_Rb_tree_iterator@PBVThingTemplate@@U?$_Const_traits@PBVThingTemplate@@@_STL@@@_STL@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_Rb_tree_iterator@U?$pair@$$CBHVGameSpyGroupRoom@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHVGameSpyGroupRoom@@@_STL@@@2@@_STL@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_Rb_tree_iterator@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@2@@_STL@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@IPAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVPartitionCell@@@1@I@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
 ??0?$_STLP_alloc_proxy@IPAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_,,0x009ED3F0,11,Code/masm_dumps/___0___STLP_alloc_proxy_IPAVSightingInfo__V__alloca_9ED3F0.asm,matched,
+??0?$_STLP_alloc_proxy@IPAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVSightingInfo@@@1@I@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@IU?$_Hashtable_node@U?$pair@$$CBHW4Relationship@@@_STL@@@_STL@@V?$allocator@U?$_Hashtable_node@U?$pair@$$CBHW4Relationship@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Hashtable_node@U?$pair@$$CBHW4Relationship@@@_STL@@@_STL@@@1@I@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@IU?$_Hashtable_node@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@_STL@@V?$allocator@U?$_Hashtable_node@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Hashtable_node@U?$pair@$$CBW4NameKeyType@@VFXList@@@_STL@@@_STL@@@1@I@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAHHV?$allocator@H@_STL@@@_STL@@QAE@ABV?$allocator@H@1@PAH@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
 ??0?$_STLP_alloc_proxy@PAIIV?$allocator@I@_STL@@@_STL@@QAE@ABV?$allocator@I@1@PAI@Z,,0x00031039,5,Code/masm_dumps/__0___STLP_alloc_proxy_PAIIV__allocator_I__STL____STL__QAE_ABV__allocator_I_1_PAI_Z_31039.asm,matched,MASM exact retail dump
+??0?$_STLP_alloc_proxy@PAPAPAVPartitionCell@@PAPAV1@V?$allocator@PAPAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVPartitionCell@@@1@PAPAPAVPartitionCell@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
 ??0?$_STLP_alloc_proxy@PAPAPAVSightingInfo@@PAPAV1@V?$allocator@PAPAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAPAVSightingInfo@@@1@PAPAPAVSightingInfo@@@Z,,0x009ED3E0,11,Code/masm_dumps/__0___STLP_alloc_proxy_PAPAPAVSightingInfo__PAPAV1_V__allocator_PAPAVSightingInfo____STL____STL__QAE_ABV__allo_9ED3E0.asm,matched,MASM exact retail dump
+??0?$_STLP_alloc_proxy@PAPAVLocomotor@@PAV1@V?$allocator@PAVLocomotor@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVLocomotor@@@1@PAPAVLocomotor@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAPAVObject@@PAV1@V?$allocator@PAVObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVObject@@@1@PAPAVObject@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAPAVObjectCreationNugget@@PAV1@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVObjectCreationNugget@@@1@PAPAVObjectCreationNugget@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAPAVWeaponTemplate@@PAV1@V?$allocator@PAVWeaponTemplate@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVWeaponTemplate@@@1@PAPAVWeaponTemplate@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAPBVFXList@@PBV1@V?$allocator@PBVFXList@@@_STL@@@_STL@@QAE@ABV?$allocator@PBVFXList@@@1@PAPBVFXList@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAPBVModuleData@@PBV1@V?$allocator@PBVModuleData@@@_STL@@@_STL@@QAE@ABV?$allocator@PBVModuleData@@@1@PAPBVModuleData@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAPBVObjectCreationList@@PBV1@V?$allocator@PBVObjectCreationList@@@_STL@@@_STL@@QAE@ABV?$allocator@PBVObjectCreationList@@@1@PAPBVObjectCreationList@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVDrawable@@@_STL@@U12@V?$allocator@U?$_List_node@PAVDrawable@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVDrawable@@@_STL@@@1@PAU?$_List_node@PAVDrawable@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVFXNugget@@@_STL@@U12@V?$allocator@U?$_List_node@PAVFXNugget@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVFXNugget@@@_STL@@@1@PAU?$_List_node@PAVFXNugget@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVFloatingTextData@@@_STL@@U12@V?$allocator@U?$_List_node@PAVFloatingTextData@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVFloatingTextData@@@_STL@@@1@PAU?$_List_node@PAVFloatingTextData@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVGameWindow@@@_STL@@U12@V?$allocator@U?$_List_node@PAVGameWindow@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVGameWindow@@@_STL@@@1@PAU?$_List_node@PAVGameWindow@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVKindOfPercentProductionChange@@@_STL@@U12@V?$allocator@U?$_List_node@PAVKindOfPercentProductionChange@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVKindOfPercentProductionChange@@@_STL@@@1@PAU?$_List_node@PAVKindOfPercentProductionChange@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVNetPacket@@@_STL@@U12@V?$allocator@U?$_List_node@PAVNetPacket@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVNetPacket@@@_STL@@@1@PAU?$_List_node@PAVNetPacket@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/NetPacket.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVObject@@@_STL@@U12@V?$allocator@U?$_List_node@PAVObject@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVObject@@@_STL@@@1@PAU?$_List_node@PAVObject@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVSuperweaponInfo@@@_STL@@U12@V?$allocator@U?$_List_node@PAVSuperweaponInfo@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVSuperweaponInfo@@@_STL@@@1@PAU?$_List_node@PAVSuperweaponInfo@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVTeamPrototype@@@_STL@@U12@V?$allocator@U?$_List_node@PAVTeamPrototype@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVTeamPrototype@@@_STL@@@1@PAU?$_List_node@PAVTeamPrototype@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVWindowLayout@@@_STL@@U12@V?$allocator@U?$_List_node@PAVWindowLayout@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVWindowLayout@@@_STL@@@1@PAU?$_List_node@PAVWindowLayout@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@PAVWorldAnimationData@@@_STL@@U12@V?$allocator@U?$_List_node@PAVWorldAnimationData@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@PAVWorldAnimationData@@@_STL@@@1@PAU?$_List_node@PAVWorldAnimationData@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@UCoord3D@@@_STL@@U12@V?$allocator@U?$_List_node@UCoord3D@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@UCoord3D@@@_STL@@@1@PAU?$_List_node@UCoord3D@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@UHistoricWeaponDamageInfo@@@_STL@@U12@V?$allocator@U?$_List_node@UHistoricWeaponDamageInfo@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@UHistoricWeaponDamageInfo@@@_STL@@@1@PAU?$_List_node@UHistoricWeaponDamageInfo@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@USpecialPowerReadyTimerType@@@_STL@@U12@V?$allocator@U?$_List_node@USpecialPowerReadyTimerType@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@USpecialPowerReadyTimerType@@@_STL@@@1@PAU?$_List_node@USpecialPowerReadyTimerType@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@UWeaponDelayedDamageInfo@WeaponStore@@@_STL@@U12@V?$allocator@U?$_List_node@UWeaponDelayedDamageInfo@WeaponStore@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@UWeaponDelayedDamageInfo@WeaponStore@@@_STL@@@1@PAU?$_List_node@UWeaponDelayedDamageInfo@WeaponStore@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@UupgradePair@@@_STL@@U12@V?$allocator@U?$_List_node@UupgradePair@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@UupgradePair@@@_STL@@@1@PAU?$_List_node@UupgradePair@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@VAsciiString@@@_STL@@U12@V?$allocator@U?$_List_node@VAsciiString@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@VAsciiString@@@_STL@@@1@PAU?$_List_node@VAsciiString@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@VBuddyMessage@@@_STL@@U12@V?$allocator@U?$_List_node@VBuddyMessage@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@VBuddyMessage@@@_STL@@@1@PAU?$_List_node@VBuddyMessage@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_List_node@W4ObjectID@@@_STL@@U12@V?$allocator@U?$_List_node@W4ObjectID@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_List_node@W4ObjectID@@@_STL@@@1@PAU?$_List_node@W4ObjectID@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/JetAIUpdate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@H@_STL@@U12@V?$allocator@U?$_Rb_tree_node@H@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@H@_STL@@@1@PAU?$_Rb_tree_node@H@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@PAVGameWindow@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@PAVGameWindow@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@PAVGameWindow@@@_STL@@@1@PAU?$_Rb_tree_node@PAVGameWindow@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@PBVThingTemplate@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@PBVThingTemplate@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@PBVThingTemplate@@@_STL@@@1@PAU?$_Rb_tree_node@PBVThingTemplate@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBHVAsciiString@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHVAsciiString@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHVAsciiString@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBHVAsciiString@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBHVBuddyInfo@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHVBuddyInfo@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHVBuddyInfo@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBHVBuddyInfo@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBHVGameSpyGroupRoom@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHVGameSpyGroupRoom@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBHVGameSpyGroupRoom@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBHVGameSpyGroupRoom@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PAVNamedTimerInfo@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PAVNamedTimerInfo@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PAVNamedTimerInfo@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PAVNamedTimerInfo@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PBVFXList@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PBVFXList@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PBVFXList@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@PBVFXList@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@UCoord3D@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@V?$list@PAVSuperweaponInfo@@V?$allocator@PAVSuperweaponInfo@@@_STL@@@_STL@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@V?$list@PAVSuperweaponInfo@@V?$allocator@PAVSuperweaponInfo@@@_STL@@@_STL@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@V?$list@PAVSuperweaponInfo@@V?$allocator@PAVSuperweaponInfo@@@_STL@@@_STL@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@V?$list@PAVSuperweaponInfo@@V?$allocator@PAVSuperweaponInfo@@@_STL@@@_STL@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VAudioEventRTS@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VAudioEventRTS@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VAudioEventRTS@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VAudioEventRTS@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBVAsciiString@@VPlayerInfo@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@M@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@U?$pair@$$CB_KUModelConditionInfo@@@_STL@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@U?$pair@$$CB_KUModelConditionInfo@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@U?$pair@$$CB_KUModelConditionInfo@@@_STL@@@_STL@@@1@PAU?$_Rb_tree_node@U?$pair@$$CB_KUModelConditionInfo@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$_Rb_tree_node@VAsciiString@@@_STL@@U12@V?$allocator@U?$_Rb_tree_node@VAsciiString@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$_Rb_tree_node@VAsciiString@@@_STL@@@1@PAU?$_Rb_tree_node@VAsciiString@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$pair@W4ObjectID@@I@_STL@@U12@V?$allocator@U?$pair@W4ObjectID@@I@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$pair@W4ObjectID@@I@_STL@@@1@PAU?$pair@W4ObjectID@@I@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/AI/partition_solver.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAU?$pair@W4ObjectID@@W41@@_STL@@U12@V?$allocator@U?$pair@W4ObjectID@@W41@@_STL@@@2@@_STL@@QAE@ABV?$allocator@U?$pair@W4ObjectID@@W41@@_STL@@@1@PAU?$pair@W4ObjectID@@W41@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/AI/partition_solver.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUAngleFXInfo@@U1@V?$allocator@UAngleFXInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@UAngleFXInfo@@@1@PAUAngleFXInfo@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUAnimSet@GenericObjectCreationNugget@@U12@V?$allocator@UAnimSet@GenericObjectCreationNugget@@@_STL@@@_STL@@QAE@ABV?$allocator@UAnimSet@GenericObjectCreationNugget@@@1@PAUAnimSet@GenericObjectCreationNugget@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUCoord2D@@U1@V?$allocator@UCoord2D@@@_STL@@@_STL@@QAE@ABV?$allocator@UCoord2D@@@1@PAUCoord2D@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUCoord3D@@U1@V?$allocator@UCoord3D@@@_STL@@@_STL@@QAE@ABV?$allocator@UCoord3D@@@1@PAUCoord3D@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUFXBoneInfo@@U1@V?$allocator@UFXBoneInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@UFXBoneInfo@@@1@PAUFXBoneInfo@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUHideShowSubObjInfo@ModelConditionInfo@@U12@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@1@PAUHideShowSubObjInfo@ModelConditionInfo@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUICoord2D@@U1@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAE@ABV?$allocator@UICoord2D@@@1@PAUICoord2D@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUModelConditionInfo@@U1@V?$allocator@UModelConditionInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@UModelConditionInfo@@@1@PAUModelConditionInfo@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUNugget@ModuleInfo@@U12@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@UNugget@ModuleInfo@@@1@PAUNugget@ModuleInfo@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUParticleSysBoneInfo@@U1@V?$allocator@UParticleSysBoneInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@UParticleSysBoneInfo@@@1@PAUParticleSysBoneInfo@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUParticleSysTrackerType@W3DModelDraw@@U12@V?$allocator@UParticleSysTrackerType@W3DModelDraw@@@_STL@@@_STL@@QAE@ABV?$allocator@UParticleSysTrackerType@W3DModelDraw@@@1@PAUParticleSysTrackerType@W3DModelDraw@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUPayload@DeliverPayloadNugget@@U12@V?$allocator@UPayload@DeliverPayloadNugget@@@_STL@@@_STL@@QAE@ABV?$allocator@UPayload@DeliverPayloadNugget@@@1@PAUPayload@DeliverPayloadNugget@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUPrereqUnitRec@ProductionPrerequisite@@U12@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@QAE@ABV?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@1@PAUPrereqUnitRec@ProductionPrerequisite@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUWeaponBarrelInfo@ModelConditionInfo@@U12@V?$allocator@UWeaponBarrelInfo@ModelConditionInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@UWeaponBarrelInfo@ModelConditionInfo@@@1@PAUWeaponBarrelInfo@ModelConditionInfo@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAUWeaponRecoilInfo@W3DModelDraw@@U12@V?$allocator@UWeaponRecoilInfo@W3DModelDraw@@@_STL@@@_STL@@QAE@ABV?$allocator@UWeaponRecoilInfo@W3DModelDraw@@@1@PAUWeaponRecoilInfo@W3DModelDraw@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAV?$BitFlags@$0HF@@@V1@V?$allocator@V?$BitFlags@$0HF@@@@_STL@@@_STL@@QAE@ABV?$allocator@V?$BitFlags@$0HF@@@@1@PAV?$BitFlags@$0HF@@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@V12@V?$allocator@V?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@@2@@_STL@@QAE@ABV?$allocator@V?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@@1@PAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@1@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAVArmorTemplateSet@@V1@V?$allocator@VArmorTemplateSet@@@_STL@@@_STL@@QAE@ABV?$allocator@VArmorTemplateSet@@@1@PAVArmorTemplateSet@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAVAsciiString@@V1@V?$allocator@VAsciiString@@@_STL@@@_STL@@QAE@ABV?$allocator@VAsciiString@@@1@PAVAsciiString@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAVPlayerTemplate@@V1@V?$allocator@VPlayerTemplate@@@_STL@@@_STL@@QAE@ABV?$allocator@VPlayerTemplate@@@1@PAVPlayerTemplate@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/RTS/PlayerTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAVProductionPrerequisite@@V1@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@QAE@ABV?$allocator@VProductionPrerequisite@@@1@PAVProductionPrerequisite@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAVUnicodeString@@V1@V?$allocator@VUnicodeString@@@_STL@@@_STL@@QAE@ABV?$allocator@VUnicodeString@@@1@PAVUnicodeString@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAVW3DAnimationInfo@@V1@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@VW3DAnimationInfo@@@1@PAVW3DAnimationInfo@@@Z,,0x009ED3F0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAVWeaponTemplateSet@@V1@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@QAE@ABV?$allocator@VWeaponTemplateSet@@@1@PAVWeaponTemplateSet@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAW4ObjectID@@W41@V?$allocator@W4ObjectID@@@_STL@@@_STL@@QAE@ABV?$allocator@W4ObjectID@@@1@PAW4ObjectID@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
+??0?$_STLP_alloc_proxy@PAW4ScienceType@@W41@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAE@ABV?$allocator@W4ScienceType@@@1@PAW4ScienceType@@@Z,,0x009ED3F0,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
 ??0?$_Vector_base@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@IABV?$allocator@PAVObjectCreationNugget@@@1@@Z,,0x0003F418,5,Code/masm_dumps/__0___Vector_base_PAVObjectCreationNugget__V__allocator_PAVObjectCreationNugget____STL____STL__QAE_IABV__alloc_3F418.asm,matched,MASM exact retail dump
+??0?$bitset@$0BB@@_STL@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0?$bitset@$0CG@@_STL@@QAE@XZ,,0x005818F0,12,Code/GameEngine/Source/GameLogic/Object/Body/HiveStructureBody.cpp,matched,
 ??0?$bitset@$0CN@@_STL@@QAE@XZ,,0x005818F0,12,Code/GameEngine/Source/GameLogic/Object/Behavior/DumbProjectileBehavior.cpp,matched,
 ??0?$bitset@$0ED@@_STL@@QAE@XZ,,0x000D01D0,15,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ??0?$bitset@$0HE@@_STL@@QAE@XZ,,0x001C2970,18,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,matched,
 ??0?$bitset@$0HF@@_STL@@QAE@XZ,,0x001C3BA0,18,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ??0?$bitset@$0IA@@_STL@@QAE@XZ,,0x001C2970,18,Code/GameEngine/Source/GameLogic/Object/Behavior/FireWeaponWhenDeadBehavior.cpp,matched,
+??0?$bitset@$0L@@_STL@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$bitset@$0N@@_STL@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0?$deque@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVMapObject@@@1@@Z,,0x008FAE70,46,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,
 ??0?$deque@PAVPartitionCell@@V?$allocator@PAVPartitionCell@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVPartitionCell@@@1@@Z,,0x008FAEA0,46,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,
 ??0?$deque@PAVSightingInfo@@V?$allocator@PAVSightingInfo@@@_STL@@@_STL@@QAE@ABV?$allocator@PAVSightingInfo@@@1@@Z,,0x009EDFB0,46,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,shrunk 180->46: was riding a stale obj; trailing funcs not emitted by current toolchain
@@ -696,25 +812,36 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0?$map@W4NameKeyType@@VObjectCreationList@@U?$less@W4NameKeyType@@@_STL@@V?$allocator@U?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@@4@@_STL@@QAE@XZ,,0x00147020,54,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,
 ??0?$pair@$$CBGE@_STL@@QAE@ABGABE@Z,,0x00663D00,24,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,
 ??0?$pair@$$CBGE@_STL@@QAE@ABU01@@Z,,0x00664220,21,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,
+??0?$pair@$$CBHI@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+??0?$pair@$$CBHPAVGameSpyStagingRoom@@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
 ??0?$pair@$$CBHVBuddyInfo@@@_STL@@QAE@ABHABVBuddyInfo@@@Z,,0x000A9D50,30,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,matched,
 ??0?$pair@$$CBHVGameSpyGroupRoom@@@_STL@@QAE@ABHABVGameSpyGroupRoom@@@Z,,0x000A9D50,30,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,
 ??0?$pair@$$CBHVMultiplayerColorDefinition@@@_STL@@QAE@ABHABVMultiplayerColorDefinition@@@Z,,0x000A9D50,30,Code/GameEngine/Source/Common/MultiplayerSettings.cpp,matched,
 ??0?$pair@$$CBHVPSPlayerStats@@@_STL@@QAE@ABHABVPSPlayerStats@@@Z,,0x000A9D80,30,Code/GameEngine/Source/GameNetwork/GameSpy/Thread/PersistentStorageThread.cpp,matched,
+??0?$pair@$$CBHW4Relationship@@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$pair@$$CBIW4Relationship@@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
 ??0?$pair@$$CBI_N@_STL@@QAE@ABU01@@Z,,0x000E6AC0,19,Code/GameEngine/Source/Common/System/FileSystem.cpp,matched,
+??0?$pair@$$CBV?$BitFlags@$0BB@@@PBVWeaponTemplateSet@@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0?$pair@$$CBV?$BitFlags@$0L@@@PBVArmorTemplateSet@@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
 ??0?$pair@$$CBVUnicodeString@@V1@@_STL@@QAE@ABU01@@Z,,0x0068E820,81,Code/GameEngine/Source/GameNetwork/LANGameInfo.cpp,matched,
 ??0?$pair@$$CBVUnicodeString@@V1@@_STL@@QAE@ABVUnicodeString@@0@Z,,0x0068E750,80,Code/GameEngine/Source/GameNetwork/LANGameInfo.cpp,matched,
 ??0?$pair@$$CBVUnicodeString@@_N@_STL@@QAE@ABU01@@Z,,0x0044D270,27,Code/GameEngine/Source/GameClient/LanguageFilter.cpp,matched,
 ??0?$pair@$$CBVUnicodeString@@_N@_STL@@QAE@ABVUnicodeString@@AB_N@Z,,0x0044D1E0,28,Code/GameEngine/Source/GameClient/LanguageFilter.cpp,matched,
 ??0?$pair@$$CBW4LocomotorSetType@@V?$vector@PBVLocomotorTemplate@@V?$allocator@PBVLocomotorTemplate@@@_STL@@@_STL@@@_STL@@QAE@ABU01@@Z,,0x00136930,90,Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp,matched,
 ??0?$pair@$$CBW4LocomotorSetType@@V?$vector@PBVLocomotorTemplate@@V?$allocator@PBVLocomotorTemplate@@@_STL@@@_STL@@@_STL@@QAE@ABW4LocomotorSetType@@ABV?$vector@PBVLocomotorTemplate@@V?$allocator@PBVLocomotorTemplate@@@_STL@@@1@@Z,,0x001420C0,92,Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp,matched,
+??0?$pair@$$CBW4NameKeyType@@M@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
+??0?$pair@$$CBW4NameKeyType@@PAVLocomotorTemplate@@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,ICF alias of existing matched body
 ??0?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@QAE@ABU01@@Z,,0x0075EA00,91,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
 ??0?$pair@$$CBW4NameKeyType@@UPristineBoneInfo@@@_STL@@QAE@ABW4NameKeyType@@ABUPristineBoneInfo@@@Z,,0x00761100,94,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
 ??0?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@QAE@ABU01@@Z,,0x000695F0,37,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ??0?$pair@$$CBW4NameKeyType@@VModuleTemplate@ModuleFactory@@@_STL@@QAE@ABW4NameKeyType@@ABVModuleTemplate@ModuleFactory@@@Z,,0x00069580,38,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ??0?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@QAE@ABU01@@Z,,0x00261440,90,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,resweep exact post-GWM-fix (exact-ambiguous)
 ??0?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@QAE@ABW4NameKeyType@@ABVObjectCreationList@@@Z,,0x001D7810,92,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,resweep exact post-GWM-fix (exact-ambiguous)
+??0?$pair@$$CBW4NameKeyType@@W4VeterancyLevel@@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
 ??0?$pair@$$CB_KUModelConditionInfo@@@_STL@@QAE@ABU01@@Z,,0x000E45D0,35,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
 ??0?$pair@U?$_Ht_iterator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@U?$equal_to@VAsciiString@@@6@V?$allocator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@@_STL@@_N@_STL@@QAE@ABU?$_Ht_iterator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@VAsciiString@@U?$hash@VAsciiString@@@rts@@U?$_Select1st@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@U?$equal_to@VAsciiString@@@6@V?$allocator@U?$pair@$$CBVAsciiString@@PAVParticleSystemTemplate@@@_STL@@@2@@1@AB_N@Z,,0x0008F600,28,Code/GameEngine/Source/GameClient/System/ParticleSys.cpp,matched,
+??0?$pair@W4ObjectID@@I@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/GameLogic/AI/partition_solver.cpp,matched,ICF alias of existing matched body
+??0?$pair@W4ObjectID@@W41@@_STL@@QAE@ABU01@@Z,,0x007E59E0,19,Code/GameEngine/Source/GameLogic/AI/partition_solver.cpp,matched,ICF alias of existing matched body
 ??0?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QAE@ABV01@@Z,,0x00135A10,76,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,
 ??0?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QAE@ABV01@@Z,,0x001D7300,76,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,
 ??0?$vector@PBVLocomotorTemplate@@V?$allocator@PBVLocomotorTemplate@@@_STL@@@_STL@@QAE@ABV01@@Z,,0x00135A10,76,Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp,matched,
@@ -736,14 +863,17 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ActiveCategoryStackClass@@QAE@XZ,,0x00AFF0E0,75,Code/Libraries/Source/WWVegas/WWDebug/wwmemlog.cpp,matched,
 ??0AggregateDefClass@@QAE@AAVRenderObjClass@@@Z,,0x00981720,162,Code/Libraries/Source/WWVegas/WW3D2/agg_def.cpp,matched,
 ??0AggregateDefClass@@QAE@ABV0@@Z,,0x00981670,162,Code/Libraries/Source/WWVegas/WW3D2/agg_def.cpp,matched,
+??0AggregateLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/agg_def.cpp,matched,ICF alias of existing matched body
 ??0AggregatePrototypeClass@@QAE@PAVAggregateDefClass@@@Z,,0x000EC7B0,25,Code/Libraries/Source/WWVegas/WW3D2/agg_def.cpp,matched,
 ??0AlphaVectorStruct@@QAE@ABU0@@Z,,0x00979200,37,Code/Libraries/Source/WWVegas/WW3D2/sphereobj.cpp,matched,
 ??0Anim2D@@QAE@PAVAnim2DTemplate@@PAVAnim2DCollection@@@Z,,0x005BA4D0,297,Code/GameEngine/Source/GameClient/System/Anim2D_ctor.asm,matched,
 ??0Anim2DCollection@@QAE@XZ,,0x005BA370,26,Code/GameEngine/Source/GameClient/System/Anim2D.cpp,matched,
 ??0Anim2DTemplate@@QAE@VAsciiString@@@Z,,0x005BAD80,124,Code/GameEngine/Source/GameClient/System/Anim2DTemplate_ctor_dtor.asm,matched,
+??0AnimSet@GenericObjectCreationNugget@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
 ??0AnimateWindow@@QAE@XZ,,0x0045CEE0,62,Code/GameEngine/Source/GameClient/GUI/AnimateWindowManager.cpp,matched,
 ??0AnimationSteeringUpdateModuleData@@QAE@XZ,,0x000A71C0,25,Code/GameEngine/Source/GameLogic/Object/Update/AnimationSteeringUpdate.cpp,matched,
 ??0ArchiveFile@@QAE@XZ,,0x009D10B0,87,Code/masm_dumps/__0ArchiveFile__QAE_XZ_9D10B0.asm,matched,MASM exact retail dump
+??0ArmorTemplateSet@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
 ??0ArmorUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0003582D,5,Code/masm_dumps/__0ArmorUpgrade__QAE_PAVThing__PBVModuleData___Z_3582D.asm,matched,MASM exact retail dump
 ??0AsciiString@@QAE@ABV0@@Z,0x000416AF,0x0005EE50,19,Code/Libraries/Source/WWVegas/WWLib/ascii_string.cpp,matched,AsciiString copy constructor
 ??0AsciiString@@QAE@ABV0@HH@Z,0x0000F1C8,0x000DF970,31,Code/Libraries/Source/WWVegas/WWLib/ascii_string.cpp,matched,AsciiString copy substring
@@ -752,6 +882,8 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0AsciiString@@QAE@PBD@Z,0x00012C42,0x0005EE70,19,Code/Libraries/Source/WWVegas/WWLib/ascii_string.cpp,matched,AsciiString(const char *)
 ??0AsciiString@@QAE@PBDH@Z,0x0002B832,0x000AFF00,24,Code/Libraries/Source/WWVegas/WWLib/ascii_string.cpp,matched,AsciiString(const char *
 ??0AsciiString@@QAE@XZ,0x00017BD9,0x00062030,9,Code/Libraries/Source/WWVegas/WWLib/ascii_string.cpp,matched,default constructor sets text pointer to null
+??0AssetIterator@@IAE@XZ,,0x0005C6C0,16,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
+??0AssistanceRequestData@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
 ??0AutoDepositUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0000C15D,5,Code/masm_dumps/__0AutoDepositUpdate__QAE_PAVThing__PBVModuleData___Z_C15D.asm,matched,MASM exact retail dump
 ??0AutoFindHealingUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0002E12C,5,Code/masm_dumps/__0AutoFindHealingUpdate__QAE_PAVThing__PBVModuleData___Z_2E12C.asm,matched,MASM exact retail dump
 ??0AutoFindHealingUpdateModuleData@@QAE@XZ,,0x0001D4EE,5,Code/masm_dumps/__0AutoFindHealingUpdateModuleData__QAE_XZ_1D4EE.asm,matched,MASM exact retail dump
@@ -764,6 +896,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0BattlePlanUpdateModuleData@@QAE@XZ,,0x0003025B,5,Code/masm_dumps/__0BattlePlanUpdateModuleData__QAE_XZ_3025B.asm,matched,MASM exact retail dump
 ??0BeaconClientUpdateModuleData@@QAE@XZ,,0x000286C3,5,Code/masm_dumps/__0BeaconClientUpdateModuleData__QAE_XZ_286C3.asm,matched,MASM exact retail dump
 ??0BehaviorModule@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00121F60,46,Code/GameEngine/Source/GameLogic/Object/Update/StructureToppleUpdate.cpp,matched,
+??0BehaviorModuleInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0BenchProfile@@QAE@XZ,,0x0007BC10,30,Code/GameEngine/Source/Common/GameLOD.cpp,matched,
 ??0BezFwdIterator@@QAE@XZ,,0x000B6880,60,Code/GameEngine/Source/Common/bez_fwd_iterator.cpp,matched,
 ??0BezierSegment@@QAE@MMMMMMMMMMMM@Z,,0x008D64A0,88,Code/GameEngine/Source/Common/Bezier/BezierSegment.cpp,matched,
@@ -779,6 +912,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0BoxEmissionVolumeInfo@FXParticleSystem@@QAE@XZ,0x0001A78F,0x005D5E00,23,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,default constructor sets vtable and zeros box half-extents
 ??0BoxEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002D402,0x005D5FC0,98,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0BoxEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@XZ,0x00048A72,0x005D5F40,51,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
+??0BoxLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,matched,ICF alias of existing matched body
 ??0BoxRenderObjClass@@QAE@ABV0@@Z,,0x00957790,87,Code/Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,matched,
 ??0BoxRenderObjClass@@QAE@XZ,,0x00956C70,127,Code/Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,matched,
 ??0BridgeBehaviorModuleData@@QAE@XZ,,0x0001F7F3,5,Code/masm_dumps/__0BridgeBehaviorModuleData__QAE_XZ_1F7F3.asm,matched,MASM exact retail dump
@@ -819,6 +953,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0CastResultStruct@@QAE@XZ,,0x006099F0,38,Code/Libraries/Source/WWVegas/WWMath/colmathaabox.cpp,matched,
 ??0Cftp@@QAE@XZ,,0x00885AD0,18,Code/masm_dumps/__0Cftp__QAE_XZ_885AD0.asm,matched,MASM exact retail dump
 ??0ChinookMoveToBldgState@@QAE@PAVStateMachine@@@Z,,0x0005D9A0,32,Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/ChinookAIUpdate.cpp,matched,
+??0ChunkInputStream@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,ICF alias of existing matched body
 ??0ChunkSaveClass@@QAE@PAVFileClass@@@Z,,0x009E1690,91,Code/Libraries/Source/WWVegas/WWLib/chunkio.cpp,matched,
 ??0CollectionPrototypeClass@@QAE@PAVCollectionDefClass@@@Z,,0x000EC7B0,25,Code/Libraries/Source/WWVegas/WW3D2/collect.cpp,matched,
 ??0CollisionTestClass@@QAE@ABV0@@Z,,0x001A1B70,25,Code/Libraries/Source/WWVegas/WW3D2/mesh.cpp,matched,
@@ -845,6 +980,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0Coord3D@@QAE@XZ,0x00016C93,0x00083330,3,Code/Libraries/Source/WWVegas/WWMath/coord3d.cpp,matched,empty constructor returns self
 ??0CrateSystem@@QAE@XZ,,0x003799D0,69,Code/GameEngine/Source/GameLogic/System/CrateSystem.cpp,matched,
 ??0CriticalSectionClass@@QAE@XZ,,0x009DB420,39,Code/Libraries/Source/WWVegas/WWLib/mutex.cpp,matched,
+??0CullLinkClass@@QAE@PAVCullSystemClass@@@Z,,0x00087A50,18,Code/Libraries/Source/WWVegas/WWMath/gridcull.cpp,matched,ICF alias of existing matched body
 ??0CullNodeStruct@AABTreeBuilderClass@@QAE@XZ,,0x0096B500,37,Code/masm_dumps/__0CullNodeStruct_AABTreeBuilderClass__QAE_XZ_96B500.asm,matched,MASM exact retail dump
 ??0CullSystemClass@@QAE@XZ,,0x008E2140,16,Code/Libraries/Source/WWVegas/WWMath/cullsys.cpp,matched,
 ??0CullableClass@@QAE@XZ,,0x008E21F0,47,Code/Libraries/Source/WWVegas/WWMath/cullsys.cpp,matched,
@@ -859,7 +995,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0CylindricalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0004AEB7,0x005D7860,106,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0D3DXMATRIX@@QAE@MMMMMMMMMMMMMMMM@Z,,0x000B68D0,116,Code/GameEngine/Source/Common/bezier_segment.cpp,matched,
 ??0D3DXVECTOR4@@QAE@MMMM@Z,,0x005F09D0,32,Code/GameEngine/Source/Common/bez_fwd_iterator.cpp,matched,
+??0DLINK_TeamMemberList@Object@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0DX8FVFCategoryContainer@@QAE@I_N@Z,,0x009469B0,126,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
+??0DX8_CleanupHook@@QAE@XZ,,0x00061D90,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,ICF alias of existing matched body
 ??0DataChunkTableOfContents@@QAE@XZ,,0x001025D0,20,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,
 ??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0001E04C,0x005D4F60,32,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0DefaultAlphaModuleInfo@FXParticleSystem@@QAE@XZ,0x00045D04,0x005EE4C0,102,Code/GameEngine/Source/GameClient/System/FXParticleSystem/DefaultAlphaModuleInfo_ctor.asm,matched,SEH array-ctor via MASM exact bytes
@@ -883,6 +1021,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0DisplayString@@QAE@XZ,,0x000D16F0,23,Code/GameEngine/Source/GameClient/DisplayString.cpp,matched,
 ??0DisplayStringManager@@QAE@XZ,,0x0000F7A9,5,Code/masm_dumps/__0DisplayStringManager__QAE_XZ_F7A9.asm,matched,MASM exact retail dump
 ??0DistLODPrototypeClass@@QAE@PAVDistLODDefClass@@@Z,,0x00149E30,25,Code/Libraries/Source/WWVegas/WW3D2/distlod.cpp,matched,
+??0DockUpdateInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
 ??0DockUpdateModuleData@@QAE@XZ,,0x0002C54D,5,Code/masm_dumps/__0DockUpdateModuleData__QAE_XZ_2C54D.asm,matched,MASM exact retail dump
 ??0DownloadManager@@QAE@XZ,,0x0001958D,5,Code/masm_dumps/__0DownloadManager__QAE_XZ_1958D.asm,matched,MASM exact retail dump
 ??0DownloadManagerMunkee@@QAE@XZ,,0x004C7490,22,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/DownloadMenu.cpp,matched,
@@ -906,14 +1045,19 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0FXDamageParticleSystemInfo@@QAE@XZ,,0x000E49D0,10,Code/GameEngine/Source/GameLogic/Object/Damage/TransitionDamageFX.cpp,matched,
 ??0FXList@@QAE@ABV0@@Z,,0x00133BB0,31,Code/GameEngine/Source/GameClient/FXList.cpp,matched,
 ??0FXLocInfo@@QAE@XZ,,0x0010DB40,10,Code/GameEngine/Source/GameLogic/Object/Damage/TransitionDamageFX.cpp,matched,
+??0FXNugget@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
 ??0FastAllocatorGeneral@@QAE@XZ,,0x00B027B0,113,Code/masm_dumps/___0FastAllocatorGeneral__QAE_XZ_B027B0.asm,matched,
+??0FastCriticalSectionClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
 ??0FastFixedAllocator@@QAE@I@Z,,0x00B02760,45,Code/Libraries/Source/WWVegas/WWLib/FastAllocator.cpp,matched,
+??0FileClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WWLib/rawfile.cpp,matched,ICF alias of existing matched body
+??0FileFactoryClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WWLib/mixfile.cpp,matched,ICF alias of existing matched body
 ??0FileHeader@TagBlockFile@@QAE@XZ,,0x000CCC50,15,Code/Libraries/Source/WWVegas/WWLib/tagblock.cpp,matched,
 ??0FilePipe@@QAE@AAVFileClass@@@Z,,0x009E20C0,29,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,sibling
 ??0FileStraw@@QAE@AAVFileClass@@@Z,,0x009E2100,29,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,sibling
 ??0FindPositionOptions@@QAE@XZ,,0x00160B40,36,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,
 ??0FireSpreadUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0004B510,5,Code/masm_dumps/__0FireSpreadUpdate__QAE_PAVThing__PBVModuleData___Z_4B510.asm,matched,MASM exact retail dump
 ??0FireSpreadUpdateModuleData@@QAE@XZ,,0x000104B5,5,Code/masm_dumps/__0FireSpreadUpdateModuleData__QAE_XZ_104B5.asm,matched,MASM exact retail dump
+??0FireWeaponNugget@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
 ??0FireWeaponWhenDamagedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0002A379,5,Code/masm_dumps/__0FireWeaponWhenDamagedBehavior__QAE_PAVThing__PBVModuleData___Z_2A379.asm,matched,MASM exact retail dump
 ??0FirestormDynamicGeometryInfoUpdateModuleData@@QAE@XZ,,0x0001235A,5,Code/masm_dumps/__0FirestormDynamicGeometryInfoUpdateModuleData__QAE_XZ_1235A.asm,matched,MASM exact retail dump
 ??0FirewallHelperClass@@QAE@XZ,,0x00003AD5,5,Code/masm_dumps/__0FirewallHelperClass__QAE_XZ_3AD5.asm,matched,MASM exact retail dump
@@ -934,6 +1078,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0GameMessageParserArgumentType@@QAE@W4GameMessageArgumentDataType@@H@Z,,0x00623570,32,Code/GameEngine/Source/GameNetwork/GameMessageParser.cpp,matched,
 ??0GameResultsQueue@@QAE@XZ,,0x0000DAFD,5,Code/masm_dumps/__0GameResultsQueue__QAE_XZ_DAFD.asm,matched,MASM exact retail dump
 ??0GameResultsRequest@@QAE@ABV0@@Z,,0x0004355E,5,Code/masm_dumps/__0GameResultsRequest__QAE_ABV0__Z_4355E.asm,matched,MASM exact retail dump
+??0GameSpyInfoInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
 ??0GameTextManager@@QAE@XZ,,0x00438350,161,Code/GameEngine/Source/GameClient/GameText_GameTextManager.asm,matched,exact 161B via MASM (SEH ctor)
 ??0GenerateMinefieldBehaviorModuleData@@QAE@XZ,,0x0002B062,5,Code/masm_dumps/__0GenerateMinefieldBehaviorModuleData__QAE_XZ_2B062.asm,matched,MASM exact retail dump
 ??0GenericList@@QAE@XZ,,0x009E2EC0,103,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
@@ -961,15 +1106,20 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0HLodClass@@QAE@ABV0@@Z,,0x0097D850,206,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
 ??0HLodDefClass@@QAE@AAVHLodClass@@@Z,,0x0097D7A0,95,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
 ??0HLodDefClass@@QAE@XZ,,0x0097B7C0,35,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
+??0HLodLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,ICF alias of existing matched body
 ??0HLodPrototypeClass@@QAE@PAVHLodDefClass@@@Z,,0x00149F60,25,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
 ??0HModelPrototypeClass@@QAE@PAVHModelDefClass@@@Z,,0x000EC7B0,25,Code/Libraries/Source/WWVegas/WW3D2/proto.cpp,matched,
 ??0HTreeClass@@QAE@ABV0@@Z,,0x009527C0,264,Code/masm_dumps/___0HTreeClass__QAE_ABV0__Z_9527C0.asm,matched,
+??0HTreeIterator@@QAE@XZ,,0x003FD390,16,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
 ??0HashTableClass@@QAE@H@Z,,0x009E0060,55,Code/Libraries/Source/WWVegas/WWLib/hash.cpp,matched,
+??0HashTableIteratorClass@@QAE@AAVHashTableClass@@@Z,,0x00087A50,18,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
+??0HashableClass@@QAE@XZ,,0x0005C6C0,16,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,ICF alias of existing matched body
 ??0HealCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00046407,5,Code/masm_dumps/__0HealCrateCollide__QAE_PAVThing__PBVModuleData___Z_46407.asm,matched,MASM exact retail dump
 ??0HeightDieUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0000C199,5,Code/masm_dumps/__0HeightDieUpdate__QAE_PAVThing__PBVModuleData___Z_C199.asm,matched,MASM exact retail dump
 ??0HeightDieUpdateModuleData@@QAE@XZ,,0x0002C9D0,5,Code/masm_dumps/__0HeightDieUpdateModuleData__QAE_XZ_2C9D0.asm,matched,MASM exact retail dump
 ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002DB50,0x005D7560,39,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0HemisphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0002BF67,0x005D74F0,32,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
+??0HideShowSubObjInfo@ModelConditionInfo@@QAE@XZ,,0x00061D90,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
 ??0HijackerUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0003A382,5,Code/masm_dumps/__0HijackerUpdate__QAE_PAVThing__PBVModuleData___Z_3A382.asm,matched,MASM exact retail dump
 ??0HijackerUpdateModuleData@@QAE@XZ,,0x0006E2B0,26,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ??0ICoord2D@@QAE@ABUICoord2DBase@@@Z,0x00001EB0,0x0008AA60,19,Code/Libraries/Source/WWVegas/WWMath/icoord.cpp,matched,copies x/y from ICoord2DBase
@@ -984,7 +1134,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0INISection@@QAE@PAD@Z,,0x009E35D0,65,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
 ??0IPEnumeration@@QAE@XZ,,0x0039B050,13,Code/GameEngine/Source/GameNetwork/IPEnumeration.cpp,matched,
 ??0IRegion3D@@QAE@XZ,0x0002F270,0x007E6F30,3,Code/Libraries/Source/WWVegas/WWMath/region.cpp,matched,empty constructor returns self
+??0InputChunk@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,ICF alias of existing matched body
 ??0InputLightStruct@LightEnvironmentClass@@QAE@ABU01@@Z,,0x0094AD80,139,Code/Libraries/Source/WWVegas/WW3D2/lightenvironment.cpp,matched,
+??0InputStream@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,ICF alias of existing matched body
 ??0KeyClass@?$PrimitiveAnimationChannelClass@M@@QAE@XZ,,0x0037E190,10,Code/Libraries/Source/WWVegas/WW3D2/sphereobj.cpp,matched,
 ??0KeyClass@?$PrimitiveAnimationChannelClass@VVector2@@@@QAE@XZ,,0x000E49D0,10,Code/Libraries/Source/WWVegas/WW3D2/ringobj.cpp,matched,
 ??0KeyClass@?$PrimitiveAnimationChannelClass@VVector3@@@@QAE@XZ,,0x00473600,10,Code/Libraries/Source/WWVegas/WW3D2/sphereobj.cpp,matched,
@@ -1047,6 +1199,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0Matrix3D@@QAE@MMMMMMMMMMMM@Z,,0x008D64A0,88,Code/Libraries/Source/WWVegas/WWMath/matrix3d.cpp,matched,
 ??0Matrix3D@@QAE@_N@Z,,0x001B5AF0,55,Code/Libraries/Source/WWVegas/WW3D2/pivot.cpp,matched,
 ??0Matrix3x3@@QAE@ABV0@@Z,,0x005F6970,61,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,
+??0Matrix3x3@@QAE@_N@Z,,0x0060C330,46,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
 ??0Matrix4@@QAE@ABV0@@Z,,0x008D6680,103,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,
 ??0Matrix4@@QAE@ABVMatrix3D@@@Z,,0x006CB3A0,97,Code/Libraries/Source/WWVegas/WWMath/matrix3d.cpp,matched,
 ??0Matrix4@@QAE@ABVVector4@@000@Z,,0x005F0D80,112,Code/Libraries/Source/WWVegas/WW3D2/meshgeometry.cpp,matched,
@@ -1060,20 +1213,28 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0MaxHealthUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0003BEDA,5,Code/masm_dumps/__0MaxHealthUpgrade__QAE_PAVThing__PBVModuleData___Z_3BEDA.asm,matched,MASM exact retail dump
 ??0MemLogClass@@QAE@XZ,,0x00AFF830,42,Code/Libraries/Source/WWVegas/WWDebug/wwmemlog.cpp,matched,
 ??0MemLogMutexLockClass@@QAE@XZ,,0x00AFE770,45,Code/Libraries/Source/WWVegas/WWDebug/wwmemlog.cpp,matched,
+??0MemoryCounterClass@@QAE@XZ,,0x0005C6C0,16,Code/Libraries/Source/WWVegas/WWDebug/wwmemlog.cpp,matched,ICF alias of existing matched body
 ??0MemoryPoolBlob@@QAE@XZ,,0x0015A230,25,Code/GameEngine/Source/Common/System/GameMemory.cpp,matched,
+??0MemoryPoolObject@@QAE@ABV0@@Z,,0x00712E80,11,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+??0MemoryPoolObject@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
 ??0MeshLoadContextClass@@AAE@XZ,,0x00970180,61,Code/Libraries/Source/WWVegas/WW3D2/meshmdlio.cpp,matched,
 ??0MeshSaveContextClass@@QAE@XZ,,0x0096CAD0,28,Code/Libraries/Source/WWVegas/WW3D2/meshmdlio.cpp,matched,
 ??0MetaMap@@QAE@XZ,,0x000A71C0,25,Code/GameEngine/Source/GameClient/MessageStream/MetaEvent.cpp,matched,
+??0MilitarySubtitleData@InGameUI@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
 ??0MinMaxAABoxClass@@QAE@ABVVector3@@0@Z,,0x006C9EB0,46,Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp,matched,
 ??0MissileAIUpdateModuleData@@QAE@XZ,,0x00025EBE,5,Code/masm_dumps/__0MissileAIUpdateModuleData__QAE_XZ_25EBE.asm,matched,MASM exact retail dump
 ??0MissingAnimClass@@QAE@PBD@Z,,0x007BB710,123,Code/Libraries/Source/WWVegas/WW3D2/hanimmgr.cpp,matched,
+??0ModalWindow@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,ICF alias of existing matched body
 ??0ModelArrayClass@HLodClass@@QAE@XZ,,0x0097C970,50,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
 ??0ModelConditionUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00025810,5,Code/masm_dumps/__0ModelConditionUpgrade__QAE_PAVThing__PBVModuleData___Z_25810.asm,matched,MASM exact retail dump
+??0ModuleInfo@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
 ??0ModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00029B81,0x0005C7E0,9,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,copy constructor sets vtable
 ??0ModuleTemplate@FXParticleSystem@@QAE@XZ,0x00028E3E,0x0005C7C0,9,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,default constructor sets vtable
+??0ModuleTemplate@ModuleFactory@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
 ??0Money@@QAE@ABV0@@Z,,0x000E1540,27,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,matched,
 ??0MoneyCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0003E48C,5,Code/masm_dumps/__0MoneyCrateCollide__QAE_PAVThing__PBVModuleData___Z_3E48C.asm,matched,MASM exact retail dump
 ??0MultiListNodeClass@@QAE@XZ,,0x006D11C0,19,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,matched,
+??0MultiListObjectClass@@QAE@XZ,,0x0005C6C0,16,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
 ??0MutexClass@@QAE@PBD@Z,,0x009DB320,39,Code/Libraries/Source/WWVegas/WWLib/mutex.cpp,matched,
 ??0NetCommandList@@QAE@XZ,,0x000659C0,20,Code/GameEngine/Source/GameNetwork/NetCommandList.cpp,matched,
 ??0NetCommandWrapperListNode@@QAE@PAVNetWrapperCommandMsg@@@Z,,0x00676380,119,Code/GameEngine/Source/GameNetwork/NetCommandWrapperList.cpp,matched,
@@ -1081,6 +1242,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0NeutronMissileUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00048F2C,5,Code/masm_dumps/__0NeutronMissileUpdate__QAE_PAVThing__PBVModuleData___Z_48F2C.asm,matched,MASM exact retail dump
 ??0NoString@@QAE@XZ,,0x0010DB40,10,Code/GameEngine/Source/GameClient/GameText.cpp,matched,
 ??0NodeMotionStruct@@QAE@XZ,,0x005CD350,28,Code/Libraries/Source/WWVegas/WW3D2/hrawanim.cpp,matched,
+??0NotifyWeaponFiredInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
 ??0Null3DObjClass@@QAE@ABV0@@Z,,0x009726E0,54,Code/Libraries/Source/WWVegas/WW3D2/nullrobj.cpp,matched,
 ??0Null3DObjClass@@QAE@PBD@Z,,0x009726A0,49,Code/Libraries/Source/WWVegas/WW3D2/nullrobj.cpp,matched,
 ??0OBBoxClass@@QAE@ABV0@@Z,,0x00931420,97,Code/masm_dumps/__0OBBoxClass__QAE_ABV0__Z_931420.asm,matched,MASM exact retail dump
@@ -1092,13 +1254,17 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ObbCollisionStruct@@QAE@ABVOBBoxClass@@ABVVector3@@01@Z,,0x008E3760,218,Code/Libraries/Source/WWVegas/WWMath/colmathobbobb.cpp,matched,
 ??0ObbIntersectionStruct@@QAE@ABVOBBoxClass@@0@Z,,0x008E2A20,153,Code/Libraries/Source/WWVegas/WWMath/colmathobbobb.cpp,matched,
 ??0ObjectCreationList@@QAE@ABV0@@Z,,0x001D7680,76,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,
+??0ObjectCreationList@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
 ??0ObjectCreationListStore@@QAE@XZ,,0x001DAD50,114,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,
+??0ObjectCreationNugget@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+??0ObjectDrawInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
 ??0OptionPreferences@@QAE@XZ,,0x0003713C,5,Code/masm_dumps/__0OptionPreferences__QAE_XZ_3713C.asm,matched,MASM exact retail dump
 ??0OrphanData@@QAE@XZ,,0x0020A7A0,20,Code/GameEngine/Source/GameLogic/Object/Behavior/SpawnBehavior.cpp,matched,
 ??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00003FB2,0x005D6DA0,93,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0OrthoEmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x00046E75,0x005D6CE0,130,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0000ADDA,0x005D7000,62,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0OrthoEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@XZ,0x0000FAD3,0x005D6F30,106,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
+??0OutputChunk@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,ICF alias of existing matched body
 ??0OutputStream@DebugIOFlat@@AAE@PBDI@Z,,0x0088FEB0,156,Code/Libraries/Source/WWVegas/WWDebug/debug_io_flat.cpp,matched,
 ??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0000AEE8,0x005D7B20,71,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0OutwardEmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x000051C3,0x005D7A80,105,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
@@ -1115,15 +1281,28 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ParticleEmitterClass@@QAE@MIPAVVector3Randomizer@@VVector3@@0MMAAU?$ParticlePropertyStruct@VVector3@@@@AAU?$ParticlePropertyStruct@M@@33M331MMPAVTextureClass@@VShaderClass@@HH_NHHPBUW3dEmitterLinePropertiesStruct@@@Z,,0x0097E670,771,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,
 ??0ParticleEmitterDefClass@@QAE@ABV0@@Z,,0x0098E780,26,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,
 ??0ParticleEmitterDefClass@@QAE@XZ,,0x0098E660,26,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,
+??0ParticleEmitterLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,ICF alias of existing matched body
 ??0ParticleEmitterPrototypeClass@@QAE@PAVParticleEmitterDefClass@@@Z,,0x00149F90,25,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,
+??0ParticleSysBoneInfo@@QAE@XZ,,0x00061D90,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
 ??0ParticleSystemInfo@FXParticleSystem@@QAE@ABV01@@Z,0x000199E8,0x0005EF60,415,Code/masm_dumps/___0ParticleSystemInfo_FXParticleSystem__QAE_ABV01__5EF60.asm,matched,
 ??0ParticleSystemInfo@FXParticleSystem@@QAE@XZ,0x0003128C,0x005C1DD0,168,Code/masm_dumps/___0ParticleSystemInfo_FXParticleSystem__QAE_XZ_5C1DD0.asm,matched,
 ??0ParticleSystemTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00024E01,0x005D01F0,126,Code/masm_dumps/___0ParticleSystemTemplate_FXParticleSystem__QAE_AB_5D01F0.asm,matched,
 ??0ParticleSystemTemplate@FXParticleSystem@@QAE@ABVAsciiString@@@Z,0x0002677E,0x005CEB90,156,Code/masm_dumps/___0ParticleSystemTemplate_FXParticleSystem__QAE_AB_5CEB90.asm,matched,
+??0PartitionContactListNode@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0PartitionFilter@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
+??0PartitionFilterAcceptOnSquad@@QAE@PBVSquad@@@Z,,0x00087A50,18,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0PartitionFilterAcceptOnTeam@@QAE@PBVTeam@@@Z,,0x00087A50,18,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
 ??0PartitionFilterHordeMember@@QAE@PAVObject@@PBVHordeUpdateModuleData@@@Z,,0x0043CD10,25,Code/GameEngine/Source/GameLogic/Object/Update/HordeUpdate.cpp,matched,
 ??0PartitionFilterIsValidCarriage@@QAE@PAVObject@@PBVRailroadBehaviorModuleData@@@Z,,0x0043CD10,25,Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate/RailroadGuideAIUpdate.cpp,matched,
+??0PartitionFilterLineOfSight@@QAE@PBVObject@@@Z,,0x00087A50,18,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+??0PartitionFilterPolygonTrigger@@QAE@PBVPolygonTrigger@@@Z,,0x00087A50,18,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
+??0PartitionFilterRejectBehind@@QAE@PAVObject@@@Z,,0x00087A50,18,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
 ??0PartitionFilterRelationship@@QAE@PBVObject@@H@Z,,0x0043CD10,25,Code/GameEngine/Source/GameLogic/AI/ai.cpp,matched,
+??0PartitionFilterSameMapStatus@@QAE@PBVObject@@@Z,,0x00087A50,18,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
+??0PartitionFilterSamePlayer@@QAE@PBVPlayer@@@Z,,0x00087A50,18,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
 ??0PartitionSolver@@QAE@ABV?$vector@U?$pair@W4ObjectID@@I@_STL@@V?$allocator@U?$pair@W4ObjectID@@I@_STL@@@2@@_STL@@0W4SolutionType@@@Z,,0x00095FB0,135,Code/GameEngine/Source/GameLogic/AI/partition_solver.cpp,matched,
+??0PathfindServicesInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,ICF alias of existing matched body
+??0Payload@DeliverPayloadNugget@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
 ??0PhysicsBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,,0x000328C6,5,Code/masm_dumps/__0PhysicsBehavior__QAE_PAVThing__PBVModuleData___Z_328C6.asm,matched,MASM exact retail dump
 ??0PivotClass@@QAE@ABU0@@Z,,0x00972D70,383,Code/masm_dumps/___0PivotClass__QAE_ABU0__Z_972D70.asm,matched,
 ??0PivotMapClass@@QAE@XZ,,0x00974770,55,Code/Libraries/Source/WWVegas/WW3D2/hanim.cpp,matched,
@@ -1140,7 +1319,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0PointGroupClass@@QAE@XZ,,0x00912580,91,Code/Libraries/Source/WWVegas/WW3D2/pointgr.cpp,matched,
 ??0PoisonedBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,,0x002B0AD0,146,Code/masm_dumps/__0PoisonedBehavior__QAE_PAVThing__PBVModuleData__.asm,matched,
 ??0PoisonedBehaviorModuleData@@QAE@XZ,,0x0002EA73,5,Code/masm_dumps/__0PoisonedBehaviorModuleData__QAE_XZ_2EA73.asm,matched,MASM exact retail dump
+??0PolyRemover@@QAE@XZ,,0x003FD390,16,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
 ??0PolyRenderTaskClass@@QAE@PAVDX8PolygonRendererClass@@PAVMeshClass@@@Z,,0x00945790,28,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
+??0PopupMessageData@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
 ??0PowerPlantUpdateModuleData@@QAE@XZ,,0x000A71C0,25,Code/GameEngine/Source/GameLogic/Object/Update/PowerPlantUpdate.cpp,matched,
 ??0PrereqUnitRec@ProductionPrerequisite@@QAE@XZ,,0x001F2430,10,Code/GameEngine/Source/Common/RTS/ProductionPrerequisite.cpp,matched,
 ??0PristineBoneInfo@@QAE@ABU0@@Z,,0x0075B6A0,85,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
@@ -1151,10 +1332,13 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ProcessAnimateWindowSlideFromRightFast@@QAE@XZ,,0x004973C0,44,Code/GameEngine/Source/GameClient/GUI/ProcessAnimateWindow.cpp,matched,
 ??0ProcessAnimateWindowSlideFromTop@@QAE@XZ,,0x00495F30,44,Code/GameEngine/Source/GameClient/GUI/ProcessAnimateWindow.cpp,matched,
 ??0ProcessAnimateWindowSlideFromTopFast@@QAE@XZ,,0x00496F30,44,Code/GameEngine/Source/GameClient/GUI/ProcessAnimateWindow.cpp,matched,
+??0ProjectedShadowManager@@QAE@XZ,,0x00061D90,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp,matched,ICF alias of existing matched body
 ??0ProneUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x000425DC,5,Code/masm_dumps/__0ProneUpdate__QAE_PAVThing__PBVModuleData___Z_425DC.asm,matched,MASM exact retail dump
 ??0ProneUpdateModuleData@@QAE@XZ,,0x0002DABA,5,Code/masm_dumps/__0ProneUpdateModuleData__QAE_XZ_2DABA.asm,matched,MASM exact retail dump
 ??0PropagandaTowerBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0000EF5C,5,Code/masm_dumps/__0PropagandaTowerBehavior__QAE_PAVThing__PBVModuleData___Z_EF5C.asm,matched,MASM exact retail dump
 ??0PropagandaTowerBehaviorModuleData@@QAE@XZ,,0x00010B2C,5,Code/masm_dumps/__0PropagandaTowerBehaviorModuleData__QAE_XZ_10B2C.asm,matched,MASM exact retail dump
+??0PrototypeClass@@QAE@XZ,,0x0005C6C0,16,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,ICF alias of existing matched body
+??0PrototypeLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,ICF alias of existing matched body
 ??0ProxyArrayClass@@QAE@H@Z,,0x0097B780,48,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
 ??0ProxyRecordClass@@QAE@XZ,,0x009788D0,37,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
 ??0QuadDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00048AE5,0x005D88B0,11,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,copy constructor sets vtable pointer
@@ -1167,6 +1351,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0QueuedDownload@@QAE@XZ,,0x001DE7E0,22,Code/GameEngine/Source/GameNetwork/DownloadManager.cpp,matched,
 ??0QuickMatchPreferences@@QAE@XZ,,0x0002E802,5,Code/masm_dumps/__0QuickMatchPreferences__QAE_XZ_2E802.asm,matched,MASM exact retail dump
 ??0RGBColorKeyframe@FXParticleSystem@@QAE@XZ,0x00029677,0x0005C700,16,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,sets channels and frame to zero
+??0RObjIterator@@QAE@XZ,,0x003FD390,16,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
 ??0RTS3DScene@@QAE@XZ,,0x00A1FDCD,940,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene_0RTS3DScene.asm,matched,exact 940B via MASM
 ??0RadarUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0002A013,5,Code/masm_dumps/__0RadarUpdate__QAE_PAVThing__PBVModuleData___Z_2A013.asm,matched,MASM exact retail dump
 ??0RadarUpdateModuleData@@QAE@XZ,,0x0001670C,5,Code/masm_dumps/__0RadarUpdateModuleData__QAE_XZ_1670C.asm,matched,MASM exact retail dump
@@ -1192,6 +1377,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0Region3D@@QAE@XZ,0x00024573,0x000BEC80,3,Code/Libraries/Source/WWVegas/WWMath/region.cpp,matched,empty constructor returns self
 ??0RenderObjClass@@QAE@ABV0@@Z,,0x0091FFE0,402,Code/masm_dumps/___0RenderObjClass__QAE_ABV0__Z_91FFE0.asm,matched,
 ??0RenderObjClass@@QAE@XZ,,0x009204B0,208,Code/masm_dumps/___0RenderObjClass__QAE_XZ_9204B0.asm,matched,
+??0RenderObjIterator@@QAE@XZ,,0x003FD390,16,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
 ??0RenderObjectDrawModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00025B6C,0x005DE270,187,Code/masm_dumps/___0RenderObjectDrawModuleInfo_FXParticleSystem__QA_5DE270.asm,matched,
 ??0RenderObjectDrawModuleInfo@FXParticleSystem@@QAE@XZ,0x000282DB,0x005F6B10,61,Code/masm_dumps/___0RenderObjectDrawModuleInfo_FXParticleSystem__QA_5F6B10.asm,matched,
 ??0RenderObjectDrawModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0002AEA5,0x005DE510,124,Code/masm_dumps/___0RenderObjectDrawModuleTemplate_FXParticleSystem_5DE510.asm,matched,
@@ -1205,6 +1391,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0RepeatChar@Debug@@QAE@DH@Z,,0x00889270,18,Code/Libraries/Source/WWVegas/WWDebug/debug_debug.cpp,matched,
 ??0ResizerWindow@@QAE@XZ,,0x004AAED0,31,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBarResizer.cpp,matched,
 ??0ResolutionDescClass@@QAE@HHH@Z,,0x000642F0,25,Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,matched,
+??0ResolutionDescClass@@QAE@XZ,,0x0005C5D0,13,Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,matched,ICF alias of existing matched body
 ??0RiderInfo@@QAE@XZ,,0x0022A2D0,16,Code/GameEngine/Source/GameLogic/Object/Contain/RiderChangeContain.cpp,matched,
 ??0RoadSegment@@QAE@ABV0@@Z,,0x00704EB0,265,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadBuffer.cpp,matched,
 ??0RotateTextureMapperClass@@QAE@ABV0@@Z,,0x00964BB0,86,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
@@ -1233,11 +1420,13 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0SineLinearOffsetTextureMapperClass@@QAE@ABV0@@Z,,0x00964EC0,104,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
 ??0SineLinearOffsetTextureMapperClass@@QAE@ABVINIClass@@PBDI@Z,,0x00964DE0,223,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
 ??0SineLinearOffsetTextureMapperClass@@QAE@ABVVector3@@0ABVVector2@@I@Z,,0x00964D40,119,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
+??0Smudge@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameClient/System/Smudge.cpp,matched,ICF alias of existing matched body
 ??0SmudgeManager@@QAE@XZ,,0x005D3A90,40,Code/GameEngine/Source/GameClient/System/Smudge.cpp,matched,
 ??0SmudgeSet@@QAE@XZ,,0x005D4160,36,Code/GameEngine/Source/GameClient/System/Smudge.cpp,matched,
 ??0Snapshot@@QAE@ABV0@@Z,0x000021D0,0x0005C530,10,Code/GameEngine/Source/Common/System/Snapshot.cpp,matched,sets vtable pointer
 ??0Snapshot@@QAE@XZ,0x00024C80,0x0006B180,9,Code/GameEngine/Source/Common/System/Snapshot.cpp,matched,sets vtable pointer
 ??0SnapshotBlock@GameState@@QAE@XZ,,0x00251CD0,10,Code/GameEngine/Source/Common/System/SaveGame/GameState.cpp,matched,
+??0SoundFXNugget@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
 ??0SpawnPointProductionExitUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00023858,5,Code/masm_dumps/__0SpawnPointProductionExitUpdate__QAE_PAVThing__PBVModuleData___Z_23858.asm,matched,MASM exact retail dump
 ??0SpawnPointProductionExitUpdateModuleData@@QAE@XZ,,0x0035F0F0,25,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ??0SpecialPowerReadyTimerType@@QAE@XZ,,0x000CBBA0,16,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,
@@ -1249,6 +1438,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0SphereEmissionVolumeInfo@FXParticleSystem@@QAE@XZ,0x0004B2AE,0x005D6120,17,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,default constructor initializes base and radius
 ??0SphereEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x0001598D,0x005D62C0,62,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0SphereEmissionVolumeModuleTemplate@FXParticleSystem@@QAE@XZ,0x0003A4D1,0x005D6240,45,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
+??0SphereLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/sphereobj.cpp,matched,ICF alias of existing matched body
 ??0SphericalEmissionVelocityInfo@FXParticleSystem@@QAE@ABV01@@Z,0x0001B2D4,0x005D71E0,49,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,
 ??0SphericalEmissionVelocityInfo@FXParticleSystem@@QAE@XZ,0x0002A91E,0x005D7160,79,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??0SphericalEmissionVelocityModuleTemplate@FXParticleSystem@@QAE@ABV01@@Z,0x00003DF5,0x005D73C0,62,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
@@ -1317,6 +1507,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0TreadObjectInfo@W3DTankTruckDraw@@QAE@XZ,,0x0077E0A0,18,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DTankTruckDraw.cpp,matched,
 ??0TurretStateMachine@@QAE@PAVTurretAI@@PAVObject@@VAsciiString@@@Z,,0x0018DB84,658,Code/GameEngine/Source/GameLogic/AI/TurretAI_TurretStateMachine.asm,matched,exact 658B via MASM
 ??0UDP@@QAE@XZ,,0x0001FFFA,5,Code/masm_dumps/__0UDP__QAE_XZ_1FFFA.asm,matched,MASM exact retail dump
+??0UIMessage@InGameUI@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
 ??0UVBufferClass@@QAE@ABV0@@Z,,0x0092BAD0,33,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,
 ??0UVBufferClass@@QAE@HPBD@Z,,0x006D7B70,41,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,
 ??0UnicodeString@@QAE@ABV0@@Z,0x00025E28,0x000682C0,19,Code/Libraries/Source/WWVegas/WWLib/unicode_string.cpp,matched,UnicodeString copy constructor
@@ -1327,8 +1518,12 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0UnicodeString@@QAE@XZ,0x00041C95,0x00083D10,9,Code/Libraries/Source/WWVegas/WWLib/unicode_string.cpp,matched,default constructor
 ??0UnitCrateCollide@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00009AED,5,Code/masm_dumps/__0UnitCrateCollide__QAE_PAVThing__PBVModuleData___Z_9AED.asm,matched,MASM exact retail dump
 ??0UnpauseSpecialPowerUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00048635,5,Code/masm_dumps/__0UnpauseSpecialPowerUpgrade__QAE_PAVThing__PBVModuleData___Z_48635.asm,matched,MASM exact retail dump
+??0UpdateModuleInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0UpgradeCenter@@QAE@XZ,,0x0010A6A0,29,Code/GameEngine/Source/Common/System/Upgrade.cpp,matched,
 ??0UpgradeModuleData@@QAE@XZ,,0x00101D50,74,Code/GameEngine/Source/GameLogic/Object/Upgrade/ActiveShroudUpgrade.cpp,matched,
+??0Vector2@@QAE@ABV0@@Z,,0x007E59E0,19,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,ICF alias of existing matched body
+??0Vector2@@QAE@MM@Z,,0x0016A160,18,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,ICF alias of existing matched body
+??0Vector2i@@QAE@HH@Z,,0x0016A160,18,Code/Libraries/Source/WWVegas/WW3D2/render2dsentence.cpp,matched,ICF alias of existing matched body
 ??0Vector3@@QAE@ABV0@@Z,,0x000FBAB0,25,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,
 ??0Vector3@@QAE@MMM@Z,,0x000693F0,25,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ??0Vector3HollowSphereRandomizer@@QAE@M@Z,,0x00B02350,49,Code/masm_dumps/__0Vector3HollowSphereRandomizer__QAE_M_Z_B02350.asm,matched,MASM exact retail dump
@@ -1366,7 +1561,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0WeaponBarrelInfo@ModelConditionInfo@@QAE@ABU01@@Z,,0x0075E480,97,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
 ??0WeaponBarrelInfo@ModelConditionInfo@@QAE@XZ,,0x0075F040,54,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
 ??0WeaponBonusUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,,0x000375B5,5,Code/masm_dumps/__0WeaponBonusUpgrade__QAE_PAVThing__PBVModuleData___Z_375B5.asm,matched,MASM exact retail dump
+??0WeaponRecoilInfo@W3DModelDraw@@QAE@XZ,,0x0005C5D0,13,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
 ??0WeaponSetUpgrade@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0003406D,5,Code/masm_dumps/__0WeaponSetUpgrade__QAE_PAVThing__PBVModuleData___Z_3406D.asm,matched,MASM exact retail dump
+??0WeightInfoStruct@NamedPivotMapClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/hanim.cpp,matched,ICF alias of existing matched body
 ??0Win32BIGFile@@QAE@XZ,,0x009D14E0,26,Code/GameEngineDevice/Source/Win32Device/Common/Win32BIGFile.cpp,matched,
 ??0WinInstanceData@@QAE@XZ,,0x00499B40,111,Code/GameEngine/Source/GameClient/GUI/WinInstanceData.cpp,matched,
 ??0WindModuleInfo@FXParticleSystem@@QAE@ABV01@@Z,0x00047410,0x005BD970,117,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
@@ -1380,6 +1577,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0ZigZagLinearOffsetTextureMapperClass@@QAE@ABVINIClass@@PBDI@Z,,0x00965420,209,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
 ??0ZigZagLinearOffsetTextureMapperClass@@QAE@ABVVector2@@M0I@Z,,0x00965350,166,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
 ??0_ArcInfoStruct@VehicleCurveClass@@QAE@XZ,,0x0045DC20,43,Code/Libraries/Source/WWVegas/WWMath/vehiclecurve.cpp,matched,
+??0_Bit_iterator_base@_STL@@QAE@PAII@Z,,0x0016A160,18,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
+??0_Bit_iterator_base@_STL@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
+??0_Bit_reference@_STL@@QAE@PAII@Z,,0x0016A160,18,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
 ??0_D3DXMATRIX@@QAE@MMMMMMMMMMMMMMMM@Z,,0x000B68D0,116,Code/GameEngine/Source/Common/Bezier/BezierSegment.cpp,matched,
 ??0_D3DXVECTOR4@@QAE@MMMM@Z,,0x000B6510,32,Code/GameEngine/Source/Common/Bezier/BezFwdIterator.cpp,matched,
 ??0_PushButtonData@@QAE@XZ,,0x004BC760,10,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetPushButton.cpp,matched,
@@ -1441,35 +1641,49 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1?$ConcreteModuleClass@V?$ModuleTag@$05$E?STREAK_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?STREAK_DRAW_MODULE_NAME@2@3QBDBVStreakDrawModule@2@VStreakDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,0x00015A5F,0x5d8890,7,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleClass@V?$ModuleTag@$07$E?LIFE_EVENT_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIFE_EVENT_MODULE_NAME@2@3QBDBVLifeEventModule@2@VLifeEventModuleTemplate@2@VParticleLifeEventModule@2@VParticleLifeEventModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,0x0000227F,0x5da4a0,7,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleClass@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VParticleTerrainCollisionModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,0x000081A7,0x5da4c0,7,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
+??1?$ConcreteModuleTemplate@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DB6F0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005DB6F0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_UOrthoEmissionVelocityModuleTag_FXParticleSystem___FXParticleSystem__UAE_XZ_5DB6F0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@UPointEmissionVolumeModuleTag@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DBEA0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@UPointEmissionVolumeModuleTag@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005DBEA0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_UPointEmissionVolumeModuleTag_FXParticleSystem___FXParticleSystem__UAE_XZ_5DBEA0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DADE0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005DADE0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__DefaultModuleTag__00_FXParticleSystem___FXParticleSystem__UAE_XZ_5DADE0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$01@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DB1F0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$01@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005DB1F0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__DefaultModuleTag__01_FXParticleSystem___FXParticleSystem__UAE_XZ_5DB1F0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$02@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DB080,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$02@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005DB080,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__DefaultModuleTag__02_FXParticleSystem___FXParticleSystem__UAE_XZ_5DB080.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$05@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005D8750,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$05@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005D9D80,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__DefaultModuleTag__05_FXParticleSystem___FXParticleSystem__UAE_XZ_5D9D80.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$06@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005C1AC0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$06@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005DB3B0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__DefaultModuleTag__06_FXParticleSystem___FXParticleSystem__UAE_XZ_5DB3B0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$0A@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DAF30,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$DefaultModuleTag@$0A@@FXParticleSystem@@@FXParticleSystem@@UAE@XZ,,0x005DAF30,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__DefaultModuleTag__0A__FXParticleSystem___FXParticleSystem__UAE_XZ_5DAF30.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$01$E?RENDEROBJECT_UPDATE_MODULE_KEY@FXParticleSystem@@3QBDB$E?RENDEROBJECT_UPDATE_MODULE_NAME@2@3QBDBVRenderObjectUpdateModule@2@VRenderObjectUpdateModuleTemplate@2@VRenderObjectParticleUpdateModule,,0x005DB550,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__01_E_RENDEROBJECT_UPDATE_MODULE_KEY_FXParticleSystem__3QBDB_E_RENDER_5DB550.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$01$E?RENDEROBJECT_UPDATE_MODULE_KEY@FXParticleSystem@@3QBDB$E?RENDEROBJECT_UPDATE_MODULE_NAME@2@3QBDBVRenderObjectUpdateModule@2@VRenderObjectUpdateModuleTemplate@2@VRenderObjectParticleUpdateModule@2@VRenderObjectParticleUpdateModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DB1F0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVCylindricalEmissionVelocityModule@2@VCylindricalEmissionVelocityModuleTempla,,0x005DBB50,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__03_E_CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY_FXParticleSystem__3QBD_5DBB50.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVCylindricalEmissionVelocityModule@2@VCylindricalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005D78F0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVHemisphericalEmissionVelocityModule@2@VHemisphericalEmissionVelocityModu,,0x005DB9D0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__03_E_HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY_FXParticleSystem__3Q_5DB9D0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVHemisphericalEmissionVelocityModule@2@VHemisphericalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DB6F0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?OUTWARD_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?OUTWARD_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVOutwardEmissionVelocityModule@2@VOutwardEmissionVelocityModuleTemplate@2@V?$DefaultP,,0x005DBCF0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__03_E_OUTWARD_EMISSION_VELOCITY_MODULE_KEY_FXParticleSystem__3QBDB_E__5DBCF0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?OUTWARD_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?OUTWARD_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVOutwardEmissionVelocityModule@2@VOutwardEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DB6F0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?SPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVSphericalEmissionVelocityModule@2@VSphericalEmissionVelocityModuleTemplate@2@V?$,,0x005DB850,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__03_E_SPHERICAL_EMISSION_VELOCITY_MODULE_KEY_FXParticleSystem__3QBDB__5DB850.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$03$E?SPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVSphericalEmissionVelocityModule@2@VSphericalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DB6F0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?BOX_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?BOX_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVBoxEmissionVolumeModule@2@VBoxEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$D,,0x005DC1E0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__04_E_BOX_EMISSION_VOLUME_MODULE_KEY_FXParticleSystem__3QBDB_E_BOX_EM_5DC1E0.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?BOX_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?BOX_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVBoxEmissionVolumeModule@2@VBoxEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005D65B0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?CYLINDER_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDER_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVCylinderEmissionVolumeModule@2@VCylinderEmissionVolumeModuleTemplate@2@V?$DefaultParti,,0x005DC510,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__04_E_CYLINDER_EMISSION_VOLUME_MODULE_KEY_FXParticleSystem__3QBDB_E_C_5DC510.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?CYLINDER_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDER_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVCylinderEmissionVolumeModule@2@VCylinderEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005D6B60,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?LIGHTNING_EMISSION_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIGHTNING_EMISSION_MODULE_NAME@2@3QBDBVLightningEmissionModule@2@VLightningEmissionModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DC6A0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?LINE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?LINE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVLineEmissionVolumeModule@2@VLineEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@,,0x005DC030,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__04_E_LINE_EMISSION_VOLUME_MODULE_KEY_FXParticleSystem__3QBDB_E_LINE__5DC030.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?LINE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?LINE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVLineEmissionVolumeModule@2@VLineEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DBEA0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?SPHERE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVSphereEmissionVolumeModule@2@VSphereEmissionVolumeModuleTemplate@2@V?$DefaultParticleModul,,0x005DC370,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__04_E_SPHERE_EMISSION_VOLUME_MODULE_KEY_FXParticleSystem__3QBDB_E_SPH_5DC370.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$04$E?SPHERE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVSphereEmissionVolumeModule@2@VSphereEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DBEA0,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?BUTTERFLY_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?BUTTERFLY_DRAW_MODULE_NAME@2@3QBDBVButterflyDrawModule@2@VButterflyDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModu,,0x005DA170,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__05_E_BUTTERFLY_DRAW_MODULE_KEY_FXParticleSystem__3QBDB_E_BUTTERFLY_D_5DA170.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?BUTTERFLY_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?BUTTERFLY_DRAW_MODULE_NAME@2@3QBDBVButterflyDrawModule@2@VButterflyDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005D9130,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?LIGHTNING_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIGHTNING_DRAW_MODULE_NAME@2@3QBDBVLightningDrawModule@2@VLightningDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005DA300,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FX,,0x005DA020,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__05_E_QUAD_DRAW_MODULE_KEY_FXParticleSystem__3QBDB_E_QUAD_DRAW_MODULE_5DA020.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005D8750,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?RENDEROBJECT_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?RENDEROBJECT_DRAW_MODULE_NAME@2@3QBDBVRenderObjectDrawModule@2@VRenderObjectDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$Default,,0x005DF720,5,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__05_E_RENDEROBJECT_DRAW_MODULE_KEY_FXParticleSystem__3QBDB_E_RENDEROB_5DF720.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?STREAK_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?STREAK_DRAW_MODULE_NAME@2@3QBDBVStreakDrawModule@2@VStreakDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$,,0x005D9ED0,50,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__05_E_STREAK_DRAW_MODULE_KEY_FXParticleSystem__3QBDB_E_STREAK_DRAW_MO_5D9ED0.asm,matched,MASM exact retail dump
+??1?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?STREAK_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?STREAK_DRAW_MODULE_NAME@2@3QBDBVStreakDrawModule@2@VStreakDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ,,0x005D8750,50,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,ICF alias of existing matched body
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?LIFE_EVENT_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIFE_EVENT_MODULE_NAME@2@3QBDBVLifeEventModule@2@VLifeEventModuleTemplate@2@VParticleLifeEventModule@2@VParticleLifeEventModuleTemplate@2@@FXPart,,0x005E1E30,5,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__07_E_LIFE_EVENT_MODULE_KEY_FXParticleSystem__3QBDB_E_LIFE_EVENT_MODU_5E1E30.asm,matched,MASM exact retail dump
 ??1?$ConcreteModuleTemplate@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VPartic,,0x005E1F40,5,Code/masm_dumps/__1__ConcreteModuleTemplate_V__ModuleTag__07_E_TERRAIN_COLLISION_MODULE_KEY_FXParticleSystem__3QBDB_E_TERRAIN__5E1F40.asm,matched,MASM exact retail dump
 ??1?$DefaultModuleTemplate@$00@FXParticleSystem@@UAE@XZ,,0x005D5160,50,Code/masm_dumps/__1__DefaultModuleTemplate__00_FXParticleSystem__UAE_XZ_5D5160.asm,matched,MASM exact retail dump
@@ -2606,6 +2820,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4Matrix4D@@QAEAAV0@ABV0@@Z,0x0001EA0B,0x007E64D0,107,Code/Libraries/Source/WWVegas/WWMath/matrix4d.cpp,matched,copies values
 ??4MinMaxAABoxClass@@QAEAAV0@ABV0@@Z,,0x000BEC90,43,Code/Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,matched,
 ??4ModelArrayClass@HLodClass@@QAEAAV01@ABV01@@Z,,0x0097D760,57,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,
+??4ModelNodeClass@HLodClass@@QAEAAV01@ABV01@@Z,,0x00979200,37,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,ICF alias of existing matched body
 ??4ModuleTemplate@FXParticleSystem@@QAEAAV01@ABV01@@Z,0x00041A3D,0x0005C7F0,5,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,empty assignment returns this
 ??4Money@@QAEAAV0@ABV0@@Z,,0x000C91A0,21,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,
 ??4Null3DObjClass@@QAEAAV0@ABV0@@Z,,0x00972720,47,Code/Libraries/Source/WWVegas/WW3D2/nullrobj.cpp,matched,
@@ -2671,6 +2886,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??4UnicodeString@@QAEAAV0@ABV0@@Z,0x0003E95F,0x000680A0,19,Code/Libraries/Source/WWVegas/WWLib/unicode_string.cpp,matched,copy assignment
 ??4UnicodeString@@QAEAAV0@G@Z,0x0003C218,0x00564FD0,31,Code/Libraries/Source/WWVegas/WWLib/unicode_string.cpp,matched,UnicodeString operator=(wchar_t)
 ??4UnicodeString@@QAEAAV0@PBG@Z,0x0002C56B,0x00083D20,53,Code/Libraries/Source/WWVegas/WWLib/unicode_string.cpp,matched,UnicodeString operator=(const wchar_t *)
+??4Vector2@@QAEAAV0@ABV0@@Z,,0x007E59E0,19,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
 ??4Vector3@@QAEAAV0@ABV0@@Z,,0x000ED290,25,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ??4Vector4@@QAEAAV0@ABV0@@Z,,0x00131D30,31,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ??4ViewportClass@@QAEAAV0@ABV0@@Z,,0x00931680,31,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,
@@ -3631,6 +3847,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Convert_Shader@W3dUtilityClass@@SAXABUW3dShaderStruct@@PAVShaderClass@@@Z,,0x00978760,186,Code/masm_dumps/__Convert_Shader_W3dUtilityClass__SAXABUW3dShaderSt_978760.asm,matched,
 ?Convert_Shader@W3dUtilityClass@@SAXABVShaderClass@@PAUW3dShaderStruct@@@Z,,0x00978820,164,Code/masm_dumps/__Convert_Shader_W3dUtilityClass__SAXABVShaderClass_978820.asm,matched,
 ?Convert_Vector@W3dUtilityClass@@SAXABUIOVector3Struct@@PAVVector3@@@Z,,0x00956C30,25,Code/Libraries/Source/WWVegas/WW3D2/w3d_util.cpp,matched,
+?Convert_Vector@W3dUtilityClass@@SAXABVVector3@@PAUIOVector3Struct@@@Z,,0x00956C30,25,Code/Libraries/Source/WWVegas/WW3D2/w3d_util.cpp,matched,ICF alias of existing matched body
 ?Coord3DInsideRect2D@@YA_NPBUCoord3D@@PBUCoord2D@@1@Z,,0x0044EE20,69,Code/GameEngine/Source/Common/line2_d.cpp,matched,
 ?Copy@VectorProcessorClass@@SAXPAIPBIH@Z,,0x00AFFB40,23,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
 ?Copy@VectorProcessorClass@@SAXPAVVector2@@PBV2@H@Z,,0x00AFFB20,26,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
@@ -3830,6 +4047,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Find_Vertex_Material@MaterialCollectorClass@@QAEHPAVVertexMaterialClass@@@Z,,0x0092F5F0,36,Code/Libraries/Source/WWVegas/WW3D2/matinfo.cpp,matched,
 ?Find_X_At_Z@Vector3@@SAMMABV1@0@Z,,0x006FC8F0,32,Code/GameEngineDevice/Source/W3DDevice/GameClient/HeightMap.cpp,matched,
 ?Find_Y_At_Z@Vector3@@SAMMABV1@0@Z,,0x006FC920,35,Code/GameEngineDevice/Source/W3DDevice/GameClient/HeightMap.cpp,matched,
+?First@AssetIterator@@UAEXXZ,,0x008E21C0,8,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
 ?First@GenericMultiListIterator@@QAEXPAVGenericMultiListClass@@@Z,,0x006C51C0,15,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,matched,
 ?First@GenericMultiListIterator@@QAEXXZ,,0x006C51E0,9,Code/Libraries/Source/WWVegas/WWLib/multilist.cpp,matched,
 ?First@GridListIterator@@QAEXPAVCullableClass@@@Z,,0x008DCE20,12,Code/Libraries/Source/WWVegas/WWMath/gridcull.cpp,matched,
@@ -4135,6 +4353,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GadgetTabControlGetEnabledImageTabFour@@YAPBVImage@@PAVGameWindow@@@Z,,0x00793000,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,matched,
 ?GadgetTabControlGetEnabledImageTabSeven@@YAPBVImage@@PAVGameWindow@@@Z,,0x00797180,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,matched,
 ?GadgetTabControlGetEnabledImageTabSix@@YAPBVImage@@PAVGameWindow@@@Z,,0x00797150,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,matched,
+?GadgetTabControlGetEnabledImageTabThree@@YAPBVImage@@PAVGameWindow@@@Z,,0x007970C0,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,matched,ICF alias of existing matched body
 ?GadgetTabControlGetHiliteBorderColorTabFive@@YAHPAVGameWindow@@@Z,,0x00797440,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,matched,
 ?GadgetTabControlGetHiliteBorderColorTabFour@@YAHPAVGameWindow@@@Z,,0x00797410,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,matched,
 ?GadgetTabControlGetHiliteBorderColorTabOne@@YAHPAVGameWindow@@@Z,,0x0078FC80,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DTabControl.cpp,matched,
@@ -4359,6 +4578,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Dst_Blend_Func@ShaderClass@@QBE?AW4DstBlendFuncType@1@XZ,,0x0090F2A0,9,Code/Libraries/Source/WWVegas/WW3D2/w3d_util.cpp,matched,
 ?Get_Element@?$ShareBufferClass@VShaderClass@@@@QAEAAVShaderClass@@H@Z,,0x00929040,13,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,
 ?Get_Element@?$ShareBufferClass@VVector4@@@@QAEAAVVector4@@H@Z,,0x00984490,15,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,
+?Get_Element@MatBufferClass@@QAEPAVVertexMaterialClass@@H@Z,,0x00739780,35,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,ICF alias of existing matched body
 ?Get_Element@TexBufferClass@@QAEPAVTextureClass@@H@Z,,0x00739780,35,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,
 ?Get_Emission_Rate@ParticleEmitterClass@@QBEMXZ,,0x0097E330,31,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,
 ?Get_Emissive_Color_Source@VertexMaterialClass@@QAE?AW4ColorSourceType@1@XZ,,0x00921230,24,Code/Libraries/Source/WWVegas/WW3D2/vertmaterial.cpp,matched,
@@ -4389,6 +4609,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Future_Start_Time@ParticleBufferClass@@QBEMXZ,,0x0097E060,31,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,
 ?Get_Future_Start_Time@ParticleEmitterClass@@QBEMXZ,,0x0097E290,37,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,
 ?Get_Geom@W3DShadowGeometryManager@@QAEPAVW3DShadowGeometry@@PBD@Z,,0x007AEF70,34,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,
+?Get_HAnim@HAnimComboDataClass@@QBEPAVHAnimClass@@XZ,,0x00973650,12,Code/Libraries/Source/WWVegas/WW3D2/hanim.cpp,matched,ICF alias of existing matched body
 ?Get_Hash_Val@?$HashTemplateClass@VStringClass@@H@@CAIABVStringClass@@I@Z,,0x0094DF40,21,Code/Libraries/Source/WWVegas/WW3D2/assetstatus.cpp,matched,
 ?Get_Hash_Val@?$HashTemplateClass@VStringClass@@PAV?$DynamicVectorClass@PAVDefinitionClass@@@@@@CAIABVStringClass@@I@Z,,0x0094DF40,21,Code/Libraries/Source/WWVegas/WWSaveLoad/definitionmgr.cpp,matched,
 ?Get_Hash_Val@?$HashTemplateClass@VStringClass@@PAVHTreeClass@@@@CAIABVStringClass@@I@Z,,0x0094DF40,21,Code/Libraries/Source/WWVegas/WW3D2/htreemgr.cpp,matched,
@@ -4570,6 +4791,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_Tail_Diffuse@LineGroupClass@@QAE?AVVector4@@XZ,,0x0098EC60,30,Code/Libraries/Source/WWVegas/WW3D2/linegrp.cpp,matched,
 ?Get_Temp_Index_Array@@YAPAUTempIndexStruct@@I@Z,,0x00938B10,61,Code/Libraries/Source/WWVegas/WW3D2/sortingrenderer.cpp,matched,
 ?Get_Temporary_UV_Array@MeshLoadContextClass@@AAEPAVVector2@@H@Z,,0x0096DF50,33,Code/Libraries/Source/WWVegas/WW3D2/meshmdlio.cpp,matched,
+?Get_Tex_Offset@FVFInfoClass@@QBEII@Z,,0x0090F2E0,11,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
 ?Get_Texcoord_Array@MeshLoadContextClass@@AAEPAUW3dTexCoordStruct@@XZ,,0x0096CAA0,33,Code/Libraries/Source/WWVegas/WW3D2/meshmdlio.cpp,matched,
 ?Get_TextBlock@INIClass@@QBEHPBDPADH@Z,,0x009E57C0,192,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
 ?Get_Texture@MeshModelClass@@QBEPAVTextureClass@@HHH@Z,,0x006DB460,11,Code/Libraries/Source/WWVegas/WW3D2/meshmdl.cpp,matched,
@@ -5151,6 +5373,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Peek_Animation_And_Info@Animatable3DObjClass@@UAEPAVHAnimClass@@AAMAAH10@Z,,0x00981D10,91,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,
 ?Peek_Default_Debug_Shader@WW3D@@SA?AVShaderClass@@XZ,,0x008FE130,13,Code/Libraries/Source/WWVegas/WW3D2/ww3d.cpp,matched,
 ?Peek_Element@MatBufferClass@@QAEPAVVertexMaterialClass@@H@Z,,0x006BCB60,13,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,
+?Peek_Element@TexBufferClass@@QAEPAVTextureClass@@H@Z,,0x006BCB60,13,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,ICF alias of existing matched body
 ?Peek_First_Collected_Object_Internal@CullSystemClass@@IAEPAVCullableClass@@XZ,,0x008E2190,4,Code/Libraries/Source/WWVegas/WWMath/cullsys.cpp,matched,
 ?Peek_Geom@W3DShadowGeometryManager@@QAEPAVW3DShadowGeometry@@PBD@Z,,0x007AEF40,27,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,
 ?Peek_Head@?$MultiListClass@VDX8PolygonRendererClass@@@@QAEPAVDX8PolygonRendererClass@@XZ,,0x00944CD0,17,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
@@ -5449,6 +5672,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Rotate_Vector@Matrix3@@SAXABV1@ABVVector3@@PAV2@@Z,,0x008E1A70,115,Code/Libraries/Source/WWVegas/WWMath/colmathplane.cpp,matched,
 ?Rotate_Vector@Matrix3D@@QBE?AVVector3@@ABV2@@Z,,0x008D68B0,81,Code/Libraries/Source/WWVegas/WWMath/matrix3d.cpp,matched,
 ?Rotate_Vector@Matrix3D@@SAXABV1@ABVVector3@@PAV2@@Z,,0x005BDD00,115,Code/Libraries/Source/WWVegas/WWMath/lineseg.cpp,matched,
+?Rotate_Vector@Matrix3x3@@SAXABV1@ABVVector3@@PAV2@@Z,,0x008E1A70,115,Code/Libraries/Source/WWVegas/WW3D2/decalmsh.cpp,matched,ICF alias of existing matched body
 ?Rotate_Vector@Quaternion@@QBE?AVVector3@@ABV2@@Z,,0x0097E0E0,257,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,
 ?Rotate_X@Matrix3D@@QAEXM@Z,,0x00294ED0,109,Code/Libraries/Source/WWVegas/WWMath/matrix3d.cpp,matched,
 ?Rotate_X@Matrix3D@@QAEXMM@Z,,0x008D6500,117,Code/Libraries/Source/WWVegas/WWMath/matrix3d.cpp,matched,
@@ -5533,6 +5757,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set@Vector2@@QAEXMM@Z,,0x001A0E10,16,Code/GameEngine/Source/GameLogic/Map/TerrainLogic.cpp,matched,
 ?Set@Vector2i@@QAEXHH@Z,,0x007F1C60,16,Code/Libraries/Source/WWVegas/WW3D2/render2dsentence.cpp,matched,
 ?Set@Vector3@@QAEXABV1@@Z,,0x00063E10,23,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
+?Set@Vector3@@QAEXMMM@Z,,0x000FB9C0,23,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,ICF alias of existing matched body
 ?Set@Vector4@@QAEXMMMM@Z,,0x000FBB50,30,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ?SetBlocking@UDP@@AAEHH@Z,,0x006845E0,56,Code/GameEngine/Source/GameNetwork/udp.cpp,matched,
 ?SetDifficultyRadioButton@@YAXXZ,,0x004C6E70,189,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/DifficultySelect.cpp,matched,
@@ -5577,6 +5802,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Arrays@PointGroupClass@@QAEXPAV?$ShareBufferClass@VVector3@@@@PAV?$ShareBufferClass@VVector4@@@@PAV?$ShareBufferClass@I@@PAV?$ShareBufferClass@M@@PAV?$ShareBufferClass@E@@4HMMMM@Z,,0x009126B0,241,Code/Libraries/Source/WWVegas/WW3D2/pointgr.cpp,matched,
 ?Set_Aspect_Ratio@CameraClass@@QAEXM@Z,,0x00931330,56,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,RenderObjClass +0x34 (camera shim)
 ?Set_Attenuation@TexProjectClass@@QAEXM@Z,,0x0010A730,13,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
+?Set_Back_Child@CullNodeStruct@AABTreeClass@@QAEXK@Z,,0x00674240,10,Code/Libraries/Source/WWVegas/WW3D2/aabtree.cpp,matched,ICF alias of existing matched body
 ?Set_Base_Model_Name@CompositeRenderObjClass@@UAEXPBD@Z,,0x00983210,31,Code/Libraries/Source/WWVegas/WW3D2/composite.cpp,matched,
 ?Set_Base_Velocity@ParticleEmitterClass@@QAEXABVVector3@@@Z,,0x0097F140,67,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,
 ?Set_Base_Vertex_Offset@MeshClass@@QAEXH@Z,,0x009456C0,13,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
@@ -5639,6 +5865,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Font@Render2DSentenceClass@@QAEXPAVFontCharsClass@@@Z,,0x0093D0C0,43,Code/Libraries/Source/WWVegas/WW3D2/render2dsentence.cpp,matched,
 ?Set_Force_Visible@RenderObjClass@@UAEXH@Z,,0x0091F890,76,Code/masm_dumps/__Set_Force_Visible_RenderObjClass__UAEXH_Z_91F890.asm,matched,
 ?Set_Frame_Keyframes@ParticleEmitterDefClass@@UAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x0098E4E0,85,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,
+?Set_Frame_Mode@ParticleEmitterDefClass@@UAEXH@Z,,0x0098D2B0,13,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,ICF alias of existing matched body
 ?Set_Frame_Per_Second@GridTextureMapperClass@@QAEXM@Z,,0x00967040,17,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
 ?Set_Frame_Row_Column_Count_Log2@PointGroupClass@@QAEXE@Z,,0x00912130,22,Code/Libraries/Source/WWVegas/WW3D2/pointgr.cpp,matched,
 ?Set_Freeze_Random@ParticleEmitterDefClass@@UAEXH@Z,,0x0098D430,38,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,
@@ -5665,6 +5892,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_LOD_Level@ParticleBufferClass@@UAEXH@Z,,0x00985020,46,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,
 ?Set_LOD_Level@SegmentedLineClass@@UAEXH@Z,,0x00950920,42,Code/Libraries/Source/WWVegas/WW3D2/segline.cpp,matched,
 ?Set_LOD_Max_Screen_Size@ParticleBufferClass@@SAXHM@Z,,0x009843D0,25,Code/Libraries/Source/WWVegas/WW3D2/part_buf.cpp,matched,
+?Set_Lifetime@ParticleEmitterDefClass@@UAEXM@Z,,0x0098D2C0,13,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,ICF alias of existing matched body
 ?Set_Light@DX8Wrapper@@SAXIABVLightClass@@@Z,,0x00904DA0,591,Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,matched,
 ?Set_Light@DX8Wrapper@@SAXIPBU_D3DLIGHT8@@@Z,,0x00902500,72,Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,matched,
 ?Set_Lighting_LOD_Cutoff@LightEnvironmentClass@@SAXM@Z,,0x0094A890,26,Code/Libraries/Source/WWVegas/WW3D2/lightenvironment.cpp,matched,
@@ -5712,8 +5940,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Opacity@SegmentedLineClass@@QAEXM@Z,,0x0094FD90,13,Code/Libraries/Source/WWVegas/WW3D2/segline.cpp,matched,
 ?Set_Opacity_Keyframes@ParticleEmitterDefClass@@UAEXAAU?$ParticlePropertyStruct@M@@@Z,,0x0098E3C0,85,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,
 ?Set_Outer_Scale_Channel@RingRenderObjClass@@QAEXABV?$LERPAnimationChannelClass@VVector2@@@@@Z,,0x005638D0,11,Code/Libraries/Source/WWVegas/WW3D2/ringobj.cpp,matched,
+?Set_Outward_Vel@ParticleEmitterDefClass@@UAEXM@Z,,0x0098D390,13,Code/Libraries/Source/WWVegas/WW3D2/part_ldr.cpp,matched,ICF alias of existing matched body
 ?Set_Outwards_Velocity@ParticleEmitterClass@@QAEXM@Z,,0x0097DF70,19,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,
 ?Set_Pass_Count@DynamicMeshModel@@QAEXH@Z,,0x0096CFB0,15,Code/Libraries/Source/WWVegas/WW3D2/shattersystem.cpp,matched,
+?Set_Pass_Count@MeshModelClass@@QAEXH@Z,,0x0096CFB0,15,Code/Libraries/Source/WWVegas/WW3D2/meshmdlio.cpp,matched,ICF alias of existing matched body
 ?Set_Point_Alpha@PointGroupClass@@QAEXM@Z,,0x00912020,10,Code/masm_dumps/_Set_Point_Alpha_PointGroupClass__QAEXM_Z_912020.asm,matched,MASM exact retail dump
 ?Set_Point_Color@PointGroupClass@@QAEXVVector3@@@Z,,0x009127B0,24,Code/Libraries/Source/WWVegas/WW3D2/pointgr.cpp,matched,
 ?Set_Point_Frame@PointGroupClass@@QAEXE@Z,,0x00912060,10,Code/masm_dumps/_Set_Point_Frame_PointGroupClass__QAEXE_Z_912060.asm,matched,MASM exact retail dump
@@ -5722,6 +5952,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Set_Point_Orientation@PointGroupClass@@QAEXE@Z,,0x00912040,10,Code/masm_dumps/_Set_Point_Orientation_PointGroupClass__QAEXE_Z_912040.asm,matched,MASM exact retail dump
 ?Set_Point_Size@PointGroupClass@@QAEXM@Z,,0x00912000,10,Code/masm_dumps/_Set_Point_Size_PointGroupClass__QAEXM_Z_912000.asm,matched,MASM exact retail dump
 ?Set_Poly0@CullNodeStruct@AABTreeClass@@QAEXK@Z,,0x0096A810,15,Code/Libraries/Source/WWVegas/WW3D2/aabtree.cpp,matched,
+?Set_Poly_Count@CullNodeStruct@AABTreeClass@@QAEXK@Z,,0x00674240,10,Code/Libraries/Source/WWVegas/WW3D2/aabtree.cpp,matched,ICF alias of existing matched body
 ?Set_Position@Animatable3DObjClass@@UAEXABVVector3@@@Z,,0x00982130,24,Code/Libraries/Source/WWVegas/WW3D2/animobj.cpp,matched,
 ?Set_Position@CameraClass@@UAEXABVVector3@@@Z,,0x00931310,24,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,
 ?Set_Position@CollectionClass@@UAEXABVVector3@@@Z,,0x00979D20,24,Code/Libraries/Source/WWVegas/WW3D2/collect.cpp,matched,
@@ -5914,6 +6145,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Transform_To_View_Space@CameraClass@@QBEXAAVVector3@@ABV2@@Z,,0x00932F60,170,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,RenderObjClass +0x34 (camera shim)
 ?Transform_Vector@Matrix3D@@SAXABV1@ABVVector3@@PAV2@@Z,,0x000FBD10,124,Code/Libraries/Source/WWVegas/WWMath/lineseg.cpp,matched,
 ?Transform_Vector@Matrix4@@SAXABV1@ABVVector3@@PAV2@@Z,,0x007BA070,124,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,
+?Translate@AABoxClass@@QAEXABVVector3@@@Z,,0x007AF300,31,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,ICF alias of existing matched body
 ?Translate@Matrix3D@@QAEXABVVector3@@@Z,,0x001BD830,87,Code/Libraries/Source/WWVegas/WWMath/matrix3d.cpp,matched,
 ?Translate@Matrix3D@@QAEXMMM@Z,,0x001B47D0,95,Code/GameEngine/Source/GameLogic/Object/Update/PhysicsUpdate.cpp,matched,
 ?Translate_X@Matrix3D@@QAEXM@Z,,0x0075B000,41,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
@@ -6111,6 +6343,36 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?_M_lower_bound@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBGE@_STL@@@2@ABG@Z,,0x0037B3E0,39,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,
 ?_M_push_back_aux_v@?$deque@VGameResultsRequest@@V?$allocator@VGameResultsRequest@@@_STL@@@_STL@@IAEXABVGameResultsRequest@@@Z,,0x0002217E,5,Code/masm_dumps/__M_push_back_aux_v___deque_VGameResultsRequest__V__allocator_VGameResultsRequest____STL____STL__IAEXABVGameRe_2217E.asm,matched,MASM exact retail dump
 ?_M_push_back_aux_v@?$deque@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXABVGameResultsResponse@@@Z,,0x0004A0B1,5,Code/masm_dumps/__M_push_back_aux_v___deque_VGameResultsResponse__V__allocator_VGameResultsResponse____STL____STL__IAEXABVGame_4A0B1.asm,matched,MASM exact retail dump
+?_M_set@?$vector@EV?$allocator@E@_STL@@@_STL@@IAEXPAE00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@HV?$allocator@H@_STL@@@_STL@@IAEXPAH00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@PAVLocomotor@@V?$allocator@PAVLocomotor@@@_STL@@@_STL@@IAEXPAPAVLocomotor@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@IAEXPAPAVObjectCreationNugget@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@PAVWeaponTemplate@@V?$allocator@PAVWeaponTemplate@@@_STL@@@_STL@@IAEXPAPAVWeaponTemplate@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@PBVModuleData@@V?$allocator@PBVModuleData@@@_STL@@@_STL@@IAEXPAPBVModuleData@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@U?$pair@W4ObjectID@@W41@@_STL@@V?$allocator@U?$pair@W4ObjectID@@W41@@_STL@@@2@@_STL@@IAEXPAU?$pair@W4ObjectID@@W41@@2@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/AI/partition_solver.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UAnimSet@GenericObjectCreationNugget@@V?$allocator@UAnimSet@GenericObjectCreationNugget@@@_STL@@@_STL@@IAEXPAUAnimSet@GenericObjectCreationNugget@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UCoord2D@@V?$allocator@UCoord2D@@@_STL@@@_STL@@IAEXPAUCoord2D@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UCoord3D@@V?$allocator@UCoord3D@@@_STL@@@_STL@@IAEXPAUCoord3D@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUHideShowSubObjInfo@ModelConditionInfo@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@IAEXPAUICoord2D@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UModelConditionInfo@@V?$allocator@UModelConditionInfo@@@_STL@@@_STL@@IAEXPAUModelConditionInfo@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UNugget@ModuleInfo@@V?$allocator@UNugget@ModuleInfo@@@_STL@@@_STL@@IAEXPAUNugget@ModuleInfo@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UParticleSysBoneInfo@@V?$allocator@UParticleSysBoneInfo@@@_STL@@@_STL@@IAEXPAUParticleSysBoneInfo@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UParticleSysTrackerType@W3DModelDraw@@V?$allocator@UParticleSysTrackerType@W3DModelDraw@@@_STL@@@_STL@@IAEXPAUParticleSysTrackerType@W3DModelDraw@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UPayload@DeliverPayloadNugget@@V?$allocator@UPayload@DeliverPayloadNugget@@@_STL@@@_STL@@IAEXPAUPayload@DeliverPayloadNugget@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UWeaponBarrelInfo@ModelConditionInfo@@V?$allocator@UWeaponBarrelInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUWeaponBarrelInfo@ModelConditionInfo@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@UWeaponRecoilInfo@W3DModelDraw@@V?$allocator@UWeaponRecoilInfo@W3DModelDraw@@@_STL@@@_STL@@IAEXPAUWeaponRecoilInfo@W3DModelDraw@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@V?$BitFlags@$0HF@@@V?$allocator@V?$BitFlags@$0HF@@@@_STL@@@_STL@@IAEXPAV?$BitFlags@$0HF@@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@V?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@V?$allocator@V?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@@2@@_STL@@IAEXPAV?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@2@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@VArmorTemplateSet@@V?$allocator@VArmorTemplateSet@@@_STL@@@_STL@@IAEXPAVArmorTemplateSet@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@IAEXPAVAsciiString@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@VPlayerTemplate@@V?$allocator@VPlayerTemplate@@@_STL@@@_STL@@IAEXPAVPlayerTemplate@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/Common/RTS/PlayerTemplate.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@VProductionPrerequisite@@V?$allocator@VProductionPrerequisite@@@_STL@@@_STL@@IAEXPAVProductionPrerequisite@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@VUnicodeString@@V?$allocator@VUnicodeString@@@_STL@@@_STL@@IAEXPAVUnicodeString@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@VW3DAnimationInfo@@V?$allocator@VW3DAnimationInfo@@@_STL@@@_STL@@IAEXPAVW3DAnimationInfo@@00@Z,,0x000FB9C0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@VWeaponTemplateSet@@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@IAEXPAVWeaponTemplateSet@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@W4ObjectID@@V?$allocator@W4ObjectID@@@_STL@@@_STL@@IAEXPAW4ObjectID@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
+?_M_set@?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@IAEXPAW4ScienceType@@00@Z,,0x000FB9C0,23,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
 ?_M_set_node@?$_Deque_iterator_base@PAVMapObject@@@_STL@@QAEXPAPAPAVMapObject@@@Z,,0x003508D0,23,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,
 ?_M_set_node@?$_Deque_iterator_base@PAVPartitionCell@@@_STL@@QAEXPAPAPAVPartitionCell@@@Z,,0x003502F0,23,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,
 ?_M_set_node@?$_Deque_iterator_base@PAVSightingInfo@@@_STL@@QAEXPAPAPAVSightingInfo@@@Z,,0x00087A20,23,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,
@@ -6258,6 +6520,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?attachTranslator@MessageStream@@QAEIPAVGameMessageTranslator@@I@Z,,0x0008A7B0,184,Code/GameEngine/Source/Common/MessageStream.cpp,matched,
 ?back@?$deque@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAEAAPAVMapObject@@XZ,,0x00089750,45,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,
 ?backendHasLiveHandle@BFMENetwork@@QAE_NXZ,,0x00651780,15,Code/GameEngine/Source/GameNetwork/native_network.cpp,matched,native BFME network wrapper slot +0x0c; delegates through backend pointer at +0x64
+?begin@?$hashtable@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAE?AU?$_Ht_iterator@U?$pair@$$CBHW4Relationship@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHW4Relationship@@@_STL@@@2@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@2@XZ,,0x00498480,78,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
 ?begin@?$hashtable@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@_STL@@QAE?AU?$_Ht_iterator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@U?$_Nonconst_traits@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@PBVGameWindow@@UhashConstGameWindowPtr@WindowVideoManager@@U?$_Select1st@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@U?$equal_to@PBVGameWindow@@@2@V?$allocator@U?$pair@QBVGameWindow@@PAVWindowVideo@@@_STL@@@2@@2@XZ,,0x00498480,78,Code/GameEngine/Source/GameClient/window_video_manager.cpp,matched,caller-derived
 ?begin@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAE?AU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@XZ,,0x002CABF0,17,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu.cpp,matched,
 ?begin@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QBE?AU?$_Bit_iter@_NPB_N@2@XZ,,0x002CAC10,17,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu.cpp,matched,
@@ -6831,6 +7094,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?findWindow@WindowLayout@@AAEPAVGameWindow@@PAV2@@Z,,0x00497AD0,37,Code/GameEngine/Source/GameClient/window_layout.cpp,matched,
 ?findWindow@WindowLayout@@IAEPAVGameWindow@@PAV2@@Z,,0x00497AD0,37,Code/GameEngine/Source/GameClient/GUI/WindowLayout.cpp,matched,
 ?find_dominant_plane@@YAXABVTriClass@@PAH11@Z,,0x008E1770,185,Code/Libraries/Source/WWVegas/WWMath/tri.cpp,matched,
+?firstNode@LList@@QAEPAVLListNode@@XZ,,0x00105950,20,Code/GameEngine/Source/Common/System/List.cpp,matched,ICF alias of existing matched body
 ?firstWithNumeric@SimpleObjectIterator@@QAEPAVObject@@PAM@Z,,0x001DE040,51,Code/GameEngine/Source/GameLogic/Object/SimpleObjectIterator.cpp,matched,
 ?flip@?$bitset@$0HF@@_STL@@QAEAAV12@XZ,,0x000E94F0,23,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ?flip@?$bitset@$0L@@_STL@@QAEAAV12@XZ,,0x00104710,15,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,
@@ -7655,6 +7919,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?init@GameLODManager@@QAEXXZ,,0x0007EF1B,967,Code/GameEngine/Source/Common/GameLOD_init.asm,matched,exact 967B via MASM
 ?init@HotKeyManager@@UAEXXZ,,0x005B38D0,52,Code/GameEngine/Source/GameClient/MessageStream/HotKey.cpp,matched,
 ?init@ModuleFactory@@UAEXXZ,,0x0012C2E0,18040,Code/GameEngine/Source/Common/System/module_factory.cpp,matched,
+?init@Money@@QAEXXZ,,0x008E21C0,8,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,ICF alias of existing matched body
 ?init@NameKeyGenerator@@UAEXXZ,,0x0008FE90,20,Code/GameEngine/Source/Common/NameKeyGenerator.cpp,matched,
 ?init@PlayerTemplateStore@@UAEXXZ,,0x000E41A0,17,Code/GameEngine/Source/Common/RTS/PlayerTemplate.cpp,matched,
 ?init@ProductionPrerequisite@@QAEXXZ,,0x000E5700,54,Code/GameEngine/Source/Common/RTS/ProductionPrerequisite.cpp,matched,
@@ -7874,6 +8139,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?memrev@@YAXPADI@Z,,0x009E8C50,33,Code/Libraries/Source/WWVegas/WWLib/mpmath.cpp,matched,
 ?merge@LList@@QAEXPAV1@@Z,,0x00105890,49,Code/GameEngine/Source/Common/System/List.cpp,matched,
 ?messageCallback@BuddyThreadClass@@QAEXPAVGPConnection@@PAUGPRecvBuddyMessageArg@@@Z,,0x0000E43A,5,Code/masm_dumps/_messageCallback_BuddyThreadClass__QAEXPAVGPConnection__PAUGPRecvBuddyMessageArg___Z_E43A.asm,matched,MASM exact retail dump
+?minInt@@YAHHH@Z,,0x0094A8C0,15,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
 ?minf@@YAMMM@Z,,0x0075B460,25,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DView.cpp,matched,
 ?moveRoadSegTo@W3DRoadBuffer@@IAEXHH@Z,,0x0003283F,5,Code/masm_dumps/_moveRoadSegTo_W3DRoadBuffer__IAEXHH_Z_3283F.asm,matched,MASM exact retail dump
 ?mp_quo_digit@@YAGPAG@Z,,0x009E8BC0,129,Code/Libraries/Source/WWVegas/WWLib/mpmath.cpp,matched,
@@ -8235,12 +8501,15 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?reserve@?$vector@UParkingPlaceInfo@ParkingPlaceBehavior@@V?$allocator@UParkingPlaceInfo@ParkingPlaceBehavior@@@_STL@@@_STL@@QAEXI@Z,,0x003D14D0,24,Code/GameEngine/Source/GameLogic/Object/Behavior/ParkingPlaceBehavior.cpp,matched,
 ?reserveDoorForExit@QueueProductionExitUpdate@@UAE?AW4ExitDoorType@@PBVThingTemplate@@PAVObject@@@Z,,0x002D0890,43,Code/GameEngine/Source/GameLogic/Object/Update/ProductionExitUpdate/QueueProductionExitUpdate.cpp,matched,
 ?reserveDoorForExit@SpawnPointProductionExitUpdate@@UAE?AW4ExitDoorType@@PBVThingTemplate@@PAVObject@@@Z,,0x002D21A0,90,Code/GameEngine/Source/GameLogic/Object/Update/ProductionExitUpdate/SpawnPointProductionExitUpdate.cpp,matched,
+?reset@?$bitset@$0BB@@_STL@@QAEAAV12@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ?reset@?$bitset@$0CG@@_STL@@QAEAAV12@XZ,,0x005818F0,12,Code/GameEngine/Source/GameLogic/System/Damage.cpp,matched,
 ?reset@?$bitset@$0CN@@_STL@@QAEAAV12@XZ,,0x005818F0,12,Code/GameEngine/Source/GameLogic/Object/Collide/FireWeaponCollide.cpp,matched,
 ?reset@?$bitset@$0ED@@_STL@@QAEAAV12@XZ,,0x000CCC50,15,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ?reset@?$bitset@$0HE@@_STL@@QAEAAV12@XZ,,0x001C2970,18,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ScoreScreen.cpp,matched,
 ?reset@?$bitset@$0HF@@_STL@@QAEAAV12@XZ,,0x001C2970,18,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ?reset@?$bitset@$0IA@@_STL@@QAEAAV12@XZ,,0x001C2970,18,Code/GameEngine/Source/Common/Thing/Module.cpp,matched,
+?reset@?$bitset@$0L@@_STL@@QAEAAV12@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
+?reset@?$bitset@$0N@@_STL@@QAEAAV12@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ?reset@Anim2D@@QAEXXZ,,0x005BA250,96,Code/GameEngine/Source/GameClient/System/Anim2D.cpp,matched,
 ?reset@AnimateWindowManager@@UAEXXZ,,0x0045DAB0,36,Code/GameEngine/Source/GameClient/GUI/AnimateWindowManager.cpp,matched,
 ?reset@DisplayString@@UAEXXZ,,0x0040FFB0,20,Code/GameEngine/Source/GameClient/DisplayString.cpp,matched,
@@ -8271,6 +8540,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?runInit@WindowLayout@@QAEXPAX@Z,,0x00470690,21,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp,matched,
 ?runInit@WindowLayout@@UAEXPAX@Z,,0x00470690,21,Code/GameEngine/Source/GameClient/window_layout.cpp,matched,header-inline virtual (COMDAT)
 ?runShutdown@WindowLayout@@UAEXPAX@Z,,0x004706D0,21,Code/GameEngine/Source/GameClient/window_layout.cpp,matched,header-inline virtual (COMDAT)
+?runUpdate@WindowLayout@@QAEXPAX@Z,,0x004706B0,21,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp,matched,ICF alias of existing matched body
 ?runUpdate@WindowLayout@@UAEXPAX@Z,,0x004706B0,21,Code/GameEngine/Source/GameClient/window_layout.cpp,matched,header-inline virtual (COMDAT)
 ?saturateRGB@Drawable@@QAEXAAURGBColor@@M@Z,,0x00410AF0,53,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ?saveLockGhostObjects@GhostObjectManager@@QAEX_N@Z,,0x0010CF20,10,Code/GameEngine/Source/Common/System/SaveGame/GameState.cpp,matched,
@@ -8314,6 +8584,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setActive@Script@@QAEX_N@Z,,0x003A3CB0,10,Code/GameEngine/Source/GameLogic/ScriptEngine/Scripts.cpp,matched,
 ?setAdjustsDestination@AIInternalMoveToState@@IAEX_N@Z,,0x0014E630,10,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,
 ?setAllowUninstall@W3DMaskMaterialPassClass@@QAEX_N@Z,,0x0079E3F0,10,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp,matched,
+?setAlpha@Anim2D@@QAEXM@Z,,0x00674240,10,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
 ?setAngle@Shadow@@QAEXM@Z,,0x000AF9E0,10,Code/GameEngine/Source/GameClient/RadiusDecal.cpp,matched,
 ?setAngle@View@@UAEXM@Z,,0x000C8EF0,10,Code/GameEngine/Source/GameClient/View.cpp,matched,
 ?setAnimData@AnimateWindow@@QAEXUICoord2D@@000UCoord2D@@II@Z,,0x0045CF50,87,Code/GameEngine/Source/GameClient/GUI/AnimateWindowManager.cpp,matched,
@@ -8356,6 +8627,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setCustomFrame@Condition@@QAEXH@Z,,0x001BD310,10,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptConditions.cpp,matched,
 ?setData@NetWrapperCommandMsg@@QAEXPAEI@Z,,0x00673E70,77,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,
 ?setDeathTypeFlag@@YAIIW4DeathType@@@Z,,0x000B8DF0,17,Code/GameEngine/Source/Common/INI/ini.cpp,matched,
+?setDebugPathPosition@Pathfinder@@QAEXPBUCoord3D@@@Z,,0x0079E400,26,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,ICF alias of existing matched body
 ?setDecalUVAxis@W3DShadowTexture@@QAEXAAVVector3@@0@Z,,0x007AE7E0,63,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp,matched,
 ?setDefaultControlBarConfig@ControlBar@@IAEXXZ,,0x00043E73,5,Code/masm_dumps/_setDefaultControlBarConfig_ControlBar__IAEXXZ_43E73.asm,matched,MASM exact retail dump
 ?setDesiredGatherers@BuildListInfo@@QAEXH@Z,,0x00160B00,13,Code/GameEngine/Source/GameLogic/AI/AIPlayer.cpp,matched,
@@ -8472,6 +8744,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setOrientation@Thing@@QAEXM@Z,,0x000399A5,5,Code/masm_dumps/_setOrientation_Thing__QAEXM_Z_399A5.asm,matched,MASM exact retail dump
 ?setOrigin@View@@UAEXHH@Z,,0x0045BA60,17,Code/GameEngine/Source/GameClient/View.cpp,matched,
 ?setParentCell@PathfindCell@@QAEXPAV1@@Z,,0x003F69A0,14,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,
+?setParentCellHierarchical@PathfindCell@@QAEXPAV1@@Z,,0x003F69A0,14,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,ICF alias of existing matched body
 ?setPassable@ZoneBlock@@QAEX_N@Z,,0x002C56C0,10,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,
 ?setPersonality@Particle@@QAEXI@Z,,0x005FC2D0,13,Code/GameEngine/Source/GameClient/System/ParticleSys.cpp,matched,
 ?setPitch@View@@UAEXM@Z,,0x0045B570,61,Code/GameEngine/Source/GameClient/View.cpp,matched,
@@ -8486,6 +8759,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setPosition@PathNode@@QAEXPBUCoord3D@@@Z,,0x0034FF25,26,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,
 ?setPosition@View@@IAEXPBUCoord3D@@@Z,,0x003D4E50,26,Code/GameEngine/Source/GameClient/View.cpp,matched,
 ?setPositions@BridgeScaffoldBehavior@@UAEXPBUCoord3D@@00@Z,,0x001F5860,74,Code/GameEngine/Source/GameLogic/Object/Behavior/BridgeScaffoldBehavior.cpp,matched,
+?setPreAttackFinishedFrame@Weapon@@QAEXI@Z,,0x00674240,10,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
 ?setPrep@Dict@@AAEPAUDictPair@1@W4NameKeyType@@W4DataType@1@@Z,,0x00042749,5,Code/masm_dumps/_setPrep_Dict__AAEPAUDictPair_1_W4NameKeyType__W4DataType_1__Z_42749.asm,matched,MASM exact retail dump
 ?setProducer@Object@@QAEXPBV1@@Z,,0x001BE450,25,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ?setProfileID@GameSpyGameSlot@@QAEXH@Z,,0x001A19C0,10,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,matched,
@@ -8529,6 +8803,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setSlotPointer@GameInfo@@QAEXHPAVGameSlot@@@Z,,0x0061E9E0,24,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,
 ?setSlotRankPoints@GameSpyGameSlot@@QAEXH@Z,,0x0045BEC0,10,Code/GameEngine/Source/GameNetwork/GameSpy/StagingRoomGameInfo.cpp,matched,
 ?setSortMode@@YAXW4GameSortType@@@Z,,0x00048360,5,Code/masm_dumps/_setSortMode__YAXW4GameSortType___Z_48360.asm,matched,MASM exact retail dump
+?setStacking@RoadType@@QAEXH@Z,,0x00674240,10,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadBuffer.cpp,matched,ICF alias of existing matched body
 ?setStartPos@AnimateWindow@@QAEXUICoord2D@@@Z,,0x00495370,17,Code/GameEngine/Source/GameClient/GUI/ProcessAnimateWindow.cpp,matched,
 ?setStartPos@ControlBarSchemeAnimation@@QAEXUICoord2D@@@Z,,0x00495390,17,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBarScheme.cpp,matched,
 ?setStartTime@AnimateWindow@@QAEXI@Z,,0x0016A9D0,10,Code/GameEngine/Source/GameClient/GUI/ProcessAnimateWindow.cpp,matched,
@@ -8559,6 +8834,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setUnicodeString@Dict@@QAEXW4NameKeyType@@ABVUnicodeString@@@Z,,0x000688A0,41,Code/GameEngine/Source/Common/Dict.cpp,matched,
 ?setUninterruptable@AudioEventRTS@@QAEX_N@Z,,0x000B2350,10,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,
 ?setUpdate@HijackerUpdate@@QAEX_N@Z,,0x00295AA0,10,Code/GameEngine/Source/GameLogic/Object/Collide/CrateCollide/ConvertToHijackedVehicleCrateCollide.cpp,matched,
+?setUpdate@WindowLayout@@QAEXP6AXPAV1@PAX@Z@Z,,0x00674240,10,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp,matched,ICF alias of existing matched body
 ?setUpgradeExecuted@UpgradeMux@@IAEX_N@Z,,0x001EE7D0,10,Code/GameEngine/Source/GameLogic/Object/Behavior/AutoHealBehavior.cpp,matched,
 ?setUseStats@GameInfo@@QAEXH@Z,,0x0016A390,10,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupHostGame.cpp,matched,
 ?setVel@AnimateWindow@@QAEXUCoord2D@@@Z,,0x00495630,17,Code/GameEngine/Source/GameClient/GUI/ProcessAnimateWindow.cpp,matched,
@@ -8651,6 +8927,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?swap@?$map@GEU?$less@G@_STL@@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@QAEXAAV12@@Z,,0x000BF020,35,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,
 ?switchControlBarStage@ControlBar@@QAEXW4ControlBarStages@@@Z,,0x0049F140,98,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp,matched,
 ?switchToContext@ControlBar@@IAEXW4ControlBarContext@@PAVDrawable@@@Z,,0x0049E901,869,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar_switchToContext.asm,matched,exact 869B via MASM
+?tan@@YAMM@Z,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,ICF alias of existing matched body
 ?testFlagBit@@YA_NHH@Z,,0x006958A0,22,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
 ?testGrab@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x0047D750,13,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,
 ?testMinSpecRequirements@Display@@UAE_NPA_N00PAW4StaticGameLODLevel@@PAM@Z,,0x0040F5B0,26,Code/GameEngine/Source/GameClient/Display.cpp,matched,
@@ -8725,6 +9002,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?valid@W3DVideoBuffer@@UAE_NXZ,,0x007E88A0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DVideoBuffer.cpp,matched,
 ?validate@?$StringBase@D@@ABEXXZ,0x0001D4A3,0x0005D790,1,Code/Libraries/Source/WWVegas/WWLib/string_base.cpp,matched,no-op string validation
 ?validate@?$StringBase@G@@ABEXXZ,0x000390A9,0x0005D7A0,1,Code/Libraries/Source/WWVegas/WWLib/string_base.cpp,matched,no-op
+?vecDiff_3D@@YAXPBUCoord3D@@0PAU1@@Z,,0x004106E0,37,Code/GameEngine/Source/GameLogic/Object/PartitionManager.cpp,matched,ICF alias of existing matched body
 ?vis_render_box@BoxRenderObjClass@@IAEXAAVSpecialRenderInfoClass@@ABVVector3@@1@Z,,0x00A9A533,590,Code/Libraries/Source/WWVegas/WW3D2/boxrobj_vis_render_box.asm,matched,exact 590B via MASM
 ?visibilityChanged@W3DRoadBuffer@@IAE_NABUIRegion2D@@@Z,,0x007044A0,293,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadBuffer.cpp,matched,
 ?wcstrim@@YAPAGPAG@Z,,0x009E7F20,100,Code/Libraries/Source/WWVegas/WWLib/trim.cpp,matched,
@@ -8938,3 +9216,4 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 _log10f,,0x00799CE0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/GUICallbacks/W3DControlBar.cpp,matched,
 _logf,,0x0045B370,11,Code/GameEngine/Source/Common/System/statistics.cpp,matched,
 _powf,,0x00097070,14,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
+_tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,ICF alias of existing matched body

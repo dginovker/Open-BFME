@@ -10186,3 +10186,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ??1CameraClass@@UAE@XZ,,0x009312D0,18,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,Ghidra vtable xrefs identified exact function
 ?emit_AutoDepositUpdate@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011A600,96,Code/GameEngine/Source/GameLogic/Object/module_pool_glue_bulk.cpp,matched,icf-owner=friend_newModuleInstance@AutoDepositUpdate; Ghidra boundary
 ?emit_ArmorUpgrade@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011D090,96,Code/GameEngine/Source/GameLogic/Object/module_pool_glue_bulk.cpp,matched,icf-owner=friend_newModuleInstance@ArmorUpgrade; Ghidra boundary
+?emit_AutoFindHealingUpdate@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00119780,96,Code/GameEngine/Source/GameLogic/Object/module_pool_glue_bulk.cpp,matched,icf-owner=friend_newModuleInstance@AutoFindHealingUpdate; Ghidra boundary

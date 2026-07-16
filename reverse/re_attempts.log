@@ -1009,3 +1009,4 @@ _$E7	dead	absent from retail .text (masked body-scan over full segment, 0 hits)
 ?Save@LightClass@@UAE_NAAVChunkSaveClass@@@Z	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
 ?Load@LightClass@@UAE_NAAVChunkLoadClass@@@Z	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
 ??1MeshLoadContextClass@@EAE@XZ	no-match	not emitted in drift-attributed TU (wrong-source artifact of basename map); needs emission from another landed TU
+_$E28	landed	drift-candidate-one-byte-early_true-start-0x00C6E270-exact-50B_current-object-ordinal-E9-uniquely-resolved-by-size

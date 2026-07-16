@@ -10159,3 +10159,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?empty@?$map@GEU?$less@G@_STL@@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@QBE_NXZ,,0x0061E630,11,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,tiny-locate
 ?isOpen@GameSlot@@QBE_NXZ,,0x0061E630,11,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,tiny-locate
 ?empty@?$_Rb_tree@PAVGameWindow@@PAV1@U?$_Identity@PAVGameWindow@@@_STL@@U?$less@PAVGameWindow@@@3@V?$allocator@PAVGameWindow@@@3@@_STL@@QBE_NXZ,,0x0061E630,11,Code/GameEngine/Source/GameNetwork/GameSpy/Chat.cpp,matched,tiny-locate
+?empty@?$set@PAVGameWindow@@U?$less@PAVGameWindow@@@_STL@@V?$allocator@PAVGameWindow@@@3@@_STL@@QBE_NXZ,,0x0061E630,11,Code/GameEngine/Source/GameNetwork/GameSpy/Chat.cpp,matched,tiny-locate

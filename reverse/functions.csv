@@ -10139,3 +10139,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?GadgetButtonGetEnabledSelectedColor@@YAHPAVGameWindow@@@Z,,0x00857460,8,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,tiny-locate
 ?skip@MainMenuSmallScaleDownTransition@@UAEXXZ,,0x0059EAF0,8,Code/GameEngine/Source/GameClient/GUI/GameWindowTransitionsStyles.cpp,matched,tiny-locate
 ?skip@ScaleUpTransition@@UAEXXZ,,0x0059EAF0,8,Code/GameEngine/Source/GameClient/GUI/GameWindowTransitionsStyles.cpp,matched,tiny-locate
+?skip@ScoreScaleUpTransition@@UAEXXZ,,0x0059EAF0,8,Code/GameEngine/Source/GameClient/GUI/GameWindowTransitionsStyles.cpp,matched,tiny-locate

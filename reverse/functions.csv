@@ -10184,3 +10184,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?Is_Done@GridListIterator@@QAE_NXZ,,0x0061E630,11,Code/Libraries/Source/WWVegas/WWMath/gridcull.cpp,matched,tiny-locate
 ??0PtrPairStruct@PointerRemapClass@@QAE@PAX0@Z,,0x009E5EB0,18,Code/Libraries/Source/WWVegas/WWSaveLoad/pointerremap.cpp,matched,tiny-locate
 ??1CameraClass@@UAE@XZ,,0x009312D0,18,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,Ghidra vtable xrefs identified exact function
+?emit_AutoDepositUpdate@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011A600,96,Code/GameEngine/Source/GameLogic/Object/module_pool_glue_bulk.cpp,matched,icf-owner=friend_newModuleInstance@AutoDepositUpdate; Ghidra boundary

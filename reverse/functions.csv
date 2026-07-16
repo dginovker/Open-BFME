@@ -10180,3 +10180,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ??0LODHeapNode@@QAE@PAVRenderObjClass@@M@Z,,0x009E5EB0,18,Code/Libraries/Source/WWVegas/WW3D2/predlod.cpp,matched,tiny-locate
 ??0Random3Class@@QAE@II@Z,,0x009E5EB0,18,Code/Libraries/Source/WWVegas/WW3D2/seglinerenderer.cpp,matched,tiny-locate
 ??0Edge@Strip@@QAE@HH@Z,,0x009E5EB0,18,Code/Libraries/Source/WWVegas/WW3D2/stripoptimizer.cpp,matched,tiny-locate
+?Reset@VisPolyClass@@QAEXXZ,,0x00702070,8,Code/Libraries/Source/WWVegas/WW3D2/visrasterizer.cpp,matched,tiny-locate

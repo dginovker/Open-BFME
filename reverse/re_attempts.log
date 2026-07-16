@@ -1023,3 +1023,4 @@ _$E28	no-match	Current VS2003 object emits only _$E9 and _$E10; _$E28 is absent,
 _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is absent, so this static-initializer drift row is stale/compiler-numbering dependent.
 ?parseTransitionToFX@TerrainRoadType@@KAXPAVINI@@PAX1PBX@Z	landed	MASM exact 263B at true retail boundary 0x601E90; stale drift size 231 omitted two exception tails
 ?parseTransitionToOCL@TerrainRoadType@@KAXPAVINI@@PAX1PBX@Z	landed	MASM exact 263B at true retail boundary 0x601D40; stale drift size 231 omitted two exception tails
+??1CameraClass@@UAE@XZ	landed	Ghidra xrefs from Camera constructor vtables 0x113C668/0x113C664 identified exact 18B function at 0x009312D0; explain_mismatch exact

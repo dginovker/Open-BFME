@@ -149,7 +149,8 @@ def main():
     output = build.obj_path(source)
     build.compile_source(source, output)
 
-    compiled_raw, relocs = build.read_object_symbol_bytes(output, row["name"])
+    compiled_raw, relocs = build.read_object_symbol_bytes(
+        output, build.ledger_object_symbol(row), int(row["target_size"]))
     patch = build.compile_function(row, build.load_symbol_map(), output)
     target = patch["target"]
     compiled = patch["bytes"]

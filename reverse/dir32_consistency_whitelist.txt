@@ -111,3 +111,29 @@ _parentName
 _perPlayerGadgetsToHide
 _textEntryPassword
 _buttonOk
+
+# Additional template vtables retained at multiple retail link sites. The
+# matched functions resolve to the copy linked with their originating TU.
+??_7?$SimpleDynVecClass@M@@6B@
+??_7?$SimpleDynVecClass@VVector4@@@@6B@
+??_7?$SimpleVecClass@M@@6B@
+??_7?$SimpleVecClass@VVector4@@@@6B@
+# Constructor/destructor vptr stores resolve to different points in the
+# retail base chain, the same documented phenomenon as the FX vtables above.
+??_7StreamingArchiveFile@@6B@
+
+# Same decorated globals are materialized separately by different TUs or
+# template instantiations; each reference is from a byte-matched function.
+?DISABLEDMASK_ALL@@3V?$BitFlags@$0N@@@A
+?s_bitNameList@?$BitFlags@$0CG@@@0PAPBDA
+_theGameLogicSeed
+
+# Texture-filter lookup arrays use element-address relocations. Subtracting
+# the object addend leaves one apparent base per referenced array element.
+?_MagTextureFilters@@3PAY03IA
+?_MinTextureFilters@@3PAY03IA
+?_MipMapFilters@@3PAY03IA
+
+# ceil is imported through two IAT slots in retail, matching the existing
+# memmove/closesocket double-import cases.
+__imp__ceil

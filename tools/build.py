@@ -157,7 +157,7 @@ def read_object_symbols(data):
     return symbols
 
 
-def read_object_symbol_bytes(path, symbol_name):
+def read_object_symbol_bytes(path, symbol_name, expected_size=None):
     data = path.read_bytes()
     section_count = u16(data, 2)
     section_table = 20
@@ -176,12 +176,37 @@ def read_object_symbol_bytes(path, symbol_name):
         )
 
     symbols = read_object_symbols(data)
+    resolved_name = symbol_name
+    if not any(s["name"] == symbol_name and s["section"] > 0 for s in symbols):
+        # MSVC hashes the absolute source path into anonymous-namespace names,
+        # so the same function gets a different ?A0x........ token in each
+        # clone/worktree. Accept only one otherwise-identical defined symbol.
+        normalized = re.sub(r"\?A0x[0-9A-Fa-f]{8}", "?A0xHASH", symbol_name)
+        candidates = [s["name"] for s in symbols if s["section"] > 0 and
+                      re.sub(r"\?A0x[0-9A-Fa-f]{8}", "?A0xHASH", s["name"]) == normalized]
+        if len(candidates) == 1:
+            resolved_name = candidates[0]
+        # Compiler-generated dynamic-initializer ordinals change when globals
+        # differ between the BFME and ZH translation units.  Resolve a stale
+        # retail ordinal only when size identifies one initializer uniquely.
+        elif expected_size is not None and re.fullmatch(r"_\$E\d+", symbol_name):
+            candidates = []
+            for candidate in symbols:
+                if candidate["section"] <= 0 or not re.fullmatch(r"_\$E\d+", candidate["name"]):
+                    continue
+                section = sections[candidate["section"] - 1]
+                start = section["raw_pointer"] + candidate["value"]
+                end = section["raw_pointer"] + section["raw_size"]
+                if len(data[start:end].rstrip(b"\xcc")) == expected_size:
+                    candidates.append(candidate["name"])
+            if len(candidates) == 1:
+                resolved_name = candidates[0]
     index = 0
     while index < len(symbols):
         symbol = symbols[index]
         # the same name can appear as a sectionless entry (e.g. weak external)
         # before its real definition; keep scanning for the defined one
-        if symbol["name"] == symbol_name and symbol["section"] > 0:
+        if symbol["name"] == resolved_name and symbol["section"] > 0:
             section = sections[symbol["section"] - 1]
             value = symbol["value"]
             start = section["raw_pointer"] + value
@@ -202,6 +227,12 @@ def read_object_symbol_bytes(path, symbol_name):
         index += 1
 
     raise ValueError(f"symbol not found in object: {symbol_name}")
+
+
+def ledger_object_symbol(row):
+    """Return an explicit TU-local object symbol alias from the notes column."""
+    match = re.search(r"(?:^|;)object-symbol=([^;]+)", row.get("notes", ""))
+    return match.group(1) if match else row["name"]
 
 
 def vc71_root():
@@ -420,7 +451,8 @@ def compile_function(row, symbol_map, output):
     target_rva = int(row["target_rva"], 16)
     target_size = int(row["target_size"])
     target = read_target_bytes(target_rva, target_size)
-    compiled, relocs = read_object_symbol_bytes(output, row["name"])
+    compiled, relocs = read_object_symbol_bytes(
+        output, ledger_object_symbol(row), target_size)
 
     resolved = bytearray(compiled[:target_size])
     unresolved = []
@@ -619,7 +651,8 @@ def verify_string_refs(rows):
         target_size = int(row["target_size"])
         target = read_target_bytes(target_rva, target_size)
         try:
-            fn_bytes, relocs = read_object_symbol_bytes(obj, row["name"])
+            fn_bytes, relocs = read_object_symbol_bytes(
+                obj, ledger_object_symbol(row), target_size)
         except ValueError:
             continue
         for offset, rtype, sym in relocs:
@@ -678,7 +711,8 @@ def verify_dir32_consistency(rows):
         trva, tsz = int(row["target_rva"], 16), int(row["target_size"])
         target = read_target_bytes(trva, tsz)
         try:
-            body, relocs = read_object_symbol_bytes(obj, row["name"])
+            body, relocs = read_object_symbol_bytes(
+                obj, ledger_object_symbol(row), tsz)
         except ValueError:
             continue
         for off, rtype, sym in relocs:

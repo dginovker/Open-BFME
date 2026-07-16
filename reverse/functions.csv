@@ -10165,3 +10165,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?GadgetCheckBoxGetEnabledUncheckedBoxColor@@YAHPAVGameWindow@@@Z,,0x00857460,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DCheckBox.cpp,matched,tiny-locate
 ?GadgetComboBoxGetEnabledColor@@YAHPAVGameWindow@@@Z,,0x00857200,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DComboBox.cpp,matched,tiny-locate
 ?GadgetListBoxGetEnabledSelectedItemColor@@YAHPAVGameWindow@@@Z,,0x00857460,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DListBox.cpp,matched,tiny-locate
+?GadgetProgressBarGetEnabledColor@@YAHPAVGameWindow@@@Z,,0x00857200,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DProgressBar.cpp,matched,tiny-locate

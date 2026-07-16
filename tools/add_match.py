@@ -182,13 +182,15 @@ def main():
             fail(f"--icf-owner {args.icf_owner} is not a matched {size}-byte claim "
                  f"at 0x{rva:08X}")
     for row in rows:
+        same_icf_group = (icf_owner is not None and row["status"] == "matched" and
+                          row["rva"] == rva and row["size"] == size)
         if row["rva"] == rva:
-            if row is icf_owner:
+            if same_icf_group:
                 continue
             fail(f"target_rva 0x{rva:08X} is already claimed by {row['name']} "
                  f"({row['source']}, {row['status']}, line {row['line']})")
         if row["status"] == "matched" and row["rva"] < new_end and rva < row["rva"] + row["size"]:
-            if row is icf_owner:
+            if same_icf_group:
                 continue
             fail(f"range [0x{rva:08X}, 0x{new_end:08X}) overlaps matched row "
                  f"{row['name']} [0x{row['rva']:08X}, 0x{row['rva'] + row['size']:08X}) "

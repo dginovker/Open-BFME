@@ -3218,3 +3218,5 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ??0TwiddlerClass@@QAE@XZ,0x0000CDC9,pinharvest x1 (thunk)
 ?Set_Gamma@DX8Wrapper@@SAXMMM_N0@Z,0x00905750
 ?Set_Int@RegistryClass@@QAEXPBDH@Z,0x009DC2F0
+?newDrawable@BFMEThingFactory@@QAEPAVDrawable@@PBVThingTemplate@@W4DrawableStatus@@H@Z,0x0002C336
+?setPosition@Drawable@@QAEXPBUCoord3D@@@Z,0x0001742C

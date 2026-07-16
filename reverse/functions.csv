@@ -10168,3 +10168,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?GadgetProgressBarGetEnabledColor@@YAHPAVGameWindow@@@Z,,0x00857200,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DProgressBar.cpp,matched,tiny-locate
 ?GadgetButtonGetEnabledColor@@YAHPAVGameWindow@@@Z,,0x00857200,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DPushButton.cpp,matched,tiny-locate
 ?GadgetRadioGetEnabledColor@@YAHPAVGameWindow@@@Z,,0x00857200,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DRadioButton.cpp,matched,tiny-locate
+?GadgetRadioGetEnabledUncheckedBoxColor@@YAHPAVGameWindow@@@Z,,0x00857460,8,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DRadioButton.cpp,matched,tiny-locate

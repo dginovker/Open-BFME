@@ -10416,3 +10416,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?clear@DictPair@Dict@@QAEXXZ,,0x000680D0,64,Code/GameEngine/Source/Common/Dict_DictPair_clear.asm,matched,Dict helper cluster via setPrep thunk to setNameAndType at 0x68120
 ??1LocomotorSet@@QAE@XZ,,0x009F2800,115,Code/GameEngine/Source/GameLogic/Object/LocomotorSet_destructor.asm,matched,Ghidra-confirmed destructor boundary after correcting overlapping ControlBar row
 ?getVetUpgradeName@@YA?AVAsciiString@@W4VeterancyLevel@@@Z,,0x0010AD90,173,Code/GameEngine/Source/Common/System/Upgrade_getVetUpgradeName.asm,matched,Ghidra-confirmed Upgrade_Veterancy_ string helper boundary
+?parseMetaMapDefinition@INI@@SAXPAV1@@Z,,0x005B71A0,143,Code/GameEngine/Source/GameClient/MessageStream/INI_parseMetaMapDefinition.asm,matched,CommandMap INI table pointer and Ghidra-confirmed inlined parser body

@@ -10302,3 +10302,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?load@INI@@QAEXVAsciiString@@W4INILoadType@@PAVXfer@@@Z,,0x00853610,1037,Code/masm_dumps/load_INI_QAEXVAsciiString_W4INILoadType_PAVXfer_Z_853610.asm,matched,Ghidra boundary and inlined prepFile flow-identified body
 ?readLine@INI@@IAEXXZ,,0x008514C0,121,Code/masm_dumps/readLine_INI_IAEXXZ_8514C0.asm,matched,Ghidra caller and BFME line-buffer flow-identified body
 ?getNextQuotedAsciiString@INI@@QAE?AVAsciiString@@XZ,,0x00851540,401,Code/masm_dumps/getNextQuotedAsciiString_INI_QAE_AVAsciiString_XZ_851540.asm,matched,Ghidra boundary plus 0x40C quoted-token buffer flow
+?getNextAsciiString@INI@@QAE?AVAsciiString@@XZ,,0x008516E0,393,Code/masm_dumps/getNextAsciiString_INI_QAE_AVAsciiString_XZ_8516E0.asm,matched,Ghidra boundary plus static quoted-token buffer flow

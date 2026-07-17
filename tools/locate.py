@@ -157,6 +157,7 @@ def main():
     source = build.Path(args.source)
     obj = harvest.compile_obj(source, args.includes)
     source_rel = source.resolve().relative_to(build.ROOT)
+    source_text = source.read_text(errors="replace")
 
     accepted, ambiguous, unlocated, conflicts, weak = [], [], [], [], []
     pending_multi = []
@@ -181,6 +182,27 @@ def main():
         except UnicodeDecodeError:
             return None
 
+    def ghidra_boundary(rva, size):
+        """Accept an exact Ghidra body or an aligned, padded gap between bodies."""
+        if ghidra.get(rva) == size:
+            return True
+        index = bisect.bisect_right(ghidra_starts, rva) - 1
+        if index >= 0:
+            start = ghidra_starts[index]
+            if start <= rva < start + ghidra[start]:
+                return False
+        next_index = bisect.bisect_left(ghidra_starts, rva)
+        if rva % 16 or next_index >= len(ghidra_starts):
+            return False
+        next_start = ghidra_starts[next_index]
+        if next_start < rva + size:
+            return False
+        raw = text_raw + (rva - text_rva)
+        if exe[raw + size - 1] != 0xC3:
+            return False
+        padding = exe[raw + size : text_raw + (next_start - text_rva)]
+        return bool(padding) and all(byte == 0xCC for byte in padding)
+
     def class_string_candidate(name, size, relocs, validated):
         """Resolve pool/module helpers only when the binary names the class.
 
@@ -195,7 +217,7 @@ def main():
         dir32 = [off for off, rtype, _ in relocs if rtype == 0x0006 and off + 4 <= size]
         identified = []
         for rva, callees in validated:
-            if ghidra.get(rva) != size:
+            if not ghidra_boundary(rva, size):
                 continue
             start = text_raw + (rva - text_rva)
             target = exe[start : start + size]
@@ -204,7 +226,50 @@ def main():
                 identified.append((rva, callees))
         return identified[0] if len(identified) == 1 else None
 
-    class_identified = set()
+    def field_parse_candidate(name, size, relocs, validated):
+        """Resolve buildFieldParse bodies by their complete ordered field table."""
+        match = re.search(r"\?buildFieldParse@([^@]+)@@", name)
+        if not match or len(validated) < 2:
+            return None
+        marker = match.group(1) + "::buildFieldParse"
+        function_start = source_text.find(marker)
+        function_end = source_text.find("p.add(dataFieldParse", function_start)
+        if function_start < 0 or function_end < 0:
+            return None
+        fields = re.findall(r'\{\s*"([^"]+)"', source_text[function_start:function_end])
+        if len(fields) < 2:
+            return None
+
+        def table_fields(va):
+            result = []
+            for index in range(64):
+                try:
+                    offset = build.rva_to_file_offset(pe, va - 0x400000 + index * 16)
+                except ValueError:
+                    return None
+                entry = exe[offset : offset + 16]
+                string_va = struct.unpack_from("<I", entry)[0]
+                if not string_va:
+                    return result
+                value = read_ascii_string(string_va)
+                if value is None:
+                    return None
+                result.append(value)
+            return None
+
+        dir32 = [off for off, rtype, _ in relocs if rtype == 0x0006 and off + 4 <= size]
+        identified = []
+        for rva, callees in validated:
+            if not ghidra_boundary(rva, size):
+                continue
+            start = text_raw + (rva - text_rva)
+            target = exe[start : start + size]
+            tables = [table_fields(struct.unpack_from("<I", target, off)[0]) for off in dir32]
+            if fields in tables:
+                identified.append((rva, callees))
+        return identified[0] if len(identified) == 1 else None
+
+    binary_identified = set()
 
     def known_addresses(sym):
         """Every address a call to `sym` may legitimately encode, or None if unknown."""
@@ -287,17 +352,18 @@ def main():
                 unlocated.append((name, size))
             continue
 
-        identified = class_string_candidate(name, size, relocs, validated)
+        identified = (class_string_candidate(name, size, relocs, validated)
+                      or field_parse_candidate(name, size, relocs, validated))
         if identified is not None:
             validated = [identified]
-            class_identified.add(name)
+            binary_identified.add(name)
 
         def try_accept(name, size, validated):
             """Accept when exactly one candidate placement survives; returns True on accept."""
             live = [
                 entry for entry in validated
                 if entry[0] not in taken
-                or (name in class_identified
+                or (name in binary_identified
                     and any(rva == entry[0] and accepted_size == size
                             for _, rva, accepted_size, _ in accepted))
             ]

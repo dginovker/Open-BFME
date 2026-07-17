@@ -33,3 +33,11 @@ Outputs (gitignored, derived from the binary, like `reverse/exports.csv`):
 - **Calls:** a call target's address (e.g. `__ftol2` at `0x9F6E38`) goes in `reverse/symbols.csv`.
 - **Identification:** ~12% of `.text` is in functions referencing strings that are greppable in
   the Generals source — anchoring them to a specific source file. See `tools/harvest.py` and `../../docs/matching.md`.
+
+## Decompile a queued candidate
+
+`tools/next_work.py --tier ghidra` prints an RVA backed by source-string xrefs.
+Decompile it, including callers/data references and direct callees, with:
+
+    analyzeHeadless build/toolchains/bfme_ghidra bfme -process lotrbfme.exe -noanalysis \
+        -scriptPath tools/ghidra -postScript decompile_function.java 0x82190

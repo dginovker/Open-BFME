@@ -858,7 +858,6 @@ bool DX8Wrapper::Set_Render_Device
 	return false;
 }
 
-// ?Get_Format_Name@DX8Wrapper@@ present-unmatched
 void DX8Wrapper::Get_Format_Name(unsigned int format, StringClass *tex_format)
 {
 		*tex_format="Unknown";
@@ -884,7 +883,6 @@ void DX8Wrapper::Get_Format_Name(unsigned int format, StringClass *tex_format)
 		case D3DFMT_X8L8V8U8: *tex_format="D3DFMT_X8L8V8U8"; break;
 		case D3DFMT_Q8W8V8U8: *tex_format="D3DFMT_Q8W8V8U8"; break;
 		case D3DFMT_V16U16: *tex_format="D3DFMT_V16U16"; break;
-		case D3DFMT_W11V11U10: *tex_format="D3DFMT_W11V11U10"; break;
 		case D3DFMT_UYVY: *tex_format="D3DFMT_UYVY"; break;
 		case D3DFMT_YUY2: *tex_format="D3DFMT_YUY2"; break;
 		case D3DFMT_DXT1: *tex_format="D3DFMT_DXT1"; break;

@@ -10361,3 +10361,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseFromINI@?$BitFlags@$0CN@@@SAXPAVINI@@PAX1PBX@Z,,0x00029B9A,5,Code/masm_dumps/parseFromINI_BitFlags_0CN_SAXPAVINI_PAX1PBX_Z_29B9A.asm,matched,11 retail object-status field xrefs and Ghidra FUN_00604E70 identify bit-flag parser
 ?Get_Name@RenderObjClass@@UBEPBDXZ,,0x006CF2F0,6,Code/Libraries/Source/WWVegas/WW3D2/rendobj.cpp,matched,unique
 ?parseImageCoords@Image@@SAXPAVINI@@PAX1PBX@Z,,0x005D1E90,286,Code/GameEngine/Source/GameClient/System/Image.cpp,matched,Ghidra
+?Get_Format_Name@DX8Wrapper@@SAXIPAVStringClass@@@Z,,0x00906660,631,Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,matched,Ghidra string xrefs and corrected D3D8 format constants

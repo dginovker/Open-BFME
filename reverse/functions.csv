@@ -10315,3 +10315,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseICoord2D@INI@@SAXPAV1@PAX1PBX@Z,,0x00853420,60,Code/masm_dumps/parseICoord2D_INI_SAXPAV1_PAX1PBX_Z_853420.asm,matched,Ghidra-bounded gap with X Y sub-token flow verified scanInt calls and two integer stores
 ?parsePositiveNonZeroReal@INI@@SAXPAV1@PAX1PBX@Z,,0x00852B80,144,Code/masm_dumps/parsePositiveNonZeroReal_INI_SAXPAV1_PAX1PBX_Z_852B80.asm,matched,Ghidra bounded retail body; scanReal call and exact expected > 0 diagnostic
 ?parseAngleReal@INI@@SAXPAV1@PAX1PBX@Z,,0x00852D30,92,Code/masm_dumps/parseAngleReal_INI_SAXPAV1_PAX1PBX_Z_852D30.asm,matched,Ghidra bounded retail body; scanReal call and PI/180 degree-to-radian constant
+?parseBitInInt32@INI@@SAXPAV1@PAX1PBX@Z,,0x00852E60,115,Code/masm_dumps/parseBitInInt32_INI_SAXPAV1_PAX1PBX_Z_852E60.asm,matched,Ghidra bounded retail body; scanBool call with OR or AND-not mask update

@@ -10422,3 +10422,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@ConvertToCarBombCrateCollide@@SAPAVModuleData@@PAVINI@@@Z,,0x00125FD0,129,Code/GameEngine/Source/Common/Thing/ConvertToCarBombCrateCollide_friend_newModuleData.asm,matched,Ghidra-corrected 129-byte factory helper boundary
 ?parseAutoChoose@WeaponTemplateSet@@CAXPAVINI@@PAX1PBX@Z,,0x001EACB0,51,Code/GameEngine/Source/GameLogic/Object/WeaponTemplateSet_parseAutoChoose.asm,matched,Corrected one-byte-early queue RVA using INT3 and RET boundaries
 ?toggleReplayControls@@YAXXZ,,0x0043A840,73,Code/GameEngine/Source/GameClient/InGameUI_toggleReplayControls.asm,matched,Corrected one-byte-early queue RVA using INT3 and RET boundaries
+?_M_pop_front_aux@?$deque@VGameResultsResponse@@V?$allocator@VGameResultsResponse@@@_STL@@@_STL@@IAEXXZ,,0x00641500,60,Code/GameEngine/Source/GameNetwork/GameSpy/Thread/GameResultsThread.cpp,matched,

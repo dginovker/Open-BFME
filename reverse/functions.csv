@@ -10307,3 +10307,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?scanBool@INI@@SA_NPBD@Z,,0x00852550,108,Code/masm_dumps/scanBool_INI_SA_NPBD_Z_852550.asm,matched,Ghidra token normalization and yes/no comparison flow
 ?parseReal@INI@@SAXPAV1@PAX1PBX@Z,,0x00852B20,86,Code/masm_dumps/parseReal_INI_SAXPAV1_PAX1PBX_Z_852B20.asm,matched,Ghidra tokenizer flow plus verified scanReal callee and x87 store; removes false overlapping AIPlayer xfer claim
 ?parseBool@INI@@SAXPAV1@PAX1PBX@Z,,0x00852E00,86,Code/masm_dumps/parseBool_INI_SAXPAV1_PAX1PBX_Z_852E00.asm,matched,Ghidra tokenizer flow plus verified scanBool callee and byte store
+?parsePercentToReal@INI@@SAXPAV1@PAX1PBX@Z,,0x00852EE0,102,Code/masm_dumps/parsePercentToReal_INI_SAXPAV1_PAX1PBX_Z_852EE0.asm,matched,Ghidra percent separator flow plus verified scanReal callee and retail 0.01 multiply

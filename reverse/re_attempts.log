@@ -1062,3 +1062,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?xfer@AIPlayer@@MAEXPAVXfer@@@Z	dead	Historical 0x852B62 1170B claim begins inside Ghidra parseReal 0x852B20 and spans multiple independent INI functions through 0x852FF4; false overclaim removed; true body unknown
 ?parseBool@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x852E00 86B body tokenizes INI data calls verified scanBool 0x852550 and stores byte result
 ?parseBitInInt32@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x852EE0 102B body; it calls verified scanReal 0x8526E0 and multiplies by 0.01 so it is a percent parser rather than bit set/clear logic
+?parsePercentToReal@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x852EE0 102B body tokenizes with percent separator calls verified scanReal 0x8526E0 multiplies by 0.01 and stores result

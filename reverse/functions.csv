@@ -10298,3 +10298,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ??1LANGameInfo@@QAE@XZ,,0x00686CD0,103,Code/masm_dumps/__1LANGameInfo__QAE_XZ_686CD0.asm,matched,Ghidra-corrected exact boundary and layout-verified body
 ??0INI@@QAE@XZ,,0x00851230,162,Code/masm_dumps/__0INI__QAE_XZ_851230.asm,matched,Ghidra exact boundary and BFME layout-verified body
 ??1INI@@QAE@XZ,,0x008512E0,80,Code/masm_dumps/__1INI__QAE_XZ_8512E0.asm,matched,Ghidra exact boundary and member-layout-verified body
+?loadDirectory@INI@@QAEXVAsciiString@@_NW4INILoadType@@PAVXfer@@@Z,,0x00853F10,700,Code/masm_dumps/loadDirectory_INI_QAEXVAsciiString_NW4INILoadType_PAVXfer_Z_853F10.asm,matched,Ghidra boundary and retail *.ini xref-identified body

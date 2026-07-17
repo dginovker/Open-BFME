@@ -3306,3 +3306,4 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ??0ProjectileStreamUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0001E902,pinharvest x1 (thunk)
 ?GadgetListBoxReset@@YAXPAVGameWindow@@@Z,0x0000A3DF
 ?PopulateReplayFileListbox@@YAXPAVGameWindow@@@Z,0x000394AA
+?winGetLayout@GameWindow@@QAEPAVWindowLayout@@XZ,0x000402F5

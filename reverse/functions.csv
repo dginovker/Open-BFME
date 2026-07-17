@@ -10295,3 +10295,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?getClassMemoryPool@W3DSupplyDraw@@CAPAVMemoryPool@@XZ,,0x0077DC20,104,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DSupplyDraw.cpp,matched,
 ?buildFieldParse@MaxHealthUpgradeModuleData@@SAXAAVMultiIniFieldParse@@@Z,,0x002D6370,35,Code/GameEngine/Source/GameLogic/Object/Upgrade/MaxHealthUpgrade.cpp,matched,
 ?buildFieldParse@StatusBitsUpgradeModuleData@@SAXAAVMultiIniFieldParse@@@Z,,0x002D7DA0,35,Code/GameEngine/Source/GameLogic/Object/Upgrade/StatusBitsUpgrade.cpp,matched,
+?setName@LANGameInfo@@QAEXVUnicodeString@@@Z,,0x00685480,78,Code/masm_dumps/setName_LANGameInfo_QAEXVUnicodeString_Z_685480.asm,matched,Ghidra exact boundary and caller-verified body

@@ -3269,3 +3269,6 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ?updateFadeLevel@ScreenCrossFadeFilter@@IAE_NXZ,0x00006D0C
 ?updateNumPlayersOnline@@YAXXZ,0x0050BA40
 ?loadTracks@WaterTracksRenderSystem@@QAEXXZ,0x0004584F
+?PopulatePlayerInfoWindows@@YAXVAsciiString@@@Z,0x000084C7
+?getDisallowAsianText@CustomMatchPreferences@@QAE_NXZ,0x00019C72
+?getDisallowNonAsianText@CustomMatchPreferences@@QAE_NXZ,0x00007E6E

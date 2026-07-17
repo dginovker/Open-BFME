@@ -10347,3 +10347,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseDeathTypeFlags@INI@@SAXPAV1@PAX1PBX@Z,,0x00029EEC,5,Code/masm_dumps/parseDeathTypeFlags_INI_SAXPAV1_PAX1PBX_Z_29EEC.asm,matched,Retail DeathTypes xref and Ghidra FUN_004b9100 semantics identify parser
 ?parseAudioEventRTS@INI@@SAXPAV1@PAX1PBX@Z,,0x00009E94,5,Code/masm_dumps/parseAudioEventRTS_INI_SAXPAV1_PAX1PBX_Z_9E94.asm,matched,Multiple retail audio-field xrefs and canonical NoSound event lookup body identify parser
 ?parseDynamicAudioEventRTS@INI@@SAXPAV1@PAX1PBX@Z,,0x0000C7CF,5,Code/masm_dumps/parseDynamicAudioEventRTS_INI_SAXPAV1_PAX1PBX_Z_C7CF.asm,matched,Retail UnitSpecificSound xref and dynamic audio lifecycle body identify parser
+?parseAnim2DTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x0004B556,5,Code/masm_dumps/parseAnim2DTemplate_INI_SAXPAV1_PAX1PBX_Z_4B556.asm,matched,Unique BFME crash string anchors Anim2D collection lookup body and public thunk

@@ -163,7 +163,6 @@ def main():
                 continue
             body.append(f"{name},,0x{rva:08X},{size},{src.as_posix()},matched,string-anchored ({kind})")
             added += 1
-        body.sort(key=lambda r: r.split(",")[0])
         ledger.write_bytes((header + newline + newline.join(body) + newline).encode("utf-8"))
         print(f"emitted {added} candidate row(s) — run build.py to verify")
 

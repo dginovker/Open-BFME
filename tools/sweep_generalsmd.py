@@ -49,6 +49,7 @@ INCLUDE_DIRS = [
     REF / "Libraries" / "Source",
     REF / "Libraries" / "Source" / "debug",
     REF / "Libraries" / "Source" / "Compression",
+    REF / "Libraries" / "Source" / "Benchmark",
     REF / "Libraries" / "Source" / "WWVegas",
     REF / "Libraries" / "Source" / "WWVegas" / "WWLib",
     REF / "GameEngineDevice" / "Include",
@@ -63,9 +64,26 @@ INCLUDE_DIRS = [
 HEAD = "// cl: /DNDEBUG /DWIN32 /D_WINDOWS /MD /EHsc\n// stlport\n#define Matrix4x4 Matrix4  // BFME renamed it\n#define __PLACEMENT_VEC_NEW_INLINE  // always.h/GameMemory.h define array placement-new themselves\n"
 SOURCE_HEADS = {
     "registry.cpp": '#include "registry_win32.h"\n',
+    "w3dshadermanager.cpp": """#define HEAP_ZERO_MEMORY 8
+extern \"C\" __declspec(dllimport) void * __stdcall GetProcessHeap(void);
+extern \"C\" __declspec(dllimport) void * __stdcall HeapAlloc(void *, unsigned long, unsigned long);
+extern \"C\" __declspec(dllimport) int __stdcall HeapFree(void *, unsigned long, void *);
+""",
 }
 SOURCE_REPLACEMENTS = {
     "registry.cpp": (('#include "inisup.h"', '#include <inisup.h>'),),
+    "w3dshadermanager.cpp": (
+        (
+            "DX8Wrapper::_Get_D3D_Device8()->SetPixelShaderConstant(0,   D3DXVECTOR4(0.3f, 0.59f, 0.11f, 1.0f), 1);",
+            "D3DXVECTOR4 c0(0.3f, 0.59f, 0.11f, 1.0f); DX8Wrapper::_Get_D3D_Device8()->SetPixelShaderConstant(0, &c0, 1);",
+        ),
+        ("SetPixelShaderConstant(1,   color, 1)", "SetPixelShaderConstant(1, &color, 1)"),
+        (
+            "DX8Wrapper::_Get_D3D_Device8()->SetPixelShaderConstant(2,\tD3DXVECTOR4(m_curFadeValue, m_curFadeValue, m_curFadeValue, 1.0f), 1);",
+            "D3DXVECTOR4 c2(m_curFadeValue, m_curFadeValue, m_curFadeValue, 1.0f); DX8Wrapper::_Get_D3D_Device8()->SetPixelShaderConstant(2, &c2, 1);",
+        ),
+        ("*destMatrix *= offset;", "D3DXMatrixMultiply(destMatrix, destMatrix, &offset);"),
+    ),
 }
 
 

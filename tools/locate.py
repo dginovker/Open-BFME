@@ -20,6 +20,7 @@ import argparse
 import bisect
 import csv
 import os
+import re
 import struct
 import sys
 
@@ -166,6 +167,45 @@ def main():
     accepted_addr = {}  # name -> rva accepted this run
     taken = set(known_rvas)
 
+    def read_ascii_string(va):
+        """Read a short NUL-terminated retail string from an absolute VA."""
+        try:
+            offset = build.rva_to_file_offset(pe, va - 0x400000)
+        except ValueError:
+            return None
+        end = exe.find(b"\0", offset, min(offset + 128, len(exe)))
+        if end < 0:
+            return None
+        try:
+            return exe[offset:end].decode("ascii")
+        except UnicodeDecodeError:
+            return None
+
+    def class_string_candidate(name, size, relocs, validated):
+        """Resolve pool/module helpers only when the binary names the class.
+
+        These 104-byte static-init bodies are otherwise indistinguishable after
+        relocations are masked.  An exact Ghidra boundary plus the helper's own
+        class-name string is independent identity evidence; either alone is not.
+        """
+        match = re.search(r"\?(?:getModuleNameKey|getClassMemoryPool)@([^@]+)@@", name)
+        if not match or len(validated) < 2:
+            return None
+        class_name = match.group(1)
+        dir32 = [off for off, rtype, _ in relocs if rtype == 0x0006 and off + 4 <= size]
+        identified = []
+        for rva, callees in validated:
+            if ghidra.get(rva) != size:
+                continue
+            start = text_raw + (rva - text_rva)
+            target = exe[start : start + size]
+            strings = [read_ascii_string(struct.unpack_from("<I", target, off)[0]) for off in dir32]
+            if class_name in strings:
+                identified.append((rva, callees))
+        return identified[0] if len(identified) == 1 else None
+
+    class_identified = set()
+
     def known_addresses(sym):
         """Every address a call to `sym` may legitimately encode, or None if unknown."""
         addresses = set()
@@ -247,9 +287,20 @@ def main():
                 unlocated.append((name, size))
             continue
 
+        identified = class_string_candidate(name, size, relocs, validated)
+        if identified is not None:
+            validated = [identified]
+            class_identified.add(name)
+
         def try_accept(name, size, validated):
             """Accept when exactly one candidate placement survives; returns True on accept."""
-            live = [entry for entry in validated if entry[0] not in taken]
+            live = [
+                entry for entry in validated
+                if entry[0] not in taken
+                or (name in class_identified
+                    and any(rva == entry[0] and accepted_size == size
+                            for _, rva, accepted_size, _ in accepted))
+            ]
             if len(live) > 1:
                 # a call to a symbol with a known address disambiguates identical bodies
                 consistent = [

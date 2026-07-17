@@ -3264,3 +3264,6 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ?getGroup@Object@@QAEPAVAIGroup@@XZ,0x008F9550,derived-ICF
 ?insert_unique@?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@@3@@_STL@@QAE?AU?$pair@U?$_Rb_tree_iterator@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@@2@@_STL@@_N@2@ABU?$pair@$$CBVAsciiString@@VMapMetaData@@@2@@Z,0x0002DA10,derived-ICF
 ?pop_front@?$deque@VPSRequest@@V?$allocator@VPSRequest@@@_STL@@@_STL@@QAEXXZ,0x0002D77C,derived-ICF
+?getChipset@W3DShaderManager@@SA?AW4ChipsetType@@XZ,0x000162A7
+?startRenderToTexture@W3DShaderManager@@SAXXZ,0x000154E7
+?updateFadeLevel@ScreenCrossFadeFilter@@IAE_NXZ,0x00006D0C

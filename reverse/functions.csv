@@ -10420,3 +10420,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0ObjectWeaponStatusHelper@@QAE@PAVThing@@PBVModuleData@@@Z,,0x001C1340,107,Code/GameEngine/Source/GameLogic/Object/ObjectWeaponStatusHelper_ctor.asm,matched,Class vtable anchors from matched update and getModuleNameKey
 ??0RTS2DScene@@QAE@XZ,,0x00712590,209,Code/GameEngineDevice/Source/W3DDevice/GameClient/RTS2DScene_ctor.asm,matched,RTS2DScene string xref and Ghidra-confirmed constructor boundary
 ?friend_newModuleData@ConvertToCarBombCrateCollide@@SAPAVModuleData@@PAVINI@@@Z,,0x00125FD0,129,Code/GameEngine/Source/Common/Thing/ConvertToCarBombCrateCollide_friend_newModuleData.asm,matched,Ghidra-corrected 129-byte factory helper boundary
+?parseAutoChoose@WeaponTemplateSet@@CAXPAVINI@@PAX1PBX@Z,,0x001EACB0,51,Code/GameEngine/Source/GameLogic/Object/WeaponTemplateSet_parseAutoChoose.asm,matched,Corrected one-byte-early queue RVA using INT3 and RET boundaries

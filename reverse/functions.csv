@@ -4562,7 +4562,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?parseEventFXListName@LifeEventModuleTemplate@FXParticleSystem@@SAXPAVINI@@PAX1PBX@Z,0x00045804,0x5fc2f0,13,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ?parseEventFXListName@TerrainCollisionModuleTemplate@FXParticleSystem@@SAXPAVINI@@PAX1PBX@Z,0x0002F74D,0x5fcee0,13,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ?parseFX@@YAXPAVINI@@PAX1PBX@Z,,0x002B0890,138,Code/GameEngine/Source/GameLogic/Object/Update/StructureCollapseUpdate.cpp,matched,
-?parseFXList@INI@@SAXPAV1@PAX1PBX@Z,,0x00851EE0,84,Code/masm_dumps/__parseFXList_INI__SAXPAV1_PAX1PBX_Z_851EE0.asm,matched,
 ?parseFont@@YA_NPADPAVWinInstanceData@@0PAX@Z,,0x00485B60,293,Code/masm_dumps/_parseFont__YA_NPADPAVWinInstanceData__0PAX_Z.asm,matched,
 ?parseGameClientRandomDelay@@YAXPAVINI@@PAXPAVGameClientRandomVariable@@@Z,,0x00287700,59,Code/GameEngine/Source/GameLogic/Object/Update/BoneFXUpdate.cpp,matched,
 ?parseGameLogicRandomDelay@@YAXPAVINI@@PAXPAVGameLogicRandomVariable@@@Z,,0x00287750,59,Code/GameEngine/Source/GameLogic/Object/Update/BoneFXUpdate.cpp,matched,
@@ -10303,3 +10302,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?readLine@INI@@IAEXXZ,,0x008514C0,121,Code/masm_dumps/readLine_INI_IAEXXZ_8514C0.asm,matched,Ghidra caller and BFME line-buffer flow-identified body
 ?getNextQuotedAsciiString@INI@@QAE?AVAsciiString@@XZ,,0x00851540,401,Code/masm_dumps/getNextQuotedAsciiString_INI_QAE_AVAsciiString_XZ_851540.asm,matched,Ghidra boundary plus 0x40C quoted-token buffer flow
 ?getNextAsciiString@INI@@QAE?AVAsciiString@@XZ,,0x008516E0,393,Code/masm_dumps/getNextAsciiString_INI_QAE_AVAsciiString_XZ_8516E0.asm,matched,Ghidra boundary plus static quoted-token buffer flow
+?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z,,0x00851EE0,84,Code/masm_dumps/parseAsciiString_INI_SAXPAV1_PAX1PBX_Z_851EE0.asm,matched,Ghidra call to getNextAsciiString plus store and temporary destruction; corrects false parseFXList identity

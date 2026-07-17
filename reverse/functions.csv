@@ -10329,3 +10329,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z,,0x0000FC3B,5,Code/masm_dumps/parseMappedImage_INI_SAXPAV1_PAX1PBX_Z_FC3B.asm,matched,Ghidra canonical body; QueueButtonImage table xref and mapped-image manager lookup
 ?parseAndTranslateLabel@INI@@SAXPAV1@PAX1PBX@Z,,0x00032C45,5,Code/masm_dumps/parseAndTranslateLabel_INI_SAXPAV1_PAX1PBX_Z_32C45.asm,matched,Ghidra canonical body; RankName table xref and game-text translation lookup
 ?parseArmorTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x0003EF6D,5,Code/masm_dumps/parseArmorTemplate_INI_SAXPAV1_PAX1PBX_Z_3EF6D.asm,matched,Retail ArmorTemplateSet table xref; public thunk to None-aware armor-store lookup body
+?parseWeaponTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x0000CBDF,5,Code/masm_dumps/parseWeaponTemplate_INI_SAXPAV1_PAX1PBX_Z_CBDF.asm,matched,Retail CollideWeapon table xref; public thunk to weapon-store lookup body

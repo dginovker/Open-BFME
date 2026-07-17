@@ -1841,8 +1841,129 @@ void GarrisonContain::crc( Xfer *xfer )
 	* Version Info:
 	* 1: Initial version */
 // ------------------------------------------------------------------------------------------------
-// ?xfer@GarrisonContain@@MAEXPAVXfer@@@Z
-// Body in GarrisonContain_xfer.asm (exact 577B retail).
+// ?xfer@GarrisonContain@@MAEXPAVXfer@@@Z present-unmatched
+void GarrisonContain::xfer( Xfer *xfer )
+{
+	Int i;
+
+	// version
+	XferVersion currentVersion = 1;
+	XferVersion version = currentVersion;
+	xfer->xferVersion( &version, currentVersion );
+
+	// extend base class
+	OpenContain::xfer( xfer );
+
+	// original team
+	TeamID teamID = m_originalTeam ? m_originalTeam->getID() : TEAM_ID_INVALID;
+	xfer->xferUser( &teamID, sizeof( TeamID ) );
+	if( xfer->getXferMode() == XFER_LOAD )
+	{
+
+		if( teamID != TEAM_ID_INVALID )
+		{
+
+			m_originalTeam = TheTeamFactory->findTeamByID( teamID );
+			if( m_originalTeam == NULL )
+			{
+
+				DEBUG_CRASH(( "GarrisonContain::xfer - Unable to find original team by id\n" ));
+				throw SC_INVALID_DATA;
+
+			}  // end if
+
+		}  // end if
+		else
+			m_originalTeam = NULL;
+
+	}  // end if
+
+	xfer->xferBool( &m_hideGarrisonedStateFromNonallies );
+
+	// garrison point data
+	UnsignedShort pointDataCount = MAX_GARRISON_POINTS;
+	xfer->xferUnsignedShort( &pointDataCount );
+	for( i = 0; i < pointDataCount; ++i )
+	{
+
+		if( xfer->getXferMode() == XFER_SAVE )
+		{
+
+			// object at this point
+			Object *obj = m_garrisonPointData[ i ].object;
+			ObjectID objectID = obj ? obj->getID() : INVALID_ID;
+			xfer->xferObjectID( &objectID );
+
+			// target
+			xfer->xferObjectID( &m_garrisonPointData[ i ].targetID );
+
+			// placement frame
+			xfer->xferUnsignedInt( &m_garrisonPointData[ i ].placeFrame );
+
+			// last effect frame
+			xfer->xferUnsignedInt( &m_garrisonPointData[ i ].lastEffectFrame );
+
+			// effect drawable id
+			Drawable *draw = m_garrisonPointData[ i ].effect;
+			DrawableID drawableID = draw ? draw->getID() : INVALID_DRAWABLE_ID;
+			xfer->xferDrawableID( &drawableID );
+
+		}  // end if, save
+		else
+		{
+
+			// objectID
+			ObjectID objectID;
+			xfer->xferObjectID( &objectID );
+
+			// target
+			ObjectID targetID;
+			xfer->xferObjectID( &targetID );
+
+			// placement frame
+			UnsignedInt placeFrame;
+			xfer->xferUnsignedInt( &placeFrame );
+
+			// last effect frame
+			UnsignedInt lastEffectFrame;
+			xfer->xferUnsignedInt( &lastEffectFrame );
+
+			// effect drawable id
+			DrawableID drawableID;
+			xfer->xferDrawableID( &drawableID );
+
+			// store
+			if( i < MAX_GARRISON_POINTS )
+			{
+
+				m_garrisonPointData[ i ].objectID = objectID;
+				m_garrisonPointData[ i ].targetID = targetID;
+				m_garrisonPointData[ i ].placeFrame = placeFrame;
+				m_garrisonPointData[ i ].lastEffectFrame = lastEffectFrame;
+				m_garrisonPointData[ i ].effectID = drawableID;
+
+			}  // end if
+
+		}  // end else, load
+
+	}  // end for i
+
+	// garrison points in use
+	xfer->xferInt( &m_garrisonPointsInUse );
+
+	// garrison points
+	xfer->xferUser( m_garrisonPoint, sizeof( Coord3D ) * MAX_GARRISON_POINT_CONDITIONS * MAX_GARRISON_POINTS );
+
+	// garrison points initialized
+	xfer->xferBool( &m_garrisonPointsInitialized );
+
+	// rally valid
+	xfer->xferBool( &m_rallyValid );
+
+	// exit rally point
+	xfer->xferCoord3D( &m_exitRallyPoint );
+
+}  // end xfer
 
 // ------------------------------------------------------------------------------------------------
 /** Load post process */

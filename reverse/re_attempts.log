@@ -1036,3 +1036,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1LANGameInfo@@QAE@XZ	landed	Ghidra corrected stale drift address to exact 0x686CD0 103-byte body; BFME layout offsets 0x3A0, 0x58/0x68, and base +0x3C; exact MASM body verified
 ??0INI@@QAE@XZ	landed	Ghidra corrected stale candidate to 0x851230 size 162 including final ret; BFME constructor layout and initialization order identify the body; exact MASM verified
 ??1INI@@QAE@XZ	landed	Ghidra recovered exact 0x8512E0 80-byte body; destruction of BFME AsciiString members at +0x834 and +0x4 identifies the INI destructor; exact MASM verified
+?loadDirectory@INI@@QAEXVAsciiString@@_NW4INILoadType@@PAVXfer@@@Z	no-match	Tested adjacent Ghidra FUN_00c51350 at RVA 0x851350 size 238; body uses INI offsets +0x414/+0x10 and ret 4, while compiled loadDirectory is 824B with different ABI/shape; not this function

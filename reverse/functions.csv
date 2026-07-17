@@ -5037,7 +5037,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?writeINI@StreakDrawModuleTemplate@FXParticleSystem@@UBEXAAVFile@@I@Z,0x00042465,0x5f85c0,35,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ?writeINI@TerrainCollisionModuleTemplate@FXParticleSystem@@UBEXAAVFile@@I@Z,0x00027DD6,0x5fd790,397,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
 ?xfer@AIPlayer@@MAEXPAVXfer@@@Z,,0x00852B62,1170,Code/GameEngine/Source/GameLogic/AI/AIPlayer_xfer.asm,matched,exact 1170B via MASM
-?xfer@GarrisonContain@@MAEXPAVXfer@@@Z,,0x00853EC0,577,Code/GameEngine/Source/GameLogic/Object/Contain/GarrisonContain_xfer.asm,matched,exact 577B via MASM
 ?xferRandomVariable@@YAXAAVXfer@@AAVGameClientRandomVariable@@@Z,,0x0003EE32,5,Code/masm_dumps/_xferRandomVariable__YAXAAVXfer__AAVGameClientRandomVariable___Z_3EE32.asm,matched,MASM exact retail dump
 ?xpSign@@YAHABVVector2@@0@Z,,0x00703F00,55,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadBuffer.cpp,matched,
 ?zero@Coord3D@@QAEXXZ,0x00029226,0x00083340,11,Code/Libraries/Source/WWVegas/WWMath/coord3d.cpp,matched,sets x/y/z to zero

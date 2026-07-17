@@ -9,6 +9,7 @@ import shutil
 import struct
 import subprocess
 import sys
+import threading
 from pathlib import Path
 
 
@@ -39,6 +40,8 @@ DEFAULT_VC71_ROOT = (
     / "Program Files"
     / "Microsoft Visual Studio .NET 2003"
 )
+_WINE_PATH_CACHE = {}
+_WINE_PATH_LOCK = threading.Lock()
 
 
 def u16(data, offset):
@@ -247,10 +250,17 @@ def vc71_root():
 
 
 def wine_path(path):
-    winepath = shutil.which("winepath")
-    if winepath is None:
-        raise SystemExit("winepath not found. Install Wine to run MSVC 7.1 on this host.")
-    return subprocess.check_output([winepath, "-w", str(path)], text=True).strip()
+    key = str(path)
+    with _WINE_PATH_LOCK:
+        cached = _WINE_PATH_CACHE.get(key)
+        if cached is not None:
+            return cached
+        winepath = shutil.which("winepath")
+        if winepath is None:
+            raise SystemExit("winepath not found. Install Wine to run MSVC 7.1 on this host.")
+        converted = subprocess.check_output([winepath, "-w", key], text=True).strip()
+        _WINE_PATH_CACHE[key] = converted
+        return converted
 
 
 def stlport_include_dir():

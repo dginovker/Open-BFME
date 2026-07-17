@@ -56,6 +56,7 @@ INCLUDE_DIRS = [
     REF / "Libraries" / "Source" / "WWVegas" / "WWMath",
     REF / "Libraries" / "Source" / "WWVegas" / "WWDebug",
     REF / "Libraries" / "Source" / "WWVegas" / "WWSaveLoad",
+    REF / "Libraries" / "Source" / "WWVegas" / "WWAudio",
     REF / "Main",
 ]
 

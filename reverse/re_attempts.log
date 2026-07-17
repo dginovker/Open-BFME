@@ -1029,3 +1029,6 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?emit_AutoDepositUpdate@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Ghidra corrected start to 0x0011A600 size 96; split pool-glue emission from BFME global-allocation emitter and exact-matched
 ??0?$ShareBufferClass@G@@QAE@HPBD@Z	dead	Current object emits no constructor symbol; Ghidra shows drift RVA 0x00B026A5 is padding between FUN_00f02680 (7B) and FUN_00f026c0 (30B), so no standalone retail body exists at the claimed boundary.
 ?_heap_abort@@YAXXZ	no-match	Ghidra boundary audit: candidate 0x88A620 is inside FUN_00C8A5F0 (start 0x88A5F0, size 78), not a standalone 39-byte function; retail tail inherits eax/edx from the enclosing body.
+?CheckBegin@Debug@@SAAAV1@PBDH0@Z	no-match	Ghidra boundary audit: candidate 0x88B3E6 is +6 bytes inside FUN_00C8B3E0 (start 0x88B3E0, size 334), not a 254-byte function start.
+?AssertBegin@Debug@@SAAAV1@PBDH0@Z	no-match	Ghidra boundary audit: candidate 0x88EFFD lies inside FUN_00C8EC50 (start 0x88EC50, size 2713), not a 258-byte function start.
+?CrashBegin@Debug@@SAAAV1@PBDH@Z	no-match	Ghidra boundary audit: candidate 0x88F003 lies inside FUN_00C8EC50 (start 0x88EC50, size 2713), not a 263-byte function start.

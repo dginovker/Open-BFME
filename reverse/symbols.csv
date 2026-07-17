@@ -3272,3 +3272,9 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ?PopulatePlayerInfoWindows@@YAXVAsciiString@@@Z,0x000084C7
 ?getDisallowAsianText@CustomMatchPreferences@@QAE_NXZ,0x00019C72
 ?getDisallowNonAsianText@CustomMatchPreferences@@QAE_NXZ,0x00007E6E
+?Resize@?$SimpleVecClass@UShdSubMeshStruct@@@@UAE_NH@Z,0x00031593,pinharvest x1 (thunk)
+?Resize@?$SimpleVecClass@UShdSubMeshStruct@@@@UAE_NH@Z,0x00038ECE,pinharvest x1 (thunk)
+?Resize@?$SimpleVecClass@UShdSubMeshStruct@@@@UAE_NH@Z,0x00918430,pinharvest x1 (body)
+?Resize@?$SimpleVecClass@UShdSubMeshStruct@@@@UAE_NH@Z,0x00919BC0,pinharvest x1 (body)
+?Resize@?$SimpleVecClass@UShdSubMeshStruct@@@@UAE_NH@Z,0x0092C510,pinharvest x1 (body)
+?Resize@?$SimpleVecClass@UShdSubMeshStruct@@@@UAE_NH@Z,0x00944EF0,pinharvest x1 (body)

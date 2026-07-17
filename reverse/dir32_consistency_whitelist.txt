@@ -118,6 +118,7 @@ _buttonOk
 ??_7?$SimpleDynVecClass@VVector4@@@@6B@
 ??_7?$SimpleVecClass@M@@6B@
 ??_7?$SimpleVecClass@VVector4@@@@6B@
+
 # Constructor/destructor vptr stores resolve to different points in the
 # retail base chain, the same documented phenomenon as the FX vtables above.
 ??_7StreamingArchiveFile@@6B@

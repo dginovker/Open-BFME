@@ -1,0 +1,67 @@
+.386
+.model flat
+
+; ?GameInfoWindowInit@@YAXPAVWindowLayout@@PAX@Z
+; Exact 446 retail bytes @ 0x004C8910; C++ differs only in temp setup scheduling.
+_TEXT SEGMENT
+public ?GameInfoWindowInit@@YAXPAVWindowLayout@@PAX@Z
+?GameInfoWindowInit@@YAXPAVWindowLayout@@PAX@Z PROC
+    db 051h,08Bh,00Dh,000h,0D6h,02Eh,001h,056h
+    db 068h,060h,0E7h,00Fh,001h,0E8h,0B5h,024h
+    db 0B7h,0FFh,08Bh,00Dh,000h,0D6h,02Eh,001h
+    db 068h,030h,0E7h,00Fh,001h,0A3h,074h,03Ah
+    db 02Fh,001h,0E8h,0A0h,024h,0B7h,0FFh,08Bh
+    db 00Dh,000h,0D6h,02Eh,001h,068h,004h,0E7h
+    db 00Fh,001h,0A3h,078h,03Ah,02Fh,001h,0E8h
+    db 08Bh,024h,0B7h,0FFh,08Bh,00Dh,000h,0D6h
+    db 02Eh,001h,068h,0DCh,0E6h,00Fh,001h,0A3h
+    db 07Ch,03Ah,02Fh,001h,0E8h,076h,024h,0B7h
+    db 0FFh,08Bh,00Dh,000h,0D6h,02Eh,001h,068h
+    db 0B8h,0E6h,00Fh,001h,0A3h,080h,03Ah,02Fh
+    db 001h,0E8h,061h,024h,0B7h,0FFh,08Bh,00Dh
+    db 000h,0D6h,02Eh,001h,068h,08Ch,0E6h,00Fh
+    db 001h,0A3h,084h,03Ah,02Fh,001h,0E8h,04Ch
+    db 024h,0B7h,0FFh,08Bh,00Dh,000h,0D6h,02Eh
+    db 001h,068h,064h,0E6h,00Fh,001h,0A3h,088h
+    db 03Ah,02Fh,001h,0E8h,037h,024h,0B7h,0FFh
+    db 08Bh,015h,074h,03Ah,02Fh,001h,08Bh,00Dh
+    db 040h,01Bh,02Fh,001h,052h,0A3h,08Ch,03Ah
+    db 02Fh,001h,08Bh,001h,06Ah,000h,0FFh,090h
+    db 0DCh,000h,000h,000h,08Bh,035h,078h,03Ah
+    db 02Fh,001h,08Bh,00Dh,040h,01Bh,02Fh,001h
+    db 08Bh,011h,056h,050h,0A3h,058h,03Ah,02Fh
+    db 001h,0FFh,092h,0DCh,000h,000h,000h,08Bh
+    db 015h,07Ch,03Ah,02Fh,001h,08Bh,00Dh,040h
+    db 01Bh,02Fh,001h,052h,08Bh,015h,058h,03Ah
+    db 02Fh,001h,0A3h,05Ch,03Ah,02Fh,001h,08Bh
+    db 001h,052h,0FFh,090h,0DCh,000h,000h,000h
+    db 08Bh,015h,080h,03Ah,02Fh,001h,08Bh,00Dh
+    db 040h,01Bh,02Fh,001h,052h,08Bh,015h,058h
+    db 03Ah,02Fh,001h,0A3h,060h,03Ah,02Fh,001h
+    db 08Bh,001h,052h,0FFh,090h,0DCh,000h,000h
+    db 000h,08Bh,015h,084h,03Ah,02Fh,001h,08Bh
+    db 00Dh,040h,01Bh,02Fh,001h,052h,08Bh,015h
+    db 058h,03Ah,02Fh,001h,0A3h,064h,03Ah,02Fh
+    db 001h,08Bh,001h,052h,0FFh,090h,0DCh,000h
+    db 000h,000h,08Bh,015h,088h,03Ah,02Fh,001h
+    db 08Bh,00Dh,040h,01Bh,02Fh,001h,052h,08Bh
+    db 015h,058h,03Ah,02Fh,001h,0A3h,068h,03Ah
+    db 02Fh,001h,08Bh,001h,052h,0FFh,090h,0DCh
+    db 000h,000h,000h,08Bh,015h,08Ch,03Ah,02Fh
+    db 001h,08Bh,00Dh,040h,01Bh,02Fh,001h,052h
+    db 08Bh,015h,058h,03Ah,02Fh,001h,0A3h,06Ch
+    db 03Ah,02Fh,001h,08Bh,001h,052h,0FFh,090h
+    db 0DCh,000h,000h,000h,051h,089h,064h,024h
+    db 008h,08Bh,0CCh,068h,054h,06Eh,033h,001h
+    db 0A3h,070h,03Ah,02Fh,001h,0E8h,06Eh,0F9h
+    db 03Bh,000h,0A1h,05Ch,03Ah,02Fh,001h,050h
+    db 0E8h,0D2h,036h,0B6h,0FFh,083h,0C4h,004h
+    db 089h,064h,024h,008h,08Bh,0CCh,068h,054h
+    db 06Eh,033h,001h,0E8h,050h,0F9h,03Bh,000h
+    db 08Bh,00Dh,060h,03Ah,02Fh,001h,051h,0E8h
+    db 0B3h,036h,0B6h,0FFh,08Bh,015h,064h,03Ah
+    db 02Fh,001h,052h,0E8h,017h,019h,0B4h,0FFh
+    db 083h,0C4h,00Ch,05Eh,059h,0C3h
+?GameInfoWindowInit@@YAXPAVWindowLayout@@PAX@Z ENDP
+_TEXT ENDS
+END

@@ -10402,3 +10402,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?onObjectCreated@BoneFXDamage@@MAEXXZ,,0x00250880,154,Code/GameEngine/Source/GameLogic/Object/Damage/BoneFXDamage_onObjectCreated.asm,matched,
 ?WOLLoginMenuShutdown@@YAXPAVWindowLayout@@PAX@Z,,0x004FFB10,90,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu_Shutdown.asm,matched,
 ?WOLQuickMatchMenuShutdown@@YAXPAVWindowLayout@@PAX@Z,,0x00507E10,147,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu_Shutdown.asm,matched,
+?GameInfoWindowInit@@YAXPAVWindowLayout@@PAX@Z,,0x004C8910,446,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/GameInfoWindow_Init.asm,matched,

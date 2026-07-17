@@ -3304,3 +3304,4 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ??0MobMemberSlavedUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x00048338,pinharvest x1 (thunk)
 ??0ProjectileStreamUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x000328C6,pinharvest x1 (thunk)
 ??0ProjectileStreamUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,0x0001E902,pinharvest x1 (thunk)
+?GadgetListBoxReset@@YAXPAVGameWindow@@@Z,0x0000A3DF

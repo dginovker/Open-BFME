@@ -10405,3 +10405,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GameInfoWindowInit@@YAXPAVWindowLayout@@PAX@Z,,0x004C8910,446,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/GameInfoWindow_Init.asm,matched,
 ?PopupReplayInit@@YAXPAVWindowLayout@@PAX@Z,,0x004DE270,386,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupReplay_Init.asm,matched,
 ?clearSlotList@GameInfo@@QAEXXZ,,0x0061F520,218,Code/GameEngine/Source/GameNetwork/GameInfo_clearSlotList.asm,matched,
+??0GameState@@QAE@XZ,,0x001111C0,171,Code/GameEngine/Source/Common/System/SaveGame/GameState_ctor.asm,matched,

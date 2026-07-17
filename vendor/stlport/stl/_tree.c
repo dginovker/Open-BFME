@@ -407,11 +407,18 @@ template <class _Key, class _Value, class _KeyOfValue,
     __x = __comp ? _S_left(__x) : _S_right(__x);
   }
   iterator __j = iterator(__y);   
+#ifdef _BFME_RETAIL_TREE_INSERT_LAYOUT
+  if (__comp && __j == begin())
+    return pair<iterator,bool>(_M_insert(__y, __y, __v), true);
+  if (__comp)
+    --__j;
+#else
   if (__comp)
     if (__j == begin())     
       return pair<iterator,bool>(_M_insert(__x, __y, __v), true);
     else
       --__j;
+#endif
   if (_M_key_compare(_S_key(__j._M_node), _KeyOfValue()(__v)))
     return pair<iterator,bool>(_M_insert(__x, __y, __v), true);
   return pair<iterator,bool>(__j, false);

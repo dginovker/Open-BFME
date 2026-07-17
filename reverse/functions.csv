@@ -10328,3 +10328,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseColorInt@INI@@SAXPAV1@PAX1PBX@Z,,0x008531E0,409,Code/masm_dumps/parseColorInt_INI_SAXPAV1_PAX1PBX_Z_8531E0.asm,matched,Ghidra-bounded gap; RGBA label parsing range checks and packed 32-bit color store
 ?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z,,0x0000FC3B,5,Code/masm_dumps/parseMappedImage_INI_SAXPAV1_PAX1PBX_Z_FC3B.asm,matched,Ghidra canonical body; QueueButtonImage table xref and mapped-image manager lookup
 ?parseAndTranslateLabel@INI@@SAXPAV1@PAX1PBX@Z,,0x00032C45,5,Code/masm_dumps/parseAndTranslateLabel_INI_SAXPAV1_PAX1PBX_Z_32C45.asm,matched,Ghidra canonical body; RankName table xref and game-text translation lookup
+?parseArmorTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x0003EF6D,5,Code/masm_dumps/parseArmorTemplate_INI_SAXPAV1_PAX1PBX_Z_3EF6D.asm,matched,Retail ArmorTemplateSet table xref; public thunk to None-aware armor-store lookup body

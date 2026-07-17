@@ -1053,3 +1053,7 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?parseAndTranslateLabel@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x851910; body calls readLine and iterates parse tables as part of a larger multi-field parser rather than translating a label
 ?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x8519C0; entry is an overlapping loop fragment within the 0x851910 multi-field parser rather than an image lookup wrapper
 ?parseQuotedAsciiString@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x851F40 84B wrapper calls verified getNextQuotedAsciiString then stores result and destroys temporary
+?scanPercentToReal@INI@@SAMPBD@Z	landed	Ghidra 0x852740 20B body calls verified scanReal at 0x8526E0 then x87-multiplies by 0.01
+?parseAsciiStringVector@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x851FA0 249B body; it calls readLine and follows parser state flow rather than clear and token push_back loop
+?parseAsciiStringVectorAppend@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x8520A0 132B body; fixed 16-entry scratch-array builder calling 0x851910 rather than token append loop
+?parseScienceVector@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x852130 79B body; fixed scratch-array callback wrapper calling 0x851910 rather than ScienceVec token loop

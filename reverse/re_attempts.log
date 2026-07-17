@@ -1086,3 +1086,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?load@GameSpyLoginPreferences@@UAE_NVAsciiString@@@Z	blocked	Ghidra string xrefs date_/nick_/pass_ anchor retail FUN_00482190 at RVA 0x82190 size 977 and decompile confirms the ZH control flow. Current source compiles to 1570B; first diff is stack frame 0x2c vs 0x30, then STL iterator/map and AsciiString temporary layouts diverge throughout. decode_calls becomes invalid after early shape drift. Requires shared BFME STL/AsciiString ABI reconciliation, not a local function edit.
 ?reset@GameInfo@@UAEXXZ	blocked	Ghidra
 ?winCreate@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHP6A?AW4WindowMsgHandledType@@0III@ZPAVWinInstanceData@@@Z	blocked	Ghidra
+?loadLocalLadders@LadderList@@AAEXXZ	blocked	Ghidra

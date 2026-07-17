@@ -10410,3 +10410,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?PopupReplayUpdate@@YAXPAVWindowLayout@@PAX@Z,,0x004DE180,90,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupReplay_Update.asm,matched,
 ?UpdateStartButton@@YAXXZ,,0x00505570,197,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu_UpdateStartButton.asm,matched,
 ?hideOptionsGadgets@@YAX_N@Z,,0x00505670,145,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu_hideOptionsGadgets.asm,matched,
+?hideInfoGadgets@@YAX_N@Z,,0x00505730,61,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu_hideInfoGadgets.asm,matched,

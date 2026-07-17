@@ -10334,3 +10334,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseDamageFX@INI@@SAXPAV1@PAX1PBX@Z,,0x00012026,5,Code/masm_dumps/parseDamageFX_INI_SAXPAV1_PAX1PBX_Z_12026.asm,matched,Retail ArmorTemplateSet DamageFX xref; public thunk to None-aware damage-FX store lookup
 ?parseThingTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x00039969,5,Code/masm_dumps/parseThingTemplate_INI_SAXPAV1_PAX1PBX_Z_39969.asm,matched,Retail ControlBar Object xref; public thunk to initialized thing-factory lookup body
 ?parseUpgradeTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x0004A39A,5,Code/masm_dumps/parseUpgradeTemplate_INI_SAXPAV1_PAX1PBX_Z_4A39A.asm,matched,Ghidra canonical body; ControlBar Upgrade xref and upgrade-store lookup
+?parseSpecialPowerTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x0001D77D,5,Code/masm_dumps/parseSpecialPowerTemplate_INI_SAXPAV1_PAX1PBX_Z_1D77D.asm,matched,Ghidra-bounded retail thunk to special-power-store lookup body at 0x4BB210

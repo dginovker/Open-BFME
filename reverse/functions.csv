@@ -10417,3 +10417,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1LocomotorSet@@QAE@XZ,,0x009F2800,115,Code/GameEngine/Source/GameLogic/Object/LocomotorSet_destructor.asm,matched,Ghidra-confirmed destructor boundary after correcting overlapping ControlBar row
 ?getVetUpgradeName@@YA?AVAsciiString@@W4VeterancyLevel@@@Z,,0x0010AD90,173,Code/GameEngine/Source/Common/System/Upgrade_getVetUpgradeName.asm,matched,Ghidra-confirmed Upgrade_Veterancy_ string helper boundary
 ?parseMetaMapDefinition@INI@@SAXPAV1@@Z,,0x005B71A0,143,Code/GameEngine/Source/GameClient/MessageStream/INI_parseMetaMapDefinition.asm,matched,CommandMap INI table pointer and Ghidra-confirmed inlined parser body
+??0ObjectWeaponStatusHelper@@QAE@PAVThing@@PBVModuleData@@@Z,,0x001C1340,107,Code/GameEngine/Source/GameLogic/Object/ObjectWeaponStatusHelper_ctor.asm,matched,Class vtable anchors from matched update and getModuleNameKey

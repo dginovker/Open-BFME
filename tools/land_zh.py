@@ -55,6 +55,7 @@ extern \"C\" __declspec(dllimport) int __stdcall HeapFree(void *, unsigned long,
 }
 SOURCE_REPLACEMENTS = {
     "registry.cpp": (('#include "inisup.h"', '#include <inisup.h>'),),
+    "wolwelcomemenu.cpp": (("max(1,atof(pTotal))", "max(1.0,atof(pTotal))"),),
     "w3dshadermanager.cpp": (
         (
             "DX8Wrapper::_Get_D3D_Device8()->SetPixelShaderConstant(0,   D3DXVECTOR4(0.3f, 0.59f, 0.11f, 1.0f), 1);",

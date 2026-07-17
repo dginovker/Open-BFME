@@ -1089,3 +1089,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?loadLocalLadders@LadderList@@AAEXXZ	blocked	Ghidra
 ?createControlBar@InGameUI@@IAEXXZ	dead	Structural
 ??0HotKeyManager@@QAE@XZ	blocked	Structural
+?updatePropPosition@W3DPropBuffer@@QAE_NHABUCoord3D@@MM@Z	landed	Ghidra corrected drift start from 0x7026EF to retail FUN_00b026e0 at RVA 0x7026E0, 453B. Added the retail propType bounds guard and reconciled BFME W3DPropBuffer MAX_TYPES 96; exact byte match.

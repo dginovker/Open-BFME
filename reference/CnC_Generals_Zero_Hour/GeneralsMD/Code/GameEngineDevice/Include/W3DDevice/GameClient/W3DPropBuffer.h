@@ -134,7 +134,7 @@ protected:
 
 protected:
 	enum { MAX_PROPS=4000};
-	enum {MAX_TYPES = 64};
+	enum {MAX_TYPES = 96};
 
 	TProp	m_props[MAX_PROPS];			///< The prop buffer.  All props are stored here.
 	Int			m_numProps;						///< Number of props in m_props.

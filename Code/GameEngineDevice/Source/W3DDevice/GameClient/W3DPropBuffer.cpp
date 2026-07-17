@@ -238,12 +238,14 @@ void W3DPropBuffer::addProp(Int id, Coord3D location, Real angle,Real scale, con
 //=============================================================================
 /** Updates a prop's position */
 //=============================================================================
-// ?updatePropPosition@W3DPropBuffer@@QAE_NHABUCoord3D@@MM@Z present-unmatched
 Bool W3DPropBuffer::updatePropPosition(Int id, const Coord3D &location, Real angle, Real scale)
 {
 	Int i;
 	for (i=0; i<m_numProps; i++) {
 		if (m_props[i].id == id) {
+			if (m_props[i].propType < 0 || m_props[i].propType >= m_numPropTypes) {
+				return false;
+			}
 			Matrix3D mtx(true);
 			mtx.Rotate_Z(angle);
 			mtx.Scale(scale);
@@ -437,4 +439,3 @@ void W3DPropBuffer::loadPostProcess( void )
 {
 	// empty. jba [8/11/2003]	
 }  // end loadPostProcess
-

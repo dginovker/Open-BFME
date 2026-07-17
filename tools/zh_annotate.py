@@ -51,8 +51,10 @@ DEFINITION = re.compile(
 def annotate(path):
     source_rel = str(path.relative_to(ROOT))
     matched = matched_names(source_rel)
-    ref = sorted(REF.rglob(path.stem + ".cpp")) or sorted(REF.rglob(path.stem.capitalize() + ".cpp"))
-    ref_hits = [r for r in REF.rglob("*.cpp") if r.stem.lower() == path.stem.lower()]
+    reference_path = REF / path.relative_to(ROOT / "Code")
+    ref_hits = ([reference_path] if reference_path.is_file() else
+                [candidate for candidate in reference_path.parent.glob("*.cpp")
+                 if candidate.name.casefold() == reference_path.name.casefold()])
     if not ref_hits:
         print(f"{path.name}: no reference original found — skipping regeneration")
         return False

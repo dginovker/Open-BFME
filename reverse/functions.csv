@@ -10345,3 +10345,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseSoundsList@INI@@SAXPAV1@PAX1PBX@Z,,0x0002E9C4,5,Code/masm_dumps/parseSoundsList_INI_SAXPAV1_PAX1PBX_Z_2E9C4.asm,matched,Retail Sounds Attack and Decay table xrefs converge on BFME sound-list thunk to 0x4B1DF0
 ?parseVeterancyLevelFlags@INI@@SAXPAV1@PAX1PBX@Z,,0x00013DD1,5,Code/masm_dumps/parseVeterancyLevelFlags_INI_SAXPAV1_PAX1PBX_Z_13DD1.asm,matched,Retail VeterancyLevels xref and Ghidra FUN_004b9d90 semantics identify parser
 ?parseDeathTypeFlags@INI@@SAXPAV1@PAX1PBX@Z,,0x00029EEC,5,Code/masm_dumps/parseDeathTypeFlags_INI_SAXPAV1_PAX1PBX_Z_29EEC.asm,matched,Retail DeathTypes xref and Ghidra FUN_004b9100 semantics identify parser
+?parseAudioEventRTS@INI@@SAXPAV1@PAX1PBX@Z,,0x00009E94,5,Code/masm_dumps/parseAudioEventRTS_INI_SAXPAV1_PAX1PBX_Z_9E94.asm,matched,Multiple retail audio-field xrefs and canonical NoSound event lookup body identify parser

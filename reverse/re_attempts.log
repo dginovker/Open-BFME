@@ -1087,3 +1087,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?reset@GameInfo@@UAEXXZ	blocked	Ghidra
 ?winCreate@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHP6A?AW4WindowMsgHandledType@@0III@ZPAVWinInstanceData@@@Z	blocked	Ghidra
 ?loadLocalLadders@LadderList@@AAEXXZ	blocked	Ghidra
+?createControlBar@InGameUI@@IAEXXZ	dead	Structural

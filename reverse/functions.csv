@@ -9070,7 +9070,6 @@ _$E6,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,matched
 ??0ArmorTemplateSet@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
 ??0AssetIterator@@IAE@XZ,,0x0005C6C0,16,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
 ??0AssistanceRequestData@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,ICF alias of existing matched body
-??0BehaviorModuleInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,ICF alias of existing matched body
 ??0BoxLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/boxrobj.cpp,matched,ICF alias of existing matched body
 ??0ChunkInputStream@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,ICF alias of existing matched body
 ??0CullLinkClass@@QAE@PAVCullSystemClass@@@Z,,0x00087A50,18,Code/Libraries/Source/WWVegas/WWMath/gridcull.cpp,matched,ICF alias of existing matched body
@@ -9079,14 +9078,12 @@ _$E6,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,matched
 ??0DockUpdateInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,ICF alias of existing matched body
 ??0FXNugget@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameClient/FXList.cpp,matched,ICF alias of existing matched body
 ??0FastCriticalSectionClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
-??0FileClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WWLib/rawfile.cpp,matched,ICF alias of existing matched body
 ??0FileFactoryClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WWLib/mixfile.cpp,matched,ICF alias of existing matched body
 ??0FireWeaponNugget@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
 ??0GameSpyInfoInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,ICF alias of existing matched body
 ??0HLodLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,ICF alias of existing matched body
 ??0HTreeIterator@@QAE@XZ,,0x003FD390,16,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
 ??0HashTableIteratorClass@@QAE@AAVHashTableClass@@@Z,,0x00087A50,18,Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp,matched,ICF alias of existing matched body
-??0HashableClass@@QAE@XZ,,0x0005C6C0,16,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,ICF alias of existing matched body
 ??0HideShowSubObjInfo@ModelConditionInfo@@QAE@XZ,,0x00061D90,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,ICF alias of existing matched body
 ??0InputChunk@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,ICF alias of existing matched body
 ??0InputStream@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,ICF alias of existing matched body
@@ -9098,7 +9095,6 @@ _$E6,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,matched
 ??0ModalWindow@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,ICF alias of existing matched body
 ??0ModuleInfo@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,ICF alias of existing matched body
 ??0ModuleTemplate@ModuleFactory@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias of existing matched body
-??0MultiListObjectClass@@QAE@XZ,,0x0005C6C0,16,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
 ??0NotifyWeaponFiredInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
 ??0ObjectCreationList@@QAE@XZ,,0x0005C5D0,13,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
 ??0ObjectCreationNugget@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
@@ -9118,7 +9114,6 @@ _$E6,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWMath/aabtreecull.cpp,matched
 ??0PathfindServicesInterface@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,ICF alias of existing matched body
 ??0Payload@DeliverPayloadNugget@@QAE@XZ,,0x00061D90,9,Code/GameEngine/Source/GameLogic/Object/ObjectCreationList.cpp,matched,ICF alias of existing matched body
 ??0PolyRemover@@QAE@XZ,,0x003FD390,16,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,ICF alias of existing matched body
-??0PopupMessageData@@QAE@XZ,,0x0005C6C0,16,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,ICF alias of existing matched body
 ??0ProjectedShadowManager@@QAE@XZ,,0x00061D90,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp,matched,ICF alias of existing matched body
 ??0PrototypeClass@@QAE@XZ,,0x0005C6C0,16,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,ICF alias of existing matched body
 ??0PrototypeLoaderClass@@QAE@XZ,,0x00061D90,9,Code/Libraries/Source/WWVegas/WW3D2/hlod.cpp,matched,ICF alias of existing matched body

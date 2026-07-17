@@ -444,17 +444,25 @@ def load_symbol_map():
 def compile_source(source, output):
     output.parent.mkdir(parents=True, exist_ok=True)
     command, env = compiler_command(source, output)
-    result = subprocess.run(
-        command,
-        cwd=ROOT,
-        env=env,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True,
-    )
-    if result.returncode != 0:
-        print(result.stdout, end="")
-        raise SystemExit(result.returncode)
+    for attempt in range(3):
+        result = subprocess.run(
+            command,
+            cwd=ROOT,
+            env=env,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+        )
+        if result.returncode == 0:
+            return
+        transient = ("Application could not be started" in result.stdout
+                     or "ShellExecuteEx failed" in result.stdout)
+        if not transient or attempt == 2:
+            print(f"compile failed: {source.relative_to(ROOT)}", file=sys.stderr)
+            print(result.stdout, end="")
+            raise SystemExit(result.returncode)
+        print(f"retrying transient Wine launch failure for "
+              f"{source.relative_to(ROOT)} ({attempt + 2}/3)", file=sys.stderr)
 
 
 def compile_function(row, symbol_map, output):

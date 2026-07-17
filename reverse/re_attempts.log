@@ -1068,3 +1068,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?parseRGBAColorInt@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x853050 399B body parses R G B A defaults omitted alpha to 255 validates range and stores four integer components
 ?parseCoord3D@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x853380 84B body parses X Y Z sub-tokens through verified scanReal and stores three float components
 ?parseCoord2D@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x8533E0 60B body parses X Y sub-tokens through verified scanReal and stores two float components
+?parseICoord2D@INI@@SAXPAV1@PAX1PBX@Z	landed	Bounded 0x853420 60B gap between Ghidra functions parses X Y through verified scanInt and stores two integer components

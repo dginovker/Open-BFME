@@ -10312,3 +10312,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseRGBAColorInt@INI@@SAXPAV1@PAX1PBX@Z,,0x00853050,399,Code/masm_dumps/parseRGBAColorInt_INI_SAXPAV1_PAX1PBX_Z_853050.asm,matched,Ghidra R G B A loop with optional alpha and four integer component stores
 ?parseCoord3D@INI@@SAXPAV1@PAX1PBX@Z,,0x00853380,84,Code/masm_dumps/parseCoord3D_INI_SAXPAV1_PAX1PBX_Z_853380.asm,matched,Ghidra X Y Z sub-token flow with verified scanReal calls and three float stores
 ?parseCoord2D@INI@@SAXPAV1@PAX1PBX@Z,,0x008533E0,60,Code/masm_dumps/parseCoord2D_INI_SAXPAV1_PAX1PBX_Z_8533E0.asm,matched,Ghidra X Y sub-token flow with verified scanReal calls and two float stores
+?parseICoord2D@INI@@SAXPAV1@PAX1PBX@Z,,0x00853420,60,Code/masm_dumps/parseICoord2D_INI_SAXPAV1_PAX1PBX_Z_853420.asm,matched,Ghidra-bounded gap with X Y sub-token flow verified scanInt calls and two integer stores

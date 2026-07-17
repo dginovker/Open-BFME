@@ -150,21 +150,19 @@ def main():
         print(f"  0x{rva:06x} size~{size} {kind}={v} {name.split('@@')[0][:50]}{flag}")
 
     if emit:
-        # CRLF-safe: the ledger is a CRLF file; plain read_text/write_text would
-        # silently convert it to LF and check_csv refuses the whole file.
+        # Preserve every existing ledger byte: historical rows contain mixed
+        # line endings, so decoding and rewriting creates unrelated churn.
         ledger = ROOT / "reverse" / "functions.csv"
         raw = ledger.read_bytes()
         newline = "\r\n" if b"\r\n" in raw else "\n"
-        rows = raw.decode("utf-8", errors="replace").replace("\r\n", "\n").rstrip("\n").split("\n")
-        header, body = rows[0], rows[1:]
-        added = 0
+        additions = []
         for name, (rva, size, v, kind) in candidates.items():
             if name in have:
                 continue
-            body.append(f"{name},,0x{rva:08X},{size},{src.as_posix()},matched,string-anchored ({kind})")
-            added += 1
-        ledger.write_bytes((header + newline + newline.join(body) + newline).encode("utf-8"))
-        print(f"emitted {added} candidate row(s) — run build.py to verify")
+            additions.append(f"{name},,0x{rva:08X},{size},{src.as_posix()},matched,string-anchored ({kind})")
+        if additions:
+            ledger.write_bytes(raw + (newline.join(additions) + newline).encode("utf-8"))
+        print(f"emitted {len(additions)} candidate row(s) — run build.py to verify")
 
 
 if __name__ == "__main__":

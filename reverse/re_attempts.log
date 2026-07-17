@@ -1046,3 +1046,9 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?findBlockParse@@YAP6AXPAVINI@@@ZPBD@Z	no-match	Rejected Ghidra 0x851EA0 scalar-deleting dtor and 0x851BF0 complex string-manipulation body; neither scans 8-byte BlockParse table; true body unknown
 ?findFieldParse@@YAP6AXPAVINI@@PAX1PBX@ZPBUFieldParse@@PBDAAHAAPBX@Z	no-match	Rejected Ghidra 0x851EE0 and 0x851F40 84B SEH AsciiString-returning bodies; neither scans 16-byte FieldParse entries; true body unknown
 ?getNextAsciiString@INI@@QAE?AVAsciiString@@XZ	landed	Ghidra 0x8516E0 393B body identified by static quote buffer path and token concatenation flow
+?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x851EE0 84B wrapper calls verified getNextAsciiString then stores result and destroys temporary; replaced false parseFXList claim
+?getNextTokenOrNull@INI@@QAEPBDPBD@Z	no-match	Rejected Ghidra 0x851EA0 30B scalar-deleting destructor shape; it calls 0x851340 then operator delete rather than tokenization
+?getNextToken@INI@@QAEPBDPBD@Z	no-match	Rejected Ghidra 0x851EE0 84B SEH wrapper; caller target is verified getNextAsciiString and body is parseAsciiString
+?scanBool@INI@@SA_NPBD@Z	no-match	Rejected Ghidra 0x851F40 84B SEH wrapper; caller target is verified getNextQuotedAsciiString and body is parseQuotedAsciiString
+?parseAndTranslateLabel@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x851910; body calls readLine and iterates parse tables as part of a larger multi-field parser rather than translating a label
+?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x8519C0; entry is an overlapping loop fragment within the 0x851910 multi-field parser rather than an image lookup wrapper

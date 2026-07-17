@@ -441,7 +441,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??0CompositeRenderObjClass@@QAE@ABV0@@Z,,0x00983550,206,Code/Libraries/Source/WWVegas/WW3D2/composite.cpp,matched,
 ??0CompositeRenderObjClass@@QAE@XZ,,0x00982E10,148,Code/Libraries/Source/WWVegas/WW3D2/composite.cpp,matched,
 ??0Condition@@IAE@XZ,,0x0034FDA0,65,Code/GameEngine/Source/GameLogic/ScriptEngine/Scripts.cpp,matched,
-??0ControlBar@@QAE@XZ,,0x009F2730,819,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar_ctor.asm,matched,exact 819B via MASM (SEH ctor)
+??0ControlBar@@QAE@XZ,,0x009F2730,146,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar_ctor.asm,matched,Ghidra-confirmed SEH constructor boundary
 ??0Coord2D@@QAE@ABUCoord2DBase@@@Z,0x00007824,0x007E59E0,19,Code/Libraries/Source/WWVegas/WWMath/coord2d.cpp,matched,copies x/y from Coord2DBase
 ??0Coord2D@@QAE@ABUCoord3DBase@@@Z,0x0001D034,0x003BB840,19,Code/Libraries/Source/WWVegas/WWMath/coord2d.cpp,matched,copies x/y from Coord3DBase
 ??0Coord2D@@QAE@ABV0@@Z,0x00011455,0x0005BD70,19,Code/Libraries/Source/WWVegas/WWMath/coord2d.cpp,matched,copies x/y from Coord2D

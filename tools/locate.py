@@ -17,6 +17,7 @@ callee address). Verify afterwards with ./build.sh <source>.
 Usage: python3 tools/locate.py <source.cpp> [-I dir ...] [--min-size 24] [--emit]
 """
 import argparse
+import bisect
 import csv
 import os
 import struct
@@ -115,6 +116,25 @@ def main():
     with (build.ROOT / "reverse" / "ghidra_functions.csv").open(newline="") as handle:
         for row in csv.DictReader(handle):
             ghidra[int(row["rva"], 16)] = int(row["size"])
+    ghidra_starts = sorted(ghidra)
+
+    def plausible_small_start(rva, size):
+        """Sub-24-byte patterns need boundary evidence beyond uniqueness.
+
+        Accept an exact Ghidra boundary, or an uncovered 16-byte linker-aligned
+        start. Reject starts inside a recovered function (the common tail-match
+        false positive) and starts where Ghidra reports a different-sized body.
+        """
+        if size >= MIN_SIZE_DEFAULT:
+            return True
+        if rva in ghidra:
+            return ghidra[rva] == size
+        index = bisect.bisect_right(ghidra_starts, rva) - 1
+        if index >= 0:
+            start = ghidra_starts[index]
+            if start < rva < start + ghidra[start]:
+                return False
+        return rva % 16 == 0
     body_to_thunks = build.build_call_thunks()  # body -> [incremental-link thunks]
     known_starts = set(ghidra) | set(body_to_thunks) | {
         thunk for thunks in body_to_thunks.values() for thunk in thunks
@@ -190,7 +210,7 @@ def main():
                 continue
             if masked(exe[start : start + size], holes, size) == pattern:
                 rva = start - text_raw + text_rva
-                if rva not in known_rvas:
+                if rva not in known_rvas and plausible_small_start(rva, size):
                     hits.append(rva)
 
         # validate call sites: every REL32 must point at a known function start/thunk

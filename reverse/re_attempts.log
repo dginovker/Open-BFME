@@ -1069,3 +1069,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?parseCoord3D@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x853380 84B body parses X Y Z sub-tokens through verified scanReal and stores three float components
 ?parseCoord2D@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x8533E0 60B body parses X Y sub-tokens through verified scanReal and stores two float components
 ?parseICoord2D@INI@@SAXPAV1@PAX1PBX@Z	landed	Bounded 0x853420 60B gap between Ghidra functions parses X Y through verified scanInt and stores two integer components
+?getQuickMatchResLocked@GameSpyMiscPreferences@@QAE_NXZ	no-match	Ghidra anchor 0x0AA650 size 33. inline_depth(0) reaches exact size but swaps EH saved-SP and mov ecx,esp order. auto_inline and size optimization do not fix it.

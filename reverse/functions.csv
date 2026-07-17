@@ -10360,3 +10360,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseEvaMessageFromIni@Eva@@SAXPAVINI@@PAX1PBX@Z,,0x00004B65,5,Code/masm_dumps/parseEvaMessageFromIni_Eva_SAXPAVINI_PAX1PBX_Z_4B65.asm,matched,16 retail Eva-field xrefs and canonical token-map body 0x425B80 identify parser
 ?parseFromINI@?$BitFlags@$0CN@@@SAXPAVINI@@PAX1PBX@Z,,0x00029B9A,5,Code/masm_dumps/parseFromINI_BitFlags_0CN_SAXPAVINI_PAX1PBX_Z_29B9A.asm,matched,11 retail object-status field xrefs and Ghidra FUN_00604E70 identify bit-flag parser
 ?Get_Name@RenderObjClass@@UBEPBDXZ,,0x006CF2F0,6,Code/Libraries/Source/WWVegas/WW3D2/rendobj.cpp,matched,unique
+?parseImageCoords@Image@@SAXPAVINI@@PAX1PBX@Z,,0x005D1E90,286,Code/GameEngine/Source/GameClient/System/Image.cpp,matched,Ghidra

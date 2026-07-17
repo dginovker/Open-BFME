@@ -63,7 +63,6 @@ const FieldParse Image::m_imageFieldParseTable[] =
 	*
 	* COORDS = Left:AAA Top:BBB Right:CCC Bottom:DDD */
 //-------------------------------------------------------------------------------------------------
-// ?parseImageCoords@Image@@SAXPAVINI@@PAX1PBX@Z present-unmatched
 void Image::parseImageCoords( INI* ini, void *instance, void *store, const void* /*userData*/ )
 {
 	Int left = INI::scanInt(ini->getNextSubToken("Left"));
@@ -82,8 +81,8 @@ void Image::parseImageCoords( INI* ini, void *instance, void *store, const void*
 
 	uvCoords.lo.x = (Real)left;
 	uvCoords.lo.y = (Real)top;
-	uvCoords.hi.x = (Real)right;
-	uvCoords.hi.y = (Real)bottom;
+	uvCoords.hi.x = (Real)right - 1.0f;
+	uvCoords.hi.y = (Real)bottom - 1.0f;
 	
 	// adjust the coords by texture size
 	const ICoord2D *textureSize = theImage->getTextureSize();

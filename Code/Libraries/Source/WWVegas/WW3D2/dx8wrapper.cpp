@@ -1164,7 +1164,6 @@ int DX8Wrapper::Get_Swap_Interval(void)
 	return _PresentParameters.FullScreen_PresentationInterval;
 }
 
-// ?Has_Stencil@DX8Wrapper@@ present-unmatched
 bool DX8Wrapper::Has_Stencil(void)
 {
 	bool has_stencil = (_PresentParameters.AutoDepthStencilFormat == D3DFMT_D24S8 ||
@@ -1561,7 +1560,6 @@ bool DX8Wrapper::Find_Color_Mode(D3DFORMAT colorbuffer, int resx, int resy, UINT
 
 // Helper function to find a Z buffer mode for the colorbuffer
 // Will look for greatest Z precision
-// ?Find_Z_Mode@DX8Wrapper@@ present-unmatched
 bool DX8Wrapper::Find_Z_Mode(D3DFORMAT colorbuffer,D3DFORMAT backbuffer, D3DFORMAT *zmode)
 {
 	//MW: Swapped the next 2 tests so that Stencil modes get tested first.

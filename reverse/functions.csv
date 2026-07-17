@@ -10389,3 +10389,5 @@ _$E25,,0x00C6B2C0,30,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WO
 _$E30,,0x00C6B2C0,30,Code/GameEngine/Source/GameClient/MapUtil.cpp,matched,
 _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cpp,matched,
 ?_M_lower_bound@?$_Rb_tree@$$CBV?$BitFlags@$0HF@@@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@@3@UMapHelper@?$SparseMatchFinder@UModelConditionInfo@@V?$BitFlags@$0HF@@@@@V?$allocator@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@@3@@_STL@@ABEPAU?$_Rb_tree_node@U?$pair@$$CBV?$BitFlags@$0HF@@@PBUModelConditionInfo@@@_STL@@@2@ABV?$BitFlags@$0HF@@@@Z,,0x00140A60,59,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
+?Has_Stencil@DX8Wrapper@@SA_NXZ,,0x00902140,21,Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,matched,
+?Find_Z_Mode@DX8Wrapper@@KA_NW4_D3DFORMAT@@0PAW42@@Z,,0x00904120,267,Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp,matched,

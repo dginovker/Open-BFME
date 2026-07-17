@@ -10412,3 +10412,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?hideOptionsGadgets@@YAX_N@Z,,0x00505670,145,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu_hideOptionsGadgets.asm,matched,
 ?hideInfoGadgets@@YAX_N@Z,,0x00505730,61,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu_hideInfoGadgets.asm,matched,
 ?parseDrawGroupNumberDefinition@INI@@SAXPAV1@@Z,,0x000B8200,66,Code/GameEngine/Source/Common/INI/INIDrawGroupInfo_parseDrawGroupNumberDefinition.asm,matched,INI parse-table pointer via DrawGroupInfo string and import thunk 0x416EBE
+?setTimeOfDay@W3DGameClient@@UAEXW4TimeOfDay@@@Z,,0x006FBCB0,56,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient_setTimeOfDay.asm,matched,W3DGameClient vtable slot via matched createRayEffect addScorch and setTeamColor anchors

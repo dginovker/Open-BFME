@@ -147,3 +147,7 @@ __imp__ceil
 # BitFlags<0x2D>::s_bitNameList is materialized per TU: Object.cpp and Weapon.cpp
 # reference distinct retail initializer arrays, like the whitelisted 0x0F case.
 ?s_bitNameList@?$BitFlags@$0CN@@@0PAPBDA
+# W3DShaderManager.cpp is linked in two retail regions; its five-pointer filter
+# arrays are consecutive at 0x12F9CCC and 0x12F9CE0, and exact Ghidra boundaries
+# confirm the matched functions that reference each copy.
+_W3DFilters

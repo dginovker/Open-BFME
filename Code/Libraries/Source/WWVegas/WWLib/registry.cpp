@@ -88,7 +88,6 @@ RegistryClass::RegistryClass( const char * sub_key, bool create ) :
 	}
 }
 
-// ??1RegistryClass@@QAE@XZ present-unmatched
 RegistryClass::~RegistryClass( void )
 {
 	if ( IsValid ) {

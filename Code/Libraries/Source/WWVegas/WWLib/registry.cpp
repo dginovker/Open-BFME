@@ -109,7 +109,6 @@ int	RegistryClass::Get_Int( const char * name, int def_value )
 	return data;
 }
 
-// ?Set_Int@RegistryClass@@QAEXPBDH@Z present-unmatched
 void	RegistryClass::Set_Int( const char * name, int value )
 {
 	assert( IsValid );

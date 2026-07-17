@@ -1058,3 +1058,5 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?parseAsciiStringVectorAppend@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x8520A0 132B body; fixed 16-entry scratch-array builder calling 0x851910 rather than token append loop
 ?parseScienceVector@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x852130 79B body; fixed scratch-array callback wrapper calling 0x851910 rather than ScienceVec token loop
 ?scanBool@INI@@SA_NPBD@Z	landed	Ghidra 0x852550 108B body canonicalizes token then compares retail yes/no strings and throws on invalid data
+?parseReal@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x852B20 86B body tokenizes INI data calls verified scanReal 0x8526E0 and stores x87 result
+?xfer@AIPlayer@@MAEXPAVXfer@@@Z	dead	Historical 0x852B62 1170B claim begins inside Ghidra parseReal 0x852B20 and spans multiple independent INI functions through 0x852FF4; false overclaim removed; true body unknown

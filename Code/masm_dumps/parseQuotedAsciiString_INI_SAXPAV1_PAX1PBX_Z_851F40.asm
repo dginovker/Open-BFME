@@ -1,0 +1,17 @@
+.386
+.model flat
+
+; ?parseQuotedAsciiString@INI@@SAXPAV1@PAX1PBX@Z
+; Retail @ 0x00C51F40 size 84
+_TEXT SEGMENT
+public ?parseQuotedAsciiString@INI@@SAXPAV1@PAX1PBX@Z
+?parseQuotedAsciiString@INI@@SAXPAV1@PAX1PBX@Z PROC
+    db 06Ah,0FFh,068h,068h,064h,005h,001h,064h,0A1h,000h,000h,000h,000h,050h,064h,089h
+    db 025h,000h,000h,000h,000h,051h,08Bh,04Ch,024h,014h,08Dh,004h,024h,050h,0E8h,0DDh
+    db 0F5h,0FFh,0FFh,08Bh,04Ch,024h,01Ch,050h,0C7h,044h,024h,010h,000h,000h,000h,000h
+    db 0E8h,01Bh,05Dh,003h,000h,08Dh,00Ch,024h,0C7h,044h,024h,00Ch,0FFh,0FFh,0FFh,0FFh
+    db 0E8h,0BBh,059h,003h,000h,08Bh,04Ch,024h,004h,064h,089h,00Dh,000h,000h,000h,000h
+    db 083h,0C4h,010h,0C3h
+?parseQuotedAsciiString@INI@@SAXPAV1@PAX1PBX@Z ENDP
+_TEXT ENDS
+END

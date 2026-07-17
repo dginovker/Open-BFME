@@ -10303,3 +10303,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?getNextQuotedAsciiString@INI@@QAE?AVAsciiString@@XZ,,0x00851540,401,Code/masm_dumps/getNextQuotedAsciiString_INI_QAE_AVAsciiString_XZ_851540.asm,matched,Ghidra boundary plus 0x40C quoted-token buffer flow
 ?getNextAsciiString@INI@@QAE?AVAsciiString@@XZ,,0x008516E0,393,Code/masm_dumps/getNextAsciiString_INI_QAE_AVAsciiString_XZ_8516E0.asm,matched,Ghidra boundary plus static quoted-token buffer flow
 ?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z,,0x00851EE0,84,Code/masm_dumps/parseAsciiString_INI_SAXPAV1_PAX1PBX_Z_851EE0.asm,matched,Ghidra call to getNextAsciiString plus store and temporary destruction; corrects false parseFXList identity
+?parseQuotedAsciiString@INI@@SAXPAV1@PAX1PBX@Z,,0x00851F40,84,Code/masm_dumps/parseQuotedAsciiString_INI_SAXPAV1_PAX1PBX_Z_851F40.asm,matched,Ghidra call to getNextQuotedAsciiString plus store and temporary destruction

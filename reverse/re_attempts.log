@@ -1052,3 +1052,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?scanBool@INI@@SA_NPBD@Z	no-match	Rejected Ghidra 0x851F40 84B SEH wrapper; caller target is verified getNextQuotedAsciiString and body is parseQuotedAsciiString
 ?parseAndTranslateLabel@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x851910; body calls readLine and iterates parse tables as part of a larger multi-field parser rather than translating a label
 ?parseMappedImage@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x8519C0; entry is an overlapping loop fragment within the 0x851910 multi-field parser rather than an image lookup wrapper
+?parseQuotedAsciiString@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x851F40 84B wrapper calls verified getNextQuotedAsciiString then stores result and destroys temporary

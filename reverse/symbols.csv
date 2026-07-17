@@ -3268,3 +3268,4 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ?startRenderToTexture@W3DShaderManager@@SAXXZ,0x000154E7
 ?updateFadeLevel@ScreenCrossFadeFilter@@IAE_NXZ,0x00006D0C
 ?updateNumPlayersOnline@@YAXXZ,0x0050BA40
+?loadTracks@WaterTracksRenderSystem@@QAEXXZ,0x0004584F

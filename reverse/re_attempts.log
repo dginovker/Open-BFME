@@ -1066,3 +1066,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?parseRGBColor@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x852F50 238B body parses R G B sub-tokens validates 0-255 and stores components divided by 255
 ?parseBitInInt32@INI@@SAXPAV1@PAX1PBX@Z	no-match	Rejected Ghidra 0x852F50 238B body; R G B label loop and normalized float stores identify parseRGBColor not bit mask update
 ?parseRGBAColorInt@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x853050 399B body parses R G B A defaults omitted alpha to 255 validates range and stores four integer components
+?parseCoord3D@INI@@SAXPAV1@PAX1PBX@Z	landed	Ghidra 0x853380 84B body parses X Y Z sub-tokens through verified scanReal and stores three float components

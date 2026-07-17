@@ -10310,3 +10310,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parsePercentToReal@INI@@SAXPAV1@PAX1PBX@Z,,0x00852EE0,102,Code/masm_dumps/parsePercentToReal_INI_SAXPAV1_PAX1PBX_Z_852EE0.asm,matched,Ghidra percent separator flow plus verified scanReal callee and retail 0.01 multiply
 ?parseRGBColor@INI@@SAXPAV1@PAX1PBX@Z,,0x00852F50,238,Code/masm_dumps/parseRGBColor_INI_SAXPAV1_PAX1PBX_Z_852F50.asm,matched,Ghidra R G B sub-token loop with 0-255 validation and normalized float stores
 ?parseRGBAColorInt@INI@@SAXPAV1@PAX1PBX@Z,,0x00853050,399,Code/masm_dumps/parseRGBAColorInt_INI_SAXPAV1_PAX1PBX_Z_853050.asm,matched,Ghidra R G B A loop with optional alpha and four integer component stores
+?parseCoord3D@INI@@SAXPAV1@PAX1PBX@Z,,0x00853380,84,Code/masm_dumps/parseCoord3D_INI_SAXPAV1_PAX1PBX_Z_853380.asm,matched,Ghidra X Y Z sub-token flow with verified scanReal calls and three float stores

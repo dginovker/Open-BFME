@@ -455,7 +455,8 @@ def compile_source(source, output):
         )
         if result.returncode == 0:
             return
-        transient = ("Application could not be started" in result.stdout
+        transient = (not result.stdout.strip()
+                     or "Application could not be started" in result.stdout
                      or "ShellExecuteEx failed" in result.stdout)
         if not transient or attempt == 2:
             print(f"compile failed: {source.relative_to(ROOT)}", file=sys.stderr)

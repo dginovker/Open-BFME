@@ -1033,3 +1033,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?AssertBegin@Debug@@SAAAV1@PBDH0@Z	no-match	Ghidra boundary audit: candidate 0x88EFFD lies inside FUN_00C8EC50 (start 0x88EC50, size 2713), not a 258-byte function start.
 ?CrashBegin@Debug@@SAAAV1@PBDH@Z	no-match	Ghidra boundary audit: candidate 0x88F003 lies inside FUN_00C8EC50 (start 0x88EC50, size 2713), not a 263-byte function start.
 ?setName@LANGameInfo@@QAEXVUnicodeString@@@Z	landed	Ghidra caller walk from FUN_00A87E90 identified thunk body 0x685480; exact 78-byte boundary; BFME m_gameName offset is 0x3A0; exact MASM body verified
+??1LANGameInfo@@QAE@XZ	landed	Ghidra corrected stale drift address to exact 0x686CD0 103-byte body; BFME layout offsets 0x3A0, 0x58/0x68, and base +0x3C; exact MASM body verified

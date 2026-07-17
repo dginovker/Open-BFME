@@ -10296,3 +10296,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?buildFieldParse@MaxHealthUpgradeModuleData@@SAXAAVMultiIniFieldParse@@@Z,,0x002D6370,35,Code/GameEngine/Source/GameLogic/Object/Upgrade/MaxHealthUpgrade.cpp,matched,
 ?buildFieldParse@StatusBitsUpgradeModuleData@@SAXAAVMultiIniFieldParse@@@Z,,0x002D7DA0,35,Code/GameEngine/Source/GameLogic/Object/Upgrade/StatusBitsUpgrade.cpp,matched,
 ?setName@LANGameInfo@@QAEXVUnicodeString@@@Z,,0x00685480,78,Code/masm_dumps/setName_LANGameInfo_QAEXVUnicodeString_Z_685480.asm,matched,Ghidra exact boundary and caller-verified body
+??1LANGameInfo@@QAE@XZ,,0x00686CD0,103,Code/masm_dumps/__1LANGameInfo__QAE_XZ_686CD0.asm,matched,Ghidra-corrected exact boundary and layout-verified body

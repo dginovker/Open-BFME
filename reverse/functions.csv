@@ -10332,3 +10332,4 @@ _atanf,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,
 ?parseWeaponTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x0000CBDF,5,Code/masm_dumps/parseWeaponTemplate_INI_SAXPAV1_PAX1PBX_Z_CBDF.asm,matched,Retail CollideWeapon table xref; public thunk to weapon-store lookup body
 ?parseFXList@INI@@SAXPAV1@PAX1PBX@Z,,0x00004B47,5,Code/masm_dumps/parseFXList_INI_SAXPAV1_PAX1PBX_Z_4B47.asm,matched,Ghidra canonical body; TopplingFX table xref and None-aware FX-list store lookup
 ?parseDamageFX@INI@@SAXPAV1@PAX1PBX@Z,,0x00012026,5,Code/masm_dumps/parseDamageFX_INI_SAXPAV1_PAX1PBX_Z_12026.asm,matched,Retail ArmorTemplateSet DamageFX xref; public thunk to None-aware damage-FX store lookup
+?parseThingTemplate@INI@@SAXPAV1@PAX1PBX@Z,,0x00039969,5,Code/masm_dumps/parseThingTemplate_INI_SAXPAV1_PAX1PBX_Z_39969.asm,matched,Retail ControlBar Object xref; public thunk to initialized thing-factory lookup body

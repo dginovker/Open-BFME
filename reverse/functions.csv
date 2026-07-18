@@ -10536,3 +10536,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@HordeContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00115BC0,110,Code/masm_dumps/HordeContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getDestinationLayer@Object@@QBE?AW4PathfindLayerEnum@@XZ,,0x001BEF50,7,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,Ghidra-bound Object accessor
 ?setDisallowAsianText@GameSpyInfo@@UAEX_N@Z,,0x00630760,13,Code/masm_dumps/GameSpyInfo_setDisallowAsianText.asm,matched,Vtable-bound BFME layout mutator
+?friend_newModuleData@HorseHordeContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00115DE0,110,Code/masm_dumps/HorseHordeContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

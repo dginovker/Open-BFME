@@ -1354,3 +1354,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@HordeContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified
 ?getDestinationLayer@Object@@QBE?AW4PathfindLayerEnum@@XZ	landed	Unique retail bytes and padded Ghidra boundary bind the exact seven-byte AIPathfind emission
 ?setDisallowAsianText@GameSpyInfo@@UAEX_N@Z	landed	Retail vtable quartet and paired field access bind the exact 13-byte BFME-layout body; MASM byte-verified
+?friend_newModuleData@HorseHordeContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified

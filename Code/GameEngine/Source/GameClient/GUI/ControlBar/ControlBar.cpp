@@ -2804,7 +2804,6 @@ void ControlBar::triggerRadarAttackGlow( void )
 		m_radarAttackGlowWindow->winEnable(FALSE);
 }
 
-// ?updateRadarAttackGlow@ControlBar@@IAEXXZ present-unmatched
 void ControlBar::updateRadarAttackGlow ( void )
 {
 	if(!m_radarAttackGlowOn || !m_radarAttackGlowWindow)

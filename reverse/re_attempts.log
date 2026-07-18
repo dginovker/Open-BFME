@@ -1458,3 +1458,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?setVolume@AudioEventRTS@@QAEXM@Z	landed	AudioEventRTS layout and adjacent field writers bind the exact 10-byte setter; MASM byte-verified
 ?hideIdleWorkerLayout@InGameUI@@EAEXXZ	landed	Corrected Ghidra boundary and idle-worker field ownership bind the exact 72-byte body; MASM byte-verified
 ?friend_newModuleData@TransitionDamageFX@@SAPAVModuleData@@PAVINI@@@Z	landed	ModuleFactory registration and data-proc thunk bind the exact 110-byte factory; MASM byte-verified
+?updateRadarAttackGlow@ControlBar@@IAEXXZ	landed	Corrected Ghidra boundary and BFME ControlBar field shift bind the exact 102-byte body; MASM byte-verified

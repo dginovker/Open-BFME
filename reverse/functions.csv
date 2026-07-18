@@ -10520,3 +10520,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1LadderInfo@@QAE@XZ,,0x0062A9E0,194,Code/masm_dumps/LadderInfo_destructor.asm,matched,Ghidra-bound retail destructor
 ??_GLadderInfo@@QAEPAXI@Z,,0x0062AAE0,30,Code/masm_dumps/LadderInfo_scalar_destructor.asm,matched,Ghidra-bound deleting destructor
 ??_GLadderList@@QAEPAXI@Z,,0x006306D0,30,Code/masm_dumps/LadderList_scalar_destructor.asm,matched,Ghidra-bound deleting destructor
+?getEnergyProduction@ThingTemplate@@QBEHXZ,,0x00478E30,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound ThingTemplate accessor

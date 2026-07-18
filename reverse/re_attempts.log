@@ -1382,3 +1382,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?isPointOnWall@PathfindLayer@@QAE_NPAW4ObjectID@@HPBUCoord3D@@@Z	landed	Unique padded retail body and exact object ownership identify the 257-byte wall-layer test; MASM byte-verified
 ?friend_newModuleData@SlaveWatcherBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?setCopiedFromDefault@ThingTemplate@@QAEXXZ	landed	Unique padded retail body and exact object ownership identify the 71-byte BFME-layout implementation; MASM byte-verified
+?getLocale@GameSpyMiscPreferences@@QAEHXZ	landed	Unique Locale string xref and adjacent setter bind the exact 33-byte preference getter; MASM byte-verified

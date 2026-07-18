@@ -2493,7 +2493,6 @@ AsciiString ScriptAction::getUiText(void)
 *	Input: DataChunkInput 
 *		
 */
-// ?WriteActionDataChunk@ScriptAction@@SAXAAVDataChunkOutput@@PAV1@@Z present-unmatched
 void ScriptAction::WriteActionDataChunk(DataChunkOutput &chunkWriter, ScriptAction	*pScriptAction)
 {
 	/**********ACTION  DATA ***********************/

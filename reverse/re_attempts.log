@@ -1296,3 +1296,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?doRadarForceEnable@ScriptActions@@IAEXXZ	landed	Unique aligned padded retail hit at 0x002EFD50/10; existing TheRadar forceOn true source compiles masked-identically and needs only the expected DIR32 relocation
 ?doDebugMessage@ScriptActions@@IAEXABVAsciiString@@_N@Z	landed	Ghidra and adjacency anchor the BFME body at 0x002F20E0/51; exact MASM preserves GUI-interface dispatch and optional callback instead of the ZH direct AppendDebugMessage tailcall
 ?doRadarRevertNormal@ScriptActions@@IAEXXZ	landed	Unique aligned padded retail hit at 0x002EFD60/10; existing TheRadar forceOn false source compiles masked-identically with only the expected DIR32 relocation
+??1MetaEventTranslator@@UAE@XZ	landed	Deleting-destructor thunk and adjacent constructor bind the exact body at 0x005B6A70/7; MASM restores the retail GameMessageTranslator base vtable with no calls or overlap

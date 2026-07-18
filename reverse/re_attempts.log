@@ -1402,3 +1402,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??0IgnorePreferences@@QAE@XZ	landed	Unique LoTRB4MEOnline ignore path and distinct vtable bind the exact 192-byte constructor; MASM byte-verified
 ?onExit@AIPanicState@@UAEXW4StateExitType@@@Z	landed	Virtual signature, panic cleanup and unconditional base forwarding bind the exact 84-byte body; MASM byte-verified
 ?friend_newModuleData@SpecialEnemySenseUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
+?friend_newModuleData@RainOfFireUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified

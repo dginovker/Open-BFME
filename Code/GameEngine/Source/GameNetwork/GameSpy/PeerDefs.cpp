@@ -485,7 +485,6 @@ void PeerDefs_force_GameSpyStagingRoom_CRC(GameSpyStagingRoom *room, UnsignedInt
 	room->setIniCRC(ini);
 }
 
-// ?setMOTD@GameSpyInfo@@UAEXABVAsciiString@@@Z present-unmatched
 void GameSpyInfo::setMOTD( const AsciiString& motd )
 {
 	m_rawMotd = motd;

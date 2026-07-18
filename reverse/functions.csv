@@ -10604,3 +10604,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@ShareExperienceBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00116C70,107,Code/masm_dumps/ShareExperienceBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?WriteGroupDataChunk@ScriptGroup@@SAXAAVDataChunkOutput@@PAV1@@Z,,0x00359EE0,204,Code/masm_dumps/ScriptGroup_WriteGroupDataChunk.asm,matched,Ghidra-bound BFME script-group writer
 ?usesSystemMapDir@CustomMatchPreferences@@QAE_NXZ,,0x000AC480,95,Code/masm_dumps/CustomMatchPreferences_usesSystemMapDir.asm,matched,Unique UseSystemMapDir preference getter
+?friend_newModuleData@BannerCarrierUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00119C40,107,Code/masm_dumps/BannerCarrierUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

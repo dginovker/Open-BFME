@@ -1422,3 +1422,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@ShareExperienceBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?WriteGroupDataChunk@ScriptGroup@@SAXAAVDataChunkOutput@@PAV1@@Z	landed	Entry thunk tree walk and shared epilogue bind the exact 204-byte BFME writer; MASM byte-verified
 ?usesSystemMapDir@CustomMatchPreferences@@QAE_NXZ	landed	UseSystemMapDir xref and source order bind the exact 95-byte true-default getter; MASM byte-verified
+?friend_newModuleData@BannerCarrierUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified

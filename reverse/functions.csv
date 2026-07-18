@@ -10542,3 +10542,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@AODHordeContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00122FD0,116,Code/masm_dumps/AODHordeContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?File_Name@GameFileClass@@UBEPBDXZ,,0x006F60D0,7,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DFileSystem.cpp,matched,Ghidra-bound GameFile accessor
 ?getMaxMessagesPerUpdate@GameSpyInfo@@UAEHXZ,,0x006307B0,7,Code/masm_dumps/GameSpyInfo_getMaxMessagesPerUpdate.asm,matched,Vtable-bound BFME layout accessor
+?friend_newModuleData@GarrisonContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00116250,110,Code/masm_dumps/GarrisonContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

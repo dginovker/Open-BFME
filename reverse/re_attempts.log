@@ -1360,3 +1360,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@AODHordeContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and specialized vtable write identify the exact 116-byte data factory; MASM byte-verified
 ?File_Name@GameFileClass@@UBEPBDXZ	landed	Unique retail bytes and padded Ghidra boundary bind the exact seven-byte natural C++ match
 ?getMaxMessagesPerUpdate@GameSpyInfo@@UAEHXZ	landed	Retail vtable setter/getter pair binds the exact seven-byte BFME-layout body; MASM byte-verified
+?friend_newModuleData@GarrisonContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified

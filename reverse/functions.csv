@@ -10583,3 +10583,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z,,0x00747D70,217,Code/masm_dumps/WorldHeightMap_getRawTileData.asm,matched,Ghidra-bound BFME source-tile copy body
 ??0IgnorePreferences@@QAE@XZ,,0x000ABA30,192,Code/masm_dumps/IgnorePreferences_ctor.asm,matched,Unique BFME ignore-path constructor
 ?onExit@AIPanicState@@UAEXW4StateExitType@@@Z,,0x0017F1E0,84,Code/masm_dumps/AIPanicState_onExit.asm,matched,Ghidra-bound BFME panic-exit body
+?friend_newModuleData@SpecialEnemySenseUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00123D90,107,Code/masm_dumps/SpecialEnemySenseUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

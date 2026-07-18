@@ -1408,3 +1408,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@DestroyEnvironmentUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?allowsObservers@CustomMatchPreferences@@QAE_NXZ	landed	Unique AllowObservers xref and source-order getter cluster bind the exact 95-byte body; MASM byte-verified
 ?getDisallowAsianText@CustomMatchPreferences@@QAE_NXZ	landed	Ghidra xref and source order bind the exact 95-byte BFME false-default getter; MASM byte-verified
+?friend_newModuleData@SiegeAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified

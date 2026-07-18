@@ -1468,3 +1468,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getSlotNum@LANGameInfo@@QAEHVUnicodeString@@@Z	landed	Corrected Ghidra boundary and BFME LAN slot layout bind the exact 179-byte search; MASM byte-verified
 ?setDrawableID@AudioEventRTS@@QAEXW4DrawableID@@@Z	landed	AudioEventRTS layout and paired getter bind the exact 30-byte owner setter; MASM byte-verified
 ?friend_newModuleData@StealthUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	ModuleFactory registration and BFME upgrade-data facade bind the exact 58-byte factory; MASM byte-verified
+?isValidObjectTarget@CommandButton@@QBE_NPBVDrawable@@0@Z	landed	Corrected Ghidra boundary and BFME Drawable object offset bind the exact 67-byte overload; MASM byte-verified

@@ -10648,3 +10648,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@WanderAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011BEE0,128,Code/masm_dumps/WanderAIUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME update module-data factory
 ?getSlotNum@LANGameInfo@@QAEHVUnicodeString@@@Z,,0x0068EB10,179,Code/masm_dumps/LANGameInfo_getSlotNum.asm,matched,Ghidra-corrected BFME LAN slot search
 ?setDrawableID@AudioEventRTS@@QAEXW4DrawableID@@@Z,,0x000B2290,30,Code/masm_dumps/AudioEventRTS_setDrawableID.asm,matched,Ghidra-bound BFME audio drawable setter
+?friend_newModuleData@StealthUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012BF00,58,Code/masm_dumps/StealthUpgrade_friend_newModuleData.asm,matched,Ghidra-bound BFME upgrade module-data factory

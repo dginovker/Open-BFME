@@ -10601,3 +10601,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getChatSizeSlider@CustomMatchPreferences@@QAEHXZ,,0x000AC330,92,Code/masm_dumps/CustomMatchPreferences_getChatSizeSlider.asm,matched,Ghidra-bound BFME chat-slider getter
 ?friend_newModuleData@CivilianSpawnUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00116B60,107,Code/masm_dumps/CivilianSpawnUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getPreferredFaction@CustomMatchPreferences@@QAEHXZ,,0x000AC3B0,160,Code/masm_dumps/CustomMatchPreferences_getPreferredFaction.asm,matched,Ghidra-bound BFME preferred-faction getter
+?friend_newModuleData@ShareExperienceBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00116C70,107,Code/masm_dumps/ShareExperienceBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

@@ -1419,3 +1419,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getChatSizeSlider@CustomMatchPreferences@@QAEHXZ	landed	ChatSlider xref padded boundaries and range validation bind the exact 92-byte getter; MASM byte-verified
 ?friend_newModuleData@CivilianSpawnUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?getPreferredFaction@CustomMatchPreferences@@QAEHXZ	landed	PlayerTemplate xref store bounds and enabled flag bind the exact 160-byte getter; MASM byte-verified
+?friend_newModuleData@ShareExperienceBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified

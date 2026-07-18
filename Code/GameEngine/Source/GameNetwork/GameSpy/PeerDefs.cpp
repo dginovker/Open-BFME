@@ -747,7 +747,6 @@ Bool PlayerInfo::isIgnored( void )
 // ?loadSavedIgnoreList@GameSpyInfo@@UAEXXZ
 // Body in PeerDefs_loadSavedIgnoreList.asm (exact 162B retail; SEH + field offsets).
 
-// ?setDisallowAsianText@GameSpyInfo@@UAEX_N@Z present-unmatched
 void GameSpyInfo::setDisallowAsianText( Bool val )
 {
 	m_disallowAsainText = val;

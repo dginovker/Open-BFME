@@ -2198,7 +2198,6 @@ void InGameUI::beginAreaSelectHint( const GameMessage *msg )
 //-------------------------------------------------------------------------------------------------
 /** An area selection has occurred, finish graphical "hint". */
 //-------------------------------------------------------------------------------------------------
-// ?endAreaSelectHint@InGameUI@@UAEXPBVGameMessage@@@Z present-unmatched
 void InGameUI::endAreaSelectHint( const GameMessage *msg )
 {
 	m_isDragSelecting = false;

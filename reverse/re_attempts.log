@@ -1322,3 +1322,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getBoundingCircleRadius@GeometryInfo@@QBEMXZ	landed	Ghidra accessor cluster and member offset bind the 4-byte getter; Object.cpp emits an exact retail match
 ?friend_newModuleData@ClickReactionBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified
 ?getFrame@GameLogic@@QAEIXZ	landed	Ghidra boundary and GameLogic frame offset bind the 4-byte getter; Object.cpp emits an exact retail match
+?friend_newModuleData@AutoAbilityBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified

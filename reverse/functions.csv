@@ -10504,3 +10504,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getBoundingCircleRadius@GeometryInfo@@QBEMXZ,,0x005E7B90,4,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound GeometryInfo accessor
 ?friend_newModuleData@ClickReactionBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114C60,107,Code/masm_dumps/ClickReactionBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getFrame@GameLogic@@QAEIXZ,,0x00478490,4,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound GameLogic accessor
+?friend_newModuleData@AutoAbilityBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114E80,107,Code/masm_dumps/AutoAbilityBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

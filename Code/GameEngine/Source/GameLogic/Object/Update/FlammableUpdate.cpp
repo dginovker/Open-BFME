@@ -80,7 +80,6 @@ FlammableUpdateModuleData::FlammableUpdateModuleData()
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??0FlammableUpdate@@QAE@PAVThing@@PBVModuleData@@@Z present-unmatched
 FlammableUpdate::FlammableUpdate( Thing *thing, const ModuleData* moduleData ) : UpdateModule( thing, moduleData )
 {
 	m_status = FS_NORMAL;

@@ -10539,3 +10539,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@HorseHordeContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00115DE0,110,Code/masm_dumps/HorseHordeContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?Pop_Override_Flags@RenderInfoClass@@QAEXXZ,,0x00923750,7,Code/Libraries/Source/WWVegas/WW3D2/rinfo.cpp,matched,Ghidra-bound RenderInfo mutator
 ?setDisallowNonAsianText@GameSpyInfo@@UAEX_N@Z,,0x00630770,13,Code/masm_dumps/GameSpyInfo_setDisallowNonAsianText.asm,matched,Vtable-bound BFME layout mutator
+?friend_newModuleData@AODHordeContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00122FD0,116,Code/masm_dumps/AODHordeContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

@@ -10445,3 +10445,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@CaveContain@@SAPAVModuleData@@PAVINI@@@Z,,0x0012ABC0,125,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,BFME CaveContain layout
 ?friend_newModuleData@DamageModule@@SAPAVModuleData@@PAVINI@@@Z,,0x00124080,112,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,BFME DamageModule factory facade
 ?friend_newModuleData@CollideModule@@SAPAVModuleData@@PAVINI@@@Z,,0x00124080,112,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,ICF alias with BFME CollideModule factory facade
+?friend_newModuleData@UpdateModule@@SAPAVModuleData@@PAVINI@@@Z,,0x00124080,112,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,source-local retail data facade preserves derived UpdateModule ABI

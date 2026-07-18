@@ -3,6 +3,8 @@ name,address,notes
 ??_7RetailDamageModuleData@@6B@,0x0108A350,DamageModule factory vtable target
 ??0RetailCollideModuleDataBase@@QAE@XZ,0x00048A3B,CollideModule factory base constructor target
 ??_7RetailCollideModuleData@@6B@,0x0108A350,CollideModule factory vtable target
+??0RetailUpdateModuleDataBase@@QAE@XZ,0x00048A3B,UpdateModule factory base constructor target
+??_7RetailUpdateModuleData@@6B@,0x0108A350,UpdateModule factory vtable target
 ??0OpenContainModuleData@@QAE@XZ,0x00044030,CaveContain factory constructor target
 ?$S103@?1??getClassMemoryPool@AIUpdateInterface@@CAPAVMemoryPool@@XZ@4IA,0x00EEFE34,pool-glue cascade static (back-solved)
 ?$S105@?1??getClassMemoryPool@PoisonedBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF830,pool-glue cascade static (back-solved)

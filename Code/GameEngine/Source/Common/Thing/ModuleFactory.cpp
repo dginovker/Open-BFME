@@ -45,6 +45,47 @@
 #include "../../../Include/GameLogic/Module/DamageModule.h"
 #include "../../../Include/GameLogic/Module/CollideModule.h"
 
+class RetailUpdateModuleDataBase : public ModuleData
+{
+public:
+	RetailUpdateModuleDataBase();
+	static void buildFieldParse(MultiIniFieldParse& p)
+	{
+		BehaviorModuleData::buildFieldParse(p);
+	}
+
+private:
+	char m_bfmeLayoutPadding[ 0x5C ];
+};
+
+class RetailUpdateModuleData : public RetailUpdateModuleDataBase
+{
+};
+
+#undef MAKE_STANDARD_MODULE_DATA_MACRO_ABC
+#define MAKE_STANDARD_MODULE_DATA_MACRO_ABC( cls, clsmd ) \
+private: \
+	const clsmd* get##clsmd() const { return (clsmd*)getModuleData(); } \
+public: \
+	static ModuleData* friend_newModuleData(INI* ini) \
+	{ \
+		RetailUpdateModuleData* data = MSGNEW( "AllModuleData" ) RetailUpdateModuleData; \
+		if (ini) ini->initFromINIMultiProc(data, RetailUpdateModuleData::buildFieldParse); \
+		return data; \
+	}
+#include "GameLogic/Module/UpdateModule.h"
+#undef MAKE_STANDARD_MODULE_DATA_MACRO_ABC
+#define MAKE_STANDARD_MODULE_DATA_MACRO_ABC( cls, clsmd ) \
+private: \
+	const clsmd* get##clsmd() const { return (clsmd*)getModuleData(); } \
+public: \
+	static ModuleData* friend_newModuleData(INI* ini) \
+	{ \
+		clsmd* data = MSGNEW( "AllModuleData" ) clsmd; \
+		if (ini) ini->initFromINIMultiProc(data, clsmd::buildFieldParse); \
+		return data; \
+	}
+
 // behavior includes
 #include "GameLogic/Module/AutoHealBehavior.h"
 #include "GameLogic/Module/GrantStealthBehavior.h"

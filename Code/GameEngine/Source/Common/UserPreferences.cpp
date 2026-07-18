@@ -494,7 +494,6 @@ UnsignedShort CustomMatchPreferences::getLastLadderPort( void )
 	return atoi(it->second.str());
 }
 
-// ?getPreferredColor@CustomMatchPreferences@@QAEHXZ present-unmatched
 Int CustomMatchPreferences::getPreferredColor(void)
 {
 	Int ret;

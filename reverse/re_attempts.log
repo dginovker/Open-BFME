@@ -1404,3 +1404,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@SpecialEnemySenseUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?friend_newModuleData@RainOfFireUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?setCommandBarBorder@ControlBar@@AAEXPAVGameWindow@@W4CommandButtonMappedBorderType@@@Z	landed	Five-case jump table and BFME color offsets identify the exact 153-byte code body; MASM byte-verified
+?usesLongGameList@CustomMatchPreferences@@QAE_NXZ	landed	Unique-string neighboring getters pin the exact three-byte natural C++ unconditional-true body

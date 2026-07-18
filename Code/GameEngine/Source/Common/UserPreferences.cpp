@@ -611,7 +611,6 @@ void CustomMatchPreferences::setUsesSystemMapDir(Bool val)
 	(*this)["UseSystemMapDir"] = s;
 }
 
-// ?usesLongGameList@CustomMatchPreferences@@QAE_NXZ present-unmatched
 Bool CustomMatchPreferences::usesLongGameList(void)
 {
 	return TRUE;

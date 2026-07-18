@@ -567,7 +567,6 @@ const AudioEventInfo *AudioEventRTS::getAudioEventInfo( void ) const
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?setPlayingHandle@AudioEventRTS@@ present-unmatched
 void AudioEventRTS::setPlayingHandle( AudioHandle handle )
 {
 	m_playingHandle = handle;

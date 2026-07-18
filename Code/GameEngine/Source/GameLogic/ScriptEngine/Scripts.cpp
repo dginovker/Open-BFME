@@ -1274,7 +1274,6 @@ AsciiString Script::getUiText(void)
 *	Input: DataChunkInput 
 *		
 */
-// ?WriteScriptDataChunk@Script@@SAXAAVDataChunkOutput@@PAV1@@Z present-unmatched
 void Script::WriteScriptDataChunk(DataChunkOutput &chunkWriter, Script *pScript)
 {
 	/**********SCRIPT  DATA ***********************/

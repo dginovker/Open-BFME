@@ -10653,3 +10653,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@MaxHealthUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0011DC80,107,Code/masm_dumps/MaxHealthUpgrade_friend_newModuleData.asm,matched,Ghidra-bound BFME MaxHealthUpgrade module-data factory
 ?getDrawableID@AudioEventRTS@@QAE?AW4DrawableID@@XZ,,0x000B22C0,13,Code/masm_dumps/AudioEventRTS_getDrawableID.asm,matched,Ghidra-bound BFME audio drawable getter
 ?friend_newModuleData@LocomotorSetUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012B430,62,Code/masm_dumps/LocomotorSetUpgrade_friend_newModuleData.asm,matched,Ghidra-bound BFME LocomotorSetUpgrade module-data factory
+?processRequestAssistance@Weapon@@IAEXPBVObject@@PAV2@@Z,,0x001E4BF0,83,Code/GameEngine/Source/GameLogic/Object/Weapon.cpp,matched,BFME Weapon and WeaponTemplate layout offsets

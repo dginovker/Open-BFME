@@ -2950,7 +2950,6 @@ public:
 };
 
 //-------------------------------------------------------------------------------------------------
-// ??0AssistanceRequestData@@QAE@XZ present-unmatched
 AssistanceRequestData::AssistanceRequestData()
 {
 	m_requestingObject = NULL;
@@ -2990,7 +2989,6 @@ static void makeAssistanceRequest( Object *requestOf, void *userData )
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?processRequestAssistance@Weapon@@IAEXPBVObject@@PAV2@@Z present-unmatched
 void Weapon::processRequestAssistance( const Object *requestingObject, Object *victimObject )
 {
 	// Iterate through our player's objects, and tell everyone like us within our assistance range 
@@ -3002,7 +3000,9 @@ void Weapon::processRequestAssistance( const Object *requestingObject, Object *v
 	AssistanceRequestData requestData;
 	requestData.m_requestingObject = requestingObject;
 	requestData.m_victimObject = victimObject;
-	requestData.m_requestDistanceSquared = m_template->getRequestAssistRange() * m_template->getRequestAssistRange();
+	const WeaponTemplate *bfmeTemplate = *(WeaponTemplate * const *)((const char *)this + 4);
+	const Real requestAssistRange = *(const Real *)((const char *)bfmeTemplate + 0x1c);
+	requestData.m_requestDistanceSquared = requestAssistRange * requestAssistRange;
 
 	ourPlayer->iterateObjects( makeAssistanceRequest, &requestData );
 }
@@ -3613,4 +3613,3 @@ void WeaponBonusSet::appendBonuses(WeaponBonusConditionFlags flags, WeaponBonus&
 		this->m_bonus[i].appendBonuses(bonus);
 	}
 }
-

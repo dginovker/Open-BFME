@@ -1263,3 +1263,5 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?update@GameTextManager@@UAEXXZ	landed	Ghidra vtable anchored true target 0x00438420/1; existing inline C++ emitted exact RET
 ?createSnowManager@W3DGameClient@@MAEPAVSnowManager@@XZ	no-match	Initial facade assumed SubsystemInterface was vptr-only; its AsciiString member made SnowManager 0x6c and failed size assertions
 ?createSnowManager@W3DGameClient@@MAEPAVSnowManager@@XZ	landed	Matched Ghidra-anchored 0x006FB870/89 as verified ICF alias with retail 0x68/0x9c snow layouts and ctor thunk
+??1GameTextInterface@@UAE@XZ	no-match	Existing C++ emits 11-byte tailcall to SubsystemInterface destructor; retail ICF body is 14-byte inline m_name release at 0x009A1A40
+??1GameTextInterface@@UAE@XZ	landed	Matched verified ICF alias at 0x009A1A40/14 with exact decorated MASM body

@@ -10458,3 +10458,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?update@GameTextManager@@UAEXXZ,,0x00438420,1,Code/GameEngine/Source/GameClient/GameText.cpp,matched,Ghidra-vtable anchored empty update override; exact C++ RET
 ?createSnowManager@W3DGameClient@@MAEPAVSnowManager@@XZ,,0x006FB870,89,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,ICF alias; TU-local BFME SnowManager and W3DSnowManager ABI facades; ctor thunk pinned
 ??1GameTextInterface@@UAE@XZ,,0x009A1A40,14,Code/masm_dumps/GameText_GameTextInterface_destructor.asm,matched,ICF alias; exact retail base-interface destructor via MASM
+??_GGameTextInterface@@UAEPAXI@Z,,0x00435E00,30,Code/GameEngine/Source/GameClient/GameText.cpp,matched,exact C++ scalar-deleting destructor after retail destructor-thunk pin

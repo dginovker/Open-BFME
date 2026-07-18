@@ -1290,3 +1290,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?doVictory@ScriptActions@@IAEXXZ	landed	Unique APT EndVictorious and Gui VictoryScreen string xrefs plus Ghidra anchor the true body at 0x002F1C10/290; exact MASM preserves BFME victory-window and cheer flow absent from ZH
 ??0MetaMapRec@@QAE@XZ	landed	Raw retail boundary 0x005B7020/11; exact MASM initializes only UnicodeString handles at +0x1c and +0x20, matching the proven non-polymorphic 0x24 MetaMapRec ABI
 ??_GMetaMapRec@@QAEPAXI@Z	landed	Retail cluster and thunk xrefs anchor the nonvirtual scalar-deleting destructor at 0x005B70E0/30; exact MASM calls the true QAE destructor and conditionally global delete without reviving the false MAE attribution
+?doLocalDefeat@ScriptActions@@IAEXXZ	landed	Gui DefeatScreen and APT EndDefeat xrefs plus Ghidra anchor the true local-defeat body at 0x002F1EC0/246; exact MASM preserves BFME observer check and close-window timer flow

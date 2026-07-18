@@ -10618,3 +10618,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?setUsesLongGameList@CustomMatchPreferences@@QAEX_N@Z,,0x000ADC40,170,Code/masm_dumps/CustomMatchPreferences_setUsesLongGameList.asm,matched,Ghidra-bound BFME long-game-list setter
 ?friend_newModuleData@WeaponModeSpecialPowerUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001196F0,110,Code/masm_dumps/WeaponModeSpecialPowerUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ??0FlammableUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00298E10,157,Code/masm_dumps/FlammableUpdate_ctor.asm,matched,Ghidra-bound BFME flammable constructor
+?setAllowsObserver@CustomMatchPreferences@@QAEX_N@Z,,0x000ADD20,170,Code/masm_dumps/CustomMatchPreferences_setAllowsObserver.asm,matched,Ghidra-bound BFME observer setter

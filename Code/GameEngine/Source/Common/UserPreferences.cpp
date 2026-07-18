@@ -636,7 +636,6 @@ Bool CustomMatchPreferences::allowsObservers(void)
 	return FALSE;
 }
 
-// ?setAllowsObserver@CustomMatchPreferences@@QAEX_N@Z present-unmatched
 void CustomMatchPreferences::setAllowsObserver(Bool val)
 {
 	AsciiString s;

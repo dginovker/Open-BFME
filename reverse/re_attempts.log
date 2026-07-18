@@ -1436,3 +1436,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?setUsesLongGameList@CustomMatchPreferences@@QAEX_N@Z	landed	UseLongGameList key Bool format and map assignment bind the exact 170-byte setter; MASM byte-verified
 ?friend_newModuleData@WeaponModeSpecialPowerUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified
 ??0FlammableUpdate@@QAE@PAVThing@@PBVModuleData@@@Z	landed	Exact retail body resolves the prior C++ layout blocker with thunk vtables and wake-frame call; MASM byte-verified
+?setAllowsObserver@CustomMatchPreferences@@QAEX_N@Z	landed	AllowObservers key Bool format and map assignment bind the exact 170-byte setter; MASM byte-verified

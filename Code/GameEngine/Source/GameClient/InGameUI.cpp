@@ -5596,7 +5596,6 @@ Int InGameUI::getIdleWorkerCount( void )
 	return m_idleWorkers[index].size();
 }
 
-// ?showIdleWorkerLayout@InGameUI@@EAEXXZ present-unmatched
 void InGameUI::showIdleWorkerLayout( void )
 {
 	if (!m_idleWorkerWin)
@@ -5828,5 +5827,4 @@ WindowMsgHandledType IdleWorkerSystem( GameWindow *window, UnsignedInt msg,
 	return MSG_HANDLED;
 
 }
-
 

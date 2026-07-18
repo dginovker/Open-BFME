@@ -1443,3 +1443,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1W3DVolumetricShadowManager@@QAE@XZ	landed	Corrected Ghidra boundary 0x7BDE90 and ILT thunk bind the exact 286-byte destructor; MASM byte-verified
 ?friend_newModuleData@W3DRopeDraw@@SAPAVModuleData@@PAVINI@@@Z	landed	W3DModuleFactory registration and data-proc thunk bind the exact 47-byte factory; MASM byte-verified
 ?setConfig@GameSpyInfo@@UAEXABVAsciiString@@@Z	landed	GameSpyInfo vtable slot and adjacent accessors bind the exact 8-byte StringBase tail stub; MASM byte-verified
+?showIdleWorkerLayout@InGameUI@@EAEXXZ	landed	Corrected Ghidra boundary and idle-worker string anchor bind the exact 86-byte body; MASM byte-verified

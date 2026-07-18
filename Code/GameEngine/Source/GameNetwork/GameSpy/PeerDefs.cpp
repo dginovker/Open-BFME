@@ -495,7 +495,6 @@ const AsciiString& GameSpyInfo::getMOTD( void )
 	return m_rawMotd;
 }
 
-// ?setConfig@GameSpyInfo@@UAEXABVAsciiString@@@Z present-unmatched
 void GameSpyInfo::setConfig( const AsciiString& config )
 {
 	m_rawConfig = config;

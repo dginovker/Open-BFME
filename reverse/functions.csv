@@ -10623,3 +10623,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?setMOTD@GameSpyInfo@@UAEXABVAsciiString@@@Z,,0x00630DF0,8,Code/masm_dumps/GameSpyInfo_setMOTD.asm,matched,Ghidra-bound BFME vtable tail stub
 ??1W3DVolumetricShadowManager@@QAE@XZ,,0x007BDE90,286,Code/masm_dumps/W3DVolumetricShadowManager_dtor.asm,matched,Ghidra-corrected BFME destructor body
 ?friend_newModuleData@W3DRopeDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x00113BE0,47,Code/masm_dumps/W3DRopeDraw_friend_newModuleData.asm,matched,Ghidra-bound BFME W3D factory body
+?setConfig@GameSpyInfo@@UAEXABVAsciiString@@@Z,,0x00630E00,8,Code/masm_dumps/GameSpyInfo_setConfig.asm,matched,Ghidra-bound BFME vtable tail stub

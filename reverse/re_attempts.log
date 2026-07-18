@@ -1251,3 +1251,6 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?createInGameUI@W3DGameClient@@MAEPAVInGameUI@@XZ	no-match	Suppressed InGameUI before dependencies; CommandXlat types were missing
 ?createInGameUI@W3DGameClient@@MAEPAVInGameUI@@XZ	no-match	Retail 25-entry W3D facade over ZH InGameUI still allocated 0x1e4c
 ?createInGameUI@W3DGameClient@@MAEPAVInGameUI@@XZ	landed	Matched 0x006FB590/89 with TU-local retail-sized InGameUI and W3DInGameUI facades plus ctor thunk pin
+?createControlBar@InGameUI@@IAEXXZ	no-match	Retail string facade was trivially copyable; compiler built a local then pushed its payload, producing 42 bytes
+?createControlBar@InGameUI@@IAEXXZ	no-match	Nontrivial retail facade destructor forced SEH cleanup and grew the function to 98 bytes
+?createControlBar@InGameUI@@IAEXXZ	no-match	Nontrivial copy facade reached 44 bytes but hoisted and saved the manager vtable before construction; register order differs

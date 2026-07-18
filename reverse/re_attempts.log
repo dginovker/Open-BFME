@@ -1432,3 +1432,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?WriteActionFalseDataChunk@ScriptAction@@SAXAAVDataChunkOutput@@PAV1@@Z	landed	ScriptActionFalse literal template lookup and parameter loop bind the exact 160-byte writer; MASM byte-verified
 ?setUsesSystemMapDir@CustomMatchPreferences@@QAEX_N@Z	landed	UseSystemMapDir key Bool format and map assignment bind the exact 170-byte setter; MASM byte-verified
 ?WriteParameter@Parameter@@QAEXAAVDataChunkOutput@@@Z	landed	Action-writer callers layout branches and bit-name table bind the exact 167-byte writer; MASM byte-verified
+?friend_newModuleData@ArrowStormUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified

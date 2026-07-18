@@ -1,0 +1,24 @@
+.386
+.model flat
+
+; ??1LadderInfo@@QAE@XZ
+; Exact 194 retail bytes @ 0x00A2A9E0; destroys LadderInfo members in retail order.
+_TEXT SEGMENT
+public ??1LadderInfo@@QAE@XZ
+??1LadderInfo@@QAE@XZ PROC
+    db 06Ah,0FFh,068h,0EAh,000h,004h,001h,064h,0A1h,000h,000h,000h,000h,050h,064h,089h
+    db 025h,000h,000h,000h,000h,051h,056h,08Bh,0F1h,057h,089h,074h,024h,008h,08Dh,04Eh
+    db 030h,0C7h,044h,024h,014h,006h,000h,000h,000h,0E8h,032h,0CFh,025h,000h,08Dh,04Eh
+    db 028h,0C6h,044h,024h,014h,005h,0E8h,025h,0CFh,025h,000h,08Dh,04Eh,024h,0C6h,044h
+    db 024h,014h,004h,0E8h,018h,0CFh,025h,000h,08Dh,07Eh,020h,08Bh,0CFh,0C6h,044h,024h
+    db 014h,003h,0E8h,0D4h,0E5h,09Eh,0FFh,08Bh,03Fh,085h,0FFh,074h,00Bh,06Ah,00Ch,057h
+    db 0E8h,0ABh,03Bh,020h,000h,083h,0C4h,008h,08Dh,07Eh,01Ch,08Bh,0CFh,0C6h,044h,024h
+    db 014h,002h,0E8h,0B4h,0E5h,09Eh,0FFh,08Bh,03Fh,085h,0FFh,074h,00Bh,06Ah,00Ch,057h
+    db 0E8h,08Bh,03Bh,020h,000h,083h,0C4h,008h,08Dh,04Eh,008h,0C6h,044h,024h,014h,001h
+    db 0E8h,05Bh,0D7h,025h,000h,08Dh,04Eh,004h,0C6h,044h,024h,014h,000h,0E8h,04Eh,0D7h
+    db 025h,000h,08Bh,0CEh,0C7h,044h,024h,014h,0FFh,0FFh,0FFh,0FFh,0E8h,03Fh,0D7h,025h
+    db 000h,08Bh,04Ch,024h,00Ch,05Fh,05Eh,064h,089h,00Dh,000h,000h,000h,000h,083h,0C4h
+    db 010h,0C3h
+??1LadderInfo@@QAE@XZ ENDP
+_TEXT ENDS
+END

@@ -10632,3 +10632,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?NAMEKEY@@YA?AW4NameKeyType@@ABVAsciiString@@@Z,,0x000A3AB0,44,Code/masm_dumps/NAMEKEY_AsciiString.asm,matched,Ghidra-corrected BFME AsciiString helper
 ?setPlayingHandle@AudioEventRTS@@QAEXI@Z,,0x000B2200,10,Code/masm_dumps/AudioEventRTS_setPlayingHandle.asm,matched,Ghidra-bound BFME audio handle setter
 ?setHandleToKill@AudioEventRTS@@QAEXI@Z,,0x000B2310,10,Code/masm_dumps/AudioEventRTS_setHandleToKill.asm,matched,Ghidra-bound BFME audio kill-handle setter
+?friend_newModuleData@UnitCrateCollide@@SAPAVModuleData@@PAVINI@@@Z,,0x00125F10,107,Code/masm_dumps/UnitCrateCollide_friend_newModuleData.asm,matched,Ghidra-bound BFME crate module-data factory

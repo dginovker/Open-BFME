@@ -172,7 +172,6 @@ GameSpyInfoInterface* GameSpyInfoInterface::createNewGameSpyInfoInterface( void 
 	return NEW GameSpyInfo;
 }
 
-// ?amIHost@GameSpyInfo@@UAE_NXZ present-unmatched
 Bool GameSpyInfo::amIHost( void )
 {
 	return m_isHosting;

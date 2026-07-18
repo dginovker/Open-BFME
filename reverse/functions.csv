@@ -10550,3 +10550,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?readAdditionalDisconnects@GameSpyInfo@@UAEXXZ,,0x00630650,23,Code/masm_dumps/GameSpyInfo_readAdditionalDisconnects.asm,matched,Vtable-bound BFME layout reader
 ?friend_newModuleData@SiegeEngineContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00115CD0,110,Code/masm_dumps/SiegeEngineContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getSubdualDamageHealAmount@ActiveBody@@UBEMXZ,,0x0020E810,7,Code/GameEngine/Source/GameLogic/Object/Body/ActiveBody.cpp,matched,Unique padded ActiveBody accessor
+?amIHost@GameSpyInfo@@UAE_NXZ,,0x00630690,7,Code/masm_dumps/GameSpyInfo_amIHost.asm,matched,Vtable-bound BFME layout accessor

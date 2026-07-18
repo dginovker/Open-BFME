@@ -10471,3 +10471,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GetGameListBoxID@@YA?AW4NameKeyType@@XZ,,0x0062C5E0,6,Code/GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,matched,
 ?doVictory@ScriptActions@@IAEXXZ,,0x002F1C10,290,Code/masm_dumps/ScriptActions_doVictory.asm,matched,
 ??0MetaMapRec@@QAE@XZ,,0x005B7020,11,Code/masm_dumps/MetaEvent_MetaMapRec_retail_constructor.asm,matched,
+??_GMetaMapRec@@QAEPAXI@Z,,0x005B70E0,30,Code/masm_dumps/MetaEvent_MetaMapRec_retail_scalar_deleting_destructor.asm,matched,

@@ -10442,3 +10442,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?parseBenchProfile@INI@@SAXPAV1@@Z,,0x0007C7F0,131,Code/GameEngine/Source/Common/GameLOD.cpp,matched,BFME retail GameLOD layout
 ?parseShutdown@@YA_NPAD0IPAVWindowLayoutInfo@@@Z,,0x00487750,111,Code/GameEngine/Source/GameClient/GUI/GameWindowManagerScript.cpp,matched,Retail layout table and StringBase ABI
 ?parseUpdate@@YA_NPAD0IPAVWindowLayoutInfo@@@Z,,0x004876C0,111,Code/GameEngine/Source/GameClient/GUI/GameWindowManagerScript.cpp,matched,Retail layout table and StringBase ABI
+?friend_newModuleData@CaveContain@@SAPAVModuleData@@PAVINI@@@Z,,0x0012ABC0,125,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,BFME CaveContain layout

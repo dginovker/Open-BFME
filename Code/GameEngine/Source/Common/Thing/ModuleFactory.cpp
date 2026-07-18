@@ -57,7 +57,7 @@
 #include "GameLogic/Module/SlowDeathBehavior.h"
 #include "GameLogic/Module/HelicopterSlowDeathUpdate.h"
 #include "GameLogic/Module/NeutronMissileSlowDeathUpdate.h"
-#include "GameLogic/Module/CaveContain.h"
+#include "../../../Include/GameLogic/Module/CaveContain.h"
 #include "GameLogic/Module/OpenContain.h"
 #include "GameLogic/Module/OverchargeBehavior.h"
 #include "GameLogic/Module/HealContain.h"

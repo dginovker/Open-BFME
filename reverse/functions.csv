@@ -10571,3 +10571,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getColor@QuickMatchPreferences@@QAEHXZ,,0x000A97C0,33,Code/masm_dumps/QuickMatchPreferences_getColor.asm,matched,Unique Color-string QuickMatch getter
 ?doPlayerGrantScience@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F00C0,91,Code/masm_dumps/ScriptActions_doPlayerGrantScience.asm,matched,Ghidra-bound BFME grant-science body
 ?doPlayerPurchaseScience@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F0140,91,Code/masm_dumps/ScriptActions_doPlayerPurchaseScience.asm,matched,Ghidra-bound BFME purchase-science body
+?getCachedStats@GameSpyMiscPreferences@@QAE?AVAsciiString@@XZ,,0x000A9A00,113,Code/masm_dumps/GameSpyMiscPreferences_getCachedStats.asm,matched,Unique CachedStats-string preference getter

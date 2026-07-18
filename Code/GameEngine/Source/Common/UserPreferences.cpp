@@ -853,7 +853,6 @@ void GameSpyMiscPreferences::setLocale( Int val )
 	setInt("Locale", val);
 }
 
-// ?getCachedStats@GameSpyMiscPreferences@@QAE?AVAsciiString@@XZ present-unmatched
 AsciiString GameSpyMiscPreferences::getCachedStats( void )
 {
 	return getAsciiString("CachedStats", AsciiString::TheEmptyString);

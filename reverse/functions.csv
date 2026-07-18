@@ -10484,3 +10484,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??_GMetaEventTranslator@@UAEPAXI@Z,,0x005B6B70,30,Code/masm_dumps/MetaEvent_MetaEventTranslator_scalar_deleting_destructor.asm,matched,
 ??0MetaEventTranslator@@QAE@XZ,,0x005B6B30,42,Code/masm_dumps/MetaEvent_MetaEventTranslator_constructor.asm,matched,
 ?doPlaySoundEffectAt@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F2120,306,Code/masm_dumps/ScriptActions_doPlaySoundEffectAt.asm,matched,Ghidra-bound exact retail body
+?friend_newModuleData@CommandSetUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012B0B0,107,Code/masm_dumps/CommandSetUpgrade_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

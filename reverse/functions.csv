@@ -10460,3 +10460,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??_GGameTextInterface@@UAEPAXI@Z,,0x00435E00,30,Code/GameEngine/Source/GameClient/GameText.cpp,matched,exact C++ scalar-deleting destructor after retail destructor-thunk pin
 ?createTerrainVisual@W3DGameClient@@MAEPAVTerrainVisual@@XZ,,0x006FB800,86,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,TU-local BFME TerrainVisual and W3DTerrainVisual ABI facades; ctor thunk pinned
 ?sortByBuddies@@YAX_N@Z,,0x0062E590,32,Code/GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,matched,
+?friend_lookupScience@ScienceStore@@QBE?AW4ScienceType@@PBD@Z,,0x000E7240,85,Code/masm_dumps/Science_ScienceStore_friend_lookupScience.asm,matched,

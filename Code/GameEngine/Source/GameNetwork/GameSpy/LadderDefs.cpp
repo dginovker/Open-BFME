@@ -261,7 +261,6 @@ static LadderInfo *parseLadder(AsciiString raw)
 	return NULL;
 }
 
-// ??0LadderList@@QAE@XZ present-unmatched
 LadderList::LadderList()
 {
 	//Int profile = TheGameSpyInfo->getLocalProfileID();

@@ -1326,3 +1326,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??0LadderInfo@@QAE@XZ	landed	parseLadder allocation and constructor thunk bind the exact 161-byte retail member initialization; MASM byte-verified
 ?getUpdatePhase@ObjectWeaponStatusHelper@@MBE?AW4SleepyUpdatePhase@@XZ	landed	Ghidra boundary plus Object vtable relocations bind the 6-byte virtual getter; Object.cpp emits an exact retail match
 ?friend_newModuleData@DualWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified
+??0LadderList@@QAE@XZ	landed	Retail allocation caller and full list/config/local-ladder flow bind the exact 925-byte constructor; MASM byte-verified

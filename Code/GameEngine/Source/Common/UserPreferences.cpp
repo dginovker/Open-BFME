@@ -652,7 +652,6 @@ void CustomMatchPreferences::setAllowsObserver(Bool val)
 	(*this)["AllowObservers"] = s;
 }
 
-// ?getDisallowAsianText@CustomMatchPreferences@@QAE_NXZ present-unmatched
 Bool CustomMatchPreferences::getDisallowAsianText( void )
 {
 	CustomMatchPreferences::const_iterator it = find("DisallowAsianText");

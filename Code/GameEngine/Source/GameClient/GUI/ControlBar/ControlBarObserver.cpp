@@ -164,7 +164,7 @@ WindowMsgHandledType ControlBarObserverSystem( GameWindow *window, UnsignedInt m
 			Int controlID = control->winGetWindowId();
 			if( controlID == buttonCancelID)
 			{
-				TheControlBar->setObserverLookAtPlayer(NULL);
+				*(Player **)((char *)TheControlBar + 0x274) = NULL;
 				ObserverPlayerInfoWindow->winHide(TRUE);
 				ObserverPlayerListWindow->winHide(FALSE);
 				TheControlBar->populateObserverList();
@@ -176,8 +176,8 @@ WindowMsgHandledType ControlBarObserverSystem( GameWindow *window, UnsignedInt m
 				{
 					ObserverPlayerInfoWindow->winHide(FALSE);
 					ObserverPlayerListWindow->winHide(TRUE);
-					TheControlBar->setObserverLookAtPlayer((Player *) GadgetButtonGetData( buttonPlayer[i]));
-					if(TheControlBar->getObserverLookAtPlayer())
+					*(Player **)((char *)TheControlBar + 0x274) = (Player *) GadgetButtonGetData( buttonPlayer[i]);
+					if(*(Player **)((char *)TheControlBar + 0x274))
 						TheControlBar->populateObserverInfoWindow();
 					return MSG_HANDLED;
 				}

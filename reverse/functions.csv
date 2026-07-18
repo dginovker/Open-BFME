@@ -10628,3 +10628,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?setPingString@GameSpyInfo@@UAEXABVAsciiString@@@Z,,0x00637230,8,Code/masm_dumps/GameSpyInfo_setPingString.asm,matched,Ghidra-bound BFME vtable tail stub
 ?friend_newModuleData@W3DTreeDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x006BF710,107,Code/masm_dumps/W3DTreeDraw_friend_newModuleData.asm,matched,Ghidra-bound BFME W3D module-data factory
 ?loadRoads@W3DRoadBuffer@@QAEXXZ,,0x007105D0,61,Code/masm_dumps/W3DRoadBuffer_loadRoads.asm,matched,Ghidra-corrected BFME road-load body
+?friend_newModuleData@MoneyCrateCollide@@SAPAVModuleData@@PAVINI@@@Z,,0x00127020,120,Code/masm_dumps/MoneyCrateCollide_friend_newModuleData.asm,matched,Ghidra-bound BFME crate module-data factory

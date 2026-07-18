@@ -858,7 +858,6 @@ AsciiString GameSpyMiscPreferences::getCachedStats( void )
 	return getAsciiString("CachedStats", AsciiString::TheEmptyString);
 }
 
-// ?setCachedStats@GameSpyMiscPreferences@@QAEXVAsciiString@@@Z present-unmatched
 void GameSpyMiscPreferences::setCachedStats( AsciiString val )
 {
 	setAsciiString("CachedStats", val);

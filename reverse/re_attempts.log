@@ -1390,3 +1390,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?doPlayerGrantScience@ScriptActions@@IAEXABVAsciiString@@0@Z	landed	Adjacent source-order sibling and exact object ownership identify the 91-byte BFME implementation; MASM byte-verified
 ?doPlayerPurchaseScience@ScriptActions@@IAEXABVAsciiString@@0@Z	landed	Adjacent grant-science sibling and distinct final thunk identify the 91-byte BFME implementation; MASM byte-verified
 ?getCachedStats@GameSpyMiscPreferences@@QAE?AVAsciiString@@XZ	landed	Unique CachedStats string xref and hidden return-buffer flow bind the exact 113-byte getter; MASM byte-verified
+?setCachedStats@GameSpyMiscPreferences@@QAEXVAsciiString@@@Z	landed	Unique CachedStats string xref and setter-slot temporary flow bind the exact 121-byte body; MASM byte-verified

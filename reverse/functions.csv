@@ -10572,3 +10572,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?doPlayerGrantScience@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F00C0,91,Code/masm_dumps/ScriptActions_doPlayerGrantScience.asm,matched,Ghidra-bound BFME grant-science body
 ?doPlayerPurchaseScience@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F0140,91,Code/masm_dumps/ScriptActions_doPlayerPurchaseScience.asm,matched,Ghidra-bound BFME purchase-science body
 ?getCachedStats@GameSpyMiscPreferences@@QAE?AVAsciiString@@XZ,,0x000A9A00,113,Code/masm_dumps/GameSpyMiscPreferences_getCachedStats.asm,matched,Unique CachedStats-string preference getter
+?setCachedStats@GameSpyMiscPreferences@@QAEXVAsciiString@@@Z,,0x000A9A90,121,Code/masm_dumps/GameSpyMiscPreferences_setCachedStats.asm,matched,Unique CachedStats-string preference setter

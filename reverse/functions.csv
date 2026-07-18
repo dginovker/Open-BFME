@@ -10610,3 +10610,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?setChatSizeSlider@CustomMatchPreferences@@QAEXH@Z,,0x000AD9A0,169,Code/masm_dumps/CustomMatchPreferences_setChatSizeSlider.asm,matched,Ghidra-bound BFME chat-slider setter
 ?WriteActionDataChunk@ScriptAction@@SAXAAVDataChunkOutput@@PAV1@@Z,,0x003513F0,160,Code/masm_dumps/ScriptAction_WriteActionDataChunk.asm,matched,Ghidra-bound BFME script-action writer
 ?setPreferredFaction@CustomMatchPreferences@@QAEXH@Z,,0x000ADA80,169,Code/masm_dumps/CustomMatchPreferences_setPreferredFaction.asm,matched,Ghidra-bound BFME preferred-faction setter
+?friend_newModuleData@GateProxyBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00123BF0,113,Code/masm_dumps/GateProxyBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

@@ -1306,3 +1306,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?loadLocalLadders@LadderList@@AAEXXZ	landed	Ghidra constructor call and retail ladder path anchor the exact 379-byte body; exact MASM byte-verified
 ?getTemplateInfo@TeamPrototype@@QBEPBVTeamTemplateInfo@@XZ	landed	Ghidra-bound unique 4-byte accessor; existing Team.cpp object matches retail exactly
 ?friend_newModuleData@StructureBody@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail StructureBody registration thunks identify the exact 107-byte BFME module-data factory; MASM byte-verified
+?checkLadder@LadderList@@AAEXVAsciiString@@H@Z	landed	Ghidra and loadLocalLadders caller bind the exact 380-byte retail parser and validator body; MASM byte-verified

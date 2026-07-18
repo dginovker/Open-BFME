@@ -479,7 +479,6 @@ void LadderList::loadLocalLadders( void )
 	}
 }
 
-// ?checkLadder@LadderList@@AAEXVAsciiString@@H@Z present-unmatched
 void LadderList::checkLadder( AsciiString fname, Int index )
 {
 	File *fp = TheFileSystem->openFile(fname.str(), File::READ | File::TEXT);

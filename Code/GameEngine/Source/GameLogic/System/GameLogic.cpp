@@ -4181,7 +4181,6 @@ void GameLogic::sendObjectDestroyed( Object *obj )
 // ------------------------------------------------------------------------------------------------
 /** Return if the game is paused or not */
 // ------------------------------------------------------------------------------------------------
-// ?isGamePaused@GameLogic@@QAE_NXZ present-unmatched
 Bool GameLogic::isGamePaused( void )
 {
 	return m_gamePaused;

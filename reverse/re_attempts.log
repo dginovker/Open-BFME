@@ -1372,3 +1372,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@HordeSiegeEngineContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified
 ?reset@SimpleObjectIterator@@AAEXXZ	landed	Unique retail bytes and exact decorated-symbol ownership bind the seven-byte natural C++ reset
 ?getCurrentStagingRoom@GameSpyInfo@@UAEPAVGameSpyStagingRoom@@XZ	landed	Retail vtable placement and landed host flag bind the exact 72-byte BFME-layout body; MASM byte-verified
+?isGamePaused@GameLogic@@QAE_NXZ	landed	Unique retail bytes and exact symbol ownership bind the seven-byte natural C++ accessor

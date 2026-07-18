@@ -10554,3 +10554,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@HordeSiegeEngineContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00116360,110,Code/masm_dumps/HordeSiegeEngineContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?reset@SimpleObjectIterator@@AAEXXZ,,0x001DDD50,7,Code/GameEngine/Source/GameLogic/Object/SimpleObjectIterator.cpp,matched,Unique padded iterator reset
 ?getCurrentStagingRoom@GameSpyInfo@@UAEPAVGameSpyStagingRoom@@XZ,,0x006327B0,72,Code/masm_dumps/GameSpyInfo_getCurrentStagingRoom.asm,matched,Vtable-bound BFME staging-room lookup
+?isGamePaused@GameLogic@@QAE_NXZ,,0x002197D0,7,Code/GameEngine/Source/GameLogic/System/GameLogic.cpp,matched,Unique padded game-pause accessor

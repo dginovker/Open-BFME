@@ -1320,3 +1320,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@HitReactionBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified
 ?findLadder@LadderList@@QAEPBVLadderInfo@@ABVAsciiString@@G@Z	landed	Ghidra field flow binds the exact 447-byte special-standard-local ladder search; MASM byte-verified
 ?getBoundingCircleRadius@GeometryInfo@@QBEMXZ	landed	Ghidra accessor cluster and member offset bind the 4-byte getter; Object.cpp emits an exact retail match
+?friend_newModuleData@ClickReactionBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified

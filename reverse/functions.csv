@@ -10557,3 +10557,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?isGamePaused@GameLogic@@QAE_NXZ,,0x002197D0,7,Code/GameEngine/Source/GameLogic/System/GameLogic.cpp,matched,Unique padded game-pause accessor
 ?friend_newModuleData@TunnelContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00116470,110,Code/masm_dumps/TunnelContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?friend_newModuleData@HordeGarrisonContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00115FB0,110,Code/masm_dumps/HordeGarrisonContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleData@ContestableContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00116140,110,Code/masm_dumps/ContestableContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

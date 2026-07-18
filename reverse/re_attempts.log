@@ -1413,3 +1413,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?populateDisconnectScreen@DisconnectManager@@IAEXPAVConnectionManager@@@Z	landed	Eight-player loop and disconnect-menu calls bind the exact 189-byte body; MASM byte-verified
 ?allOnSameFrame@DisconnectManager@@IAE_NPAVConnectionManager@@@Z	landed	Eight-slot loop and BFME eligibility checks bind the exact 195-byte body; MASM byte-verified
 ?friend_newModuleData@HordeAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration thunks and vtable bind the exact 113-byte data factory; MASM byte-verified
+?isLocalPlayerNextPacketRouter@DisconnectManager@@IAE_NPAVConnectionManager@@@Z	landed	Router loop timeout and BFME eligibility checks bind the exact 264-byte body; MASM byte-verified

@@ -10595,3 +10595,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?populateDisconnectScreen@DisconnectManager@@IAEXPAVConnectionManager@@@Z,,0x0066BEF0,189,Code/masm_dumps/DisconnectManager_populateDisconnectScreen.asm,matched,Ghidra-bound BFME disconnect-menu population body
 ?allOnSameFrame@DisconnectManager@@IAE_NPAVConnectionManager@@@Z,,0x0066C160,195,Code/masm_dumps/DisconnectManager_allOnSameFrame.asm,matched,Ghidra-bound BFME disconnect-frame comparison body
 ?friend_newModuleData@HordeAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00123FB0,113,Code/masm_dumps/HordeAIUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?isLocalPlayerNextPacketRouter@DisconnectManager@@IAE_NPAVConnectionManager@@@Z,,0x0066C260,264,Code/masm_dumps/DisconnectManager_isLocalPlayerNextPacketRouter.asm,matched,Ghidra-bound BFME packet-router selection body

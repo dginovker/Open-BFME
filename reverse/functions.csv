@@ -10645,3 +10645,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@SquishCollide@@SAPAVModuleData@@PAVINI@@@Z,,0x00124800,107,Code/masm_dumps/SquishCollide_friend_newModuleData.asm,matched,Ghidra-bound BFME collide module-data factory
 ?triggerRadarAttackGlow@ControlBar@@QAEXXZ,,0x0049D320,54,Code/masm_dumps/ControlBar_triggerRadarAttackGlow.asm,matched,Ghidra-corrected BFME radar-glow body
 ?setObjectID@AudioEventRTS@@QAEXW4ObjectID@@@Z,,0x000B2250,30,Code/masm_dumps/AudioEventRTS_setObjectID.asm,matched,Ghidra-bound BFME audio object setter
+?friend_newModuleData@WanderAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011BEE0,128,Code/masm_dumps/WanderAIUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME update module-data factory

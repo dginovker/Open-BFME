@@ -10487,3 +10487,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@CommandSetUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012B0B0,107,Code/masm_dumps/CommandSetUpgrade_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?loadLocalLadders@LadderList@@AAEXXZ,,0x0062BE40,379,Code/masm_dumps/LadderList_loadLocalLadders.asm,matched,Ghidra-bound retail ladder enumeration body
 ?getTemplateInfo@TeamPrototype@@QBEPBVTeamTemplateInfo@@XZ,,0x003BCD70,4,Code/GameEngine/Source/Common/RTS/Team.cpp,matched,Ghidra-bound unique accessor
+?friend_newModuleData@StructureBody@@SAPAVModuleData@@PAVINI@@@Z,,0x001294A0,107,Code/masm_dumps/StructureBody_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

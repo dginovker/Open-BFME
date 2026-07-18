@@ -1314,3 +1314,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getContain@Object@@QBEPAVContainModuleInterface@@XZ	landed	Ghidra-bound unique 7-byte accessor; existing Object.cpp object matches retail exactly
 ?friend_newModuleData@BridgeTowerBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 50-byte BFME data factory; MASM byte-verified
 ?getLocalLadders@LadderList@@QAEPBV?$list@PAVLadderInfo@@V?$allocator@PAVLadderInfo@@@_STL@@@_STL@@XZ	landed	Two retail caller sequences and zero-offset member layout bind the unique 3-byte accessor; natural C++ matches exactly
+?getRankLevel@Player@@QBEHXZ	landed	Ghidra-bound unique 7-byte accessor; ScriptActions.cpp emits an exact retail match

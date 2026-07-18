@@ -10496,3 +10496,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getContain@Object@@QBEPAVContainModuleInterface@@XZ,,0x00478710,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound unique accessor
 ?friend_newModuleData@BridgeTowerBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00125220,50,Code/masm_dumps/BridgeTowerBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getLocalLadders@LadderList@@QAEPBV?$list@PAVLadderInfo@@V?$allocator@PAVLadderInfo@@@_STL@@@_STL@@XZ,,0x0062A160,3,Code/GameEngine/Source/GameNetwork/GameSpy/LadderDefs.cpp,matched,Ghidra-bound unique accessor
+?getRankLevel@Player@@QBEHXZ,,0x001BFBE0,7,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,Ghidra-bound unique accessor

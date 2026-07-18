@@ -1293,3 +1293,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?doLocalDefeat@ScriptActions@@IAEXXZ	landed	Gui DefeatScreen and APT EndDefeat xrefs plus Ghidra anchor the true local-defeat body at 0x002F1EC0/246; exact MASM preserves BFME observer check and close-window timer flow
 ?isFinished@AnimateWindow@@QAE_NXZ	landed	Raw padding-separated retail boundary 0x004953E0/4 omitted by Ghidra; existing inline accessor reads the proven m_isFinished byte at +0x41 and matches exactly
 ?getMetaMapRec@MetaMap@@IAEPAVMetaMapRec@@W4Type@GameMessage@@@Z	landed	Ghidra and raw ret-4 boundary prove 0x005B7110/111; exact MASM traverses and allocates the retail non-polymorphic 0x24 MetaMapRec using only existing allocation and UnicodeString helpers
+?doRadarForceEnable@ScriptActions@@IAEXXZ	landed	Unique aligned padded retail hit at 0x002EFD50/10; existing TheRadar forceOn true source compiles masked-identically and needs only the expected DIR32 relocation

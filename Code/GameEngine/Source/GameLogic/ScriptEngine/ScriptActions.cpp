@@ -5198,7 +5198,6 @@ void ScriptActions::doDestroyAllContained(const AsciiString& unitName, Int damag
 //-------------------------------------------------------------------------------------------------
 /** doRadarForceEnable */
 //-------------------------------------------------------------------------------------------------
-// ?doRadarForceEnable@ScriptActions@@IAEXXZ present-unmatched
 void ScriptActions::doRadarForceEnable(void)
 {
 	TheRadar->forceOn(true);

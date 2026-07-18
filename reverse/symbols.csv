@@ -3336,3 +3336,4 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ?_M_insert@?$_Rb_tree@PBVLadderInfo@@PBV1@U?$_Identity@PBVLadderInfo@@@_STL@@U?$less@PBVLadderInfo@@@3@V?$allocator@PBVLadderInfo@@@3@@_STL@@AAE?AU?$_Rb_tree_iterator@PBVLadderInfo@@U?$_Nonconst_traits@PBVLadderInfo@@@_STL@@@2@PAU_Rb_tree_node_base@2@0ABQBVLadderInfo@@0@Z,0x000224CB
 ?populateObserverInfoWindow@ControlBar@@QAEXXZ,0x000431C1
 ?populateObserverList@ControlBar@@QAEXXZ,0x00036BA1
+??0BFMERetailFontLibrary@@QAE@XZ,0x0000FDF3

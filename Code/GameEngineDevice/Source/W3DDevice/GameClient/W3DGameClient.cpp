@@ -49,9 +49,28 @@
 #include "Common/GameLOD.h"
 #include "GameClient/Drawable.h"
 #include "GameClient/GameClient.h"
+#include "GameClient/GameFont.h"
 #include "GameClient/ParticleSys.h"
 #include "GameClient/RayEffect.h"
 #include "W3DDevice/GameClient/W3DAssetManager.h"
+
+#define __W3DGAMEFONT_H_
+class BFMERetailFontLibrary : public FontLibrary
+{
+public:
+	BFMERetailFontLibrary();
+	virtual void anchor();
+
+private:
+	char m_data[ 24 ];
+};
+
+class W3DFontLibrary : public BFMERetailFontLibrary
+{
+protected:
+	Bool loadFontData( GameFont *font );
+};
+
 #include "W3DDevice/GameClient/W3DGameClient.h"
 #include "W3DDevice/GameClient/W3DStatusCircle.h"
 #include "W3DDevice/GameClient/W3DScene.h"

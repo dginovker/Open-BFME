@@ -1273,3 +1273,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?createTerrainVisual@W3DGameClient@@MAEPAVTerrainVisual@@XZ	landed	Matched Ghidra-anchored 0x006FB800/86 with TU-local 0x10/0x20 terrain facades and ctor thunk pin
 ??1MetaMapRec@@MAE@XZ	dead	Ghidra vtable audit proved RVA 0x006F4C50 belongs to W3DDisplayString-like class; actual retail MetaMapRec destructor is non-virtual QAE thunk 0x00448487 to RVA 0x005B6FC0
 ??_GMetaMapRec@@MAEPAXI@Z	dead	Ghidra vtable audit proved RVA 0x006F4F20 is the deleting destructor of the same W3DDisplayString-like class; retail MetaMapRec is non-polymorphic and has no deleting-destructor vtable slot
+??1SidesInfo@@QAE@XZ	blocked	Drift target 0x00746FA1/74 begins push edx plus fixed globals and is unrelated to the compiled destructor SEH body; candidate boundary/attribution must be re-established in Ghidra before shaping

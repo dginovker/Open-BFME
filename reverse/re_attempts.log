@@ -1254,3 +1254,5 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?createControlBar@InGameUI@@IAEXXZ	no-match	Retail string facade was trivially copyable; compiler built a local then pushed its payload, producing 42 bytes
 ?createControlBar@InGameUI@@IAEXXZ	no-match	Nontrivial retail facade destructor forced SEH cleanup and grew the function to 98 bytes
 ?createControlBar@InGameUI@@IAEXXZ	no-match	Nontrivial copy facade reached 44 bytes but hoisted and saved the manager vtable before construction; register order differs
+??1GameTextManager@@UAE@XZ	no-match	True target 0x00438430/117; C++ source is 117 bytes but ZH m_tbuffer shifts implicit member destruction from retail 0x7824/0x7834 to 0x11828/0x11838
+??1GameTextManager@@UAE@XZ	landed	Matched true target 0x00438430/117 with exact MASM retail body after Ghidra confirmed BFME member offsets

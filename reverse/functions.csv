@@ -10452,3 +10452,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?createFontLibrary@W3DGameClient@@MAEPAVFontLibrary@@XZ,,0x006FB670,80,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,
 ?DifficultySelectInit@@YAXPAVWindowLayout@@PAX@Z,,0x004C7020,531,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/DifficultySelect.cpp,matched,
 ?createInGameUI@W3DGameClient@@MAEPAVInGameUI@@XZ,,0x006FB590,89,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,TU-local BFME retail InGameUI and W3DInGameUI ABI facades; ctor thunk pinned
+??1GameTextManager@@UAE@XZ,,0x00438430,117,Code/masm_dumps/GameText_GameTextManager_destructor.asm,matched,exact retail destructor via MASM; ZH class has extra 0xA000-byte text buffer

@@ -10518,3 +10518,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@InstantDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x0011AA70,107,Code/masm_dumps/InstantDeathBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getEnergy@Player@@QAEPAVEnergy@@XZ,,0x007EA6B0,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Player accessor
 ??1LadderInfo@@QAE@XZ,,0x0062A9E0,194,Code/masm_dumps/LadderInfo_destructor.asm,matched,Ghidra-bound retail destructor
+??_GLadderInfo@@QAEPAXI@Z,,0x0062AAE0,30,Code/masm_dumps/LadderInfo_scalar_destructor.asm,matched,Ghidra-bound deleting destructor

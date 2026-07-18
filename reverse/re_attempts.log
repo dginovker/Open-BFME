@@ -1336,3 +1336,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@InstantDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?getEnergy@Player@@QAEPAVEnergy@@XZ	landed	Ghidra accessor boundary and Player member offset bind the exact seven-byte natural C++ match
 ??1LadderInfo@@QAE@XZ	landed	Retail callers and reverse member teardown bind the exact 194-byte complete destructor; MASM byte-verified
+??_GLadderInfo@@QAEPAXI@Z	landed	Canonical scalar-delete ABI and unique LadderInfo destructor call bind the exact 30-byte body; MASM byte-verified

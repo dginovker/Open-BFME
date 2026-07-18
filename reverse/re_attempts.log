@@ -1267,3 +1267,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1GameTextInterface@@UAE@XZ	landed	Matched verified ICF alias at 0x009A1A40/14 with exact decorated MASM body
 ??_GGameTextInterface@@UAEPAXI@Z	no-match	C++ body was exact 30 bytes but resolved base destructor directly; retail deleting destructor calls incremental-link thunk 0x0000E908
 ??_GGameTextInterface@@UAEPAXI@Z	landed	Ghidra vtable anchored 0x00435E00/30; exact existing C++ after additive base-destructor thunk pin
+??_GMetaMapRec@@MAEPAXI@Z	landed	Ghidra pool vtable anchored true target 0x006F4F20/30; existing protected C++ scalar-deleting destructor is exact

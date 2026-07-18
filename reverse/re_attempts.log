@@ -1330,3 +1330,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getBodyModule@Object@@QBEPAVBodyModuleInterface@@XZ	landed	Ghidra Object accessor cluster and member offset bind the 7-byte getter; Object.cpp emits an exact retail match
 ?friend_newModuleData@AimWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified
 ??1LadderList@@QAE@XZ	landed	Retail teardown callers and complete raw return boundary bind the exact 452-byte destructor; MASM byte-verified
+?getPhysics@Object@@QAEPAVPhysicsBehavior@@XZ	landed	Ghidra accessor boundary and Object member offset bind the exact seven-byte natural C++ match

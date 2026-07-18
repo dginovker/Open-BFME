@@ -1258,3 +1258,5 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1GameTextManager@@UAE@XZ	landed	Matched true target 0x00438430/117 with exact MASM retail body after Ghidra confirmed BFME member offsets
 ??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z	no-match	True target 0x002B7870/551; current C++ is 542 bytes and begins with ZH inline AsciiString construction instead of retail external ctor before unresolved state-machine calls
 ??_GGameTextManager@@UAEPAXI@Z	landed	Ghidra vtable anchored true target 0x00438610/30; exact scalar-deleting destructor landed via MASM
+??1MetaMapRec@@MAE@XZ	no-match	Queue target 0x006F4C62/86 begins 18 bytes inside true Ghidra function 0x006F4C50/114; C++ also uses ZH member offsets
+??1MetaMapRec@@MAE@XZ	landed	Ghidra confirmed true target 0x006F4C50/114; exact BFME destructor landed via MASM with retail member offsets

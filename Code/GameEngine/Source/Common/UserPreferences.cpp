@@ -872,7 +872,6 @@ Bool GameSpyMiscPreferences::getQuickMatchResLocked( void )
 	return getBool("QMResLock", FALSE);
 }
 
-// ?getMaxMessagesPerUpdate@GameSpyMiscPreferences@@QAEHXZ present-unmatched
 Int GameSpyMiscPreferences::getMaxMessagesPerUpdate( void )
 {
 	return getInt("MaxMessagesPerUpdate", 100);

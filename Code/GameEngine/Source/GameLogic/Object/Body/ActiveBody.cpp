@@ -1383,7 +1383,6 @@ UnsignedInt ActiveBody::getSubdualDamageHealRate() const
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?getSubdualDamageHealAmount@ActiveBody@@ present-unmatched
 Real ActiveBody::getSubdualDamageHealAmount() const
 {
 	return getActiveBodyModuleData()->m_subdualDamageHealAmount;

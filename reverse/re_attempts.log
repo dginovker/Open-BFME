@@ -1367,3 +1367,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?clearAdditionalDisconnects@GameSpyInfo@@UAEXXZ	landed	Retail vtable trio and paired reader bind the exact 11-byte BFME-layout body; MASM byte-verified
 ?readAdditionalDisconnects@GameSpyInfo@@UAEXXZ	landed	Retail vtable trio and paired clear operation bind the exact 23-byte BFME-layout body; MASM byte-verified
 ?friend_newModuleData@SiegeEngineContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified
+?getSubdualDamageHealAmount@ActiveBody@@UBEMXZ	landed	Unique retail bytes and exact decorated-symbol ownership bind the seven-byte natural C++ accessor

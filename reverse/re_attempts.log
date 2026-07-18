@@ -1385,3 +1385,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getLocale@GameSpyMiscPreferences@@QAEHXZ	landed	Unique Locale string xref and adjacent setter bind the exact 33-byte preference getter; MASM byte-verified
 ?setLocale@GameSpyMiscPreferences@@QAEXH@Z	landed	Unique Locale string xref and adjacent getter bind the exact 36-byte preference setter; MASM byte-verified
 ?getMaxMessagesPerUpdate@GameSpyMiscPreferences@@QAEHXZ	landed	Sole MaxMessagesPerUpdate string xref and immediate 100 default bind the exact 33-byte getter; MASM byte-verified
+?friend_newModuleData@HeroDie@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified

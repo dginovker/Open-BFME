@@ -10567,3 +10567,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getLocale@GameSpyMiscPreferences@@QAEHXZ,,0x000A99A0,33,Code/masm_dumps/GameSpyMiscPreferences_getLocale.asm,matched,Unique Locale-string preference getter
 ?setLocale@GameSpyMiscPreferences@@QAEXH@Z,,0x000A99D0,36,Code/masm_dumps/GameSpyMiscPreferences_setLocale.asm,matched,Unique Locale-string preference setter
 ?getMaxMessagesPerUpdate@GameSpyMiscPreferences@@QAEHXZ,,0x000A9B30,33,Code/masm_dumps/GameSpyMiscPreferences_getMaxMessagesPerUpdate.asm,matched,Unique MaxMessagesPerUpdate preference getter
+?friend_newModuleData@HeroDie@@SAPAVModuleData@@PAVINI@@@Z,,0x00124950,107,Code/masm_dumps/HeroDie_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

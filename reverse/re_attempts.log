@@ -1328,3 +1328,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@DualWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified
 ??0LadderList@@QAE@XZ	landed	Retail allocation caller and full list/config/local-ladder flow bind the exact 925-byte constructor; MASM byte-verified
 ?getBodyModule@Object@@QBEPAVBodyModuleInterface@@XZ	landed	Ghidra Object accessor cluster and member offset bind the 7-byte getter; Object.cpp emits an exact retail match
+?friend_newModuleData@AimWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail module registration and paired thunks identify the exact 107-byte BFME data factory; MASM byte-verified

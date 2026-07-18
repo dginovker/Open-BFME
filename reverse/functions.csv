@@ -10510,3 +10510,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@DualWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114F90,107,Code/masm_dumps/DualWeaponBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ??0LadderList@@QAE@XZ,,0x0062C020,925,Code/masm_dumps/LadderList_constructor.asm,matched,Ghidra-bound retail constructor
 ?getBodyModule@Object@@QBEPAVBodyModuleInterface@@XZ,,0x00478720,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Object accessor
+?friend_newModuleData@AimWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001150A0,107,Code/masm_dumps/AimWeaponBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

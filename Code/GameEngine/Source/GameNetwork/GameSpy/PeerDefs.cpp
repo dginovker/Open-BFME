@@ -177,7 +177,6 @@ Bool GameSpyInfo::amIHost( void )
 	return m_isHosting;
 }
 
-// ?getCurrentStagingRoom@GameSpyInfo@@UAEPAVGameSpyStagingRoom@@XZ present-unmatched
 GameSpyStagingRoom* GameSpyInfo::getCurrentStagingRoom( void )
 {
 	if (m_isHosting || m_joinedStagingRoom)

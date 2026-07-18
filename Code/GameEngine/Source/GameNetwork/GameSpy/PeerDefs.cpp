@@ -162,7 +162,6 @@ Int GameSpyInfo::getAdditionalDisconnects( void )
 	return 0;
 }
 
-// ?clearAdditionalDisconnects@GameSpyInfo@@UAEXXZ present-unmatched
 void GameSpyInfo::clearAdditionalDisconnects( void )
 {
 	m_additionalDisconnects = 0;

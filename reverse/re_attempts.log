@@ -1304,3 +1304,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?doPlaySoundEffectAt@ScriptActions@@IAEXABVAsciiString@@0@Z	landed	Ghidra-bound exact 306-byte body with waypoint lookup and positional audio flow byte-verified
 ?friend_newModuleData@CommandSetUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Registration-table thunk and Ghidra identify the 107-byte BFME factory body; exact MASM preserves the larger 0x74-byte module-data allocation
 ?loadLocalLadders@LadderList@@AAEXXZ	landed	Ghidra constructor call and retail ladder path anchor the exact 379-byte body; exact MASM byte-verified
+?getTemplateInfo@TeamPrototype@@QBEPBVTeamTemplateInfo@@XZ	landed	Ghidra-bound unique 4-byte accessor; existing Team.cpp object matches retail exactly

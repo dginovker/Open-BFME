@@ -10597,3 +10597,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@HordeAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00123FB0,113,Code/masm_dumps/HordeAIUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?isLocalPlayerNextPacketRouter@DisconnectManager@@IAE_NPAVConnectionManager@@@Z,,0x0066C260,264,Code/masm_dumps/DisconnectManager_isLocalPlayerNextPacketRouter.asm,matched,Ghidra-bound BFME packet-router selection body
 ?getPreferredColor@CustomMatchPreferences@@QAEHXZ,,0x000AC2A0,111,Code/masm_dumps/CustomMatchPreferences_getPreferredColor.asm,matched,Ghidra-bound BFME preferred-color getter
+?friend_newModuleData@SupplyTruckAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011B9B0,110,Code/masm_dumps/SupplyTruckAIUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

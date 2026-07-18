@@ -1415,3 +1415,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@HordeAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration thunks and vtable bind the exact 113-byte data factory; MASM byte-verified
 ?isLocalPlayerNextPacketRouter@DisconnectManager@@IAE_NPAVConnectionManager@@@Z	landed	Router loop timeout and BFME eligibility checks bind the exact 264-byte body; MASM byte-verified
 ?getPreferredColor@CustomMatchPreferences@@QAEHXZ	landed	Color xref and multiplayer color-count validation bind the exact 111-byte getter; MASM byte-verified
+?friend_newModuleData@SupplyTruckAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified

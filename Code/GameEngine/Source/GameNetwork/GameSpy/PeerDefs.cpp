@@ -506,7 +506,6 @@ void GameSpyInfo::setConfig( const AsciiString& config )
 	m_rawConfig = config;
 }
 
-// ?getConfig@GameSpyInfo@@UAEABVAsciiString@@XZ present-unmatched
 const AsciiString& GameSpyInfo::getConfig( void )
 {
 	return m_rawConfig;

@@ -10527,3 +10527,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getEnergyBonus@ThingTemplate@@QBEHXZ,,0x00478E40,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound ThingTemplate accessor
 ?friend_newModuleData@SpawnUnitBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001159E0,110,Code/masm_dumps/SpawnUnitBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?friend_newModuleData@OathbreakersFadeAwayBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00125D70,107,Code/masm_dumps/OathbreakersFadeAwayBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?getConfig@GameSpyInfo@@UAEABVAsciiString@@XZ,,0x006306C0,4,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,Vtable-bound GameSpyInfo accessor

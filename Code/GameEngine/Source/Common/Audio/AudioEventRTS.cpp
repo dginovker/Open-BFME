@@ -668,7 +668,6 @@ TimeOfDay AudioEventRTS::getTimeOfDay( void ) const
 
 
 //-------------------------------------------------------------------------------------------------
-// ?setHandleToKill@AudioEventRTS@@ present-unmatched
 void AudioEventRTS::setHandleToKill( AudioHandle handleToKill )
 {
 	m_killThisHandle = handleToKill;

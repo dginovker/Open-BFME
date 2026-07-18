@@ -1351,3 +1351,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getDisallowAsianText@GameSpyInfo@@UAE_NXZ	landed	Retail vtable quartet and paired field access bind the exact seven-byte BFME-layout body; MASM byte-verified
 ?friend_newModuleData@HealContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?getDisallowNonAsianText@GameSpyInfo@@UAE_NXZ	landed	Retail vtable quartet and paired field access bind the exact seven-byte BFME-layout body; MASM byte-verified
+?friend_newModuleData@HordeContain@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified

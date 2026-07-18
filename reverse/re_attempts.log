@@ -1440,3 +1440,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@ModelConditionSpecialAbilityUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 110-byte data factory; MASM byte-verified
 ?saveQuickMatchOptions@@YAXXZ	no-match	Drift RVA 0x5063E3 is shifted three bytes into retail; shutdown thunk 0x31E0D targets 0x5063E0; Ghidra splits the continuing body at 34B, so repair the boundary before callee decode
 ?setMOTD@GameSpyInfo@@UAEXABVAsciiString@@@Z	landed	GameSpyInfo vtable slot and adjacent getMOTD bind the exact 8-byte StringBase tail stub; MASM byte-verified
+??1W3DVolumetricShadowManager@@QAE@XZ	landed	Corrected Ghidra boundary 0x7BDE90 and ILT thunk bind the exact 286-byte destructor; MASM byte-verified

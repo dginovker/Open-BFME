@@ -854,7 +854,6 @@ Int W3DShadowGeometry::initFromMesh(RenderObjClass *robj)
 	return TRUE;
 }
 
-// ?init@W3DShadowGeometry@@QAEHPAVRenderObjClass@@@Z present-unmatched
 Int W3DShadowGeometry::init(RenderObjClass *robj)
 {
 	return TRUE;
@@ -3810,7 +3809,6 @@ W3DVolumetricShadowManager::W3DVolumetricShadowManager( void )
 
 // ~W3DVolumetricShadowManager ============================================================
 // ============================================================================
-// ??1W3DVolumetricShadowManager@@QAE@XZ present-unmatched
 W3DVolumetricShadowManager::~W3DVolumetricShadowManager( void )
 {
 	ReleaseResources();

@@ -459,7 +459,6 @@ const LadderInfoList* LadderList::getLocalLadders( void )
 	return &m_localLadders;
 }
 
-// ?loadLocalLadders@LadderList@@AAEXXZ present-unmatched
 void LadderList::loadLocalLadders( void )
 {
 	AsciiString dirname;

@@ -1288,3 +1288,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?clear@SidesInfo@@QAEXXZ	landed	Ghidra anchored the true body at 0x0019AED0/66; exact MASM preserves BFME BuildList, Dict, script, and retail-only vector clearing while the ZH-derived source layout remains 0x0c
 ?GetGameListBoxID@@YA?AW4NameKeyType@@XZ	landed	Raw padding-separated retail boundary 0x0062C5E0/6; existing one-line global NameKey getter compiles to the exact mov-eax-DIR32 and ret body
 ?doVictory@ScriptActions@@IAEXXZ	landed	Unique APT EndVictorious and Gui VictoryScreen string xrefs plus Ghidra anchor the true body at 0x002F1C10/290; exact MASM preserves BFME victory-window and cheer flow absent from ZH
+??0MetaMapRec@@QAE@XZ	landed	Raw retail boundary 0x005B7020/11; exact MASM initializes only UnicodeString handles at +0x1c and +0x20, matching the proven non-polymorphic 0x24 MetaMapRec ABI

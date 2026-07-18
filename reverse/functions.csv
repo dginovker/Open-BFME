@@ -10470,3 +10470,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?clear@SidesInfo@@QAEXXZ,,0x0019AED0,66,Code/masm_dumps/SidesList_SidesInfo_clear.asm,matched,
 ?GetGameListBoxID@@YA?AW4NameKeyType@@XZ,,0x0062C5E0,6,Code/GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,matched,
 ?doVictory@ScriptActions@@IAEXXZ,,0x002F1C10,290,Code/masm_dumps/ScriptActions_doVictory.asm,matched,
+??0MetaMapRec@@QAE@XZ,,0x005B7020,11,Code/masm_dumps/MetaEvent_MetaMapRec_retail_constructor.asm,matched,

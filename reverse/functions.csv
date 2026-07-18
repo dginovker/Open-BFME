@@ -10479,3 +10479,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?doDebugMessage@ScriptActions@@IAEXABVAsciiString@@_N@Z,,0x002F20E0,51,Code/masm_dumps/ScriptActions_doDebugMessage.asm,matched,
 ?doRadarRevertNormal@ScriptActions@@IAEXXZ,,0x002EFD60,10,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,
 ??1MetaEventTranslator@@UAE@XZ,,0x005B6A70,7,Code/masm_dumps/MetaEvent_MetaEventTranslator_destructor.asm,matched,
+?doPlaySoundEffect@ScriptActions@@IAEXABVAsciiString@@@Z,,0x002F22A0,266,Code/masm_dumps/ScriptActions_doPlaySoundEffect.asm,matched,

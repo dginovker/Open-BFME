@@ -2179,7 +2179,6 @@ AsciiString Parameter::getUiText(void) const
 *	Input: DataChunkInput 
 *		
 */
-// ?WriteParameter@Parameter@@QAEXAAVDataChunkOutput@@@Z present-unmatched
 void Parameter::WriteParameter(DataChunkOutput &chunkWriter)
 {
 

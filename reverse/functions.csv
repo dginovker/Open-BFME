@@ -10613,3 +10613,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@GateProxyBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00123BF0,113,Code/masm_dumps/GateProxyBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?WriteActionFalseDataChunk@ScriptAction@@SAXAAVDataChunkOutput@@PAV1@@Z,,0x003514C0,160,Code/masm_dumps/ScriptAction_WriteActionFalseDataChunk.asm,matched,Ghidra-bound BFME false-action writer
 ?setUsesSystemMapDir@CustomMatchPreferences@@QAEX_N@Z,,0x000ADB60,170,Code/masm_dumps/CustomMatchPreferences_setUsesSystemMapDir.asm,matched,Ghidra-bound BFME system-map-directory setter
+?WriteParameter@Parameter@@QAEXAAVDataChunkOutput@@@Z,,0x00351320,167,Code/masm_dumps/Parameter_WriteParameter.asm,matched,Ghidra-bound BFME parameter writer

@@ -10569,3 +10569,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getMaxMessagesPerUpdate@GameSpyMiscPreferences@@QAEHXZ,,0x000A9B30,33,Code/masm_dumps/GameSpyMiscPreferences_getMaxMessagesPerUpdate.asm,matched,Unique MaxMessagesPerUpdate preference getter
 ?friend_newModuleData@HeroDie@@SAPAVModuleData@@PAVINI@@@Z,,0x00124950,107,Code/masm_dumps/HeroDie_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getColor@QuickMatchPreferences@@QAEHXZ,,0x000A97C0,33,Code/masm_dumps/QuickMatchPreferences_getColor.asm,matched,Unique Color-string QuickMatch getter
+?doPlayerGrantScience@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F00C0,91,Code/masm_dumps/ScriptActions_doPlayerGrantScience.asm,matched,Ghidra-bound BFME grant-science body

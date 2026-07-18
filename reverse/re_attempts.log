@@ -1387,3 +1387,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getMaxMessagesPerUpdate@GameSpyMiscPreferences@@QAEHXZ	landed	Sole MaxMessagesPerUpdate string xref and immediate 100 default bind the exact 33-byte getter; MASM byte-verified
 ?friend_newModuleData@HeroDie@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?getColor@QuickMatchPreferences@@QAEHXZ	landed	Color string pair and adjacent setter bind the exact 33-byte zero-default getter; MASM byte-verified
+?doPlayerGrantScience@ScriptActions@@IAEXABVAsciiString@@0@Z	landed	Adjacent source-order sibling and exact object ownership identify the 91-byte BFME implementation; MASM byte-verified

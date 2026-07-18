@@ -6077,7 +6077,6 @@ void ScriptActions::doMapSetRankLevelLimit(Int level)
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?doPlayerGrantScience@ScriptActions@@IAEXABVAsciiString@@0@Z present-unmatched
 void ScriptActions::doPlayerGrantScience(const AsciiString& playerName, const AsciiString& scienceName)
 {
 	Player* pPlayer = TheScriptEngine->getPlayerFromAsciiString(playerName);

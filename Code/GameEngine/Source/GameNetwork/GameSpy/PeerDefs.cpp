@@ -759,7 +759,6 @@ void GameSpyInfo::setDisallowNonAsianText( Bool val )
 	m_disallowNonAsianText = val;
 }
 
-// ?getDisallowAsianText@GameSpyInfo@@UAE_NXZ present-unmatched
 Bool GameSpyInfo::getDisallowAsianText( void )
 {
 	return m_disallowAsainText;

@@ -10516,3 +10516,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@BezierProjectileBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001151B0,107,Code/masm_dumps/BezierProjectileBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?friend_getRadarData@Object@@QAEPAVRadarObject@@XZ,,0x00478750,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Object accessor
 ?friend_newModuleData@InstantDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x0011AA70,107,Code/masm_dumps/InstantDeathBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?getEnergy@Player@@QAEPAVEnergy@@XZ,,0x007EA6B0,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Player accessor

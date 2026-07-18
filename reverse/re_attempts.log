@@ -1334,3 +1334,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@BezierProjectileBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?friend_getRadarData@Object@@QAEPAVRadarObject@@XZ	landed	Unique retail bytes and Ghidra accessor boundary bind the exact seven-byte natural C++ match
 ?friend_newModuleData@InstantDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
+?getEnergy@Player@@QAEPAVEnergy@@XZ	landed	Ghidra accessor boundary and Player member offset bind the exact seven-byte natural C++ match

@@ -829,7 +829,6 @@ void CustomMatchPreferences::setUseStats( Bool useStats )
 // GameSpyMiscPreferences base class 
 //-----------------------------------------------------------------------------
 
-// ??0GameSpyMiscPreferences@@QAE@XZ present-unmatched
 GameSpyMiscPreferences::GameSpyMiscPreferences()
 {
 	AsciiString userPrefFilename;

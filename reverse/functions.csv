@@ -10544,3 +10544,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getMaxMessagesPerUpdate@GameSpyInfo@@UAEHXZ,,0x006307B0,7,Code/masm_dumps/GameSpyInfo_getMaxMessagesPerUpdate.asm,matched,Vtable-bound BFME layout accessor
 ?friend_newModuleData@GarrisonContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00116250,110,Code/masm_dumps/GarrisonContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?update@DownloadManager@@QAEJXZ,,0x00626950,7,Code/GameEngine/Source/GameNetwork/DownloadManager.cpp,matched,Unique padded virtual tail call
+?friend_newModuleData@TransportContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00125470,110,Code/masm_dumps/TransportContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

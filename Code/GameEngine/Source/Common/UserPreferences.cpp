@@ -578,7 +578,6 @@ Int CustomMatchPreferences::getPreferredFaction(void)
 	return ret;
 }
 
-// ?setPreferredFaction@CustomMatchPreferences@@QAEXH@Z present-unmatched
 void CustomMatchPreferences::setPreferredFaction(Int val)
 {
 	AsciiString s;

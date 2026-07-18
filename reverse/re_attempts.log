@@ -1427,3 +1427,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@GateOpenAndCloseBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?setChatSizeSlider@CustomMatchPreferences@@QAEXH@Z	landed	ChatSlider key format and map assignment bind the exact 169-byte setter; MASM byte-verified
 ?WriteActionDataChunk@ScriptAction@@SAXAAVDataChunkOutput@@PAV1@@Z	landed	ScriptAction literal template lookup and parameter loop bind the exact 160-byte writer; MASM byte-verified
+?setPreferredFaction@CustomMatchPreferences@@QAEXH@Z	landed	PlayerTemplate key format and map assignment bind the exact 169-byte setter; MASM byte-verified

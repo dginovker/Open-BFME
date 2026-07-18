@@ -10467,3 +10467,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GetGameListBox@@YAPAVGameWindow@@XZ,,0x0062C5C0,6,Code/GameEngine/Source/GameNetwork/GameSpy/LobbyUtils.cpp,matched,
 ??0SidesInfo@@QAE@XZ,,0x001985B0,34,Code/masm_dumps/SidesList_SidesInfo_constructor.asm,matched,
 ?doDefeat@ScriptActions@@IAEXXZ,,0x002F1D80,245,Code/masm_dumps/ScriptActions_doDefeat.asm,matched,
+?clear@SidesInfo@@QAEXXZ,,0x0019AED0,66,Code/masm_dumps/SidesList_SidesInfo_clear.asm,matched,

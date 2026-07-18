@@ -1285,3 +1285,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?GetGameListBox@@YAPAVGameWindow@@XZ	landed	Raw retail boundary 0x0062C5C0/6 is padding-separated; existing one-line global getter compiles to the exact mov-eax-DIR32 and ret body
 ??0SidesInfo@@QAE@XZ	landed	Retail array-construction callbacks and Ghidra anchor the true constructor at 0x001985B0/34; exact MASM initializes the proven 0x18 layout including vector triple at +0x0c/+0x10/+0x14
 ?doDefeat@ScriptActions@@IAEXXZ	landed	Unique Gui_DefeatScreen and APT defeat-string xrefs plus Ghidra anchor the true body at 0x002F1D80/245; exact MASM preserves BFME-specific window and game-over flow absent from the ZH source
+?clear@SidesInfo@@QAEXXZ	landed	Ghidra anchored the true body at 0x0019AED0/66; exact MASM preserves BFME BuildList, Dict, script, and retail-only vector clearing while the ZH-derived source layout remains 0x0c

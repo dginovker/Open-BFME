@@ -10460,3 +10460,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1GameTextInterface@@UAE@XZ,,0x009A1A40,14,Code/masm_dumps/GameText_GameTextInterface_destructor.asm,matched,ICF alias; exact retail base-interface destructor via MASM
 ??_GGameTextInterface@@UAEPAXI@Z,,0x00435E00,30,Code/GameEngine/Source/GameClient/GameText.cpp,matched,exact C++ scalar-deleting destructor after retail destructor-thunk pin
 ??_GMetaMapRec@@MAEPAXI@Z,,0x006F4F20,30,Code/GameEngine/Source/GameClient/MessageStream/MetaEvent.cpp,matched,Ghidra-vtable anchored protected scalar-deleting destructor; exact C++
+?createTerrainVisual@W3DGameClient@@MAEPAVTerrainVisual@@XZ,,0x006FB800,86,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGameClient.cpp,matched,TU-local BFME TerrainVisual and W3DTerrainVisual ABI facades; ctor thunk pinned

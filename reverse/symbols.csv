@@ -3342,3 +3342,4 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ??0W3DInGameUI@@QAE@XZ,0x0003CDB2
 ??0W3DSnowManager@@QAE@XZ,0x000216C0
 ??1GameTextInterface@@UAE@XZ,0x0000E908
+??0W3DTerrainVisual@@QAE@XZ,0x00024DC0

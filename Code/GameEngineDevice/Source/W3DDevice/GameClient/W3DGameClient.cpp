@@ -77,6 +77,30 @@ private:
 typedef char BFMERetailSnowManagerSizeCheck[ sizeof( SnowManager ) == 0x68 ? 1 : -1 ];
 typedef char BFMERetailW3DSnowManagerSizeCheck[ sizeof( W3DSnowManager ) == 0x9c ? 1 : -1 ];
 
+#define __TERRAINVISUAL_H_
+class TerrainVisual
+{
+public:
+	virtual void anchor();
+
+private:
+	unsigned char m_retailData[ 0x0c ];
+};
+
+#define __W3DTERRAINVISUAL_H_
+class W3DTerrainVisual : public TerrainVisual
+{
+public:
+	W3DTerrainVisual();
+	virtual ~W3DTerrainVisual();
+
+private:
+	unsigned char m_retailData[ 0x10 ];
+};
+
+typedef char BFMERetailTerrainVisualSizeCheck[ sizeof( TerrainVisual ) == 0x10 ? 1 : -1 ];
+typedef char BFMERetailW3DTerrainVisualSizeCheck[ sizeof( W3DTerrainVisual ) == 0x20 ? 1 : -1 ];
+
 #define _IN_GAME_UI_H_
 class Drawable;
 typedef std::list< Drawable * > DrawableList;
@@ -103,6 +127,7 @@ private:
 #include "GameClient/RayEffect.h"
 #include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "W3DDevice/GameClient/W3DView.h"
+#include "W3DDevice/GameClient/W3DWater.h"
 
 #define __W3DINGAMEUI_H_
 class View;

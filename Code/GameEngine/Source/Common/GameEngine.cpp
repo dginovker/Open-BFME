@@ -245,7 +245,6 @@ GameEngine::~GameEngine()
 	timeEndPeriod(1);
 }
 
-// ?setFramesPerSecondLimit@GameEngine@@UAEXH@Z present-unmatched
 void GameEngine::setFramesPerSecondLimit( Int fps )
 {
 	DEBUG_LOG(("GameEngine::setFramesPerSecondLimit() - setting max fps to %d (TheGlobalData->m_useFpsLimit == %d)\n", fps, TheGlobalData->m_useFpsLimit));

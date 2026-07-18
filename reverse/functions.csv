@@ -10640,3 +10640,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?hideIdleWorkerLayout@InGameUI@@EAEXXZ,,0x0043FA90,72,Code/masm_dumps/InGameUI_hideIdleWorkerLayout.asm,matched,Ghidra-corrected BFME idle-worker body
 ?friend_newModuleData@TransitionDamageFX@@SAPAVModuleData@@PAVINI@@@Z,,0x00124770,110,Code/masm_dumps/TransitionDamageFX_friend_newModuleData.asm,matched,Ghidra-bound BFME damage module-data factory
 ?updateRadarAttackGlow@ControlBar@@IAEXXZ,,0x0049D370,102,Code/masm_dumps/ControlBar_updateRadarAttackGlow.asm,matched,Ghidra-corrected BFME radar-glow body
+?setFramesPerSecondLimit@GameEngine@@UAEXH@Z,,0x0006B6F0,10,Code/masm_dumps/GameEngine_setFramesPerSecondLimit.asm,matched,Ghidra-bound BFME FPS-limit setter

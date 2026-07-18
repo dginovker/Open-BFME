@@ -907,7 +907,6 @@ Bool WorldHeightMap::ParseObjectsDataChunk(DataChunkInput &file, DataChunkInfo *
 *	Input: DataChunkInput 
 *		
 */
-// ?ParseHeightMapDataChunk@WorldHeightMap@@KA_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z present-unmatched
 Bool WorldHeightMap::ParseHeightMapDataChunk(DataChunkInput &file, DataChunkInfo *info, void *userData)
 {
 	WorldHeightMap *pThis = (WorldHeightMap *)userData;
@@ -983,7 +982,6 @@ Bool WorldHeightMap::ParseHeightMapData(DataChunkInput &file, DataChunkInfo *inf
 *	Input: DataChunkInput 
 *		
 */
-// ?ParseSizeOnlyInChunk@WorldHeightMap@@KA_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z present-unmatched
 Bool WorldHeightMap::ParseSizeOnlyInChunk(DataChunkInput &file, DataChunkInfo *info, void *userData)
 {
 	WorldHeightMap *pThis = (WorldHeightMap *)userData;
@@ -2610,7 +2608,6 @@ void WorldHeightMap::setupAlphaTiles(void)
 }
 
 
-// ?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z present-unmatched
 Bool  WorldHeightMap::getRawTileData(Short tileNdx, Int width, 
 																				 UnsignedByte *buffer, Int bufLen)
 {
@@ -2640,4 +2637,3 @@ Bool  WorldHeightMap::getRawTileData(Short tileNdx, Int width,
 	}
 	return(false);
 }
-

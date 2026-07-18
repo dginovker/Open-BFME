@@ -1398,3 +1398,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@DelayedLuaEventUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ?friend_newModuleData@OneRingPenaltyUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify the exact 107-byte data factory; MASM byte-verified
 ??0GameSpyMiscPreferences@@QAE@XZ	landed	Unique LoTRB4MEOnline path xref and complete constructor flow bind the exact 192-byte body; MASM byte-verified
+?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z	landed	Arguments, tile indexing, helper calls, quadrant math and ret16 bind the exact 217-byte body; MASM byte-verified

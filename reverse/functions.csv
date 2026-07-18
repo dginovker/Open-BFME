@@ -10580,3 +10580,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@DelayedLuaEventUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011BCF0,107,Code/masm_dumps/DelayedLuaEventUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?friend_newModuleData@OneRingPenaltyUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011A460,107,Code/masm_dumps/OneRingPenaltyUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ??0GameSpyMiscPreferences@@QAE@XZ,,0x000AB910,192,Code/masm_dumps/GameSpyMiscPreferences_ctor.asm,matched,Unique BFME profile-path constructor
+?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z,,0x00747D70,217,Code/masm_dumps/WorldHeightMap_getRawTileData.asm,matched,Ghidra-bound BFME source-tile copy body

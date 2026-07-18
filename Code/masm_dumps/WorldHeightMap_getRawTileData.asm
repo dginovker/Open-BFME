@@ -1,0 +1,25 @@
+.386
+.model flat
+
+; ?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z
+; Exact 217 retail bytes @ 0x00B47D70; copies the requested BFME source-tile quadrant.
+_TEXT SEGMENT
+public ?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z
+?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z PROC
+    db 053h,066h,08Bh,05Ch,024h,008h,00Fh,0BFh,0C3h,099h,083h,0E2h,003h,003h,0C2h,056h
+    db 057h,0C1h,0F8h,002h,033h,0FFh,03Dh,000h,010h,000h,000h,07Dh,007h,08Bh,0BCh,081h
+    db 0A4h,000h,000h,000h,08Bh,074h,024h,014h,08Bh,04Ch,024h,01Ch,08Bh,0C6h,00Fh,0AFh
+    db 0C6h,0C1h,0E0h,002h,03Bh,0C8h,07Dh,008h,05Fh,05Eh,032h,0C0h,05Bh,0C2h,010h,000h
+    db 085h,0FFh,055h,00Fh,084h,087h,000h,000h,000h,08Dh,02Ch,036h,055h,08Bh,0CFh,0E8h
+    db 02Eh,06Bh,08Eh,0FFh,084h,0C0h,074h,078h,055h,08Bh,0CFh,0E8h,082h,0B3h,08Bh,0FFh
+    db 033h,0FFh,033h,0C9h,0F6h,0C3h,001h,074h,002h,08Bh,0FEh,0F6h,0C3h,002h,074h,002h
+    db 08Bh,0CEh,085h,0F6h,07Eh,051h,08Bh,054h,024h,01Ch,00Fh,0AFh,0CEh,08Dh,02Ch,0F5h
+    db 000h,000h,000h,000h,08Dh,00Ch,04Fh,08Dh,01Ch,0B5h,000h,000h,000h,000h,089h,06Ch
+    db 024h,018h,08Dh,004h,088h,089h,074h,024h,014h,08Dh,0A4h,024h,000h,000h,000h,000h
+    db 08Bh,0CBh,08Bh,0E9h,0C1h,0E9h,002h,08Bh,0F0h,08Bh,0FAh,0F3h,0A5h,08Bh,0CDh,083h
+    db 0E1h,003h,0F3h,0A4h,08Bh,07Ch,024h,018h,08Bh,04Ch,024h,014h,003h,0C7h,003h,0D3h
+    db 049h,089h,04Ch,024h,014h,075h,0D9h,05Dh,05Fh,05Eh,0B0h,001h,05Bh,0C2h,010h,000h
+    db 05Dh,05Fh,05Eh,032h,0C0h,05Bh,0C2h,010h,000h
+?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z ENDP
+_TEXT ENDS
+END

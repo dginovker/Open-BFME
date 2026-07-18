@@ -10551,3 +10551,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@SiegeEngineContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00115CD0,110,Code/masm_dumps/SiegeEngineContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getSubdualDamageHealAmount@ActiveBody@@UBEMXZ,,0x0020E810,7,Code/GameEngine/Source/GameLogic/Object/Body/ActiveBody.cpp,matched,Unique padded ActiveBody accessor
 ?amIHost@GameSpyInfo@@UAE_NXZ,,0x00630690,7,Code/masm_dumps/GameSpyInfo_amIHost.asm,matched,Vtable-bound BFME layout accessor
+?friend_newModuleData@HordeSiegeEngineContain@@SAPAVModuleData@@PAVINI@@@Z,,0x00116360,110,Code/masm_dumps/HordeSiegeEngineContain_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

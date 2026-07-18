@@ -1,4 +1,6 @@
 name,address,notes
+??0RetailDamageModuleDataBase@@QAE@XZ,0x00048A3B,DamageModule factory base constructor target
+??_7RetailDamageModuleData@@6B@,0x0108A350,DamageModule factory vtable target
 ??0OpenContainModuleData@@QAE@XZ,0x00044030,CaveContain factory constructor target
 ?$S103@?1??getClassMemoryPool@AIUpdateInterface@@CAPAVMemoryPool@@XZ@4IA,0x00EEFE34,pool-glue cascade static (back-solved)
 ?$S105@?1??getClassMemoryPool@PoisonedBehavior@@CAPAVMemoryPool@@XZ@4IA,0x00EEF830,pool-glue cascade static (back-solved)

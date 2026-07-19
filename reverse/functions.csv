@@ -7586,7 +7586,6 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleInstance@SpyVisionUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114200,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@FireOCLAfterWeaponCooldownUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114200,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@ToppleUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117290,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
-?friend_newModuleInstance@WeaponBonusUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117C40,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@WeaponBonusUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001236C0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@BezierProjectileBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001152C0,110,Code/masm_dumps/BezierProjectileBehavior_friend_newModuleData.asm,matched,Retail registration dp017 proves BezierProjectileBehavior data factory
 ?friend_newModuleData@WorkerAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011C0E0,110,Code/masm_dumps/WorkerAIUpdate_friend_newModuleData.asm,matched,Retail registration dp143 proves WorkerAIUpdate data factory

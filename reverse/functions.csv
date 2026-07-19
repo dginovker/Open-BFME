@@ -8677,7 +8677,6 @@ _$E2,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWLib/slnode.cpp,matched,
 ?friend_newModuleInstance@HordeTransportContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115F30,99,Code/masm_dumps/HordeTransportContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp039 Ghidra confirmed
 ?friend_newModuleData@PartTheHeavensUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011C5B0,110,Code/masm_dumps/PartTheHeavensUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x53; Ghidra confirmed
 ?friend_newModuleInstance@W3DOverlordTankDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115F30,99,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
-?friend_newModuleData@W3DOverlordTankDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x0011A950,110,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
 ?friend_newModuleInstance@W3DProjectileStreamDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001194C0,96,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
 ?friend_newModuleData@W3DProjectileStreamDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x00118AA0,107,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
 ?friend_newModuleInstance@W3DRopeDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011B750,96,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
@@ -10771,3 +10770,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@RousingSpeechUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011C640,99,Code/masm_dumps/RousingSpeechUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x80; Ghidra confirmed
 ?friend_newModuleData@RousingSpeechUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011C6C0,110,Code/masm_dumps/RousingSpeechUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x80; Ghidra confirmed
 ?friend_newModuleData@HijackerUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00126D50,58,Code/masm_dumps/HijackerUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x84; Ghidra confirmed
+?friend_newModuleData@AttributeModifierAuraUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011A950,110,Code/masm_dumps/AttributeModifierAuraUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x79; Ghidra confirmed

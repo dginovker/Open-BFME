@@ -1704,3 +1704,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@HordeAIUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x5C: instance thunk 0x42006D resolves unique 0x11A680; Ghidra size 99, alloc 0x344.
 ?friend_newModuleData@DemoTrapUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x61: data thunk 0x41A352 resolves unique 0x119A20; corrected false DozerAI-owned 0x125340 claim.
 ?friend_newModuleInstance@AutoPickUpUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x62: instance thunk 0x434E7D resolves unique 0x119AB0; Ghidra size 96, alloc 0x2C.
+?friend_newModuleInstance@CivilianSpawnUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x63: instance thunk 0x412F2B resolves unique 0x116AE0; Ghidra size 96, alloc 0x24.

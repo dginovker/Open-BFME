@@ -1696,3 +1696,5 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@SlavedUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x77: instance thunk 0x401CD0 resolves unique 0x11B270; corrected false DynamicPortal-owned 0x1156B0 claim.
 ?emit_SlavedUpdate@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z	dead	Removed synthetic 0x1156B0 alias after retail registration proved SlavedUpdate has a distinct 0x11B270 factory body.
 ?friend_newModuleData@SlavedUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x77: data thunk 0x43C885 resolves CC-delimited 0x125A60/106; corrected false 0x118460 claim.
+?friend_newModuleInstance@NeutronMissileUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	dead	Removed false ZH-derived row: BFME retail contains no NeutronMissileUpdate name literal or ModuleFactory registration.
+?friend_newModuleData@NeutronMissileUpdate@@SAPAVModuleData@@PAVINI@@@Z	dead	Removed false ZH-derived row: BFME retail contains no NeutronMissileUpdate name literal or ModuleFactory registration.

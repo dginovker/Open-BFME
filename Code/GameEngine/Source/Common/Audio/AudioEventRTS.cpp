@@ -618,11 +618,11 @@ void AudioEventRTS::setObjectID( ObjectID objID )
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?getObjectID@AudioEventRTS@@ present-unmatched
 ObjectID AudioEventRTS::getObjectID( void )
 {
-	if (m_ownerType == OT_Object) {
-		return m_objectID;
+	const char *bfmeThis = (const char *)this;
+	if (*(const OwnerType *)(bfmeThis + 0x30) == OT_Object) {
+		return *(const ObjectID *)(bfmeThis + 0x2c);
 	}
 
 	return INVALID_ID;

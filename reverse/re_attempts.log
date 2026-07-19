@@ -1473,3 +1473,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@MaxHealthUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Ghidra retail registration MaxHealthUpgrade closes data thunk 0x11DC80 and instance thunk 0x11DC00; exact unique 107-byte factory body
 ?friend_newModuleData@LocomotorSetUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Ghidra retail LocomotorSetUpgrade registration closes data thunk 0x12B430 and matched instance thunk 0x11D3A0; unique 62-byte body
 ?processRequestAssistance@Weapon@@IAEXPBVObject@@PAV2@@Z	landed	Corrected stale RVA to Ghidra 0x1E4BF0/83; explicit BFME Weapon +0x4 and WeaponTemplate assist-range +0x1c offsets make existing C++ exact
+?getObjectID@AudioEventRTS@@QAE?AW4ObjectID@@XZ	landed	Ghidra audio thunk and adjacent setters prove RVA 0xB2280; exact C++ BFME offsets; ICF alias of BattlePlanUpdate getActiveBattlePlan

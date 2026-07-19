@@ -1929,3 +1929,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?reset@GameInfo@@UAEXXZ	landed	After two C++ ABI blockers Ghidra confirms unique unclaimed 0x61F440/168 reset body; exact MASM verified from NOMAP and field-reset semantics
 ?load@GameSpyLoginPreferences@@UAE_NVAsciiString@@@Z	landed	After C++ STL and AsciiString ABI blocker Ghidra confirms unique 0x82190/977 body; exact MASM verified from date_ nick_ pass_ anchors
 ??1CountUpTransition@@UAE@XZ	landed	Ghidra vtable chain proved true body at 0x59BD60/102; unique retail bytes landed as exact MASM; stale 0x6F4C5B overlaps matched W3DDisplayString destructor
+?winCreate@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHP6A?AW4WindowMsgHandledType@@0III@ZPAVWinInstanceData@@@Z	landed	Ghidra confirmed 0x6F5A90/269 via caller and font fallback; exact retail MASM bypasses wrong 56-byte object-symbol attribution

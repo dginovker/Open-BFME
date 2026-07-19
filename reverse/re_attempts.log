@@ -1781,3 +1781,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@LevelUpUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x9C thunk 0x40ABEB resolves unique 0x11D320; Ghidra size 96, alloc 0x1C.
 ?friend_newModuleInstance@SubObjectsUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Supersedes prior DCE assumption: retail registration ordinal 0x9E thunk 0x4203E7 resolves unique 0x11D640; Ghidra size 96, alloc 0x24.
 ?friend_newModuleData@SubObjectsUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Supersedes prior false alias: retail ordinal 0x9E data thunk 0x4308C8 resolves unique 0x12B7F0; Ghidra size 110, alloc 0xAC.
+?friend_newModuleInstance@ObjectCreationUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Supersedes prior DCE assumption: retail ordinal 0xA2 thunk 0x42C359 resolves unique 0x11D420; Ghidra size 103, alloc 0x30, returns object subobject at +8.

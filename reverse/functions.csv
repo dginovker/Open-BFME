@@ -7551,6 +7551,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleInstance@KeepObjectDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117BC0,96,Code/masm_dumps/KeepObjectDie_friend_newModuleInstance.asm,matched,retail ModuleFactory cp062 Ghidra confirmed
 ?friend_newModuleData@KeepObjectDie@@SAPAVModuleData@@PAVINI@@@Z,,0x00125340,107,Code/masm_dumps/KeepObjectDie_friend_newModuleData.asm,matched,retail ModuleFactory dp062 Ghidra confirmed ICF body
 ?friend_newModuleData@AnimationSteeringUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00114B50,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleInstance@AssistedTargetingUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117C40,96,Code/masm_dumps/AssistedTargetingUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory cp063 Ghidra confirmed
 ?friend_newModuleData@AssistedTargetingUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00114810,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@BaseRegenerateUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00117E40,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@SmartBombTargetHomingUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00113FB0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

@@ -10679,3 +10679,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GadgetListBoxSetSelected@@YAXPAVGameWindow@@H@Z,,0x004B7810,38,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box selection message id
 ?getUninterruptable@AudioEventRTS@@QBE_NXZ,,0x000B2360,4,Code/GameEngine/Source/Common/Audio/GameAudio.cpp,matched,Retail thunk-bound BFME uninterruptable getter
 ?friend_newModuleData@GiantBirdSlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00115850,110,Code/masm_dumps/GiantBirdSlowDeathBehavior_friend_newModuleData.asm,matched,Retail-only GiantBirdSlowDeathBehavior module-data factory
+?GadgetListBoxSetSelected@@YAXPAVGameWindow@@PBHH@Z,,0x004B7840,41,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box selection message id

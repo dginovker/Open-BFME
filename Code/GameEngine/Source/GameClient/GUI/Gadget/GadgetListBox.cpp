@@ -2659,7 +2659,7 @@ void GadgetListBoxSetSelected( GameWindow *listbox, const Int *selectList, Int s
 	if( listbox == NULL )
 		return;
 	// set selected index via system message
-	TheWindowManager->winSendSystemMsg( listbox, GLM_SET_SELECTION, (WindowMsgData)selectList, selectCount );
+	TheWindowManager->winSendSystemMsg( listbox, 0x4017, (WindowMsgData)selectList, selectCount );
 }
 
 //-------------------------------------------------------------------------------------------------

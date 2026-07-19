@@ -1804,3 +1804,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@ExperienceLevelCreate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xB9 thunk 0x419A79 resolves unique 0x11E670. Ghidra size 107 alloc 0x10.
 ?friend_newModuleData@HealCrateCollide@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xC2 data thunk 0x42BA12 resolves shared 0x11EDC0. Ghidra size 107 alloc 0x54 canonical owner.
 ?friend_newModuleData@ShroudCrateCollide@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xC4 reuses thunk 0x42BA12 and exact 0x11EDC0 body owned by HealCrateCollide.
+?friend_newModuleInstance@CivilianSpawnCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xC8 thunk 0x4459C1 resolves unique 0x11F210. Ghidra size 96 alloc 0x14.

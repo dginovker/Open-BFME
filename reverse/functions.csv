@@ -10819,3 +10819,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@ExperienceLevelCreate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011E670,107,Code/masm_dumps/ExperienceLevelCreate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0xB9 Ghidra confirmed
 ?friend_newModuleData@HealCrateCollide@@SAPAVModuleData@@PAVINI@@@Z,,0x0011EDC0,107,Code/masm_dumps/HealCrateCollide_friend_newModuleData.asm,matched,canonical owner of Heal and Shroud retail ICF data body
 ?friend_newModuleData@ShroudCrateCollide@@SAPAVModuleData@@PAVINI@@@Z,,0x0011EDC0,107,Code/masm_dumps/ShroudCrateCollide_friend_newModuleData.asm,matched,retail ICF alias of HealCrateCollide data factory
+?friend_newModuleInstance@CivilianSpawnCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011F210,96,Code/masm_dumps/CivilianSpawnCollide_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0xC8 Ghidra confirmed

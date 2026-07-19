@@ -10801,3 +10801,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@W3DDebrisDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x00113BE0,47,Code/masm_dumps/W3DDebrisDraw_friend_newModuleData.asm,matched,retail W3DModuleFactory registration ordinal 1; shared ICF body
 ?friend_newModuleInstance@DelayedUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011D2A0,96,Code/masm_dumps/DelayedUpgrade_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x9B; Ghidra confirmed
 ?friend_newModuleData@DelayedUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012B200,65,Code/masm_dumps/DelayedUpgrade_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x9B; CC-delimited body
+?friend_newModuleData@ArmorUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012AF20,73,Code/masm_dumps/ArmorUpgrade_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x98; CC-delimited body

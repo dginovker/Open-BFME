@@ -1738,3 +1738,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@SpecialAbilityUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x7A: instance thunk 0x42B97C resolves unique 0x1140C0; Ghidra size 99, alloc 0xE8.
 ?friend_newModuleData@SpecialAbilityUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x7A: data thunk 0x428A60 resolves unique 0x114140; Ghidra size 110, alloc 0x254.
 ?friend_newModuleData@SupplyCenterProductionExitUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x7B: data thunk 0x40D19D resolves unique 0x1243A0; exact CC-delimited 70-byte boundary.
+?friend_newModuleInstance@DozerAIUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Supersedes prior DCE assumption: retail registration ordinal 0x7F thunk 0x417F71 resolves unique 0x117FA0; Ghidra size 99, alloc 0x46C.

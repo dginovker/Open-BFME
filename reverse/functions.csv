@@ -7584,7 +7584,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleData@RailedTransportDockUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118AA0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@RailedTransportAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001145D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@SlavedUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011B270,96,Code/masm_dumps/SlavedUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x77; Ghidra confirmed
-?friend_newModuleData@SlavedUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118460,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleData@SlavedUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00125A60,106,Code/masm_dumps/SlavedUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x77; thunk and CC boundaries confirmed
 ?friend_newModuleInstance@StealthUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011B3F0,96,Code/masm_dumps/StealthUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration Ghidra confirmed
 ?friend_newModuleInstance@SpyVisionUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114200,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@FireOCLAfterWeaponCooldownUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114200,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

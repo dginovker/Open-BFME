@@ -10727,3 +10727,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@ReplenishUnitsBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001173A0,96,Code/masm_dumps/ReplenishUnitsBehavior_friend_newModuleInstance.asm,matched,retail
 ?friend_newModuleInstance@SlaveWatcherBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001174C0,96,Code/masm_dumps/SlaveWatcherBehavior_friend_newModuleInstance.asm,matched,retail
 ?friend_newModuleInstance@HeroDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011FCF0,96,Code/masm_dumps/HeroDie_friend_newModuleInstance.asm,matched,retail
+?friend_newModuleInstance@RefundDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001176E0,96,Code/masm_dumps/RefundDie_friend_newModuleInstance.asm,matched,retail

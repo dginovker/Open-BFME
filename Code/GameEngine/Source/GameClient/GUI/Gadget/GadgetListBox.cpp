@@ -2673,7 +2673,7 @@ void GadgetListBoxReset( GameWindow *listbox )
 		return;
 
 	// reset via system message
-	TheWindowManager->winSendSystemMsg( listbox, GLM_DEL_ALL, 0, 0 );
+	TheWindowManager->winSendSystemMsg( listbox, 0x4013, 0, 0 );
 
 }  // end GadgetListBoxReset
 

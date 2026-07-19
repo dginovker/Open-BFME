@@ -10886,3 +10886,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0SidesList@@QAE@XZ,,0x0019EA80,365,Code/masm_dumps/SidesList_ctor.asm,matched,Correct retail body from GameEngine init thunk 0x00032EC5 and TheSidesList naming sequence
 ?WOLLoginMenuInit@@YAXPAVWindowLayout@@PAX@Z,,0x00500A20,3164,Code/masm_dumps/WOLLoginMenuInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x0000CAEA
 ??0W3DShadowGeometry@@QAE@XZ,,0x007BBCF0,131,Code/masm_dumps/W3DShadowGeometry_ctor.asm,matched,Correct retail body from Load_Geom constructor thunk 0x00031624
+?WOLBuddyOverlayInit@@YAXPAVWindowLayout@@PAX@Z,,0x004EC6E0,1263,Code/masm_dumps/WOLBuddyOverlayInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x00016C89

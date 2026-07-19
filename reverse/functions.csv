@@ -10901,3 +10901,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?createNewMessageQueue@GameSpyPeerMessageQueueInterface@@SAPAV1@XZ,,0x0064E620,86,Code/masm_dumps/GameSpyPeerMessageQueue_createNew.asm,matched,Exact retail MASM; SetUpGameSpy call order proves peer-factory ownership
 ?createNewGameSpyInfoInterface@GameSpyInfoInterface@@SAPAV1@XZ,,0x00637760,89,Code/masm_dumps/GameSpyInfoInterface_createNew.asm,matched,Exact retail MASM; SetUpGameSpy assignment and immediate interface calls prove ownership
 ?isAnyKindOf@Thing@@QBE_NABV?$BitFlags@$0HE@@@@Z,,0x00132AE0,41,Code/masm_dumps/Thing_isAnyKindOf.asm,matched,Exact retail MASM; Thing template-mask flow and any-intersection helper prove ownership
+?isKindOfMulti@Thing@@QBE_NABV?$BitFlags@$0HE@@@0@Z,,0x00132B20,41,Code/masm_dumps/Thing_isKindOfMulti.asm,matched,Exact retail MASM; Thing template-mask flow and set-clear helper prove ownership

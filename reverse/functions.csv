@@ -10722,3 +10722,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@RiderChangeContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001166D0,99,Code/masm_dumps/RiderChangeContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp042 Ghidra confirmed
 ?friend_newModuleInstance@SlaughterHordeContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00116D00,99,Code/masm_dumps/SlaughterHordeContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp043 Ghidra confirmed
 ?friend_newModuleInstance@SwayClientUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00121AF0,96,Code/masm_dumps/SwayClientUpdate_friend_newModuleInstance.asm,matched,Retail
+?friend_newModuleInstance@ClearanceTestingSlowDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117290,96,Code/masm_dumps/ClearanceTestingSlowDeathBehavior_friend_newModuleInstance.asm,matched,retail

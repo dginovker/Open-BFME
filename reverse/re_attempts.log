@@ -1570,3 +1570,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@FireOCLAfterWeaponCooldownUpdate@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false unique-body alias at 0x0011DB70; retail owner is ExperienceScalarUpgrade
 ?friend_newModuleData@CostModifierUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false unique-body alias at 0x0011DB70; retail owner is ExperienceScalarUpgrade
 ?friend_newModuleData@DeliverPayloadAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false unique-body alias at 0x0011DB70; retail owner is ExperienceScalarUpgrade
+?friend_newModuleInstance@DualWeaponBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ModuleFactory cp015 thunk resolves uniquely to 96-byte Ghidra body RVA 0x00115020

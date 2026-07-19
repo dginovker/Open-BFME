@@ -1714,3 +1714,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@BannerCarrierUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x65: instance thunk 0x42EA82 resolves unique 0x119BC0; Ghidra size 96, alloc 0x20.
 ?friend_newModuleInstance@GateOpenAndCloseBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x67: instance thunk 0x44735C resolves unique 0x119DE0; Ghidra size 103, adjusted-this return.
 ?tryUnderAttackEvent@Radar@@QAEXPBVObject@@@Z	no-match	Ghidra proves candidate RVA 0x8CB4D falls inside FUN_0048b600 at RVA 0x8B600 (7143B message-name switch), not a Radar function boundary; refresh mapping before retrying.
+?friend_newModuleInstance@WeaponModeSpecialPowerUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x6C: instance thunk 0x412CD3 resolves unique 0x119670; Ghidra size 96, alloc 0x3C.

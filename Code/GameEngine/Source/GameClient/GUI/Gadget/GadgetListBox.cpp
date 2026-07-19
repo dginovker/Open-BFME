@@ -2646,7 +2646,7 @@ void GadgetListBoxSetSelected( GameWindow *listbox, Int selectIndex )
 		return;
 
 	// set selected index via system message
-	TheWindowManager->winSendSystemMsg( listbox, GLM_SET_SELECTION, (WindowMsgData)(&selectIndex), 1 );
+	TheWindowManager->winSendSystemMsg( listbox, 0x4017, (WindowMsgData)(&selectIndex), 1 );
 
 }  // end GadgetListBoxSetSelected
 

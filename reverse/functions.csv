@@ -10676,3 +10676,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GadgetListBoxGetSelected@@YAXPAVGameWindow@@PAH@Z,,0x004B77E0,38,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box selection message id
 ?getNextPlayPortion@AudioEventRTS@@QBE?AW4PortionToPlay@@XZ,,0x000B2420,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Retail thunk-bound BFME next-portion getter
 ?friend_newModuleData@CrushDie@@SAPAVModuleData@@PAVINI@@@Z,,0x00123460,110,Code/masm_dumps/CrushDie_friend_newModuleData.asm,matched,Ghidra-bound BFME CrushDie module-data factory
+?GadgetListBoxSetSelected@@YAXPAVGameWindow@@H@Z,,0x004B7810,38,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box selection message id

@@ -1849,3 +1849,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@SplitHordeSpecialPower@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xED thunk 0x4167BB resolves unique 0x121620. Ghidra size 96 alloc 0x2C.
 ?friend_newModuleData@SplitHordeSpecialPower@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xED thunk 0x41BCA2 resolves unique 0x1216A0. Ghidra size 110 alloc 0x210.
 ?friend_newModuleInstance@RepairSpecialPower@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xEE thunk 0x4408B8 resolves unique 0x121730. Ghidra size 96 alloc 0x2C.
+?friend_newModuleData@RepairSpecialPower@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xEE thunk 0x421B43 resolves unique 0x1217B0. Ghidra size 110 alloc 0x210.

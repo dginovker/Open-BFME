@@ -10701,3 +10701,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GadgetTextEntrySetFont@@YAXPAVGameWindow@@PAVGameFont@@@Z,,0x004BE0A0,99,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetTextEntry.cpp,matched,BFME DisplayString virtual slot layout
 ?friend_newModuleInstance@EnragedBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114AD0,96,Code/masm_dumps/EnragedBehavior_friend_newModuleInstance.asm,matched,Retail registration proves EnragedBehavior instance factory
 ?friend_newModuleInstance@EntEnragedUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011CF80,96,Code/masm_dumps/EntEnragedUpdate_friend_newModuleInstance.asm,matched,Retail registration proves EntEnragedUpdate instance factory
+?friend_newModuleInstance@HitReactionBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114BE0,96,Code/masm_dumps/HitReactionBehavior_friend_newModuleInstance.asm,matched,Retail registration proves HitReactionBehavior instance factory

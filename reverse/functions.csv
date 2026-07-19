@@ -10890,3 +10890,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?PopupHostGameInit@@YAXPAVWindowLayout@@PAX@Z,,0x004D68C0,1253,Code/masm_dumps/PopupHostGameInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x00032821
 ?PopupJoinGameInit@@YAXPAVWindowLayout@@PAX@Z,,0x004D7300,510,Code/masm_dumps/PopupJoinGameInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x0003E24D
 ?WOLBuddyOverlayRCMenuInit@@YAXPAVWindowLayout@@PAX@Z,,0x004EADD0,649,Code/masm_dumps/WOLBuddyOverlayRCMenuInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x00048969
+??1W3DDisplayString@@MAE@XZ,,0x006F4C50,114,Code/masm_dumps/W3DDisplayString_dtor.asm,matched,Correct retail body from vtable scalar deleting destructor thunk 0x00044B57

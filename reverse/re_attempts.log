@@ -1575,3 +1575,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@BezierProjectileBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ModuleFactory cp017 uniquely resolves to 99-byte Ghidra body RVA 0x00115240
 ?friend_newModuleInstance@W3DSupplyDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	no-match	Removed false unique-body alias at 0x00115240; retail common ModuleFactory owner is BezierProjectileBehavior
 ?friend_newModuleInstance@PhysicsBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	ModuleFactory
+?friend_newModuleInstance@InstantDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	ModuleFactory registration cp019 thunk 0x435CFB reaches RVA 0x115360; Ghidra confirms 96-byte boundary and focused byte match; corrected stale 0x11E2D0 owner

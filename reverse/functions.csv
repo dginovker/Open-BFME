@@ -7526,7 +7526,6 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleInstance@NeutronMissileSlowDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117290,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@OverchargeBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001170D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@RiderChangeContain@@SAPAVModuleData@@PAVINI@@@Z,,0x001195C0,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
-?friend_newModuleInstance@FireWeaponWhenDeadBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117C40,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@DynamicPortalBehaviour@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001156B0,96,Code/masm_dumps/DynamicPortalBehaviour_friend_newModuleInstance.asm,matched,retail ModuleFactory cp028 Ghidra confirmed
 ?friend_newModuleInstance@ParkingPlaceBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001148B0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@RebuildHoleBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001156B0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
@@ -9899,7 +9898,7 @@ _acosf,,0x00873940,10,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadB
 ?friend_newModuleData@SpyVisionSpecialPower@@SAPAVModuleData@@PAVINI@@@Z,,0x0011F9C0,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,icf-owner=?friend_newModuleData@MissileAIUpdate@@SAPAVModuleData@@PAVINI@@@Z
 ?friend_newModuleData@CountermeasuresBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00117420,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,icf-owner=?friend_newModuleData@BattlePlanUpdate@@SAPAVModuleData@@PAVINI@@@Z
 ?friend_newModuleData@FireWeaponWhenDamagedBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00117420,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,icf-owner=?friend_newModuleData@BattlePlanUpdate@@SAPAVModuleData@@PAVINI@@@Z
-?friend_newModuleData@FireWeaponWhenDeadBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x0011F9C0,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,icf-owner=?friend_newModuleData@MissileAIUpdate@@SAPAVModuleData@@PAVINI@@@Z
+?friend_newModuleData@FireWeaponWhenDeadBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x0012A250,110,Code/masm_dumps/FireWeaponWhenDeadBehavior_friend_newModuleData.asm,matched,retail ModuleFactory dp046 Ghidra confirmed
 ?friend_newModuleData@FXListDie@@SAPAVModuleData@@PAVINI@@@Z,,0x0011F9C0,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,icf-owner=?friend_newModuleData@MissileAIUpdate@@SAPAVModuleData@@PAVINI@@@Z
 ?friend_newModuleData@StatusBitsUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x00118020,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,icf-owner=?friend_newModuleData@TensileFormationUpdate@@SAPAVModuleData@@PAVINI@@@Z
 ?friend_newModuleData@StructureToppleUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00119D50,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,icf-owner=?friend_newModuleData@AutoHealBehavior@@SAPAVModuleData@@PAVINI@@@Z
@@ -10368,7 +10367,7 @@ _ceilf,,0x00069750,20,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/
 ?Ceil@WWMath@@SAMM@Z,,0x00069750,20,Code/Libraries/Source/WWVegas/WW3D2/visrasterizer.cpp,matched,
 ?Clear@?$VectorClass@UAddInfoStruct@MixFileFactoryClass@@@@UAEXXZ,,0x0093D920,61,Code/Libraries/Source/WWVegas/WWLib/mixfile.cpp,matched,
 ??_G?$VectorClass@UAddInfoStruct@MixFileFactoryClass@@@@UAEPAXI@Z,,0x0093E930,94,Code/Libraries/Source/WWVegas/WWLib/mixfile.cpp,matched,
-?friend_newModuleInstance@ProjectileStreamUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00116FC0,99,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleInstance@FireWeaponWhenDeadBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00116FC0,99,Code/masm_dumps/FireWeaponWhenDeadBehavior_friend_newModuleInstance.asm,matched,retail ModuleFactory cp046 Ghidra confirmed
 ?friend_newModuleInstance@MobMemberSlavedUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00116F30,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@SpawnBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115590,96,Code/masm_dumps/SpawnBehavior_friend_newModuleInstance.asm,matched,retail ModuleFactory registration cp021; Ghidra-confirmed boundary
 _$E25,,0x00C6B2C0,30,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,matched,

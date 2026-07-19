@@ -1494,3 +1494,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@LifetimeUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration string and paired thunks identify unique RVA 0x0011A350 exact 107-byte data factory; MASM byte-verified
 ?GadgetListBoxGetNumEntries@@YAHPAVGameWindow@@@Z	landed	Ghidra owner RVA 0x004B77C0 size 25 and export thunk prove identity; explicit signed endPos at BFME ListboxData +0x2c makes native C++ exact
 ?GadgetListBoxGetSelected@@YAXPAVGameWindow@@PAH@Z	landed	Ghidra owner RVA 0x004B77E0 size 38 and export thunk prove identity; BFME GLM_GET_SELECTION message 0x4018 makes native C++ exact
+?getNextPlayPortion@AudioEventRTS@@QBE?AW4PortionToPlay@@XZ	landed	Unique retail thunk and matched setter prove RVA 0x000B2420 bytes 8b4160c3 and next portion at this+0x60; native C++ exact

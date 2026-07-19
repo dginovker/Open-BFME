@@ -483,7 +483,6 @@ void AudioEventRTS::decrementDelay( Real timeToDecrement )
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?getNextPlayPortion@AudioEventRTS@@ present-unmatched
 PortionToPlay AudioEventRTS::getNextPlayPortion( void ) const
 {
 	return m_portionToPlayNext;

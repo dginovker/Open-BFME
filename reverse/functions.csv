@@ -10879,3 +10879,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1HeightMapRenderObjClass@@UAE@XZ,,0x006D33B0,116,Code/masm_dumps/HeightMapRenderObjClass_destructor.asm,matched,Ghidra-corrected body via constructor vtables and deleting destructor
 ?friend_newModuleData@OpenContain@@SAPAVModuleData@@PAVINI@@@Z,,0x001159E0,110,Code/masm_dumps/OpenContain_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x18 Ghidra corrected owner
 ?initTeam@TeamFactory@@QAEXABVAsciiString@@0_NPAVDict@@@Z,,0x000F8170,220,Code/masm_dumps/TeamFactory_initTeam.asm,matched,Correct retail body identified by unique public thunk at 0x00039E0F
+?setControlBarSchemeByPlayer@ControlBar@@QAEXPAVPlayer@@@Z,,0x0049F8B0,790,Code/masm_dumps/ControlBar_setControlBarSchemeByPlayer.asm,matched,Correct retail body identified by unique public thunk at 0x00019B64

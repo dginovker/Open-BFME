@@ -1691,3 +1691,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??0AutoHealBehavior@@QAE@PAVThing@@PBVModuleData@@@Z	landed	AutoHeal factory at 0x114200 uniquely calls constructor thunk 0x48B9E -> 0x1EE950; Ghidra exact 5-byte thunk.
 ??0StructureCollapseUpdate@@QAE@PAVThing@@PBVModuleData@@@Z	landed	StructureCollapse factory at 0x11B630 uniquely calls constructor thunk 0x4A345 -> 0x2AE200; Ghidra exact 5-byte thunk.
 ?friend_newModuleInstance@FlammableUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x57: instance thunk 0x43657F resolves unique 0x1183E0; corrected false DynamicPortal-owned 0x1156B0 claim.
+?populateObserverList@ControlBar@@QAEXXZ	no-match	next_work candidate RVA 0x4A9C90 is stale: decode_calls found seven impossible non-call opcodes/unknown targets; only two valid thunks. Refresh placement from retail/Ghidra before retrying.

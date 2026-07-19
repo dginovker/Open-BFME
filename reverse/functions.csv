@@ -10906,3 +10906,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?doSoundPlayFromNamed@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002EE880,165,Code/masm_dumps/ScriptActions_doSoundPlayFromNamed.asm,matched,Exact retail MASM; registered action and executeAction dispatch prove ownership
 ?reset@GameInfo@@UAEXXZ,,0x0061F440,168,Code/masm_dumps/GameInfo_reset.asm,matched,Exact retail MASM; NOMAP anchor and reset semantics prove ownership
 ?load@GameSpyLoginPreferences@@UAE_NVAsciiString@@@Z,,0x00082190,977,Code/masm_dumps/GameSpyLoginPreferences_load.asm,matched,Exact retail MASM; date nick and password key literals prove ownership
+??1CountUpTransition@@UAE@XZ,,0x0059BD60,102,Code/masm_dumps/CountUpTransition_destructor.asm,matched,Exact retail MASM; true RVA and ownership verified via CountUp constructor vtable and deleting-dtor thunk; stale queue RVA overlaps W3DDisplayString

@@ -1928,3 +1928,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?doSoundPlayFromNamed@ScriptActions@@IAEXABVAsciiString@@0@Z	landed	Ghidra corrected call-displacement vote 0xFB41B/129 to dispatch-owned 0x2EE880/165; exact MASM preserves BFME player-index audio behavior
 ?reset@GameInfo@@UAEXXZ	landed	After two C++ ABI blockers Ghidra confirms unique unclaimed 0x61F440/168 reset body; exact MASM verified from NOMAP and field-reset semantics
 ?load@GameSpyLoginPreferences@@UAE_NVAsciiString@@@Z	landed	After C++ STL and AsciiString ABI blocker Ghidra confirms unique 0x82190/977 body; exact MASM verified from date_ nick_ pass_ anchors
+??1CountUpTransition@@UAE@XZ	landed	Ghidra vtable chain proved true body at 0x59BD60/102; unique retail bytes landed as exact MASM; stale 0x6F4C5B overlaps matched W3DDisplayString destructor

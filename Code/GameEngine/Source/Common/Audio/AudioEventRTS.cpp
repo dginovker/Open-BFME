@@ -441,10 +441,9 @@ void AudioEventRTS::generatePlayInfo( void )
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?getPitchShift@AudioEventRTS@@ present-unmatched
 Real AudioEventRTS::getPitchShift( void ) const
 {
-	return m_pitchShift;
+	return *(const Real *)((const char *)this + 0x4C);
 }
 
 //-------------------------------------------------------------------------------------------------

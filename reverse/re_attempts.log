@@ -1543,3 +1543,13 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@AimWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp016 corrects owner to RVA 0x001151B0; payload byte-verified
 ?friend_newModuleData@BezierProjectileBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp017 uniquely resolves to Ghidra body RVA 0x001152C0 size 110
 ?friend_newModuleData@WorkerAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp143 uniquely resolves to Ghidra body RVA 0x0011C0E0 size 110; not an ICF alias of Bezier
+?friend_newModuleData@PhysicsBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp018 corrects owner to unique 107-byte body RVA 0x0011AA70
+?friend_newModuleData@InstantDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp019 uniquely resolves to 107-byte Ghidra body RVA 0x001153E0
+?friend_newModuleData@AutoPickUpUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp098 corrects owner of unique 107-byte body RVA 0x00119B30
+?friend_newModuleData@ObjectCreationUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false alias at 0x001153E0; retail registration resolves ObjectCreationUpgrade dp162 to 0x0011D4A0
+?friend_newModuleData@ModelConditionUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false alias at 0x001153E0; retail registration resolves ModelConditionUpgrade dp169 to 0x0011DD90
+?friend_newModuleData@UnpauseSpecialPowerUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false alias at 0x001153E0; retail registration resolves UnpauseSpecialPowerUpgrade dp163 to 0x0011D7C0
+?friend_newModuleData@ExperienceScalarUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false alias at 0x001153E0; retail registration resolves ExperienceScalarUpgrade dp167 to 0x0011DB70
+?friend_newModuleData@GrantScienceUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false 0x001153E0 alias; class is absent from BFME retail ModuleFactory registration
+?friend_newModuleData@RadarUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false alias at 0x001153E0; retail registration resolves RadarUpgrade dp160 to 0x0012B530
+?friend_newModuleData@ReplaceObjectUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false 0x001153E0 alias; class is absent from BFME retail ModuleFactory registration

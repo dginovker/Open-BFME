@@ -1795,3 +1795,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@GeometryUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0xAC thunk 0x43ED42 resolves unique 0x11DF20; Ghidra size 96, alloc 0x20.
 ?friend_newModuleData@GeometryUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xAC data thunk 0x40D332 resolves unique 0x11DFA0; Ghidra size 110, alloc 0x94.
 ?friend_newModuleInstance@TooltipUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0xAE thunk 0x4443A5 resolves unique 0x11E030; Ghidra size 96, alloc 0x1C.
+?friend_newModuleData@TooltipUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xAE data thunk 0x42F11C resolves unique 0x12BC30; Ghidra size 107, alloc 0x78.

@@ -10736,3 +10736,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@HeroDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011FCF0,96,Code/masm_dumps/HeroDie_friend_newModuleInstance.asm,matched,retail
 ?friend_newModuleInstance@RefundDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001176E0,96,Code/masm_dumps/RefundDie_friend_newModuleInstance.asm,matched,retail
 ??0AutoHealBehavior@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00048B9E,5,Code/masm_dumps/__0AutoHealBehavior__QAE_PAVThing__PBVModuleData___Z_48B9E.asm,matched,retail factory call binds constructor thunk to AutoHealBehavior
+??0StructureCollapseUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x0004A345,5,Code/masm_dumps/__0StructureCollapseUpdate__QAE_PAVThing__PBVModuleData___Z_4A345.asm,matched,retail factory call binds constructor thunk to StructureCollapseUpdate

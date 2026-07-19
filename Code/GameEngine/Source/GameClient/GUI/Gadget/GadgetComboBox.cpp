@@ -1030,10 +1030,12 @@ void GadgetComboBoxSetHiliteTextColors( GameWindow *comboBox,Color color, Color 
 	
 	ComboBoxData *comboBoxData = (ComboBoxData *)comboBox->winGetUserData();
 	
-	if(comboBoxData->listBox)
-		comboBoxData->listBox->winSetHiliteTextColors( color,borderColor);
-	if(comboBoxData->editBox)
-		comboBoxData->editBox->winSetHiliteTextColors(color,borderColor);
+	GameWindow *listBox = *(GameWindow **)((char *)comboBoxData + 0x2C);
+	if(listBox)
+		listBox->winSetHiliteTextColors( color,borderColor);
+	GameWindow *editBox = *(GameWindow **)((char *)comboBoxData + 0x28);
+	if(editBox)
+		editBox->winSetHiliteTextColors(color,borderColor);
 }
 // GadgetComboBoxSetIMECompositeTextColors ====================================
 /** Set the IME Composite Text Colors Text Colors for the Sub Gadgets */

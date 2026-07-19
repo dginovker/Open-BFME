@@ -1676,3 +1676,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@PartTheHeavensUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x53: data thunk 0x406A96 resolves 0x11C5B0; Ghidra size 110, alloc 0x94, unique reference.
 ?friend_newModuleData@W3DTankDraw@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false 0x11C5B0 ownership: retail ModuleFactory registration binds the unique body to PartTheHeavensUpdate.
 ?friend_newModuleData@AutoDepositUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x54: data thunk 0x449C2E resolves 0x123F20; Ghidra size 107, alloc 0x20, unique reference; corrected false 0x118AA0 claim.
+?friend_newModuleInstance@FireWeaponUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x56 disproves prior DCE claim: cp thunk 0x443C02 resolves 0x1182D0; Ghidra size 96, alloc 0x24, unique reference.

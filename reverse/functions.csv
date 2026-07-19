@@ -7555,6 +7555,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleData@BaseRegenerateUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00117E40,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@SmartBombTargetHomingUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00113FB0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@DynamicGeometryInfoUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001145D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleInstance@FireWeaponUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001182D0,96,Code/masm_dumps/FireWeaponUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x56; Ghidra confirmed
 ?friend_newModuleData@FireWeaponUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001171F0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@FlammableUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001156B0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@FlammableUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001146F0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

@@ -10704,3 +10704,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@DualWeaponBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115020,96,Code/masm_dumps/DualWeaponBehavior_friend_newModuleInstance.asm,matched,Retail registration cp015 proves DualWeaponBehavior instance factory
 ?friend_newModuleInstance@AimWeaponBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115130,96,Code/masm_dumps/AimWeaponBehavior_friend_newModuleInstance.asm,matched,Retail registration cp016 proves AimWeaponBehavior instance factory
 ?friend_newModuleInstance@CaveContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115AB0,99,Code/masm_dumps/CaveContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp023 Ghidra-confirmed
+?friend_newModuleInstance@OpenContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115960,99,Code/masm_dumps/OpenContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp024 Ghidra confirmed

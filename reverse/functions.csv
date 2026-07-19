@@ -10570,6 +10570,7 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?usesLongGameList@CustomMatchPreferences@@QAE_NXZ,,0x000AC500,3,Code/GameEngine/Source/Common/UserPreferences.cpp,matched,Source-order pinned unconditional true getter
 ?friend_newModuleInstance@DestroyEnvironmentUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011C420,96,Code/masm_dumps/DestroyEnvironmentUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x52; Ghidra confirmed
 ?friend_newModuleData@DestroyEnvironmentUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011C4A0,107,Code/masm_dumps/DestroyEnvironmentUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleInstance@PartTheHeavensUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011C530,96,Code/masm_dumps/PartTheHeavensUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x53; Ghidra confirmed
 ?allowsObservers@CustomMatchPreferences@@QAE_NXZ,,0x000AC510,95,Code/masm_dumps/CustomMatchPreferences_allowsObservers.asm,matched,Unique AllowObservers preference getter
 ?getDisallowAsianText@CustomMatchPreferences@@QAE_NXZ,,0x000AC590,95,Code/masm_dumps/CustomMatchPreferences_getDisallowAsianText.asm,matched,Unique DisallowAsianText preference getter
 ?friend_newModuleData@SiegeAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118CC0,107,Code/masm_dumps/SiegeAIUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body

@@ -10812,3 +10812,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@TooltipUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E030,96,Code/masm_dumps/TooltipUpgrade_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0xAE; Ghidra confirmed
 ?friend_newModuleData@TooltipUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012BC30,107,Code/masm_dumps/TooltipUpgrade_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0xAE; Ghidra confirmed
 ?friend_newModuleInstance@PassiveAreaEffectBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001175D0,96,Code/masm_dumps/PassiveAreaEffectBehavior_friend_newModuleInstance.asm,matched,retail
+?friend_newModuleData@PassiveAreaEffectBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00117650,107,Code/masm_dumps/PassiveAreaEffectBehavior_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0xB0 Ghidra confirmed

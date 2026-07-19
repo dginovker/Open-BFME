@@ -1534,3 +1534,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@SiegeDockingBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail SiegeDockingBehavior registration thunk 0x00434F09 resolves to unique 96-byte Ghidra factory at RVA 0x00114E00
 ?GadgetStaticTextSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z	landed	Ghidra owner 0x008BD660; local BFME DisplayString and manager overlays plus by-value UnicodeString restore exact 252-byte retail body
 ?setLifetimeRange@LifetimeUpdate@@QAEXII@Z	landed	Ghidra owner RVA 0x00297EB0; inlined calcSleepDelay plus BFME object pointer at offset 0x08 produces exact 71-byte retail body
+?friend_newModuleInstance@AutoAbilityBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail AutoAbilityBehavior registration thunk 0x00436FC5 resolves to unique 96-byte Ghidra factory at RVA 0x00114F10

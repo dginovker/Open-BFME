@@ -7592,7 +7592,6 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleData@PowerPlantUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00114B50,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@EMPUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114200,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@InstantDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001153E0,107,Code/masm_dumps/InstantDeathBehavior_friend_newModuleData.asm,matched,Retail registration dp019 uniquely proves InstantDeathBehavior data factory
-?friend_newModuleInstance@GrantScienceUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117C40,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@GrantUpgradeCreate@@SAPAVModuleData@@PAVINI@@@Z,,0x001171F0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@VeterancyGainCreate@@SAPAVModuleData@@PAVINI@@@Z,,0x001170D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@BoneFXDamage@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

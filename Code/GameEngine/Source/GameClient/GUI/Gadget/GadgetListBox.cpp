@@ -2733,7 +2733,8 @@ bool GadgetListBoxIsFull(GameWindow *window)
 		return FALSE;
 
 	Int entry = getListboxBottomEntry(listData);
-	if(listData->listData[entry].listHeight >= listData->displayPos + listData->displayHeight - 5)
+	if((*(ListEntryRow **)((char *)listData + 0x18))[entry].listHeight >=
+	   *(Short *)((char *)listData + 0x44) + *(Short *)((char *)listData + 0x3C) - 5)
 		return TRUE;
 	else
 		return FALSE;

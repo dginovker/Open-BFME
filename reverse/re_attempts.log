@@ -1504,3 +1504,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@ClearanceTestingSlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration plus constructor and parser thunks identify unique RVA 0x00117310 exact 110-byte retail-only data factory; MASM byte-verified
 ?getVolumeShift@AudioEventRTS@@QBEMXZ	landed	Ghidra owner 0xB21D0 is 4 bytes and reads BFME this+0x50; exact d94150c3.
 ?decrementDelay@AudioEventRTS@@QAEXM@Z	landed	Ghidra owner 0xB21E0 is 13 bytes; explicit BFME delay at this+0x54 makes exact x87 body.
+?GadgetListBoxIsFull@@YA_NPAVGameWindow@@@Z	landed	Ghidra owner 0x4B78E0 is 60 bytes; BFME ListboxData offsets 0x18 0x3c 0x44 make native C++ exact.

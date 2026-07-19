@@ -2055,7 +2055,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GadgetSliderSetHiliteSelectedThumbBorderColor@@YAXPAVGameWindow@@H@Z,,0x0047B9C0,28,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,
 ?GadgetSliderSetHiliteThumbBorderColor@@YAXPAVGameWindow@@H@Z,,0x0047B910,28,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,
 ?GadgetStaticTextInput@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BD480,82,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetStaticText.cpp,matched,
-?GadgetStaticTextSetText@@YAXPAVGameWindow@@VUnicodeString@@@Z,,0x0002C16F,5,Code/masm_dumps/_GadgetStaticTextSetText__YAXPAVGameWindow__VUnicodeString___Z_2C16F.asm,matched,MASM exact retail dump
+?GadgetStaticTextSetText@@YAXPAVGameWindow@@VUnicodeString@@@Z,0x0002C16F,0x004BD7A0,98,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetStaticText.cpp,matched,Native body replaces thunk-only MASM ownership
 ?GadgetTabControlComputeSubPaneSize@@YAXPAVGameWindow@@PAH111@Z,,0x004BDA60,193,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetTabControl.cpp,matched,
 ?GadgetTabControlComputeTabRegion@@YAXPAVGameWindow@@@Z,,0x004BD890,371,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetTabControl.cpp,matched,
 ?GadgetTabControlFixupSubPaneList@@YAXPAVGameWindow@@@Z,,0x004BDC00,87,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetTabControl.cpp,matched,

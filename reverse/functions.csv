@@ -10558,6 +10558,7 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getCachedStats@GameSpyMiscPreferences@@QAE?AVAsciiString@@XZ,,0x000A9A00,113,Code/masm_dumps/GameSpyMiscPreferences_getCachedStats.asm,matched,Unique CachedStats-string preference getter
 ?setCachedStats@GameSpyMiscPreferences@@QAEXVAsciiString@@@Z,,0x000A9A90,121,Code/masm_dumps/GameSpyMiscPreferences_setCachedStats.asm,matched,Unique CachedStats-string preference setter
 ?friend_newModuleData@RefundDie@@SAPAVModuleData@@PAVINI@@@Z,,0x001232C0,107,Code/masm_dumps/RefundDie_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleInstance@BroadcastStealthUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011B370,96,Code/masm_dumps/BroadcastStealthUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration Ghidra confirmed
 ?friend_newModuleData@BroadcastStealthUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0012A350,54,Code/masm_dumps/BroadcastStealthUpdate_friend_newModuleData.asm,matched,Registration-bound BFME factory body
 ?doPlayerSetScienceAvailability@ScriptActions@@IAEXABVAsciiString@@00@Z,,0x002F01C0,126,Code/masm_dumps/ScriptActions_doPlayerSetScienceAvailability.asm,matched,Corrected full BFME science-availability body
 ??0ProductionPrerequisite@@QAE@XZ,,0x000E57A0,133,Code/masm_dumps/ProductionPrerequisite_ctor.asm,matched,Ghidra-bound BFME constructor layout

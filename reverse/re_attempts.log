@@ -1699,3 +1699,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@NeutronMissileUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	dead	Removed false ZH-derived row: BFME retail contains no NeutronMissileUpdate name literal or ModuleFactory registration.
 ?friend_newModuleData@NeutronMissileUpdate@@SAPAVModuleData@@PAVINI@@@Z	dead	Removed false ZH-derived row: BFME retail contains no NeutronMissileUpdate name literal or ModuleFactory registration.
 ?friend_newModuleData@FlammableUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x57: data thunk 0x41CF94 resolves unique 0x118460; corrected false BuildingBehavior-owned 0x1146F0 claim.
+?flushDecals@W3DProjectedShadowManager@@QAEXPAVW3DShadowTexture@@W4ShadowType@@@Z	no-match	Ghidra proves candidate RVA 0x949912 falls inside FUN_00d48bd0 at RVA 0x948BD0 (4389B), not a standalone function boundary; refresh mapping before retrying.

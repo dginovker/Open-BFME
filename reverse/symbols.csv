@@ -3346,3 +3346,4 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ?winSetHiliteTextColors@GameWindow@@QAEXHH@Z,0x000268B9
 ?winSetIMECompositeTextColors@GameWindow@@QAEXHH@Z,0x00014C13
 ?GetGameLogicRandomValue@@YAHHHPADH@Z,0x00096CF0,LifetimeUpdate calcSleepDelay retail debug owner
+??A?$map@W4NameKeyType@@MU?$less@W4NameKeyType@@@_STL@@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@QAEAAMABW4NameKeyType@@@Z,0x000E24D0,PlayerTemplate cost-change local map operator owner

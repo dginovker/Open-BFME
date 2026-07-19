@@ -10710,3 +10710,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GadgetStaticTextSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BD660,252,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetStaticText.cpp,matched,Local BFME display-string virtual overlays restore retail system-handler ABI
 ?setLifetimeRange@LifetimeUpdate@@QAEXII@Z,,0x00297EB0,71,Code/GameEngine/Source/GameLogic/Object/Update/LifetimeUpdate.cpp,matched,BFME UpdateModule object pointer is at offset 0x08
 ?friend_newModuleInstance@AutoAbilityBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114F10,96,Code/masm_dumps/AutoAbilityBehavior_friend_newModuleInstance.asm,matched,Retail registration proves AutoAbilityBehavior instance factory
+?parseProductionCostChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z,,0x000E2650,83,Code/GameEngine/Source/Common/RTS/PlayerTemplate.cpp,matched,BFME PlayerTemplate production-cost map is at offset 0x60

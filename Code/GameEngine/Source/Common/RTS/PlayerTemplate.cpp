@@ -150,7 +150,7 @@ AsciiString PlayerTemplate::getStartingUnit( Int i ) const
 	NameKeyType buildTemplateKey = NAMEKEY(ini->getNextToken());
 	Real percentChange = INI::scanPercentToReal(ini->getNextToken());
 
-	self->m_productionCostChanges[buildTemplateKey] = percentChange;
+	(*reinterpret_cast<ProductionChangeMap *>(reinterpret_cast<char *>(self) + 0x60))[buildTemplateKey] = percentChange;
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -428,4 +428,3 @@ void INI::parsePlayerTemplateDefinition( INI* ini )
 {
 	PlayerTemplateStore::parsePlayerTemplateDefinition(ini);
 }
-

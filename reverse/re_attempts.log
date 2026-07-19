@@ -1931,3 +1931,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1CountUpTransition@@UAE@XZ	landed	Ghidra vtable chain proved true body at 0x59BD60/102; unique retail bytes landed as exact MASM; stale 0x6F4C5B overlaps matched W3DDisplayString destructor
 ?winCreate@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHP6A?AW4WindowMsgHandledType@@0III@ZPAVWinInstanceData@@@Z	landed	Ghidra confirmed 0x6F5A90/269 via caller and font fallback; exact retail MASM bypasses wrong 56-byte object-symbol attribution
 ??1AutoDepositUpdateModuleData@@UAE@XZ	landed	Ghidra factory-to-vtable chain proved 0x125960/67; exact MASM preserves BFME handle member at +0x1C; stale 0x9F280A is unrelated
+??1OCLUpdateModuleData@@UAE@XZ	landed	Ghidra factory-to-vtable chain proved 0x298B70/7; exact trivial dtor restores Snapshot vtable; stale 0x9F280A is unrelated

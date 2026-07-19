@@ -2630,7 +2630,7 @@ void GadgetListBoxGetSelected( GameWindow *listbox, Int *selectList )
 		return;
 
 	// get selected indeces via system message
-	TheWindowManager->winSendSystemMsg( listbox, GLM_GET_SELECTION, 0, (WindowMsgData)selectList );
+	TheWindowManager->winSendSystemMsg( listbox, 0x4018, 0, (WindowMsgData)selectList );
 
 }  // end GadgetListBoxGetSelected
 

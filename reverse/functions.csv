@@ -10673,3 +10673,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getAudioPriority@AudioEventRTS@@QBE?AW4AudioPriority@@XZ,,0x00087410,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Retail thunk-bound BFME audio-priority getter
 ?friend_newModuleData@LifetimeUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011A350,107,Code/masm_dumps/LifetimeUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME LifetimeUpdate module-data factory
 ?GadgetListBoxGetNumEntries@@YAHPAVGameWindow@@@Z,,0x004B77C0,25,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME ListboxData end-position offset
+?GadgetListBoxGetSelected@@YAXPAVGameWindow@@PAH@Z,,0x004B77E0,38,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box selection message id

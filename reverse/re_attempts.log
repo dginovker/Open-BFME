@@ -1478,3 +1478,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?GadgetComboBoxSetEnabledTextColors@@YAXPAVGameWindow@@HH@Z	landed	Corrected stale RVA to Ghidra 0x4B3AC0/58; explicit BFME ComboBoxData list +0x2c and edit +0x28 offsets make existing C++ exact
 ?getIsLogicalAudio@AudioEventRTS@@QBE_NXZ	landed	Ghidra owner RVA 0x000B2340 bytes 8a4141c3 returns Bool at this+0x41; paired matched setter proves field identity; native C++ exact
 ?GadgetComboBoxSetDisabledTextColors@@YAXPAVGameWindow@@HH@Z	landed	Ghidra owner RVA 0x004B3B10 size 60; exact call graph; BFME ComboBoxData list +0x2c and edit +0x28 offsets make native C++ exact
+?friend_newModuleData@StealthDetectorUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify unique RVA 0x00126BE0 exact 110-byte data factory; MASM byte-verified

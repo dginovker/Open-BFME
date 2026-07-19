@@ -7596,7 +7596,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleData@VeterancyGainCreate@@SAPAVModuleData@@PAVINI@@@Z,,0x001170D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@BoneFXDamage@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@GiantBirdSlowDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001157D0,99,Code/masm_dumps/GiantBirdSlowDeathBehavior_friend_newModuleInstance.asm,matched,retail ModuleFactory registration cp022; Ghidra-confirmed boundary
-?friend_newModuleInstance@FireWeaponCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117C40,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleInstance@FireWeaponCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011EB20,96,Code/masm_dumps/FireWeaponCollide_friend_newModuleInstance.asm,matched,retail ModuleFactory cp190 Ghidra confirmed
 ?friend_newModuleInstance@SquishCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@ConvertToCarBombCrateCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@ConvertToHijackedVehicleCrateCollide@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

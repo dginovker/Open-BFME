@@ -1479,3 +1479,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getIsLogicalAudio@AudioEventRTS@@QBE_NXZ	landed	Ghidra owner RVA 0x000B2340 bytes 8a4141c3 returns Bool at this+0x41; paired matched setter proves field identity; native C++ exact
 ?GadgetComboBoxSetDisabledTextColors@@YAXPAVGameWindow@@HH@Z	landed	Ghidra owner RVA 0x004B3B10 size 60; exact call graph; BFME ComboBoxData list +0x2c and edit +0x28 offsets make native C++ exact
 ?friend_newModuleData@StealthDetectorUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration and paired thunks identify unique RVA 0x00126BE0 exact 110-byte data factory; MASM byte-verified
+?isCurrentlyPlaying@AudioEventRTS@@QBE_NXZ	no-match	Ghidra 0xB2370/27 proves BFME null guard and virtual slot +0xb0. Adding native null guard yields exact first 20 bytes but current AudioManager ABI calls slot +0x6c and emits 24B; needs explicit BFME vtable-slot shaping.

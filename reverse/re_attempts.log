@@ -1859,3 +1859,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@UpgradeSoundSelectorClientBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xF5 thunk 0x40187F resolves unique 0x121ED0. Ghidra size 107 alloc 0x14.
 ?friend_newModuleInstance@AnimationSoundClientBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xF3 thunk 0x447D8 resolves unique 0x121D20. Main Ghidra size 96 alloc 0x1C.
 ?friend_newModuleInstance@ModelConditionSoundSelectorClientBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xF4 thunk 0x43F68 resolves unique 0x126190. Main Ghidra size 104 alloc 0x10.
+?friend_newModuleInstance@UpgradeSoundSelectorClientBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xF5 thunk 0x42C7A5 resolves unique 0x124B30. Main Ghidra size 104 alloc 0x10.

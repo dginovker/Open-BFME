@@ -10892,3 +10892,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?WOLBuddyOverlayRCMenuInit@@YAXPAVWindowLayout@@PAX@Z,,0x004EADD0,649,Code/masm_dumps/WOLBuddyOverlayRCMenuInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x00048969
 ??1W3DDisplayString@@MAE@XZ,,0x006F4C50,114,Code/masm_dumps/W3DDisplayString_dtor.asm,matched,Correct retail body from vtable scalar deleting destructor thunk 0x00044B57
 ?setWaypointName@MapObject@@QAEXVAsciiString@@@Z,,0x00087E50,31,Code/masm_dumps/MapObject_setWaypointName.asm,matched,Correct retail body from waypoint key and matched getter sibling cluster
+?parseStructure@BuildListInfo@@SAXPAVINI@@PAX1PBX@Z,,0x001943D0,204,Code/masm_dumps/BuildListInfo_parseStructure.asm,matched,Exact retail MASM; Structure parser table and AI build-list caller prove ownership

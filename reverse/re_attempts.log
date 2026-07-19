@@ -1490,3 +1490,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@AssaultTransportAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration string and paired thunks identify unique RVA 0x00118870 exact 127-byte data factory; MASM byte-verified
 ?getTimeOfDay@AudioEventRTS@@QBE?AW4TimeOfDay@@XZ	landed	Unique retail thunk and adjacent matched setter prove RVA 0x000873E0 bytes 8b4128c3; constructor confirms timeOfDay at this+0x28; native C++ exact
 ?GadgetComboBoxGetText@@YA?AVUnicodeString@@PAVGameWindow@@@Z	landed	Ghidra owner RVA 0x004B4E00 size 89 and export thunk prove identity; explicit BFME editBox +0x28 ternary preserves the inlined accessor shape and matches exactly
+?getAudioPriority@AudioEventRTS@@QBE?AW4AudioPriority@@XZ	landed	Unique retail thunk plus constructor and matched setter prove RVA 0x00087410 bytes 8b4120c3 and priority at this+0x20; native C++ exact

@@ -10670,3 +10670,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@AssaultTransportAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118870,127,Code/masm_dumps/AssaultTransportAIUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME AssaultTransportAIUpdate module-data factory
 ?getTimeOfDay@AudioEventRTS@@QBE?AW4TimeOfDay@@XZ,,0x000873E0,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Retail thunk-bound BFME time-of-day getter
 ?GadgetComboBoxGetText@@YA?AVUnicodeString@@PAVGameWindow@@@Z,,0x004B4E00,89,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,BFME ComboBoxData edit-box offset
+?getAudioPriority@AudioEventRTS@@QBE?AW4AudioPriority@@XZ,,0x00087410,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Retail thunk-bound BFME audio-priority getter

@@ -730,7 +730,6 @@ Bool AudioEventRTS::isCurrentlyPlaying( void ) const
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?getAudioPriority@AudioEventRTS@@ present-unmatched
 AudioPriority AudioEventRTS::getAudioPriority( void ) const
 {
 	return m_priority;

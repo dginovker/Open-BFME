@@ -10658,6 +10658,7 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getTimeOfDay@AudioEventRTS@@QBE?AW4TimeOfDay@@XZ,,0x000873E0,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Retail thunk-bound BFME time-of-day getter
 ?GadgetComboBoxGetText@@YA?AVUnicodeString@@PAVGameWindow@@@Z,,0x004B4E00,89,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,BFME ComboBoxData edit-box offset
 ?getAudioPriority@AudioEventRTS@@QBE?AW4AudioPriority@@XZ,,0x00087410,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Retail thunk-bound BFME audio-priority getter
+?friend_newModuleInstance@LifetimeUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011A2D0,96,Code/masm_dumps/LifetimeUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x4D; Ghidra confirmed
 ?friend_newModuleData@LifetimeUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011A350,107,Code/masm_dumps/LifetimeUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME LifetimeUpdate module-data factory
 ?GadgetListBoxGetNumEntries@@YAHPAVGameWindow@@@Z,,0x004B77C0,25,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME ListboxData end-position offset
 ?GadgetListBoxGetSelected@@YAXPAVGameWindow@@PAH@Z,,0x004B77E0,38,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box selection message id

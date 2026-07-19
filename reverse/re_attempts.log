@@ -1752,3 +1752,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@W3DOverlordTankDraw@@SAPAVModuleData@@PAVINI@@@Z	dead	Removed false Zero Hour-derived claim: no BFME retail name or registration; 0x11A950 uniquely belongs to AttributeModifierAuraUpdate.
 ?friend_newModuleInstance@W3DOverlordTankDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	dead	Removed false Zero Hour-derived claim and six unsupported ctor pins: no BFME retail name or registration; 0x115F30 uniquely belongs to HordeTransportContain.
 ?friend_newModuleInstance@GloriousChargeUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x81: instance thunk 0x4141FF resolves unique 0x11C750; Ghidra size 99, alloc 0xF4.
+?friend_newModuleData@GloriousChargeUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x81: data thunk 0x41638D resolves unique 0x11C7D0; Ghidra size 110, alloc 0x260.

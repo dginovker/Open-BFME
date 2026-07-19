@@ -1720,3 +1720,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@WeaponFireSpecialAbilityUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x70: instance thunk 0x42A761 resolves unique 0x1193B0; Ghidra size 99, alloc 0xEC.
 ?friend_newModuleData@WeaponFireSpecialAbilityUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x70: data thunk 0x4498B4 resolves unique 0x119430; Ghidra size 110, alloc 0x268.
 ?friend_newModuleInstance@ToggleMountedSpecialAbilityUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x6E: instance thunk 0x42BEE5 resolves unique 0x11C890; Ghidra size 99, alloc 0xEC.
+?friend_newModuleData@ToggleMountedSpecialAbilityUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x6E: data thunk 0x40DA12 resolves unique 0x11C910; Ghidra size 110, alloc 0x25C.

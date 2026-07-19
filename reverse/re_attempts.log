@@ -1800,3 +1800,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@PassiveAreaEffectBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xB0 thunk 0x442DB6 resolves unique 0x117650. Ghidra size 107 alloc 0x24.
 ?friend_newModuleData@TemporarilyDefectUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xB2 thunk 0x42B9B3 resolves unique 0x124C20. Exact 57 byte Ghidra omission alloc 0x0C.
 ?friend_newModuleInstance@TemporarilyDefectUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xB2 thunk 0x430F08 resolves unique 0x1220C0. Ghidra size 96 alloc 0x30.
+?friend_newModuleInstance@ExperienceLevelCreate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xB9 thunk 0x4383DE resolves unique 0x11E5F0. Ghidra size 96 alloc 0x18.

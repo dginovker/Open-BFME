@@ -1810,3 +1810,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@CashHackSpecialPower@@SAPAVModuleData@@PAVINI@@@Z	landed	Corrected stale 0x118990 ICF claim. Retail ordinal 0xD6 thunk 0x443293 resolves unique Ghidra 0x11FDF0 size 110 alloc 0x220.
 ?friend_newModuleInstance@PorcupineFormationBodyModule@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xD3 thunk 0x413205 resolves unique 0x11FBE0. Ghidra size 99 alloc 0xE0.
 ?friend_newModuleData@PorcupineFormationBodyModule@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xD3 thunk 0x41D066 resolves unique 0x11FC60. Ghidra size 107 alloc 0x64.
+?friend_newModuleData@DefectorSpecialPower@@SAPAVModuleData@@PAVINI@@@Z	landed	Supersedes stale 0x11D7C0 no-match. Retail ordinal 0xD7 thunk 0x43D645 resolves unique Ghidra 0x11FF00 size 110 alloc 0x214.

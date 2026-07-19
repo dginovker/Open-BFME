@@ -474,10 +474,11 @@ Real AudioEventRTS::getDelay( void ) const
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?decrementDelay@AudioEventRTS@@ present-unmatched
 void AudioEventRTS::decrementDelay( Real timeToDecrement )
 {
-	m_delay -= timeToDecrement;
+	char *bfmeThis = (char *)this;
+	Real *bfmeDelay = (Real *)(bfmeThis + 0x54);
+	*bfmeDelay -= timeToDecrement;
 }
 
 //-------------------------------------------------------------------------------------------------

@@ -10684,3 +10684,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@ClearanceTestingSlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00117310,110,Code/masm_dumps/ClearanceTestingSlowDeathBehavior_friend_newModuleData.asm,matched,Retail-only ClearanceTestingSlowDeathBehavior module-data factory
 ?GadgetListBoxReset@@YAXPAVGameWindow@@@Z,,0x004B7880,33,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box message id
 ?getVolumeShift@AudioEventRTS@@QBEMXZ,,0x000B21D0,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,BFME audio layout
+?decrementDelay@AudioEventRTS@@QAEXM@Z,,0x000B21E0,13,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,BFME audio layout

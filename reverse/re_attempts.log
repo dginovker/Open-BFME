@@ -1910,3 +1910,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?parseStructure@BuildListInfo@@SAXPAVINI@@PAX1PBX@Z	landed	Ghidra corrected stale 0xC2493 to 0x1943D0/204; exact MASM verified from Structure FieldParse registration and AI build-list caller
 ?updateAndDrawWorldAnimations@InGameUI@@IAEXXZ	landed	Ghidra corrected padded 0x43F63C/473 candidate to 0x43F640/450; exact MASM verified and preDraw tail-call proves ownership
 ?addPlayerByTemplate@SidesList@@QAEXVAsciiString@@@Z	landed	Ghidra corrected mid-body 0x19C5C3/733 candidate to 0x19C590/722; exact MASM verified from faction strings and validateSides caller
+?createGadget@@YAPAVGameWindow@@PADPAV1@HHHHHPAVWinInstanceData@@PAX@Z	landed	Ghidra replaced invalid 0xA56433/12033 candidate with 0x486B10/1959; exact MASM verified from gadget branch set and two callers

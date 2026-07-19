@@ -1113,7 +1113,7 @@ Int GadgetComboBoxGetLength( GameWindow *combobox )
 {
 	ComboBoxData *comboboxData = (ComboBoxData *)combobox->winGetUserData();
 	if (comboboxData)
-		return comboboxData->entryCount;
+		return *(Int *)((char *)comboboxData + 0x20);
 
 	return 0;
 }  // end GadgetListBoxGetListLength

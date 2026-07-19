@@ -10665,3 +10665,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@DynamicShroudClearingRangeUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118130,107,Code/masm_dumps/DynamicShroudClearingRangeUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME DynamicShroudClearingRangeUpdate module-data factory
 ?isCurrentlyPlaying@AudioEventRTS@@QBE_NXZ,,0x000B2370,27,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Ghidra-bound BFME AudioManager vtable slot
 ?getShouldFade@AudioEventRTS@@QBE_NXZ,,0x0006B3B0,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Ghidra-bound BFME should-fade getter
+?GadgetComboBoxGetLength@@YAHPAVGameWindow@@@Z,,0x004B3D40,20,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,BFME ComboBoxData entry-count offset

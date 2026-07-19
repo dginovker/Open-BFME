@@ -10720,3 +10720,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@TunnelContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00116530,99,Code/masm_dumps/TunnelContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp038 Ghidra confirmed
 ?friend_newModuleInstance@HordeGarrisonContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001160C0,99,Code/masm_dumps/HordeGarrisonContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp040 Ghidra confirmed
 ?friend_newModuleInstance@ContestableContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001165C0,99,Code/masm_dumps/ContestableContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp041 Ghidra confirmed
+?friend_newModuleInstance@RiderChangeContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001166D0,99,Code/masm_dumps/RiderChangeContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp042 Ghidra confirmed

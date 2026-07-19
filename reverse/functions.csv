@@ -10662,3 +10662,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@StealthDetectorUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00126BE0,110,Code/masm_dumps/StealthDetectorUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME StealthDetectorUpdate module-data factory
 ?GadgetComboBoxSetHiliteTextColors@@YAXPAVGameWindow@@HH@Z,,0x004B3B60,58,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,BFME ComboBoxData hilite-color offsets
 ?GadgetComboBoxSetIMECompositeTextColors@@YAXPAVGameWindow@@HH@Z,,0x004B3BB0,58,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,BFME ComboBoxData IME-color offsets
+?friend_newModuleData@DynamicShroudClearingRangeUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118130,107,Code/masm_dumps/DynamicShroudClearingRangeUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME DynamicShroudClearingRangeUpdate module-data factory

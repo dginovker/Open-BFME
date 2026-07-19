@@ -1557,3 +1557,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@SlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp020 corrects owner to 110-byte body RVA 0x001154F0
 ?friend_newModuleData@SpawnBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp021 resolves uniquely to 110-byte body RVA 0x0012AAC0
 ?friend_newModuleData@RadarUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp160 resolves uniquely to compact 62-byte Ghidra body RVA 0x0012B530
+?friend_newModuleData@ObjectCreationUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp162 resolves uniquely to 110-byte Ghidra body RVA 0x0011D4A0

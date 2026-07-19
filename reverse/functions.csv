@@ -10711,3 +10711,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@CritterEmitterUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00121950,96,Code/masm_dumps/CritterEmitterUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory cp029 Ghidra confirmed
 ?friend_newModuleInstance@HealContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115B40,99,Code/masm_dumps/HealContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp030 Ghidra confirmed
 ?friend_newModuleInstance@HordeContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115D60,99,Code/masm_dumps/HordeContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp031 Ghidra confirmed
+?friend_newModuleInstance@HorseHordeContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115E70,99,Code/masm_dumps/HorseHordeContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp032 Ghidra confirmed

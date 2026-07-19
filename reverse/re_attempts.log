@@ -1702,3 +1702,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?flushDecals@W3DProjectedShadowManager@@QAEXPAVW3DShadowTexture@@W4ShadowType@@@Z	no-match	Ghidra proves candidate RVA 0x949912 falls inside FUN_00d48bd0 at RVA 0x948BD0 (4389B), not a standalone function boundary; refresh mapping before retrying.
 ?setControlBarSchemeByPlayerTemplate@ControlBar@@QAEXPBVPlayerTemplate@@@Z	no-match	Ghidra proves candidate RVA 0x49F910 falls inside FUN_0089f8b0 at RVA 0x49F8B0 (790B), not a standalone function boundary; refresh mapping before retrying.
 ?friend_newModuleInstance@HordeAIUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x5C: instance thunk 0x42006D resolves unique 0x11A680; Ghidra size 99, alloc 0x344.
+?friend_newModuleData@DemoTrapUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x61: data thunk 0x41A352 resolves unique 0x119A20; corrected false DozerAI-owned 0x125340 claim.

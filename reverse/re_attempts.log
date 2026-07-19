@@ -1487,3 +1487,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getShouldFade@AudioEventRTS@@QBE_NXZ	landed	Ghidra owner RVA 0x0006B3B0 bytes 8a4140c3; constructor and matched setter prove shouldFade at this+0x40; native C++ exact
 ?GadgetComboBoxGetLength@@YAHPAVGameWindow@@@Z	landed	Ghidra owner RVA 0x004B3D40 size 20 and export thunk prove identity; explicit BFME ComboBoxData entryCount +0x20 makes native C++ exact
 ?friend_newModuleData@DeployStyleAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration string and paired thunks identify unique RVA 0x001186F0 exact 128-byte data factory; MASM byte-verified
+?friend_newModuleData@AssaultTransportAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration string and paired thunks identify unique RVA 0x00118870 exact 127-byte data factory; MASM byte-verified

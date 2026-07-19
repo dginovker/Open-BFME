@@ -10708,3 +10708,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@SpawnUnitBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E1D0,96,Code/masm_dumps/SpawnUnitBehavior_friend_newModuleInstance.asm,matched,retail ModuleFactory cp025 Ghidra confirmed
 ?friend_newModuleInstance@OathbreakersFadeAwayBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E250,96,Code/masm_dumps/OathbreakersFadeAwayBehavior_friend_newModuleInstance.asm,matched,retail ModuleFactory cp026 Ghidra confirmed
 ?friend_newModuleInstance@WargBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115620,96,Code/masm_dumps/WargBehavior_friend_newModuleInstance.asm,matched,retail ModuleFactory cp027 Ghidra confirmed
+?friend_newModuleInstance@CritterEmitterUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00121950,96,Code/masm_dumps/CritterEmitterUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory cp029 Ghidra confirmed

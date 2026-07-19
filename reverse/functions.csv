@@ -10688,3 +10688,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?GadgetListBoxIsFull@@YA_NPAVGameWindow@@@Z,,0x004B78E0,60,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box layout
 ?GadgetListBoxGetColumnWidth@@YAHPAVGameWindow@@H@Z,,0x004B79D0,43,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box layout
 ?friend_newModuleInstance@CastleBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114440,99,Code/masm_dumps/CastleBehavior_friend_newModuleInstance.asm,matched,Retail-only CastleBehavior instance factory
+?friend_newModuleInstance@CastleMemberBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114550,96,Code/masm_dumps/CastleMemberBehavior_friend_newModuleInstance.asm,matched,Retail-only CastleMemberBehavior instance factory

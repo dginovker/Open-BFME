@@ -1507,3 +1507,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?GadgetListBoxIsFull@@YA_NPAVGameWindow@@@Z	landed	Ghidra owner 0x4B78E0 is 60 bytes; BFME ListboxData offsets 0x18 0x3c 0x44 make native C++ exact.
 ?GadgetListBoxGetColumnWidth@@YAHPAVGameWindow@@H@Z	landed	Ghidra owner 0x4B79D0 is 43 bytes; BFME columnWidth pointer at ListboxData+0x14 makes native C++ exact.
 ?friend_newModuleInstance@CastleBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Ghidra owner 0x114440 is unique 99-byte CastleBehavior registration target; exact MASM allocates 0x114 and calls ctor thunk 0xA57E.
+?friend_newModuleInstance@CastleMemberBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Ghidra owner 0x114550 is unique 96-byte CastleMemberBehavior registration target; exact MASM allocates 0x28 and calls ctor thunk 0x60F5.

@@ -3347,3 +3347,7 @@ __CIfmod,0x009F70CC,hit-decoded x4 (body)
 ?winSetIMECompositeTextColors@GameWindow@@QAEXHH@Z,0x00014C13
 ?GetGameLogicRandomValue@@YAHHHPADH@Z,0x00096CF0,LifetimeUpdate calcSleepDelay retail debug owner
 ??A?$map@W4NameKeyType@@MU?$less@W4NameKeyType@@@_STL@@V?$allocator@U?$pair@$$CBW4NameKeyType@@M@_STL@@@3@@_STL@@QAEAAMABW4NameKeyType@@@Z,0x000E24D0,PlayerTemplate cost-change local map operator owner
+??A?$map@VAsciiString@@MU?$less@VAsciiString@@@_STL@@V?$allocator@U?$pair@$$CBVAsciiString@@M@_STL@@@3@@_STL@@QAEAAMABVAsciiString@@@Z,0x000D97B0,PlayerTemplate time-change local map operator owner
+__ehhandler$?parseProductionTimeChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z,0x00BFAB08,PlayerTemplate time-change retail exception handler
+??0BFMEPlayerTemplateAsciiString@@QAE@PBD@Z,0x00888BC0,PlayerTemplate time-change retail AsciiString constructor owner
+??1BFMEPlayerTemplateAsciiString@@QAE@XZ,0x00887940,PlayerTemplate time-change retail AsciiString release owner

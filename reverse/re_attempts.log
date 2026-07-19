@@ -1536,3 +1536,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?setLifetimeRange@LifetimeUpdate@@QAEXII@Z	landed	Ghidra owner RVA 0x00297EB0; inlined calcSleepDelay plus BFME object pointer at offset 0x08 produces exact 71-byte retail body
 ?friend_newModuleInstance@AutoAbilityBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail AutoAbilityBehavior registration thunk 0x00436FC5 resolves to unique 96-byte Ghidra factory at RVA 0x00114F10
 ?parseProductionCostChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z	landed	Retail field table and Ghidra owner 0x004E2650 prove identity; BFME cost map offset 0x60 plus local map operator pin yields exact 83-byte body
+?parseProductionTimeChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z	landed	Ghidra owner RVA 0x000E2DA0; BFME AsciiString overlay and map at offset 0x6C restore exact 134-byte retail SEH body

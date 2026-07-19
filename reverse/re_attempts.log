@@ -1619,3 +1619,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@FXListDie@@SAPAVModuleData@@PAVINI@@@Z	landed	Corrected exact body; ModuleFactory registration dp054 thunk 0x406717 reaches unique RVA 0x123590 and Ghidra confirms the 107-byte boundary
 ?friend_newModuleInstance@CrushDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	ModuleFactory registration cp055 thunk 0x444E22 reaches unique RVA 0x117900; Ghidra confirms 96-byte boundary and disproves prior 0x11E2D0 placement
 ?friend_newModuleInstance@HeroDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	ModuleFactory registration cp056 thunk 0x43BCFA reaches unique RVA 0x11FCF0; Ghidra confirms 96-byte boundary and 0x14 allocation
+?friend_newModuleInstance@CreateCrateDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	ModuleFactory registration cp057 thunk 0x41A9D8 reaches unique RVA 0x117760; Ghidra confirms 96-byte boundary and disproves prior 0x11E2D0 placement

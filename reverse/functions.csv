@@ -7533,7 +7533,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleData@TechBuildingBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001170D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@MinefieldBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001145D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@BattleBusSlowDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011B6C0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
-?friend_newModuleInstance@CreateCrateDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleInstance@CreateCrateDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117760,96,Code/masm_dumps/CreateCrateDie_friend_newModuleInstance.asm,matched,retail ModuleFactory cp057 Ghidra confirmed
 ?friend_newModuleInstance@CreateObjectDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@CrushDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117900,96,Code/masm_dumps/CrushDie_friend_newModuleInstance.asm,matched,retail ModuleFactory cp055 Ghidra confirmed
 ?friend_newModuleInstance@DamDie@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

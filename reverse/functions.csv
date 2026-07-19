@@ -7522,7 +7522,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleInstance@CountermeasuresBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117290,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@InstantDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@SlowDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001142A0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
-?friend_newModuleData@SlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x0011DD90,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleData@ModelConditionUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0011DD90,110,Code/masm_dumps/ModelConditionUpgrade_friend_newModuleData.asm,matched,Retail registration dp169 proves ModelConditionUpgrade data factory
 ?friend_newModuleInstance@NeutronMissileSlowDeathBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117290,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@OverchargeBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001170D0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@RiderChangeContain@@SAPAVModuleData@@PAVINI@@@Z,,0x001195C0,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
@@ -10514,7 +10514,8 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??_GLadderInfo@@QAEPAXI@Z,,0x0062AAE0,30,Code/masm_dumps/LadderInfo_scalar_destructor.asm,matched,Ghidra-bound deleting destructor
 ??_GLadderList@@QAEPAXI@Z,,0x006306D0,30,Code/masm_dumps/LadderList_scalar_destructor.asm,matched,Ghidra-bound deleting destructor
 ?getEnergyProduction@ThingTemplate@@QBEHXZ,,0x00478E30,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound ThingTemplate accessor
-?friend_newModuleData@SpawnBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001154F0,110,Code/masm_dumps/SpawnBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleData@SlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001154F0,110,Code/masm_dumps/SlowDeathBehavior_friend_newModuleData.asm,matched,Retail registration dp020 proves SlowDeathBehavior data factory
+?friend_newModuleData@SpawnBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x0012AAC0,110,Code/masm_dumps/SpawnBehavior_friend_newModuleData.asm,matched,Retail registration dp021 proves SpawnBehavior data factory
 ?sawFullGameList@GameSpyInfo@@UAEXXZ,,0x00637180,5,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,Vtable-bound GameSpyInfo mutator
 ?getMOTD@GameSpyInfo@@UAEABVAsciiString@@XZ,,0x006306B0,4,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,Vtable-bound GameSpyInfo accessor
 ?getEnergyBonus@ThingTemplate@@QBEHXZ,,0x00478E40,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound ThingTemplate accessor

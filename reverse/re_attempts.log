@@ -1553,3 +1553,6 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@GrantScienceUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false 0x001153E0 alias; class is absent from BFME retail ModuleFactory registration
 ?friend_newModuleData@RadarUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false alias at 0x001153E0; retail registration resolves RadarUpgrade dp160 to 0x0012B530
 ?friend_newModuleData@ReplaceObjectUpgrade@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false 0x001153E0 alias; class is absent from BFME retail ModuleFactory registration
+?friend_newModuleData@ModelConditionUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp169 resolves uniquely to 110-byte Ghidra body RVA 0x0011DD90
+?friend_newModuleData@SlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp020 corrects owner to 110-byte body RVA 0x001154F0
+?friend_newModuleData@SpawnBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp021 resolves uniquely to 110-byte body RVA 0x0012AAC0

@@ -10681,3 +10681,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@GiantBirdSlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00115850,110,Code/masm_dumps/GiantBirdSlowDeathBehavior_friend_newModuleData.asm,matched,Retail-only GiantBirdSlowDeathBehavior module-data factory
 ?GadgetListBoxSetSelected@@YAXPAVGameWindow@@PBHH@Z,,0x004B7840,41,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box selection message id
 ?getPitchShift@AudioEventRTS@@QBEMXZ,,0x000B21C0,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Ghidra-bound BFME pitch-shift offset
+?friend_newModuleData@ClearanceTestingSlowDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00117310,110,Code/masm_dumps/ClearanceTestingSlowDeathBehavior_friend_newModuleData.asm,matched,Retail-only ClearanceTestingSlowDeathBehavior module-data factory

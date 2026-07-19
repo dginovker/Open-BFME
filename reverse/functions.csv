@@ -10691,3 +10691,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@CastleMemberBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114550,96,Code/masm_dumps/CastleMemberBehavior_friend_newModuleInstance.asm,matched,Retail-only CastleMemberBehavior instance factory
 ?friend_newModuleInstance@BuildingBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114670,96,Code/masm_dumps/BuildingBehavior_friend_newModuleInstance.asm,matched,Retail-only BuildingBehavior instance factory
 ?GadgetListBoxSetItemData@@YAXPAVGameWindow@@PAXHH@Z,,0x004B84A0,62,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box message id
+?GadgetListBoxGetItemData@@YAPAXPAVGameWindow@@HH@Z,,0x004B84F0,72,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,BFME list-box message id

@@ -2701,7 +2701,7 @@ void *GadgetListBoxGetItemData( GameWindow *listbox, Int row, Int column)
 
 	if (listbox)
 	{
-		TheWindowManager->winSendSystemMsg( listbox, GLM_GET_ITEM_DATA, (WindowMsgData)&pos, (WindowMsgData)&data);
+		TheWindowManager->winSendSystemMsg( listbox, 0x4020, (WindowMsgData)&pos, (WindowMsgData)&data);
 	}
 	return (data);
 	

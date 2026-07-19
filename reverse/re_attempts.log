@@ -1511,3 +1511,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@BuildingBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Ghidra owner 0x114670 is unique 96-byte BuildingBehavior registration target; exact MASM allocates 0x24 and calls ctor thunk 0xB631.
 ?GadgetListBoxSetItemData@@YAXPAVGameWindow@@PAXHH@Z	landed	Ghidra owner 0x4B84A0 is 62 bytes; BFME GLM_SET_ITEM_DATA message 0x4021 makes native wrapper exact.
 ?getDelay@AudioEventRTS@@QBEMXZ	blocked	Five identical d94154c3 retail owners; no source caller, export, symbol, or Ghidra caller edge binds the anonymous thunks 36A52/16F1D/32D30/3316D/10776.
+?GadgetListBoxGetItemData@@YAPAXPAVGameWindow@@HH@Z	landed	Ghidra owner 0x4B84F0 is 72 bytes; BFME GLM_GET_ITEM_DATA message 0x4020 makes native wrapper exact.

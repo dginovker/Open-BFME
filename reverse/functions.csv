@@ -7588,7 +7588,8 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleInstance@ToppleUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117290,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@WeaponBonusUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00117C40,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@WeaponBonusUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001236C0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
-?friend_newModuleData@WorkerAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001152C0,110,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleData@BezierProjectileBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001152C0,110,Code/masm_dumps/BezierProjectileBehavior_friend_newModuleData.asm,matched,Retail registration dp017 proves BezierProjectileBehavior data factory
+?friend_newModuleData@WorkerAIUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011C0E0,110,Code/masm_dumps/WorkerAIUpdate_friend_newModuleData.asm,matched,Retail registration dp143 proves WorkerAIUpdate data factory
 ?friend_newModuleData@PowerPlantUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00114B50,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@EMPUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00114200,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@ActiveShroudUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x001153E0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
@@ -10503,16 +10504,16 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?getBoundingCircleRadius@GeometryInfo@@QBEMXZ,,0x005E7B90,4,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound GeometryInfo accessor
 ?friend_newModuleData@ClickReactionBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114C60,107,Code/masm_dumps/ClickReactionBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getFrame@GameLogic@@QAEIXZ,,0x00478490,4,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound GameLogic accessor
-?friend_newModuleData@AutoAbilityBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114E80,107,Code/masm_dumps/AutoAbilityBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleData@SiegeDockingBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114E80,107,Code/masm_dumps/SiegeDockingBehavior_friend_newModuleData.asm,matched,Retail registration dp013 proves SiegeDockingBehavior data factory
 ??0LadderInfo@@QAE@XZ,,0x0062A910,161,Code/masm_dumps/LadderInfo_constructor.asm,matched,Ghidra-bound retail constructor
 ?getUpdatePhase@ObjectWeaponStatusHelper@@MBE?AW4SleepyUpdatePhase@@XZ,,0x0005B810,6,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound virtual accessor
-?friend_newModuleData@DualWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114F90,107,Code/masm_dumps/DualWeaponBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleData@AutoAbilityBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x00114F90,107,Code/masm_dumps/AutoAbilityBehavior_friend_newModuleData.asm,matched,Retail registration dp014 proves AutoAbilityBehavior data factory
 ??0LadderList@@QAE@XZ,,0x0062C020,925,Code/masm_dumps/LadderList_constructor.asm,matched,Ghidra-bound retail constructor
 ?getBodyModule@Object@@QBEPAVBodyModuleInterface@@XZ,,0x00478720,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Object accessor
-?friend_newModuleData@AimWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001150A0,107,Code/masm_dumps/AimWeaponBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleData@DualWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001150A0,107,Code/masm_dumps/DualWeaponBehavior_friend_newModuleData.asm,matched,Retail registration dp015 proves DualWeaponBehavior data factory
 ??1LadderList@@QAE@XZ,,0x0062AB10,452,Code/masm_dumps/LadderList_destructor.asm,matched,Ghidra-corrected retail destructor
 ?getPhysics@Object@@QAEPAVPhysicsBehavior@@XZ,,0x00478770,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Object accessor
-?friend_newModuleData@BezierProjectileBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001151B0,107,Code/masm_dumps/BezierProjectileBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleData@AimWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x001151B0,107,Code/masm_dumps/AimWeaponBehavior_friend_newModuleData.asm,matched,Retail registration dp016 proves AimWeaponBehavior data factory
 ?friend_getRadarData@Object@@QAEPAVRadarObject@@XZ,,0x00478750,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Object accessor
 ?friend_newModuleData@InstantDeathBehavior@@SAPAVModuleData@@PAVINI@@@Z,,0x0011AA70,107,Code/masm_dumps/InstantDeathBehavior_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ?getEnergy@Player@@QAEPAVEnergy@@XZ,,0x007EA6B0,7,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,Ghidra-bound Player accessor

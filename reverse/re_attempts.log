@@ -1537,3 +1537,9 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@AutoAbilityBehavior@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail AutoAbilityBehavior registration thunk 0x00436FC5 resolves to unique 96-byte Ghidra factory at RVA 0x00114F10
 ?parseProductionCostChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z	landed	Retail field table and Ghidra owner 0x004E2650 prove identity; BFME cost map offset 0x60 plus local map operator pin yields exact 83-byte body
 ?parseProductionTimeChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z	landed	Ghidra owner RVA 0x000E2DA0; BFME AsciiString overlay and map at offset 0x6C restore exact 134-byte retail SEH body
+?friend_newModuleData@SiegeDockingBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp013 and thunk prove corrected 107-byte owner at RVA 0x00114E80
+?friend_newModuleData@AutoAbilityBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp014 corrects owner to RVA 0x00114F90; payload byte-verified
+?friend_newModuleData@DualWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp015 corrects owner to RVA 0x001150A0; payload byte-verified
+?friend_newModuleData@AimWeaponBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp016 corrects owner to RVA 0x001151B0; payload byte-verified
+?friend_newModuleData@BezierProjectileBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp017 uniquely resolves to Ghidra body RVA 0x001152C0 size 110
+?friend_newModuleData@WorkerAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ModuleFactory dp143 uniquely resolves to Ghidra body RVA 0x0011C0E0 size 110; not an ICF alias of Bezier

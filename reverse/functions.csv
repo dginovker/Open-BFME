@@ -2022,7 +2022,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GadgetComboBoxSetItemData@@YAXPAVGameWindow@@HPAX@Z,,0x004B3CB0,41,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,
 ?GadgetComboBoxSetMaxChars@@YAXPAVGameWindow@@H@Z,,0x004B3980,28,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,
 ?GadgetComboBoxSetSelectedPos@@YAXPAVGameWindow@@H_N@Z,,0x004B3C70,42,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,
-?GadgetListBoxAddEntryImage@@YAHPAVGameWindow@@PBVImage@@HHHH_NH@Z,,0x0001712A,5,Code/masm_dumps/_GadgetListBoxAddEntryImage__YAHPAVGameWindow__PBVImage__HHHH_NH_Z_1712A.asm,matched,MASM exact retail dump
+?GadgetListBoxAddEntryImage@@YAHPAVGameWindow@@PBVImage@@HHHH_NH@Z,0x0001712A,0x004B71A0,97,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,Native body replaces thunk-only MASM ownership
 ?GadgetListBoxAddEntryImage@@YAHPAVGameWindow@@PBVImage@@HH_NH@Z,,0x004B7220,43,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?GadgetListBoxGetBottomVisibleEntry@@YAHPAVGameWindow@@@Z,,0x004B78B0,27,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?GadgetListBoxGetDownButton@@YAPAVGameWindow@@PAV1@@Z,,0x0047A540,23,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,

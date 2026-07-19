@@ -2255,7 +2255,7 @@ Int GadgetListBoxAddEntryImage( GameWindow *listbox, const Image *image,
 	addInfo.height = hight;
 	addInfo.width = width;
 	/// @TODO: Don't do this type cast!
-	index = (Int) TheWindowManager->winSendSystemMsg( listbox, GLM_ADD_ENTRY, (WindowMsgData)&addInfo, color );
+	index = (Int) TheWindowManager->winSendSystemMsg( listbox, 0x4011, (WindowMsgData)&addInfo, color );
 	return (index);
 }  // end GadgetListBoxAddEntryImage
 

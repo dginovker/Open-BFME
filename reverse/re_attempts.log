@@ -1688,3 +1688,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleData@GettingBuiltBehavior@@SAPAVModuleData@@PAVINI@@@Z	no-match	Removed false 0x129E40 ownership: retail AutoHeal registration uniquely calls this 54-byte body; GettingBuilt data resolves separately at 0x114320.
 ?friend_newModuleData@GettingBuiltBehavior@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail GettingBuilt registration data thunk 0x444ACB resolves 0x114320; Ghidra size 107, alloc 0x40; exact-overlap aliases retained pending their own registration audits.
 ?friend_newModuleData@StructureCollapseUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x87: data thunk 0x442A46 resolves 0x128B10; Ghidra size 110, alloc 0xF8, unique reference.
+??0AutoHealBehavior@@QAE@PAVThing@@PBVModuleData@@@Z	landed	AutoHeal factory at 0x114200 uniquely calls constructor thunk 0x48B9E -> 0x1EE950; Ghidra exact 5-byte thunk.

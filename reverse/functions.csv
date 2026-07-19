@@ -10793,3 +10793,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleData@EmotionTrackerUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011CEE0,107,Code/masm_dumps/EmotionTrackerUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x96; Ghidra confirmed
 ?friend_newModuleData@RubbleRiseUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00127BD0,110,Code/masm_dumps/RubbleRiseUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x88; Ghidra confirmed
 ?friend_newModuleInstance@BaseUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011D110,96,Code/masm_dumps/BaseUpgrade_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x99; Ghidra confirmed
+?friend_newModuleData@BaseUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0011D190,107,Code/masm_dumps/BaseUpgrade_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x99; Ghidra confirmed

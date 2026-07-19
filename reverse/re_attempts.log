@@ -1777,3 +1777,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@RubbleRiseUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Corrected false BattleBus ownership: retail ordinal 0x88 thunk 0x4325CE resolves unique 0x11B6C0; Ghidra size 96, ctor thunk 0x2B0E9. BattleBus is absent from BFME retail.
 ?friend_newModuleData@RubbleRiseUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x88 data thunk 0x446F3D resolves unique 0x127BD0; Ghidra size 110, alloc 0xD4, ctor thunk 0x14DAD.
 ?friend_newModuleInstance@BaseUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x99 thunk 0x41E236 resolves unique 0x11D110; Ghidra size 96, alloc 0x1C.
+?friend_newModuleData@BaseUpgrade@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x99 data thunk 0x401D2F resolves unique 0x11D190; Ghidra size 107, alloc 0x7C.

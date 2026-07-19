@@ -8674,7 +8674,7 @@ _$E2,,0x00C70930,40,Code/Libraries/Source/WWVegas/WWLib/slnode.cpp,matched,
 ?friend_newModuleInstance@W3DDebrisDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00116F30,96,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
 ?friend_newModuleInstance@W3DDefaultDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E2D0,96,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
 ?friend_newModuleData@W3DLaserDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x00114320,107,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
-?friend_newModuleInstance@W3DTankDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115F30,99,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
+?friend_newModuleInstance@HordeTransportContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115F30,99,Code/masm_dumps/HordeTransportContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp039 Ghidra confirmed
 ?friend_newModuleData@W3DTankDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x0011C5B0,110,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
 ?friend_newModuleInstance@W3DOverlordTankDraw@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115F30,99,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,
 ?friend_newModuleData@W3DOverlordTankDraw@@SAPAVModuleData@@PAVINI@@@Z,,0x0011A950,110,Code/GameEngineDevice/Source/W3DDevice/Common/Thing/W3DModuleFactory.cpp,matched,

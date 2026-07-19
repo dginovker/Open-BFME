@@ -10716,3 +10716,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@GarrisonContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00116040,99,Code/masm_dumps/GarrisonContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp034 Ghidra confirmed
 ?friend_newModuleInstance@TransportContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00115C50,99,Code/masm_dumps/TransportContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp035 Ghidra confirmed
 ?friend_newModuleInstance@SiegeEngineContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001162E0,99,Code/masm_dumps/SiegeEngineContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp036 Ghidra confirmed
+?friend_newModuleInstance@HordeSiegeEngineContain@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x001163F0,99,Code/masm_dumps/HordeSiegeEngineContain_friend_newModuleInstance.asm,matched,retail ModuleFactory cp037 Ghidra confirmed

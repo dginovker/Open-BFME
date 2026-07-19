@@ -7560,6 +7560,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleData@FlammableUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001146F0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@TensileFormationUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011E880,99,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@HordeUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00114320,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
+?friend_newModuleInstance@LaserUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00118D70,96,Code/masm_dumps/LaserUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x5F; Ghidra confirmed
 ?friend_newModuleData@LaserUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001171F0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@PointDefenseLaserUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00113FB0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@PointDefenseLaserUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x001236C0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

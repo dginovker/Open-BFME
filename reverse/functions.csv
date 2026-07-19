@@ -10808,3 +10808,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?friend_newModuleInstance@CastleUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011DEA0,96,Code/masm_dumps/CastleUpgrade_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0xAB; Ghidra confirmed
 ?friend_newModuleData@CastleUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0012BA80,65,Code/masm_dumps/CastleUpgrade_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0xAB; CC-delimited body
 ?friend_newModuleInstance@GeometryUpgrade@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011DF20,96,Code/masm_dumps/GeometryUpgrade_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0xAC; Ghidra confirmed
+?friend_newModuleData@GeometryUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0011DFA0,110,Code/masm_dumps/GeometryUpgrade_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0xAC; Ghidra confirmed

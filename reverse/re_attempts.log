@@ -1924,3 +1924,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?createNewGameSpyInfoInterface@GameSpyInfoInterface@@SAPAV1@XZ	landed	Ghidra SetUpGameSpy call chain proves true unclaimed factory body 0x637760/89; exact MASM verified despite BFME GameSpyInfo size drift
 ?isAnyKindOf@Thing@@QBE_NABV?$BitFlags@$0HE@@@@Z	landed	Ghidra corrected unrelated 0x77B179/35 vote to true 0x132AE0/41; exact MASM verified with ThingTemplate mask at retail offset 0xC8
 ?isKindOfMulti@Thing@@QBE_NABV?$BitFlags@$0HE@@@0@Z	landed	Ghidra corrected unrelated 0x77B179/35 vote to true 0x132B20/41; exact MASM verified with ThingTemplate mask at retail offset 0xC8
+??1CrushDieModuleData@@UAE@XZ	landed	Ghidra corrected padding vote 0xC70FBB/92 to unique vtable-owned destructor 0x1255C0/77; exact MASM verified

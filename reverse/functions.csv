@@ -7571,6 +7571,7 @@ _fmodf,,0x00097070,14,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse
 ?friend_newModuleData@ExperienceScalarUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0011DB70,107,Code/masm_dumps/ExperienceScalarUpgrade_friend_newModuleData.asm,matched,Retail registration dp167 uniquely proves ExperienceScalarUpgrade data factory
 ?friend_newModuleData@UnpauseSpecialPowerUpgrade@@SAPAVModuleData@@PAVINI@@@Z,,0x0011D7C0,107,Code/masm_dumps/UnpauseSpecialPowerUpgrade_friend_newModuleData.asm,matched,Retail registration dp163 uniquely proves UnpauseSpecialPowerUpgrade data factory
 ?friend_newModuleInstance@RadiusDecalUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011A580,96,Code/masm_dumps/RadiusDecalUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x50; Ghidra confirmed
+?friend_newModuleData@RadiusDecalUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00123E50,50,Code/masm_dumps/RadiusDecalUpdate_friend_newModuleData.asm,matched,retail ModuleFactory registration ordinal 0x50; thunk and ret boundary confirmed
 ?friend_newModuleData@NeutronMissileUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118460,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleInstance@OCLUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x00113FB0,96,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,
 ?friend_newModuleData@OCLUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x00118AA0,107,Code/GameEngine/Source/Common/Thing/ModuleFactory.cpp,matched,

@@ -10884,3 +10884,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0HotKeyManager@@QAE@XZ,,0x005B39E0,146,Code/masm_dumps/HotKeyManager_ctor.asm,matched,Correct retail body from GameClient init thunk 0x0000B389 and TheHotKeyManager naming sequence
 ?playerTooltip@@YAXPAVGameWindow@@PAVWinInstanceData@@I@Z,,0x004FA800,1517,Code/masm_dumps/playerTooltip.asm,matched,Correct retail body installed by WOLLobbyMenuInit and anchored by eleven tooltip strings
 ??0SidesList@@QAE@XZ,,0x0019EA80,365,Code/masm_dumps/SidesList_ctor.asm,matched,Correct retail body from GameEngine init thunk 0x00032EC5 and TheSidesList naming sequence
+?WOLLoginMenuInit@@YAXPAVWindowLayout@@PAX@Z,,0x00500A20,3164,Code/masm_dumps/WOLLoginMenuInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x0000CAEA

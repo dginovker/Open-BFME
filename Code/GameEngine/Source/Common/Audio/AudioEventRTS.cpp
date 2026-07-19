@@ -695,7 +695,6 @@ void AudioEventRTS::setIsLogicalAudio( Bool isLogicalAudio )
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?getIsLogicalAudio@AudioEventRTS@@ present-unmatched
 Bool AudioEventRTS::getIsLogicalAudio( void ) const
 {
 	return m_isLogicalAudio;

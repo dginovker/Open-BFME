@@ -1476,3 +1476,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?getObjectID@AudioEventRTS@@QAE?AW4ObjectID@@XZ	landed	Ghidra audio thunk and adjacent setters prove RVA 0xB2280; exact C++ BFME offsets; ICF alias of BattlePlanUpdate getActiveBattlePlan
 ?getHandleToKill@AudioEventRTS@@QBEIXZ	landed	Ghidra thunk 0x1314C closes unique RVA 0xB2320/4; native C++ getter exactly matches proven BFME +0x10 member offset
 ?GadgetComboBoxSetEnabledTextColors@@YAXPAVGameWindow@@HH@Z	landed	Corrected stale RVA to Ghidra 0x4B3AC0/58; explicit BFME ComboBoxData list +0x2c and edit +0x28 offsets make existing C++ exact
+?getIsLogicalAudio@AudioEventRTS@@QBE_NXZ	landed	Ghidra owner RVA 0x000B2340 bytes 8a4141c3 returns Bool at this+0x41; paired matched setter proves field identity; native C++ exact

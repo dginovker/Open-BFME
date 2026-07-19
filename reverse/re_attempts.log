@@ -1766,3 +1766,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@WorkerAIUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Supersedes prior DCE assumption: retail registration ordinal 0x8F thunk 0x44476F resolves unique 0x11C060; Ghidra size 99, alloc 0x508.
 ?friend_newModuleInstance@AnimalAIUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail registration ordinal 0x8D: instance thunk 0x4359C2 resolves unique 0x116990; Ghidra size 99, alloc 0x358.
 ?friend_newModuleData@AnimalAIUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail registration ordinal 0x8D: data thunk 0x42FE23 resolves unique 0x116A10; Ghidra size 155, alloc 0x80.
+?friend_newModuleInstance@TransportAIUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Supersedes prior DCE assumption: retail registration ordinal 0x8B thunk 0x41E763 resolves unique 0x11BD80; Ghidra size 99, alloc 0x340.

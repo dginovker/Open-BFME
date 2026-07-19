@@ -2030,7 +2030,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GadgetListBoxGetListLength@@YAHPAVGameWindow@@@Z,,0x004B77A0,26,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?GadgetListBoxGetNumColumns@@YAHPAVGameWindow@@@Z,,0x004B79B0,25,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?GadgetListBoxGetText@@YA?AVUnicodeString@@PAVGameWindow@@HH@Z,,0x004BBC70,48,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
-?GadgetListBoxGetTextAndColor@@YA?AVUnicodeString@@PAVGameWindow@@PAHHH@Z,,0x00044C0B,5,Code/masm_dumps/_GadgetListBoxGetTextAndColor__YA_AVUnicodeString__PAVGameWindow__PAHHH_Z_44C0B.asm,matched,MASM exact retail dump
+?GadgetListBoxGetTextAndColor@@YA?AVUnicodeString@@PAVGameWindow@@PAHHH@Z,0x00044C0B,0x004BBB00,288,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,Native body replaces thunk-only MASM ownership
 ?GadgetListBoxGetTopVisibleEntry@@YAHPAVGameWindow@@@Z,,0x004B7930,27,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?GadgetListBoxSetAudioFeedback@@YAXPAVGameWindow@@_N@Z,,0x004B7960,25,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?GadgetProgressBarSetDisabledBarBorderColor@@YAXPAVGameWindow@@H@Z,,0x0047AA00,17,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,

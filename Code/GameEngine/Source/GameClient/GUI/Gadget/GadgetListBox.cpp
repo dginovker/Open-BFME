@@ -2188,7 +2188,7 @@ UnicodeString GadgetListBoxGetTextAndColor( GameWindow *listbox, Color *color, I
 	ICoord2D pos;
 	pos.x = column;
 	pos.y = row;
-	TheWindowManager->winSendSystemMsg( listbox, GLM_GET_TEXT, (WindowMsgData)&pos, (WindowMsgData)&tAndC );
+	TheWindowManager->winSendSystemMsg( listbox, 0x401A, (WindowMsgData)&pos, (WindowMsgData)&tAndC );
 	
 
 		*color = tAndC.color;

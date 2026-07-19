@@ -10557,6 +10557,7 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0ProductionPrerequisite@@QAE@XZ,,0x000E57A0,133,Code/masm_dumps/ProductionPrerequisite_ctor.asm,matched,Ghidra-bound BFME constructor layout
 ?friend_newModuleInstance@DelayedLuaEventUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011BC70,96,Code/masm_dumps/DelayedLuaEventUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x4C; Ghidra confirmed
 ?friend_newModuleData@DelayedLuaEventUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011BCF0,107,Code/masm_dumps/DelayedLuaEventUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
+?friend_newModuleInstance@OneRingPenaltyUpdate@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z,,0x0011A3E0,96,Code/masm_dumps/OneRingPenaltyUpdate_friend_newModuleInstance.asm,matched,retail ModuleFactory registration ordinal 0x4E; Ghidra confirmed
 ?friend_newModuleData@OneRingPenaltyUpdate@@SAPAVModuleData@@PAVINI@@@Z,,0x0011A460,107,Code/masm_dumps/OneRingPenaltyUpdate_friend_newModuleData.asm,matched,Ghidra-bound BFME factory body
 ??0GameSpyMiscPreferences@@QAE@XZ,,0x000AB910,192,Code/masm_dumps/GameSpyMiscPreferences_ctor.asm,matched,Unique BFME profile-path constructor
 ?getRawTileData@WorldHeightMap@@QAE_NFHPAEH@Z,,0x00747D70,217,Code/masm_dumps/WorldHeightMap_getRawTileData.asm,matched,Ghidra-bound BFME source-tile copy body

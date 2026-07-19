@@ -1853,3 +1853,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?friend_newModuleInstance@CombineHordeSpecialPower@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xEF thunk 0x43FCB0 resolves unique 0x121840. Ghidra size 96 alloc 0x2C.
 ?friend_newModuleData@CombineHordeSpecialPower@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xEF thunk 0x41F348 resolves unique 0x1218C0. Ghidra size 110 alloc 0x214.
 ?friend_newModuleData@SiegeDeployHordeSpecialPower@@SAPAVModuleData@@PAVINI@@@Z	landed	Retail ordinal 0xE5 thunk 0x41DCF5 resolves unique 0x120DF0. Ghidra size 110 alloc 0x1D4.
+?friend_newModuleInstance@SiegeDeployHordeSpecialPower@@SAPAVModule@@PAVThing@@PBVModuleData@@@Z	landed	Retail ordinal 0xE5 thunk 0x42394D resolves ICF-shared 0x120D70 already owned by DynamicGeometryInfoUpdate. Ghidra size 96 alloc 0x4C.

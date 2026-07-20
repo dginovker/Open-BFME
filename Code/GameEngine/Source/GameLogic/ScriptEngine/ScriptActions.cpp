@@ -6085,11 +6085,20 @@ void ScriptActions::doPlayerSetRankLevel(const AsciiString& playerName, Int leve
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?doMapSetRankLevelLimit@ScriptActions@@IAEXH@Z present-unmatched
+// ?doMapSetRankLevelLimit@ScriptActions@@IAEXH@Z
 void ScriptActions::doMapSetRankLevelLimit(Int level)
 {
+	// BFME m_rankLevelLimit at GameLogic+0x110 (ZH packs it earlier).
+	struct BfmeGameLogicRankLimit {
+		UnsignedByte _pad[0x110];
+		Int m_rankLevelLimit;
+	};
 	if (TheGameLogic)
-		TheGameLogic->setRankLevelLimit(level);
+	{
+		if (level < 1)
+			level = 1;
+		((BfmeGameLogicRankLimit *)TheGameLogic)->m_rankLevelLimit = level;
+	}
 }
 
 //-------------------------------------------------------------------------------------------------

@@ -10940,3 +10940,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?doRadarEnable@ScriptActions@@IAEXXZ,,0x002EFD60,10,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,ICF with forceOn(false) @ Radar+0xd
 ?doFreezeTime@ScriptActions@@IAEXXZ,,0x0046ECF0,11,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,tail-call TheScriptEngine->doFreezeTime; pin 0x465B80
 ?doWeather@ScriptActions@@IAEX_N@Z,,0x002EF670,11,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,tail-call TheSnowManager->setVisible
+?doMapSetRankLevelLimit@ScriptActions@@IAEXH@Z,,0x002F0090,33,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,GameLogic+0x110 rank level limit

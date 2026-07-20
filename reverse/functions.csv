@@ -10926,3 +10926,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?populateQMColorComboBox@@YAXAAVQuickMatchPreferences@@@Z,,0x00505DB0,406,Code/masm_dumps/populateQMColorComboBox.asm,matched,Exact retail MASM; entry thunk and multiplayer-color tooltip population loop prove ownership
 ?tryToIgnite@FlammableUpdate@@QAEXXZ,,0x00293990,961,Code/masm_dumps/FlammableUpdate_tryToIgnite.asm,matched,Ghidra-owned BFME ignition path
 ?parseInGameUIDefinition@INI@@SAXPAV1@@Z,,0x0043AAA0,36,Code/masm_dumps/INI_parseInGameUIDefinition.asm,matched,Ghidra-owned BFME UI parser dispatch
+?parseTurretSweep@TurretAIData@@SAXPAVINI@@PAX1PBX@Z,,0x0018C3E0,48,Code/masm_dumps/TurretAIData_parseTurretSweep.asm,matched,Ghidra-owned BFME turret-angle parser

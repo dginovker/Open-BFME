@@ -214,7 +214,6 @@ static void parseTWS(INI* ini, void * /*instance*/, void * store, const void* /*
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?parseTurretSweep@TurretAIData@@SAXPAVINI@@PAX1PBX@Z present-unmatched
 void TurretAIData::parseTurretSweep(INI* ini, void *instance, void * /*store*/, const void* userData)
 {
 	TurretAIData* self = (TurretAIData*)instance;
@@ -983,7 +982,6 @@ UnsignedInt TurretAI::friend_getInterTurretDelay()
 //----------------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------------------------------------------------------
-// ?onEnter@TurretAIAimTurretState@@UAE?AW4StateReturnType@@XZ present-unmatched
 StateReturnType TurretAIAimTurretState::onEnter()
 {
 	// don't set the "turret-rotate" bit here; wait and see if we really turn or not.
@@ -1247,7 +1245,6 @@ void TurretAIAimTurretState::onExit( StateExitType status )
 //-------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------------------------------------------------------
-// ?onEnter@TurretAIRecenterTurretState@@UAE?AW4StateReturnType@@XZ present-unmatched
 StateReturnType TurretAIRecenterTurretState::onEnter()
 {
 	return STATE_CONTINUE;

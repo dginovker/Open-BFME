@@ -5448,10 +5448,55 @@ void ScriptActions::doSoundRemoveType( const AsciiString& soundEventName )
 //-------------------------------------------------------------------------------------------------
 /** doSoundOverrideVolume */
 //-------------------------------------------------------------------------------------------------
-// ?doSoundOverrideVolume@ScriptActions@@IAEXABVAsciiString@@M@Z present-unmatched
+// BFME Audio vtable +0xa0: setAudioEventVolumeOverride(name, vol, 0).
+class BfmeAudioVtbl_a0 {
+public:
+	virtual void _aA0_0() = 0;
+	virtual void _aA0_1() = 0;
+	virtual void _aA0_2() = 0;
+	virtual void _aA0_3() = 0;
+	virtual void _aA0_4() = 0;
+	virtual void _aA0_5() = 0;
+	virtual void _aA0_6() = 0;
+	virtual void _aA0_7() = 0;
+	virtual void _aA0_8() = 0;
+	virtual void _aA0_9() = 0;
+	virtual void _aA0_10() = 0;
+	virtual void _aA0_11() = 0;
+	virtual void _aA0_12() = 0;
+	virtual void _aA0_13() = 0;
+	virtual void _aA0_14() = 0;
+	virtual void _aA0_15() = 0;
+	virtual void _aA0_16() = 0;
+	virtual void _aA0_17() = 0;
+	virtual void _aA0_18() = 0;
+	virtual void _aA0_19() = 0;
+	virtual void _aA0_20() = 0;
+	virtual void _aA0_21() = 0;
+	virtual void _aA0_22() = 0;
+	virtual void _aA0_23() = 0;
+	virtual void _aA0_24() = 0;
+	virtual void _aA0_25() = 0;
+	virtual void _aA0_26() = 0;
+	virtual void _aA0_27() = 0;
+	virtual void _aA0_28() = 0;
+	virtual void _aA0_29() = 0;
+	virtual void _aA0_30() = 0;
+	virtual void _aA0_31() = 0;
+	virtual void _aA0_32() = 0;
+	virtual void _aA0_33() = 0;
+	virtual void _aA0_34() = 0;
+	virtual void _aA0_35() = 0;
+	virtual void _aA0_36() = 0;
+	virtual void _aA0_37() = 0;
+	virtual void _aA0_38() = 0;
+	virtual void _aA0_39() = 0;
+	virtual void setAudioEventVolumeOverride(const AsciiString& name, Real vol, int unused) = 0;
+};
+
 void ScriptActions::doSoundOverrideVolume( const AsciiString& soundEventName, Real newVolume )
 {
-	TheAudio->setAudioEventVolumeOverride(soundEventName, newVolume / 100.0f);
+	((BfmeAudioVtbl_a0 *)TheAudio)->setAudioEventVolumeOverride(soundEventName, newVolume / 100.0f, 0);
 }
 
 //-------------------------------------------------------------------------------------------------

@@ -12021,3 +12021,20 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?SetPrefixAndRadix@Debug@@QAEXPBDH@Z,,0x00889B60,117,Code/masm_dumps/_sa12__SetPrefixAndRadix_Debug__QAEXPBDH_Z_889B60.asm,matched,string-anchor Open-BFME4+Grok HResult:0x
 ?getMusicVolume@OptionPreferences@@QAEMXZ,,0x00091B40,101,Code/masm_dumps/_sa12__getMusicVolume_OptionPreferences__QAEMXZ_91B40.asm,matched,string-anchor Open-BFME4+Grok LanguageFilter
 ?init@ScreenBWFilter@@UAEHXZ,,0x007D0AF0,91,Code/masm_dumps/_sa12__init_ScreenBWFilter__UAEHXZ_7D0AF0.asm,matched,string-anchor Open-BFME4+Grok shaders\monochrome.pso
+?BTREE_treepack@@YAXPAUBTreeEncodeContext@@PAUBTREEMemStruct@@IIIH@Z,,0x00821200,2560,Code/masm_dumps/_sym1__BTREE_treepack__YAXPAUBTreeEncodeContext__PAUBTREEMemStruct__IIIH_Z_821200.asm,matched,symbol-pin Open-BFME4+Grok
+?updateNumPlayersOnline@@YAXXZ,,0x0050BA40,1421,Code/masm_dumps/_sym1__updateNumPlayersOnline__YAXXZ_50BA40.asm,matched,symbol-pin Open-BFME4+Grok
+?Set_Render_Device@DX8Wrapper@@KA_NHHHHH_N00@Z,,0x0090B020,951,Code/masm_dumps/_sym1__Set_Render_Device_DX8Wrapper__KA_NHHHHH_N00_Z_90B020.asm,matched,symbol-pin Open-BFME4+Grok
+??4HLodClass@@QAEAAV0@ABV0@@Z,,0x0097D3B0,932,Code/masm_dumps/_sym1___4HLodClass__QAEAAV0_ABV0__Z_97D3B0.asm,matched,symbol-pin Open-BFME4+Grok
+?ExceptionFilter@DebugExceptionhandler@@SGJPAU_EXCEPTION_POINTERS@@@Z,,0x0088E5F0,728,Code/masm_dumps/_sym1__ExceptionFilter_DebugExceptionhandler__SGJPAU_EXCEPTION_POINTERS___Z_88E5F0.asm,matched,symbol-pin Open-BFME4+Grok
+?Scale@MeshGeometryClass@@QAEXABVVector3@@@Z,,0x00925610,583,Code/masm_dumps/_sym1__Scale_MeshGeometryClass__QAEXABVVector3___Z_925610.asm,matched,symbol-pin Open-BFME4+Grok
+?Make_Geometry_Unique@MeshModelClass@@QAEXXZ,,0x0094EE80,510,Code/masm_dumps/_sym1__Make_Geometry_Unique_MeshModelClass__QAEXXZ_94EE80.asm,matched,symbol-pin Open-BFME4+Grok
+?Initialize@HLodDefClass@@QAEXAAVHLodClass@@@Z,,0x0097CA80,485,Code/masm_dumps/_sym1__Initialize_HLodDefClass__QAEXAAVHLodClass___Z_97CA80.asm,matched,symbol-pin Open-BFME4+Grok
+?_Init_Filters@TextureFilterClass@@SAXW4TextureFilterMode@1@@Z,,0x00920D10,438,Code/masm_dumps/_sym1___Init_Filters_TextureFilterClass__SAXW4TextureFilterMode_1__Z_920D10.asm,matched,symbol-pin Open-BFME4+Grok
+?Multiply@Matrix3D@@SAXABV1@0PAV1@@Z,,0x008D80C0,403,Code/masm_dumps/_sym1__Multiply_Matrix3D__SAXABV1_0PAV1__Z_8D80C0.asm,matched,symbol-pin Open-BFME4+Grok
+??0Animatable3DObjClass@@QAE@PBD@Z,,0x00981EF0,393,Code/masm_dumps/_sym1___0Animatable3DObjClass__QAE_PBD_Z_981EF0.asm,matched,symbol-pin Open-BFME4+Grok
+?Compute_Texture_Coordinate@MatrixMapperClass@@QAEXABVVector3@@PAV2@@Z,,0x0094F300,334,Code/masm_dumps/_sym1__Compute_Texture_Coordinate_MatrixMapperClass__QAEXABVVector3__PAV2__Z_94F300.asm,matched,symbol-pin Open-BFME4+Grok
+?Collide@CollisionMath@@SA_NABVLineSegClass@@ABVAABoxClass@@PAUCastResultStruct@@@Z,,0x008DAC30,318,Code/masm_dumps/_sym1__Collide_CollisionMath__SA_NABVLineSegClass__ABVAABoxClass__PAUCastRes_8DAC30.asm,matched,symbol-pin Open-BFME4+Grok
+?Build_Quaternion@@YA?AVQuaternion@@ABVMatrix3D@@@Z,,0x008DBA40,311,Code/masm_dumps/_sym1__Build_Quaternion__YA_AVQuaternion__ABVMatrix3D___Z_8DBA40.asm,matched,symbol-pin Open-BFME4+Grok
+?Set_Animation@Animatable3DObjClass@@UAEXPAVHAnimClass@@MH@Z,,0x00982190,301,Code/masm_dumps/_sym1__Set_Animation_Animatable3DObjClass__UAEXPAVHAnimClass__MH_Z_982190.asm,matched,symbol-pin Open-BFME4+Grok
+?Cast_Ray_To_Polys@AABTreeClass@@AAE_NPAUCullNodeStruct@1@AAVRayCollisionTestClass@@@Z,,0x0096ADC0,283,Code/masm_dumps/_sym1__Cast_Ray_To_Polys_AABTreeClass__AAE_NPAUCullNodeStruct_1_AAVRayCollis_96ADC0.asm,matched,symbol-pin Open-BFME4+Grok
+?BTREE_decompress@@YAHPAE0@Z,,0x00822FF0,258,Code/masm_dumps/_sym1__BTREE_decompress__YAHPAE0_Z_822FF0.asm,matched,symbol-pin Open-BFME4+Grok

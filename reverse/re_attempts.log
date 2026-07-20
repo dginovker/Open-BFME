@@ -1963,3 +1963,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?canDoSpecialPowerAtLocation@ActionManager@@QAE_NPBVObject@@PBUCoord3D@@W4CommandSourceType@@PBVSpecialPowerTemplate@@0I_N@Z	landed	Ghidra rejected stale 0xC7417 inside the real function; thunk 0x11914 and four action/UI callers prove unique 0xC6930/3094 BFME body
 ?clearGameData@GameLogic@@QAEX_N@Z	blocked	Ghidra rejected stale 0xC6C402; closest BFME reset body 0x396B00/451 is ret 8 with two bool args, so one-bool decorated ownership needs caller/signature reconciliation before landing
 ?TestWaterUpdate@@YAXXZ	landed	Ghidra rejected stale interior 0x7ACC36/1927 range; flush caller editor flag controls strings and clean boundaries prove unique 0x7ACBD0/2108 body
+??1StealthDetectorUpdateModuleData@@UAE@XZ	landed	Factory 0x126BE0 ctor 0x1269F0 vtable 0x108EA48 deleting wrapper reaches 0x126B60/99; exact MASM

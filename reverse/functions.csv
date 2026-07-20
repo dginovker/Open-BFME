@@ -12173,3 +12173,14 @@ __chkstk,,0x009F6C60,61,Code/masm_dumps/_icf3___chkstk_9F6C60.asm,matched,ICF Op
 ?Log_DX8_ErrorCode@@YAXI@Z,,0x0087CAC0,25,Code/masm_dumps/_sym4__Log_DX8_ErrorCode__YAXI_Z_87CAC0.asm,matched,symbol Open-BFME4+Grok
 ?setInputEnabled@BfmeInGameUI_setInputEnabled@@QAEX_N@Z,,0x0043B280,20,Code/masm_dumps/_sym4__setInputEnabled_BfmeInGameUI_setInputEnabled__QAEX_N_Z_43B280.asm,matched,symbol Open-BFME4+Grok
 _IsStatsConnected,,0x009D2B60,15,Code/masm_dumps/_sym4__IsStatsConnected_9D2B60.asm,matched,symbol Open-BFME4+Grok
+?getADynamicLight@RTS3DScene@@QAEPAVW3DDynamicLight@@XZ,,0x00712420,293,Code/masm_dumps/_rn3__getADynamicLight_RTS3DScene__QAEPAVW3DDynamicLight__XZ_712420.asm,matched,reloc-needle Open-BFME4+Grok
+?calcDeltaScroll@W3DView@@AAEXAAUCoord2D@@@Z,,0x0073B6B0,157,Code/masm_dumps/_rn3__calcDeltaScroll_W3DView__AAEXAAUCoord2D___Z_73B6B0.asm,matched,reloc-needle Open-BFME4+Grok
+?getPickRay@W3DView@@AAEXPBUICoord2D@@PAVVector3@@1@Z,,0x007406B0,308,Code/masm_dumps/_rn3__getPickRay_W3DView__AAEXPBUICoord2D__PAVVector3__1_Z_7406B0.asm,matched,reloc-needle Open-BFME4+Grok
+?Clear@?$VectorClass@VRenderDeviceDescClass@@@@UAEXXZ,,0x0090AB20,64,Code/masm_dumps/_rn3__Clear___VectorClass_VRenderDeviceDescClass____UAEXXZ_90AB20.asm,matched,reloc-needle Open-BFME4+Grok
+?Clear@?$DynamicVectorClass@VRenderDeviceDescClass@@@@UAEXXZ,,0x0090B440,67,Code/masm_dumps/_rn3__Clear___DynamicVectorClass_VRenderDeviceDescClass____UAEXXZ_90B440.asm,matched,reloc-needle Open-BFME4+Grok
+?Shutdown@DX8Wrapper@@SAXXZ,,0x0090B640,408,Code/masm_dumps/_rn3__Shutdown_DX8Wrapper__SAXXZ_90B640.asm,matched,reloc-needle Open-BFME4+Grok
+?isWeaponSlotOnTurretAndAimingAtTarget@AIUpdateInterface@@QBE_NW4WeaponSlotType@@PBVObject@@@Z,,0x0026EA90,76,Code/masm_dumps/_rn3__isWeaponSlotOnTurretAndAimingAtTarget_AIUpdateInterface__QBE_NW4Weapo_26EA90.asm,matched,reloc-needle Open-BFME4+Grok
+?getWhichTurretForWeaponSlot@AIUpdateInterface@@QBE?AW4WhichTurretType@@W4WeaponSlotType@@PAM1@Z,,0x0026EBB0,102,Code/masm_dumps/_rn3__getWhichTurretForWeaponSlot_AIUpdateInterface__QBE_AW4WhichTurretType_26EBB0.asm,matched,reloc-needle Open-BFME4+Grok
+?queueForPath@Pathfinder@@QAE_NW4ObjectID@@@Z,,0x003D5540,96,Code/masm_dumps/_rn3__queueForPath_Pathfinder__QAE_NW4ObjectID___Z_3D5540.asm,matched,reloc-needle Open-BFME4+Grok
+?adjustCoordToCell@Pathfinder@@IAEXHH_NAAUCoord3D@@W4PathfindLayerEnum@@@Z,,0x003D6040,116,Code/masm_dumps/_rn3__adjustCoordToCell_Pathfinder__IAEXHH_NAAUCoord3D__W4PathfindLayerEnum_3D6040.asm,matched,reloc-needle Open-BFME4+Grok
+?findSWInfo@InGameUI@@IAEPAVSuperweaponInfo@@HABVAsciiString@@W4ObjectID@@PBVSpecialPowerTemplate@@@Z,,0x00449E70,75,Code/masm_dumps/_rn3__findSWInfo_InGameUI__IAEPAVSuperweaponInfo__HABVAsciiString__W4Object_449E70.asm,matched,reloc-needle Open-BFME4+Grok

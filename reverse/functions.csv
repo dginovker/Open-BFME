@@ -11980,3 +11980,26 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?IsWindowed@Debug@@AAE_NXZ,,0x0088A5F0,78,Code/masm_dumps/_sa10__IsWindowed_Debug__AAE_NXZ_88A5F0.asm,matched,Exact 78B Open-BFME4
 ?beginBlock@XferSave@@,,0x0082B820,78,Code/masm_dumps/_sa10__beginBlock_XferSave___82B820.asm,matched,Exact 78B Open-BFME4
 ?Get_DX8_Texture_Filter_Name@DX8Wrapper@@,,0x00902EC0,71,Code/masm_dumps/_sa10__Get_DX8_Texture_Filter_Name_DX8Wrapper___902EC0.asm,matched,Exact 71B Open-BFME4
+?popSleepyUpdate@GameLogic@@AAEXXZ,,0x0038C1E0,2876,Code/masm_dumps/_sa11__popSleepyUpdate_GameLogic__AAEXXZ_38C1E0.asm,matched,string-anchor Open-BFME4+Grok GLAInfantryAngryMobNexus
+?validateAllyEnemyList@SidesList@@IAE_NABVAsciiString@@AAV2@@Z,,0x001A0390,2079,Code/masm_dumps/_sa11__validateAllyEnemyList_SidesList__IAE_NABVAsciiString__AAV2__Z_1A0390.asm,matched,string-anchor Open-BFME4+Grok PlyrCivilian
+?handleJoinAccept@LANAPI@@IAEXPAULANMessage@@I@Z,,0x004D2D80,1291,Code/masm_dumps/_sa11__handleJoinAccept_LANAPI__IAEXPAULANMessage__I_Z_4D2D80.asm,matched,string-anchor Open-BFME4+Grok RemoteIP0
+?addGroupRoom@GameSpyInfo@@UAEXVGameSpyGroupRoom@@@Z,,0x00636650,1238,Code/masm_dumps/_sa11__addGroupRoom_GameSpyInfo__UAEXVGameSpyGroupRoom___Z_636650.asm,matched,string-anchor Open-BFME4+Grok quickmatch
+?addMap@MapCache@@AAE_NVAsciiString@@0PAUFileInfo@@_N@Z,,0x00456A90,1178,Code/masm_dumps/_sa11__addMap_MapCache__AAE_NVAsciiString__0PAUFileInfo___N_Z_456A90.asm,matched,string-anchor Open-BFME4+Grok Star-Bronze
+?init@GameLogic@@UAEXXZ,,0x0038A1F0,1014,Code/masm_dumps/_sa11__init_GameLogic__UAEXXZ_38A1F0.asm,matched,string-anchor Open-BFME4+Grok ThePartitionManager
+?connectionUpdate@NAT@@IAE?AW4NATConnectionState@@XZ,,0x006721D0,989,Code/masm_dumps/_sa11__connectionUpdate_NAT__IAE_AW4NATConnectionState__XZ_6721D0.asm,matched,string-anchor Open-BFME4+Grok KEEPALIVE
+?ReAcquireResources@WaterRenderObjClass@@QAEXXZ,,0x007A0500,891,Code/masm_dumps/_sa11__ReAcquireResources_WaterRenderObjClass__QAEXXZ_7A0500.asm,matched,string-anchor Open-BFME4+Grok shaders\wave.pso
+?update@BridgeBehavior@@UAE?AW4UpdateSleepTime@@XZ,,0x001F38A0,721,Code/masm_dumps/_sa11__update_BridgeBehavior__UAE_AW4UpdateSleepTime__XZ_1F38A0.asm,matched,string-anchor Open-BFME4+Grok ParentObject
+?setControlBarSchemeByPlayerTemplate@ControlBarSchemeManager@@QAEXPBVPlayerTemplate@@_N@Z,,0x003865B0,655,Code/masm_dumps/_sa11__setControlBarSchemeByPlayerTemplate_ControlBarSchemeManager__QAEXPBVP_3865B0.asm,matched,string-anchor Open-BFME4+Grok Observer
+?populateSpecialPowerShortcut@ControlBar@@IAEXPAVPlayer@@@Z,,0x004A04C0,624,Code/masm_dumps/_sa11__populateSpecialPowerShortcut_ControlBar__IAEXPAVPlayer___Z_4A04C0.asm,matched,string-anchor Open-BFME4+Grok GUIGenShortcutClick
+?load@ImageCollection@@QAEXH@Z,,0x005D23A0,600,Code/masm_dumps/_sa11__load_ImageCollection__QAEXH_Z_5D23A0.asm,matched,string-anchor Open-BFME4+Grok Data\INI\MappedImages\TextureSize_%d
+?getBattlePlansActiveSpecific@Player@@QBEHW4BattlePlanStatus@@@Z,,0x001C4310,575,Code/masm_dumps/_sa11__getBattlePlansActiveSpecific_Player__QBEHW4BattlePlanStatus___Z_1C4310.asm,matched,string-anchor Open-BFME4+Grok <No Object>
+?getPasswordForEmail@GameSpyLoginPreferences@@QAE?AVAsciiString@@V2@@Z,,0x000813D0,426,Code/masm_dumps/_sa11__getPasswordForEmail_GameSpyLoginPreferences__QAE_AVAsciiString__V2__Z_813D0.asm,matched,string-anchor Open-BFME4+Grok %c%c%c%c
+?Create_GDI_Font@FontCharsClass@@AAEXPBD@Z,,0x0093C570,398,Code/masm_dumps/_sa11__Create_GDI_Font_FontCharsClass__AAEXPBD_Z_93C570.asm,matched,string-anchor Open-BFME4+Grok Generals
+?readFromDict@Handicap@@QAEXPBVDict@@@Z,,0x000C8220,362,Code/masm_dumps/_sa11__readFromDict_Handicap__QAEXPBVDict___Z_C8220.asm,matched,string-anchor Open-BFME4+Grok BUILDCOST
+?validate@ThingTemplate@@QAEXXZ,,0x00139B40,350,Code/masm_dumps/_sa11__validate_ThingTemplate__QAEXXZ_139B40.asm,matched,string-anchor Open-BFME4+Grok DefaultThingTemplate
+?update@DockUpdate@@UAE?AW4UpdateSleepTime@@XZ,,0x002CB0A0,323,Code/masm_dumps/_sa11__update_DockUpdate__UAE_AW4UpdateSleepTime__XZ_2CB0A0.asm,matched,string-anchor Open-BFME4+Grok DockWaiting
+?reset@GameLogic@@UAEXXZ,,0x00388970,222,Code/masm_dumps/_sa11__reset_GameLogic__UAEXXZ_388970.asm,matched,string-anchor Open-BFME4+Grok AmericaVehicleHumVee
+?initFromDict@Player@@QAEXPBVDict@@@Z,,0x000A2D40,220,Code/masm_dumps/_sa11__initFromDict_Player__QAEXPBVDict___Z_A2D40.asm,matched,string-anchor Open-BFME4+Grok Civilian
+?getEmails@GameSpyLoginPreferences@@QAE?AV?$list@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@XZ,,0x00082970,217,Code/masm_dumps/_sa11__getEmails_GameSpyLoginPreferences__QAE_AV__list_VAsciiString__V__allo_82970.asm,matched,string-anchor Open-BFME4+Grok GameSpyLogin.ini
+?init@FlatTerrainShaderPixelShader@@UAEHXZ,,0x007C7DC0,212,Code/masm_dumps/_sa11__init_FlatTerrainShaderPixelShader__UAEHXZ_7C7DC0.asm,matched,string-anchor Open-BFME4+Grok shaders\fterrainnoise2.pso
+?ParseScriptsDataChunk@ScriptList@@SA_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z,,0x0035BFB0,211,Code/masm_dumps/_sa11__ParseScriptsDataChunk_ScriptList__SA_NAAVDataChunkInput__PAUDataChunk_35BFB0.asm,matched,string-anchor Open-BFME4+Grok ScriptList

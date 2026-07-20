@@ -12,10 +12,12 @@ Sections, in priority order:
   3. Shim unblocking  top compile blockers by count — grow reference/shims/sweep/
   4. Rest of the ladder (pointer commands only, nothing computed)
 
-Parallel agents: export AGENT_SLOT=1..AGENT_POOL (pool defaults to 7) and sections
-1-2 show only this agent's deterministic slice (zlib.crc32 of the item key mod pool).
-Pass --any when your slot runs dry. --json emits every section machine-readable
-(full lists; --limit shapes only the text output).
+Parallel agents: export AGENT_SLOT=1..AGENT_POOL (pool defaults to 7), or let
+tools/setup_local_fleet.py install the same values in the worktree's private
+.git/openbfme-worker.json. Sections 1-2 show only this agent's deterministic
+slice (zlib.crc32 of the item key mod pool). Pass --any when your slot runs dry.
+--json emits every section machine-readable (full lists; --limit shapes only
+the text output).
 
 Usage:
   python3 tools/next_work.py [--limit 10] [--json] [--any]
@@ -433,11 +435,36 @@ def shim_blockers(last_report_rows):
             for blocker, n in counts.most_common(8)]
 
 
-def partition_env():
+def worker_config(root=ROOT):
+    """Read a worktree-private slot without adding generated files to the tree."""
+    dotgit = root / ".git"
+    if dotgit.is_file():
+        line = dotgit.read_text(encoding="utf-8").strip()
+        if not line.startswith("gitdir: "):
+            raise SystemExit(f"{dotgit}: expected a gitdir pointer")
+        dotgit = Path(line[8:])
+        if not dotgit.is_absolute():
+            dotgit = (root / dotgit).resolve()
+    path = dotgit / "openbfme-worker.json"
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return str(data["slot"]), str(data["pool"])
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        raise SystemExit(f"{path}: invalid worker configuration ({exc})")
+
+
+def partition_env(root=ROOT):
     slot_s = os.environ.get("AGENT_SLOT")
     if slot_s is None:
-        return None, None
-    pool_s = os.environ.get("AGENT_POOL", "7")
+        configured = worker_config(root)
+        if configured is None:
+            return None, None
+        slot_s, configured_pool = configured
+    else:
+        configured_pool = "7"
+    pool_s = os.environ.get("AGENT_POOL", configured_pool)
     try:
         slot, pool = int(slot_s), int(pool_s)
     except ValueError:

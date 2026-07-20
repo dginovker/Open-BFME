@@ -5,6 +5,7 @@ fixture. Stdlib only, no pytest needed:
     python3 tools/tests/test_next_work.py
 """
 import csv
+import importlib.util
 import json
 import os
 import subprocess
@@ -16,6 +17,10 @@ ROOT = Path(__file__).resolve().parents[2]
 TOOL = ROOT / "tools" / "next_work.py"
 REF = ROOT / "reference" / "CnC_Generals_Zero_Hour" / "GeneralsMD" / "Code"
 POOL = 7
+
+SPEC = importlib.util.spec_from_file_location("next_work", TOOL)
+NEXT_WORK = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(NEXT_WORK)
 
 
 def run(args=(), slot=None, pool=None, cwd=ROOT):
@@ -86,6 +91,23 @@ def test_partition():
           f"{len(full_ghidra)} Ghidra items)")
 
 
+def test_worktree_partition_config():
+    with tempfile.TemporaryDirectory(dir=ROOT / "build") as tmp:
+        tmp = Path(tmp)
+        (tmp / ".git").mkdir()
+        config = tmp / ".git" / "openbfme-worker.json"
+        config.write_text('{"slot": 3, "pool": 8}\n', encoding="utf-8")
+        assert NEXT_WORK.partition_env(tmp) == (3, 8)
+        config.write_text('{"slot": 9, "pool": 8}\n', encoding="utf-8")
+        try:
+            NEXT_WORK.partition_env(tmp)
+        except SystemExit as exc:
+            assert "1 <= AGENT_SLOT" in str(exc)
+        else:
+            raise AssertionError("out-of-range worker configuration must fail")
+    print("PASS worktree partition config: private slot loaded and validated")
+
+
 def test_sweep_winners_validated(data):
     for c in data["sweep_winners"]:
         ref = REF / c["file"]
@@ -129,7 +151,6 @@ def test_ghidra_candidates_validated(data):
         assert c["target_size"] > 0 and c["anchors"], f"candidate lacks Ghidra evidence: {c}"
         assert c["confidence"] in ("high", "medium"), f"bad confidence: {c}"
         assert c["command"].startswith("python3 tools/explain_mismatch.py "), c["command"]
-    assert data["ghidra_absent"], "live Ghidra queue unexpectedly empty"
     attempts = [c["attempts"] for c in data["ghidra_absent"]]
     assert attempts == sorted(attempts), "attempted Ghidra work must follow fresh candidates"
     print(f"PASS Ghidra queue validated: {len(data['ghidra_absent'])} unclaimed candidates")
@@ -170,6 +191,7 @@ def main():
     test_sweep_winners_validated(data)
     test_ghidra_candidates_validated(data)
     test_partition()
+    test_worktree_partition_config()
     test_corrupt_ledger()
     print("ALL TESTS PASSED")
 

@@ -11551,3 +11551,24 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0ElvenWoodSpecialPowerModuleData@@QAE@XZ,,0x0025CA40,72,Code/masm_dumps/ElvenWoodSpecialPowerModuleData_constructor.asm,matched,Exact 72B unique factory Open-BFME4
 ??0SiegeDeploySpecialPowerModuleData@@QAE@XZ,,0x00266450,71,Code/masm_dumps/SiegeDeploySpecialPowerModuleData_constructor.asm,matched,Exact 71B unique factory Open-BFME4
 ??0DevastateSpecialPowerModuleData@@QAE@XZ,,0x0025AC10,44,Code/masm_dumps/DevastateSpecialPowerModuleData_constructor.asm,matched,Exact 44B unique factory Open-BFME4
+??1WeaponSetSpecialAbilityUpdate@@UAE@XZ,,0x002A9850,2403,Code/masm_dumps/WeaponSetSpecialAbilityUpdate_destructor.asm,matched,Exact 2403B SEH dtor factory->vtable Open-BFME4
+??1InactiveBody@@UAE@XZ,,0x001CEFC0,1493,Code/masm_dumps/InactiveBody_destructor.asm,matched,Exact 1493B SEH dtor factory->vtable Open-BFME4
+??1SiegeDeployHordeSpecialPower@@UAE@XZ,,0x00265ED0,651,Code/masm_dumps/SiegeDeployHordeSpecialPower_destructor.asm,matched,Exact 651B SEH dtor factory->vtable Open-BFME4
+??1W3DDebrisDraw@@UAE@XZ,,0x00750CC0,474,Code/masm_dumps/W3DDebrisDraw_destructor.asm,matched,Exact 474B SEH dtor factory->vtable Open-BFME4
+??1CreateCrateDie@@UAE@XZ,,0x00379440,320,Code/masm_dumps/CreateCrateDie_destructor.asm,matched,Exact 320B SEH dtor factory->vtable Open-BFME4
+??1OathbreakersFadeAwayBehavior@@UAE@XZ,,0x001F1370,203,Code/masm_dumps/OathbreakersFadeAwayBehavior_destructor.asm,matched,Exact 203B SEH dtor factory->vtable Open-BFME4
+??1WeaponModeSpecialPowerUpdate@@UAE@XZ,,0x0026A820,156,Code/masm_dumps/WeaponModeSpecialPowerUpdate_destructor.asm,matched,Exact 156B SEH dtor factory->vtable Open-BFME4
+??1TooltipUpgrade@@UAE@XZ,,0x00418B50,142,Code/masm_dumps/TooltipUpgrade_destructor.asm,matched,Exact 142B SEH dtor factory->vtable Open-BFME4
+??1CostModifierUpgrade@@UAE@XZ,,0x001F8970,139,Code/masm_dumps/CostModifierUpgrade_destructor.asm,matched,Exact 139B SEH dtor factory->vtable Open-BFME4
+??1SpecialPowerCompletionDie@@UAE@XZ,,0x00255FD0,124,Code/masm_dumps/SpecialPowerCompletionDie_destructor.asm,matched,Exact 124B SEH dtor factory->vtable Open-BFME4
+??1GiveUpgradeUpdateModuleData@@UAE@XZ,,0x0025DE90,120,Code/masm_dumps/GiveUpgradeUpdateModuleData_destructor.asm,matched,Exact 120B SEH dtor factory->vtable Open-BFME4
+??1TensileFormationUpdate@@UAE@XZ,,0x00253090,119,Code/masm_dumps/TensileFormationUpdate_destructor.asm,matched,Exact 119B SEH dtor factory->vtable Open-BFME4
+??1SiegeDeploySpecialPowerModuleData@@UAE@XZ,,0x0025A4A0,112,Code/masm_dumps/SiegeDeploySpecialPowerModuleData_destructor.asm,matched,Exact 112B SEH dtor factory->vtable Open-BFME4
+??1SpecialDisguiseUpdateModuleData@@UAE@XZ,,0x00267A90,95,Code/masm_dumps/SpecialDisguiseUpdateModuleData_destructor.asm,matched,Exact 95B SEH dtor factory->vtable Open-BFME4
+??1ElvenWoodSpecialPowerModuleData@@UAE@XZ,,0x0025CC80,95,Code/masm_dumps/ElvenWoodSpecialPowerModuleData_destructor.asm,matched,Exact 95B SEH dtor factory->vtable Open-BFME4
+??1ArrowStormUpdateModuleData@@UAE@XZ,,0x00257650,79,Code/masm_dumps/ArrowStormUpdateModuleData_destructor.asm,matched,Exact 79B SEH dtor factory->vtable Open-BFME4
+??1WeaponModeSpecialPowerUpdateModuleData@@UAE@XZ,,0x002B2D70,79,Code/masm_dumps/WeaponModeSpecialPowerUpdateModuleData_destructor.asm,matched,Exact 79B SEH dtor factory->vtable Open-BFME4
+??1WeaponFireSpecialAbilityUpdateModuleData@@UAE@XZ,,0x0026D7B0,79,Code/masm_dumps/WeaponFireSpecialAbilityUpdateModuleData_destructor.asm,matched,Exact 79B SEH dtor factory->vtable Open-BFME4
+??1CreateObjectDieModuleData@@UAE@XZ,,0x002548A0,67,Code/masm_dumps/CreateObjectDieModuleData_destructor.asm,matched,Exact 67B SEH dtor factory->vtable Open-BFME4
+??1RefundDieModuleData@@UAE@XZ,,0x00125530,67,Code/masm_dumps/RefundDieModuleData_destructor.asm,matched,Exact 67B SEH dtor factory->vtable Open-BFME4
+??1UpgradeDieModuleData@@UAE@XZ,,0x001268A0,67,Code/masm_dumps/UpgradeDieModuleData_destructor.asm,matched,Exact 67B SEH dtor factory->vtable Open-BFME4

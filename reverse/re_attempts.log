@@ -1951,3 +1951,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?init@ShellMenuSchemeManager@@QAEXXZ	landed	Shell constructor and init vtable path prove 0x580290/1; retail has no ShellMenuScheme INI xrefs, so removed ZH-only loads
 ?init@VideoPlayer@@UAEXXZ	landed	Vtable slot and Bink caller prove 0x81CB30/574 contiguous body; exact MASM includes unreachable alignment NOP and BFME video entry construction; stale 0xAFDBD6 is unrelated
 ?Thread_Function@GameResultsThreadClass@@UAEXXZ	landed	Ghidra and direct-call scan proved 0x641E70/387 via WSA loop and sole call to sendGameResults thunk 0x31ABB; stale 0x641EA3 is inside this body at the wrong boundary
+?W3DCommandBarBackgroundDraw@@YAXPAVGameWindow@@PAVWinInstanceData@@@Z	no-match	FunctionLexicon proves 0x79CC00/279; current 292B compile inlines AsciiString ensureUniqueBuffer and reshapes registers where retail calls out-of-line ctor; stale 0x79CE9C is padding

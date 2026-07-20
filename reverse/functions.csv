@@ -10946,3 +10946,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?doEvaEnabledDisabled@ScriptActions@@IAEX_N@Z,,0x002F03E0,19,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,GameLogic+0x96 EVA enabled
 ?showNamedTimerDisplay@InGameUI@@QAEX_N@Z,,0x0043AA90,13,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,BFME m_showNamedTimers +0x7a1
 ??1StealthDetectorUpdateModuleData@@UAE@XZ,,0x00126B60,99,Code/masm_dumps/StealthDetectorUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
+??1BroadcastStealthUpdateModuleData@@UAE@XZ,,0x0012ADF0,80,Code/masm_dumps/BroadcastStealthUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership

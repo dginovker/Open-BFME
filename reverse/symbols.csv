@@ -3336,3 +3336,5 @@ __ehhandler$?parseProductionTimeChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z,0x00
 ??1BFMEPlayerTemplateAsciiString@@QAE@XZ,0x00887940,PlayerTemplate time-change retail AsciiString release owner
 ??0RubbleRiseUpdateModuleData@@QAE@XZ,0x00014DAD,retail ModuleFactory ordinal 0x88 data ctor thunk
 ?doFreezeTime@ScriptEngine@@QAEXXZ,0x00465B80,pin ScriptActions doFreezeTime wrapper
+?showNamedTimerDisplay@InGameUI@@QAEX_N@Z,0x0001E1A0,ILT thunk for ScriptActions timer display
+?showNamedTimerDisplay@InGameUI@@QAEX_N@Z,0x0043AA90,body showNamedTimerDisplay InGameUI+0x7a1

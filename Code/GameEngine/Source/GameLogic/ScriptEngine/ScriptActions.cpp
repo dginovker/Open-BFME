@@ -4211,7 +4211,6 @@ void ScriptActions::doHideCountdownTimer(const AsciiString& timerName)
 //-------------------------------------------------------------------------------------------------
 /** doDisableCountdownTimerDisplay */
 //-------------------------------------------------------------------------------------------------
-// ?doDisableCountdownTimerDisplay@ScriptActions@@IAEXXZ present-unmatched
 void ScriptActions::doDisableCountdownTimerDisplay(void)
 {
 	TheInGameUI->showNamedTimerDisplay(FALSE);
@@ -4220,7 +4219,6 @@ void ScriptActions::doDisableCountdownTimerDisplay(void)
 //-------------------------------------------------------------------------------------------------
 /** doEnableCountdownTimerDisplay */
 //-------------------------------------------------------------------------------------------------
-// ?doEnableCountdownTimerDisplay@ScriptActions@@IAEXXZ present-unmatched
 void ScriptActions::doEnableCountdownTimerDisplay(void)
 {
 	TheInGameUI->showNamedTimerDisplay(TRUE);

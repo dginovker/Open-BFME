@@ -10929,3 +10929,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?parseTurretSweep@TurretAIData@@SAXPAVINI@@PAX1PBX@Z,,0x0018C3E0,48,Code/masm_dumps/TurretAIData_parseTurretSweep.asm,matched,Ghidra-owned BFME turret-angle parser
 ??0FlammableUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x00293270,187,Code/masm_dumps/FlammableUpdate_ctor.asm,matched,Ghidra-owned BFME Flammable constructor
 ?onStructureConstructionComplete@Player@@QAEXPAVObject@@0_N@Z,,0x000C9600,126,Code/masm_dumps/Player_onStructureConstructionComplete.asm,matched,Ghidra-owned BFME construction completion dispatch
+?canDoSpecialPowerAtLocation@ActionManager@@QAE_NPBVObject@@PBUCoord3D@@W4CommandSourceType@@PBVSpecialPowerTemplate@@0I_N@Z,,0x000C6930,3094,Code/masm_dumps/ActionManager_canDoSpecialPowerAtLocation.asm,matched,Ghidra-owned BFME special-power location validation

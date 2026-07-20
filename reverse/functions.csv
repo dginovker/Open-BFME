@@ -11483,3 +11483,5 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1PartTheHeavensUpdate@@UAE@XZ,,0x00299820,120,Code/masm_dumps/PartTheHeavensUpdate_destructor.asm,matched,Exact 120B; factory ownership Open-BFME4
 ??1DestroyEnvironmentUpdate@@UAE@XZ,,0x0028D0C0,422,Code/masm_dumps/DestroyEnvironmentUpdate_destructor.asm,matched,Exact 422B; factory ownership Open-BFME4
 ??0MonsterDockUpdateModuleData@@QAE@XZ,,0x002CDCF0,81,Code/masm_dumps/MonsterDockUpdateModuleData_constructor.asm,matched,Exact 81B ModuleData ctor; Open-BFME4+Grok
+??1RespawnBodyModuleData@@UAE@XZ,,0x00211D40,6838,Code/masm_dumps/RespawnBodyModuleData_destructor.asm,matched,Exact 6838B @ 0x00211D40; Exact retail MASM; ModuleData factory ctor->vtable dtor; ctor 0x2149D0 vt 0xCA9320; Open-BFME4+Grok
+??1AutoAbilityBehaviorModuleData@@UAE@XZ,,0x001EDCA0,1944,Code/masm_dumps/AutoAbilityBehaviorModuleData_destructor.asm,matched,Exact 1944B @ 0x001EDCA0; Exact retail MASM; ModuleData ctor->vtable SEH dtor; ctor 0x1ED6A0 vt 0xCA1AF4; Open-BFME4+Grok

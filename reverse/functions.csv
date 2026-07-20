@@ -10994,3 +10994,11 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1ParticleUplinkCannonUpdateModuleData@@UAE@XZ,,0x002A26C0,115,Code/masm_dumps/ParticleUplinkCannonUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ??1ProductionUpdateModuleData@@UAE@XZ,,0x0029E260,126,Code/masm_dumps/ProductionUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ?doAmbientSoundsPause@ScriptActions@@IAEX_N@Z,,0x002EF2E0,30,Code/masm_dumps/ScriptActions_doAmbientSoundsPause.asm,matched,Exact retail MASM Audio+0x70 pauseAmbient-like
+?getWrappedCommandID@NetWrapperCommandMsg@@QAEGBXZ,,0x000057C7,5,Code/masm_dumps/_getWrappedCommandID_NetWrapperCommandMsg__QAEGBXZ_57C7.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?getNumChunks@NetWrapperCommandMsg@@QAEIXZ,,0x00018BEC,5,Code/masm_dumps/_getNumChunks_NetWrapperCommandMsg__QAEIXZ_18BEC.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?getTotalDataLength@NetWrapperCommandMsg@@QAEIXZ,,0x0000F70E,5,Code/masm_dumps/_getTotalDataLength_NetWrapperCommandMsg__QAEIXZ_F70E.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setWrappedCommandID@NetWrapperCommandMsg@@QAEGXZ,,0x00037083,5,Code/masm_dumps/_setWrappedCommandID_NetWrapperCommandMsg__QAEGXZ_37083.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setChunkNumber@NetWrapperCommandMsg@@QAEXI@Z,,0x0003AE36,5,Code/masm_dumps/_setChunkNumber_NetWrapperCommandMsg__QAEXI@Z_3AE36.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setNumChunks@NetWrapperCommandMsg@@QAEXI@Z,,0x00014A42,5,Code/masm_dumps/_setNumChunks_NetWrapperCommandMsg__QAEXI@Z_14A42.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setTotalDataLength@NetWrapperCommandMsg@@QAEXI@Z,,0x0003EC52,5,Code/masm_dumps/_setTotalDataLength_NetWrapperCommandMsg__QAEXI@Z_3EC52.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setDataOffset@NetWrapperCommandMsg@@QAEXI@Z,,0x00023709,5,Code/masm_dumps/_setDataOffset_NetWrapperCommandMsg__QAEXI@Z_23709.asm,matched,NetWrapperCommandMsg trivial accessor thunk

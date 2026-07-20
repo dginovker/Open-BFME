@@ -11816,3 +11816,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?Pre_Render_Update@LightEnvironmentClass@@QAEXABVMatrix3D@@@Z,,0x0094BB40,245,Code/masm_dumps/_entry__Pre_Render_Update_LightEnvironmentClass_QAEXABVMatrix3D_Z_94BB40.asm,matched,
 ?Resize@?$VectorClass@UFileInfoStruct@MixFileCreator@@@@UAE_NHPBUFileInfoStruct@MixFileCreator@@@Z,,0x009302C0,403,Code/masm_dumps/_entry__Resize_VectorClass_UFileInfoStruct_MixFileCreator_UAE_NHPBU_9302C0.asm,matched,
 ?Unregister@SimpleSceneClass@@UAEXPAVRenderObjClass@@W4RegType@SceneClass@@@Z,,0x009438C0,134,Code/masm_dumps/_entry__Unregister_SimpleSceneClass_UAEXPAVRenderObjClass_W4RegType_9438C0.asm,matched,
+??0AIStateMachine@@QAE@PAVObject@@VAsciiString@@@Z,,0x00185A20,4930,Code/masm_dumps/__0AIStateMachine__QAE_PAVObject__VAsciiString___Z_185A20.asm,matched,Exact 4930B string-anchored Open-BFME4

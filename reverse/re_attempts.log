@@ -1976,3 +1976,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1CivilianSpawnCollideModuleData@@UAE@XZ	landed	Factory 0x11F290 ctor 0x217360 vtable chain reaches 0x2175C0/67; exact MASM
 ??1ExperienceScalarUpgradeModuleData@@UAE@XZ	landed	Factory 0x11DB70 ctor 0x2D5180 vtable chain reaches 0x2D51E0/67; exact MASM
 ??1MaxHealthUpgradeModuleData@@UAE@XZ	landed	Factory 0x11DC80 ctor 0x2D6590 vtable chain reaches 0x2D65F0/67; exact MASM
+??1MonsterDockUpdateModuleData@@UAE@XZ	landed	Factory 0x11B1E0 ctor 0x2CDCF0 vtable chain reaches 0x2CDD90/67; exact MASM

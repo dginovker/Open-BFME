@@ -10985,3 +10985,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1DynamicShroudClearingRangeUpdateModuleData@@UAE@XZ,,0x0028ECA0,95,Code/masm_dumps/DynamicShroudClearingRangeUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ??1BaseUpgradeModuleData@@UAE@XZ,,0x002D3D20,96,Code/masm_dumps/BaseUpgradeModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ??1TooltipUpgradeModuleData@@UAE@XZ,,0x0012BBB0,96,Code/masm_dumps/TooltipUpgradeModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
+??1LargeGroupAudioUpdateModuleData@@UAE@XZ,,0x00297390,99,Code/masm_dumps/LargeGroupAudioUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership

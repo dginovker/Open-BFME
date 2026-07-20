@@ -11230,3 +11230,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0StealthDetectorUpdateModuleData@@QAE@XZ,,0x001269F0,250,Code/masm_dumps/StealthDetectorUpdateModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x126BE0
 ??0AutoPickUpUpdateModuleData@@QAE@XZ,,0x002827E0,242,Code/masm_dumps/AutoPickUpUpdateModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x119B30
 ??0ActiveBodyModuleData@@QAE@XZ,,0x0020F7C0,230,Code/masm_dumps/ActiveBodyModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x11F420
+?doStopCameraFollowUnit@ScriptActions@@IAEXXZ,,0x002EFAB0,14,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,View vtable+0x19c void stop-follow tail-call

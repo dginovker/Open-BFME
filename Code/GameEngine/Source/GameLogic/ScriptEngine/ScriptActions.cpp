@@ -507,10 +507,118 @@ void ScriptActions::doCameraFollowNamed(const AsciiString& unit, Bool snapToUnit
 //-------------------------------------------------------------------------------------------------
 /** doStopCameraFollowUnit */
 //-------------------------------------------------------------------------------------------------
-// ?doStopCameraFollowUnit@ScriptActions@@IAEXXZ present-unmatched
+// BFME View void stop-follow at +0x19c.
+class BfmeViewStopFollow {
+public:
+	virtual void _vsf_0() = 0;
+	virtual void _vsf_1() = 0;
+	virtual void _vsf_2() = 0;
+	virtual void _vsf_3() = 0;
+	virtual void _vsf_4() = 0;
+	virtual void _vsf_5() = 0;
+	virtual void _vsf_6() = 0;
+	virtual void _vsf_7() = 0;
+	virtual void _vsf_8() = 0;
+	virtual void _vsf_9() = 0;
+	virtual void _vsf_10() = 0;
+	virtual void _vsf_11() = 0;
+	virtual void _vsf_12() = 0;
+	virtual void _vsf_13() = 0;
+	virtual void _vsf_14() = 0;
+	virtual void _vsf_15() = 0;
+	virtual void _vsf_16() = 0;
+	virtual void _vsf_17() = 0;
+	virtual void _vsf_18() = 0;
+	virtual void _vsf_19() = 0;
+	virtual void _vsf_20() = 0;
+	virtual void _vsf_21() = 0;
+	virtual void _vsf_22() = 0;
+	virtual void _vsf_23() = 0;
+	virtual void _vsf_24() = 0;
+	virtual void _vsf_25() = 0;
+	virtual void _vsf_26() = 0;
+	virtual void _vsf_27() = 0;
+	virtual void _vsf_28() = 0;
+	virtual void _vsf_29() = 0;
+	virtual void _vsf_30() = 0;
+	virtual void _vsf_31() = 0;
+	virtual void _vsf_32() = 0;
+	virtual void _vsf_33() = 0;
+	virtual void _vsf_34() = 0;
+	virtual void _vsf_35() = 0;
+	virtual void _vsf_36() = 0;
+	virtual void _vsf_37() = 0;
+	virtual void _vsf_38() = 0;
+	virtual void _vsf_39() = 0;
+	virtual void _vsf_40() = 0;
+	virtual void _vsf_41() = 0;
+	virtual void _vsf_42() = 0;
+	virtual void _vsf_43() = 0;
+	virtual void _vsf_44() = 0;
+	virtual void _vsf_45() = 0;
+	virtual void _vsf_46() = 0;
+	virtual void _vsf_47() = 0;
+	virtual void _vsf_48() = 0;
+	virtual void _vsf_49() = 0;
+	virtual void _vsf_50() = 0;
+	virtual void _vsf_51() = 0;
+	virtual void _vsf_52() = 0;
+	virtual void _vsf_53() = 0;
+	virtual void _vsf_54() = 0;
+	virtual void _vsf_55() = 0;
+	virtual void _vsf_56() = 0;
+	virtual void _vsf_57() = 0;
+	virtual void _vsf_58() = 0;
+	virtual void _vsf_59() = 0;
+	virtual void _vsf_60() = 0;
+	virtual void _vsf_61() = 0;
+	virtual void _vsf_62() = 0;
+	virtual void _vsf_63() = 0;
+	virtual void _vsf_64() = 0;
+	virtual void _vsf_65() = 0;
+	virtual void _vsf_66() = 0;
+	virtual void _vsf_67() = 0;
+	virtual void _vsf_68() = 0;
+	virtual void _vsf_69() = 0;
+	virtual void _vsf_70() = 0;
+	virtual void _vsf_71() = 0;
+	virtual void _vsf_72() = 0;
+	virtual void _vsf_73() = 0;
+	virtual void _vsf_74() = 0;
+	virtual void _vsf_75() = 0;
+	virtual void _vsf_76() = 0;
+	virtual void _vsf_77() = 0;
+	virtual void _vsf_78() = 0;
+	virtual void _vsf_79() = 0;
+	virtual void _vsf_80() = 0;
+	virtual void _vsf_81() = 0;
+	virtual void _vsf_82() = 0;
+	virtual void _vsf_83() = 0;
+	virtual void _vsf_84() = 0;
+	virtual void _vsf_85() = 0;
+	virtual void _vsf_86() = 0;
+	virtual void _vsf_87() = 0;
+	virtual void _vsf_88() = 0;
+	virtual void _vsf_89() = 0;
+	virtual void _vsf_90() = 0;
+	virtual void _vsf_91() = 0;
+	virtual void _vsf_92() = 0;
+	virtual void _vsf_93() = 0;
+	virtual void _vsf_94() = 0;
+	virtual void _vsf_95() = 0;
+	virtual void _vsf_96() = 0;
+	virtual void _vsf_97() = 0;
+	virtual void _vsf_98() = 0;
+	virtual void _vsf_99() = 0;
+	virtual void _vsf_100() = 0;
+	virtual void _vsf_101() = 0;
+	virtual void _vsf_102() = 0;
+	virtual void stopFollow(void) = 0;
+};
+
 void ScriptActions::doStopCameraFollowUnit(void)
 {
-	TheTacticalView->setCameraLock(INVALID_ID);
+	((BfmeViewStopFollow *)TheTacticalView)->stopFollow();
 }
 
 //-------------------------------------------------------------------------------------------------

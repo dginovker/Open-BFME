@@ -11002,3 +11002,10 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?setNumChunks@NetWrapperCommandMsg@@QAEXI@Z,,0x00014A42,5,Code/masm_dumps/_setNumChunks_NetWrapperCommandMsg__QAEXI@Z_14A42.asm,matched,NetWrapperCommandMsg trivial accessor thunk
 ?setTotalDataLength@NetWrapperCommandMsg@@QAEXI@Z,,0x0003EC52,5,Code/masm_dumps/_setTotalDataLength_NetWrapperCommandMsg__QAEXI@Z_3EC52.asm,matched,NetWrapperCommandMsg trivial accessor thunk
 ?setDataOffset@NetWrapperCommandMsg@@QAEXI@Z,,0x00023709,5,Code/masm_dumps/_setDataOffset_NetWrapperCommandMsg__QAEXI@Z_23709.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+??1BattlePlanUpdateModuleData@@UAE@XZ,,0x00286010,239,Code/masm_dumps/BattlePlanUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory 0x119D50 ctor 0x285F10 prove ownership
+??1LaserUpdateModuleData@@UAE@XZ,,0x006043E0,93,Code/masm_dumps/LaserUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory 0x118DF0 ctor 0x603B90 prove ownership
+??1HealContainModuleData@@UAE@XZ,,0x0028BA40,156,Code/masm_dumps/HealContainModuleData_destructor.asm,matched,Exact retail MASM; factory 0x1219D0 ctor 0x28B9E0 prove ownership
+??1SlaveWatcherBehaviorModuleData@@UAE@XZ,,0x00207510,80,Code/masm_dumps/SlaveWatcherBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory 0x117540 ctor 0x2074C0 prove ownership
+??1OneRingPenaltyUpdateModuleData@@UAE@XZ,,0x00298D60,113,Code/masm_dumps/OneRingPenaltyUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory 0x11A460 ctor 0x298D30 prove ownership
+??1ModelConditionSoundSelectorClientBehaviorModuleData@@UAE@XZ,,0x00607710,67,Code/masm_dumps/ModelConditionSoundSelectorClientBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory 0x121E30 ctor 0x607550 prove ownership
+??1UpgradeSoundSelectorClientBehaviorModuleData@@UAE@XZ,,0x00608F80,67,Code/masm_dumps/UpgradeSoundSelectorClientBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory 0x121ED0 ctor 0x608DC0 prove ownership

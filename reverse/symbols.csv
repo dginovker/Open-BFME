@@ -3344,3 +3344,9 @@ __ehhandler$?parseProductionTimeChange@PlayerTemplate@@KAXPAVINI@@PAX1PBX@Z,0x00
 ?setInputEnabled@BfmeInGameUI_setInputEnabled@@QAEX_N@Z,0x0043B280,body setInputEnabled
 ?setVisibility@BfmeMouse_setVisibility@@QAEX_N@Z,0x00016A68,ILT thunk Mouse setVisibility
 ?setVisibility@BfmeMouse_setVisibility@@QAEX_N@Z,0x005A4BA0,body Mouse setVisibility
+?HideControlBar@@YAX_N@Z,0x00002847,ILT/body HideControlBar for letterbox
+?ShowControlBar@@YAX_N@Z,0x00024848,ILT/body ShowControlBar for letterbox
+_HideControlBar,0x00002847,HideControlBar letterbox
+_ShowControlBar,0x00024848,ShowControlBar letterbox
+?HideControlBar@@YAXH@Z,0x00002847,HideControlBar int
+?ShowControlBar@@YAXH@Z,0x00024848,ShowControlBar int

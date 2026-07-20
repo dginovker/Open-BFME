@@ -3904,18 +3904,101 @@ void ScriptActions::doPlayerExitAllBuildings(const AsciiString& playerName)
 //-------------------------------------------------------------------------------------------------
 /** doLetterBoxMode */
 //-------------------------------------------------------------------------------------------------
-// ?doLetterBoxMode@ScriptActions@@IAEX_N@Z present-unmatched
+// BFME Display enableLetterBox at vtable+0x130; Hide/ShowControlBar free funcs.
+class BfmeDisplayLetterBox {
+public:
+	virtual void _disp_0() = 0;
+	virtual void _disp_1() = 0;
+	virtual void _disp_2() = 0;
+	virtual void _disp_3() = 0;
+	virtual void _disp_4() = 0;
+	virtual void _disp_5() = 0;
+	virtual void _disp_6() = 0;
+	virtual void _disp_7() = 0;
+	virtual void _disp_8() = 0;
+	virtual void _disp_9() = 0;
+	virtual void _disp_10() = 0;
+	virtual void _disp_11() = 0;
+	virtual void _disp_12() = 0;
+	virtual void _disp_13() = 0;
+	virtual void _disp_14() = 0;
+	virtual void _disp_15() = 0;
+	virtual void _disp_16() = 0;
+	virtual void _disp_17() = 0;
+	virtual void _disp_18() = 0;
+	virtual void _disp_19() = 0;
+	virtual void _disp_20() = 0;
+	virtual void _disp_21() = 0;
+	virtual void _disp_22() = 0;
+	virtual void _disp_23() = 0;
+	virtual void _disp_24() = 0;
+	virtual void _disp_25() = 0;
+	virtual void _disp_26() = 0;
+	virtual void _disp_27() = 0;
+	virtual void _disp_28() = 0;
+	virtual void _disp_29() = 0;
+	virtual void _disp_30() = 0;
+	virtual void _disp_31() = 0;
+	virtual void _disp_32() = 0;
+	virtual void _disp_33() = 0;
+	virtual void _disp_34() = 0;
+	virtual void _disp_35() = 0;
+	virtual void _disp_36() = 0;
+	virtual void _disp_37() = 0;
+	virtual void _disp_38() = 0;
+	virtual void _disp_39() = 0;
+	virtual void _disp_40() = 0;
+	virtual void _disp_41() = 0;
+	virtual void _disp_42() = 0;
+	virtual void _disp_43() = 0;
+	virtual void _disp_44() = 0;
+	virtual void _disp_45() = 0;
+	virtual void _disp_46() = 0;
+	virtual void _disp_47() = 0;
+	virtual void _disp_48() = 0;
+	virtual void _disp_49() = 0;
+	virtual void _disp_50() = 0;
+	virtual void _disp_51() = 0;
+	virtual void _disp_52() = 0;
+	virtual void _disp_53() = 0;
+	virtual void _disp_54() = 0;
+	virtual void _disp_55() = 0;
+	virtual void _disp_56() = 0;
+	virtual void _disp_57() = 0;
+	virtual void _disp_58() = 0;
+	virtual void _disp_59() = 0;
+	virtual void _disp_60() = 0;
+	virtual void _disp_61() = 0;
+	virtual void _disp_62() = 0;
+	virtual void _disp_63() = 0;
+	virtual void _disp_64() = 0;
+	virtual void _disp_65() = 0;
+	virtual void _disp_66() = 0;
+	virtual void _disp_67() = 0;
+	virtual void _disp_68() = 0;
+	virtual void _disp_69() = 0;
+	virtual void _disp_70() = 0;
+	virtual void _disp_71() = 0;
+	virtual void _disp_72() = 0;
+	virtual void _disp_73() = 0;
+	virtual void _disp_74() = 0;
+	virtual void _disp_75() = 0;
+	virtual void enableLetterBox(Bool enable) = 0;
+};
+void HideControlBar(Bool immediate);
+void ShowControlBar(Bool immediate);
+
 void ScriptActions::doLetterBoxMode(Bool startLetterbox)
 {
 	if (startLetterbox)
 	{
 		HideControlBar(TRUE);
-		TheDisplay->enableLetterBox(TRUE);
+		((BfmeDisplayLetterBox *)TheDisplay)->enableLetterBox(TRUE);
 	}
 	else
 	{
 		ShowControlBar(FALSE);
-		TheDisplay->enableLetterBox(FALSE);
+		((BfmeDisplayLetterBox *)TheDisplay)->enableLetterBox(FALSE);
 	}
 }
 

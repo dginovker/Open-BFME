@@ -1957,3 +1957,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?tryToIgnite@FlammableUpdate@@QAEXXZ	landed	Ghidra proved stale 0x5A8BCF began mid-instruction; exact unique BFME body at 0x293990/961 via Flammable damage vtable and onDamage caller
 ?parseInGameUIDefinition@INI@@SAXPAV1@@Z	landed	Ghidra rejected stale 0x9A1602 mid-function placement; exact unique body at 0x43AAA0/36 loads TheInGameUI and dispatches getFieldParse
 ?parseTurretSweep@TurretAIData@@SAXPAVINI@@PAX1PBX@Z	landed	Ghidra rejected stale 0x880480; field-table thunk 0x397DE resolves to unique 0x18C3E0/48 beside matched parseTurretSweepSpeed
+??0OneRingPenaltyUpdate@@QAE@PAVThing@@PBVModuleData@@@Z	landed	Ghidra corrected misowned 0x298E10/157 Flammable row; factory thunk 0x39F9A and OneRing vtables prove the constructor owner

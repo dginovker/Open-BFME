@@ -4144,7 +4144,65 @@ void ScriptActions::doNamedShowSpecialPowerDisplay(const AsciiString& unit)
 //-------------------------------------------------------------------------------------------------
 /** doAudioSetVolume */
 //-------------------------------------------------------------------------------------------------
-// ?doAudioSetVolume@ScriptActions@@IAEXW4AudioAffect@@M@Z present-unmatched
+// BFME Audio vtable +0xd4: setVolume(vol, which, 0).
+class BfmeAudioVtbl_d4 {
+public:
+	virtual void _aD4_0() = 0;
+	virtual void _aD4_1() = 0;
+	virtual void _aD4_2() = 0;
+	virtual void _aD4_3() = 0;
+	virtual void _aD4_4() = 0;
+	virtual void _aD4_5() = 0;
+	virtual void _aD4_6() = 0;
+	virtual void _aD4_7() = 0;
+	virtual void _aD4_8() = 0;
+	virtual void _aD4_9() = 0;
+	virtual void _aD4_10() = 0;
+	virtual void _aD4_11() = 0;
+	virtual void _aD4_12() = 0;
+	virtual void _aD4_13() = 0;
+	virtual void _aD4_14() = 0;
+	virtual void _aD4_15() = 0;
+	virtual void _aD4_16() = 0;
+	virtual void _aD4_17() = 0;
+	virtual void _aD4_18() = 0;
+	virtual void _aD4_19() = 0;
+	virtual void _aD4_20() = 0;
+	virtual void _aD4_21() = 0;
+	virtual void _aD4_22() = 0;
+	virtual void _aD4_23() = 0;
+	virtual void _aD4_24() = 0;
+	virtual void _aD4_25() = 0;
+	virtual void _aD4_26() = 0;
+	virtual void _aD4_27() = 0;
+	virtual void _aD4_28() = 0;
+	virtual void _aD4_29() = 0;
+	virtual void _aD4_30() = 0;
+	virtual void _aD4_31() = 0;
+	virtual void _aD4_32() = 0;
+	virtual void _aD4_33() = 0;
+	virtual void _aD4_34() = 0;
+	virtual void _aD4_35() = 0;
+	virtual void _aD4_36() = 0;
+	virtual void _aD4_37() = 0;
+	virtual void _aD4_38() = 0;
+	virtual void _aD4_39() = 0;
+	virtual void _aD4_40() = 0;
+	virtual void _aD4_41() = 0;
+	virtual void _aD4_42() = 0;
+	virtual void _aD4_43() = 0;
+	virtual void _aD4_44() = 0;
+	virtual void _aD4_45() = 0;
+	virtual void _aD4_46() = 0;
+	virtual void _aD4_47() = 0;
+	virtual void _aD4_48() = 0;
+	virtual void _aD4_49() = 0;
+	virtual void _aD4_50() = 0;
+	virtual void _aD4_51() = 0;
+	virtual void _aD4_52() = 0;
+	virtual void setVolume(Real volume, AudioAffect which, int unused) = 0;
+};
+
 void ScriptActions::doAudioSetVolume(AudioAffect whichToAffect, Real newVolumeLevel)
 {
 	newVolumeLevel /= 100.0f;
@@ -4153,8 +4211,7 @@ void ScriptActions::doAudioSetVolume(AudioAffect whichToAffect, Real newVolumeLe
 	} else if (newVolumeLevel > 1.0f) {
 		newVolumeLevel = 1.0f;
 	}
-
-	TheAudio->setVolume(newVolumeLevel, whichToAffect);
+	((BfmeAudioVtbl_d4 *)TheAudio)->setVolume(newVolumeLevel, whichToAffect, 0);
 }
 
 //-------------------------------------------------------------------------------------------------

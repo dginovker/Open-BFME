@@ -10963,3 +10963,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1SpawnBehaviorModuleData@@UAE@XZ,,0x0012AA50,80,Code/masm_dumps/SpawnBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
 ??1ModelConditionUpgradeModuleData@@UAE@XZ,,0x002D6B20,67,Code/masm_dumps/ModelConditionUpgradeModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
 ??1CivilianSpawnCollideModuleData@@UAE@XZ,,0x002175C0,67,Code/masm_dumps/CivilianSpawnCollideModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
+??1ExperienceScalarUpgradeModuleData@@UAE@XZ,,0x002D51E0,67,Code/masm_dumps/ExperienceScalarUpgradeModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership

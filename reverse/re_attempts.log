@@ -1974,3 +1974,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1SpawnBehaviorModuleData@@UAE@XZ	landed	Factory 0x12AAC0 ctor 0x12A970 vtable 0x108F230 deleting wrapper reaches 0x12AA50/80; exact MASM
 ??1ModelConditionUpgradeModuleData@@UAE@XZ	landed	Factory 0x11DD90 ctor 0x2D6A20 vtable 0x10CD4C0 deleting wrapper reaches 0x2D6B20/67; exact MASM
 ??1CivilianSpawnCollideModuleData@@UAE@XZ	landed	Factory 0x11F290 ctor 0x217360 vtable chain reaches 0x2175C0/67; exact MASM
+??1ExperienceScalarUpgradeModuleData@@UAE@XZ	landed	Factory 0x11DB70 ctor 0x2D5180 vtable chain reaches 0x2D51E0/67; exact MASM

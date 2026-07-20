@@ -11246,3 +11246,9 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1DeletionUpdateModuleData@@UAE@XZ,,0x0008AEA0,112,Code/masm_dumps/DeletionUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x8DDB0 ctor 0x8A950 vt 0xC7D5BC
 ??1HijackerUpdateModuleData@@UAE@XZ,,0x0006E320,95,Code/masm_dumps/HijackerUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x6E2F0 ctor 0x6E2B0 vt 0xC75D24
 ?doFreezeTime@ScriptEngine@@QAEXXZ,,0x0001FDAC,5,Code/masm_dumps/_thunk_4b46e9768dea_1FDAC.asm,matched,t
+?Peek_D3D_Base_Texture@TextureBaseClass@@QBEPAUIDirect3DBaseTexture8@@XZ,,0x0090DC60,37,Code/masm_dumps/_thunk_0b5d0546f745_90DC60.asm,matched,accessor/leaf of ported class
+?Replace_Texture@MeshModelClass@@QAEXPAVTextureClass@@0@Z,,0x00924C30,14,Code/masm_dumps/_thunk_78b6d8b2ecd1_924C30.asm,matched,accessor/leaf of ported class
+?Get_User_Text@MeshGeometryClass@@QAEPBDXZ,,0x00924C30,14,Code/masm_dumps/_thunk_6949b75546b3_924C30.asm,matched,accessor/leaf of ported class (icf alias)
+?Generate_Culling_Tree@MeshGeometryClass@@IAEXXZ,,0x00924C30,14,Code/masm_dumps/_thunk_5715a60bcbdb_924C30.asm,matched,accessor/leaf of ported class (icf alias)
+?Replace_VertexMaterial@MeshModelClass@@QAEXPAVVertexMaterialClass@@0@Z,,0x00924C30,14,Code/masm_dumps/_thunk_b2720241ccfb_924C30.asm,matched,accessor/leaf of ported class (icf alias)
+?Cur_Chunk_Length@ChunkLoadClass@@QAEKXZ,,0x009E1450,16,Code/masm_dumps/_thunk_9bb3fc80fbfd_9E1450.asm,matched,accessor/leaf of ported class

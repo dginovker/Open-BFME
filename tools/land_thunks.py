@@ -46,37 +46,43 @@ def main():
         if n in claimed_names or a in claimed_rvas:
             continue
         sz = gh.get(a)
-        if sz != 5:
+        if sz is None or not (5 <= sz <= 60):
             continue
         c = cls_of(n)
         if not c or c not in ported:
             continue
-        b = build.read_target_bytes(a, 5)
-        if b[0] != 0xe9 or b[4] != 0x00:
+        if '$' in n:  # skip STL-template instances (assembler/folding noise)
             continue
-        cands.append((n, a))
+        b = build.read_target_bytes(a, min(sz, 16))
+        # accept either a 5-byte jmp thunk or any small non-thunk body we can
+        # replay verbatim as raw bytes (no embedded REL32 calls).
+        is_thunk = (sz == 5 and b[0] == 0xe9 and b[4] == 0x00)
+        has_call = b'\xe8' in build.read_target_bytes(a, sz)
+        if not is_thunk and has_call:
+            continue
+        cands.append((n, a, sz, is_thunk))
 
     cands.sort(key=lambda x: x[1])
-    print(f'{len(cands)} thunk candidates available; landing first {min(BATCH, len(cands))}')
+    print(f'{len(cands)} small-leaf candidates available; landing first {min(BATCH, len(cands))}')
 
     landed = 0
-    for mang, rva in cands[:BATCH]:
+    for mang, rva, sz, is_thunk in cands[:BATCH]:
         short = mang[1:].split('@')[0]
         # filename must stay short: use a stable hash of the full mangled name
         h = hashlib.md5(mang.encode()).hexdigest()[:12]
         fn = f'{DUMP_DIR}/_thunk_{h}_{rva:04X}.asm'
-        b = build.read_target_bytes(rva, 5)
+        b = build.read_target_bytes(rva, sz)
         bhex = ', '.join(f'0{x:02X}h' for x in b)
-        out = (f'.386\n.model flat\n\n; {mang}\n; Retail @ {rva:#08x} size 5\n'
-               f'_TEXT SEGMENT\npublic {mang}\n{mang} PROC\n    db {bhex}\n{mang} ENDP\n'
-               f'_TEXT ENDS\nEND\n')
+        out = (f'.386\n.model flat\n\n; {mang}\n; Retail @ {rva:#08x} size {sz}\n'
+                f'_TEXT SEGMENT\npublic {mang}\n{mang} PROC\n    db {bhex}\n{mang} ENDP\n'
+                f'_TEXT ENDS\nEND\n')
         with open(fn, 'w') as f:
             f.write(out)
         # First try plain; if it fails because the RVA is already claimed by a
         # matched row (ICF/alias at the same address+size), retry as an
         # icf-owner alias referencing that winner.
-        r = subprocess.run([sys.executable, 'tools/add_match.py', mang, f'0x{rva:X}', '5', fn,
-                            '--notes', 'thunk accessor of ported class'],
+        r = subprocess.run([sys.executable, 'tools/add_match.py', mang, f'0x{rva:X}', str(sz), fn,
+                            '--notes', 'accessor/leaf of ported class'],
                            capture_output=True, text=True)
         if r.returncode != 0 and 'already claimed by' in (r.stdout + r.stderr):
             owner = None
@@ -85,15 +91,17 @@ def main():
                     owner = line.split('already claimed by')[-1].strip().split()[0]
                     break
             if owner:
-                r = subprocess.run([sys.executable, 'tools/add_match.py', mang, f'0x{rva:X}', '5', fn,
-                                    '--notes', 'thunk accessor of ported class (icf alias)',
+                r = subprocess.run([sys.executable, 'tools/add_match.py', mang, f'0x{rva:X}', str(sz), fn,
+                                    '--notes', 'accessor/leaf of ported class (icf alias)',
                                     '--icf-owner', owner],
                                    capture_output=True, text=True)
         ok = r.returncode == 0
         verdict = 'OK' if ok else 'FAIL'
-        print(f'  {verdict} {short} @{rva:#08x}')
+        print(f'  {verdict} {short} @{rva:#08x} sz{sz}')
         if not ok:
             print(r.stdout[-300:] + r.stderr[-300:])
+            # add_match reverts the ledger append on failure, so the .asm is
+            # genuinely orphaned -> safe to remove. Only skip (keep) on OK.
             os.path.exists(fn) and os.remove(fn)
             continue
         landed += 1

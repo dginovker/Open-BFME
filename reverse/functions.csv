@@ -10957,3 +10957,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?doUnfreezeTime@ScriptActions@@IAEXXZ,,0x002EF690,11,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,tail-call ScriptEngine::doUnfreezeTime pin 0x336F10 (ScriptEngine+0x17624=0)
 ?doSoundRemoveAllDisabled@ScriptActions@@IAEXXZ,,0x002EFE60,17,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,Audio vtable+0x9c removeDisabledEvents(0)
 ??1AnimationSoundClientBehaviorModuleData@@UAE@XZ,,0x00606120,67,Code/masm_dumps/AnimationSoundClientBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
+??1FireWeaponWhenDeadBehaviorModuleData@@UAE@XZ,,0x0012AD60,67,Code/masm_dumps/FireWeaponWhenDeadBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership

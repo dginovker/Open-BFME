@@ -1968,3 +1968,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1AutoHealBehaviorModuleData@@UAE@XZ	landed	Factory 0x129E40 ctor 0x129D50 vtable 0x108EFC8 deleting wrapper reaches 0x12A910/67; exact MASM
 ??1FadeAndDieOrnamentUpdateModuleData@@UAE@XZ	landed	Factory 0x125BD0 ctor 0x125B30 vtable 0x108E838 deleting wrapper reaches 0x126E70/67; exact MASM
 ??1AnimationSoundClientBehaviorModuleData@@UAE@XZ	landed	Factory 0x121DA0 ctor 0x606060 vtable 0x11155E0 deleting wrapper reaches 0x606120/67; exact MASM
+??1FireWeaponWhenDeadBehaviorModuleData@@UAE@XZ	landed	Factory 0x12A250 ctor 0x12A1C0 vtable 0x108F0D0 deleting wrapper reaches 0x12AD60/67; exact MASM

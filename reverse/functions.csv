@@ -10966,3 +10966,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1ExperienceScalarUpgradeModuleData@@UAE@XZ,,0x002D51E0,67,Code/masm_dumps/ExperienceScalarUpgradeModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
 ??1MaxHealthUpgradeModuleData@@UAE@XZ,,0x002D65F0,67,Code/masm_dumps/MaxHealthUpgradeModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
 ??1MonsterDockUpdateModuleData@@UAE@XZ,,0x002CDD90,67,Code/masm_dumps/MonsterDockUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
+??1ShareExperienceBehaviorModuleData@@UAE@XZ,,0x002059C0,67,Code/masm_dumps/ShareExperienceBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership

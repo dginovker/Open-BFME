@@ -1992,3 +1992,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1TooltipUpgradeModuleData@@UAE@XZ	landed	Factory 0x12BC30 ctor 0x12BAE0 unique dtor 0x12BBB0/96; exact MASM
 ??1LargeGroupAudioUpdateModuleData@@UAE@XZ	landed	Factory 0x11C280 ctor 0x2971F0 unique dtor 0x297390/99; exact MASM
 ??1RubbleRiseUpdateModuleData@@UAE@XZ	landed	Factory 0x127BD0 ctor 0x127AD0 unique dtor 0x128BD0/103; exact MASM
+??1AttributeModifierAuraUpdateModuleData@@UAE@XZ	landed	Factory 0x11A950 ctor 0x280B20 unique dtor 0x280C40/106; exact MASM

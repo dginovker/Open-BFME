@@ -10988,3 +10988,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1LargeGroupAudioUpdateModuleData@@UAE@XZ,,0x00297390,99,Code/masm_dumps/LargeGroupAudioUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ?doLetterBoxMode@ScriptActions@@IAEX_N@Z,,0x002EF4D0,72,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,Display+0x130 enableLetterBox; Hide/ShowControlBar pins
 ??1RubbleRiseUpdateModuleData@@UAE@XZ,,0x00128BD0,103,Code/masm_dumps/RubbleRiseUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
+??1AttributeModifierAuraUpdateModuleData@@UAE@XZ,,0x00280C40,106,Code/masm_dumps/AttributeModifierAuraUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership

@@ -1970,3 +1970,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1AnimationSoundClientBehaviorModuleData@@UAE@XZ	landed	Factory 0x121DA0 ctor 0x606060 vtable 0x11155E0 deleting wrapper reaches 0x606120/67; exact MASM
 ??1FireWeaponWhenDeadBehaviorModuleData@@UAE@XZ	landed	Factory 0x12A250 ctor 0x12A1C0 vtable 0x108F0D0 deleting wrapper reaches 0x12AD60/67; exact MASM
 ??1EnragedBehaviorModuleData@@UAE@XZ	landed	Factory 0x114A40 ctor 0x203E60 vtable 0x10A5A58 deleting wrapper reaches 0x203F30/67; exact MASM
+??1CommandSetUpgradeModuleData@@UAE@XZ	landed	Factory 0x12B0B0 ctor 0x12AF80 vtable 0x108F338 deleting wrapper reaches 0x12B040/83; exact MASM

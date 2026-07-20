@@ -11917,3 +11917,21 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?showRallyPoint@ControlBar@@IAEXPBUCoord3D@@@Z,,0x0049DF00,312,Code/masm_dumps/_sa4__showRallyPoint_ControlBar__IAEXPBUCoord3D___Z_49DF00.asm,matched,Exact 312B Open-BFME4
 ?missionSave@GameState@@QAE?AW4SaveCode@@XZ,,0x00110600,311,Code/masm_dumps/_sa4__missionSave_GameState__QAE_AW4SaveCode__XZ_110600.asm,matched,Exact 311B Open-BFME4
 ?crc@AI@@UAEXPAVXfer@@@Z,,0x0014B8C0,303,Code/masm_dumps/_sa4__crc_AI__UAEXPAVXfer___Z_14B8C0.asm,matched,Exact 303B Open-BFME4
+?notifyUsersOfConnectionDone@NAT@@IAEXH@Z,,0x006712E0,578,Code/masm_dumps/_sa5__notifyUsersOfConnectionDone_NAT__IAEXH_Z_6712E0.asm,matched,Exact 578B Open-BFME4
+?doCreateObject@ScriptActions@@IAEXABVAsciiString@@00PAUCoord3D@@M@Z,,0x0034CF60,526,Code/masm_dumps/_sa5__doCreateObject_ScriptActions__IAEXABVAsciiString__34CF60.asm,matched,Exact 526B Open-BFME4
+??0SkirmishPreferences@@,,0x0009F850,377,Code/masm_dumps/_sa5___0SkirmishPreferences___9F850.asm,matched,Exact 377B Open-BFME4
+??0W3DBibBuffer@@QAE@XZ,,0x006D73C0,331,Code/masm_dumps/_sa5___0W3DBibBuffer__QAE_XZ_6D73C0.asm,matched,Exact 331B Open-BFME4
+?rewind@FileInputStream@@,,0x001036C0,297,Code/masm_dumps/_sa5__rewind_FileInputStream___1036C0.asm,matched,Exact 297B Open-BFME4
+?loadMap@TerrainLogic@@UAE_NVAsciiString@@_N@Z,,0x001AC1E0,293,Code/masm_dumps/_sa5__loadMap_TerrainLogic__UAE_NVAsciiString___N_Z_1AC1E0.asm,matched,Exact 293B Open-BFME4
+?getUnicodeBuildTime@Version@@,,0x000AF080,292,Code/masm_dumps/_sa5__getUnicodeBuildTime_Version___AF080.asm,matched,Exact 292B Open-BFME4
+?newCrateTemplate@CrateSystem@@QAEPAVCrateTemplate@@VAsciiString@@@Z,,0x0037A320,291,Code/masm_dumps/_sa5__newCrateTemplate_CrateSystem__QAEPAVCrateTemplate_37A320.asm,matched,Exact 291B Open-BFME4
+?getUnicodeBuildUser@Version@@,,0x000AF3B0,273,Code/masm_dumps/_sa5__getUnicodeBuildUser_Version___AF3B0.asm,matched,Exact 273B Open-BFME4
+?getUnicodeBuildLocation@Version@@,,0x000AF220,273,Code/masm_dumps/_sa5__getUnicodeBuildLocation_Version___AF220.asm,matched,Exact 273B Open-BFME4
+?init@ScreenCrossFadeFilter@@UAEHXZ,,0x007D3760,268,Code/masm_dumps/_sa5__init_ScreenCrossFadeFilter__UAEHXZ_7D3760.asm,matched,Exact 268B Open-BFME4
+?Get_DX8_Texture_Stage_State_Value_Name@DX8Wrapper@@,,0x00906FE0,264,Code/masm_dumps/_sa5__Get_DX8_Texture_Stage_State_Value_Name_DX8Wrapper_906FE0.asm,matched,Exact 264B Open-BFME4
+?processTimeout@MapTransferLoadScreen@@,,0x00510130,262,Code/masm_dumps/_sa5__processTimeout_MapTransferLoadScreen___510130.asm,matched,Exact 262B Open-BFME4
+?tryInfiltrationEvent@Radar@@,,0x001083D0,258,Code/masm_dumps/_sa5__tryInfiltrationEvent_Radar___1083D0.asm,matched,Exact 258B Open-BFME4
+?setCurrentFilename@MapTransferLoadScreen@@,,0x00491FA0,250,Code/masm_dumps/_sa5__setCurrentFilename_MapTransferLoadScreen___491FA0.asm,matched,Exact 250B Open-BFME4
+?init@MainMenuScaleUpTransition@@UAEXPAVGameWindow@@@Z,,0x0059E4E0,234,Code/masm_dumps/_s6__init_MainMenuScaleUpTransition_UAEXPAVGameWindow_Z_59E4E0.asm,matched,Exact 234B 'MainMenu.wnd:WinGrowMarker' Open-BFME4+Grok
+?getLastLocalFile@DownloadManager@@QAE?AVAsciiString@@XZ,,0x00626DA0,224,Code/masm_dumps/_s6__getLastLocalFile_DownloadManager_QAE_AVAsciiString_XZ_626DA0.asm,matched,Exact 224B 'FTP:LocalFileOpenFailed' Open-BFME4+Grok
+?init@AudioManager@@,,0x006B8220,953,Code/masm_dumps/_s6__init_AudioManager__6B8220.asm,matched,Exact 953B 'AudioSettings.ini' Open-BFME4+Grok

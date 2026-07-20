@@ -1,0 +1,26 @@
+.386
+.model flat
+
+; ?init@MainMenuScaleUpTransition@@UAEXPAVGameWindow@@@Z
+; Exact 234B @ 0x0059E4E0; 'MainMenu.wnd:WinGrowMarker' Open-BFME4+Grok
+_TEXT SEGMENT
+public ?init@MainMenuScaleUpTransition@@UAEXPAVGameWindow@@@Z
+?init@MainMenuScaleUpTransition@@UAEXPAVGameWindow@@@Z PROC
+    db 056h,08Bh,0F1h,08Bh,04Ch,024h,008h,085h,0C9h,057h,074h,020h,08Dh,046h,024h,050h
+    db 08Dh,056h,020h,052h,089h,04Eh,00Ch,0E8h,0C0h,089h,0A9h,0FFh,08Dh,046h,01Ch,050h
+    db 08Dh,04Eh,018h,051h,08Bh,04Eh,00Ch,0E8h,03Fh,014h,0A9h,0FFh,08Bh,015h,040h,01Bh
+    db 02Fh,001h,08Bh,00Dh,000h,0D6h,02Eh,001h,08Bh,03Ah,068h,020h,0CAh,010h,001h,0E8h
+    db 0B3h,0C8h,0A9h,0FFh,08Bh,00Dh,040h,01Bh,02Fh,001h,050h,06Ah,000h,0FFh,097h,0DCh
+    db 000h,000h,000h,085h,0C0h,089h,046h,04Ch,00Fh,084h,087h,000h,000h,000h,053h,055h
+    db 08Dh,07Eh,038h,057h,08Dh,06Eh,034h,055h,08Bh,0C8h,0E8h,06Dh,089h,0A9h,0FFh,08Bh
+    db 04Eh,04Ch,08Dh,05Eh,030h,08Dh,046h,02Ch,053h,050h,0E8h,0ECh,013h,0A9h,0FFh,08Bh
+    db 04Eh,010h,08Bh,006h,051h,08Bh,0CEh,0C6h,046h,009h,000h,0FFh,050h,008h,08Bh,056h
+    db 018h,08Bh,046h,02Ch,08Bh,04Eh,014h,02Bh,0C2h,099h,0F7h,0F9h,08Bh,056h,01Ch,0C6h
+    db 046h,008h,000h,0C6h,046h,009h,001h,089h,046h,03Ch,08Bh,003h,02Bh,0C2h,099h,0F7h
+    db 0F9h,08Bh,05Eh,020h,089h,046h,040h,08Bh,045h,000h,02Bh,0C3h,099h,0F7h,0F9h,08Bh
+    db 056h,024h,089h,046h,044h,08Bh,007h,02Bh,0C2h,099h,0F7h,0F9h,08Bh,056h,00Ch,08Bh
+    db 04Eh,04Ch,089h,046h,048h,08Bh,082h,0B4h,000h,000h,000h,050h,06Ah,000h,0E8h,046h
+    db 078h,0A9h,0FFh,05Dh,05Bh,05Fh,05Eh,0C2h,004h,000h
+?init@MainMenuScaleUpTransition@@UAEXPAVGameWindow@@@Z ENDP
+_TEXT ENDS
+END

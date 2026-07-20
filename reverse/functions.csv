@@ -11777,3 +11777,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1SpawnUnitBehaviorModuleData@@UAE@XZ,,0x00126F00,80,Code/masm_dumps/SpawnUnitBehaviorModuleData_destructor.asm,matched,Exact 80B SEH dtor Open-BFME4
 ??1GrantStealthBehaviorModuleData@@UAE@XZ,,0x00297D60,93,Code/masm_dumps/GrantStealthBehaviorModuleData_destructor.asm,matched,Exact 93B SEH dtor Open-BFME4
 ??1LargeGroupBonusUpdateModuleData@@UAE@XZ,,0x00297D60,93,Code/masm_dumps/LargeGroupBonusUpdateModuleData_destructor.asm,matched,Exact 93B SEH dtor Open-BFME4
+??0TemporarilyDefectUpdate@@QAE@PAVThing@@PBVModuleData@@@Z,,0x002B0AD0,146,Code/masm_dumps/TemporarilyDefectUpdate_constructor.asm,matched,Exact 146B ICF alias Open-BFME4

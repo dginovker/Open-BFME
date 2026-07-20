@@ -10990,3 +10990,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1RubbleRiseUpdateModuleData@@UAE@XZ,,0x00128BD0,103,Code/masm_dumps/RubbleRiseUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ??1AttributeModifierAuraUpdateModuleData@@UAE@XZ,,0x00280C40,106,Code/masm_dumps/AttributeModifierAuraUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ??1ObjectCreationUpgradeModuleData@@UAE@XZ,,0x002D7660,109,Code/masm_dumps/ObjectCreationUpgradeModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
+??1W3DTreeDrawModuleData@@UAE@XZ,,0x0077F460,112,Code/masm_dumps/W3DTreeDrawModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership

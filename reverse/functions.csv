@@ -11809,3 +11809,5 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?add@MultiIniFieldParse@@QAEXPBUFieldParse@@I@Z,,0x00850920,64,Code/masm_dumps/_leaf2__add_MultiIniFieldParse__QAEXPBUFieldPar_850920.asm,matched,Exact 64B present-unmatched Open-BFME4
 ?Start_Movie_Capture@WW3D@@SAXPBDM@Z,,0x009E7FD0,53,Code/masm_dumps/_leaf2__Start_Movie_Capture_WW3D__SAXPBDM_Z_9E7FD0.asm,matched,Exact 53B present-unmatched Open-BFME4
 ?Free_Definitions@DefinitionMgrClass@@SAXXZ,,0x009CB880,50,Code/masm_dumps/_leaf2__Free_Definitions_DefinitionMgrClass__SA_9CB880.asm,matched,Exact 50B present-unmatched Open-BFME4
+??1DebugIONet@@UAE@XZ,,0x00890F10,85,Code/masm_dumps/_pm___1DebugIONet__UAE_XZ_890F10.asm,matched,Exact 85B present-unmatched Open-BFME4
+??1DebugIOFlat@@UAE@XZ,,0x00890F10,85,Code/masm_dumps/_pm___1DebugIOFlat__UAE_XZ_890F10.asm,matched,Exact 85B present-unmatched Open-BFME4

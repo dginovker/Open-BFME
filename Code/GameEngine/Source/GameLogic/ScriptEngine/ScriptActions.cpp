@@ -6716,14 +6716,128 @@ void ScriptActions::doAffectSkillPointsModifier(const AsciiString& playerName, R
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?doResizeViewGuardband@ScriptActions@@IAEXMM@Z present-unmatched
+// BFME View vtable +0x1b8: setGuardBandBias.
+class BfmeViewVtbl_1b8 {
+public:
+	virtual void _v1b8_0() = 0;
+	virtual void _v1b8_1() = 0;
+	virtual void _v1b8_2() = 0;
+	virtual void _v1b8_3() = 0;
+	virtual void _v1b8_4() = 0;
+	virtual void _v1b8_5() = 0;
+	virtual void _v1b8_6() = 0;
+	virtual void _v1b8_7() = 0;
+	virtual void _v1b8_8() = 0;
+	virtual void _v1b8_9() = 0;
+	virtual void _v1b8_10() = 0;
+	virtual void _v1b8_11() = 0;
+	virtual void _v1b8_12() = 0;
+	virtual void _v1b8_13() = 0;
+	virtual void _v1b8_14() = 0;
+	virtual void _v1b8_15() = 0;
+	virtual void _v1b8_16() = 0;
+	virtual void _v1b8_17() = 0;
+	virtual void _v1b8_18() = 0;
+	virtual void _v1b8_19() = 0;
+	virtual void _v1b8_20() = 0;
+	virtual void _v1b8_21() = 0;
+	virtual void _v1b8_22() = 0;
+	virtual void _v1b8_23() = 0;
+	virtual void _v1b8_24() = 0;
+	virtual void _v1b8_25() = 0;
+	virtual void _v1b8_26() = 0;
+	virtual void _v1b8_27() = 0;
+	virtual void _v1b8_28() = 0;
+	virtual void _v1b8_29() = 0;
+	virtual void _v1b8_30() = 0;
+	virtual void _v1b8_31() = 0;
+	virtual void _v1b8_32() = 0;
+	virtual void _v1b8_33() = 0;
+	virtual void _v1b8_34() = 0;
+	virtual void _v1b8_35() = 0;
+	virtual void _v1b8_36() = 0;
+	virtual void _v1b8_37() = 0;
+	virtual void _v1b8_38() = 0;
+	virtual void _v1b8_39() = 0;
+	virtual void _v1b8_40() = 0;
+	virtual void _v1b8_41() = 0;
+	virtual void _v1b8_42() = 0;
+	virtual void _v1b8_43() = 0;
+	virtual void _v1b8_44() = 0;
+	virtual void _v1b8_45() = 0;
+	virtual void _v1b8_46() = 0;
+	virtual void _v1b8_47() = 0;
+	virtual void _v1b8_48() = 0;
+	virtual void _v1b8_49() = 0;
+	virtual void _v1b8_50() = 0;
+	virtual void _v1b8_51() = 0;
+	virtual void _v1b8_52() = 0;
+	virtual void _v1b8_53() = 0;
+	virtual void _v1b8_54() = 0;
+	virtual void _v1b8_55() = 0;
+	virtual void _v1b8_56() = 0;
+	virtual void _v1b8_57() = 0;
+	virtual void _v1b8_58() = 0;
+	virtual void _v1b8_59() = 0;
+	virtual void _v1b8_60() = 0;
+	virtual void _v1b8_61() = 0;
+	virtual void _v1b8_62() = 0;
+	virtual void _v1b8_63() = 0;
+	virtual void _v1b8_64() = 0;
+	virtual void _v1b8_65() = 0;
+	virtual void _v1b8_66() = 0;
+	virtual void _v1b8_67() = 0;
+	virtual void _v1b8_68() = 0;
+	virtual void _v1b8_69() = 0;
+	virtual void _v1b8_70() = 0;
+	virtual void _v1b8_71() = 0;
+	virtual void _v1b8_72() = 0;
+	virtual void _v1b8_73() = 0;
+	virtual void _v1b8_74() = 0;
+	virtual void _v1b8_75() = 0;
+	virtual void _v1b8_76() = 0;
+	virtual void _v1b8_77() = 0;
+	virtual void _v1b8_78() = 0;
+	virtual void _v1b8_79() = 0;
+	virtual void _v1b8_80() = 0;
+	virtual void _v1b8_81() = 0;
+	virtual void _v1b8_82() = 0;
+	virtual void _v1b8_83() = 0;
+	virtual void _v1b8_84() = 0;
+	virtual void _v1b8_85() = 0;
+	virtual void _v1b8_86() = 0;
+	virtual void _v1b8_87() = 0;
+	virtual void _v1b8_88() = 0;
+	virtual void _v1b8_89() = 0;
+	virtual void _v1b8_90() = 0;
+	virtual void _v1b8_91() = 0;
+	virtual void _v1b8_92() = 0;
+	virtual void _v1b8_93() = 0;
+	virtual void _v1b8_94() = 0;
+	virtual void _v1b8_95() = 0;
+	virtual void _v1b8_96() = 0;
+	virtual void _v1b8_97() = 0;
+	virtual void _v1b8_98() = 0;
+	virtual void _v1b8_99() = 0;
+	virtual void _v1b8_100() = 0;
+	virtual void _v1b8_101() = 0;
+	virtual void _v1b8_102() = 0;
+	virtual void _v1b8_103() = 0;
+	virtual void _v1b8_104() = 0;
+	virtual void _v1b8_105() = 0;
+	virtual void _v1b8_106() = 0;
+	virtual void _v1b8_107() = 0;
+	virtual void _v1b8_108() = 0;
+	virtual void _v1b8_109() = 0;
+	virtual void setGuardBandBias(const Coord2D *gb) = 0;
+};
+
 void ScriptActions::doResizeViewGuardband(const Real gbx, const Real gby)
 {
-
-	Coord2D newGuardBand = { gbx, gby };
-
-	TheTacticalView->setGuardBandBias( &newGuardBand );
-
+	Coord2D newGuardBand;
+	newGuardBand.x = gbx;
+	newGuardBand.y = gby;
+	((BfmeViewVtbl_1b8 *)TheTacticalView)->setGuardBandBias(&newGuardBand);
 }
 
 //-------------------------------------------------------------------------------------------------

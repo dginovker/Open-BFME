@@ -3350,3 +3350,5 @@ _HideControlBar,0x00002847,HideControlBar letterbox
 _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?HideControlBar@@YAXH@Z,0x00002847,HideControlBar int
 ?ShowControlBar@@YAXH@Z,0x00024848,ShowControlBar int
+?doFreezeTime@ScriptEngine@@QAEXXZ,0x00336F00,BFME freeze +0x17624
+?doFreezeTime@ScriptEngine@@QAEXXZ,0x0001FDAC,ILT freeze

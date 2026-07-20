@@ -4050,10 +4050,9 @@ void ScriptActions::doWeather(Bool showWeather)
 //-------------------------------------------------------------------------------------------------
 /** Freeze time */
 //-------------------------------------------------------------------------------------------------
-void ScriptActions::doFreezeTime(void)
-{
-	TheScriptEngine->doFreezeTime();
-}
+// ?doFreezeTime@ScriptActions@@IAEXXZ
+// Body in ScriptActions_doFreezeTime.asm (exact 11B @ 0x2EF680).
+
 
 //-------------------------------------------------------------------------------------------------
 /** Unfreeze time */

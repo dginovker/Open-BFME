@@ -3945,7 +3945,6 @@ void ScriptActions::doSkyBox(Bool startDraw)
 /** doWeather */
 //-------------------------------------------------------------------------------------------------
 
-// ?doWeather@ScriptActions@@IAEX_N@Z present-unmatched
 void ScriptActions::doWeather(Bool showWeather)
 {
 	TheSnowManager->setVisible(showWeather);

@@ -2903,10 +2903,21 @@ void ScriptActions::excludePlayerFromScoreScreen(const AsciiString& playerName)
 //-------------------------------------------------------------------------------------------------
 /** excludePlayerFromScoreScreen */
 //-------------------------------------------------------------------------------------------------
-// ?enableScoring@ScriptActions@@IAEX_N@Z present-unmatched
+// BFME GameLogic script overrides (ZH packs these earlier in the object).
+struct BfmeGameLogicScriptFields {
+	UnsignedByte _pad[0x90];
+	Bool m_isScoringEnabled;          // +0x90
+	Bool m_showBehindBuildingMarkers; // +0x91
+	Bool m_drawIconUI;                // +0x92
+	Bool m_showDynamicLOD;            // +0x93
+	UnsignedByte _pad2[0x4];          // +0x94..+0x97 (unknown bools / padding)
+	Int m_scriptHulkMaxLifetimeOverride; // +0x98
+};
+
+// ?enableScoring@ScriptActions@@IAEX_N@Z
 void ScriptActions::enableScoring(Bool score)
 {
-	TheGameLogic->enableScoring(score);
+	((BfmeGameLogicScriptFields *)TheGameLogic)->m_isScoringEnabled = score;
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -6188,16 +6199,6 @@ void ScriptActions::doEvaEnabledDisabled(Bool setEnabled)
 }
 
 //-------------------------------------------------------------------------------------------------
-// BFME GameLogic script-UI overrides live at +0x91..+0x98 (ZH member order packs them earlier).
-struct BfmeGameLogicScriptFields {
-	UnsignedByte _pad[0x91];
-	Bool m_showBehindBuildingMarkers; // +0x91
-	Bool m_drawIconUI;                // +0x92
-	Bool m_showDynamicLOD;            // +0x93
-	UnsignedByte _pad2[0x4];          // +0x94..+0x97
-	Int m_scriptHulkMaxLifetimeOverride; // +0x98
-};
-
 // ?doSetOcclusionMode@ScriptActions@@IAEX_N@Z
 void ScriptActions::doSetOcclusionMode(Bool setEnabled)
 {

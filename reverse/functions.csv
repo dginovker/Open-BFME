@@ -10935,3 +10935,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?doSetOcclusionMode@ScriptActions@@IAEX_N@Z,,0x002F05E0,19,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,GameLogic+0x91 script flag
 ?doSetDrawIconUIMode@ScriptActions@@IAEX_N@Z,,0x002F0600,19,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,GameLogic+0x92 script flag
 ?doSetDynamicLODMode@ScriptActions@@IAEX_N@Z,,0x002F0620,19,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,GameLogic+0x93 script flag
+?enableScoring@ScriptActions@@IAEX_N@Z,,0x002EEBC0,19,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,GameLogic+0x90 scoring flag

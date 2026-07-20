@@ -11026,3 +11026,133 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1PropagandaTowerBehaviorModuleData@@UAE@XZ,,0x0028DD10,137,Code/masm_dumps/PropagandaTowerBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory 0x11CB70 ctor 0x28DC60 ownership
 ??1MinefieldBehaviorModuleData@@UAE@XZ,,0x0036CE20,100,Code/masm_dumps/MinefieldBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory 0x1145D0 ctor 0x36CDD0 ownership
 ??1PropagandaTowerBehavior@@UAE@XZ,,0x002034F0,67,Code/masm_dumps/PropagandaTowerBehavior_destructor.asm,matched,Exact retail MASM; friend_newModuleInstance factory ownership
+?removeObjectBuilt@ScoreKeeper@@QAEXPBVObject@@@Z,,0x000016CC,5,Code/masm_dumps/_removeObjectBuilt_ScoreKeeper__QAEXPBVObject@@@Z_16CC.asm,matched,thunk accessor of ported class
+?getHeightAboveTerrain@Thing@@QBEMXZ,,0x00001C30,5,Code/masm_dumps/_getHeightAboveTerrain_Thing__QBEMXZ_1C30.asm,matched,thunk accessor of ported class
+?_M_insert@?$hashtable@U?$pair@$$CBHW4Relationship@@@_STL@@HU?$hash@H@2@U?$_Select1st@U?$pair@$$CBHW4Relationship@@@_STL@@@2@U?$equal_to@H@2@V?$allocator@U?$pair@$$CBHW4Relationship@@@_STL@@@2@@_STL@@QAEAAU?$pair@$$CBHW4Relationship@@@2@ABU32@@Z,,0x000013E8,5,Code/masm_dumps/_thunk_a95800deb9b4_13E8.asm,matched,thunk accessor of ported class
+??0?$_Vector_base@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QAE@IABV?$allocator@PAVObject@@@1@@Z,,0x00001DA7,5,Code/masm_dumps/_thunk_350d55e1611c_1DA7.asm,matched,thunk accessor of ported class
+??1PendingSurfaceStruct@Render2DSentenceClass@@QAE@XZ,,0x00001F96,5,Code/masm_dumps/_thunk_3b873742305f_1F96.asm,matched,thunk accessor of ported class
+?Allocate_Object_Memory@?$ObjectPoolClass@VCameraShakerClass@CameraShakeSystemClass@@$0BAA@@@QAEPAVCameraShakerClass@CameraShakeSystemClass@@XZ,,0x00002603,5,Code/masm_dumps/_thunk_95663ca2b7a6_2603.asm,matched,thunk accessor of ported class
+??4?$PrimitiveAnimationChannelClass@VVector3@@@@QAEABV0@ABV0@@Z,,0x000026AD,5,Code/masm_dumps/_thunk_aeaf4b32f0ba_26AD.asm,matched,thunk accessor of ported class
+??0?$SimpleParameterClass@H$0A@@@QAE@PAXPBD@Z,,0x00002874,5,Code/masm_dumps/_thunk_98b45ef21d28_2874.asm,matched,thunk accessor of ported class
+?Add@?$DynamicVectorClass@UPtrPairStruct@PointerRemapClass@@@@QAE_NABUPtrPairStruct@PointerRemapClass@@@Z,,0x00002A36,5,Code/masm_dumps/_thunk_f945c502413c_2A36.asm,matched,thunk accessor of ported class
+?countInverseIntersection@?$BitFlags@$0HF@@@QBEHABV1@@Z,,0x00003873,5,Code/masm_dumps/_thunk_58073e49f2c5_3873.asm,matched,thunk accessor of ported class
+??1HideShowSubObjInfo@ModelConditionInfo@@QAE@XZ,,0x0000466F,5,Code/masm_dumps/_thunk_6952911781b5_466F.asm,matched,thunk accessor of ported class
+?classifyObjectFootprint@Pathfinder@@IAEXPAVObject@@_N@Z,,0x00004EE9,5,Code/masm_dumps/_thunk_3c41e09a14cf_4EE9.asm,matched,thunk accessor of ported class
+?getHeightAboveTerrainOrWater@Thing@@QBEMXZ,,0x00005948,5,Code/masm_dumps/_thunk_eb7dfbbe8fce_5948.asm,matched,thunk accessor of ported class
+?updateFadeLevel@ScreenCrossFadeFilter@@IAE_NXZ,,0x00006D0C,5,Code/masm_dumps/_thunk_b9971e87b766_6D0C.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@GV?$allocator@G@_STL@@@_STL@@IAEXPAGABGABU__true_type@2@I_N@Z,,0x0000791E,5,Code/masm_dumps/_thunk_ebe8b2b31c01_791E.asm,matched,thunk accessor of ported class
+?_M_lower_bound@?$_Rb_tree@VAsciiString@@V1@U?$_Identity@VAsciiString@@@_STL@@U?$less@VAsciiString@@@3@V?$allocator@VAsciiString@@@3@@_STL@@ABEPAU?$_Rb_tree_node@VAsciiString@@@2@ABVAsciiString@@@Z,,0x00007D06,5,Code/masm_dumps/_thunk_43ac898e1ee7_7D06.asm,matched,thunk accessor of ported class
+??0?$vector@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@QAE@ABV?$allocator@VAsciiString@@@1@@Z,,0x00008DCD,5,Code/masm_dumps/_thunk_22b652263b02_8DCD.asm,matched,thunk accessor of ported class
+?_M_clear@?$vector@UParticleSysBoneInfo@@V?$allocator@UParticleSysBoneInfo@@@_STL@@@_STL@@IAEXXZ,,0x0000903E,5,Code/masm_dumps/_thunk_df8b36e610d0_903E.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@U?$pair@UICoord2D@@UCoord3D@@@_STL@@V?$allocator@U?$pair@UICoord2D@@UCoord3D@@@_STL@@@2@@_STL@@IAEXPAU?$pair@UICoord2D@@UCoord3D@@@2@ABU32@ABU__false_type@2@I_N@Z,,0x00009052,5,Code/masm_dumps/_thunk_b7829e0e58d5_9052.asm,matched,thunk accessor of ported class
+??1?$pair@$$CBW4NameKeyType@@VObjectCreationList@@@_STL@@QAE@XZ,,0x00009525,5,Code/masm_dumps/_thunk_1b8256c667f0_9525.asm,matched,thunk accessor of ported class
+??$__copy@PAUPayload@DeliverPayloadNugget@@PAU12@H@_STL@@YAPAUPayload@DeliverPayloadNugget@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,,0x000097CD,5,Code/masm_dumps/_thunk_07cfc5d6013c_97CD.asm,matched,thunk accessor of ported class
+??$__copy@PAUParticleSysBoneInfo@@PAU1@H@_STL@@YAPAUParticleSysBoneInfo@@PAU1@00ABUrandom_access_iterator_tag@0@PAH@Z,,0x000097CD,5,Code/masm_dumps/_thunk_3b1ec58a5554_97CD.asm,matched,thunk accessor of ported class (icf alias)
+??1ModelArrayClass@HLodClass@@UAE@XZ,,0x00009C5A,5,Code/masm_dumps/_thunk_c9d2bd8ac7fd_9C5A.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@UFlightDeckInfo@FlightDeckBehavior@@V?$allocator@UFlightDeckInfo@FlightDeckBehavior@@@_STL@@@_STL@@IAEXPAUFlightDeckInfo@FlightDeckBehavior@@ABU34@ABU__false_type@2@I_N@Z,,0x0000A47A,5,Code/masm_dumps/_thunk_145a9e2b2152_A47A.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@USegInfo@W3DRopeDraw@@V?$allocator@USegInfo@W3DRopeDraw@@@_STL@@@_STL@@IAEXPAUSegInfo@W3DRopeDraw@@ABU34@ABU__false_type@2@I_N@Z,,0x0000AE93,5,Code/masm_dumps/_thunk_b0f5f356cee4_AE93.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@V?$BitFlags@$0HF@@@V?$allocator@V?$BitFlags@$0HF@@@@_STL@@@_STL@@IAEXPAV?$BitFlags@$0HF@@@ABV3@ABU__false_type@2@I_N@Z,,0x0000AE93,5,Code/masm_dumps/_thunk_82c66295dc73_AE93.asm,matched,thunk accessor of ported class (icf alias)
+?_M_insert_overflow@?$vector@UStationPointData@GarrisonContain@@V?$allocator@UStationPointData@GarrisonContain@@@_STL@@@_STL@@IAEXPAUStationPointData@GarrisonContain@@ABU34@ABU__false_type@2@I_N@Z,,0x0000AE93,5,Code/masm_dumps/_thunk_40eb41b9a4c7_AE93.asm,matched,thunk accessor of ported class (icf alias)
+?_M_insert_overflow@?$vector@UEvaCheck@@V?$allocator@UEvaCheck@@@_STL@@@_STL@@IAEXPAUEvaCheck@@ABU3@ABU__false_type@2@I_N@Z,,0x0000AE93,5,Code/masm_dumps/_thunk_a785656753b9_AE93.asm,matched,thunk accessor of ported class (icf alias)
+?_M_insert_overflow@?$vector@UDetonatorInfo@MinefieldBehavior@@V?$allocator@UDetonatorInfo@MinefieldBehavior@@@_STL@@@_STL@@IAEXPAUDetonatorInfo@MinefieldBehavior@@ABU34@ABU__false_type@2@I_N@Z,,0x0000AE93,5,Code/masm_dumps/_thunk_bfd82deeaeed_AE93.asm,matched,thunk accessor of ported class (icf alias)
+?winSetHiliteImage@GameWindow@@QAEHHPBVImage@@@Z,,0x0000B406,5,Code/masm_dumps/_thunk_9585776c8e24_B406.asm,matched,thunk accessor of ported class
+?winSetDisabledImage@GameWindow@@QAEHHPBVImage@@@Z,,0x0000B406,5,Code/masm_dumps/_thunk_027fd80c43a9_B406.asm,matched,thunk accessor of ported class (icf alias)
+?Clear@?$VectorClass@U_ArcInfoStruct@VehicleCurveClass@@@@UAEXXZ,,0x0000B9CE,5,Code/masm_dumps/_thunk_90bc90015b5f_B9CE.asm,matched,thunk accessor of ported class
+?getClassMemoryPool@ObjectDefectionHelper@@SAPAVMemoryPool@@XZ,,0x0000B9CE,5,Code/masm_dumps/_thunk_df0f11fba4f0_B9CE.asm,matched,thunk accessor of ported class (icf alias)
+?Clear@?$VectorClass@VTangentsClass@HermiteSpline3DClass@@@@UAEXXZ,,0x0000B9CE,5,Code/masm_dumps/_thunk_5af03cefc1c8_B9CE.asm,matched,thunk accessor of ported class (icf alias)
+?Clear@?$VectorClass@VTangentsClass@HermiteSpline1DClass@@@@UAEXXZ,,0x0000B9CE,5,Code/masm_dumps/_thunk_ab25ea3f8ed3_B9CE.asm,matched,thunk accessor of ported class (icf alias)
+?_M_insert_overflow@?$vector@UEvaSideSounds@@V?$allocator@UEvaSideSounds@@@_STL@@@_STL@@IAEXPAUEvaSideSounds@@ABU3@ABU__false_type@2@I_N@Z,,0x0000C4A0,5,Code/masm_dumps/_thunk_3d7c14fd1a50_C4A0.asm,matched,thunk accessor of ported class
+?removeTerrainBibHighlighting@BaseHeightMapRenderObjClass@@QAEXXZ,,0x0000CC8E,5,Code/masm_dumps/_thunk_d3f5d1898e3b_CC8E.asm,matched,thunk accessor of ported class
+?setShoreLineDetail@BaseHeightMapRenderObjClass@@QAEXXZ,,0x0000CC8E,5,Code/masm_dumps/_thunk_f5d49d3fcf9f_CC8E.asm,matched,thunk accessor of ported class (icf alias)
+?removeAllTerrainBibs@BaseHeightMapRenderObjClass@@QAEXXZ,,0x0000CC8E,5,Code/masm_dumps/_thunk_f3c9c7f00414_CC8E.asm,matched,thunk accessor of ported class (icf alias)
+?addTeam@TeamsInfoRec@@QAEXPBVDict@@@Z,,0x0000D828,5,Code/masm_dumps/_thunk_8f93416693a1_D828.asm,matched,thunk accessor of ported class
+?removeTeam@TeamsInfoRec@@QAEXH@Z,,0x0000D828,5,Code/masm_dumps/_thunk_b63b5588148b_D828.asm,matched,thunk accessor of ported class (icf alias)
+??4?$PrimitiveAnimationChannelClass@VVector2@@@@QAEABV0@ABV0@@Z,,0x0000D828,5,Code/masm_dumps/_thunk_2483f6500592_D828.asm,matched,thunk accessor of ported class (icf alias)
+?Clear@?$VectorClass@VTCBClass@TCBSpline3DClass@@@@UAEXXZ,,0x0000DBA7,5,Code/masm_dumps/_thunk_37007bb9f1da_DBA7.asm,matched,thunk accessor of ported class
+?Clear@?$VectorClass@M@@UAEXXZ,,0x0000DBA7,5,Code/masm_dumps/_thunk_24465b32cdb4_DBA7.asm,matched,thunk accessor of ported class (icf alias)
+??$_Construct@UEvaSideSounds@@U1@@_STL@@YAXPAUEvaSideSounds@@ABU1@@Z,,0x0000E3BD,5,Code/masm_dumps/_thunk_387c1045740a_E3BD.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@UTransitionInfo@State@@V?$allocator@UTransitionInfo@State@@@_STL@@@_STL@@IAEXPAUTransitionInfo@State@@ABU34@ABU__false_type@2@I_N@Z,,0x0000E868,5,Code/masm_dumps/_thunk_b1518ce8f029_E868.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@VArmorTemplateSet@@V?$allocator@VArmorTemplateSet@@@_STL@@@_STL@@IAEXPAVArmorTemplateSet@@ABV3@ABU__false_type@2@I_N@Z,,0x0000E868,5,Code/masm_dumps/_thunk_30495bda04c8_E868.asm,matched,thunk accessor of ported class (icf alias)
+?_M_insert_overflow@?$vector@UWeaponRecoilInfo@W3DModelDraw@@V?$allocator@UWeaponRecoilInfo@W3DModelDraw@@@_STL@@@_STL@@IAEXPAUWeaponRecoilInfo@W3DModelDraw@@ABU34@ABU__false_type@2@I_N@Z,,0x0000E868,5,Code/masm_dumps/_thunk_590e71943b67_E868.asm,matched,thunk accessor of ported class (icf alias)
+?_M_insert_overflow@?$vector@UPrereqUnitRec@ProductionPrerequisite@@V?$allocator@UPrereqUnitRec@ProductionPrerequisite@@@_STL@@@_STL@@IAEXPAUPrereqUnitRec@ProductionPrerequisite@@ABU34@ABU__false_type@2@I_N@Z,,0x0000F277,5,Code/masm_dumps/_thunk_05e6e5682056_F277.asm,matched,thunk accessor of ported class
+?ReAcquireResources@W3DVolumetricShadowManager@@QAE_NXZ,,0x0000F9B6,5,Code/masm_dumps/_thunk_e2160ab9ee74_F9B6.asm,matched,thunk accessor of ported class
+??0?$pair@$$CBVAsciiString@@VArchivedFileInfo@@@_STL@@QAE@ABU01@@Z,,0x0001005F,5,Code/masm_dumps/_thunk_80298d109670_1005F.asm,matched,thunk accessor of ported class
+?undoNamedMapReveal@ScriptEngine@@QAEXABVAsciiString@@@Z,,0x0001019A,5,Code/masm_dumps/_thunk_90d5ac9abb8f_1019A.asm,matched,thunk accessor of ported class
+?Free_Object_Memory@?$ObjectPoolClass@VGenericSLNode@@$0BAA@@@QAEXPAVGenericSLNode@@@Z,,0x00011103,5,Code/masm_dumps/_thunk_8a3bb14a11ef_11103.asm,matched,thunk accessor of ported class
+?Free_Object_Memory@?$ObjectPoolClass@VCameraShakerClass@CameraShakeSystemClass@@$0BAA@@@QAEXPAVCameraShakerClass@CameraShakeSystemClass@@@Z,,0x00011103,5,Code/masm_dumps/_thunk_98b4cc4bfba6_11103.asm,matched,thunk accessor of ported class (icf alias)
+?Free_Object_Memory@?$ObjectPoolClass@VAABTreeLinkClass@@$0BAA@@@QAEXPAVAABTreeLinkClass@@@Z,,0x00011103,5,Code/masm_dumps/_thunk_2cf80c9c235c_11103.asm,matched,thunk accessor of ported class (icf alias)
+?Free_Object_Memory@?$ObjectPoolClass@VAABTreeNodeClass@@$0BAA@@@QAEXPAVAABTreeNodeClass@@@Z,,0x00011103,5,Code/masm_dumps/_thunk_a01013d6c378_11103.asm,matched,thunk accessor of ported class (icf alias)
+?newLocomotor@LocomotorStore@@QBEPAVLocomotor@@PBVLocomotorTemplate@@@Z,,0x000119E1,5,Code/masm_dumps/_thunk_59f7014863af_119E1.asm,matched,thunk accessor of ported class
+??0?$list@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@QAE@ABV01@@Z,,0x00011ADB,5,Code/masm_dumps/_thunk_4d5cca9974ae_11ADB.asm,matched,thunk accessor of ported class
+?freeZones@ZoneBlock@@IAEXXZ,,0x00012968,5,Code/masm_dumps/_thunk_18d4d4c1ba98_12968.asm,matched,thunk accessor of ported class
+??1Entry@?$HashTemplateClass@VStringClass@@PAVTextureClass@@@@QAE@XZ,,0x00013101,5,Code/masm_dumps/_thunk_8528cb7479dd_13101.asm,matched,thunk accessor of ported class
+??1Entry@?$HashTemplateClass@VStringClass@@PAVThumbnailClass@@@@QAE@XZ,,0x00013101,5,Code/masm_dumps/_thunk_7c6902ee3c48_13101.asm,matched,thunk accessor of ported class (icf alias)
+??1Entry@?$HashTemplateClass@VStringClass@@PAVHTreeClass@@@@QAE@XZ,,0x00013101,5,Code/masm_dumps/_thunk_c1c86cefe136_13101.asm,matched,thunk accessor of ported class (icf alias)
+??1Entry@?$HashTemplateClass@VStringClass@@H@@QAE@XZ,,0x00013101,5,Code/masm_dumps/_thunk_87a30cf46364_13101.asm,matched,thunk accessor of ported class (icf alias)
+??1Entry@?$HashTemplateClass@VStringClass@@PAV?$DynamicVectorClass@PAVDefinitionClass@@@@@@QAE@XZ,,0x00013101,5,Code/masm_dumps/_thunk_2f162743f577_13101.asm,matched,thunk accessor of ported class (icf alias)
+?setStatus@Object@@QAEXV?$BitFlags@$0CN@@@_N@Z,,0x0001366F,5,Code/masm_dumps/_thunk_2c21734a8beb_1366F.asm,matched,thunk accessor of ported class
+?estimateWeaponDamage@Weapon@@IAEMPBVObject@@0PBUCoord3D@@@Z,,0x0001366F,5,Code/masm_dumps/_thunk_01b1855ee818_1366F.asm,matched,thunk accessor of ported class (icf alias)
+??1FileInfoStruct@MixFileCreator@@QAE@XZ,,0x00013D40,5,Code/masm_dumps/_thunk_a5b7f15ac25c_13D40.asm,matched,thunk accessor of ported class
+??1?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@_N@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@_N@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@_N@_STL@@@3@@_STL@@QAE@XZ,,0x00014047,5,Code/masm_dumps/_thunk_79dfc80c6471_14047.asm,matched,thunk accessor of ported class
+??1?$vector@VPlayerTemplate@@V?$allocator@VPlayerTemplate@@@_STL@@@_STL@@QAE@XZ,,0x0001481C,5,Code/masm_dumps/_thunk_cc230e00b3c4_1481C.asm,matched,thunk accessor of ported class
+?winSetIMECompositeTextColors@GameWindow@@QAEXHH@Z,,0x00014C13,5,Code/masm_dumps/_thunk_43ecfac8142b_14C13.asm,matched,thunk accessor of ported class
+?makeEmpty@SimpleObjectIterator@@QAEXXZ,,0x00015479,5,Code/masm_dumps/_thunk_596536e4ef08_15479.asm,matched,thunk accessor of ported class
+?reset@NetCommandList@@QAEXXZ,,0x00015479,5,Code/masm_dumps/_thunk_6622733817a5_15479.asm,matched,thunk accessor of ported class (icf alias)
+?startRenderToTexture@W3DShaderManager@@SAXXZ,,0x000154E7,5,Code/masm_dumps/_thunk_b574341ed006_154E7.asm,matched,thunk accessor of ported class
+?getChipset@W3DShaderManager@@SA?AW4ChipsetType@@XZ,,0x000162A7,5,Code/masm_dumps/_thunk_e4b4a6ec6397_162A7.asm,matched,thunk accessor of ported class
+?setPosition@Drawable@@QAEXPBUCoord3D@@@Z,,0x0001742C,5,Code/masm_dumps/_thunk_23f71fef1431_1742C.asm,matched,thunk accessor of ported class
+?showBuildTooltipLayout@ControlBar@@QAEXPAVGameWindow@@@Z,,0x00017503,5,Code/masm_dumps/_thunk_a5ef29268998_17503.asm,matched,thunk accessor of ported class
+?winGetPosition@GameWindow@@QAEHPAH0@Z,,0x000179BD,5,Code/masm_dumps/_thunk_948195a838a4_179BD.asm,matched,thunk accessor of ported class
+??$__copy@PAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@H@_STL@@YAPAUHideShowSubObjInfo@ModelConditionInfo@@PAU12@00ABUrandom_access_iterator_tag@0@PAH@Z,,0x00018674,5,Code/masm_dumps/_thunk_98e1dbc1e0b9_18674.asm,matched,thunk accessor of ported class
+??0?$VectorClass@UFileInfoStruct@MixFileCreator@@@@QAE@HPBUFileInfoStruct@MixFileCreator@@@Z,,0x000187AF,5,Code/masm_dumps/_thunk_0dde1b49da7e_187AF.asm,matched,thunk accessor of ported class
+??0?$VectorClass@VRenderDeviceDescClass@@@@QAE@HPBVRenderDeviceDescClass@@@Z,,0x000187AF,5,Code/masm_dumps/_thunk_1c2401487d68_187AF.asm,matched,thunk accessor of ported class (icf alias)
+??0?$VectorClass@VHashItem@?$UniqueArrayClass@VFaceClass@MeshBuilderClass@@@@@@QAE@HPBVHashItem@?$UniqueArrayClass@VFaceClass@MeshBuilderClass@@@@@Z,,0x000187AF,5,Code/masm_dumps/_thunk_b2a365d29c2c_187AF.asm,matched,thunk accessor of ported class (icf alias)
+??0?$VectorClass@VProxyClass@@@@QAE@HPBVProxyClass@@@Z,,0x000187AF,5,Code/masm_dumps/_thunk_ea894eef169a_187AF.asm,matched,thunk accessor of ported class (icf alias)
+?_M_upper_bound@?$_Rb_tree@VAsciiString@@V1@U?$_Identity@VAsciiString@@@_STL@@U?$less@VAsciiString@@@3@V?$allocator@VAsciiString@@@3@@_STL@@ABEPAU?$_Rb_tree_node@VAsciiString@@@2@ABVAsciiString@@@Z,,0x00018ADE,5,Code/masm_dumps/_thunk_c58bf737d0a2_18ADE.asm,matched,thunk accessor of ported class
+?testSetAndClear@?$BitFlags@$0HE@@@QBE_NABV1@0@Z,,0x00019BCD,5,Code/masm_dumps/_thunk_8d4ed024ffb4_19BCD.asm,matched,thunk accessor of ported class
+?set@?$bitset@$0ED@@_STL@@QAEAAV12@IH@Z,,0x00019BCD,5,Code/masm_dumps/_thunk_a7a0b256eefd_19BCD.asm,matched,thunk accessor of ported class (icf alias)
+?removeTreesAndPropsForConstruction@BaseHeightMapRenderObjClass@@QAEXPBUCoord3D@@ABVGeometryInfo@@M@Z,,0x0001A492,5,Code/masm_dumps/_thunk_810c39ea95d7_1A492.asm,matched,thunk accessor of ported class
+??$_Construct@U?$pair@UICoord2D@@UCoord3D@@@_STL@@U12@@_STL@@YAXPAU?$pair@UICoord2D@@UCoord3D@@@0@ABU10@@Z,,0x0001BE23,5,Code/masm_dumps/_thunk_0214896ed3a5_1BE23.asm,matched,thunk accessor of ported class
+?duplicate@Condition@@QBEPAV1@XZ,,0x0001C189,5,Code/masm_dumps/_thunk_b5f1b2e7e95e_1C189.asm,matched,thunk accessor of ported class
+??$_Destroy@PAUParticleSysBoneInfo@@@_STL@@YAXPAUParticleSysBoneInfo@@0@Z,,0x0001C19D,5,Code/masm_dumps/_thunk_b2ca9d1b1066_1C19D.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@PAVDrawable@@V?$allocator@PAVDrawable@@@_STL@@@_STL@@IAEXPAPAVDrawable@@ABQAV3@ABU__true_type@2@I_N@Z,,0x0001CBFC,5,Code/masm_dumps/_thunk_18120ea21345_1CBFC.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@HV?$allocator@H@_STL@@@_STL@@IAEXPAHABHABU__true_type@2@I_N@Z,,0x0001CBFC,5,Code/masm_dumps/_thunk_a805b155a3b7_1CBFC.asm,matched,thunk accessor of ported class (icf alias)
+?destroyObject@GameLogic@@QAEXPAVObject@@@Z,,0x0001D0DE,5,Code/masm_dumps/_thunk_6e29353ef7bd_1D0DE.asm,matched,thunk accessor of ported class
+?get_allocator@?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QBE?AV?$allocator@PAVObject@@@2@XZ,,0x0001D534,5,Code/masm_dumps/_thunk_b1261e61e6ef_1D534.asm,matched,thunk accessor of ported class
+?get_allocator@?$vector@PBVLocomotorTemplate@@V?$allocator@PBVLocomotorTemplate@@@_STL@@@_STL@@QBE?AV?$allocator@PBVLocomotorTemplate@@@2@XZ,,0x0001D534,5,Code/masm_dumps/_thunk_4e895b5a1fe8_1D534.asm,matched,thunk accessor of ported class (icf alias)
+??0?$_Vector_base@PBVLocomotorTemplate@@V?$allocator@PBVLocomotorTemplate@@@_STL@@@_STL@@QAE@IABV?$allocator@PBVLocomotorTemplate@@@1@@Z,,0x0001D949,5,Code/masm_dumps/_thunk_b6346f2d9e3e_1D949.asm,matched,thunk accessor of ported class
+??4?$PrimitiveAnimationChannelClass@M@@QAEABV0@ABV0@@Z,,0x0001DB6F,5,Code/masm_dumps/_thunk_b8e050a9e36c_1DB6F.asm,matched,thunk accessor of ported class
+??1CameraShakerClass@CameraShakeSystemClass@@UAE@XZ,,0x0001E394,5,Code/masm_dumps/_thunk_0bde8e90dbaf_1E394.asm,matched,thunk accessor of ported class
+?init@W3DVolumetricShadowManager@@QAE_NXZ,,0x0001EAA6,5,Code/masm_dumps/_thunk_3da637bb0556_1EAA6.asm,matched,thunk accessor of ported class
+?nameToKey@NameKeyGenerator@@QAE?AW4NameKeyType@@PBD@Z,,0x0001EDE9,5,Code/masm_dumps/_thunk_0bb8e89c48f3_1EDE9.asm,matched,thunk accessor of ported class
+??0?$list@VAsciiString@@V?$allocator@VAsciiString@@@_STL@@@_STL@@QAE@ABV?$allocator@VAsciiString@@@1@@Z,,0x0001F5D2,5,Code/masm_dumps/_thunk_072a097d7c3f_1F5D2.asm,matched,thunk accessor of ported class
+??0?$vector@UICoord2D@@V?$allocator@UICoord2D@@@_STL@@@_STL@@QAE@ABV?$allocator@UICoord2D@@@1@@Z,,0x0001F5D2,5,Code/masm_dumps/_thunk_0c5051ccaf21_1F5D2.asm,matched,thunk accessor of ported class (icf alias)
+??0?$list@VPeerResponse@@V?$allocator@VPeerResponse@@@_STL@@@_STL@@QAE@ABV?$allocator@VPeerResponse@@@1@@Z,,0x0001F5D2,5,Code/masm_dumps/_thunk_3d775a6ab43b_1F5D2.asm,matched,thunk accessor of ported class (icf alias)
+??0?$list@VQueuedDownload@@V?$allocator@VQueuedDownload@@@_STL@@@_STL@@QAE@ABV?$allocator@VQueuedDownload@@@1@@Z,,0x0001F5D2,5,Code/masm_dumps/_thunk_0f0c5a7fa0dc_1F5D2.asm,matched,thunk accessor of ported class (icf alias)
+??$_Construct@U?$pair@W4ObjectID@@W41@@_STL@@U12@@_STL@@YAXPAU?$pair@W4ObjectID@@W41@@0@ABU10@@Z,,0x0001FA1E,5,Code/masm_dumps/_thunk_d18ef9982fc7_1FA1E.asm,matched,thunk accessor of ported class
+?detach@NetCommandMsg@@QAEXXZ,,0x000200A4,5,Code/masm_dumps/_thunk_f8723e0b2e80_200A4.asm,matched,thunk accessor of ported class
+?setSize@Shadow@@QAEXMM@Z,,0x0002133C,5,Code/masm_dumps/_thunk_43273cb50a42_2133C.asm,matched,thunk accessor of ported class
+?compare@AsciiString@@QBEHABV1@@Z,,0x000220C5,5,Code/masm_dumps/_thunk_453596be1c45_220C5.asm,matched,thunk accessor of ported class
+?buildTerrainTexture@W3DRadar@@IAEXPAVTerrainLogic@@@Z,,0x0002248F,5,Code/masm_dumps/_thunk_2c5ac2a20216_2248F.asm,matched,thunk accessor of ported class
+?removeGoal@Pathfinder@@QAEXPAVObject@@@Z,,0x0002248F,5,Code/masm_dumps/_thunk_be4d67fa3023_2248F.asm,matched,thunk accessor of ported class (icf alias)
+?removeNamedMapReveal@ScriptEngine@@QAEXABVAsciiString@@@Z,,0x00022610,5,Code/masm_dumps/_thunk_ae6263466ea1_22610.asm,matched,thunk accessor of ported class
+?freeSockets@NameKeyGenerator@@AAEXXZ,,0x000226E7,5,Code/masm_dumps/_thunk_022ca91e9d30_226E7.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@U?$pair@W4ObjectID@@W41@@_STL@@V?$allocator@U?$pair@W4ObjectID@@W41@@_STL@@@2@@_STL@@IAEXPAU?$pair@W4ObjectID@@W41@@2@ABU32@ABU__false_type@2@I_N@Z,,0x00022AF7,5,Code/masm_dumps/_thunk_473a90bc1579_22AF7.asm,matched,thunk accessor of ported class
+?_M_create_node@?$list@PAVAnimateWindow@@V?$allocator@PAVAnimateWindow@@@_STL@@@_STL@@IAEPAU?$_List_node@PAVAnimateWindow@@@2@ABQAVAnimateWindow@@@Z,,0x00022D36,5,Code/masm_dumps/_thunk_e8e9c9397143_22D36.asm,matched,thunk accessor of ported class
+??1?$_Rb_tree@VAsciiString@@V1@U?$_Identity@VAsciiString@@@_STL@@U?$less@VAsciiString@@@3@V?$allocator@VAsciiString@@@3@@_STL@@QAE@XZ,,0x000235E7,5,Code/masm_dumps/_thunk_470c1ce30aed_235E7.asm,matched,thunk accessor of ported class
+?erase@?$list@PAVGameWindow@@V?$allocator@PAVGameWindow@@@_STL@@@_STL@@QAE?AU?$_List_iterator@PAVGameWindow@@U?$_Nonconst_traits@PAVGameWindow@@@_STL@@@2@U32@0@Z,,0x00024131,5,Code/masm_dumps/_thunk_ade1489f61b8_24131.asm,matched,thunk accessor of ported class
+?getAdjustedVisionRangeForObject@AI@@SAMPBVObject@@H@Z,,0x0002481B,5,Code/masm_dumps/_thunk_378e2fbbc5f2_2481B.asm,matched,thunk accessor of ported class
+??1?$_Rb_tree@VAsciiString@@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@U?$_Select1st@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@@3@U?$less@VAsciiString@@@3@V?$allocator@U?$pair@$$CBVAsciiString@@VMapMetaData@@@_STL@@@3@@_STL@@QAE@XZ,,0x00024BB8,5,Code/masm_dumps/_thunk_c4f7a91994b2_24BB8.asm,matched,thunk accessor of ported class
+?_M_insert_overflow@?$vector@UHideShowSubObjInfo@ModelConditionInfo@@V?$allocator@UHideShowSubObjInfo@ModelConditionInfo@@@_STL@@@_STL@@IAEXPAUHideShowSubObjInfo@ModelConditionInfo@@ABU34@ABU__false_type@2@I_N@Z,,0x000251D0,5,Code/masm_dumps/_thunk_e4663e2a384b_251D0.asm,matched,thunk accessor of ported class
+?Set_DX8_Texture_Stage_State@DX8Wrapper@@SAXIKI@Z,,0x000261E3,5,Code/masm_dumps/_thunk_f555873840eb_261E3.asm,matched,thunk accessor of ported class
+?winSetHiliteTextColors@GameWindow@@QAEXHH@Z,,0x000268B9,5,Code/masm_dumps/_thunk_dee2ad8922c8_268B9.asm,matched,thunk accessor of ported class
+?adjustModelConditionForWeaponStatus@Object@@QAEXXZ,,0x000276D3,5,Code/masm_dumps/_thunk_6a9d42ce54ed_276D3.asm,matched,thunk accessor of ported class
+??$__find@U?$_List_iterator@VAsciiString@@U?$_Nonconst_traits@VAsciiString@@@_STL@@@_STL@@VAsciiString@@@_STL@@YA?AU?$_List_iterator@VAsciiString@@U?$_Nonconst_traits@VAsciiString@@@_STL@@@0@U10@0ABVAsciiString@@ABUinput_iterator_tag@0@@Z,,0x00027BAB,5,Code/masm_dumps/_thunk_fa95d07d4d21_27BAB.asm,matched,thunk accessor of ported class
+??$_M_allocate_and_copy@PBUParticleSysBoneInfo@@@?$vector@UParticleSysBoneInfo@@V?$allocator@UParticleSysBoneInfo@@@_STL@@@_STL@@IAEPAUParticleSysBoneInfo@@IPBU2@0@Z,,0x000286AA,5,Code/masm_dumps/_thunk_dadf8e25bec0_286AA.asm,matched,thunk accessor of ported class
+??$_Construct@UPrereqUnitRec@ProductionPrerequisite@@U12@@_STL@@YAXPAUPrereqUnitRec@ProductionPrerequisite@@ABU12@@Z,,0x00028957,5,Code/masm_dumps/_thunk_b19d0023ed94_28957.asm,matched,thunk accessor of ported class
+??1LogicalDecalClass@MultiFixedPoolDecalSystemClass@@QAE@XZ,,0x0002A08B,5,Code/masm_dumps/_thunk_cfc7de1816f7_2A08B.asm,matched,thunk accessor of ported class
+?pop_front@?$deque@VPeerResponse@@V?$allocator@VPeerResponse@@@_STL@@@_STL@@QAEXXZ,,0x0002A3C4,5,Code/masm_dumps/_thunk_39d62f419b68_2A3C4.asm,matched,thunk accessor of ported class
+??$__uninitialized_copy@PBUParticleSysBoneInfo@@PAU1@@_STL@@YAPAUParticleSysBoneInfo@@PBU1@0PAU1@ABU__false_type@0@@Z,,0x0002AF86,5,Code/masm_dumps/_thunk_dd4905f1b84c_2AF86.asm,matched,thunk accessor of ported class
+?setScriptStatus@Object@@QAEXW4ObjectScriptStatusBit@@_N@Z,,0x0002BF2B,5,Code/masm_dumps/_thunk_b209cbfebb47_2BF2B.asm,matched,thunk accessor of ported class
+?setOrRestoreTeam@Object@@IAEXPAVTeam@@_N@Z,,0x0002BF2B,5,Code/masm_dumps/_thunk_a74b8e6dd098_2BF2B.asm,matched,thunk accessor of ported class (icf alias)
+?internal_classifyObjectFootprint@Pathfinder@@IAEXPAVObject@@_N@Z,,0x0002BF2B,5,Code/masm_dumps/_thunk_e3a78c6d809d_2BF2B.asm,matched,thunk accessor of ported class (icf alias)

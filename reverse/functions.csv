@@ -12330,3 +12330,5 @@ _IsStatsConnected,,0x009D2B60,15,Code/masm_dumps/_sym4__IsStatsConnected_9D2B60.
 ?Add_Visible_Skin@DX8SkinFVFCategoryContainer@@QAEXPAVMeshClass@@@Z,,0x00945DB0,68,Code/masm_dumps/_rn10__Add_Visible_Skin_DX8SkinFVFCategoryContainer__QAEXPAVMeshClass___Z_945DB0.asm,matched,reloc-needle Open-BFME4+Grok
 ??6Debug@@QAEAAV0@_N@Z,,0x008897C0,30,Code/masm_dumps/_rn10___6Debug__QAEAAV0__N_Z_8897C0.asm,matched,reloc-needle Open-BFME4+Grok
 ?updateLoadProgress@GameLogic@@QAEXH@Z,,0x000DB020,3751,Code/masm_dumps/_sa16__updateLoadProgress_GameLogic__QAEXH_Z_DB020.asm,matched,sa16 Open-BFME4+Grok ReplayObserver
+?repairStructure@Player@@UAEXW4ObjectID@@@Z,,0x000C9720,20,Code/masm_dumps/_rn11__repairStructure_Player__UAEXW4ObjectID___Z_C9720.asm,matched,reloc-needle Open-BFME4+Grok
+?isRadarWindow@Radar@@QAE_NPAVGameWindow@@@Z,,0x0043A520,29,Code/masm_dumps/_rn11__isRadarWindow_Radar__QAE_NPAVGameWindow___Z_43A520.asm,matched,reloc-needle Open-BFME4+Grok

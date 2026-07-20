@@ -11964,3 +11964,16 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ?deleteTriggers@PolygonTrigger@@,,0x0074A680,139,Code/masm_dumps/_sa8__deleteTriggers_PolygonTrigger___74A680.asm,matched,Exact 139B Open-BFME4
 ??0WaterTransparencySetting@@QAE@XZ,,0x000C3730,139,Code/masm_dumps/_sa8___0WaterTransparencySetting__QAE_XZ_C3730.asm,matched,Exact 139B Open-BFME4
 ??0AttackStateMachine@@QAE@PAVObject@@PAVAIAttackState@@VAsciiString@@_N33@Z,,0x0017F570,103,Code/masm_dumps/_sa8___0AttackStateMachine__QAE_PAVObject__PAVAIAttackS_17F570.asm,matched,Exact 103B Open-BFME4
+??0RankPoints@@,,0x004D9DF0,1394,Code/masm_dumps/_sa9___0RankPoints___4D9DF0.asm,matched,Exact 1394B Open-BFME4
+?setMap@GameInfo@@QAEXVAsciiString@@@Z,,0x00620510,1213,Code/masm_dumps/_sa9__setMap_GameInfo__QAEXVAsciiString___Z_620510.asm,matched,Exact 1213B Open-BFME4
+?getMostValuableLocation@PartitionManager@@QAEXHIW4ValueOrThreat@@PAUCoord3D@@@Z,,0x0087C140,1002,Code/masm_dumps/_sa9__getMostValuableLocation_PartitionManager__QAEXHIW_87C140.asm,matched,Exact 1002B Open-BFME4
+?endMenu@EstablishConnectionsMenu@@,,0x00387A50,657,Code/masm_dumps/_sa9__endMenu_EstablishConnectionsMenu___387A50.asm,matched,Exact 657B Open-BFME4
+?Recolor_Texture@W3DAssetManager@@,,0x00A5828A,644,Code/masm_dumps/_sa9__Recolor_Texture_W3DAssetManager___A5828A.asm,matched,Exact 644B Open-BFME4
+?update@NAT@@,,0x0086C0C0,517,Code/masm_dumps/_sa9__update_NAT___86C0C0.asm,matched,Exact 517B Open-BFME4
+?doThisConnectionRound@NAT@@IAEXXZ,,0x00805A70,484,Code/masm_dumps/_sa9__doThisConnectionRound_NAT__IAEXXZ_805A70.asm,matched,Exact 484B Open-BFME4
+??1GameStateMap@@,,0x00112BF0,343,Code/masm_dumps/_sa9___1GameStateMap___112BF0.asm,matched,Exact 343B Open-BFME4
+?generateGameSpyGameResultsPacket@GameSpyStagingRoom@@,,0x0085E420,233,Code/masm_dumps/_sa9__generateGameSpyGameResultsPacket_GameSpyStagingRo_85E420.asm,matched,Exact 233B Open-BFME4
+?makeStateMachine@SupplyTruckAIUpdate@@,,0x002C5DB0,99,Code/masm_dumps/_sa9__makeStateMachine_SupplyTruckAIUpdate___2C5DB0.asm,matched,Exact 99B Open-BFME4
+?onExit@AIAttackState@@UAEXW4StateExitType@@@Z,,0x00184C00,99,Code/masm_dumps/_sa9__onExit_AIAttackState__UAEXW4StateExitType___Z_184C00.asm,matched,Exact 99B Open-BFME4
+??0LANPreferences@@,,0x00086480,92,Code/masm_dumps/_sa9___0LANPreferences___86480.asm,matched,Exact 92B Open-BFME4
+?canAffordUpgrade@UpgradeCenter@@QBE_NPAVPlayer@@PBVUpgradeTemplate@@_N@Z,,0x0010AF70,86,Code/masm_dumps/_sa9__canAffordUpgrade_UpgradeCenter__QBE_NPAVPlayer__P_10AF70.asm,matched,Exact 86B Open-BFME4

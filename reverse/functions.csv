@@ -10983,3 +10983,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1UnitCrateCollideModuleData@@UAE@XZ,,0x001270F0,83,Code/masm_dumps/UnitCrateCollideModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ?doEnableInput@ScriptActions@@IAEXXZ,,0x002EF090,27,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,InGameUI setInputEnabled + Mouse setVisibility pins
 ??1DynamicShroudClearingRangeUpdateModuleData@@UAE@XZ,,0x0028ECA0,95,Code/masm_dumps/DynamicShroudClearingRangeUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
+??1BaseUpgradeModuleData@@UAE@XZ,,0x002D3D20,96,Code/masm_dumps/BaseUpgradeModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership

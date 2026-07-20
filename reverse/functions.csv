@@ -11870,3 +11870,9 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0AITNGuardMachine@@,,0x0018AFB0,753,Code/masm_dumps/_sa___0AITNGuardMachine___18AFB0.asm,matched,Exact 753B string-anchored Open-BFME4
 ??0Bridge@@,,0x001A98A0,861,Code/masm_dumps/_sa___0Bridge___1A98A0.asm,matched,Exact 861B string-anchored Open-BFME4
 ?findLocomotorTemplateVector@AIUpdateModuleData@@,,0x0027EC80,412,Code/masm_dumps/_sa__findLocomotorTemplateVector_AIUpdateModuleData___27EC80.asm,matched,Exact 412B string-anchored Open-BFME4
+?Reset_Geometry@MeshGeometryClass@@QAEXHH@Z,,0x009268C0,800,Code/masm_dumps/_s4_Reset_Geometry_MeshGeometryClass_QAEXHH_Z_9268C0.asm,matched,Exact string-anchored Open-BFME4+Grok
+?ExecCommand@Debug@@AAEXPBD0@Z,,0x0088ABA0,788,Code/masm_dumps/_s4__ExecCommand_Debug_AAEXPBD0_Z_88ABA0.asm,matched,Exact string-anchored Open-BFME4+Grok
+?init@ControlBarScheme@@QAEXXZ,,0x004ABA80,3107,Code/masm_dumps/_s4__init_ControlBarScheme_QAEXXZ_4ABA80.asm,matched,Exact string-anchored Open-BFME4+Grok
+?init@ShellGameLoadScreen@@,,0x004920E0,517,Code/masm_dumps/_s4__init_ShellGameLoadScreen__4920E0.asm,matched,Exact string-anchored Open-BFME4+Grok
+?post_process_fog@MeshModelClass@@IAEXXZ,,0x0096EE60,929,Code/masm_dumps/_s4__post_process_fog_MeshModelClass_IAEXXZ_96EE60.asm,matched,Exact string-anchored Open-BFME4+Grok
+?selectAllUnitsByTypeAcrossMap@InGameUI@@UAEHV?$BitFlags@$0HE@@@0@Z,,0x00446550,756,Code/masm_dumps/_s4__selectAllUnitsByTypeAcrossMap_InGameUI_UAEHV_BitFlags__446550.asm,matched,Exact string-anchored Open-BFME4+Grok

@@ -269,7 +269,6 @@ MeshGeometryClass::~MeshGeometryClass(void)
  * HISTORY:                                                                                    *
  *   11/9/2000  gth : Created.                                                                 *
  *=============================================================================================*/
-// ?MeshGeometryClass::Reset_Geometry present-unmatched
 void MeshGeometryClass::Reset_Geometry(int polycount,int vertcount)
 {
 	// Release everything we have and reset to initial state

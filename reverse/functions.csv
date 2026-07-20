@@ -10974,3 +10974,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1FlammableUpdateModuleData@@UAE@XZ,,0x00294C40,80,Code/masm_dumps/FlammableUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor vtable and deleting-wrapper chain prove ownership
 ??1PassiveAreaEffectBehaviorModuleData@@UAE@XZ,,0x00202870,80,Code/masm_dumps/PassiveAreaEffectBehaviorModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor vtable and deleting-wrapper chain prove ownership
 ??1HitReactionBehaviorModuleData@@UAE@XZ,,0x00291EB0,80,Code/masm_dumps/HitReactionBehaviorModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor vtable and deleting-wrapper chain prove ownership
+?doSoundRemoveType@ScriptActions@@IAEXABVAsciiString@@@Z,,0x002EFE90,21,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,Audio vtable+0x48 removeAudioEvent(name 0)

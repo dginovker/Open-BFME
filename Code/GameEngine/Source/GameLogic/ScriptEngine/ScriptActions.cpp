@@ -5416,10 +5416,33 @@ void ScriptActions::doSoundRemoveAllDisabled()
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?doSoundRemoveType@ScriptActions@@IAEXABVAsciiString@@@Z present-unmatched
+// BFME Audio vtable +0x48: removeAudioEvent(name, 0).
+class BfmeAudioVtbl_48 {
+public:
+	virtual void _a48_0() = 0;
+	virtual void _a48_1() = 0;
+	virtual void _a48_2() = 0;
+	virtual void _a48_3() = 0;
+	virtual void _a48_4() = 0;
+	virtual void _a48_5() = 0;
+	virtual void _a48_6() = 0;
+	virtual void _a48_7() = 0;
+	virtual void _a48_8() = 0;
+	virtual void _a48_9() = 0;
+	virtual void _a48_10() = 0;
+	virtual void _a48_11() = 0;
+	virtual void _a48_12() = 0;
+	virtual void _a48_13() = 0;
+	virtual void _a48_14() = 0;
+	virtual void _a48_15() = 0;
+	virtual void _a48_16() = 0;
+	virtual void _a48_17() = 0;
+	virtual void removeAudioEvent(const AsciiString& name, int unused) = 0;
+};
+
 void ScriptActions::doSoundRemoveType( const AsciiString& soundEventName )
 {
-	TheAudio->removeAudioEvent( soundEventName );
+	((BfmeAudioVtbl_48 *)TheAudio)->removeAudioEvent(soundEventName, 0);
 }
 
 //-------------------------------------------------------------------------------------------------

@@ -3401,11 +3401,9 @@ void ScriptActions::doResumeSupplyTruckingForIdleUnits(const AsciiString& player
 //-------------------------------------------------------------------------------------------------
 /** doAmbientSoundsPause */
 //-------------------------------------------------------------------------------------------------
-// ?doAmbientSoundsPause@ScriptActions@@IAEX_N@Z present-unmatched
-void ScriptActions::doAmbientSoundsPause(Bool pausing)	// if true, then pause, if false then resume.
-{
-	TheAudio->pauseAmbient(pausing);
-}
+// ?doAmbientSoundsPause@ScriptActions@@IAEX_N@Z
+// Body in Code/masm_dumps/ScriptActions_doAmbientSoundsPause.asm (exact 30B retail).
+
 
 //-------------------------------------------------------------------------------------------------
 /** doMusicTrackChange */

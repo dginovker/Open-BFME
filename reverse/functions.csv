@@ -10993,3 +10993,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1W3DTreeDrawModuleData@@UAE@XZ,,0x0077F460,112,Code/masm_dumps/W3DTreeDrawModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ??1ParticleUplinkCannonUpdateModuleData@@UAE@XZ,,0x002A26C0,115,Code/masm_dumps/ParticleUplinkCannonUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
 ??1ProductionUpdateModuleData@@UAE@XZ,,0x0029E260,126,Code/masm_dumps/ProductionUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
+?doAmbientSoundsPause@ScriptActions@@IAEX_N@Z,,0x002EF2E0,30,Code/masm_dumps/ScriptActions_doAmbientSoundsPause.asm,matched,Exact retail MASM Audio+0x70 pauseAmbient-like

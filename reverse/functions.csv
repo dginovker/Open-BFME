@@ -10970,3 +10970,4 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1SpecialEnemySenseUpdateModuleData@@UAE@XZ,,0x00125890,67,Code/masm_dumps/SpecialEnemySenseUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory ctor vtable and deleting-wrapper chain prove ownership
 ??1ToppleUpdateModuleData@@UAE@XZ,,0x002B15B0,67,Code/masm_dumps/ToppleUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor vtable and deleting-wrapper chain prove ownership
 ??1UnpauseSpecialPowerUpgradeModuleData@@UAE@XZ,,0x002D9A10,67,Code/masm_dumps/UnpauseSpecialPowerUpgradeModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor vtable and deleting-wrapper chain prove ownership
+??1AutoPickUpUpdateModuleData@@UAE@XZ,,0x00282A80,80,Code/masm_dumps/AutoPickUpUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor vtable and deleting-wrapper chain prove ownership

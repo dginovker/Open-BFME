@@ -1981,3 +1981,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1SpecialEnemySenseUpdateModuleData@@UAE@XZ	landed	Factory 0x123D90 ctor 0x123D00 vtable chain reaches 0x125890/67; exact MASM
 ??1ToppleUpdateModuleData@@UAE@XZ	landed	Factory 0x11BBD0 ctor 0x2B13A0 unique vtable chain reaches 0x2B15B0/67; exact MASM
 ??1UnpauseSpecialPowerUpgradeModuleData@@UAE@XZ	landed	Factory 0x11D7C0 ctor 0x2D99B0 unique vtable chain reaches 0x2D9A10/67; exact MASM
+??1AutoPickUpUpdateModuleData@@UAE@XZ	landed	Factory 0x119B30 ctor 0x2827E0 unique vtable chain reaches 0x282A80/80; exact MASM

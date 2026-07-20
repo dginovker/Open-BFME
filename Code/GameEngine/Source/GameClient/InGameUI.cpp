@@ -905,7 +905,6 @@ const FieldParse InGameUI::s_fieldParseTable[] =
 //-------------------------------------------------------------------------------------------------
 /** Parse MouseCursor entry */
 //-------------------------------------------------------------------------------------------------
-// ?parseInGameUIDefinition@INI@@SAXPAV1@@Z present-unmatched
 void INI::parseInGameUIDefinition( INI* ini )
 {
 	if( TheInGameUI )

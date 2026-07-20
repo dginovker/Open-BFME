@@ -1955,3 +1955,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?W3DCommandBarForegroundDraw@@YAXPAVGameWindow@@PAVWinInstanceData@@@Z	no-match	FunctionLexicon proves 0x79CD60/279; current 292B compile inlines AsciiString ensureUniqueBuffer and reshapes registers where retail calls out-of-line ctor; stale 0x79CE9C is padding
 ?populateQMColorComboBox@@YAXAAVQuickMatchPreferences@@@Z	landed	Ghidra corrected stale inside-body vote to unique 0x505DB0/406 via thunk 0x269B8 and color tooltip loop; exact MASM avoids current 423B STL/string drift
 ?tryToIgnite@FlammableUpdate@@QAEXXZ	landed	Ghidra proved stale 0x5A8BCF began mid-instruction; exact unique BFME body at 0x293990/961 via Flammable damage vtable and onDamage caller
+?parseInGameUIDefinition@INI@@SAXPAV1@@Z	landed	Ghidra rejected stale 0x9A1602 mid-function placement; exact unique body at 0x43AAA0/36 loads TheInGameUI and dispatches getFieldParse

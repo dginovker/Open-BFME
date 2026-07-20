@@ -11009,3 +11009,11 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??1OneRingPenaltyUpdateModuleData@@UAE@XZ,,0x00298D60,113,Code/masm_dumps/OneRingPenaltyUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory 0x11A460 ctor 0x298D30 prove ownership
 ??1ModelConditionSoundSelectorClientBehaviorModuleData@@UAE@XZ,,0x00607710,67,Code/masm_dumps/ModelConditionSoundSelectorClientBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory 0x121E30 ctor 0x607550 prove ownership
 ??1UpgradeSoundSelectorClientBehaviorModuleData@@UAE@XZ,,0x00608F80,67,Code/masm_dumps/UpgradeSoundSelectorClientBehaviorModuleData_destructor.asm,matched,Exact retail MASM; factory 0x121ED0 ctor 0x608DC0 prove ownership
+??0BezierProjectileBehaviorModuleData@@QAE@XZ,,0x001EFD50,197,Code/masm_dumps/BezierProjectileBehaviorModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x1152C0
+??0RainOfFireUpdateModuleData@@QAE@XZ,,0x002A08B0,62,Code/masm_dumps/RainOfFireUpdateModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x11C390
+??0DemoTrapUpdateModuleData@@QAE@XZ,,0x0028C9E0,58,Code/masm_dumps/DemoTrapUpdateModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x119A20
+??0ClickReactionBehaviorModuleData@@QAE@XZ,,0x002001A0,40,Code/masm_dumps/ClickReactionBehaviorModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x114C60
+??0AimWeaponBehaviorModuleData@@QAE@XZ,,0x001ECEF0,37,Code/masm_dumps/AimWeaponBehaviorModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x1151B0
+??0OneRingPenaltyUpdateModuleData@@QAE@XZ,,0x00298D30,32,Code/masm_dumps/OneRingPenaltyUpdateModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x11A460
+??0HealContainModuleData@@QAE@XZ,,0x0028B9E0,32,Code/masm_dumps/HealContainModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x1219D0
+??0DualWeaponBehaviorModuleData@@QAE@XZ,,0x001F7E20,26,Code/masm_dumps/DualWeaponBehaviorModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; factory 0x1150A0

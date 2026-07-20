@@ -11231,3 +11231,12 @@ _$E27,,0x00C6B2C0,30,Code/GameEngine/Source/GameNetwork/GameSpy/MainMenuUtils.cp
 ??0AutoPickUpUpdateModuleData@@QAE@XZ,,0x002827E0,242,Code/masm_dumps/AutoPickUpUpdateModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x119B30
 ??0ActiveBodyModuleData@@QAE@XZ,,0x0020F7C0,230,Code/masm_dumps/ActiveBodyModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x11F420
 ?doStopCameraFollowUnit@ScriptActions@@IAEXXZ,,0x002EFAB0,14,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,View vtable+0x19c void stop-follow tail-call
+??1SpecialAbilityUpdateModuleData@@UAE@XZ,,0x002A5CC0,225,Code/masm_dumps/SpecialAbilityUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x2A6210 ctor 0x2A5AA0 vt 0xCC2D58
+??1SupplyCenterProductionExitUpdateModuleData@@UAE@XZ,,0x0037CC50,222,Code/masm_dumps/SupplyCenterProductionExitUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x37CE80 ctor 0x37CC20 vt 0xCEA8D4
+??1EmotionTrackerUpdateModuleData@@UAE@XZ,,0x0028FBB0,214,Code/masm_dumps/EmotionTrackerUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x290160 ctor 0x28F910 vt 0xCBE180
+??1TransitionDamageFXModuleData@@UAE@XZ,,0x00253500,197,Code/masm_dumps/TransitionDamageFXModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x2534D0 ctor 0x2532B0 vt 0xCB2690
+??1CritterEmitterUpdateModuleData@@UAE@XZ,,0x001FA750,175,Code/masm_dumps/CritterEmitterUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x1FA720 ctor 0x1FA3A0 vt 0xCA39F0
+??1StructureToppleUpdateModuleData@@UAE@XZ,,0x0012C180,163,Code/masm_dumps/StructureToppleUpdateModuleData_destructor.asm,matched,Exact retail MASM; factory→vtable dtor; del 0x12C150 ctor 0x12BF50 vt 0xC8F700
+??0AutoAbilityBehaviorModuleData@@QAE@XZ,,0x001ED6A0,16,Code/masm_dumps/AutoAbilityBehaviorModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x114F90
+??0SiegeDockingBehaviorModuleData@@QAE@XZ,,0x00205F60,16,Code/masm_dumps/SiegeDockingBehaviorModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x114E80
+??0SlaveWatcherBehaviorModuleData@@QAE@XZ,,0x002074C0,17,Code/masm_dumps/SlaveWatcherBehaviorModuleData_constructor.asm,matched,Exact retail MASM ModuleData ctor; unique factory 0x117540

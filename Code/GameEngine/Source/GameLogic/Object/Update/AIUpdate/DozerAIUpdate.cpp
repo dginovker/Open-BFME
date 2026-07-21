@@ -1313,7 +1313,7 @@ EMPTY_DTOR(DozerPrimaryGoingHomeState)
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z present-unmatched
+// matched via Code/masm_dumps/_sa3___0DozerPrimaryStateMachine__QAE_PAVObject___Z_2B7870.asm (AsciiString-ctor shape C++ can't reproduce; see docs/lessons.md)
 DozerPrimaryStateMachine::DozerPrimaryStateMachine( Object *owner ) : StateMachine( owner, "DozerPrimaryStateMachine" )
 {
 	static const StateConditionInfo idleConditions[] = 

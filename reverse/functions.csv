@@ -11464,7 +11464,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?onExit@AIAttackState@@UAEXW4StateExitType@@@Z,,0x00184C00,99,Code/masm_dumps/_sa9__onExit_AIAttackState__UAEXW4StateExitType___Z_184C00.asm,matched,Exact 99B Open-BFME4
 ?onExit@AIInternalMoveToState@@UAEXW4StateExitType@@@Z,,0x00029311,5,Code/masm_dumps/_onExit_AIInternalMoveToState__UAEXW4StateExitType___Z_29311.asm,matched,MASM exact retail dump
 ?onExit@AIPanicState@@UAEXW4StateExitType@@@Z,,0x0017F1E0,84,Code/masm_dumps/AIPanicState_onExit.asm,matched,Ghidra-bound BFME panic-exit body
-?onExit@DozerActionState@@UAEXW4StateExitType@@@Z,,0x002B7870,551,Code/masm_dumps/_sa4__onExit_DozerActionState__UAEXW4StateExitType___Z_2B7870.asm,matched,Exact 551B Open-BFME4
 ?onExit@DozerPrimaryIdleState@@UAEXW4StateExitType@@@Z,,0x002B6350,50,Code/masm_dumps/_rn5__onExit_DozerPrimaryIdleState__UAEXW4StateExitType___Z_2B6350.asm,matched,reloc-needle Open-BFME4+Grok
 ?onObjectCreated@BoneFXDamage@@MAEXXZ,,0x00250880,154,Code/GameEngine/Source/GameLogic/Object/Damage/BoneFXDamage_onObjectCreated.asm,matched,
 ?onPowerBrownOutChange@Player@@QAEX_N@Z,,0x000D59F0,63,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,
@@ -12859,3 +12858,4 @@ _powf,,0x00097070,14,Code/Libraries/Source/WWVegas/WWMath/vp.cpp,matched,
 _sinf,,0x00873910,7,Code/GameEngine/Source/Common/Audio/GameAudio.cpp,matched,icf-owner=?Sin@@YAMM@Z
 _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,ICF alias of existing matched body
 ?forgetLogin@GameSpyLoginPreferences@@QAEXVAsciiString@@@Z,,0x00081FC0,106,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,matched,true forgetLogin C++ inline_depth0 Open-BFME4+Grok
+??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z,,0x002B7870,551,Code/masm_dumps/_sa3___0DozerPrimaryStateMachine__QAE_PAVObject___Z_2B7870.asm,matched,MASM exact retail dump; corrects prior onExit@DozerActionState misID (Open-BFME4+Grok)

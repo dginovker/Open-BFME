@@ -1,10 +1,10 @@
 .386
 .model flat
-; ?onExit@DozerActionState@@UAEXW4StateExitType@@@Z
-; Exact 551B @ 0x002B7870; Open-BFME4
+; ??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z
+; Exact 551B @ 0x002B7870; misidentified as onExit@DozerActionState by a prior agent (that fn is ~10B per reference source, cannot be 551B) -- corrected identity, same verified bytes; Open-BFME4+Grok
 _TEXT SEGMENT
-public ?onExit@DozerActionState@@UAEXW4StateExitType@@@Z
-?onExit@DozerActionState@@UAEXW4StateExitType@@@Z PROC
+public ??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z
+??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z PROC
     db 6Ah, 0FFh, 68h, 0FFh, 33h, 01h, 01h, 64h, 0A1h, 00h, 00h, 00h, 00h, 50h, 64h, 89h
     db 25h, 00h, 00h, 00h, 00h, 83h, 0ECh, 08h, 53h, 56h, 57h, 33h, 0DBh, 53h, 51h, 8Bh
     db 0F1h, 89h, 64h, 24h, 18h, 8Bh, 0CCh, 68h, 0DCh, 67h, 0Ch, 01h, 89h, 74h, 24h, 18h
@@ -40,6 +40,6 @@ public ?onExit@DozerActionState@@UAEXW4StateExitType@@@Z
     db 53h, 53h, 53h, 57h, 6Ah, 04h, 8Bh, 0CEh, 88h, 5Ch, 24h, 30h, 0E8h, 32h, 57h, 0D8h
     db 0FFh, 8Bh, 4Ch, 24h, 14h, 5Fh, 8Bh, 0C6h, 5Eh, 64h, 89h, 0Dh, 00h, 00h, 00h, 00h
     db 5Bh, 83h, 0C4h, 14h, 0C2h, 04h, 00h
-?onExit@DozerActionState@@UAEXW4StateExitType@@@Z ENDP
+??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z ENDP
 _TEXT ENDS
 END

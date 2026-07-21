@@ -12896,3 +12896,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?doAudioFeedback@@YAXPAVGameWindow@@@Z,,0x004B85F0,153,Code/masm_dumps/doAudioFeedback_YAXPAVGameWindow_Z_4B85F0.asm,matched,Exact retail body; queue RVA 0xC6C420 was CRT stubs misplace
 ?gogoMessageBox@GameWindowManager@@UAEPAVGameWindow@@HHHHGVUnicodeString@@0P6AXXZ111_N@Z,,0x0047EF70,1518,Code/masm_dumps/gogoMessageBox_GameWindowManager_UAE_47EF70.asm,matched,icf-owner=?gogoMessageBox@GameWindowManager@@; full mangling MASM alias of string-anchored land; queue had off-by-1 RVA+pad size
 ??1?$pair@$$CBVUnicodeString@@VAsciiString@@@_STL@@QAE@XZ,,0x000A9B80,76,Code/GameEngine/Source/GameClient/MapUtil_pair_UnicodeString_AsciiString_dtor.asm,matched,exact 76B MASM; drift 0x9DB088 mid FUN_00dd9d90; retail A then U pair dtor
+?parseUpgradeDefinition@UpgradeCenter@@SAXPAVINI@@@Z,,0x0010B280,172,Code/GameEngine/Source/Common/System/Upgrade.cpp,matched,

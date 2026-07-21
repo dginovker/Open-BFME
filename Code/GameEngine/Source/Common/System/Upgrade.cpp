@@ -493,28 +493,53 @@ std::vector<AsciiString> UpgradeCenter::getUpgradeNames( void ) const
 
 }  // end getUpgradeNames
 
+// Retail AsciiString(const char*) is the thin 0x888BC0 body (not ZH ensureUniqueBufferOfSize).
+// Same local shim pattern as DifficultySelect / PlayerTemplate.
+class BFMERetailAsciiString
+{
+public:
+	BFMERetailAsciiString( const char *string );
+	~BFMERetailAsciiString() { releaseBuffer(); }
+
+	const char *str() const
+	{
+		return m_data ? m_data + 8 : "";
+	}
+
+private:
+	void releaseBuffer();
+	char *m_data;
+};
+
 //-------------------------------------------------------------------------------------------------
 /** Parse an upgrade definition */
 //-------------------------------------------------------------------------------------------------
-// ?parseUpgradeDefinition@UpgradeCenter@@SAXPAVINI@@@Z present-unmatched
 void UpgradeCenter::parseUpgradeDefinition( INI *ini )
 {
-	// read the name
-	const char* c = ini->getNextToken();
-	AsciiString name = c;	
+	// read the name (retail thin AsciiString ctor @ 0x888BC0)
+	BFMERetailAsciiString name( ini->getNextToken() );
 
-	// find existing item if present
-	UpgradeTemplate* upgrade = TheUpgradeCenter->findNonConstUpgradeByKey( NAMEKEY(name) );
+	// find existing item if present — walk retail layout (nameKey@+0xC, next@+0x108)
+	NameKeyType key = TheNameKeyGenerator->nameToKey( name.str() );
+	UpgradeTemplate *upgrade = NULL;
+	{
+		unsigned char *node = *reinterpret_cast<unsigned char **>(
+			reinterpret_cast<unsigned char *>(TheUpgradeCenter) + 0x8 );
+		while( node )
+		{
+			if( *reinterpret_cast<NameKeyType *>(node + 0xC) == key )
+			{
+				upgrade = reinterpret_cast<UpgradeTemplate *>(node);
+				break;
+			}
+			node = *reinterpret_cast<unsigned char **>(node + 0x108);
+		}
+	}
 	if( upgrade == NULL )
 	{
-
 		// allocate a new item
-		upgrade = TheUpgradeCenter->newUpgrade( name );
-
-	}  // end if
-
-	// sanity
-	DEBUG_ASSERTCRASH( upgrade, ("parseUpgradeDefinition: Unable to allocate upgrade '%s'\n", name.str()) );
+		upgrade = TheUpgradeCenter->newUpgrade( *reinterpret_cast<AsciiString *>(&name) );
+	}
 
 	// parse the ini definition
 	ini->initFromINI( upgrade, upgrade->getFieldParse() );

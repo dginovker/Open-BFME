@@ -359,18 +359,8 @@ Real OptionPreferences::getScrollFactor(void)
 	return factor/100.0f;
 }
 
-// ?usesSystemMapDir@OptionPreferences@@QAE_NXZ present-unmatched
-Bool OptionPreferences::usesSystemMapDir(void)
-{
-	OptionPreferences::const_iterator it = find("UseSystemMapDir");
-	if (it == end())
-		return TRUE;
-
-	if (stricmp(it->second.str(), "yes") == 0) {
-		return TRUE;
-	}
-	return FALSE;
-}
+// ?usesSystemMapDir@OptionPreferences@@QAE_NXZ
+// Body in Code/masm_dumps/_usesSystemMapDir_OptionPreferences_QAE_NXZ_90780.asm (exact 95B retail).
 
 // ?saveCameraInReplays@OptionPreferences@@QAE_NXZ
 // Body in Code/masm_dumps/_saveCameraInReplays_OptionPreferences_QAE_NXZ_90800.asm (exact 95B retail).

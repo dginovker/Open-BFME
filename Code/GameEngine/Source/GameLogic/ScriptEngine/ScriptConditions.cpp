@@ -140,7 +140,9 @@ ScriptConditions::ScriptConditions()
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??1ScriptConditions@@UAE@XZ present-unmatched
+// Matched via Code/masm_dumps/ScriptConditions_dtor.asm @ 0x003244B0 (106B).
+// C++ kept for TU completeness; retail body is scalar-delete of s_transportStatuses
+// (not MemoryPool deleteInstance) then SubsystemInterface dtor — not emittable as ZH.
 ScriptConditions::~ScriptConditions()
 {
 	reset(); // just in case.

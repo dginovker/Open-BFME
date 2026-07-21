@@ -12999,3 +12999,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?WOLQuickMatchMenuUpdate@@YAXPAVWindowLayout@@PAX@Z,,0x00506726,4682,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu_Update.asm,matched,BFME object-form update; queue 0x540410 INT3 pad; true body via QM:* strings
 ?parseChildWindows@@YA_NPAVGameWindow@@PAVFile@@PAD@Z,,0x00487B50,850,Code/masm_dumps/GameWindowManagerScript_parseChildWindows.asm,matched,Exact 850B MASM; true start 0x487B50 after int3 pad; C++ blocked File scanString vtable +0x24 vs +0x28
 ??0AnimateWindowManager@@QAE@XZ,,0x0045D6B0,537,Code/GameEngine/Source/GameClient/GUI/AnimateWindowManager.cpp,matched,
+?updateSpecialPowerShortcut@ControlBar@@IAEXXZ,,0x0049E240,650,Code/masm_dumps/_updateSpecialPowerShortcut_ControlBar__IAEXXZ_49E240.asm,matched,MASM exact body; queue 0x4A94BE misplaced INSIDE neighbor mid-insn; ID via populate last-call ILT 0x17643

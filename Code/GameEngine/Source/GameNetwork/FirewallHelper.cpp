@@ -186,7 +186,7 @@ void FirewallHelperClass::reset(void)
  * HISTORY:                                                                                    *
  *   3/15/01 6:47PM ST : Created                                                               *
  *=============================================================================================*/
-// ?detectFirewall@FirewallHelperClass@@QAE_NXZ present-unmatched
+// Body matched as MASM dump (see reverse/functions.csv); C++ kept for readability only.
 Bool FirewallHelperClass::detectFirewall(void)
 {
 	OptionPreferences pref;

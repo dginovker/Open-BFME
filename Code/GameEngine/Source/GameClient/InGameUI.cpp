@@ -5264,21 +5264,11 @@ void InGameUI::clearPopupMessageData( void )
 
 
 //-------------------------------------------------------------------------------------------------
-/** Floating Text Constructor */
+/** Floating Text Constructor — body in
+ *  Code/masm_dumps/__0FloatingTextData__QAE_XZ_43F4D0.asm (0x0043F4D0/101).
+ *  Drift 0x009DB099 was INSIDE a subtitle parser, not this ctor. Retail uses
+ *  global operator new(0x24) from addFloatingText; newDisplayString at vtbl+0x24. */
 //-------------------------------------------------------------------------------------------------
-// ??0FloatingTextData@@QAE@XZ present-unmatched
-FloatingTextData::FloatingTextData(void)
-{
-	// Added By Sadullah Nader
-	// Initializations missing and needed
-	m_color = 0;
-	m_frameCount = 0;
-	m_frameTimeOut = 0;
-	m_pos3D.zero();
-	m_text.clear();
-	//
-	m_dString = TheDisplayStringManager->newDisplayString();
-}
 
 //-------------------------------------------------------------------------------------------------
 /** Floating Text Destructor */

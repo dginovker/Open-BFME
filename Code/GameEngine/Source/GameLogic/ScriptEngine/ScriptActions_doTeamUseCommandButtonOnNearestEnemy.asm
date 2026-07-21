@@ -1,0 +1,105 @@
+.386
+.model flat
+
+; ?doTeamUseCommandButtonOnNearestEnemy@ScriptActions@@IAEXABVAsciiString@@0@Z
+; Exact 713 retail bytes @ 0x002FB170
+; Identity: executeAction cases after Named call ILT 0x3085A -> this body;
+; getTeamNamed(SE+0x44), createGroup, getTeamAsAIGroup, findCommandButton,
+; SP/source branch, getClosestObject(REALLY_FAR), groupDoCommandButtonAtObject;
+; ret 0x8. Queue RVA 0x614F94 was INSIDE mislocated 0x614F8E NearestKindof/INI claim.
+_TEXT SEGMENT
+public ?doTeamUseCommandButtonOnNearestEnemy@ScriptActions@@IAEXABVAsciiString@@0@Z
+?doTeamUseCommandButtonOnNearestEnemy@ScriptActions@@IAEXABVAsciiString@@0@Z PROC
+    db 6Ah,0FFh,68h,1Eh,66h,01h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,81h,0ECh,88h
+    db 00h,00h,00h,8Bh,84h,24h,98h,00h
+    db 00h,00h,53h,55h,56h,57h,6Ah,00h
+    db 51h,89h,64h,24h,30h,8Bh,0CCh,50h
+    db 0E8h,0BBh,0C9h,58h,00h,8Bh,0Dh,6Ch
+    db 07h,2Fh,01h,8Bh,11h,0FFh,52h,44h
+    db 8Bh,0F0h,85h,0F6h,89h,74h,24h,38h
+    db 0Fh,84h,60h,02h,00h,00h,8Bh,0Dh
+    db 14h,0F2h,2Eh,01h,0E8h,0A7h,03h,0D4h
+    db 0FFh,8Bh,0E8h,55h,8Bh,0CEh,89h,6Ch
+    db 24h,2Ch,0E8h,0EAh,7Ch,0D2h,0FFh,8Bh
+    db 84h,24h,0ACh,00h,00h,00h,8Bh,0Dh
+    db 0F8h,33h,2Fh,01h,50h,0E8h,0B3h,03h
+    db 0D4h,0FFh,8Bh,0F8h,85h,0FFh,0Fh,84h
+    db 2Ah,02h,00h,00h,8Bh,4Fh,34h,85h
+    db 0C9h,74h,22h,8Bh,41h,04h,85h,0C0h
+    db 74h,0Eh,8Bh,48h,04h,85h,0C9h,74h
+    db 05h,0E8h,53h,0DAh,0D4h,0FFh,8Bh,0C8h
+    db 8Bh,41h,10h,50h,8Bh,0CDh,0E8h,0FBh
+    db 0DCh,0D1h,0FFh,0EBh,0Bh,8Bh,47h,10h
+    db 50h,8Bh,0CDh,0E8h,0A4h,1Ah,0D4h,0FFh
+    db 8Bh,0F0h,85h,0F6h,0Fh,84h,0ECh,01h
+    db 00h,00h,56h,8Bh,0CFh,0E8h,0Ah,0E9h
+    db 0D3h,0FFh,84h,0C0h,0Fh,84h,0DCh,01h
+    db 00h,00h,8Dh,4Ch,24h,3Ch,51h,8Bh
+    db 0CDh,0E8h,0DFh,0E9h,0D0h,0FFh,33h,0DBh
+    db 89h,5Ch,24h,10h,8Bh,0C3h,8Bh,0CBh
+    db 89h,5Ch,24h,1Ch,8Bh,0D3h,83h,0CAh
+    db 02h,89h,54h,24h,20h,8Bh,57h,18h
+    db 89h,5Ch,24h,24h,81h,0C9h,00h,00h
+    db 00h,01h,0Dh,00h,00h,20h,00h,0C1h
+    db 0EAh,05h,0BBh,01h,00h,00h,00h,84h
+    db 0D3h,89h,4Ch,24h,18h,89h,44h,24h
+    db 14h,89h,74h,24h,34h,0C7h,44h,24h
+    db 2Ch,0D0h,5Dh,08h,01h,0Fh,84h,0ADh
+    db 00h,00h,00h,33h,0C0h,89h,44h,24h
+    db 30h,89h,84h,24h,0A0h,00h,00h,00h
+    db 8Dh,44h,24h,10h,50h,68h,0B8h,0D8h
+    db 2Eh,01h,8Dh,4Ch,24h,68h,0E8h,42h
+    db 0D0h,0D3h,0FFh,8Bh,0F0h,8Bh,4Ch,24h
+    db 38h,88h,9Ch,24h,0A0h,00h,00h,00h
+    db 0E8h,0CEh,83h,0D2h,0FFh,0C7h,44h,24h
+    db 14h,00h,00h,00h,00h,0C7h,44h,24h
+    db 10h,9Ch,68h,09h,01h,89h,44h,24h
+    db 18h,88h,5Ch,24h,1Ch,0C7h,44h,24h
+    db 20h,04h,00h,00h,00h,8Dh,4Ch,24h
+    db 2Ch,51h,8Bh,0CEh,0C6h,84h,24h,0A4h
+    db 00h,00h,00h,02h,0E8h,0DFh,77h,6Fh
+    db 00h,50h,8Dh,4Ch,24h,14h,0E8h,0D5h
+    db 77h,6Fh,00h,8Bh,0Dh,0B8h,0D5h,2Eh
+    db 01h,50h,6Ah,00h,68h,00h,24h,74h
+    db 49h,8Dh,54h,24h,48h,52h,0E8h,7Dh
+    db 73h,6Fh,00h,85h,0C0h,0C7h,84h,24h
+    db 0A0h,00h,00h,00h,0FFh,0FFh,0FFh,0FFh
+    db 0Fh,84h,0E8h,00h,00h,00h,53h,83h
+    db 0C0h,38h,50h,57h,8Bh,0CDh,0E8h,6Eh
+    db 0C5h,0D4h,0FFh,0E9h,0D6h,00h,00h,00h
+    db 0C7h,44h,24h,30h,00h,00h,00h,00h
+    db 8Dh,44h,24h,10h,50h,68h,0B8h,0D8h
+    db 2Eh,01h,8Dh,4Ch,24h,68h,0C7h,84h
+    db 24h,0A8h,00h,00h,00h,03h,00h,00h
+    db 00h,0E8h,8Fh,0CFh,0D3h,0FFh,8Bh,0E8h
+    db 53h,53h,57h,56h,8Dh,4Ch,24h,58h
+    db 0E8h,30h,0F2h,0D3h,0FFh,8Bh,0F0h,8Bh
+    db 4Ch,24h,38h,0C6h,84h,24h,0A0h,00h
+    db 00h,00h,05h,0E8h,0Bh,83h,0D2h,0FFh
+    db 0C7h,44h,24h,14h,00h,00h,00h,00h
+    db 0C7h,44h,24h,10h,9Ch,68h,09h,01h
+    db 89h,44h,24h,18h,88h,5Ch,24h,1Ch
+    db 0C7h,44h,24h,20h,04h,00h,00h,00h
+    db 8Dh,4Ch,24h,2Ch,51h,8Bh,0CDh,0C6h
+    db 84h,24h,0A4h,00h,00h,00h,06h,0E8h
+    db 1Ch,77h,6Fh,00h,50h,8Bh,0CEh,0E8h
+    db 14h,77h,6Fh,00h,50h,8Dh,4Ch,24h
+    db 14h,0E8h,0Ah,77h,6Fh,00h,8Bh,0Dh
+    db 0B8h,0D5h,2Eh,01h,50h,6Ah,00h,68h
+    db 00h,24h,74h,49h,8Dh,54h,24h,48h
+    db 52h,0E8h,0B2h,72h,6Fh,00h,85h,0C0h
+    db 0B9h,5Ch,3Bh,08h,01h,89h,4Ch,24h
+    db 10h,89h,4Ch,24h,48h,89h,4Ch,24h
+    db 60h,0C7h,84h,24h,0A0h,00h,00h,00h
+    db 0FFh,0FFh,0FFh,0FFh,89h,4Ch,24h,2Ch
+    db 74h,0Ch,8Bh,4Ch,24h,28h,53h,50h
+    db 57h,0E8h,0B2h,0Ch,0D2h,0FFh,8Bh,8Ch
+    db 24h,98h,00h,00h,00h,5Fh,5Eh,5Dh
+    db 64h,89h,0Dh,00h,00h,00h,00h,5Bh
+    db 81h,0C4h,94h,00h,00h,00h,0C2h,08h
+    db 00h
+?doTeamUseCommandButtonOnNearestEnemy@ScriptActions@@IAEXABVAsciiString@@0@Z ENDP
+_TEXT ENDS
+END

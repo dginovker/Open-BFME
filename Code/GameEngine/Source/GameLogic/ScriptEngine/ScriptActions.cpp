@@ -6081,49 +6081,10 @@ void ScriptActions::doTeamSpinForFramecount( const AsciiString& teamName, Int wa
 //-------------------------------------------------------------------------------------------------
 /** doTeamUseCommandButtonOnNearestEnemy */
 //-------------------------------------------------------------------------------------------------
-// ?doTeamUseCommandButtonOnNearestEnemy@ScriptActions@@IAEXABVAsciiString@@0@Z present-unmatched
-void ScriptActions::doTeamUseCommandButtonOnNearestEnemy( const AsciiString& teamName, const AsciiString& commandAbility )
-{
-	Team *team = TheScriptEngine->getTeamNamed(teamName);
-	if (!team) {
-		return;
-	}
-
-	AIGroup *theGroup = TheAI->createGroup();
-	team->getTeamAsAIGroup(theGroup);
-
-	const CommandButton *commandButton = TheControlBar->findCommandButton(commandAbility);
-	if(!commandButton) {
-		return;
-	}
-
-	Object *srcObj = NULL;
-	if (commandButton->getSpecialPowerTemplate()) {
-		srcObj = theGroup->getSpecialPowerSourceObject(commandButton->getSpecialPowerTemplate()->getID());
-	} else {
-		srcObj = theGroup->getCommandButtonSourceObject(commandButton->getCommandType());
-	}
-
-	if (!srcObj) {
-		return;
-	}
-
-	PartitionFilterPlayerAffiliation f1(team->getControllingPlayer(), ALLOW_ENEMIES, true);
-	PartitionFilterValidCommandButtonTarget f2(srcObj, commandButton, true, CMD_FROM_SCRIPT);
-	PartitionFilterSameMapStatus filterMapStatus(srcObj);
-
-	Coord3D pos;
-	theGroup->getCenter(&pos);
-
-	PartitionFilter *filters[] = { &f1, &f2, &filterMapStatus, 0 };
-	Object *obj = ThePartitionManager->getClosestObject(&pos, REALLY_FAR, FROM_CENTER_2D, filters);
-	if (!obj) {
-		return;
-	}
-
-	// already been checked for validity
-	theGroup->groupDoCommandButtonAtObject(commandButton, obj, CMD_FROM_SCRIPT);
-}
+// ?doTeamUseCommandButtonOnNearestEnemy@ScriptActions@@IAEXABVAsciiString@@0@Z
+// Body in ScriptActions_doTeamUseCommandButtonOnNearestEnemy.asm (exact 713B retail @ 0x2FB170).
+// Queue RVA 0x614F94 was INSIDE mislocated 0x614F8E NearestKindof/INI claim; true body via
+// executeAction case order after Named (ILT 0x3085A).
 
 //-------------------------------------------------------------------------------------------------
 /** doTeamUseCommandButtonOnNearestGarrisonedBuilding */

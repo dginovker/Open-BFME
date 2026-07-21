@@ -838,12 +838,151 @@ Real AIUpdateInterface::getCurLocomotorSpeed() const
 }
 
 //=============================================================================
-// ?setLocomotorUpgrade@AIUpdateInterface@@ present-unmatched
+// BFME AIUpdateInterface::chooseLocomotorSet is vtable +0x1fc (slot 127).
+class AIUpdateInterface_ChooseLocomotorSlot {
+public:
+	virtual void _pad0(void) = 0;
+	virtual void _pad1(void) = 0;
+	virtual void _pad2(void) = 0;
+	virtual void _pad3(void) = 0;
+	virtual void _pad4(void) = 0;
+	virtual void _pad5(void) = 0;
+	virtual void _pad6(void) = 0;
+	virtual void _pad7(void) = 0;
+	virtual void _pad8(void) = 0;
+	virtual void _pad9(void) = 0;
+	virtual void _pad10(void) = 0;
+	virtual void _pad11(void) = 0;
+	virtual void _pad12(void) = 0;
+	virtual void _pad13(void) = 0;
+	virtual void _pad14(void) = 0;
+	virtual void _pad15(void) = 0;
+	virtual void _pad16(void) = 0;
+	virtual void _pad17(void) = 0;
+	virtual void _pad18(void) = 0;
+	virtual void _pad19(void) = 0;
+	virtual void _pad20(void) = 0;
+	virtual void _pad21(void) = 0;
+	virtual void _pad22(void) = 0;
+	virtual void _pad23(void) = 0;
+	virtual void _pad24(void) = 0;
+	virtual void _pad25(void) = 0;
+	virtual void _pad26(void) = 0;
+	virtual void _pad27(void) = 0;
+	virtual void _pad28(void) = 0;
+	virtual void _pad29(void) = 0;
+	virtual void _pad30(void) = 0;
+	virtual void _pad31(void) = 0;
+	virtual void _pad32(void) = 0;
+	virtual void _pad33(void) = 0;
+	virtual void _pad34(void) = 0;
+	virtual void _pad35(void) = 0;
+	virtual void _pad36(void) = 0;
+	virtual void _pad37(void) = 0;
+	virtual void _pad38(void) = 0;
+	virtual void _pad39(void) = 0;
+	virtual void _pad40(void) = 0;
+	virtual void _pad41(void) = 0;
+	virtual void _pad42(void) = 0;
+	virtual void _pad43(void) = 0;
+	virtual void _pad44(void) = 0;
+	virtual void _pad45(void) = 0;
+	virtual void _pad46(void) = 0;
+	virtual void _pad47(void) = 0;
+	virtual void _pad48(void) = 0;
+	virtual void _pad49(void) = 0;
+	virtual void _pad50(void) = 0;
+	virtual void _pad51(void) = 0;
+	virtual void _pad52(void) = 0;
+	virtual void _pad53(void) = 0;
+	virtual void _pad54(void) = 0;
+	virtual void _pad55(void) = 0;
+	virtual void _pad56(void) = 0;
+	virtual void _pad57(void) = 0;
+	virtual void _pad58(void) = 0;
+	virtual void _pad59(void) = 0;
+	virtual void _pad60(void) = 0;
+	virtual void _pad61(void) = 0;
+	virtual void _pad62(void) = 0;
+	virtual void _pad63(void) = 0;
+	virtual void _pad64(void) = 0;
+	virtual void _pad65(void) = 0;
+	virtual void _pad66(void) = 0;
+	virtual void _pad67(void) = 0;
+	virtual void _pad68(void) = 0;
+	virtual void _pad69(void) = 0;
+	virtual void _pad70(void) = 0;
+	virtual void _pad71(void) = 0;
+	virtual void _pad72(void) = 0;
+	virtual void _pad73(void) = 0;
+	virtual void _pad74(void) = 0;
+	virtual void _pad75(void) = 0;
+	virtual void _pad76(void) = 0;
+	virtual void _pad77(void) = 0;
+	virtual void _pad78(void) = 0;
+	virtual void _pad79(void) = 0;
+	virtual void _pad80(void) = 0;
+	virtual void _pad81(void) = 0;
+	virtual void _pad82(void) = 0;
+	virtual void _pad83(void) = 0;
+	virtual void _pad84(void) = 0;
+	virtual void _pad85(void) = 0;
+	virtual void _pad86(void) = 0;
+	virtual void _pad87(void) = 0;
+	virtual void _pad88(void) = 0;
+	virtual void _pad89(void) = 0;
+	virtual void _pad90(void) = 0;
+	virtual void _pad91(void) = 0;
+	virtual void _pad92(void) = 0;
+	virtual void _pad93(void) = 0;
+	virtual void _pad94(void) = 0;
+	virtual void _pad95(void) = 0;
+	virtual void _pad96(void) = 0;
+	virtual void _pad97(void) = 0;
+	virtual void _pad98(void) = 0;
+	virtual void _pad99(void) = 0;
+	virtual void _pad100(void) = 0;
+	virtual void _pad101(void) = 0;
+	virtual void _pad102(void) = 0;
+	virtual void _pad103(void) = 0;
+	virtual void _pad104(void) = 0;
+	virtual void _pad105(void) = 0;
+	virtual void _pad106(void) = 0;
+	virtual void _pad107(void) = 0;
+	virtual void _pad108(void) = 0;
+	virtual void _pad109(void) = 0;
+	virtual void _pad110(void) = 0;
+	virtual void _pad111(void) = 0;
+	virtual void _pad112(void) = 0;
+	virtual void _pad113(void) = 0;
+	virtual void _pad114(void) = 0;
+	virtual void _pad115(void) = 0;
+	virtual void _pad116(void) = 0;
+	virtual void _pad117(void) = 0;
+	virtual void _pad118(void) = 0;
+	virtual void _pad119(void) = 0;
+	virtual void _pad120(void) = 0;
+	virtual void _pad121(void) = 0;
+	virtual void _pad122(void) = 0;
+	virtual void _pad123(void) = 0;
+	virtual void _pad124(void) = 0;
+	virtual void _pad125(void) = 0;
+	virtual void _pad126(void) = 0;
+	virtual Bool chooseLocomotorSet( int wst ) = 0;
+};
+// BFME m_upgradedLocomotors @+0x327, m_curLocomotorSet @+0x1d0; chooseLocomotorSet vtable +0x1fc.
 void AIUpdateInterface::setLocomotorUpgrade(Bool set)
 {
-	m_upgradedLocomotors = set;
-	if (m_curLocomotorSet == LOCOMOTORSET_NORMAL || m_curLocomotorSet == LOCOMOTORSET_NORMAL_UPGRADED)
-		chooseLocomotorSet(LOCOMOTORSET_NORMAL);
+	struct BFMELocomotorFields {
+		unsigned char padCur[0x1d0];
+		int curLocomotorSet;
+		unsigned char padUpg[0x327 - 0x1d0 - sizeof(int)];
+		Bool upgradedLocomotors;
+	};
+	BFMELocomotorFields *self = reinterpret_cast<BFMELocomotorFields *>(this);
+	self->upgradedLocomotors = set;
+	if (self->curLocomotorSet == LOCOMOTORSET_NORMAL || self->curLocomotorSet == LOCOMOTORSET_NORMAL_UPGRADED)
+		reinterpret_cast<AIUpdateInterface_ChooseLocomotorSlot *>(this)->chooseLocomotorSet(LOCOMOTORSET_NORMAL);
 }
 
 //=============================================================================

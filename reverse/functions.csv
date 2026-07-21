@@ -12190,7 +12190,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setLocalPlayerIndex@ParticleSystemManager@@QAEXH@Z,,0x002ED1F0,13,Code/GameEngine/Source/GameClient/GameClient.cpp,matched,
 ?setLocalProfileID@GameSpyInfo@@UAEXH@Z,,0x002ED490,10,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs.cpp,matched,
 ?setLocale@GameSpyMiscPreferences@@QAEXH@Z,,0x000A99D0,36,Code/masm_dumps/GameSpyMiscPreferences_setLocale.asm,matched,Unique Locale-string preference setter
-?setLocomotorUpgrade@AIUpdateInterface@@QAEX_N@Z,,0x0026EC60,44,Code/masm_dumps/_rn5__setLocomotorUpgrade_AIUpdateInterface__QAEX_N_Z_26EC60.asm,matched,reloc-needle Open-BFME4+Grok
+?setLocomotorUpgrade@AIUpdateInterface@@QAEX_N@Z,,0x0026EC60,44,Code/GameEngine/Source/GameLogic/Object/Update/AIUpdate.cpp,matched,reloc-needle Open-BFME4+Grok asm->cpp depth Open-BFME4+Grok
 ?setLogicalStatus@SpectreGunshipUpdate@@IAEXW4GunshipStatus@@@Z,,0x002ED480,10,Code/GameEngine/Source/GameLogic/Object/Update/SpectreGunshipUpdate.cpp,matched,
 ?setLogin@LANPlayer@@QAEXVAsciiString@@@Z,,0x000ACFF0,30,Code/GameEngine/Source/GameNetwork/LANAPICallbacks.cpp,matched,
 ?setLogin@LANPlayer@@QAEXVUnicodeString@@@Z,,0x0006E250,75,Code/GameEngine/Source/GameNetwork/LANGameInfo.cpp,matched,

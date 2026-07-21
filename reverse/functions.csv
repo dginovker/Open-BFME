@@ -12891,3 +12891,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?GadgetListBoxRemoveMultiSelect@@YAXPAVGameWindow@@@Z,,0x004BB890,64,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?insertChat@@YAXVBuddyMessage@@@Z,,0x004EB6B0,596,Code/masm_dumps/insertChat.asm,matched,string-anchor unique [%hs -> %hs] format; true body not drift 0x798602; MASM exact
 ??1ImageCollection@@UAE@XZ,,0x005D2C10,139,Code/GameEngine/Source/GameClient/System/Image.cpp,matched,
+?parseName@@YA_NPADPAVWinInstanceData@@0PAX@Z,,0x004866F0,139,Code/masm_dumps/parseName_YA_NPADPAVWinInstanceData_0PAX_Z.asm,matched,

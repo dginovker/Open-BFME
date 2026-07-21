@@ -3378,3 +3378,7 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?unlinkChildWindow@GameWindowManager@@QAEXPAVGameWindow@@@Z,0x00015A55,winSetParent depth Open-BFME4+Grok
 ?linkWindow@GameWindowManager@@QAEXPAVGameWindow@@@Z,0x0002B87D,winSetParent depth Open-BFME4+Grok
 ??1UnicodeString@@QAE@XZ,0x008881D0,freeMessageResources depth Open-BFME4+Grok
+?Flush@SortingRendererClass@@SAXXZ,0x0093A810,End_Render depth Open-BFME4+Grok
+?End_Scene@DX8Wrapper@@SAX_N@Z,0x00908FE0,End_Render depth Open-BFME4+Grok
+?End_Statistics@Debug_Statistics@@YAXXZ,0x00937EF0,End_Render depth Open-BFME4+Grok
+?Invalidate_Cached_Render_States@DX8Wrapper@@SAXXZ,0x00903C50,End_Render depth Open-BFME4+Grok

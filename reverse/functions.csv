@@ -12887,3 +12887,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1SlavedUpdateModuleData@@UAE@XZ,,0x00126980,80,Code/masm_dumps/SlavedUpdateModuleData_destructor.asm,matched,Exact 80B; factory 0x125A60 vtable 0x108E730 slot0->0x126950->thunk 0x1EB96; AsciiString +0x4c/+0x48
 ?getDefaultMap@@YA?AVAsciiString@@_N@Z,,0x00457FB0,361,Code/GameEngine/Source/GameClient/MapUtil_getDefaultMap.asm,matched,exact 361B MASM @0x457FB0 (drift 0x457FDC mid-body; BFME helper walk)
 ?isUser@LANGameSlot@@QAE_NVUnicodeString@@@Z,,0x0068E8D0,132,Code/masm_dumps/LANGameSlot_isUser_UnicodeString.asm,matched,caller-proven via getSlotNum; queue RVA 0x791BEF was mid FUN_00b91730; MASM exact 132B
+?WOLBuddyOverlayRCMenuSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004EFED0,1023,Code/masm_dumps/WOLBuddyOverlayRCMenuSystem.asm,matched,True body 1023B @0x4EFED0 (queue 0x4EFE85 was int3 pad); FunctionLexicon thunk 0x2C417 jmp; exact MASM like RCMenuInit

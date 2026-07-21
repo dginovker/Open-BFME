@@ -2089,3 +2089,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1Weapon@@MAE@XZ	landed	true body 0x1E5490 size 111 (not drift 0x9F2801=TeamFactory); MASM exact; vtbl 0x10A13F4 from allocateNewWeapon ctor; scalar-del 0x1E6900
 ?update@ScaleUpTransition@@UAEXH@Z	landed	true body 0x59F060/144 after init; queue RVA 0x62C435 was int3 pad; removed GUILogoMouseOver audio (string absent retail) so cases 1-5 share Fade-like hide+drawState
 ?parseCampaignDefinition@INI@@SAXPAV1@@Z	landed	true body 0x5BCF20/172 via INI theTypeTable Campaign@0xEB8A84->thunk 0x18F6B; drift 0x5EE360 was 7B stub; MASM exact dump (retail StringBase set/strlen SEH shape)
+??1BridgeBehavior@@MAE@XZ	landed	queue 0x7A5E37 was misplaced (mid-STL/Water code); true body already at 0x1F36A0/399 as UAE MASM; C++ emits MAE (pool-glue protected); landed ICF alias MAE same RVA/size via BridgeBehavior_destructor_MAE.asm

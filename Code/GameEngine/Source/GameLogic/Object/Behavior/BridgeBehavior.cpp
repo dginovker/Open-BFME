@@ -269,7 +269,6 @@ BridgeBehavior::BridgeBehavior( Thing *thing, const ModuleData *moduleData )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ??1BridgeBehavior@@MAE@XZ present-unmatched
 BridgeBehavior::~BridgeBehavior( void )
 {
 

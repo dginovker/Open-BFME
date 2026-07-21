@@ -5498,7 +5498,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?End@FilePipe@@UAEHXZ,,0x009E7E30,39,Code/Libraries/Source/WWVegas/WWLib/xpipe.cpp,matched,
 ?End_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E17F0,162,Code/Libraries/Source/WWVegas/WWLib/chunkio.cpp,matched,
 ?End_Micro_Chunk@ChunkSaveClass@@QAE_NXZ,,0x009E1180,81,Code/Libraries/Source/WWVegas/WWLib/chunkio.cpp,matched,
-?End_Render@WW3D@@SA?AW4WW3DErrorType@@_N@Z,,0x008FD880,65,Code/masm_dumps/_cache2__End_Render_WW3D__SA_AW4WW3DErrorType___N_Z_8FD880.asm,matched,cached-obj2 Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?End_Render@WW3D@@SA?AW4WW3DErrorType@@_N@Z,,0x008FD880,65,Code/masm_dumps/_cache2__End_Render_WW3D__SA_AW4WW3DErrorType___N_Z_8FD880.asm,matched,cached-obj2 Open-BFME4+Grok
 ?Entry_Count@INIClass@@QBEHPBD@Z,,0x009E3790,25,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
 ?EnumThreadWndProc@@YGHPAXJ@Z,,0x00889700,17,Code/Libraries/Source/WWVegas/WWDebug/debug_debug.cpp,matched,
 ?Enumerate_Entries@INIClass@@QAEIPBD0II@Z,,0x009E4DA0,373,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
@@ -5506,7 +5506,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Error@ResourceFileClass@@UAEXHHPBD@Z,,0x006CF660,3,Code/Libraries/Source/WWVegas/WWLib/rcfile.cpp,matched,icf-owner=?Scale@RenderObjClass@@UAEXMMM@Z
 ?ExceptionFilter@DebugExceptionhandler@@SGJPAU_EXCEPTION_POINTERS@@@Z,,0x0088E5F0,728,Code/masm_dumps/_sym1__ExceptionFilter_DebugExceptionhandler__SGJPAU_EXCEPTION_POINTERS___Z_88E5F0.asm,matched,symbol-pin Open-BFME4+Grok
 ?ExecCommand@Debug@@AAEXPBD0@Z,,0x0088ABA0,788,Code/masm_dumps/_s4__ExecCommand_Debug_AAEXPBD0_Z_88ABA0.asm,matched,Exact string-anchored Open-BFME4+Grok
-?Execute@DebugIOCon@@UAEXAAVDebug@@PBD_NIPBQBD@Z,,0x00891200,239,Code/masm_dumps/_cache__Execute_DebugIOCon__UAEXAAVDebug__PBD_NIPBQBD_Z_891200.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?Execute@DebugIOCon@@UAEXAAVDebug@@PBD_NIPBQBD@Z,,0x00891200,239,Code/masm_dumps/_cache__Execute_DebugIOCon__UAEXAAVDebug__PBD_NIPBQBD_Z_891200.asm,matched,cached-obj needle Open-BFME4+Grok
 ?Execute@DebugIOFlat@@UAEXAAVDebug@@PBD_NIPBQBD@Z,,0x00890810,1250,Code/masm_dumps/_str__Execute_DebugIOFlat_UAEXAAVDebug_PBD_NIPBQBD_Z_890810.asm,matched,
 ?Execute@DebugIONet@@UAEXAAVDebug@@PBD_NIPBQBD@Z,,0x0088FCE0,283,Code/Libraries/Source/WWVegas/WWDebug/DebugIONet_Execute.asm,matched,
 ?Exists@RegistryClass@@SA_NPBD@Z,,0x009DC1C0,50,Code/Libraries/Source/WWVegas/WWLib/registry.cpp,matched,
@@ -5639,7 +5639,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GadgetCheckBoxIsChecked@@YA_NPAVGameWindow@@@Z,,0x004B3230,19,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetCheckBox.cpp,matched,
 ?GadgetCheckBoxSetChecked@@YAXPAVGameWindow@@_N@Z,,0x004B31D0,73,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetCheckBox.cpp,matched,
 ?GadgetCheckBoxSetText@@YAXPAVGameWindow@@VUnicodeString@@@Z,,0x004B3330,98,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetCheckBox.cpp,matched,
-?GadgetCheckBoxSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004B3250,171,Code/masm_dumps/_cache__GadgetCheckBoxSystem__YA_AW4WindowMsgHandledType__PAVG_4B3250.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?GadgetCheckBoxSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004B3250,171,Code/masm_dumps/_cache__GadgetCheckBoxSystem__YA_AW4WindowMsgHandledType__PAVG_4B3250.asm,matched,cached-obj needle Open-BFME4+Grok
 ?GadgetCheckLikeButtonIsChecked@@YA_NPAVGameWindow@@@Z,,0x004BBDB0,30,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetPushButton.cpp,matched,
 ?GadgetCheckLikeButtonSetVisualCheck@@YAXPAVGameWindow@@_N@Z,,0x004BBD50,65,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetPushButton.cpp,matched,
 ?GadgetComboBoxAddEntry@@YAHPAVGameWindow@@VUnicodeString@@H@Z,,0x004B4F40,140,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,GWM vtable rebuilt to retail (winSendSystemMsg slot 53); releaseBuffer twin pinned
@@ -5767,7 +5767,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?GadgetProgressBarSetProgress@@YAXPAVGameWindow@@H@Z,,0x004BBCF0,38,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetProgressBar.cpp,matched,
 ?GadgetProgressBarSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BBCB0,42,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetProgressBar.cpp,matched,
 ?GadgetRadioButtonInput@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BCFD0,47,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetRadioButton.cpp,matched,
-?GadgetRadioButtonSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BD2A0,270,Code/masm_dumps/_cache__GadgetRadioButtonSystem__YA_AW4WindowMsgHandledType__P_4BD2A0.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?GadgetRadioButtonSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BD2A0,270,Code/masm_dumps/_cache__GadgetRadioButtonSystem__YA_AW4WindowMsgHandledType__P_4BD2A0.asm,matched,cached-obj needle Open-BFME4+Grok
 ?GadgetRadioGetDisabledBorderColor@@YAHPAVGameWindow@@@Z,,0x0047B4C0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DRadioButton.cpp,matched,
 ?GadgetRadioGetDisabledCheckedBoxBorderColor@@YAHPAVGameWindow@@@Z,,0x0078FC00,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DRadioButton.cpp,matched,
 ?GadgetRadioGetDisabledCheckedBoxColor@@YAHPAVGameWindow@@@Z,,0x0078FBF0,11,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Gadget/W3DRadioButton.cpp,matched,
@@ -7102,7 +7102,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?PixelScreenToW3DLogicalScreen@@YAXHHPAM0HH@Z,,0x006BEEE0,47,Code/GameEngineDevice/Source/W3DDevice/Common/W3DConvert.cpp,matched,
 ?Plain_Block_Size@PKey@@QBEHXZ,,0x009EA720,17,Code/Libraries/Source/WWVegas/WWLib/pk.cpp,matched,
 ?PointInsideArea2D@@YA_NPBUCoord2D@@0H@Z,,0x0044ED90,107,Code/GameEngine/Source/Common/line2_d.cpp,matched,
-?PointInsideArea2D@@YA_NPBUCoord3D@@0H@Z,,0x0044EEF0,179,Code/GameEngine/Source/Common/line2_d.cpp,matched,cached-obj needle Open-BFME4+Grok
+?PointInsideArea2D@@YA_NPBUCoord3D@@0H@Z,,0x0044EEF0,179,Code/GameEngine/Source/Common/line2_d.cpp,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ?PointInsideRect2D@@YA_NPBUCoord2D@@0000@Z,,0x0044F160,188,Code/GameEngine/Source/Common/line2_d.cpp,matched,
 ?PointInsideRect3D@@YA_NPBUCoord3D@@0000@Z,,0x0044F250,103,Code/GameEngine/Source/Common/line2_d.cpp,matched,
 ?Point_In_Triangle_2D@@YA_NABVVector3@@000HHAAE@Z,,0x001A0ED0,809,Code/Libraries/Source/WWVegas/WW3D2/meshgeometry.cpp,matched,
@@ -7111,7 +7111,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Pop_Material_Pass@RenderInfoClass@@QAEXXZ,,0x009237C0,50,Code/Libraries/Source/WWVegas/WW3D2/rinfo.cpp,matched,
 ?Pop_Override_Flags@RenderInfoClass@@QAEXXZ,,0x00923750,7,Code/Libraries/Source/WWVegas/WW3D2/rinfo.cpp,matched,Ghidra-bound RenderInfo mutator
 ?PopulateLobbyPlayerListbox@@YAXXZ,,0x000070B3,5,Code/masm_dumps/_PopulateLobbyPlayerListbox__YAXXZ_70B3.asm,matched,MASM exact retail dump
-?PopulateRemoteIPComboBox@@YAXXZ,,0x004D2540,250,Code/masm_dumps/_cache__PopulateRemoteIPComboBox__YAXXZ_4D2540.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?PopulateRemoteIPComboBox@@YAXXZ,,0x004D2540,250,Code/masm_dumps/_cache__PopulateRemoteIPComboBox__YAXXZ_4D2540.asm,matched,cached-obj needle Open-BFME4+Grok
 ?PopupBuddyNotificationSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004E9C70,53,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLBuddyOverlay.cpp,matched,
 ?PopupCommunicatorInput@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004D3C40,69,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupCommunicator.cpp,matched,
 ?PopupHostGameInit@@YAXPAVWindowLayout@@PAX@Z,,0x004D68C0,1253,Code/masm_dumps/PopupHostGameInit.asm,matched,Correct retail body from unique FunctionLexicon thunk 0x00032821
@@ -11855,7 +11855,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?recalculate@LineSegClass@@IAEXXZ,,0x003FE770,203,Code/Libraries/Source/WWVegas/WW3D2/rendobj.cpp,matched,
 ?recreateControlBar@InGameUI@@UAEXXZ,,0x00442300,279,Code/masm_dumps/_sa13__recreateControlBar_InGameUI__UAEXXZ_442300.asm,matched,multi-xref Open-BFME4+Grok ControlBar.wnd
 ?recruitSpecificAITeam@AIPlayer@@UAEXPAVTeamPrototype@@M@Z,,0x001699C2,1654,Code/GameEngine/Source/GameLogic/AI/AIPlayer_recruitSpecificAITeam.asm,matched,exact 1654B via MASM
-?refcompress@@YAHPAEH0HH@Z,,0x0081EF80,1095,Code/masm_dumps/_cache__refcompress__YAHPAEH0HH_Z_81EF80.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?refcompress@@YAHPAEH0HH@Z,,0x0081EF80,1095,Code/masm_dumps/_cache__refcompress__YAHPAEH0HH_Z_81EF80.asm,matched,cached-obj needle Open-BFME4+Grok
 ?refreshDrives@CDManager@@UAEXXZ,,0x00101CC0,43,Code/GameEngine/Source/Common/System/CDManager.cpp,matched,
 ?refreshInfo@CDDrive@@UAEXXZ,,0x00101BF0,8,Code/GameEngine/Source/Common/System/CDManager.cpp,matched,
 ?refreshPlayerList@@YAX_N@Z,,0x004FC440,52,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,matched,

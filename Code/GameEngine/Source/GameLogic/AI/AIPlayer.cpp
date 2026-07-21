@@ -193,7 +193,6 @@ void AIPlayer::onStructureProduced( Object *factory, Object *bldg )
 // ------------------------------------------------------------------------------------------------
 /** See if the building is a supply center, and see how many supply trucks we want. */
 // ------------------------------------------------------------------------------------------------
-// ?checkForSupplyCenter@AIPlayer@@ present-unmatched
 void AIPlayer::checkForSupplyCenter( BuildListInfo *info, Object *bldg )
 {
 	class SupplyCenterDockUpdate;
@@ -229,7 +228,6 @@ void AIPlayer::checkForSupplyCenter( BuildListInfo *info, Object *bldg )
 // ------------------------------------------------------------------------------------------------
 /** Queue up a supply truck to be built. */
 // ------------------------------------------------------------------------------------------------
-// ?queueSupplyTruck@AIPlayer@@ present-unmatched
 void AIPlayer::queueSupplyTruck( void )
 {			
 	Bool truckInQueue = false;
@@ -1515,7 +1513,6 @@ Bool AIPlayer::isPossibleToBuildTeam( TeamPrototype *proto, Bool requireIdleFact
 /** Check if this team is buildable, doesn't exceed maximum limits, meets conditions, 
 	* and isn't under construction. */
 // ------------------------------------------------------------------------------------------------
-// ?isAGoodIdeaToBuildTeam@AIPlayer@@MAE_NPAVTeamPrototype@@@Z present-unmatched
 Bool AIPlayer::isAGoodIdeaToBuildTeam( TeamPrototype *proto )
 {
 	// Check condition.
@@ -1558,7 +1555,6 @@ Bool AIPlayer::isAGoodIdeaToBuildTeam( TeamPrototype *proto )
 // ------------------------------------------------------------------------------------------------
 /** See if any existing teams need reinforcements, and have higher priority. */
 // ------------------------------------------------------------------------------------------------
-// ?selectTeamToReinforce@AIPlayer@@MAE_NH@Z present-unmatched
 Bool AIPlayer::selectTeamToReinforce( Int minPriority )
 {
 	// Find a high production priority team that needs reinforcements.
@@ -1676,7 +1672,6 @@ Bool AIPlayer::selectTeamToReinforce( Int minPriority )
 // ------------------------------------------------------------------------------------------------
 /** Determine the next team to build.  Return true if one was selected. */
 // ------------------------------------------------------------------------------------------------
-// ?selectTeamToBuild@AIPlayer@@MAE_NXZ present-unmatched
 Bool AIPlayer::selectTeamToBuild( void )
 {
 
@@ -1776,7 +1771,6 @@ void AIPlayer::buildSpecificAIBuilding(const AsciiString &thingName)
 // ------------------------------------------------------------------------------------------------
 /** Build an upgrade. */
 // ------------------------------------------------------------------------------------------------
-// ?buildUpgrade@AIPlayer@@QAEXABVAsciiString@@@Z present-unmatched
 void AIPlayer::buildUpgrade(const AsciiString &upgrade)
 {
 	const UpgradeTemplate *curUpgrade = TheUpgradeCenter->findUpgrade(upgrade);
@@ -2352,7 +2346,6 @@ void AIPlayer::selectSkillset(Int skillset)
 // ------------------------------------------------------------------------------------------------
 /** Do per frame work (if any) repairing bridges. */
 // ------------------------------------------------------------------------------------------------
-// ?updateBridgeRepair@AIPlayer@@IAEXXZ present-unmatched
 void AIPlayer::updateBridgeRepair(void)
 {
 	if (m_structuresInQueue == 0) return;
@@ -2446,7 +2439,6 @@ void AIPlayer::updateBridgeRepair(void)
 // ------------------------------------------------------------------------------------------------
 /** Build a specific team.  If priorityBuild, put at front of queue with priority set. */
 // ------------------------------------------------------------------------------------------------
-// ?buildSpecificAITeam@AIPlayer@@UAEXPAVTeamPrototype@@_N@Z present-unmatched
 void AIPlayer::buildSpecificAITeam( TeamPrototype *teamProto, Bool priorityBuild)
 {
 	//
@@ -2692,7 +2684,6 @@ void AIPlayer::doBaseBuilding( void )
 /**
  * See if any ready teams have finished moving to the rally point.
  */
-// ?checkReadyTeams@AIPlayer@@MAEXXZ present-unmatched
 void AIPlayer::checkReadyTeams( void )
 {
 	// See if any ready teams are gathered at their rally point
@@ -3099,7 +3090,6 @@ Bool AIPlayer::dozerInQueue( void )
 /**
  * Queues up a dozer.
  */
-// ?queueDozer@AIPlayer@@MAEXXZ present-unmatched
 void AIPlayer::queueDozer( void )
 {
 
@@ -3372,7 +3362,6 @@ Bool TeamInQueue::areBuildsComplete()
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?disband@TeamInQueue@@QAEXXZ present-unmatched
 void TeamInQueue::disband()
 {
 	Team *newTeam = m_team->getPrototype()->getControllingPlayer()->getDefaultTeam();
@@ -3502,7 +3491,6 @@ void TeamInQueue::loadPostProcess( void )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ??1WorkOrder@@MAE@XZ present-unmatched
 WorkOrder::~WorkOrder()
 {
 

@@ -94,31 +94,9 @@ const FieldParse CampaignManager::m_campaignFieldParseTable[] =
 //-----------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------
-// ?parseCampaignDefinition@INI@@SAXPAV1@@Z present-unmatched
-void INI::parseCampaignDefinition( INI *ini )
-{
-	AsciiString name;
-	Campaign *campaign;
-
-	// read the name
-	const char* c = ini->getNextToken();
-	name.set( c );	
-
-	// find existing item if present
-	DEBUG_ASSERTCRASH( TheCampaignManager, ("parseCampaignDefinition: Unable to Get TheCampaignManager\n") );
-	if( !TheCampaignManager )
-		return;
-
-	// If we have a previously allocated Campaign
-	campaign = TheCampaignManager->newCampaign( name );
-
-	// sanity
-	DEBUG_ASSERTCRASH( campaign, ("parseCampaignDefinition: Unable to allocate campaign '%s'\n", name.str()) );
-
-	// parse the ini definition
-	ini->initFromINI( campaign, TheCampaignManager->getFieldParse() );
-
-}  // end parseCampaignDefinition
+// ?parseCampaignDefinition@INI@@SAXPAV1@@Z body in
+// Code/masm_dumps/INI_parseCampaignDefinition_5BCF20.asm (0x005BCF20/172).
+// Drift 0x005EE360 was a 7B vtable-store stub, not this function.
 
 //-----------------------------------------------------------------------------
 // ??0Campaign@@QAE@XZ present-unmatched

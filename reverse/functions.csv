@@ -12903,3 +12903,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?joinGame@@YAXVAsciiString@@@Z,,0x004D7580,359,Code/masm_dumps/joinGame.asm,matched,exact 359B MASM; true start 0x4D7580 (queue off-by-one 0x4D7581); GameSpyInfo vtbl/layout drift blocks C++
 ??1Weapon@@MAE@XZ,,0x001E5490,111,Code/masm_dumps/Weapon_destructor.asm,matched,Exact 111B @ 0x001E5490; allocateNewWeapon->ctor vtbl 0x10A13F4 slot0 scalar-del 0x1E6900->body; m_scatterTargets@+0x40; drift 0x9F2801 was TeamFactory
 ?update@ScaleUpTransition@@UAEXH@Z,,0x0059F060,144,Code/GameEngine/Source/GameClient/GUI/GameWindowTransitionsStyles.cpp,matched,
+?parseCampaignDefinition@INI@@SAXPAV1@@Z,,0x005BCF20,172,Code/masm_dumps/INI_parseCampaignDefinition_5BCF20.asm,matched,INI theTypeTable Campaign entry; true body 0x5BCF20/172 (drift 0x5EE360 was 7B stub)

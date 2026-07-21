@@ -2088,3 +2088,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?joinGame@@YAXVAsciiString@@@Z	landed	exact 359B MASM @ 0x4D7580 (queue RVA off-by-one 0x4D7581 size 356); C++ blocked by GameSpyInfo vtbl slots + GameSpyStagingRoom layout (+0x418/+0x41C)
 ??1Weapon@@MAE@XZ	landed	true body 0x1E5490 size 111 (not drift 0x9F2801=TeamFactory); MASM exact; vtbl 0x10A13F4 from allocateNewWeapon ctor; scalar-del 0x1E6900
 ?update@ScaleUpTransition@@UAEXH@Z	landed	true body 0x59F060/144 after init; queue RVA 0x62C435 was int3 pad; removed GUILogoMouseOver audio (string absent retail) so cases 1-5 share Fade-like hide+drawState
+?parseCampaignDefinition@INI@@SAXPAV1@@Z	landed	true body 0x5BCF20/172 via INI theTypeTable Campaign@0xEB8A84->thunk 0x18F6B; drift 0x5EE360 was 7B stub; MASM exact dump (retail StringBase set/strlen SEH shape)

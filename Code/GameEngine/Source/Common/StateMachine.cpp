@@ -291,7 +291,7 @@ StateMachine::StateMachine( Object *owner, AsciiString name )
 /**
  * Destructor.  Destroy any states attached to this machine.
  */
-// ??1StateMachine@@ present-unmatched
+// matched via Code/masm_dumps/StateMachine_dtor.asm (true body 0xA1130/224; queue 0x9F27BE was pad; retail single-vptr layout)
 StateMachine::~StateMachine()
 {
 

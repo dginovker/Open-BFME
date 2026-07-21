@@ -1476,34 +1476,11 @@ static Bool parseData( void **data, char *type, char *buffer )
 // setWindowText ==============================================================
 /** Set the default text for a window or gadget control */
 //=============================================================================
-static void setWindowText( GameWindow *window, AsciiString textLabel )
-{
-
-	// sanity
-	if (textLabel.isEmpty())
-		return;
-
-	UnicodeString theText, entryText;
-	//Translate the text
-	theText = TheGameText->fetch( (char *)textLabel.str());
-	// set the text in the window based on what it is
-	if( BitTest( window->winGetStyle(), GWS_PUSH_BUTTON ) )
-		GadgetButtonSetText( window, theText );
-	else if( BitTest( window->winGetStyle(), GWS_RADIO_BUTTON ) )
-		GadgetRadioSetText( window, theText );
-	else if( BitTest( window->winGetStyle(), GWS_CHECK_BOX ) )
-		GadgetCheckBoxSetText( window, theText );
-	else if( BitTest( window->winGetStyle(), GWS_STATIC_TEXT ) )
-		GadgetStaticTextSetText( window, theText );
-	else if( BitTest( window->winGetStyle(), GWS_ENTRY_FIELD ) )
-	{
-		entryText.translate(textLabel);
-		GadgetTextEntrySetText( window, entryText );
-	}
-	else
-		window->winSetText( theText );
-
-}  // end setWindowText
+// ?setWindowText@@YAXPAVGameWindow@@VAsciiString@@@Z
+// Body in Code/masm_dumps/GameWindowManagerScript_setWindowText.asm
+// (exact 416B retail @ 0x004864E0; queue 0x004864C7 was int3 pad).
+// BFME AsciiString isEmpty/str layout blocks ZH C++ shape.
+void setWindowText( GameWindow *window, AsciiString textLabel );
 
 // createGadget ===============================================================
 /** Create a gadget based on the 'type' parm */

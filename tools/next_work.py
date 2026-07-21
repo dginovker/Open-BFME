@@ -190,8 +190,12 @@ def _ghidra_starts():
 
 def snap_rva(rva):
     """drift candidate_rva is an alignment vote, wrong ~99% of the time — it lands
-    in int3 padding just before the real start, or a few bytes into the SEH prologue.
-    Snap to the nearest ghidra function start. Returns (corrected_rva, note|None)."""
+    in int3 padding just before the real start, a few bytes into the SEH prologue,
+    or (no leading 0xCC to skip) still inside the PRECEDING function's tail — e.g.
+    `c4 10 c3 cc cc ...`, a couple of misdecoded bytes plus a real `ret` before the
+    pad run, so the naive leading-0xCC scan never fires. Snap to the nearest ghidra
+    function start, trying both directions and keeping whichever is closer.
+    Returns (corrected_rva, note|None)."""
     ordered, starts = _ghidra_starts()
     if not ordered or rva in starts:
         return rva, None
@@ -204,9 +208,19 @@ def snap_rva(rva):
             off += 1
         if off and (rva + off) in starts:
             return rva + off, f"drift-corrected +{off}B (skipped int3 pad)"
+        candidates = []
         i = bisect.bisect_right(ordered, rva) - 1
         if 0 <= i < len(ordered) and 0 < rva - ordered[i] <= 48:
-            return ordered[i], f"drift-corrected -{rva - ordered[i]}B (snapped to ghidra start)"
+            d = rva - ordered[i]
+            candidates.append((d, ordered[i], f"drift-corrected -{d}B (snapped to ghidra start)"))
+        j = bisect.bisect_left(ordered, rva)
+        if 0 <= j < len(ordered) and 0 < ordered[j] - rva <= 48:
+            d = ordered[j] - rva
+            candidates.append((d, ordered[j],
+                                f"drift-corrected +{d}B (snapped to ghidra start, was in preceding fn's tail)"))
+        if candidates:
+            candidates.sort()
+            return candidates[0][1], candidates[0][2]
     except Exception:
         pass
     return rva, None

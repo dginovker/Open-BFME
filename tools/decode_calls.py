@@ -38,8 +38,12 @@ def fail(*lines):
 def load_ghidra(reverse_dir):
     path = reverse_dir / "ghidra_functions.csv"
     if not path.exists():
-        fail(f"{path} not found — it is generated (see tools/ghidra/README.md) and "
-             "required to name callee RVAs")
+        # Degrade instead of aborting: callees still resolve via exports/functions/
+        # symbols, just without ghidra's FUN_ names. A fresh clone without the
+        # generated inventory can still pin REL32 calls.
+        print(f"decode_calls: note: {path} not present — callee RVAs unnamed "
+              "(generate it per tools/ghidra/README.md for full naming)", file=sys.stderr)
+        return {}, []
     table = {}
     with path.open(encoding="utf-8", newline="") as handle:
         for row in csv.DictReader(handle):

@@ -168,6 +168,50 @@ def resolve_drift_source(basename, function=None):
     return hits[0].relative_to(ROOT).as_posix() if hits else None
 
 
+_GHIDRA_STARTS = None
+
+
+def _ghidra_starts():
+    """(sorted-list, set) of ghidra function-start RVAs, cached. Empty on a fresh
+    clone without the generated inventory, so correction silently no-ops."""
+    global _GHIDRA_STARTS
+    if _GHIDRA_STARTS is None:
+        starts = set()
+        if GHIDRA_FUNCTIONS.exists():
+            with GHIDRA_FUNCTIONS.open(newline="") as fh:
+                for row in csv.DictReader(fh):
+                    try:
+                        starts.add(int(row["rva"], 16))
+                    except (ValueError, KeyError, TypeError):
+                        pass
+        _GHIDRA_STARTS = (sorted(starts), starts)
+    return _GHIDRA_STARTS
+
+
+def snap_rva(rva):
+    """drift candidate_rva is an alignment vote, wrong ~99% of the time — it lands
+    in int3 padding just before the real start, or a few bytes into the SEH prologue.
+    Snap to the nearest ghidra function start. Returns (corrected_rva, note|None)."""
+    ordered, starts = _ghidra_starts()
+    if not ordered or rva in starts:
+        return rva, None
+    try:
+        import bisect
+        import build
+        data = build.read_target_bytes(rva, 16)
+        off = 0
+        while off < 15 and off < len(data) and data[off] == 0xCC:
+            off += 1
+        if off and (rva + off) in starts:
+            return rva + off, f"drift-corrected +{off}B (skipped int3 pad)"
+        i = bisect.bisect_right(ordered, rva) - 1
+        if 0 <= i < len(ordered) and 0 < rva - ordered[i] <= 48:
+            return ordered[i], f"drift-corrected -{rva - ordered[i]}B (snapped to ghidra start)"
+    except Exception:
+        pass
+    return rva, None
+
+
 def structural_candidates(mine, claimed, claimed_names, attempts, big=False):
     """The manual-RE tier: drifted functions whose source exists but whose code
     shape differs (class structural / register-swap). Workflow: docs/structural.md."""
@@ -179,10 +223,11 @@ def structural_candidates(mine, claimed, claimed_names, attempts, big=False):
     out = []
     for name, row in last.items():
         rva = to_int(row["candidate_rva"], 16, f"drift_report.csv candidate_rva for {name}")
-        # candidate_rva is an alignment vote and can be shifted a few bytes from
-        # the real start, so a matched function may not hit the rva filter —
-        # the name filter catches those stale rows (proven live: insertTee...)
-        if rva in claimed or name in claimed_names or not mine(name):
+        # candidate_rva is an alignment vote and wrong ~99% of the time; snap it to
+        # the real ghidra start so the printed command is usable, and skip if either
+        # the raw or corrected rva is already matched (the name filter catches the rest).
+        crva, snap_note = snap_rva(rva)
+        if rva in claimed or crva in claimed or name in claimed_names or not mine(name):
             continue
         att = attempts.get(name, {"n": 0, "dead": False, "last": ""})
         if att["dead"] or att["n"] >= 3:
@@ -192,12 +237,14 @@ def structural_candidates(mine, claimed, claimed_names, attempts, big=False):
             print(f"warning: drift_report.csv row for {name} names a missing source "
                   f"{row['source']} — stale report, skipped", file=sys.stderr)
             continue
+        crva_hex = f"0x{crva:08X}"
+        hint = row["hint"] + (f"; {snap_note}, verify the prologue" if snap_note else "")
         out.append({"function": name, "source": source, "class": row["class"],
                     "aligned_pct": int(row["aligned_pct"]), "size": int(row["size"]),
-                    "candidate_rva": row["candidate_rva"], "hint": row["hint"],
+                    "candidate_rva": crva_hex, "hint": hint,
                     "attempts": att["n"], "last_attempt": att["last"],
                     "command": (f"python3 tools/explain_mismatch.py '{name}' "
-                                f"--rva {row['candidate_rva']} --size {row['size']} "
+                                f"--rva {crva_hex} --size {row['size']} "
                                 f"--source {source}")})
     if big:
         # byte-yield mode: biggest functions first (still gated by alignment)

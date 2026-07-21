@@ -61,7 +61,9 @@ def main():
         try:
             obj = build.obj_path(src)
             build.compile_source(src, obj)
-        except Exception as e:
+        except (SystemExit, Exception) as e:
+            # compile_source raises SystemExit (not Exception) on a bad compile;
+            # catch both so one broken sweep source doesn't abort the whole batch.
             print(f"{cpp_name}: compile failed — skipped ({e})")
             continue
         if not obj.exists():

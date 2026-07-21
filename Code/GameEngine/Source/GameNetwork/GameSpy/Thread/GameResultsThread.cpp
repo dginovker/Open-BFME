@@ -194,7 +194,6 @@ void GameResultsQueue::addResponse( const GameResultsResponse& resp )
 	}
 }
 
-// ?getResponse@GameResultsQueue@@UAE_NAAVGameResultsResponse@@@Z present-unmatched
 Bool GameResultsQueue::getResponse( GameResultsResponse& resp )
 {
 	MutexClass::LockClass m(m_responseMutex, 0);

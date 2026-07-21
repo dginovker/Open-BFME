@@ -10835,7 +10835,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getRequiredScience@SpecialPowerTemplate@@QBE?AW4ScienceType@@XZ,,0x000EB4C0,27,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp,matched,
 ?getRequiresList@ProductionPrerequisite@@QBE?AVUnicodeString@@PBVPlayer@@@Z,,0x000E4BE0,1037,Code/masm_dumps/_str__getRequiresList_ProductionPrerequisite_QBE_AVUnicodeSt_E4BE0.asm,matched,
 ?getResolution@OptionPreferences@@QAEXPAH0@Z,,0x00091930,129,Code/masm_dumps/_sa13__getResolution_OptionPreferences__QAEXPAH0_Z_91930.asm,matched,multi-xref Open-BFME4+Grok MusicVolume
-?getResponse@GameResultsQueue@@UAE_NAAVGameResultsResponse@@@Z,,0x00642510,237,Code/masm_dumps/_rn6__getResponse_GameResultsQueue__UAE_NAAVGameResultsResponse___Z_642510.asm,matched,reloc-needle Open-BFME4+Grok
+?getResponse@GameResultsQueue@@UAE_NAAVGameResultsResponse@@@Z,,0x00642510,237,Code/GameEngine/Source/GameNetwork/GameSpy/Thread/GameResultsThread.cpp,matched,reloc-needle Open-BFME4+Grok asm->cpp depth Open-BFME4+Grok
 ?getResponse@GameSpyBuddyMessageQueue@@UAE_NAAVBuddyResponse@@@Z,,0x0063C840,167,Code/masm_dumps/_rn7__getResponse_GameSpyBuddyMessageQueue__UAE_NAAVBuddyResponse___Z_63C840.asm,matched,reloc-needle Open-BFME4+Grok
 ?getResponse@GameSpyPeerMessageQueue@@UAE_NAAVPeerResponse@@@Z,,0x0064C910,164,Code/GameEngine/Source/GameNetwork/GameSpy/Thread/PeerThread.cpp,matched,
 ?getRestPos@AnimateWindow@@QAE?AUICoord2D@@XZ,,0x003D4D50,18,Code/GameEngine/Source/GameClient/GUI/AnimateWindowManager.cpp,matched,

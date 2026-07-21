@@ -158,7 +158,7 @@ const AudioEventRTS& SpecialPowerModule::getInitiateSound() const
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??1SpecialPowerModule@@MAE@XZ present-unmatched
+// Matched via Code/masm_dumps/SpecialPowerModule_destructor.asm @ 0x00268F30 (232B ICF)
 SpecialPowerModule::~SpecialPowerModule()
 {
 

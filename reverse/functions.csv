@@ -12953,3 +12953,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?getExtraAnimationsDisabled@OptionPreferences@@QAE_NXZ,,0x000910B0,101,Code/masm_dumps/_getExtraAnimationsDisabled_OptionPreferences__QAE_NXZ_910B0.asm,matched,Exact 101B; string-anchor ExtraAnimations; queue 0x560A55 was OptionsMenuInit interior
 ?doTeamAttackNamed@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F95A0,144,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions_doTeamAttackNamed.asm,matched,exact 144B MASM; true body 0x2F95A0 (drift 0x3992C6 was mid logicMessageDispatcher)
 ?saveCameraInReplays@OptionPreferences@@QAE_NXZ,,0x00090800,95,Code/masm_dumps/_saveCameraInReplays_OptionPreferences_QAE_NXZ_90800.asm,matched,exact 95B MASM; string SaveCameraInReplays; queue 142 was pad+neighbor; AsciiString thin ctor @0x888BC0
+??_G?$DLListClass@USmudgeSet@@@@UAEPAXI@Z,,0x005D38E0,31,Code/GameEngine/Source/GameClient/System/Smudge.cpp,matched,

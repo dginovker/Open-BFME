@@ -479,88 +479,11 @@ const AsciiString& GameSpyInfo::getConfig( void )
 // Body in PeerDefs_SetUpGameSpy.asm (exact 723B retail @ 0x006377D0).
 // Queue RVA 0x0063777A was inside createNewGameSpyInfoInterface; true start is SEH @ 0x006377D0.
 
-void TearDownGameSpy( void )
-{
-	// save off cached stats
-	if (TheGameSpyInfo && TheGameSpyInfo->getLocalProfileID())
-	{
-//		/* This was done on the score screen, so there is no need to do it now.
-//		 *
-		PSPlayerStats localPSStats = TheGameSpyPSMessageQueue->findPlayerStatsByID(TheGameSpyInfo->getLocalProfileID());
-		if (localPSStats.id != 0)
-		{
-			GameSpyMiscPreferences mPref;
-			mPref.setCachedStats(GameSpyPSMessageQueueInterface::formatPlayerKVPairs(localPSStats).c_str());
-			mPref.write();
-		}
-//		*/
-	}
-
-	// End our threads before we kill off the singletons they reference.  No crashy-crash for you!
-	if (TheGameSpyPSMessageQueue)
-		TheGameSpyPSMessageQueue->endThread();
-	if (TheGameSpyBuddyMessageQueue)
-		TheGameSpyBuddyMessageQueue->endThread();
-	if (TheGameSpyPeerMessageQueue)
-		TheGameSpyPeerMessageQueue->endThread();
-	if (ThePinger)
-		ThePinger->endThreads();
-
-	if(TheRankPointValues)
-	{
-		delete TheRankPointValues;
-		TheRankPointValues = NULL;
-	}
-	if (TheGameSpyPSMessageQueue)
-	{
-		delete TheGameSpyPSMessageQueue;
-		TheGameSpyPSMessageQueue = NULL;
-	}
-
-	if (TheGameSpyBuddyMessageQueue)
-	{
-		delete TheGameSpyBuddyMessageQueue;
-		TheGameSpyBuddyMessageQueue = NULL;
-	}
-
-	if (TheGameSpyPeerMessageQueue)
-	{
-		delete TheGameSpyPeerMessageQueue;
-		TheGameSpyPeerMessageQueue = NULL;
-	}
-
-	if (TheGameSpyInfo)
-	{
-		if (TheGameSpyInfo->getInternalIP())
-		{
-			// we've logged in before.  mark us as logging out.
-			SignalUIInteraction(SHELL_SCRIPT_HOOK_GENERALS_ONLINE_LOGOUT);
-		}
-		delete TheGameSpyInfo;
-		TheGameSpyInfo = NULL;
-	}
-
-	if (ThePinger)
-	{
-		delete ThePinger;
-		ThePinger = NULL;
-	}
-
-	if (TheLadderList)
-	{
-		delete TheLadderList;
-		TheLadderList = NULL;
-	}
-
-	if (TheGameSpyConfig)
-	{
-		delete TheGameSpyConfig;
-		TheGameSpyConfig = NULL;
-	}
-
-	// make sure the notification box doesn't exist
-	deleteNotificationBox();
-}
+// ?TearDownGameSpy@@YAXXZ
+// Body in PeerDefs_TearDownGameSpy.asm (exact 607B retail @ 0x00633390).
+// Ghidra ENTRY size 607 (queue 575 was short). ZH C++ blocked by GameSpyInfo
+// vtable slots (getLocalProfileID +0x70, getInternalIP +0x14c) and PSPlayerStats
+// frame size (sub esp 0x1e8 vs 0x1c0).
 
 
 // ?addToIgnoreList@GameSpyInfo@@UAEXVAsciiString@@@Z present-unmatched

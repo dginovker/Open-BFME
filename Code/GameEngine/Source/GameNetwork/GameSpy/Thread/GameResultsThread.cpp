@@ -119,7 +119,6 @@ GameResultsQueue::GameResultsQueue() : m_requestCount(0), m_responseCount(0)
 	startThreads();
 }
 
-// ??1GameResultsQueue@@UAE@XZ present-unmatched
 GameResultsQueue::~GameResultsQueue()
 {
 	endThreads();

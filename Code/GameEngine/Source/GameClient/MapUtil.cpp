@@ -1042,56 +1042,13 @@ const MapMetaData *MapCache::findMap(AsciiString mapName)
 }
 
 // ------------------------------------------------------------------------------------------------
-/** Embed the pristine map into the xfer stream */
+/** Copy a file from a .big archive path to a real directory path */
 // ------------------------------------------------------------------------------------------------
-static void copyFromBigToDir( const AsciiString& infile, const AsciiString& outfile )
-{
-	// open the map file
-
-	File *file = TheFileSystem->openFile( infile.str(), File::READ | File::BINARY );
-	if( file == NULL )
-	{
-		DEBUG_CRASH(( "copyFromBigToDir - Error opening source file '%s'\n", infile.str() ));
-		throw SC_INVALID_DATA;
-	} // end if
-
-	// how big is the map file
-	Int fileSize = file->seek( 0, File::END );
-
-
-	// rewind to beginning of file
-	file->seek( 0, File::START );
-
-	// allocate buffer big enough to hold the entire map file
-	char *buffer = NEW char[ fileSize ];
-	if( buffer == NULL )
-	{
-		DEBUG_CRASH(( "copyFromBigToDir - Unable to allocate buffer for file '%s'\n", infile.str() ));
-		throw SC_INVALID_DATA;
-	} // end if
-
-	// copy the file to the buffer
-	if( file->read( buffer, fileSize ) < fileSize )
-	{
-		DEBUG_CRASH(( "copyFromBigToDir - Error reading from file '%s'\n", infile.str() ));
-		throw SC_INVALID_DATA;
-	} // end if
-	// close the BIG file
-	file->close();
-	
-	File *filenew = TheFileSystem->openFile( outfile.str(), File::WRITE | File::CREATE | File::BINARY );
-	
-	if( !filenew || filenew->write(buffer, fileSize) < fileSize)
-	{
-		DEBUG_CRASH(( "copyFromBigToDir - Error writing to file '%s'\n", outfile.str() ));
-		throw SC_INVALID_DATA;
-	} // end if
-
-	filenew->close();
-
-	// delete the buffer
-	delete [] buffer;
-} // end embedPristineMap
+// ?copyFromBigToDir@@YAXABVAsciiString@@0@Z
+// Body in MapUtil_copyFromBigToDir.asm (exact 303B retail @ 0x004508D0).
+// Drift 0x00ABFB2C is mid unrelated W3D/allocator fn; C++ blocked by File
+// vtable seek slot and AsciiString::str +8 vs ZH +4.
+void copyFromBigToDir( const AsciiString& infile, const AsciiString& outfile );
 
 Image *getMapPreviewImage( AsciiString mapName )
 {

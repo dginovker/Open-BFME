@@ -1387,13 +1387,18 @@ void ParticleSystem::rotateLocalTransformZ( Real z )
 // ------------------------------------------------------------------------------------------------
 /** Attach this particle system to a Drawable */
 // ------------------------------------------------------------------------------------------------
-// ?attachToDrawable@ParticleSystem@@QAEXPBVDrawable@@@Z present-unmatched
+// BFME m_attachedToDrawableID at +0xb4 (ZH header places it later).
 void ParticleSystem::attachToDrawable( const Drawable *draw )
 {
+	struct AttachedDrawableField {
+		unsigned char pad[0xb4];
+		DrawableID attachedToDrawableID;
+	};
+	AttachedDrawableField *self = reinterpret_cast<AttachedDrawableField *>(this);
 	if (draw)
-		m_attachedToDrawableID = draw->getID();
+		self->attachedToDrawableID = draw->getID();
 	else
-		m_attachedToDrawableID = INVALID_DRAWABLE_ID;
+		self->attachedToDrawableID = INVALID_DRAWABLE_ID;
 }
 
 // ------------------------------------------------------------------------------------------------

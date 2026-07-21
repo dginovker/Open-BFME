@@ -1749,19 +1749,30 @@ Color Object::getNightIndicatorColor() const
 //=============================================================================
 // Object::isLocallyControlled
 //=============================================================================
-// ?isLocallyControlled@Object@@QBE_NXZ present-unmatched
+// BFME m_team at +0x23c; Team::getControllingPlayer is a free call (not Object method body).
 Bool Object::isLocallyControlled() const
 {
-	return getControllingPlayer() == ThePlayerList->getLocalPlayer();
+	struct BFMEObjectTeamField {
+		unsigned char pad[0x23c];
+		Team *team;
+	};
+	const BFMEObjectTeamField *self = reinterpret_cast<const BFMEObjectTeamField *>(this);
+	Player *controller = self->team ? self->team->getControllingPlayer() : NULL;
+	return controller == ThePlayerList->getLocalPlayer();
 }
 
 //=============================================================================
-// Object::isLocallyControlled
+// Object::isNeutralControlled
 //=============================================================================
-// ?isNeutralControlled@Object@@QBE_NXZ present-unmatched
 Bool Object::isNeutralControlled() const
 {
-	return getControllingPlayer() == ThePlayerList->getNeutralPlayer();
+	struct BFMEObjectTeamField {
+		unsigned char pad[0x23c];
+		Team *team;
+	};
+	const BFMEObjectTeamField *self = reinterpret_cast<const BFMEObjectTeamField *>(this);
+	Player *controller = self->team ? self->team->getControllingPlayer() : NULL;
+	return controller == ThePlayerList->getNeutralPlayer();
 }
 
 //-------------------------------------------------------------------------------------------------

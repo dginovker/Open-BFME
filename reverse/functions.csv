@@ -6910,7 +6910,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?MD5Final@@YAXQAEPAUMD5_CTX@@@Z,,0x0086AEE0,174,Code/Libraries/Source/WWVegas/WWLib/md5.cpp,matched,
 ?MD5Init@@YAXPAUMD5_CTX@@@Z,,0x0086A400,40,Code/Libraries/Source/WWVegas/WWLib/md5.cpp,matched,
 ?MD5Transform@@YAXQAKQAE@Z,,0x0086A540,2268,Code/Libraries/Source/WWVegas/WWLib/md5.cpp,matched,
-?MD5Update@@YAXPAUMD5_CTX@@PAEI@Z,,0x0086AE20,185,Code/masm_dumps/__MD5Update__YAXPAUMD5_CTX__PAEI_Z_86AE20.asm,matched,
+?MD5Update@@YAXPAUMD5_CTX@@PAEI@Z,,0x0086AE20,185,Code/masm_dumps/__MD5Update__YAXPAUMD5_CTX__PAEI_Z_86AE20.asm,matched,asm->cpp depth Open-BFME4+Grok
 ?MOTDSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x0079CEC0,97,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/GUICallbacks/w3dmotd.cpp,matched,
 ?Make_Closest@Quaternion@@QAEAAV1@ABV1@@Z,,0x008DB490,80,Code/Libraries/Source/WWVegas/WWMath/quat.cpp,matched,
 ?Make_Color_Array_Unique@MeshMatDescClass@@QAEXH@Z,,0x0092A4D0,131,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,
@@ -8464,7 +8464,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?atEndOfFile@DataChunkInput@@QAE_NXZ,,0x00102320,13,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,
 ?atan2@@YAMMM@Z,,0x001486F0,11,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ?atan@@YAMM@Z,,0x0045B6F0,9,Code/Libraries/Source/WWVegas/WW3D2/texproject.cpp,matched,icf-owner=_atanf
-?attachToDrawable@ParticleSystem@@QAEXPBVDrawable@@@Z,,0x005BE130,40,Code/masm_dumps/_rn5__attachToDrawable_ParticleSystem__QAEXPBVDrawable___Z_5BE130.asm,matched,reloc-needle Open-BFME4+Grok
+?attachToDrawable@ParticleSystem@@QAEXPBVDrawable@@@Z,,0x005BE130,40,Code/GameEngine/Source/GameClient/System/ParticleSys.cpp,matched,reloc-needle Open-BFME4+Grok asm->cpp depth Open-BFME4+Grok
 ?attachTranslator@MessageStream@@QAEIPAVGameMessageTranslator@@I@Z,,0x0008A7B0,184,Code/GameEngine/Source/Common/MessageStream.cpp,matched,
 ?back@?$deque@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@QAEAAPAVMapObject@@XZ,,0x00089750,45,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,
 ?backendHasLiveHandle@BFMENetwork@@QAE_NXZ,,0x00651780,15,Code/GameEngine/Source/GameNetwork/native_network.cpp,matched,native BFME network wrapper slot +0x0c; delegates through backend pointer at +0x64
@@ -8870,7 +8870,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?count@?$bitset@$0L@@_STL@@QBEIXZ,,0x0020E8A0,35,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,
 ?count@?$bitset@$0N@@_STL@@QBEIXZ,,0x0013D700,35,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ?count@?$map@GEU?$less@G@_STL@@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@QBEIABG@Z,,0x006AC500,28,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,
-?countBuildings@Player@@QAEHXZ,,0x000CDDC0,45,Code/masm_dumps/_rn5__countBuildings_Player__QAEHXZ_CDDC0.asm,matched,reloc-needle Open-BFME4+Grok
+?countBuildings@Player@@QAEHXZ,,0x000CDDC0,45,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,reloc-needle Open-BFME4+Grok asm->cpp depth Open-BFME4+Grok
 ?countConditionIntersection@?$SparseMatchFinder@UModelConditionInfo@@V?$BitFlags@$0HF@@@@@CAHABV?$BitFlags@$0HF@@@0@Z,,0x00132AB0,15,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DModelDraw.cpp,matched,
 ?countConditionIntersection@?$SparseMatchFinder@VArmorTemplateSet@@V?$BitFlags@$0L@@@@@CAHABV?$BitFlags@$0L@@@0@Z,,0x0013F460,54,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,
 ?countConditionIntersection@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@CAHABV?$BitFlags@$0BB@@@0@Z,,0x0013F3E0,54,Code/GameEngine/Source/Common/Thing/ThingTemplate.cpp,matched,
@@ -9417,7 +9417,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?findBestInfoSlow@?$SparseMatchFinder@VWeaponTemplateSet@@V?$BitFlags@$0BB@@@@@ABEPBVWeaponTemplateSet@@ABV?$vector@VWeaponTemplateSet@@V?$allocator@VWeaponTemplateSet@@@_STL@@@_STL@@ABV?$BitFlags@$0BB@@@@Z,,0x00013ACA,5,Code/masm_dumps/_findBestInfoSlow___SparseMatchFinder_VWeaponTemplateSet__V__BitFlags__0BB_____ABEPBVWeaponTemplateSet__ABV__v_13ACA.asm,matched,MASM exact retail dump
 ?findBridgeAt@TerrainLogic@@UBEPAVBridge@@PBUCoord3D@@@Z,,0x001A65F0,53,Code/GameEngine/Source/GameLogic/Map/TerrainLogic.cpp,matched,
 ?findBuildableStatusOverride@GameLogic@@QBE_NPBVThingTemplate@@AAW4BuildableStatus@@@Z,,0x00391A10,43,Code/masm_dumps/_rn5__findBuildableStatusOverride_GameLogic__QBE_NPBVThingTemplate__AAW4Bui_391A10.asm,matched,reloc-needle Open-BFME4+Grok
-?findByTemplateID@ThingFactory@@QAEPBVThingTemplate@@G@Z,,0x00133CC0,40,Code/masm_dumps/_rn9__findByTemplateID_ThingFactory__QAEPBVThingTemplate__G_Z_133CC0.asm,matched,reloc-needle Open-BFME4+Grok
+?findByTemplateID@ThingFactory@@QAEPBVThingTemplate@@G@Z,,0x00133CC0,40,Code/GameEngine/Source/Common/Thing/ThingFactory.cpp,matched,reloc-needle Open-BFME4+Grok asm->cpp depth Open-BFME4+Grok
 ?findCommandButton@ControlBar@@QAEPBVCommandButton@@ABVAsciiString@@@Z,,0x004A0310,29,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp,matched,
 ?findCommandSet@ControlBar@@QAEPBVCommandSet@@ABVAsciiString@@@Z,,0x004A0310,29,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBar.cpp,matched,
 ?findControlBarOverride@GameLogic@@QBE_NABVAsciiString@@HAAPBVCommandButton@@@Z,,0x00002509,5,Code/masm_dumps/_findControlBarOverride_GameLogic__QBE_NABVAsciiString__HAAPBVCommandButton___Z_2509.asm,matched,MASM exact retail dump
@@ -11227,10 +11227,10 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?isLoadingOrUnloading@RailedTransportDockUpdate@@UAE_NXZ,,0x002CE360,20,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/RailedTransportDockUpdate.cpp,matched,
 ?isLocalPlayer@Player@@QBE_NXZ,,0x000C96D0,19,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,
 ?isLocalPlayerNextPacketRouter@DisconnectManager@@IAE_NPAVConnectionManager@@@Z,,0x0066C260,264,Code/masm_dumps/DisconnectManager_isLocalPlayerNextPacketRouter.asm,matched,Ghidra-bound BFME packet-router selection body
-?isLocallyControlled@Object@@QBE_NXZ,,0x001BE570,40,Code/masm_dumps/_rn5__isLocallyControlled_Object__QBE_NXZ_1BE570.asm,matched,reloc-needle Open-BFME4+Grok
+?isLocallyControlled@Object@@QBE_NXZ,,0x001BE570,40,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,reloc-needle Open-BFME4+Grok asm->cpp depth Open-BFME4+Grok
 ?isMissing@W3DShadowTextureManager@@QAE_NPBD@Z,,0x007AF050,22,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp,matched,
 ?isNearlyZero@@YA_NM@Z,,0x001B4140,28,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,
-?isNeutralControlled@Object@@QBE_NXZ,,0x001BE5B0,40,Code/masm_dumps/_rn5__isNeutralControlled_Object__QBE_NXZ_1BE5B0.asm,matched,reloc-needle Open-BFME4+Grok
+?isNeutralControlled@Object@@QBE_NXZ,,0x001BE5B0,40,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,reloc-needle Open-BFME4+Grok asm->cpp depth Open-BFME4+Grok
 ?isNewerThan@SaveDate@@QAE_NPAU1@@Z,,0x0010CF30,120,Code/GameEngine/Source/Common/System/SaveGame/GameState.cpp,matched,
 ?isNone@?$StringBase@D@@QBE_NXZ,0x008881A0,0x008881A0,16,Code/Libraries/Source/WWVegas/WWLib/string_base.cpp,matched,returns true if string equals the global none string
 ?isNone@?$StringBase@G@@QBE_NXZ,0x00888A80,0x00888A80,16,Code/Libraries/Source/WWVegas/WWLib/string_base.cpp,matched,returns true if wide string equals the global none string

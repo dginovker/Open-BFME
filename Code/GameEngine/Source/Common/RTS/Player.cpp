@@ -1873,14 +1873,19 @@ void Player::countObjectsByThingTemplate(Int numTmplates, const ThingTemplate* c
 }
 
 //=============================================================================
-// ?countBuildings@Player@@QAEHXZ present-unmatched
+// BFME m_playerTeamPrototypes at +0x288 (ZH header places it earlier).
 Int Player::countBuildings(void)
 {
+	struct BFMEPlayerTeamListField {
+		unsigned char pad[0x288];
+		PlayerTeamList playerTeamPrototypes;
+	};
+	BFMEPlayerTeamListField *self = reinterpret_cast<BFMEPlayerTeamListField *>(this);
 	int retVal = 0;
 
-	for (PlayerTeamList::const_iterator it = m_playerTeamPrototypes.begin(); 
-			 it != m_playerTeamPrototypes.end(); ++it)
-	{	
+	for (PlayerTeamList::const_iterator it = self->playerTeamPrototypes.begin();
+			 it != self->playerTeamPrototypes.end(); ++it)
+	{
 		retVal += (*it)->countBuildings();
 	}
 	return retVal;

@@ -3382,3 +3382,5 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?End_Scene@DX8Wrapper@@SAX_N@Z,0x00908FE0,End_Render depth Open-BFME4+Grok
 ?End_Statistics@Debug_Statistics@@YAXXZ,0x00937EF0,End_Render depth Open-BFME4+Grok
 ?Invalidate_Cached_Render_States@DX8Wrapper@@SAXXZ,0x00903C50,End_Render depth Open-BFME4+Grok
+?getControllingPlayer@Team@@QBEPAVPlayer@@XZ,0x0002369B
+?countBuildings@TeamPrototype@@QAEHXZ,0x00022ACF

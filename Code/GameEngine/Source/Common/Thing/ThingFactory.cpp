@@ -266,15 +266,22 @@ void ThingFactory::update( void )
 //-------------------------------------------------------------------------------------------------
 /** Return the template with the matching database name */
 //-------------------------------------------------------------------------------------------------
-// ?findByTemplateID@ThingFactory@@ present-unmatched
+// BFME ThingTemplate: m_nextTemplate @+0x38c, m_templateID @+0x478 (ZH headers differ).
 const ThingTemplate *ThingFactory::findByTemplateID( UnsignedShort id )
 {
-	for (ThingTemplate *tmpl = m_firstTemplate; tmpl; tmpl = tmpl->friend_getNextTemplate())
+	struct BFMEThingTemplateLinks {
+		unsigned char padNext[0x38c];
+		ThingTemplate *nextTemplate;
+		unsigned char padId[0x478 - 0x38c - sizeof(ThingTemplate *)];
+		UnsignedShort templateID;
+	};
+	for (ThingTemplate *tmpl = m_firstTemplate; tmpl; )
 	{
-		if (tmpl->getTemplateID() == id)
+		BFMEThingTemplateLinks *links = reinterpret_cast<BFMEThingTemplateLinks *>(tmpl);
+		if (links->templateID == id)
 			return tmpl;
+		tmpl = links->nextTemplate;
 	}
-	DEBUG_CRASH(("template %d not found\n",(Int)id));
 	return NULL;
 }
 

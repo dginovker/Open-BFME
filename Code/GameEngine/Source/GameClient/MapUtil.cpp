@@ -1005,24 +1005,9 @@ Bool isValidMap( AsciiString mapName, Bool isMultiplayer )
 //-------------------------------------------------------------------------------------------------
 /** Find a valid map */
 //-------------------------------------------------------------------------------------------------
-AsciiString getDefaultMap( Bool isMultiplayer )
-{
-	if(!TheMapCache)
-		return AsciiString::TheEmptyString;
-	TheMapCache->updateCache();
-
-	MapCache::iterator it = TheMapCache->begin();
-	while (it != TheMapCache->end())
-	{
-		if (isMultiplayer == it->second.m_isMultiplayer)
-		{
-			return it->first;
-		}
-		++it;
-	}
-
-	return AsciiString::TheEmptyString;
-}
+// ?getDefaultMap@@YA?AVAsciiString@@_N@Z
+// Body in MapUtil_getDefaultMap.asm (exact 361B retail @ 0x00457FB0).
+// BFME uses helper 0x453480 for the map walk (not ZH inline begin/end).
 
 
 AsciiString getDefaultOfficialMap()

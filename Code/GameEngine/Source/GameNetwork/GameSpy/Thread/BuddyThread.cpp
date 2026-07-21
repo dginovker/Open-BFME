@@ -176,7 +176,6 @@ GameSpyBuddyMessageQueue::~GameSpyBuddyMessageQueue()
 	endThread();
 }
 
-// ?startThread@GameSpyBuddyMessageQueue@@UAEXXZ present-unmatched
 void GameSpyBuddyMessageQueue::startThread( void )
 {
 	if (!m_thread)

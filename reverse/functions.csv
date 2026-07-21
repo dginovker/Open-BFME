@@ -12878,3 +12878,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?doDisplayCounter@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002F9660,235,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions_doDisplayCounter.asm,matched,exact 235B via MASM; true body (drift 0x9DB075 was mid mega-fn); display counter isCountdown=false
 ?Flush@RTS3DScene@@QAEXAAVRenderInfoClass@@@Z,,0x007158F0,511,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene_Flush.asm,matched,exact 511B via MASM; drift 0x7159CB was mid-body
 ?startThread@GameSpyBuddyMessageQueue@@UAEXXZ,,0x0063C650,222,Code/masm_dumps/GameSpyBuddyMessageQueue_startThread.asm,matched,vtable-slot1; true body 0x63C650/222; drift 0xB026CF false (dtor region); Open-BFME fleet
+??0ModelConditionInfo@@QAE@XZ,,0x00776330,339,Code/masm_dumps/__0ModelConditionInfo__QAE_XZ_776330.asm,matched,MASM exact retail dump; true start 0x776330 (queue 0x776349 mid-prologue); size 339

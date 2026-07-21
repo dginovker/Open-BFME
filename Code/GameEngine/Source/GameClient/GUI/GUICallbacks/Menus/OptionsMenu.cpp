@@ -634,18 +634,9 @@ Bool OptionPreferences::getDynamicLODEnabled(void)
 	return FALSE;
 }
 
-// ?getFPSLimitEnabled@OptionPreferences@@QAE_NXZ present-unmatched
-Bool OptionPreferences::getFPSLimitEnabled(void)
-{
-	OptionPreferences::const_iterator it = find("FPSLimit");
-	if (it == end())
-		return TheGlobalData->m_useFpsLimit;
+// ?getFPSLimitEnabled@OptionPreferences@@QAE_NXZ
+// Body in Code/masm_dumps/_getFPSLimitEnabled_OptionPreferences__QAE_NXZ_911B0.asm (exact 102B retail).
 
-	if (stricmp(it->second.str(), "yes") == 0) {
-		return TRUE;
-	}
-	return FALSE;
-}
 
 // ?get3DShadowsEnabled@OptionPreferences@@QAE_NXZ present-unmatched
 Bool OptionPreferences::get3DShadowsEnabled(void)

@@ -1604,7 +1604,6 @@ Bool ActionManager::canDoSpecialPowerAtLocation( const Object *obj, const Coord3
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?canDoSpecialPowerAtObject@ActionManager@@ present-unmatched
 Bool ActionManager::canDoSpecialPowerAtObject( const Object *obj, const Object *target, CommandSourceType commandSource, const SpecialPowerTemplate *spTemplate, UnsignedInt commandOptions, Bool checkSourceRequirements )
 {
 	if (checkSourceRequirements)

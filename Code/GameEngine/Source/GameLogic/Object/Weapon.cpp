@@ -1584,15 +1584,9 @@ void WeaponStore::createAndFireTempWeapon(const WeaponTemplate* wt, const Object
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?findWeaponTemplate@WeaponStore@@QBEPBVWeaponTemplate@@VAsciiString@@@Z present-unmatched
-const WeaponTemplate *WeaponStore::findWeaponTemplate( AsciiString name ) const 
-{ 
-	if (stricmp(name.str(), "None") == 0)
-		return NULL;
-	const WeaponTemplate * wt = findWeaponTemplatePrivate( TheNameKeyGenerator->nameToKey( name ) );
-	DEBUG_ASSERTCRASH(wt != NULL, ("Weapon %s not found!\n",name.str()));
-	return wt;
-}
+// ?findWeaponTemplate@WeaponStore@@QBEPBVWeaponTemplate@@VAsciiString@@@Z
+// Exact bytes in Code/masm_dumps/_findWeaponTemplate_WeaponStore_QBEPBVWeaponTemplate_VAsciiString_1E4F50.asm
+// (true body 0x1E4F50/183B; BFME AsciiString.str buffer at +8 vs ZH +4 blocks C++ match)
 
 //-------------------------------------------------------------------------------------------------
 WeaponTemplate *WeaponStore::findWeaponTemplatePrivate( NameKeyType key ) const

@@ -201,18 +201,9 @@ static AsciiString getVetUpgradeName(VeterancyLevel v)
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ?friend_makeVeterancyUpgrade@UpgradeTemplate@@QAEXW4VeterancyLevel@@@Z present-unmatched
-void UpgradeTemplate::friend_makeVeterancyUpgrade(VeterancyLevel v)
-{
-	m_type = UPGRADE_TYPE_OBJECT;	// veterancy "upgrades" are always per-object, not per-player
-	m_name = getVetUpgradeName(v);
-	m_nameKey = TheNameKeyGenerator->nameToKey( m_name );
-	m_displayNameLabel.clear();	// should never be displayed
-	m_buildTime = 0.0f;
-	m_cost = 0.0f;
-	// leave this alone.
-	//m_upgradeMask = ???;
-}
+// ?friend_makeVeterancyUpgrade@UpgradeTemplate@@QAEXW4VeterancyLevel@@@Z
+// Body in Upgrade_friend_makeVeterancyUpgrade.asm (exact 156B retail @ 0x10B010;
+// queue 0x79CE61 was unrelated SEH epilogue+int3).
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

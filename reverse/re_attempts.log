@@ -1999,3 +1999,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ??1ProductionUpdateModuleData@@UAE@XZ	landed	Factory 0x11AC90 ctor 0x29FB70 unique dtor 0x29E260/126; exact MASM
 ?Render@W3DStatusCircle@@UAEXAAVRenderInfoClass@@@Z	blocked	drift RVA 0x78BA3C is INSIDE ghidra 0x78B4F0/1694; shape 1%; locate 0 hits; no unique string for Render; needs vtable slot dump
 ??0AIExitState@@QAE@PAVStateMachine@@@Z	blocked	drift RVA 0x1867BA INSIDE mega AIStateMachine 0x185A20/4930 (now matched as ctor); not a real ctor start
+?emit_FlammableUpdate@ModulePoolGlueBulk@@YAPAVModule@@PAVThing@@PBVModuleData@@@Z	no-match	Un-matched false ICF row at 0x1156B0. That RVA is a global-operator-new sibling: at +0x3C it calls thunk 0x2D20C; our pool-new emit correctly calls the FlammableUpdate ctor 0x293270 directly. The icf-owner note was wrong (friend_newModuleInstance is at 0x1183E0, not 0x1156B0). True pool-new emit RVA unidentified.

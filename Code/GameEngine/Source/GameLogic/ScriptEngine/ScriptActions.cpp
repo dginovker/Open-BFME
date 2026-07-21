@@ -950,10 +950,74 @@ void ScriptActions::doMoveCameraTo(const AsciiString& waypoint, Real sec, Real c
 //-------------------------------------------------------------------------------------------------
 /** doZoomCamera */
 //-------------------------------------------------------------------------------------------------
-// ?doZoomCamera@ScriptActions@@IAEXMMMM@Z present-unmatched
+// BFME View vtable +0xe8: zoomCamera(Real, Int, Real, Real). True body 0x2EDC20
+// (queue RVA 0x9DE809 was mid-instruction inside an unrelated fn).
+class BfmeViewVtbl_e8 {
+public:
+	virtual void _ve8_0() = 0;
+	virtual void _ve8_1() = 0;
+	virtual void _ve8_2() = 0;
+	virtual void _ve8_3() = 0;
+	virtual void _ve8_4() = 0;
+	virtual void _ve8_5() = 0;
+	virtual void _ve8_6() = 0;
+	virtual void _ve8_7() = 0;
+	virtual void _ve8_8() = 0;
+	virtual void _ve8_9() = 0;
+	virtual void _ve8_10() = 0;
+	virtual void _ve8_11() = 0;
+	virtual void _ve8_12() = 0;
+	virtual void _ve8_13() = 0;
+	virtual void _ve8_14() = 0;
+	virtual void _ve8_15() = 0;
+	virtual void _ve8_16() = 0;
+	virtual void _ve8_17() = 0;
+	virtual void _ve8_18() = 0;
+	virtual void _ve8_19() = 0;
+	virtual void _ve8_20() = 0;
+	virtual void _ve8_21() = 0;
+	virtual void _ve8_22() = 0;
+	virtual void _ve8_23() = 0;
+	virtual void _ve8_24() = 0;
+	virtual void _ve8_25() = 0;
+	virtual void _ve8_26() = 0;
+	virtual void _ve8_27() = 0;
+	virtual void _ve8_28() = 0;
+	virtual void _ve8_29() = 0;
+	virtual void _ve8_30() = 0;
+	virtual void _ve8_31() = 0;
+	virtual void _ve8_32() = 0;
+	virtual void _ve8_33() = 0;
+	virtual void _ve8_34() = 0;
+	virtual void _ve8_35() = 0;
+	virtual void _ve8_36() = 0;
+	virtual void _ve8_37() = 0;
+	virtual void _ve8_38() = 0;
+	virtual void _ve8_39() = 0;
+	virtual void _ve8_40() = 0;
+	virtual void _ve8_41() = 0;
+	virtual void _ve8_42() = 0;
+	virtual void _ve8_43() = 0;
+	virtual void _ve8_44() = 0;
+	virtual void _ve8_45() = 0;
+	virtual void _ve8_46() = 0;
+	virtual void _ve8_47() = 0;
+	virtual void _ve8_48() = 0;
+	virtual void _ve8_49() = 0;
+	virtual void _ve8_50() = 0;
+	virtual void _ve8_51() = 0;
+	virtual void _ve8_52() = 0;
+	virtual void _ve8_53() = 0;
+	virtual void _ve8_54() = 0;
+	virtual void _ve8_55() = 0;
+	virtual void _ve8_56() = 0;
+	virtual void _ve8_57() = 0;
+	virtual void zoomCamera(Real finalZoom, Int milliseconds, Real easeIn, Real easeOut) = 0;
+};
+
 void ScriptActions::doZoomCamera(Real zoom, Real sec, Real easeIn, Real easeOut)
 {
-	TheTacticalView->zoomCamera(zoom, sec*1000.0f, easeIn*1000.0f, easeOut*1000.0f);
+	((BfmeViewVtbl_e8 *)TheTacticalView)->zoomCamera(zoom, sec*1000.0f, easeIn*1000.0f, easeOut*1000.0f);
 }
 
 //-------------------------------------------------------------------------------------------------

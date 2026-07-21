@@ -146,14 +146,11 @@ Shell::~Shell( void )
 //-------------------------------------------------------------------------------------------------
 /** Initialize the shell system */
 //-------------------------------------------------------------------------------------------------
-// ?init@Shell@@UAEXXZ present-unmatched
+// ?init@Shell@@UAEXXZ
+// BFME: no ShellMenuScheme.ini path strings in retail; scheme manager init is a no-op.
+// Body is if (m_schemeManager) m_schemeManager->init(); @ 0x57F0A0 (vtable slot 1).
 void Shell::init( void )
 {
-	INI ini;
-	// Read from INI all the ShellMenuScheme
-	ini.load( AsciiString( "Data\\INI\\Default\\ShellMenuScheme.ini" ), INI_LOAD_OVERWRITE, NULL );
-	ini.load( AsciiString( "Data\\INI\\ShellMenuScheme.ini" ), INI_LOAD_OVERWRITE, NULL );
-	
 	if( m_schemeManager )
 		m_schemeManager->init();
 

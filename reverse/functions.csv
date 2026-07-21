@@ -12883,3 +12883,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0AIAttackAreaState@@QAE@PAVStateMachine@@@Z,,0x001718A0,54,Code/masm_dumps/AIAttackAreaState_ctor.asm,matched,true body @0x1718A0 (54B); drift 0x1869EE mid-insn inside AIStateMachine; string-anchored AIAttackAreaState + StringBase(char*)@0x888BC0
 ?attemptToPurchaseScience@Player@@QAE_NW4ScienceType@@@Z,,0x000D55B0,60,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,
 ?computeExtents@W3DDisplayString@@IAEXXZ,,0x006F5420,192,Code/masm_dumps/W3DDisplayString_computeExtents.asm,matched,Exact MASM dump; true start 0x6F5420 (queue had int3@0x6F541F); SEH+vcall getText/getTextLength; m_size@+0x1F0
+?parseComboBoxData@@YA_NPADPAVWinInstanceData@@0PAX@Z,,0x004849E0,237,Code/masm_dumps/_entry__parseComboBoxData_YA_NPADPAVWinInstanceData_0PAX_Z_4849E0.asm,matched,Exact 237B MASM; true body via COMBOBOXDATA table @0x4849E0 (drift 0x48623B inside parseDrawData)

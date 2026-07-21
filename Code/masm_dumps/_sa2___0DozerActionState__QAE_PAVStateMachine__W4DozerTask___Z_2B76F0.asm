@@ -1,10 +1,10 @@
 .386
 .model flat
-; ?update@DozerPrimaryIdleState@@UAE?AW4StateReturnType@@XZ
-; Exact 160B @ 0x2B76F0; string-anchored Open-BFME4+Grok
+; ??0DozerActionState@@QAE@PAVStateMachine@@W4DozerTask@@@Z
+; Exact 160B @ 0x2B76F0; misidentified as update@DozerPrimaryIdleState by a prior agent (pushes string "DozerActionState", calls State ctor + operator new(0x48) + virtual initDefaultState -- ctor shape, not a 0-arg update() override) -- corrected identity, same verified bytes; Open-BFME4+Grok
 _TEXT SEGMENT
-public ?update@DozerPrimaryIdleState@@UAE?AW4StateReturnType@@XZ
-?update@DozerPrimaryIdleState@@UAE?AW4StateReturnType@@XZ PROC
+public ??0DozerActionState@@QAE@PAVStateMachine@@W4DozerTask@@@Z
+??0DozerActionState@@QAE@PAVStateMachine@@W4DozerTask@@@Z PROC
     db 6Ah, 0FFh, 68h, 0A3h, 33h, 01h, 01h, 64h, 0A1h, 00h, 00h, 00h, 00h, 50h, 64h, 89h
     db 25h, 00h, 00h, 00h, 00h, 83h, 0ECh, 08h, 56h, 57h, 51h, 8Bh, 0F1h, 89h, 64h, 24h
     db 10h, 8Bh, 0CCh, 68h, 0C4h, 6Fh, 0Ch, 01h, 89h, 74h, 24h, 10h, 0E8h, 9Fh, 14h, 5Dh
@@ -15,6 +15,6 @@ public ?update@DozerPrimaryIdleState@@UAE?AW4StateReturnType@@XZ
     db 51h, 8Bh, 0C8h, 0E8h, 65h, 22h, 0D8h, 0FFh, 0EBh, 02h, 33h, 0C0h, 89h, 46h, 28h, 8Bh
     db 10h, 8Bh, 0C8h, 0C6h, 44h, 24h, 18h, 00h, 0FFh, 52h, 1Ch, 8Bh, 4Ch, 24h, 10h, 5Fh
     db 8Bh, 0C6h, 64h, 89h, 0Dh, 00h, 00h, 00h, 00h, 5Eh, 83h, 0C4h, 14h, 0C2h, 08h, 00h
-?update@DozerPrimaryIdleState@@UAE?AW4StateReturnType@@XZ ENDP
+??0DozerActionState@@QAE@PAVStateMachine@@W4DozerTask@@@Z ENDP
 _TEXT ENDS
 END

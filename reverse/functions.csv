@@ -12542,7 +12542,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?update@DownloadManager@@QAEJXZ,,0x00626950,7,Code/GameEngine/Source/GameNetwork/DownloadManager.cpp,matched,Unique padded virtual tail call
 ?update@DozerActionDoActionState@@UAE?AW4StateReturnType@@XZ,,0x002B8FF0,1936,Code/masm_dumps/_str__update_DozerActionDoActionState_UAE_AW4StateReturnType_2B8FF0.asm,matched,
 ?update@DozerActionPickActionPosState@@UAE?AW4StateReturnType@@XZ,,0x002B7450,365,Code/masm_dumps/_sa4__update_DozerActionPickActionPosState__UAE_AW4Stat_2B7450.asm,matched,Exact 365B Open-BFME4
-?update@DozerPrimaryIdleState@@UAE?AW4StateReturnType@@XZ,,0x002B76F0,160,Code/masm_dumps/_sa12__update_DozerPrimaryIdleState__UAE_AW4StateReturnType__XZ_2B76F0.asm,matched,string-anchor Open-BFME4+Grok DozerActionState
 ?update@FadeTransition@@UAEXH@Z,,0x0059C370,118,Code/GameEngine/Source/GameClient/GUI/GameWindowTransitionsStyles.cpp,matched,
 ?update@GameTextManager@@UAEXXZ,,0x00438420,1,Code/GameEngine/Source/GameClient/GameText.cpp,matched,Ghidra-vtable anchored empty update override; exact C++ RET
 ?update@InGameUI@@,,0x004410C0,1234,Code/masm_dumps/_str2__update_InGameUI__4410C0.asm,matched,
@@ -12859,3 +12858,4 @@ _sinf,,0x00873910,7,Code/GameEngine/Source/Common/Audio/GameAudio.cpp,matched,ic
 _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp,matched,ICF alias of existing matched body
 ?forgetLogin@GameSpyLoginPreferences@@QAEXVAsciiString@@@Z,,0x00081FC0,106,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp,matched,true forgetLogin C++ inline_depth0 Open-BFME4+Grok
 ??0DozerPrimaryStateMachine@@QAE@PAVObject@@@Z,,0x002B7870,551,Code/masm_dumps/_sa3___0DozerPrimaryStateMachine__QAE_PAVObject___Z_2B7870.asm,matched,MASM exact retail dump; corrects prior onExit@DozerActionState misID (Open-BFME4+Grok)
+??0DozerActionState@@QAE@PAVStateMachine@@W4DozerTask@@@Z,,0x002B76F0,160,Code/masm_dumps/_sa2___0DozerActionState__QAE_PAVStateMachine__W4DozerTask___Z_2B76F0.asm,matched,MASM exact retail dump; corrects prior update@DozerPrimaryIdleState misID (Open-BFME4+Grok)

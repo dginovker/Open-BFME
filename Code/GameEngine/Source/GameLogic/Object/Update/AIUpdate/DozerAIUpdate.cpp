@@ -835,8 +835,8 @@ EMPTY_DTOR(DozerActionStateMachine)
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
-// ??0DozerActionStateMachine@@QAE@PAVObject@@W4DozerTask@@@Z present-unmatched
-DozerActionStateMachine::DozerActionStateMachine( Object *owner, DozerTask task ) : 
+// matched via Code/masm_dumps/_sa5___0DozerActionStateMachine__QAE_PAVObject__W4DozerTask___Z_2B7450.asm (AsciiString-ctor shape C++ can't reproduce; see docs/lessons.md)
+DozerActionStateMachine::DozerActionStateMachine( Object *owner, DozerTask task ) :
 												 StateMachine( owner, "DozerActionStateMachine" )
 {
 

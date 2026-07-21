@@ -1,10 +1,10 @@
 .386
 .model flat
-; ?update@DozerActionPickActionPosState@@UAE?AW4StateReturnType@@XZ
-; Exact 365B @ 0x002B7450; Open-BFME4
+; ??0DozerActionStateMachine@@QAE@PAVObject@@W4DozerTask@@@Z
+; Exact 365B @ 0x002B7450; misidentified as update@DozerActionPickActionPosState by a prior agent (pushes string "DozerActionStateMachine", calls StateMachine ctor + own-vtable store + operator new -- ctor shape, not a 0-arg update() override) -- corrected identity, same verified bytes; Open-BFME4+Grok
 _TEXT SEGMENT
-public ?update@DozerActionPickActionPosState@@UAE?AW4StateReturnType@@XZ
-?update@DozerActionPickActionPosState@@UAE?AW4StateReturnType@@XZ PROC
+public ??0DozerActionStateMachine@@QAE@PAVObject@@W4DozerTask@@@Z
+??0DozerActionStateMachine@@QAE@PAVObject@@W4DozerTask@@@Z PROC
     db 6Ah, 0FFh, 68h, 79h, 33h, 01h, 01h, 64h, 0A1h, 00h, 00h, 00h, 00h, 50h, 64h, 89h
     db 25h, 00h, 00h, 00h, 00h, 83h, 0ECh, 08h, 53h, 55h, 56h, 57h, 33h, 0DBh, 53h, 51h
     db 8Bh, 0F1h, 89h, 64h, 24h, 1Ch, 8Bh, 0CCh, 68h, 0E4h, 6Eh, 0Ch, 01h, 89h, 74h, 24h
@@ -28,6 +28,6 @@ public ?update@DozerActionPickActionPosState@@UAE?AW4StateReturnType@@XZ
     db 27h, 00h, 00h, 68h, 0Eh, 27h, 00h, 00h, 57h, 6Ah, 02h, 8Bh, 0CEh, 88h, 5Ch, 24h
     db 34h, 0E8h, 0Dh, 5Ch, 0D8h, 0FFh, 8Bh, 4Ch, 24h, 18h, 5Fh, 8Bh, 0C6h, 5Eh, 5Dh, 64h
     db 89h, 0Dh, 00h, 00h, 00h, 00h, 5Bh, 83h, 0C4h, 14h, 0C2h, 08h, 00h
-?update@DozerActionPickActionPosState@@UAE?AW4StateReturnType@@XZ ENDP
+??0DozerActionStateMachine@@QAE@PAVObject@@W4DozerTask@@@Z ENDP
 _TEXT ENDS
 END

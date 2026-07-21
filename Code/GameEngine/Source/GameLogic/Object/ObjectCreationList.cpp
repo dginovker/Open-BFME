@@ -188,41 +188,9 @@ public:
 	{
 	}
 
-	virtual Object* create( const Object* primaryObj, const Coord3D *primary, const Coord3D* secondary, Real angle, UnsignedInt lifetimeFrames = 0 ) const
-	{
-		if (!primaryObj || !primary || !secondary)
-		{ 
-			DEBUG_CRASH(("You must have a primary and secondary source for this effect"));
-      return NULL;
-    }
-
-		// Star trekkin, across the universe.
-		// Boldly goin forward now, cause we can't find reverse!
-
-		// 1:30 left on the clock, Demo looming, should I de-const all of OCL since this one effect needs the 
-		// Primary to help make the objects?  Should I rewrite superweapons to completely subsume them
-		// into normal special powers, so I can have a spell attack with a global timer and a spinny clock?
-		// Should I const cast?  Should I eat them?  No!  I'd rather hurt them stomp them crush them hurt them
-		// stomp them while I dance!  Down.  Those insects make me dance!  Down.  I'll hurt them while I dance.
-
-		Object *primaryObject = const_cast<Object *>(primaryObj);
-		AIUpdateInterface *ai = primaryObject->getAIUpdateInterface();
-		if( ai )
-		{
-			// lock merely fires till the weapon is empty or the attack is "done"
-			primaryObject->setWeaponLock( m_weaponSlot, LOCKED_TEMPORARILY );
-			ai->aiAttackPosition( secondary, m_numberOfShots, CMD_FROM_AI );
-		}
-
-		static NameKeyType key_RadiusDecalUpdate = NAMEKEY("RadiusDecalUpdate");
-		RadiusDecalUpdate *rd = (RadiusDecalUpdate*)primaryObject->findUpdateModule(key_RadiusDecalUpdate);
-		if (rd)
-		{
-			rd->createRadiusDecal(m_deliveryDecalTemplate, m_deliveryDecalRadius, *secondary);
-			rd->killWhenNoLongerAttacking(true);
-		}
-		return NULL;
-  }
+	// Body: Code/masm_dumps/AttackNugget_create_1D7BC0.asm (exact 334B @ 0x1D7BC0)
+	// Retail: AI@Object+0x204, fields +0x34/+0x38/+0x3c, setWeaponLock on Object, ret 0x10.
+	virtual Object* create( const Object* primaryObj, const Coord3D *primary, const Coord3D* secondary, Real angle, UnsignedInt lifetimeFrames = 0 ) const;
 
 	static void parse(INI *ini, void *instance, void* /*store*/, const void* /*userData*/)
 	{
@@ -1487,6 +1455,15 @@ void GenericObjectCreationNugget::parseAnimSet(INI *ini, void * /*instance*/, vo
 // External-linkage anchor so MSVC does not drop the COMDAT (in-class statics are inline).
 void (*bfme_force_GenericObjectCreationNugget_parseAnimSet)(INI *, void *, void *, const void *) =
 	&GenericObjectCreationNugget::parseAnimSet;
+
+// Force-emit ??1?$vector@UCoord3D@@... dtor COMDAT (ICF @ 0x72A40) claimed on this TU.
+// Was previously pulled only as a side effect of other bodies; AttackNugget::create is MASM now.
+static void bfme_force_vector_Coord3D_dtor()
+{
+	std::vector<Coord3D> v;
+	(void)v;
+}
+void (*bfme_force_vector_Coord3D_dtor_anchor)() = &bfme_force_vector_Coord3D_dtor;
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

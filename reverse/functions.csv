@@ -12913,3 +12913,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0MapObject@@QAE@UCoord3D@@VAsciiString@@MHPBVDict@@PBVThingTemplate@@@Z,,0x00088160,386,Code/masm_dumps/MapObject_ctor.asm,matched,True body 0x88160/386; queue 0x88120 was 21B helper. SEH ctor ret 0x20 normalizeAngle color 0xFF00 Dict+0x24 matched MapObject field cluster
 ?updateDefaults@ScriptList@@SAXXZ,,0x0035C8A0,183,Code/masm_dumps/ScriptList_updateDefaults.asm,matched,MASM exact dump; true body at 0x35C8A0 (183B) not drift 0x853E95; sides loop + inline ScriptList ctor sizeof 0x4c
 ?update@FlashTransition@@UAEXH@Z,,0x0059C9C0,137,Code/GameEngine/Source/GameClient/GUI/GameWindowTransitionsStyles.cpp,matched,
+?SetUpGameSpy@@YAXPBD0@Z,,0x006377D0,723,Code/GameEngine/Source/GameNetwork/GameSpy/PeerDefs_SetUpGameSpy.asm,matched,exact 723B MASM; true start after createNew @0x637760; queue RVA was inside createNew

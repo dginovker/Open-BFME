@@ -506,52 +506,9 @@ const AsciiString& GameSpyInfo::getConfig( void )
 }
 
 // --------------------------------------------------------------
-void SetUpGameSpy( const char *motdBuffer, const char *configBuffer )
-{
-	if (!motdBuffer)
-		motdBuffer = "";
-	if (!configBuffer)
-		configBuffer = "";
-	TearDownGameSpy();
-
-	AsciiString dir = TheGlobalData->getPath_UserData();
-	CreateDirectory(dir.str(), NULL);
-	dir.format("%sGeneralsOnline", TheGlobalData->getPath_UserData().str());
-	CreateDirectory(dir.str(), NULL);
-	dir.format("%sGeneralsOnline\\Ladders", TheGlobalData->getPath_UserData().str());
-	CreateDirectory(dir.str(), NULL);
-
-	TheGameSpyBuddyMessageQueue = GameSpyBuddyMessageQueueInterface::createNewMessageQueue();
-	TheGameSpyBuddyMessageQueue->startThread();
-
-	TheGameSpyPeerMessageQueue = GameSpyPeerMessageQueueInterface::createNewMessageQueue();
-	TheGameSpyPeerMessageQueue->startThread();
-	
-	TheGameSpyPSMessageQueue = GameSpyPSMessageQueueInterface::createNewMessageQueue();
-	TheGameSpyPSMessageQueue->startThread();
-
-	/*
-	TheGameSpyGame = NEW GameSpyStagingRoom;
-	*/
-
-	TheGameSpyInfo = GameSpyInfoInterface::createNewGameSpyInfoInterface();
-	TheGameSpyInfo->setMOTD(motdBuffer);
-	TheGameSpyInfo->setConfig(configBuffer);
-
-	CustomMatchPreferences pref;
-	TheGameSpyInfo->setDisallowAsianText(pref.getDisallowAsianText());
-	TheGameSpyInfo->setDisallowNonAsianText( pref.getDisallowNonAsianText());
-	
-
-	TheGameSpyConfig = GameSpyConfigInterface::create(configBuffer);
-
-	TheLadderList = NEW LadderList;
-
-	ThePinger = PingerInterface::createNewPingerInterface();
-	ThePinger->startThreads();
-
-	TheRankPointValues = NEW RankPoints;
-}
+// ?SetUpGameSpy@@YAXPBD0@Z
+// Body in PeerDefs_SetUpGameSpy.asm (exact 723B retail @ 0x006377D0).
+// Queue RVA 0x0063777A was inside createNewGameSpyInfoInterface; true start is SEH @ 0x006377D0.
 
 void TearDownGameSpy( void )
 {

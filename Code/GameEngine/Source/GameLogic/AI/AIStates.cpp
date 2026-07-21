@@ -5830,14 +5830,8 @@ void AIAttackThenIdleStateMachine::loadPostProcess( void )
 }  // end loadPostProcess
 
 //-----------------------------------------------------------------------------------------------------------
-// ??0AIAttackThenIdleStateMachine@@QAE@PAVObject@@VAsciiString@@@Z present-unmatched
-AIAttackThenIdleStateMachine::AIAttackThenIdleStateMachine(Object *owner, AsciiString name) : StateMachine(owner, name)
-{
-	// order matters: first state is the default state.
-	defineState( AI_ATTACK_OBJECT,	newInstance(AIAttackState)(this, false, true, false, NULL ), AI_IDLE, AI_IDLE );
-	defineState( AI_PICK_UP_CRATE, newInstance(AIPickUpCrateState)( this ), AI_IDLE, AI_IDLE );
-	defineState( AI_IDLE, newInstance(AIIdleState)( this, AIIdleState::DO_NOT_LOOK_FOR_TARGETS ), AI_IDLE, AI_IDLE );
-}
+// ??0AIAttackThenIdleStateMachine@@QAE@PAVObject@@VAsciiString@@@Z
+// Body in Code/masm_dumps/AIAttackThenIdleStateMachine_ctor.asm (exact 347B retail @ 0x184A40).
 
 //----------------------------------------------------------------------------------------------------------
 // ??1AIAttackThenIdleStateMachine@@MAE@XZ present-unmatched

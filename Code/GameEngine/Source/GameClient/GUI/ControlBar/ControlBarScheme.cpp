@@ -181,7 +181,7 @@ static void animSlideRight( ControlBarSchemeAnimation *anim );
 // PUBLIC FUNCTIONS ///////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 // ??0ControlBarSchemeImage@@QAE@XZ present-unmatched
-ControlBarSchemeImage::ControlBarSchemeImage( void )
+__declspec(noinline) ControlBarSchemeImage::ControlBarSchemeImage( void )
 {
 	m_name.clear();
 	m_position.x = m_position.y = 0;
@@ -906,7 +906,6 @@ void ControlBarSchemeManager::parseImagePart(INI *ini, void *instance, void* /*s
 //
 // each animation part contains and image, parse it
 //-----------------------------------------------------------------------------
-// ?parseAnimatingPartImage@ControlBarSchemeManager@@ present-unmatched
 void ControlBarSchemeManager::parseAnimatingPartImage(INI *ini, void *instance, void* /*store*/, const void* /*userData*/)
 {
 	static const FieldParse myFieldParse[] = 

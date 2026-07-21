@@ -13071,3 +13071,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0W3DShadowManager@@QAE@XZ,,0x007B7900,396,Code/masm_dumps/W3DShadowManager_ctor.asm,matched,MASM exact; true body 0x7B7900/396 (queue 0xA2DA77 misplaced); unique 0x7fa0a0a0; NEW0xC@0x73063a->TheW3DShadowManager; BFME 3 submgrs
 ?getParticleCap@OptionPreferences@@QAEHXZ,,0x000914B0,136,Code/masm_dumps/_getParticleCap_OptionPreferences__QAEHXZ_914B0.asm,matched,Exact 136B; string-anchor MaxParticleCount; queue 0x560DB2 was OptionsMenuInit interior
 ?refreshIgnoreList@@YAXXZ,,0x004EF6D0,539,Code/masm_dumps/refreshIgnoreList.asm,matched,Exact 539B MASM; true body (queue 0x6865F8 INSIDE RequestChat@LANAPI). Identity: SEH dual SavedIgnoreMap/IgnoreList color 0xFFFF6464 GSInfo vcall +0x130/+0x138
+?parseAnimatingPartImage@ControlBarSchemeManager@@SAXPAVINI@@PAX1PBX@Z,,0x004ACE60,102,Code/GameEngine/Source/GameClient/GUI/ControlBar/ControlBarScheme.cpp,matched,

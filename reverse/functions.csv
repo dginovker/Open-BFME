@@ -12486,3 +12486,6 @@ _IsStatsConnected,,0x009D2B60,15,Code/masm_dumps/_sym4__IsStatsConnected_9D2B60.
 ??_GW3DDisplayString@@MAEPAXI@Z,,0x006F4F20,30,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DDisplayString.cpp,matched,
 ??_GCameraClass@@UAEPAXI@Z,,0x00931660,30,Code/Libraries/Source/WWVegas/WW3D2/camera.cpp,matched,
 ?randomize@RandomTextureMapperClass@@IAEXXZ,,0x00964450,50,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,WWVegas Open-BFME4+Grok
+??0AIAttackPursueTargetState@@QAE@PAVStateMachine@@_N11@Z,,0x0017F700,88,Code/masm_dumps/_saG___0AIAttackPursueTargetState__QAE_PAVStateMachine___N11_17F700.asm,matched,string-anchor MASM unique Open-BFME4+Grok
+?popupMessage@InGameUI@@UAEXABVAsciiString@@HHHH_N1@Z,,0x00442040,474,Code/masm_dumps/_saG__popupMessage_InGameUI__UAEXABVAsciiString__HHHH_N1_Z_442040.asm,matched,string-anchor MASM unique Open-BFME4+Grok
+?init@W3DView@@UAEXXZ,,0x00742700,432,Code/masm_dumps/_saG__init_W3DView__UAEXXZ_742700.asm,matched,string-anchor MASM unique Open-BFME4+Grok

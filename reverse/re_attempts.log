@@ -2065,3 +2065,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?parseComboBoxData@@YA_NPADPAVWinInstanceData@@0PAX@Z	landed	true body 237B @0x4849E0 via COMBOBOXDATA table (drift 0x48623B was mid-parseDrawData); exact MASM like parseTextEntryData (ascii/letters as OR flags 0x10/0x40 at +0xc)
 ??1SlavedUpdateModuleData@@UAE@XZ	landed	Misplaced drift RVA 0x9F27D6 (mid-jmp pad). True body 80B @ 0x126980 via factory vtable 0x108E730 slot0 scalar 0x126950->thunk 0x1EB96. MASM dump exact bytes.
 ?getDefaultMap@@YA?AVAsciiString@@_N@Z	landed	true start 0x457FB0 size 361 (drift 0x457FDC mid-body); BFME helper@0x453480 walk not ZH loop; MASM exact 361B MapUtil_getDefaultMap.asm
+?isUser@LANGameSlot@@QAE_NVUnicodeString@@@Z	landed	queue RVA 0x791BEF INSIDE FUN_00b91730 1380B; true body 132B @ 0x68E8D0 via getSlotNum call thunk 0x21ED6; MASM exact (ZH inline _wcsicmp vs StringBase::compareNoCase)

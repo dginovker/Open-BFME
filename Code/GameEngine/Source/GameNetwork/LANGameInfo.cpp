@@ -80,7 +80,6 @@ Bool LANGameSlot::isUser( LANPlayer *user )
 	return (user && m_state == SLOT_PLAYER && user->getIP() == getIP());
 }
 
-// ?isUser@LANGameSlot@@ present-unmatched
 Bool LANGameSlot::isUser( UnicodeString userName )
 {
 	return (m_state == SLOT_PLAYER && !userName.compareNoCase(getName()));

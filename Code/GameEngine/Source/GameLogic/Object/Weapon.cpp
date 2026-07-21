@@ -1851,7 +1851,6 @@ Weapon& Weapon::operator=(const Weapon& that)
 }
 
 //-------------------------------------------------------------------------------------------------
-// ??1Weapon@@MAE@XZ present-unmatched
 Weapon::~Weapon()
 {
 }

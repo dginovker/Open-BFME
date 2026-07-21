@@ -754,7 +754,7 @@ WindowMsgHandledType GameWindowManager::winSendInputMsg( GameWindow *window,
 //-------------------------------------------------------------------------------------------------
 /** Get the current input focus */
 //-------------------------------------------------------------------------------------------------
-// ?winGetFocus@GameWindowManager@@UAEPAVGameWindow@@XZ present-unmatched
+// ?winGetFocus@GameWindowManager@@UAEPAVGameWindow@@XZ
 GameWindow *GameWindowManager::winGetFocus( void )
 {
 
@@ -2081,74 +2081,15 @@ GameWindow *GameWindowManager::gogoGadgetRadioButton( GameWindow *parent,
 //-------------------------------------------------------------------------------------------------
 /** Create a tab control GUI element */
 //-------------------------------------------------------------------------------------------------
-// ?gogoGadgetTabControl@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHPAVWinInstanceData@@PAU_TabControlData@@PAVGameFont@@_N@Z present-unmatched
-GameWindow *GameWindowManager::gogoGadgetTabControl( GameWindow *parent, 
-																										  UnsignedInt status,
-																										  Int x, Int y, 
-																										  Int width, Int height, 
-																										  WinInstanceData *instData,
-																											TabControlData *tData,
-																										  GameFont *defaultFont,
-																										  Bool defaultVisual )
-
+// ?gogoGadgetTabControl@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHPAVWinInstanceData@@PAU_TabControlData@@PAVGameFont@@_N@Z
+// Body in GameWindowManager_gogoGadgetTabControl.asm (exact 150B retail @ 0x0047D090).
+// Keep getTabControl*DrawFunc COMDATs in this TU (were only referenced by the old C++ body;
+// both ICF to 3B xor-eax/ret at 0x006CF680).
+void GameWindowManager_force_tabControlDrawFuncs(GameWindowManager *m)
 {
-	GameWindow *tabControl;
-	TabControlData *tabData;
-
-	// we MUST have a tab control style window to do this
-	if( BitTest( instData->getStyle(), GWS_TAB_CONTROL ) == FALSE )
-	{
-
-		DEBUG_LOG(( "Cann't create tabControl gadget, instance data not tabControl type\n" ));
-		assert( 0 );
-		return NULL;
-
-	}  // end if
-
-	// create the tab control window
-	tabControl = TheWindowManager->winCreate( parent, status, 
-																					   x, y, width, height, 
-																						 GadgetTabControlSystem,
-																						 instData );
-	if( tabControl == NULL )
-	{
-	
-		DEBUG_LOG(( "Unable to create tab control window\n" ));
-		assert( 0 );
-		return NULL;
-
-	}  // end if
-
-	// allocate and store the tab control user data
-	tabData = NEW TabControlData;
-	memcpy( tabData, tData, sizeof( TabControlData ) );
-	tabControl->winSetUserData( tabData );
-
-	GadgetTabControlComputeTabRegion( tabControl );
-	GadgetTabControlCreateSubPanes( tabControl );
-	GadgetTabControlShowSubPane( tabControl, 0 );
-
-	// assign input function
-	tabControl->winSetInputFunc( GadgetTabControlInput );
-
-	//
-	// assign draw function, the draw functions must actually be implemented
-	// on the device level of the engine
-	//
-	if( BitTest( tabControl->winGetStatus(), WIN_STATUS_IMAGE ) )
-		tabControl->winSetDrawFunc( getTabControlImageDrawFunc() );
-	else
-		tabControl->winSetDrawFunc( getTabControlDrawFunc() );
-
-	// set the owner to the parent, or if no parent it will be itself
-	tabControl->winSetOwner( parent );
-
-	// assign the default images/colors
-	assignDefaultGadgetLook( tabControl, defaultFont, defaultVisual );
-
-	return tabControl;
-
-}  // end gogoGadgetTabControl
+	m->getTabControlImageDrawFunc();
+	m->getTabControlDrawFunc();
+}
 
 //-------------------------------------------------------------------------------------------------
 /** Create a list box GUI control */

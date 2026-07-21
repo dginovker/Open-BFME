@@ -893,42 +893,13 @@ public:
 		((ObjectCreationList*)instance)->addObjectCreationNugget(nugget);
 	}
 
-	static void parseDebris(INI *ini, void *instance, void* /*store*/, const void* /*userData*/)
-	{
-		static const FieldParse myFieldParse[] = 
-		{
-			{ "ModelNames",							parseDebrisObjectNames,							NULL,					0 },
-			{ "Mass",										INI::parsePositiveNonZeroReal,			NULL,					offsetof( GenericObjectCreationNugget, m_mass ) },
-			{ "AnimationSet",						parseAnimSet,												NULL,					offsetof( GenericObjectCreationNugget, m_animSets) },
-			{ "FXFinal",								INI::parseFXList,										NULL,					offsetof( GenericObjectCreationNugget, m_fxFinal) },
-			{ "OkToChangeModelColor",		INI::parseBool,											NULL,					offsetof(GenericObjectCreationNugget, m_okToChangeModelColor) },
-			{ "MinLODRequired",					INI::parseStaticGameLODLevel,				NULL,					offsetof(GenericObjectCreationNugget, m_minLODRequired) },
-			{ "Shadow",									INI::parseBitString32,							TheShadowNames,	offsetof( GenericObjectCreationNugget, m_shadowType ) },
-			{ "BounceSound",						INI::parseAudioEventRTS,						NULL,					offsetof( GenericObjectCreationNugget, m_bounceSound) },
-			{ 0, 0, 0, 0 }
-		};
+	// ?parseDebris@GenericObjectCreationNugget@@SAXPAVINI@@PAX1PBX@Z
+	// Body: Code/masm_dumps/GenericObjectCreationNugget_parseDebris_1DAE40.asm
+	// Exact 204B @ 0x001DAE40 (queue 0x001DAE09 was int3 pad). Retail sizeof 0x148 vs ZH 0x114.
+	static void parseDebris(INI *ini, void *instance, void* /*store*/, const void* /*userData*/);
 
-		MultiIniFieldParse p;
-		p.add(getCommonFieldParse());
-		p.add(myFieldParse);
-
-		GenericObjectCreationNugget* nugget = newInstance(GenericObjectCreationNugget);
-		nugget->m_nameAreObjects = false;
-
-		ini->initFromINIMulti(nugget, p);
-
-		DEBUG_ASSERTCRASH(nugget->m_mass > 0.0f, ("Zero masses are not allowed for debris!\n"));
-		((ObjectCreationList*)instance)->addObjectCreationNugget(nugget);
-	}
-
-	static void parseAnimSet(INI *ini, void * /*instance*/, void* store, const void* /*userData*/)
-	{
-		AnimSet anim;
-		anim.m_animInitial = ini->getNextAsciiString();
-		anim.m_animFlying = ini->getNextAsciiString();
-		anim.m_animFinal = ini->getNextAsciiString();
-		((std::vector<AnimSet>*)store)->push_back(anim);
-	}
+	// Defined out-of-line so AnimSet COMDATs stay in this TU after parseDebris -> MASM.
+	static void parseAnimSet(INI *ini, void *instance, void* store, const void* userData);
 
 protected:
 
@@ -1501,6 +1472,21 @@ private:
 
 };  
 EMPTY_DTOR(GenericObjectCreationNugget)
+
+// Out-of-line: force-emit ??0AnimSet@GenericObjectCreationNugget and vector helpers
+// that were only reached from the former C++ parseDebris body.
+void GenericObjectCreationNugget::parseAnimSet(INI *ini, void * /*instance*/, void* store, const void* /*userData*/)
+{
+	AnimSet anim;
+	anim.m_animInitial = ini->getNextAsciiString();
+	anim.m_animFlying = ini->getNextAsciiString();
+	anim.m_animFinal = ini->getNextAsciiString();
+	((std::vector<AnimSet>*)store)->push_back(anim);
+}
+
+// External-linkage anchor so MSVC does not drop the COMDAT (in-class statics are inline).
+void (*bfme_force_GenericObjectCreationNugget_parseAnimSet)(INI *, void *, void *, const void *) =
+	&GenericObjectCreationNugget::parseAnimSet;
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

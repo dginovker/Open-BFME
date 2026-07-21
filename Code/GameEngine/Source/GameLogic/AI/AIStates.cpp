@@ -7445,7 +7445,6 @@ AsciiString AIAttackAreaState::getName(  ) const
 #endif
 
 //----------------------------------------------------------------------------------------------------------
-// ?onEnter@AIAttackAreaState@@UAE?AW4StateReturnType@@XZ present-unmatched
 StateReturnType AIAttackAreaState::onEnter()
 {
 

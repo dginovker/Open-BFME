@@ -2032,17 +2032,9 @@ UnsignedInt Player::getSupplyBoxValue()
 }
 
 //=============================================================================
-// ?getProductionCostChangePercent@Player@@QBEMVAsciiString@@@Z present-unmatched
-Real Player::getProductionCostChangePercent( AsciiString buildTemplateName ) const 
-{ 
-  ProductionChangeMap::const_iterator it = m_productionCostChanges.find(NAMEKEY(buildTemplateName));
-  if (it != m_productionCostChanges.end()) 
-	{
-		return (*it).second;
-	}
-	
-	return 0.0f;
-}	
+// ?getProductionCostChangePercent@Player@@QBEMVAsciiString@@@Z
+// Body in Player_getProductionCostChangePercent.asm (exact 91B retail @ 0xD47F0;
+// queue 0x79CED4 was INSIDE MOTDSystem; map at this+0x1CC).
 
 //=============================================================================
 // ?getProductionTimeChangePercent@Player@@QBEMVAsciiString@@@Z present-unmatched

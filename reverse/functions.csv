@@ -12974,3 +12974,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1MultiplayerSettings@@UAE@XZ,,0x0008F0E0,102,Code/masm_dumps/_dtor_MultiplayerSettings_UAE_XZ_8F0E0.asm,matched,MASM exact retail dtor; true body 0x8F0E0 (queue 0x9F282F misplaced inside 0x9F2800)
 ?selectMatchingAcrossScreen@InGameUI@@UAEHXZ,,0x0043EF70,332,Code/GameEngine/Source/GameClient/InGameUI_selectMatchingAcrossScreen.asm,matched,exact 332B MASM; true ENTRY 0x43EF70 (queue 0x43EF98 mid-insn); sole GUI:SelectedAcrossScreen
 ?_M_create_nodes@?$_Deque_base@PAVMapObject@@V?$allocator@PAVMapObject@@@_STL@@@_STL@@IAEXPAPAPAVMapObject@@0@Z,,0x008F9E30,40,Code/masm_dumps/_M_create_nodes_Deque_base_PAVMapObject_8F9E30.asm,matched,exact MASM; true body 0x8F9E30/40 (queue 0x853EEA mid-epilogue; C++ SEH 121B vs retail no-SEH; paired destroy_nodes@0x8F9E60 in MapObject deque cluster)
+?parseReallyLowMHz@@YAXPAVINI@@@Z,,0x0007BE30,43,Code/GameEngine/Source/Common/GameLOD.cpp,matched,

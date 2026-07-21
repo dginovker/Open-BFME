@@ -158,11 +158,18 @@ static char *VideoNames[] =
 
 void parseReallyLowMHz(INI* ini)
 {
+	// BFME GameLODManager layout: m_reallyLowMHz @ +0x1734 (ZH header has it @ +0xa60).
+	// Local retail view keeps this leaf matchable without a class-wide layout rewrite.
+	struct RetailGameLODManager
+	{
+		char m_pad[0x1734];
+		Int m_reallyLowMHz;
+	};
 	Int mhz;
 	INI::parseInt(ini,NULL,&mhz,NULL);
 	if (TheGameLODManager)
 	{
-		TheGameLODManager->setReallyLowMHz(mhz);
+		reinterpret_cast<RetailGameLODManager *>(TheGameLODManager)->m_reallyLowMHz = mhz;
 	}
 }
 

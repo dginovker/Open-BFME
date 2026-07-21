@@ -1399,7 +1399,6 @@ Int AIPlayer::getPlayerSuperweaponValue(Coord3D *center, Int playerNdx, Real rad
 	* If busyOK is true, it will queue a unit even if one is building.  This lets 
 	* script invoked teams "push" to the front of the queue. */
 // ------------------------------------------------------------------------------------------------
-// ?startTraining@AIPlayer@@MAE_NPAVWorkOrder@@_NVAsciiString@@@Z present-unmatched
 Bool AIPlayer::startTraining( WorkOrder *order, Bool busyOK, AsciiString teamName)
 {
 	Object *factory = findFactory(order->m_thing, busyOK);

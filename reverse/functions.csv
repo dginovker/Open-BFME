@@ -13067,3 +13067,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?drawEvents@W3DRadar@@IAEXHHHH@Z,,0x006C3170,729,Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar_drawEvents.asm,matched,exact 729B MASM; true body (queue 0xC6E2C9 misplaced mid-stub)
 ?createInactiveTeam@TeamFactory@@QAEPAVTeam@@ABVAsciiString@@@Z,,0x000F7AB0,390,Code/masm_dumps/TeamFactory_createInactiveTeam.asm,matched,True body via thunk 0xD15C; createTeam setActive wrapper; queue 0x853F0F was *.ini helper
 ?update@Player@@QAEXXZ,,0x000D9A80,551,Code/GameEngine/Source/Common/RTS/Player_update.asm,matched,MASM exact; true body 0xD9A80/551 (queue 0xD5972 int3); unique MSG_ENABLE_RETALIATION_MODE 0x461
+?startTraining@AIPlayer@@MAE_NPAVWorkOrder@@_NVAsciiString@@@Z,,0x00166EF0,313,Code/masm_dumps/_str__startTraining_AIPlayer_MAE_NPAVWorkOrder__NVAsciiString_Z_166EF0.asm,matched,str Queuing true body 0x166ef0 not drift 0xC6C3D3 Open-BFME structural

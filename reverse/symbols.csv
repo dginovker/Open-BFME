@@ -3384,3 +3384,7 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?Invalidate_Cached_Render_States@DX8Wrapper@@SAXXZ,0x00903C50,End_Render depth Open-BFME4+Grok
 ?getControllingPlayer@Team@@QBEPAVPlayer@@XZ,0x0002369B
 ?countBuildings@TeamPrototype@@QAEHXZ,0x00022ACF
+??0StateMachine@@QAE@PAVObject@@VAsciiString@@@Z,0x0000F123,hand-decoded from DozerPrimaryStateMachine ctor @0x2B7870+0x3C (base-class-init call, immediately followed by [esi]=derived vtable store)
+??0State@@QAE@PAVStateMachine@@VAsciiString@@@Z,0x000035B2,hand-decoded from DozerPrimaryStateMachine ctor @0x2B7870 (DozerPrimaryIdleState/DozerPrimaryGoingHomeState sub-ctor calls, both overwrite [obj]=derived vtable right after)
+?defineState@StateMachine@@IAEXIPAVState@@IIPBUStateConditionInfo@@@Z,0x0003D1B3,hand-decoded from DozerPrimaryStateMachine ctor @0x2B7870 (5 call sites, one per defineState() in the reference source, args match: stateID/state-ptr/successID/failureID/conditions-ptr)
+??0DozerActionState@@QAE@PAVStateMachine@@W4DozerTask@@@Z,0x000216A2,hand-decoded from DozerPrimaryStateMachine ctor @0x2B7870 (3 call sites with task=0/1/2, matching BUILD/REPAIR/FORTIFY defineState args; standalone since multi-site call defeated inlining)

@@ -12923,3 +12923,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?isValidMap@@YA_NVAsciiString@@_N@Z,,0x00457ED0,170,Code/GameEngine/Source/GameClient/MapUtil_isValidMap.asm,matched,exact 170B MASM @0x457ED0 (drift 0x78935E mid-body unrelated; BFME isEmpty/dtor shape)
 ?parseDebris@GenericObjectCreationNugget@@SAXPAVINI@@PAX1PBX@Z,,0x001DAE40,204,Code/masm_dumps/GenericObjectCreationNugget_parseDebris_1DAE40.asm,matched,Exact 204B MASM; queue RVA 0x1DAE09 was int3 pad before true start; m_nameAreObjects=0 at +0x114; sibling parseObject@0x1DA620
 ?stopCameoMovie@InGameUI@@UAEXXZ,,0x00441C50,178,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,
+?realMapPathToPortableMapPath@GameState@@QBE?AVAsciiString@@ABV2@@Z,,0x0010F280,566,Code/masm_dumps/_sa__realMapPathToPortableMapPath_GameState_10F280.asm,matched,Exact 566B @ 0x10F280; true body via getUserMapDir+PORTABLE_* globals (queue 0x9D213E was int3/misplaced ctor)

@@ -13033,3 +13033,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1GameLogic@@UAE@XZ,,0x0038F080,821,Code/masm_dumps/GameLogic_dtor.asm,matched,Exact 821B MASM; true body 0x38F080 (queue 0x9F265F int3 pad); dual vtbl+init globals; Open-BFME4+Grok
 ?doNamedEmoticon@ScriptActions@@IAEXABVAsciiString@@0M@Z,,0x002F04F0,66,Code/masm_dumps/ScriptActions_doNamedEmoticon.asm,matched,exact 66B MASM true body 0x2F04F0 (queue 0x9DE812 profiler misplaced); getUnitNamed+getDrawable virt + setEmoticon
 ??1ScienceInfo@@MAE@XZ,,0x000E8520,127,Code/masm_dumps/ScienceInfo_destructor.asm,matched,MASM exact: true body 0xE8520 (queue 0x6F4C1A misplaced); FieldParse+parseScience ctor identity; BFME sizeof 0x30 one ScienceVec+costMP depooled
+??0TeamFactory@@QAE@XZ,,0x000F2250,130,Code/masm_dumps/TeamFactory_ctor.asm,matched,True body via TeamFactory vtables 0x1085F1C/0x1085F08; queue 0x9F272F was ControlBar pad

@@ -180,7 +180,6 @@ static Bool locoSetMatches(LocomotorSurfaceTypeMask lstm, UnsignedInt surfaceBit
 // ------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------
-// ??0TeamFactory@@QAE@XZ present-unmatched
 TeamFactory::TeamFactory()
 {
 

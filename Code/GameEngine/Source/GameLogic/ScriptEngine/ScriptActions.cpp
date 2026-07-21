@@ -3082,24 +3082,9 @@ void ScriptActions::doObjectRadarCreateEvent(const AsciiString& unitName, Int ev
 //-------------------------------------------------------------------------------------------------
 /** doTeamRadarCreateEvent */
 //-------------------------------------------------------------------------------------------------
-// ?doTeamRadarCreateEvent@ScriptActions@@IAEXABVAsciiString@@H@Z present-unmatched
-void ScriptActions::doTeamRadarCreateEvent(const AsciiString& teamName, Int eventType)
-{
-	// get the team
-	Team *theTeam = TheScriptEngine->getTeamNamed( teamName );
-	if (!theTeam)
-		return;
-	if (!theTeam->hasAnyUnits())
-		return;
-	
-	// get team's position
-	const Coord3D *pos = theTeam->getEstimateTeamPosition();
-	if (!pos)
-		return;
-
-	// create event
-	TheRadar->createEvent(pos, (RadarEventType)eventType);
-}
+// ?doTeamRadarCreateEvent@ScriptActions@@IAEXABVAsciiString@@H@Z
+// Body in ScriptActions_doTeamRadarCreateEvent.asm (exact 96B retail @ 0x2F4140;
+// getTeamNamed by-value + Team::getEstimateTeamPosition(Coord3D*) out-param).
 
 //-------------------------------------------------------------------------------------------------
 /** doRadarDisable */

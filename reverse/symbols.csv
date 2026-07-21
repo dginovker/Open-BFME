@@ -3400,3 +3400,4 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?winSetHiliteColor@GameWindow@@QAEHHH@Z,0x000248B1,ILT/thunk used by GadgetComboBoxSetColors
 ?winSetHiliteBorderColor@GameWindow@@QAEHHH@Z,0x000047D2,ILT/thunk used by GadgetComboBoxSetColors
 ??1CDManagerInterface@@UAE@XZ,0x00101BA0,CDManagerInterface dtor body (called by ??_G @ 0x101BB0)
+??0ProcessAnimateWindowSpiral@@QAE@XZ,0x00495590,ILT 0x43815->body; AnimateWindowManager ctor callee

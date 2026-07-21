@@ -297,51 +297,9 @@ void ControlBar::populateObserverList( void )
 	}
 }
 
-// ?populateObserverInfoWindow@ControlBar@@QAEXXZ present-unmatched
-void ControlBar::populateObserverInfoWindow ( void )
-{
-	if(ObserverPlayerInfoWindow->winIsHidden())
-		return;
-
-	if( !m_observerLookAtPlayer )
-	{
-		ObserverPlayerInfoWindow->winHide(TRUE);
-		ObserverPlayerListWindow->winHide(FALSE);
-		populateObserverList();
-		return;
-	}
-							
-	UnicodeString uString;
-	KindOfMaskType mask,clearmask;
-	mask.set(KINDOF_SCORE);
-	clearmask.set(KINDOF_STRUCTURE);
-	
-	uString.format(L"%d",m_observerLookAtPlayer->countObjects(mask,clearmask));
-	GadgetStaticTextSetText(staticTextNumberOfUnits, uString);
-
-	Int numBuildings = 0;
-	mask.clear();
-	mask.set(KINDOF_SCORE);
-	mask.set(KINDOF_STRUCTURE);
-	clearmask.clear();
-	numBuildings = m_observerLookAtPlayer->countObjects(mask,clearmask);
-	mask.clear();
-	mask.set(KINDOF_SCORE_CREATE);
-	mask.set(KINDOF_STRUCTURE);
-	numBuildings += m_observerLookAtPlayer->countObjects(mask,clearmask);
-	mask.clear();
-	mask.set(KINDOF_SCORE_DESTROY);
-	mask.set(KINDOF_STRUCTURE);
-	numBuildings += m_observerLookAtPlayer->countObjects(mask,clearmask);
-	uString.format(L"%d",numBuildings);
-	GadgetStaticTextSetText(staticTextNumberOfBuildings, uString);
-	uString.format(L"%d",m_observerLookAtPlayer->getScoreKeeper()->getTotalUnitsDestroyed());
-	GadgetStaticTextSetText(staticTextNumberOfUnitsKilled, uString);
-	uString.format(L"%d",m_observerLookAtPlayer->getScoreKeeper()->getTotalUnitsLost());
-	GadgetStaticTextSetText(staticTextNumberOfUnitsLost, uString);
-	GadgetStaticTextSetText(staticTextPlayerName, m_observerLookAtPlayer->getPlayerDisplayName());
-	Color color = m_observerLookAtPlayer->getPlayerColor();
-	staticTextPlayerName->winSetEnabledTextColors(color, GameMakeColor(0,0,0,255));
-	winFlag->winSetEnabledImage(0, m_observerLookAtPlayer->getPlayerTemplate()->getFlagWaterMarkImage());
-	winGeneralPortrait->winHide(FALSE);
-}
+// ?populateObserverInfoWindow@ControlBar@@QAEXXZ
+// Body in Code/masm_dumps/_populateObserverInfoWindow_ControlBar_QAEXXZ_4AA200.asm
+// (exact 923B retail @ 0x004AA200; C++ blocked by ControlBar +0x274 layout + KindOf 0x18B).
+// Force-emit sibling COMDATs this TU previously only produced via that body:
+void (KindOfMaskType::*_bfme_force_KindOf_clear)() = &KindOfMaskType::clear;
+void (KindOfMaskType::*_bfme_force_KindOf_set)(Int, Int) = &KindOfMaskType::set;

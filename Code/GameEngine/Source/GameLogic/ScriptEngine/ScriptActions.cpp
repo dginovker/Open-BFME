@@ -6563,20 +6563,10 @@ void ScriptActions::doTeamEmoticon(const AsciiString& teamName, const AsciiStrin
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?doNamedEmoticon@ScriptActions@@IAEXABVAsciiString@@0M@Z present-unmatched
-void ScriptActions::doNamedEmoticon(const AsciiString& unitName, const AsciiString& emoticonName, Real duration)
-{
-	Object *obj = TheScriptEngine->getUnitNamed( unitName );
-	if( obj )
-	{
-		Drawable *draw = obj->getDrawable();
-		if( draw )
-		{
-			Int frames = (Int)( duration * LOGICFRAMES_PER_SECOND );
-			draw->setEmoticon( emoticonName, frames );
-		}
-	}
-}
+// ?doNamedEmoticon@ScriptActions@@IAEXABVAsciiString@@0M@Z
+// Body in Code/masm_dumps/ScriptActions_doNamedEmoticon.asm (exact 66B retail @ 0x2F04F0;
+// queue 0x9DE812 was profiler FUN float math, not this action).
+
 
 //-------------------------------------------------------------------------------------------------
 // if addObject, we're adding an object to a list. If not addObject, we're removing the associated 

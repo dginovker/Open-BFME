@@ -75,34 +75,9 @@ const FieldParse ShellMenuSchemeManager::m_shellMenuSchemeFieldParseTable[] =
 //-----------------------------------------------------------------------------
 // PUBLIC FUNCTIONS ///////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-// ?parseShellMenuSchemeDefinition@INI@@SAXPAV1@@Z present-unmatched
-void INI::parseShellMenuSchemeDefinition( INI *ini )
-{
-	AsciiString name;
-	ShellMenuSchemeManager *SMSchemeManager;
-	ShellMenuScheme *SMScheme;
-
-	// read the name
-	const char* c = ini->getNextToken();
-	name.set( c );	
-
-	// find existing item if present
-	SMSchemeManager = TheShell->getShellMenuSchemeManager();
-	DEBUG_ASSERTCRASH( SMSchemeManager, ("parseShellMenuSchemeDefinition: Unable to Get SMSchemeManager\n") );
-	if( !SMSchemeManager )
-		return;
-
-	// If we have a previously allocated control bar, this will return a cleared out pointer to it so we
-	// can overwrite it	
-	SMScheme = SMSchemeManager->newShellMenuScheme( name );
-
-	// sanity
-	DEBUG_ASSERTCRASH( SMScheme, ("parseControlBarSchemeDefinition: Unable to allocate Scheme '%s'\n", name.str()) );
-
-	// parse the ini definition
-	ini->initFromINI( SMScheme, SMSchemeManager->getFieldParse() );
-
-}  // end parseCommandButtonDefinition
+// ?parseShellMenuSchemeDefinition@INI@@SAXPAV1@@Z
+// Body is MASM exact-byte dump (Code/masm_dumps/INI_parseShellMenuSchemeDefinition_581790.asm).
+// Retail @ 0x581790; C++ blocked on AsciiString::set vs StringBase::set(s,len) shape.
 
 ShellMenuSchemeLine::ShellMenuSchemeLine( void )
 {

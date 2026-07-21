@@ -2349,7 +2349,6 @@ Bool AIMoveAndTightenState::computePath()
 //----------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------
 
-// ?onEnter@AIMoveAwayFromRepulsorsState@@UAE?AW4StateReturnType@@XZ present-unmatched
 StateReturnType AIMoveAwayFromRepulsorsState::onEnter()	  
 {
 	setAdjustsDestination(false);

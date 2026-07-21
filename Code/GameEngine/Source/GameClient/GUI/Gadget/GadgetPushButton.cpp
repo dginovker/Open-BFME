@@ -722,16 +722,8 @@ void *GadgetButtonGetData(GameWindow *g)
 	return pData->userData;
 }
 
-void GadgetButtonSetAltSound(GameWindow *g, AsciiString altSound )
-{
-	if(!g)
-		return;
-	PushButtonData *pData = (PushButtonData *)g->winGetUserData();
-	if(!pData)
-	{
-		return;
-	}
-	pData->altSound = altSound;
-
-}
+// BFME body is MASM exact-byte dump (AsciiString by-value cleanup is out-of-line
+// CS-locked in retail; ZH header inlines releaseBuffer and cannot match):
+// Code/masm_dumps/GadgetButtonSetAltSound_4BC770.asm @ 0x004BC770 size 90
+// void GadgetButtonSetAltSound(GameWindow *g, AsciiString altSound );
 

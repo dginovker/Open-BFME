@@ -1,0 +1,82 @@
+.386
+.model flat
+
+; ??1MiscAudio@@QAE@XZ
+; Retail @ 0x006952F0 size 556
+; BFME MiscAudio dtor: 32x AudioEventRTS (sizeof 0x70) reverse destroy; FieldParse-proven
+_TEXT SEGMENT
+public ??1MiscAudio@@QAE@XZ
+??1MiscAudio@@QAE@XZ PROC
+    db 6Ah,0FFh,68h,19h,77h,04h,01h,64h
+    db 0A1h,00h,00h,00h,00h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,51h,56h,8Bh
+    db 0F1h,89h,74h,24h,04h,8Dh,8Eh,90h
+    db 0Dh,00h,00h,0C7h,44h,24h,10h,1Eh
+    db 00h,00h,00h,0E8h,15h,1Ch,99h,0FFh
+    db 8Dh,8Eh,20h,0Dh,00h,00h,0C6h,44h
+    db 24h,10h,1Dh,0E8h,05h,1Ch,99h,0FFh
+    db 8Dh,8Eh,0B0h,0Ch,00h,00h,0C6h,44h
+    db 24h,10h,1Ch,0E8h,0F5h,1Bh,99h,0FFh
+    db 8Dh,8Eh,40h,0Ch,00h,00h,0C6h,44h
+    db 24h,10h,1Bh,0E8h,0E5h,1Bh,99h,0FFh
+    db 8Dh,8Eh,0D0h,0Bh,00h,00h,0C6h,44h
+    db 24h,10h,1Ah,0E8h,0D5h,1Bh,99h,0FFh
+    db 8Dh,8Eh,60h,0Bh,00h,00h,0C6h,44h
+    db 24h,10h,19h,0E8h,0C5h,1Bh,99h,0FFh
+    db 8Dh,8Eh,0F0h,0Ah,00h,00h,0C6h,44h
+    db 24h,10h,18h,0E8h,0B5h,1Bh,99h,0FFh
+    db 8Dh,8Eh,80h,0Ah,00h,00h,0C6h,44h
+    db 24h,10h,17h,0E8h,0A5h,1Bh,99h,0FFh
+    db 8Dh,8Eh,10h,0Ah,00h,00h,0C6h,44h
+    db 24h,10h,16h,0E8h,95h,1Bh,99h,0FFh
+    db 8Dh,8Eh,0A0h,09h,00h,00h,0C6h,44h
+    db 24h,10h,15h,0E8h,85h,1Bh,99h,0FFh
+    db 8Dh,8Eh,30h,09h,00h,00h,0C6h,44h
+    db 24h,10h,14h,0E8h,75h,1Bh,99h,0FFh
+    db 8Dh,8Eh,0C0h,08h,00h,00h,0C6h,44h
+    db 24h,10h,13h,0E8h,65h,1Bh,99h,0FFh
+    db 8Dh,8Eh,50h,08h,00h,00h,0C6h,44h
+    db 24h,10h,12h,0E8h,55h,1Bh,99h,0FFh
+    db 8Dh,8Eh,0E0h,07h,00h,00h,0C6h,44h
+    db 24h,10h,11h,0E8h,45h,1Bh,99h,0FFh
+    db 8Dh,8Eh,70h,07h,00h,00h,0C6h,44h
+    db 24h,10h,10h,0E8h,35h,1Bh,99h,0FFh
+    db 0C6h,44h,24h,10h,0Fh,8Dh,8Eh,00h
+    db 07h,00h,00h,0E8h,25h,1Bh,99h,0FFh
+    db 8Dh,8Eh,90h,06h,00h,00h,0C6h,44h
+    db 24h,10h,0Eh,0E8h,15h,1Bh,99h,0FFh
+    db 8Dh,8Eh,20h,06h,00h,00h,0C6h,44h
+    db 24h,10h,0Dh,0E8h,05h,1Bh,99h,0FFh
+    db 8Dh,8Eh,0B0h,05h,00h,00h,0C6h,44h
+    db 24h,10h,0Ch,0E8h,0F5h,1Ah,99h,0FFh
+    db 8Dh,8Eh,40h,05h,00h,00h,0C6h,44h
+    db 24h,10h,0Bh,0E8h,0E5h,1Ah,99h,0FFh
+    db 8Dh,8Eh,0D0h,04h,00h,00h,0C6h,44h
+    db 24h,10h,0Ah,0E8h,0D5h,1Ah,99h,0FFh
+    db 8Dh,8Eh,60h,04h,00h,00h,0C6h,44h
+    db 24h,10h,09h,0E8h,0C5h,1Ah,99h,0FFh
+    db 8Dh,8Eh,0F0h,03h,00h,00h,0C6h,44h
+    db 24h,10h,08h,0E8h,0B5h,1Ah,99h,0FFh
+    db 8Dh,8Eh,80h,03h,00h,00h,0C6h,44h
+    db 24h,10h,07h,0E8h,0A5h,1Ah,99h,0FFh
+    db 8Dh,8Eh,10h,03h,00h,00h,0C6h,44h
+    db 24h,10h,06h,0E8h,95h,1Ah,99h,0FFh
+    db 8Dh,8Eh,0A0h,02h,00h,00h,0C6h,44h
+    db 24h,10h,05h,0E8h,85h,1Ah,99h,0FFh
+    db 8Dh,8Eh,30h,02h,00h,00h,0C6h,44h
+    db 24h,10h,04h,0E8h,75h,1Ah,99h,0FFh
+    db 8Dh,8Eh,0C0h,01h,00h,00h,0C6h,44h
+    db 24h,10h,03h,0E8h,65h,1Ah,99h,0FFh
+    db 8Dh,8Eh,50h,01h,00h,00h,0C6h,44h
+    db 24h,10h,02h,0E8h,55h,1Ah,99h,0FFh
+    db 8Dh,8Eh,0E0h,00h,00h,00h,0C6h,44h
+    db 24h,10h,01h,0E8h,45h,1Ah,99h,0FFh
+    db 8Dh,4Eh,70h,0C6h,44h,24h,10h,00h
+    db 0E8h,38h,1Ah,99h,0FFh,8Bh,0CEh,0C7h
+    db 44h,24h,10h,0FFh,0FFh,0FFh,0FFh,0E8h
+    db 29h,1Ah,99h,0FFh,8Bh,4Ch,24h,08h
+    db 5Eh,64h,89h,0Dh,00h,00h,00h,00h
+    db 83h,0C4h,10h,0C3h
+??1MiscAudio@@QAE@XZ ENDP
+_TEXT ENDS
+END

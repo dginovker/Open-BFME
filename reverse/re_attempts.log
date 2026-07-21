@@ -2115,3 +2115,4 @@ _$E47	no-match	Current VS2003 object emits _$E14/15/17/18/20/21/23/24; _$E47 is 
 ?stopCameoMovie@InGameUI@@UAEXXZ	landed	true body 0x441C50 178B (not drift 0x79CEB8 int3); BFMERetailAsciiString thin path + stream@+0x568 vtable+0x1c; no buffer delete
 ?friend_newModuleData@QueueProductionExitUpdate@@SAPAVModuleData@@PAVINI@@@Z	landed	drift RVA 0xB026DA was WWMath epilogue misplacement; true body 88B @ 0x1241B0 via ModuleFactory reg ordinal 0x69 (string QueueProductionExitUpdate + ILT 0x41964b); MASM dump byte-exact
 ??1RTS2DScene@@UAE@XZ	landed	queue 0x9F27F2 misplaced mid-neighbor; true ENTRY 0x711980 size 143 via RTS2DScene vtable stores; MASM exact dump
+?W3DCommandBarGridDraw@@YAXPAVGameWindow@@PAVWinInstanceData@@@Z	landed	FunctionLexicon proves true body 0x799FA0/634 (ILT 0x28484); drift 0x4BFC8D mid-unrelated fn; MASM exact dump

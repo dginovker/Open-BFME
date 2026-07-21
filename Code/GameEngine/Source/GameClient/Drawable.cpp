@@ -4629,16 +4629,21 @@ void Drawable::prependToList(Drawable **pListHead)
 //-------------------------------------------------------------------------------------------------
 /** remove self from the linked list */
 //-------------------------------------------------------------------------------------------------
-// ?removeFromList@Drawable@@QAEXPAPAV1@@Z present-unmatched
+// list links live at +0x104/+0x108 in retail BFME Drawable (header still ZH-shaped)
 void Drawable::removeFromList(Drawable **pListHead)
 {
-	if (m_nextDrawable)
-		m_nextDrawable->m_prevDrawable = m_prevDrawable;
-
-	if (m_prevDrawable)
-		m_prevDrawable->m_nextDrawable = m_nextDrawable;
+	struct Links {
+		unsigned char pad[0x104];
+		Links *next;
+		Links *prev;
+	};
+	Links *self = reinterpret_cast<Links *>(this);
+	if (self->next)
+		self->next->prev = self->prev;
+	if (self->prev)
+		self->prev->next = self->next;
 	else
-		*pListHead = m_nextDrawable;
+		*reinterpret_cast<Links **>(pListHead) = self->next;
 }
 
 //-------------------------------------------------------------------------------------------------

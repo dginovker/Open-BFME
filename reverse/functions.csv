@@ -12491,20 +12491,20 @@ _IsStatsConnected,,0x009D2B60,15,Code/masm_dumps/_sym4__IsStatsConnected_9D2B60.
 ??0ContinueState@@QAE@PAVStateMachine@@@Z,,0x00170EA0,46,Code/masm_dumps/_saH___0ContinueState__QAE_PAVStateMachine___Z_170EA0.asm,matched,str MASM Open-BFME4+Grok
 ?forgetLogin@GameSpyLoginPreferences@@QAEXVAsciiString@@@Z,,0x00501B90,7078,Code/masm_dumps/_cache__forgetLogin_GameSpyLoginPreferences__QAEXVAsciiString__501B90.asm,matched,cached-obj needle Open-BFME4+Grok
 ?setStartingCash@LANPreferences@@,,0x004CEC00,1686,Code/masm_dumps/_cache__setStartingCash_LANPreferences___4CEC00.asm,matched,cached-obj needle Open-BFME4+Grok
-?refcompress@@YAHPAEH0HH@Z,,0x0081EF80,1095,Code/masm_dumps/_cache__refcompress__YAHPAEH0HH_Z_81EF80.asm,matched,cached-obj needle Open-BFME4+Grok
+?refcompress@@YAHPAEH0HH@Z,,0x0081EF80,1095,Code/masm_dumps/_cache__refcompress__YAHPAEH0HH_Z_81EF80.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ??1MultiPlayerLoadScreen@@,,0x0052C220,844,Code/masm_dumps/_cache___1MultiPlayerLoadScreen___52C220.asm,matched,cached-obj needle Open-BFME4+Grok
 ?selectFriends@SelectionTranslator@@AAE_NPAVDrawable@@PAVGameMessage@@_N@Z,,0x00443F60,794,Code/masm_dumps/_cache__selectFriends_SelectionTranslator__AAE_NPAVDrawable__P_443F60.asm,matched,cached-obj needle Open-BFME4+Grok
 ?reset@ControlBar@@UAEXXZ,,0x004A2F80,583,Code/masm_dumps/_cache__reset_ControlBar__UAEXXZ_4A2F80.asm,matched,cached-obj needle Open-BFME4+Grok
 ?crushLocationCheck@@YA?AW4CrushEnum@@PAVObject@@0@Z,,0x002549A0,387,Code/masm_dumps/_cache__crushLocationCheck__YA_AW4CrushEnum__PAVObject__0_Z_2549A0.asm,matched,cached-obj needle Open-BFME4+Grok
 ?updateOCLTimerTextDisplay@ControlBar@@IAEXIM@Z,,0x004AA7C0,358,Code/masm_dumps/_cache__updateOCLTimerTextDisplay_ControlBar__IAEXIM_Z_4AA7C0.asm,matched,cached-obj needle Open-BFME4+Grok
-?GadgetRadioButtonSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BD2A0,270,Code/masm_dumps/_cache__GadgetRadioButtonSystem__YA_AW4WindowMsgHandledType__P_4BD2A0.asm,matched,cached-obj needle Open-BFME4+Grok
+?GadgetRadioButtonSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BD2A0,270,Code/masm_dumps/_cache__GadgetRadioButtonSystem__YA_AW4WindowMsgHandledType__P_4BD2A0.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ?getStartingCash@SkirmishPreferences@@,,0x004F1760,267,Code/masm_dumps/_cache__getStartingCash_SkirmishPreferences___4F1760.asm,matched,cached-obj needle Open-BFME4+Grok
-?PopulateRemoteIPComboBox@@YAXXZ,,0x004D2540,250,Code/masm_dumps/_cache__PopulateRemoteIPComboBox__YAXXZ_4D2540.asm,matched,cached-obj needle Open-BFME4+Grok
-?Execute@DebugIOCon@@UAEXAAVDebug@@PBD_NIPBQBD@Z,,0x00891200,239,Code/masm_dumps/_cache__Execute_DebugIOCon__UAEXAAVDebug__PBD_NIPBQBD_Z_891200.asm,matched,cached-obj needle Open-BFME4+Grok
+?PopulateRemoteIPComboBox@@YAXXZ,,0x004D2540,250,Code/masm_dumps/_cache__PopulateRemoteIPComboBox__YAXXZ_4D2540.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?Execute@DebugIOCon@@UAEXAAVDebug@@PBD_NIPBQBD@Z,,0x00891200,239,Code/masm_dumps/_cache__Execute_DebugIOCon__UAEXAAVDebug__PBD_NIPBQBD_Z_891200.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ?animateGridDecals@DynamicShroudClearingRangeUpdate@@QAEXXZ,,0x0028E760,227,Code/masm_dumps/_cache__animateGridDecals_DynamicShroudClearingRangeUpdate__QA_28E760.asm,matched,cached-obj needle Open-BFME4+Grok
 ?PrintInfoRecursive@@YAXPAVGameWindow@@PAU_iobuf@@@Z,,0x004AAB60,187,Code/masm_dumps/_cache__PrintInfoRecursive__YAXPAVGameWindow__PAU_iobuf___Z_4AAB60.asm,matched,cached-obj needle Open-BFME4+Grok
-?PointInsideArea2D@@YA_NPBUCoord3D@@0H@Z,,0x0044EEF0,179,Code/masm_dumps/_cache__PointInsideArea2D__YA_NPBUCoord3D__0H_Z_44EEF0.asm,matched,cached-obj needle Open-BFME4+Grok
-?GadgetCheckBoxSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004B3250,171,Code/masm_dumps/_cache__GadgetCheckBoxSystem__YA_AW4WindowMsgHandledType__PAVG_4B3250.asm,matched,cached-obj needle Open-BFME4+Grok
+?PointInsideArea2D@@YA_NPBUCoord3D@@0H@Z,,0x0044EEF0,179,Code/GameEngine/Source/Common/line2_d.cpp,matched,cached-obj needle Open-BFME4+Grok
+?GadgetCheckBoxSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004B3250,171,Code/masm_dumps/_cache__GadgetCheckBoxSystem__YA_AW4WindowMsgHandledType__PAVG_4B3250.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ?isSpecificRiderFreeToExit@TransportContain@@MAE_NPAVObject@@@Z,,0x0022D0E0,126,Code/masm_dumps/_cache__isSpecificRiderFreeToExit_TransportContain__MAE_NPAVOb_22D0E0.asm,matched,cached-obj needle Open-BFME4+Grok
 ??0ArchivedFileInfo@@QAE@ABV0@@Z,,0x009CEBF0,93,Code/masm_dumps/_cache___0ArchivedFileInfo__QAE_ABV0__Z_9CEBF0.asm,matched,cached-obj needle Open-BFME4+Grok
 ?startDefectionTimer@ObjectDefectionHelper@@QAEXI_N@Z,,0x002562F0,82,Code/masm_dumps/_cache__startDefectionTimer_ObjectDefectionHelper__QAEXI_N_Z_2562F0.asm,matched,cached-obj needle Open-BFME4+Grok
@@ -12515,10 +12515,12 @@ _IsStatsConnected,,0x009D2B60,15,Code/masm_dumps/_sym4__IsStatsConnected_9D2B60.
 ?isFreeToAssist@AssistedTargetingUpdate@@QBE_NXZ,,0x0027FCE0,56,Code/masm_dumps/_cache__isFreeToAssist_AssistedTargetingUpdate__QBE_NXZ_27FCE0.asm,matched,cached-obj needle Open-BFME4+Grok
 ?isGroupAiDead@AIGroup@@QBE_NXZ,,0x00151390,50,Code/masm_dumps/_cache__isGroupAiDead_AIGroup__QBE_NXZ_151390.asm,matched,cached-obj needle Open-BFME4+Grok
 ?insert_unique@?$_Rb_tree@GU?$pair@$$CBGE@_STL@@U?$_Select1st@U?$pair@$$CBGE@_STL@@@2@U?$less@G@2@V?$allocator@U?$pair@$$CBGE@_STL@@@2@@_STL@@QAE?AU?$_Rb_tree_iterator@U?$pair@$$CBGE@_STL@@U?$_Nonconst_traits@U?$pair@$$CBGE@_STL@@@2@@2@U32@ABU?$pair@$$CBGE@2@@Z,,0x009401F0,601,Code/GameEngine/Source/GameNetwork/ConnectionManager.cpp,matched,
+?isFreeToAssist@AssistedTargetingUpdate@@QBE_NXZ,,0x0027FCE0,56,Code/masm_dumps/_cache__isFreeToAssist_AssistedTargetingUpdate__QBE_NXZ_27FCE0.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
+?isGroupAiDead@AIGroup@@QBE_NXZ,,0x00151390,50,Code/masm_dumps/_cache__isGroupAiDead_AIGroup__QBE_NXZ_151390.asm,matched,cached-obj needle Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ?winSetParent@GameWindow@@QAEHPAV1@@Z,,0x00478CB0,84,Code/masm_dumps/_cache2__winSetParent_GameWindow__QAEHPAV1__Z_478CB0.asm,matched,cached-obj2 Open-BFME4+Grok
-?End_Render@WW3D@@SA?AW4WW3DErrorType@@_N@Z,,0x008FD880,65,Code/masm_dumps/_cache2__End_Render_WW3D__SA_AW4WW3DErrorType___N_Z_8FD880.asm,matched,cached-obj2 Open-BFME4+Grok
+?End_Render@WW3D@@SA?AW4WW3DErrorType@@_N@Z,,0x008FD880,65,Code/masm_dumps/_cache2__End_Render_WW3D__SA_AW4WW3DErrorType___N_Z_8FD880.asm,matched,cached-obj2 Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ?freeMessageResources@InGameUI@@QAEXXZ,,0x0043CDC0,64,Code/masm_dumps/_cache2__freeMessageResources_InGameUI__QAEXXZ_43CDC0.asm,matched,cached-obj2 Open-BFME4+Grok
-?removeFromList@Drawable@@QAEXPAPAV1@@Z,,0x00411C80,62,Code/masm_dumps/_cache2__removeFromList_Drawable__QAEXPAPAV1__Z_411C80.asm,matched,cached-obj2 Open-BFME4+Grok
+?removeFromList@Drawable@@QAEXPAPAV1@@Z,,0x00411C80,62,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,cached-obj2 Open-BFME4+Grok asm->cpp Open-BFME4+Grok
 ?doRetryMetrics@Connection@@IAEXXZ,,0x00661D90,51,Code/masm_dumps/_cache2__doRetryMetrics_Connection__IAEXXZ_661D90.asm,matched,cached-obj2 Open-BFME4+Grok
 ?showReplayControls@@YAXXZ,,0x0043A7F0,32,Code/masm_dumps/_cache2__showReplayControls__YAXXZ_43A7F0.asm,matched,cached-obj2 Open-BFME4+Grok
 ??_GRefCountClass@@MAEPAXI@Z,,0x008E2260,31,Code/masm_dumps/_icf____GRefCountClass__MAEPAXI_Z_8E2260.asm,matched,ICF alias of ??_GCullSystemClass@@UAEPAXI@Z Open-BFME4+Grok

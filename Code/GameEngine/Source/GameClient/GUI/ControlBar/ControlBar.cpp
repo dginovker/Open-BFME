@@ -2423,14 +2423,11 @@ void ControlBar::setControlBarSchemeByPlayerTemplate( const PlayerTemplate *pt)
 	hidePurchaseScience();
 }
 
-// ?setControlBarSchemeByName@ControlBar@@QAEXABVAsciiString@@@Z present-unmatched
-void ControlBar::setControlBarSchemeByName(const AsciiString& name)
-{
-	if(m_controlBarSchemeManager)
-		m_controlBarSchemeManager->setControlBarScheme( name );
-		switchControlBarStage(CONTROL_BAR_STAGE_DEFAULT);
+// ?setControlBarSchemeByName@ControlBar@@QAEXABVAsciiString@@@Z
+// Body in Code/masm_dumps/ControlBar_setControlBarSchemeByName.asm (exact 68B @ 0x4A0090).
+// Retail: if manager, setControlBarScheme(by-value name); if not playback, setDefaultControlBarConfig.
+// (Not switchControlBarStage — inlined recorder check. C++ blocked on AsciiString by-value shape.)
 
-}
 
 // ?preloadAssets@ControlBar@@QAEXW4TimeOfDay@@@Z present-unmatched
 void ControlBar::preloadAssets( TimeOfDay timeOfDay )

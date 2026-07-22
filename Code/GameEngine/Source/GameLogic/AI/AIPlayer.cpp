@@ -2968,43 +2968,11 @@ void AIPlayer::update( void )
  * Find any things that build stuff & add them to the build list.  Then build any initially built
  * buildings.
  */
-// ?newMap@AIPlayer@@UAEXXZ present-unmatched
+// ?newMap@AIPlayer@@UAEXXZ
+// BFME: AIPlayer vtable slot 6 (after update) is a single ret @ 0x160EB0.
+// ZH factory-scan / initially-built path was dropped; body is a no-op.
 void AIPlayer::newMap( void )
 {
-	BuildListInfo *info = m_player->getBuildList();
-	// Add any factories placed to the build list.
-	Object *obj;
-	for( obj = TheGameLogic->getFirstObject(); obj; obj = obj->getNextObject() )
-	{
-
-		Player *owner = obj->getControllingPlayer();
-		if (owner==m_player) {
-			// See if it's a factory.
-			ProductionUpdateInterface *pu = obj->getProductionUpdateInterface();
-			// If it doesn't produce, continue.
-			if (!pu) continue;
-			m_player->addToBuildList(obj);
-		}
-
-	}
-	computeCenterAndRadiusOfBase(&m_baseCenter, &m_baseRadius);
-
-	// Build any with the initially built flag.
-	for( /* nothing */; info; info = info->getNext() )
-	{
-		AsciiString name = info->getTemplateName();
-		if (name.isEmpty()) continue;
-		const ThingTemplate *bldgPlan = TheThingFactory->findTemplate( name );
-		if (!bldgPlan) {																											 
-			DEBUG_LOG(("*** ERROR - Build list building '%s' doesn't exist.\n", name.str()));
-			continue;
-		}
-		if (info->isInitiallyBuilt()) {
-			buildStructureNow(bldgPlan, info);
-		} else {
-			info->incrementNumRebuilds(); // the initial build in the normal build list consumes a rebuild, so add one.
-		}
-	}
 }
 
 // ------------------------------------------------------------------------------------------------

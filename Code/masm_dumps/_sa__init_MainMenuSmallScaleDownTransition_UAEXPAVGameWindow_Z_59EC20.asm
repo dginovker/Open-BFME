@@ -1,0 +1,32 @@
+.386
+.model flat
+
+; ?init@MainMenuSmallScaleDownTransition@@UAEXPAVGameWindow@@@Z
+; Exact 325B @ 0x0059EC20; 'Small' concat + growWin + div6 Open-BFME
+_TEXT SEGMENT
+public ?init@MainMenuSmallScaleDownTransition@@UAEXPAVGameWindow@@@Z
+?init@MainMenuSmallScaleDownTransition@@UAEXPAVGameWindow@@@Z PROC
+    db 064h,0A1h,000h,000h,000h,000h,06Ah,0FFh,068h,0A8h,083h,003h,001h,050h,064h,089h
+    db 025h,000h,000h,000h,000h,053h,055h,056h,08Bh,0F1h,08Bh,04Ch,024h,01Ch,033h,0DBh
+    db 03Bh,0CBh,057h,074h,020h,08Dh,046h,01Ch,050h,08Dh,056h,018h,052h,089h,04Eh,00Ch
+    db 0E8h,067h,082h,0A9h,0FFh,08Dh,046h,014h,050h,08Dh,04Eh,010h,051h,08Bh,04Eh,00Ch
+    db 0E8h,0E6h,00Ch,0A9h,0FFh,089h,05Ch,024h,020h,08Bh,04Eh,00Ch,089h,05Ch,024h,018h
+    db 0E8h,01Ch,05Dh,0A9h,0FFh,005h,08Ch,001h,000h,000h,050h,08Dh,04Ch,024h,024h,0E8h
+    db 00Ch,090h,02Eh,000h,06Ah,005h,068h,030h,0C7h,00Eh,001h,08Dh,04Ch,024h,028h,0E8h
+    db 0CCh,090h,02Eh,000h,08Bh,044h,024h,020h,03Bh,0C3h,074h,005h,083h,0C0h,008h,0EBh
+    db 005h,0B8h,08Bh,038h,007h,001h,08Bh,015h,040h,01Bh,02Fh,001h,08Bh,00Dh,000h,0D6h
+    db 02Eh,001h,08Bh,03Ah,050h,0E8h,01Dh,0C1h,0A9h,0FFh,08Bh,00Dh,040h,01Bh,02Fh,001h
+    db 050h,053h,0FFh,097h,0DCh,000h,000h,000h,03Bh,0C3h,089h,046h,03Ch,074h,070h,08Dh
+    db 07Eh,030h,057h,08Dh,06Eh,02Ch,055h,08Bh,0C8h,0E8h,0DEh,081h,0A9h,0FFh,08Dh,046h
+    db 028h,050h,08Dh,04Eh,024h,051h,08Bh,04Eh,03Ch,0E8h,05Dh,00Ch,0A9h,0FFh,08Bh,016h
+    db 053h,08Bh,0CEh,088h,05Eh,009h,0FFh,052h,008h,08Bh,046h,018h,08Bh,04Dh,000h,02Bh
+    db 0C8h,0B8h,0ABh,0AAh,0AAh,02Ah,0F7h,0E9h,08Bh,00Fh,08Bh,0C2h,0C1h,0E8h,01Fh,003h
+    db 0C2h,089h,046h,034h,02Bh,04Eh,01Ch,0B8h,0ABh,0AAh,0AAh,02Ah,0F7h,0E9h,08Bh,0CAh
+    db 0C1h,0E9h,01Fh,003h,0CAh,08Bh,056h,00Ch,089h,04Eh,038h,08Bh,04Eh,03Ch,088h,05Eh
+    db 008h,0C6h,046h,009h,001h,08Bh,042h,048h,050h,053h,0E8h,0CAh,070h,0A9h,0FFh,08Dh
+    db 04Ch,024h,020h,0C7h,044h,024h,018h,0FFh,0FFh,0FFh,0FFh,0E8h,0F0h,08Bh,02Eh,000h
+    db 08Bh,04Ch,024h,010h,05Fh,05Eh,05Dh,064h,089h,00Dh,000h,000h,000h,000h,05Bh,083h
+    db 0C4h,00Ch,0C2h,004h,000h
+?init@MainMenuSmallScaleDownTransition@@UAEXPAVGameWindow@@@Z ENDP
+_TEXT ENDS
+END

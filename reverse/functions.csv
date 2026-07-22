@@ -13250,3 +13250,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?doDrawModule@W3DRopeDraw@@UAEXPBVMatrix3D@@@Z,,0x0075AD20,363,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/W3DRopeDraw.cpp,matched,
 ?doFXObj@ParticleSystemFXNugget@@UBEXPBVObject@@0@Z,,0x0042B120,281,Code/masm_dumps/ParticleSystemFXNugget_doFXObj_42B120.asm,matched,Exact 281B MASM; true body via ParticleSystemFXNugget vtbl@0x010F3520 slot2; queue 0xA9A536 misplaced mid-body; m_ricochet@+0x101 Object pos@+0x38
 ?findMessage@NetCommandList@@QAEPAVNetCommandRef@@GE@Z,,0x00672F50,78,Code/GameEngine/Source/GameNetwork/NetCommandList.cpp,matched,
+?update@AIFollowWaypointPathExactState@@UAE?AW4StateReturnType@@XZ,,0x0017AE10,35,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,

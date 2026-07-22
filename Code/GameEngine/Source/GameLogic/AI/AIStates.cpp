@@ -4349,12 +4349,15 @@ void AIFollowWaypointPathExactState::onExit( StateExitType status )
 }
 
 //----------------------------------------------------------------------------------------------------------
-// ?update@AIFollowWaypointPathExactState@@UAE?AW4StateReturnType@@XZ present-unmatched
 StateReturnType AIFollowWaypointPathExactState::update()
 {
-
-	AIUpdateInterface *ai = getMachineOwner()->getAI();
-	if (ai) ai->setCanPathThroughUnits(true);
+	char *machine = *(char **)((char *)this + 0x1c);
+	char *owner = *(char **)(machine + 0x10);
+	char *ai = *(char **)(owner + 0x204);
+	if (ai) {
+		*(ai + 0x328) = true;
+		*(ai + 0x326) = false;
+	}
 	// do movement
 	StateReturnType status = AIInternalMoveToState::update();
 

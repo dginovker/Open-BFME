@@ -13294,3 +13294,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?loadPostProcess@Team@@MAEXXZ,,0x000F1800,265,Code/masm_dumps/Team_loadPostProcess.asm,matched,MASM exact true Team vtable body
 ?update@StructureCollapseUpdate@@UAE?AW4UpdateSleepTime@@XZ,,0x002AE950,944,Code/masm_dumps/StructureCollapseUpdate_update.asm,matched,retail MASM; ctor vtable 0x10C4644 slot 0 via thunk 0x002E4C9; Ghidra ENTRY 944
 ??0LadderPref@@QAE@ABV0@@Z,,0x000A9BE0,95,Code/masm_dumps/__0LadderPref__QAE_ABV0__Z_A9BE0.asm,matched,Exact MASM via thunk 0x48329 and proven pair constructor caller
+?update@AIFollowPathState@@UAE?AW4StateReturnType@@XZ,,0x00179150,809,Code/masm_dumps/AIFollowPathState_update.asm,matched,

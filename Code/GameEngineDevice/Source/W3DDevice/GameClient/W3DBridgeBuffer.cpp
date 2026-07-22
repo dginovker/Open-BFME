@@ -522,7 +522,7 @@ Int W3DBridge::getModelVerticesFixed(VertexFormatXYZNDUV1 *destination_vb, Int c
 //=============================================================================
 /** Gets the index values and vertex values for a bridge.  */
 //=============================================================================
-// ?getIndicesNVertices@W3DBridge@@QAEXPAGPAUVertexFormatXYZNDUV1@@PAH2PAV?$RefMultiListIterator@VRenderObjClass@@@@@Z present-unmatched
+// BFME matches Generals body (no ZH overflow early-returns); floor via CRT not WWLib fast_float_floor.
 void W3DBridge::getIndicesNVertices(UnsignedShort *destination_ib, VertexFormatXYZNDUV1 *destination_vb, 
 																		Int *curIndexP, Int *curVertexP, RefRenderObjListIterator *pLightsIterator)
 {
@@ -534,17 +534,7 @@ void W3DBridge::getIndicesNVertices(UnsignedShort *destination_ib, VertexFormatX
 	m_numPolygons = 0;
 	if (m_sectionMesh == NULL) {
 		numV = getModelVerticesFixed(destination_vb, *curVertexP, m_leftMtx, m_leftMesh, pLightsIterator);
-		if (!numV)
-		{	//not enough room for vertices
-			DEBUG_ASSERTCRASH( numV, ("W3DBridge::GetIndicesNVertices(). Vertex overflow.\n") );
-			return;
-		}
 		numI = getModelIndices( destination_ib, *curIndexP, *curVertexP, m_leftMesh);
-		if (!numI)
-		{	//not enough room for indices
-			DEBUG_ASSERTCRASH( numI, ("W3DBridge::GetIndicesNVertices(). Index overflow.\n") );
-			return;
-		}
 		*curIndexP += numI;
 		*curVertexP += numV;
 		m_numVertex += numV;
@@ -573,7 +563,7 @@ void W3DBridge::getIndicesNVertices(UnsignedShort *destination_ib, VertexFormatX
 	Int numSpans = 1;
 	if (m_bridgeType != FIXED_BRIDGE) {
 		Real spannable = desiredLength - (m_length-spanLength);
-		numSpans = REAL_TO_INT_FLOOR( (spannable + spanLength/2)/spanLength);
+		numSpans = fast_float2long_round(floorf( (spannable + spanLength/2)/spanLength));
 		if (numSpans<0) numSpans = 0;
 	}
 
@@ -584,17 +574,7 @@ void W3DBridge::getIndicesNVertices(UnsignedShort *destination_ib, VertexFormatX
 	vec /= bridgeLength;
 	numV = getModelVertices(destination_vb, *curVertexP, xOffset, vec, vecNormal, vecZ, m_start, 
 		m_leftMtx, m_leftMesh, pLightsIterator);
-	if (!numV)
-	{	//not enough room for vertices
-		DEBUG_ASSERTCRASH( numV, ("W3DBridge::GetIndicesNVertices(). Vertex overflow.\n") );
-		return;
-	}
 	numI = getModelIndices( destination_ib, *curIndexP, *curVertexP, m_leftMesh);
-	if (!numI)
-	{	//not enough room for indices
-		DEBUG_ASSERTCRASH( numI, ("W3DBridge::GetIndicesNVertices(). Index overflow.\n") );
-		return;
-	}
 	*curIndexP += numI;
 	*curVertexP += numV;
 	m_numVertex += numV;
@@ -605,17 +585,7 @@ void W3DBridge::getIndicesNVertices(UnsignedShort *destination_ib, VertexFormatX
 	for (i=0; i<numSpans; i++) {
 		numV = getModelVertices(destination_vb, *curVertexP, xOffset+i*spanLength, vec, vecNormal, vecZ, m_start, 
 			m_sectionMtx, m_sectionMesh, pLightsIterator);
-		if (!numV)
-		{	//not enough room for vertices
-			DEBUG_ASSERTCRASH( numV, ("W3DBridge::GetIndicesNVertices(). Vertex overflow.\n") );
-			return;
-		}
 		numI = getModelIndices( destination_ib, *curIndexP, *curVertexP, m_sectionMesh);
-		if (!numI)
-		{	//not enough room for indices
-			DEBUG_ASSERTCRASH( numI, ("W3DBridge::GetIndicesNVertices(). Index overflow.\n") );
-			return;
-		}
 		*curIndexP += numI;
 		*curVertexP += numV;
 		m_numVertex += numV;
@@ -625,17 +595,7 @@ void W3DBridge::getIndicesNVertices(UnsignedShort *destination_ib, VertexFormatX
 	// Draw the right end.
 	numV = getModelVertices(destination_vb, *curVertexP, xOffset+(numSpans-1)*spanLength, vec, vecNormal, vecZ, m_start,
 		m_rightMtx, m_rightMesh, pLightsIterator);
-	if (!numV)
-	{	//not enough room for vertices
-		DEBUG_ASSERTCRASH( numV, ("W3DBridge::GetIndicesNVertices(). Vertex overflow.\n") );
-		return;
-	}
 	numI = getModelIndices( destination_ib, *curIndexP, *curVertexP, m_rightMesh);
-	if (!numI)
-	{	//not enough room for indices
-		DEBUG_ASSERTCRASH( numI, ("W3DBridge::GetIndicesNVertices(). Index overflow.\n") );
-		return;
-	}
 	*curIndexP += numI;
 	*curVertexP += numV;
 	m_numVertex += numV;

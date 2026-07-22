@@ -3411,3 +3411,4 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?winSetFont@GameWindow@@UAEXPAVGameFont@@@Z,0x0004047B
 ?GadgetListBoxSetBottomVisibleEntry@@YAXPAVGameWindow@@H@Z,0x004B8550
 ?getProjectileLaunchOffset@Drawable@@QBE_NW4WeaponSlotType@@HPAVMatrix3D@@W4WhichTurretType@@PAUCoord3D@@3@Z,0x0041B9C0
+?getModelIndices@W3DBridge@@IAEHPAGHHPAVMeshClass@@@Z,0x0003881B

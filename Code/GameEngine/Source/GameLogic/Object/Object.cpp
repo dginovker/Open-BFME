@@ -3710,7 +3710,6 @@ void Object::friend_adjustPowerForPlayer( Bool incoming )
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 //-------------------------------------------------------------------------------------------------
-// ?onDisabledEdge@Object@@ present-unmatched
 void Object::onDisabledEdge(Bool becomingDisabled)
 {
 	// rip through the behavior modules and call the onDisabledEdge for any modules that care

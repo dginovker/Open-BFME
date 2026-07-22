@@ -1784,9 +1784,21 @@ W3DVolumetricShadow::~W3DVolumetricShadow( void )
 
 }  // end ~W3DVolumetricShadow
 
-// ?SetGeometry@W3DVolumetricShadow@@IAEXPAVW3DShadowGeometry@@@Z present-unmatched
 void W3DVolumetricShadow::SetGeometry( W3DShadowGeometry *geometry )
 {
+	struct BFMEShadowGeometryMesh
+	{
+		char m_beforeNumVerts[0x28];
+		Int m_numVerts;
+		char m_afterNumVerts[0x08];
+	};
+	struct BFMEShadowGeometry
+	{
+		BFMEShadowGeometryMesh m_meshList[MAX_SHADOW_CASTER_MESHES];
+	};
+
+	W3DVolumetricShadow *shadow = (W3DVolumetricShadow *)((char *)this + 0x30);
+	BFMEShadowGeometry *newGeometry = (BFMEShadowGeometry *)geometry;
 
 	Short numPrevVertices = 0;
 	Short numNewVertices = 0;
@@ -1801,12 +1813,12 @@ void W3DVolumetricShadow::SetGeometry( W3DShadowGeometry *geometry )
 
 	for (Int i=0; i<MAX_SHADOW_CASTER_MESHES; i++)
 	{
-		if( m_geometry )
-			numPrevVertices = m_geometry->getMesh(i)->GetNumVertex();
+		if( shadow->m_geometry )
+			numPrevVertices = ((BFMEShadowGeometry *)shadow->m_geometry)->m_meshList[i].m_numVerts;
 
 		// now many vertices does our new geometry have
 		if( geometry )
-			numNewVertices = geometry->getMesh(i)->GetNumVertex();
+			numNewVertices = newGeometry->m_meshList[i].m_numVerts;
 
 		//
 		// TODO: Colin, may want to change this in the future
@@ -1816,15 +1828,15 @@ void W3DVolumetricShadow::SetGeometry( W3DShadowGeometry *geometry )
 		if( numNewVertices > numPrevVertices )
 		{
 
-			deleteSilhouette(i);
-			if( allocateSilhouette(i, numNewVertices ) == FALSE )
+			shadow->deleteSilhouette(i);
+			if( shadow->allocateSilhouette(i, numNewVertices ) == FALSE )
 				return;
 
 		}  // end if
 	}
 
 	// assign the new geometry, possible over an old geometry
-	m_geometry = geometry;
+	shadow->m_geometry = geometry;
 
 }  // end SetGeometry
 

@@ -526,16 +526,26 @@ LocomotorStore::LocomotorStore()
 } 
 
 //-------------------------------------------------------------------------------------------------
-// ??1LocomotorStore@@UAE@XZ present-unmatched
+// Access protected MemoryPoolObject::operator delete without friending the
+// header (friend would force a full-gate header rebuild).
+struct LocomotorTemplateDeleteAccess : LocomotorTemplate
+{
+	static void destroy(LocomotorTemplate *p)
+	{
+		delete static_cast<LocomotorTemplateDeleteAccess *>(p);
+	}
+};
+
 LocomotorStore::~LocomotorStore()
 {
-	// delete all the templates, then clear out the table.
-	LocomotorTemplateMap::iterator it;
-	for (it = m_locomotorTemplates.begin(); it != m_locomotorTemplates.end(); ++it) {
-		it->second->deleteInstance();
+	// Retail: map walk + scalar delete (not deleteInstance); ~map clears nodes.
+	for (LocomotorTemplateMap::iterator it = m_locomotorTemplates.begin();
+	     it != m_locomotorTemplates.end(); ++it)
+	{
+		LocomotorTemplate *loco = it->second;
+		if (loco)
+			LocomotorTemplateDeleteAccess::destroy(loco);
 	}
-
-	m_locomotorTemplates.clear();
 }
 
 //-------------------------------------------------------------------------------------------------

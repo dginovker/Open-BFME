@@ -582,6 +582,9 @@ Bool ProcessAnimateWindowSlideFromTop::updateAnimateWindow( AnimateWindow *animW
 	return FALSE;
 }
 
+// Retail body matched via MASM: Code/masm_dumps/reverseAnimateWindow_ProcessAnimateWindowSlideFromTop_496260.asm
+// (true body 0x496260 via SlideFromTop vtbl slot4; queue 0x4965AC was int3 before unrelated 0x4965B0)
+#if 0
 // ?reverseAnimateWindow@ProcessAnimateWindowSlideFromTop@@UAE_NPAVAnimateWindow@@@Z present-unmatched
 Bool ProcessAnimateWindowSlideFromTop::reverseAnimateWindow( AnimateWindow *animWin )
 {
@@ -638,6 +641,7 @@ Bool ProcessAnimateWindowSlideFromTop::reverseAnimateWindow( AnimateWindow *anim
 	animWin->setVel(vel);
 	return FALSE;
 }
+#endif
 
 //-----------------------------------------------------------------------------
 // ProcessAnimateWindowSlideFromBottom PUBLIC FUNCTIONS ////////////////////////

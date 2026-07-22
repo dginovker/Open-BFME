@@ -1006,7 +1006,6 @@ Real AudioManager::getAudioLengthMS( const AudioEventRTS *event )
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?isMusicAlreadyLoaded@AudioManager@@ present-unmatched
 Bool AudioManager::isMusicAlreadyLoaded(void) const
 {
 	const AudioEventInfo *musicToLoad = NULL;

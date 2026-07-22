@@ -678,7 +678,10 @@ m_nextGroup(NULL)
   Dtor - The script list deletes the rest of the list, but we have to loop & delete
 	sll the script groups in out list.
 */
-// ??1ScriptGroup@@MAE@XZ present-unmatched
+// Matched via Code/masm_dumps/ScriptGroup_dtor.asm @ 0x00352950 (71B).
+// C++ kept for TU completeness; retail BFME body is a 0x10-byte class that frees
+// owned ptrs at +8/+4 (not the ZH m_firstScript/m_nextGroup deleteInstance walk).
+// Queue RVA 0x9F2799 was misplaced inside matched ControlBar ctor @ 0x9F2730.
 ScriptGroup::~ScriptGroup(void) 
 {
 	if (m_firstScript) {

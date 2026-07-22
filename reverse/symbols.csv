@@ -3416,3 +3416,8 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?SignalUIInteraction@@YAXH@Z,0x000348DD
 ?deleteNotificationBox@@YAXXZ,0x000271DD
 ??1SortingNodeStruct@@QAE@XZ,0x0093B200
+?Cull_Box@BFMECameraCullBox@@QBE_NABVAABoxClass@@@Z,0x009330C0,BFME 183B Cull_Box body used by W3DTerrainBackground::updateCenter (not 38B ICF twin)
+?TheGameLODManager@@3PAVGameLODManager@@A,0x012ED5AC,GameLODManager* global
+?TheDisplay@@3PAVDisplay@@A,0x012F1270,Display* global
+?TheWritableGlobalData@@3PAVGlobalData@@A,0x012ED5C8,GlobalData* global
+?Release_Ref@BFMETextureRelease@@QAEXXZ,0x009EB7A0,BFME TextureBaseClass::Release_Ref for updateCenter

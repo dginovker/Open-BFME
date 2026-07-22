@@ -55,12 +55,15 @@
 #include <assetmgr.h>
 #include <texture.h>
 #include "common/GlobalData.h"
+#include "Common/GameLOD.h"
+#include "GameClient/Display.h"
 #include "GameClient/View.h"
 #include "W3DDevice/GameClient/TerrainTex.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/DX8Renderer.h"
 #include "WW3D2/Camera.h"
+#include <math.h>
 
 #ifdef _INTERNAL
 // for occasional debugging...
@@ -91,6 +94,7 @@ const Int PIXELS_PER_GRID = 8; // default tex resolution allocated for each tile
 //=============================================================================
 /** Loads the terrain into the vertex buffer for drawing. */
 //=============================================================================
+// ?setFlip@W3DTerrainBackground@@QAEXPAVWorldHeightMap@@@Z present-unmatched
 void W3DTerrainBackground::setFlip(WorldHeightMap *htMap)
 {
 	if (m_map==NULL) return;
@@ -115,6 +119,7 @@ const Int STEP=4;
 The coordinates in partialRange are map cell coordinates, relative to the entire map.
 The vertex coordinates and texture coordinates, as well as static lighting are updated.
 */
+// ?doPartialUpdate@W3DTerrainBackground@@QAEXABUIRegion2D@@PAVWorldHeightMap@@_N@Z present-unmatched
 void W3DTerrainBackground::doPartialUpdate(const IRegion2D &partialRange, WorldHeightMap *htMap, Bool doTextures )
 {	
 	if (m_map==NULL) return;
@@ -240,6 +245,7 @@ void W3DTerrainBackground::doPartialUpdate(const IRegion2D &partialRange, WorldH
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
+// ?advanceLeft@W3DTerrainBackground@@IAE_NAAUICoord2D@@HHH@Z present-unmatched
 Bool W3DTerrainBackground::advanceLeft(ICoord2D &left, Int xOffset, Int yOffset, Int width)
 {
 	while (left.y < yOffset+width) {
@@ -262,6 +268,7 @@ Bool W3DTerrainBackground::advanceLeft(ICoord2D &left, Int xOffset, Int yOffset,
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
+// ?advanceRight@W3DTerrainBackground@@IAE_NAAUICoord2D@@HHH@Z present-unmatched
 Bool W3DTerrainBackground::advanceRight(ICoord2D &right, Int xOffset, Int yOffset, Int width)
 {
 	while (right.x < xOffset+width) {
@@ -284,6 +291,7 @@ Bool W3DTerrainBackground::advanceRight(ICoord2D &right, Int xOffset, Int yOffse
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
+// ?fillVBRecursive@W3DTerrainBackground@@IAEXPAGHHH0AAH@Z present-unmatched
 void W3DTerrainBackground::fillVBRecursive(UnsignedShort *ib, Int xOffset, Int yOffset, 
 																					 Int width, UnsignedShort *ndx, Int &curIndex)
 {
@@ -421,6 +429,7 @@ void W3DTerrainBackground::fillVBRecursive(UnsignedShort *ib, Int xOffset, Int y
 //=============================================================================
 /** Fills in vertex & index buffers.
 */
+// ?setFlipRecursive@W3DTerrainBackground@@IAEXHHH@Z present-unmatched
 void W3DTerrainBackground::setFlipRecursive(Int xOffset, Int yOffset, Int width)
 {
 	
@@ -472,6 +481,7 @@ void W3DTerrainBackground::setFlipRecursive(Int xOffset, Int yOffset, Int width)
 The coordinates in partialRange are map cell coordinates, relative to the entire map.
 The vertex coordinates and texture coordinates, as well as static lighting are updated.
 */
+// ?doTesselatedUpdate@W3DTerrainBackground@@QAEXABUIRegion2D@@PAVWorldHeightMap@@_N@Z present-unmatched
 void W3DTerrainBackground::doTesselatedUpdate(const IRegion2D &partialRange, WorldHeightMap *htMap, Bool doTextures )
 {	
 	if (m_map==NULL) return;
@@ -605,6 +615,7 @@ void W3DTerrainBackground::doTesselatedUpdate(const IRegion2D &partialRange, Wor
 //=============================================================================
 /** Destructor. Releases w3d assets. */
 //=============================================================================
+// ??1W3DTerrainBackground@@QAE@XZ present-unmatched
 W3DTerrainBackground::~W3DTerrainBackground(void)
 {
 	freeTerrainBuffers();
@@ -619,6 +630,7 @@ W3DTerrainBackground::~W3DTerrainBackground(void)
 /** Constructor. Sets m_initialized to true if it finds the w3d models it needs
 for the bibs. */
 //=============================================================================
+// ??0W3DTerrainBackground@@QAE@XZ present-unmatched
 W3DTerrainBackground::W3DTerrainBackground(void):
 m_vertexTerrain(NULL),
 m_vertexTerrainSize(0),
@@ -638,6 +650,7 @@ m_texMultiplier(TEX1X)
 //=============================================================================
 /** Frees the index and vertex buffers. */
 //=============================================================================
+// ?freeTerrainBuffers@W3DTerrainBackground@@IAEXXZ present-unmatched
 void W3DTerrainBackground::freeTerrainBuffers(void)
 {
 	REF_PTR_RELEASE(m_vertexTerrain);
@@ -654,6 +667,7 @@ void W3DTerrainBackground::freeTerrainBuffers(void)
 //=============================================================================
 /** Allocates the index and vertex buffers. */
 //=============================================================================
+// ?allocateTerrainBuffers@W3DTerrainBackground@@QAEXPAVWorldHeightMap@@HHH@Z present-unmatched
 void W3DTerrainBackground::allocateTerrainBuffers(WorldHeightMap *htMap, Int xOrigin, Int yOrigin, Int width)
 {
 	if (htMap==NULL) return;
@@ -668,60 +682,140 @@ void W3DTerrainBackground::allocateTerrainBuffers(WorldHeightMap *htMap, Int xOr
 }
 
 
+// Pin target for BFME's 183B CameraClass::Cull_Box at 0x9330C0 (not the 38B ICF twin).
+struct BFMECameraCullBox {
+	bool Cull_Box(const AABoxClass & box) const;
+};
+
+// Pin target for BFME TextureBaseClass::Release_Ref at 0x9EB7A0 (not RefCountClass inline).
+struct BFMETextureRelease {
+	void Release_Ref(void);
+};
+
+// BFME Display vtable slot 0x2c (int getter used as resolution scale).
+struct BFMEDisplayWidthVtable {
+	virtual void _slot0() = 0;
+	virtual void _slot1() = 0;
+	virtual void _slot2() = 0;
+	virtual void _slot3() = 0;
+	virtual void _slot4() = 0;
+	virtual void _slot5() = 0;
+	virtual void _slot6() = 0;
+	virtual void _slot7() = 0;
+	virtual void _slot8() = 0;
+	virtual void _slot9() = 0;
+	virtual void _slot10() = 0;
+	virtual UnsignedInt getScaleInt(void) = 0;
+};
+
+// BFME layout overlay for W3DTerrainBackground (see updateCenter).
+struct BFMETerrainBgLayout {
+	Int cullStatus;
+	AABoxClass bounds;
+	unsigned int _pad_1c[5];
+	TerrainTextureClass *tex;
+	Int texMultiplier;
+	unsigned int _pad_38[7];
+	Real minDist;
+};
+
 //=============================================================================
 // W3DTerrainBackground::updateCenter
 //=============================================================================
-/** Updates the culling status. */
+/** Updates the culling status. BFME retail body @ 0x728D30 (874B). */
 //=============================================================================
 void W3DTerrainBackground::updateCenter(CameraClass *camera)
 {
-	if (camera->Cull_Box(m_bounds)) {
-		m_cullStatus = CULL_STATUS_INVISIBLE;
-	}	else {
-		m_cullStatus = CULL_STATUS_VISIBLE;
-	}
+	BFMETerrainBgLayout *self = (BFMETerrainBgLayout *)this;
 
-	if (m_cullStatus==CULL_STATUS_INVISIBLE) {
-		REF_PTR_RELEASE(m_terrainTexture2X);
-		REF_PTR_RELEASE(m_terrainTexture4X);
-		m_texMultiplier = TEX1X;
+	if (((BFMECameraCullBox *)camera)->Cull_Box(self->bounds)) {
+		// Status store must precede texture load; data dependency blocks MSVC reorder.
+		self->cullStatus = CULL_STATUS_INVISIBLE;
+		TerrainTextureClass *tex =
+			*(TerrainTextureClass **)((char *)self + 0x30 + (self->cullStatus - CULL_STATUS_INVISIBLE));
+		if (tex != NULL) {
+			((BFMETextureRelease *)tex)->Release_Ref();
+			self->tex = NULL;
+		}
+		self->texMultiplier = TEX1X;
 		return;
 	}
+
+	self->cullStatus = CULL_STATUS_VISIBLE;
+
+	// TheWritableGlobalData+0x68: when set, force TEX1X and skip distance LOD.
+	if (*(const Int *)((const char *)TheWritableGlobalData + 0x68) != 0) {
+		self->texMultiplier = TEX1X;
+		return;
+	}
+
+	// TheGameLODManager @ 0x12ED5AC: field +0x16C4 <= 2 disables hi-res path.
+	Bool allowHiRes = TRUE;
+	if (TheGameLODManager != NULL && *(const Int *)((const char *)TheGameLODManager + 0x16C4) <= 2) {
+		allowHiRes = FALSE;
+	}
+
 	Vector3 cameraPos = camera->Get_Position();
-	const Real mipDistance = 310;
-	const Real mipSlop = 40;
-	const Real mip4xDistanceSqr = sqr(mipDistance+mipSlop);
-	const Real mip2xDistanceSqr = sqr(2*mipDistance+mipSlop);
-	const Real mipLODDistanceSqr = sqr(4*mipDistance+mipSlop);
-	Real minDistSqr = 2*mip2xDistanceSqr;
+	Real minDistSqr = -1.0f;
+	// Retail: outer i over X (Extent+0x10), inner j over Y (Extent+0x14), k over Z unrolled.
 	Int i, j, k;
-	for (i=-1; i<2; i++) {
-		for (j=-1; j<2; j++) {
-			for (k=-1; k<2; k++) {
-				Vector3 corner = m_bounds.Center;
-				corner.X += m_bounds.Extent.X * i;
-				corner.Y += m_bounds.Extent.Y * j;
-				corner.Z += m_bounds.Extent.Z * k;
-				Real distSqr = (cameraPos-corner).Length2();
-				if (distSqr<minDistSqr) minDistSqr = distSqr;
+	for (i = -1; i < 2; i++) {
+		for (j = -1; j < 2; j++) {
+			for (k = -1; k < 2; k++) {
+				Vector3 corner = self->bounds.Center;
+				corner.X += self->bounds.Extent.X * (Real)i;
+				corner.Y += self->bounds.Extent.Y * (Real)j;
+				corner.Z += self->bounds.Extent.Z * (Real)k;
+				Real distSqr = (cameraPos - corner).Length2();
+				if (distSqr < minDistSqr || minDistSqr < 0.0f) {
+					minDistSqr = distSqr;
+				}
 			}
 		}
 	}
-	m_texMultiplier = TEX1X;
-	if (minDistSqr<mip4xDistanceSqr) {
-		m_texMultiplier = TEX4X;
-	} else if (minDistSqr<mip2xDistanceSqr) {
-		m_texMultiplier = TEX2X;
-	} else {
-		REF_PTR_RELEASE(m_terrainTexture4X);
-		REF_PTR_RELEASE(m_terrainTexture2X);
-		Int LOD = 0; 
-		if (minDistSqr>mipLODDistanceSqr) {
-			LOD = 1;
-		}
-		m_terrainTexture->setLOD(LOD);
+
+	// Base mip distances: 260 / 140, with option flags at GlobalData+0x46/+0x47.
+	Real mipFar = 260.0f;
+	Real mipNear = 140.0f;
+	const char *gd = (const char *)TheWritableGlobalData;
+	if (gd[0x47]) {
+		mipNear = 330.0f;
+	} else if (gd[0x46]) {
+		mipNear = 170.0f;
 	}
 
+	// TheDisplay vtable[0x2c/4]: BFME resolution scale (unsigned), * (1/1024), clamp [0.5, 2.5].
+	if (TheDisplay != NULL) {
+		UnsignedInt scaleI = ((BFMEDisplayWidthVtable *)TheDisplay)->getScaleInt();
+		Real scale = (Real)scaleI * (1.0f / 1024.0f);
+		if (scale < 0.5f) {
+			scale = 0.5f;
+		} else if (scale > 2.5f) {
+			scale = 2.5f;
+		}
+		mipFar = 260.0f * scale;
+		mipNear = scale * mipNear;
+	}
+
+	// Retail interleaves threshold = mipNear+25+mipFar with texMultiplier store and sqrt.
+	self->texMultiplier = TEX1X;
+	{
+		Real threshold = mipNear + 25.0f;
+		threshold = threshold + mipFar;
+		self->minDist = (Real)sqrt((double)minDistSqr);
+		if (allowHiRes) {
+			if (minDistSqr < threshold * threshold ||
+					*(const Int *)((const char *)TheWritableGlobalData + 0xecc) != 0) {
+				self->texMultiplier = TEX4X;
+				return;
+			}
+		}
+	}
+
+	if (self->tex != NULL) {
+		((BFMETextureRelease *)self->tex)->Release_Ref();
+		self->tex = NULL;
+	}
 }
 
 //=============================================================================
@@ -729,6 +823,7 @@ void W3DTerrainBackground::updateCenter(CameraClass *camera)
 //=============================================================================
 /** Updates the culling status. */
 //=============================================================================
+// ?updateTexture@W3DTerrainBackground@@QAEXXZ present-unmatched
 void W3DTerrainBackground::updateTexture(void)
 {
 	if (m_cullStatus==CULL_STATUS_INVISIBLE) {
@@ -762,6 +857,7 @@ void W3DTerrainBackground::updateTexture(void)
 // W3DTerrainBackground::renderTerrain
 //=============================================================================
 //=============================================================================
+// ?drawVisiblePolys@W3DTerrainBackground@@QAEXAAVRenderInfoClass@@_N@Z present-unmatched
 void W3DTerrainBackground::drawVisiblePolys(RenderInfoClass & rinfo, Bool disableTextures)
 {
 #if 1

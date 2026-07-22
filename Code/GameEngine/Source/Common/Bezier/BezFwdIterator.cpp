@@ -29,7 +29,6 @@
 #include "Common/BezFwdIterator.h"
 
 //-------------------------------------------------------------------------------------------------
-// ??0BezFwdIterator@@ present-unmatched
 BezFwdIterator::BezFwdIterator(): mStep(0), mStepsDesired(0)
 { 
 	// Added by Sadullah Nader
@@ -40,8 +39,8 @@ BezFwdIterator::BezFwdIterator(): mStep(0), mStepsDesired(0)
 } 
 
 //-------------------------------------------------------------------------------------------------
-// ??0BezFwdIterator@@ present-unmatched
 BezFwdIterator::BezFwdIterator(Int stepsDesired, const BezierSegment *bezSeg)
+	: mStep(0)
 {
 	// Added by Sadullah Nader
 	mCurrPoint.zero();

@@ -1536,7 +1536,6 @@ void CountUpTransition::init( GameWindow *win )
 	GadgetStaticTextSetText(m_win, currVal);
 }
 
-// ?update@CountUpTransition@@UAEXH@Z present-unmatched
 void CountUpTransition::update( Int frame )
 {
 	m_drawState = -1;

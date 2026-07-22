@@ -214,7 +214,6 @@ Bool ActionManager::canGetRepairedAt( const Object *obj, const Object *repairDes
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
 // note that "dest" is typically a building...
-// ?canTransferSuppliesAt@ActionManager@@ present-unmatched
 Bool ActionManager::canTransferSuppliesAt( const Object *obj, const Object *transferDest ) 
 {
 

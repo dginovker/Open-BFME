@@ -159,19 +159,10 @@ HeaderTemplate *HeaderTemplateManager::findHeaderTemplate( AsciiString name )
 	return NULL;
 }
 
-// ?newHeaderTemplate@HeaderTemplateManager@@QAEPAVHeaderTemplate@@VAsciiString@@@Z present-unmatched
-HeaderTemplate *HeaderTemplateManager::newHeaderTemplate( AsciiString name )
-{
-	HeaderTemplate *newHTemplate = NEW HeaderTemplate;
-	DEBUG_ASSERTCRASH(newHTemplate, ("Unable to create a new Header Template in HeaderTemplateManager::newHeaderTemplate"));
-	if(!newHTemplate)
-		return NULL;
-	
-	newHTemplate->m_name = name;
-	m_headerTemplateList.push_front(newHTemplate);
-	return newHTemplate;
-
-}
+// ?newHeaderTemplate@HeaderTemplateManager@@QAEPAVHeaderTemplate@@VAsciiString@@@Z body in
+// Code/masm_dumps/HeaderTemplateManager_newHeaderTemplate_48CAD0.asm (0x0048CAD0/204).
+// Queue 0x00B026CE was INSIDE scalar-deleting dtor @ 0xB026C0; true body via
+// parseHeaderTemplateDefinition call ILT 0x470E6. C++ blocked by STL push_front shape.
 
 // ?getFontFromTemplate@HeaderTemplateManager@@QAEPAVGameFont@@VAsciiString@@@Z present-unmatched
 GameFont *HeaderTemplateManager::getFontFromTemplate( AsciiString name )

@@ -30,11 +30,12 @@ while IFS= read -r path; do
 done < <(git diff --cached --name-only --diff-filter=ACMRT)
 
 # Placement: game sources live only under Code/ at the official BFME path
-# (plus reference/shims/ for shim headers and tools/tests/ for fixtures).
+# (plus reference/shims/ for shim headers, reference/CnC_Generals_Zero_Hour/ for
+# restoring vendored EA reference source, and tools/tests/ for fixtures).
 # No src/, no invented layouts, no sources at the repo root.
 while IFS= read -r path; do
     case "$path" in
-        Code/GameEngine/*|Code/GameEngineDevice/*|Code/Libraries/*|Code/masm_dumps/*|reference/shims/*|tools/tests/*) ;;
+        Code/GameEngine/*|Code/GameEngineDevice/*|Code/Libraries/*|Code/masm_dumps/*|reference/shims/*|reference/CnC_Generals_Zero_Hour/*|tools/tests/*) ;;
         *) fail "source added outside official tree: $path — see AGENTS.md 'File placement'" ;;
     esac
 done < <(git diff --cached --name-only --diff-filter=A | grep -E '\.(cpp|c|h|hpp|asm)$' || true)

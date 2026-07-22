@@ -1886,6 +1886,10 @@ static GameWindow *createGadget( char *type,
 
 // createWindow ===============================================================
 // Create a user window or a gadget depending on the 'type' parm
+// ?createWindow@@YAPAVGameWindow@@PADHHHHHHPAVWinInstanceData@@PAXP6A?AW4WindowMsgHandledType@@PAV1@III@Z4P6AX31I@ZP6AX31@Z@Z
+// Body in Code/masm_dumps/GameWindowManagerScript_createWindow.asm
+// (exact 320B retail @ 0x004874A0; queue 0x009D2256 was int3/wrong region).
+// C++ kept for static callees in this TU; matched row is the MASM dump.
 //=============================================================================
 static GameWindow *createWindow( char *type, 
 																 Int id, 

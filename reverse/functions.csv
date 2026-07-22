@@ -13220,3 +13220,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?InitBuddyControls@@YAXH@Z,,0x004EA9D0,776,Code/masm_dumps/InitBuddyControls.asm,matched,Exact MASM; true body 0x4EA9D0 size 776 (queue 0x8CC0A misplaced). Identity: Diplomacy/WOLBuddy TextEntryChat string xrefs + SEH. C++ blocked by AsciiString +8 payload/regalloc (prior attempt).
 ?moveRowsDown@@YAHPAU_ListboxData@@H@Z,,0x004B6C30,212,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,
 ?Deinit@SortingRendererClass@@SAXXZ,,0x0093BD60,151,Code/Libraries/Source/WWVegas/WW3D2/sortingrenderer.cpp,matched,
+?findLocomotor@LocomotorSet@@QAEPAVLocomotor@@H@Z,,0x001B5CF0,73,Code/masm_dumps/LocomotorSet_findLocomotor.asm,matched,exact 73B MASM; true body 0x1B5CF0 (queue 0x77B169 mid-cleanup); m_template@Locomotor+4 getFinalOverride@0x22BB surfaces+0x10

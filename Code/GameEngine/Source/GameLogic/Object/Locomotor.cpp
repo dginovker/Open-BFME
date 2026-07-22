@@ -2626,16 +2626,5 @@ void LocomotorSet::addLocomotor(const LocomotorTemplate* lt)
 }
 
 //-------------------------------------------------------------------------------------------------
-// ?findLocomotor@LocomotorSet@@QAEPAVLocomotor@@H@Z present-unmatched
-Locomotor* LocomotorSet::findLocomotor(LocomotorSurfaceTypeMask t)
-{
-	for (LocomotorVector::iterator it = m_locomotors.begin(); it != m_locomotors.end(); ++it)
-	{
-		Locomotor* curLocomotor = *it;
-		if (curLocomotor && (curLocomotor->getLegalSurfaces() & t))
-			return curLocomotor;
-	}
-	return NULL;
-}
-
-
+// findLocomotor: matched via Code/masm_dumps/LocomotorSet_findLocomotor.asm
+// (retail 0x001B5CF0/73B; m_template@+4 blocks ZH C++ layout - see asm notes).

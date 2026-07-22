@@ -1586,7 +1586,8 @@ Int ThingTemplate::calcCostToBuild( const Player* player) const
 	* that retrieve template data values use the get() wrappers, which *DO* pay
 	* attention to the override values */
 //-------------------------------------------------------------------------------------------------
-// ?calcTimeToBuild@ThingTemplate@@QBEHPBVPlayer@@@Z present-unmatched
+// Matched via Code/masm_dumps/ThingTemplate_calcTimeToBuild.asm @ 0x00144AB0 (619B).
+// BFME body is ret-8 (Player* + Int override); ZH 1-arg shape below is not retail.
 Int ThingTemplate::calcTimeToBuild( const Player* player) const
 {
 	Int buildTime = getBuildTime() * LOGICFRAMES_PER_SECOND;

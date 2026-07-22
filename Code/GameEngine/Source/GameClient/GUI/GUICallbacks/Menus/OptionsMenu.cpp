@@ -438,21 +438,8 @@ UnsignedShort OptionPreferences::getFirewallPortOverride()
 	return override;
 }
 
-// ?getFirewallNeedToRefresh@OptionPreferences@@QAE_NXZ present-unmatched
-Bool OptionPreferences::getFirewallNeedToRefresh()
-{
-	OptionPreferences::const_iterator it = find("FirewallNeedToRefresh");
-	if (it == end()) {
-		return FALSE;
-	}
-
-	Bool retval = FALSE;
-	AsciiString str = it->second;
-	if (str.compareNoCase("TRUE") == 0) {
-		retval = TRUE;
-	}
-	return retval;
-}
+// ?getFirewallNeedToRefresh@OptionPreferences@@QAE_NXZ
+// Body in Code/masm_dumps/_getFirewallNeedToRefresh_OptionPreferences__QAE_NXZ_90D00.asm (exact 113B retail).
 
 // ?getPreferred3DProvider@OptionPreferences@@QAE?AVAsciiString@@XZ present-unmatched
 AsciiString OptionPreferences::getPreferred3DProvider(void)

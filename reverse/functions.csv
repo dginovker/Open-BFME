@@ -13252,3 +13252,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?findMessage@NetCommandList@@QAEPAVNetCommandRef@@GE@Z,,0x00672F50,78,Code/GameEngine/Source/GameNetwork/NetCommandList.cpp,matched,
 ?update@AIFollowWaypointPathExactState@@UAE?AW4StateReturnType@@XZ,,0x0017AE10,35,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,
 ?findAmountToSteal@CashHackSpecialPower@@IBEHXZ,,0x00258590,78,Code/masm_dumps/CashHackSpecialPower_findAmountToSteal.asm,matched,Exact 78B @ 0x00258590 MASM; queue 0x76E9E3 misplaced; thunk 0x2AABD from doSpecialPowerAtObject; CashHack cluster
+?findMessage@NetCommandList@@QAEPAVNetCommandRef@@PAVNetCommandMsg@@@Z,,0x00673500,46,Code/GameEngine/Source/GameNetwork/NetCommandList_findMessage_msg.asm,matched,MASM exact 46B @ 0x673500; queue 0x6734FE was int3 pad; de-pooled NetCommandRef cmd@0/next@4; isEqual via ILT 0x8963

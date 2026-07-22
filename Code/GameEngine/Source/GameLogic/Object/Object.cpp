@@ -5962,10 +5962,17 @@ Int Object::getNumConsecutiveShotsFiredAtTarget( const Object *victim ) const
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?getSingleLogicalBonePosition@Object@@QBE_NPBDPAUCoord3D@@PAVMatrix3D@@@Z present-unmatched
+// BFME Drawable::getPristineBonePositions is 6 stack args (ret 0x18); ZH is 5 (ret 0x14).
+// Trailing Int is 0 at this call site. Local thiscall shape avoids Drawable.h blast radius.
+struct BFMEDrawableBoneQuery {
+	Int getPristineBonePositions(const char* boneNamePrefix, Int startIndex,
+		Coord3D* positions, Matrix3D* transforms, Int maxBones, Int extra) const;
+};
 Bool Object::getSingleLogicalBonePosition(const char* boneName, Coord3D* position, Matrix3D* transform) const
 {
-	if (m_drawable && m_drawable->getPristineBonePositions( boneName, 0, position, transform, 1 ) == 1 )
+	if (m_drawable &&
+		reinterpret_cast<const BFMEDrawableBoneQuery*>(m_drawable)->getPristineBonePositions(
+			boneName, 0, position, transform, 1, 0) == 1)
 	{
 		m_drawable->convertBonePosToWorldPos( position, transform, position, transform );
 		return true;

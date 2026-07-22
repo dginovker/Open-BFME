@@ -2909,35 +2909,10 @@ void ScriptActions::doNamedFlash(const AsciiString& unitName, Int timeInSeconds,
 //-------------------------------------------------------------------------------------------------
 /** doTeamFlash */
 //-------------------------------------------------------------------------------------------------
-// ?doTeamFlash@ScriptActions@@IAEXABVAsciiString@@HPBURGBColor@@@Z present-unmatched
-void ScriptActions::doTeamFlash(const AsciiString& teamName, Int timeInSeconds, const RGBColor *color)
-{
-	Team *team = TheScriptEngine->getTeamNamed( teamName );
-	if (team == NULL || !team->hasAnyObjects())
-		return;
-
-	DLINK_ITERATOR<Object> iter = team->iterate_TeamMemberList();
-
-	while( !iter.done() ) {
-		Object *nextObj = iter.cur();
-		Object *obj = nextObj;
-		if (!obj) {
-			break;
-		}
-
-		iter.advance();
-		Drawable *draw = obj->getDrawable();
-		if( !draw )
-			break;
-		Int frames = LOGICFRAMES_PER_SECOND * timeInSeconds;
-
-		Int count = frames / DRAWABLE_FRAMES_PER_FLASH;
-		Color flashy = (color == NULL) ? obj->getIndicatorColor() : color->getAsInt();
-		draw->setFlashColor( flashy );
-		draw->setFlashCount( count );
-	}
-
-}
+// ?doTeamFlash@ScriptActions@@IAEXABVAsciiString@@HPBURGBColor@@@Z
+// Body in ScriptActions_doTeamFlash.asm (exact 282B retail @ 0x2F3E90).
+// Queue RVA 0x933119 was INSIDE mid-fn x87 (misplaced drift); true body sits
+// between doTeamDecreasePriority and doTeamRadarCreateEvent.
 
 #define ARBITRARY_BUFFER_SIZE	128
 //-------------------------------------------------------------------------------------------------

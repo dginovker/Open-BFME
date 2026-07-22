@@ -2864,7 +2864,6 @@ void AIPlayer::doTeamBuilding( void )
 /**
  * See if it is time to start another upgrade or skill building.
  */
-// ?doUpgradesAndSkills@AIPlayer@@MAEXXZ present-unmatched
 void AIPlayer::doUpgradesAndSkills( void )
 {
 	if (TheGameLogic->getFrame() < 2) {

@@ -1746,7 +1746,6 @@ void Condition::WriteConditionDataChunk(DataChunkOutput &chunkWriter, Condition	
 *	Input: DataChunkInput 
 *		
 */
-// ?ParseConditionDataChunk@Condition@@SA_NAAVDataChunkInput@@PAUDataChunkInfo@@PAX@Z present-unmatched
 Bool Condition::ParseConditionDataChunk(DataChunkInput &file, DataChunkInfo *info, void *userData)
 {
 	Condition	*pCondition = newInstance(Condition);

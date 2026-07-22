@@ -85,14 +85,11 @@ W3DStatusCircle::~W3DStatusCircle(void)
 	freeMapResources();
 }
 
-// ??0W3DStatusCircle@@ present-unmatched
-W3DStatusCircle::W3DStatusCircle(void)
-{
-	m_indexBuffer=NULL;
-	m_vertexMaterialClass=NULL;
-	m_vertexBufferCircle=NULL;
-	m_vertexBufferScreen=NULL;
-}
+// ??0W3DStatusCircle@@QAE@XZ
+// Body in W3DStatusCircle_ctor.asm (exact 90B retail @ 0x00726000).
+// Queue 0x0098914C was misplaced (inside unrelated x87 math). True body is
+// the only non-dtor store of vtbl 0x01121018; C++ blocked by ShaderClass
+// member-default (Reset→0x8441b) vs retail 4-dword shader init shape.
 
 
 // ?Cast_Ray@W3DStatusCircle@@UAE_NAAVRayCollisionTestClass@@@Z present-unmatched

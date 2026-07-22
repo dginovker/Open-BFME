@@ -1,0 +1,117 @@
+.386
+.model flat
+
+; ?drawContained@Drawable@@AAEXPBUIRegion2D@@@Z
+; Exact 833 retail bytes @ 0x00414E40 (true body; queue 0x0076E986 was INSIDE FUN_0076E7F0 W3DModelDraw asset-error path)
+; BFME 0-arg body: container pips green/blue; region via Drawable+0x3C4; images 0x12F12E4/E8; after drawAmmo@0x414BE0 in icon switch case1
+_TEXT SEGMENT
+public ?drawContained@Drawable@@AAEXPBUIRegion2D@@@Z
+?drawContained@Drawable@@AAEXPBUIRegion2D@@@Z PROC
+    db 83h,0ECh,44h,53h,56h,8Bh,0D9h,57h
+    db 8Bh,0BBh,0FCh,00h,00h,00h,8Bh,0B7h
+    db 0FCh,01h,00h,00h,85h,0F6h,89h,5Ch
+    db 24h,34h,0Fh,84h,1Ah,03h,00h,00h
+    db 0A1h,0C8h,0D5h,2Eh,01h,8Ah,88h,8Dh
+    db 0Ah,00h,00h,84h,0C9h,0Fh,84h,07h
+    db 03h,00h,00h,8Ah,83h,0ACh,03h,00h
+    db 00h,84h,0C0h,55h,75h,24h,8Bh,0Dh
+    db 8Ch,14h,2Fh,01h,85h,0C9h,0Fh,84h
+    db 0EDh,02h,00h,00h,8Bh,11h,8Bh,0ABh
+    db 00h,01h,00h,00h,0FFh,92h,4Ch,01h
+    db 00h,00h,3Bh,0C5h,0Fh,85h,0D7h,02h
+    db 00h,00h,0A1h,48h,0D7h,2Eh,01h,8Bh
+    db 68h,0Ch,8Bh,0CFh,0E8h,73h,0B9h,0C0h
+    db 0FFh,3Bh,0C5h,74h,1Bh,8Bh,0Dh,48h
+    db 0D7h,2Eh,01h,8Bh,69h,0Ch,8Bh,16h
+    db 8Bh,0CEh,0FFh,92h,0CCh,00h,00h,00h
+    db 3Bh,0C5h,0Fh,85h,0A9h,02h,00h,00h
+    db 8Bh,06h,8Dh,4Ch,24h,3Ch,51h,8Dh
+    db 54h,24h,2Ch,52h,8Dh,4Ch,24h,34h
+    db 51h,8Dh,54h,24h,3Ch,52h,8Dh,4Ch
+    db 24h,2Ch,51h,8Dh,54h,24h,34h,52h
+    db 8Bh,0CEh,0FFh,90h,3Ch,01h,00h,00h
+    db 84h,0C0h,0Fh,84h,79h,02h,00h,00h
+    db 8Bh,44h,24h,1Ch,85h,0C0h,0Fh,84h
+    db 6Dh,02h,00h,00h,8Bh,2Dh,0E0h,12h
+    db 2Fh,01h,0DBh,45h,24h,0E8h,1Eh,1Fh
+    db 5Eh,00h,0DBh,45h,28h,8Bh,0F0h,0E8h
+    db 14h,1Fh,5Eh,00h,89h,44h,24h,24h
+    db 8Bh,47h,38h,89h,44h,24h,48h,0D9h
+    db 44h,24h,48h,8Bh,4Fh,3Ch,0A1h,0C8h
+    db 0D5h,2Eh,01h,89h,4Ch,24h,4Ch,8Bh
+    db 57h,40h,89h,54h,24h,50h,0D8h,80h
+    db 0CCh,01h,00h,00h,8Dh,8Fh,0ACh,00h
+    db 00h,00h,0D9h,5Ch,24h,48h,0D9h,44h
+    db 24h,4Ch,0D8h,80h,0D0h,01h,00h,00h
+    db 0D9h,5Ch,24h,4Ch,0E8h,97h,90h,46h
+    db 00h,0A1h,0C8h,0D5h,2Eh,01h,0D8h,80h
+    db 0D4h,01h,00h,00h,8Bh,0Dh,00h,16h
+    db 2Fh,01h,8Dh,44h,24h,40h,50h,0D8h
+    db 44h,24h,54h,8Dh,44h,24h,4Ch,50h
+    db 0D9h,5Ch,24h,58h,8Bh,11h,0FFh,92h
+    db 5Ch,01h,00h,00h,85h,0C0h,0Fh,85h
+    db 0DDh,01h,00h,00h,0D9h,87h,0C0h,00h
+    db 00h,00h,8Bh,0Dh,0C8h,0D5h,2Eh,01h
+    db 8Bh,9Bh,0C4h,03h,00h,00h,0D8h,89h
+    db 0E4h,01h,00h,00h,89h,5Ch,24h,10h
+    db 0E8h,7Bh,1Eh,5Eh,00h,8Bh,4Ch,24h
+    db 44h,8Bh,0F8h,8Bh,44h,24h,20h,03h
+    db 0F9h,33h,0EDh,85h,0C0h,89h,7Ch,24h
+    db 18h,0Fh,8Eh,0B4h,00h,00h,00h,8Bh
+    db 54h,24h,24h,8Dh,04h,17h,89h,44h
+    db 24h,14h,3Bh,6Ch,24h,1Ch,8Bh,0Dh
+    db 70h,12h,2Fh,01h,6Ah,02h,7Dh,3Ch
+    db 8Bh,54h,24h,34h,0DBh,44h,24h,18h
+    db 33h,0C0h,3Bh,0EAh,0Fh,9Dh,0C0h,48h
+    db 25h,01h,0FEh,00h,00h,05h,0FFh,00h
+    db 00h,0FFh,50h,8Dh,04h,33h,83h,0ECh
+    db 10h,0D9h,5Ch,24h,0Ch,89h,44h,24h
+    db 4Ch,0DBh,44h,24h,4Ch,0A1h,0E4h,12h
+    db 2Fh,01h,0D9h,5Ch,24h,08h,0DBh,44h
+    db 24h,30h,0EBh,35h,8Bh,44h,24h,18h
+    db 40h,89h,44h,24h,38h,0DBh,44h,24h
+    db 38h,6Ah,0FFh,8Dh,04h,33h,89h,44h
+    db 24h,3Ch,83h,0ECh,10h,0D9h,5Ch,24h
+    db 0Ch,8Dh,47h,01h,0DBh,44h,24h,4Ch
+    db 89h,44h,24h,4Ch,0A1h,0E8h,12h,2Fh
+    db 01h,0D9h,5Ch,24h,08h,0DBh,44h,24h
+    db 4Ch,8Bh,11h,0D9h,5Ch,24h,04h,0DBh
+    db 44h,24h,28h,0D9h,1Ch,24h,50h,0FFh
+    db 92h,0D4h,00h,00h,00h,8Dh,46h,01h
+    db 03h,0D8h,8Bh,44h,24h,20h,45h,3Bh
+    db 0E8h,89h,5Ch,24h,10h,0Fh,8Ch,57h
+    db 0FFh,0FFh,0FFh,8Bh,44h,24h,28h,85h
+    db 0C0h,0Fh,8Eh,0E2h,00h,00h,00h,8Bh
+    db 4Ch,24h,38h,8Bh,99h,0C4h,03h,00h
+    db 00h,8Bh,44h,24h,24h,8Bh,4Ch,24h
+    db 2Ch,8Dh,7Ch,07h,02h,33h,0EDh,85h
+    db 0C9h,89h,5Ch,24h,10h,89h,7Ch,24h
+    db 18h,0Fh,8Eh,0BAh,00h,00h,00h,8Dh
+    db 14h,07h,89h,54h,24h,14h,0EBh,08h
+    db 8Dh,0A4h,24h,00h,00h,00h,00h,90h
+    db 3Bh,6Ch,24h,28h,8Bh,0Dh,70h,12h
+    db 2Fh,01h,6Ah,02h,7Dh,3Ch,8Bh,54h
+    db 24h,40h,0DBh,44h,24h,18h,33h,0C0h
+    db 3Bh,0EAh,0Fh,9Dh,0C0h,48h,25h,01h
+    db 0FEh,00h,00h,05h,0FFh,00h,00h,0FFh
+    db 50h,8Dh,04h,33h,83h,0ECh,10h,0D9h
+    db 5Ch,24h,0Ch,89h,44h,24h,50h,0DBh
+    db 44h,24h,50h,0A1h,0E4h,12h,2Fh,01h
+    db 0D9h,5Ch,24h,08h,0DBh,44h,24h,30h
+    db 0EBh,35h,8Bh,44h,24h,18h,40h,89h
+    db 44h,24h,3Ch,0DBh,44h,24h,3Ch,6Ah
+    db 0FFh,8Dh,04h,33h,89h,44h,24h,40h
+    db 83h,0ECh,10h,0D9h,5Ch,24h,0Ch,8Dh
+    db 47h,01h,0DBh,44h,24h,50h,89h,44h
+    db 24h,50h,0A1h,0E8h,12h,2Fh,01h,0D9h
+    db 5Ch,24h,08h,0DBh,44h,24h,50h,8Bh
+    db 11h,0D9h,5Ch,24h,04h,0DBh,44h,24h
+    db 28h,0D9h,1Ch,24h,50h,0FFh,92h,0D4h
+    db 00h,00h,00h,8Dh,46h,01h,03h,0D8h
+    db 8Bh,44h,24h,2Ch,45h,3Bh,0E8h,89h
+    db 5Ch,24h,10h,0Fh,8Ch,57h,0FFh,0FFh
+    db 0FFh,5Dh,5Fh,5Eh,5Bh,83h,0C4h,44h
+    db 0C3h
+?drawContained@Drawable@@AAEXPBUIRegion2D@@@Z ENDP
+_TEXT ENDS
+END

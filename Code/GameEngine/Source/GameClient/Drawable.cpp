@@ -2968,80 +2968,13 @@ void Drawable::drawAmmo( const IRegion2D *healthBarRegion )
 }
 
 // ------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------
-// ?drawContained@Drawable@@AAEXPBUIRegion2D@@@Z present-unmatched
-void Drawable::drawContained( const IRegion2D *healthBarRegion )
-{
-	const Object *obj = getObject();			
+// ?drawContained@Drawable@@AAEXPBUIRegion2D@@@Z
+// Body in Drawable_drawContained.asm (exact 833B retail @ 0x00414E40).
+// Keep _List_iterator_base::operator!= COMDAT in this TU (was only referenced by the
+// old C++ drawContained body; 22B matched at 0x0007F900).
+bool (_STL::_List_iterator_base::*_Drawable_Force_List_iterator_ne)(
+	const _STL::_List_iterator_base &) const = &_STL::_List_iterator_base::operator!=;
 
-	ContainModuleInterface* container = obj->getContain();
-	if (!container)
-		return;
-
-	if (!(
-				TheGlobalData->m_showObjectHealth && 
-				(isSelected() || (TheInGameUI && (TheInGameUI->getMousedOverDrawableID() == getID()))) &&
-				obj->getControllingPlayer() == ThePlayerList->getLocalPlayer()
-			))
-		return;
-
-	Int numTotal;
-	Int numFull;
-	if (!container->getContainerPipsToShow(numTotal, numFull))
-		return;
-
-	// if empty, don't show nothin'
-	if (numFull == 0)
-		return;
-
-	Int numInfantry = 0;
-	const ContainedItemsList* contained = container->getContainedItemsList();
-	if (contained)
-	{
-		for (ContainedItemsList::const_iterator it = contained->begin(); it != contained->end(); ++it)
-		{
-			if ((*it)->isKindOf(KINDOF_INFANTRY))
-				++numInfantry;
-		}
-	}
-
-#ifdef SCALE_ICONS_WITH_ZOOM_ML
-	Real scale = TheGlobalData->m_ammoPipScaleFactor / CLAMP_ICON_ZOOM_FACTOR( TheTacticalView->getZoom() );
-#else
-	Real scale = 1.0f;
-#endif
-	Int boxWidth  = REAL_TO_INT(s_emptyContainer->getImageWidth() * scale);
-	Int boxHeight = REAL_TO_INT(s_emptyContainer->getImageHeight() * scale);
-	const Int SPACING = 1;
-	//Int totalWidth = (boxWidth+SPACING)*numTotal;
-
-	ICoord2D screenCenter;
-	Coord3D pos = *obj->getPosition();
-	pos.x += TheGlobalData->m_containerPipWorldOffset.x;
-	pos.y += TheGlobalData->m_containerPipWorldOffset.y;
-	pos.z += TheGlobalData->m_containerPipWorldOffset.z + obj->getGeometryInfo().getMaxHeightAbovePosition();
-	if( !TheTacticalView->worldToScreen( &pos, &screenCenter ) )
-		return;
-
-	Real bounding = obj->getGeometryInfo().getBoundingSphereRadius() * scale;
-	
-	//Int posx = screenCenter.x + REAL_TO_INT(TheGlobalData->m_containerPipScreenOffset.x*bounding) - totalWidth;
-	//**CHANGING CODE: Left justify with health bar min
-	Int posx = healthBarRegion->lo.x;
-	Int posy = screenCenter.y + REAL_TO_INT(TheGlobalData->m_containerPipScreenOffset.y*bounding);
-
-	for (Int i = 0; i < numTotal; ++i)
-	{
-		const Color INFANTRY_COLOR = GameMakeColor(0, 255, 0, 255);
-		const Color NON_INFANTRY_COLOR = GameMakeColor(0, 0, 255, 255);
-		if (i < numFull)
-			TheDisplay->drawImage(s_fullContainer, posx, posy, posx + boxWidth, posy + boxHeight, 
-				(i < numInfantry) ? INFANTRY_COLOR : NON_INFANTRY_COLOR);
-		else
-			TheDisplay->drawImage(s_emptyContainer, posx, posy + 1, posx + boxWidth, posy + 1 + boxHeight);
-		posx += boxWidth + SPACING;
-	}
-}
 
 //-------------------------------------------------------------------------------------------------
 // ?drawBattlePlans@Drawable@@AAEXPBUIRegion2D@@@Z present-unmatched

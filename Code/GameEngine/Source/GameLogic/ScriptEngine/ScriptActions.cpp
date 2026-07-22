@@ -935,7 +935,9 @@ void ScriptActions::doCreateReinforcements(const AsciiString& team, const AsciiS
 //-------------------------------------------------------------------------------------------------
 /** doMoveCameraTo */
 //-------------------------------------------------------------------------------------------------
-// ?doMoveCameraTo@ScriptActions@@IAEXABVAsciiString@@MMMM@Z present-unmatched
+// Matched via MASM: Code/masm_dumps/ScriptActions_doMoveCameraTo.asm
+// True body 0x2F24F0 size 186 (queue RVA 0x7A85DF was INSIDE unrelated FUN_00ba8400).
+// Retail uses getWaypointByName + TacticalView name-list fallback + View+0x60 moveCameraTo.
 void ScriptActions::doMoveCameraTo(const AsciiString& waypoint, Real sec, Real cameraStutterSec, Real easeIn, Real easeOut)
 {
 	for (Waypoint *way = TheTerrainLogic->getFirstWaypoint(); way; way = way->getNext()) {

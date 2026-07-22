@@ -13115,3 +13115,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1LocomotorStore@@UAE@XZ,,0x005D2C10,139,Code/GameEngine/Source/GameLogic/Object/Locomotor.cpp,matched,structural: true body via ctor vtable; map+delete ICF ImageCollection; pin Rb_tree dtor 0x5D2900
 ?getFirewallNeedToRefresh@OptionPreferences@@QAE_NXZ,,0x00090D00,113,Code/masm_dumps/_getFirewallNeedToRefresh_OptionPreferences__QAE_NXZ_90D00.asm,matched,Exact 113B; string-anchor FirewallNeedToRefresh; queue 0x67003D was write-path interior; C++ blocked by fat AsciiString
 ?GadgetComboBoxSetFont@@YAXPAVGameWindow@@PAVGameFont@@@Z,,0x004B3A30,115,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetComboBox.cpp,matched,
+?doMoveCameraTo@ScriptActions@@IAEXABVAsciiString@@MMMM@Z,,0x002F24F0,186,Code/masm_dumps/ScriptActions_doMoveCameraTo.asm,matched,MASM exact 186B; true body 0x2F24F0 (drift 0x7A85DF inside FUN_00ba8400); getWaypointByName+View+0x60 moveCameraTo

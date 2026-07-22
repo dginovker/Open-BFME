@@ -5599,7 +5599,6 @@ void Object::doCommandButtonAtObject( const CommandButton *commandButton, Object
 //-------------------------------------------------------------------------------------------------
 /** Execute command button ability directed at a location */
 //-------------------------------------------------------------------------------------------------
-// ?doCommandButtonAtPosition@Object@@QAEXPBVCommandButton@@PBUCoord3D@@W4CommandSourceType@@@Z present-unmatched
 void Object::doCommandButtonAtPosition( const CommandButton *commandButton, const Coord3D *pos, CommandSourceType cmdSource )
 {
 	if (isDisabled())

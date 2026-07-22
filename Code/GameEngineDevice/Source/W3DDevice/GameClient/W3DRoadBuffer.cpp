@@ -1483,9 +1483,12 @@ void W3DRoadBuffer::checkLinkBefore(Int ndx)
 //=============================================================================
 /** Checks to see if any segments need to link after this one. */
 //=============================================================================
-// ?checkLinkAfter@W3DRoadBuffer@@IAEXH@Z present-unmatched
 void W3DRoadBuffer::checkLinkAfter(Int ndx)
 {
+	if (!m_initialized) {
+		return;
+	}
+
 	// Check for things whose loc == our loc1.
 	if (m_roads[ndx].m_pt1.count != 1) {
 		return;

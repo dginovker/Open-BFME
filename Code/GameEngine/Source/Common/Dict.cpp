@@ -506,7 +506,6 @@ void Dict::setReal(NameKeyType key, Real value)
 }
 
 // -----------------------------------------------------
-// ?setAsciiString@Dict@@ present-unmatched
 void Dict::setAsciiString(NameKeyType key, const AsciiString& value)
 {
 	validate();

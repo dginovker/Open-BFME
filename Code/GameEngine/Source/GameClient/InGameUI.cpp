@@ -5656,7 +5656,6 @@ void InGameUI::updateIdleWorker( void )
 		hideIdleWorkerLayout();
 }
 
-// ?resetIdleWorker@InGameUI@@EAEXXZ present-unmatched
 void InGameUI::resetIdleWorker( void )
 {
 	if(m_idleWorkerWin)

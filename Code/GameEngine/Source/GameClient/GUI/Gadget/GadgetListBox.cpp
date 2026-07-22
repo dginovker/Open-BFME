@@ -394,42 +394,46 @@ static Int addImageEntry( const Image *image, Color color, Int row, Int column, 
 }// static Int addImageEntry( Image image, Int column, GameWindow *window)
 
 // startingRow will get moved to startingRow+1, etc.  This assumes there is space!!!!!
+// BFME ListboxData field offsets (see GadgetListBoxGetNumEntries / IsFull):
+// listData@+0x18 endPos@+0x2c insertPos@+0x2e multiSelect@+0x0b
+// selectPos@+0x34 selections@+0x38 — keep expression shape of ZH body for MSVC 7.1.
 static Int moveRowsDown(ListboxData *list, Int startingRow)
 {
 	//
 	// copy the cells down
 	//
-	Int copyLen = (list->endPos - startingRow) * sizeof(ListEntryRow);
+	Int copyLen = (*(Short *)((char *)list + 0x2C) - startingRow) * sizeof(ListEntryRow);
 	char *buf = NEW char[copyLen];
-	memcpy(buf, list->listData + startingRow, copyLen);
-	memcpy(list->listData + startingRow + 1, buf, copyLen );
+	memcpy(buf, *(ListEntryRow **)((char *)list + 0x18) + startingRow, copyLen);
+	memcpy(*(ListEntryRow **)((char *)list + 0x18) + startingRow + 1, buf, copyLen );
 	delete buf;
 
-	list->endPos ++;
-	list->insertPos = list->endPos;
+	(*(Short *)((char *)list + 0x2C))++;
+	*(Short *)((char *)list + 0x2E) = *(Short *)((char *)list + 0x2C);
 
 	//
 	// remove the display or links to images after the shift
+	// Retail zeros height as a dword (Byte field + pad), not a byte store.
 	//
-	list->listData[startingRow].cell = NULL;
-	list->listData[startingRow].height = 0;
-	list->listData[startingRow].listHeight = 0;
+	(*(ListEntryRow **)((char *)list + 0x18))[startingRow].cell = NULL;
+	*(Int *)((char *)(*(ListEntryRow **)((char *)list + 0x18) + startingRow) + 4) = 0;
+	(*(ListEntryRow **)((char *)list + 0x18))[startingRow].listHeight = 0;
 
-	if( list->multiSelect )
+	if( *(Bool *)((char *)list + 0x0B) )
 	{
 		Int i = 0;
 
-		while( list->selections[i] >= 0 )
+		while( (*(Int **)((char *)list + 0x38))[i] >= 0 )
 		{
-			if( startingRow <= list->selections[i] )
-				list->selections[i]++;
+			if( startingRow <= (*(Int **)((char *)list + 0x38))[i] )
+				(*(Int **)((char *)list + 0x38))[i]++;
 			i++;
 		}
 	}
 	else
 	{
-		if( list->selectPos >= startingRow )
-			list->selectPos++;
+		if( *(Int *)((char *)list + 0x34) >= startingRow )
+			(*(Int *)((char *)list + 0x34))++;
 	}
 
 	/*

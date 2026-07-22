@@ -13218,3 +13218,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?drawContained@Drawable@@AAEXPBUIRegion2D@@@Z,,0x00414E40,833,Code/GameEngine/Source/GameClient/Drawable_drawContained.asm,matched,exact 833B MASM true body 0x414E40 (queue 0x76E986 INSIDE W3DModelDraw asset-error FUN_0076E7F0); container pips green/blue dual-loop; region Drawable+0x3C4; after drawAmmo@0x414BE0 icon switch case1
 ?checkLinkAfter@W3DRoadBuffer@@IAEXH@Z,,0x0070B510,312,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadBuffer.cpp,matched,
 ?InitBuddyControls@@YAXH@Z,,0x004EA9D0,776,Code/masm_dumps/InitBuddyControls.asm,matched,Exact MASM; true body 0x4EA9D0 size 776 (queue 0x8CC0A misplaced). Identity: Diplomacy/WOLBuddy TextEntryChat string xrefs + SEH. C++ blocked by AsciiString +8 payload/regalloc (prior attempt).
+?moveRowsDown@@YAHPAU_ListboxData@@H@Z,,0x004B6C30,212,Code/GameEngine/Source/GameClient/GUI/Gadget/GadgetListBox.cpp,matched,

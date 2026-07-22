@@ -83,6 +83,36 @@ WaterTracksRenderSystem *TheWaterTracksRenderSystem=NULL;	///< singleton for tra
 
 static Bool pauseWaves=FALSE;
 
+class BFMEWaterTrackTexture
+{
+public:
+	void Release_Ref();
+};
+
+class BFMEWaterTrackTextureHandle
+{
+public:
+	TextureClass *m_texture;
+	~BFMEWaterTrackTextureHandle()
+	{
+		if (m_texture)
+			((BFMEWaterTrackTexture *)m_texture)->Release_Ref();
+	}
+};
+
+extern BFMEWaterTrackTextureHandle BFMEGetWaterTrackTexture(Char *name, Int mipCount, Int format);
+
+static inline void BFMEAssignWaterTrackTexture(
+	TextureClass *&destination,
+	const BFMEWaterTrackTextureHandle &texture)
+{
+	if (texture.m_texture)
+		++*(unsigned short *)((char *)texture.m_texture + 4);
+	if (destination)
+		((BFMEWaterTrackTexture *)destination)->Release_Ref();
+	destination = texture.m_texture;
+}
+
 enum waveType
 {
 	WaveTypeFirst,
@@ -257,10 +287,8 @@ void WaterTracksObj::init( Real width, Real length, Vector2 &start, Vector2 &end
 *	defines the maximum distance the wave will reach.
  */
 //=============================================================================
-// ?init@WaterTracksObj@@ present-unmatched
 void WaterTracksObj::init( Real width, Vector2 &start, Vector2 &end, Char *texturename)
-{	
-	freeWaterTracksResources();	//free old resources used by this track
+{
 	m_boundingSphere.Init(Vector3(0,0,0),400);
 	m_boundingBox.Center.Set(0.0f, 0.0f, 0.0f);
 	m_boundingBox.Extent.Set(400.0f, 400.0f, 1.0f);
@@ -280,7 +308,7 @@ void WaterTracksObj::init( Real width, Vector2 &start, Vector2 &end, Char *textu
 	m_totalMs=m_waveDir.Length()/m_initialVelocity;
 	m_fadeMs = 3000;		//time for wave to fade out after it stops on beach
 
-	m_stageZeroTexture=WW3DAssetManager::Get_Instance()->Get_Texture(texturename);
+	BFMEAssignWaterTrackTexture(m_stageZeroTexture, BFMEGetWaterTrackTexture(texturename, 0, 0));
 }
 
 //=============================================================================

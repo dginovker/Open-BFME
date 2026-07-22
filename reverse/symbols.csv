@@ -1,4 +1,5 @@
 name,address,notes
+?BFMEGetWaterTrackTexture@@YA?AVBFMEWaterTrackTextureHandle@@PADHH@Z,0x0090E910,retail 4-byte texture handle return used by WaterTracksObj::init
 ??0RetailDamageModuleDataBase@@QAE@XZ,0x00048A3B,DamageModule factory base constructor target
 ??_7RetailDamageModuleData@@6B@,0x0108A350,DamageModule factory vtable target
 ??0RetailCollideModuleDataBase@@QAE@XZ,0x00048A3B,CollideModule factory base constructor target
@@ -637,6 +638,7 @@ name,address,notes
 ?ReleaseWindowLayout@@YAXPAVWindowLayout@@@Z,0x00049AD0
 ?Release_Ref@TextureBaseClass@@QAEXXZ,0x009EB7A0,hider decl in texture.h; WORD refcount+flags release
 ?Release_Ref@TextureClass@@QAEXXZ,0x009EB7A0,BFME texture release: WORD refcount+flag bits at [this+4]; auto-delete via vtbl slot 8 when bit24 set — TextureClass does NOT derive RefCountClass
+?Release_Ref@BFMEWaterTrackTexture@@QAEXXZ,0x009EB7A0,WaterTracks local texture release surrogate
 ?Remove_Index@?$IndexClass@HPAUINIEntry@@@@QAE_NABH@Z,0x009E26A0
 ?Remove_Index@?$IndexClass@HPAUINISection@@@@QAE_NABH@Z,0x009E2730
 ?Remove_Polygon_Renderer@DX8TextureCategoryClass@@QAEXPAVDX8PolygonRendererClass@@@Z,0x00947D30

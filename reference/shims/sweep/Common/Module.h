@@ -183,8 +183,12 @@ public: \
 	* a single module factory to handle instancing them ... it's just
 	* convenient this way */
 //-------------------------------------------------------------------------------------------------
+#ifdef BFME_MODULE_NO_MPO
+class Module : public Snapshot
+#else
 class Module : public MemoryPoolObject,
 							 public Snapshot
+#endif
 {
 
 	MEMORY_POOL_GLUE_ABC( Module )						///< this abstract class needs memory pool hooks

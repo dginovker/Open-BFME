@@ -13247,3 +13247,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?setPosition@Thing@@QAEXPBUCoord3D@@@Z,,0x00132CE0,272,Code/GameEngine/Source/Common/Thing/Thing.cpp,matched,
 ?applyBlockZone@@YAXAAVPathfindCell@@ABV1@PAGHH@Z,,0x00402890,54,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,
 ??$__destroy_aux@PAUVideo@@@_STL@@YAXPAUVideo@@0ABU__false_type@0@@Z,,0x00754C30,33,Code/GameEngine/Source/GameClient/VideoPlayer.cpp,matched,
+?doDrawModule@W3DRopeDraw@@UAEXPBVMatrix3D@@@Z,,0x0075AD20,363,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/W3DRopeDraw.cpp,matched,

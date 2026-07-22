@@ -2778,55 +2778,18 @@ Bool Player::isScienceHidden( ScienceType t ) const
 }
 
 //=============================================================================
-// ?setScienceAvailability@Player@@QAEXW4ScienceType@@W4ScienceAvailabilityType@@@Z present-unmatched
-void Player::setScienceAvailability( ScienceType science, ScienceAvailabilityType type )
+// ?setScienceAvailability@Player@@QAEXW4ScienceType@@W4ScienceAvailabilityType@@@Z
+// Body in Player_setScienceAvailability.asm (exact 288B retail @ 0xD5640;
+// C++ blocked by Player layout: m_sciencesDisabled/Hidden +0x240/+0x24c vs ZH +0x170/+0x17c).
+
+// Force-emit ScienceVec::erase(iterator) COMDAT claimed on this TU @ 0xCEA00.
+// Was previously only referenced by the C++ setScienceAvailability body.
+static ScienceType *bfme_force_ScienceVec_erase(ScienceVec *v, ScienceType *it)
 {
-	ScienceType sType;
-	ScienceVec::iterator it;
-	Bool found = false;
-
-	//First remove it from disabled sciences if it's there.
-	for( it = m_sciencesDisabled.begin(); it != m_sciencesDisabled.end(); ++it )
-	{
-		sType = *it;
-		if( sType == science )
-		{
-			m_sciencesDisabled.erase( it );
-			found = true;
-			break;
-		}
-	}
-	if( !found )
-	{
-		//If still not found, remove it from hidden sciences if it's there.
-		for( it = m_sciencesHidden.begin(); it != m_sciencesHidden.end(); ++it )
-		{
-			sType = *it;
-			if( sType == science )
-			{
-				m_sciencesHidden.erase( it );
-				found = true;
-				break;
-			}
-		}
-	}
-
-	//At this point, this science shouldn't be disabled nor hidden!
-	if( type == SCIENCE_DISABLED )
-	{
-		//Add science to disabled vec.
-		m_sciencesDisabled.push_back( science );
-	}
-	else if( type == SCIENCE_HIDDEN )
-	{
-		//Add science to hidden vec.
-		m_sciencesHidden.push_back( science );
-	}
-	else if( type == SCIENCE_AVAILABLE )
-	{
-		//Do nothing, because being available means that the science isn't in one of the hidden or disabled vecs.
-	}
+	return v->erase(it);
 }
+ScienceType *(*bfme_force_ScienceVec_erase_anchor)(ScienceVec *, ScienceType *) =
+	&bfme_force_ScienceVec_erase;
 
 //=============================================================================
 // ?getScienceAvailabilityTypeFromString@Player@@QAE?AW4ScienceAvailabilityType@@ABVAsciiString@@@Z present-unmatched

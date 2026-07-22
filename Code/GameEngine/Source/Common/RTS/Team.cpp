@@ -1366,7 +1366,10 @@ void TeamPrototype::loadPostProcess( void )
 // ------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------
-// ??0Team@@QAE@PAVTeamPrototype@@I@Z present-unmatched
+// ??0Team@@QAE@PAVTeamPrototype@@I@Z
+// Matched body: Code/masm_dumps/Team_ctor.asm (exact 631B retail @ 0xF7790).
+// Queue 0xF7849 was INSIDE; BFME layout vs ZH blocks C++ byte-match.
+// Keep ZH C++ below so sibling COMDATs (DLINK_TeamInstanceList ctor) still emit.
 Team::Team(TeamPrototype *proto, TeamID id ) : 
   m_id( id ),
 	m_proto(proto), 

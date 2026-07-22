@@ -881,7 +881,10 @@ Bool GameTextManager::getCSFInfo ( const Char *filename )
 // GameTextManager::parseCSF
 //============================================================================
 
-// ?parseCSF@GameTextManager@@IAE_NPBD@Z present-unmatched
+// ?parseCSF@GameTextManager@@IAE_NPBD@Z
+// Matched via MASM exact dump (Code/masm_dumps/GameTextManager_parseCSF.asm):
+// retail body @ 0x00437570 size 672 — BFME memory-buffer CSF parse with SEH;
+// queue RVA 0x009D2189 was misplaced (prior-function epilogue).
 Bool GameTextManager::parseCSF( const Char *filename )
 {
 	File *file;

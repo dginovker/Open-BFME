@@ -525,7 +525,26 @@ static lights into account as well.  It is possible to just use the normal in th
 vertex and let D3D do the lighting, but it is slower to render, and can only 
 handle 4 lights at this point. */
 //=============================================================================
-// ?doTheLight@BaseHeightMapRenderObjClass@@QAEXPAUVertexFormatXYZDUV2@@PAVVector3@@1PAV?$RefMultiListIterator@VRenderObjClass@@@@E@Z present-unmatched
+struct BFMEGlobalLightingData
+{
+	char pad0[0x7c];
+	Real waterPositionZ;
+	char pad1[0x93c];
+	RGBColor terrainAmbient[1];
+	char pad2[0x18];
+	RGBColor terrainDiffuse[MAX_GLOBAL_LIGHTS];
+	char pad3[0x54];
+	Int numGlobalLights;
+};
+
+struct BFMEHeightMapLightingData
+{
+	char pad0[0x2ff8];
+	Bool useDepthFade;
+	char pad1[3];
+	Vector3 depthFade;
+};
+
 void BaseHeightMapRenderObjClass::doTheLight(VERTEX_FORMAT *vb, Vector3*light, Vector3*normal, RefRenderObjListIterator *pLightsIterator, UnsignedByte alpha)
 {
 #ifdef USE_NORMALS
@@ -535,9 +554,9 @@ void BaseHeightMapRenderObjClass::doTheLight(VERTEX_FORMAT *vb, Vector3*light, V
 #else
 	Real shadeR, shadeG, shadeB;
 	Real shade;
-	shadeR = TheGlobalData->m_terrainAmbient[0].red;	//only the first terrain light contributes to ambient
-	shadeG = TheGlobalData->m_terrainAmbient[0].green;
-	shadeB = TheGlobalData->m_terrainAmbient[0].blue;
+	shadeR = ((BFMEGlobalLightingData *)TheGlobalData)->terrainAmbient[0].red;	//only the first terrain light contributes to ambient
+	shadeG = ((BFMEGlobalLightingData *)TheGlobalData)->terrainAmbient[0].green;
+	shadeB = ((BFMEGlobalLightingData *)TheGlobalData)->terrainAmbient[0].blue;
 
 	if (pLightsIterator) {
 		for (pLightsIterator->First(); !pLightsIterator->Is_Done(); pLightsIterator->Next())
@@ -599,12 +618,12 @@ void BaseHeightMapRenderObjClass::doTheLight(VERTEX_FORMAT *vb, Vector3*light, V
 	} 
 	// Add in global diffuse value.
 	const RGBColor *terrainDiffuse;
-	for (Int lightIndex=0; lightIndex < TheGlobalData->m_numGlobalLights; lightIndex++)
+	for (Int lightIndex=0; lightIndex < ((BFMEGlobalLightingData *)TheGlobalData)->numGlobalLights; lightIndex++)
 	{
-		shade = Vector3::Dot_Product(light[lightIndex], *normal); 
+		shade = light[lightIndex].X * normal->X + light[lightIndex].Z * normal->Z + light[lightIndex].Y * normal->Y;
 		if (shade > 1.0) shade = 1.0;
 		if(shade < 0.0f) shade = 0.0f;
-		terrainDiffuse=&TheGlobalData->m_terrainDiffuse[lightIndex];
+		terrainDiffuse=&((BFMEGlobalLightingData *)TheGlobalData)->terrainDiffuse[lightIndex];
 		shadeR += shade*terrainDiffuse->red;
 		shadeG += shade*terrainDiffuse->green;
 		shadeB += shade*terrainDiffuse->blue;
@@ -617,19 +636,19 @@ void BaseHeightMapRenderObjClass::doTheLight(VERTEX_FORMAT *vb, Vector3*light, V
 	if (shadeB > 1.0) shadeB = 1.0;
 	if(shadeB < 0.0f) shadeB = 0.0f;
 
-	if (m_useDepthFade && vb->z <= TheGlobalData->m_waterPositionZ)
+	if (((BFMEHeightMapLightingData *)this)->useDepthFade && vb->z <= ((BFMEGlobalLightingData *)TheGlobalData)->waterPositionZ)
 	{	//height is below water level
 		//reduce lighting values based on light fall off as it travels through water.
-		float depthScale = (1.4f - vb->z)/TheGlobalData->m_waterPositionZ;
-		shadeR *= 1.0f - depthScale * (1.0f-m_depthFade.X);
-		shadeG *= 1.0f - depthScale * (1.0f-m_depthFade.Y);
-		shadeB *= 1.0f - depthScale * (1.0f-m_depthFade.Z);
+		float depthScale = (1.4f - vb->z)/((BFMEGlobalLightingData *)TheGlobalData)->waterPositionZ;
+		shadeR *= 1.0f - depthScale * (1.0f-((BFMEHeightMapLightingData *)this)->depthFade.X);
+		shadeG *= 1.0f - depthScale * (1.0f-((BFMEHeightMapLightingData *)this)->depthFade.Y);
+		shadeB *= 1.0f - depthScale * (1.0f-((BFMEHeightMapLightingData *)this)->depthFade.Z);
 	}
 
 	shadeR*=255.0f;
 	shadeG*=255.0f;
 	shadeB*=255.0f;
-	vb->diffuse = REAL_TO_INT(shadeB) | (REAL_TO_INT(shadeG) << 8) | (REAL_TO_INT(shadeR) << 16) | ((Int)alpha << 24);
+	vb->diffuse = (Int)shadeB | ((Int)shadeG << 8) | ((Int)shadeR << 16) | ((Int)alpha << 24);
 #endif
 }
 
@@ -2866,4 +2885,3 @@ void BaseHeightMapRenderObjClass::loadPostProcess( void )
 {
 	// empty. jba [8/11/2003]	
 }  // end loadPostProcess
-

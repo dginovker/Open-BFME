@@ -837,7 +837,9 @@ void GameWindow::winGetDrawOffset( Int *x, Int *y )
 // GameWindow::winSetText =====================================================
 /** Sets the text in a window */
 //=============================================================================
-// ?winSetText@GameWindow@@UAEHVUnicodeString@@@Z present-unmatched
+// Retail body matched via MASM: Code/masm_dumps/winSetText_GameWindow_UAEHVUnicodeString_Z_479660.asm
+// (BFME: m_instData@+0x30 + optional [this+4] vtbl+0xC notify; not ZH-shaped.)
+#if 0
 Int GameWindow::winSetText( UnicodeString newText )
 {
 	// copy text over
@@ -846,6 +848,7 @@ Int GameWindow::winSetText( UnicodeString newText )
 	return WIN_ERR_OK;
 
 }  // end WinSetText
+#endif
 
 // GameWindow::winGetText =====================================================
 /** Get text from a window ... this works for static text windows and 

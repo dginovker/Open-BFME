@@ -13110,3 +13110,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?populateBuddyGames@@YAXXZ,,0x0062CCE0,551,Code/GameEngine/Source/GameNetwork/GameSpy/LobbyUtils_populateBuddyGames.asm,matched,exact 551B MASM; true body @0x62CCE0 (queue 0x542C30 misplaced); between insert@set and clearBuddyGames; C++ blocked GameSpyInfo getBuddyMap vtbl 0x54 vs 0x38
 ?init@FullFadeTransition@@UAEXPAVGameWindow@@@Z,,0x0059D420,95,Code/masm_dumps/_sa__init_FullFadeTransition_UAEXPAVGameWindow_Z_59D420.asm,matched,
 ?createScaffolding@BridgeBehavior@@UAEXXZ,,0x001F3F10,2122,Code/masm_dumps/BridgeBehavior_createScaffolding.asm,matched,Exact 2122B @ 0x1F3F10; queue 0x1F3E2F/2391 misplaced (int3+helpers); true SEH body m_scaffoldPresent@+0x45d; C++ 2391B shape-divergent
+?parsePrerequisiteScience@@YAXPAVINI@@PAX1PBX@Z,,0x00147320,220,Code/masm_dumps/parsePrerequisiteScience_YAXPAVINI_147320.asm,matched,MASM exact; PP sizeof 0x24 blocks C++

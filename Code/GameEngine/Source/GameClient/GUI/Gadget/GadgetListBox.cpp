@@ -2398,21 +2398,25 @@ void GadgetListBoxAddMultiSelect( GameWindow *listbox )
 {
 	ListboxData *listboxData = (ListboxData *)listbox->winGetUserData();
 
-	DEBUG_ASSERTCRASH(listboxData && listboxData->selections == NULL, ("selections is not NULL"));
-	listboxData->selections = NEW Int [listboxData->listLength];
-	DEBUG_LOG(( "Enable list box multi select: listLength (select) = %d * %d = %d bytes;\n",
-					 listboxData->listLength, sizeof(Int), 
-					 listboxData->listLength *sizeof(Int) ));
+	// BFME: null userdata + already-multi early outs (ZH always allocated).
+	// selections lives at +0x38 (ZH +0x30); listData at +0x18 (ZH +0x14).
+	if( !listboxData )
+		return;
+	if( listboxData->multiSelect )
+		return;
 
-	if( listboxData->selections == NULL )
+	Int **selections = (Int **)((char *)listboxData + 0x38);
+	*selections = NEW Int [listboxData->listLength];
+
+	if( *selections == NULL )
 	{
-
-		delete( listboxData->listData );
+		ListEntryRow **listData = (ListEntryRow **)((char *)listboxData + 0x18);
+		delete( *listData );
 		return;
 
 	}  // end if
 
-	memset( listboxData->selections, -1,
+	memset( *selections, -1,
 		      listboxData->listLength * sizeof(Int) );
 
 	// set mutliselect flag

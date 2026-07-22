@@ -912,24 +912,9 @@ void ControlBarSchemeManager::parseAnimatingPartImage(INI *ini, void *instance, 
 //
 // parse the animating part of the control bar scheme
 //-----------------------------------------------------------------------------
-// ?parseAnimatingPart@ControlBarSchemeManager@@ present-unmatched
-void ControlBarSchemeManager::parseAnimatingPart(INI *ini, void *instance, void* /*store*/, const void* /*userData*/)
-{
-	static const FieldParse myFieldParse[] = 
-		{
-			{ "Name",						INI::parseAsciiString,		NULL, offsetof( ControlBarSchemeAnimation, m_name ) },
-      { "Animation",			INI::parseLookupList,			AnimTypeNames, offsetof( ControlBarSchemeAnimation, m_animType ) },
-			{ "Duration",				INI::parseDurationUnsignedInt,			NULL, offsetof( ControlBarSchemeAnimation, m_animDuration ) },
-			{ "FinalPos",				INI::parseICoord2D,			NULL, offsetof( ControlBarSchemeAnimation, m_finalPos ) },
-			{ "ImagePart",			ControlBarSchemeManager::parseAnimatingPartImage,	NULL, NULL },
-			{ NULL,							NULL,											NULL, 0 }  // keep this last
-		};
-	
-	ControlBarSchemeAnimation *schemeAnim = NEW ControlBarSchemeAnimation;
-	ini->initFromINI(schemeAnim, myFieldParse);
-	((ControlBarScheme*)instance)->addAnimation(schemeAnim);
-	((ControlBarScheme*)instance)->addImage(schemeAnim->m_animImage);
-}
+// ?parseAnimatingPart@ControlBarSchemeManager@@SAXPAVINI@@PAX1PBX@Z
+// Body in ControlBarScheme_parseAnimatingPart.asm (exact 219B retail @ 0x4AEA00).
+// Retail inlines addAnimation+addImage + STLport list node alloc; C++ cannot match.
 
 
 //

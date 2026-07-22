@@ -329,7 +329,7 @@ void BridgeBehavior::onDelete( void )
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
-// ?resolveFX@BridgeBehavior@@IAEXXZ present-unmatched
+// ?resolveFX@BridgeBehavior@@IAEXXZ
 void BridgeBehavior::resolveFX( void )
 {
 	Object *us = getObject();

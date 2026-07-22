@@ -53,7 +53,6 @@ LanguageFilter::~LanguageFilter() {
 	m_wordList.clear();
 }
 
-// ?init@LanguageFilter@@UAEXXZ present-unmatched
 void LanguageFilter::init() {
 	m_wordList.clear();
 

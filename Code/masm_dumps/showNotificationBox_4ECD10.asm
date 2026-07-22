@@ -1,0 +1,48 @@
+.386
+.model flat
+
+; ?showNotificationBox@@YAXVAsciiString@@VUnicodeString@@@Z
+; Exact 557 retail bytes @ 0x004ECD10
+; Identity: 6 calls via ILT 0x37FC9; strings L"[%hs] %s"+GUIMessageReceived+Buddy:MessageNotification;
+; SEH body between WOLBuddyOverlayInit and RequestBuddyAdd; queue 0x784853 was unrelated pad.
+_TEXT SEGMENT
+public ?showNotificationBox@@YAXVAsciiString@@VUnicodeString@@@Z
+?showNotificationBox@@YAXVAsciiString@@VUnicodeString@@@Z PROC
+    db 06Ah,0FFh,068h,017h,0BFh,002h,001h,064h,0A1h,000h,000h,000h,000h,050h,064h,089h
+    db 025h,000h,000h,000h,000h,081h,0ECh,088h,000h,000h,000h,053h,033h,0DBh,089h,09Ch
+    db 024h,094h,000h,000h,000h,089h,05Ch,024h,00Ch,08Bh,084h,024h,0B0h,000h,000h,000h
+    db 03Bh,0C3h,0C6h,084h,024h,094h,000h,000h,000h,001h,074h,005h,083h,0C0h,008h,0EBh
+    db 005h,0B8h,08Ch,038h,007h,001h,050h,08Bh,084h,024h,0A8h,000h,000h,000h,03Bh,0C3h
+    db 074h,005h,083h,0C0h,008h,0EBh,005h,0B8h,08Bh,038h,007h,001h,050h,051h,089h,064h
+    db 024h,010h,08Bh,0CCh,068h,0E4h,021h,010h,001h,0E8h,062h,0C0h,039h,000h,08Dh,044h
+    db 024h,018h,050h,0E8h,008h,0C4h,039h,000h,08Bh,00Dh,020h,092h,02Bh,001h,083h,0C4h
+    db 010h,051h,051h,08Dh,054h,024h,014h,089h,064h,024h,00Ch,08Bh,0CCh,052h,0E8h,05Dh
+    db 0B6h,039h,000h,0E8h,0C5h,06Ch,0B5h,0FFh,083h,0C4h,008h,03Ah,0C3h,00Fh,085h,04Dh
+    db 001h,000h,000h,068h,0A0h,024h,010h,001h,08Dh,04Ch,024h,008h,0E8h,0FFh,0BDh,039h
+    db 000h,06Ah,002h,08Dh,044h,024h,008h,050h,08Dh,04Ch,024h,024h,0C6h,084h,024h,09Ch
+    db 000h,000h,000h,002h,0E8h,02Dh,085h,0B3h,0FFh,08Dh,04Ch,024h,004h,0C6h,084h,024h
+    db 094h,000h,000h,000h,004h,0E8h,056h,0ABh,039h,000h,08Bh,00Dh,068h,0D6h,02Eh,001h
+    db 03Bh,0CBh,074h,00Ah,08Bh,011h,08Dh,044h,024h,01Ch,050h,0FFh,052h,044h,08Dh,08Ch
+    db 024h,0B0h,000h,000h,000h,051h,08Dh,04Ch,024h,014h,0E8h,0F1h,0B5h,039h,000h,0C6h
+    db 084h,024h,094h,000h,000h,000h,005h,08Bh,044h,024h,010h,03Bh,0C3h,074h,012h,066h
+    db 083h,078h,004h,01Eh,076h,00Bh,08Dh,04Ch,024h,010h,0E8h,011h,0BAh,039h,000h,0EBh
+    db 0E6h,089h,05Ch,024h,008h,03Bh,0C3h,0C6h,084h,024h,094h,000h,000h,000h,006h,074h
+    db 005h,083h,0C0h,008h,0EBh,005h,0B8h,08Ch,038h,007h,001h,050h,08Bh,084h,024h,0A8h
+    db 000h,000h,000h,03Bh,0C3h,074h,005h,083h,0C0h,008h,0EBh,005h,0B8h,08Bh,038h,007h
+    db 001h,08Bh,00Dh,07Ch,014h,02Fh,001h,08Bh,011h,050h,051h,08Bh,0C4h,089h,064h,024h
+    db 020h,053h,068h,080h,024h,010h,001h,050h,0FFh,052h,028h,08Dh,04Ch,024h,014h,051h
+    db 0E8h,00Bh,0C3h,039h,000h,083h,0C4h,00Ch,08Dh,054h,024h,00Ch,089h,064h,024h,018h
+    db 08Bh,0CCh,052h,088h,01Dh,040h,042h,02Fh,001h,089h,01Dh,044h,042h,02Fh,001h,0E8h
+    db 05Ch,0B5h,039h,000h,051h,089h,064h,024h,020h,08Bh,0CCh,068h,050h,06Eh,033h,001h
+    db 0C6h,084h,024h,0A0h,000h,000h,000h,007h,0E8h,0A3h,0ACh,039h,000h,0C6h,084h,024h
+    db 09Ch,000h,000h,000h,006h,0E8h,0EEh,0DFh,0B4h,0FFh,083h,0C4h,008h,08Dh,04Ch,024h
+    db 008h,0C6h,084h,024h,094h,000h,000h,000h,005h,0E8h,0F2h,0B2h,039h,000h,08Dh,04Ch
+    db 024h,010h,0C6h,084h,024h,094h,000h,000h,000h,004h,0E8h,0E1h,0B2h,039h,000h,08Dh
+    db 04Ch,024h,01Ch,0C6h,084h,024h,094h,000h,000h,000h,001h,0E8h,035h,0A0h,0B3h,0FFh
+    db 08Dh,04Ch,024h,00Ch,088h,09Ch,024h,094h,000h,000h,000h,0E8h,0C0h,0B2h,039h,000h
+    db 08Dh,08Ch,024h,09Ch,000h,000h,000h,0C7h,084h,024h,094h,000h,000h,000h,0FFh,0FFh
+    db 0FFh,0FFh,0E8h,01Eh,045h,0B3h,0FFh,08Bh,08Ch,024h,08Ch,000h,000h,000h,064h,089h
+    db 00Dh,000h,000h,000h,000h,05Bh,081h,0C4h,094h,000h,000h,000h,0C3h
+?showNotificationBox@@YAXVAsciiString@@VUnicodeString@@@Z ENDP
+_TEXT ENDS
+END

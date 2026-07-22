@@ -591,7 +591,14 @@ Bool CommandButton::isValidObjectTarget(const Player* sourcePlayer, const Object
 	if (!sourcePlayer || !targetObj)
 		return false;
 
-	Relationship r = sourcePlayer->getRelationship(targetObj->getTeam());
+	// BFME Object::m_team at +0x23c (ZH getTeam() inlines the wrong offset).
+	// Same overlay used by Object::isLocallyControlled / isNeutralControlled.
+	struct BFMEObjectTeamField {
+		unsigned char pad[0x23c];
+		Team *team;
+	};
+	const BFMEObjectTeamField *obj = reinterpret_cast<const BFMEObjectTeamField *>(targetObj);
+	Relationship r = sourcePlayer->getRelationship(obj->team);
 
 	return isValidRelationshipTarget(r);
 }

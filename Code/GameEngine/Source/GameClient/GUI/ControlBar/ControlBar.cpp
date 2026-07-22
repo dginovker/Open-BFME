@@ -517,30 +517,10 @@ void ControlBar::updateContextPurchaseScience( void )
 //-------------------------------------------------------------------------------------------------
 /** parse command definition */
 //-------------------------------------------------------------------------------------------------
-// ?parseCommand@CommandButton@@SAXPAVINI@@PAX1PBX@Z present-unmatched
-void CommandButton::parseCommand( INI* ini, void *instance, void *store, const void *userData )
-{
-	const char *token = ini->getNextToken();
-	Int i;
-
-	for( i = 0; TheGuiCommandNames[ i ]; i++ )
-	{
-
-		if( stricmp( TheGuiCommandNames[ i ], token ) == 0 )
-		{
-
-			GUICommandType *command = (GUICommandType *)store;
-			*command = (GUICommandType)i;
-			return;
-
-		}  // end if
-
-	}  // end for i
-
-	// if we're here the command was not found
-	throw INI_INVALID_DATA;
-
-}  // end parseCommand
+// ?parseCommand@CommandButton@@SAXPAVINI@@PAX1PBX@Z
+// Body in Code/masm_dumps/CommandButton_parseCommand.asm (exact 124B retail @ 0x49AB90).
+// True body via unique TheGuiCommandNames table; queue 0x23E4F6 was INSIDE FUN_0063e420.
+// BFME throws formatted "Command '%s' not found" + expanded name table vs ZH enum throw.
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

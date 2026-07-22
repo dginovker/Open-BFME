@@ -252,7 +252,6 @@ ButtonFlashTransition::~ButtonFlashTransition( void )
 	m_win = NULL;
 }
 
-// ?init@ButtonFlashTransition@@UAEXPAVGameWindow@@@Z present-unmatched
 void ButtonFlashTransition::init( GameWindow *win )
 {
 	if(win)

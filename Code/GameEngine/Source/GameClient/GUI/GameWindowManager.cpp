@@ -1874,70 +1874,16 @@ GameWindow *GameWindowManager::gogoMessageBox(Int x, Int y, Int width, Int heigh
 //-------------------------------------------------------------------------------------------------
 /** Create a button GUI control */
 //-------------------------------------------------------------------------------------------------
-// ?gogoGadgetPushButton@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHPAVWinInstanceData@@PAVGameFont@@_N@Z present-unmatched
-GameWindow *GameWindowManager::gogoGadgetPushButton( GameWindow *parent,
-																										 UnsignedInt status,
-																										 Int x, Int y,
-																										 Int width, Int height,
-																										 WinInstanceData *instData,
-																										 GameFont *defaultFont,
-																										 Bool defaultVisual )
+// ?gogoGadgetPushButton@GameWindowManager@@UAEPAVGameWindow@@PAV2@IHHHHPAVWinInstanceData@@PAVGameFont@@_N@Z
+// Body in GameWindowManager_gogoGadgetPushButton.asm (exact 241B retail @ 0x0047DC50).
+// Queue 0x68F0DB was misplaced; true body via GWM vtable slot 14 / createGadget "PUSHBUTTON".
+// Keep getPushButton*DrawFunc COMDATs in this TU (were only referenced by the old C++ body;
+// both ICF to 3B xor-eax/ret at 0x006CF680).
+void GameWindowManager_force_pushButtonDrawFuncs(GameWindowManager *m)
 {
-	GameWindow *button;
-
-	// we MUST have a push button style window to do this
-	if( BitTest( instData->getStyle(), GWS_PUSH_BUTTON ) == FALSE )
-	{
-
-		DEBUG_LOG(( "Cann't create button gadget, instance data not button type\n" ));
-		assert( 0 );
-		return NULL;
-
-	}  // end if
-
-	// create the button window
-	button = TheWindowManager->winCreate( parent, status, 
-																				x, y, width, height, 
-																				GadgetPushButtonSystem,
-																				instData );
-	if( button == NULL )
-	{
-	
-		DEBUG_LOG(( "Unable to create button for push button gadget\n" ));
-		assert( 0 );
-		return NULL;
-
-	}  // end if
-
-	// assign input function
-	button->winSetInputFunc( GadgetPushButtonInput );
-
-	//
-	// assign draw function, the draw functions must actually be implemented
-	// on the device level of the engine
-	//
-	if( BitTest( button->winGetStatus(), WIN_STATUS_IMAGE ) )
-		button->winSetDrawFunc( getPushButtonImageDrawFunc() );
-	else
-		button->winSetDrawFunc( getPushButtonDrawFunc() );
-
-	// set the owner to the parent, or if no parent it will be itself
-	button->winSetOwner( parent );
-	
-	// Init the userdata to NULL
-	button->winSetUserData(NULL);
-
-	// assign the default images/colors
-	assignDefaultGadgetLook( button, defaultFont, defaultVisual );
-
-	// assign text from label
-	UnicodeString text = winTextLabelToText( instData->m_textLabelString );
-	if( text.getLength() )
-		GadgetButtonSetText( button, text );
-	
-	return button;
-
-}  // end gogoGadgetPushButton
+	m->getPushButtonImageDrawFunc();
+	m->getPushButtonDrawFunc();
+}
 
 //-------------------------------------------------------------------------------------------------
 /** Create a checkbox UI element */

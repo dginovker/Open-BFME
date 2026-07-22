@@ -3446,54 +3446,9 @@ Bool PathfindLayer::connectsZones(PathfindZoneManager *zm, const LocomotorSet& l
 /**
  * Classifies the pathfind cells for the bridge layer.
  */
-// ?classifyCells@PathfindLayer@@QAEXXZ present-unmatched
-void PathfindLayer::classifyCells()
-{
-	m_startCell.x = -1;
-	m_startCell.y = -1;
-	m_endCell.x = -1;
-	m_endCell.y = -1;
-	Int i, j;
-	for (i=0; i<m_width; i++) {
-		for (j=0; j<m_height; j++) {
-			PathfindCell *cell = &m_layerCells[i][j];
-			cell->setConnectLayer(LAYER_INVALID);
-			cell->setLayer(m_layer);
-			classifyLayerMapCell(i+m_xOrigin, j+m_yOrigin, cell, m_bridge);	
-		}
-		BridgeInfo info;
-		m_bridge->getBridgeInfo(&info);
-		Coord3D bridgeDir = info.to;
-		bridgeDir.x -= info.from.x;
-		bridgeDir.y -= info.from.y;
-		bridgeDir.z -= info.from.z;
-		bridgeDir.normalize();
-		bridgeDir.x *= PATHFIND_CELL_SIZE_F*0.7f;
-		bridgeDir.y *= PATHFIND_CELL_SIZE_F*0.7f;
-
-		m_startCell.x = REAL_TO_INT_FLOOR((info.from.x-bridgeDir.x) / PATHFIND_CELL_SIZE_F);
-		m_startCell.y = REAL_TO_INT_FLOOR((info.from.y-bridgeDir.y) / PATHFIND_CELL_SIZE_F);
-		m_endCell.x = REAL_TO_INT_FLOOR((info.to.x+bridgeDir.x) / PATHFIND_CELL_SIZE_F);
-		m_endCell.y = REAL_TO_INT_FLOOR((info.to.y+bridgeDir.y) / PATHFIND_CELL_SIZE_F);
-	}	
-	if (m_destroyed) {
-		Int i, j;
-		for (i=0; i<m_width; i++) {
-			for (j=0; j<m_height; j++) {
-				PathfindCell *cell = &m_layerCells[i][j];
-				if (cell->getConnectLayer() == LAYER_GROUND) {
-					PathfindCell *groundCell = TheAI->pathfinder()->getCell(LAYER_GROUND, i+m_xOrigin, j+m_yOrigin);
-					DEBUG_ASSERTCRASH(groundCell, ("Should have cell."));
-					if (groundCell) {
-						DEBUG_ASSERTCRASH(groundCell->getConnectLayer()==m_layer, ("Should connect to this layer.jba."));
-						groundCell->setConnectLayer(LAYER_INVALID); // disconnect it.
-					}
-				}
-				cell->setType(PathfindCell::CELL_BRIDGE_IMPASSABLE);
-			}
-		}
-	}
-}
+// ?classifyCells@PathfindLayer@@QAEXXZ
+// Body in AIPathfind_classifyCells.asm (exact 1405B retail @ 0x3FC790).
+// Queue 0x73F191 was mid-body noise; C++ blocked by PathfindCell 16B packing.
 
 /**
  * Classifies the pathfind cells for the wall bridge layer.

@@ -210,7 +210,6 @@ Int DisconnectManager::getPingsRecieved()
 }
 
 
-// ?updateDisconnectStatus@DisconnectManager@@IAEXPAVConnectionManager@@@Z present-unmatched
 void DisconnectManager::updateDisconnectStatus(ConnectionManager *conMgr) {
 	for (Int i = 0; i < MAX_SLOTS; ++i) {
 		if (conMgr->isPlayerConnected(i)) {

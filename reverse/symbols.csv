@@ -1104,6 +1104,7 @@ name,address,notes
 ?setPrep@Dict@@AAEPAUDictPair@1@W4NameKeyType@@W4DataType@1@@Z,0x00042749
 ?setSortMode@@YAXW4GameSortType@@@Z,0x00048360
 ?setTransformMatrix@Thing@@QAEXPBVMatrix3D@@@Z,0x00023D49
+?setTransformMatrix@Thing@@QAEXPBVMatrix3D@@@Z,0x000361CE,BFME Thing::setTransformMatrix thunk
 ?shutdown@TerrainTracksRenderObjClassSystem@@QAEXXZ,0x0002C6E7
 ?shutdown@WaterTracksRenderSystem@@QAEXXZ,0x000319CB
 ?spin@LockClass@FastCriticalSectionClass@@CIXPAI@Z,0x00026FA8,FastCriticalSectionClass::LockClass spin-acquire (shared out-of-line body reached via ILT thunk); StringClass locks resolve here

@@ -48,6 +48,41 @@
 #include "Lib/Trig.h"
 #include "GameLogic/TerrainLogic.h"
 
+class BFMERetailThingVTable
+{
+public:
+	virtual void slot0() = 0;
+	virtual void slot1() = 0;
+	virtual void slot2() = 0;
+	virtual void slot3() = 0;
+	virtual void slot4() = 0;
+	virtual void reactToTransformChange(const Matrix3D *oldMtx, const Coord3D *oldPos, Real oldAngle) = 0;
+};
+
+class BFMERetailTerrainLogicVTable
+{
+public:
+	virtual void slot0() = 0;
+	virtual void slot1() = 0;
+	virtual void slot2() = 0;
+	virtual void slot3() = 0;
+	virtual void slot4() = 0;
+	virtual void slot5() = 0;
+	virtual void slot6() = 0;
+	virtual void slot7() = 0;
+	virtual void slot8() = 0;
+	virtual void slot9() = 0;
+	virtual void slot10() = 0;
+	virtual void slot11() = 0;
+	virtual void slot12() = 0;
+	virtual void slot13() = 0;
+	virtual void slot14() = 0;
+	virtual void slot15() = 0;
+	virtual void slot16() = 0;
+	virtual void slot17() = 0;
+	virtual PathfindLayerEnum alignOnTerrain(Real angle, const Coord3D& pos, Bool stickToGround, Matrix3D& mtx) = 0;
+};
+
 #ifdef _INTERNAL
 // for occasional debugging...
 //#pragma optimize("", off)
@@ -170,15 +205,18 @@ void Thing::setPositionZ( Real z )
 }
 
 //=============================================================================
-// ?setPosition@Thing@@QAEXPBUCoord3D@@@Z present-unmatched
 void Thing::setPosition( const Coord3D *pos )
 {
 	//USE_PERF_TIMER(ThingMatrixStuff)
-	if( !m_template->isKindOf( KINDOF_STICK_TO_TERRAIN_SLOPE) )
+	if( !(reinterpret_cast<const unsigned char *>(m_template.operator->())[0xc8] & 0x10) )
 	{
 		Real oldAngle = m_cachedAngle;
-		Coord3D oldPos = m_cachedPos;
-		Matrix3D oldMtx = m_transform;
+		Coord3D oldPos;
+		oldPos.x = m_cachedPos.x;
+		oldPos.y = m_cachedPos.y;
+		oldPos.z = m_cachedPos.z;
+		Matrix3D oldMtx;
+		oldMtx = m_transform;
 
 		//DEBUG_ASSERTCRASH(!(_isnan(pos->x) || _isnan(pos->y) || _isnan(pos->z)), ("Drawable/Object position NAN! '%s'\n", m_template->getName().str() ));
 		m_transform.Set_X_Translation( pos->x );
@@ -187,13 +225,13 @@ void Thing::setPosition( const Coord3D *pos )
 		m_cachedPos = *pos;
 		m_cacheFlags &= ~(VALID_ALTITUDE_TERRAIN | VALID_ALTITUDE_SEALEVEL);	// but don't clear the dir flags.
 
-		reactToTransformChange(&oldMtx, &oldPos, oldAngle);
+		reinterpret_cast<BFMERetailThingVTable *>(this)->reactToTransformChange(&oldMtx, &oldPos, oldAngle);
 	}
 	else
 	{
 		Matrix3D mtx;
 		const Bool stickToGround = true;	// yes, set the "z" pos				
-		TheTerrainLogic->alignOnTerrain(getOrientation(), *pos, stickToGround, mtx );
+		reinterpret_cast<BFMERetailTerrainLogicVTable *>(TheTerrainLogic)->alignOnTerrain(getOrientation(), *pos, stickToGround, mtx );
 		setTransformMatrix(&mtx);
 	}
 	DEBUG_ASSERTCRASH(!(_isnan(getPosition()->x) || _isnan(getPosition()->y) || _isnan(getPosition()->z)), ("Drawable/Object position NAN! '%s'\n", m_template->getName().str() ));

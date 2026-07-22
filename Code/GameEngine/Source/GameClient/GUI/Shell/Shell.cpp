@@ -268,7 +268,6 @@ void Shell::hide( Bool hide )
 //-------------------------------------------------------------------------------------------------
 /** Push layout onto shell */
 //-------------------------------------------------------------------------------------------------
-// ?push@Shell@@QAEXVAsciiString@@_N@Z present-unmatched
 void Shell::push( AsciiString filename, Bool shutdownImmediate )
 {
 

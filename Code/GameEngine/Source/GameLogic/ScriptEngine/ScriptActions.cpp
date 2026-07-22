@@ -6218,94 +6218,10 @@ void ScriptActions::doTeamUseCommandButtonOnNearestBuildingClass( const AsciiStr
 //-------------------------------------------------------------------------------------------------
 /** doTeamUseCommandButtonOnNearestObjectType */
 //-------------------------------------------------------------------------------------------------
-// ?doTeamUseCommandButtonOnNearestObjectType@ScriptActions@@IAEXABVAsciiString@@00@Z present-unmatched
-void ScriptActions::doTeamUseCommandButtonOnNearestObjectType( const AsciiString& teamName, const AsciiString& commandAbility, const AsciiString& objectType )
-{
-	Team *team = TheScriptEngine->getTeamNamed(teamName);
-	if (!team) {
-		return;
-	}
-
-	AIGroup *theGroup = TheAI->createGroup();
-	team->getTeamAsAIGroup(theGroup);
-
-	const CommandButton *commandButton = TheControlBar->findCommandButton(commandAbility);
-	if (!commandButton) {
-		return;
-	}
-
-	Object *srcObj = NULL;
-	if (commandButton->getSpecialPowerTemplate()) {
-		srcObj = theGroup->getSpecialPowerSourceObject(commandButton->getSpecialPowerTemplate()->getID());
-	} else {
-		srcObj = theGroup->getCommandButtonSourceObject(commandButton->getCommandType());
-	}
-
-	if (!srcObj) {
-		return;
-	}
-
-	Object *bestObj = NULL;
-
-	//First look for a specific object type (object lists will fail)
-	const ThingTemplate *thingTemplate = TheThingFactory->findTemplate( objectType, FALSE );
-	if( thingTemplate ) 
-	{
-		PartitionFilterPlayerAffiliation f1(team->getControllingPlayer(), ALLOW_ENEMIES | ALLOW_NEUTRAL, true);
-		PartitionFilterThing f2(thingTemplate, true);
-		PartitionFilterValidCommandButtonTarget f3(srcObj, commandButton, true, CMD_FROM_SCRIPT);
-		PartitionFilterSameMapStatus filterMapStatus(srcObj);
-		PartitionFilter *filters[] = { &f1, &f2, &f3, &filterMapStatus, 0 };
-
-		Coord3D pos;
-		theGroup->getCenter(&pos);
-
-		bestObj = ThePartitionManager->getClosestObject(&pos, REALLY_FAR, FROM_CENTER_2D, filters);
-		if( !bestObj ) 
-		{
-			return;
-		}
-	}
-	else
-	{
-		ObjectTypes *objectTypes = TheScriptEngine->getObjectTypes( objectType );
-		if( objectTypes )
-		{
-			PartitionFilterPlayerAffiliation f1(team->getControllingPlayer(), ALLOW_ENEMIES | ALLOW_NEUTRAL, true);
-			PartitionFilterValidCommandButtonTarget f3(srcObj, commandButton, true, CMD_FROM_SCRIPT);
-			PartitionFilterSameMapStatus f4(srcObj);
-
-			Coord3D pos;
-			theGroup->getCenter(&pos);
-			Real closestDist;
-			Real dist;
-
-			for( Int typeIndex = 0; typeIndex < objectTypes->getListSize(); typeIndex++ )
-			{
-				AsciiString thisTypeName = objectTypes->getNthInList( typeIndex );
-				const ThingTemplate *thisType = TheThingFactory->findTemplate( thisTypeName );
-				if( thisType )
-				{
-					PartitionFilterThing f2( thisType, true );
-					PartitionFilter *filters[] = { &f1, &f2, &f3, &f4, 0 };
-
-					Object *obj = ThePartitionManager->getClosestObject(&pos, REALLY_FAR, FROM_CENTER_2D, filters, &dist );
-					if( obj )
-					{
-						if( !bestObj || dist < closestDist )
-						{
-							bestObj = obj;
-							closestDist = dist;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// already been checked for validity
-	theGroup->groupDoCommandButtonAtObject(commandButton, bestObj, CMD_FROM_SCRIPT);
-}
+// ?doTeamUseCommandButtonOnNearestObjectType@ScriptActions@@IAEXABVAsciiString@@00@Z
+// Body in ScriptActions_doTeamUseCommandButtonOnNearestObjectType.asm (exact 273B retail @ 0x2FE110).
+// Queue RVA 0x614F75 was INSIDE mislocated 0x614F8E NearestKindof/INI claim; true body via
+// executeAction case order after BuildingClass (ILT 0x38483). BFME rewrite vs ZH partition path.
 
 //-------------------------------------------------------------------------------------------------
 /** doTeamPartialUseCommandButton */

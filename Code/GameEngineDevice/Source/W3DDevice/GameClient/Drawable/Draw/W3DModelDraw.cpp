@@ -2734,7 +2734,6 @@ void W3DModelDraw::recalcBonesForClientParticleSystems()
 	DANGER WARNING READ ME
 	DANGER WARNING READ ME
 */
-// ?updateBonesForClientParticleSystems@W3DModelDraw@@UAE_NXZ present-unmatched
 Bool W3DModelDraw::updateBonesForClientParticleSystems()
 {
 	const Drawable* drawable = getDrawable();

@@ -368,18 +368,17 @@ NetCommandRef * NetCommandList::findMessage(NetCommandMsg *msg) {
 	return retval;
 }
 
-// ?findMessage@NetCommandList@@ present-unmatched
 NetCommandRef * NetCommandList::findMessage(UnsignedShort commandID, UnsignedByte playerID) {
 	NetCommandRef *retval = m_first;
 	while (retval != NULL) {
-		if (DoesCommandRequireACommandID(retval->getCommand()->getNetCommandType())) {
-			if ((retval->getCommand()->getID() == commandID) && (retval->getCommand()->getPlayerID() == playerID)) {
+		if (DoesCommandRequireACommandID((*(NetCommandMsg **)retval)->getNetCommandType())) {
+			if (((*(NetCommandMsg **)retval)->getID() == commandID) && ((*(NetCommandMsg **)retval)->getPlayerID() == playerID)) {
 				return retval;
 			}
 		}
-		retval = retval->getNext();
+		retval = *(NetCommandRef **)((char *)retval + 4);
 	}
-	return retval;
+	return NULL;
 }
 
 Bool NetCommandList::isEqualCommandMsg(NetCommandMsg *msg1, NetCommandMsg *msg2) {

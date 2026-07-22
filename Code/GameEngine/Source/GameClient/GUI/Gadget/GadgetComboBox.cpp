@@ -986,26 +986,35 @@ void GadgetComboBoxSetFont( GameWindow *comboBox, GameFont *font )
 	if( comboBox == NULL )
 		return;
 
-	// set the ListBox gadget's font
-	GameWindow *listBox = GadgetComboBoxGetListBox(comboBox);
-	if(listBox)
-		listBox->winSetFont( font);
+	typedef void (DisplayString::*BFMESetFontFn)( GameFont * );
 
-	// set the Text Entry gadget's font
-	GameWindow *editBox = GadgetComboBoxGetEditBox(comboBox);
-	if(editBox)
-		editBox->winSetFont(font);
+	// set the ListBox gadget's font (BFME ComboBoxData listBox @ +0x2c)
+	ComboBoxData *comboBoxData = (ComboBoxData *)comboBox->winGetUserData();
+	if( comboBoxData )
+	{
+		GameWindow *listBox = *(GameWindow **)((char *)comboBoxData + 0x2c);
+		if( listBox )
+			listBox->GameWindow::winSetFont( font );
+	}
 
-	//Need to setup the default window font
+	// set the Text Entry gadget's font (BFME ComboBoxData editBox @ +0x28)
+	comboBoxData = (ComboBoxData *)comboBox->winGetUserData();
+	if( comboBoxData )
+	{
+		GameWindow *editBox = *(GameWindow **)((char *)comboBoxData + 0x28);
+		if( editBox )
+			editBox->GameWindow::winSetFont( font );
+	}
+
+	// set the font for the display strings all windows have
+	// BFME DisplayString::setFont is vtable slot 6 (0x18), same as ListBox/TextEntry
 	DisplayString *dString;
-
-		// set the font for the display strings all windows have
 	dString = comboBox->winGetInstanceData()->getTextDisplayString();
 	if( dString )
-		dString->setFont( font );
+		(dString->*(*(BFMESetFontFn *)&(*(void ***)dString)[6]))( font );
 	dString = comboBox->winGetInstanceData()->getTooltipDisplayString();
 	if( dString )
-		dString->setFont( font );
+		(dString->*(*(BFMESetFontFn *)&(*(void ***)dString)[6]))( font );
 }
 
 // GadgetComboBoxSetEnabledTextColors =========================================

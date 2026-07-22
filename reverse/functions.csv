@@ -13168,3 +13168,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??RUnicodeStringLessThan@@QBE_NVUnicodeString@@0@Z,,0x0044D2A0,95,Code/masm_dumps/RUnicodeStringLessThan_QBE_NVUnicodeString_0_Z_44D2A0.asm,matched,MASM exact 95B; true body 0x44D2A0 (queue 0x791C16 mid-fn float path); SEH+compareNoCase@StringBase@G ILT 0x1609F; C++ 126B inline _wcsicmp
 ?updateTexture@W3DProjectedShadow@@QAEXAAVVector3@@@Z,,0x007AFF90,554,Code/masm_dumps/updateTexture_W3DProjectedShadow_QAEXAAVVector3_Z_007AFF90.asm,matched,exact MASM dump; true body 0x7AFF90/554 (drift 0xB0233D was v3_rnd epilogue; update@0x7B0250 calls thunk 0x26238)
 ??1TeamInQueue@@MAE@XZ,,0x00160ED0,112,Code/masm_dumps/TeamInQueue_dtor.asm,matched,Exact 112B @0x160ED0; queue 0x9F27D3 was TeamFactory-region thunk; vtbl+G-dtor chain+m_team@+0x1c vs disband
+?deleteCondition@OrCondition@@QAEXPAVCondition@@@Z,,0x0034FD40,31,Code/GameEngine/Source/GameLogic/ScriptEngine/Scripts.cpp,matched,

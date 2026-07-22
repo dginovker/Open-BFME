@@ -1481,14 +1481,16 @@ Condition *OrCondition::removeCondition(Condition *pCond)
 	return pCur;
 }
 
-// ?deleteCondition@OrCondition@@QAEXPAVCondition@@@Z present-unmatched
 void OrCondition::deleteCondition(Condition *pCond)
 {
+	// Retail: removeCondition then vtable[0] scalar-deleting dtor (flags=1),
+	// not deleteInstance. Condition dtor is protected — PublicDtor cast lets
+	// MSVC emit the same virtual call through the real vtable.
 	Condition *pCur = removeCondition(pCond);
-	DEBUG_ASSERTCRASH(pCur, ("Couldn't find condition."));
-	if (pCur==NULL) 
+	if (pCur == NULL)
 		return;
-	pCur->deleteInstance();
+	struct PublicDtor { virtual ~PublicDtor() {} };
+	delete (PublicDtor *)pCur;
 }
 
 

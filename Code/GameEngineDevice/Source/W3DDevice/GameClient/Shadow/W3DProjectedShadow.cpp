@@ -1753,201 +1753,90 @@ Shadow* W3DProjectedShadowManager::addDecal(RenderObjClass *robj, Shadow::Shadow
 	return shadow;
 }
 
-// ?addShadow@W3DProjectedShadowManager@@ present-unmatched
+struct BFMEShadowTypeInfo
+{
+	Char name[128];
+	ShadowType type;
+	Bool allowUpdates;
+	Bool allowWorldAlign;
+	Char pad[2];
+	Real sizeX;
+	Real sizeY;
+	Real offsetX;
+	Real offsetY;
+	Int unused98;
+	Int flags;
+	Bool force;
+};
+
+class BFMEShadowManagerLayout
+{
+public:
+	W3DShadowTexture *getTexture(const Char *name);
+	W3DProjectedShadow *addShadowCore(
+		W3DShadowTexture *texture,
+		RenderObjClass *robj,
+		ShadowType type,
+		Bool allowWorldAlign,
+		Real sizeX,
+		Real sizeY,
+		Int flags,
+		Real offsetX,
+		Real offsetY,
+		W3DProjectedShadow **list,
+		Bool simple,
+		Drawable *draw,
+		Bool projected);
+};
+
 W3DProjectedShadow* W3DProjectedShadowManager::addShadow(RenderObjClass *robj, Shadow::ShadowTypeInfo *shadowInfo, Drawable *draw)
 {
-	W3DShadowTexture *st=NULL;
-	static char	defaultDecalName[]={"shadow.tga"};
-	ShadowType shadowType=SHADOW_NONE;		/// type of projection
-	Bool	allowWorldAlign=FALSE;	/// wrap shadow around world geometry - else align perpendicular to local z-axis.
-	Real	decalSizeX=0.0f;
-	Real	decalSizeY=0.0f;
-	Real	decalOffsetX=0.0f;
-	Real	decalOffsetY=0.0f;
+	BFMEShadowTypeInfo *info = (BFMEShadowTypeInfo *)shadowInfo;
+	BFMEShadowManagerLayout *manager = (BFMEShadowManagerLayout *)this;
 
-	Bool	allowSunDirection=FALSE;
-	Char	texture_name[64];
-	Int nameLen;
-
-
-	if (!m_dynamicRenderTarget || !robj || !TheGlobalData->m_useShadowDecals)
-		return NULL;	//right now we require hardware render-to-texture support
-
-
-	if (shadowInfo)
-	{
-		//determine what kind of shadow is needed
-		if (shadowInfo->m_type==SHADOW_DECAL)
-		{		//simple decal using the premade texture specified.
-				//can be always perpendicular to model's z-axis or projected
-				//onto world geometry.
-				nameLen=strlen(shadowInfo->m_ShadowName);
-				if (nameLen <= 1)	//no texture name given, use same as object
-				{	strcpy(texture_name,defaultDecalName);
-				}
-				else
-				{	strncpy(texture_name,shadowInfo->m_ShadowName,nameLen);
-					strcpy(texture_name+nameLen,".tga");	//append texture extension
-				}
-					
-				st=m_W3DShadowTextureManager->getTexture(texture_name);
-				if (st == NULL)
-				{
-					//need to add this texture without creating it from a real renderobject
-					TextureClass *w3dTexture=WW3DAssetManager::Get_Instance()->Get_Texture(texture_name);
-					w3dTexture->Get_Filter().Set_U_Addr_Mode(TextureFilterClass::TEXTURE_ADDRESS_CLAMP);
-					w3dTexture->Get_Filter().Set_V_Addr_Mode(TextureFilterClass::TEXTURE_ADDRESS_CLAMP);
-					w3dTexture->Get_Filter().Set_Mip_Mapping(TextureFilterClass::FILTER_TYPE_NONE);
-
-					DEBUG_ASSERTCRASH(w3dTexture != NULL, ("Could not load decal texture"));
-
-					if (!w3dTexture)
-						return NULL;
-
-					st = NEW W3DShadowTexture;	// poolify
-					SET_REF_OWNER( st );
-					st->Set_Name(texture_name);
-					m_W3DShadowTextureManager->addTexture( st );
-					st->setTexture(w3dTexture);
-				}
-				shadowType=SHADOW_DECAL;
-				allowSunDirection=shadowInfo->m_type & SHADOW_DIRECTIONAL_PROJECTION;
-				decalSizeX=shadowInfo->m_sizeX;
-				decalSizeY=shadowInfo->m_sizeY;
-				decalOffsetX=shadowInfo->m_offsetX;
-				decalOffsetY=shadowInfo->m_offsetY;
-		}
-		else
-		if (shadowInfo->m_type==SHADOW_PROJECTION)
-		{		//projection of object geometry into a texture.
-				//can be applied on a plane horizontal to model's z-axis or
-				//projected onto world geometry.
-				if (shadowInfo->m_ShadowName[0] != '\0')
-				{	//the shadow will be based on another render object
-					//to allow multiple models to share same shadow - for
-					//example, all trees could use same shadow even if slightly
-					//different color, etc.
-					strcpy(texture_name,shadowInfo->m_ShadowName);
-				}
-				else
-					strcpy(texture_name,robj->Get_Name());	//not texture name give, assume model name.
-					
-				st=m_W3DShadowTextureManager->getTexture(texture_name);
-				if (st == NULL)
-				{	//texture doesn't exist, use current render object to create it
-					m_W3DShadowTextureManager->createTexture(robj,texture_name);
-					//try loading again
-					st=m_W3DShadowTextureManager->getTexture(texture_name);
-
-					DEBUG_ASSERTCRASH(st != NULL, ("Could not create shadow texture"));
-
-					if (st==NULL)
-						return NULL;	//could not create the shadow texture
-				}
-				shadowType=SHADOW_PROJECTION;
-		}//SHADOW_PROJECTION
-	}
-	else
-	{	//no shadow info, assume user wants a projected shadow
-		strcpy(texture_name,robj->Get_Name());
-
-		st=m_W3DShadowTextureManager->getTexture(texture_name);
-
-		if (st==NULL)
-		{	//did not find a cached copy of the shadow geometry, create a new one
-			m_W3DShadowTextureManager->createTexture(robj,texture_name);
-			//try loading again
-			st=m_W3DShadowTextureManager->getTexture(texture_name);
-			if (st==NULL)
-				return NULL;	//could not create the shadow texture
-		}
-		shadowType=SHADOW_PROJECTION;
-	}
-
-	W3DProjectedShadow *shadow = NEW W3DProjectedShadow;
-
-	// sanity
-	if( shadow == NULL )
+	if (info == NULL)
+		return NULL;
+	if (!*((Bool *)TheGlobalData + 0x65) && !info->force)
 		return NULL;
 
-	shadow->setRenderObject(robj);
-	shadow->setTexture(0,st);	///@todo: Fix projected shadows to allow multiple lights
-	shadow->m_type = shadowType;		/// type of projection
-	shadow->m_allowWorldAlign=allowWorldAlign;	/// wrap shadow around world geometry - else align perpendicular to local z-axis.
-
-	AABoxClass box;
-
-	robj->Get_Obj_Space_Bounding_Box(box);
-
-	//Check if app is overriding any of the default texture stretch factors.
-	if (decalSizeX)
-		decalSizeX=1.0f/decalSizeX; //world space distance to stretch full texture scale
+	const Char *name;
+	if (info->name[0] == '\0' || info->name[1] == '\0')
+		name = "shadow";
 	else
-		decalSizeX=1.0f/(box.Extent.X*2.0f);//use bounding box to determine size
+		name = info->name;
 
-	if (decalSizeY)
-		decalSizeY=-1.0f/decalSizeY;
-	else
-		decalSizeY=-1.0f/(box.Extent.Y*2.0f);//world space distance to stretch full texture
+	W3DShadowTexture *texture = manager->getTexture(name);
+	Real sizeX = info->sizeX;
+	Real sizeY = info->sizeY;
+	ShadowType type = info->type;
+	Real offsetX = info->offsetX;
+	Real offsetY = info->offsetY;
+	volatile Int flags = info->flags;
 
-	if (decalOffsetX)
-		decalOffsetX=-decalOffsetX*decalSizeX;
-	else
-		decalOffsetX=0.0f;//-box.Center.X*decalSizeX;
-
-	if (decalOffsetY)
-		decalOffsetY=-decalOffsetY*decalSizeY;
-	else
-		decalOffsetY=0.0f;//-box.Center.Y*decalSizeY;
-
-	//Prestore some values used during projection to optimize out division.
-	shadow->m_oowDecalSizeX = decalSizeX;	//one over width
-	shadow->m_oowDecalSizeY = decalSizeY;	//one over height
-	shadow->m_decalSizeX = 1.0f/decalSizeX;	//width
-	shadow->m_decalSizeY = 1.0f/decalSizeY;	//height
-
-	shadow->m_decalOffsetU= decalOffsetX;
-	shadow->m_decalOffsetV= decalOffsetY;
-
-	shadow->m_flags	= allowSunDirection;
-
-	shadow->init();
-
-	// add to our shadow list through the shadow next links, insert next to other shadows using same texture
-
-	W3DProjectedShadow *nextShadow=NULL,*prevShadow=NULL;
-	for( nextShadow = m_shadowList; nextShadow; prevShadow=nextShadow,nextShadow = nextShadow->m_next )
+	if (sizeX == 0.0f || sizeY == 0.0f)
 	{
-		if (nextShadow->m_shadowTexture[0]==st)
-		{	//found start of other shadows using same texture, insert new shadow here.
-			shadow->m_next=nextShadow;
-			if (prevShadow)
-			{	prevShadow->m_next=shadow;
-			}
-			else
-				m_shadowList=shadow;
-			break;
-		}
+		AABoxClass box;
+		robj->Get_Obj_Space_Bounding_Box(box);
+		if (sizeX == 0.0f)
+			sizeX = box.Extent.X * 2.0f;
+		if (sizeY == 0.0f)
+			sizeY = box.Extent.Y * -2.0f;
 	}
 
-	if (nextShadow==NULL)
-	{	//shadow with new texture. Add to top of list.
-		shadow->m_next = m_shadowList;
-		m_shadowList = shadow;
-	}
-
-	switch (shadow->m_type)
-	{
-		case SHADOW_DECAL:
-			m_numDecalShadows++;
-			break;
-		case SHADOW_PROJECTION:
-			m_numProjectionShadows++;
-		default:
-			break;
-	}
-
-	return shadow;
+	return manager->addShadowCore(
+		texture,
+		robj,
+		type,
+		FALSE,
+		sizeX,
+		sizeY,
+		(Int)flags,
+		-offsetX,
+		-offsetY,
+		(W3DProjectedShadow **)((Char *)this + 4),
+		FALSE,
+		NULL,
+		FALSE);
 }
 
 // ?createDecalShadow@W3DProjectedShadowManager@@ present-unmatched

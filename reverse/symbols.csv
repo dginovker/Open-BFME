@@ -3436,3 +3436,5 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?isCliffMappedTexture@WorldHeightMap@@QAE_NHH@Z,0x00022034,retail WorldHeightMap::isCliffMappedTexture ILT thunk
 ?blendTileData@BFMERetailWorldHeightMap@@QAEXPAUTBlendTileInfo@@H@Z,0x000167F7,retail WorldHeightMap::blendTileData ILT thunk
 ?_M_insert@?$_Rb_tree@HU?$pair@$$CBHVBuddyInfo@@@_STL@@U?$_Select1st@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@U?$less@H@2@V?$allocator@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@@_STL@@AAE?AU?$_Rb_tree_iterator@U?$pair@$$CBHVBuddyInfo@@@_STL@@U?$_Nonconst_traits@U?$pair@$$CBHVBuddyInfo@@@_STL@@@2@@2@PAU_Rb_tree_node_base@2@0ABU?$pair@$$CBHVBuddyInfo@@@2@0@Z,0x00036CDC,retail BuddyInfo map _M_insert ILT thunk (body 0x004EBC90)
+?getTexture@BFMEShadowManagerLayout@@QAEPAVW3DShadowTexture@@PBD@Z,0x0004088B,retail projected-shadow texture lookup ILT thunk
+?addShadowCore@BFMEShadowManagerLayout@@QAEPAVW3DProjectedShadow@@PAVW3DShadowTexture@@PAVRenderObjClass@@W4ShadowType@@_NMMHMMPAPAV2@3PAVDrawable@@3@Z,0x000193BC,retail projected-shadow 13-argument core ILT thunk

@@ -1,0 +1,90 @@
+.386
+.model flat
+
+; ?setShroudLevel@W3DRadar@@UAEXHHW4CellShroudStatus@@@Z
+; Exact 626 retail bytes @ 0x006C2710
+_TEXT SEGMENT
+public ?setShroudLevel@W3DRadar@@UAEXHHW4CellShroudStatus@@@Z
+?setShroudLevel@W3DRadar@@UAEXHHW4CellShroudStatus@@@Z PROC
+    db 64h,0A1h,00h,00h,00h,00h,6Ah,0FFh
+    db 68h,70h,9Eh,04h,01h,50h,0A1h,0C8h
+    db 0D5h,2Eh,01h,64h,89h,25h,00h,00h
+    db 00h,00h,83h,0ECh,28h,55h,8Bh,0E9h
+    db 8Ah,88h,0F5h,0Ch,00h,00h,84h,0C9h
+    db 0Fh,84h,32h,02h,00h,00h,0A1h,0E0h
+    db 7Fh,2Fh,01h,53h,33h,0DBh,3Bh,0C3h
+    db 56h,74h,08h,8Bh,0B0h,0BCh,30h,00h
+    db 00h,0EBh,02h,33h,0F6h,3Bh,0F3h,0Fh
+    db 84h,11h,02h,00h,00h,57h,0E8h,2Dh
+    db 09h,24h,00h,8Dh,4Ch,24h,1Ch,51h
+    db 8Dh,8Dh,0A0h,14h,00h,00h,89h,5Ch
+    db 24h,44h,0E8h,0F9h,0BEh,24h,00h,0D9h
+    db 46h,10h,0DBh,44h,24h,48h,0C6h,44h
+    db 24h,40h,01h,0D8h,0C9h,0E8h,0AEh,46h
+    db 33h,00h,0DDh,0D8h,0D9h,46h,14h,89h
+    db 44h,24h,18h,0DBh,44h,24h,4Ch,0D8h
+    db 0C9h,0E8h,9Ah,46h,33h,00h,0DDh,0D8h
+    db 8Bh,54h,24h,48h,0D9h,46h,10h,42h
+    db 89h,54h,24h,48h,0DBh,44h,24h,48h
+    db 89h,44h,24h,14h,0D8h,0C9h,0E8h,7Dh
+    db 46h,33h,00h,0DDh,0D8h,0D9h,46h,14h
+    db 89h,44h,24h,20h,8Bh,44h,24h,4Ch
+    db 40h,89h,44h,24h,48h,0DBh,44h,24h
+    db 48h,0D8h,0C9h,0E8h,60h,46h,33h,00h
+    db 0DDh,0D8h,0DBh,44h,24h,18h,8Dh,4Ch
+    db 24h,24h,51h,8Dh,54h,24h,30h,0D9h
+    db 5Ch,24h,30h,52h,0DBh,44h,24h,1Ch
+    db 8Bh,0CDh,89h,44h,24h,50h,0D9h,5Ch
+    db 24h,38h,0E8h,9Ah,38h,96h,0FFh,0DBh
+    db 44h,24h,20h,8Bh,44h,24h,24h,8Bh
+    db 7Ch,24h,28h,8Dh,4Ch,24h,24h,0D9h
+    db 5Ch,24h,2Ch,51h,0DBh,44h,24h,4Ch
+    db 8Dh,54h,24h,30h,52h,8Bh,0CDh,0D9h
+    db 5Ch,24h,38h,89h,44h,24h,1Ch,0E8h
+    db 6Dh,38h,96h,0FFh,8Bh,44h,24h,24h
+    db 8Bh,6Ch,24h,28h,89h,44h,24h,18h
+    db 8Ah,44h,24h,50h,3Ch,80h,89h,6Ch
+    db 24h,20h,73h,49h,8Bh,35h,0C8h,0D5h
+    db 2Eh,01h,0Fh,0B6h,0C8h,0BBh,7Fh,00h
+    db 00h,00h,2Bh,0D9h,0D1h,0E3h,89h,5Ch
+    db 24h,50h,0DBh,44h,24h,50h,0D9h,0C0h
+    db 0D8h,8Eh,88h,0Ch,00h,00h,0E8h,0CDh
+    db 45h,33h,00h,0D9h,0C0h,0D8h,8Eh,8Ch
+    db 0Ch,00h,00h,89h,44h,24h,50h,0E8h
+    db 0BCh,45h,33h,00h,0D8h,8Eh,90h,0Ch
+    db 00h,00h,89h,44h,24h,48h,0E8h,0ADh
+    db 45h,33h,00h,0EBh,56h,76h,47h,8Bh
+    db 35h,0C8h,0D5h,2Eh,01h,0Fh,0B6h,0D8h
+    db 8Dh,9Ch,1Bh,00h,0FFh,0FFh,0FFh,89h
+    db 5Ch,24h,50h,0DBh,44h,24h,50h,0D9h
+    db 0C0h,0D8h,8Eh,94h,0Ch,00h,00h,0E8h
+    db 84h,45h,33h,00h,0D9h,0C0h,0D8h,8Eh
+    db 98h,0Ch,00h,00h,89h,44h,24h,50h
+    db 0E8h,73h,45h,33h,00h,0D8h,8Eh,9Ch
+    db 0Ch,00h,00h,89h,44h,24h,48h,0E8h
+    db 64h,45h,33h,00h,0EBh,0Dh,0B8h,0FFh
+    db 00h,00h,00h,89h,44h,24h,50h,89h
+    db 44h,24h,48h,3Bh,0FDh,89h,44h,24h
+    db 4Ch,7Fh,67h,8Bh,44h,24h,18h,90h
+    db 8Bh,74h,24h,14h,8Bh,0CEh,3Bh,0C8h
+    db 7Fh,4Fh,8Dh,9Bh,00h,00h,00h,00h
+    db 85h,0F6h,7Ch,3Ch,85h,0FFh,7Ch,38h
+    db 81h,0FEh,80h,00h,00h,00h,7Dh,30h
+    db 81h,0FFh,80h,00h,00h,00h,7Dh,28h
+    db 0Fh,0B6h,44h,24h,48h,0Fh,0B6h,4Ch
+    db 24h,4Ch,33h,0D2h,8Ah,0F3h,8Ah,54h
+    db 24h,50h,0C1h,0E2h,08h,0Bh,0D0h,0C1h
+    db 0E2h,08h,0Bh,0D1h,52h,57h,56h,8Dh
+    db 4Ch,24h,28h,0E8h,0C0h,0A4h,23h,00h
+    db 8Bh,44h,24h,18h,46h,3Bh,0F0h,7Eh
+    db 0B7h,8Bh,4Ch,24h,20h,47h,3Bh,0F9h
+    db 7Eh,9Eh,8Dh,4Ch,24h,1Ch,0C6h,44h
+    db 24h,40h,00h,0E8h,50h,9Ch,23h,00h
+    db 0C7h,44h,24h,40h,0FFh,0FFh,0FFh,0FFh
+    db 0E8h,0A3h,31h,24h,00h,5Fh,5Eh,5Bh
+    db 8Bh,4Ch,24h,2Ch,5Dh,64h,89h,0Dh
+    db 00h,00h,00h,00h,83h,0C4h,34h,0C2h
+    db 0Ch,00h
+?setShroudLevel@W3DRadar@@UAEXHHW4CellShroudStatus@@@Z ENDP
+_TEXT ENDS
+END

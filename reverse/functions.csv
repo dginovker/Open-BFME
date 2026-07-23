@@ -13298,3 +13298,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?getPointerToTileData@WorldHeightMap@@QAEPAEHHH@Z,,0x0074C920,273,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,
 ?createMoveHint@InGameUI@@UAEXPBVGameMessage@@@Z,,0x0043AC80,3,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,
 ?Invalidate@DX8MeshRendererClass@@QAEX_N@Z,,0x00947BD0,289,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer_Invalidate.asm,matched,
+?setShroudLevel@W3DRadar@@UAEXHHW4CellShroudStatus@@@Z,,0x006C2710,626,Code/GameEngineDevice/Source/W3DDevice/Common/System/W3DRadar_setShroudLevel.asm,matched,exact MASM body via W3DRadar ctor vtable slot 11; queue RVA misplaced

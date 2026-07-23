@@ -13362,3 +13362,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?allow@PartitionFilterPolygonTrigger@@MAE_NPAVObject@@@Z,,0x001DD490,64,Code/masm_dumps/PartitionFilterPolygonTrigger_allow_1DD490.asm,matched,Certified packet 89 exact retail MASM recovery
 ??0BuddyMessage@@QAE@ABV0@@Z,,0x004EA520,120,Code/masm_dumps/BuddyMessage_copy_constructor.asm,matched,Certified packet 91 exact retail MASM recovery
 ??0Shell@@QAE@XZ,,0x0057F650,259,Code/masm_dumps/Shell_constructor_57F650.asm,matched,Certified packet 92 exact retail MASM SHA256 1cbea3545873ee70aacdaf9856ab9323d9288e58eeb640cc6330f5a55342362f
+??1BuildListInfo@@MAE@XZ,,0x00194320,135,Code/masm_dumps/BuildListInfo_destructor_194320.asm,matched,Certified packet 93 exact retail MASM

@@ -13304,3 +13304,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1?$ShareBufferClass@G@@UAE@XZ,,0x009240D0,29,Code/masm_dumps/ShareBuffer_unsigned_short_destructor.asm,matched,MASM exact; ctor-vtable-chain proven
 ??1AIPlayer@@MAE@XZ,,0x001613C0,87,Code/masm_dumps/AIPlayer_destructor.asm,matched,MASM exact; AIPlayer vtbl slot0 deleting-wrapper chain; queue 0x9F2808 was INSIDE unrelated dtor
 ??1TeamTemplateInfo@@QAE@XZ,,0x000ED580,251,Code/masm_dumps/TeamTemplateInfo_dtor.asm,matched,
+?parseDrawCallback@@YA_NPADPAVWinInstanceData@@0PAX@Z,,0x00486A60,130,Code/GameEngine/Source/GameClient/GUI/GameWindowManagerScript_parseDrawCallback.asm,matched,MASM exact parser-table anchored DRAWCALLBACK

@@ -1,0 +1,19 @@
+.386
+.model flat
+
+; ??4WindowLayoutInfo@@QAEAAV0@ABV0@@Z
+; Exact 115 retail bytes @ 0x00488AF0; certified packet 69.
+_TEXT SEGMENT
+public ??4WindowLayoutInfo@@QAEAAV0@ABV0@@Z
+??4WindowLayoutInfo@@QAEAAV0@ABV0@@Z PROC
+    db 056h,08Bh,0F1h,057h,08Bh,07Ch,024h,00Ch,08Bh,007h,089h,006h,08Bh,04Fh,004h
+    db 089h,04Eh,004h,08Bh,057h,008h,089h,056h,008h,08Bh,047h,00Ch,089h,046h,00Ch
+    db 08Bh,04Fh,010h,08Dh,057h,014h,089h,04Eh,010h,052h,08Dh,04Eh,014h,0E8h,070h
+    db 0F1h,03Fh,000h,08Dh,047h,018h,050h,08Dh,04Eh,018h,0E8h,064h,0F1h,03Fh,000h
+    db 08Dh,04Fh,01Ch,051h,08Dh,04Eh,01Ch,0E8h,058h,0F1h,03Fh,000h,08Dh,057h,020h
+    db 052h,08Dh,04Eh,020h,0E8h,04Ch,0F1h,03Fh,000h,08Dh,047h,024h,050h,08Dh,04Eh
+    db 024h,0E8h,040h,0F1h,03Fh,000h,083h,0C7h,028h,057h,08Dh,04Eh,028h,0E8h,00Dh
+    db 0E1h,0BAh,0FFh,05Fh,08Bh,0C6h,05Eh,0C2h,004h,000h
+??4WindowLayoutInfo@@QAEAAV0@ABV0@@Z ENDP
+_TEXT ENDS
+END

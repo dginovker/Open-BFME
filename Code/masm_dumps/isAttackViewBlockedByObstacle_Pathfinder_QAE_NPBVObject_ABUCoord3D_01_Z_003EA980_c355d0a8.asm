@@ -1,0 +1,74 @@
+.386
+.model flat
+
+; ?isAttackViewBlockedByObstacle@Pathfinder@@QAE_NPBVObject@@ABUCoord3D@@01@Z
+; Retail @ 0x003EA980 size 501
+_TEXT SEGMENT
+public ?isAttackViewBlockedByObstacle@Pathfinder@@QAE_NPBVObject@@ABUCoord3D@@01@Z
+?isAttackViewBlockedByObstacle@Pathfinder@@QAE_NPBVObject@@ABUCoord3D@@01@Z PROC
+    db 83h,0ECh,2Ch,0A1h,14h,0F2h,2Eh,01h
+    db 89h,0Ch,24h,8Bh,48h,14h,8Ah,41h
+    db 67h,84h,0C0h,75h,08h,32h,0C0h,83h
+    db 0C4h,2Ch,0C2h,10h,00h,56h,8Bh,74h
+    db 24h,34h,8Bh,46h,04h,85h,0C0h,74h
+    db 0Ch,8Bh,48h,04h,85h,0C9h,74h,05h
+    db 0E8h,06h,79h,0C1h,0FFh,0F7h,80h,0CCh
+    db 00h,00h,00h,00h,00h,00h,04h,75h
+    db 09h,32h,0C0h,5Eh,83h,0C4h,2Ch,0C2h
+    db 10h,00h,53h,57h,6Ah,00h,8Bh,0CEh
+    db 0E8h,6Ch,0F2h,0C1h,0FFh,6Ah,02h,8Bh
+    db 0CEh,8Bh,0F8h,0E8h,3Fh,7Bh,0C4h,0FFh
+    db 84h,0C0h,8Bh,5Ch,24h,44h,75h,3Fh
+    db 85h,0FFh,74h,3Bh,85h,0DBh,74h,10h
+    db 8Bh,54h,24h,40h,53h,52h,56h,8Bh
+    db 0CFh,0E8h,57h,9Ah,0C4h,0FFh,0EBh,12h
+    db 8Bh,44h,24h,48h,8Bh,4Ch,24h,40h
+    db 50h,51h,56h,8Bh,0CFh,0E8h,07h,9Ah
+    db 0C4h,0FFh,0F6h,0D8h,1Ah,0C0h,0FEh,0C0h
+    db 84h,0C0h,74h,0Bh,5Fh,5Bh,0B0h,01h
+    db 5Eh,83h,0C4h,2Ch,0C2h,10h,00h,55h
+    db 8Bh,0CEh,0E8h,62h,0F9h,0C4h,0FFh,85h
+    db 0DBh,8Bh,0E8h,0BFh,01h,00h,00h,00h
+    db 0Fh,84h,0BEh,00h,00h,00h,8Bh,0CBh
+    db 0E8h,4Ch,0F9h,0C4h,0FFh,8Bh,0F8h,3Bh
+    db 0EFh,0Fh,84h,0ADh,00h,00h,00h,83h
+    db 0FDh,02h,7Ch,05h,83h,0FDh,0Fh,7Eh
+    db 12h,83h,0FFh,02h,0Fh,8Ch,9Ah,00h
+    db 00h,00h,83h,0FFh,0Fh,0Fh,8Fh,91h
+    db 00h,00h,00h,8Bh,4Ch,24h,44h,8Bh
+    db 51h,08h,8Bh,6Ch,24h,4Ch,0D9h,45h
+    db 08h,89h,54h,24h,40h,0D8h,5Ch,24h
+    db 40h,0DFh,0E0h,0F6h,0C4h,41h,75h,07h
+    db 8Bh,45h,08h,89h,44h,24h,40h,8Bh
+    db 11h,8Bh,41h,04h,8Bh,4Ch,24h,40h
+    db 89h,54h,24h,14h,8Dh,54h,24h,14h
+    db 52h,89h,4Ch,24h,20h,8Bh,0Dh,0CCh
+    db 0F4h,2Eh,01h,6Ah,00h,89h,44h,24h
+    db 20h,0E8h,0BFh,1Bh,0C3h,0FFh,89h,44h
+    db 24h,4Ch,8Bh,0C5h,8Bh,08h,8Bh,50h
+    db 04h,8Bh,40h,08h,89h,4Ch,24h,14h
+    db 8Bh,4Ch,24h,40h,89h,54h,24h,18h
+    db 8Dh,54h,24h,14h,89h,44h,24h,1Ch
+    db 52h,89h,4Ch,24h,20h,8Bh,0Dh,0CCh
+    db 0F4h,2Eh,01h,6Ah,00h,0E8h,8Bh,1Bh
+    db 0C3h,0FFh,39h,44h,24h,4Ch,75h,10h
+    db 5Dh,5Fh,5Bh,0B0h,01h,5Eh,83h,0C4h
+    db 2Ch,0C2h,10h,00h,8Bh,6Ch,24h,4Ch
+    db 89h,5Ch,24h,24h,8Bh,5Ch,24h,10h
+    db 55h,57h,8Bh,0CBh,89h,74h,24h,28h
+    db 0E8h,78h,8Eh,0C4h,0FFh,89h,44h,24h
+    db 28h,33h,0C0h,8Bh,0CEh,89h,44h,24h
+    db 2Ch,88h,44h,24h,30h,89h,44h,24h
+    db 34h,89h,44h,24h,38h,0E8h,5Fh,0F8h
+    db 0C4h,0FFh,83h,0F8h,01h,74h,1Bh,83h
+    db 0F8h,10h,7Dh,16h,83h,0FFh,01h,0C7h
+    db 44h,24h,2Ch,03h,00h,00h,00h,75h
+    db 09h,8Bh,0CEh,0E8h,41h,0F8h,0C4h,0FFh
+    db 8Bh,0F8h,8Bh,4Ch,24h,44h,8Dh,44h
+    db 24h,20h,50h,57h,55h,51h,8Bh,0CBh
+    db 0E8h,0ACh,14h,0C4h,0FFh,5Dh,0F7h,0D8h
+    db 5Fh,1Bh,0C0h,5Bh,0F7h,0D8h,5Eh,83h
+    db 0C4h,2Ch,0C2h,10h,00h
+?isAttackViewBlockedByObstacle@Pathfinder@@QAE_NPBVObject@@ABUCoord3D@@01@Z ENDP
+_TEXT ENDS
+END

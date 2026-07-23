@@ -13306,3 +13306,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1TeamTemplateInfo@@QAE@XZ,,0x000ED580,251,Code/masm_dumps/TeamTemplateInfo_dtor.asm,matched,
 ?parseDrawCallback@@YA_NPADPAVWinInstanceData@@0PAX@Z,,0x00486A60,130,Code/GameEngine/Source/GameClient/GUI/GameWindowManagerScript_parseDrawCallback.asm,matched,MASM exact parser-table anchored DRAWCALLBACK
 ?postDraw@InGameUI@@UAEXXZ,,0x004469F0,3333,Code/masm_dumps/InGameUI_postDraw_4469F0.asm,matched,Exact MASM unique postDraw format anchors and timer/RMB semantics
+?isAttackViewBlockedByObstacle@Pathfinder@@QAE_NPBVObject@@ABUCoord3D@@01@Z,,0x003EA980,501,Code/masm_dumps/isAttackViewBlockedByObstacle_Pathfinder_QAE_NPBVObject_ABUCoord3D_01_Z_003EA980_c355d0a8.asm,matched,Ghidra-proven true body; queue RVA 0x3EAA5D was inside

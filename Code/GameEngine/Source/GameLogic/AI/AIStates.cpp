@@ -80,6 +80,18 @@
 
 static Bool cannotPossiblyAttackObject( State *thisState, void* userData );
 
+class BFMEAIMoveAndDeleteTerrainLogic
+{
+public:
+	virtual void unused0() = 0;
+	virtual void unused1() = 0;
+	virtual void unused2() = 0;
+	virtual void unused3() = 0;
+	virtual void unused4() = 0;
+	virtual void unused5() = 0;
+	virtual Real getGroundHeight( Real x, Real y, Coord3D *normal = NULL ) = 0;
+};
+
 //----------------------------------------------------------------------------------------------------------
 // ??0AICommandParms@@QAE@W4AICommandType@@W4CommandSourceType@@@Z present-unmatched
 AICommandParms::AICommandParms(AICommandType cmd, CommandSourceType cmdSource) : 
@@ -3860,26 +3872,26 @@ StateReturnType AIMoveAndDeleteState::onEnter()
 }
 
 //----------------------------------------------------------------------------------------------------------
-// ?update@AIMoveAndDeleteState@@UAE?AW4StateReturnType@@XZ present-unmatched
 StateReturnType AIMoveAndDeleteState::update()
 {
-	Object *obj = getMachine()->getOwner();
-	if (obj->isEffectivelyDead()) 
+	char *obj = *(char **)(*(char **)((char *)this + 0x1c) + 0x10);
+	if ((*(UnsignedByte *)(obj + 0x344) & 1) != 0)
 	{
 		return STATE_FAILURE;
 	}
 	// do movement
-	AIUpdateInterface *ai = obj->getAI();
-	if (ai->getCurLocomotor()) 
+	char *ai = *(char **)(obj + 0x204);
+	char *locomotor = *(char **)(ai + 0x1cc);
+	if (locomotor)
 	{
-		ai->getCurLocomotor()->setAllowInvalidPosition(true);
+		*(UnsignedInt *)(locomotor + 0x40) |= 2;
 	}
 	if (m_appendGoalPosition) 
 	{
-		Path *thePath = ai->getPath();
-		if (!ai->isWaitingForPath() && ai->getPath()) 
+		Path *thePath = *(Path **)(ai + 0x140);
+		if (*(UnsignedByte *)(ai + 0x31e) == 0 && thePath)
 		{
-			m_goalPosition.z = TheTerrainLogic->getGroundHeight(m_goalPosition.x, m_goalPosition.y);
+			m_goalPosition.z = ((BFMEAIMoveAndDeleteTerrainLogic *)TheTerrainLogic)->getGroundHeight(m_goalPosition.x, m_goalPosition.y);
 			thePath->appendNode( &m_goalPosition, LAYER_GROUND);
 			m_appendGoalPosition = false; // just did it.
 		}
@@ -3887,8 +3899,7 @@ StateReturnType AIMoveAndDeleteState::update()
 	StateReturnType status = AIInternalMoveToState::update();
 	if (status != STATE_CONTINUE) 
 	{
-		Object *obj = getMachineOwner();
-		TheGameLogic->destroyObject(obj);
+		TheGameLogic->destroyObject((Object *)*(char **)(*(char **)((char *)this + 0x1c) + 0x10));
 	}
 	return status;
 }

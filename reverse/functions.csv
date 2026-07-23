@@ -13363,3 +13363,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0BuddyMessage@@QAE@ABV0@@Z,,0x004EA520,120,Code/masm_dumps/BuddyMessage_copy_constructor.asm,matched,Certified packet 91 exact retail MASM recovery
 ??0Shell@@QAE@XZ,,0x0057F650,259,Code/masm_dumps/Shell_constructor_57F650.asm,matched,Certified packet 92 exact retail MASM SHA256 1cbea3545873ee70aacdaf9856ab9323d9288e58eeb640cc6330f5a55342362f
 ??1BuildListInfo@@MAE@XZ,,0x00194320,135,Code/masm_dumps/BuildListInfo_destructor_194320.asm,matched,Certified packet 93 exact retail MASM
+?allocateBlocks@PathfindZoneManager@@QAEXABUIRegion2D@@@Z,,0x00403D50,287,Code/masm_dumps/allocateBlocks_PathfindZoneManager_00403D50_149ae938.asm,matched,Certified packet 94 exact retail MASM recovery SHA256 149ae93817eb6bdfe8ba1cb43af2b051f9bae4adbdf4c26f67e399ac5549bc36

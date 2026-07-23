@@ -13296,3 +13296,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0LadderPref@@QAE@ABV0@@Z,,0x000A9BE0,95,Code/masm_dumps/__0LadderPref__QAE_ABV0__Z_A9BE0.asm,matched,Exact MASM via thunk 0x48329 and proven pair constructor caller
 ?update@AIFollowPathState@@UAE?AW4StateReturnType@@XZ,,0x00179150,809,Code/masm_dumps/AIFollowPathState_update.asm,matched,
 ?getPointerToTileData@WorldHeightMap@@QAEPAEHHH@Z,,0x0074C920,273,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,
+?createMoveHint@InGameUI@@UAEXPBVGameMessage@@@Z,,0x0043AC80,3,Code/GameEngine/Source/GameClient/InGameUI.cpp,matched,

@@ -2229,37 +2229,8 @@ void InGameUI::endAreaSelectHint( const GameMessage *msg )
 //-------------------------------------------------------------------------------------------------
 /** A move command has occurred, start graphical "hint". */
 //-------------------------------------------------------------------------------------------------
-// ?createMoveHint@InGameUI@@UAEXPBVGameMessage@@@Z present-unmatched
 void InGameUI::createMoveHint( const GameMessage *msg )
 {
-	Int i;
-
-	// first, remove any existing move hint for this source if present
-	for( i = 0; i < MAX_MOVE_HINTS; i++ )
-		if( m_moveHint[ i ].sourceID == msg->getArgument( 0 )->objectID &&
-				m_moveHint[ i ].frame != 0 )
-			expireHint( MOVE_HINT, i );
-
-		
-	if( getSelectCount() == 1 )
-	{
-		Drawable *draw = getFirstSelectedDrawable();
-		Object *obj = draw ? draw->getObject() : NULL;
-		if( obj && obj->isKindOf( KINDOF_IMMOBILE ) )
-		{
-			//Don't allow move hints to be created if our selected object can't move!
-			return;
-		}
-	}
-
-	m_moveHint[ m_nextMoveHint ].frame = TheGameClient->getFrame();
-	m_moveHint[ m_nextMoveHint ].pos = msg->getArgument( 0 )->location;
-		
-	m_nextMoveHint++;
-
-	// wrap around
-	if (m_nextMoveHint == InGameUI::MAX_MOVE_HINTS)
-		m_nextMoveHint = 0;
 }
 
 //-------------------------------------------------------------------------------------------------

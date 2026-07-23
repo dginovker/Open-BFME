@@ -13310,3 +13310,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?onExit@AIAttackMoveToState@@UAEXW4StateExitType@@@Z,,0x0017A400,29,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,
 ?initAnimateWindow@ProcessAnimateWindowSlideFromBottom@@UAEXPAVAnimateWindow@@@Z,,0x00496480,236,Code/GameEngine/Source/GameClient/GUI/ProcessAnimateWindow.cpp,matched,
 ?setControlBarSchemeByPlayerTemplate@ControlBar@@QAEXPBVPlayerTemplate@@@Z,,0x0049FC90,818,Code/masm_dumps/ControlBar_setControlBarSchemeByPlayerTemplate.asm,matched,Ghidra ENTRY 818; semantic body identity; exact MASM alias of immutable prior row
+?flush@TerrainTracksRenderObjClassSystem@@QAEXXZ,,0x0072FEB0,892,Code/masm_dumps/_flush_TerrainTracksRenderObjClassSystem__QAEXXZ_72FEB0.asm,matched,

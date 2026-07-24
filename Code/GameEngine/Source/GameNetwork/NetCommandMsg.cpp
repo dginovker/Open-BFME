@@ -30,6 +30,56 @@ void NetWrapperCommandMsg::setData(UnsignedByte *data, UnsignedInt dataLength)
 	m_dataLength = dataLength;
 }
 
+UnsignedByte * NetWrapperCommandMsg::getData()
+{
+	return m_data;
+}
+
+UnsignedInt NetWrapperCommandMsg::getDataLength()
+{
+	return m_dataLength;
+}
+
+UnsignedInt NetWrapperCommandMsg::getDataOffset()
+{
+	return m_dataOffset;
+}
+
+void NetWrapperCommandMsg::setDataOffset(UnsignedInt offset)
+{
+	m_dataOffset = offset;
+}
+
+UnsignedInt NetWrapperCommandMsg::getTotalDataLength()
+{
+	return m_totalDataLength;
+}
+
+void NetWrapperCommandMsg::setTotalDataLength(UnsignedInt totalDataLength)
+{
+	m_totalDataLength = totalDataLength;
+}
+
+UnsignedInt NetWrapperCommandMsg::getChunkNumber()
+{
+	return m_chunkNumber;
+}
+
+void NetWrapperCommandMsg::setChunkNumber(UnsignedInt chunkNumber)
+{
+	m_chunkNumber = chunkNumber;
+}
+
+UnsignedInt NetWrapperCommandMsg::getNumChunks()
+{
+	return m_numChunks;
+}
+
+void NetWrapperCommandMsg::setNumChunks(UnsignedInt numChunks)
+{
+	m_numChunks = numChunks;
+}
+
 void NetFileCommandMsg::setFileData(UnsignedByte *data, UnsignedInt dataLength)
 {
 	m_dataLength = dataLength;

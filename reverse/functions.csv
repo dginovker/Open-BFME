@@ -10137,7 +10137,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getChipset@W3DShaderManager@@SA?AW4ChipsetType@@XZ,,0x000162A7,5,Code/masm_dumps/_thunk_e4b4a6ec6397_162A7.asm,matched,thunk accessor of ported class
 ?getChunkDataSize@DataChunkInput@@QAEIXZ,,0x00102740,12,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,
 ?getChunkDataSizeLeft@DataChunkInput@@QAEIXZ,,0x00102750,12,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,
-?getChunkNumber@NetWrapperCommandMsg@@QAEIXZ,,0x0003F814,5,Code/masm_dumps/_getChunkNumber_NetWrapperCommandMsg__QAEIXZ_3F814.asm,matched,MASM exact retail dump
+?getChunkNumber@NetWrapperCommandMsg@@QAEIXZ,,0x00673F00,4,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,MASM exact retail dump
 ?getChunkVersion@DataChunkInput@@QAEGXZ,,0x00102720,16,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,
 ?getClass@?$ConcreteModuleTemplate@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@FXParticleSystem@@QBEABV?$ConcreteModuleClass@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@2@XZ,,0x005E21A0,5,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,icf-owner=?getClass@?$ConcreteModuleTemplate@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@2@XZ
 ?getClass@?$ConcreteModuleTemplate@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@2@XZ,,0x005E21A0,5,Code/masm_dumps/_getClass___ConcreteModuleTemplate_UOrthoEmissionVelocityModuleTag_FXParticleSystem___FXParticleSystem__UBEABV_5E21A0.asm,matched,MASM exact retail dump
@@ -10416,9 +10416,9 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getDamage@DamageModule@@UAEPAVDamageModuleInterface@@XZ,,0x0011A150,14,Code/GameEngine/Source/GameLogic/Object/Damage/TransitionDamageFX.cpp,matched,
 ?getDamageScalar@BodyModule@@UBEMXZ,,0x0010BD90,4,Code/GameEngine/Source/GameLogic/Object/Body/ActiveBody.cpp,matched,icf-owner=?getMinimumValue@GameClientRandomVariable@@QBEMXZ
 ?getDamageState@ActiveBody@@UBE?AW4BodyDamageType@@XZ,,0x00674250,4,Code/GameEngine/Source/GameLogic/Object/Body/ActiveBody.cpp,matched,icf-owner=?getRequestedPlayerID@BFMENetRequestPlayerLeaveCommandMsg@@QAEHXZ
-?getData@NetWrapperCommandMsg@@QAEPAEXZ,,0x0002D867,5,Code/masm_dumps/_getData_NetWrapperCommandMsg__QAEPAEXZ_2D867.asm,matched,MASM exact retail dump
-?getDataLength@NetWrapperCommandMsg@@QAEIXZ,,0x0003D839,5,Code/masm_dumps/_getDataLength_NetWrapperCommandMsg__QAEIXZ_3D839.asm,matched,MASM exact retail dump
-?getDataOffset@NetWrapperCommandMsg@@QAEIXZ,,0x00027048,5,Code/masm_dumps/_getDataOffset_NetWrapperCommandMsg__QAEIXZ_27048.asm,matched,MASM exact retail dump
+?getData@NetWrapperCommandMsg@@QAEPAEXZ,,0x00673E60,4,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,MASM exact retail dump
+?getDataLength@NetWrapperCommandMsg@@QAEIXZ,,0x00673ED0,4,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,MASM exact retail dump
+?getDataOffset@NetWrapperCommandMsg@@QAEIXZ,,0x00673EE0,4,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,MASM exact retail dump
 ?getDeathTypeFlag@@YA_NIW4DeathType@@@Z,,0x001FB090,23,Code/GameEngine/Source/GameLogic/Object/Die/DieModule.cpp,matched,
 ?getDebrisDrawInterface@DrawModule@@UAEPAVDebrisDrawInterface@@XZ,,0x006CF680,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DDefaultDraw.cpp,matched,icf-owner=?Get_Sort_Level@RenderObjClass@@UBEHXZ
 ?getDebrisDrawInterface@DrawModule@@UBEPBVDebrisDrawInterface@@XZ,,0x006CF680,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DDefaultDraw.cpp,matched,icf-owner=?Get_Sort_Level@RenderObjClass@@UBEHXZ
@@ -10738,7 +10738,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getNthReal@Dict@@QBEMH@Z,,0x00067F70,38,Code/GameEngine/Source/Common/Dict.cpp,matched,
 ?getNthType@Dict@@QBE?AW4DataType@1@H@Z,,0x001022D0,40,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,
 ?getNthUnicodeString@Dict@@QBE?AVUnicodeString@@H@Z,,0x000686F0,78,Code/GameEngine/Source/Common/Dict.cpp,matched,
-?getNumChunks@NetWrapperCommandMsg@@QAEIXZ,,0x00018BEC,5,Code/masm_dumps/_getNumChunks_NetWrapperCommandMsg__QAEIXZ_18BEC.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?getNumChunks@NetWrapperCommandMsg@@QAEIXZ,,0x00673F20,4,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor thunk
 ?getNumNonObserverPlayers@GameInfo@@QBEHXZ,,0x0061E770,175,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,
 ?getNumPlayers@GameInfo@@QBEHXZ,,0x0061E6B0,148,Code/GameEngine/Source/GameNetwork/GameInfo.cpp,matched,
 ?getNumPoints@PolygonTrigger@@QBEHXZ,,0x00674250,4,Code/GameEngine/Source/GameLogic/Map/PolygonTrigger.cpp,matched,icf-owner=?getRequestedPlayerID@BFMENetRequestPlayerLeaveCommandMsg@@QAEHXZ
@@ -10907,7 +10907,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getTextureFilename@ParticleSystemTemplate@FXParticleSystem@@QBE?AVAsciiString@@XZ,0x00018755,0x0005F240,32,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system.cpp,matched,return texture filename
 ?getTimeOfDay@AudioEventRTS@@QBE?AW4TimeOfDay@@XZ,,0x000873E0,4,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,Retail thunk-bound BFME time-of-day getter
 ?getTooltipText@WinInstanceData@@QAE?AVUnicodeString@@XZ,,0x00479AB0,24,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
-?getTotalDataLength@NetWrapperCommandMsg@@QAEIXZ,,0x0000F70E,5,Code/masm_dumps/_getTotalDataLength_NetWrapperCommandMsg__QAEIXZ_F70E.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?getTotalDataLength@NetWrapperCommandMsg@@QAEIXZ,,0x00673F40,4,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor thunk
 ?getTowerID@BridgeBehavior@@UAE?AW4ObjectID@@W4BridgeTowerType@@@Z,,0x001F1FB0,25,Code/GameEngine/Source/GameLogic/Object/Behavior/BridgeBehavior.cpp,matched,
 ?getTracerDrawInterface@DrawModule@@UAEPAVTracerDrawInterface@@XZ,,0x006CF680,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DDefaultDraw.cpp,matched,icf-owner=?Get_Sort_Level@RenderObjClass@@UBEHXZ
 ?getTracerDrawInterface@DrawModule@@UBEPBVTracerDrawInterface@@XZ,,0x006CF680,3,Code/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W3DDefaultDraw.cpp,matched,icf-owner=?Get_Sort_Level@RenderObjClass@@UBEHXZ
@@ -12060,7 +12060,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setCachedStats@GameSpyMiscPreferences@@QAEXVAsciiString@@@Z,,0x000A9A90,121,Code/masm_dumps/GameSpyMiscPreferences_setCachedStats.asm,matched,Unique CachedStats-string preference setter
 ?setCanOptimize@PathNode@@QAEX_N@Z,,0x000F9250,10,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,
 ?setChatSizeSlider@CustomMatchPreferences@@QAEXH@Z,,0x000AD9A0,169,Code/masm_dumps/CustomMatchPreferences_setChatSizeSlider.asm,matched,Ghidra-bound BFME chat-slider setter
-?setChunkNumber@NetWrapperCommandMsg@@QAEXI@Z,,0x0003AE36,5,Code/masm_dumps/_setChunkNumber_NetWrapperCommandMsg__QAEXI@Z_3AE36.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setChunkNumber@NetWrapperCommandMsg@@QAEXI@Z,,0x00673F10,10,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor thunk
 ?setCloseEnoughDist@Locomotor@@QAEXM@Z,,0x001F5AF0,10,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ?setColor@MapObject@@QAEXH@Z,,0x003C4B20,10,Code/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMap.cpp,matched,
 ?setColor@MultiplayerColorDefinition@@QAEXURGBColor@@@Z,,0x0008E0A0,75,Code/GameEngine/Source/Common/MultiplayerSettings.cpp,matched,
@@ -12089,7 +12089,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setCustomData@Condition@@QAEXH@Z,,0x002ED4D0,10,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptConditions.cpp,matched,
 ?setCustomFrame@Condition@@QAEXH@Z,,0x001BD310,10,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptConditions.cpp,matched,
 ?setData@NetWrapperCommandMsg@@QAEXPAEI@Z,,0x00673E70,77,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,
-?setDataOffset@NetWrapperCommandMsg@@QAEXI@Z,,0x00023709,5,Code/masm_dumps/_setDataOffset_NetWrapperCommandMsg__QAEXI@Z_23709.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setDataOffset@NetWrapperCommandMsg@@QAEXI@Z,,0x00673EF0,10,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor thunk
 ?setDeathTypeFlag@@YAIIW4DeathType@@@Z,,0x000B8DF0,17,Code/GameEngine/Source/Common/INI/ini.cpp,matched,
 ?setDebugPathPosition@Pathfinder@@QAEXPBUCoord3D@@@Z,,0x0079E400,26,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,ICF alias of existing matched body
 ?setDecalUVAxis@W3DShadowTexture@@QAEXAAVVector3@@0@Z,,0x007AE7E0,63,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp,matched,
@@ -12225,7 +12225,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setNextPlayPortion@AudioEventRTS@@QAEXW4PortionToPlay@@@Z,,0x000B21F0,10,Code/GameEngine/Source/Common/Audio/AudioEventRTS.cpp,matched,
 ?setNextScript@Script@@QAEXPAV1@@Z,,0x00087470,10,Code/GameEngine/Source/GameLogic/ScriptEngine/Scripts.cpp,matched,
 ?setNightColor@MultiplayerColorDefinition@@QAEXURGBColor@@@Z,,0x0008E100,75,Code/GameEngine/Source/Common/MultiplayerSettings.cpp,matched,
-?setNumChunks@NetWrapperCommandMsg@@QAEXI@Z,,0x00014A42,5,Code/masm_dumps/_setNumChunks_NetWrapperCommandMsg__QAEXI@Z_14A42.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setNumChunks@NetWrapperCommandMsg@@QAEXI@Z,,0x00673F30,10,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor thunk
 ?setNumPlayers@QuickMatchPreferences@@QAEXH@Z,,0x000AD5E0,169,Code/masm_dumps/_sa13__setNumPlayers_QuickMatchPreferences__QAEXH_Z_AD5E0.asm,matched,multi-xref Open-BFME4+Grok NumPlayers
 ?setNumRebuilds@BuildListInfo@@QAEXI@Z,,0x0016A630,10,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,
 ?setObjectID@AudioEventRTS@@QAEXW4ObjectID@@@Z,,0x000B2250,30,Code/masm_dumps/AudioEventRTS_setObjectID.asm,matched,Ghidra-bound BFME audio object setter
@@ -12337,7 +12337,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setTimeOfDay@W3DShadowManager@@QAEXW4TimeOfDay@@@Z,,0x007B7B70,198,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DShadow.cpp,matched,
 ?setTimeOfDay@WaterRenderObjClass@@QAEXW4TimeOfDay@@@Z,,0x0079F590,35,Code/masm_dumps/_rn8__setTimeOfDay_WaterRenderObjClass__QAEXW4TimeOfDay___Z_79F590.asm,matched,reloc-needle Open-BFME4+Grok
 ?setTooltipDelay@GameWindow@@QAEXH@Z,,0x0098D2B0,13,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,
-?setTotalDataLength@NetWrapperCommandMsg@@QAEXI@Z,,0x0003EC52,5,Code/masm_dumps/_setTotalDataLength_NetWrapperCommandMsg__QAEXI@Z_3EC52.asm,matched,NetWrapperCommandMsg trivial accessor thunk
+?setTotalDataLength@NetWrapperCommandMsg@@QAEXI@Z,,0x00673F50,10,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor thunk
 ?setTower@BridgeBehavior@@UAEXW4BridgeTowerType@@PAVObject@@@Z,,0x001F1F70,42,Code/GameEngine/Source/GameLogic/Object/Behavior/BridgeBehavior.cpp,matched,
 ?setTowerObjectID@Bridge@@QAEXW4ObjectID@@W4BridgeTowerType@@@Z,,0x001F1F00,15,Code/GameEngine/Source/GameLogic/Object/Behavior/BridgeBehavior.cpp,matched,
 ?setTransformMatrix@Thing@@QAEXPBVMatrix3D@@@Z,,0x00023D49,5,Code/masm_dumps/_setTransformMatrix_Thing__QAEXPBVMatrix3D___Z_23D49.asm,matched,MASM exact retail dump

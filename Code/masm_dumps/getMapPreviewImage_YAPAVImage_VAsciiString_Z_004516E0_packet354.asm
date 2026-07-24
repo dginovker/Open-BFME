@@ -1,0 +1,87 @@
+.386
+.model flat
+
+; ?getMapPreviewImage@@YAPAVImage@@VAsciiString@@@Z
+; Exact 1212 retail bytes @ 0x004516E0; certified packet 354
+_TEXT SEGMENT
+public ?getMapPreviewImage@@YAPAVImage@@VAsciiString@@@Z
+?getMapPreviewImage@@YAPAVImage@@VAsciiString@@@Z PROC
+    db 055h,08bh,0ech,06ah,0ffh,068h,00bh,03dh,002h,001h,064h,0a1h,000h,000h,000h,000h
+    db 050h,064h,089h,025h,000h,000h,000h,000h,083h,0ech,03ch,053h,056h,057h,089h,065h
+    db 0f0h,0a1h,0c8h,0d5h,02eh,001h,033h,0ffh,03bh,0c7h,089h,07dh,0fch,00fh,084h,08fh
+    db 002h,000h,000h,08dh,045h,008h,050h,08dh,04dh,0e8h,0e8h,041h,064h,043h,000h,089h
+    db 07dh,0dch,089h,07dh,0e0h,089h,07dh,0d4h,08dh,04dh,0e8h,0c6h,045h,0fch,004h,0e8h
+    db 04ch,068h,043h,000h,08dh,04dh,0e8h,0e8h,044h,068h,043h,000h,08dh,04dh,0e8h,0e8h
+    db 03ch,068h,043h,000h,08dh,04dh,0e8h,0e8h,034h,068h,043h,000h,08dh,04dh,0e8h,051h
+    db 08dh,04dh,0dch,0e8h,038h,065h,043h,000h,08bh,045h,0e8h,03bh,0c7h,074h,009h,08dh
+    db 048h,008h,00fh,0b7h,040h,004h,0ebh,007h,0b9h,08bh,038h,007h,001h,033h,0c0h,003h
+    db 0c1h,03bh,0c1h,074h,00dh,08ah,050h,0ffh,048h,080h,0fah,05ch,074h,006h,03bh,0c1h
+    db 075h,0f3h,033h,0c0h,08dh,050h,001h,03bh,0d7h,074h,010h,08bh,0c2h,08dh,070h,001h
+    db 08ah,008h,040h,084h,0c9h,075h,0f9h,02bh,0c6h,0ebh,002h,033h,0c0h,050h,052h,08dh
+    db 04dh,0d4h,0e8h,079h,065h,043h,000h,06ah,004h,068h,06ch,041h,009h,001h,08dh,04dh
+    db 0d4h,0e8h,0aah,065h,043h,000h,06ah,004h,068h,06ch,041h,009h,001h,08dh,04dh,0e8h
+    db 0e8h,09bh,065h,043h,000h,08bh,00dh,090h,0f1h,02eh,001h,08dh,055h,0dch,052h,08dh
+    db 045h,0d0h,050h,0e8h,017h,07fh,0bdh,0ffh,068h,050h,06eh,033h,001h,08dh,04dh,0e0h
+    db 0c6h,045h,0fch,005h,0e8h,0a7h,064h,043h,000h,033h,0f6h,0b3h,05fh,08dh,049h,000h
+    db 08bh,045h,0d0h,03bh,0c7h,074h,006h,00fh,0b7h,048h,004h,0ebh,002h,033h,0c9h,03bh
+    db 0f1h,07dh,03ch,03bh,0c7h,074h,020h,08ah,044h,006h,008h,03ch,05ch,074h,01ch,03ch
+    db 03ah,074h,018h,06ah,001h,08dh,04dh,0ech,051h,08dh,04dh,0e0h,088h,045h,0ech,0e8h
+    db 03ch,065h,043h,000h,046h,0ebh,0c9h,032h,0c0h,0ebh,0e8h,06ah,001h,08dh,055h,0ech
+    db 052h,08dh,04dh,0e0h,088h,05dh,0ech,0e8h,024h,065h,043h,000h,046h,0ebh,0b1h,08dh
+    db 045h,0e0h,050h,08dh,04dh,0dch,0e8h,045h,064h,043h,000h,06ah,004h,068h,06ch,041h
+    db 009h,001h,08dh,04dh,0dch,0e8h,006h,065h,043h,000h,08dh,04dh,0e0h,051h,08bh,00dh
+    db 024h,069h,02fh,001h,0e8h,09dh,0bdh,0bch,0ffh,08bh,0f0h,03bh,0f7h,00fh,085h,0cbh
+    db 002h,000h,000h,08dh,055h,0e8h,052h,08dh,04dh,0e4h,0c7h,045h,0c0h,000h,000h,080h
+    db 03fh,0c7h,045h,0c4h,000h,000h,080h,03fh,0c7h,045h,0b8h,000h,000h,000h,000h,0c7h
+    db 045h,0bch,000h,000h,000h,000h,0e8h,0c5h,062h,043h,000h,08dh,04dh,0e4h,0c6h,045h
+    db 0fch,006h,0e8h,0d9h,066h,043h,000h,08dh,04dh,0e4h,0e8h,0d1h,066h,043h,000h,08dh
+    db 04dh,0e4h,0e8h,0c9h,066h,043h,000h,08dh,04dh,0e4h,0e8h,0c1h,066h,043h,000h,06ah
+    db 008h,068h,0d0h,05eh,00fh,001h,08dh,04dh,0e4h,0e8h,092h,064h,043h,000h,08bh,045h
+    db 0e4h,03bh,0c7h,074h,005h,083h,0c0h,008h,0ebh,005h,0b8h,08bh,038h,007h,001h,08bh
+    db 00dh,048h,0cbh,034h,001h,050h,0e8h,0b5h,06dh,057h,000h,084h,0c0h,074h,04ah,08dh
+    db 045h,0e4h,050h,08dh,04dh,0e8h,0e8h,095h,063h,043h,000h,0c7h,045h,0c4h,000h,000h
+    db 000h,000h,0c7h,045h,0bch,000h,000h,080h,03fh,089h,07dh,0d8h,08dh,04dh,0cch,051h
+    db 08bh,00dh,0c8h,0d5h,02eh,001h,0bbh,007h,000h,000h,000h,088h,05dh,0fch,0e8h,0c7h
+    db 0edh,0bbh,0ffh,08bh,000h,03bh,0c7h,0c6h,045h,0fch,008h,00fh,084h,093h,000h,000h
+    db 000h,083h,0c0h,008h,0e9h,090h,000h,000h,000h,08bh,045h,0e8h,03bh,0c7h,074h,005h
+    db 083h,0c0h,008h,0ebh,005h,0b8h,08bh,038h,007h,001h,08bh,00dh,048h,0cbh,034h,001h
+    db 050h,0e8h,04ah,06dh,057h,000h,084h,0c0h,075h,0afh,08dh,04dh,0e4h,0c6h,045h,0fch
+    db 005h,0e8h,0dah,05fh,043h,000h,08dh,04dh,0d0h,0c6h,045h,0fch,004h,0e8h,0ceh,05fh
+    db 043h,000h,08dh,04dh,0d4h,0c6h,045h,0fch,003h,0e8h,0c2h,05fh,043h,000h,08dh,04dh
+    db 0e0h,0c6h,045h,0fch,002h,0e8h,0b6h,05fh,043h,000h,08dh,04dh,0dch,0c6h,045h,0fch
+    db 001h,0e8h,0aah,05fh,043h,000h,08dh,04dh,0e8h,0c6h,045h,0fch,000h,0e8h,09eh,05fh
+    db 043h,000h,08dh,04dh,008h,0c7h,045h,0fch,0ffh,0ffh,0ffh,0ffh,0e8h,08fh,05fh,043h
+    db 000h,033h,0c0h,08bh,04dh,0f4h,064h,089h,00dh,000h,000h,000h,000h,05fh,05eh,05bh
+    db 08bh,0e5h,05dh,0c3h,0b8h,08bh,038h,007h,001h,050h,051h,089h,065h,0c8h,08bh,0cch
+    db 068h,0bch,05eh,00fh,001h,0e8h,0e6h,071h,043h,000h,08dh,055h,0d8h,052h,0e8h,00dh
+    db 076h,043h,000h,083h,0c4h,00ch,08dh,04dh,0cch,088h,05dh,0fch,0e8h,04fh,05fh,043h
+    db 000h,051h,08dh,045h,0d8h,089h,065h,0c8h,08bh,0cch,050h,0e8h,060h,061h,043h,000h
+    db 08bh,00dh,048h,0cbh,034h,001h,0e8h,0b5h,073h,057h,000h,08bh,045h,0dch,03bh,0c7h
+    db 074h,009h,00fh,0b7h,048h,004h,083h,0c0h,008h,0ebh,007h,033h,0c9h,0b8h,08bh,038h
+    db 007h,001h,051h,050h,08dh,04dh,0d8h,0e8h,034h,063h,043h,000h,08dh,04dh,0d8h,051h
+    db 08dh,045h,0e8h,0c6h,045h,0fch,009h,0e8h,094h,0eeh,0ffh,0ffh,083h,0c4h,004h,0b0h
+    db 001h,0ebh,014h,0c6h,045h,0ech,000h,0b8h,04dh,01ah,085h,000h,0c3h,08ah,045h,0ech
+    db 0bbh,007h,000h,000h,000h,033h,0ffh,084h,0c0h,089h,05dh,0fch,00fh,084h,0c2h,000h
+    db 000h,000h,06ah,034h,0e8h,0c7h,004h,043h,000h,083h,0c4h,004h,089h,045h,0c8h,03bh
+    db 0c7h,0c6h,045h,0fch,00bh,074h,00bh,08bh,0c8h,0e8h,010h,03ah,0bbh,0ffh,08bh,0f0h
+    db 0ebh,002h,033h,0f6h,051h,08dh,055h,0e0h,089h,065h,0c8h,08bh,0cch,052h,088h,05dh
+    db 0fch,0e8h,0cah,060h,043h,000h,08bh,0ceh,0e8h,01dh,0d3h,0beh,0ffh,051h,08dh,045h
+    db 0e8h,089h,065h,0c8h,08bh,0cch,050h,0e8h,0b4h,060h,043h,000h,08bh,0ceh,0e8h,062h
+    db 071h,0bbh,0ffh,08bh,045h,0d8h,03bh,0c7h,074h,005h,083h,0c0h,008h,0ebh,005h,0b8h
+    db 08bh,038h,007h,001h,050h,08dh,04dh,0cch,0e8h,086h,081h,0bdh,0ffh,050h,08bh,0ceh
+    db 0c6h,045h,0fch,00ch,0e8h,0e8h,0aeh,0bdh,0ffh,08bh,04dh,0cch,03bh,0cfh,088h,05dh
+    db 0fch,074h,005h,0e8h,0b8h,09ch,059h,000h,06ah,002h,08bh,0ceh,0e8h,0e7h,067h,0bbh
+    db 0ffh,08bh,055h,0b8h,08bh,045h,0bch,08dh,04eh,014h,089h,011h,08bh,055h,0c0h,089h
+    db 041h,004h,08bh,045h,0c4h,089h,051h,008h,089h,041h,00ch,0b8h,080h,000h,000h,000h
+    db 089h,046h,010h,089h,046h,00ch,08bh,00dh,024h,069h,02fh,001h,056h,0e8h,0d9h,0a0h
+    db 0beh,0ffh,0ebh,002h,033h,0f6h,08dh,04dh,0d8h,0c6h,045h,0fch,006h,0e8h,00eh,05eh
+    db 043h,000h,08dh,04dh,0e4h,0c6h,045h,0fch,005h,0e8h,002h,05eh,043h,000h,08dh,04dh
+    db 0d0h,0c6h,045h,0fch,004h,0e8h,0f6h,05dh,043h,000h,08dh,04dh,0d4h,0c6h,045h,0fch
+    db 003h,0e8h,0eah,05dh,043h,000h,08dh,04dh,0e0h,0c6h,045h,0fch,002h,0e8h,0deh,05dh
+    db 043h,000h,08dh,04dh,0dch,0c6h,045h,0fch,001h,0e8h,0d2h,05dh,043h,000h,08dh,04dh
+    db 0e8h,0c6h,045h,0fch,000h,0e8h,0c6h,05dh,043h,000h,08dh,04dh,008h,0c7h,045h,0fch
+    db 0ffh,0ffh,0ffh,0ffh,0e8h,0b7h,05dh,043h,000h,08bh,04dh,0f4h,05fh,08bh,0c6h,05eh
+    db 064h,089h,00dh,000h,000h,000h,000h,05bh,08bh,0e5h,05dh,0c3h
+?getMapPreviewImage@@YAPAVImage@@VAsciiString@@@Z ENDP
+_TEXT ENDS
+END

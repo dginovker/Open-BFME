@@ -1,0 +1,49 @@
+.386
+.model flat
+
+; ?handleRequestLocations@LANAPI@@IAEXPAULANMessage@@I@Z
+; Exact 600 retail bytes @ 0x0068AEF0; certified packet 123
+_TEXT SEGMENT
+public ?handleRequestLocations@LANAPI@@IAEXPAULANMessage@@I@Z
+?handleRequestLocations@LANAPI@@IAEXPAULANMessage@@I@Z PROC
+    db 6Ah,0FFh,64h,0A1h,00h,00h,00h,00h,68h,0A1h,69h,04h,01h,50h,64h,89h
+    db 25h,00h,00h,00h,00h,81h,0ECh,0E4h,01h,00h,00h,53h,55h,56h,8Bh,0F1h
+    db 8Ah,46h,3Dh,33h,0DBh,3Ah,0C3h,57h,74h,32h,8Bh,06h,8Dh,4Ch,24h,18h
+    db 51h,8Bh,0CEh,0FFh,90h,0C4h,00h,00h,00h,53h,8Dh,54h,24h,1Ch,52h,8Bh
+    db 0CEh,0C7h,44h,24h,20h,02h,00h,00h,00h,0E8h,5Bh,06h,9Ah,0FFh,0FFh,15h
+    db 44h,95h,35h,01h,89h,46h,38h,0E9h,0ACh,00h,00h,00h,8Bh,7Eh,40h,3Bh
+    db 0FBh,0Fh,84h,0A1h,00h,00h,00h,8Bh,06h,8Bh,0CEh,0FFh,90h,0DCh,00h,00h
+    db 00h,8Bh,8Fh,88h,00h,00h,00h,3Bh,08h,0Fh,85h,89h,00h,00h,00h,66h
+    db 8Bh,97h,8Ch,00h,00h,00h,66h,3Bh,50h,04h,75h,7Ch,8Bh,06h,8Dh,4Ch
+    db 24h,18h,51h,8Bh,0CEh,0FFh,90h,0C4h,00h,00h,00h,8Dh,54h,24h,5Eh,68h
+    db 96h,01h,00h,00h,52h,0C7h,44h,24h,20h,01h,00h,00h,00h,0E8h,33h,0F7h
+    db 99h,0FFh,8Bh,4Eh,40h,83h,0C4h,08h,8Dh,44h,24h,10h,50h,0E8h,17h,70h
+    db 9Bh,0FFh,8Bh,00h,3Bh,0C3h,74h,05h,83h,0C0h,08h,0EBh,05h,0B8h,8Ch,38h
+    db 07h,01h,6Ah,10h,50h,8Dh,4Ch,24h,42h,51h,0FFh,15h,28h,95h,35h,01h
+    db 83h,0C4h,0Ch,8Dh,4Ch,24h,10h,0E8h,0F4h,0D1h,1Fh,00h,8Bh,56h,40h,53h
+    db 8Dh,4Ch,24h,1Ch,66h,89h,5Ch,24h,5Eh,8Ah,42h,0Dh,51h,8Bh,0CEh,88h
+    db 44h,24h,64h,0E8h,0A1h,05h,9Ah,0FFh,8Bh,0ACh,24h,08h,02h,00h,00h,8Bh
+    db 16h,55h,8Bh,0CEh,0FFh,92h,0D8h,00h,00h,00h,8Bh,0F8h,3Bh,0FBh,75h,45h
+    db 6Ah,1Ch,0E8h,19h,6Fh,1Fh,00h,83h,0C4h,04h,3Bh,0C3h,74h,25h,89h,18h
+    db 89h,58h,04h,89h,58h,08h,89h,58h,0Ch,89h,58h,10h,89h,58h,14h,66h
+    db 89h,58h,18h,8Bh,4Dh,00h,89h,48h,14h,8Bh,55h,04h,8Bh,0F8h,89h,50h
+    db 18h,0EBh,1Ah,8Bh,4Dh,00h,33h,0C0h,89h,48h,14h,8Bh,55h,04h,8Bh,0F8h
+    db 89h,50h,18h,0EBh,08h,57h,8Bh,0CEh,0E8h,97h,0Dh,9Bh,0FFh,8Bh,0ACh,24h
+    db 04h,02h,00h,00h,8Dh,45h,04h,50h,8Dh,4Ch,24h,14h,0E8h,6Fh,0DDh,1Fh
+    db 00h,8Dh,4Ch,24h,10h,51h,8Bh,0CFh,89h,9Ch,24h,00h,02h,00h,00h,0E8h
+    db 0ACh,0D4h,1Fh,00h,83h,0CBh,0FFh,8Dh,4Ch,24h,10h,89h,9Ch,24h,0FCh,01h
+    db 00h,00h,0E8h,39h,0D1h,1Fh,00h,8Dh,55h,20h,52h,8Dh,4Ch,24h,14h,0E8h
+    db 1Ch,0DBh,1Fh,00h,8Dh,44h,24h,10h,50h,8Dh,4Fh,08h,0C7h,84h,24h,00h
+    db 02h,00h,00h,01h,00h,00h,00h,0E8h,34h,0E1h,1Fh,00h,8Dh,4Ch,24h,10h
+    db 89h,9Ch,24h,0FCh,01h,00h,00h,0E8h,74h,0C8h,1Fh,00h,83h,0C5h,1Eh,55h
+    db 8Dh,4Ch,24h,18h,0E8h,0E7h,0DAh,1Fh,00h,8Dh,4Ch,24h,14h,51h,8Dh,4Fh
+    db 04h,0C7h,84h,24h,00h,02h,00h,00h,02h,00h,00h,00h,0E8h,0FFh,0E0h,1Fh
+    db 00h,8Dh,4Ch,24h,14h,89h,9Ch,24h,0FCh,01h,00h,00h,0E8h,3Fh,0C8h,1Fh
+    db 00h,0FFh,15h,44h,95h,35h,01h,57h,8Bh,0CEh,89h,47h,0Ch,0E8h,51h,0A2h
+    db 9Bh,0FFh,51h,89h,64h,24h,14h,8Bh,0CCh,57h,0E8h,0E1h,0D2h,1Fh,00h,8Bh
+    db 16h,83h,0C7h,14h,57h,8Bh,0CEh,0FFh,92h,0A4h,00h,00h,00h,8Bh,8Ch,24h
+    db 0F4h,01h,00h,00h,5Fh,5Eh,5Dh,64h,89h,0Dh,00h,00h,00h,00h,5Bh,81h
+    db 0C4h,0F0h,01h,00h,00h,0C2h,08h,00h
+?handleRequestLocations@LANAPI@@IAEXPAULANMessage@@I@Z ENDP
+_TEXT ENDS
+END

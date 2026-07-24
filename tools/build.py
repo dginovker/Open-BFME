@@ -377,6 +377,140 @@ def compiler_command(source, output):
     return command, compiler_environment(root, source)
 
 
+def _host_path(text):
+    # cl.exe under wine prints /showIncludes paths as Z:\home\... — map to host.
+    path = text.strip().replace("\\", "/")
+    if len(path) >= 2 and path[0] in "zZ" and path[1] == ":":
+        path = path[2:] or "/"
+    if not path.startswith("/"):
+        path = str(ROOT / path)
+    return os.path.normpath(path)
+
+
+_CASEDIR_MEMO = {}
+
+
+def _case_resolve(path):
+    """Map a wine-reported path to the real on-disk path. Wine resolves
+    case-insensitively and cl prints the REQUESTED casing (lowercased prefixes,
+    'Basetype.h' for BaseType.h), so exact lookup fails on Linux. The repo bans
+    case-colliding names (see docs/lessons.md), so per-component lowercase
+    matching is unambiguous. Returns None when nothing matches."""
+    if os.path.exists(path):
+        return path
+    current = "/"
+    for part in path.split("/"):
+        if not part:
+            continue
+        candidate = os.path.join(current, part)
+        if os.path.exists(candidate):
+            current = candidate
+            continue
+        listing = _CASEDIR_MEMO.get(current)
+        if listing is None:
+            try:
+                listing = {name.lower(): name for name in os.listdir(current)}
+            except OSError:
+                return None
+            _CASEDIR_MEMO[current] = listing
+        real = listing.get(part.lower())
+        if real is None:
+            return None
+        current = os.path.join(current, real)
+    return current
+
+
+_HASH_MEMO = {}
+
+
+def _hash_file(path):
+    try:
+        stat = os.stat(path)
+    except OSError:
+        return None
+    cached = _HASH_MEMO.get(path)
+    if cached and cached[0] == (stat.st_mtime_ns, stat.st_size):
+        return cached[1]
+    digest = hashlib.md5(Path(path).read_bytes()).hexdigest()
+    _HASH_MEMO[path] = ((stat.st_mtime_ns, stat.st_size), digest)
+    return digest
+
+
+def _deps_sidecar(output):
+    return output.with_suffix(".deps.json")
+
+
+def _cmd_fingerprint(command, env):
+    return hashlib.md5(json.dumps([command, env.get("INCLUDE", "")]).encode()).hexdigest()
+
+
+def _write_deps_sidecar(source, output, fingerprint, stdout_text, is_cl):
+    """Record the compile's exact inputs so compile_is_current can prove reuse.
+    Uncacheable situations (unparseable include note, .asm with an include
+    directive) fail LOUD and write no sidecar — that TU then always recompiles,
+    visibly, instead of silently reusing a possibly-stale obj."""
+    deps = {}
+    problems = []
+    if is_cl:
+        for line in stdout_text.splitlines():
+            if not line.startswith("Note: including file:"):
+                continue
+            host = _case_resolve(_host_path(line[len("Note: including file:"):]))
+            if host is None:
+                problems.append(line.strip()[:120])
+                continue
+            if host in deps:
+                continue
+            digest = _hash_file(host)
+            if digest is None:
+                problems.append(host)
+            else:
+                deps[host] = digest
+        if not deps:
+            # A TU with no #include genuinely has no notes — empty deps is
+            # correct there. Notes missing DESPITE includes is the broken case.
+            text = source.read_text(encoding="utf-8", errors="replace")
+            if re.search(r"^\s*#\s*include\b", text, re.MULTILINE):
+                problems.append("(cl produced no include notes despite #include lines)")
+    else:
+        head = source.read_text(encoding="utf-8", errors="replace")
+        if re.search(r"^\s*include\s", head, re.IGNORECASE | re.MULTILINE):
+            problems.append("(.asm uses an include directive; deps unknown)")
+    if problems:
+        print(f"deps-cache: not caching {source.relative_to(ROOT)} — {problems[:3]}",
+              file=sys.stderr)
+        _deps_sidecar(output).unlink(missing_ok=True)
+        return
+    payload = {"cmd": fingerprint, "source": _hash_file(str(source)), "deps": deps}
+    tmp = _deps_sidecar(output).with_suffix(".tmp")
+    tmp.write_text(json.dumps(payload))
+    tmp.replace(_deps_sidecar(output))
+
+
+def compile_is_current(source, output):
+    """Sound obj reuse: True iff the obj exists and the source, compile command,
+    and EVERY header recorded by /showIncludes at compile time are byte-identical.
+    This is what makes skipping a TU in the full gate safe — the old behavior
+    (recompile everything / trust BUILD_RECOMPILE_ONLY blindly) either burned
+    ~17 min per gate or could re-verify a stale obj after a header edit."""
+    sidecar = _deps_sidecar(output)
+    if not output.exists() or not sidecar.exists():
+        return False
+    try:
+        meta = json.loads(sidecar.read_text())
+    except (OSError, ValueError):
+        return False
+    command, env = compiler_command(source, output)
+    if meta.get("cmd") != _cmd_fingerprint(command, env):
+        return False
+    if meta.get("source") != _hash_file(str(source)):
+        return False
+    for dep, digest in meta.get("deps", {}).items():
+        if _hash_file(dep) != digest:
+            return False
+    return True
+
+
 def format_bytes(data):
     return " ".join(f"{byte:02x}" for byte in data)
 
@@ -458,9 +592,13 @@ _SWEEP_INCLUDE_DIRS = [
 def compile_source(source, output):
     output.parent.mkdir(parents=True, exist_ok=True)
     command, env = compiler_command(source, output)
+    is_cl = source.suffix.lower() != ".asm"
+    # Fingerprint the BASE command: the sweep-include retry below is a
+    # deterministic function of these same inputs, so cache validity holds.
+    fingerprint = _cmd_fingerprint(command, env)
     for attempt in range(3):
         result = subprocess.run(
-            command,
+            command + (["/showIncludes"] if is_cl else []),
             cwd=ROOT,
             env=env,
             stdout=subprocess.PIPE,
@@ -468,6 +606,7 @@ def compile_source(source, output):
             text=True,
         )
         if result.returncode == 0:
+            _write_deps_sidecar(source, output, fingerprint, result.stdout, is_cl)
             return
         # Retry once with the sweep include dirs on the path (header resolution
         # only — never affects codegen of already-matched sources).
@@ -484,7 +623,8 @@ def compile_source(source, output):
                      or "ShellExecuteEx failed" in result.stdout)
         if not transient or attempt == 2:
             print(f"compile failed: {source.relative_to(ROOT)}", file=sys.stderr)
-            print(result.stdout, end="")
+            print("\n".join(l for l in result.stdout.splitlines()
+                            if not l.startswith("Note: including file:")))
             raise SystemExit(result.returncode)
         print(f"retrying transient Wine launch failure for "
               f"{source.relative_to(ROOT)} ({attempt + 2}/3)", file=sys.stderr)
@@ -565,7 +705,16 @@ def verify_functions(only=None):
                       if str(s.relative_to(ROOT)) in wanted or not source_outputs[s].exists()]
         print(f"Incremental compile: {len(to_compile)} of {len(sources)} source(s)")
     else:
-        to_compile = sources
+        # Sound dep-cache: skip every TU whose obj provably matches its current
+        # source + flags + recorded headers (see compile_is_current). A TU with
+        # no sidecar (first gate after this change, or flagged uncacheable)
+        # recompiles. This is what turns a header-edit gate from ~17 min of
+        # recompile-the-world into seconds-per-actual-includer.
+        to_compile = [s for s in sources if not compile_is_current(s, source_outputs[s])]
+        cached = len(sources) - len(to_compile)
+        if cached:
+            print(f"Compile: {len(to_compile)} of {len(sources)} TU(s) "
+                  f"(deps-cache: {cached} current)")
     # BUILD_POOL controls compile parallelism. Default 1: a single build.py call
     # (a worker verifying its own 1-2 files, or the fleet's per-task fast verify)
     # must NOT fork an 8-way wine pool - dozens of concurrent callers would then

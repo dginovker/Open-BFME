@@ -13376,3 +13376,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?winSetEnabledTextColors@GameWindow@@QAEXHH@Z,,0x00478600,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_enabledText@0x18c; combo dispatch
 ?winSetDisabledTextColors@GameWindow@@QAEXHH@Z,,0x00478640,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_disabledText@0x194; combo dispatch
 ??1Display@@UAE@XZ,,0x005CB360,402,Code/masm_dumps/Display_destructor_5CB360.asm,matched,Certified packet 109; Display vtable and derived destructor chains; retail sha256 70ba90e47128dd067f1534c8ad52d468cf88aa57081a16a2c8d8a800576e756b
+??1RankInfoStore@@UAE@XZ,,0x003A0BA0,212,Code/masm_dumps/RankInfoStore_destructor.asm,matched,Certified packet 110; Ghidra entry and RankInfoStore deleting-destructor chain; retail SHA-256 bb0ca418f4cb4caee2d814dd70efae958c268784c3d47d1d703cfe9a99c8d3f4

@@ -13379,3 +13379,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1RankInfoStore@@UAE@XZ,,0x003A0BA0,212,Code/masm_dumps/RankInfoStore_destructor.asm,matched,Certified packet 110; Ghidra entry and RankInfoStore deleting-destructor chain; retail SHA-256 bb0ca418f4cb4caee2d814dd70efae958c268784c3d47d1d703cfe9a99c8d3f4
 ??1SidesList@@UAE@XZ,,0x0019E640,290,Code/masm_dumps/SidesList_destructor.asm,matched,Certified packet id 111 exact retail MASM SHA256 8699b70f447fd057fdb39875e2e20d185e658f90b877d8bebd4974b9aaee0f0e
 ?addImage@ImageCollection@@QAEXPAVImage@@@Z,,0x005D3410,133,Code/masm_dumps/addImage_ImageCollection_QAEXPAVImage_Z_005D3410_ab3c6160.asm,matched,certified packet 107 exact retail db dump sha256 ab3c6160
+?message@InGameUI@@UAAXVUnicodeString@@ZZ,,0x0043DEE0,9,Code/GameEngine/Source/GameClient/InGameUI_message_UnicodeString.asm,matched,Certified packet 113 reviewed vtable UnicodeString cleanup tail stub

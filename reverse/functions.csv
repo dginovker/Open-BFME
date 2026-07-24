@@ -12641,13 +12641,13 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?winRelease@GameWindowManager@@UAEHPAVGameWindow@@@Z,,0x0047C940,21,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,
 ?winSetDisabledBorderColor@GameWindow@@QAEHHH@Z,,0x004790A0,40,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
 ?winSetDisabledColor@GameWindow@@QAEHHH@Z,,0x00479070,37,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
-?winSetDisabledImage@GameWindow@@QAEHHPBVImage@@@Z,,0x0000B406,5,Code/masm_dumps/_thunk_027fd80c43a9_B406.asm,matched,thunk accessor of ported class (icf alias)
+?winSetDisabledImage@GameWindow@@QAEHHPBVImage@@@Z,,0x00479120,37,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME ICF-folds with winSetHiliteImage; retail writes m_hiliteDrawData not m_disabledDrawData
 ?winSetEnabledBorderColor@GameWindow@@QAEHHH@Z,,0x00479010,37,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
 ?winSetEnabledColor@GameWindow@@QAEHHH@Z,,0x00478FE0,37,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
 ?winSetFocus@GameWindowManager@@UAEHPAVGameWindow@@@Z,,0x0047CA80,172,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,resweep exact post-GWM-fix (exact-ambiguous)
 ?winSetHiliteBorderColor@GameWindow@@QAEHHH@Z,,0x00479150,40,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
 ?winSetHiliteColor@GameWindow@@QAEHHH@Z,,0x00479120,37,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
-?winSetHiliteImage@GameWindow@@QAEHHPBVImage@@@Z,,0x0000B406,5,Code/masm_dumps/_thunk_9585776c8e24_B406.asm,matched,thunk accessor of ported class
+?winSetHiliteImage@GameWindow@@QAEHHPBVImage@@@Z,,0x00479120,37,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_instData.m_hiliteDrawData[i].image@0x130
 ?winSetLayout@GameWindow@@QAEHPAVWindowLayout@@@Z,,0x00031881,5,Code/masm_dumps/_winSetLayout_GameWindow__QAEHPAVWindowLayout___Z_31881.asm,matched,MASM exact retail dump
 ?winSetLayout@GameWindow@@QAEXPAVWindowLayout@@@Z,,0x0026ED70,13,Code/GameEngine/Source/GameClient/GUI/GameWindow.cpp,matched,
 ?winSetLoneWindow@GameWindowManager@@UAEXPAVGameWindow@@@Z,,0x0047D040,51,Code/GameEngine/Source/GameClient/GUI/GameWindowManager.cpp,matched,
@@ -13557,7 +13557,7 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?drawSkinnyBorder@@YAXHHHH@Z,,0x0079BCA0,2304,Code/masm_dumps/drawSkinnyBorder_YAXHHHH_Z_0079BCA0_packet353.asm,matched,certified packet 353 sealed RVA and SHA-256 reviewed identity evidence
 ?getMapPreviewImage@@YAPAVImage@@VAsciiString@@@Z,,0x004516E0,1212,Code/masm_dumps/getMapPreviewImage_YAPAVImage_VAsciiString_Z_004516E0_packet354.asm,matched,certified packet 354 sealed RVA and SHA-256 reviewed identity evidence
 ?GadgetPushButtonInput@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004BBFC0,1383,Code/masm_dumps/GadgetPushButtonInput_004BBFC0_packet355.asm,matched,Certified packet 355 exact retail db recovery
-?winSetEnabledImage@GameWindow@@QAEHHPBVImage@@@Z,,0x00035E09,5,Code/masm_dumps/_winSetEnabledImage_GameWindow__QAEHHPBVImage___Z_35E09.asm,matched,MASM exact retail dump
+?winSetEnabledImage@GameWindow@@QAEHHPBVImage@@@Z,,0x00478FE0,37,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_instData.m_enabledDrawData[i].image@0x48
 ?winSetHiliteTextColors@GameWindow@@QAEXHH@Z,,0x00478680,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_hiliteText@0x19c; combo dispatch
 ?winSetIMECompositeTextColors@GameWindow@@QAEXHH@Z,,0x004786C0,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_imeCompositeText@0x1a4; combo dispatch
-?winSetTooltipFunc@GameWindow@@QAEHP6AXPAV1@PAVWinInstanceData@@I@Z@Z,,0x0003D127,5,Code/masm_dumps/_thunk_17eb35c03d08_3D127.asm,matched,thunk accessor of ported class
+?winSetTooltipFunc@GameWindow@@QAEHP6AXPAV1@PAVWinInstanceData@@I@Z@Z,,0x00478EB0,15,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_tooltip@0x1ec

@@ -210,3 +210,49 @@ void GameWindow::winSetIMECompositeTextColors( Color color, Color borderColor )
 	if( BitTest( m_instData.getStyle(), GWS_COMBO_BOX ) )
 		GadgetComboBoxSetIMECompositeTextColors( this, color, borderColor );
 }
+
+// ?winSetTooltipFunc@GameWindow@@QAEHP6AXPAV1@PAVWinInstanceData@@I@Z@Z
+Int GameWindow::winSetTooltipFunc( GameWinTooltipFunc tooltip )
+{
+	m_tooltip = tooltip;
+
+	return WIN_ERR_OK;
+}
+
+// ?winSetEnabledImage@GameWindow@@QAEHHPBVImage@@@Z
+Int GameWindow::winSetEnabledImage( Int index, const Image *image )
+{
+	if( index < 0 || index >= MAX_DRAW_DATA )
+		return WIN_ERR_INVALID_PARAMETER;
+
+	m_instData.m_enabledDrawData[ index ].image = image;
+
+	return WIN_ERR_OK;
+}
+
+// ?winSetHiliteImage@GameWindow@@QAEHHPBVImage@@@Z
+Int GameWindow::winSetHiliteImage( Int index, const Image *image )
+{
+	if( index < 0 || index >= MAX_DRAW_DATA )
+		return WIN_ERR_INVALID_PARAMETER;
+
+	m_instData.m_hiliteDrawData[ index ].image = image;
+
+	return WIN_ERR_OK;
+}
+
+// Retail's winSetDisabledImage body ICF-folds byte-for-byte with winSetHiliteImage
+// above (both thunks resolve to the identical body at 0x479120, verified via
+// objdump: index math -> m_instData offset 0x130 = &m_hiliteDrawData[index].image).
+// BFME never wrote a distinct disabled-image path here; write the same field so
+// our object code folds the same way and matches the retail bytes.
+// ?winSetDisabledImage@GameWindow@@QAEHHPBVImage@@@Z
+Int GameWindow::winSetDisabledImage( Int index, const Image *image )
+{
+	if( index < 0 || index >= MAX_DRAW_DATA )
+		return WIN_ERR_INVALID_PARAMETER;
+
+	m_instData.m_hiliteDrawData[ index ].image = image;
+
+	return WIN_ERR_OK;
+}

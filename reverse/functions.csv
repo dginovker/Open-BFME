@@ -13536,3 +13536,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?evaluateNamedOwnedByPlayer@ScriptConditions@@IAE_NPAVParameter@@0@Z,,0x00322780,115,Code/masm_dumps/evaluateNamedOwnedByPlayer_ScriptConditions_00322780_packet321.asm,matched,Certified packet 321 exact 115-byte retail recovery sha256 ec5f4489430e8abbca162c0197c91046303a739e1459a39c188f2d404429b1db
 ?reset@W3DRadar@@UAEXXZ,,0x006C1890,205,Code/masm_dumps/reset_W3DRadar_UAEXXZ_006C1890_packet323.asm,matched,Certified packet 323 exact retail bytes SHA256 2251962adb7e00fb76a9ab1e8f9efd79e757ddc1df0ddbfc69b9858dd35161d8
 ?showShell@Shell@@QAEX_N@Z,,0x00580150,180,Code/masm_dumps/showShell_Shell_QAEX_N_Z_00580150_packet324.asm,matched,Certified packet 324 sealed RVA size and SHA-256
+?onObjectCreated@GarrisonContain@@MAEXXZ,,0x0021EA90,150,Code/masm_dumps/onObjectCreated_GarrisonContain_MAEXXZ_0021EA90_packet325.asm,matched,Certified packet 325 exact retail db body

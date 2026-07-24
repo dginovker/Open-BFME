@@ -95,10 +95,10 @@ includes it must still byte-match.
 
 ## Verification
 
-* Full gate (`./build.sh`, no args) at session START only, or after a messy
-  merge — it takes ~10 minutes solo, longer when other clones build. The
-  commit/push hooks already verify your delta; don't re-run full builds
-  around every commit.
+* NEVER full-gate (`./build.sh` no-args) a clean `origin/master` checkout —
+  it's already green and its ~10-min exclusive lock stalls everyone else.
+  Per-file builds + the commit/push hooks verify your delta. Full-gate ONLY
+  after a hand-resolved merge.
 * Never pipe gate commands through `tail`/`grep` in a way that masks the
   exit code. Check `$?` of the build itself.
 * `tools/progress.py <start-ref>` counts ledger rows — it does not verify.

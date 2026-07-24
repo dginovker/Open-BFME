@@ -51,17 +51,21 @@ Repeat this loop while manual reverse-engineering work remains:
 
 ## When your current approach runs dry, fall down this ladder — do not stop, do not ask
 
-1. `python3 tools/land_ambiguous.py` — string-anchored exact-ambiguous drift
-   copies; cheapest wins when available.
-2. Structural reconciliation — the manual-RE tier and most of what remains:
-   `python3 tools/next_work.py --tier structural` for the ranked queue, then
-   follow `docs/structural.md` exactly. Budget 30-60 min per function; log
-   EVERY attempt with `tools/log_attempt.py` (unlogged failures get re-paid
-   by the next agent); 3 strikes on one function → log and move on.
-3. Resolve REL32-blocked functions: find the callee address, add a
-   `name,address` pin to `reverse/symbols.csv` (see docs/matching.md).
-4. Translate a `__asm` block or a small unmatched export to C++
-   (`python3 tools/list_naked_candidates.py Code --limit 20`).
+Clean C++ is the deliverable; a MASM dump is a byte-blob, not source. Prefer
+C++ for any field/logic body — dump only x87/SEH/codegen-blocked ones.
+
+1. Thunk-dump → C++: a 5-byte `E9 rel32` in `Code/masm_dumps/` jumps to the
+   body clean C++ compiles to. Write it, repoint the row, delete the .asm,
+   verify. Surface them: `python3 tools/list_thunk_dumps.py`.
+2. Stub/drifted class blocking a dump cluster: pin its offsets from several
+   accessor bodies, shim the layout TU-scoped (private `/I`), convert the
+   cluster. Precedent: `reference/shims/gamewindow/`.
+3. `python3 tools/land_ambiguous.py` — string-anchored drift copies.
+4. Structural RE: `tools/next_work.py --tier structural`, per
+   `docs/structural.md`; 30-60 min/function, log EVERY attempt
+   (`tools/log_attempt.py`), 3 strikes → move on.
+5. REL32 pin (`reverse/symbols.csv`, docs/matching.md), or a small
+   `__asm`/export → C++ (`tools/list_naked_candidates.py Code --limit 20`).
 
 ## Tree layout
 
@@ -69,8 +73,6 @@ Sources live under `Code/` at the official BFME tree path (from `__FILE__`
 strings in the exe): `Code/GameEngine/{Source,Include}/...`,
 `Code/GameEngineDevice/...`, `Code/Libraries/Source/WWVegas/{WWLib,WWMath,WWDebug,WW3D2,...}`.
 New hand-ports go to the same official location as the original file.
-`src/` is gone: all 85 ported WWVegas headers were reconciled against retail
-and moved to their official dirs (the old `/Isrc/w3d` idirs are stripped).
 Headers are shared truth — moving/editing one means every source that
 includes it must still byte-match.
 
@@ -104,26 +106,20 @@ includes it must still byte-match.
 
 ## No push access? (external contributors / forks)
 
-Fork, branch from `master`, same loop — but instead of pushing to master,
-open a PR per small batch: each commit one contribution, rebased on upstream
-`master`, full local gate green before opening. Maintainers verify with
-`tools/verify_pr.sh <pr#>` and merge; no CI runs server-side, so a PR that
-does not state its gate output will be rebuilt from scratch and reviewed
-slower.
+Fork, branch from `master`, same loop, but PR per small batch instead of
+pushing: one contribution per commit, rebased on upstream, full gate green
+before opening. Maintainers verify with `tools/verify_pr.sh <pr#>`; state your
+gate output or the PR gets rebuilt from scratch (no server CI).
 
 # Rules
 
-* Keep shit lean. It's very easy to generate verbose code and verbose docs
-  with AI. Always ask yourself if you're being helpful by generating it.
-  Temporary scripts and tests are fine if you clean them up. Really ask
-  yourself a question if your commit is larger than 33% of the median of
-  previous commits in the project.
+* Keep it lean — code and docs. Temp scripts/tests are fine if you clean them
+  up. A commit past 33% above the project's median size deserves a hard look.
 * Don't add fallback code paths as a convenience. They hide mismatches and
   create subtle bugs that cost more time than they save. If the original
   toolchain matters, use the original toolchain.
-* Progress = matched functions.csv rows, nothing else. Landing files of
-  `present-unmatched` markers is not work, and the gates reject sources with
-  zero matched rows.
+* Progress = matched functions.csv rows backed by real source. Landing
+  `present-unmatched` markers is not work; gates reject zero-matched sources.
 * Never read `reverse/functions.csv`, `reverse/ghidra_functions.csv`, or
   `reverse/exports.csv` into your context — they are huge. Query them with
   the tools or grep/python.

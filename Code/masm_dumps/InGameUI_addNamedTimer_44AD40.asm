@@ -1,0 +1,26 @@
+.386
+.model flat
+
+; ?addNamedTimer@InGameUI@@QAEXABVAsciiString@@ABVUnicodeString@@_N@Z
+; Exact 229 retail bytes @ 0x0044AD40
+_TEXT SEGMENT
+public ?addNamedTimer@InGameUI@@QAEXABVAsciiString@@ABVUnicodeString@@_N@Z
+?addNamedTimer@InGameUI@@QAEXABVAsciiString@@ABVUnicodeString@@_N@Z PROC
+    db 053h,055h,056h,057h,06Ah,01Ch,08Bh,0F9h,0E8h,0E3h,071h,043h,000h,033h,0F6h,083h
+    db 0C4h,004h,03Bh,0C6h,074h,00Eh,0C7h,000h,058h,057h,00Fh,001h,089h,070h,004h,089h
+    db 070h,008h,08Bh,0F0h,08Bh,05Ch,024h,014h,053h,08Dh,04Eh,004h,0E8h,01Fh,0CFh,043h
+    db 000h,08Bh,04Ch,024h,018h,08Bh,087h,0B0h,007h,000h,000h,051h,08Dh,04Eh,008h,089h
+    db 046h,014h,0E8h,0A9h,0D7h,043h,000h,08Bh,00Dh,0CCh,012h,02Fh,001h,08Bh,011h,0FFh
+    db 052h,024h,089h,046h,00Ch,08Bh,010h,08Bh,0C8h,0FFh,052h,014h,08Bh,097h,0A8h,007h
+    db 000h,000h,08Bh,046h,00Ch,08Bh,028h,033h,0C9h,08Ah,08Fh,0ACh,007h,000h,000h,051h
+    db 08Bh,00Dh,084h,014h,02Fh,001h,052h,0E8h,0ABh,0A0h,0BBh,0FFh,089h,044h,024h,018h
+    db 0DBh,044h,024h,018h,051h,08Bh,00Dh,038h,01Bh,02Fh,001h,08Dh,087h,0A4h,007h,000h
+    db 000h,0D9h,01Ch,024h,050h,0E8h,0E9h,0FDh,0BBh,0FFh,08Bh,04Eh,00Ch,050h,0FFh,055h
+    db 018h,051h,089h,064h,024h,018h,08Bh,0CCh,068h,054h,06Eh,033h,001h,0E8h,00Eh,0D6h
+    db 043h,000h,08Bh,04Eh,00Ch,08Bh,011h,0FFh,052h,004h,08Ah,044h,024h,01Ch,053h,08Bh
+    db 0CFh,0C7h,046h,010h,0FFh,0FFh,0FFh,0FFh,088h,046h,018h,0E8h,032h,0C1h,0BFh,0FFh
+    db 053h,08Dh,08Fh,07Ch,007h,000h,000h,0E8h,081h,006h,0C0h,0FFh,05Fh,089h,030h,05Eh
+    db 05Dh,05Bh,0C2h,00Ch,000h
+?addNamedTimer@InGameUI@@QAEXABVAsciiString@@ABVUnicodeString@@_N@Z ENDP
+_TEXT ENDS
+END

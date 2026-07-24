@@ -13560,6 +13560,5 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?winSetHiliteTextColors@GameWindow@@QAEXHH@Z,,0x00478680,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_hiliteText@0x19c; combo dispatch
 ?winSetIMECompositeTextColors@GameWindow@@QAEXHH@Z,,0x004786C0,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_imeCompositeText@0x1a4; combo dispatch
 ?winSetTooltipFunc@GameWindow@@QAEHP6AXPAV1@PAVWinInstanceData@@I@Z@Z,,0x00478EB0,15,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_tooltip@0x1ec
-?winSetTooltipFunc@GameWindow@@QAEHP6AXPAV1@PAVWinInstanceData@@I@Z@Z,,0x0003D127,5,Code/masm_dumps/_thunk_17eb35c03d08_3D127.asm,matched,thunk accessor of ported class
 ?getWrappedCommandID@NetWrapperCommandMsg@@QAEGXZ,,0x00673F60,5,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor
 ?setWrappedCommandID@NetWrapperCommandMsg@@QAEXG@Z,,0x00673F70,12,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor (icf alias of GameSlot::setPort)

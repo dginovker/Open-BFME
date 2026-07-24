@@ -13413,3 +13413,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?update@AIHuntState@@UAE?AW4StateReturnType@@XZ,,0x0017E480,800,Code/masm_dumps/AIHuntState_update_17E480.asm,matched,Certified packet 152 exact retail MASM SHA256 80b88dde9572dbde5a8ad4b63b7d6ec0817a76928ab797f5922d383a00fad311
 ?initFromSides@TeamFactory@@QAEXPAVSidesList@@@Z,,0x000F83C0,260,Code/masm_dumps/initFromSides_TeamFactory_QAEXPAVSidesList_Z_000F83C0_0bab5f87.asm,matched,certified packet 155 exact retail db SHA256 0bab5f8705d832594899042614aec7cba668b22ea2c40cc898759f63f91b6e20
 ?addAudioEvent@AudioManager@@UAEIPBVAudioEventRTS@@@Z,,0x006B9A40,19,Code/masm_dumps/AudioManager_addAudioEvent_6B9A40.asm,matched,Certified packet 156 vtable slot +0x44 and call-graph recovery
+?PopupHostGameSystem@@YA?AW4WindowMsgHandledType@@PAVGameWindow@@III@Z,,0x004D6EE0,764,Code/masm_dumps/PopupHostGameSystem_4D6EE0.asm,matched,certified packet 157 exact retail db recovery

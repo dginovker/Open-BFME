@@ -572,18 +572,21 @@ def verify_functions(only=None):
     # oversubscribe the cores into a stall. Only the full-suite periodic audit,
     # which runs alone, sets BUILD_POOL=8 to compile all 260+ TUs in parallel.
     pool_size = max(1, min(int(os.environ.get("BUILD_POOL", "1")), os.cpu_count() or 1))
-    # Host-wide wine/cl mutex: many clones share this machine's wine prefix, and
-    # concurrent full builds thrash each other into 20-40 min runs (and wine cl
-    # failures at high concurrency). Big compiles take the lock exclusively;
-    # small per-file verifies share it, so they still run concurrently with
-    # each other but wait out any full build.
+    # Host-wide wine/cl mutex: concurrent FULL builds thrash each other (and wine
+    # cl fails at high concurrency), so a full build (>8 TUs) takes the lock
+    # EXCLUSIVELY and they serialize against each other. Small per-file verifies
+    # take NO lock: they must never wait behind a sibling clone's full gate — that
+    # stall serialized every worker to a crawl. A full build compiles one cl.exe
+    # at a time here (BUILD_POOL=1), so unlocked per-file verifies running
+    # alongside it stay within the core count.
     lock_dir = Path.home() / ".cache"
     lock_dir.mkdir(parents=True, exist_ok=True)
-    lock_file = (lock_dir / "open-bfme-build.lock").open("a")
     exclusive = len(to_compile) > 8
-    lock(lock_file, exclusive=exclusive,
-         wait_notice=f"waiting for build lock ({'exclusive' if exclusive else 'shared'}; "
-                     f"another clone is running a full build)...")
+    lock_file = None
+    if exclusive:
+        lock_file = (lock_dir / "open-bfme-build.lock").open("a")
+        lock(lock_file, exclusive=True,
+             wait_notice="waiting for build lock (another clone is running a full build)...")
     try:
         if pool_size == 1 or len(to_compile) <= 1:
             for s in to_compile:
@@ -594,8 +597,9 @@ def verify_functions(only=None):
                 for future in concurrent.futures.as_completed(futures):
                     future.result()
     finally:
-        unlock(lock_file)
-        lock_file.close()
+        if lock_file is not None:
+            unlock(lock_file)
+            lock_file.close()
 
     failures = 0
     patches = []

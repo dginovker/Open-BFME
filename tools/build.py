@@ -440,8 +440,18 @@ def _deps_sidecar(output):
     return output.with_suffix(".deps.json")
 
 
+def _portable(text):
+    # Normalize ROOT-dependent path spellings (host and wine forms) so
+    # fingerprints and sidecars stay valid across checkouts of the same tree —
+    # a worktree seeded with the main clone's warm cache starts warm.
+    if os.name != "nt":
+        text = text.replace(wine_path(ROOT), "@ROOT@")
+    return text.replace(str(ROOT), "@ROOT@")
+
+
 def _cmd_fingerprint(command, env):
-    return hashlib.md5(json.dumps([command, env.get("INCLUDE", "")]).encode()).hexdigest()
+    payload = [[_portable(part) for part in command], _portable(env.get("INCLUDE", ""))]
+    return hashlib.md5(json.dumps(payload).encode()).hexdigest()
 
 
 def _write_deps_sidecar(source, output, fingerprint, stdout_text, is_cl):
@@ -459,13 +469,15 @@ def _write_deps_sidecar(source, output, fingerprint, stdout_text, is_cl):
             if host is None:
                 problems.append(line.strip()[:120])
                 continue
-            if host in deps:
+            rel = os.path.relpath(host, ROOT)
+            key = host if rel.startswith("..") else rel
+            if key in deps:
                 continue
             digest = _hash_file(host)
             if digest is None:
                 problems.append(host)
             else:
-                deps[host] = digest
+                deps[key] = digest
         if not deps:
             # A TU with no #include genuinely has no notes — empty deps is
             # correct there. Notes missing DESPITE includes is the broken case.
@@ -506,7 +518,8 @@ def compile_is_current(source, output):
     if meta.get("source") != _hash_file(str(source)):
         return False
     for dep, digest in meta.get("deps", {}).items():
-        if _hash_file(dep) != digest:
+        path = dep if os.path.isabs(dep) else str(ROOT / dep)
+        if _hash_file(path) != digest:
             return False
     return True
 

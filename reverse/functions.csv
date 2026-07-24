@@ -13473,3 +13473,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1BaseHeightMapRenderObjClass@@UAE@XZ,,0x006CEE90,871,Code/masm_dumps/BaseHeightMapRenderObjClass_dtor_006CEE90.asm,matched,certified packet 222 exact retail db recovery
 ??1W3DModelDraw@@MAE@XZ,,0x0077B090,682,Code/masm_dumps/W3DModelDraw_destructor_77B090.asm,matched,Certified packet 234 exact retail MASM destructor body
 ?message@InGameUI@@UAAXVAsciiString@@ZZ,,0x0043DED0,9,Code/GameEngine/Source/GameClient/InGameUI_message_AsciiString.asm,matched,Certified packet 236 exact retail db recovery
+?getAudioLengthMS@AudioManager@@UAEMPBVAudioEventRTS@@@Z,,0x0069FA00,323,Code/masm_dumps/getAudioLengthMS_AudioManager_69FA00.asm,matched,Certified packet 237 exact retail MASM SHA256 5cefa1c7f3e5e7d6fe3ad2dd58ec5f53ff3b21752dedfdbc12def2fb535e355b

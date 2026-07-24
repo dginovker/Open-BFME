@@ -13401,3 +13401,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0TurretAIHoldTurretState@@QAE@PAVTurretStateMachine@@@Z,,0x0018DAF0,53,Code/masm_dumps/TurretAIHoldTurretState_constructor_18DAF0.asm,matched,Certified packet 139 exact retail MASM recovery
 ?getUser@LANGameSlot@@QAEPAVLANPlayer@@XZ,,0x0068DE20,145,Code/masm_dumps/getUser_LANGameSlot_QAEPAVLANPlayer_XZ_0068DE20_3d5a0c45.asm,matched,Certified packet 140 SHA256 3d5a0c45aafdb9ef17384528c8dc02e5df9270260c32da84fbee2f997e9ebb5d
 ?onEnter@AIMoveAndTightenState@@UAE?AW4StateReturnType@@XZ,,0x00173A80,124,Code/masm_dumps/AIMoveAndTightenState_onEnter_173A80.asm,matched,Certified packet 141 vtable slot thunk and exact retail SHA-256 3ac29c81d9079a97b9f1ebd1668a7ed0222c911ebf743a0a19dba0046e55a3b7
+??0AudioSettings@@QAE@XZ,,0x000B4E00,725,Code/masm_dumps/AudioSettings_ctor_000B4E00.asm,matched,Certified packet 142 exact retail db recovery

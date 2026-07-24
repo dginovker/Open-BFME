@@ -13366,3 +13366,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?allocateBlocks@PathfindZoneManager@@QAEXABUIRegion2D@@@Z,,0x00403D50,287,Code/masm_dumps/allocateBlocks_PathfindZoneManager_00403D50_149ae938.asm,matched,Certified packet 94 exact retail MASM recovery SHA256 149ae93817eb6bdfe8ba1cb43af2b051f9bae4adbdf4c26f67e399ac5549bc36
 ?showShellMap@Shell@@QAEX_N@Z,,0x0057FB40,289,Code/masm_dumps/Shell_showShellMap_57FB40.asm,matched,Certified packet 95 exact retail MASM recovery SHA256 6186002125eb74db24866f36a7d75780d63447886bc347a55b354a442d6c6f8e
 ??0AIAttackSquadState@@QAE@PAVStateMachine@@PAVAttackExitConditionsInterface@@@Z,,0x00171330,54,Code/masm_dumps/AIAttackSquadState_constructor_171330.asm,matched,Certified packet 96 exact retail MASM
+?addGameToAvailableList@@YAXVAsciiString@@PAX@Z,,0x00111C40,280,Code/masm_dumps/addGameToAvailableList_111C40.asm,matched,Certified packet 97 db-only retail recovery

@@ -6442,7 +6442,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Get_UUBlock@INIClass@@QBEHPBD0PAXH@Z,,0x009E55C0,228,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
 ?Get_UUBlock@INIClass@@QBEHPBDPAXH@Z,,0x009E5070,455,Code/Libraries/Source/WWVegas/WWLib/ini.cpp,matched,
 ?Get_UV_Array@Vertex_Split_Table@@QBEPBVVector2@@I@Z,,0x00947070,23,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
-?Get_UV_Array_By_Index@MeshMatDescClass@@QAEPAVVector2@@H_N@Z,,0x0001D179,5,Code/masm_dumps/_Get_UV_Array_By_Index_MeshMatDescClass__QAEPAVVector2__H_N_Z_1D179.asm,matched,MASM exact retail dump
+?Get_UV_Array_By_Index@MeshMatDescClass@@QAEPAVVector2@@H_N@Z,,0x006D7BB0,166,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
 ?Get_UV_Array_By_Index@MeshModelClass@@QAEPBVVector2@@H@Z,,0x006D7CB0,21,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
 ?Get_UV_Array_Count@MeshMatDescClass@@QAEHXZ,,0x009290D0,33,Code/Libraries/Source/WWVegas/WW3D2/meshmatdesc.cpp,matched,
 ?Get_UV_Array_Count@MeshModelClass@@QAEHXZ,,0x00945560,35,Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp,matched,
@@ -7293,7 +7293,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?Reset@Line3DClass@@QAEXABVVector3@@0@Z,,0x00951F90,302,Code/masm_dumps/_rn4__Reset_Line3DClass__QAEXABVVector3__0_Z_951F90.asm,matched,reloc-needle Open-BFME4+Grok
 ?Reset@Line3DClass@@QAEXABVVector3@@0M@Z,,0x009520C0,336,Code/masm_dumps/_rn4__Reset_Line3DClass__QAEXABVVector3__0M_Z_9520C0.asm,matched,reloc-needle Open-BFME4+Grok
 ?Reset@LinearOffsetTextureMapperClass@@UAEXXZ,,0x00966A10,17,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
-?Reset@MeshMatDescClass@@QAEXHHH@Z,,0x006D7BB0,166,Code/masm_dumps/_sa13__Reset_MeshMatDescClass__QAEXHHH_Z_6D7BB0.asm,matched,multi-xref Open-BFME4+Grok MeshMatDescClass::UV
 ?Reset@ParticleEmitterClass@@QAEXXZ,,0x0097EFF0,145,Code/Libraries/Source/WWVegas/WW3D2/part_emt.cpp,matched,exact-ambiguous COMDAT pinned by string anchor
 ?Reset@RandomTextureMapperClass@@UAEXXZ,,0x00965E70,16,Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp,matched,
 ?Reset@RawFileClass@@IAEXXZ,,0x009E6AB0,49,Code/Libraries/Source/WWVegas/WWLib/rawfile.cpp,matched,

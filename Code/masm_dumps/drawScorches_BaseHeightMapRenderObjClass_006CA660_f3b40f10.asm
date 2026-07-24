@@ -1,0 +1,27 @@
+.386
+.model flat
+
+; ?drawScorches@BaseHeightMapRenderObjClass@@IAEXXZ
+; Exact 247 retail bytes @ 0x006CA660; certified packet 189
+_TEXT SEGMENT
+public ?drawScorches@BaseHeightMapRenderObjClass@@IAEXXZ
+?drawScorches@BaseHeightMapRenderObjClass@@IAEXXZ PROC
+    db 056h,08Bh,0F1h,0E8h,0FEh,082h,096h,0FFh,08Bh,086h,0E0h,000h,000h,000h,085h,0C0h
+    db 00Fh,084h,0DFh,000h,000h,000h,08Bh,006h,08Bh,0CEh,0FFh,090h,08Ch,001h,000h,000h
+    db 085h,0C0h,00Fh,085h,0CDh,000h,000h,000h,068h,014h,06Eh,02Dh,001h,0E8h,031h,0CDh
+    db 094h,0FFh,08Bh,08Eh,0D4h,000h,000h,000h,06Ah,000h,051h,0E8h,0D0h,09Dh,023h,000h
+    db 08Bh,096h,0D0h,000h,000h,000h,06Ah,000h,052h,0E8h,022h,09Dh,023h,000h,08Dh,086h
+    db 0D8h,000h,000h,000h,050h,06Ah,000h,0E8h,004h,0B4h,023h,000h,06Ah,001h,0E8h,0EDh
+    db 0B3h,023h,000h,083h,0C4h,020h,0E8h,0C5h,0A1h,023h,000h,0A1h,034h,005h,034h,001h
+    db 08Bh,008h,06Ah,003h,06Ah,001h,06Ah,000h,050h,0FFh,091h,014h,001h,000h,000h,0A1h
+    db 094h,005h,034h,001h,08Bh,015h,068h,005h,034h,001h,06Ah,003h,040h,06Ah,002h,0A3h
+    db 094h,005h,034h,001h,0A1h,034h,005h,034h,001h,042h,06Ah,000h,089h,015h,068h,005h
+    db 034h,001h,08Bh,010h,050h,0FFh,092h,014h,001h,000h,000h,08Bh,00Dh,094h,005h,034h
+    db 001h,0A1h,068h,005h,034h,001h,041h,040h,0A3h,068h,005h,034h,001h,089h,00Dh,094h
+    db 005h,034h,001h,033h,0C0h,066h,08Bh,086h,0DCh,000h,000h,000h,08Bh,0B6h,0E0h,000h
+    db 000h,000h,050h,0B8h,056h,055h,055h,055h,0F7h,0EEh,08Bh,0CAh,0C1h,0E9h,01Fh,06Ah
+    db 000h,003h,0CAh,051h,06Ah,000h,0E8h,0A5h,0C6h,023h,000h,06Ah,000h,0E8h,05Eh,0B3h
+    db 023h,000h,083h,0C4h,014h,05Eh,0C3h
+?drawScorches@BaseHeightMapRenderObjClass@@IAEXXZ ENDP
+_TEXT ENDS
+END

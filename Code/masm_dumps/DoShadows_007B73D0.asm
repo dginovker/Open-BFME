@@ -1,0 +1,21 @@
+.386
+.model flat
+
+; ?DoShadows@@YAXAAVRenderInfoClass@@_N@Z
+; Exact 160 retail bytes @ RVA 0x007B73D0
+_TEXT SEGMENT
+public ?DoShadows@@YAXAAVRenderInfoClass@@_N@Z
+?DoShadows@@YAXAAVRenderInfoClass@@_N@Z PROC
+    db 083h,0ECh,00Ch,053h,056h,057h,08Bh,07Ch,024h,01Ch,08Bh,037h,08Bh,0CEh,0E8h,00Dh
+    db 0AAh,017h,000h,081h,0C6h,004h,001h,000h,000h,08Dh,044h,024h,00Ch,089h,035h,0E8h
+    db 06Eh,030h,001h,08Bh,00Fh,050h,0E8h,0C5h,08Eh,016h,000h,08Bh,008h,08Ah,05Ch,024h
+    db 020h,084h,0DBh,089h,00Dh,0F0h,06Eh,030h,001h,08Bh,050h,004h,089h,015h,0F4h,06Eh
+    db 030h,001h,08Bh,040h,008h,0A3h,0F8h,06Eh,030h,001h,075h,01Dh,08Bh,00Dh,0F0h,06Dh
+    db 030h,001h,085h,0C9h,074h,033h,08Bh,015h,0ECh,06Eh,030h,001h,080h,03Ah,000h,074h
+    db 028h,057h,0E8h,064h,021h,087h,0FFh,0EBh,020h,080h,0FBh,001h,075h,01Bh,08Bh,00Dh
+    db 018h,06Fh,030h,001h,085h,0C9h,074h,011h,0A1h,0ECh,06Eh,030h,001h,080h,038h,000h
+    db 074h,007h,06Ah,000h,0E8h,0F8h,0F5h,088h,0FFh,0A1h,0ECh,06Eh,030h,001h,085h,0C0h
+    db 074h,007h,084h,0DBh,074h,003h,0C6h,000h,000h,05Fh,05Eh,05Bh,083h,0C4h,00Ch,0C3h
+?DoShadows@@YAXAAVRenderInfoClass@@_N@Z ENDP
+_TEXT ENDS
+END

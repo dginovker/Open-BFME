@@ -10968,7 +10968,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?getWindowUnderCursor@GameWindowManager@@UAEPAVGameWindow@@HH_N@Z,,0x0047D570,378,Code/GameEngine/Source/GameClient/GUI/GameWindowManager_getWindowUnderCursor.asm,matched,exact 378B via MASM (field-offset drift)
 ?getWorkerAIInterface@AIUpdateInterface@@UAEPAVWorkerAIInterface@@XZ,,0x006CF680,3,Code/GameEngine/Source/GameLogic/Object/Behavior/FlightDeckBehavior.cpp,matched,icf-owner=?Get_Sort_Level@RenderObjClass@@UBEHXZ
 ?getWorkerAIInterface@AIUpdateInterface@@UBEPBVWorkerAIInterface@@XZ,,0x006CF680,3,Code/GameEngine/Source/GameLogic/Object/Behavior/FlightDeckBehavior.cpp,matched,icf-owner=?Get_Sort_Level@RenderObjClass@@UBEHXZ
-?getWrappedCommandID@NetWrapperCommandMsg@@QAEGBXZ,,0x000057C7,5,Code/masm_dumps/_getWrappedCommandID_NetWrapperCommandMsg__QAEGBXZ_57C7.asm,matched,NetWrapperCommandMsg trivial accessor thunk
 ?get_allocator@?$vector@PAVObject@@V?$allocator@PAVObject@@@_STL@@@_STL@@QBE?AV?$allocator@PAVObject@@@2@XZ,,0x0001D534,5,Code/masm_dumps/_thunk_b1261e61e6ef_1D534.asm,matched,thunk accessor of ported class
 ?get_allocator@?$vector@PAVObjectCreationNugget@@V?$allocator@PAVObjectCreationNugget@@@_STL@@@_STL@@QBE?AV?$allocator@PAVObjectCreationNugget@@@2@XZ,,0x00044166,5,Code/masm_dumps/_get_allocator___vector_PAVObjectCreationNugget__V__allocator_PAVObjectCreationNugget____STL____STL__QBE_AV__a_44166.asm,matched,MASM exact retail dump
 ?get_allocator@?$vector@PBVLocomotorTemplate@@V?$allocator@PBVLocomotorTemplate@@@_STL@@@_STL@@QBE?AV?$allocator@PBVLocomotorTemplate@@@2@XZ,,0x0001D534,5,Code/masm_dumps/_thunk_4e895b5a1fe8_1D534.asm,matched,thunk accessor of ported class (icf alias)
@@ -12378,7 +12377,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setWidth@GameLogic@@QAEXM@Z,,0x00360640,10,Code/GameEngine/Source/GameLogic/System/GameLogic.cpp,matched,
 ?setWindowed@Display@@UAEX_N@Z,,0x00336610,10,Code/GameEngine/Source/GameClient/Display.cpp,matched,
 ?setWins@GameSpyGameSlot@@QAEXH@Z,,0x0016A420,10,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,matched,
-?setWrappedCommandID@NetWrapperCommandMsg@@QAEGXZ,,0x00037083,5,Code/masm_dumps/_setWrappedCommandID_NetWrapperCommandMsg__QAEGXZ_37083.asm,matched,NetWrapperCommandMsg trivial accessor thunk
 ?setZone@PathfindLayer@@QAEXH@Z,,0x001F5AE0,10,Code/GameEngine/Source/GameLogic/AI/AIPathfind.cpp,matched,
 ?setZoomLimited@View@@UAEX_N@Z,,0x00912040,10,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DView.cpp,matched,
 ?setZoomToPos@ScreenMotionBlurFilter@@SAXPBUCoord3D@@@Z,,0x0073A830,37,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DView.cpp,matched,
@@ -13561,3 +13559,6 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?winSetHiliteTextColors@GameWindow@@QAEXHH@Z,,0x00478680,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_hiliteText@0x19c; combo dispatch
 ?winSetIMECompositeTextColors@GameWindow@@QAEXHH@Z,,0x004786C0,43,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_imeCompositeText@0x1a4; combo dispatch
 ?winSetTooltipFunc@GameWindow@@QAEHP6AXPAV1@PAVWinInstanceData@@I@Z@Z,,0x00478EB0,15,Code/GameEngine/Source/GameClient/GUI/GameWindowFields.cpp,matched,BFME m_tooltip@0x1ec
+?winSetTooltipFunc@GameWindow@@QAEHP6AXPAV1@PAVWinInstanceData@@I@Z@Z,,0x0003D127,5,Code/masm_dumps/_thunk_17eb35c03d08_3D127.asm,matched,thunk accessor of ported class
+?getWrappedCommandID@NetWrapperCommandMsg@@QAEGXZ,,0x00673F60,5,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor
+?setWrappedCommandID@NetWrapperCommandMsg@@QAEXG@Z,,0x00673F70,12,Code/GameEngine/Source/GameNetwork/NetCommandMsg.cpp,matched,NetWrapperCommandMsg trivial accessor (icf alias of GameSlot::setPort)

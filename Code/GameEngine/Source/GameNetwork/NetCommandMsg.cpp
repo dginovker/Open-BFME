@@ -80,6 +80,16 @@ void NetWrapperCommandMsg::setNumChunks(UnsignedInt numChunks)
 	m_numChunks = numChunks;
 }
 
+UnsignedShort NetWrapperCommandMsg::getWrappedCommandID()
+{
+	return m_wrappedCommandID;
+}
+
+void NetWrapperCommandMsg::setWrappedCommandID(UnsignedShort wrappedCommandID)
+{
+	m_wrappedCommandID = wrappedCommandID;
+}
+
 void NetFileCommandMsg::setFileData(UnsignedByte *data, UnsignedInt dataLength)
 {
 	m_dataLength = dataLength;

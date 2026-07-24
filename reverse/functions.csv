@@ -13380,3 +13380,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??1SidesList@@UAE@XZ,,0x0019E640,290,Code/masm_dumps/SidesList_destructor.asm,matched,Certified packet id 111 exact retail MASM SHA256 8699b70f447fd057fdb39875e2e20d185e658f90b877d8bebd4974b9aaee0f0e
 ?addImage@ImageCollection@@QAEXPAVImage@@@Z,,0x005D3410,133,Code/masm_dumps/addImage_ImageCollection_QAEXPAVImage_Z_005D3410_ab3c6160.asm,matched,certified packet 107 exact retail db dump sha256 ab3c6160
 ?message@InGameUI@@UAAXVUnicodeString@@ZZ,,0x0043DEE0,9,Code/GameEngine/Source/GameClient/InGameUI_message_UnicodeString.asm,matched,Certified packet 113 reviewed vtable UnicodeString cleanup tail stub
+?attemptDamage@Object@@QAEXPAVDamageInfo@@@Z,,0x001D0490,108,Code/masm_dumps/Object_attemptDamage_001D0490.asm,matched,Certified packet 114 exact db-only retail body SHA256 cb23f3ede890543aafd15c80d7bc495177f22aa5f690018a7b8253569d5e629a

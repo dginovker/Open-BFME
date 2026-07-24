@@ -8430,19 +8430,19 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?anyIntersectionWith@?$BitFlags@$0HE@@@QBE_NABV1@@Z,,0x0003291B,5,Code/masm_dumps/_thunk_8212ee1ff6ac_3291B.asm,matched,thunk accessor of ported class (icf alias)
 ?anyIntersectionWith@?$BitFlags@$0N@@@QBE_NABV1@@Z,,0x00203420,17,Code/GameEngine/Source/GameLogic/System/GameLogic.cpp,matched,
 ?append@LListNode@@QAEXPAV1@@Z,,0x00105910,21,Code/GameEngine/Source/Common/System/List.cpp,matched,
-?appendBooleanArgument@GameMessage@@QAEX_N@Z,,0x000032AB,5,Code/masm_dumps/_appendBooleanArgument_GameMessage__QAEX_N_Z_32AB.asm,matched,MASM exact retail dump
-?appendDrawableIDArgument@GameMessage@@QAEXI@Z,,0x000154BF,5,Code/masm_dumps/_appendDrawableIDArgument_GameMessage__QAEXI_Z_154BF.asm,matched,MASM exact retail dump
-?appendIntegerArgument@GameMessage@@QAEXH@Z,,0x00001370,5,Code/masm_dumps/_appendIntegerArgument_GameMessage__QAEXH_Z_1370.asm,matched,MASM exact retail dump
-?appendLocationArgument@GameMessage@@QAEXABUCoord3D@@@Z,,0x00037AD8,5,Code/masm_dumps/_appendLocationArgument_GameMessage__QAEXABUCoord3D___Z_37AD8.asm,matched,MASM exact retail dump
+?appendBooleanArgument@GameMessage@@QAEX_N@Z,,0x0008AB90,22,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendDrawableIDArgument@GameMessage@@QAEXI@Z,,0x0008ABD0,22,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendIntegerArgument@GameMessage@@QAEXH@Z,,0x0008AB50,22,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendLocationArgument@GameMessage@@QAEXABUCoord3D@@@Z,,0x0008AC30,40,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
 ?appendMessage@GameMessageList@@UAEXPAVGameMessage@@@Z,,0x0008A4E0,55,Code/GameEngine/Source/Common/MessageStream.cpp,matched,
 ?appendNextCommand@RecorderClass@@IAEXXZ,0x0003D0F0,0x987b0,533,Code/GameEngine/Source/Common/System/recorder_strings.cpp,matched,
-?appendObjectIDArgument@GameMessage@@QAEXI@Z,,0x0002BCEC,5,Code/masm_dumps/_appendObjectIDArgument_GameMessage__QAEXI_Z_2BCEC.asm,matched,MASM exact retail dump
-?appendPixelArgument@GameMessage@@QAEXABUICoord2D@@@Z,,0x0002EA41,5,Code/masm_dumps/_appendPixelArgument_GameMessage__QAEXABUICoord2D___Z_2EA41.asm,matched,MASM exact retail dump
-?appendPixelRegionArgument@GameMessage@@QAEXABUIRegion2D@@@Z,,0x00011DCE,5,Code/masm_dumps/_appendPixelRegionArgument_GameMessage__QAEXABUIRegion2D___Z_11DCE.asm,matched,MASM exact retail dump
-?appendRealArgument@GameMessage@@QAEXM@Z,,0x00002608,5,Code/masm_dumps/_appendRealArgument_GameMessage__QAEXM_Z_2608.asm,matched,MASM exact retail dump
-?appendTeamIDArgument@GameMessage@@QAEXI@Z,,0x0000C522,5,Code/masm_dumps/_appendTeamIDArgument_GameMessage__QAEXI_Z_C522.asm,matched,MASM exact retail dump
-?appendTimestampArgument@GameMessage@@QAEXI@Z,,0x0000D558,5,Code/masm_dumps/_appendTimestampArgument_GameMessage__QAEXI_Z_D558.asm,matched,MASM exact retail dump
-?appendWideCharArgument@GameMessage@@QAEXABG@Z,,0x000028C9,5,Code/masm_dumps/_appendWideCharArgument_GameMessage__QAEXABG_Z_28C9.asm,matched,MASM exact retail dump
+?appendObjectIDArgument@GameMessage@@QAEXI@Z,,0x0008ABB0,22,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendPixelArgument@GameMessage@@QAEXABUICoord2D@@@Z,,0x0008AC70,30,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendPixelRegionArgument@GameMessage@@QAEXABUIRegion2D@@@Z,,0x0008ACA0,46,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendRealArgument@GameMessage@@QAEXM@Z,,0x0008AB70,22,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendTeamIDArgument@GameMessage@@QAEXI@Z,,0x0008ABF0,22,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendTimestampArgument@GameMessage@@QAEXI@Z,,0x0008ACE0,22,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
+?appendWideCharArgument@GameMessage@@QAEXABG@Z,,0x0008AD00,26,Code/GameEngine/Source/Common/System/message_stream.cpp,matched,thunk-dump converted to clean C++ field accessor; allocArg() REL32-pinned
 ?applyDamageScalar@BodyModule@@UAEXM@Z,,0x0020DC50,13,Code/GameEngine/Source/GameLogic/Object/Body/ActiveBody.cpp,matched,
 ?applyTopplingForce@ToppleUpdate@@QAEXPBUCoord3D@@MI@Z,,0x0003FC97,5,Code/masm_dumps/_applyTopplingForce_ToppleUpdate__QAEXPBUCoord3D__MI_Z_3FC97.asm,matched,MASM exact retail dump
 ?areAllies@@YA_NPBVPlayer@@0@Z,,0x0035F150,53,Code/masm_dumps/_rn7__areAllies__YA_NPBVPlayer__0_Z_35F150.asm,matched,reloc-needle Open-BFME4+Grok

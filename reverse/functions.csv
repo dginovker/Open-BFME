@@ -2639,7 +2639,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??1DozerAIUpdate@@UAE@XZ,,0x002B6640,215,Code/masm_dumps/DozerAIUpdate_destructor.asm,matched,Exact 215B @ 0x002B6640; Exact retail MASM; instance factory->vtable dtor; del 0x2B6B50 ctor 0x2B8680 vt 0xCC6A90
 ??1DrawableIconInfo@@MAE@XZ,,0x001DDFD0,70,Code/GameEngine/Source/GameClient/Drawable.cpp,matched,
 ??1DrawableLocoInfo@@MAE@XZ,,0x00415D50,1385,Code/masm_dumps/_sa3___1DrawableLocoInfo__MAE_XZ_415D50.asm,matched,Exact 1385B string-anchored Open-BFME4
-??1DynamicAudioEventRTS@@MAE@XZ,,0x0078CFB0,73,Code/GameEngine/Source/Common/INI/INI.cpp,matched,
+??1DynamicAudioEventRTS@@MAE@XZ,,0x0078CFB0,73,Code/GameEngine/Source/Common/INI/INI_stl.cpp,matched,
 ??1DynamicPortalBehaviour@@UAE@XZ,,0x001F8D10,141,Code/masm_dumps/DynamicPortalBehaviour_destructor.asm,matched,Exact 141B SEH dtor Open-BFME4
 ??1DynamicShroudClearingRangeUpdate@@UAE@XZ,,0x0028E630,157,Code/masm_dumps/DynamicShroudClearingRangeUpdate_destructor.asm,matched,Exact 157B @ 0x0028E630; Exact retail MASM; instance factory->vtable dtor; del 0x28EBC0 ctor 0x28E410 vt 0xCBE0C4
 ??1DynamicShroudClearingRangeUpdateModuleData@@UAE@XZ,,0x0028ECA0,95,Code/masm_dumps/DynamicShroudClearingRangeUpdateModuleData_destructor.asm,matched,Exact retail MASM; unique factory ctor+dtor vtable chain proves ownership
@@ -4603,7 +4603,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ??_GDrawableLocoInfo@@MAEPAXI@Z,,0x005BF290,30,Code/masm_dumps/_icf____GDrawableLocoInfo__MAEPAXI_Z_5BF290.asm,matched,ICF alias of ??_G?$CategoryModuleTemplate@$00@FXParti Open-BFME4+Grok
 ??_GDumbProjectileBehavior@@MAEPAXI@Z,,0x005BF290,30,Code/masm_dumps/_icf____GDumbProjectileBehavior__MAEPAXI_Z_5BF290.asm,matched,ICF alias of ??_G?$CategoryModuleTemplate@$00@FXParti Open-BFME4+Grok
 ??_GDumbProjectileBehaviorModuleData@@UAEPAXI@Z,,0x005BF290,30,Code/masm_dumps/_icf____GDumbProjectileBehaviorModuleData__UAEPAXI_Z_5BF290.asm,matched,ICF alias of ??_G?$CategoryModuleTemplate@$00@FXParti Open-BFME4+Grok
-??_GDynamicAudioEventRTS@@MAEPAXI@Z,,0x0078D240,30,Code/GameEngine/Source/Common/INI/INI.cpp,matched,
+??_GDynamicAudioEventRTS@@MAEPAXI@Z,,0x0078D240,30,Code/GameEngine/Source/Common/INI/INI_stl.cpp,matched,
 ??_GEMPUpdateModuleData@@UAEPAXI@Z,,0x005BF290,30,Code/masm_dumps/_icf____GEMPUpdateModuleData__UAEPAXI_Z_5BF290.asm,matched,ICF alias of ??_G?$CategoryModuleTemplate@$00@FXParti Open-BFME4+Grok
 ??_GEdgeMapperClass@@UAEPAXI@Z,,0x005BF290,30,Code/masm_dumps/_icf____GEdgeMapperClass__UAEPAXI_Z_5BF290.asm,matched,ICF alias of ??_G?$CategoryModuleTemplate@$00@FXParti Open-BFME4+Grok
 ??_GEmissionVelocityInfo@FXParticleSystem@@UAEPAXI@Z,,0x005BD840,30,Code/GameEngine/Source/GameClient/System/FXParticleSystem/fx_particle_system_bulk.cpp,matched,
@@ -8580,7 +8580,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?begin@?$vector@W4ObjectID@@V?$allocator@W4ObjectID@@@_STL@@@_STL@@QAEPAW4ObjectID@@XZ,,0x0010BDB0,3,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,icf-owner=?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ
 ?begin@?$vector@W4ObjectID@@V?$allocator@W4ObjectID@@@_STL@@@_STL@@QBEPBW4ObjectID@@XZ,,0x0010BDB0,3,Code/GameEngine/Source/GameLogic/AI/Squad.cpp,matched,icf-owner=?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ
 ?begin@?$vector@W4ParticleSystemID@@V?$allocator@W4ParticleSystemID@@@_STL@@@_STL@@QAEPAW4ParticleSystemID@@XZ,,0x0010BDB0,3,Code/GameEngine/Source/GameLogic/Object/Update/BoneFXUpdate.cpp,matched,icf-owner=?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ
-?begin@?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAEPAW4ScienceType@@XZ,,0x0010BDB0,3,Code/GameEngine/Source/Common/INI/INI.cpp,matched,icf-owner=?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ
+?begin@?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QAEPAW4ScienceType@@XZ,,0x0010BDB0,3,Code/GameEngine/Source/Common/INI/INI_stl.cpp,matched,icf-owner=?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ
 ?begin@?$vector@W4ScienceType@@V?$allocator@W4ScienceType@@@_STL@@@_STL@@QBEPBW4ScienceType@@XZ,,0x0010BDB0,3,Code/GameEngine/Source/Common/RTS/Player.cpp,matched,icf-owner=?getDistributionType@GameClientRandomVariable@@QBE?AW4DistributionType@1@XZ
 ?begin@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QAE?AU?$_Bit_iter@U_Bit_reference@_STL@@PAU12@@2@XZ,,0x002CABF0,17,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu.cpp,matched,
 ?begin@?$vector@_NV?$allocator@_N@_STL@@@_STL@@QBE?AU?$_Bit_iter@_NPB_N@2@XZ,,0x002CAC10,17,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLQuickMatchMenu.cpp,matched,

@@ -12,6 +12,9 @@ import sys
 import threading
 from pathlib import Path
 
+from gen_case_shims import ensure_case_shims
+from portable_lock import lock, unlock
+
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "baselines" / "bfme1" / "workshop-vanilla-1.03" / "manifest.json"
@@ -574,17 +577,13 @@ def verify_functions(only=None):
     # failures at high concurrency). Big compiles take the lock exclusively;
     # small per-file verifies share it, so they still run concurrently with
     # each other but wait out any full build.
-    import fcntl
     lock_dir = Path.home() / ".cache"
     lock_dir.mkdir(parents=True, exist_ok=True)
     lock_file = (lock_dir / "open-bfme-build.lock").open("a")
-    lock_mode = fcntl.LOCK_EX if len(to_compile) > 8 else fcntl.LOCK_SH
-    try:
-        fcntl.flock(lock_file, lock_mode | fcntl.LOCK_NB)
-    except OSError:
-        print(f"waiting for build lock ({'exclusive' if lock_mode == fcntl.LOCK_EX else 'shared'}; "
-              f"another clone is running a full build)...")
-        fcntl.flock(lock_file, lock_mode)
+    exclusive = len(to_compile) > 8
+    lock(lock_file, exclusive=exclusive,
+         wait_notice=f"waiting for build lock ({'exclusive' if exclusive else 'shared'}; "
+                     f"another clone is running a full build)...")
     try:
         if pool_size == 1 or len(to_compile) <= 1:
             for s in to_compile:
@@ -595,7 +594,7 @@ def verify_functions(only=None):
                 for future in concurrent.futures.as_completed(futures):
                     future.result()
     finally:
-        fcntl.flock(lock_file, fcntl.LOCK_UN)
+        unlock(lock_file)
         lock_file.close()
 
     failures = 0
@@ -843,6 +842,10 @@ def verify_source_claims():
 
 
 def main(only=None):
+    # Sources include some sweep headers under two case spellings; only the
+    # canonical one is committed (case-only-colliding paths break Windows/macOS
+    # checkout). Regenerate the alternate spelling here before any compile.
+    ensure_case_shims()
     if only:
         # Fast path: compile and byte-compare only the matching sources/functions
         # (a few seconds), skipping the baseline hash and no-op patch. Use this to

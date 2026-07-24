@@ -11,3 +11,13 @@ reverse/ghidra_functions.csv
 reverse/string_xrefs.tsv
 reverse/.add_match.lock
 reverse/zh_sweep/locate_state.json
+
+# Alternate-case sweep shims: only the canonical spelling of each dual-case
+# include is committed (a case-only-colliding path breaks Windows/macOS checkout).
+# tools/gen_case_shims.py regenerates these at build time on case-sensitive FSes.
+reference/shims/sweep/mss.h
+reference/shims/sweep/wsys/file.h
+reference/shims/sweep/stdAfx.h
+reference/shims/sweep/WorldBuilder.h
+reference/shims/sweep/wpaudio/Source.h
+reference/shims/sweep/D3DX8Math.h

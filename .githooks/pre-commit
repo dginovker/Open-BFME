@@ -14,6 +14,11 @@ fail() {
     exit 1
 }
 
+# No two tracked paths may differ only in case — such a pair cannot check out on
+# Windows/macOS (case-insensitive FS), silently dropping a file and breaking those
+# clones. Reflects the staged index, so a colliding add is caught before it lands.
+python3 tools/check_case_collisions.py || fail "case-only path collision (see above)"
+
 staged_sources=()
 ledger_changed=0
 wide_change=0

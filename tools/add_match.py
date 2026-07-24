@@ -14,12 +14,13 @@ Usage:
 """
 import argparse
 import csv
-import fcntl
 import io
 import re
 import subprocess
 import sys
 from pathlib import Path
+
+from portable_lock import lock
 
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -155,11 +156,8 @@ def main():
     # interleave appends or double-claim, and so revert-on-failure cannot clobber
     # a row someone else appended meanwhile.
     lock_file = (root / "reverse" / ".add_match.lock").open("a")
-    try:
-        fcntl.flock(lock_file, fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except OSError:
-        print("add_match: waiting for ledger lock (another add_match is running)...")
-        fcntl.flock(lock_file, fcntl.LOCK_EX)
+    lock(lock_file, exclusive=True,
+         wait_notice="add_match: waiting for ledger lock (another add_match is running)...")
 
     raw = functions_csv.read_bytes()
     if b"\r\n" not in raw[:200]:

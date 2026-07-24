@@ -190,3 +190,23 @@ void GameWindow::winSetDisabledTextColors( Color color, Color borderColor )
 	if( BitTest( m_instData.getStyle(), GWS_COMBO_BOX ) )
 		GadgetComboBoxSetDisabledTextColors( this, color, borderColor );
 }
+
+// ?winSetHiliteTextColors@GameWindow@@QAEXHH@Z
+void GameWindow::winSetHiliteTextColors( Color color, Color borderColor )
+{
+	m_instData.m_hiliteText.color = color;
+	m_instData.m_hiliteText.borderColor = borderColor;
+
+	if( BitTest( m_instData.getStyle(), GWS_COMBO_BOX ) )
+		GadgetComboBoxSetHiliteTextColors( this, color, borderColor );
+}
+
+// ?winSetIMECompositeTextColors@GameWindow@@QAEXHH@Z
+void GameWindow::winSetIMECompositeTextColors( Color color, Color borderColor )
+{
+	m_instData.m_imeCompositeText.color = color;
+	m_instData.m_imeCompositeText.borderColor = borderColor;
+
+	if( BitTest( m_instData.getStyle(), GWS_COMBO_BOX ) )
+		GadgetComboBoxSetIMECompositeTextColors( this, color, borderColor );
+}

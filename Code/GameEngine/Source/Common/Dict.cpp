@@ -51,14 +51,26 @@
 #include "Common/GameMemory.h"
 
 // -----------------------------------------------------
-// ?copyFrom@DictPair@@ present-unmatched
 void Dict::DictPair::copyFrom(DictPair* that)
 {
-	Dict::DataType curType = this->getType();
-	Dict::DataType newType = that->getType();
+	Dict::DataType newType = (Dict::DataType)(((UnsignedInt)that->m_key) & 0xff);
+	Dict::DataType curType = (Dict::DataType)(((UnsignedInt)this->m_key) & 0xff);
 	if (curType != newType)
 	{
-		clear();
+		switch (curType)
+		{
+			case DICT_BOOL:
+			case DICT_INT:
+			case DICT_REAL:
+				m_value = 0;
+				break;
+			case DICT_ASCIISTRING:
+				asAsciiString()->clear();
+				break;
+			case DICT_UNICODESTRING:
+				asUnicodeString()->clear();
+				break;
+		}
 	}
 
 	switch(newType)

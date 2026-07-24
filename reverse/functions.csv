@@ -8848,7 +8848,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?copy@?$__char_traits_base@DH@_STL@@SAPADPADPBDI@Z,,0x000A3210,42,Code/masm_dumps/_rn6__copy_____char_traits_base_DH__STL__SAPADPADPBDI_Z_A3210.asm,matched,reloc-needle Open-BFME4+Grok
 ?copy@?$__char_traits_base@GG@_STL@@SAPAGPAGPBGI@Z,,0x004D4030,45,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupHostGame.cpp,matched,
 ?copyChunkData@NetCommandWrapperListNode@@QAEXPAVNetWrapperCommandMsg@@@Z,,0x006764A0,122,Code/GameEngine/Source/GameNetwork/NetCommandWrapperList.cpp,matched,
-?copyFrom@DictPair@Dict@@QAEXPAU12@@Z,,0x00013E94,5,Code/masm_dumps/_copyFrom_DictPair_Dict__QAEXPAU12__Z_13E94.asm,matched,MASM exact retail dump
+?copyFrom@DictPair@Dict@@QAEXPAU12@@Z,,0x000682E0,180,Code/GameEngine/Source/Common/Dict.cpp,matched,BFME body; was ILT thunk at 0x13E94
 ?copyFromQueueNode@BFMENetworkQueueItem1@@QAEXPAX@Z,,0x00032F6A,5,Code/masm_dumps/_copyFromQueueNode_BFMENetworkQueueItem1__QAEXPAX_Z_32F6A.asm,matched,MASM exact retail dump
 ?copyFromQueueNode@BFMENetworkQueueItem@@QAEXPAX@Z,,0x00030C60,5,Code/masm_dumps/_copyFromQueueNode_BFMENetworkQueueItem__QAEXPAX_Z_30C60.asm,matched,MASM exact retail dump
 ?copyPairFrom@Dict@@QAEXABV1@W4NameKeyType@@@Z,,0x00068940,86,Code/GameEngine/Source/Common/Dict.cpp,matched,

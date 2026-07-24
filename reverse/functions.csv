@@ -13429,3 +13429,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?insertPlayerInListbox@@YAHABVPlayerInfo@@H@Z,,0x004F9E60,333,Code/masm_dumps/insertPlayerInListbox_4F9E60.asm,matched,certified recovery packet 176 exact retail bytes
 ?parseWeaponTemplateDefinition@WeaponStore@@SAXPAVINI@@@Z,,0x001E9C40,223,Code/GameEngine/Source/GameLogic/Object/WeaponStore_parseWeaponTemplateDefinition.asm,matched,Certified packet 178 db-only retail recovery SHA256 da43851aa11804b5070b0273f73a23217690057e7b934ba66d66deb312c45aab
 ?getReadyFrame@SpecialPowerModule@@UBEIXZ,,0x0026ABC0,126,Code/masm_dumps/getReadyFrame_SpecialPowerModule_0026ABC0.asm,matched,Certified packet 179 sealed RVA size hash and reviewed identity
+?setControlCommand@ControlBar@@QAEXPAVGameWindow@@PBVCommandButton@@@Z,,0x0049EDE0,603,Code/masm_dumps/ControlBar_setControlCommand.asm,matched,Certified packet 180 db-only retail recovery

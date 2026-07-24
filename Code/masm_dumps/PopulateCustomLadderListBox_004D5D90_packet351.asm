@@ -1,0 +1,95 @@
+.386
+.model flat
+
+; ?PopulateCustomLadderListBox@@YAXPAVGameWindow@@@Z
+; Exact 1332 retail bytes @ 0x004D5D90; certified packet 351
+_TEXT SEGMENT
+public ?PopulateCustomLadderListBox@@YAXPAVGameWindow@@@Z
+?PopulateCustomLadderListBox@@YAXPAVGameWindow@@@Z PROC
+    db 064h,0a1h,000h,000h,000h,000h,06ah,0ffh,068h,043h,0a7h,002h,001h,050h,0a1h,010h
+    db 03fh,02fh,001h,064h,089h,025h,000h,000h,000h,000h,083h,0ech,07ch,053h,055h,056h
+    db 057h,033h,0ffh,03bh,0c7h,00fh,084h,0f0h,004h,000h,000h,08bh,0b4h,024h,09ch,000h
+    db 000h,000h,03bh,0f7h,00fh,084h,0e1h,004h,000h,000h,08dh,04ch,024h,058h,0c6h,005h
+    db 034h,03fh,02fh,001h,001h,0e8h,01bh,053h,0b3h,0ffh,0a1h,064h,092h,02bh,001h,089h
+    db 044h,024h,030h,0a1h,068h,092h,02bh,001h,08bh,0e8h,056h,089h,0bch,024h,098h,000h
+    db 000h,000h,089h,06ch,024h,038h,08bh,0d8h,089h,044h,024h,030h,0e8h,0deh,045h,0b3h
+    db 0ffh,06ah,014h,089h,07ch,024h,048h,0e8h,034h,087h,035h,000h,089h,044h,024h,048h
+    db 089h,07ch,024h,04ch,0c6h,000h,000h,08bh,04ch,024h,048h,089h,079h,004h,08bh,044h
+    db 024h,048h,089h,040h,008h,08bh,044h,024h,048h,083h,0c4h,008h,089h,040h,00ch,08bh
+    db 00dh,07ch,014h,02fh,001h,08bh,011h,06ah,001h,06ah,0ffh,06ah,0ffh,055h,051h,08bh
+    db 0c4h,089h,064h,024h,038h,057h,068h,0c0h,0feh,00fh,001h,050h,0c6h,084h,024h,0b4h
+    db 000h,000h,000h,001h,0ffh,052h,028h,056h,0e8h,029h,0a0h,0b6h,0ffh,057h,050h,057h
+    db 056h,0e8h,0cah,040h,0b7h,0ffh,083h,0c4h,028h,08dh,04ch,024h,018h,051h,08dh,04ch
+    db 024h,05ch,089h,07ch,024h,024h,0e8h,0e0h,001h,0b7h,0ffh,08dh,04ch,024h,058h,0c6h
+    db 084h,024h,094h,000h,000h,000h,002h,0e8h,0bdh,06ah,0b5h,0ffh,08bh,00dh,0e8h,070h
+    db 02fh,001h,08dh,054h,024h,018h,08bh,0e8h,055h,052h,089h,06ch,024h,01ch,0e8h,051h
+    db 0eah,0b2h,0ffh,08bh,0f8h,085h,0ffh,089h,07ch,024h,01ch,074h,055h,08bh,047h,038h
+    db 085h,0c0h,07eh,04eh,08ah,047h,01bh,084h,0c0h,074h,047h,08dh,044h,024h,01ch,050h
+    db 08dh,04ch,024h,028h,051h,08dh,04ch,024h,048h,0e8h,07ch,0b6h,0b3h,0ffh,06ah,001h
+    db 06ah,0ffh,06ah,0ffh,053h,051h,08bh,0cch,089h,064h,024h,038h,057h,0e8h,046h,0ffh
+    db 0b4h,0ffh,056h,0e8h,09eh,09fh,0b6h,0ffh,08bh,057h,038h,06ah,000h,08bh,0e8h,055h
+    db 052h,056h,0e8h,039h,040h,0b7h,0ffh,089h,06ch,024h,048h,08bh,06ch,024h,03ch,083h
+    db 0c4h,028h,08dh,04ch,024h,06ch,0e8h,0efh,03fh,0b6h,0ffh,08bh,00dh,094h,071h,02fh
+    db 001h,08bh,001h,0c6h,084h,024h,094h,000h,000h,000h,003h,0ffh,050h,070h,050h,08dh
+    db 04ch,024h,070h,0e8h,070h,00dh,0b4h,0ffh,08dh,04ch,024h,06ch,0e8h,01ch,04ch,0b6h
+    db 0ffh,050h,08dh,04ch,024h,050h,0e8h,045h,0a8h,0b3h,0ffh,08bh,044h,024h,04ch,08bh
+    db 078h,008h,03bh,0f8h,0c6h,084h,024h,094h,000h,000h,000h,004h,089h,07ch,024h,014h
+    db 00fh,084h,0efh,000h,000h,000h,0ebh,008h,08bh,07ch,024h,014h,08dh,064h,024h,000h
+    db 08dh,047h,018h,050h,08dh,04ch,024h,014h,0e8h,0f3h,01bh,03bh,000h,066h,08bh,07fh
+    db 01ch,08dh,04ch,024h,018h,051h,08dh,04ch,024h,014h,0c6h,084h,024h,098h,000h,000h
+    db 000h,005h,0e8h,03eh,0c1h,0b4h,0ffh,085h,0c0h,075h,009h,066h,03bh,0fdh,00fh,084h
+    db 083h,000h,000h,000h,08bh,00dh,0e8h,070h,02fh,001h,057h,08dh,054h,024h,014h,052h
+    db 0e8h,04fh,0e9h,0b2h,0ffh,08bh,0f8h,085h,0ffh,089h,07ch,024h,01ch,074h,068h,08bh
+    db 047h,038h,085h,0c0h,07eh,061h,08ah,047h,01bh,084h,0c0h,074h,05ah,08dh,044h,024h
+    db 01ch,050h,08dh,04ch,024h,028h,051h,08dh,04ch,024h,048h,0e8h,065h,05fh,0b5h,0ffh
+    db 08bh,054h,024h,024h,03bh,054h,024h,040h,075h,03dh,08dh,044h,024h,01ch,050h,08dh
+    db 04ch,024h,03ch,051h,08dh,04ch,024h,048h,0e8h,05dh,0b5h,0b3h,0ffh,06ah,001h,06ah
+    db 0ffh,06ah,0ffh,053h,051h,089h,064h,024h,030h,08bh,0cch,057h,0e8h,0ffh,023h,03bh
+    db 000h,056h,0e8h,07fh,09eh,0b6h,0ffh,08bh,057h,038h,06ah,000h,050h,052h,056h,0e8h
+    db 01ch,03fh,0b7h,0ffh,083h,0c4h,028h,08dh,04ch,024h,010h,0c6h,084h,024h,094h,000h
+    db 000h,000h,004h,0e8h,018h,019h,03bh,000h,08bh,044h,024h,014h,050h,0e8h,03eh,058h
+    db 035h,000h,08bh,04ch,024h,050h,083h,0c4h,004h,03bh,0c1h,089h,044h,024h,014h,00fh
+    db 085h,013h,0ffh,0ffh,0ffh,08bh,00dh,0e8h,070h,02fh,001h,0e8h,06dh,043h,0b7h,0ffh
+    db 08bh,0e8h,08bh,045h,000h,08bh,018h,03bh,0d8h,00fh,084h,07fh,000h,000h,000h,090h
+    db 08bh,07bh,008h,085h,0ffh,089h,07ch,024h,01ch,074h,06ch,08bh,047h,038h,085h,0c0h
+    db 07dh,065h,08ah,047h,01bh,084h,0c0h,074h,05eh,08dh,04ch,024h,01ch,051h,08dh,054h
+    db 024h,028h,052h,08dh,04ch,024h,048h,0e8h,0a9h,05eh,0b5h,0ffh,08bh,044h,024h,024h
+    db 03bh,044h,024h,040h,075h,041h,08dh,04ch,024h,01ch,051h,08dh,054h,024h,03ch,052h
+    db 08dh,04ch,024h,048h,0e8h,045h,083h,0b4h,0ffh,08bh,044h,024h,02ch,06ah,001h,06ah
+    db 0ffh,06ah,0ffh,050h,051h,089h,064h,024h,030h,08bh,0cch,057h,0e8h,03fh,023h,03bh
+    db 000h,056h,0e8h,0bfh,09dh,0b6h,0ffh,08bh,04fh,038h,06ah,000h,050h,051h,056h,0e8h
+    db 05ch,03eh,0b7h,0ffh,083h,0c4h,028h,08bh,01bh,03bh,05dh,000h,075h,082h,08bh,00dh
+    db 0e8h,070h,02fh,001h,0e8h,07ch,0bch,0b3h,0ffh,08bh,0e8h,08bh,045h,000h,08bh,018h
+    db 03bh,0d8h,00fh,084h,096h,000h,000h,000h,08bh,054h,024h,040h,08dh,064h,024h,000h
+    db 08bh,07bh,008h,085h,0ffh,089h,07ch,024h,02ch,074h,078h,08bh,047h,038h,085h,0c0h
+    db 07eh,071h,08ah,047h,01bh,084h,0c0h,074h,06ah,08bh,042h,004h,085h,0c0h,08bh,0cah
+    db 074h,01ch,039h,078h,010h,072h,007h,08bh,0c8h,08bh,040h,008h,0ebh,003h,08bh,040h
+    db 00ch,085h,0c0h,075h,0edh,03bh,0cah,074h,005h,03bh,079h,010h,073h,045h,08dh,054h
+    db 024h,02ch,052h,08dh,044h,024h,03ch,050h,08dh,04ch,024h,048h,0e8h,09dh,082h,0b4h
+    db 0ffh,08bh,04ch,024h,030h,06ah,001h,06ah,0ffh,06ah,0ffh,051h,051h,089h,064h,024h
+    db 040h,08bh,0cch,057h,0e8h,097h,022h,03bh,000h,056h,0e8h,017h,09dh,0b6h,0ffh,08bh
+    db 057h,038h,06ah,000h,050h,052h,056h,0e8h,0b4h,03dh,0b7h,0ffh,08bh,054h,024h,068h
+    db 083h,0c4h,028h,08bh,01bh,03bh,05dh,000h,00fh,085h,072h,0ffh,0ffh,0ffh,08bh,00dh
+    db 0e8h,070h,02fh,001h,0e8h,081h,0b8h,0b6h,0ffh,08bh,0e8h,08bh,045h,000h,08bh,018h
+    db 03bh,0d8h,00fh,084h,096h,000h,000h,000h,08bh,054h,024h,040h,08dh,064h,024h,000h
+    db 08bh,07bh,008h,085h,0ffh,089h,07ch,024h,030h,074h,078h,08bh,047h,038h,085h,0c0h
+    db 07eh,071h,08ah,047h,01bh,084h,0c0h,074h,06ah,08bh,042h,004h,085h,0c0h,08bh,0cah
+    db 074h,01ch,039h,078h,010h,072h,007h,08bh,0c8h,08bh,040h,008h,0ebh,003h,08bh,040h
+    db 00ch,085h,0c0h,075h,0edh,03bh,0cah,074h,005h,03bh,079h,010h,073h,045h,08dh,044h
+    db 024h,030h,050h,08dh,04ch,024h,03ch,051h,08dh,04ch,024h,048h,0e8h,0edh,081h,0b4h
+    db 0ffh,08bh,054h,024h,034h,06ah,001h,06ah,0ffh,06ah,0ffh,052h,051h,089h,064h,024h
+    db 044h,08bh,0cch,057h,0e8h,0e7h,021h,03bh,000h,056h,0e8h,067h,09ch,0b6h,0ffh,06ah
+    db 000h,050h,08bh,047h,038h,050h,056h,0e8h,004h,03dh,0b7h,0ffh,08bh,054h,024h,068h
+    db 083h,0c4h,028h,08bh,01bh,03bh,05dh,000h,00fh,085h,072h,0ffh,0ffh,0ffh,08bh,04ch
+    db 024h,020h,051h,056h,0e8h,0bah,0afh,0b2h,0ffh,083h,0c4h,008h,08dh,04ch,024h,04ch
+    db 0c6h,005h,034h,03fh,02fh,001h,000h,0c6h,084h,024h,094h,000h,000h,000h,003h,0e8h
+    db 068h,030h,0b4h,0ffh,08dh,04ch,024h,06ch,0c6h,084h,024h,094h,000h,000h,000h,002h
+    db 0e8h,06dh,0cbh,0b2h,0ffh,08dh,04ch,024h,018h,0c6h,084h,024h,094h,000h,000h,000h
+    db 001h,0e8h,0bah,016h,03bh,000h,08dh,04ch,024h,040h,0c6h,084h,024h,094h,000h,000h
+    db 000h,000h,0e8h,0c0h,0fch,0b6h,0ffh,08dh,04ch,024h,058h,0c7h,084h,024h,094h,000h
+    db 000h,000h,0ffh,0ffh,0ffh,0ffh,0e8h,0bfh,0bch,0b6h,0ffh,08bh,08ch,024h,08ch,000h
+    db 000h,000h,05fh,05eh,05dh,064h,089h,00dh,000h,000h,000h,000h,05bh,081h,0c4h,088h
+    db 000h,000h,000h,0c3h
+?PopulateCustomLadderListBox@@YAXPAVGameWindow@@@Z ENDP
+_TEXT ENDS
+END

@@ -13440,3 +13440,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ?GadgetComboBoxSetText@@YAXPAVGameWindow@@VUnicodeString@@@Z,,0x004B4E70,157,Code/masm_dumps/GadgetComboBoxSetText_004B4E70_c668ce27.asm,matched,Certified packet 187 exact retail db recovery
 ?drawScorches@BaseHeightMapRenderObjClass@@IAEXXZ,,0x006CA660,247,Code/masm_dumps/drawScorches_BaseHeightMapRenderObjClass_006CA660_f3b40f10.asm,matched,Certified packet 189 db-byte recovery SHA256 f3b40f10bc2966f8355ac4d8d5c6536615dfe2c87dd2b21e7284b5f974b9cb02
 ??0W3DPropBuffer@@QAE@XZ,,0x00702FF0,328,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DPropBuffer_ctor.asm,matched,Certified packet 191 reviewed RVA and retail SHA-256
+?setCaptionText@Drawable@@QAEXABVUnicodeString@@@Z,,0x00418880,381,Code/masm_dumps/Drawable_setCaptionText_418880.asm,matched,Certified packet 192 sealed retail bytes SHA256 1cd21ef4ec3eb2769021a3deb7453a6cb282def2d452afc5bf833f5eb01a8a9f

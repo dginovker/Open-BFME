@@ -13442,3 +13442,4 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0W3DPropBuffer@@QAE@XZ,,0x00702FF0,328,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DPropBuffer_ctor.asm,matched,Certified packet 191 reviewed RVA and retail SHA-256
 ?setCaptionText@Drawable@@QAEXABVUnicodeString@@@Z,,0x00418880,381,Code/masm_dumps/Drawable_setCaptionText_418880.asm,matched,Certified packet 192 sealed retail bytes SHA256 1cd21ef4ec3eb2769021a3deb7453a6cb282def2d452afc5bf833f5eb01a8a9f
 ?getText@DisplayString@@UAE?AVUnicodeString@@XZ,,0x00410080,32,Code/masm_dumps/DisplayString_getText_410080.asm,matched,Certified packet 193 reviewed vtable slot and ret-4 boundary; exact retail db body
+?moveAllies@Pathfinder@@QAE_NPAVObject@@PAVPath@@@Z,,0x003EBA30,1268,Code/masm_dumps/moveAllies_Pathfinder_QAE_NPAVObject_PAVPath_Z_003EBA30_49772ebf.asm,matched,Certified packet 188 true body via reviewed caller thunk and ret 0x0C boundary

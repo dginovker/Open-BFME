@@ -3445,3 +3445,4 @@ _ShowControlBar,0x00024848,ShowControlBar letterbox
 ?getCanAttackObject@ActionManager@@QAE?AW4CanAttackResult@@PBVObject@@0W4CommandSourceType@@W4AbleToAttackType@@@Z,0x00045D90,retail AIEnterState::update call target
 ?aiAttackObject@AICommandInterface@@QAEXPAVObject@@HW4CommandSourceType@@@Z,0x0002EDCF,retail AIEnterState::update call target
 ?clear@AsciiString@@QAEXXZ,0x00887940,retail AsciiString::clear body called from DictPair::copyFrom
+?setNameAndType@DictPair@Dict@@QAEXW4NameKeyType@@W4DataType@2@@Z,0x00038D02,retail DictPair::setNameAndType body (unclaimed, called by setPrep/remove)

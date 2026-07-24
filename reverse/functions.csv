@@ -11872,7 +11872,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?releaseBuffer@UnicodeString@@IAEXXZ,,0x009409F0,334,Code/masm_dumps/__releaseBuffer_UnicodeString__IAEXXZ_9409F0.asm,matched,
 ?releaseData@Dict@@AAEXXZ,,0x00014475,5,Code/masm_dumps/_releaseData_Dict__AAEXXZ_14475.asm,matched,MASM exact retail dump
 ?releaseFontData@W3DFontLibrary@@MAEXPAVGameFont@@@Z,,0x0078C770,55,Code/GameEngineDevice/Source/W3DDevice/GameClient/GUI/W3DGameFont.cpp,matched,
-?remove@Dict@@QAE_NW4NameKeyType@@@Z,,0x000072B6,5,Code/masm_dumps/_remove_Dict__QAE_NW4NameKeyType___Z_72B6.asm,matched,MASM exact retail dump
+?remove@Dict@@QAE_NW4NameKeyType@@@Z,,0x000688E0,73,Code/GameEngine/Source/Common/Dict.cpp,matched,
 ?remove@LListNode@@QAEXXZ,,0x00105930,21,Code/GameEngine/Source/Common/System/List.cpp,matched,
 ?removeAllBibs@W3DTerrainVisual@@UAEXXZ,,0x00731000,13,Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DTerrainVisual.cpp,matched,
 ?removeAllTerrainBibs@BaseHeightMapRenderObjClass@@QAEXXZ,,0x0000CC8E,5,Code/masm_dumps/_thunk_f3c9c7f00414_CC8E.asm,matched,thunk accessor of ported class (icf alias)
@@ -12261,7 +12261,7 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?setPreAttackFinishedFrame@Weapon@@QAEXI@Z,,0x00674240,10,Code/GameEngine/Source/GameLogic/AI/AIStates.cpp,matched,ICF alias of existing matched body
 ?setPreferredColor@CustomMatchPreferences@@QAEXH@Z,,0x000ADE00,170,Code/masm_dumps/_sa13__setPreferredColor_CustomMatchPreferences__QAEXH_Z_ADE00.asm,matched,multi-xref Open-BFME4+Grok DisallowAsianText
 ?setPreferredFaction@CustomMatchPreferences@@QAEXH@Z,,0x000ADA80,169,Code/masm_dumps/CustomMatchPreferences_setPreferredFaction.asm,matched,Ghidra-bound BFME preferred-faction setter
-?setPrep@Dict@@AAEPAUDictPair@1@W4NameKeyType@@W4DataType@1@@Z,,0x00042749,5,Code/masm_dumps/_setPrep_Dict__AAEPAUDictPair_1_W4NameKeyType__W4DataType_1__Z_42749.asm,matched,MASM exact retail dump
+?setPrep@Dict@@AAEPAUDictPair@1@W4NameKeyType@@W4DataType@1@@Z,,0x00068760,90,Code/GameEngine/Source/Common/Dict.cpp,matched,
 ?setProducer@Object@@QAEXPBV1@@Z,,0x001BE450,25,Code/GameEngine/Source/GameLogic/Object/Object.cpp,matched,
 ?setProfileID@GameSpyGameSlot@@QAEXH@Z,,0x001A19C0,10,Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenu.cpp,matched,
 ?setQMChannel@GameSpyConfig@@UAEXH@Z,,0x00189A50,10,Code/GameEngine/Source/GameNetwork/GameSpy/GSConfig.cpp,matched,

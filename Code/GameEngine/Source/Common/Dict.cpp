@@ -112,8 +112,9 @@ void Dict::DictPair::clear()
 }
 
 // -----------------------------------------------------
-// ?setNameAndType@DictPair@@ present-unmatched
-void Dict::DictPair::setNameAndType(NameKeyType key, Dict::DataType type)
+// retail does not inline this into its single-call-site callers (setPrep,
+// remove); force the same out-of-line shape.
+__declspec(noinline) void Dict::DictPair::setNameAndType(NameKeyType key, Dict::DataType type)
 {
 	Dict::DataType curType = getType();
 	if (curType != type)
@@ -440,7 +441,6 @@ UnicodeString Dict::getNthUnicodeString(Int n) const
 }
 
 // -----------------------------------------------------
-// ?setPrep@Dict@@ present-unmatched
 Dict::DictPair *Dict::setPrep(NameKeyType key, Dict::DataType type)
 {
 	DictPair* pair = findPairByKey(key);
@@ -538,7 +538,6 @@ void Dict::setUnicodeString(NameKeyType key, const UnicodeString& value)
 }
 
 // -----------------------------------------------------
-// ?remove@Dict@@ present-unmatched
 Bool Dict::remove(NameKeyType key)
 {
 	validate();
